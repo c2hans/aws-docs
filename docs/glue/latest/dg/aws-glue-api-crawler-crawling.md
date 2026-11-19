@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-craw
 ---
 
 # Crawler API
-<a name="aws-glue-api-crawler-crawling"></a>
 
 The Crawler API describes AWS Glue crawler data types, along with the API for creating, deleting, updating, and listing crawlers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Firewall
 ---
 
 # FirewallSubnetMissingVPCEndpointViolation
-<a name="API_FirewallSubnetMissingVPCEndpointViolation"></a>
 
 The violation details for a firewall subnet's VPC endpoint that's deleted or missing.
 

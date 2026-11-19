@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshoot-athe
 ---
 
 # Connectivity issues when using Amazon Athena with AWS Quick Sight
-<a name="troubleshoot-athena"></a>
 
 Following, you can find information about troubleshooting issues that you might encounter when using Amazon Athena with AWS Quick Sight.
 

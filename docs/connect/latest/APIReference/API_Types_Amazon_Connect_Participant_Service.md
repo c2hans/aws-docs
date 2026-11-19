@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Types_Am
 ---
 
 # Amazon Connect Participant Service
-<a name="API_Types_Amazon_Connect_Participant_Service"></a>
 
 The following data types are supported by Amazon Connect Participant Service:
 +  [AttachmentItem](API_connect-participant_AttachmentItem.md)

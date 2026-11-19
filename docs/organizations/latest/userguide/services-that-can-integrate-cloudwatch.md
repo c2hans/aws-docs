@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # Amazon CloudWatch and AWS Organizations
-<a name="services-that-can-integrate-cloudwatch"></a>
 
 You can use AWS Organizations for Amazon CloudWatch for the following use cases:
 + Discover and understand the state of telemetry configuration for your AWS resources from a central view in the CloudWatch console. This simpliﬁes the process of auditing your telemetry collection configurations for multiple resource types across your AWS organization or account. You must turn on trusted access to use telemetry config across your organization.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_PortPr
 ---
 
 # PortProbeDetail
-<a name="API_PortProbeDetail"></a>
 
 Contains information about the port probe details.
 

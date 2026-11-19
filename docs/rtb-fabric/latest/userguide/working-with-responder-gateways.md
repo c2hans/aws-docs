@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/working-with
 ---
 
 # Responder gateways
-<a name="working-with-responder-gateways"></a>
 
 Responder gateways are RTB Fabric infrastructure components that serve as connection points for customer gateways. Responder gateways receive requests from requester gateways and forward them to responder gateways, then return responses through the same pathway. Gateways operate colocated with your VPC and provide routing, load balancing, and processing capabilities. You maintain complete control over your bidding algorithms, response logic, and data processing, while RTB Fabric provides the secure infrastructure for connectivity.
 

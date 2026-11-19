@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/creating-linux-fai
 ---
 
 # Creating a Failsafe Virtual Session on Linux
-<a name="creating-linux-failsafe-virtual-session-creation"></a>
 
 **Note**
 This procedure applies only to Linux with X11. It is not applicable to Linux with Wayland.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_DocumentA
 ---
 
 # DocumentAttribute
-<a name="API_DocumentAttribute"></a>
 
 A document attribute or metadata field. To create custom document attributes, see [Custom attributes](https://docs.aws.amazon.com/kendra/latest/dg/custom-attributes.html).
 

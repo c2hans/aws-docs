@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # FlowOperationMetadata
-<a name="API_FlowOperationMetadata"></a>
 
 An array of objects with metadata about the requested `FlowOperation`.
 

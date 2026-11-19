@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Bu
 ---
 
 # BundleInformation
-<a name="API_BundleInformation"></a>
 
 Information about the pricing bundle.
 

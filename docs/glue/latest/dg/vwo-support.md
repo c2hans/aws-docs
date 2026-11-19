@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/vwo-support.html
 ---
 
 # AWS Glue support for VWO
-<a name="vwo-support"></a>
 
 AWS Glue supports VWO as follows:
 

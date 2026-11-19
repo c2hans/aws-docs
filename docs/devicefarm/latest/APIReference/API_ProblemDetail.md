@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Probl
 ---
 
 # ProblemDetail
-<a name="API_ProblemDetail"></a>
 
 Information about a problem detail.
 

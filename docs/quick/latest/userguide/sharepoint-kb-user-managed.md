@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sharepoint-kb-use
 ---
 
 # User-managed setup
-<a name="sharepoint-kb-user-managed"></a>
 
 With user-managed setup, you sign in to SharePoint directly and AWS Quick handles authentication. Most users can complete setup in a few minutes.
 

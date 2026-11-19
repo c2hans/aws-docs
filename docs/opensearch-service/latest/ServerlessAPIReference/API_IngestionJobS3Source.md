@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # IngestionJobS3Source
-<a name="API_IngestionJobS3Source"></a>
 
 The Amazon S3 source configuration for an ingestion job.
 

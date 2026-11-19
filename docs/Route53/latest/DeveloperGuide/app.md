@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/app.html
 ---
 
 # .app
-<a name="app"></a>
 
 Used as a secure domain for developers, entrepreneurs, and businesses to showcase their apps.
 

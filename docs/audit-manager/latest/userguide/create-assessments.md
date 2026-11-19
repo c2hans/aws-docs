@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/create-as
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Creating an assessment in AWS Audit Manager
-<a name="create-assessments"></a>
 
 This topic builds on the [Tutorial for Audit Owners: Creating an assessment](tutorial-for-audit-owners.md). You'll find detailed instructions on this page that show you how to create an assessment from a framework. Follow these steps to create an assessment and start the ongoing collection of evidence.
 

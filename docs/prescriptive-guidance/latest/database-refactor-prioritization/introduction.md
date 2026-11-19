@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-re
 ---
 
 # Prioritization guide for refactoring Microsoft SQL Server and Oracle databases on AWS
-<a name="introduction"></a>
 
 *Sagar Patel, Amazon Web Services*
 

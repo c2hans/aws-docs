@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceConnectClientAlias
-<a name="API_ServiceConnectClientAlias"></a>
 
 Each alias ("endpoint") is a fully-qualified name and port number that other tasks ("clients") can use to connect to this service.
 

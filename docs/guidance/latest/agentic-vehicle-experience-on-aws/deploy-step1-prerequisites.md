@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Step 1: Deploy the prerequisites
-<a name="deploy-step1-prerequisites"></a>
 
 ## CMS — Connected Mobility foundation
 <a name="cms-connected-mobility-foundation"></a>

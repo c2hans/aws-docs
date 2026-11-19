@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UpdateW
 ---
 
 # UpdateWebApp
-<a name="API_UpdateWebApp"></a>
 
 Assigns new properties to a web app. You can modify the access point, identity provider details, endpoint configuration, and the web app units.
 

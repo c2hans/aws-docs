@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_E
 ---
 
 # ExecutionAbortedEventDetails
-<a name="API_ExecutionAbortedEventDetails"></a>
 
 Contains details about an abort of an execution.
 

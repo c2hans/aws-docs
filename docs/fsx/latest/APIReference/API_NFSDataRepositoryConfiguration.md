@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_NFSDataRepos
 ---
 
 # NFSDataRepositoryConfiguration
-<a name="API_NFSDataRepositoryConfiguration"></a>
 
 The configuration for a data repository association that links an Amazon File Cache resource to an NFS data repository.
 

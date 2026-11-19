@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Inst
 ---
 
 # Instance
-<a name="API_Instance"></a>
 
 An instance of a label returned by Amazon Rekognition Image ([DetectLabels](API_DetectLabels.md)) or by Amazon Rekognition Video ([GetLabelDetection](API_GetLabelDetection.md)).
 

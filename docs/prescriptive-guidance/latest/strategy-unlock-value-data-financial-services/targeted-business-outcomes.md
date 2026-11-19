@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-un
 ---
 
 # Targeted business outcomes
-<a name="targeted-business-outcomes"></a>
 
 The key business outcome is to adopt optimized processes that can transform your organization's data into business value. Specifically, this strategy can help you achieve the following targeted business outcomes:
 + Scale machine learning and operations (MLOps) capabilities across your organization and develop an ML platform to support hundreds of data scientists and data engineers to run ML workflows in your organization.

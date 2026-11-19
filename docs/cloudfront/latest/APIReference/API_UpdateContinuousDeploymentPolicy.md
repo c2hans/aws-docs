@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateContinuousDeploymentPolicy
-<a name="API_UpdateContinuousDeploymentPolicy"></a>
 
 Updates a continuous deployment policy. You can update a continuous deployment policy to enable or disable it, to change the percentage of traffic that it sends to the staging distribution, or to change the staging distribution that it sends traffic to.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CoipAddre
 ---
 
 # CoipAddressUsage
-<a name="API_CoipAddressUsage"></a>
 
 Describes address usage for a customer-owned address pool.
 

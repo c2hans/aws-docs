@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/migrate-evs-hcx.htm
 ---
 
 # Migrate workloads with HCX
-<a name="migrate-evs-hcx"></a>
 
 After you deploy Amazon Elastic VMware Service, you can use VMware Hybrid Cloud Extension (HCX) to migrate workloads to your environment. You can use HCX over private connectivity or over the public internet. For how HCX works, see [Getting Started with VMware HCX](https://techdocs.broadcom.com/us/en/vmware-cis/hcx/vmware-hcx/4-10/getting-started-with-vmware-hcx-4-10.html) in the Broadcom documentation.
 

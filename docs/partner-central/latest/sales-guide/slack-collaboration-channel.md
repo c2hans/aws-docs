@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/sales-guide/slack
 ---
 
 # Creating a collaboration channel on Slack
-<a name="slack-collaboration-channel"></a>
 
 AWS Partners can request collaboration on select strategic, high-value opportunities that require AWS co-sell support. The eligible opportunity must be at the Qualified stage or higher. Once approved, the partner will receive an email notification with an invitation to join the designated Slack channel.
 

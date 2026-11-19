@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Identity and Access Management Roles Anywhere
-<a name="list_rolesanywhere"></a>
 
 AWS Identity and Access Management Roles Anywhere (service prefix: `rolesanywhere`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discovery-too
 ---
 
 # Deploy on Linux
-<a name="discovery-tool-deploy-linux"></a>
 
 The discovery tool is available as a standalone Linux installer for deployment on supported Linux distributions. Use this option when you want to install the discovery tool directly on an existing Linux server instead of deploying a virtual machine.
 

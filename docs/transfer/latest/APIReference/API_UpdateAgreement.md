@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_UpdateA
 ---
 
 # UpdateAgreement
-<a name="API_UpdateAgreement"></a>
 
 Updates some of the parameters for an existing agreement. Provide the `AgreementId` and the `ServerId` for the agreement that you want to update, along with the new values for the parameters to update.
 

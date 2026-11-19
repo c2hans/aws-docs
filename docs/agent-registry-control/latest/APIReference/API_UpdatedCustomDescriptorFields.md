@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedCustomDescriptorFields
-<a name="API_UpdatedCustomDescriptorFields"></a>
 
 The set of custom descriptor fields that can be individually updated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CopyOp
 ---
 
 # CopyOptionGroup
-<a name="API_CopyOptionGroup"></a>
 
 Copies the specified option group.
 

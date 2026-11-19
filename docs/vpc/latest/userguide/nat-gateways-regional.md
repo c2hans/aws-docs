@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/nat-gateways-region
 ---
 
 # Regional NAT gateways for automatic multi-AZ expansion
-<a name="nat-gateways-regional"></a>
 
 Use regional NAT gateways when you want to simplify your network architecture, improve your security posture, and configure high availability by default. A regional NAT gateway automatically expands across Availability Zones based on your workload presence. Unlike standard NAT gateways (referred to as zonal NAT gateways), which operate in a single Availability Zone, regional NAT gateways follow your workloads to provide automatic high availability.
 

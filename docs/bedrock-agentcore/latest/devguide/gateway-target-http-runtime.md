@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Amazon Bedrock AgentCore Runtime targets
-<a name="gateway-target-http-runtime"></a>
 
 You can add an Amazon Bedrock AgentCore Runtime agent as a gateway target. The gateway sends traffic directly to the runtime agent without aggregation or protocol translation. Unlike MCP targets that combine tool capabilities into a unified virtual MCP server, the AgentCore Runtime target forwards requests and responses between clients and the runtime agent without modification.
 

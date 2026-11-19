@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_VpcDestinati
 ---
 
 # VpcDestinationConfiguration
-<a name="API_VpcDestinationConfiguration"></a>
 
 The configuration information for a virtual private cloud (VPC) destination.
 

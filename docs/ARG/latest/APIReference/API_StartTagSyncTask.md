@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_StartTagSync
 ---
 
 # StartTagSyncTask
-<a name="API_StartTagSyncTask"></a>
 
 Creates a new tag-sync task to onboard and sync resources tagged with a specific tag key-value pair to an application. To start a tag-sync task, you need a [resource tagging role](https://docs.aws.amazon.com/servicecatalog/latest/arguide/app-tag-sync.html#tag-sync-role). The resource tagging role grants permissions to tag and untag applications resources and must include a trust policy that allows Resource Groups to assume the role and perform resource tagging tasks on your behalf.
 

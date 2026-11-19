@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Switch
 ---
 
 # SwitchoverBlueGreenDeployment
-<a name="API_SwitchoverBlueGreenDeployment"></a>
 
 Switches over a blue/green deployment.
 

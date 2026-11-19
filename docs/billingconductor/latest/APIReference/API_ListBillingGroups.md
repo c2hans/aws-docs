@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListBillingGroups
-<a name="API_ListBillingGroups"></a>
 
 A paginated call to retrieve a list of billing groups for the given billing period. If you don't provide a billing group, the current billing period is used.
 

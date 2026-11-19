@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/resourcepoli
 ---
 
 # GetResourcePolicy
-<a name="resourcepolicy-resourcearn"></a>
 
 Returns the current resource policy for a cluster. You can use this information, for example, to verify that permissions in AWS RAM are set up correctly.
 

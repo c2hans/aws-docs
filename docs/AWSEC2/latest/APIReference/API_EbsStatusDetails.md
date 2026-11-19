@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EbsStatus
 ---
 
 # EbsStatusDetails
-<a name="API_EbsStatusDetails"></a>
 
 Describes the attached EBS status check for an instance.
 

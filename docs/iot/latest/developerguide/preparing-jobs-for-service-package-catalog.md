@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/preparing-jobs
 ---
 
 # Preparing AWS IoT Jobs
-<a name="preparing-jobs-for-service-package-catalog"></a>
 
 AWS IoT Device Management Software Package Catalog extends AWS IoT Jobs through substitution parameters, and integration with AWS IoT fleet indexing, dynamic thing groups, and the AWS IoT thing’s reserved named shadow.
 

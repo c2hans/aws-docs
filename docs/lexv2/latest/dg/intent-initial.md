@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/intent-initial.html
 ---
 
 # Initial response
-<a name="intent-initial"></a>
 
 The initial response is sent to the user after Amazon Lex V2 determines the intent and before it starts to elicit slot values. You can use this response to inform the user of the intent that was recognized and to prepare them for the information that you collect to fulfill the intent.
 

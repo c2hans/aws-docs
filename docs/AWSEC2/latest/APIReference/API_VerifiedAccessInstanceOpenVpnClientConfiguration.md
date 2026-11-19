@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessInstanceOpenVpnClientConfiguration
-<a name="API_VerifiedAccessInstanceOpenVpnClientConfiguration"></a>
 
 Describes a set of routes.
 

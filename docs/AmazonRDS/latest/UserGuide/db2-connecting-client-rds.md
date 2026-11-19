@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-connectin
 ---
 
 # Connecting a client machine to an Amazon RDS for Db2 DB instance
-<a name="db2-connecting-client-rds"></a>
 
 To use any of the native Db2 tools to move data from a Db2 database to an Amazon RDS for Db2 database, you must first connect your client machine to an RDS for Db2 DB instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/b
 ---
 
 # Links to Amazon EMR on EKS best practices guides on GitHub
-<a name="best-practices"></a>
 
 We've built the [Amazon EMR on EKS Best Practices Guide](https://aws.github.io/aws-emr-containers-best-practices/) using open source community collaboration so that we can iterate quickly and provide recommendations for aspects of creating and running a virtual cluster. We recommend that you use the [Amazon EMR on EKS best practices guide](https://aws.github.io/aws-emr-containers-best-practices/) for the sections. Choose the links in each section to go to the GitHub site.
 

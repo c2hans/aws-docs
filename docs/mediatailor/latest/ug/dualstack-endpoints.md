@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/dualstack-endpoint
 ---
 
 # Dual-stack (IPv6) endpoints for AWS Elemental MediaTailor
-<a name="dualstack-endpoints"></a>
 
 AWS Elemental MediaTailor supports dual-stack endpoints that you can use to connect over either IPv4 or IPv6. These endpoints are functionally equivalent to the standard IPv4-only endpoints. The service behavior is identical, and only the network transport layer differs.
 

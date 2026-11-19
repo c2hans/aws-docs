@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/S3-bucket
 ---
 
 # Edit an Amazon S3 bucket
-<a name="S3-buckets-edit"></a>
 
 1. Select an S3 bucket in the S3 buckets list.
 

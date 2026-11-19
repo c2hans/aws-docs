@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_G
 ---
 
 # GatewayInfo
-<a name="API_GatewayInfo"></a>
 
 Describes a gateway object.
 

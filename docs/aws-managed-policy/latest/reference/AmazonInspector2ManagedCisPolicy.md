@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonInspector2ManagedCisPolicy
-<a name="AmazonInspector2ManagedCisPolicy"></a>
 
 **Description**: This is a managed policy that customer should attach to their roles to communicate with inspector service for CIS scans
 

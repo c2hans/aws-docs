@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_Scenario_S
 ---
 
 # Verify an email identity and send messages with Amazon SES using an AWS SDK
-<a name="ses_example_ses_Scenario_SendEmail_section"></a>
 
 The following code example shows how to:
 + Add and verify an email address with Amazon SES.

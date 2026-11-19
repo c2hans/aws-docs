@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FunctionParameter
-<a name="API_agent-runtime_FunctionParameter"></a>
 
 Contains information about a parameter of the function.
 

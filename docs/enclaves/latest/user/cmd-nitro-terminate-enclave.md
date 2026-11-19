@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/cmd-nitro-terminate
 ---
 
 # nitro-cli terminate-enclave
-<a name="cmd-nitro-terminate-enclave"></a>
 
 Terminates a specific enclave or all enclaves owned by the current user.
 

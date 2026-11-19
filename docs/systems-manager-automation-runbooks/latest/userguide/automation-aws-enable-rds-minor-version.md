@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableMinorVersionUpgradeOnRDSDBInstance`
-<a name="automation-aws-enable-rds-minor-version"></a>
 
  **Description**
 

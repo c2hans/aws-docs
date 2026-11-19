@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/TO_DATE
 ---
 
 # TO\_DATE function
-<a name="TO_DATE_function"></a>
 
 TO\_DATE converts a date represented by a character string to a DATE data type.
 

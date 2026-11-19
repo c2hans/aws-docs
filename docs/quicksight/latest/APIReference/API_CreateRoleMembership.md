@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateRoleMembership
-<a name="API_CreateRoleMembership"></a>
 
 Use `CreateRoleMembership` to add an existing Quick Sight group to an existing role.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/livechatai-connection-opt
 ---
 
 # LiveChatAI connection options
-<a name="livechatai-connection-options"></a>
 
 The following are connection options for LiveChatAI:
 + `ENTITY_NAME` – (Required) Used for Read. The entity path of the LiveChatAI object to read. For `contacts`, `conversations`, `ai-suggestions`, and `data-sources`, append the agent ID as described in [Reading from LiveChatAI entities](livechatai-reading-from-entities.md).

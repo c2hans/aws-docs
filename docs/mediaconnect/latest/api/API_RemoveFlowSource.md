@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RemoveFlowSo
 ---
 
 # RemoveFlowSource
-<a name="API_RemoveFlowSource"></a>
 
  Removes a source from an existing flow. This request can be made only if there is more than one source on the flow.
 

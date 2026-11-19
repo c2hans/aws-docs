@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrat
 ---
 
 # How Amazon Aurora uses AWS Secrets Manager
-<a name="integrating-AUR"></a>
 
 Amazon Aurora is a fully managed relational database engine that's compatible with MySQL and PostgreSQL.
 

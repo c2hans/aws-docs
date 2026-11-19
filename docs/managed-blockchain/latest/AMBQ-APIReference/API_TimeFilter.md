@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # TimeFilter
-<a name="API_TimeFilter"></a>
 
 This container is used to specify a time frame.
 

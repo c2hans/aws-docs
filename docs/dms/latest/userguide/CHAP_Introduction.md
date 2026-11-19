@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Introduction.h
 ---
 
 # AWS DMS Terminology and concepts
-<a name="CHAP_Introduction"></a>
 
 AWS Database Migration Service (AWS DMS) is a web service that you can use to migrate data from a source data store to a target data store. These two data stores are called endpoints. You can migrate between source and target endpoints that use the same database engine, such as from an Oracle database to an Oracle database. You can also migrate between source and target endpoints that use different database engines, such as from an Oracle database to a PostgreSQL database. The only requirement to use AWS DMS is that one of your endpoints must be on an AWS service. You can't use AWS DMS to migrate from an on-premises database to another on-premises database.
 

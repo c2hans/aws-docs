@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # AWS DMS
-<a name="aws-database-migration-service"></a>
 
 AWS Database Migration Service (AWS DMS) is a managed service that helps you move data to the AWS Cloud easily and securely. If your database is relatively small and your application can tolerate a moderate level of downtime, then AWS DMS is a migration option worth considering. You can use AWS DMS even if you have minimal downtime requirements. This is because AWS DMS offers full load and continuous replication support.
 

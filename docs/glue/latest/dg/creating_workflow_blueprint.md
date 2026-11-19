@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating_workflow_bluepri
 ---
 
 # Creating a workflow from a blueprint in AWS Glue
-<a name="creating_workflow_blueprint"></a>
 
 You can create an AWS Glue workflow manually, adding one component at a time, or you can create a workflow from an AWS Glue [blueprint](blueprints-overview.md). AWS Glue includes blueprints for common use cases. Your AWS Glue developers can create additional blueprints.
 

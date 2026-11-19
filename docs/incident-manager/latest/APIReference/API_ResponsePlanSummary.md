@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # ResponsePlanSummary
-<a name="API_ResponsePlanSummary"></a>
 
 Details of the response plan that are used when creating an incident.
 

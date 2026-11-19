@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Add an Internet Monitor monitor with CloudFront
-<a name="CloudWatch-IM-get-started.cf-monitor"></a>
 
 On the metrics dashboard for a distribution in Amazon CloudFront console, you can set up additional monitoring for a distribution in Internet Monitor. You can add the distribution to an existing monitor, or you can create a new monitor for the distribution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Amazon OpenSearch Memory API contains several data types that various actions use. This section describes each data type in detail.
 

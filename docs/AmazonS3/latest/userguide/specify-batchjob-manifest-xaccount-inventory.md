@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/specify-batchj
 ---
 
 # Using an inventory report to copy objects across AWS accounts
-<a name="specify-batchjob-manifest-xaccount-inventory"></a>
 
 You can use Amazon S3 Batch Operations to perform large-scale batch operations on Amazon S3 objects. You can use S3 Batch Operations to create a **Copy** (`CopyObject`) job to copy objects within the same account or to a different destination account.
 

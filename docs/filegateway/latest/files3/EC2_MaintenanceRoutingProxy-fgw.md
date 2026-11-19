@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/EC2_Maintenanc
 ---
 
 # Routing your gateway deployed on Amazon EC2 through an HTTP proxy
-<a name="EC2_MaintenanceRoutingProxy-fgw"></a>
 
 Storage Gateway supports the configuration of a Socket Secure version 5 (SOCKS5) proxy between your gateway deployed on Amazon EC2 and AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCREL06-BP01 Use AWS Health to receive EC2 instance retirement notifications and scheduled events on Outposts that may require instance failover ahead of time
-<a name="drhcrel06-bp01"></a>
 
  Configure AWS Health event monitoring and maintain current operations contact information while ensuring adequate capacity to minimize impact during maintenance activities.
 

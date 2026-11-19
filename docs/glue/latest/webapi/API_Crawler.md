@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Crawler.html
 ---
 
 # Crawler
-<a name="API_Crawler"></a>
 
 Specifies a crawler program that examines a data source and uses classifiers to try to determine its schema. If successful, the crawler records metadata concerning the data source in the AWS Glue Data Catalog.
 

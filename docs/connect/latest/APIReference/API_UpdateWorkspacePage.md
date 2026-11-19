@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateWo
 ---
 
 # UpdateWorkspacePage
-<a name="API_UpdateWorkspacePage"></a>
 
 Updates the configuration of a page in a workspace, including the associated view and input data.
 

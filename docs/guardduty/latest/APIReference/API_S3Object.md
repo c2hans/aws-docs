@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_S3Obje
 ---
 
 # S3Object
-<a name="API_S3Object"></a>
 
 Contains information about the Amazon S3 object.
 

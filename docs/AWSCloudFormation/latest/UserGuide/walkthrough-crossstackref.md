@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/walkt
 ---
 
 # Refer to resource outputs in another CloudFormation stack
-<a name="walkthrough-crossstackref"></a>
 
 This walkthrough shows you how to reference outputs from one CloudFormation stack within another stack to create more modular and reusable templates.
 

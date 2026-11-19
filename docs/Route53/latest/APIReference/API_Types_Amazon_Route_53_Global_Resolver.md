@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Types_Am
 ---
 
 # Amazon Route 53 Global Resolver
-<a name="API_Types_Amazon_Route_53_Global_Resolver"></a>
 
 The following data types are supported by Amazon Route 53 Global Resolver:
 +  [AccessSourcesItem](API_route53globalresolver_AccessSourcesItem.md)

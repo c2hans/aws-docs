@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Con
 ---
 
 # ContainerTaskConfiguration
-<a name="API_ContainerTaskConfiguration"></a>
 
 Configuration for a container task, including the container image, IAM role, and compute settings.
 

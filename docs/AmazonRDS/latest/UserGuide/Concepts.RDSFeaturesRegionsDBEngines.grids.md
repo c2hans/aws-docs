@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDSF
 ---
 
 # Supported features in Amazon RDS by AWS Region and DB engine
-<a name="Concepts.RDSFeaturesRegionsDBEngines.grids"></a>
 
 Support for Amazon RDS features and options varies across AWS Regions and specific versions of each DB engine. To identify RDS DB engine version support and availability in a given AWS Region, you can use the following sections.
 

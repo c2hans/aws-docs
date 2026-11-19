@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emulator/latest/userguide/versioning.htm
 ---
 
 # Versions and compatibility in AWS Emulator
-<a name="versioning"></a>
 
 We aim to keep breaking changes rare, so that your tests keep working when you upgrade. This topic explains version numbers, what you can rely on, and how fidelity fixes can change your test results.
 

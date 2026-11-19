@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/prereqs-c
 ---
 
 # Prerequisites to create a subscriber with data access in Security Lake
-<a name="prereqs-creating-subscriber"></a>
 
 You must complete the following prerequisites before you can create a subscriber with data access in Security Lake.
 

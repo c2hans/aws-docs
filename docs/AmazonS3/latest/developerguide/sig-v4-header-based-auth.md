@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/sig-v4-he
 ---
 
 # Signature Calculations for the Authorization Header: Transferring Payload in a Single Chunk (AWS Signature Version 4)
-<a name="sig-v4-header-based-auth"></a>
 
 When using the `Authorization` header to authenticate requests, the header value includes, among other things, a signature. The signature calculations vary depending on the choice you make for transferring the payload ([Overview](sigv4-auth-using-authorization-header.md#sigv4-auth-header-overview)). This section explains signature calculations when you choose to transfer the payload in a single chunk. The example section (see [Examples: Signature Calculations](#example-signature-calculations)) shows signature calculations and resulting `Authorization` headers that you can use as a test suite to verify your code.
 

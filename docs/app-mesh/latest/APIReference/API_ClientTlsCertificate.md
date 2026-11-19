@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ClientT
 ---
 
 # ClientTlsCertificate
-<a name="API_ClientTlsCertificate"></a>
 
 An object that represents the client's certificate.
 

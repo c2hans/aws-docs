@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-common-type
 ---
 
 # Pagination
-<a name="acxd-common-types-pagination"></a>
 
 ## nextToken
 <a name="acxd-common-types-pagination-nexttoken"></a>

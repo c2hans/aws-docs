@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ListPurchaseOptions
-<a name="API_marketplace-discovery_ListPurchaseOptions"></a>
 
 Returns the purchase options (offers and offer sets) available to the buyer. You can filter results by product, seller, purchase option type, visibility scope, and availability status.
 

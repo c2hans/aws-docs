@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/get-event.html
 ---
 
 # Get event
-<a name="get-event"></a>
 
 Get a list of the inputs in the specified event.
 

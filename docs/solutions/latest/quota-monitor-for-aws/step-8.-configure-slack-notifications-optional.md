@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 ---
 
 # Step 8. Configure Slack notifications (optional)
-<a name="step-8.-configure-slack-notifications-optional"></a>
 
 1. Navigate to your workspace’s Slack app.
 

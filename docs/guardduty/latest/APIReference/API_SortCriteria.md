@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_SortCr
 ---
 
 # SortCriteria
-<a name="API_SortCriteria"></a>
 
 Contains information about the criteria used for sorting findings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_R
 ---
 
 # RotateSecret
-<a name="API_RotateSecret"></a>
 
 Configures and starts the asynchronous process of rotating the secret. For information about rotation, see [Rotate secrets](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html) in the *Secrets Manager User Guide*. If you include the configuration parameters, the operation sets the values for the secret and then immediately starts a rotation. If you don't include the configuration parameters, the operation starts a rotation with the values already stored in the secret.
 

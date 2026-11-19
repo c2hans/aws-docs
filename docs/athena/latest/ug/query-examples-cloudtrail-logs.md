@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/query-examples-cloudtra
 ---
 
 # Example CloudTrail log queries
-<a name="query-examples-cloudtrail-logs"></a>
 
 The following example shows a portion of a query that returns all anonymous (unsigned) requests from the table created for CloudTrail event logs. This query selects those requests where `useridentity.accountid` is anonymous, and `useridentity.arn` is not specified:
 

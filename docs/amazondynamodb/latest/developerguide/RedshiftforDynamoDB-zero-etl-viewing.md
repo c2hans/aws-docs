@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Red
 ---
 
 # Viewing DynamoDB zero-ETL integrations with Amazon Redshift
-<a name="RedshiftforDynamoDB-zero-etl-viewing"></a>
 
  You can view the details of a zero-ETL integration to see its configuration information and current status.
 

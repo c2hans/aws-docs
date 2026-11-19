@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Pr
 ---
 
 # ProfileDetail
-<a name="API_ProfileDetail"></a>
 
 The state of the profile after a read or write operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Cold Chain Logistics Powered by Mendix: Mendix Cloud
-<a name="cold-chain-logistics-mendix-cloud"></a>
 
 Publication date: **April 29, 2022 ([Diagram history](#ccm-cloud-history))**
 

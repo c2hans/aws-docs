@@ -7,7 +7,6 @@ AWS Tools for PowerShell V4 has reached end of support.
 We recommend that you migrate to [AWS Tools for PowerShell V5](https://docs.aws.amazon.com/powershell/v5/userguide/). For additional details and information on how to migrate, please refer to our [end of support announcement](https://aws.amazon.com/blogs/developer/aws-tools-for-powershell-v4-end-of-support-announcement/).
 
 # Shared Credentials in AWS Tools for PowerShell
-<a name="shared-credentials-in-aws-powershell"></a>
 
 The Tools for Windows PowerShell support the use of the AWS shared credentials file, similarly to the AWS CLI and other AWS SDKs. The Tools for Windows PowerShell now support reading and writing of `basic`, `session`, and `assume role` credential profiles to both the .NET credentials file and the AWS shared credential file. This functionality is enabled by a new `Amazon.Runtime.CredentialManagement` namespace.
 

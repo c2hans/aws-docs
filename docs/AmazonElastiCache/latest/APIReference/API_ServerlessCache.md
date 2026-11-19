@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ServerlessCache
-<a name="API_ServerlessCache"></a>
 
 The resource representing a serverless cache.
 
@@ -57,6 +56,11 @@ Required: No
  ** FullEngineVersion **
 The name and version number of the engine the serverless cache is compatible with.
 Type: String
+Required: No
+
+ ** Integrations.Integration.N **
+Configured integrations and their status.
+Type: Array of [Integration](API_Integration.md) objects
 Required: No
 
  ** KmsKeyId **

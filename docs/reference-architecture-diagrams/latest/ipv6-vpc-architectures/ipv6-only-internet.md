@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # Internet Connectivity for IPv6-only Subnets in a Dual Stack Amazon VPC
-<a name="ipv6-only-internet"></a>
 
 Publication date: **June 23, 2022 ([Diagram history](#ipv6-3-diagram-history))**
 

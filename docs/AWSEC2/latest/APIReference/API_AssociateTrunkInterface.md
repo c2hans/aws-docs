@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Associate
 ---
 
 # AssociateTrunkInterface
-<a name="API_AssociateTrunkInterface"></a>
 
 Associates a branch network interface with a trunk network interface.
 

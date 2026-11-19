@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_Administrati
 ---
 
 # AdministrativeAction
-<a name="API_AdministrativeAction"></a>
 
 Describes a specific Amazon FSx administrative action for the current Windows, Lustre, OpenZFS, or ONTAP file system or volume.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Re
 ---
 
 # RevisionDestinationEntry
-<a name="API_RevisionDestinationEntry"></a>
 
 The destination where the assets in the revision will be exported.
 

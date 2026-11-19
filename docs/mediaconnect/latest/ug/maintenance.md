@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/maintenance.html
 ---
 
 # Maintenance in MediaConnect
-<a name="maintenance"></a>
 
 AWS Elemental MediaConnect routinely performs maintenance on underlying systems for security, reliability, and operational performance. These maintenance activities include actions such as patching the operating system, updating drivers, and installing software updates.
 

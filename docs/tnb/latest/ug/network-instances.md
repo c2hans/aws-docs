@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/network-instances.html
 ---
 
 # Network instances for AWS TNB
-<a name="network-instances"></a>
 
 A network instance is a single network created in AWS TNB that can be deployed.
 

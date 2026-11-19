@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/concepts-view-e
 ---
 
 # Viewing execution details in the Step Functions console
-<a name="concepts-view-execution-details"></a>
 
 You can view in-progress and past executions of workflows in the *Executions* section of the Step Functions console.
 

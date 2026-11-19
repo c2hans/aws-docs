@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_V
 ---
 
 # VmwareTag
-<a name="API_BGW_VmwareTag"></a>
 
 A VMware tag is a tag attached to a specific virtual machine. A [tag](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_BGW_Tag.html) is a key-value pair you can use to manage, filter, and search for your resources.
 

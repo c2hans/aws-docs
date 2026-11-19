@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # EmvCommonAttributes
-<a name="API_EmvCommonAttributes"></a>
 
 Parameters to derive the confidentiality and integrity keys for an Emv common payment card.
 

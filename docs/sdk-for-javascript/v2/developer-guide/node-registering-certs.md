@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/no
 The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
 
 # Registering Certificate Bundles in Node.js
-<a name="node-registering-certs"></a>
 
 The default trust stores for Node.js include the certificates needed to access AWS services. In some cases, it might be preferable to include only a specific set of certificates.
 

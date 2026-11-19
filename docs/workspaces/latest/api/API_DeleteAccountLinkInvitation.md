@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DeleteAccountL
 ---
 
 # DeleteAccountLinkInvitation
-<a name="API_DeleteAccountLinkInvitation"></a>
 
 Deletes the account link invitation.
 

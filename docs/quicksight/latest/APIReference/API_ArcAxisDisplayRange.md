@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ArcAx
 ---
 
 # ArcAxisDisplayRange
-<a name="API_ArcAxisDisplayRange"></a>
 
 The arc axis range of a `GaugeChartVisual`.
 

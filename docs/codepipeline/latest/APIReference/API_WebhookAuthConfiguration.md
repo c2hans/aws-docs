@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Web
 ---
 
 # WebhookAuthConfiguration
-<a name="API_WebhookAuthConfiguration"></a>
 
 The authentication applied to incoming webhook trigger requests.
 

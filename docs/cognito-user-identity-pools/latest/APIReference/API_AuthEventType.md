@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AuthEventType
-<a name="API_AuthEventType"></a>
 
 One authentication event that Amazon Cognito logged in a user pool with threat protection active. Contains user and device metadata and a risk assessment from your user pool.
 

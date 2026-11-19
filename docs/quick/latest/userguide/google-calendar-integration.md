@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/google-calendar-i
 ---
 
 # Google Calendar integration
-<a name="google-calendar-integration"></a>
 
 With the Google Calendar connector, you can access Google Calendar directly in AWS Quick through natural language. You can create and update events, check availability, manage calendars, and organize attendees without leaving AWS Quick.
 

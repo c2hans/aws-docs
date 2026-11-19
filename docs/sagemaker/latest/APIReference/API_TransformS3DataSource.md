@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Transf
 ---
 
 # TransformS3DataSource
-<a name="API_TransformS3DataSource"></a>
 
 Describes the S3 data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Reserve
 ---
 
 # ReservedNodeOffering
-<a name="API_ReservedNodeOffering"></a>
 
 Describes a reserved node offering.
 

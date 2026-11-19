@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # Create AWS Glue connections (for administrators)
-<a name="sagemaker-sql-extension-datasources-glue-connection"></a>
 
 To use data sources with the SQL extension, administrators can set up AWS Glue connections for each data source. These connections store the necessary configuration details to access and interact with the data sources. Once the connections are created, and the [appropriate permissions](sagemaker-sql-extension-datasources-connection-permissions.md) are granted, the connections become visible to all users of the [Amazon SageMaker Studio spaces](studio-updated-spaces.md) that share the same execution role.
 
@@ -81,7 +80,7 @@ This section provides details on the secret and connection properties in JSON de
 #### Configure an AWS Glue connection for Amazon Redshift
 <a name="sagemaker-sql-extension-redshift-glue-connection-creation"></a>
 
-The SQL extension connects to data sources using custom AWS Glue connections. For general information on creating AWS Glue connections to connect a data source, see [Create AWS Glue connections (for administrators)](#sagemaker-sql-extension-datasources-glue-connection). The following example is a sample AWS Glue connection definition for connecting to Amazon Redshift.
+The SQL extension connects to data sources using custom AWS Glue connections. For general information on creating AWS Glue connections to connect a data source, see [Create AWS Glue connections (for administrators)](sagemaker-sql-extension-datasources-glue-connection.md). The following example is a sample AWS Glue connection definition for connecting to Amazon Redshift.
 
 Before creating a new connection, keep these recommendations in mind:
 + The properties within the `PythonProperties` key consist of stringified key-value pairs. Escape any double quotes used in the keys or values with a backslash (`\`) character.
@@ -115,7 +114,7 @@ This section provides details on the connection properties in JSON definition fi
 #### Configure an AWS Glue connection for Athena
 <a name="sagemaker-sql-extension-athena-glue-connection-creation"></a>
 
-The SQL extension connects to data sources using custom AWS Glue connections. For general information on creating AWS Glue connections to connect a data source, see [Create AWS Glue connections (for administrators)](#sagemaker-sql-extension-datasources-glue-connection). The following example is a sample AWS Glue connection definition for connecting to Athena.
+The SQL extension connects to data sources using custom AWS Glue connections. For general information on creating AWS Glue connections to connect a data source, see [Create AWS Glue connections (for administrators)](sagemaker-sql-extension-datasources-glue-connection.md). The following example is a sample AWS Glue connection definition for connecting to Athena.
 
 Before creating a new connection, keep these recommendations in mind:
 + The properties within the `ConnectionProperties` key consist of stringified key-value pairs. Escape any double quotes used in the keys or values with a backslash (`\`) character.
@@ -175,7 +174,7 @@ This section provides details on the secret and connection properties in JSON de
 #### Configure an AWS Glue connection for Snowflake
 <a name="sagemaker-sql-extension-snowflake-glue-connection-creation"></a>
 
-The SQL extension connects to data sources using custom AWS Glue connections. For general information on creating AWS Glue connections to connect a data source, see [Create AWS Glue connections (for administrators)](#sagemaker-sql-extension-datasources-glue-connection). The following example is a sample AWS Glue connection definition for connecting to Snowflake.
+The SQL extension connects to data sources using custom AWS Glue connections. For general information on creating AWS Glue connections to connect a data source, see [Create AWS Glue connections (for administrators)](sagemaker-sql-extension-datasources-glue-connection.md). The following example is a sample AWS Glue connection definition for connecting to Snowflake.
 
 Before creating a new connection, keep these recommendations in mind:
 + The properties within the `ConnectionProperties` key consist of stringified key-value pairs. Escape any double quotes used in the keys or values with a backslash (`\`) character.

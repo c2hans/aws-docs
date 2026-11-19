@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-use-cond
 ---
 
 # Using IAM policy conditions in Amazon EventBridge
-<a name="eb-use-conditions"></a>
 
 To grant permissions, you use the IAM policy language in a policy statement to specify the conditions when a policy should take effect. For example, you can have a policy that is applied only after a specific date.
 

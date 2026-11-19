@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/glo
 ---
 
 # Global tables core concepts
-<a name="globaltables-CoreConcepts"></a>
 
 The following sections describe the concepts and behaviors of global tables in Amazon DynamoDB
 

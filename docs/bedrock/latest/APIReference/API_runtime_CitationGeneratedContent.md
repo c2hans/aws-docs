@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # CitationGeneratedContent
-<a name="API_runtime_CitationGeneratedContent"></a>
 
 Contains the generated text content that corresponds to or is supported by a citation from a source document.
 

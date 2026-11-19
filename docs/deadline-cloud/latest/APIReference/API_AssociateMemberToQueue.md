@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AssociateMemberToQueue
-<a name="API_AssociateMemberToQueue"></a>
 
 Assigns a queue membership level to a member
 

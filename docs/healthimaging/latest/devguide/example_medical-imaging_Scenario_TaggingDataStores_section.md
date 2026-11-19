@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/example_me
 ---
 
 # Tagging a HealthImaging data store using an AWS SDK
-<a name="example_medical-imaging_Scenario_TaggingDataStores_section"></a>
 
 The following code examples show how to tag a HealthImaging data store.
 

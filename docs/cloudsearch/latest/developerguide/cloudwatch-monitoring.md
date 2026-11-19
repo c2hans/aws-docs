@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/cloudw
 ---
 
 # Monitoring an Amazon CloudSearch Domain with Amazon CloudWatch
-<a name="cloudwatch-monitoring"></a>
 
 Amazon CloudSearch automatically sends metrics to Amazon CloudWatch so that you can gather and analyze performance statistics. You can monitor these metrics by using the Amazon CloudSearch console, or by using the CloudWatch console, AWS CLI, or AWS SDKs. Each of your domain's search instances sends metrics to CloudWatch at one-minute intervals. The metrics are archived for two weeks; after that period, the data is discarded.
 

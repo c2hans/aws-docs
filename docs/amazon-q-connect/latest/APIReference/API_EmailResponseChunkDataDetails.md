@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # EmailResponseChunkDataDetails
-<a name="API_amazon-q-connect_EmailResponseChunkDataDetails"></a>
 
 Details of streaming chunk data for email responses including completion text and pagination tokens.
 

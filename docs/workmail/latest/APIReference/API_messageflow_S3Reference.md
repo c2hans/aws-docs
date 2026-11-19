@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workmail/latest/APIReference/API_message
 ---
 
 # S3Reference
-<a name="API_messageflow_S3Reference"></a>
 
 Amazon S3 object representing the updated message content, in MIME format.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyDisjointRuleSet
-<a name="API_AutomatedReasoningPolicyDisjointRuleSet"></a>
 
 Represents a set of rules that operate on completely separate variables, indicating they address different concerns or domains within the policy.
 

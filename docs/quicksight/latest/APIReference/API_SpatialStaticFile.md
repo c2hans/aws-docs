@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Spati
 ---
 
 # SpatialStaticFile
-<a name="API_SpatialStaticFile"></a>
 
 A static file that contains the geospatial data.
 

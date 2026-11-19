@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListLinkRoutin
 ---
 
 # ListLinkRoutingRules
-<a name="API_ListLinkRoutingRules"></a>
 
 Lists the routing rules for a link.
 

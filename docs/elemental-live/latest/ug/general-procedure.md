@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/general-procedu
 ---
 
 # General procedure
-<a name="general-procedure"></a>
 
 **Topics**
 + [Step A: Design the dynamic playlist](#step-design)

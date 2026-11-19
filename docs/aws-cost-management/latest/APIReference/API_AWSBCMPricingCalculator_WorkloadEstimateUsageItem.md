@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # WorkloadEstimateUsageItem
-<a name="API_AWSBCMPricingCalculator_WorkloadEstimateUsageItem"></a>
 
  Represents a usage item in a workload estimate.
 

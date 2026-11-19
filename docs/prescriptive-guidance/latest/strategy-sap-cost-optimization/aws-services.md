@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Using AWS services to identify cost optimization opportunities for SAP workloads
-<a name="aws-services"></a>
 
 ## Cost optimization process
 <a name="cost-optimization-process"></a>

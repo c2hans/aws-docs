@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ExternalE
 ---
 
 # ExternalEvaluation
-<a name="API_ExternalEvaluation"></a>
 
 Identifies an AWS resource and indicates whether it complies with the AWS Config rule that it was evaluated against.
 

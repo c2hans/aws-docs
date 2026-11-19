@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DescribeTrustStoreRevocations
-<a name="API_DescribeTrustStoreRevocations"></a>
 
 Describes the revocation files in use by the specified trust store or revocation files.
 

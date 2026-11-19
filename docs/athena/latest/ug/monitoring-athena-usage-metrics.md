@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/monitoring-athena-usage
 ---
 
 # Monitor Athena usage metrics with CloudWatch
-<a name="monitoring-athena-usage-metrics"></a>
 
 You can use CloudWatch usage metrics to provide visibility into your how your account uses resources by displaying your current service usage on CloudWatch graphs and dashboards.
 

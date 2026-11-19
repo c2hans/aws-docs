@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/tim
 ---
 
 # Computing time to live (TTL) in DynamoDB
-<a name="time-to-live-ttl-before-you-start"></a>
 
 A common way to implement TTL is to set an expiration time for items based on when they were created or last updated. This can be done by adding time to the `createdAt` and `updatedAt` timestamps. For example, the TTL for newly created items can be set to `createdAt` \+ 90 days. When the item is updated the TTL can be recalculated to `updatedAt` \+ 90 days.
 

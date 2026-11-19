@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # GetSpace
-<a name="API_GetSpace"></a>
 
 Returns a space's configuration and status.
 

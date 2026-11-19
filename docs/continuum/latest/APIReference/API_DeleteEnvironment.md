@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Delete
 ---
 
 # DeleteEnvironment
-<a name="API_DeleteEnvironment"></a>
 
 Deletes an environment and its associated resources.
 

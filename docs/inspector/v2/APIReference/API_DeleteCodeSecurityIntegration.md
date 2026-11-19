@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_DeleteCode
 ---
 
 # DeleteCodeSecurityIntegration
-<a name="API_DeleteCodeSecurityIntegration"></a>
 
 Deletes a code security integration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # SearchRasterDataCollection
-<a name="API_geospatial_SearchRasterDataCollection"></a>
 
 Allows you run image query on a specific raster data collection to get a list of the satellite imagery matching the selected filters.
 

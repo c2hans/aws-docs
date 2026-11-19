@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UsageA
 ---
 
 # UsageAccountResult
-<a name="API_UsageAccountResult"></a>
 
 Contains information on the total of usage based on account IDs.
 

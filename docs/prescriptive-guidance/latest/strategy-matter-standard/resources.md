@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS resources
 <a name="aws-resources"></a>

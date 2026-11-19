@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateEksAny
 ---
 
 # CreateEksAnywhereSubscription
-<a name="API_CreateEksAnywhereSubscription"></a>
 
 Creates an EKS Anywhere subscription. When a subscription is created, it is a contract agreement for the length of the term specified in the request. Licenses that are used to validate support are provisioned in AWS License Manager and the caller account is granted access to EKS Anywhere Curated Packages.
 

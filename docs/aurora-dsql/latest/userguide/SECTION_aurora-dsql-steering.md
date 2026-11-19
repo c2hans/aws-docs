@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/SECTION_aur
 ---
 
 # Aurora DSQL steering: Plugins, skills, and powers
-<a name="SECTION_aurora-dsql-steering"></a>
 
  Use the `databases-on-aws` plugin to give your AI coding agent guidance for Aurora DSQL development. The plugin includes the `dsql` skill, which helps with schema design, queries, migrations, and troubleshooting. Install the plugin in Claude Code, Codex, or Cursor. You can also use the Kiro Power or install the skill on its own.
 

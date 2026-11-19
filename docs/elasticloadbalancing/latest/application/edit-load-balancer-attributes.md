@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/
 ---
 
 # Edit attributes for your Application Load Balancer
-<a name="edit-load-balancer-attributes"></a>
 
 After you create an Application Load Balancer, you can edit its attributes.
 

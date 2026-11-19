@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/security_iam_id-based-pol
 ---
 
 # Identity-based policy examples for AWS Glue
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify AWS Glue resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

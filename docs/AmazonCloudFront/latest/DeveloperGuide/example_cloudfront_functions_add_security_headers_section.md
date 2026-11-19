@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Add HTTP security headers to a CloudFront Functions viewer response event
-<a name="example_cloudfront_functions_add_security_headers_section"></a>
 
 The following code example shows how to add HTTP security headers to a CloudFront Functions viewer response event.
 

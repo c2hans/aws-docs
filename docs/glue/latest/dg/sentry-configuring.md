@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sentry-configuring.html
 ---
 
 # Configuring Sentry
-<a name="sentry-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Sentry, you must meet the following requirements:
 

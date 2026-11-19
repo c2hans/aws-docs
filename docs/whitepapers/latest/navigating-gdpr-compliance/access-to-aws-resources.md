@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compl
 ---
 
 # Access to AWS Resources
-<a name="access-to-aws-resources"></a>
 
 To implement granular access to your AWS resources, customers can grant different levels of permissions to different people for different resources. For example, customers can allow only some users complete access to [Amazon EC2](https://aws.amazon.com/ec2/), [Amazon S3](https://aws.amazon.com/s3/), [Amazon DynamoDB](https://aws.amazon.com/dynamodb/), [Amazon Redshift](https://aws.amazon.com/redshift/), and other AWS Services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_ListGeoL
 ---
 
 # ListGeoLocations
-<a name="API_ListGeoLocations"></a>
 
 Retrieves a list of supported geographic locations.
 

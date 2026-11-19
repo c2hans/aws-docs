@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AcceleratorCapabilities
-<a name="API_AcceleratorCapabilities"></a>
 
 Provides information about the GPU accelerators used for jobs processed by a fleet.
 

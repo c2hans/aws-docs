@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/c
 ---
 
 # Creating a firewall in AWS Network Firewall
-<a name="creating-firewall"></a>
 
 You can create a firewall in Network Firewall to start using the protections you've defined in a firewall policy to protect a VPC.
 

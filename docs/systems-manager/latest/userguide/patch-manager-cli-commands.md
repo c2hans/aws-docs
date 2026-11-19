@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Working with Patch Manager resources using the AWS CLI
-<a name="patch-manager-cli-commands"></a>
 
 The section includes examples of AWS Command Line Interface (AWS CLI) commands that you can use to perform configuration tasks for Patch Manager.
 

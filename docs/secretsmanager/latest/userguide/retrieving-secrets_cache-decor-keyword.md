@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 ---
 
 # @InjectKeywordedSecretString
-<a name="retrieving-secrets_cache-decor-keyword"></a>
 
 This decorator expects a secret ID string and [SecretCache](retrieving-secrets_cache-ref-secretcache.md) as the first and second arguments. The remaining arguments map parameters from the wrapped function to JSON keys in the secret. The secret must contain a string in JSON structure.
 

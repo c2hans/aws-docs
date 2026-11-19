@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # EntityRecognizerSummary
-<a name="API_EntityRecognizerSummary"></a>
 
  Describes the information about an entity recognizer and its versions.
 

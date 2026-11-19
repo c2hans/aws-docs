@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # SearchFilter
-<a name="API_SearchFilter"></a>
 
 A filter for a fixture search. It is used in the filters array of a SearchFixtures request.
 

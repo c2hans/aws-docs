@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manage-access-
 ---
 
 # Manage access to Resource link tables
-<a name="manage-access-to-resource-link-tables"></a>
 
  In a cross-account access scenario in Lake Formation, to grant Select permission to a user, the user has to have Describe permission on the resource link since resource links are required for integrated AWS services like Amazon Athena and Amazon Redshift, and Select permission on the shared table to have read access to the underlying resource link data. Therefore, it is a two-step grant process.
 

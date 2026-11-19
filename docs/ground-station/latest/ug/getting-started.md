@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/getting-started
 ---
 
 # Get started
-<a name="getting-started"></a>
 
 Before you begin, you should familiarize yourself with the basic concepts in AWS Ground Station. For more information, see [How AWS Ground Station works](how-it-works.md).
 

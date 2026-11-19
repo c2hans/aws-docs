@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/viewing
 ---
 
 # Tutorial: List stored geofences
-<a name="viewing-geofences"></a>
 
 You can list geofences stored in a specified geofence collection using the Amazon Location console, the AWS CLI, or the Amazon Location APIs.
 

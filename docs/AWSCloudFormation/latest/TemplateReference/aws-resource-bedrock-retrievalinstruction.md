@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::RetrievalInstruction
-<a name="aws-resource-bedrock-retrievalinstruction"></a>
 
 Creates a new retrieval instruction. The retrieval instruction is usable once its status becomes ACTIVE. Use GetRetrievalInstruction to check whether it is ready.
 

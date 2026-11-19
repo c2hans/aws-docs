@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_L
 ---
 
 # ListRLSPolicies
-<a name="API_ListRLSPolicies"></a>
 
 Lists the row-level security policies in the Data Catalog.
 

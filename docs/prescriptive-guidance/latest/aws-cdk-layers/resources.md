@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-cdk-lay
 ---
 
 # Resources
-<a name="resources"></a>
 + [AWS CDK API Reference](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-construct-library.html)
 + [AWS CloudFormation resource specification](https://docs.aws.amazon.com/en_en/AWSCloudFormation/latest/UserGuide/cfn-resource-specification.html)
 + [AWS CDK constructs documentation](https://docs.aws.amazon.com/cdk/v2/guide/constructs.html)

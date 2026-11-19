@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/query
 ---
 
 # Concurrency and query queuing in Neptune Analytics
-<a name="query-concurrency-queuing"></a>
 
 When developing and tuning graph applications, it can be helpful to know the implications of sending parallel requests to an Neptune Analytics graph and how queries are being queued.
 

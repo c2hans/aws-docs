@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # LinuxSubscriptionsDiscoverySettings
-<a name="API_LinuxSubscriptionsDiscoverySettings"></a>
 
 Lists the settings defined for discovering Linux subscriptions.
 

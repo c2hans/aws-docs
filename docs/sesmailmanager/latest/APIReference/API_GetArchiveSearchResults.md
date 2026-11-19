@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_G
 ---
 
 # GetArchiveSearchResults
-<a name="API_GetArchiveSearchResults"></a>
 
 Returns the results of a completed email archive search job.
 

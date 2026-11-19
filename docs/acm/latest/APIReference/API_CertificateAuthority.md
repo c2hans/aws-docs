@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_CertificateA
 ---
 
 # CertificateAuthority
-<a name="API_CertificateAuthority"></a>
 
 Defines the certificate authority to use for an ACME endpoint.
 

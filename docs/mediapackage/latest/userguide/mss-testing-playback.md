@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/mss-testin
 ---
 
 # Testing MSS playback in AWS Elemental MediaPackage
-<a name="mss-testing-playback"></a>
 
 After creating your MSS endpoint in AWS Elemental MediaPackage, you need to test playback to ensure your content is properly delivered to viewers. This topic shows you how to test MSS playback using compatible players and tools. For information about creating MSS endpoints, see [Create an MSS manifest](endpoints-create.md#endpoints-ism). For information about planning your MSS implementation, see [Planning your MSS implementation](mss-overview.md#mss-features).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost06-
 ---
 
 # COST06-BP01 Perform cost modeling
-<a name="cost06-bp01"></a>
 
  Cost modeling estimates the cost of a workload and each of its components under expected load before you commit to a configuration. Model the components that carry the most cost or risk first, so the effort matches the potential return.
 

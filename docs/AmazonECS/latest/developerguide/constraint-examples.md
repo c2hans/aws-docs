@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/constrai
 ---
 
 # Example Amazon ECS task placement constraints
-<a name="constraint-examples"></a>
 
 The following are task placement constraint examples.
 

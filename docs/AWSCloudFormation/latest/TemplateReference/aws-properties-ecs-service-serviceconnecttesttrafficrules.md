@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECS::Service ServiceConnectTestTrafficRules
-<a name="aws-properties-ecs-service-serviceconnecttesttrafficrules"></a>
 
 The test traffic routing configuration for Amazon ECS blue/green deployments. This configuration allows you to define rules for routing specific traffic to the new service revision during the deployment process, allowing for safe testing before full production traffic shift.
 

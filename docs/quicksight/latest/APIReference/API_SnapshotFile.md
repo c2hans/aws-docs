@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Snaps
 ---
 
 # SnapshotFile
-<a name="API_SnapshotFile"></a>
 
 A structure that contains the information for the snapshot that you want to generate. This information is provided by you when you start a new snapshot job.
 

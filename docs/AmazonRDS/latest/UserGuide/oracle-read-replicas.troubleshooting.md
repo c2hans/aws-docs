@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-read-r
 ---
 
 # Troubleshooting RDS for Oracle replicas
-<a name="oracle-read-replicas.troubleshooting"></a>
 
 This section describes possible replication problems and solutions.
 

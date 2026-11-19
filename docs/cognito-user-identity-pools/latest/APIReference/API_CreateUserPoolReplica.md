@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # CreateUserPoolReplica
-<a name="API_CreateUserPoolReplica"></a>
 
 Creates a replica of an existing user pool in a specified AWS Region. The replica enables multi-region replication for high availability and disaster recovery. To create a replica, you must have permissions to create user pools in the target Region.
 

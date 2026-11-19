@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/change-requ
 ---
 
 # Change requests in AWS Clean Rooms
-<a name="change-requests"></a>
 
 Change requests allow you to propose changes to existing collaboration settings for approval by other collaboration members. With change requests, you can submit a request to add new members, update member abilities, update ML member abilities, update payer configurations, and modify collaboration auto-approval settings. All collaboration members must approve change requests for the proposed changes to take effect.
 

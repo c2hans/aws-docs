@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/performance-testing/sca
 ---
 
 # Scaling to Production-Grade Testing
-<a name="scaling-to-production-grade"></a>
 
 Moving from "my first load test" to "production-grade performance engineering" requires addressing multi-region distribution, cost optimization, organizational governance, and pre-event readiness.
 

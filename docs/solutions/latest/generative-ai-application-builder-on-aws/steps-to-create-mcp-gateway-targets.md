@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Steps to create different MCP Gateway Targets
-<a name="steps-to-create-mcp-gateway-targets"></a>
 
 Amazon Bedrock AgentCore Gateway allows you to transform existing AWS services and APIs into MCP tools that can be used by your agents. The Gateway supports multiple target types, enabling you to integrate various backend services seamlessly.
 

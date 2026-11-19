@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionTypeId
-<a name="API_ActionTypeId"></a>
 
 Represents information about an action type.
 

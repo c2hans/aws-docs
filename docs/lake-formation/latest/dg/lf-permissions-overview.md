@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/lf-permissions-
 ---
 
 # Overview of Lake Formation permissions
-<a name="lf-permissions-overview"></a>
 
 There are two main types of permissions in AWS Lake Formation:
 + Metadata access – Permissions on Data Catalog resources (*Data Catalog permissions*).

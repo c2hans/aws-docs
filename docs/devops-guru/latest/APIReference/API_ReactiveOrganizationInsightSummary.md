@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Reac
 ---
 
 # ReactiveOrganizationInsightSummary
-<a name="API_ReactiveOrganizationInsightSummary"></a>
 
 Information about a reactive insight. This object is returned by `DescribeInsight`.
 

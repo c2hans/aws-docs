@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SearchTra
 ---
 
 # SearchTransitGatewayRoutes
-<a name="API_SearchTransitGatewayRoutes"></a>
 
 Searches for routes in the specified transit gateway route table.
 

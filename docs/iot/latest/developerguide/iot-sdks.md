@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-sdks.html
 ---
 
 # AWS IoT Device SDKs, Mobile SDKs, and AWS IoT Device Client
-<a name="iot-sdks"></a>
 
 This page summarizes the AWS IoT Device SDKs, open-source libraries, developer guides, sample apps, and porting guides to help you build innovative IoT solutions with AWS IoT and your choice of hardware platforms.
 

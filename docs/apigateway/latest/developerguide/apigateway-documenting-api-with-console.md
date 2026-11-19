@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Publish API documentation using the API Gateway console
-<a name="apigateway-documenting-api-with-console"></a>
 
 The following procedure describes how to publish a documentation version.
 

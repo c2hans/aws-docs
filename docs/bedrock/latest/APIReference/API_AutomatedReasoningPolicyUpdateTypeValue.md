@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyUpdateTypeValue
-<a name="API_AutomatedReasoningPolicyUpdateTypeValue"></a>
 
 Represents a modification to a value within an existing custom type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ass
 ---
 
 # AssociateWirelessDeviceWithThing
-<a name="API_AssociateWirelessDeviceWithThing"></a>
 
 Associates a wireless device with a thing.
 

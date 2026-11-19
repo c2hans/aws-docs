@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/integrating-n
 ---
 
 # Integrated natural language processing (NLP) for HealthLake
-<a name="integrating-nlp"></a>
 
 AWS HealthLake provides integrated natural language processing (NLP) libraries for parsing, identifying, and mapping unstructured data stored in FHIR [`DocumentReference`](https://hl7.org/fhir/R4/documentreference.html) resource types.
 

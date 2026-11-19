@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_RoleDetail.h
 ---
 
 # RoleDetail
-<a name="API_RoleDetail"></a>
 
 Contains information about an IAM role, including all of the role's policies.
 

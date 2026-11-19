@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPrivateCAUser
-<a name="AWSPrivateCAUser"></a>
 
 **Description**: Provides certificate user access to AWS Private Certificate Authority
 

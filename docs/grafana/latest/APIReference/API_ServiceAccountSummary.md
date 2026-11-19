@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_ServiceA
 ---
 
 # ServiceAccountSummary
-<a name="API_ServiceAccountSummary"></a>
 
 A structure that contains the information about one service account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTSiteWiseMonitorPortalAccess
-<a name="AWSIoTSiteWiseMonitorPortalAccess"></a>
 
 **Description**: This policy grants permissions to access AWS IoT SiteWise assets and asset data, create AWS IoT SiteWise Monitor resources, and list AWS SSO users.
 

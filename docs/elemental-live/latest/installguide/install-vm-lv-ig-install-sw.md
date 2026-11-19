@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/installguide/insta
 ---
 
 # Step C: Install the Elemental Live software
-<a name="install-vm-lv-ig-install-sw"></a>
 
 **Topics**
 + [About Installer Options](#install-live-vm-about-options)

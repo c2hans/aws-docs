@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_CreateC
 ---
 
 # CreateConfigurationPolicy
-<a name="API_CreateConfigurationPolicy"></a>
 
  Creates a configuration policy with the defined configuration. Only the AWS Security Hub CSPM delegated administrator can invoke this operation from the home Region.
 

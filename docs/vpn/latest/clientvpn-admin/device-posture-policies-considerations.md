@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 ---
 
 # Considerations when writing policies
-<a name="device-posture-policies-considerations"></a>
 
 Keep the following in mind when you write authorization policies.
 + A policy document can be a maximum of 10,000 bytes.

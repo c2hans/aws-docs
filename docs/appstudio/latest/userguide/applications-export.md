@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/applications-
 ---
 
 # Exporting applications
-<a name="applications-export"></a>
 
 You can export a snapshot of your application to share it with other App Studio instances. When you export an app, a snapshot is created from the Development environment of the app, and an import code is generated. The import code can then be used to import the application into other App Studio instances, where it can be viewed and built.
 

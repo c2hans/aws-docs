@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StartColumnStatis
 ---
 
 # StartColumnStatisticsTaskRunSchedule
-<a name="API_StartColumnStatisticsTaskRunSchedule"></a>
 
 Starts a column statistics task run schedule.
 

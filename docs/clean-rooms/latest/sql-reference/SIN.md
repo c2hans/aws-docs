@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/SIN.htm
 ---
 
 # SIN function
-<a name="SIN"></a>
 
 SIN is a trigonometric function that returns the sine of a number. The return value is between `-1` and `1`.
 

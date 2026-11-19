@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_serverless_MSK_
 ---
 
 # Invoke a Lambda function from an Amazon MSK trigger
-<a name="example_serverless_MSK_Lambda_section"></a>
 
 The following code examples show how to implement a Lambda function that receives an event triggered by receiving records from an Amazon MSK cluster. The function retrieves the MSK payload and logs the record contents.
 

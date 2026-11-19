@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Cancel
 ---
 
 # CancelDBCapacityReservation
-<a name="API_CancelDBCapacityReservation"></a>
 
 Cancels a DB capacity reservation. Amazon RDS changes the state of the reservation to `cancelled` and stops reporting available capacity for it. Amazon RDS then releases the reserved capacity.
 

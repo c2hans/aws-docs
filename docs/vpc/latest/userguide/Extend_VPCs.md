@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/Extend_VPCs.html
 ---
 
 # Extend a VPC to a Local Zone, Wavelength Zone, or Outpost
-<a name="Extend_VPCs"></a>
 
 You can host VPC resources, such as subnets, in multiple locations world-wide. These locations are composed of Regions, Availability Zones, Local Zones, and Wavelength Zones. Each *Region* is a separate geographic area.
 + Availability Zones are multiple, isolated locations within each Region.

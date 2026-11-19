@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/athena-work
 ---
 
 # athena-workgroup-encrypted-at-rest
-<a name="athena-workgroup-encrypted-at-rest"></a>
 
 Checks if an Amazon Athena workgroup is encrypted at rest. The rule is NON\_COMPLIANT if encryption of data at rest is not enabled for an Athena workgroup.
 

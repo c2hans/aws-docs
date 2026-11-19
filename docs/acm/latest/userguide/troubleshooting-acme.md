@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/troubleshooting-acm
 ---
 
 # Troubleshoot ACME certificate automation
-<a name="troubleshooting-acme"></a>
 
 This section describes common issues with ACME certificate automation and how to resolve them.
 

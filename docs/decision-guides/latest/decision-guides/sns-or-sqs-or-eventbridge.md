@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/s
 ---
 
 # Amazon SQS, Amazon SNS, or Amazon EventBridge?
-<a name="sns-or-sqs-or-eventbridge"></a>
 
 **Understand the differences and pick the one that's right for you**
 

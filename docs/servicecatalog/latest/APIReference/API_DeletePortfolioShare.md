@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DeletePortfolioShare
-<a name="API_DeletePortfolioShare"></a>
 
 Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the management account of an organization or by a delegated administrator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/re
 ---
 
 # Amazon GameLift Servers UDP ping beacons
-<a name="reference-udp-ping-beacons"></a>
 
 UDP ping beacons provide a way to measure network latency between player devices and Amazon GameLift Servers hosting locations. With ping beacons, you can collect accurate latency data to make informed decisions about game server placement and improve player matchmaking based on latency requirements.
 

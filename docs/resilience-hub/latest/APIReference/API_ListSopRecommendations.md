@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # ListSopRecommendations
-<a name="API_ListSopRecommendations"></a>
 
 Lists the standard operating procedure (SOP) recommendations for the AWS Resilience Hub applications.
 

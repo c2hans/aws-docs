@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelSpo
 ---
 
 # CancelSpotFleetRequestsErrorItem
-<a name="API_CancelSpotFleetRequestsErrorItem"></a>
 
 Describes a Spot Fleet request that was not successfully canceled.
 

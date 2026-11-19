@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # ListFirewallConfigs
-<a name="API_route53resolver_ListFirewallConfigs"></a>
 
 Retrieves the firewall configurations that you have defined. DNS Firewall uses the configurations to manage firewall behavior for your VPCs.
 

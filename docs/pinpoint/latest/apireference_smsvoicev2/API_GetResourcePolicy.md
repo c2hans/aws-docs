@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
 Retrieves the JSON text of the resource-based policy document attached to the AWS End User Messaging SMS resource. A shared resource can be a Pool, Opt-out list, Sender Id, or Phone number.
 

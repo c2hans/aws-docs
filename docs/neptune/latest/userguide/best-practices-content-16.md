@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-
 ---
 
 # Avoid doing \~id computations in the query
-<a name="best-practices-content-16"></a>
 
  When using custom IDs in the queries, always perform static computations outside the queries and provide these values in the parameters. When static values are provided, the engine is better able to optimize lookups and avoid scanning and filtering these values.
 

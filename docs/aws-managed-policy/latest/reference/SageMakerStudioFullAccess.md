@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioFullAccess
-<a name="SageMakerStudioFullAccess"></a>
 
 **Description**: This policy provides full access to Amazon SageMaker Unified Studio via the Amazon SageMaker management console.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Transformer Tag
-<a name="aws-properties-b2bi-transformer-tag"></a>
 
 A key-value pair for a specific transformer. Tags are metadata that you can use to search for and group capabilities for various purposes.
 

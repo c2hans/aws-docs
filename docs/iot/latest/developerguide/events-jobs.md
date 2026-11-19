@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/events-jobs.ht
 ---
 
 # Jobs events
-<a name="events-jobs"></a>
 
 The AWS IoT Jobs service publishes to reserved topics on the MQTT protocol when jobs are pending, completed, or canceled, and when a device reports success or failure when running a job. Devices or management and monitoring applications can track the status of jobs by subscribing to these topics.
 

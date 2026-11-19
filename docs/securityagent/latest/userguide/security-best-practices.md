@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/security-
 ---
 
 # Security best practices for AWS Security Agent
-<a name="security-best-practices"></a>
 
 AWS Security Agent provides a number of security features to consider as you develop and implement your own security policies. The following best practices are general guidelines and don’t represent a complete security solution. Because these best practices might not be appropriate or sufficient for your environment, treat them as helpful considerations rather than prescriptions.
 

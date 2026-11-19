@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # ImportAs2805KeyCryptogram
-<a name="API_ImportAs2805KeyCryptogram"></a>
 
 Parameter information for key material import using AS2805 key cryptogram format.
 

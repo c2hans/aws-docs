@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_CertificateF
 ---
 
 # CertificateFilterStatement
-<a name="API_CertificateFilterStatement"></a>
 
 A filter statement used to search for certificates. Can contain AND, OR, NOT logical operators or a single filter.
 
@@ -18,7 +17,7 @@ This data type is a UNION, so only one of the following members can be specified
 
  ** And **   <a name="ACM-Type-CertificateFilterStatement-And"></a>
 A list of filter statements that must all be true.
-Type: Array of [CertificateFilterStatement](#API_CertificateFilterStatement) objects
+Type: Array of [CertificateFilterStatement](API_CertificateFilterStatement.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 15 items.
 Required: No
 
@@ -30,13 +29,13 @@ Required: No
 
  ** Not **   <a name="ACM-Type-CertificateFilterStatement-Not"></a>
 A filter statement that must not be true.
-Type: [CertificateFilterStatement](#API_CertificateFilterStatement) object
+Type: [CertificateFilterStatement](API_CertificateFilterStatement.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
  ** Or **   <a name="ACM-Type-CertificateFilterStatement-Or"></a>
 A list of filter statements where at least one must be true.
-Type: Array of [CertificateFilterStatement](#API_CertificateFilterStatement) objects
+Type: Array of [CertificateFilterStatement](API_CertificateFilterStatement.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 15 items.
 Required: No
 

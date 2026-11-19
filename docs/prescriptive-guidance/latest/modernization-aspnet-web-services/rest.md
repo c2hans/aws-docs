@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # REST-based ASP.NET web services
-<a name="rest"></a>
 
 When you modernize REST-based ASP.NET services on AWS by using the strangler fig pattern, we recommend that you use Amazon API Gateway to establish the proxy that will be used to divert traffic to the new service. You can introduce an API Gateway endpoint as the intermediary between service consumers and the legacy service that is being modernized. If the legacy service is already on AWS, the API Gateway endpoint is configured to route requests to the legacy REST service. If the service is not yet on AWS, it can be migrated as is before establishing the new API Gateway proxy. If that isn't possible, you can take a hybrid cloud approach by using an AWS connectivity service such as AWS Direct Connect to connect API Gateway to your on-premises data center. The following illustration depicts the ASP.NET REST service and its consumer before and after the introduction of API Gateway as a proxy between the two.
 

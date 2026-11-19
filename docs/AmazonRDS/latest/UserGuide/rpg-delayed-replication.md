@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rpg-delayed-r
 ---
 
 # Configuring delayed replication with RDS for PostgreSQL
-<a name="rpg-delayed-replication"></a>
 
 ## Overview and Benefits
 <a name="rpg-delayed-replication-overview"></a>

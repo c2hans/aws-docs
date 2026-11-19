@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-code-sign-
 ---
 
 # Creating a code-signing certificate for the Espressif ESP32
-<a name="ota-code-sign-cert-esp"></a>
 
 **Important**  <a name="deprecation-message"></a>
 This reference integration is hosted on the Amazon-FreeRTOS repository which is deprecated. We recommend that you [start here](freertos-getting-started-modular.md) when you create a new project. If you already have an existing FreeRTOS project based on the now deprecated Amazon-FreeRTOS repository, see the [Amazon-FreeRTOS Github Repository Migration Guide](github-repo-migration.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRedshiftFederatedAuthorization
-<a name="AmazonRedshiftFederatedAuthorization"></a>
 
 **Description**: This is an ease-of-use policy for running queries with Amazon Redshift Federated Authorization
 

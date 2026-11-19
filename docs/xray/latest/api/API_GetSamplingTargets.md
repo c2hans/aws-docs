@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingTargets.h
 ---
 
 # GetSamplingTargets
-<a name="API_GetSamplingTargets"></a>
 
 Requests a sampling quota for rules that the service is using to sample requests.
 

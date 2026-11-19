@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_waf_SqlInjec
 ---
 
 # SqlInjectionMatchSetUpdate
-<a name="API_waf_SqlInjectionMatchSetUpdate"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.
@@ -16,7 +15,7 @@ Specifies the part of a web request that you want to inspect for snippets of mal
 <a name="API_waf_SqlInjectionMatchSetUpdate_Contents"></a>
 
  ** Action **   <a name="WAF-Type-waf_SqlInjectionMatchSetUpdate-Action"></a>
-Specify `INSERT` to add a [SqlInjectionMatchSetUpdate](#API_waf_SqlInjectionMatchSetUpdate) to a [SqlInjectionMatchSet](API_waf_SqlInjectionMatchSet.md). Use `DELETE` to remove a `SqlInjectionMatchSetUpdate` from a `SqlInjectionMatchSet`.
+Specify `INSERT` to add a [SqlInjectionMatchSetUpdate](API_waf_SqlInjectionMatchSetUpdate.md) to a [SqlInjectionMatchSet](API_waf_SqlInjectionMatchSet.md). Use `DELETE` to remove a `SqlInjectionMatchSetUpdate` from a `SqlInjectionMatchSet`.
 Type: String
 Valid Values: `INSERT | DELETE`
 Required: Yes

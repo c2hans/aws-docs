@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/suggest-h
 ---
 
 # How to use Suggest
-<a name="suggest-how-to"></a>
 
 This section contains a variety of how-to guides and examples for using the `Suggest` API with response data.
 

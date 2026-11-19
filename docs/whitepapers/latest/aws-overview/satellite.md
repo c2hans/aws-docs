@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/satellit
 ---
 
 # ![AWS Satellite category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/satellite-icon.jpg)Satellite
-<a name="satellite"></a>
 
 ------
 #### [ AWS Ground Station ]

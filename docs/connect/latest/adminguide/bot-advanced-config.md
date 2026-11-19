@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/bot-advanced-c
 ---
 
 # Bot Advanced configuration support from Connect Customer
-<a name="bot-advanced-config"></a>
 
 With the advanced configuration feature, you can make detailed customizations to your bot without going to the Amazon Lex console.
 

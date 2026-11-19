@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTra
 ---
 
 # ModifyTransitGateway
-<a name="API_ModifyTransitGateway"></a>
 
 Modifies the specified transit gateway. When you modify a transit gateway, the modified options are applied to new transit gateway attachments only. Your existing transit gateway attachments are not modified.
 

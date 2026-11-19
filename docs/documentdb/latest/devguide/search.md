@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/search.html
 ---
 
 # $search
-<a name="search"></a>
 
 New from version 5.0.
 

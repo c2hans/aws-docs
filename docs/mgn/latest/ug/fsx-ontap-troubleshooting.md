@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/fsx-ontap-troubleshooting.
 ---
 
 # Troubleshooting FSx for ONTAP issues
-<a name="fsx-ontap-troubleshooting"></a>
 
 This section covers common issues when using FSx for ONTAP as the target storage type with MGN.
 

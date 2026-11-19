@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeletePolicy
 ---
 
 # DeletePolicy
-<a name="API_DeletePolicy"></a>
 
 Deletes the specified policy.
 

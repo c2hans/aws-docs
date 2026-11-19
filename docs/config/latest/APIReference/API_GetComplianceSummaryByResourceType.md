@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetCompli
 ---
 
 # GetComplianceSummaryByResourceType
-<a name="API_GetComplianceSummaryByResourceType"></a>
 
 Returns the number of resources that are compliant and the number that are noncompliant. You can specify one or more resource types to get these numbers for each resource type. The maximum number returned is 100.
 

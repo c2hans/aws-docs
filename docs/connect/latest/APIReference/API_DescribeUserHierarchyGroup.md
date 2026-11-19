@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeUserHierarchyGroup
-<a name="API_DescribeUserHierarchyGroup"></a>
 
 Describes the specified hierarchy group.
 

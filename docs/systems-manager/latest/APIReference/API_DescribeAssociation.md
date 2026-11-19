@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeAssociation
-<a name="API_DescribeAssociation"></a>
 
 Describes the association for the specified target or managed node. If you created the association by using the `Targets` parameter, then you must retrieve the association by using the association ID.
 

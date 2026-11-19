@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3::Bucket JournalTableConfiguration
-<a name="aws-properties-s3-bucket-journaltableconfiguration"></a>
 
  The journal table configuration for an S3 Metadata configuration. The journal table is required for each metadata table configuration and cannot be disabled.
 

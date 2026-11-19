@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/statemachine-st
 ---
 
 # State machine structure in Amazon States Language for Step Functions workflows
-<a name="statemachine-structure"></a>
 
 **Managing state and transforming data**
 Learn about [Passing data between states with variables](workflow-variables.md) and [Transforming data with JSONata](transforming-data.md).

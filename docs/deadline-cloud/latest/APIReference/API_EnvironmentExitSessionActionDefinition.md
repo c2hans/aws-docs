@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_E
 ---
 
 # EnvironmentExitSessionActionDefinition
-<a name="API_EnvironmentExitSessionActionDefinition"></a>
 
 Defines the environment a session action exits from.
 

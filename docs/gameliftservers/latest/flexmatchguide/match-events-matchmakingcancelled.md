@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # MatchmakingCancelled
-<a name="match-events-matchmakingcancelled"></a>
 
 Matchmaking ticket has been canceled due to StopMatchmaking API call.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # LambdaFunctionUtilizationMetric
-<a name="API_LambdaFunctionUtilizationMetric"></a>
 
 Describes a utilization metric of an AWS Lambda function.
 

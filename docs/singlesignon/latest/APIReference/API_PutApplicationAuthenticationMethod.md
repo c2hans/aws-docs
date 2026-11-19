@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Put
 ---
 
 # PutApplicationAuthenticationMethod
-<a name="API_PutApplicationAuthenticationMethod"></a>
 
 Adds or updates an authentication method for an application.
 

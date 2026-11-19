@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cog
 ---
 
 # Understanding the access token
-<a name="amazon-cognito-user-pools-using-the-access-token"></a>
 
 The user pool access token contains claims about the authenticated user, a list of the user's groups, and a list of scopes. The purpose of the access token is to authorize API operations. Your user pool accepts access tokens to authorize user self-service operations. For example, you can use the access token to grant your user access to add, change, or delete user attributes.
 

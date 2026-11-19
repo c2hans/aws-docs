@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Delet
 ---
 
 # DeleteVocabulary
-<a name="API_DeleteVocabulary"></a>
 
 Deletes a custom vocabulary. To use this operation, specify the name of the custom vocabulary you want to delete using `VocabularyName`. Custom vocabulary names are case sensitive.
 

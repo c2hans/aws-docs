@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/websock
 ---
 
 # Tutorial: Create a WebSocket chat app with a WebSocket API, Lambda and DynamoDB
-<a name="websocket-api-chat-app"></a>
 
 In this tutorial, you'll create a serverless chat application with a WebSocket API. With a WebSocket API, you can support two-way communication between clients. Clients can receive messages without having to poll for updates.
 

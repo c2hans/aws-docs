@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS10-BP02 Have a process per alert
-<a name="ops_event_response_process_per_alert"></a>
 
  Have a well-defined response (runbook or playbook), with a specifically identified owner, for any event for which you raise an alert. This ensures effective and prompt responses to operations events and prevents actionable events from being obscured by less valuable notifications.
 

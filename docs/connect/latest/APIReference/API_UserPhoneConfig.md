@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserPhon
 ---
 
 # UserPhoneConfig
-<a name="API_UserPhoneConfig"></a>
 
 Contains information about the phone configuration settings for a user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEventBridgePipesReadOnlyAccess
-<a name="AmazonEventBridgePipesReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to Amazon EventBridge Pipes.
 

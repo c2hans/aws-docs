@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/view-catalog-optimization
 ---
 
 # Viewing catalog-level optimizations
-<a name="view-catalog-optimizations"></a>
 
  When catalog-level table optimization is enabled, anytime an Apache Iceberg table is created or updated via the `CreateTable` or `UpdateTable` APIs through AWS Management Console, SDK, or AWS Glue crawler, an equivalent table level setting is created for that table.
 

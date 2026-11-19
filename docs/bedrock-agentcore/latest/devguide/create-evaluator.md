@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/create
 ---
 
 # Create evaluator
-<a name="create-evaluator"></a>
 
 The `CreateEvaluator` API creates a new custom evaluator that defines how to assess specific aspects of your agent’s behavior. This asynchronous operation returns immediately while the evaluator is being provisioned. The API returns the evaluator ARN, ID, creation timestamp, and initial status. Once created, the evaluator can be referenced in online evaluation configurations.
 

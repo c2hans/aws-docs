@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Replication.
 ---
 
 # Creating a Valkey or Redis OSS replication group
-<a name="Replication.CreatingRepGroup"></a>
 
 You have the following options for creating a cluster with replica nodes. One applies when you already have an available Valkey or Redis OSS (cluster mode disabled) cluster not associated with any cluster that has replicas to use as the primary node. The other applies when you need to create a primary node with the cluster and read replicas. Currently, a Valkey or Redis OSS (cluster mode enabled) cluster must be created from scratch.
 

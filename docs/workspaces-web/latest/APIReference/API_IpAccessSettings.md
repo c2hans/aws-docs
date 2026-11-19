@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_I
 ---
 
 # IpAccessSettings
-<a name="API_IpAccessSettings"></a>
 
 The IP access settings resource that can be associated with a web portal.
 

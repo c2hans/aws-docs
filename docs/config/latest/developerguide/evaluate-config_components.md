@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/evaluate-co
 ---
 
 # Components of an AWS Config Rule
-<a name="evaluate-config_components"></a>
 
 AWS Config rules evaluate the configuration settings of your AWS resources. This page discusses the components of a rule.
 

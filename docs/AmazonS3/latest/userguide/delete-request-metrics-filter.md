@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-request
 ---
 
 # Deleting a metrics filter
-<a name="delete-request-metrics-filter"></a>
 
 You can delete an Amazon CloudWatch request metrics filter if you no longer need it. When you delete a filter, you stop being charged for request metrics that use that *specific filter*. However, charges still apply for any other filters that remain.
 

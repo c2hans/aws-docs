@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Me
 ---
 
 # MediaElement
-<a name="API_MediaElement"></a>
 
 Describes a media element.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/tape-usage.htm
 ---
 
 # Viewing tape usage statistics
-<a name="tape-usage"></a>
 
 When you write data to a tape, you can view the amount of data stored on the tape in the Storage Gateway console. The **Details** tab for each tape shows the tape usage information.
 

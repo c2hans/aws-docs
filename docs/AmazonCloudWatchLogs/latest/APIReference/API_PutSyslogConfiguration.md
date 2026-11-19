@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # PutSyslogConfiguration
-<a name="API_PutSyslogConfiguration"></a>
 
 Creates or updates a syslog configuration for a log group. This enables ingestion of syslog data through the specified VPC endpoint into the log group.
 

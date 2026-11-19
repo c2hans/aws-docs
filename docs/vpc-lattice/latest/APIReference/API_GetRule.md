@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetR
 ---
 
 # GetRule
-<a name="API_GetRule"></a>
 
 Retrieves information about the specified listener rules. You can also retrieve information about the default listener rule. For more information, see [Listener rules](https://docs.aws.amazon.com/vpc-lattice/latest/ug/listeners.html#listener-rules) in the *Amazon VPC Lattice User Guide*.
 

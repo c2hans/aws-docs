@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_MitigationAc
 ---
 
 # MitigationActionParams
-<a name="API_MitigationActionParams"></a>
 
 The set of parameters for this mitigation action. You can specify only one type of parameter (in other words, you can apply only one action for each defined mitigation action).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_DeleteCisS
 ---
 
 # DeleteCisScanConfiguration
-<a name="API_DeleteCisScanConfiguration"></a>
 
 Deletes a CIS scan configuration.
 

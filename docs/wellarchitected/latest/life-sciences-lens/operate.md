@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Operate
-<a name="operate"></a>
 
 |  LSOPS07: How do you isolate data and workloads in a auditable manner?  |
 | --- |

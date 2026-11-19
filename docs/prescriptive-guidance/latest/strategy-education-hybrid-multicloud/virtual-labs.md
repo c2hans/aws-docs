@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Virtual computer labs
-<a name="virtual-labs"></a>
 
 Despite the popularity of web-based learning tools and the abundance of user devices such as laptops, Chromebooks, and tablets, most educational institutions maintain physical computer labs for resource-intensive or legacy applications. These computer labs are often necessities for science, technology, engineering, and math (STEM), career and technical education (CTE), media and art, engineering, and similar curricula. Schools can augment or replace physical computer labs with cloud-based virtual desktops or application streaming services to ensure that all students have access to the applications they need at any time, from any place, and on any device. This improves digital equity, enables remote learning, ensures a consistent user experience, and secures remote access while lowering cost.
 

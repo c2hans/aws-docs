@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # High-level migration overview
-<a name="high-level-migration-overview"></a>
 
 Before you begin the migration, it helps to lay out the entire process from a high level. The following is an example of the steps you might take to migrate an F5 BIG-IP workload to the AWS Cloud. More detailed steps and processes for an F5 BIG-IP migration can be found in the pattern [Migrate an F5 BIG-IP workload to F5 BIG-IP VE on the AWS Cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-f5-big-ip-workload-to-f5-big-ip-ve-on-the-aws-cloud.html?did=pg_card&trk=pg_card).
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-managed-ru
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Version expiration for managed rule groups
-<a name="waf-managed-rule-groups-versioning-expiration"></a>
 
  This section explains how version expiration works for a versioned managed rule group.
 

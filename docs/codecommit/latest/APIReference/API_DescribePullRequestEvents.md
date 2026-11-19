@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Descr
 ---
 
 # DescribePullRequestEvents
-<a name="API_DescribePullRequestEvents"></a>
 
 Returns information about one or more pull request events.
 

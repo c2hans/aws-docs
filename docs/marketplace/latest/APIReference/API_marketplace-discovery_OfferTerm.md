@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # OfferTerm
-<a name="API_marketplace-discovery_OfferTerm"></a>
 
 A term attached to an offer. Each element contains exactly one term type, such as a pricing term, legal term, or payment schedule term.
 

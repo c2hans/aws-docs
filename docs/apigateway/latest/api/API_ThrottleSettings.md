@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_ThrottleSettin
 ---
 
 # ThrottleSettings
-<a name="API_ThrottleSettings"></a>
 
  The API request rate limits.
 

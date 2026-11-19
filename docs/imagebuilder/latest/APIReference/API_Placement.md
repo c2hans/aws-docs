@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Pla
 ---
 
 # Placement
-<a name="API_Placement"></a>
 
 By default, EC2 instances run on shared tenancy hardware. This means that multiple AWS accounts might share the same physical hardware. When you use dedicated hardware, the physical server that hosts your instances is dedicated to your AWS account. Instance placement settings contain the details for the physical hardware where instances that Image Builder launches during image creation will run.
 

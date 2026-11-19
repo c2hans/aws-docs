@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/override-capac
 ---
 
 # Override a capacity plan in Connect Customer
-<a name="override-capacity-plan"></a>
 
 **Note**
 Plan override is not available for Scheduling plans. The following procedure applies to Hiring plans only.

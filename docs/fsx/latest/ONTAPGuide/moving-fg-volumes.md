@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/moving-fg-volumes.
 ---
 
 # Moving volumes between aggregates
-<a name="moving-fg-volumes"></a>
 
 When you add high-availability (HA) pairs to your file system, you need to rebalance the existing data by moving volumes to the new aggregates. To move a volume between aggregates, you can use the `volume move` command in the ONTAP CLI.
 

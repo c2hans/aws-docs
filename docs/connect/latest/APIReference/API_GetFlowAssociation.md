@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_GetFlowA
 ---
 
 # GetFlowAssociation
-<a name="API_GetFlowAssociation"></a>
 
 Retrieves the flow associated for a given resource.
 

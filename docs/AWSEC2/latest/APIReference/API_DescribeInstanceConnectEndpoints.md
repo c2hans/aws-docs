@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeInstanceConnectEndpoints
-<a name="API_DescribeInstanceConnectEndpoints"></a>
 
 Describes the specified EC2 Instance Connect Endpoints or all EC2 Instance Connect Endpoints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Monitoring features
-<a name="chap-sql-server-aurora-pg.management.monitoring"></a>
 
 This topic provides reference information about monitoring capabilities in Microsoft SQL Server and Amazon Aurora PostgreSQL. You can use various tools and services to monitor and maintain the performance of your database systems.
 

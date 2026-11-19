@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metri
 ---
 
 # Publish custom metrics with OpenTelemetry
-<a name="metrics-otel-send"></a>
 
 You can publish custom metrics to CloudWatch using the OpenTelemetry Protocol (OTLP). You can use OTel SDKs (Java, Python, Go, .NET, Node.js), the OTel Collector, or any OTLP-compatible client.
 

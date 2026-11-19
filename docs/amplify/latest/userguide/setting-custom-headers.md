@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/setting-custom-
 ---
 
 # Setting custom headers
-<a name="setting-custom-headers"></a>
 
 There are two ways to specify custom HTTP headers for an Amplify app. You can specify headers in the Amplify console or you can specify headers by downloading and editing an app's `customHttp.yml` file and saving it in your project's root directory.
 

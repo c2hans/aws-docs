@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_CreateSource
 ---
 
 # CreateSourceNetwork
-<a name="API_CreateSourceNetwork"></a>
 
 Create a new Source Network resource for a provided VPC ID.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/windows-ami-reference/subscri
 ---
 
 # Subscribe to AWS Windows AMI notifications
-<a name="subscribe-notifications"></a>
 
 Whenever AWS Windows AMIs are released, we send notifications to the subscribers of the `ec2-windows-ami-update` topic. Whenever released AWS Windows AMIs are made private, we send notifications to the subscribers of the `ec2-windows-ami-private` topic. If you no longer want to receive these notifications, use the following procedure to unsubscribe.
 

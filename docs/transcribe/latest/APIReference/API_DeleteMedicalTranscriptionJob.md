@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Delet
 ---
 
 # DeleteMedicalTranscriptionJob
-<a name="API_DeleteMedicalTranscriptionJob"></a>
 
 Deletes a medical transcription job. To use this operation, specify the name of the job you want to delete using `MedicalTranscriptionJobName`. Job names are case sensitive.
 

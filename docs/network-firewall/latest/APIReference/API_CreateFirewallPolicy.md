@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # CreateFirewallPolicy
-<a name="API_CreateFirewallPolicy"></a>
 
 Creates the firewall policy for the firewall according to the specifications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/join-cl
 ---
 
 # JOIN clause
-<a name="join-clause"></a>
 
 A SQL JOIN clause is used to combine the data from two or more tables based on common fields. The results might or might not change depending on the join method specified. Left and right outer joins retain values from one of the joined tables when no match is found in the other table.
 

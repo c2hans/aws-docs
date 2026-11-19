@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # DeleteInstrumentationConfiguration
-<a name="API_DeleteInstrumentationConfiguration"></a>
 
 Deletes the specified instrumentation configuration. SDKs remove the instrumentation during their next sync after the configuration is deleted or expires.
 

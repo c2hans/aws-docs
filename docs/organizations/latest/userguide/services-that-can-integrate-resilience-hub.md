@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Resilience Hub and AWS Organizations
-<a name="services-that-can-integrate-resilience-hub"></a>
 
 AWS Resilience Hub helps you define, validate, and track the resilience of your applications so that you can avoid unnecessary downtime caused by software, infrastructure, or operational disruptions.
 

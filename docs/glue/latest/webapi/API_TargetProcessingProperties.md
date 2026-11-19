@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TargetProcessingP
 ---
 
 # TargetProcessingProperties
-<a name="API_TargetProcessingProperties"></a>
 
 The resource properties associated with the integration target.
 

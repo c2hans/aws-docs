@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-cloudtrail-table
 ---
 
 # Create a table for an organization wide trail using manual partitioning
-<a name="create-cloudtrail-table-org-wide-trail"></a>
 
 To create a table for organization wide CloudTrail log files in Athena, follow the steps in [Create a table for CloudTrail logs in Athena using manual partitioning](create-cloudtrail-table.md), but make the modifications noted in the following procedure.
 

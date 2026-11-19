@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_S
 ---
 
 # Source
-<a name="API_Source"></a>
 
 Dataflow details for the source side.
 

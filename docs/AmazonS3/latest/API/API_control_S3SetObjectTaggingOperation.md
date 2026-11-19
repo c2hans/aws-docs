@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3SetObj
 ---
 
 # S3SetObjectTaggingOperation
-<a name="API_control_S3SetObjectTaggingOperation"></a>
 
 Contains the configuration parameters for a PUT Object Tagging operation. S3 Batch Operations passes every object to the underlying `PutObjectTagging` API operation. For more information about the parameters for this operation, see [PutObjectTagging](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPUTtagging.html).
 

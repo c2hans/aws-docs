@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ListD
 ---
 
 # ListDeployments
-<a name="API_ListDeployments"></a>
 
 Lists the deployments in a deployment group for an application registered with the user or AWS account.
 

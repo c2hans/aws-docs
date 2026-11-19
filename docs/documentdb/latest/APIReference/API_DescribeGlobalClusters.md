@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Descr
 ---
 
 # DescribeGlobalClusters
-<a name="API_DescribeGlobalClusters"></a>
 
 Returns information about Amazon DocumentDB global clusters. This API supports pagination.
 

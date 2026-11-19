@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_VolumeSta
 ---
 
 # VolumeStatistics
-<a name="API_VolumeStatistics"></a>
 
 An object that contains information about the amount of email that was delivered to recipients.
 

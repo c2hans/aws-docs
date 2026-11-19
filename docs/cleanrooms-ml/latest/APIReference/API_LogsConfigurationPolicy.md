@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Lo
 ---
 
 # LogsConfigurationPolicy
-<a name="API_LogsConfigurationPolicy"></a>
 
 Provides the information necessary for a user to access the logs.
 

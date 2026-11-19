@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/vpc-out-get-ready-su
 ---
 
 # Getting ready
-<a name="vpc-out-get-ready-subnets"></a>
 
 An Amazon VPC user must set up the VPC and identify subnets and security groups for the MediaLive channel.
 

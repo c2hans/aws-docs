@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Noteboo
 ---
 
 # NotebookExportError
-<a name="API_NotebookExportError"></a>
 
 The error details of a failed notebook export in Amazon SageMaker Unified Studio.
 

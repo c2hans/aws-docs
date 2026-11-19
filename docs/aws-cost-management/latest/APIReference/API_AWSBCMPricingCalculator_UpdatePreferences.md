@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UpdatePreferences
-<a name="API_AWSBCMPricingCalculator_UpdatePreferences"></a>
 
  Updates the preferences for AWS Pricing Calculator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AssociatePackage
-<a name="API_AssociatePackage"></a>
 
 Associates a package with an Amazon OpenSearch Service domain. For more information, see [Custom packages for Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/custom-packages.html).
 

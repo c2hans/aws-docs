@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Enti
 ---
 
 # EntityTypeFilters
-<a name="API_EntityTypeFilters"></a>
 
 Object containing all the filter fields per entity type.
 

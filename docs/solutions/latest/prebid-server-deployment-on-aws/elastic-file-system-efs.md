@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Elastic File System (EFS)
-<a name="elastic-file-system-efs"></a>
 
 ## Percent of I/O utilization
 <a name="percent-of-io-utilization"></a>

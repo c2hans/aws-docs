@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_IssueS
 ---
 
 # IssueSummary
-<a name="API_IssueSummary"></a>
 
 A summary of an issue returned in list responses.
 

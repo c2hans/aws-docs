@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Elemental Appliances and Software
-<a name="list_elemental-appliances-software"></a>
 
 AWS Elemental Appliances and Software (service prefix: `elemental-appliances-software`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

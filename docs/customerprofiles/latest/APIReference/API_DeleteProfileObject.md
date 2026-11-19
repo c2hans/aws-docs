@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DeleteProfileObject
-<a name="API_connect-customer-profiles_DeleteProfileObject"></a>
 
 Removes an object associated with a profile of a given ProfileObjectType.
 

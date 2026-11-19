@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledControlInheritanceDrift
-<a name="API_EnabledControlInheritanceDrift"></a>
 
 Represents drift information related to control inheritance between organizational units.
 

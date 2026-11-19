@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_C
 ---
 
 # CreateUserSettings
-<a name="API_CreateUserSettings"></a>
 
 Creates a user settings resource that can be associated with a web portal. Once associated with a web portal, user settings control how users can transfer data between a streaming session and the their local devices.
 

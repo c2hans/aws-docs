@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_StepFunction
 ---
 
 # StepFunctionsAction
-<a name="API_StepFunctionsAction"></a>
 
 Starts execution of a Step Functions state machine.
 

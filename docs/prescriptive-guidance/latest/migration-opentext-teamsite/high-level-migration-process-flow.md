@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # High-level migration process flow
-<a name="high-level-migration-process-flow"></a>
 
 The migration process occurs in five phases: discovery, design, development, testing and refinement, and implementation. The following table provides an overview of these five phases and the migration process flow.
 

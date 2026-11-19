@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # UrlEndpointConfig
-<a name="API_UrlEndpointConfig"></a>
 
 The configuration for the URL endpoint type.
 

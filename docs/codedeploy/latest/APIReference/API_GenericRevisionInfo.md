@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Gener
 ---
 
 # GenericRevisionInfo
-<a name="API_GenericRevisionInfo"></a>
 
 Information about an application revision.
 

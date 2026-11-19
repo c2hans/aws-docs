@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ListNodegrou
 ---
 
 # ListNodegroups
-<a name="API_ListNodegroups"></a>
 
 Lists the managed node groups associated with the specified cluster in your AWS account in the specified AWS Region. Self-managed node groups aren't listed.
 

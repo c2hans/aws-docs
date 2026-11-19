@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # Set up an AWS account
-<a name="set-up-account"></a>
 
 Before you use Kinesis Video Streams with WebRTC for the first time, complete the following tasks:
 

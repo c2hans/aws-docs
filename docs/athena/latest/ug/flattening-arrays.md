@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/flattening-arrays.html
 ---
 
 # Flatten nested arrays
-<a name="flattening-arrays"></a>
 
 When working with nested arrays, you often need to expand nested array elements into a single array, or expand the array into multiple rows.
 

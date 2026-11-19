@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/deploy-webapp-amplify/de
 ---
 
 # Deploy a Web App on AWS Amplify
-<a name="deploy-webapp-amplify"></a>
 
 ## Overview
 <a name="overview"></a>

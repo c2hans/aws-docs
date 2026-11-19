@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Das
 ---
 
 # DashSubtitleConfiguration
-<a name="API_DashSubtitleConfiguration"></a>
 
 The configuration for DASH subtitles.
 

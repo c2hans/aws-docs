@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # RevocationContent
-<a name="API_RevocationContent"></a>
 
 Information about a revocation file.
 

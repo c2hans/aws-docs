@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/upda
 AWS IoT FleetWise is no longer open to new customers. Existing AWS IoT FleetWise customers can continue using the service. The [Guidance for Connected Mobility on AWS](https://aws.amazon.com/solutions/guidance/connected-mobility-on-aws/) provides guidance on how to develop and deploy modular services for connected mobility solutions that can be used to achieve equivalent capabilities as AWS IoT FleetWise.
 
 # Update an AWS IoT FleetWise signal catalog
-<a name="update-signal-catalog"></a>
 
 You can use the [UpdateSignalCatalog](https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_UpdateSignalCatalog.html) API operation to update an existing signal catalog. The following example uses AWS CLI.
 

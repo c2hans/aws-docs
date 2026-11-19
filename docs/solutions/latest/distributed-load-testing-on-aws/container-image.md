@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Container image customization
-<a name="container-image"></a>
 
 ## Load tester image
 <a name="load-tester-image"></a>

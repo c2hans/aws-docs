@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Establish the relationship with your cloud services provider
-<a name="establish-relationship-cloud-provider"></a>
 
 When starting your cloud journey, you need to establish a commercial relationship with your cloud services provider. You will complete relevant customer agreements and set up preferences for communication and how you will pay for cloud services consumed. For larger organizations, you will need to confirm which parts of your organization are responsible for these functions.
 

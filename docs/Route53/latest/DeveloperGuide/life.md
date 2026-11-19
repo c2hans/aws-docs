@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/life.html
 ---
 
 # .life
-<a name="life"></a>
 
 Used as a general extension, and suitable for a wide range of businesses, groups, and individuals.
 

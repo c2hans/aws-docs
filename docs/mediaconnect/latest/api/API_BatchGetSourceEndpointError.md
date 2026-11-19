@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BatchGetSour
 ---
 
 # BatchGetSourceEndpointError
-<a name="API_BatchGetSourceEndpointError"></a>
 
 An error for a source endpoint that MediaConnect couldn't retrieve in a `BatchGetSourceEndpoint` request.
 

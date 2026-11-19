@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Expo
 ---
 
 # ExportFilterPropertyAttributes
-<a name="API_ExportFilterPropertyAttributes"></a>
 
 A structure representing a property's attributes. It is a map object of outputType, sourcePropertyName and multiValueHandling.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-marketplac
 ---
 
 # Listings for your own algorithms and models with the AWS Marketplace
-<a name="sagemaker-marketplace-sell"></a>
 
 Selling Amazon SageMaker AI algorithms and model packages is a three-step process:
 

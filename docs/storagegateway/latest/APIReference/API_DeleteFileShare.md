@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DeleteFileShare
-<a name="API_DeleteFileShare"></a>
 
 Deletes a file share from an S3 File Gateway. This operation is only supported for S3 File Gateways.
 

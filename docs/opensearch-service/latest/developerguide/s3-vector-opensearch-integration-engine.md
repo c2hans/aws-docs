@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Advanced search capabilities with an Amazon S3 vector engine
-<a name="s3-vector-opensearch-integration-engine"></a>
 
 Amazon OpenSearch Service offers the ability to use Amazon S3 as a vector engine for vector indexes. This feature allows you to offload vector data to Amazon S3 while maintaining sub-second vector search capabilities at low cost.
 

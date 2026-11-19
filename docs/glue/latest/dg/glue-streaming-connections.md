@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-streaming-connection
 ---
 
 # AWS Glue Streaming connections
-<a name="glue-streaming-connections"></a>
 
  The following sections provide information on how to use connections in AWS Glue Streaming.
 

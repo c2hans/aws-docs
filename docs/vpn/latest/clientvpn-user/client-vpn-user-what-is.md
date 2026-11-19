@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-use
 ---
 
 # What is AWS Client VPN?
-<a name="client-vpn-user-what-is"></a>
 
 AWS Client VPN is a managed client-based VPN service that enables you to securely access AWS resources and resources in your on-premises network.
 

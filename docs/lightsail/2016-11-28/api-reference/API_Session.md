@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_S
 ---
 
 # Session
-<a name="API_Session"></a>
 
 Describes a web-based, remote graphical user interface (GUI), Amazon DCV session. The session is used to access a virtual computer’s operating system or application.
 

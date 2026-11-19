@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/migration-to
 ---
 
 # Online migration to ElastiCache Serverless
-<a name="migration-to-serverless"></a>
 
 Amazon ElastiCache Serverless for Valkey supports migration from self-managed Valkey and Redis OSS on Amazon EC2 with zero downtime. *Zero downtime* means no errors returned to the client during migration, measured the same way the [ElastiCache SLA](https://aws.amazon.com/elasticache/sla/) measures availability. Your application continues reading and writing through cutover.
 

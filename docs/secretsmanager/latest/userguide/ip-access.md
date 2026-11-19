@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/ip-acces
 ---
 
 # Control API access with IAM policies
-<a name="ip-access"></a>
 
 If you use IAM policies to control access to AWS services based on IP addresses, you might need to update your policies to include IPv6 address ranges. This guide explains the differences between IPv4 and IPv6 and describes how to update your IAM policies to support both protocols. Implementing these changes helps you maintain secure access to your AWS resources while supporting IPv6.
 

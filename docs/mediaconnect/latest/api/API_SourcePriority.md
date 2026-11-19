@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SourcePriori
 ---
 
 # SourcePriority
-<a name="API_SourcePriority"></a>
 
  The priority you want to assign to a source. You can have a primary stream and a backup stream or two equally prioritized streams.
 

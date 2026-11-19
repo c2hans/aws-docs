@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/example_clo
 ---
 
 # Use `ListSyslogConfigurations` with an AWS SDK
-<a name="example_cloudwatch-logs_ListSyslogConfigurations_section"></a>
 
 The following code example shows how to use `ListSyslogConfigurations`.
 

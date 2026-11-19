@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/fl
 ---
 
 # Debugging Amazon GameLift Servers fleet issues
-<a name="fleets-creating-debug"></a>
 
 This topic provides guidance on how to resolve issues with your Amazon GameLift Servers managed EC2 fleets.
 

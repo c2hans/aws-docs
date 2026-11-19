@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sta
 ---
 
 # StartBulkAssociateWirelessDeviceWithMulticastGroup
-<a name="API_StartBulkAssociateWirelessDeviceWithMulticastGroup"></a>
 
 Starts a bulk association of all qualifying wireless devices with a multicast group.
 

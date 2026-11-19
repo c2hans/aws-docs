@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # StepSummary
-<a name="API_StepSummary"></a>
 
 The details for a step.
 

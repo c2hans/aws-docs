@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## AWS Sign-In Control Plane
 <a name="Welcome_AWS_Sign-In_Control_Plane"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/tutorial-stock-data-k
 ---
 
 # Implement the producer
-<a name="tutorial-stock-data-kplkcl2-producer"></a>
 
 This tutorial uses the real-world scenario of stock market trade monitoring. The following principles briefly explain how this scenario maps to the producer and its supporting code structure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Seg
 ---
 
 # Segment
-<a name="API_Segment"></a>
 
 The segment configuration, including the segment name, duration, and other configuration values.
 

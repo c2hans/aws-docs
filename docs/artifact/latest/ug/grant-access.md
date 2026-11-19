@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/ug/grant-access.html
 ---
 
 # Granting user access to AWS Artifact
-<a name="grant-access"></a>
 
 Complete the following steps to grant users permissions to AWS Artifact based on the level of access they need.
 

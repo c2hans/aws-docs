@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_ListSubscriptions.htm
 ---
 
 # ListSubscriptions
-<a name="API_ListSubscriptions"></a>
 
 Returns a list of the requester's subscriptions. Each call returns a limited list of subscriptions, up to 100. If there are more subscriptions, a `NextToken` is also returned. Use the `NextToken` parameter in a new `ListSubscriptions` call to get further results.
 

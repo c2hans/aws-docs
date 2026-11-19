@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_GetProto
 ---
 
 # GetProtocolsList
-<a name="API_GetProtocolsList"></a>
 
 Returns information about the specified AWS Firewall Manager protocols list.
 

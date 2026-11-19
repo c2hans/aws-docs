@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/config
 ---
 
 # User authentication reference
-<a name="config-wrkr-lv-cg-auth-ref"></a>
 
 Enabling user authentication provides you more control over your AWS Elemental systems. Authentication helps secure your nodes while also allowing you to do the following:
 + Track node activity on a per-user basis.

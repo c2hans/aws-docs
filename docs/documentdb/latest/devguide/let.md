@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/let.html
 ---
 
 # $let
-<a name="let"></a>
 
 The `$let` operator in Amazon DocumentDB is used to bind variables to values and use those variables in the expression. It allows you to define local variables that can be used in subsequent expressions within the same stage of the aggregation pipeline.
 

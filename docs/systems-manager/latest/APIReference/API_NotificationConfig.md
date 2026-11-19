@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # NotificationConfig
-<a name="API_NotificationConfig"></a>
 
 Configurations for sending notifications.
 

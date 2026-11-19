@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Si
 ---
 
 # SignalInformation
-<a name="API_SignalInformation"></a>
 
 Information about a signal.
 

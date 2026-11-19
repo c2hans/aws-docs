@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_IngestionDestin
 ---
 
 # IngestionDestinationSummary
-<a name="API_IngestionDestinationSummary"></a>
 
 Contains a summary of an ingestion destination.
 

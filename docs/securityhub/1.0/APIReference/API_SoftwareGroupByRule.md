@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Softwar
 ---
 
 # SoftwareGroupByRule
-<a name="API_SoftwareGroupByRule"></a>
 
 Defines the configuration for organizing and categorizing software packages installed on your resources.
 

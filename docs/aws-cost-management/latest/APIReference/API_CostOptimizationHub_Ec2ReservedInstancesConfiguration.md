@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Ec2ReservedInstancesConfiguration
-<a name="API_CostOptimizationHub_Ec2ReservedInstancesConfiguration"></a>
 
 The EC2 reserved instances configuration used for recommendations.
 

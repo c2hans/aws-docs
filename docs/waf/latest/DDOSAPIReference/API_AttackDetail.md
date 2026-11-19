@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_AttackDe
 ---
 
 # AttackDetail
-<a name="API_AttackDetail"></a>
 
 The details of a DDoS attack.
 

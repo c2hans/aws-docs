@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/running-class-sync.
 ---
 
 # Running real-time analysis
-<a name="running-class-sync"></a>
 
 After you train a custom classifier, you can classify documents using real-time analysis. Real-time analysis takes a single document as input and returns the results synchronously. Custom classification accepts a variety of document types as inputs for real-time analysis. For details, see [Inputs for real-time custom analysis](idp-inputs-sync.md).
 

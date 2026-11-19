@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Bat
 ---
 
 # BatchGetAssetPropertyAggregatesEntry
-<a name="API_BatchGetAssetPropertyAggregatesEntry"></a>
 
 Contains information for an asset property aggregate entry that is associated with the [BatchGetAssetPropertyAggregates](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_BatchGetAssetPropertyAggregates.html) API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/iotsitewise
 ---
 
 # IoT SiteWise publisher
-<a name="iotsitewise-publisher-component"></a>
 
 The IoT SiteWise publisher component (`aws.iot.SiteWiseEdgePublisher`) enables AWS IoT SiteWise gateways to export data from the edge to the AWS Cloud.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/getting-starte
 ---
 
 # Get started with Profile Explorer
-<a name="getting-started-profile-explorer"></a>
 
 Get started with Profile Explorer and learn the basics of the interface.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-workforce-manage
 ---
 
 # Manage a Private Workforce (Amazon Cognito Console)
-<a name="sms-workforce-management-private-cognito"></a>
 
 A private workforce corresponds to a single **Amazon Cognito user pool**. Private work teams correspond to **Amazon Cognito user groups** within that user pool. Workers correspond to **Amazon Cognito users** within those groups.
 

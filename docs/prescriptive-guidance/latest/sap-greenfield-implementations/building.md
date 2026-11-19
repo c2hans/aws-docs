@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sap-greenfi
 ---
 
 # Best practices for the build phase
-<a name="building"></a>
 
 The recommendations in this section help ensure a smoother build phase for your project. The build phase encompasses code, development, deployment, and implementation activities.  It often consists of a design review and approval session, a kick-off meeting to align on what is being built, timeline, and exit criteria. This is the phase where code is written, peer-reviewed, and deployed for all AWS services.
 

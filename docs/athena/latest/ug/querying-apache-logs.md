@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-apache-logs.ht
 ---
 
 # Query Apache logs stored in Amazon S3
-<a name="querying-apache-logs"></a>
 
 You can use Amazon Athena to query [Apache HTTP Server log files](https://httpd.apache.org/docs/2.4/logs.html) stored in your Amazon S3 account. This topic shows you how to create table schemas to query Apache [Access log](https://httpd.apache.org/docs/2.4/logs.html#accesslog) files in the common log format.
 

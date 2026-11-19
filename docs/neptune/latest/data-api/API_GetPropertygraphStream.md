@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_GetPropertyg
 ---
 
 # GetPropertygraphStream
-<a name="API_GetPropertygraphStream"></a>
 
 Gets a stream for a property graph.
 

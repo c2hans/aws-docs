@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Affect
 ---
 
 # AffectedResource
-<a name="API_AffectedResource"></a>
 
 Contains information about a resource that an action applies to.
 

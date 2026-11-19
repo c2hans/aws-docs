@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # OpenAPI schema targets
-<a name="gateway-schema-openapi"></a>
 
 OpenAPI (formerly known as Swagger) is a widely used standard for describing RESTful APIs. Gateway supports OpenAPI 3.0 specifications for defining API targets.
 

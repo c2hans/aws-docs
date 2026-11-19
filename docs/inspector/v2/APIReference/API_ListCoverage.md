@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListCovera
 ---
 
 # ListCoverage
-<a name="API_ListCoverage"></a>
 
 Lists coverage details for your environment.
 

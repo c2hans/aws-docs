@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_S3Config
 ---
 
 # S3Config
-<a name="API_S3Config"></a>
 
 S3 configuration for storing log data.
 

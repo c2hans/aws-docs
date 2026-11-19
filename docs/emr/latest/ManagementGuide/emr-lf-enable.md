@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-lf-enable
 ---
 
 # Enable Lake Formation with Amazon EMR
-<a name="emr-lf-enable"></a>
 
 With Amazon EMR 6.15.0 and higher, when you run Spark jobs on Amazon EMR on EC2 clusters that access data in the AWS Glue Data Catalog, you can use AWS Lake Formation to apply table, row, column, and cell level permissions on Hudi, Iceberg, or Delta Lake based tables.
 

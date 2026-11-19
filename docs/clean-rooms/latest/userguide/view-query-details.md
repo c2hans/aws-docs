@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/view-query-
 ---
 
 # Viewing query details
-<a name="view-query-details"></a>
 
 You can view the query details as the member who can run queries or as a member who can receive results.
 

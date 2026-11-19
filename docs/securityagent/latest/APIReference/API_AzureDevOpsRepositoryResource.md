@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Az
 ---
 
 # AzureDevOpsRepositoryResource
-<a name="API_AzureDevOpsRepositoryResource"></a>
 
 An Azure DevOps repository integrated as a resource.
 

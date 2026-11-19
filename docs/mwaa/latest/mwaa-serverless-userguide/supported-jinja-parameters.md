@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/su
 ---
 
 # Template variables, filters, and macros
-<a name="supported-jinja-parameters"></a>
 
  Amazon MWAA Serverless supports [Jinja templates](https://airflow.apache.org/docs/apache-airflow/3.0.6/templates-ref.html) that come out of the box with Apache Airflow. The following tables list the supported Jinja variables and macros.
 

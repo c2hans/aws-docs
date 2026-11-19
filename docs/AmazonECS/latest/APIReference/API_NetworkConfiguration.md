@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Networ
 ---
 
 # NetworkConfiguration
-<a name="API_NetworkConfiguration"></a>
 
 The network configuration for a task or service.
 

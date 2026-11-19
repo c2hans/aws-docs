@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AddBridgeNet
 ---
 
 # AddBridgeNetworkSourceRequest
-<a name="API_AddBridgeNetworkSourceRequest"></a>
 
  Add a network source to an existing bridge.
 

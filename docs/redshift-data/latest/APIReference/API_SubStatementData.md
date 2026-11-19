@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_Su
 ---
 
 # SubStatementData
-<a name="API_SubStatementData"></a>
 
 Information about an SQL statement.
 

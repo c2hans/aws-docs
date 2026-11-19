@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/rank.html
 ---
 
 # $rank
-<a name="rank"></a>
 
 New from version 8.0.2.
 

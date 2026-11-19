@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_S3Logs
 ---
 
 # S3LogsConfig
-<a name="API_S3LogsConfig"></a>
 
  Information about S3 logs for a build project.
 

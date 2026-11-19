@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # FixedUpfrontPricingTerm
-<a name="API_marketplace-discovery_FixedUpfrontPricingTerm"></a>
 
 Defines a fixed upfront pricing term with a pre-paid amount and granted entitlements.
 

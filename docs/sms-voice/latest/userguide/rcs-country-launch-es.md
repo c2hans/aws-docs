@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-country-l
 ---
 
 # Launching RCS in Spain
-<a name="rcs-country-launch-es"></a>
 
 To launch your AWS RCS Agent in Spain, submit a country launch registration using the `ES_RCS_LAUNCH_REGISTRATION` registration type. The Spain registration form includes additional company detail fields beyond the standard baseline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Costs and licensing
-<a name="costs-licenses"></a>
 
 The pricing for MongoDB Atlas includes the following costs:
 + Cluster configuration costs

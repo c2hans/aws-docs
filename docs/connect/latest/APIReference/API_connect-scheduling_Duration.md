@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # Duration
-<a name="API_connect-scheduling_Duration"></a>
 
 A length of time, expressed as a value and the unit it is counted in.
 

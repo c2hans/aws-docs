@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/setti
 ---
 
 # Configuring Order Planning and Tracking for the first time
-<a name="setting-up-work-orders"></a>
 
 As an administrator, you can create multiple processes and milestones to track your orders.
 

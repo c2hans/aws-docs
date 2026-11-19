@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_BatchGetCa
 ---
 
 # BatchGetCaseRule
-<a name="API_connect-cases_BatchGetCaseRule"></a>
 
 Gets a batch of case rules. In the Connect Customer admin website, case rules are known as *case field conditions*. For more information about case field conditions, see [Add case field conditions to a case template](https://docs.aws.amazon.com/connect/latest/adminguide/case-field-conditions.html).
 

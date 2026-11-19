@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/automations-a
 ---
 
 # Adding, editing, and deleting automation actions
-<a name="automations-actions-add-edit-delete"></a>
 
 An automation action, commonly referred to as an **action**, is an individual step of logic that make up an automation. Each action performs a specific task, whether it's sending an email, creating a data record, invoking a Lambda function, or calling APIs. Actions are added to automations from the action library, and can be grouped into conditional statements or loops.
 

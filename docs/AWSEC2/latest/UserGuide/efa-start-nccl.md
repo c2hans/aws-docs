@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa-start-nccl.h
 ---
 
 # Get started with EFA and NCCL for ML workloads on Amazon EC2
-<a name="efa-start-nccl"></a>
 
 The NVIDIA Collective Communications Library (NCCL) is a library of standard collective communication routines for multiple GPUs across a single node or multiple nodes. You can use NCCL together with EFA, Libfabric, and MPI to support various machine learning workloads. For more information, see the [NCCL](https://developer.nvidia.com/nccl) website.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-fi
 ---
 
 # Supported resource types for exposure findings in Security Hub
-<a name="exposure-findings-supported-resources"></a>
 
  AWS Security Hub generates exposure findings for the following types of AWS resources:
 + `AWS::DynamoDB::Table`

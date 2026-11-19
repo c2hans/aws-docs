@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Cross-region data access to OpenSearch domains
-<a name="application-cross-region-data-access-domains"></a>
 
 You can configure your OpenSearch UI applications in one AWS Region to access OpenSearch domains in different AWS Regions. This enables you to create unified dashboards that aggregate data from OpenSearch domains across multiple AWS Regions within the same partition. Cross-region data source support requires fine-grained access control to be enabled on the target domain. Fine-grained access control provides an additional authorization layer beyond the domain access policy, allowing you to control access to individual indices, documents, and fields.
 

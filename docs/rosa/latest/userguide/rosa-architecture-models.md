@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/rosa-architecture-
 ---
 
 # ROSA architecture
-<a name="rosa-architecture-models"></a>
 
  Red Hat OpenShift Service on AWS (ROSA) has the following cluster topologies:
 + Hosted control plane (HCP) - The control plane is hosted within Red Hat’s AWS account and managed by Red Hat. Worker nodes are deployed in the customer’s AWS account.

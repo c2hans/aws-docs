@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationSearchMetadata
-<a name="API_EvaluationSearchMetadata"></a>
 
 Metadata information about an evaluation search.
 

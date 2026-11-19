@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstar
 ---
 
 # Step 4: Add product to portfolio
-<a name="getstarted-portfolio-add-product-Terraform"></a>
 
 After creating a portfolio, you can add the HashiCorp Terraform product you created in Step 2.
 

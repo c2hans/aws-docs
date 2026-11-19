@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/concept-chapter-se
 ---
 
 # Generating structured output with Nova
-<a name="concept-chapter-servicename"></a>
 
 Structured output is critical for machine-to-machine communication use cases, as this enables downstream use cases to more effectively consume and process the generated outputs. Whether it's extracting information from documents, creating assistants that fetch data from APIs, or developing agents that take actions, these tasks require foundation models to generate outputs in specific structured formats.
 

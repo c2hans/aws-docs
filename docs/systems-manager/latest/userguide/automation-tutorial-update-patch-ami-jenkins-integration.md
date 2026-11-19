@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # Updating AMIs using Automation and Jenkins
-<a name="automation-tutorial-update-patch-ami-jenkins-integration"></a>
 
 If your organization uses Jenkins software in a CI/CD pipeline, you can add Automation as a post-build step to pre-install application releases into Amazon Machine Images (AMIs). Automation is a tool in AWS Systems Manager. You can also use the Jenkins scheduling feature to call Automation and create your own operating system (OS) patching cadence.
 

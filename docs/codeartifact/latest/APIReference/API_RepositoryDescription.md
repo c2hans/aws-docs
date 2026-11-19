@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Rep
 ---
 
 # RepositoryDescription
-<a name="API_RepositoryDescription"></a>
 
  The details of a repository stored in AWS CodeArtifact. A CodeArtifact repository contains a set of package versions, each of which maps to a set of assets. Repositories are polyglot—a single repository can contain packages of any supported type. Each repository exposes endpoints for fetching and publishing packages using tools like the `npm` CLI, the Maven CLI (`mvn`), and `pip`. You can create up to 100 repositories per AWS account.
 

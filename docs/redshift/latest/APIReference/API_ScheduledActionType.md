@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Schedul
 ---
 
 # ScheduledActionType
-<a name="API_ScheduledActionType"></a>
 
 The action type that specifies an Amazon Redshift API operation that is supported by the Amazon Redshift scheduler.
 

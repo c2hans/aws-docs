@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/organize
 ---
 
 # Organize your farms, queues, and fleets
-<a name="organize-farms-queues-fleets"></a>
 
 You can start with a single farm that contains one queue and one fleet. As the number of users and the variety of workloads in your AWS Deadline Cloud (Deadline Cloud) farm grow, it helps to organize the work more deliberately: a queue for each team or project, a fleet for each hardware type, or a separate farm for work that must remain isolated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-shi
 ---
 
 # Generate a shift bid
-<a name="scheduling-shift-bid-generate"></a>
 
 To create a shift bid, you use the **Create shift bid** wizard, which walks you through four steps: **Configure schedule details**, **Configure shift bid details**, **Optimize schedule**, and **Review and create**.
 

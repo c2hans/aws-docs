@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Cl
 ---
 
 # CloudWatchLogDeliveryOptions
-<a name="API_CloudWatchLogDeliveryOptions"></a>
 
 The log delivery option to send data to Amazon CloudWatch Logs.
 

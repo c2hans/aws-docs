@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/securit
 ---
 
 # Troubleshooting CloudWatch Logs Configuration with Amazon MQ
-<a name="security-logging-monitoring-configure-cloudwatch-troubleshoot"></a>
 
 In some cases, CloudWatch Logs might not always behave as expected. This section gives an overview of common issues and shows how to resolve them.
 

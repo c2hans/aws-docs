@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_VirtualMa
 ---
 
 # VirtualMachineDetails
-<a name="API_VirtualMachineDetails"></a>
 
 Your `VirtualMachine` objects, ordered by their Amazon Resource Names (ARNs).
 

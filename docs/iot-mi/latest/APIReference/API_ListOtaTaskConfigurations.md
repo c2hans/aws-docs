@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListOtaTa
 ---
 
 # ListOtaTaskConfigurations
-<a name="API_ListOtaTaskConfigurations"></a>
 
 List all of the over-the-air (OTA) task configurations.
 

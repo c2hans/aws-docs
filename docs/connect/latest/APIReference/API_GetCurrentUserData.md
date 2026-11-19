@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_GetCurre
 ---
 
 # GetCurrentUserData
-<a name="API_GetCurrentUserData"></a>
 
 Gets the real-time active user data from the specified Connect Customer instance.
 

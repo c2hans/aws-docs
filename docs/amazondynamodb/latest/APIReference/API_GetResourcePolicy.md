@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_G
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
 Returns the resource-based policy document attached to the resource, which can be a table or stream, in JSON format.
 

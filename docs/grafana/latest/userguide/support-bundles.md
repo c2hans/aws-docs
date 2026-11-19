@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/support-bundles
 ---
 
 # Gather information for support
-<a name="support-bundles"></a>
 
 Support bundles provide a simple way to collect information about your Grafana workspace through the user interface. When you encounter problems with your Grafana workspace, you can send product support a support bundle that contains information about your workspace, including:
 + Grafana version

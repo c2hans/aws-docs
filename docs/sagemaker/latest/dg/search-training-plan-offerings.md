@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/search-training-plan
 ---
 
 # Search training plan offerings
-<a name="search-training-plan-offerings"></a>
 
 After you choose **Training Plans** in the left pane of the SageMaker AI console, and then **Create training plan**, a **Find training plan** form opens up. This form allows you to specify your requirements and search for suitable training plan offerings.
 

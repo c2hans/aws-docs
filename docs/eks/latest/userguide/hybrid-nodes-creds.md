@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-creds.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Prepare credentials for hybrid nodes
-<a name="hybrid-nodes-creds"></a>
 
 Amazon EKS Hybrid Nodes use temporary IAM credentials provisioned by AWS SSM hybrid activations or AWS IAM Roles Anywhere to authenticate with the Amazon EKS cluster. You must use either AWS SSM hybrid activations or AWS IAM Roles Anywhere with the Amazon EKS Hybrid Nodes CLI (`nodeadm`). You should not use both AWS SSM hybrid activations and AWS IAM Roles Anywhere. We recommend that you use AWS SSM hybrid activations if you do not have existing Public Key Infrastructure (PKI) with a Certificate Authority (CA) and certificates for your on-premises environments. If you do have existing PKI and certificates on-premises, use AWS IAM Roles Anywhere.
 

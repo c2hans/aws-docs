@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/sessions-store-
 ---
 
 # Store conversation history and context in a session
-<a name="sessions-store-coversation"></a>
 
 After you create a session, use the [CreateInvocation](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_CreateInvocation.html) API to create a grouping of interactions within the session. For each grouping, use the [PutInvocationStep](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PutInvocationStep.html) API operations to store state checkpoints, including text and images, for each interaction.
 

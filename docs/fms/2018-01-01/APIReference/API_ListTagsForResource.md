@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ListTags
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Retrieves the list of tags for the specified AWS resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/toLower.html
 ---
 
 # $toLower
-<a name="toLower"></a>
 
 The `$toLower` operator in Amazon DocumentDB is used to convert a string to lowercase.
 

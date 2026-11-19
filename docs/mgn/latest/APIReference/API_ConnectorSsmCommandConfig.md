@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ConnectorSsm
 ---
 
 # ConnectorSsmCommandConfig
-<a name="API_ConnectorSsmCommandConfig"></a>
 
 Connector SSM command config.
 

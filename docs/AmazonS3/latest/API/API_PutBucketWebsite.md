@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketWebsite
 ---
 
 # PutBucketWebsite
-<a name="API_PutBucketWebsite"></a>
 
 **Note**
 This operation is not supported for directory buckets.

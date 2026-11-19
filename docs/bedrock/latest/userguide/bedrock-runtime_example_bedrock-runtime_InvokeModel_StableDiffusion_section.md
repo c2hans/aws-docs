@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime
 ---
 
 # Invoke Stability.ai Stable Image Core on Amazon Bedrock to generate an image
-<a name="bedrock-runtime_example_bedrock-runtime_InvokeModel_StableDiffusion_section"></a>
 
 The following code examples show how to invoke Stability.ai Stable Image Core on Amazon Bedrock to generate an image.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Respo
 ---
 
 # ResponseHeadersPolicyCustomHeader
-<a name="API_ResponseHeadersPolicyCustomHeader"></a>
 
 An HTTP response header name and its value. CloudFront includes this header in HTTP responses that it sends for requests that match a cache behavior that's associated with this response headers policy.
 

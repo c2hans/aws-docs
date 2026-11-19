@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/reserved-users-groups.ht
 ---
 
 # AL2023 Reserved Users and Groups
-<a name="reserved-users-groups"></a>
 
 AL2023 pre-allocates certain users and groups during both the provisioning of the image and during the installation of certain packages. The users, groups, and their associated UIDs and GIDs are listed here to prevent conflicts.
 

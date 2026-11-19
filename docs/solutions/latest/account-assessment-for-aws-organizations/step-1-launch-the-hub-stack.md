@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # Step 1: Deploy the Hub stack
-<a name="step-1-launch-the-hub-stack"></a>
 
 Deploy the Hub stack to the member account that you selected as the Hub account.
 

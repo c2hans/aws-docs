@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteIndexPolicy
-<a name="API_DeleteIndexPolicy"></a>
 
 Deletes a log-group level field index policy that was applied to a single log group. The indexing of the log events that happened before you delete the policy will still be used for as many as 30 days to improve CloudWatch Logs Insights queries.
 

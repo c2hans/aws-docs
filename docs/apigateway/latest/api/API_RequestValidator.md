@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_RequestValidat
 ---
 
 # RequestValidator
-<a name="API_RequestValidator"></a>
 
 A set of validation rules for incoming Method requests.
 

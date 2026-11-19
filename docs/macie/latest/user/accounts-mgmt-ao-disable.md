@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/accounts-mgmt-ao-disab
 ---
 
 # Disabling Macie integration with AWS Organizations
-<a name="accounts-mgmt-ao-disable"></a>
 
 After an AWS Organizations organization is integrated with Amazon Macie, the AWS Organizations management account can subsequently disable the integration. As a user of the AWS Organizations management account, you can do this by disabling trusted service access for Macie in AWS Organizations.
 

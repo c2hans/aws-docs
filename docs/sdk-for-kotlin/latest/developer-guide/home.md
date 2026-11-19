@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/ho
 ---
 
 # What is the AWS SDK for Kotlin?
-<a name="home"></a>
 
 The AWS SDK for Kotlin provides Kotlin APIs for Amazon Web Services. Using the SDK, you can build Kotlin applications that work with Amazon S3, Amazon EC2, Amazon DynamoDB, and more. With the Kotlin SDK, you can target the JVM platform or Android API level 24 or higher. Support for additional platforms like JavaScript and Native is coming in future releases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTra
 ---
 
 # CreateTransitGatewayPolicyTableEntry
-<a name="API_CreateTransitGatewayPolicyTableEntry"></a>
 
 Creates an entry in a transit gateway policy table to route matching traffic to a specified route table.
 

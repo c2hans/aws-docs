@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Conte
 ---
 
 # ContentTypeProfiles
-<a name="API_ContentTypeProfiles"></a>
 
 Field-level encryption content type-profile.
 

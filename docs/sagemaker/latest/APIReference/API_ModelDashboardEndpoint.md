@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelD
 ---
 
 # ModelDashboardEndpoint
-<a name="API_ModelDashboardEndpoint"></a>
 
 An endpoint that hosts a model displayed in the Amazon SageMaker Model Dashboard.
 

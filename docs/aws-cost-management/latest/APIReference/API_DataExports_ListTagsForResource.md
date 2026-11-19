@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListTagsForResource
-<a name="API_DataExports_ListTagsForResource"></a>
 
 List tags associated with an existing data export.
 

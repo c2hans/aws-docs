@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListResourceSnapshotJobs
-<a name="API_ListResourceSnapshotJobs"></a>
 
  Lists resource snapshot jobs owned by the customer. This operation supports various filtering scenarios, including listing all jobs owned by the caller, jobs for a specific engagement, jobs with a specific status, or any combination of these filters.
 

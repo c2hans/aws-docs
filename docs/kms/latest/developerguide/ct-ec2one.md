@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-ec2one.html
 ---
 
 # Amazon EC2 example one
-<a name="ct-ec2one"></a>
 
 The following example records an IAM principal creating an encrypted volume using the default volume key in the Amazon EC2 management console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedWorkflow
-<a name="API_DescribedWorkflow"></a>
 
 Describes the properties of the specified workflow
 

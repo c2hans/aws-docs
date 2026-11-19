@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteEndpoi
 ---
 
 # DeleteEndpoint
-<a name="API_DeleteEndpoint"></a>
 
 Deletes the specified endpoint.
 

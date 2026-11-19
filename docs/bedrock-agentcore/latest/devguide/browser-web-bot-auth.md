@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Reducing CAPTCHAs with Web Bot Auth
-<a name="browser-web-bot-auth"></a>
 
 **Note**
 Amazon Bedrock AgentCore Browser Web Bot Auth (Preview) is based on the draft IETF Web Bot Auth protocol, which is subject to change as the specification evolves toward finalization.

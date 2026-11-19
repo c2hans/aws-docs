@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-de
 ---
 
 # Resources
-<a name="resources"></a>
 + [AWS Mainframe Modernization](https://aws.amazon.com/mainframe-modernization/)
 + [AWS DevOps](https://aws.amazon.com/devops/)
 + [AWS DevOps Sagas](https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/the-devops-sagas.html)

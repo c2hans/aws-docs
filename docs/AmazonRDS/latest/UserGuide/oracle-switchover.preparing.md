@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-switch
 ---
 
 # Requirements for the Oracle Data Guard switchover
-<a name="oracle-switchover.preparing"></a>
 
 Before initiating the Oracle Data Guard switchover, make sure that your replication environment meets the following requirements:
 + The original standby database is mounted or open read-only.

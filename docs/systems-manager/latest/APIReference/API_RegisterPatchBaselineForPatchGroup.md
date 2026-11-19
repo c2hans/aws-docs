@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # RegisterPatchBaselineForPatchGroup
-<a name="API_RegisterPatchBaselineForPatchGroup"></a>
 
 Registers a patch baseline for a patch group.
 

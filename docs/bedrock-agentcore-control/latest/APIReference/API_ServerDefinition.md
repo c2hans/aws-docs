@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ServerDefinition
-<a name="API_ServerDefinition"></a>
 
 The server definition for an MCP descriptor. Contains the schema version and inline content for the MCP server configuration.
 

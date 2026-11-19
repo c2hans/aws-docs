@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Ena
 ---
 
 # EnableClientAuthentication
-<a name="API_EnableClientAuthentication"></a>
 
 Enables alternative client authentication methods for the specified directory.
 

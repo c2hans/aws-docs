@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/manage-sn-endpoin
 ---
 
 # Manage service-network endpoints
-<a name="manage-sn-endpoint"></a>
 
 After you create a service-network endpoint, you can modify its security groups, subnets (add only), private DNS settings, or tags.
 

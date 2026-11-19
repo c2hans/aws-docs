@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/getting-started.h
 ---
 
 # Getting started with AWS Elemental MediaPackage
-<a name="getting-started"></a>
 
 The following sections describe how to quickly get started receiving and sending content with AWS Elemental MediaPackage.
 

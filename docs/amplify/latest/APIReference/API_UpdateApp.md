@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_UpdateAp
 ---
 
 # UpdateApp
-<a name="API_UpdateApp"></a>
 
 Updates an existing Amplify app.
 

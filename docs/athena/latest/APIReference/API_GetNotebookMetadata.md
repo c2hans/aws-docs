@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetNotebo
 ---
 
 # GetNotebookMetadata
-<a name="API_GetNotebookMetadata"></a>
 
 Retrieves notebook metadata for the specified notebook ID.
 

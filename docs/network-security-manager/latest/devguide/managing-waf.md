@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/devguide
 ---
 
 # Managing web ACLs for AWS WAF
-<a name="managing-waf"></a>
 
 With AWS Network Security Manager, you centrally configure and deploy AWS WAF web access control lists (web ACLs) across accounts and resources in your organization. You can define AWS Network Security Manager rules for AWS WAF, group them into protection templates, and enforce them at scale through AWS Network Security Manager policies and deployments.
 

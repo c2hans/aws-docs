@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Application Signals
-<a name="CloudWatch-Application-Monitoring-Sections"></a>
 
 CloudWatch Application Signals helps you monitor and improve application performance on AWS. It automatically collects data from your applications running on services like Amazon EC2, Amazon ECS, and Lambda. You can use CloudWatch Application Signals for the following:
 + Monitor application health in real time

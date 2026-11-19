@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/job_queue_viewing
 ---
 
 # View a job queue in AWS Batch
-<a name="job_queue_viewing_status"></a>
 
 After you create a job queue and submit the jobs, it is important to be able to monitor its progress. You can use the **Job details** page to review, manage, and monitor your job queue.
 

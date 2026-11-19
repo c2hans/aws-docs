@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/STS/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
  AWS provides AWS Security Token Service (AWS STS) as a web service that enables you to request temporary, limited-privilege credentials for users. This guide describes the AWS STS API. For more information, see [Temporary Security Credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html) in the *IAM User Guide*.
 
@@ -14,4 +13,4 @@ For information about setting up signatures and authorization through the API, s
 
 For information about AWS STS endpoints, see [AWS STS Regions and endpoints](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_region-endpoints.html) in the *IAM User Guide*. For information about logging AWS STS API calls, see [Logging IAM and AWS STS API calls with AWS CloudTrail](https://docs.aws.amazon.com/IAM/latest/UserGuide/cloudtrail-integration.html) in the *IAM User Guide*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

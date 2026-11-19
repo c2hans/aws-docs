@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/infra-conf
 ---
 
 # List and view infrastructure configuration details
-<a name="infra-config-details"></a>
 
 This section describes the various ways that you can find information and view details for your EC2 Image Builder infrastructure configurations.
 

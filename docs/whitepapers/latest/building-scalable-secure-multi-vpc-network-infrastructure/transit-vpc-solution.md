@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Transit VPC solution
-<a name="transit-vpc-solution"></a>
 
  [Transit VPCs](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/transit-vpc-option.html) can create connectivity between VPCs by a different means than VPC peering by introducing a hub and spoke design for inter-VPC connectivity. In a transit VPC network, one central VPC (the hub VPC) connects with every other VPC (spoke VPC) through a VPN connection typically leveraging BGP over [IPsec](https://en.wikipedia.org/wiki/IPsec). The central VPC contains [Amazon Elastic Compute Cloud](https://aws.amazon.com/ec2/) (Amazon EC2) instances running software appliances that route incoming traffic to their destinations using the VPN overlay. Transit VPC peering has the following advantages:
 +  Transitive routing is enabled using the overlay VPN network — allowing for a hub and spoke design.

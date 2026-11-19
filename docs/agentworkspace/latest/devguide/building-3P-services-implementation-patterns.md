@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/building-
 ---
 
 # Service implementation patterns
-<a name="building-3P-services-implementation-patterns"></a>
 
 third-party services can implement various patterns to extend the agent workspace functionality. The following examples demonstrate some of our key Connect Customer SDK capabilities:
 

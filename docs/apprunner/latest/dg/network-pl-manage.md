@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/dg/network-pl-manage.ht
 AWS App Runner is no longer open to new customers. Existing customers can continue to use the service as normal. This guide applies only to existing customers. If you're not an existing customer, AWS recommends Amazon ECS Express Mode. For more information, see [AWS App Runner availability change](https://docs.aws.amazon.com/apprunner/latest/dg/apprunner-availability-change.html).
 
 # Managing Private endpoints
-<a name="network-pl-manage"></a>
 
 Manage the Private endpoint for the incoming traffic using one of the following methods:
 + [App Runner console](#network-pl-manage.console)

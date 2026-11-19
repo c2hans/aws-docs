@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch-t
 ---
 
 # Architect for EC2 capacity for Amazon ECS
-<a name="launch-type-ec2"></a>
 
 Use EC2 capacity for large workloads that must be price optimized.
 

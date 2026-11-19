@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appintegrations/latest/APIReference/API_
 ---
 
 # FileConfiguration
-<a name="API_connect-app-integrations_FileConfiguration"></a>
 
 The configuration for what files should be pulled from the source.
 

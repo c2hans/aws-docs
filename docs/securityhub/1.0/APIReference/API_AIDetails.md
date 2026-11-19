@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AIDetai
 ---
 
 # AIDetails
-<a name="API_AIDetails"></a>
 
 Contains information about self-hosted AI resources and their host resources. The fields that are present depend on the role of the resource.
 

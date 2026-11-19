@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-resources.
 ---
 
 # Review Managed Service for Apache Flink application resources
-<a name="how-resources"></a>
 
 This section describes the system resources that your application uses. Understanding how Managed Service for Apache Flink provisions and uses resources will help you design, create, and maintain a performant and stable Managed Service for Apache Flink application.
 

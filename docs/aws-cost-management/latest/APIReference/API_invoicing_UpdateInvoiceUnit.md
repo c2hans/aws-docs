@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UpdateInvoiceUnit
-<a name="API_invoicing_UpdateInvoiceUnit"></a>
 
 You can update the invoice unit configuration at any time, and AWS will use the latest configuration at the end of the month.
 

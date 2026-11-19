@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ListStudioSe
 ---
 
 # ListStudioSessionMappings
-<a name="API_ListStudioSessionMappings"></a>
 
 Returns a list of all user or group session mappings for the Amazon EMR Studio specified by `StudioId`.
 

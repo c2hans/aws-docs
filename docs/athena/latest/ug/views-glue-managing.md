@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/views-glue-managing.htm
 ---
 
 # Manage Data Catalog views
-<a name="views-glue-managing"></a>
 
 You can use DDL commands to update and manage your Data Catalog views.
 

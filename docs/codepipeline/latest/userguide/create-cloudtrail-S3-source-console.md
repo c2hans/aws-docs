@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/create-clo
 ---
 
 # Create an EventBridge rule for an Amazon S3 source (console)
-<a name="create-cloudtrail-S3-source-console"></a>
 
 Before you set up a rule in EventBridge, you must create an AWS CloudTrail trail. For more information, see [Creating a Trail in the Console](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-a-trail-using-the-console-first-time.html).
 

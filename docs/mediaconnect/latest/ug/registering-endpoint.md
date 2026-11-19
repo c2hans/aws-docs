@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/registering-endpo
 ---
 
 # Registering an endpoint in MediaConnect
-<a name="registering-endpoint"></a>
 
 You can register endpoints to represent the senders and receivers in your media workflows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Fl
 ---
 
 # FleetSummary
-<a name="API_FleetSummary"></a>
 
 Information about a fleet.
 

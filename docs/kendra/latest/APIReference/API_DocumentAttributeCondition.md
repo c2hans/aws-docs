@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_DocumentA
 ---
 
 # DocumentAttributeCondition
-<a name="API_DocumentAttributeCondition"></a>
 
 The condition used for the target document attribute or metadata field when ingesting documents into Amazon Kendra. You use this with [DocumentAttributeTarget to apply the condition](https://docs.aws.amazon.com/kendra/latest/dg/API_DocumentAttributeTarget.html).
 

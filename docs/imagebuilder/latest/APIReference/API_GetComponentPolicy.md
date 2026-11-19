@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 ---
 
 # GetComponentPolicy
-<a name="API_GetComponentPolicy"></a>
 
 Retrieves a component policy.
 

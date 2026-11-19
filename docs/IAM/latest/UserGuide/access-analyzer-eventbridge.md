@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-eve
 ---
 
 # Monitoring AWS Identity and Access Management Access Analyzer with Amazon EventBridge
-<a name="access-analyzer-eventbridge"></a>
 
 Use the information in this topic to learn how to monitor IAM Access Analyzer findings and access previews with Amazon EventBridge. EventBridge is the new version of Amazon CloudWatch Events.
 

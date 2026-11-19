@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # TagResource
-<a name="API_connect-cases_TagResource"></a>
 
 Adds tags to a resource.
 

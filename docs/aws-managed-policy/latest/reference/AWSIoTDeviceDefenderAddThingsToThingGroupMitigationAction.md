@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTDeviceDefenderAddThingsToThingGroupMitigationAction
-<a name="AWSIoTDeviceDefenderAddThingsToThingGroupMitigationAction"></a>
 
 **Description**: Provides write access to IoT thing groups and read access to IoT Certificates for execution of ADD\_THINGS\_TO\_THING\_GROUP mitigation action
 

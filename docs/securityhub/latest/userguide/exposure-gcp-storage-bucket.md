@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-gc
 ---
 
 # Remediating exposures for GCP Cloud Storage buckets
-<a name="exposure-gcp-storage-bucket"></a>
 
 AWS Security Hub can generate exposure findings for GCP Cloud Storage buckets.
 

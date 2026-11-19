@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/join-chime-meeting.h
 ---
 
 # JoinChimeMeeting
-<a name="join-chime-meeting"></a>
 
 Join an Amazon Chime SDK meeting by providing the attendee join token. To do this, you make AWS SDK calls to the [CreateMeeting](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateMeeting.html) and [CreateAttendee](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateAttendee.html) APIs to get the token and pass it on in the action. See the following example.
 

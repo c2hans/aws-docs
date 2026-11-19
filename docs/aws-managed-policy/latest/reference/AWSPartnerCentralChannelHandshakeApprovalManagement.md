@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPartnerCentralChannelHandshakeApprovalManagement
-<a name="AWSPartnerCentralChannelHandshakeApprovalManagement"></a>
 
 **Description**: Provides necessary access for channel handshake approval management activities.
 

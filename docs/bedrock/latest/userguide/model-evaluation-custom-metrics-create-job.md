@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Create a model evaluation job using custom metrics
-<a name="model-evaluation-custom-metrics-create-job"></a>
 
 To create an evaluation job that uses a custom metric, you need to supply the following:
 + A prompt containing detailed instructions for the judge model to use

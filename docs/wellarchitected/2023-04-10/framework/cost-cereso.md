@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Cost-effective resources
-<a name="cost-cereso"></a>
 
  Using the appropriate instances and resources for your workload is key to cost savings. For example, a reporting process might take five hours to run on a smaller server but one hour to run on a larger server that is twice as expensive. Both servers give you the same outcome, but the smaller server incurs more cost over time.
 

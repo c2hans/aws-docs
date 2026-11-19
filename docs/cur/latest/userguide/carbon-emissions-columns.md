@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/carbon-emissions-co
 ---
 
 # Carbon emissions columns
-<a name="carbon-emissions-columns"></a>
 
 | Column name | Description | Data type | Null value allowed |
 | --- | --- | --- | --- |

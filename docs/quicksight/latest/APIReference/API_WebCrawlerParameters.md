@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_WebCr
 ---
 
 # WebCrawlerParameters
-<a name="API_WebCrawlerParameters"></a>
 
 The parameters for a web crawler data source.
 

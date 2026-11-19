@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # Security foundations
-<a name="gamesec01"></a>
 
 |  GAMESEC01: How do you implement security fundamentals for game development?  |
 | --- |

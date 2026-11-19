@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring
 ---
 
 # Connecting MCP Servers
-<a name="configuring-integrations-and-knowledge-connecting-mcp-servers"></a>
 
 Model Context Protocol (MCP) servers extend AWS DevOps Agent's investigation capabilities by providing access to data from your external observability tools, custom monitoring systems, and operational data sources. This guide explains how to connect an MCP server to AWS DevOps Agent.
 

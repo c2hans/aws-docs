@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/b2bi-concepts.html
 ---
 
 # AWS B2B Data Interchange concepts
-<a name="b2bi-concepts"></a>
 
 You can configure AWS B2B Data Interchange (B2B Data Interchange) to monitor specific locations in Amazon S3 to automate transformation of your X12 EDI documents to JSON/XML and to generate X12 EDI documents from JSON/XML data inputs. This topic outlines the resources needed to fully automate your EDI workflows at scale.
 

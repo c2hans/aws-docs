@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Step 8: Test the solution using the automation scripts
-<a name="test-solution-automation-scripts"></a>
 
 ## Import migration metadata into the factory
 <a name="import-migration-metadata-into-the-factory"></a>

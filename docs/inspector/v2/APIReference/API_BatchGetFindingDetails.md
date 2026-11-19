@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_BatchGetFi
 ---
 
 # BatchGetFindingDetails
-<a name="API_BatchGetFindingDetails"></a>
 
 Gets vulnerability details for findings.
 

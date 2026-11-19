@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/api-ref
 ---
 
 # Automating AWS Device Farm
-<a name="api-ref"></a>
 
  Programmatic access to Device Farm is a powerful way to automate the common tasks that you need to accomplish, such as scheduling a run or downloading the artifacts for a run, suite, or test. The AWS SDK and AWS CLI provide means to do so.
 

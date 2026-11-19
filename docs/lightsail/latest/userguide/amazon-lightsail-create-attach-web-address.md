@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Create and attach a Lightsail web address
-<a name="amazon-lightsail-create-attach-web-address"></a>
 
 Create a Lightsail web address, such as `mysite.amazonlightsail.com`, and then attach it to a resource to serve your content at the web address over HTTPS. You can also add a web address when you create a distribution. For instructions, see [Add a web address when you create a distribution](amazon-lightsail-creating-content-delivery-network-distribution.md#distribution-web-address-create-time).
 

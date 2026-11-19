@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RowLevelResultsOp
 ---
 
 # RowLevelResultsOptions
-<a name="API_RowLevelResultsOptions"></a>
 
 The configuration for writing row-level evaluation results.
 

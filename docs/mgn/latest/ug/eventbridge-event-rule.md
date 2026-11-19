@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/eventbridge-event-rule.htm
 ---
 
 # Registering event rules
-<a name="eventbridge-event-rule"></a>
 
 You create CloudWatch Events event rules that capture events coming from your AWS Transform MGN resources.
 

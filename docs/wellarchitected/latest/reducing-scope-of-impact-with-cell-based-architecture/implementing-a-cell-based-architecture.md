@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Implementing a cell-based architecture
-<a name="implementing-a-cell-based-architecture"></a>
 
  When designing a cell-based architecture, there are several design considerations. This isn't a conclusive description, but some of the learnings that AWS service teams have learned from implementing cell-based architecture.
 

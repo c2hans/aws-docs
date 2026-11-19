@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_cross_Neptune_Q
 ---
 
 # Use the Amazon Neptune API to develop a Lambda function that queries graph data
-<a name="example_cross_Neptune_Query_section"></a>
 
 The following code example shows how to use the Neptune API to query graph data.
 

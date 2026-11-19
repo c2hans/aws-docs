@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationInferenceConfigSummary
-<a name="API_EvaluationInferenceConfigSummary"></a>
 
 Identifies the models, Knowledge Bases, or other RAG sources evaluated in a model or Knowledge Base evaluation job.
 

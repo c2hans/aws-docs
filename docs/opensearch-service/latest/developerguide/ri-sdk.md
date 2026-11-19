@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Purchasing Reserved Instances (AWS SDKs)
-<a name="ri-sdk"></a>
 
 The AWS SDKs (except the Android and iOS SDKs) support all the operations that are defined in the [Amazon OpenSearch Service API Reference](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/Welcome.html), including the following:
 + `DescribeReservedInstanceOfferings`

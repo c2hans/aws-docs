@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # ResolveChoice class
-<a name="aws-glue-api-crawler-pyspark-transforms-ResolveChoice"></a>
 
 Resolves a choice type within a `DynamicFrame`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Popu
 ---
 
 # PopulateIdMappingTable
-<a name="API_PopulateIdMappingTable"></a>
 
 Defines the information that's necessary to populate an ID mapping table.
 

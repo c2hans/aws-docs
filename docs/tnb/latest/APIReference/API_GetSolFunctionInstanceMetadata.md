@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolFuncti
 ---
 
 # GetSolFunctionInstanceMetadata
-<a name="API_GetSolFunctionInstanceMetadata"></a>
 
 The metadata of a network function instance.
 

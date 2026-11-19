@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Entity
-<a name="API_invoicing_Entity"></a>
 
 The organization name providing AWS services.
 

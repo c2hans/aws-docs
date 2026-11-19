@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF06-BP03 Evolve workload performance over time
-<a name="perf_continue_having_appropriate_resource_type_evolve"></a>
 
  As an organization, use the information gathered through the evaluation process to actively drive adoption of new services or resources when they become available.
 

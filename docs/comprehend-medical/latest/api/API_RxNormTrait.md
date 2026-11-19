@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_RxNorm
 ---
 
 # RxNormTrait
-<a name="API_RxNormTrait"></a>
 
 The contextual information for the entity. InferRxNorm recognizes the trait `NEGATION`, which is any indication that the patient is not taking a medication.
 

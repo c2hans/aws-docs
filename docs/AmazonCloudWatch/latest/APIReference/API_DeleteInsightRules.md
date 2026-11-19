@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # DeleteInsightRules
-<a name="API_DeleteInsightRules"></a>
 
 Permanently deletes the specified Contributor Insights rules.
 

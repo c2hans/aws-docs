@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Restricted operations
-<a name="restricted-operations"></a>
 
 Certain Sharp operations are restricted by the solution to help enhance security. This includes (but may not be limited to):
 + clone

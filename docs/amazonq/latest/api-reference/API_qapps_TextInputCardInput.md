@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_T
 ---
 
 # TextInputCardInput
-<a name="API_qapps_TextInputCardInput"></a>
 
 The input shape for defining a text input card in an Amazon Q App.
 

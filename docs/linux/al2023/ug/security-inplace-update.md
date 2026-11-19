@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/security-inplace-update.
 ---
 
 # Applying security updates in-place
-<a name="security-inplace-update"></a>
 
  For an overview of applying updates, see [Applying security updates using DNF and repository versions](managing-repos-os-updates.md#apply-security-updates). The `--security` option to `dnf upgrade` will restrict package updates to only those which have an Advisory. The remainder of this section will cover how to install only specific security updates.
 

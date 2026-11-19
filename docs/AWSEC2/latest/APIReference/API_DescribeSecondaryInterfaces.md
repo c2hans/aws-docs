@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeSecondaryInterfaces
-<a name="API_DescribeSecondaryInterfaces"></a>
 
 Describes one or more of your secondary interfaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/update-
 ---
 
 # Update Management in Amazon WorkSpaces Applications
-<a name="update-management"></a>
 
 WorkSpaces Applications provides an automated way to update your image builder with newer WorkSpaces Applications software. When your images are configured to always use the latest WorkSpaces Applications agent version, your streaming instances are automatically updated with the latest features, performance improvements, and security updates that are available from AWS. For information about how to manage WorkSpaces Applications agent versions, see [Manage WorkSpaces Applications Agent Versions](base-images-agent.md).
 

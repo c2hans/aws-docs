@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # SecurityPolicySummary
-<a name="API_SecurityPolicySummary"></a>
 
 A summary of a security policy for OpenSearch Serverless.
 

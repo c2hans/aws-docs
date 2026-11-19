@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateLaunch
 ---
 
 # UpdateLaunchConfiguration
-<a name="API_UpdateLaunchConfiguration"></a>
 
 Updates a LaunchConfiguration by Source Server ID.
 

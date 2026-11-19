@@ -3,7 +3,7 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/jobs-mqtt-api.
 ---
 
 # Jobs device MQTT API operations
-<a name="jobs-mqtt-api"></a><a name="jobs-mqtt-note"></a>
+<a name="jobs-mqtt-note"></a>
 
 You can issue jobs device commands by publishing MQTT messages to the [Reserved topics used for Jobs commands](reserved-topics.md#reserved-topics-job).
 

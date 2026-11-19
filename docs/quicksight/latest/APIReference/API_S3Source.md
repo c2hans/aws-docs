@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_S3Sou
 ---
 
 # S3Source
-<a name="API_S3Source"></a>
 
 A physical table type for an S3 data source.
 

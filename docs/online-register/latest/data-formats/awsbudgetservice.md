@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsb
 ---
 
 # Data retrieval APIs for AWS Budget Service
-<a name="awsbudgetservice"></a>
 
 AWS Budget Service provides the following APIs for data retrieval.
 

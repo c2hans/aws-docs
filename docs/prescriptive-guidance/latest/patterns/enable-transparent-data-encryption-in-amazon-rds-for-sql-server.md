@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/en
 ---
 
 # Enable transparent data encryption in Amazon RDS for SQL Server
-<a name="enable-transparent-data-encryption-in-amazon-rds-for-sql-server"></a>
 
 *Ranga Cherukuri, Amazon Web Services*
 

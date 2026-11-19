@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL10-BP04 Use bulkhead architectures to limit scope of impact
-<a name="rel_fault_isolation_use_bulkhead"></a>
 
  Like the bulkheads on a ship, this pattern ensures that a failure is contained to a small subset of requests or clients so that the number of impaired requests is limited, and most can continue without error. Bulkheads for data are often called partitions, while bulkheads for services are known as cells.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticBeanstalkRoleCWL
-<a name="AWSElasticBeanstalkRoleCWL"></a>
 
 **Description**: (Elastic Beanstalk operations role) Allows an environment to manage Amazon CloudWatch Logs log groups.
 

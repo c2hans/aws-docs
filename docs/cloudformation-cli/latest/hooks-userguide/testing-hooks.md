@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Testing a custom Hook in your AWS account
-<a name="testing-hooks"></a>
 
 Now that you've coded your handler functions that correspond to an invocation point, it's time to test your custom Hook on a CloudFormation stack.
 

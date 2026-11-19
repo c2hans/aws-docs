@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteCa
 ---
 
 # RouteCarOptions
-<a name="API_RouteCarOptions"></a>
 
  Travel mode options when the provided travel mode is `Car`. For [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers, `ap-southeast-1` and `ap-southeast-5` regions support only `LicensePlate` options.
 

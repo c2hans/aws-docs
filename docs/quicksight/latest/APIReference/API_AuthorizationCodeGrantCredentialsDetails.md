@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Autho
 ---
 
 # AuthorizationCodeGrantCredentialsDetails
-<a name="API_AuthorizationCodeGrantCredentialsDetails"></a>
 
 Details for OAuth 2.0 authorization code grant credentials.
 

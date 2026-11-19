@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/available-aws-regi
 ---
 
 # Availability by AWS Region
-<a name="available-aws-regions"></a>
 
 Amazon FSx for NetApp ONTAP file systems are available in the following AWS Regions, with deployment type support indicated for each region:
 

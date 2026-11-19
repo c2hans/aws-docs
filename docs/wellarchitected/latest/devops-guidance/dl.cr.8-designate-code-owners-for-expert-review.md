@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CR.8] Designate code owners for expert review
-<a name="dl.cr.8-designate-code-owners-for-expert-review"></a>
 
  **Category:** OPTIONAL
 

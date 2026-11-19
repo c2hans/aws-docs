@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # AdvancedFieldSelector
-<a name="API_AdvancedFieldSelector"></a>
 
  Defines criteria for selecting resources based on field values.
 

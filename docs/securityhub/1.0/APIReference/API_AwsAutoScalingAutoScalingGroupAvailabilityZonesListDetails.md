@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAuto
 ---
 
 # AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetails
-<a name="API_AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetails"></a>
 
 An Availability Zone for the automatic scaling group.
 

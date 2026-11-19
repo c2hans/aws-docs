@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreateEngagement
-<a name="API_CreateEngagement"></a>
 
 The `CreateEngagement` action allows you to create an `Engagement`, which serves as a collaborative space between different parties such as AWS Partners and AWS Sellers. This action automatically adds the caller's AWS account as an active member of the newly created `Engagement`.
 

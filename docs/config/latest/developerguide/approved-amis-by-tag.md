@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/approved-am
 ---
 
 # approved-amis-by-tag
-<a name="approved-amis-by-tag"></a>
 
 Checks if EC2 instances are using specified Amazon Machine Images (AMIs). Specify the tags that identify the AMIs. Running instances with AMIs that don't have at least one of the specified tags are NON\_COMPLIANT.
 

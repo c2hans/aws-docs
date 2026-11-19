@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # MedicalScribeInputStream
-<a name="API_streaming_MedicalScribeInputStream"></a>
 
 An encoded stream of events. The stream is encoded as HTTP/2 data frames.
 

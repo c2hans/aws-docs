@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/BOOTSTRAP_FAI
 ---
 
 # BOOTSTRAP\_FAILURE\_HIVE\_METASTORE\_CONNECTION\_ERROR\_WORKER
-<a name="BOOTSTRAP_FAILURE_HIVE_METASTORE_CONNECTION_ERROR_WORKER"></a>
 
 ## Overview
 <a name="BOOTSTRAP_FAILURE_HIVE_METASTORE_CONNECTION_ERROR_WORKER_overview"></a>

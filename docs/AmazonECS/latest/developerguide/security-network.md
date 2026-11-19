@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security
 ---
 
 # Network security best practices for Amazon ECS
-<a name="security-network"></a>
 
 Network security is a broad topic that encompasses several subtopics. These include encryption-in-transit, network segmentation and isolation, firewalling, traffic routing, and observability.
 

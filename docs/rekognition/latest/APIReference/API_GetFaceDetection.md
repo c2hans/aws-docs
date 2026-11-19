@@ -3,11 +3,10 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetF
 ---
 
 # GetFaceDetection
-<a name="API_GetFaceDetection"></a>
 
 Gets face detection results for a Amazon Rekognition Video analysis started by [StartFaceDetection](API_StartFaceDetection.md).
 
-Face detection with Amazon Rekognition Video is an asynchronous operation. You start face detection by calling [StartFaceDetection](API_StartFaceDetection.md) which returns a job identifier (`JobId`). When the face detection operation finishes, Amazon Rekognition Video publishes a completion status to the Amazon Simple Notification Service topic registered in the initial call to `StartFaceDetection`. To get the results of the face detection operation, first check that the status value published to the Amazon SNS topic is `SUCCEEDED`. If so, call [GetFaceDetection](#API_GetFaceDetection) and pass the job identifier (`JobId`) from the initial call to `StartFaceDetection`.
+Face detection with Amazon Rekognition Video is an asynchronous operation. You start face detection by calling [StartFaceDetection](API_StartFaceDetection.md) which returns a job identifier (`JobId`). When the face detection operation finishes, Amazon Rekognition Video publishes a completion status to the Amazon Simple Notification Service topic registered in the initial call to `StartFaceDetection`. To get the results of the face detection operation, first check that the status value published to the Amazon SNS topic is `SUCCEEDED`. If so, call [GetFaceDetection](API_GetFaceDetection.md) and pass the job identifier (`JobId`) from the initial call to `StartFaceDetection`.
 
  `GetFaceDetection` returns an array of detected faces (`Faces`) sorted by the time the faces were detected.
 

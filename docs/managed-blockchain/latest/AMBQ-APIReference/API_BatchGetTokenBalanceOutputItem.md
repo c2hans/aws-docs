@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # BatchGetTokenBalanceOutputItem
-<a name="API_BatchGetTokenBalanceOutputItem"></a>
 
 The container for the properties of a token balance output.
 

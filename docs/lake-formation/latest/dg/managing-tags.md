@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/managing-tags.h
 ---
 
 # Managing LF-Tags for metadata access control
-<a name="managing-tags"></a>
 
 To use the Lake Formation tag-based access control (LF-TBAC) method to secure Data Catalog objects such as catalogs, databases, tables, views, and columns, you create LF-Tags, assign them to resources, and grant LF-Tag permissions to principals.
 

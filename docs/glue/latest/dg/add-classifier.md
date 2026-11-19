@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/add-classifier.html
 ---
 
 # Defining and managing classifiers
-<a name="add-classifier"></a>
 
 A classifier reads the data in a data store. If it recognizes the format of the data, it generates a schema. The classifier also returns a certainty number to indicate how certain the format recognition was.
 

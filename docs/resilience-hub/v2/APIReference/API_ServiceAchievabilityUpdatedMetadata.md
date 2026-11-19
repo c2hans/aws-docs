@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServiceAchievabilityUpdatedMetadata
-<a name="API_ServiceAchievabilityUpdatedMetadata"></a>
 
 Metadata for a service achievability updated event.
 

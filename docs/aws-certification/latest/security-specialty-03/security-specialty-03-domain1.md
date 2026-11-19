@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/security-specia
 ---
 
 # Content Domain 1: Detection
-<a name="security-specialty-03-domain1"></a>
 
 **Topics**
 + [Task 1.1: Design and implement monitoring and alerting solutions for an AWS account or organization](#security-specialty-03-domain1-task1)

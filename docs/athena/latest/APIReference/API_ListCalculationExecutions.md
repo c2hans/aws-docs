@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ListCalcu
 ---
 
 # ListCalculationExecutions
-<a name="API_ListCalculationExecutions"></a>
 
 Lists the calculations that have been submitted to a session in descending order. Newer calculations are listed first; older calculations are listed later.
 

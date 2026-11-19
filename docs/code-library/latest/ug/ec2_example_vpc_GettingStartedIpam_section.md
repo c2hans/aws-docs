@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ec2_example_vpc_G
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Get started using IP address management using the CLI
-<a name="ec2_example_vpc_GettingStartedIpam_section"></a>
 
 The following code example shows how to:
 + Set up and configure Amazon VPC IP Address Manager (IPAM) using the CLI.

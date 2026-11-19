@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/datasync-netwo
 ---
 
 # AWS DataSync network requirements
-<a name="datasync-network"></a>
 
 Configuring your network is an important step in setting up AWS DataSync. Your network configuration depends on several factors, such as what kind of storage systems you're working with. It's also based on what kind of DataSync service endpoint that you plan to use.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Suppressi
 ---
 
 # SuppressionListDestination
-<a name="API_SuppressionListDestination"></a>
 
 An object that contains details about the action of suppression list.
 

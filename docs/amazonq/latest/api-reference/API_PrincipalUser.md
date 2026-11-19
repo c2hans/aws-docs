@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Princip
 ---
 
 # PrincipalUser
-<a name="API_PrincipalUser"></a>
 
 Provides information about a user associated with a principal.
 

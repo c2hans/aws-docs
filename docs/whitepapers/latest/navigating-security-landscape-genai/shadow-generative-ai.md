@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
 ---
 
 # Shadow generative AI
-<a name="shadow-generative-ai"></a>
 
  The productivity improvements of generative AI cannot be understated. When organizations outright ban generative AI or are slow to adopt it, employees will find ways to use consumer grade (scope 1) applications. This has led to an explosion of shadow generative AI in organizations, creating unmanaged and uncontrolled data risks. A dual approach needs to be taken here:
 +  **Provide approved tooling to the workforce.** By offering sanctioned AI tools, organizations can reduce shadow AI usage while simultaneously improving visibility into how generative AI is being used.

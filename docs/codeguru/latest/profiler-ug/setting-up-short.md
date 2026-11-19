@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/setting-up-s
 ---
 
 # Set up in the Lambda console
-<a name="setting-up-short"></a>
 
 You can use the following method to create a profiling group with your Lambda function. This method automatically creates a proﬁling group when a profile is available to submit. This method is applicable for runtimes Python 3.8, Python 3.9, Java 8 on Amazon Linux 2 and Java 11 and Java 17 (Corretto). Alternatively, you can create a profiling group by following the instructions in [Setting up in the CodeGuru Profiler console](setting-up-long.md).
 

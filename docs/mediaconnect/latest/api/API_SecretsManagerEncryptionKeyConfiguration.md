@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SecretsManag
 ---
 
 # SecretsManagerEncryptionKeyConfiguration
-<a name="API_SecretsManagerEncryptionKeyConfiguration"></a>
 
 The configuration settings for transit encryption using AWS Secrets Manager, including the secret ARN and role ARN.
 

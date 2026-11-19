@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-arm64-pyt
 ---
 
 # Using the ARM64 GPU PyTorch DLAMI
-<a name="tutorial-arm64-pytorch"></a>
 
 The AWS Deep Learning AMIs is ready to use with Arm64 processor-based GPUs, and comes optimized for PyTorch. The ARM64 GPU PyTorch DLAMI includes a Python environment pre-configured with [PyTorch](https://aws.amazon.com/pytorch), [TorchVision](https://pytorch.org/vision/stable/index.html), and [TorchServe](https://pytorch.org/serve/) for deep learning training and inference use cases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/support-authoriza
 ---
 
 # AWS Support authorization quotas
-<a name="support-authorization-quotas"></a>
 
 The following tables list AWS Support authorization quotas.
 

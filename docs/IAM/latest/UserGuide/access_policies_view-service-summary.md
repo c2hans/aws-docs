@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_vie
 ---
 
 # View service summaries
-<a name="access_policies_view-service-summary"></a>
 
 You can view a service summary for each service listed in the policy summary that grants permissions.
 

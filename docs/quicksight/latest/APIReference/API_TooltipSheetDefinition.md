@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Toolt
 ---
 
 # TooltipSheetDefinition
-<a name="API_TooltipSheetDefinition"></a>
 
 A tooltip sheet is an object that contains a set of visuals that are used as a tooltip. Every analysis and dashboard must contain at least one non-tooltip sheet.
 

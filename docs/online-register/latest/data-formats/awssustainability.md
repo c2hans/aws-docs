@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 ---
 
 # Data retrieval APIs for AWS Sustainability
-<a name="awssustainability"></a>
 
 AWS Sustainability provides the following APIs for data retrieval.
 

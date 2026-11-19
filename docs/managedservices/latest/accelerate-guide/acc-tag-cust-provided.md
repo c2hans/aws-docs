@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Customer-provided tags in Accelerate
-<a name="acc-tag-cust-provided"></a>
 
 **What are customer-provided tags?**
 

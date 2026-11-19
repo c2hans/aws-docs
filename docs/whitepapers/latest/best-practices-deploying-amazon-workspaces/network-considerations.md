@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Network considerations
-<a name="network-considerations"></a>
 
  Each WorkSpace is associated with the specific Amazon VPC and AWS Directory Service construct that you used to create it. All AWS Directory Service constructs (Simple AD, AD Connector, and Microsoft AD) require two subnets to operate, each in different Availability Zones (AZs). Subnets are permanently affiliated with a Directory Service construct and can’t be modified after it is created. Because of this, it’s imperative that you determine the right subnet sizes before you create the Directory Services construct. Carefully consider the following before you create the subnets:
 +  How many WorkSpaces will you need over time?

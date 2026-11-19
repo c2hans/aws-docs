@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Agentic AI frameworks, platforms, protocols, and tools on AWS
-<a name="introduction"></a>
 
 *Aaron Sempf, Joshua Samuel, and Ansley Verzosa, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/service-limits.ht
 ---
 
 # Quotas in AWS CodeArtifact
-<a name="service-limits"></a>
 
  The following table describes resource quotas in CodeArtifact. To view the resource quotas along with the list of service endpoints for CodeArtifact, see [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html) in the *Amazon Web Services General Reference*.
 

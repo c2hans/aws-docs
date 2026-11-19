@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/schema-conversion-oracle-
 ---
 
 # Step 2: Configure Your Source Database
-<a name="schema-conversion-oracle-postgresql-step-2"></a>
 
 In this step, you configure a new database user on your source Oracle database. Also, you configure the network to set up interaction for your source database with DMS Schema Conversion.
 

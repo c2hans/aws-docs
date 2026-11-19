@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/compare-optio
 ---
 
 # Review the Lightsail instance blueprint offerings
-<a name="compare-options-choose-lightsail-instance-image"></a>
 
 Lightsail provides several options for you to create your virtual private server. This topic helps you decide which operating system (OS), application, or development stack is right for your project. We organized the applications by functional area (such as CMS and ecommerce).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 ---
 
 # Set up multi-account network migration
-<a name="transform-vmware-network-multi-account-setup"></a>
 
 For multi-account deployments, you must configure cross-account IAM roles and trusted access for AWS Organizations before you start the network migration.
 

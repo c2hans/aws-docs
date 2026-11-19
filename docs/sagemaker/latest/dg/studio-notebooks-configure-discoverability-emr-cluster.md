@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-con
 ---
 
 # Configure listing Amazon EMR clusters
-<a name="studio-notebooks-configure-discoverability-emr-cluster"></a>
 
 Administrators can configure permissions for the SageMaker Studio execution role to grant users the ability to view the list of Amazon EMR clusters they have access to, allowing them to connect to these clusters. The clusters to which you want access can be deployed in the same AWS account as Studio (choose *Single account*) or in separate accounts (choose *Cross account*). The following page describes how to grant the permissions for viewing Amazon EMR clusters from Studio or Studio Classic.
 

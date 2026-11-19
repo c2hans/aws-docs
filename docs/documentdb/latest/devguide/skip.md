@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/skip.html
 ---
 
 # $skip
-<a name="skip"></a>
 
 In Amazon DocumentDB, the `$skip` operator is used to offset the starting point of the query results, allowing you to retrieve a specific subset of the matching documents. This is particularly useful in pagination scenarios, where you want to retrieve subsequent pages of results.
 

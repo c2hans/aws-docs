@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_SnapStartResponse.
 ---
 
 # SnapStartResponse
-<a name="API_SnapStartResponse"></a>
 
 The function's [SnapStart](https://docs.aws.amazon.com/lambda/latest/dg/snapstart.html) setting.
 

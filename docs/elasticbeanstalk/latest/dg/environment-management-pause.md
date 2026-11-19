@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-m
 ---
 
 # Pausing and resuming Elastic Beanstalk environments
-<a name="environment-management-pause"></a>
 
 When you **pause** an AWS Elastic Beanstalk environment, Elastic Beanstalk scales its Auto Scaling group to zero instances. The environment keeps its name, ID, URL, configuration, application version history, and any attached resources. As a result, you stop paying for the environment's Amazon EC2 instances without terminating the environment or rebuilding it later.
 
@@ -11,7 +10,7 @@ Pausing is useful for development and test environments that sit idle outside wo
 
 A paused environment reports a health status of **Paused** in the Elastic Beanstalk console. Because the environment has no instances, it doesn't serve requests while it's paused.
 
-The Elastic Beanstalk console displays this status. However, Elastic Beanstalk has no corresponding environment state. The health that the [DescribeEnvironments](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_DescribeEnvironments.html) action returns for a paused environment depends on which health reporting system the environment uses. Because a paused environment has no instances to report health, an environment that uses enhanced health reporting returns a `Health` of `Grey` and a `HealthStatus` of `No Data`. An environment that uses basic health reporting returns a `Health` of `Red`.
+The Elastic Beanstalk console displays this status. However, Elastic Beanstalk has no corresponding environment state. The health that the [DescribeEnvironments](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_DescribeEnvironments.html) operation returns for a paused environment depends on which health reporting system the environment uses. Because a paused environment has no instances to report health, an environment that uses enhanced health reporting returns a `Health` of `Grey` and a `HealthStatus` of `No Data`. An environment that uses basic health reporting returns a `Health` of `Red`.
 
 **Note**
 Pausing doesn't stop charges for resources that exist independently of the environment's instances, such as a load balancer, a coupled Amazon RDS database instance, or stored application versions and CloudWatch data. To stop the charges that pausing leaves in place, terminate the environment, which also deletes the AWS resources that Elastic Beanstalk created for it. Terminating doesn't delete your application versions or a retained database. It also keeps your CloudWatch Logs logs, unless log streaming is configured to delete them when the environment terminates. For more information, see [Terminate an Elastic Beanstalk environment](using-features.terminating.md).
@@ -35,7 +34,7 @@ You can pause load-balanced environments only. Single-instance environments alwa
 
 1. Choose **Pause**.
 
-To pause an environment with the Elastic Beanstalk API, use the [UpdateEnvironment](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_UpdateEnvironment.html) action with the AWS CLI or the AWS SDK to set the minimum and maximum instance counts to zero.
+To pause an environment with the Elastic Beanstalk API, use the [UpdateEnvironment](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_UpdateEnvironment.html) operation with the AWS CLI or the AWS SDK to set the minimum and maximum instance counts to zero.
 
 ```
 $ aws elasticbeanstalk update-environment --environment-id e-{{vdnftxubwq}} \
@@ -64,7 +63,7 @@ To resume an environment, set its minimum and maximum instance counts back to no
 
 1. Choose **Resume**.
 
-To resume an environment with the Elastic Beanstalk API, use the [UpdateEnvironment](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_UpdateEnvironment.html) action to set the minimum and maximum instance counts back to the values you want.
+To resume an environment with the Elastic Beanstalk API, use the [UpdateEnvironment](https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_UpdateEnvironment.html) operation to set the minimum and maximum instance counts back to the values you want.
 
 ```
 $ aws elasticbeanstalk update-environment --environment-id e-{{vdnftxubwq}} \

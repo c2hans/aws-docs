@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/single-ami-
 ---
 
 # Updating end user license agreement (EULA) for your AMI-based AWS Marketplace product
-<a name="single-ami-update-eula"></a>
 
 As an AWS Marketplace seller, you can update the end user license agreement (EULA) that will govern the use of your single Amazon Machine Image (AMI) product. Your EULA is located on the product listing page for public software listings on AWS Marketplace. You can either apply your own EULA or use the [Standard Contract for AWS Marketplace (SCMP)](standardized-license-terms.md). The following procedure shows you how to update the EULA for your single-AMI product.
 

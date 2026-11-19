@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteVpc
 ---
 
 # DeleteVpcEndpointServiceConfigurations
-<a name="API_DeleteVpcEndpointServiceConfigurations"></a>
 
 Deletes the specified VPC endpoint service configurations. Before you can delete an endpoint service configuration, you must reject any `Available` or `PendingAcceptance` interface endpoint connections that are attached to the service.
 

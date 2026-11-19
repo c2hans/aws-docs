@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_S3Input
 ---
 
 # S3InputFileLocation
-<a name="API_S3InputFileLocation"></a>
 
 Specifies the customer input Amazon S3 file location. If it is used inside `copyStepDetails.DestinationFileLocation`, it should be the S3 copy destination.
 

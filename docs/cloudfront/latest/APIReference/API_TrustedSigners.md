@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Trust
 ---
 
 # TrustedSigners
-<a name="API_TrustedSigners"></a>
 
 A list of AWS accounts whose public keys CloudFront can use to verify the signatures of signed URLs and signed cookies.
 

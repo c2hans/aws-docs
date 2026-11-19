@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Pagination
-<a name="pagination"></a>
 
 The list endpoints (`GET /policies`, `GET /origins`, and `GET /mappings`) return results in pages. When more results are available, the response includes a `nextToken` value. To retrieve the next page, pass it back as the `nextToken` query parameter on the same endpoint. When the response omits `nextToken`, you have reached the last page.
 

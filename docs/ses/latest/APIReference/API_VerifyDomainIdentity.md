@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_VerifyDomain
 ---
 
 # VerifyDomainIdentity
-<a name="API_VerifyDomainIdentity"></a>
 
 Adds a domain to the list of identities for your Amazon SES account in the current AWS Region and attempts to verify it. For more information about verifying domains, see [Verifying Email Addresses and Domains](https://docs.aws.amazon.com/ses/latest/dg/verify-addresses-and-domains.html) in the *Amazon SES Developer Guide.*
 

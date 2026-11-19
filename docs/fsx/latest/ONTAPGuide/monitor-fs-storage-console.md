@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/monitor-fs-storage
 ---
 
 # Monitoring SSD storage utilization
-<a name="monitor-fs-storage-console"></a>
 
 You can monitor your file system's SSD storage capacity utilization using a variety of AWS and NetApp tools. Using Amazon CloudWatch you can monitor storage capacity utilization and set alarms to alert you when storage capacity utilization reaches a customizable threshold.
 

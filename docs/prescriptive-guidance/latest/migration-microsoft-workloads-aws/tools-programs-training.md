@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Migration tools, programs, and training
-<a name="tools-programs-training"></a>
 
 This section outlines AWS and AWS Partner tools available to assist with your cloud migration, the training opportunities available to provide your team with the skills they need for migrating to and operating in the cloud, and key migration programs available to accelerate your migration journey and reduce migration costs.
 

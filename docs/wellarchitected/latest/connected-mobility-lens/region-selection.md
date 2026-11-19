@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Region selection
-<a name="region-selection"></a>
 
 | CMSUS\_1: Are you selecting the Region to meet both your business requirements and sustainability goals?  |
 | --- |

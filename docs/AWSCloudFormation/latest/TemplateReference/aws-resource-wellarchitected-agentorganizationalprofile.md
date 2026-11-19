@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WellArchitected::AgentOrganizationalProfile
-<a name="aws-resource-wellarchitected-agentorganizationalprofile"></a>
 
 Creates an Organizational Profile for use with AWS Organizations integration. Organizational Profiles are scoped to an organization in AWS Organizations and do not require an execution role or aggregation configuration. The organization is inferred from the caller's identity.
 

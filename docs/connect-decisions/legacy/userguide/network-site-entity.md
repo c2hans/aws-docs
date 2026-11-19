@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/netwo
 ---
 
 # site
-<a name="network-site-entity"></a>
 
 **Primary key (PK)**
 

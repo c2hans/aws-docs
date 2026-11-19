@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_WebExpe
 ---
 
 # WebExperience
-<a name="API_WebExperience"></a>
 
 Provides information for an Amazon Q Business web experience.
 

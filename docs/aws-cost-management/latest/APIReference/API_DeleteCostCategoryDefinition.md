@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteCostCategoryDefinition
-<a name="API_DeleteCostCategoryDefinition"></a>
 
 Deletes a cost category. Expenses from this month going forward will no longer be categorized with this cost category.
 

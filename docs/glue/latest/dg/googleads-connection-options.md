@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googleads-connection-opti
 ---
 
 # Google Ads connection options
-<a name="googleads-connection-options"></a>
 
 The following are connection options for Google Ads:
 +  `ENTITY_NAME`(String) - (Required) Used for Read/Write. The name of your Object in Google Ads.

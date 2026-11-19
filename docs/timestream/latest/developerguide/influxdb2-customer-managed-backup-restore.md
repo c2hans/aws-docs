@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/influxd
 For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Customer-managed backup and restore
-<a name="influxdb2-customer-managed-backup-restore"></a>
 
 Customer-managed backup and restore lets you create, manage, and restore database backups for your Amazon Timestream for InfluxDB DB instances and clusters. You can create on-demand or automated scheduled backups, and restore databases without opening AWS support tickets.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeIpamResourceDiscoveryAssociations
-<a name="API_DescribeIpamResourceDiscoveryAssociations"></a>
 
 Describes resource discovery association with an Amazon VPC IPAM. An associated resource discovery is a resource discovery that has been associated with an IPAM..
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_De
 ---
 
 # DeleteEventRule
-<a name="API_DeleteEventRule"></a>
 
 Deletes an `EventRule`.
 

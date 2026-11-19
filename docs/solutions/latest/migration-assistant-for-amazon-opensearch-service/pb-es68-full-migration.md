@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 10: Run the full migration
-<a name="pb-es68-full-migration"></a>
 
 After the pilot validates cleanly, widen the configuration to cover all indexes by setting `indexAllowlist` to an empty array, then submit again. An empty allowlist means all eligible indexes are migrated.
 

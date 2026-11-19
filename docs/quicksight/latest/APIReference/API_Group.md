@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Group
 ---
 
 # Group
-<a name="API_Group"></a>
 
 A *group* in Quick Sight consists of a set of users. You can use groups to make it easier to manage access and security.
 

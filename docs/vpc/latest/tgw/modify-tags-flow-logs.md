@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/modify-tags-flow-logs.htm
 ---
 
 # Manage AWS Transit Gateway Flow Logs tags
-<a name="modify-tags-flow-logs"></a>
 
 You can add or remove tags for a flow log in the Amazon EC2 and Amazon VPC consoles.
 

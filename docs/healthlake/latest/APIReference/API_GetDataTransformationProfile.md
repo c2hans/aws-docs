@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_GetDa
 ---
 
 # GetDataTransformationProfile
-<a name="API_GetDataTransformationProfile"></a>
 
 Retrieves a data transformation profile's metadata and profile content at a specific version. Specify version 0 to retrieve the DRAFT, a version number between 1 and 99 to retrieve a specific published version, or omit the version to retrieve the latest published version.
 

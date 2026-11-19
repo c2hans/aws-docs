@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # GetAgreementEntitlements
-<a name="API_marketplace-agreements_GetAgreementEntitlements"></a>
 
 Obtains details about the entitlements of an agreement.
 

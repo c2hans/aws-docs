@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # AIAgentSummary
-<a name="API_amazon-q-connect_AIAgentSummary"></a>
 
 The summary of the AI Agent.
 

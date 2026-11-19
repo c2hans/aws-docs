@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/speak-tag.html
 ---
 
 # Identifying SSML-enhanced text
-<a name="speak-tag"></a>
 
 *<speak>*
 

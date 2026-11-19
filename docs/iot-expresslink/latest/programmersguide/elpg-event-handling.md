@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/programmersguide/
 ---
 
 # 8 Event handling
-<a name="elpg-event-handling"></a>
 
 ## 8.1 Introduction
 <a name="elpg-event-handling-introduction"></a>

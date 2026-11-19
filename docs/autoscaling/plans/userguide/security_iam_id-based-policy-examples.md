@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/userguide/security_iam
 ---
 
 # Identity-based policy examples for scaling plans
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, a brand new IAM user has no permissions to do anything. An IAM administrator must create and assign IAM policies that give an IAM identity (such as a user or role) permission to work with scaling plans.
 

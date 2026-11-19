@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/checkout-configuring.html
 ---
 
 # Configuring Checkout.com
-<a name="checkout-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Checkout.com, you must meet the following requirements:
 

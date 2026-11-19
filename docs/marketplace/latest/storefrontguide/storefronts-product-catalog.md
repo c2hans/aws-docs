@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/store
 ---
 
 # Product catalog
-<a name="storefronts-product-catalog"></a>
 
 Add products to your storefront and organize them with categories, badges, and tags.
 

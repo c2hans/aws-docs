@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ge
 ---
 
 # Generate an AWS CloudFormation template containing AWS Config managed rules using Troposphere
-<a name="generate-an-aws-cloudformation-template-containing-aws-config-managed-rules-using-troposphere"></a>
 
 *Lucas Nation and Freddie Wilson, Amazon Web Services*
 

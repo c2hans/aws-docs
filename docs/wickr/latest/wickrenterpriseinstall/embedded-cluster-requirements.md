@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/wickrenterpriseinstall/embe
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html) or [AWS Wickr User Guide](https://docs.aws.amazon.com/wickr/latest/userguide/what-is-wickr.html).
 
 # Wickr Enterprise embedded cluster requirements
-<a name="embedded-cluster-requirements"></a>
 
 Before you start to install Wickr Enterprise embedded cluster, verify that the following requirements are met.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Crea
 ---
 
 # CreateFaceLivenessSessionRequestSettings
-<a name="API_CreateFaceLivenessSessionRequestSettings"></a>
 
 A session settings object. It contains settings for the operation to be performed. It accepts arguments for OutputConfig and AuditImagesLimit.
 

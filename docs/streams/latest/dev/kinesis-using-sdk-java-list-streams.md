@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kinesis-using-sdk-jav
 ---
 
 # List streams
-<a name="kinesis-using-sdk-java-list-streams"></a>
 
 Streams are scoped to the AWS account associated with the AWS credentials used to instantiate the Kinesis Data Streams client and also to the Region specified for the client. An AWS account could have many streams active at one time. You can list your streams in the Kinesis Data Streams console, or programmatically. The code in this section shows how to list all the streams for your AWS account.
 

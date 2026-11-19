@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/load-api-refere
 ---
 
 # Neptune Loader Get-Status Examples
-<a name="load-api-reference-status-examples"></a>
 
  The following examples showcase the usage of the Neptune loader's GET-Status API, which allows you to retrieve information about the status of your data loads into the Amazon Neptune graph database. These examples cover three main scenarios: retrieving the status of a specific load, listing the available load IDs, and requesting detailed status information for a specific load.
 

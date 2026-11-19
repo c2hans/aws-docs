@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-con
 ---
 
 # RDS Proxy connection considerations
-<a name="rds-proxy-connections"></a>
 
 ## Configuring connection settings
 <a name="rds-proxy-connection-pooling-tuning"></a>

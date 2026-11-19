@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_revoke
 ---
 
 # Revoke IAM role temporary security credentials
-<a name="id_roles_use_revoke-sessions"></a>
 
 **Warning**
 If you follow the steps on this page, all users with current sessions created by assuming the role are denied access to all AWS actions and resources. This can result in users losing unsaved work.

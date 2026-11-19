@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Amazon OpenSearch Service user interface release history
-<a name="application-release-history"></a>
 
 The following table lists all releases of the Amazon OpenSearch Service support for OpenSearch UI and the features and enhancements included with each release.
 

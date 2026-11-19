@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Cmdlet discovery and aliases
-<a name="pstools-discovery-aliases"></a>
 
 This section shows you how to list services that are supported by the AWS Tools for PowerShell, how to show the set of cmdlets provided by the AWS Tools for PowerShell in support of those services, and how to find alternative cmdlet names (also called aliases) to access those services.
 

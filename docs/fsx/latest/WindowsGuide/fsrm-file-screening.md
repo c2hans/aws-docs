@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/fsrm-file-screen
 ---
 
 # File Screening
-<a name="fsrm-file-screening"></a>
 
 File screening controls which types of files users can save to folders on your file system. File screening helps you enforce storage policies, prevent unauthorized file types, and maintain compliance with organizational requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_Disassoc
 ---
 
 # DisassociateFromConfiguration
-<a name="API_DisassociateFromConfiguration"></a>
 
 Unlink a resource, for example a custom action, from a channel configuration.
 

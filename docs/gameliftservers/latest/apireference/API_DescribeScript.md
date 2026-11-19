@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # DescribeScript
-<a name="API_DescribeScript"></a>
 
  **This API works with the following fleet types:** EC2
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateUs
 ---
 
 # UpdateUserConfig
-<a name="API_UpdateUserConfig"></a>
 
 Updates the configuration settings for the specified user, including per-channel auto-accept and after contact work (ACW) timeout settings.
 

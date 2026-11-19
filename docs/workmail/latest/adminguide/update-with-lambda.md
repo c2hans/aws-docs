@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workmail/latest/adminguide/update-with-l
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkMail. After March 31, 2027, you will no longer be able to access the Amazon WorkMail console or Amazon WorkMail resources. For more information, see [Amazon WorkMail end of support](https://docs.aws.amazon.com/workmail/latest/adminguide/workmail-end-of-support.html).
 
 # Updating message content with AWS Lambda
-<a name="update-with-lambda"></a>
 
 After you configure a synchronous AWS Lambda function to manage email flows, you can use the `PutRawMessageContent` action in the Amazon WorkMail Message flow API to update the content of in-transit email messages. For more information about getting started with Lambda functions for Amazon WorkMail, see [Configuring synchronous **Run Lambda** rules](lambda.md#synchronous-rules). For more information about the API, see [ PutRawMessageContent](https://docs.aws.amazon.com/workmail/latest/APIReference/API_messageflow_PutRawMessageContent.html).
 

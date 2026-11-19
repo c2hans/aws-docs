@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-PublishSNSNotification`
-<a name="automation-aws-publishsnsnotification"></a>
 
  **Description**
 

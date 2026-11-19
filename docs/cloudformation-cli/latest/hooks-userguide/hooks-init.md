@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Initiating a custom CloudFormation Hooks project
-<a name="hooks-init"></a>
 
 The first step in creating your custom Hooks project is to initiate the project. You can use the CloudFormation CLI `init` command to initiate your custom Hooks project.
 

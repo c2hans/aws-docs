@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_CapacityA
 ---
 
 # CapacityAssignmentConfiguration
-<a name="API_CapacityAssignmentConfiguration"></a>
 
 Assigns Athena workgroups (and hence their queries) to capacity reservations. A capacity reservation can have only one capacity assignment configuration, but the capacity assignment configuration can be made up of multiple individual assignments. Each assignment specifies how Athena queries can consume capacity from the capacity reservation that their workgroup is mapped to.
 

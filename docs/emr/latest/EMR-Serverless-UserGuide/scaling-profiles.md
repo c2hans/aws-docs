@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/scal
 ---
 
 # Using Scaling Profiles
-<a name="scaling-profiles"></a>
 
 With Amazon EMR Serverless, you can choose how quickly your Apache Spark jobs add and release executors. You set one configuration property, `spark.emr-serverless.scalingProfile`, instead of tuning individual Spark dynamic allocation properties. The property takes one of three profiles:
 + `performance-optimized` – Adds executors as quickly as possible, for the shortest run time.

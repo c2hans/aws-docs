@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/iam-policy-struct
 ---
 
 # IAM policy structure
-<a name="iam-policy-structure"></a>
 
 The following topics explain the structure of an IAM policy.
 

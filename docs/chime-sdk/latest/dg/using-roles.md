@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/using-roles.html
 ---
 
 # Using service-linked roles for Amazon Chime SDK messaging
-<a name="using-roles"></a>
 
 The Amazon Chime SDK uses AWS Identity and Access Management (IAM) [ service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role). A service-linked role is a unique type of IAM role that links directly to Amazon Chime SDK. Amazon Chime SDK predefines the service-linked roles, and they include all the permissions that the service requires to call other AWS services on your behalf.
 

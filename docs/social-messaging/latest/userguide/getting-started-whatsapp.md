@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/gettin
 ---
 
 # Getting started with AWS End User Messaging Social
-<a name="getting-started-whatsapp"></a>
 
 These topics guide you through the steps to link or migrate your WhatsApp Business Account (WABA) to AWS End User Messaging Social.
 

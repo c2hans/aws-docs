@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # FirewallPolicyV2
-<a name="API_FirewallPolicyV2"></a>
 
 The object that defines a Next Generation policy. This, along with the [FirewallPolicyV2Response](API_FirewallPolicyV2Response.md), define the policy.
 

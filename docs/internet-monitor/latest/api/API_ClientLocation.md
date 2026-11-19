@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_ClientLo
 ---
 
 # ClientLocation
-<a name="API_ClientLocation"></a>
 
 The impacted location, such as a city, that AWS clients access application resources from.
 

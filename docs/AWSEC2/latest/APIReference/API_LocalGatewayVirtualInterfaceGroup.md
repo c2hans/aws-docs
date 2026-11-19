@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LocalGate
 ---
 
 # LocalGatewayVirtualInterfaceGroup
-<a name="API_LocalGatewayVirtualInterfaceGroup"></a>
 
 Describes a local gateway virtual interface group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Customer identity management
-<a name="customer-identity-management"></a>
 
 |  |
 | --- |

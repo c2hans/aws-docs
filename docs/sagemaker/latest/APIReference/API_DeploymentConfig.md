@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Deploy
 ---
 
 # DeploymentConfig
-<a name="API_DeploymentConfig"></a>
 
 The deployment configuration for an endpoint, which contains the desired deployment strategy and rollback configurations.
 

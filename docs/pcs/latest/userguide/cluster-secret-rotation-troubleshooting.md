@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/cluster-secret-rota
 ---
 
 # Troubleshooting cluster secret rotation in AWS PCS
-<a name="cluster-secret-rotation-troubleshooting"></a>
 
 Cluster secret rotation fails if the environment isn't properly prepared. The most common cause is active instances in your cluster. To prevent failure:
 

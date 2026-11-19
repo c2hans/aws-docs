@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SpotInsta
 ---
 
 # SpotInstanceStatus
-<a name="API_SpotInstanceStatus"></a>
 
 Describes the status of a Spot Instance request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # PipelineInfo
-<a name="API_PipelineInfo"></a>
 
 Detailed information of the pipeline.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/elastic-load-bala
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `ApplySecurityGroupsToLoadBalancer` with a CLI
-<a name="elastic-load-balancing_example_elastic-load-balancing_ApplySecurityGroupsToLoadBalancer_section"></a>
 
 The following code examples show how to use `ApplySecurityGroupsToLoadBalancer`.
 

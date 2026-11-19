@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/mon
 ---
 
 # Monitoring AWS Elemental Inference on the console
-<a name="monitoring-inference-via-console"></a>
 
 You can monitor a feed using the Elemental Inference console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Radio
 ---
 
 # Radios
-<a name="API_Radios"></a>
 
 Represents the set of radios and their states on a device. Examples of radios include Wi-Fi, GPS, Bluetooth, and NFC.
 

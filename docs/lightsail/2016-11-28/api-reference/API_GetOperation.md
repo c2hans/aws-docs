@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetOperation
-<a name="API_GetOperation"></a>
 
 Returns information about a specific operation. Operations include events such as when you create an instance, allocate a static IP, attach a static IP, and so on.
 

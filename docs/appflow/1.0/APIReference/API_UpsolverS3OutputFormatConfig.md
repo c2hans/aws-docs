@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_UpsolverS3O
 ---
 
 # UpsolverS3OutputFormatConfig
-<a name="API_UpsolverS3OutputFormatConfig"></a>
 
  The configuration that determines how Amazon AppFlow formats the flow output data when Upsolver is used as the destination.
 

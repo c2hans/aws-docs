@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # AWS CloudFormation templates
-<a name="aws-cloudformation-templates"></a>
 
 This Guidance uses CloudFormation to automate its deployment in the AWS Cloud. It includes the following AWS CloudFormation templates, which the build process generates in `./deployment/global-s3-assets/`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Del
 ---
 
 # DeleteWorkflow
-<a name="API_DeleteWorkflow"></a>
 
 Deletes a specific workflow resource. You can't delete a workflow build version while an image pipeline references it. The request fails with `ResourceDependencyException`.
 

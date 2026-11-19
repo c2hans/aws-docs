@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Logs::Transformer ParseKeyValue
-<a name="aws-properties-logs-transformer-parsekeyvalue"></a>
 
 This processor parses a specified field in the original log event into key-value pairs.
 

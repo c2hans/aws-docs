@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Descr
 ---
 
 # DescribeProblemObservations
-<a name="API_DescribeProblemObservations"></a>
 
 Describes the anomalies or errors associated with the problem.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/mpts-channel-tab
 ---
 
 # TS Endpoints tab
-<a name="mpts-channel-tab-ts"></a>
 
 This tab contains fields for the endpoints used for communications between the Elemental Live node that is the source of the program and the Elemental Statmux node that receives the program.
 

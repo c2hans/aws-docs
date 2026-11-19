@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/comprehend-detectpii/o
 ---
 
 # Amazon Comprehend Detect PII
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/comprehend-detectpii/images/card-background.jpg)
 

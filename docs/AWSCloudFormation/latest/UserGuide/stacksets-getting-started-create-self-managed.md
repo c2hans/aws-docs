@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stack
 ---
 
 # Create CloudFormation StackSets with self-managed permissions
-<a name="stacksets-getting-started-create-self-managed"></a>
 
 This topic describes how to create StackSets with *self-managed* permissions to deploy stacks across AWS accounts and Regions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/bot-routi
 ---
 
 # Bot routing
-<a name="bot-routing"></a>
 
 Bots come in many shapes and sizes, and exist to perform a variety of automation tasks. Usually, they take input from a human and respond by performing a task. Bots might ask for additional input, verify the input, and respond with completion. You can implement bots by using Amazon Lex or other toolsets. An example is the [nutritionix bot](https://www.nutritionix.com/natural-demo?q=for%20breakfast%20i%20ate%203%20eggs,%20bacon%20and%20cheese) where you can tell the bot what you’ve had for breakfast and it responds with nutrition information.
 

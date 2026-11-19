@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/Grafana-permiss
 ---
 
 # Using permissions
-<a name="Grafana-permissions"></a>
 
 What you can do in a Grafana workspace in Amazon Managed Grafana is defined by the *permissions* that are associated with your user.
 

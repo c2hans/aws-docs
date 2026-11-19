@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-application
 ---
 
 # Applications
-<a name="acxd-applications"></a>
 
 Manage conversational AI applications, the top-level container for flows, builds, and deployments. Each application bundles your flows, knowledge bases, language settings, guardrails, and integrations into a single deployable package within your workspace.
 

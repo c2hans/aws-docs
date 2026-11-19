@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Delete Lambda Hooks in your account
-<a name="lambda-hooks-delete-hooks"></a>
 
 When you no longer need an activated Lambda Hook, use the following procedures to delete it in your account.
 

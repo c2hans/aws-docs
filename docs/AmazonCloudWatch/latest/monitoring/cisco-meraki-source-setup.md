@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cisco
 ---
 
 # Source configuration for Cisco Meraki
-<a name="cisco-meraki-source-setup"></a>
 
 ## Integrating with Cisco Meraki
 <a name="cisco-meraki-integration"></a>

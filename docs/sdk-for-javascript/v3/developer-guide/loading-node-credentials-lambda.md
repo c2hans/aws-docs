@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/lo
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Load credentials for a Node.js Lambda function
-<a name="loading-node-credentials-lambda"></a>
 
 When you create an AWS Lambda function, you must create a special IAM role that has permission to execute the function. This role is called the *execution role*. When you set up a Lambda function, you must specify the IAM role you created as the corresponding execution role.
 

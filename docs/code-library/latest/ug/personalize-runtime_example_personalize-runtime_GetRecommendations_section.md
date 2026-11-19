@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/personalize-runti
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `GetRecommendations` with an AWS SDK
-<a name="personalize-runtime_example_personalize-runtime_GetRecommendations_section"></a>
 
 The following code examples show how to use `GetRecommendations`.
 

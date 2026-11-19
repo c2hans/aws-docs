@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # StopSpeakerSearchTask
-<a name="API_media-pipelines-chime_StopSpeakerSearchTask"></a>
 
 Stops a speaker search task.
 

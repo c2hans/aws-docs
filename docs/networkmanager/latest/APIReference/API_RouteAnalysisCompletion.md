@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_R
 ---
 
 # RouteAnalysisCompletion
-<a name="API_RouteAnalysisCompletion"></a>
 
 Describes the status of an analysis at completion.
 

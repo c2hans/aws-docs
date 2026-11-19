@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Prest
 ---
 
 # PrestoParameters
-<a name="API_PrestoParameters"></a>
 
 The parameters for Presto.
 

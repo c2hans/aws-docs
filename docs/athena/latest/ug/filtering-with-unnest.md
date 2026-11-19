@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/filtering-with-unnest.h
 ---
 
 # Filter arrays using `UNNEST`
-<a name="filtering-with-unnest"></a>
 
 To filter an array that includes a nested structure by one of its child elements, issue a query with an `UNNEST` operator. For more information about `UNNEST`, see [Flattening Nested Arrays](flattening-arrays.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Advantages and disadvantages of the Trunk strategy
-<a name="advantages-and-disadvantages-of-the-trunk-strategy"></a>
 
 The Trunk branching strategy is well suited for smaller, mature, development teams that have strong communication skills. It also works well if you have continuous, rolling feature releases for the application. It is not well suited if you have large or fragmented development teams or if you have expansive, scheduled feature releases. Merge conflicts will occur in this model, so be aware that resolution of merge conflicts is a key skill. All team members must be trained accordingly.
 

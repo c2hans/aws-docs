@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/cross-sheet-filte
 ---
 
 # Cross-sheet filters and controls
-<a name="cross-sheet-filters"></a>
 
 Cross-sheet filters and controls are filters that are scoped to either your entire analysis or dashboard or multiple sheets within your analysis and dashboard.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/rds_example_rds_G
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Creating a relational database instance
-<a name="rds_example_rds_GettingStarted_036_section"></a>
 
 The following code example shows how to:
 + Set up networking components

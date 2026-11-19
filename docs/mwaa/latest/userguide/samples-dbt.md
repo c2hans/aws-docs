@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/samples-dbt.html
 ---
 
 # Using dbt with Amazon MWAA
-<a name="samples-dbt"></a>
 
 With Amazon MWAA, you can use dbt (data build tool) and PostgreSQL to build and run data transformation workflows. In the following steps, add the required dependencies using a startup script, and upload a sample dbt project to your environment's Amazon S3 bucket. Then, use a sample DAG to verify that Amazon MWAA has installed the dependencies. Finally, use the `BashOperator` to run the dbt project.
 

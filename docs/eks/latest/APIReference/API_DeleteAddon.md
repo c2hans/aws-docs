@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteAddon.
 ---
 
 # DeleteAddon
-<a name="API_DeleteAddon"></a>
 
 Deletes an Amazon EKS add-on.
 

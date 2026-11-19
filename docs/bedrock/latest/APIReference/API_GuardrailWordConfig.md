@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Guardrai
 ---
 
 # GuardrailWordConfig
-<a name="API_GuardrailWordConfig"></a>
 
 A word to configure for the guardrail.
 

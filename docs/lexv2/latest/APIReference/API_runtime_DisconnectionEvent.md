@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_Di
 ---
 
 # DisconnectionEvent
-<a name="API_runtime_DisconnectionEvent"></a>
 
 A notification from the client that it is disconnecting from Amazon Lex. Sending a `DisconnectionEvent` event is optional, but can help identify a conversation in logs.
 

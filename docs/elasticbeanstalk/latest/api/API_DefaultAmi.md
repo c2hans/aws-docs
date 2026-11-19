@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_DefaultA
 ---
 
 # DefaultAmi
-<a name="API_DefaultAmi"></a>
 
 An AMI that Elastic Beanstalk uses by default for a platform version and processor architecture.
 

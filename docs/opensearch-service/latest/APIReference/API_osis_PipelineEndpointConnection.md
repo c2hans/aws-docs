@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # PipelineEndpointConnection
-<a name="API_osis_PipelineEndpointConnection"></a>
 
 Represents a connection to a pipeline endpoint, containing details about the endpoint association.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Assumptions and prerequisites
-<a name="assumptions-and-prerequisites"></a>
 
 This guide's source architecture is not hosted on virtual machines (VMs). The guide also assumes that you won't update OpenText versions during your migration. If you want to update an OpenText TeamSite version or upgrade from Open Text MediaBin to Media Management, you should carry out your migration and then implement any required upgrades or updates.
 

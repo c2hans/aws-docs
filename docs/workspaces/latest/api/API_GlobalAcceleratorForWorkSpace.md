@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_GlobalAccelera
 ---
 
 # GlobalAcceleratorForWorkSpace
-<a name="API_GlobalAcceleratorForWorkSpace"></a>
 
 Describes the Global Accelerator for WorkSpaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Star
 ---
 
 # StartTextDetectionFilters
-<a name="API_StartTextDetectionFilters"></a>
 
 Set of optional parameters that let you set the criteria text must meet to be included in your response. `WordFilter` looks at a word's height, width and minimum confidence. `RegionOfInterest` lets you set a specific region of the screen to look for text in.
 

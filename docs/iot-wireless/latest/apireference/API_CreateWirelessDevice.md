@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Cre
 ---
 
 # CreateWirelessDevice
-<a name="API_CreateWirelessDevice"></a>
 
 Provisions a wireless device.
 

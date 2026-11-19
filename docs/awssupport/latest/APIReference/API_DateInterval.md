@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DateI
 ---
 
 # DateInterval
-<a name="API_DateInterval"></a>
 
 Date and time (UTC) format in RFC 3339 : 'yyyy-MM-dd'T'HH:mm:ss.SSSZZ'.
 

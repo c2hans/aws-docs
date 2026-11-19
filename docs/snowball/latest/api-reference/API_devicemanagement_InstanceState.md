@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # InstanceState
-<a name="API_devicemanagement_InstanceState"></a>
 
 The description of the current state of an instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Li
 ---
 
 # ListManagedNotificationChildEvents
-<a name="API_ListManagedNotificationChildEvents"></a>
 
 Returns a list of `ManagedNotificationChildEvents` for a specified aggregate `ManagedNotificationEvent`, ordered by creation time in reverse chronological order (newest first).
 

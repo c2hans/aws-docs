@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admi
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Data protection
-<a name="data-protection"></a>
 
  Before architecting an ML workload, the foundational practices that influence security should be in place. For example, [data classification](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/data-classification.html) provides a way to categorize data based on levels of sensitivity, and encryption protects data by rendering it unintelligible to unauthorized access. These methods are important, because they support objectives such as preventing mishandling or complying with regulatory obligations.
 

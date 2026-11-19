@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/delete-data-as
 ---
 
 # Delete an Amazon DataZone asset
-<a name="delete-data-asset"></a>
 
 When you no longer need an asset in Amazon DataZone, you can permanently delete it. Deleting an asset is different than unpublishing an asset from the catalog. You can delete an asset and its related listing in the catalog so that it's not visible in any search results. To delete the asset listing, you must first revoke all of its subscriptions.
 

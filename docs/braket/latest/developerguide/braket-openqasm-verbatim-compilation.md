@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-open
 ---
 
 # Verbatim compilation with OpenQASM 3.0
-<a name="braket-openqasm-verbatim-compilation"></a>
 
 When you run a quantum circuit on quantum computers provided by vendors such as Rigetti, and IonQ, you can direct the compiler to run your circuits exactly as defined, without any modifications. This feature is known as *verbatim compilation*. With Rigetti devices, you can specify precisely what gets preserved-either an entire circuit or only specific parts of it. To preserve only specific parts of a circuit, you will need to use native gates within the preserved regions. Currently, IonQ only supports verbatim compilation for the entire circuit, so every instruction in the circuit needs to be enclosed in a verbatim box.
 

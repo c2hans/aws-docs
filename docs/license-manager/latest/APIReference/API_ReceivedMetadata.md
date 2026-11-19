@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ReceivedMetadata
-<a name="API_ReceivedMetadata"></a>
 
 Metadata associated with received licenses and grants.
 

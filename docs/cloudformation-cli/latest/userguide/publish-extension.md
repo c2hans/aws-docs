@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/publ
 ---
 
 # Publishing extensions to make them available for public use
-<a name="publish-extension"></a>
 
 After you've developed and registered a private extension, you can make it publicly available to general CloudFormation users by *publishing* it to the CloudFormation registry, as a third-party public extension.
 

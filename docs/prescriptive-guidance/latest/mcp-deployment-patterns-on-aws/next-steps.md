@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # Remote MCP Servers
-<a name="next-steps"></a>
 
 **Overview**
 

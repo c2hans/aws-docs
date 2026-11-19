@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys
 ---
 
 # Importing key material for AWS KMS keys
-<a name="importing-keys"></a>
 
 You can create an AWS KMS keys (KMS key) with key material that you supply.
 

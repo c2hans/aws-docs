@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Concept
 ---
 
 # MySQL feature support on Amazon RDS
-<a name="MySQL.Concepts.FeatureSupport"></a>
 
 RDS for MySQL supports most of the features and capabilities of MySQL. Some features might have limited support or restricted privileges.
 

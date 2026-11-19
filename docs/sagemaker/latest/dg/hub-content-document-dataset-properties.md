@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/hub-content-document
 ---
 
 # DataSet properties
-<a name="hub-content-document-dataset-properties"></a>
 
 The `HubContentDocument` for the `DataSet` HubContentType contains the metadata that describes a dataset stored in a SageMaker hub, including its file format, Amazon S3 location, validation results, and generation and job metadata, for both bring your own data (BYOD) and synthetic data generation (SDG) datasets. Use this metadata to evaluate and compare datasets and to make informed decisions about which dataset best fits your use case.
 

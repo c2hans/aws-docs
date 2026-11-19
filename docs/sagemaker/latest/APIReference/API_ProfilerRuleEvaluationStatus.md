@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Profil
 ---
 
 # ProfilerRuleEvaluationStatus
-<a name="API_ProfilerRuleEvaluationStatus"></a>
 
 Information about the status of the rule evaluation.
 

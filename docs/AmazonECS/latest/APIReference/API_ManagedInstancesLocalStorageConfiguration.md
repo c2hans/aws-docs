@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedInstancesLocalStorageConfiguration
-<a name="API_ManagedInstancesLocalStorageConfiguration"></a>
 
 The local storage configuration for Amazon ECS Managed Instances. This defines how ECS uses and configures instance store volumes available on container instance.
 

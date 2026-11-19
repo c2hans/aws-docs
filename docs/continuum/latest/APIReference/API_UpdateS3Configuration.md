@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Update
 ---
 
 # UpdateS3Configuration
-<a name="API_UpdateS3Configuration"></a>
 
 Replacement credentials for a customer-managed S3 integration. The bucket cannot be changed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BodyS
 ---
 
 # BodySectionDynamicCategoryDimensionConfiguration
-<a name="API_BodySectionDynamicCategoryDimensionConfiguration"></a>
 
 Describes the **Category** dataset column and constraints for the dynamic values used to repeat the contents of a section.
 

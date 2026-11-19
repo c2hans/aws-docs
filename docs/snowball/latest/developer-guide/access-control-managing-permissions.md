@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/developer-guide/access-c
 AWS Snowball Edge is no longer available to new customers. New customers should explore [AWS DataSync](https://aws.amazon.com/datasync/) for online transfers, [AWS Data Transfer Terminal](https://aws.amazon.com/data-transfer-terminal/) for secure physical transfers, or AWS Partner solutions. For edge computing, explore [AWS Outposts](https://aws.amazon.com/outposts/).
 
 # Using Identity-Based Policies (IAM Policies) for AWS Snowball Edge
-<a name="access-control-managing-permissions"></a>
 
 This topic provides examples of identity-based policies that demonstrate how an account administrator can attach permissions policies to IAM identities (that is, users, groups, and roles). These policies thereby grant permissions to perform operations on AWS Snowball Edge resources in the AWS Cloud.
 

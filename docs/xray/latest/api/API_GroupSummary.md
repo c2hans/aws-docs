@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GroupSummary.html
 ---
 
 # GroupSummary
-<a name="API_GroupSummary"></a>
 
 Details for a group without metadata.
 

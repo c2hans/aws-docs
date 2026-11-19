@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/viewing-you
 ---
 
 # Working with agreements
-<a name="viewing-your-agreements"></a>
 
 You view and manage agreements from the **Agreements** page in the [AWS Marketplace Management Portal](https://us-east-1.console.aws.amazon.com/partnercentral/home). On the **Agreements** page, the **Agreements** table shows the contracts for products you sell in AWS Marketplace. In the **Agreements** table, an agreement can have one of the following statuses:
 + **Active – **The terms of the agreement are active.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strateg
 ---
 
 # Tool discovery
-<a name="mcp-tool-strategy-discovery"></a>
 
 There are three approaches for discovering and registering tools in your agent with MCP servers: static definition, dynamic discovery, and search function.
 

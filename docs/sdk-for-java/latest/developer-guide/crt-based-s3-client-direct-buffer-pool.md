@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/crt-
 ---
 
 # Download objects through a direct buffer pool with the AWS CRT-based S3 client
-<a name="crt-based-s3-client-direct-buffer-pool"></a>
 
 When you download an object into memory with the AWS CRT-based S3 client, response transformers such as `AsyncResponseTransformer.toBytes()`, `toPublisher()`, and `toBlockingInputStream()` copy each downloaded part into a new Java heap array. A *direct buffer pool* stores transfer parts in client-wide direct memory (off-heap). A blocking input stream can read each part from that memory instead of from a heap copy. This eliminates SDK-created per-part heap arrays, reducing heap allocation and garbage collection during high-throughput downloads. Downloads to a file with `getObject(GetObjectRequest, Path)` don't make this copy, because the client writes the file directly.
 

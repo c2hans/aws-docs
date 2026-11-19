@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/aws-config-fir
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # AWS Config Firewall Manager findings
-<a name="aws-config-firewall-manager-findings"></a>
 
 This page explains Firewall Manager findings for AWS Config.
 

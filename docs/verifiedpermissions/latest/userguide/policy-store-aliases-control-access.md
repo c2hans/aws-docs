@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Controlling access to policy store aliases
-<a name="policy-store-aliases-control-access"></a>
 
 Principals who manage policy store aliases must have permission to interact with those policy store aliases and, for some operations, the policy store that the policy store alias is associated with. You can provide these permissions using IAM policies.
 

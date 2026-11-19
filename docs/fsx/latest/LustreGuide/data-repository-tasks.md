@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/data-repository-t
 ---
 
 # Data repository tasks
-<a name="data-repository-tasks"></a>
 
 By using import and export data repository tasks, you can manage the transfer of data and metadata between your FSx for Lustre file system and any of its durable data repositories on Amazon S3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/php-symfony-t
 ---
 
 # Deploying a Symfony application to Elastic Beanstalk
-<a name="php-symfony-tutorial"></a>
 
 [Symfony](http://symfony.com/) is an open-source framework for developing dynamic PHP web applications. This tutorial walks you through the process of generating a Symfony application and deploying it to an AWS Elastic Beanstalk environment.
 

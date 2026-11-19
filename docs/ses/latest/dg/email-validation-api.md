@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/email-validation-api.html
 ---
 
 # Email Validation API
-<a name="email-validation-api"></a>
 
 API validation allows you to validate individual email addresses through API calls, providing immediate feedback about address validity, deliverability, and risk factors. This feature is designed for validating addresses at the point of collection, such as during user registration, subscription forms, or any other scenario where you need timely validation results.
 

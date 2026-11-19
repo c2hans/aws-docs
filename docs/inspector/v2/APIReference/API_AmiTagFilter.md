@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AmiTagFilt
 ---
 
 # AmiTagFilter
-<a name="API_AmiTagFilter"></a>
 
 A filter that matches Amazon Machine Images (AMIs) by tag key and, optionally, tag value.
 

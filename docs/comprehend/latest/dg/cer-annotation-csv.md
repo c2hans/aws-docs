@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/cer-annotation-csv.
 ---
 
 # Plain-text annotation files
-<a name="cer-annotation-csv"></a>
 
 For plain-text annotations, you create a comma-separated value (CSV) file that contains a list of annotations. The CSV file must contain the following columns if your training file input format is **one document per line**.
 

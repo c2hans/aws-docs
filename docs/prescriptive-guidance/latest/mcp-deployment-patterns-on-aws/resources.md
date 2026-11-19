@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # Why deploy MCP servers on AWS
-<a name="resources"></a>
 
 Organizations choose AWS for remote MCP server deployments due to its comprehensive range of services, proven scalability, and deep integration capabilities.
 + Flexible compute options: AWS provides multiple compute options, from serverless AWS Lambda functions to managed Kubernetes clusters on Amazon EKS. You can select deployment patterns that match your operational maturity and scaling requirements. Pay-per-use pricing aligns costs with actual usage.

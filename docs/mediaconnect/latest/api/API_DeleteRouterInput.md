@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DeleteRouter
 ---
 
 # DeleteRouterInput
-<a name="API_DeleteRouterInput"></a>
 
 Deletes a router input from AWS Elemental MediaConnect.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_Monitor.
 ---
 
 # Monitor
-<a name="API_Monitor"></a>
 
 The description of and information about a monitor in Internet Monitor.
 

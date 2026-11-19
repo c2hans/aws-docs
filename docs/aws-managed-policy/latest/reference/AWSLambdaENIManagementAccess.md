@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLambdaENIManagementAccess
-<a name="AWSLambdaENIManagementAccess"></a>
 
 **Description**: Provides minimum permissions for a Lambda function to manage ENIs (create, describe, delete) used by a VPC-enabled Lambda Function.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/durable-best-practices.
 ---
 
 # Best practices for Lambda durable functions
-<a name="durable-best-practices"></a>
 
 Durable functions use a replay-based execution model that requires different programming practices than traditional Lambda functions. See [Best practices](https://docs.aws.amazon.com/durable-execution/patterns/best-practices/) in the AWS Durable Execution SDK Developer Guide for guidance on how to write and test durable workflow code.
 

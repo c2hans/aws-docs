@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/set-up-command-line-elas
 ---
 
 # Set up the Elastic Beanstalk Command Line Interface with AWS Elastic Beanstalk and AWS Identity and Access Management (IAM)
-<a name="set-up-command-line-elastic-beanstalk"></a>
 
 |  |  |
 | --- |--- |

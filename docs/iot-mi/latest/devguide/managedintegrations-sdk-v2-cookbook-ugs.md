@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # User guided setup to onboard and operate devices
-<a name="managedintegrations-sdk-v2-cookbook-ugs"></a>
 
 Set up your devices to be onboarded to your Managed Integrations hub by creating a managed thing an connecting it to your hub. This section describes the steps to complete the device onboarding process using user guided setup.
 

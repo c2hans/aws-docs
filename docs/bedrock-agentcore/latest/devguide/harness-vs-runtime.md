@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harnes
 ---
 
 # AgentCore harness vs. Runtime
-<a name="harness-vs-runtime"></a>
 
 AgentCore harness and AgentCore Runtime solve different parts of the same problem. This page explains the conceptual difference and provides a feature-by-feature comparison to help you choose between them.
 

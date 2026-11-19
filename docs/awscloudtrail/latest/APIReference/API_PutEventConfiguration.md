@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Pu
 ---
 
 # PutEventConfiguration
-<a name="API_PutEventConfiguration"></a>
 
 Updates the event configuration settings for the specified event data store or trail. This operation supports updating the maximum event size, adding or modifying context key selectors for event data store, and configuring aggregation settings for the trail.
 

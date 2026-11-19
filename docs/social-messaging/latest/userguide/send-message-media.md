@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/send-m
 ---
 
 # Example of sending a media message in AWS End User Messaging Social
-<a name="send-message-media"></a>
 
 The following example shows how to send a media message to your customer using the AWS CLI. For more information on configuring the AWS CLI, see [Configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) in the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/). For a list of supported media file types, see [Supported media file types and sizes in WhatsApp](supported-media-types.md).
 

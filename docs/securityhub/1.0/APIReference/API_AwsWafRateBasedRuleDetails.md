@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafR
 ---
 
 # AwsWafRateBasedRuleDetails
-<a name="API_AwsWafRateBasedRuleDetails"></a>
 
 Details about a rate-based rule for global resources. A rate-based rule provides settings to indicate when to allow, block, or count a request. Rate-based rules include the number of requests that arrive over a specified period of time.
 

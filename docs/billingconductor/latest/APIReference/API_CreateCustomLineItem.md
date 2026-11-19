@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # CreateCustomLineItem
-<a name="API_CreateCustomLineItem"></a>
 
 Creates a custom line item that can be used to create a one-time fixed charge that can be applied to a single billing group for the current or previous billing period. The one-time fixed charge is either a fee or discount.
 

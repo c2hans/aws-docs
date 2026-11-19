@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sensitive-data-fine-grain
 ---
 
 # Using fine-grained sensitive data detection
-<a name="sensitive-data-fine-grained-actions"></a>
 
 **Note**
  Fine-grained actions is only available in AWS Glue 3.0 and 4.0. This includes the AWS Glue Studio experience. The persistent audit log changes are also not available in 2.0.

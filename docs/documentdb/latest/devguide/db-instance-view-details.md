@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-instance-v
 ---
 
 # Describing Amazon DocumentDB instances
-<a name="db-instance-view-details"></a>
 
 You can use either the Amazon DocumentDB Management Console or the AWS CLI to see details such as connection endpoints, security groups VPCs, certificate authority, and parameter groups pertaining to your Amazon DocumentDB instances.
 

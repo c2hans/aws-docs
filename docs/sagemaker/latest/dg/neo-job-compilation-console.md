@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-job-compilation-
 ---
 
 # Compile a Model (Amazon SageMaker AI Console)
-<a name="neo-job-compilation-console"></a>
 
 You can create an Amazon SageMaker Neo compilation job in the Amazon SageMaker AI console.
 

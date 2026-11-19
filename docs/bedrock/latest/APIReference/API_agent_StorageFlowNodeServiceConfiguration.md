@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_St
 ---
 
 # StorageFlowNodeServiceConfiguration
-<a name="API_agent_StorageFlowNodeServiceConfiguration"></a>
 
 Contains configurations for the service to use for storing the input into the node.
 

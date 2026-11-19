@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-bedroc
 ---
 
 # Amazon Bedrock events
-<a name="events-ref-bedrock"></a>
 
 Amazon Bedrock sends service events directly to EventBridge, as well as via AWS CloudTrail.
 

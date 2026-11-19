@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteRe
 ---
 
 # RouteRentalTransportModeDetails
-<a name="API_RouteRentalTransportModeDetails"></a>
 
 Transport mode details for the rental leg.
 

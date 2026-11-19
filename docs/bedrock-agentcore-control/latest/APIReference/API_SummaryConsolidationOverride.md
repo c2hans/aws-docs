@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SummaryConsolidationOverride
-<a name="API_SummaryConsolidationOverride"></a>
 
 Contains summary consolidation override configuration.
 

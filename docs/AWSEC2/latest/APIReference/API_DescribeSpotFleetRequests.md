@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeSpotFleetRequests
-<a name="API_DescribeSpotFleetRequests"></a>
 
 Describes your Spot Fleet requests.
 

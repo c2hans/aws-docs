@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/authentication.ht
 ---
 
 # Authentication
-<a name="authentication"></a>
 
  Listing events, and reading the catalog of an event that does not require registration, need no credentials. For everything else the attendee signs in with an AWS Builder ID, the free personal sign-in that AWS uses for its developer tools and events, and your application sends the resulting OAuth 2.0 access token as a bearer token:
 

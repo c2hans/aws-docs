@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListR
 ---
 
 # ListRestoreTestingPlans
-<a name="API_ListRestoreTestingPlans"></a>
 
 Returns a list of restore testing plans.
 

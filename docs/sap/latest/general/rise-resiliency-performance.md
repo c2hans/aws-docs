@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-resiliency-perfo
 ---
 
 # Resiliency and Performance Considerations
-<a name="rise-resiliency-performance"></a>
 
 When you opt for short distance disaster recovery option in RISE, the SAP application servers and database servers will be installed across multi Availability Zones. This architecture supports highly available design for your SAP workload.
 

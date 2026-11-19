@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Findin
 ---
 
 # FindingSummary
-<a name="API_FindingSummary"></a>
 
 A summary of a finding returned in list responses. Shares FindingLifecycleFields with the read operations so the list and get projections cannot drift. Carries a lean content subset — fetch the finding for its full contents.
 

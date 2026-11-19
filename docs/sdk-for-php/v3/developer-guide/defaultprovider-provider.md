@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/defaultpr
 ---
 
 # `defaultProvider` provider in the SDK for PHP
-<a name="defaultprovider-provider"></a>
 
  `Aws\Credentials\CredentialProvider::defaultProvider` is the default credential provider and is also called the [default credential provider chain](guide_credentials_default_chain.md). This provider is used if you omit a `credentials` option when creating a client. For example, if you create an S3Client as shown in the following snippet, the SDK uses the default provider:
 

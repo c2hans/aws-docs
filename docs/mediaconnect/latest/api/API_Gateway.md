@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_Gateway.html
 ---
 
 # Gateway
-<a name="API_Gateway"></a>
 
 The settings for a gateway, including its networks.
 

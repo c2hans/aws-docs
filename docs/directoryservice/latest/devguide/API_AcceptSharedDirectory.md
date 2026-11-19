@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Acc
 ---
 
 # AcceptSharedDirectory
-<a name="API_AcceptSharedDirectory"></a>
 
 Accepts a directory sharing request that was sent from the directory owner account.
 

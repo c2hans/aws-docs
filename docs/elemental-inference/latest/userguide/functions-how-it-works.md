@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # How functions work
-<a name="functions-how-it-works"></a>
 
 Functions involve two resources.
 

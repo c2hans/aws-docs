@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ServiceJob
 ---
 
 # ServiceJobPreemptionConfiguration
-<a name="API_ServiceJobPreemptionConfiguration"></a>
 
 Specifies the service job behavior when preempted.
 

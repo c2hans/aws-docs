@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/bam-cfn-integ
 ---
 
 # Using AWS Backup Audit Manager with CloudFormation
-<a name="bam-cfn-integration"></a>
 
 We provide the following sample CloudFormation templates for your reference:
 

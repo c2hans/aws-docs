@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/use-applicatio
 ---
 
 # Use application status checks with an Auto Scaling group
-<a name="use-application-status-checks-auto-scaling-group"></a>
 
 With application status checks, your Auto Scaling group can replace instances whose applications have stopped responding, even when the underlying infrastructure is healthy. Application status checks monitor whether an application on your instance responds to HTTP or HTTPS calls. Unlike Amazon EC2 status checks, which detect problems with the underlying instance or system, application status checks detect failures at the application layer. For example, they detect a web server process that has stopped responding. If instances in your Auto Scaling group have application status checks associated and included in aggregation, Amazon EC2 Auto Scaling automatically terminates and replaces instances whose overall application status reports `impaired`. No additional Auto Scaling group configuration is required.
 

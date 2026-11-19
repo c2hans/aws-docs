@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_stat\_wait\_event
-<a name="aurora_stat_wait_event"></a>
 
 Lists all supported wait events for Aurora PostgreSQL. For information about Aurora PostgreSQL wait events, see [Amazon Aurora PostgreSQL wait events](AuroraPostgreSQL.Reference.Waitevents.md).
 

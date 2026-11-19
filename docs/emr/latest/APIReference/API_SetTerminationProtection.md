@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_SetTerminati
 ---
 
 # SetTerminationProtection
-<a name="API_SetTerminationProtection"></a>
 
 SetTerminationProtection locks a cluster (job flow) so the Amazon EC2 instances in the cluster cannot be terminated by user intervention, an API call, or in the event of a job-flow error. The cluster still terminates upon successful completion of the job flow. Calling `SetTerminationProtection` on a cluster is similar to calling the Amazon EC2 `DisableAPITermination` API on all Amazon EC2 instances in a cluster.
 

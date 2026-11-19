@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteP
 ---
 
 # DeletePartner
-<a name="API_DeletePartner"></a>
 
 Deletes a partner integration from a cluster. Data can still flow to the cluster until the integration is deleted at the partner's website.
 

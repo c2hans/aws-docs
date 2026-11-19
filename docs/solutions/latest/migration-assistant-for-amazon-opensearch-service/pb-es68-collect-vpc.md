@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 2: Collect your VPC information
-<a name="pb-es68-collect-vpc"></a>
 
 Migration Assistant deploys into the VPC and subnets you provide. Collect these values before you run the bootstrap script:
 +  `<VPC_ID>` — the ID of the existing VPC (for example, `vpc-0abc123`).

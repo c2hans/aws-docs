@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Cha
 ---
 
 # ChannelGroupListConfiguration
-<a name="API_ChannelGroupListConfiguration"></a>
 
 The configuration of the channel group.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/proton/latest/userguide/ag-wrap-up.html
 End of support notice: On October 7, 2026, AWS will end support for AWS Proton. After October 7, 2026, you will no longer be able to access the AWS Proton console or AWS Proton resources. Your deployed infrastructure will remain intact. For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
 
 # Wrap up template files for AWS Proton
-<a name="ag-wrap-up"></a>
 
 After preparing your environment and service infrastructure as code (IaC) files and their respective schema files, you must organize them in directories. You must also create a manifest YAML file. The manifest file lists the IaC files in a directory, the rendering engine, and the template language used to develop the IaC in this template.
 

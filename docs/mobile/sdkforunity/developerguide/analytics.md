@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforunity/developerguide/analyt
 The AWS Mobile SDK for Unity is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Unity. For more information, see [What is the AWS Mobile SDK for Unity?](what-is-unity-plugin.md)
 
 # Amazon Mobile Analytics
-<a name="analytics"></a>
 
 Using Amazon Mobile Analytics, you can track customer behaviors, aggregate metrics, generate data visualizations, and identify meaningful patterns. For information about Mobile Analytics see [AWS Mobile Analytics](https://aws.amazon.com/mobileanalytics/).
 

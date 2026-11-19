@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # Hits
-<a name="API_Hits"></a>
 
 Attempts made to a access domain.
 

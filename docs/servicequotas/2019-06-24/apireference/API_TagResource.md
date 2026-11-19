@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds tags to the specified applied quota. You can include one or more tags to add to the quota.
 

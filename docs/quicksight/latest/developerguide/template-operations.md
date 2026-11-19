@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/templat
 ---
 
 # Template operations
-<a name="template-operations"></a>
 
 A *template* is a resource in Quick Sight that holds the information necessary to create an analysis or dashboard. You can use templates to migrate dashboards and analyses across accounts.
 

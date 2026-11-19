@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/capacity-reservations-i
 ---
 
 # IAM policies for capacity reservations
-<a name="capacity-reservations-iam-policy"></a>
 
 To control access to capacity reservations, use resource-level IAM permissions or identity-based IAM policies. Whenever you use IAM policies, make sure that you follow IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) in the *IAM User Guide*.
 

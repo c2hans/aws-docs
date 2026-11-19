@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # ChangeTypeApprovalCondition
-<a name="API_ChangeTypeApprovalCondition"></a>
 
 The approvals that are required for the execution of a change type.
 

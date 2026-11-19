@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListCall
 ---
 
 # ListCallerAccessGrants
-<a name="API_control_ListCallerAccessGrants"></a>
 
-Use this API to list the access grants that grant the caller access to Amazon S3 data through S3 Access Grants. The caller (grantee) can be an AWS Identity and Access Management (IAM) identity or AWS Identity Center corporate directory identity. You must pass the AWS account of the S3 data owner (grantor) in the request. You can, optionally, narrow the results by `GrantScope`, using a fragment of the data's S3 path, and S3 Access Grants will return only the grants with a path that contains the path fragment. You can also pass the `AllowedByApplication` filter in the request, which returns only the grants authorized for applications, whether the application is the caller's Identity Center application or any other application (`ALL`). For more information, see [List the caller's access grants](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-list-grants.html) in the *Amazon S3 User Guide*.
+Use this API to list the access grants that grant the caller access to Amazon S3 data through S3 Access Grants. The caller (grantee) can be an AWS Identity and Access Management (IAM) identity or AWS Identity Center corporate directory identity. You must pass the AWS account of the S3 data owner (grantor) in the request. By default, S3 Access Grants returns grants from the instance of the AWS account ID in the request. To return grants from all instances shared with the caller's account through AWS Resource Access Manager (RAM), set the `InstanceScope` parameter to `ALL`. You can, optionally, narrow the results by `GrantScope`, using a fragment of the data's S3 path, and S3 Access Grants will return only the grants with a path that contains the path fragment. You can also pass the `AllowedByApplication` filter in the request, which returns only the grants authorized for applications, whether the application is the caller's Identity Center application or any other application (`ALL`). For more information, see [List the caller's access grants](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-list-grants.html) in the *Amazon S3 User Guide*.
 
 Permissions
 You must have the `s3:ListCallerAccessGrants` permission to use this operation.
@@ -14,7 +13,7 @@ You must have the `s3:ListCallerAccessGrants` permission to use this operation.
 <a name="API_control_ListCallerAccessGrants_RequestSyntax"></a>
 
 ```
-GET /v20180820/accessgrantsinstance/caller/grants?allowedByApplication={{AllowedByApplication}}&grantscope={{GrantScope}}&maxResults={{MaxResults}}&nextToken={{NextToken}} HTTP/1.1
+GET /v20180820/accessgrantsinstance/caller/grants?allowedByApplication={{AllowedByApplication}}&grantscope={{GrantScope}}&instanceScope={{InstanceScope}}&maxResults={{MaxResults}}&nextToken={{NextToken}} HTTP/1.1
 Host: s3-control.amazonaws.com
 x-amz-account-id: {{AccountId}}
 ```
@@ -31,6 +30,12 @@ If this optional parameter is passed in the request, a filter is applied to the 
 The S3 path of the data that you would like to access. Must start with `s3://`. You can optionally pass only the beginning characters of a path, and S3 Access Grants will search for all applicable grants for the path fragment.
 Length Constraints: Minimum length of 1. Maximum length of 2000.
 Pattern: `^.+$`
+
+ ** [instanceScope](#API_control_ListCallerAccessGrants_RequestSyntax) **   <a name="AmazonS3-control_ListCallerAccessGrants-request-uri-querystring-InstanceScope"></a>
+The scope of S3 Access Grants instances to list grants from.
++  `SELF` – Lists grants from the instance of the AWS account ID in the request.
++  `ALL` – Lists grants from the instance of the AWS account ID in the request and all instances shared with the caller's account through AWS Resource Access Manager (RAM).
+Valid Values: `SELF | ALL`
 
  ** [maxResults](#API_control_ListCallerAccessGrants_RequestSyntax) **   <a name="AmazonS3-control_ListCallerAccessGrants-request-uri-querystring-MaxResults"></a>
 The maximum number of access grants that you would like returned in the `List Caller Access Grants` response. If the results include the pagination token `NextToken`, make another call using the `NextToken` to determine if there are more results.
@@ -60,6 +65,7 @@ HTTP/1.1 200
    <NextToken>string</NextToken>
    <CallerAccessGrantsList>
       <AccessGrant>
+         <AccessGrantsInstanceArn>string</AccessGrantsInstanceArn>
          <ApplicationArn>string</ApplicationArn>
          <GrantScope>string</GrantScope>
          <Permission>string</Permission>

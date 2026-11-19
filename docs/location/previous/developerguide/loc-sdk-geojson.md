@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/loc-sdk
 ---
 
 # GeoJSON conversion helpers
-<a name="loc-sdk-geojson"></a>
 
 The Amazon Location GeoJSON conversion helpers provide tools to convert Amazon Location Service data types to and from the industry-standard [GeoJSON](https://geojson.org/) format. GeoJSON is used, for example, with MapLibre to render geographic data on the map. This is an open source library that is available on GitHub, here: [https://github.com/aws-geospatial/amazon-location-utilities-datatypes-js](https://github.com/aws-geospatial/amazon-location-utilities-datatypes-js).
 

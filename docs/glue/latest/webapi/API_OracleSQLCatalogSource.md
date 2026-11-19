@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_OracleSQLCatalogS
 ---
 
 # OracleSQLCatalogSource
-<a name="API_OracleSQLCatalogSource"></a>
 
 Specifies an Oracle data source in the AWS Glue Data Catalog.
 

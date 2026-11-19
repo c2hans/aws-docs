@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkGetDeviceProfile
-<a name="API_SidewalkGetDeviceProfile"></a>
 
 Gets information about a Sidewalk device profile.
 

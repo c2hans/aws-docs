@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/prep-classifier-dat
 ---
 
 # Multi-label mode
-<a name="prep-classifier-data-multi-label"></a>
 
 In multi-label mode, individual classes represent different categories that aren't mutually exclusive. Multi-label classification assigns one or more classes to each document. For example, you can classify one movie as Documentary, and another movie as Science fiction, Action, and Comedy.
 

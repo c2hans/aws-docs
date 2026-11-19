@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Use elicitation with your AgentCore gateway
-<a name="gateway-mcp-elicitation"></a>
 
 Elicitation is an MCP feature that allows an MCP server to request additional information from the client during a tool call. When a tool needs user confirmation, authentication, or additional input to proceed, the server sends an elicitation request back to the client. AgentCore Gateway forwards elicitation requests from MCP server targets to your clients, replacing the request `id` with a gateway-generated identifier.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_FabricSwitch
 ---
 
 # FabricSwitchingConfiguration
-<a name="API_FabricSwitchingConfiguration"></a>
 
 The configuration settings for switching between router inputs.
 

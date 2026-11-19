@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RerankDocument
-<a name="API_agent-runtime_RerankDocument"></a>
 
 Contains information about a document to rerank. Choose the `type` to define and include the field that corresponds to the type.
 

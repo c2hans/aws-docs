@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchCo
 ---
 
 # SearchContacts
-<a name="API_SearchContacts"></a>
 
 Searches contacts in an Connect Customer instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_Hooks.html
 ---
 
 # Hooks
-<a name="API_Hooks"></a>
 
 Lifecycle hook configuration for MicroVMs and MicroVM images.
 

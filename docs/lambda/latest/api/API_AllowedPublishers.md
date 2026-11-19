@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_AllowedPublishers.
 ---
 
 # AllowedPublishers
-<a name="API_AllowedPublishers"></a>
 
 List of signing profiles that can sign a code package.
 

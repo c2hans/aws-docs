@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/ecs-cd-pip
 ---
 
 # Tutorial: Amazon ECS Standard Deployment with CodePipeline
-<a name="ecs-cd-pipeline"></a>
 
 This tutorial helps you to create a complete, end-to-end continuous deployment (CD) pipeline with Amazon ECS with CodePipeline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises Oracle database to Oracle on Amazon EC2
-<a name="migrate-an-on-premises-oracle-database-to-oracle-on-amazon-ec2"></a>
 
 *Baji Shaik and Pankaj Choudhary, Amazon Web Services*
 

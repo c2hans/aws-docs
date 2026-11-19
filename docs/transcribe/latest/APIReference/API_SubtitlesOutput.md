@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Subti
 ---
 
 # SubtitlesOutput
-<a name="API_SubtitlesOutput"></a>
 
 Provides information about your subtitle file, including format, start index, and Amazon S3 location.
 

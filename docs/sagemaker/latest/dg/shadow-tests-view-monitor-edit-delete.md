@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/shadow-tests-view-mo
 ---
 
 # Delete a shadow test
-<a name="shadow-tests-view-monitor-edit-delete"></a>
 
  You can delete a test that you no longer need. Deleting your test only deletes the test metadata and not your endpoint, variants, or data captured in Amazon S3. If you want your endpoint to stop running, you must delete your endpoint. For more information about deleting an endpoint, see [Delete Endpoints and Resources](realtime-endpoints-delete-resources.md)
 

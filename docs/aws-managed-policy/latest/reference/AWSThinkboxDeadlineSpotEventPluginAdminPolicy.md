@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSThinkboxDeadlineSpotEventPluginAdminPolicy
-<a name="AWSThinkboxDeadlineSpotEventPluginAdminPolicy"></a>
 
 **Description**: Grants permissions required for AWS Thinkbox's Deadline Spot Event Plugin. This includes permission to request, modify, and cancel a spot fleet, as well as limited PassRole permission.
 

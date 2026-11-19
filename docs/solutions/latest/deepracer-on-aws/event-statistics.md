@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/event-
 ---
 
 # View event statistics
-<a name="event-statistics"></a>
 
 The **Statistics** tab of the event details page summarizes activity across the whole event, covering every track and every racer.
 

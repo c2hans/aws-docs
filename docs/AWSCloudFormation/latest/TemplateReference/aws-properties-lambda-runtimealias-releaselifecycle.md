@@ -5,9 +5,8 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Lambda::RuntimeAlias ReleaseLifecycle
-<a name="aws-properties-lambda-runtimealias-releaselifecycle"></a>
 
-<a name="aws-properties-lambda-runtimealias-releaselifecycle-description"></a>The `ReleaseLifecycle` property type specifies Property description not available. for an [AWS::Lambda::RuntimeAlias](aws-resource-lambda-runtimealias.md).
+The runtime lifecycle for the runtime or alias. Optional. Used to schedule runtime deprecation. Omitting or providing an empty object removes the existing lifecycle.
 
 ## Syntax
 <a name="aws-properties-lambda-runtimealias-releaselifecycle-syntax"></a>
@@ -40,7 +39,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-lambda-runtimealias-releaselifecycle-properties"></a>
 
 `DeprecationDate`  <a name="cfn-lambda-runtimealias-releaselifecycle-deprecationdate"></a>
-Property description not available.
+The date (UTC) on which the runtime or alias becomes deprecated.
 *Required*: No
 *Type*: String
 *Pattern*: `^\d{4}-\d{2}-\d{2}$`
@@ -49,7 +48,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FunctionCreateBlockDate`  <a name="cfn-lambda-runtimealias-releaselifecycle-functioncreateblockdate"></a>
-Property description not available.
+The date (UTC) on which creating new functions that use this runtime or alias is blocked.
 *Required*: No
 *Type*: String
 *Pattern*: `^\d{4}-\d{2}-\d{2}$`
@@ -58,7 +57,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FunctionUpdateBlockDate`  <a name="cfn-lambda-runtimealias-releaselifecycle-functionupdateblockdate"></a>
-Property description not available.
+The date (UTC) on which updating existing functions that use this runtime or alias is blocked.
 *Required*: No
 *Type*: String
 *Pattern*: `^\d{4}-\d{2}-\d{2}$`
@@ -67,7 +66,7 @@ Property description not available.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ReleaseState`  <a name="cfn-lambda-runtimealias-releaselifecycle-releasestate"></a>
-Property description not available.
+Optional, with no default applied. DEPRECATED requires a DeprecationDate on or before today (UTC); PREVIEW and GA require a later one, or none. Reads report DEPRECATED once DeprecationDate is reached.
 *Required*: No
 *Type*: String
 *Allowed values*: `PREVIEW | GA | DEPRECATED`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_Unauthoriz
 ---
 
 # UnauthorizedError
-<a name="API_UnauthorizedError"></a>
 
 The request was not authenticated or the authentication credentials were invalid. This error occurs when the request lacks valid authentication credentials or the credentials have expired.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/view-xks-keyst
 ---
 
 # View external key stores
-<a name="view-xks-keystore"></a>
 
 You can view external key stores in each account and Region by using the AWS KMS console or by using the [DescribeCustomKeyStores](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeCustomKeyStores.html) operation.
 

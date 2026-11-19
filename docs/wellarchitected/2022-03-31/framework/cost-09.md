@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST 9  How do you manage demand, and supply resources?
-<a name="cost-09"></a>
 
 For a workload that has balanced spend and performance, ensure that everything you pay for is used and avoid significantly underutilizing instances. A skewed utilization metric in either direction has an adverse impact on your organization, in either operational costs (degraded performance due to over-utilization), or wasted AWS expenditures (due to over-provisioning).
 

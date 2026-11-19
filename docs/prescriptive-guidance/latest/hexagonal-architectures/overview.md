@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-a
 ---
 
 # Overview
-<a name="overview"></a>
 
 ## Domain-driven design (DDD)
 <a name="ddd"></a>

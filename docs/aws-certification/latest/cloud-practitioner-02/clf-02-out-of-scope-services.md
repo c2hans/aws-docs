@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/cloud-practitio
 ---
 
 # Out-of-Scope AWS Services
-<a name="clf-02-out-of-scope-services"></a>
 
 The following list contains AWS services and features that are out of scope for the AWS Certified Cloud Practitioner (CLF-C02) exam. This list is non-exhaustive and is subject to change.
 

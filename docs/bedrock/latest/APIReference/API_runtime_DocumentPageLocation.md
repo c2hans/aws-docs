@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # DocumentPageLocation
-<a name="API_runtime_DocumentPageLocation"></a>
 
 Specifies a page-level location within a document, providing positioning information for cited content using page numbers.
 

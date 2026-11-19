@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints-t
 ---
 
 # Invoke models for real-time inference
-<a name="realtime-endpoints-test-endpoints"></a>
 
 After you use Amazon SageMaker AI to deploy a model to an endpoint, you can interact with the model by sending inference requests to it. To send an inference request to a model, you invoke the endpoint that hosts it. You can invoke your endpoints using Amazon SageMaker Studio, the AWS SDKs, or the AWS CLI.
 

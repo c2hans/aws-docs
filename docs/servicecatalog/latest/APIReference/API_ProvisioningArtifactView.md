@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_P
 ---
 
 # ProvisioningArtifactView
-<a name="API_ProvisioningArtifactView"></a>
 
 An object that contains summary information about a product view and a provisioning artifact.
 

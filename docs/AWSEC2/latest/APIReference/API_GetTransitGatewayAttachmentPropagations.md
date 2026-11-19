@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransi
 ---
 
 # GetTransitGatewayAttachmentPropagations
-<a name="API_GetTransitGatewayAttachmentPropagations"></a>
 
 Lists the route tables to which the specified resource attachment propagates routes.
 

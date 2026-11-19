@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints-h
 ---
 
 # Deploy to multiple instance types with instance pools
-<a name="realtime-endpoints-heterogeneous"></a>
 
 When you deploy a model to a SageMaker AI endpoint, you typically specify a single instance type for the production variant. If that instance type is unavailable in the target Availability Zone, the deployment fails with an insufficient capacity error (ICE), and you must manually retry with a different instance type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Constraints for ANSI SQL
-<a name="chap-sql-server-aurora-pg.sql.constraints"></a>
 
 This topic provides reference information about SQL constraints in both Microsoft SQL Server and Amazon Aurora PostgreSQL. You can understand the similarities and differences in constraint implementation between these two database systems. The topic covers various types of constraints, including check, unique, primary key, and foreign key constraints, as well as cascaded referential actions and indexing requirements.
 

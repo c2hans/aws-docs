@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/v
 ---
 
 # With IAM Identity Center - After Initial Request
-<a name="verified-access-idc-subsequent"></a>
 
 Publication date: **February 22, 2023 ([Diagram history](#vas-diagram-history))**
 

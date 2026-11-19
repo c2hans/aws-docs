@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # DeploymentSummary
-<a name="API_DeploymentSummary"></a>
 
 Summary information about a deployment.
 

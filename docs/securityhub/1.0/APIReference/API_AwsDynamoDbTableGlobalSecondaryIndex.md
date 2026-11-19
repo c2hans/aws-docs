@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDyna
 ---
 
 # AwsDynamoDbTableGlobalSecondaryIndex
-<a name="API_AwsDynamoDbTableGlobalSecondaryIndex"></a>
 
 Information abut a global secondary index for the table.
 

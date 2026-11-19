@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-troublesh
 ---
 
 # Permissions errors during Amazon EMR cluster operations
-<a name="emr-troubleshoot-error-permissions"></a>
 
 The following errors are common when using permissions or credentials.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetExport
 ---
 
 # GetExportJob
-<a name="API_GetExportJob"></a>
 
 Provides information about an export job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ch
 ---
 
 # Channel
-<a name="API_Channel"></a>
 
 Object specifying a channel.
 

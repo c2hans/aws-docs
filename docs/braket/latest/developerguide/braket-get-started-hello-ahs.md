@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-get-
 ---
 
 # Hello AHS: Run your first Analog Hamiltonian Simulation
-<a name="braket-get-started-hello-ahs"></a>
 
 This section provides information on running your first Analog Hamiltonian Simulation.
 

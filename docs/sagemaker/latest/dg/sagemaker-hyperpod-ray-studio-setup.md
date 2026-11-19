@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Setting up Studio for Ray
-<a name="sagemaker-hyperpod-ray-studio-setup"></a>
 
 Amazon SageMaker Studio is a web-based IDE that gives data scientists and ML engineers a purpose-built interface for managing Ray workloads.
 

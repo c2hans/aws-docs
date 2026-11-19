@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceStat
 ---
 
 # InstanceStateChangeReason
-<a name="API_InstanceStateChangeReason"></a>
 
 The details of the status change reason for the instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cloudwatch.html
 ---
 
 # CloudWatch metrics for your VPCs
-<a name="vpc-cloudwatch"></a>
 
 Amazon VPC publishes data about your VPCs to Amazon CloudWatch. You can retrieve statistics about your VPCs as an ordered set of time-series data, known as *metrics*. Think of a metric as a variable to monitor and the data as the value of that variable over time. For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/).
 

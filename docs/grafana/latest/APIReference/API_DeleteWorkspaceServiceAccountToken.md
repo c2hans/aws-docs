@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_DeleteWo
 ---
 
 # DeleteWorkspaceServiceAccountToken
-<a name="API_DeleteWorkspaceServiceAccountToken"></a>
 
 Deletes a token for the workspace service account.
 

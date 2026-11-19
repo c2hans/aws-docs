@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Data security, lifecycle, and strategy for generative AI applications
-<a name="introduction"></a>
 
 *Romain Vivier, Amazon Web Services*
 

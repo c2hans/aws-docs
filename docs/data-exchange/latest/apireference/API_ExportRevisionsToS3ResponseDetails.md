@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ex
 ---
 
 # ExportRevisionsToS3ResponseDetails
-<a name="API_ExportRevisionsToS3ResponseDetails"></a>
 
 Details about the export revisions to Amazon S3 response.
 

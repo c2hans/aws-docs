@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MemoryGiB
 ---
 
 # MemoryGiBPerVCpu
-<a name="API_MemoryGiBPerVCpu"></a>
 
 The minimum and maximum amount of memory per vCPU, in GiB.
 

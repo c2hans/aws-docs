@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Theme 8: Implement mechanisms for manual processes
-<a name="theme-8"></a>
 
 **Essential Eight strategies covered**: Application control, patch applications
 

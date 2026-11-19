@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-using-temporary-creden
 ---
 
 # Using temporary security credentials with Amazon SNS
-<a name="sns-using-temporary-credentials"></a>
 
 AWS Identity and Access Management (IAM) allows you to grant temporary security credentials to users and applications that need access to your AWS resources. These temporary security credentials are primarily used for IAM roles and federated access through industry-standard protocols such as SAML and OpenID Connect (OIDC).
 

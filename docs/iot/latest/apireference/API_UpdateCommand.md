@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateComman
 ---
 
 # UpdateCommand
-<a name="API_UpdateCommand"></a>
 
 Update information about a command or mark a command for deprecation.
 

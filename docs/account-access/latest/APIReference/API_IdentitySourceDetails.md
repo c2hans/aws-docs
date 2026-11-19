@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_I
 ---
 
 # IdentitySourceDetails
-<a name="API_IdentitySourceDetails"></a>
 
 Contains detailed information about the identity source for an application.
 

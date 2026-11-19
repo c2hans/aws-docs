@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_St
 ---
 
 # StartIngestionJob
-<a name="API_agent_StartIngestionJob"></a>
 
 Begins a data ingestion job. Data sources are ingested into your knowledge base so that Large Language Models (LLMs) can use your data.
 

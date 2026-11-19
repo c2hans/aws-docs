@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Del
 ---
 
 # DeleteSourceRepository
-<a name="API_DeleteSourceRepository"></a>
 
 Deletes a source repository in Amazon CodeCatalyst. You cannot use this API to delete a linked repository. It can only be used to delete a Amazon CodeCatalyst source repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/disable-pr
 ---
 
 # Disable automatic provisioning
-<a name="disable-provisioning"></a>
 
 Use the following procedure to disable automatic provisioning in the IAM Identity Center console.
 

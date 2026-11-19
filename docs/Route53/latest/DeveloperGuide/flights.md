@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/flights.ht
 ---
 
 # .flights
-<a name="flights"></a>
 
 Used by travel agents, airlines, and anyone affiliated with the travel industry.
 

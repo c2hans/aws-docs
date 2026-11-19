@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-reading-from-e
 ---
 
 # Reading from Salesforce
-<a name="salesforce-reading-from-entities"></a>
 
 **Prerequisite**
 

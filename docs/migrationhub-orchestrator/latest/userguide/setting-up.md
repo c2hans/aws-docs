@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/usergui
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Setting up to use Migration Hub Orchestrator
-<a name="setting-up"></a>
 
 Before you get started with AWS Migration Hub Orchestrator, ensure that users have the required permissions.
 

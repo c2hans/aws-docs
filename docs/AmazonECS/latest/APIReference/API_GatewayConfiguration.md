@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayConfiguration
-<a name="API_GatewayConfiguration"></a>
 
 The type-specific configuration for a gateway that you provide when you create it. Exactly one variant is set, and it determines the gateway type.
 

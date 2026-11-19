@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_MySQL.Re
 ---
 
 # Using cascading read replicas with RDS for MySQL
-<a name="USER_MySQL.Replication.ReadReplicas.Cascading"></a>
 
 RDS for MySQL supports cascading read replicas. With *cascading read replicas*, you can scale reads without adding overhead to your source RDS for MySQL DB instance.
 

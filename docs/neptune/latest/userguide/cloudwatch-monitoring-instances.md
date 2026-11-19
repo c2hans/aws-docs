@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/cloudwatch-moni
 ---
 
 # Using CloudWatch to monitor DB instance performance in Neptune
-<a name="cloudwatch-monitoring-instances"></a>
 
 You can use CloudWatch metrics in Neptune to monitor what is happening on your DB instances and keep track of the query queue length as observed by the database. The following metrics are particularly useful:
 + **`CPUUtilization`**   –   Shows the percentage of CPU utilization.

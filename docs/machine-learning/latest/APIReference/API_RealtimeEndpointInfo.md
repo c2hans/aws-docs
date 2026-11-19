@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # RealtimeEndpointInfo
-<a name="API_RealtimeEndpointInfo"></a>
 
  Describes the real-time endpoint information for an `MLModel`.
 

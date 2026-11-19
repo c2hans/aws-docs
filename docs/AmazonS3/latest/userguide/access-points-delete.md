@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # Delete your access point for a general purpose bucket
-<a name="access-points-delete"></a>
 
 This section explains how to delete your access point for a general purpose bucket using the AWS Management Console, AWS Command Line Interface, or REST API.
 

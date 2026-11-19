@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Li
 ---
 
 # ListDataSources
-<a name="API_agent_ListDataSources"></a>
 
 Lists the data sources in a knowledge base and information about each one.
 

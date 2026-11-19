@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/realtimeguide/rea
 ---
 
 # Update an Amazon GameLift Servers Realtime script
-<a name="realtime-script-uploading-update"></a>
 
 You can update the metadata for a script resource using either the Amazon GameLift Servers console or the [`update-script`](https://docs.aws.amazon.com/cli/latest/reference/gamelift/update-script.html) AWS CLI command.
 

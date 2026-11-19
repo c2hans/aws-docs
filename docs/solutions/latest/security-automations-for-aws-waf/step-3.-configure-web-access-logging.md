@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Step 3. Configure web access logging
-<a name="step-3.-configure-web-access-logging"></a>
 
 Configure CloudFront or your ALB to send web access logs to the appropriate Amazon S3 bucket so that this data is available for the Log Parser Lambda function.
 

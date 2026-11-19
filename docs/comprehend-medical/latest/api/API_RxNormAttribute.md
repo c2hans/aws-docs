@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_RxNorm
 ---
 
 # RxNormAttribute
-<a name="API_RxNormAttribute"></a>
 
 The extracted attributes that relate to this entity. The attributes recognized by InferRxNorm are `DOSAGE`, `DURATION`, `FORM`, `FREQUENCY`, `RATE`, `ROUTE_OR_MODE`.
 

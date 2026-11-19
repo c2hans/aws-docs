@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # Charge
-<a name="API_marketplace-agreements_Charge"></a>
 
 Represents a charge associated with an agreement, including amount, timing, and purchase order details.
 

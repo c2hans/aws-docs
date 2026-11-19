@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_A
 ---
 
 # AssociatedObjectiveSummary
-<a name="API_AssociatedObjectiveSummary"></a>
 
 A summary of the objective that a common control supports.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AnalysisP
 ---
 
 # AnalysisPacketHeader
-<a name="API_AnalysisPacketHeader"></a>
 
 Describes a header. Reflects any changes made by a component as traffic passes through. The fields of an inbound header are null except for the first component of a path.
 

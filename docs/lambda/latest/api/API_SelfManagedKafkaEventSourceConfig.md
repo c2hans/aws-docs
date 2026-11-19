@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_SelfManagedKafkaEv
 ---
 
 # SelfManagedKafkaEventSourceConfig
-<a name="API_SelfManagedKafkaEventSourceConfig"></a>
 
 Specific configuration settings for a self-managed Apache Kafka event source.
 

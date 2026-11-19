@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-core-
 ---
 
 # Core Features of the SageMaker Model Parallelism Library
-<a name="model-parallel-core-features"></a>
 
 Amazon SageMaker AI's model parallelism library offers distribution strategies and memory-saving techniques, such as sharded data parallelism, tensor parallelism, model partitioning by layers for pipeline scheduling, and checkpointing. The model parallelism strategies and techniques help distribute large models across multiple devices while optimizing training speed and memory consumption. The library also provides Python helper functions, context managers, and wrapper functions to adapt your training script for automated or manual partitioning of your model.
 

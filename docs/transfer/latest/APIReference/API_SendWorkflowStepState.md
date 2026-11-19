@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_SendWor
 ---
 
 # SendWorkflowStepState
-<a name="API_SendWorkflowStepState"></a>
 
 Sends a callback for asynchronous custom steps.
 

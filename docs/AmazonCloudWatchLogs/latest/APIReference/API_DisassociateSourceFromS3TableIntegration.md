@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DisassociateSourceFromS3TableIntegration
-<a name="API_DisassociateSourceFromS3TableIntegration"></a>
 
 Disassociates a data source from an S3 Table Integration, removing query access and deleting all associated data from the integration.
 

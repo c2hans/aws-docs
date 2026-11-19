@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/kubernetes-
 ---
 
 # Verify an image during in Amazon EKS or Kubernetes clusters
-<a name="kubernetes-verification"></a>
 
 For AWS Signer customers wishing to verify signed container images at the time of deployment, there are various open-source solutions such as the following.
 + [Deis Labs Gatekeeper and Ratify](https://ratify.dev/docs/quickstarts/ratify-on-aws) – Use Gatekeeper as the admission controller and Ratify configured with an AWS Signer plug-in as a web hook for validating signatures.

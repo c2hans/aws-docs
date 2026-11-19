@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/msg-status-cloudformation.
 ---
 
 # Configuring delivery status logging using CloudFormation
-<a name="msg-status-cloudformation"></a>
 
 To configure `DeliveryStatusLogging` using CloudFormation, use a JSON or YAML template to create an CloudFormation stack. For more information, see the `DeliveryStatusLogging` property of the `AWS::SNS::Topic` resource in the CloudFormation User Guide. Below are examples of CloudFormation templates in JSON and YAML to create a new topic or update an existing topic with all `DeliveryStatusLogging` attributes for the Amazon SQS protocol.
 

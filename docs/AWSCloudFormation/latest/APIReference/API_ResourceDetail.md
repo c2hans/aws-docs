@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ResourceDetail
-<a name="API_ResourceDetail"></a>
 
 Details about a resource in a generated template
 

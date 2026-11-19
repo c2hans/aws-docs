@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-t
 ---
 
 # Using topology-aware scheduling in Amazon SageMaker HyperPod
-<a name="sagemaker-hyperpod-topology"></a>
 
 Data transfer efficiency is a critical factor in high-performance computing (HPC) and machine learning workloads. When using UltraServers with Amazon SageMaker HyperPod, SageMaker HyperPod automatically applies topology labels to your resources. Topology-aware scheduling helps allocate resources to minimize data transfer overheads by considering both instance topology (how resources are connected within an instance) and network topology (how instances are connected with each other). For more information about instance topology, see [ Amazon EC2 instance topology](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-topology.html).
 

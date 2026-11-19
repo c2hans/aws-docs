@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Knowl
 ---
 
 # KnowledgeBase
-<a name="API_KnowledgeBase"></a>
 
 A knowledge base resource that provides data from connected sources for AI-powered experiences in Amazon QuickSight.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Priv
 ---
 
 # PrivacyBudget
-<a name="API_PrivacyBudget"></a>
 
 The epsilon parameter value and number of each aggregation function that you can perform.
 

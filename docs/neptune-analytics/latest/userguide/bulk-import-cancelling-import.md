@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/bulk-
 ---
 
 # Canceling an import task
-<a name="bulk-import-cancelling-import"></a>
 
  You can cancel a running import task by using the [ CancelImportTask](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CancelImportTask.html) API.
 

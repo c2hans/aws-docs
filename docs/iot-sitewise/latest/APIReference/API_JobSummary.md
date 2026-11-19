@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Job
 ---
 
 # JobSummary
-<a name="API_JobSummary"></a>
 
 Contains the job summary information.
 

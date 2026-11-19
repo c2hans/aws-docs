@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafR
 ---
 
 # AwsWafRegionalWebAclDetails
-<a name="API_AwsWafRegionalWebAclDetails"></a>
 
 Provides information about the web access control list (web ACL). The web ACL contains the rules that identify the requests that you want to allow, block, or count.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Delete scope for Network Flow Monitor
-<a name="CloudWatch-NetworkFlowMonitor-disable"></a>
 
 If you decide that you no longer want to monitor network flows using Network Flow Monitor, you can delete your Network Flow Monitor scope. When you delete your scope, you can no longer see network performance information.
 

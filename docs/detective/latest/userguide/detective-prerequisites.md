@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/detective-pre
 ---
 
 # Prerequisites to enable Detective
-<a name="detective-prerequisites"></a>
 
 Make sure that the following requirements are met before enabling Detective.
 

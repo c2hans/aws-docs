@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/
 ---
 
 # Receipt
-<a name="API_connect-participant_Receipt"></a>
 
 The receipt for the message delivered to the recipient.
 

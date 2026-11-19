@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/create-user.html
 ---
 
 # Creating a user
-<a name="create-user"></a>
 
 You can use the [CreateUser](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateUser.html) operation to create a new user in a collection using a unique user ID you provide. You can then associate multiple faces with the newly created user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeAutomationExecutions
-<a name="API_DescribeAutomationExecutions"></a>
 
 Provides details about all active and terminated Automation executions.
 

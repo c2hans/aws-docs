@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-
 ---
 
 # Vacuuming and analyzing tables automatically
-<a name="autovacuum"></a>
 
 Autovacuum is a daemon (that is, it runs in the background) that automatically *vacuums* (cleans up) dead tuples, reclaims storage, and gathers statistics. It checks for bloated tables in the database and clears the bloat to reuse the space. It monitors database tables and indexes and adds them to a vacuum job after they reach a specific threshold of update or delete operations.
 

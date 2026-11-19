@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsCode
 ---
 
 # AwsCodeBuildProjectVpcConfig
-<a name="API_AwsCodeBuildProjectVpcConfig"></a>
 
 Information about the VPC configuration that AWS CodeBuild accesses.
 

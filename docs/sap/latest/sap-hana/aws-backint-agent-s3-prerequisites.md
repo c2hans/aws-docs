@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3
 ---
 
 # Prerequisites for use of the AWS Backint Agent for SAP HANA
-<a name="aws-backint-agent-s3-prerequisites"></a>
 
 After your SAP HANA system is successfully running on an Amazon EC2 instance, verify the following prerequisites to install AWS Backint agent using the Amazon EC2 Systems Manager document or using AWS Backint installer.
 

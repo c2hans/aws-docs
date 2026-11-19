@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_SnsC
 ---
 
 # SnsChannelConfig
-<a name="API_SnsChannelConfig"></a>
 
  Contains the Amazon Resource Name (ARN) of an Amazon Simple Notification Service topic.
 

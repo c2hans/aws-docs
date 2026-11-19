@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/customer-manag
 ---
 
 # IAM policy examples
-<a name="customer-managed-policies"></a>
 
 In this section, you can find example IAM policies that allow permissions for various AWS KMS actions.
 

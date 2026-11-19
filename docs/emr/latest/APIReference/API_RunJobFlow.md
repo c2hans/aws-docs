@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_RunJobFlow.h
 ---
 
 # RunJobFlow
-<a name="API_RunJobFlow"></a>
 
 RunJobFlow creates and starts running a new cluster (job flow). The cluster runs the steps specified. After the steps complete, the cluster stops and the HDFS partition is lost. To prevent loss of data, configure the last step of the job flow to store results in Amazon S3. If the [JobFlowInstancesConfig](API_JobFlowInstancesConfig.md) `KeepJobFlowAliveWhenNoSteps` parameter is set to `TRUE`, the cluster transitions to the WAITING state rather than shutting down after the steps have completed.
 

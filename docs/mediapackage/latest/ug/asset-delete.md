@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/asset-delete.html
 ---
 
 # Deleting an asset
-<a name="asset-delete"></a>
 
 To remove the packaging group URLs and to stop AWS Elemental MediaPackage from delivering further content, delete an asset.
 

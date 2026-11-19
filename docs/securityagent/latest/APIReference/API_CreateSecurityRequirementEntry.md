@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cr
 ---
 
 # CreateSecurityRequirementEntry
-<a name="API_CreateSecurityRequirementEntry"></a>
 
 Contains the details for a security requirement to create within a pack.
 

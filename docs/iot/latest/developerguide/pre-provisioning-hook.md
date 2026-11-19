@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/pre-provisioni
 ---
 
 # Pre-provisioning hooks
-<a name="pre-provisioning-hook"></a>
 
 AWS recommends using pre-provisioning hook functions when creating provisioning templates to allow more control of which and how many devices your account onboards. Pre-provisioning hooks are Lambda functions that validate parameters passed from the device before allowing the device to be provisioned. This Lambda function must exist in your account before you provision a device because it's called every time a device sends a request through [RegisterThing](fleet-provision-api.md#register-thing).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_Policy
 ---
 
 # PolicyQualifierInfo
-<a name="API_PolicyQualifierInfo"></a>
 
 Modifies the `CertPolicyId` of a `PolicyInformation` object with a qualifier. AWS Private CA supports the certification practice statement (CPS) qualifier.
 

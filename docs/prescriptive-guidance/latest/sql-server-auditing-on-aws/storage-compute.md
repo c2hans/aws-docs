@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Storage and compute requirements for auditing
-<a name="storage-compute"></a>
 
 ## For Amazon RDS
 <a name="for-amazon-rds.e3872d5d-71a9-5a2f-8357-c0e4b202cb12"></a>

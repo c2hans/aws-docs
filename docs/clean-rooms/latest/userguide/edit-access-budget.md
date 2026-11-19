@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/edit-access
 ---
 
 # Editing a data access budget
-<a name="edit-access-budget"></a>
 
 As a collaboration member, you can edit the data access budget. When you edit a data access budget, it resets the current budget balance.
 

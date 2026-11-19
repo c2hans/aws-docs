@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # Row
-<a name="API_query_Row"></a>
 
 Represents a single row in the query results.
 

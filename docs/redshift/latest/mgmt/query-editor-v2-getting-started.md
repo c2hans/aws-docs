@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2-get
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Configuring your AWS account
-<a name="query-editor-v2-getting-started"></a>
 
 You can perform this set of tasks to configure the query editor v2 to query an Amazon Redshift database.With the proper permissions, you can access data in an Amazon Redshift cluster or workgroup owned by your AWS account that is in the current AWS Region.
 

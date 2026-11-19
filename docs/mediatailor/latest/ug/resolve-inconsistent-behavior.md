@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/resolve-inconsiste
 ---
 
 # Fix CDN inconsistent behavior across devices and platforms for MediaTailor
-<a name="resolve-inconsistent-behavior"></a>
 
 AWS Elemental MediaTailor content delivery network (CDN) integration should provide consistent ad delivery across all devices and platforms. If ads behave differently across devices:
 

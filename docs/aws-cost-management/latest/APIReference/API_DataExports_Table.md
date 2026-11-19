@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Table
-<a name="API_DataExports_Table"></a>
 
 The details for the data export table.
 

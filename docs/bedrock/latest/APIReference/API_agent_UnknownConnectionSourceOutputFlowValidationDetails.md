@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Un
 ---
 
 # UnknownConnectionSourceOutputFlowValidationDetails
-<a name="API_agent_UnknownConnectionSourceOutputFlowValidationDetails"></a>
 
 Details about an unknown source output for a connection.
 

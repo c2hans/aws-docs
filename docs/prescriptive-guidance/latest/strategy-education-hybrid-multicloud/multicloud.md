@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Reserve multicloud only for workloads that can't meet their technical or business requirements through a single cloud provider
-<a name="multicloud"></a>
 
 *Multicloud* refers to the use of cloud services from multiple (two or more) cloud service providers. Having a multicloud strategy can offer certain benefits, such as the option to unlock the differentiated capabilities of multiple cloud providers or the ability to meet data sovereignty requirements that a single cloud provider might not be able to accommodate. However, for each provider that you use, make sure that you have the proper people, skills, training, and toolsets in place to use that provider effectively. Furthermore, if you want to use a multicloud strategy for a specific workload, you will need additional resources to integrate and interoperate the necessary services from each cloud provider. **We recommend that you consider multicloud only when the benefits outweigh the increased investment.** To determine whether you should choose a multicloud strategy, consider the following key questions.
 + **Do you have the resources and skill sets to navigate services offered by different cloud providers?**

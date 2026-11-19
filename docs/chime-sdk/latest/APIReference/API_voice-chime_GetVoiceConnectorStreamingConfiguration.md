@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # GetVoiceConnectorStreamingConfiguration
-<a name="API_voice-chime_GetVoiceConnectorStreamingConfiguration"></a>
 
 Retrieves the streaming configuration details for the specified Amazon Chime SDK Voice Connector. Shows whether media streaming is enabled for sending to Amazon Kinesis. It also shows the retention period, in hours, for the Amazon Kinesis data.
 

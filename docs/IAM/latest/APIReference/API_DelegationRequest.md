@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DelegationRe
 ---
 
 # DelegationRequest
-<a name="API_DelegationRequest"></a>
 
 Contains information about a delegation request, including its status, permissions, and associated metadata.
 

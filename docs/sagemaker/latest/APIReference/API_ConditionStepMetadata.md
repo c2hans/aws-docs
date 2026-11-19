@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Condit
 ---
 
 # ConditionStepMetadata
-<a name="API_ConditionStepMetadata"></a>
 
 Metadata for a Condition step.
 

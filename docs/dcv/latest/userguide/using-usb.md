@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-usb.html
 ---
 
 # Using USB remotization
-<a name="using-usb"></a>
 
 **Note**
 This feature is for installable Windows clients only.

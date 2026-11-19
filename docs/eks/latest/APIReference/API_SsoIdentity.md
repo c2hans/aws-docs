@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_SsoIdentity.
 ---
 
 # SsoIdentity
-<a name="API_SsoIdentity"></a>
 
 An IAM Identity CenterIAM; Identity Center identity (user or group) that can be assigned permissions in a capability.
 

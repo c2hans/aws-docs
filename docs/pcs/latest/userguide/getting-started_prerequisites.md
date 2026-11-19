@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/getting-started_pre
 ---
 
 # Prerequisites for getting started with AWS PCS
-<a name="getting-started_prerequisites"></a>
 
 Refer to the following topics to prepare your AWS account and local development environment for AWS PCS.
 

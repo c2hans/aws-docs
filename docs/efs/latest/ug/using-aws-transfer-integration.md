@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/using-aws-transfer-integra
 ---
 
 # Using AWS Transfer Family to transfer data
-<a name="using-aws-transfer-integration"></a>
 
 AWS Transfer Family is a fully managed AWS service that you can use to transfer files into and out of Amazon EFS file systems over the following protocols:
 +  Secure Shell (SSH) File Transfer Protocol (SFTP) (AWS Transfer for SFTP)

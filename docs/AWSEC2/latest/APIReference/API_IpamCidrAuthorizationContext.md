@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamCidrA
 ---
 
 # IpamCidrAuthorizationContext
-<a name="API_IpamCidrAuthorizationContext"></a>
 
 A signed document that proves that you are authorized to bring the specified IP address range to Amazon using BYOIP.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # MaintenanceWindowExecutionTaskIdentity
-<a name="API_MaintenanceWindowExecutionTaskIdentity"></a>
 
 Information about a task execution performed as part of a maintenance window execution.
 

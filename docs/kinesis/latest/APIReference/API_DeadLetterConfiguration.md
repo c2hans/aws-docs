@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DeadLett
 ---
 
 # DeadLetterConfiguration
-<a name="API_DeadLetterConfiguration"></a>
 
 The dead-letter handling configuration for a queue. Each queue has built-in dead-letter handling. When a record has been received `MaxReceiveCount` times without being acknowledged, it becomes a dead-letter record, and [ReceiveQueueRecords](API_ReceiveQueueRecords.md) no longer returns it. The dead-letter record stays in the same queue, and you work with it through [ReceiveDeadLetterQueueRecords](API_ReceiveDeadLetterQueueRecords.md), [AcknowledgeDeadLetterQueueRecords](API_AcknowledgeDeadLetterQueueRecords.md), [UpdateDeadLetterQueueRecordsVisibility](API_UpdateDeadLetterQueueRecordsVisibility.md), and [RestoreDeadLetterQueueRecords](API_RestoreDeadLetterQueueRecords.md), which use the same queue ARN.
 

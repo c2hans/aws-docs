@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CancelChannelHandshake
-<a name="API_channel_CancelChannelHandshake"></a>
 
 Cancels a pending channel handshake request.
 

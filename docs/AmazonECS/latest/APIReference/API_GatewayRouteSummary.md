@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayRouteSummary
-<a name="API_GatewayRouteSummary"></a>
 
 A summary of a gateway route that is returned by the `ListGatewayRoutes` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 ---
 
 # type Cache
-<a name="retrieving-secrets_cache-go_cache"></a>
 
 An in-memory cache for secrets requested from Secrets Manager. You use [GetSecretString](#retrieving-secrets_cache-go_cache_operations_GetCachedSecret) or [GetSecretBinary](#retrieving-secrets_cache-go_cache_operations_GetSecretBinary) to retrieve a secret from the cache.
 

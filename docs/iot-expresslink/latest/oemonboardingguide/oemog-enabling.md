@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/oemonboardingguid
 ---
 
 # Enable onboarding-by-claim
-<a name="oemog-enabling"></a>
 
 In order for a product to take advantage of the onboarding-by-claim process, the OEM must ensure that the following components are available and properly configured:
 + A registration (web) portal or mobile application.

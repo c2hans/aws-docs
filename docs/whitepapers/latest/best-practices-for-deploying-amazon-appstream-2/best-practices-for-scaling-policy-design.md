@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 ---
 
 # Best practices for scaling policy design
-<a name="best-practices-for-scaling-policy-design"></a>
 
 ## Combine scaling policies
 <a name="combine-scaling-policies"></a>

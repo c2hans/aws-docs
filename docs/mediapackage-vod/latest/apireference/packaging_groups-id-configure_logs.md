@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/pac
 ---
 
 # Packaging\_groups id Configure\_logs
-<a name="packaging_groups-id-configure_logs"></a>
 
 Configures access logs for a packaging group. For information about access logs, see [Access logging](https://docs.aws.amazon.com/mediapackage/latest/ug/access-logging.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Resou
 ---
 
 # ResourcePermission
-<a name="API_ResourcePermission"></a>
 
 Permission for the resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # Observability with Amazon CloudWatch
-<a name="payments-observability"></a>
 
 AgentCore payments supports observability through Amazon CloudWatch, so you can monitor and troubleshoot your payment integration.
 +  **Amazon CloudWatch** is the AWS monitoring and observability service. It collects and tracks metrics, logs, and traces from your AWS resources, giving you visibility into application performance.

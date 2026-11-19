@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_UntagR
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Remove a tag from a Amazon SWF domain.
 

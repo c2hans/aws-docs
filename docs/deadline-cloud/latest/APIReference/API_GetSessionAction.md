@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetSessionAction
-<a name="API_GetSessionAction"></a>
 
 Gets a session action for the job.
 

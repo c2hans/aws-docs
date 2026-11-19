@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListManagedJ
 ---
 
 # ListManagedJobTemplates
-<a name="API_ListManagedJobTemplates"></a>
 
 Returns a list of managed job templates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/accessing-metrics-
 ---
 
 # Container, queue, and database metrics for Amazon MWAA
-<a name="accessing-metrics-cw-container-queue-db"></a>
 
 In addition to Apache Airflow metrics, you can monitor the underlying components of your Amazon Managed Workflows for Apache Airflow environments using CloudWatch, which collects raw data and processes data into readable, near real-time metrics. With these environment metrics, you'll have greater visibility into key performance indicators to help you appropriately size your environments and debug issues with your workflows. These metrics apply to all supported Apache Airflow versions on Amazon MWAA.
 

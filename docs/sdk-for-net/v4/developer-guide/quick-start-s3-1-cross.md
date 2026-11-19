@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Simple cross-platform application using the AWS SDK for .NET
-<a name="quick-start-s3-1-cross"></a>
 
 This tutorial uses the AWS SDK for .NET and .NET for cross-platform development. The tutorial shows you how to use the SDK to list the [Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/) that you own and, optionally, create a bucket.
 

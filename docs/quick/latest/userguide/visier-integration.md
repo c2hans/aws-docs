@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/visier-integratio
 ---
 
 # Visier Agent integration
-<a name="visier-integration"></a>
 
 With the Visier Agent connector, you can access Visier's people analytics platform directly in AWS Quick through natural language. You can query live workforce data, analyze headcount trends, assess retention health, generate workforce briefings, and more without leaving AWS Quick.
 

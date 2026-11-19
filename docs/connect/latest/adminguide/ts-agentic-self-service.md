@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ts-agentic-sel
 ---
 
 # Troubleshoot agentic self-service issues
-<a name="ts-agentic-self-service"></a>
 
 The following issues are specific to [agentic self-service](agentic-self-service.md).
 

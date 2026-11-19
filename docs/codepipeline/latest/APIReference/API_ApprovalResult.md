@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_App
 ---
 
 # ApprovalResult
-<a name="API_ApprovalResult"></a>
 
 Represents information about the result of an approval request.
 

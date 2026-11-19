@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Restrictions on all edge functions
-<a name="edge-function-restrictions-all"></a>
 
 The following restrictions apply to all edge functions, both CloudFront Functions and Lambda@Edge.
 

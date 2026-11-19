@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Li
 ---
 
 # ListDataSets
-<a name="API_ListDataSets"></a>
 
 This operation lists your data sets. When listing by origin OWNED, results are sorted by CreatedAt in descending order. When listing by origin ENTITLED, there is no order.
 

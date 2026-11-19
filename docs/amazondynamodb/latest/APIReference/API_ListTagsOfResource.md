@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_L
 ---
 
 # ListTagsOfResource
-<a name="API_ListTagsOfResource"></a>
 
 List all tags on an Amazon DynamoDB resource. You can call ListTagsOfResource up to 10 times per second, per account.
 

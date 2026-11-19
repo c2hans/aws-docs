@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/conformance
 ---
 
 # Conformance Packs for AWS Config
-<a name="conformance-packs"></a>
 
 A conformance pack is a collection of AWS Config rules and remediation actions that can be deployed as a single entity. AWS Config supports managed conformance packs and custom conformance packs.
 + AWS managed conformance packs are predefined and maintained by AWS. You can deploy an AWS managed conformance pack to an account and an AWS Region without creating or maintaining a conformance pack template.

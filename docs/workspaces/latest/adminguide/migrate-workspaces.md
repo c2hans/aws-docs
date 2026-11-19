@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/migrate-wor
 ---
 
 # Migrate a WorkSpace in WorkSpaces Personal
-<a name="migrate-workspaces"></a>
 
 **Note**
 If you want to unsubscribe from or uninstall Microsoft Office version licenses through AWS from your WorkSpace, we recommend using [Manage applications](manage-applications).

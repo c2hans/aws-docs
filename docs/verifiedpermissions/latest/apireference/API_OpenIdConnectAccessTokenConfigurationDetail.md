@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # OpenIdConnectAccessTokenConfigurationDetail
-<a name="API_OpenIdConnectAccessTokenConfigurationDetail"></a>
 
 The configuration of an OpenID Connect (OIDC) identity source for handling access token claims. Contains the claim that you want to identify as the principal in an authorization request, and the values of the `aud` claim, or audiences, that you want to accept.
 

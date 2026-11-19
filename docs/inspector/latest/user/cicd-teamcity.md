@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/cicd-teamcity.html
 ---
 
 # Using the Amazon Inspector TeamCity plugin
-<a name="cicd-teamcity"></a>
 
 **Note**
  The Amazon Inspector TeamCity plugin is discontinued and archived on GitHub.

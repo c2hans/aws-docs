@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/private-regis
 ---
 
 # Create a CodeBuild project with a private registry
-<a name="private-registry-sample-create-project"></a>
 
 1. For information about how to create a free private repository, see [Repositories on Docker Hub](https://docs.docker.com/docker-hub/repos/). You can also run the following commands in a terminal to pull an image, get its ID, and push it to a new repository.
 

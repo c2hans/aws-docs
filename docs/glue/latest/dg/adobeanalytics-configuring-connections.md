@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/adobeanalytics-configurin
 ---
 
 # Configuring Adobe Analytics connections
-<a name="adobeanalytics-configuring-connections"></a>
 
  Adobe Analytics supports `AUTHORIZATION_CODE` grant type for `OAuth2`.
 

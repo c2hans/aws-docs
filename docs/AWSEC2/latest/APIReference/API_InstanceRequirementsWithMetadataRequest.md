@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceR
 ---
 
 # InstanceRequirementsWithMetadataRequest
-<a name="API_InstanceRequirementsWithMetadataRequest"></a>
 
 The architecture type, virtualization type, and other attributes for the instance types. When you specify instance attributes, Amazon EC2 will identify instance types with those attributes.
 

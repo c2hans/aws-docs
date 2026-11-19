@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_AwsIamCo
 ---
 
 # AwsIamConfig
-<a name="API_AwsIamConfig"></a>
 
 The AWS Identity and Access Management (IAM) configuration.
 

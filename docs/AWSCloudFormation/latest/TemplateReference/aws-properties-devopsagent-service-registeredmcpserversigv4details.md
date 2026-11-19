@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Service RegisteredMCPServerSigV4Details
-<a name="aws-properties-devopsagent-service-registeredmcpserversigv4details"></a>
 
 SigV4-authenticated MCP server details returned after registration.
 

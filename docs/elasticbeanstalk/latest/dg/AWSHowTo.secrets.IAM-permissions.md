@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.secr
 ---
 
 # Required IAM permissions for Elastic Beanstalk to access secrets and parameters
-<a name="AWSHowTo.secrets.IAM-permissions"></a>
 
 You must grant the necessary permissions to your environment’s EC2 instances to fetch the secrets and parameters for AWS Secrets Manager and AWS Systems Manager Parameter Store. Permissions are provided to the EC2 instances via an EC2 [instance profile role.](iam-instanceprofile.md)
 

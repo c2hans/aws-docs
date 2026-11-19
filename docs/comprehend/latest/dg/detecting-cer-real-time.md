@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/detecting-cer-real-
 ---
 
 # Real-time analysis for custom entity recognition (console)
-<a name="detecting-cer-real-time"></a>
 
 You can use the Amazon Comprehend console to run real-time analysis with a custom model. First, you create an endpoint to run the real-time analysis. After you create the endpoint, you run the real-time analysis.
 

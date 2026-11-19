@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # GetCompatibleVersions
-<a name="API_GetCompatibleVersions"></a>
 
 Returns a map of OpenSearch or Elasticsearch versions and the versions you can upgrade them to.
 

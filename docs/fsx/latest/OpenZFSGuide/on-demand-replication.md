@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/on-demand-replic
 ---
 
 # Protecting your data with on-demand replication
-<a name="on-demand-replication"></a>
 
 Amazon FSx for OpenZFS supports on-demand data replication, enabling you to transfer snapshots of data between file systems within and across AWS Regions and accounts. You can use on-demand data replication for a variety of tasks such as:
 + Synchronizing or distributing data to your development or test environments.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # OriginRequestPolicyHeadersConfig
-<a name="API_OriginRequestPolicyHeadersConfig"></a>
 
 An object that determines whether any HTTP headers (and if so, which headers) are included in requests that CloudFront sends to the origin.
 

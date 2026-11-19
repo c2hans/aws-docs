@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_RS_PredictedIt
 ---
 
 # PredictedItem
-<a name="API_RS_PredictedItem"></a>
 
 An object that identifies an item.
 

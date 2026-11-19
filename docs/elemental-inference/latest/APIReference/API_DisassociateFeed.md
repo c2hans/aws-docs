@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # DisassociateFeed
-<a name="API_DisassociateFeed"></a>
 
 Releases the resource (the source media) that is associated with this feed. The outputs in the feed become DISABLED.
 

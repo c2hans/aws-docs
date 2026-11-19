@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-dep-plan
 ---
 
 # Planning and Prerequisites
-<a name="sap-nw-dep-planning-and-prereqs"></a>
 
 **Topics**
 + [SAP Landscape Assessment](#sap-nw-dep-planning-and-prereqs-assess)

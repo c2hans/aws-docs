@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/linkedin-configuring-conn
 ---
 
 # Configuring LinkedIn connections
-<a name="linkedin-configuring-connections"></a>
 
  LinkedIn supports `AUTHORIZATION_CODE` grant type for OAuth2.
 

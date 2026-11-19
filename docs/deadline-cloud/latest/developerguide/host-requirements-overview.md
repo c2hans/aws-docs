@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/hos
 ---
 
 # Host requirements and fleet capabilities
-<a name="host-requirements-overview"></a>
 
 Capabilities and host requirements are complements. A fleet's capabilities advertise what its workers support, and a step's host requirements state what the step needs. Three concepts explain how they interact:
 + **Requirements are matched to fleets, not to workers** – The scheduler compares a step's requirements against each fleet's declared capabilities. It never inspects individual workers.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/getting-started-sel
 ---
 
 # Deploy in Self-deployed mode
-<a name="getting-started-self-deployed"></a>
 
 In Self-deployed mode, you create an Amazon Elastic VMware Service environment, add hosts, and then install and configure VMware Cloud Foundation (VCF) yourself. Amazon EVS provisions the AWS networking and the VLAN subnets. To deploy VCF 9.x, you use the VCF Installer and connect VCF back to Amazon EVS with connectors.
 

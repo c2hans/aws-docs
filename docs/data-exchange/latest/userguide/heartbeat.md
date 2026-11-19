@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/heartbeat
 ---
 
 # AWS Data Exchange Heartbeat
-<a name="heartbeat"></a>
 
 AWS Data Exchange Heartbeat (Test product) is a free product that subscribers can use to understand how to interact with an AWS Data Exchange product subscription. You can use it for testing purposes and to get familiar with the AWS Data Exchange API and concepts.
 

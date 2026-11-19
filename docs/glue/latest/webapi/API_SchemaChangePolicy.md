@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SchemaChangePolic
 ---
 
 # SchemaChangePolicy
-<a name="API_SchemaChangePolicy"></a>
 
 A policy that specifies update and deletion behaviors for the crawler.
 

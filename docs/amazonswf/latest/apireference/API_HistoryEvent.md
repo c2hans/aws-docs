@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Histor
 ---
 
 # HistoryEvent
-<a name="API_HistoryEvent"></a>
 
 Event within a workflow execution. A history event can be one of these types:
 +  `ActivityTaskCancelRequested` – A `RequestCancelActivityTask` decision was received by the system.

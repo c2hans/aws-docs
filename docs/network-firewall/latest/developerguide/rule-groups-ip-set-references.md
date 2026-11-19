@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # IP set references in Suricata compatible AWS Network Firewall rule groups
-<a name="rule-groups-ip-set-references"></a>
 
 You can use an IP set reference with **Suricata compatible rule strings** and with **standard Network Firewall stateful rule groups**.
 

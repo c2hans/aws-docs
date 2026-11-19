@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # MLCOST04-BP05 Use automated machine learning
-<a name="mlcost04-bp05"></a>
 
  Automate your model development process by using systems that experiment with and select the best algorithms from high-performing options. These automated systems test various solutions and parameter settings to achieve optimal models, significantly speeding up development while reducing the need for manual experimentation and comparisons.
 

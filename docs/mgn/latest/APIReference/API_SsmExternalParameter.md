@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_SsmExternalP
 ---
 
 # SsmExternalParameter
-<a name="API_SsmExternalParameter"></a>
 
 AWS Systems Manager Document external parameter.
 

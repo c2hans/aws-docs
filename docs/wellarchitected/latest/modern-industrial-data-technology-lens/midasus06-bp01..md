@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDASUS06-BP01 Implement sustainability driven manufacturing processes
-<a name="midasus06-bp01."></a>
 
  Building a sustainability focused culture in manufacturing environments helps drive energy efficiency from the shop floor to enterprise systems. By aligning sustainability goals with operational excellence initiatives, organizations can reduce environmental impact while improving manufacturing performance.
 

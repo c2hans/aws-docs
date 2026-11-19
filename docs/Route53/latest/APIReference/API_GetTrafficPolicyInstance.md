@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetTraff
 ---
 
 # GetTrafficPolicyInstance
-<a name="API_GetTrafficPolicyInstance"></a>
 
 Gets information about a specified traffic policy instance.
 

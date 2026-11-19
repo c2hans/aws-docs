@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Strea
 ---
 
 # StreamingDistributionSummary
-<a name="API_StreamingDistributionSummary"></a>
 
 A summary of the information for a CloudFront streaming distribution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/image-bytes-javasc
 ---
 
 # Using JavaScript
-<a name="image-bytes-javascript"></a>
 
 The following JavaScript webpage example allows a user to choose an image and view the estimated ages of faces that are detected in the image. The estimated ages are returned by a call to [DetectFaces](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectFaces.html).
 

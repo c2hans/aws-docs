@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/do
 ---
 
 # Document institutional knowledge from voice inputs by using Amazon Bedrock and Amazon Transcribe
-<a name="document-institutional-knowledge-from-voice-inputs-by-using-amazon-bedrock-and-amazon-transcribe"></a>
 
 *Praveen Kumar Jeyarajan, Jundong Qiao, Rajiv Upadhyay, and Megan Wu, Amazon Web Services*
 

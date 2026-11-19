@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_DeleteSolNet
 ---
 
 # DeleteSolNetworkPackage
-<a name="API_DeleteSolNetworkPackage"></a>
 
 Deletes network package.
 

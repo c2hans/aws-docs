@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon S3 Vectors
-<a name="list_s3vectors"></a>
 
 Amazon S3 Vectors (service prefix: `s3vectors`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

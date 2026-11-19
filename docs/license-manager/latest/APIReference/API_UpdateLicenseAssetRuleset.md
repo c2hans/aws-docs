@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # UpdateLicenseAssetRuleset
-<a name="API_UpdateLicenseAssetRuleset"></a>
 
 Updates a license asset ruleset.
 

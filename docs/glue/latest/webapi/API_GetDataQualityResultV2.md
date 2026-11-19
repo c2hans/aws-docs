@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetDataQualityRes
 ---
 
 # GetDataQualityResultV2
-<a name="API_GetDataQualityResultV2"></a>
 
 Retrieves the result of a data quality rule evaluation published from any supported data platform.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Tr
 ---
 
 # Transporting a PostgreSQL database to the destination from the source
-<a name="PostgreSQL.TransportableDB.Transporting"></a>
 
 After you complete the process described in [Setting up to transport a PostgreSQL database](PostgreSQL.TransportableDB.Setup.md), you can start the transport. To do so, run the `transport.import_from_server` function on the destination DB instance. In the syntax following you can find the function parameters.
 

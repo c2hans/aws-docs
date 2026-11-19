@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStart
 ---
 
 # Next Steps
-<a name="GettingStarted.serverless-valkey.next-steps"></a>
 
 For more information about ElastiCache see the following pages:
 + [Working with ElastiCache](WorkingWithElastiCache.md)

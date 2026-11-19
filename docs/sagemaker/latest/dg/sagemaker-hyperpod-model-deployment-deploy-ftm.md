@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Deploy models from Amazon S3, Amazon FSx, or Hugging Face Hub using kubectl
-<a name="sagemaker-hyperpod-model-deployment-deploy-ftm"></a>
 
 The following steps show you how to deploy models stored on Amazon S3, Amazon FSx, or Hugging Face Hub to a Amazon SageMaker HyperPod cluster using kubectl.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Workstation Management modules
-<a name="workstation-management-modules"></a>
 
 Workstation Management modules create the necessary resources to provide virtual workstations to users in the post-production environment. This way, users can gain cloud performance by connecting remotely only from their local laptop, and handle auto-scaling based on policies.
 

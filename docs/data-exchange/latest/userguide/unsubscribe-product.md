@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/unsubscri
 ---
 
 # Unsubscribing from an AWS Data Exchange product
-<a name="unsubscribe-product"></a>
 
 Use the AWS Data Exchange console to unsubscribe from a data product.
 

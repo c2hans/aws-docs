@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/k
 ---
 
 # Step 2: Install, Configure, and Run Kinesis Agent for Windows
-<a name="kaw-ds2s3-tutorial-step2"></a>
 
 In this step, you use the AWS Management Console to remotely connect to the instance that you launched in [Create the Amazon EC2 Instance to Run Kinesis Agent for Windows](kaw-ds2s3-tutorial-step1.md#kaw-ds2s3-tutorial-step1.4). You then install Amazon Kinesis Agent for Microsoft Windows on the instance, create and deploy the configuration file for Kinesis Agent for Windows, and start the `AWSKinesisTap` service.
 

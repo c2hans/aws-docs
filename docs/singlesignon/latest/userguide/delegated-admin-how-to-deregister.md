@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/delegated-
 ---
 
 # Deregister a member account
-<a name="delegated-admin-how-to-deregister"></a>
 
 You can only deregister a member account while signed in with credentials from the management account.
 

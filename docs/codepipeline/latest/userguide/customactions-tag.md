@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/customacti
 ---
 
 # Tag a custom action in CodePipeline
-<a name="customactions-tag"></a>
 
 Tags are key-value pairs associated with AWS resources. You can use the console or the CLI to apply tags to your custom actions in CodePipeline. For information about CodePipeline resource tagging, use cases, tag key and value constraints, and supported resource types, see [Tagging resources](tag-resources.md).
 

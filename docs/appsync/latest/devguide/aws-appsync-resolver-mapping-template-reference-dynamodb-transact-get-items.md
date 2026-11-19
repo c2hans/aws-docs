@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-reso
 ---
 
 # TransactGetItems
-<a name="aws-appsync-resolver-mapping-template-reference-dynamodb-transact-get-items"></a>
 
 The `TransactGetItems` request mapping document lets you to tell the AWS AppSync DynamoDB resolver to make a `TransactGetItems` request to DynamoDB to retrieve multiple items, potentially across multiple tables. For this request template, you must specify the following:
 + The table name of each request item where to retrieve the item from

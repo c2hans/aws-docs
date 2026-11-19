@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # Encryption at rest for AgentCore payments
-<a name="payments-encryption"></a>
 
 Amazon Bedrock AgentCore payments encrypts all customer data at rest by default. You don’t need to perform any additional configuration to protect your data. AgentCore payments also provides advanced encryption mechanisms that give you more control over how your data is protected.
 

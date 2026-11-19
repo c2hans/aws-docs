@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # VPCDerivedInfoStatus
-<a name="API_VPCDerivedInfoStatus"></a>
 
 Status of the VPC options for a specified domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Delet
 ---
 
 # DeleteOriginAccessControl
-<a name="API_DeleteOriginAccessControl"></a>
 
 Deletes a CloudFront origin access control.
 

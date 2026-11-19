@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/inputs-supported-cod
 ---
 
 # Supported codecs by input type
-<a name="inputs-supported-codecs-by-input-type"></a>
 
 The following table lists the video and audio codecs that each type of MediaLive input type supports.
 

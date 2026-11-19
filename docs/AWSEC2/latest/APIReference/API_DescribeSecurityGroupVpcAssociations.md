@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeS
 ---
 
 # DescribeSecurityGroupVpcAssociations
-<a name="API_DescribeSecurityGroupVpcAssociations"></a>
 
 Describes security group VPC associations made with [AssociateSecurityGroupVpc](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssociateSecurityGroupVpc.html).
 

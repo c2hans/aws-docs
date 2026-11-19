@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/sync-api.html
 ---
 
 # Real-time translation using the API
-<a name="sync-api"></a>
 
 Amazon Translate provides the following real-time translation operations to support interactive applications:
 +  [TranslateText](https://docs.aws.amazon.com/translate/latest/APIReference/API_TranslateText.html) – translates a block of text.

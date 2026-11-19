@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/tutorials_05_m
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # (Optional) Manage AD users and groups
-<a name="tutorials_05_multi-user-ad-step2"></a>
 
 In this step, you manage users and groups from an Amazon EC2 Amazon Linux 2023 instance that's joined to the Active Directory (AD) domain.
 

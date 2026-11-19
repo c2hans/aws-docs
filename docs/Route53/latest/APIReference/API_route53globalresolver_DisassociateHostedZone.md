@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # DisassociateHostedZone
-<a name="API_route53globalresolver_DisassociateHostedZone"></a>
 
 Disassociates a Route 53 private hosted zone from a Route 53 Global Resolver resource.
 

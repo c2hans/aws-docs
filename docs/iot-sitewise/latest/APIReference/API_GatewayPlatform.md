@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Gat
 ---
 
 # GatewayPlatform
-<a name="API_GatewayPlatform"></a>
 
 The gateway's platform configuration. You can only specify one platform type in a gateway.
 

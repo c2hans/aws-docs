@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/iam-directory-
 ---
 
 # Authenticating and authorizing for directory buckets in Local Zones
-<a name="iam-directory-bucket-LZ"></a>
 
 Directory buckets in Local Zones support both AWS Identity and Access Management (IAM) authorization and session-based authorization. For more information about authentication and authorization for directory buckets, see [Authenticating and authorizing requests](s3-express-authenticating-authorizing.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/working-with-multi-
 ---
 
 # Enable Multi-Attach for an Amazon EBS volume
-<a name="working-with-multi-attach"></a>
 
 Multi-Attach enabled volumes can be managed in much the same way that you would manage any other Amazon EBS volume. However, in order to use the Multi-Attach functionality, you must enable it for the volume.
 

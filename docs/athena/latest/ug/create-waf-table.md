@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/create-waf-table.html
 ---
 
 # Create a table for AWS WAF logs without partitioning
-<a name="create-waf-table"></a>
 
 This section describes how to create a table for AWS WAF logs without partitioning or partition projection.
 

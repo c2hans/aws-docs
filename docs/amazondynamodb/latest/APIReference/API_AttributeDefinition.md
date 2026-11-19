@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_A
 ---
 
 # AttributeDefinition
-<a name="API_AttributeDefinition"></a>
 
 Represents an attribute for describing the schema for the table and indexes.
 

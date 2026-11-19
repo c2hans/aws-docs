@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/influxd
 For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Maintenance windows for Timestream for InfluxDB 3
-<a name="influxdb3-maintenance-windows"></a>
 
 Amazon Timestream for InfluxDB performs periodic maintenance on your resources. Maintenance most often involves updates to the underlying hardware, operating system, or database engine. These updates are mandatory. If maintenance is not performed during the designated window, it may be applied during a subsequent window.
 

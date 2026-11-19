@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v9-dash-buildin
 ---
 
 # Building dashboards
-<a name="v9-dash-building-dashboards"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 9.x**.

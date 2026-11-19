@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-tag-del
 ---
 
 # Deleting a tag from a bucket
-<a name="bucket-tag-delete"></a>
 
 You can remove tags from S3 buckets. An AWS tag is a key-value pair that holds metadata about resources, in this case Amazon S3 buckets. For more information about tags, see [Using tags with S3 general purpose buckets](buckets-tagging.md).
 

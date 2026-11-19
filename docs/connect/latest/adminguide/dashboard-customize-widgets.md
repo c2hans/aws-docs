@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/dashboard-cust
 ---
 
 # Customize your Connect Customer dashboard
-<a name="dashboard-customize-widgets"></a>
 
 You can customize specific widgets to create dashboards that best fit your business needs. For example, you can create a single line chart that combines contacts queued, average queue answer time, and abandoned contacts. You can apply filters to show your most important queues so you can quickly see how increasing contact volumes impact both wait time and customer abandonment rates.
 

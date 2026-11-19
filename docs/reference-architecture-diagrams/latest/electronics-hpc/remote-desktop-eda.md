@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # Remote Desktop for Electronic Design Automation
-<a name="remote-desktop-eda"></a>
 
 Publication date: **April 5, 2021 ([Diagram history](diagram-history.md))**
 

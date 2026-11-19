@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-RevokeUnusedIAMUserCredentials`
-<a name="automation-aws-revoke-iam-user"></a>
 
  **Description**
 

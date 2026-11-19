@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/security-instance-p
 ---
 
 # IAM instance profiles for AWS Parallel Computing Service
-<a name="security-instance-profiles"></a>
 
 Applications that run on an EC2 instance must include AWS credentials in any AWS API requests they make. We recommend you use an IAM role to manage temporary credentials on the EC2 instance. You can define an instance profile to do this, and attach it to your instances. For more information, see [IAM roles for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html) in the *Amazon Elastic Compute Cloud User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/l
 ---
 
 # Add triggers to a Lambda@Edge function
-<a name="lambda-edge-add-triggers-console"></a>
 
 You can use the AWS Lambda console or Amazon CloudFront console to add a trigger to your Lambda@Edge function.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # StartDiscovery
-<a name="API_StartDiscovery"></a>
 
 Enables this AWS account to be able to use CloudWatch Application Signals by creating the *AWSServiceRoleForCloudWatchApplicationSignals* service-linked role. This service- linked role has the following permissions:
 +  `xray:GetServiceGraph`

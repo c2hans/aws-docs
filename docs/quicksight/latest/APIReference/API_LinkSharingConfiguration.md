@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_LinkS
 ---
 
 # LinkSharingConfiguration
-<a name="API_LinkSharingConfiguration"></a>
 
 A structure that contains the configuration of a shareable link to the dashboard.
 

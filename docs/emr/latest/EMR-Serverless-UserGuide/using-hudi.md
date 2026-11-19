@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/usin
 ---
 
 # Using Apache Hudi with EMR Serverless
-<a name="using-hudi"></a>
 
 This section describes using Apache Hudi with EMR Serverless applications. Hudi is a data-management framework that makes data processing more simple.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # Meeting
-<a name="API_meeting-chime_Meeting"></a>
 
 A meeting created using the Amazon Chime SDK.
 

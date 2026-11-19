@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RestoreMa
 ---
 
 # RestoreManagedPrefixListVersion
-<a name="API_RestoreManagedPrefixListVersion"></a>
 
 Restores the entries from a previous version of a managed prefix list to a new version of the prefix list.
 

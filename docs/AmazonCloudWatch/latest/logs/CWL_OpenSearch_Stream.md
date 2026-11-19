@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_OpenSea
 ---
 
 # Streaming CloudWatch Logs data to Amazon OpenSearch Service
-<a name="CWL_OpenSearch_Stream"></a>
 
  You can configure a log group in Amazon CloudWatch Logs, so you can stream data to your Amazon OpenSearch Service cluster in near real-time. For more information, see [Real-time processing of log data with subscriptions](Subscriptions.md).
 

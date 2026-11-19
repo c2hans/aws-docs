@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_L
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Retrieves a list of tags for a resource.
 

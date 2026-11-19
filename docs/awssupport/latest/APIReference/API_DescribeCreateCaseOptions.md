@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Descr
 ---
 
 # DescribeCreateCaseOptions
-<a name="API_DescribeCreateCaseOptions"></a>
 
 Returns a list of CreateCaseOption types along with the corresponding supported hours and language availability. You can specify the `language` `categoryCode`, `issueType` and `serviceCode` used to retrieve the CreateCaseOptions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engin
 ---
 
 # Overview
-<a name="overview"></a>
 
 ## Comparing resilience testing with chaos engineering
 <a name="comparison"></a>

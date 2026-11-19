@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-man-sec-g
 ---
 
 # Working with Amazon EMR-managed security groups
-<a name="emr-man-sec-groups"></a>
 
 **Note**
 Amazon EMR aims to use inclusive alternatives for potentially offensive or non-inclusive industry terms such as "master" and "slave". We've transitioned to new terminology to foster a more inclusive experience and to facilitate your understanding of the service components.

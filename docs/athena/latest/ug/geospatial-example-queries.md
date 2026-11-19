@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/geospatial-example-quer
 ---
 
 # Examples: Geospatial queries
-<a name="geospatial-example-queries"></a>
 
 The examples in this topic create two tables from sample data available on GitHub and query the tables based on the data. The sample data, which are for illustration purposes only and are not guaranteed to be accurate, are in the following files:
 + **[`earthquakes.csv`](https://github.com/Esri/gis-tools-for-hadoop/blob/master/samples/data/earthquake-data/earthquakes.csv)** – Lists earthquakes that occurred in California. The example `earthquakes` table uses fields from this data.

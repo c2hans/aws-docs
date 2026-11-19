@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mxnet.html
 ---
 
 # Resources for using Apache MXNet with Amazon SageMaker AI
-<a name="mxnet"></a>
 
 **Important**
 **Deprecation notice:** Apache MXNet is not supported in SageMaker Python SDK v3. If you are currently using MXNet, continue using SageMaker Python SDK v2. For new projects, consider using PyTorch or TensorFlow with the unified `ModelTrainer` class. See [SageMaker Python SDK documentation](https://sagemaker.readthedocs.io/en/stable/) for migration guidance.

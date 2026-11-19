@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-e
 ---
 
 # Subscribe to accepted email notifications in Connect Customer agent workspace
-<a name="3P-apps-email-requests-acceptedemail-subscribing"></a>
 
 Subscribes a callback function to-be-invoked whenever an inbound email contact has been accepted.
 

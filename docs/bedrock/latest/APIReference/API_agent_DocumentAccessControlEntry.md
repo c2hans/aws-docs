@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Do
 ---
 
 # DocumentAccessControlEntry
-<a name="API_agent_DocumentAccessControlEntry"></a>
 
 An access control entry specifying a principal and their access level.
 

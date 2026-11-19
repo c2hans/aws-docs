@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ResourceLogicalExpression
-<a name="API_ResourceLogicalExpression"></a>
 
 A logical expression that selects resources. Exactly one of `criteria`, `and`, `or`, or `not` is set.
 
@@ -15,7 +14,7 @@ This data type is a UNION, so only one of the following members can be specified
 
  ** and **   <a name="networksecuritymanager-Type-ResourceLogicalExpression-and"></a>
 A list of subexpressions that must all match.
-Type: Array of [ResourceLogicalExpression](#API_ResourceLogicalExpression) objects
+Type: Array of [ResourceLogicalExpression](API_ResourceLogicalExpression.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
 Required: No
 
@@ -27,13 +26,13 @@ Required: No
 
  ** not **   <a name="networksecuritymanager-Type-ResourceLogicalExpression-not"></a>
 A subexpression that must not match.
-Type: [ResourceLogicalExpression](#API_ResourceLogicalExpression) object
+Type: [ResourceLogicalExpression](API_ResourceLogicalExpression.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
  ** or **   <a name="networksecuritymanager-Type-ResourceLogicalExpression-or"></a>
 A list of subexpressions of which at least one must match.
-Type: Array of [ResourceLogicalExpression](#API_ResourceLogicalExpression) objects
+Type: Array of [ResourceLogicalExpression](API_ResourceLogicalExpression.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 20 items.
 Required: No
 

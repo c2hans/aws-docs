@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/how-snapshots.
 ---
 
 # Manage application backups using snapshots
-<a name="how-snapshots"></a>
 
 A *snapshot* is a backup of the state of a Managed Service for Apache Flink application. Each snapshot is an Apache Flink savepoint. For more information, see [Savepoints](https://nightlies.apache.org/flink/flink-docs-release-1.19/docs/ops/state/savepoints/) in the Apache Flink Documentation.
 

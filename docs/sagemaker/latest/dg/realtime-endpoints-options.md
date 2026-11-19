@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints-o
 ---
 
 # Hosting options
-<a name="realtime-endpoints-options"></a>
 
 The following topics describe available SageMaker AI realtime hosting options along with how to set up, invoke, and delete each hosting option.
 

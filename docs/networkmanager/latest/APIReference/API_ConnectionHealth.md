@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # ConnectionHealth
-<a name="API_ConnectionHealth"></a>
 
 Describes connection health.
 

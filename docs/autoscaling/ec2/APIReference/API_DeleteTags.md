@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DeleteT
 ---
 
 # DeleteTags
-<a name="API_DeleteTags"></a>
 
 Deletes the specified tags.
 

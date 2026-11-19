@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Rul
 ---
 
 # RuleExecutionResult
-<a name="API_RuleExecutionResult"></a>
 
 Execution result information, such as the external execution ID.
 

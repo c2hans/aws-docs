@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/pennylane-e
 ---
 
 # Run hybrid workloads with PennyLane embedded simulators
-<a name="pennylane-embedded-simulators"></a>
 
 Lets look at how you can use embedded simulators from PennyLane on Amazon Braket Hybrid Jobs to run hybrid workloads. Pennylane's GPU-based embedded simulator, `lightning.gpu`, uses the [Nvidia cuQuantum library](https://developer.nvidia.com/cuquantum-sdk) to accelerate circuit simulations. The embedded GPU simulator is pre-configured in all of the Braket [job containers](https://github.com/amazon-braket/amazon-braket-containers) that users can use out of the box. In this page, we show you how to use `lightning.gpu` to speed up your hybrid workloads.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/saas-le
 ---
 
 # SaaS Lens
-<a name="saas-lens"></a>
 
 Publication date: **April 4, 2023** ([Document revisions](document-revisions.md))
 

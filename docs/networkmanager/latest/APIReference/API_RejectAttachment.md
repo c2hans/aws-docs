@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_R
 ---
 
 # RejectAttachment
-<a name="API_RejectAttachment"></a>
 
 Rejects a core network attachment request.
 

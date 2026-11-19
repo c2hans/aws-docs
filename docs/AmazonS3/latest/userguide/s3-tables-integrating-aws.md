@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-inte
 ---
 
 # Integrating Amazon S3 Tables with AWS analytics services
-<a name="s3-tables-integrating-aws"></a>
 
 This topic covers the prerequisites and procedures needed to integrate your Amazon S3 table buckets with AWS analytics services. For an overview of how the integration works, see [S3 Tables integration overview](s3-tables-integration-overview.md).
 

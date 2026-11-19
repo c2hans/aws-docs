@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans-step
 ---
 
 # Adding and ordering steps
-<a name="recovery-plans-steps"></a>
 
 Steps are numbered from 1 and run in ascending order. A plan can contain up to 20 steps and up to 100 source servers in total across all of its steps.
 

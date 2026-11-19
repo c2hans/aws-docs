@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_ApiStage.html
 ---
 
 # ApiStage
-<a name="API_ApiStage"></a>
 
 API stage name of the associated API stage in a usage plan.
 

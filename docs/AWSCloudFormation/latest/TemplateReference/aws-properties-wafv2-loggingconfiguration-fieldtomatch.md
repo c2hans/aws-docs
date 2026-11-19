@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::LoggingConfiguration FieldToMatch
-<a name="aws-properties-wafv2-loggingconfiguration-fieldtomatch"></a>
 
 The parts of the request that you want to keep out of the logs. This is used in the logging configuration `RedactedFields` specification.
 

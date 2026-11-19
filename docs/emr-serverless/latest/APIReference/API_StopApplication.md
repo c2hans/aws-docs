@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_S
 ---
 
 # StopApplication
-<a name="API_StopApplication"></a>
 
 Stops a specified application and releases initial capacity if configured. All scheduled and running jobs must be completed or cancelled before stopping an application.
 

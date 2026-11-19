@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Execute shell commands in AgentCore Runtime sessions
-<a name="runtime-execute-command"></a>
 
 The [InvokeAgentRuntimeCommand](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_InvokeAgentRuntimeCommand.html) operation lets you execute shell commands directly inside a running AgentCore Runtime session and stream the output back over HTTP/2. Commands run in the same container, filesystem, and environment as your agent - the same session used by `InvokeAgentRuntime` . This enables workflows where your application uses the agent for reasoning tasks and commands for deterministic operations like running tests, git operations, or environment setup.
 

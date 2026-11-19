@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/snapstart-uniqueness.ht
 ---
 
 # Handling uniqueness with Lambda SnapStart
-<a name="snapstart-uniqueness"></a>
 
 When invocations scale up on a SnapStart function, Lambda uses a single initialized snapshot to resume multiple execution environments. If your initialization code generates unique content that is included in the snapshot, then the content might not be unique when it is reused across execution environments. To maintain uniqueness when using SnapStart, you must generate unique content after initialization. This includes unique IDs, unique secrets, and entropy that's used to generate pseudorandomness.
 

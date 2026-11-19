@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Archiv
 ---
 
 # ArchiveFindings
-<a name="API_ArchiveFindings"></a>
 
 Archives GuardDuty findings that are specified by the list of finding IDs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ProfileChoice
-<a name="API_ProfileChoice"></a>
 
 The profile choice.
 

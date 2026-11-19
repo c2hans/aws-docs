@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/processing-job-frame
 ---
 
 # MXNet Framework Processor
-<a name="processing-job-frameworks-mxnet"></a>
 
 Apache MXNet is an open-source deep learning framework commonly used for training and deploying neural networks. The `MXNetProcessor` in the Amazon SageMaker Python SDK provides you with the ability to run processing jobs with MXNet scripts. When you use the `MXNetProcessor`, you can leverage an Amazon-built Docker container with a managed MXNet environment so that you don't need to bring your own container.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # StartCodeInterpreterSession
-<a name="API_StartCodeInterpreterSession"></a>
 
 Creates and initializes a code interpreter session in Amazon Bedrock AgentCore. The session enables agents to execute code as part of their response generation, supporting programming languages such as Python for data analysis, visualization, and computation tasks.
 

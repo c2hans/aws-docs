@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_L
 ---
 
 # ListApplications
-<a name="API_ListApplications"></a>
 
 Lists applications based on a set of parameters.
 

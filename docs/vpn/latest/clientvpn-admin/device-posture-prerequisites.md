@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 ---
 
 # Prerequisites
-<a name="device-posture-prerequisites"></a>
 
 Before you configure device posture, make sure you have the following.
 + An account with a supported device trust provider (CrowdStrike, Jamf, or JumpCloud), configured on each device that connects. For details, see [Supported device trust providers](device-posture-providers.md).

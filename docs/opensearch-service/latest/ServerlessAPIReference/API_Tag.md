@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A map of key-value pairs associated to an OpenSearch Serverless resource.
 

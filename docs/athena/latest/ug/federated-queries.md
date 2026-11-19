@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/federated-queries.html
 ---
 
 # Use Amazon Athena Federated Query
-<a name="federated-queries"></a>
 
 If you have data in sources other than Amazon S3, you can use Athena Federated Query to query the data in place or build pipelines that extract data from multiple data sources and store the data in Amazon S3. With Athena Federated Query, you can run SQL queries across data stored in relational, non-relational, object, and custom data sources. For a full list of supported data sources, see [Available data source connectors](connectors-available.md).
 

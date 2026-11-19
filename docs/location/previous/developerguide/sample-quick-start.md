@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/sample-
 ---
 
 # Tutorial: Quick start
-<a name="sample-quick-start"></a>
 
 ![Map interface showing location details dialog with coordinates for an address in Washington, DC.](https://docs.aws.amazon.com/location/previous/developerguide/images/samples/quickstart-both.png)
 

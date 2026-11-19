@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Endpoi
 ---
 
 # EndpointInfo
-<a name="API_EndpointInfo"></a>
 
 Details about a customer endpoint that was compared in an Inference Recommender job.
 

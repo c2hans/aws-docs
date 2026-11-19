@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateDataSourcePermissions
-<a name="API_UpdateDataSourcePermissions"></a>
 
 Updates the permissions to a data source.
 

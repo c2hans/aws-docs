@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Compl
 ---
 
 # CompleteAttachmentUpload
-<a name="API_CompleteAttachmentUpload"></a>
 
 Completes an attachment upload that was started with [GetAttachmentUploadLinks](API_GetAttachmentUploadLinks.md). After you upload a part of the file to its presigned Amazon S3 URL, call `CompleteAttachmentUpload` with the `partIndex` and `eTag` of that part. You can include one part per call, or multiple parts in a single call. After `CompleteAttachmentUpload` has been called for every part of the file, the service processes the upload asynchronously. The `attachment-ready` status might not be reflected immediately. Use [DescribeAttachmentUploadStatus](API_DescribeAttachmentUploadStatus.md) to poll for the `uploadStatus` to become `attachment-ready` before passing the `uploadId` to [CreateCase](API_CreateCase.md) or [AddCommunicationToCase](API_AddCommunicationToCase.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cognito-user-profiles-e
 ---
 
 # Build a framework for exporting user profile and group information from your Amazon Cognito user pools
-<a name="overview"></a>
 
 This implementation guide discusses architectural considerations and configuration steps for deploying the Cognito User Profiles Export Reference Architecture Guidance in the Amazon Web Services (AWS) Cloud.
 

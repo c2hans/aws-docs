@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ChildSha
 ---
 
 # ChildShard
-<a name="API_ChildShard"></a>
 
 Output parameter of the GetRecords API. The existing child shard of the current shard.
 

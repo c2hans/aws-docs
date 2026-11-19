@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DetachRLSPolicy
-<a name="API_DetachRLSPolicy"></a>
 
 Detaches a row-level security policy from a resource for a principal. After the policy is detached, its filter expression is no longer applied to the principal's queries on that resource.
 

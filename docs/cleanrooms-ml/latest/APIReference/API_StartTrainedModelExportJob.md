@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_St
 ---
 
 # StartTrainedModelExportJob
-<a name="API_StartTrainedModelExportJob"></a>
 
 Provides the information necessary to start a trained model export job.
 

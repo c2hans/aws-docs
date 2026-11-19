@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledBaselineParameter
-<a name="API_EnabledBaselineParameter"></a>
 
 A key-value parameter to an `EnabledBaseline` resource.
 

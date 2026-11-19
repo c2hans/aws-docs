@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/trouble
 ---
 
 # Amazon MQ for RabbitMQ: Instance type change alarm
-<a name="troubleshooting-action-required-instance-change-alarm"></a>
 
  `RABBITMQ_CLUSTER_DISK_USAGE_TOO_HIGH_FOR_INSTANCE_CHANGE` is an indication that a requested broker instance type change cannot proceed due to high disk usage on the current RabbitMQ node. Amazon MQ for RabbitMQ will raise this alarm when when the current disk usage exceeds what would be available on the requested instance type, as identified by the CloudWatch metric `RabbitMQDiskFree`.
 

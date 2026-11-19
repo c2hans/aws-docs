@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DeletePaymentCredentialProvider
-<a name="API_DeletePaymentCredentialProvider"></a>
 
 Deletes a payment credential provider and its associated stored credentials.
 

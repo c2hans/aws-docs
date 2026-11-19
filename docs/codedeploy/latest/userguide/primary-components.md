@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/primary-comp
 ---
 
 # CodeDeploy primary components
-<a name="primary-components"></a>
 
 Before you start working with the service, you should familiarize yourself with the major components of the CodeDeploy deployment process.
 

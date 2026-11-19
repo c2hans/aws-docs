@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-scan
 ---
 
 # Working with progressive and interlaced scan types in AWS Elemental MediaConvert
-<a name="working-with-scan-type"></a>
 
 *Progressive* and *interlaced* are two types of video display methods. Modern display devices detect whether a video is interlaced or progressive and automatically play back the video correctly. But, progressive video looks much better on modern screens.
 

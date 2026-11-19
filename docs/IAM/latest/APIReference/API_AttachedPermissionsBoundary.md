@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_AttachedPerm
 ---
 
 # AttachedPermissionsBoundary
-<a name="API_AttachedPermissionsBoundary"></a>
 
 Contains information about an attached permissions boundary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelA
 ---
 
 # ModelArtifacts
-<a name="API_ModelArtifacts"></a>
 
 Provides information about the location that is configured for storing model artifacts.
 

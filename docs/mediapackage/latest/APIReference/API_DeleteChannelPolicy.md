@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Del
 ---
 
 # DeleteChannelPolicy
-<a name="API_DeleteChannelPolicy"></a>
 
 Delete a channel policy.
 

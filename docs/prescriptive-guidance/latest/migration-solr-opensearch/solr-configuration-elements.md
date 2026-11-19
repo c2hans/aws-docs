@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Key configuration elements
-<a name="solr-configuration-elements"></a>
 
 The following table describes Solr configuration elements and provides examples of each.
 

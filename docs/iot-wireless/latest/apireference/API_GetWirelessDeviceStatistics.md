@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetWirelessDeviceStatistics
-<a name="API_GetWirelessDeviceStatistics"></a>
 
 Gets operating information about a wireless device.
 

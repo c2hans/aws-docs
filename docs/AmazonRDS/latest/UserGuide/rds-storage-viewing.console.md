@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-storage-v
 ---
 
 # Console
-<a name="rds-storage-viewing.console"></a>
 
 To view your storage volume configuration from the console:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Resource
 ---
 
 # ResourceSetSummary
-<a name="API_ResourceSetSummary"></a>
 
 Summarizes the resource sets used in a policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/vcf-license-mgmt.ht
 ---
 
 # VCF licensing
-<a name="vcf-license-mgmt"></a>
 
 Amazon Elastic VMware Service (Amazon EVS) uses VMware Cloud Foundation (VCF) subscriptions with license portability entitlements that you bring to AWS (BYOS). You must have a valid and active VCF subscription to use Amazon EVS, whichever way you deploy VCF.
 

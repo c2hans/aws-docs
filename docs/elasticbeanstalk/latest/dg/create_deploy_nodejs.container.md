@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy
 ---
 
 # Using the Elastic Beanstalk Node.js platform
-<a name="create_deploy_nodejs.container"></a>
 
 This topic describes how to configure, build, and run your Node.js applications on Elastic Beanstalk.
 

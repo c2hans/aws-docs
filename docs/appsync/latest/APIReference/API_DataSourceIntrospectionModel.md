@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DataSour
 ---
 
 # DataSourceIntrospectionModel
-<a name="API_DataSourceIntrospectionModel"></a>
 
 Contains the introspected data that was retrieved from the data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # Canary
-<a name="API_Canary"></a>
 
 This structure contains all information about one canary in your account.
 

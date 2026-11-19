@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/builder_id-apps.
 ---
 
 # AWS tools and services that use AWS Builder ID
-<a name="builder_id-apps"></a>
 
 You can sign in with your AWS Builder ID to access the following AWS tools and services. Access to capabilities or benefits that are offered for a charge require an AWS account.
 

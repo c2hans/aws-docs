@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/deploy-tut
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Tutorial: Deploy an application to Amazon ECS
-<a name="deploy-tut-ecs"></a>
 
 In this tutorial, you learn how to deploy a serverless application into Amazon Elastic Container Service (Amazon ECS) using a workflow, Amazon ECS, and a few other AWS services. The deployed application is a simple Hello World website built on an Apache web server Docker image. The tutorial walks you through the required preparation work such as setting up a cluster, and then describes how to create a workflow to build and deploy the application.
 

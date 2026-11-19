@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetSessionEndpoin
 ---
 
 # GetSessionEndpoint
-<a name="API_GetSessionEndpoint"></a>
 
 Returns the Spark Connect endpoint URL and authentication token for an interactive session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Scraping additional Prometheus sources and importing those metrics
-<a name="ContainerInsights-Prometheus-Setup-configure"></a>
 
 The CloudWatch agent with Prometheus monitoring needs two configurations to scrape the Prometheus metrics. One is for the standard Prometheus configurations as documented in [<scrape\_config>](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#scrape_config) in the Prometheus documentation. The other is for the CloudWatch agent configuration.
 

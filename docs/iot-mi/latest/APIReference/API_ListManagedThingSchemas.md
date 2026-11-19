@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListManag
 ---
 
 # ListManagedThingSchemas
-<a name="API_ListManagedThingSchemas"></a>
 
 List schemas associated with a managed thing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/live-streaming-on-aws-w
 ---
 
 # Deleting the Amazon S3 buckets
-<a name="deleting-the-amazon-s3-buckets"></a>
 
 This solution is configured to retain the solution-created Amazon S3 buckets if you decide to delete the AWS CloudFormation stack to prevent accidental data loss. After uninstalling the solution, you can manually delete this S3 bucket if you do not need to retain the data. Follow these steps to delete the Amazon S3 buckets.
 

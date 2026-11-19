@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-runtime
 ---
 
 # Create a sample application that offers playgrounds to interact with Amazon Bedrock foundation models using an AWS SDK
-<a name="bedrock-runtime_example_cross_FMPlayground_section"></a>
 
 The following code examples show how to create playgrounds to interact with Amazon Bedrock foundation models through different modalities.
 

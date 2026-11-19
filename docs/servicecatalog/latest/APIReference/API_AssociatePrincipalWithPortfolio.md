@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_A
 ---
 
 # AssociatePrincipalWithPortfolio
-<a name="API_AssociatePrincipalWithPortfolio"></a>
 
 Associates the specified principal ARN with the specified portfolio.
 

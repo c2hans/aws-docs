@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Contex
 ---
 
 # ContextSource
-<a name="API_ContextSource"></a>
 
 A structure describing the source of a context.
 

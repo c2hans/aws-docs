@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Enti
 ---
 
 # EntitySummary
-<a name="API_EntitySummary"></a>
 
 This object is a container for common summary information about the entity. The summary doesn't contain the whole entity structure, but it does contain information common across all entities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/use-th
 ---
 
 # Use the solution
-<a name="use-the-solution"></a>
 
 DeepRacer on AWS provides the same set of reinforcement learning fundamentals as the original AWS DeepRacer service, in a format that allows customers to host it from their own AWS accounts.
 

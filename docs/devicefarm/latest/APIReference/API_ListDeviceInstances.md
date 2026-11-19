@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListD
 ---
 
 # ListDeviceInstances
-<a name="API_ListDeviceInstances"></a>
 
 Returns information about the private device instances associated with one or more AWS accounts.
 

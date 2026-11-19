@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Triggers for T-SQL
-<a name="chap-sql-server-aurora-mysql.tsql.triggers"></a>
 
 This topic provides reference information about migrating triggers from Microsoft SQL Server 2019 to Amazon Aurora MySQL. It compares the trigger functionality between the two database systems, highlighting key differences and similarities. You can understand how triggers work in both environments, including their scope, access to change sets, supported event types, and execution phases.
 

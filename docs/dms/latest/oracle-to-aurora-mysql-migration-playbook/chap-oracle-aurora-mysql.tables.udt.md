@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle user-defined types
-<a name="chap-oracle-aurora-mysql.tables.udt"></a>
 
 With AWS DMS, you can migrate Oracle user-defined types (UDTs) to compatible AWS database services. Oracle UDTs are custom data types that extend the built-in scalar data types, allowing you to store complex data structures, such as objects and collections.
 

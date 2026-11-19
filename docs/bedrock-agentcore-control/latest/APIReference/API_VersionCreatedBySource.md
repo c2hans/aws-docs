@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # VersionCreatedBySource
-<a name="API_VersionCreatedBySource"></a>
 
 The source that created a configuration bundle version.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/github-organi
 ---
 
 # Filter GitHub organization webhook events (CloudFormation)
-<a name="github-organization-webhook-events-cfn"></a>
 
  To use a CloudFormation template to filter organization webhook events, use the AWS CodeBuild project's `ScopeConfiguration` property. For more information about global and organization GitHub webhooks, see [GitHub global and organization webhooks](github-global-organization-webhook.md).
 

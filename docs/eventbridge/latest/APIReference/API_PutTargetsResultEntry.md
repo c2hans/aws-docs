@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutT
 ---
 
 # PutTargetsResultEntry
-<a name="API_PutTargetsResultEntry"></a>
 
 Represents a target that failed to be added to a rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # S3Location
-<a name="API_S3Location"></a>
 
 An object in Amazon S3.
 

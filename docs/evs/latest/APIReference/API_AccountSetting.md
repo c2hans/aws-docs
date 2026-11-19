@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_AccountSetti
 ---
 
 # AccountSetting
-<a name="API_AccountSetting"></a>
 
 A regional account-level EVS setting, represented as a name and value pair.
 

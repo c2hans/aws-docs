@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Descr
 ---
 
 # DescribeFunction
-<a name="API_DescribeFunction"></a>
 
 Gets configuration information and metadata about a CloudFront function, but not the function's code. To get a function's code, use `GetFunction`.
 

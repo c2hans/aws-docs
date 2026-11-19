@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/sts_example_eks_Get
 ---
 
 # Getting started with managed kubernetes clusters
-<a name="sts_example_eks_GettingStarted_034_section"></a>
 
 The following code example shows how to:
 + Create a VPC for your EKS cluster

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Permission
 ---
 
 # Permission
-<a name="API_Permission"></a>
 
 Contains information on the permissions an account has within Amazon Inspector.
 

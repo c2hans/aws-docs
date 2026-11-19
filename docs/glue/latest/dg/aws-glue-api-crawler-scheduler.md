@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-sche
 ---
 
 # Crawler scheduler API
-<a name="aws-glue-api-crawler-scheduler"></a>
 
 The Crawler scheduler API describes AWS Glue crawler data types, along with the API for creating, deleting, updating, and listing crawlers.
 

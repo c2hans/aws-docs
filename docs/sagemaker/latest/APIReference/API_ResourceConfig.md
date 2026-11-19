@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Resour
 ---
 
 # ResourceConfig
-<a name="API_ResourceConfig"></a>
 
 Describes the resources, including machine learning (ML) compute instances and ML storage volumes, to use for model training.
 

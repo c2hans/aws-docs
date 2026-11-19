@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Theme 3: Manage mutable infrastructure with automation
-<a name="theme-3"></a>
 
 **Essential Eight strategies covered**: Application control, patch applications, and patch operating systems
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-printenv.
 ---
 
 # **eb printenv**
-<a name="eb3-printenv"></a>
 
 ## Description
 <a name="eb3-printenvdescription"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Managing Amazon S3 Access Permissions
-<a name="examples-s3-access-permissions"></a>
 
 Access permissions for an Amazon S3 bucket or object are defined in an access control list (ACL). The ACL specifies the owner of the bucket/object and a list of grants. Each grant specifies a user (or grantee) and the user’s permissions to access the bucket/object, such as READ or WRITE access.
 

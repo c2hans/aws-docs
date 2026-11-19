@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Authori
 ---
 
 # AuthorizeEndpointAccess
-<a name="API_AuthorizeEndpointAccess"></a>
 
 Grants access to a cluster.
 

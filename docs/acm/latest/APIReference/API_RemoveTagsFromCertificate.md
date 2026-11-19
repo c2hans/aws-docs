@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_RemoveTagsFr
 ---
 
 # RemoveTagsFromCertificate
-<a name="API_RemoveTagsFromCertificate"></a>
 
 Remove one or more tags from an ACM certificate. A tag consists of a key-value pair. If you do not specify the value portion of the tag when calling this function, the tag will be removed regardless of value. If you specify a value, the tag is removed only if it is associated with the specified value.
 

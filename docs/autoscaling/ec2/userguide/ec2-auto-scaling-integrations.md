@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scali
 ---
 
 # AWS services integrated with Amazon EC2 Auto Scaling
-<a name="ec2-auto-scaling-integrations"></a>
 
 Amazon EC2 Auto Scaling can be integrated with other AWS services. Review the following integration options to learn more about how each service works with Amazon EC2 Auto Scaling.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/status-definition
 ---
 
 # Status definitions
-<a name="status-definitions"></a>
 
 Quick Research projects progress through various status states during their lifecycle. Understanding these status definitions helps you track the progress of your research and know what actions you can take at each stage.
 + *Draft* - Research project is being created and configured but has not yet been submitted for processing

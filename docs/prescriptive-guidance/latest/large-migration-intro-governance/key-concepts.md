@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Key concepts for large migrations
-<a name="key-concepts"></a>
 
 Large migrations of more than 300 servers pose unique challenges. The scale of the project requires that you adopt a strategic approach with well-defined phases, workstreams, and processes. This section contains the following topics:
 + [Workstreams in a large migration](#workstreams)

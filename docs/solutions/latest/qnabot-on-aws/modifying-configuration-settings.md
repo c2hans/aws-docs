@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/modifying
 ---
 
 # Modifying configuration settings
-<a name="modifying-configuration-settings"></a>
 
 The guidance uses a DynamoDB Table to hold default and custom configuration settings. You can view and edit these settings using the Settings menu in the content designer.
 

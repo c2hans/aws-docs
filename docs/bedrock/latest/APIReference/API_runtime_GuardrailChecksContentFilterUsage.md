@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailChecksContentFilterUsage
-<a name="API_runtime_GuardrailChecksContentFilterUsage"></a>
 
 The text unit usage for the content filter check.
 

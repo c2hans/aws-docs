@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_UpdateNetw
 ---
 
 # UpdateNetworkSettings
-<a name="API_UpdateNetworkSettings"></a>
 
 Updates network-level settings for a Wickr network. You can modify settings such as client metrics, data retention, and other network-wide options.
 

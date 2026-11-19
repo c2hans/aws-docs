@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClassicLo
 ---
 
 # ClassicLoadBalancer
-<a name="API_ClassicLoadBalancer"></a>
 
 Describes a Classic Load Balancer.
 

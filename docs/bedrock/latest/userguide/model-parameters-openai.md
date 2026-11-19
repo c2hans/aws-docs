@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # OpenAI models
-<a name="model-parameters-openai"></a>
 
 GPT-6.1 Sol is available through `bedrock-mantle` in `us-east-1` and through US geographic cross-Region inference on `bedrock-runtime`. Use `openai.gpt-6.1-sol` on Mantle and `us.openai.gpt-6.1-sol` on Runtime. For model details, pricing, reasoning settings, and OpenAI first-party lifecycle terms, see [GPT-6.1 Sol](model-card-openai-gpt-6-1-sol.md).
 

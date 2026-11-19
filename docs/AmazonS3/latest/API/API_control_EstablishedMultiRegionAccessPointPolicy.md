@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_Establis
 ---
 
 # EstablishedMultiRegionAccessPointPolicy
-<a name="API_control_EstablishedMultiRegionAccessPointPolicy"></a>
 
 The last established access control policy for a Multi-Region Access Point.
 

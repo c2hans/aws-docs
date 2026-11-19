@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/describe-ebs-opt
 ---
 
 # Find EBS-optimized EC2 instance types
-<a name="describe-ebs-optimization"></a>
 
 You can view the instances types that support EBS optimization in each Region.
 

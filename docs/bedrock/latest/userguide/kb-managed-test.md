@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-test
 ---
 
 # Test your managed knowledge base with queries and responses
-<a name="kb-managed-test"></a>
 
 After you set up your managed knowledge base, you can test its behavior in the following ways:
 + Retrieve relevant information from your data sources, by using the [Retrieve](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Retrieve.html) operation.

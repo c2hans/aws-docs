@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sharingamis-intr
 ---
 
 # Make your AMI publicly available for use in Amazon EC2
-<a name="sharingamis-intro"></a>
 
 You can make your AMI publicly available by sharing it with all AWS accounts.
 

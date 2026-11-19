@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
  The AWS cloud provides several options for deploying PostgreSQL and the infrastructure supporting it. Amazon Aurora for PostgreSQL and Amazon RDS for PostgreSQL provide a platform to operate, scale, and manage PostgreSQL database in AWS. It removes much of the complexity of managing and maintaining databases, allowing you to focus on improving applications. However, there are some cases where hosting PostgreSQL on Amazon EC2 and Amazon EBS brings operational flexibility and easier maintenance. It's important to understand PostgreSQL workload and test it. This can help you decide which Amazon EC2 instance and storage to use for strong performance at a reasonable cost.
 

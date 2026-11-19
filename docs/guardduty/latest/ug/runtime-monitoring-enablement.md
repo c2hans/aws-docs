@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/runtime-monitoring-e
 ---
 
 # Enabling Runtime Monitoring
-<a name="runtime-monitoring-enablement"></a>
 
 Enabling Runtime Monitoring is a two-step process:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Kubernetes attribution gaps
-<a name="next-gen-troubleshoot-k8s-attribution"></a>
 
 **Symptom:** Dependencies are discovered but attributed to the wrong service in a shared EKS cluster.
 

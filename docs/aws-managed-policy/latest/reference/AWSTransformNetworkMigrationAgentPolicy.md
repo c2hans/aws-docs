@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSTransformNetworkMigrationAgentPolicy
-<a name="AWSTransformNetworkMigrationAgentPolicy"></a>
 
 **Description**: Grants permissions for AWS Transform to deploy and configure network infrastructure including VPCs, Transit Gateways, and route tables for network migration
 

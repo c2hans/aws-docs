@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetUnfilteredPart
 ---
 
 # GetUnfilteredPartitionsMetadata
-<a name="API_GetUnfilteredPartitionsMetadata"></a>
 
 Retrieves partition metadata from the Data Catalog that contains unfiltered metadata.
 

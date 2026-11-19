@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Query a DynamoDB table using a Global Secondary Index with an AWS SDK
-<a name="example_dynamodb_Scenarios_QueryWithGlobalSecondaryIndex_section"></a>
 
 The following code examples show how to query a table using a Global Secondary Index.
 + Query a DynamoDB table using its primary key.

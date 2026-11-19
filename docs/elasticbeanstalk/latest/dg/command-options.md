@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-optio
 ---
 
 # Configuration options
-<a name="command-options"></a>
 
 Elastic Beanstalk defines a large number of configuration options that you can use to configure your environment's behavior and the resources that it contains. Configuration options are organized into namespaces like `aws:autoscaling:asg`, which defines options for an environment's Auto Scaling group. The available namespaces depend on your environment's mode: Beanstalk Standard environments use namespaces such as `aws:autoscaling:asg`, while Beanstalk Cluster environments use namespaces in the `aws:elasticbeanstalk:eks` family.
 

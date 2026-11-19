@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v10-Grafana-API
 ---
 
 # User API
-<a name="v10-Grafana-API-User"></a>
 
 Use the User API to work with users in an Amazon Managed Grafana workspace.
 

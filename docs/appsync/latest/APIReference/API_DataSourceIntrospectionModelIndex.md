@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DataSour
 ---
 
 # DataSourceIntrospectionModelIndex
-<a name="API_DataSourceIntrospectionModelIndex"></a>
 
 The index that was retrieved from the introspected data.
 

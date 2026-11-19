@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Minim
 ---
 
 # MinimumHealthyHosts
-<a name="API_MinimumHealthyHosts"></a>
 
 Information about the minimum number of healthy instances.
 

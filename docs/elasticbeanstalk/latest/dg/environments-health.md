@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-
 ---
 
 # Monitoring environments in Elastic Beanstalk
-<a name="environments-health"></a>
 
 With Elastic Beanstalk health monitoring, you can verify application availability and create alerts that activate when metrics exceed your thresholds. You can use Elastic Beanstalk health monitoring in both the console and command line to track your environment's status.
 

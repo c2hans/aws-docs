@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Get
 ---
 
 # GetAssetPropertyValueHistory
-<a name="API_GetAssetPropertyValueHistory"></a>
 
 Gets the history of an asset property's values. For more information, see [Querying historical values](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-industrial-data.html#historical-values) in the * AWS IoT SiteWise User Guide*.
 

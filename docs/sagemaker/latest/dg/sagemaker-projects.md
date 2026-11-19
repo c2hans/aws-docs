@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-projects.h
 ---
 
 # MLOps Automation With SageMaker Projects
-<a name="sagemaker-projects"></a>
 
 Create end-to-end ML solutions with CI/CD by using SageMaker Projects.
 

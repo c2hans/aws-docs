@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotLocaleE
 ---
 
 # BotLocaleExportSpecification
-<a name="API_BotLocaleExportSpecification"></a>
 
 Provides the bot locale parameters required for exporting a bot locale.
 

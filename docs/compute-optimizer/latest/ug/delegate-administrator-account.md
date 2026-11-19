@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/delegate-adm
 ---
 
 # Delegating an administrator account
-<a name="delegate-administrator-account"></a>
 
 With AWS Compute Optimizer, you can make one member account in your organization the delegated administrator. This account can view and manage Compute Optimizer recommendations for the whole organization. It can do this without signing in to the management account.
 

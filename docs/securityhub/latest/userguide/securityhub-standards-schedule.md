@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Schedule for running security checks
-<a name="securityhub-standards-schedule"></a>
 
 After you enable a security standard, AWS Security Hub CSPM begins to run all checks within two hours. Most checks begin to run within 25 minutes. Security Hub CSPM runs checks by evaluating the rule underlying a control. Until a control completes its first run of checks, its status is **No data**.
 

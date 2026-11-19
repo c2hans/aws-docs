@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/role-based
 ---
 
 # Using role-based access control
-<a name="role-based-access-control"></a>
 
 Amazon Cognito identity pools assign your authenticated users a set of temporary, limited-privilege credentials to access your AWS resources. The permissions for each user are controlled through [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) that you create. You can define rules to choose the role for each user based on claims in the user's ID token. You can define a default role for authenticated users. You can also define a separate IAM role with limited permissions for guest users who are not authenticated.
 

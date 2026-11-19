@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/viewing-events.
 ---
 
 # Viewing Neptune events
-<a name="viewing-events"></a>
 
 You can view the following information for each Neptune event:
 + Resource name

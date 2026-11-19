@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/serverless-m
 ---
 
 # Metrics and events for Memcached caches and clusters
-<a name="serverless-metrics-events.memcached"></a>
 
 This section describes the metrics and events that you can monitor when working with Memcached node-based and serverless caches.
 

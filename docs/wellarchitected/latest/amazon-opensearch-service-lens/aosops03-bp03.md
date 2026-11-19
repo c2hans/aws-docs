@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSOPS03-BP03 Enable search and indexing slow log functionality
-<a name="aosops03-bp03"></a>
 
  Turn on slow log functionality to gain insights into query latency and optimize search and indexing operations.
 

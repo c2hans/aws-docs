@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-wor
 ---
 
 # Testing disaster recovery
-<a name="testing-disaster-recovery"></a>
 
  Test disaster recovery implementation to validate the implementation and regularly test failover to your workload’s DR Region to ensure that RTO and RPO are met.
 

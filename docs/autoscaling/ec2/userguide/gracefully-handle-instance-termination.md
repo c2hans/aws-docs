@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/gracefully-han
 ---
 
 # Design your applications to gracefully handle instance termination
-<a name="gracefully-handle-instance-termination"></a>
 
  This topic describes features that you can use to prevent your Amazon EC2 Auto Scaling group from terminating Amazon EC2 instances that aren't yet ready to terminate. By default, Auto Scaling has no visibility into the applications running on your instances. It can terminate instances before your application is able to gracefully shut down or complete its assigned jobs. These features give your application time to complete in-progress work, transfer state, or perform cleanup before instance terminations. You can use them individually or in combination depending on your application's requirements.
 

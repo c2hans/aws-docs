@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AssociateGlossary
 ---
 
 # AssociateGlossaryTerms
-<a name="API_AssociateGlossaryTerms"></a>
 
 Associates one or more glossary terms with an asset in AWS Glue Data Catalog.
 

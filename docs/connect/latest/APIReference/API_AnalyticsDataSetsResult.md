@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Analytic
 ---
 
 # AnalyticsDataSetsResult
-<a name="API_AnalyticsDataSetsResult"></a>
 
 Information about datasets that are available to associate with: `DataSetId`, `DataSetName`.
 

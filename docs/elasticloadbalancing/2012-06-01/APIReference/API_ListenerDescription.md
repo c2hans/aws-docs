@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # ListenerDescription
-<a name="API_ListenerDescription"></a>
 
 The policies enabled for a listener.
 

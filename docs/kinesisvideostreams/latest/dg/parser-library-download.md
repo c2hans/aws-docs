@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/parser-lib
 ---
 
 # Download the code
-<a name="parser-library-download"></a>
 
 In this section, you download the Java library and test code, and import the project into your Java IDE.
 

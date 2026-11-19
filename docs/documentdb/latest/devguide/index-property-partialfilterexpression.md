@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/index-propert
 ---
 
 # Index Property: partialFilterExpression
-<a name="index-property-partialfilterexpression"></a>
 
 ## Supported index types
 <a name="index-property-partialfilterexpression-supported"></a>

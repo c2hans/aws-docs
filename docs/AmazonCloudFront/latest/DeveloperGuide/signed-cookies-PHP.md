@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/s
 ---
 
 # Create signed cookies using PHP
-<a name="signed-cookies-PHP"></a>
 
 The following code example is similar to the example in the [Create a URL signature using PHP](CreateURL_PHP.md) in that it creates a link to a video. However, instead of signing the URL in the code, this example signs the cookies with the `create_signed_cookies()` function. The client-side player uses the cookies to authenticate each request to the CloudFront distribution.
 

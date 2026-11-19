@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CommandExecu
 ---
 
 # CommandExecutionSummary
-<a name="API_CommandExecutionSummary"></a>
 
 Summary information about a particular command execution.
 

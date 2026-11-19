@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetQualificationsAssociationTask
-<a name="API_account_GetQualificationsAssociationTask"></a>
 
 Retrieves the status and details of the most recent qualifications association task for your partner account. Use this operation to poll the progress of an association task initiated by `StartQualificationsAssociationTask`.
 

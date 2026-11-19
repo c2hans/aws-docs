@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/monitoring
 ---
 
 # Monitoring product requests
-<a name="monitoring-product-requests"></a>
 
 You can view the status of your pending product requests and subscribe to products that are approved by your administrator. You can also cancel requests up to 30 days before they expire.
 

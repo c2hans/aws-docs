@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/desktop-enterpris
 ---
 
 # Deploying AWS Quick on desktop to a managed fleet with MDM
-<a name="desktop-enterprise-mdm"></a>
 
 |  |
 | --- |

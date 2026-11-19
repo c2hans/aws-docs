@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/resolutions-gr
 ---
 
 # Grant access to Resolutions
-<a name="resolutions-grant-access"></a>
 
  **Resolutions** appears in the Connect Customer admin website navigation only for users whose security profile includes Work plan permissions. Grant access to the operations managers who own your standard operating procedures (SOPs) and will author Work plans.
 

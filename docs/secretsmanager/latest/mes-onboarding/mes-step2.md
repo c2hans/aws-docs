@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/mes-onboarding/mes
 ---
 
 # Step 2: Provide integration specifications
-<a name="mes-step2"></a>
 
 *Duration: Typically one to two weeks.*
 

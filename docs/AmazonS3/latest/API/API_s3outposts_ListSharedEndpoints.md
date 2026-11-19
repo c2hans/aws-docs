@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3outposts_ListS
 ---
 
 # ListSharedEndpoints
-<a name="API_s3outposts_ListSharedEndpoints"></a>
 
 Lists all endpoints associated with an Outpost that has been shared by AWS Resource Access Manager (RAM).
 

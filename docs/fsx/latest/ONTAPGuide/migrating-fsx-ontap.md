@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/migrating-fsx-onta
 ---
 
 # Migrating to Amazon FSx for NetApp ONTAP
-<a name="migrating-fsx-ontap"></a>
 
 The following sections provide information on how to migrate your existing NetApp ONTAP file systems to Amazon FSx for NetApp ONTAP.
 

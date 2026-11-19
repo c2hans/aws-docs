@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # GetFinding
-<a name="API_GetFinding"></a>
 
 Retrieves information about the specified finding. GetFinding and GetFindingV2 both use `access-analyzer:GetFinding` in the `Action` element of an IAM policy statement. You must have permission to perform the `access-analyzer:GetFinding` action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceExperimentDataStorageConfig
-<a name="API_InferenceExperimentDataStorageConfig"></a>
 
 The Amazon S3 location and configuration for storing inference request and response data.
 

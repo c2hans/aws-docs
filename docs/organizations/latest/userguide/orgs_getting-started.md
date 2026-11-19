@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_gett
 ---
 
 # Getting started with AWS Organizations
-<a name="orgs_getting-started"></a>
 
 The following topics provide information to help you start using AWS Organizations. You can also use the following tutorials to begin performing tasks using AWS Organizations.
 

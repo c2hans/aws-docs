@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # UpdateCoreNetworkEndpoint
-<a name="API_route53globalresolver_UpdateCoreNetworkEndpoint"></a>
 
 Updates the configuration of a core network endpoint. You can change the name and modify the IP addresses that the endpoint uses for DNS resolution.
 

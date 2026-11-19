@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring
 ---
 
 # Using partner-managed connectors
-<a name="configuring-integrations-and-knowledge-using-partner-managed-connectors"></a>
 
 A partner-managed connector connects AWS DevOps Agent to a *Model Context Protocol (MCP)* server that a partner hosts. Examples include a partner's observability or incident management service. The partner publishes the connector in the [AWS DevOps Agent Tools repository](https://github.com/aws/tools-for-devops-agent) on the GitHub website. The connector defines the server's endpoints and the authentication methods that it accepts. It can also list skills that the partner recommends.
 

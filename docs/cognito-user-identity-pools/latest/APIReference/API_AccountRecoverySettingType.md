@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # AccountRecoverySettingType
-<a name="API_AccountRecoverySettingType"></a>
 
 The settings for user message delivery in forgot-password operations. Contains preference for email or SMS message delivery of password reset codes, or for admin-only password reset.
 

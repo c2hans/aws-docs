@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/tagging-co
 ---
 
 # Manage tags by using the IAM Identity Center console
-<a name="tagging-console"></a>
 
 You can use the IAM Identity Center console to add, edit, and remove tags that are associated with your instance or permission sets.
 

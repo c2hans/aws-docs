@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-t
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS tools and services
 <a name="aws-tools"></a>

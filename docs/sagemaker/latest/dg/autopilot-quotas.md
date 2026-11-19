@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-quotas.htm
 ---
 
 # Autopilot quotas
-<a name="autopilot-quotas"></a>
 
 There are quotas that limit the resources available to you when using Amazon SageMaker Autopilot. Some of these limits are increasable and some are not.
 

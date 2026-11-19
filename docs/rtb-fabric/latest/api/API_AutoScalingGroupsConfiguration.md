@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_AutoScalingGro
 ---
 
 # AutoScalingGroupsConfiguration
-<a name="API_AutoScalingGroupsConfiguration"></a>
 
 Describes the configuration of an auto scaling group.
 

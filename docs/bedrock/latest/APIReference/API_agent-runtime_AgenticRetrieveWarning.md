@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveWarning
-<a name="API_agent-runtime_AgenticRetrieveWarning"></a>
 
 A warning generated during agentic retrieval.
 

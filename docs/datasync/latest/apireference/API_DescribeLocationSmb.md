@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Describ
 ---
 
 # DescribeLocationSmb
-<a name="API_DescribeLocationSmb"></a>
 
 Provides details about how an AWS DataSync transfer location for a Server Message Block (SMB) file server is configured.
 

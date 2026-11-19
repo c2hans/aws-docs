@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Framework-native tools
-<a name="framework-native-tools"></a>
 
 Although the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) provides a flexible foundation, framework-native tools offer advantages for specific use cases.
 

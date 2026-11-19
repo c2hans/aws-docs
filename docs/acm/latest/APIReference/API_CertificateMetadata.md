@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_CertificateM
 ---
 
 # CertificateMetadata
-<a name="API_CertificateMetadata"></a>
 
 Contains metadata about a certificate. Currently supports ACM certificate metadata.
 

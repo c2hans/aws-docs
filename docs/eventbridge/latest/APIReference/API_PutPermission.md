@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutP
 ---
 
 # PutPermission
-<a name="API_PutPermission"></a>
 
 Running `PutPermission` permits the specified AWS account or AWS organization to put events to the specified *event bus*. Amazon EventBridge rules in your account are triggered by these events arriving to an event bus in your account.
 

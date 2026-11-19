@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_D
 ---
 
 # DeleteAddonSubscription
-<a name="API_DeleteAddonSubscription"></a>
 
 Deletes an Add On subscription.
 

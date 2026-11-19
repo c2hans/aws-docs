@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/create-service-qu
 ---
 
 # Request a service quota increase
-<a name="create-service-quota-increase"></a>
 
 You can request increases to your service quotas (formerly referred to as limits) to support your workload requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_N
 ---
 
 # NetworkResourceSummary
-<a name="API_NetworkResourceSummary"></a>
 
 Describes a network resource.
 

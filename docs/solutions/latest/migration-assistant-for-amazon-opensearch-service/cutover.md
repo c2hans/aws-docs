@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Cutover and rollback
-<a name="cutover"></a>
 
 Switching traffic to the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection is the cutover step. By this point, backfill and validation are complete. For capture-and-replay and zero-downtime migrations, capture has also protected writes during backfill and replay has caught the target up.
 

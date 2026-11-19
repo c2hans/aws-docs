@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # RenewalTermConfiguration
-<a name="API_marketplace-agreements_RenewalTermConfiguration"></a>
 
 Additional parameters specified by the acceptor while accepting the term.
 

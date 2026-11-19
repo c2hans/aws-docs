@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/create-pivot-tabl
 ---
 
 # Creating a pivot table
-<a name="create-pivot-table"></a>
 
 Use the following procedure to create a pivot table.
 

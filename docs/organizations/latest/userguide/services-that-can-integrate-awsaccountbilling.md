@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Billing and Cost Management and AWS Organizations
-<a name="services-that-can-integrate-awsaccountbilling"></a>
 
 AWS Billing and Cost Management provides a suite of features to help you set up your billing, retrieve and pay invoices, and analyze, organize, plan, and optimize your costs. When you use Billing and Cost Management with AWS Organizations you allow [ split cost allocation data](https://docs.aws.amazon.com/cur/latest/userguide/split-cost-allocation-data.html) to retrieve AWS Organizations information, if applicable, and collect telemetry data for the split cost allocation data services that you opted into.
 

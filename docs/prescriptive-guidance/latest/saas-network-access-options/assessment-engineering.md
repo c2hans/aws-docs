@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Engineering metrics that influence networking decisions
-<a name="assessment-engineering"></a>
 
 Like product and commercial teams, engineering teams also use success criteria to evaluate whether they are meeting business objectives. However, these metrics differ and they focus on the team's ability to develop, operate, and meet security and compliance requirements. This section describes engineering metrics that can be positively or negatively influenced by the networking access decisions that your organization makes.
 

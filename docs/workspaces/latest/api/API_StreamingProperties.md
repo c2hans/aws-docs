@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_StreamingPrope
 ---
 
 # StreamingProperties
-<a name="API_StreamingProperties"></a>
 
 Describes the streaming properties.
 

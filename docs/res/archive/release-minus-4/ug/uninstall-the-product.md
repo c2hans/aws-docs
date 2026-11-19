@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/uninstall
 ---
 
 # Uninstall the product
-<a name="uninstall-the-product"></a>
 
 You can uninstall the Research and Engineering Studio on AWS product from the AWS Management Console or by using the AWS Command Line Interface. You must manually delete the Amazon Simple Storage Service (Amazon S3) buckets created by this product. This product does not automatically delete <EnvironmentName>-shared-storage-security-group in case you have stored data to retain.
 

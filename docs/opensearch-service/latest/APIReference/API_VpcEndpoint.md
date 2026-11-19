@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # VpcEndpoint
-<a name="API_VpcEndpoint"></a>
 
 The connection endpoint for connecting to an Amazon OpenSearch Service domain through a proxy.
 

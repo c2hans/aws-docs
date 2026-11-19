@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ScanRe
 ---
 
 # ScanResultDetails
-<a name="API_ScanResultDetails"></a>
 
 Represents the result of the scan.
 

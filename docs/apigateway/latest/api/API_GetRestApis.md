@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetRestApis.ht
 ---
 
 # GetRestApis
-<a name="API_GetRestApis"></a>
 
 Lists the RestApis resources for your collection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Trust
 ---
 
 # TrustedAdvisorCostOptimizingSummary
-<a name="API_TrustedAdvisorCostOptimizingSummary"></a>
 
 The estimated cost savings that might be realized if the recommended operations are taken.
 

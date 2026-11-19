@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListWorkers
-<a name="API_ListWorkers"></a>
 
 Lists workers.
 

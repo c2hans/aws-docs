@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/archit
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
 This section provides an overview of the architecture of this solution.
 

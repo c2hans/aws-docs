@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # CreateAgentGoal
-<a name="API_CreateAgentGoal"></a>
 
 Creates an optimization goal associated with a profile. Goals define specific targets and objectives for the optimization process.
 

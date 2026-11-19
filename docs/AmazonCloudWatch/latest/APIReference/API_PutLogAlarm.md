@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # PutLogAlarm
-<a name="API_PutLogAlarm"></a>
 
 Creates or updates a log alarm. A log alarm evaluates the results of a CloudWatch Logs scheduled query against the configured threshold and comparison operator to determine its state.
 

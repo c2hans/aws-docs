@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # GetKey
-<a name="API_GetKey"></a>
 
 Gets the key metadata for an AWS Payment Cryptography key, including the immutable and mutable attributes specified when the key was created. Returns key metadata including attributes, state, and timestamps, but does not return the actual cryptographic key material.
 

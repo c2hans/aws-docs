@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Rem
 ---
 
 # Remediation
-<a name="API_Remediation"></a>
 
 Information about how to remediate a finding.
 

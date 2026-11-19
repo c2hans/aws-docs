@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/cdktelemetry.html
 ---
 
 # Telemetry in the AWS CDK
-<a name="cdktelemetry"></a>
 
  AWS Cloud Development Kit (AWS CDK) applications are configured to collect and report on usage data to gain insight into how the AWS CDK is being used. To understand the data that is collected, how it’s used, and how to opt in or out of data reporting, see [Configure AWS CDK Library usage data reporting](usage-data.md).
 

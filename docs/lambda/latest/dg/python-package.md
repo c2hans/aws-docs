@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/python-package.html
 ---
 
 # Working with .zip file archives for Python Lambda Event Functions
-<a name="python-package"></a>
 
  Your AWS Lambda function’s code comprises a .py file containing your function’s handler code, together with any additional packages and modules your code depends on. To deploy this function code to Lambda, you use a *deployment package*. This package may either be a .zip file archive or a container image. For more information about using container images with Python, see [Deploy Python Lambda Event Functions with container images](https://docs.aws.amazon.com/lambda/latest/dg/python-image.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/investment
 ---
 
 # .investments
-<a name="investments"></a>
 
 Used as a general extension, but ideal for promoting investment opportunities.
 

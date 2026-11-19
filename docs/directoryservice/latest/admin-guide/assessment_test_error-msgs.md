@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/asse
 ---
 
 # Assessment Test error messages
-<a name="assessment_test_error-msgs"></a>
 
 The following table describes error messages that can occur during assessment tests. These errors indicate blocking issues that must be resolved before proceeding with hybrid directory setup.
 

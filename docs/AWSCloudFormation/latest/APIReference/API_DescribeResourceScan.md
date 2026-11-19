@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DescribeResourceScan
-<a name="API_DescribeResourceScan"></a>
 
 Describes details of a resource scan.
 

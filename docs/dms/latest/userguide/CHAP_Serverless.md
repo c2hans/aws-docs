@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Serverless.htm
 ---
 
 # Working with AWS DMS Serverless
-<a name="CHAP_Serverless"></a>
 
 AWS DMS Serverless is a feature that provides automatic provisioning, scaling, built-in high availability, and a pay-for-use billing model, to increase operations agility and optimize your costs. The Serverless feature eliminates replication instance management tasks like capacity estimation, provisioning, cost optimization, and managing replication engine versions and patching.
 

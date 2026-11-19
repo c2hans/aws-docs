@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateNetwor
 ---
 
 # UpdateNetworkMigrationDefinition
-<a name="API_UpdateNetworkMigrationDefinition"></a>
 
 Updates an existing network migration definition with new source or target configurations.
 

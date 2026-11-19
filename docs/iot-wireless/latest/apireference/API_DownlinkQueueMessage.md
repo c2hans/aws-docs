@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Dow
 ---
 
 # DownlinkQueueMessage
-<a name="API_DownlinkQueueMessage"></a>
 
 The message in the downlink queue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Trans
 ---
 
 # TransformOperation
-<a name="API_TransformOperation"></a>
 
 A data transformation on a logical table. This is a variant type structure. For this structure to be valid, only one of the attributes can be non-null.
 

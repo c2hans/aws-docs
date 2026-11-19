@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-a
 ---
 
 # Fully managed Retrieval Augmented Generation options on AWS
-<a name="rag-fully-managed"></a>
 
 To manage Retrieval Augmented Generation (RAG) workflows on AWS, you can use custom RAG pipelines or use some of the fully managed services capabilities that AWS offers. Because they include many of the core components of a RAG-based system, fully managed services can help you manage some of the undifferentiated heavy lifting. However, these services provide less opportunity for customization.
 

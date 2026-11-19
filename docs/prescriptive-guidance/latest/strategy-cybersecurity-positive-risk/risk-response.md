@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cy
 ---
 
 # Cybersecurity risk response
-<a name="risk-response"></a>
 
 The responses to positive and negative risks are vastly different. For negative risks, you take steps to minimize the impact on the outcome, but for positive risks, you take steps to maximize the impact on the outcome. The following table shows potential responses to positive and negative risk.
 

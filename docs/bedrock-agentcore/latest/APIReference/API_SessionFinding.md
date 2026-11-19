@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # SessionFinding
-<a name="API_SessionFinding"></a>
 
 A failure found in a session.
 

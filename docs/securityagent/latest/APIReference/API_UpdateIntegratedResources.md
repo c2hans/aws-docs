@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Up
 ---
 
 # UpdateIntegratedResources
-<a name="API_UpdateIntegratedResources"></a>
 
 Updates the integrated resources for an agent space, including their capabilities.
 

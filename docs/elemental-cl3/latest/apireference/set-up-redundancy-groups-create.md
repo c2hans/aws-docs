@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # POST: Create a Redundancy Group
-<a name="set-up-redundancy-groups-create"></a>
 
 Create a new redundancy group for AWS Elemental Live or AWS Elemental Statmux redundancy group with the specified attributes.
 

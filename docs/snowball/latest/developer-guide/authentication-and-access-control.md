@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/developer-guide/authenti
 AWS Snowball Edge is no longer available to new customers. New customers should explore [AWS DataSync](https://aws.amazon.com/datasync/) for online transfers, [AWS Data Transfer Terminal](https://aws.amazon.com/data-transfer-terminal/) for secure physical transfers, or AWS Partner solutions. For edge computing, explore [AWS Outposts](https://aws.amazon.com/outposts/).
 
 # Access Control for Snowball Edge Console and Creating Jobs
-<a name="authentication-and-access-control"></a>
 
 As with all AWS services, access to AWS Snowball Edge requires credentials that AWS can use to authenticate your requests. Those credentials must have permissions to access AWS resources, such an Amazon S3 bucket or an AWS Lambda function. AWS Snowball Edge differs in two ways:
 

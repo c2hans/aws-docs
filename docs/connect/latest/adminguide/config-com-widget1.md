@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/config-com-wid
 ---
 
 # Configure an out-of-the-box communication widget in Connect Customer
-<a name="config-com-widget1"></a>
 
 Use this option to create communication widgets for desktop and mobile [browsers](connect-supported-browsers.md#browsers-inapp). At the end of this procedure, Connect Customer generates a custom HTML code snippet that you copy into your website's source code.
 

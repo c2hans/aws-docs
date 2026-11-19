@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/encrypt.html
 ---
 
 # Encrypting Neptune resources at rest
-<a name="encrypt"></a>
 
 Data-at-rest encryption is the AWS recommendation. For more information, see [Data-at-Rest and Data-in-Transit encryption](https://docs.aws.amazon.com/whitepapers/latest/logical-separation/encrypting-data-at-rest-and--in-transit.html). Encryption is enforced in the AWS Console when you create a new Neptune DB Cluster or a new Neptune Global DB. This provides an additional layer of data protection. It secures your data from unauthorized access to the underlying storage and helps fulfill compliance requirements for data-at-rest encryption.
 

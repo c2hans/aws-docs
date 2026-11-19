@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Del
 ---
 
 # DeleteApplication
-<a name="API_DeleteApplication"></a>
 
 Deletes the association with the application. The connected service resource still exists.
 

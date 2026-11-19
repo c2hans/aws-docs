@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_AmiP
 ---
 
 # AmiProductFilters
-<a name="API_AmiProductFilters"></a>
 
 Object containing all the filter fields for AMI products. Client can add only one wildcard filter and a maximum of 8 filters in a single `ListEntities` request.
 

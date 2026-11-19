@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/udf-iam-access.html
 ---
 
 # Allow access to Athena UDFs: Example policies
-<a name="udf-iam-access"></a>
 
 The permission policy examples in this topic demonstrate required allowed actions and the resources for which they are allowed. Examine these policies carefully and modify them according to your requirements before you attach similar permissions policies to IAM identities.
 +  [Example Policy to Allow an IAM Principal to Run and Return Queries that Contain an Athena UDF Statement](#udf-using-iam)

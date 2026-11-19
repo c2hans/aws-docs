@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_ListT
 ---
 
 # ListTables
-<a name="API_ListTables"></a>
 
 Provides a list of tables, along with the name, status, and retention properties of each table. See [code sample](https://docs.aws.amazon.com/timestream/latest/developerguide/code-samples.list-table.html) for details.
 

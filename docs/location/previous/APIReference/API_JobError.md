@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_JobEr
 ---
 
 # JobError
-<a name="API_JobError"></a>
 
 Error information for failed jobs.
 

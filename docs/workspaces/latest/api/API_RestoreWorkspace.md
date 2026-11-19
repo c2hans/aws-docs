@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_RestoreWorkspa
 ---
 
 # RestoreWorkspace
-<a name="API_RestoreWorkspace"></a>
 
 Restores the specified WorkSpace to its last known healthy state.
 

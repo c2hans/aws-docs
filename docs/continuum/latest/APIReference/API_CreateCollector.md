@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Create
 ---
 
 # CreateCollector
-<a name="API_CreateCollector"></a>
 
 Creates the Collector for the caller's account. Provisions an AWS Config service-linked recorder using the caller's federated access session and begins recording infrastructure changes.
 

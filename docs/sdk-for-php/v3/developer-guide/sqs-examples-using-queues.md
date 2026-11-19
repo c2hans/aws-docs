@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sqs-examp
 ---
 
 # Using queues in Amazon SQS with AWS SDK for PHP Version 3
-<a name="sqs-examples-using-queues"></a>
 
 To learn about Amazon SQS queues, see [How SQS Queues Work](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-how-it-works.html).
 

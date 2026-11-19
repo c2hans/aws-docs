@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/hybr
 ---
 
 # Viewing and editing a hybrid directory
-<a name="hybrid_directory_view_and_edit"></a>
 
 Use the following procedures to view or edit your hybrid directory.
 

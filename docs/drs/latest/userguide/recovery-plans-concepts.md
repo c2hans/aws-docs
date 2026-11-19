@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans-conc
 ---
 
 # Recovery plan concepts
-<a name="recovery-plans-concepts"></a>
 
 The following terms are used throughout the recovery plan documentation:
 

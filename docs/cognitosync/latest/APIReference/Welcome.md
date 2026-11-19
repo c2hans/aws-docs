@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitosync/latest/APIReference/Welcome.
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 **Note**
 Amazon Cognito Sync is no longer open to new customers. For alternatives to Cognito Sync, please explore [AWS AppSync](https://aws.amazon.com/appsync/) and [Amazon DynamoDB](https://aws.amazon.com/dynamodb/). [Learn more](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-sync-availability-change.html).
@@ -23,4 +22,4 @@ You can work with Amazon Cognito Sync in the following SDKs.
 +  [AWS SDK for Python](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/CognitoSync/Client.html)
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

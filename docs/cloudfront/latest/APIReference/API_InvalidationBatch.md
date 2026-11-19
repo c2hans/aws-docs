@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Inval
 ---
 
 # InvalidationBatch
-<a name="API_InvalidationBatch"></a>
 
 An invalidation batch.
 

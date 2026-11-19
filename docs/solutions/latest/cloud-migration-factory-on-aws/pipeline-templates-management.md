@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Pipeline templates management
-<a name="pipeline-templates-management"></a>
 
 The pipeline templates provide a way for users to define a list of tasks in a given order to automate migration and modernization activities. You can upload new templates or change existing templates using the pipeline templates management interface. When Cloud Migration Factory on AWS deploys, the solution loads system-managed default pipeline templates automatically.
 

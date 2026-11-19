@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTREL01-BP02 Establish modular, fault-isolated layers
-<a name="agentrel01-bp02"></a>
 
  Monolithic agent architectures force every fault to become a full-system fault. Splitting compute, memory, reasoning, and orchestration into independently scalable layers with fail-fast boundaries keeps the scope of impact small. Teams keep serving requests at reduced capability instead of going unavailable.
 

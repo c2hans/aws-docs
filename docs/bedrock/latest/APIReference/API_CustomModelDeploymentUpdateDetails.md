@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CustomMo
 ---
 
 # CustomModelDeploymentUpdateDetails
-<a name="API_CustomModelDeploymentUpdateDetails"></a>
 
  Details about an update to a custom model deployment, including the new custom model resource ARN and current update status.
 

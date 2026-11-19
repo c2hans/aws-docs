@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_UsernamePass
 ---
 
 # UsernamePassword
-<a name="API_UsernamePassword"></a>
 
 The username and password that you use to connect to cluster endpoints.
 

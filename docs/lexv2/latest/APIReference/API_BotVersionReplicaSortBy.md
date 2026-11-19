@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotVersion
 ---
 
 # BotVersionReplicaSortBy
-<a name="API_BotVersionReplicaSortBy"></a>
 
 The sort category for the version replicated bots.
 

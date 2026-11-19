@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_AssetIn
 ---
 
 # AssetInstanceTypeCapacity
-<a name="API_AssetInstanceTypeCapacity"></a>
 
 The capacity for each instance type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/using-backups.html
 ---
 
 # Protecting your data with volume backups
-<a name="using-backups"></a>
 
 With FSx for ONTAP, you can protect your data by taking automatic daily backups and user-initiated backups of the volumes on your file system. Creating regular backups for your volumes is a best practice that helps support your data retention and compliance needs. You can restore volume backups to any existing FSx for ONTAP file system you have access to that is in the same AWS Region where the backup is stored. Working with Amazon FSx backups makes it is easy to create, view, restore, and delete backups of your volumes.
 

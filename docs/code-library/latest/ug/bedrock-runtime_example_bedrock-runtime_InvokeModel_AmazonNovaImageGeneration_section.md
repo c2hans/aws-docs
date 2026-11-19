@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/bedrock-runtime_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Invoke Amazon Nova Canvas on Amazon Bedrock to generate an image
-<a name="bedrock-runtime_example_bedrock-runtime_InvokeModel_AmazonNovaImageGeneration_section"></a>
 
 The following code examples show how to invoke Amazon Nova Canvas on Amazon Bedrock to generate an image.
 

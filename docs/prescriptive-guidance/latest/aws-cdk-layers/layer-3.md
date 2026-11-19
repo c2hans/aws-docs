@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-cdk-lay
 ---
 
 # Layer 3 constructs
-<a name="layer-3"></a>
 
 If L1 constructs perform a literal translation of CloudFormation resources into programmatic code, and L2 constructs replace much of the verbose CloudFormation syntax with helper methods and custom logic, what do the [L3 constructs](https://docs.aws.amazon.com/cdk/v2/guide/constructs.html#constructs_lib) do? The answer to that is limited only by your imagination. You can create layer 3 to fit any specific use cases you find yourself in. If your project needs a resource that has a specific subset of properties, you can create a reusable L3 construct to meet that need.
 

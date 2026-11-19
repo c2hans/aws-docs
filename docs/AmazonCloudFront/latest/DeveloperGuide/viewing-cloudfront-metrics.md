@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/v
 ---
 
 # View CloudFront and edge function metrics
-<a name="viewing-cloudfront-metrics"></a>
 
 You can view operational metrics about your CloudFront distributions and [edge functions](https://aws.amazon.com/cloudfront/features/#Edge_Computing) in the CloudFront console.
 

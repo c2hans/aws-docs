@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Aggre
 ---
 
 # AggregateOperation
-<a name="API_AggregateOperation"></a>
 
 A transform operation that groups rows by specified columns and applies aggregation functions to calculate summary values.
 

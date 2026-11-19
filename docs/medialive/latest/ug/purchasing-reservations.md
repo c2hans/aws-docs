@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/purchasing-reservati
 ---
 
 # Purchasing a reservation
-<a name="purchasing-reservations"></a>
 
 On the console, use the **Reservations** tab to purchase one or more reservations.
 

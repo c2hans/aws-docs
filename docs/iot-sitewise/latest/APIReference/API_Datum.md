@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Dat
 ---
 
 # Datum
-<a name="API_Datum"></a>
 
 Represents a single data point in a query result.
 
@@ -12,7 +11,7 @@ Represents a single data point in a query result.
 
  ** arrayValue **   <a name="iotsitewise-Type-Datum-arrayValue"></a>
 Indicates if the data point is an array.
-Type: Array of [Datum](#API_Datum) objects
+Type: Array of [Datum](API_Datum.md) objects
 Required: No
 
  ** nullValue **   <a name="iotsitewise-Type-Datum-nullValue"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateUs
 ---
 
 # UpdateUserHierarchyStructure
-<a name="API_UpdateUserHierarchyStructure"></a>
 
 Updates the user hierarchy structure: add, remove, and rename user hierarchy levels.
 

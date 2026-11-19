@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/api-refer
 ---
 
 # Get the application catalog in Connect Customer agent workspace
-<a name="api-reference-3P-apps-app-controller-getappcatalog"></a>
 
 Returns all the applications that are available in the Connect Customer agent workspace for the current logged-in user.
 

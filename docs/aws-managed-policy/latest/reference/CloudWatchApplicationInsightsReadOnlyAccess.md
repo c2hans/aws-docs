@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchApplicationInsightsReadOnlyAccess
-<a name="CloudWatchApplicationInsightsReadOnlyAccess"></a>
 
 **Description**: Provides read only access to CloudWatch Application Insights.
 

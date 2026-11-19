@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/resolutions-st
 ---
 
 # Start Work plans from inbound email
-<a name="resolutions-start-work-plan"></a>
 
  Customer email must reach the Work plan's information extraction flow. That flow uses the prebuilt agentic data extraction capability in Connect Customer to read the message and its attachments. It fills in the Case fields, creates a new Resolutions Case or updates an existing one, and starts the Work plan.
 

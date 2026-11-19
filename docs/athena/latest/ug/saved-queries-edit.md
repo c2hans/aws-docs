@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/saved-queries-edit.html
 ---
 
 # Edit a saved query
-<a name="saved-queries-edit"></a>
 
 **To edit a saved query**
 

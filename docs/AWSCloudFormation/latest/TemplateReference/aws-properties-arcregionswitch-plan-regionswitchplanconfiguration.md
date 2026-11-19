@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ARCRegionSwitch::Plan RegionSwitchPlanConfiguration
-<a name="aws-properties-arcregionswitch-plan-regionswitchplanconfiguration"></a>
 
 Configuration for nested Region switch plans. This allows one Region switch plan to trigger another plan as part of its execution.
 

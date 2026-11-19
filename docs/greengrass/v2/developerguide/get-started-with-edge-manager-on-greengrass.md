@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/get-started
 ---
 
 # Tutorial: Get started with SageMaker AI Edge Manager
-<a name="get-started-with-edge-manager-on-greengrass"></a>
 
 **Important**
 SageMaker AI Edge Manager was discontinued on April 26th, 2024. For more information about continuing to deploy your models to edge devices, see [SageMaker AI Edge Manager end of life](https://docs.aws.amazon.com/sagemaker/latest/dg/edge-eol.html).

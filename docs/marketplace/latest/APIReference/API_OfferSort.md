@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferSort
-<a name="API_OfferSort"></a>
 
 Allows to sort offers.
 

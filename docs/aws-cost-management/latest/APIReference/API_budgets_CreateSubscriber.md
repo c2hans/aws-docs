@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CreateSubscriber
-<a name="API_budgets_CreateSubscriber"></a>
 
 Creates a subscriber. You must create the associated budget and notification before you create the subscriber.
 

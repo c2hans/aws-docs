@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_U
 ---
 
 # UpdateContextStore
-<a name="API_UpdateContextStore"></a>
 
 Updates the description of a context store. The context store must be in the `AVAILABLE` state.
 

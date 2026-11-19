@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonChimeSDKMessagingServiceRolePolicy
-<a name="AmazonChimeSDKMessagingServiceRolePolicy"></a>
 
 **Description**: Allows Amazon Chime SDK Messaging to access AWS resources and enable messaging functionality
 

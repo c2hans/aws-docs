@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Filter
-<a name="API_CostOptimizationHub_Filter"></a>
 
 Describes a filter that returns a more specific list of recommendations. Filters recommendations by different dimensions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Identit
 ---
 
 # IdentityCenterConfig
-<a name="API_IdentityCenterConfig"></a>
 
 A structure that describes the values to use for the IAM Identity Center settings when you create or update a web app.
 

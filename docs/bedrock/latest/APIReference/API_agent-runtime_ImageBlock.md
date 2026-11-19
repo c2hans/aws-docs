@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ImageBlock
-<a name="API_agent-runtime_ImageBlock"></a>
 
 Image content for an invocation step.
 

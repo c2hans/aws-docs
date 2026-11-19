@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 Describes a filter that returns a more specific list of recommendations. Use this filter with the [GetAutoScalingGroupRecommendations](API_GetAutoScalingGroupRecommendations.md) and [GetEC2InstanceRecommendations](API_GetEC2InstanceRecommendations.md) actions.
 

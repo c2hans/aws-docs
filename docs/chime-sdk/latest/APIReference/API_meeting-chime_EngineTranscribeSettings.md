@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # EngineTranscribeSettings
-<a name="API_meeting-chime_EngineTranscribeSettings"></a>
 
 Settings specific for Amazon Transcribe as the live transcription engine.
 

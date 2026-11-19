@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # Action structure reference
-<a name="action-reference"></a>
 
 This section is a reference for action configuration only. For a conceptual overview of the pipeline structure, see [CodePipeline pipeline structure reference](reference-pipeline-structure.md).
 

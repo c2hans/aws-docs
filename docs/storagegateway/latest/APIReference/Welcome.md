@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/Welco
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 **Important**
 Amazon FSx File Gateway is no longer available to new customers. Existing customers of FSx File Gateway can continue to use the service normally. For capabilities similar to FSx File Gateway, visit [this blog post](https://aws.amazon.com/blogs/storage/switch-your-file-share-access-from-amazon-fsx-file-gateway-to-amazon-fsx-for-windows-file-server/).
@@ -27,4 +26,4 @@ For example, a volume Amazon Resource Name (ARN) with the longer volume ID forma
 A snapshot ID with the longer ID format looks like the following: `snap-78e226633445566ee`.
 For more information, see [Announcement: Heads-up – Longer Storage Gateway volume and snapshot IDs coming in 2016](http://forums.aws.amazon.com/ann.jspa?annID=3557).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/rename-directory-
 ---
 
 # Renaming directories takes a long time
-<a name="rename-directory-time"></a>
 
 **Question**
 

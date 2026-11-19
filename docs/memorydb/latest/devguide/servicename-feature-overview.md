@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/servicename-fea
 ---
 
 # Features of MemoryDB
-<a name="servicename-feature-overview"></a>
 
 Amazon MemoryDB is a durable, in-memory database service that delivers ultra-fast performance. Features of MemoryDB include:
 + Strong consistency for primary nodes and guaranteed eventual consistency for replica nodes. For more information, see [Consistency](consistency.md).

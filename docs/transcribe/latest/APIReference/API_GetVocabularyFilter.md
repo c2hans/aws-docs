@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_GetVo
 ---
 
 # GetVocabularyFilter
-<a name="API_GetVocabularyFilter"></a>
 
 Provides information about the specified custom vocabulary filter.
 

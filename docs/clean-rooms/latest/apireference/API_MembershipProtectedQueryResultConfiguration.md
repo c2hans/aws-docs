@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Memb
 ---
 
 # MembershipProtectedQueryResultConfiguration
-<a name="API_MembershipProtectedQueryResultConfiguration"></a>
 
 Contains configurations for protected query results.
 

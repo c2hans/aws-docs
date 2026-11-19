@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientVpn
 ---
 
 # ClientVpnConnection
-<a name="API_ClientVpnConnection"></a>
 
 Describes a client connection.
 

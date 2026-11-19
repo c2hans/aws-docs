@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/cli-mon-enab
 ---
 
 # mon-enable-alarm-actions
-<a name="cli-mon-enable-alarm-actions"></a>
 
 ## Description
 <a name="w2aab9c35b3"></a>

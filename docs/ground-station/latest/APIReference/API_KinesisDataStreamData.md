@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_K
 ---
 
 # KinesisDataStreamData
-<a name="API_KinesisDataStreamData"></a>
 
 Information for telemetry delivery to Kinesis Data Streams.
 

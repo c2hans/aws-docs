@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_GrpcGat
 ---
 
 # GrpcGatewayRouteAction
-<a name="API_GrpcGatewayRouteAction"></a>
 
 An object that represents the action to take if a match is determined.
 

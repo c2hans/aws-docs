@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/S3OutpostsPr
 ---
 
 # Generating a presigned URL to upload an object to an S3 on Outposts bucket
-<a name="S3OutpostsPresignedUrlUploadObject"></a>
 
 To grant time-limited access to objects that are stored locally on an Outpost without updating your bucket policy, you can use a presigned URL. With presigned URLs, you as the bucket owner can share objects with individuals in your virtual private cloud (VPC) or grant them the ability to upload or delete objects.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes the specified tags from a resource.
 

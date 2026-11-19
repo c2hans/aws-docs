@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/related
 ---
 
 # Related information
-<a name="related-information"></a>
 
 The following related resources can help you as you work with this service.
 

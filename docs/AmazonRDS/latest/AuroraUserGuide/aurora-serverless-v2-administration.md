@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Managing Aurora serverless DB clusters
-<a name="aurora-serverless-v2-administration"></a>
 
 With Aurora serverless, your clusters are interchangeable with provisioned clusters. The Aurora serverless properties apply to one or more DB instances within a DB cluster. Thus, the procedures for creating clusters, modifying clusters, creating and restoring snapshots, and so on, are basically the same as for other kinds of Aurora clusters. For general procedures for managing Aurora clusters and DB instances, see [Managing an Amazon Aurora DB cluster](CHAP_Aurora.md).
 

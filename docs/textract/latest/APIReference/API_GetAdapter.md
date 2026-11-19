@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_GetAdap
 ---
 
 # GetAdapter
-<a name="API_GetAdapter"></a>
 
 Gets configuration information for an adapter specified by an AdapterId, returning information on AdapterName, Description, CreationTime, AutoUpdate status, and FeatureTypes.
 

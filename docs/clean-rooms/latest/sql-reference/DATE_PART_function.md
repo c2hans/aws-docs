@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/DATE_PA
 ---
 
 # DATE\_PART function
-<a name="DATE_PART_function"></a>
 
 DATE\_PART extracts date part values from an expression. DATE\_PART is a synonym of the PGDATE\_PART function.
 

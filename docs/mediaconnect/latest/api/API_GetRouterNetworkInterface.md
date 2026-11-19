@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_GetRouterNet
 ---
 
 # GetRouterNetworkInterface
-<a name="API_GetRouterNetworkInterface"></a>
 
 Retrieves information about a specific router network interface in AWS Elemental MediaConnect.
 

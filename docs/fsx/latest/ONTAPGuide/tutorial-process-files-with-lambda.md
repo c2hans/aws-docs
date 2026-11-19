@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/tutorial-process-f
 ---
 
 # Process files serverlessly using Lambda
-<a name="tutorial-process-files-with-lambda"></a>
 
 File processing workflows often start with files that arrive on an NFS or SMB file share — scanned documents from branch offices, images uploaded by field teams, audio captured from contact centers, or data files delivered by partners.
 

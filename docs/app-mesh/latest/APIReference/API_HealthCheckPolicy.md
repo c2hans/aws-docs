@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_HealthC
 ---
 
 # HealthCheckPolicy
-<a name="API_HealthCheckPolicy"></a>
 
 An object that represents the health check policy for a virtual node's listener.
 

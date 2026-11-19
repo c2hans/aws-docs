@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/analysis-menu.htm
 ---
 
 # The analysis menu
-<a name="analysis-menu"></a>
 
 While working on an analysis, AWS Quick provides several menu options. You use these menu options to efficiently perform tasks without needing to manually navigate through your analysis to find the assets that you want to change.
 

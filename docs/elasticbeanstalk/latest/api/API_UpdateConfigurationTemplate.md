@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_UpdateCo
 ---
 
 # UpdateConfigurationTemplate
-<a name="API_UpdateConfigurationTemplate"></a>
 
 Updates the specified configuration template to have the specified properties or configuration option values.
 

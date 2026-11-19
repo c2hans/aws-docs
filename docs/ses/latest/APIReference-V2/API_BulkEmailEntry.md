@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_BulkEmail
 ---
 
 # BulkEmailEntry
-<a name="API_BulkEmailEntry"></a>
 
 ## Contents
 <a name="API_BulkEmailEntry_Contents"></a>

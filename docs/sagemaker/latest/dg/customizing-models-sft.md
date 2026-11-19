@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models-s
 ---
 
 # SFT
-<a name="customizing-models-sft"></a>
 
 Supervised Fine-Tuning trains a model on labeled input-output pairs to align its behavior with specific examples. The model learns to produce responses that match your training data.
 

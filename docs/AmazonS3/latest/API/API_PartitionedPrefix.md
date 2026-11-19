@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_PartitionedPrefi
 ---
 
 # PartitionedPrefix
-<a name="API_PartitionedPrefix"></a>
 
 Amazon S3 keys for log objects are partitioned in the following format:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/set-up-
 ---
 
 # Clean Up Resources in Amazon WorkSpaces Applications
-<a name="set-up-stacks-fleets-finish"></a>
 
 You can stop your running fleet and delete your active stack to free up resources and to avoid unintended charges to your account. We recommend stopping any unused, running fleets.
 

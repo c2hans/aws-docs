@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_Environment.html
 ---
 
 # Environment
-<a name="API_Environment"></a>
 
 Describes an Amazon Managed Workflows for Apache Airflow (MWAA) environment.
 

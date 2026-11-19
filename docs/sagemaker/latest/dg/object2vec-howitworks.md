@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/object2vec-howitwork
 ---
 
 # How Object2Vec Works
-<a name="object2vec-howitworks"></a>
 
 When using the Amazon SageMaker AI Object2Vec algorithm, you follow the standard workflow: process the data, train the model, and produce inferences.
 

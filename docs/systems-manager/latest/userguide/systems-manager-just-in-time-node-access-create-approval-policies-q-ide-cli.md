@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # Create approval policies for just-in-time node access with Amazon Q
-<a name="systems-manager-just-in-time-node-access-create-approval-policies-q-ide-cli"></a>
 
 Using Amazon Q Developer for command line provides guidance and support across various aspects of software development. For just-in-time node access, Amazon Q helps you create approval policies by generating and updating the code for the policies, analyzing policy statements, and more. The following information describes how to create approval policies using Amazon Q for command line.
 

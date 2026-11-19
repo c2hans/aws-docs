@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # OpportunitySummary
-<a name="API_OpportunitySummary"></a>
 
 An object that contains an `Opportunity`'s subset of fields.
 

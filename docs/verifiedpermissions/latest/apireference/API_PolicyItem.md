@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # PolicyItem
-<a name="API_PolicyItem"></a>
 
 Contains information about a policy.
 

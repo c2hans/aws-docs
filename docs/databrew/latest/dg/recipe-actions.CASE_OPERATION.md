@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.CASE_O
 ---
 
 # CASE\_OPERATION
-<a name="recipe-actions.CASE_OPERATION"></a>
 
 Create a new column, based on the result of logical condition CASE. The case operation goes through case conditions and returns a value when the first condition is met. Once a condition is true, the operation stops reading and returns the result. If no conditions are true, it returns the default value.
 

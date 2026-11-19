@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EksConfigu
 ---
 
 # EksConfigurationUpdate
-<a name="API_EksConfigurationUpdate"></a>
 
 An object that represents the attributes of an AWS Batch compute environment's Amazon EKS configuration that can be updated. Currently `accessEntry` is the only attribute that you can change after the compute environment is created. For more information, see [Amazon EKS access entry authentication](https://docs.aws.amazon.com/batch/latest/userguide/eks-access-entries.html) in the * AWS Batch User Guide*.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/GxP-EU-An
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # EU GMP Annex 11, v1
-<a name="GxP-EU-Annex-11"></a>
 
 AWS Audit Manager provides a prebuilt framework that supports the EudraLex - The Rules Governing Medicinal Products in the European Union (EU) - Volume 4: Good Manufacturing Practice (GMP) Medicinal Products for Human and Veterinary Use - Annex 11.
 

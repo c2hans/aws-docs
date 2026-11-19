@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 Historians acquire real-time data from programmable logic controllers (PLCs), sensors, and other automation systems to store time-series data at high speed while maintaining data quality. Data from on-site historians can be consolidated to a modernized enterprise historian in the cloud. The following are some best practices for planning a modernized historian approach for your organization:
 

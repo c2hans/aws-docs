@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # SQL query reference
-<a name="omni-sql-query-reference"></a>
 
 CloudWatch Omni supports SQL for querying logs and traces. This page covers CloudWatch Omni SQL: the supported syntax and the behaviors that differ from other SQL dialects. To build SQL queries interactively, use Explore. See [Explore and query your telemetry](omni-explore-and-query-your-telemetry.md).
 

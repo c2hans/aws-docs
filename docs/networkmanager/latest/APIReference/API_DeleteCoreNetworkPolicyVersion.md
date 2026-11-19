@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DeleteCoreNetworkPolicyVersion
-<a name="API_DeleteCoreNetworkPolicyVersion"></a>
 
 Deletes a policy version from a core network. You can't delete the current LIVE policy.
 

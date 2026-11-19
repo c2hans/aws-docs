@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECR::ReplicationConfiguration DeleteReplication
-<a name="aws-properties-ecr-replicationconfiguration-deletereplication"></a>
 
 The delete replication configuration for a replication rule. When delete replication is enabled, the service replicates image deletions and image tag removals in the source registry to the replication destinations.
 

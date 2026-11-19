@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_MultiM
 ---
 
 # MultiModelConfig
-<a name="API_MultiModelConfig"></a>
 
 Specifies additional configuration for hosting multi-model endpoints.
 

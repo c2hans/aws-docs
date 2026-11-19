@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonVPCReadOnlyAccess
-<a name="AmazonVPCReadOnlyAccess"></a>
 
 **Description**: Provides read only access to Amazon VPC via the AWS Management Console.
 

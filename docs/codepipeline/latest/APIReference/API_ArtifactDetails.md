@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Art
 ---
 
 # ArtifactDetails
-<a name="API_ArtifactDetails"></a>
 
 Returns information about the details of an artifact.
 

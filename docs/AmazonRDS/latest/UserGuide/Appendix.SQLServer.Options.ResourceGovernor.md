@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Microsoft SQL Server resource governor with RDS for SQL Server
-<a name="Appendix.SQLServer.Options.ResourceGovernor"></a>
 
 Resource governor is a SQL Server Enterprise Edition feature that gives you precise control over your instance resources. It enables you to set specific limits on how workloads use CPU, memory, and physical I/O resources. With resource governor, you can:
 + Prevent resource monopolization in multi-tenant environments by managing how different workloads share instance resources

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/public/delete-public-re
 ---
 
 # Deleting a public repository policy statement in Amazon ECR Public
-<a name="delete-public-repository-policy"></a>
 
 If you no longer want an existing repository policy statement to apply to a repository, you can delete it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/post-launch-action-
 ---
 
 # Install the required IAM roles if needed
-<a name="post-launch-action-settings-roles"></a>
 
 To operate post-launch actions and allow SSM documents to run on launched instances, certain IAM roles must be installed. Usually these roles are installed into an AWS account when AWS DRS is initialized in the account for the first time in any region.
 

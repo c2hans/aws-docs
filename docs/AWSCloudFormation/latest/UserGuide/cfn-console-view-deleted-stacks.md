@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-c
 ---
 
 # View deleted stacks from the CloudFormation console
-<a name="cfn-console-view-deleted-stacks"></a>
 
 By default, the CloudFormation console doesn't display stacks with a status of `DELETE_COMPLETE`. To display information about deleted stacks, you must change the stack view.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_U
 ---
 
 # UpdateTable
-<a name="API_UpdateTable"></a>
 
 Modifies the provisioned throughput settings, global secondary indexes, DynamoDB Streams settings, or global table replica settings for a given table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs-poli
 ---
 
 # Update a resource-based delegation policy with AWS Organizations
-<a name="orgs-policy-delegate-update"></a>
 
 From the management account, update a resource-based delegation policy for your organization and add a statement that specifies which member accounts can perform actions on policies. You can add multiple statements in the policy to denote a different set of permissions to member accounts.
 

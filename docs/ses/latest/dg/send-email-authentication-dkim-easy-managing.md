@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-email-authentication-
 ---
 
 # Managing Easy DKIM and BYODKIM
-<a name="send-email-authentication-dkim-easy-managing"></a>
 
 You can manage the DKIM settings for your identities authenticated with either Easy DKIM or BYODKIM by using the web-based Amazon SES console, or by using the Amazon SES API. You can use either of these methods to obtain the DKIM records for an identity, or to enable or disable DKIM signing for an identity.
 

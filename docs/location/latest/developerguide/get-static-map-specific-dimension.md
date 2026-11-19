@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/get-stati
 ---
 
 # How to get a static map of a specific dimension
-<a name="get-static-map-specific-dimension"></a>
 
 In this topic, you will learn how to set the dimensions (height and width) for static maps using Amazon Location Service. Customizing the dimensions of a map image allows you to balance performance, visual quality, and usability. The maximum values for both `width` and `height` are 1400 pixels, while the minimum values are 64 pixels. The maximum result size is 6 MB.
 

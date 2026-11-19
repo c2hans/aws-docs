@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # MLSUS05-BP02 Use efficient silicon
-<a name="mlsus05-bp02"></a>
 
  Choosing the right compute architecture for your machine learning workloads can significantly reduce energy consumption and carbon footprint while maintaining high performance.
 

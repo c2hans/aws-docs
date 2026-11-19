@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Disabl
 ---
 
 # DisableHttpEndpoint
-<a name="API_DisableHttpEndpoint"></a>
 
 Disables the HTTP endpoint for the specified DB cluster. Disabling this endpoint disables RDS Data API.
 

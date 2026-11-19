@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Slide
 ---
 
 # SliderControlDisplayOptions
-<a name="API_SliderControlDisplayOptions"></a>
 
 The display options of a control.
 

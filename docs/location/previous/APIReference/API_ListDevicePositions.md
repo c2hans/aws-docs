@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ListD
 ---
 
 # ListDevicePositions
-<a name="API_ListDevicePositions"></a>
 
 A batch request to retrieve all device positions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Updating AWS Schema Conversion Tool
-<a name="CHAP_Installing.Updating"></a>
 
 AWS periodically updates AWS SCT with new features and functionality. If you are updating from a previous version, create a new AWS SCT project and reconvert any database objects you are using.
 

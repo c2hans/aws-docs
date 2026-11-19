@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Subti
 ---
 
 # Subtitles
-<a name="API_Subtitles"></a>
 
 Generate subtitles for your media file with your transcription request.
 

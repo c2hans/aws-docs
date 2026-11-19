@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSK/2.0/APIReference/v2-operations-clust
 ---
 
 # V2 Operations clusterOperationArn
-<a name="v2-operations-clusteroperationarn"></a>
 
 ## URI
 <a name="v2-operations-clusteroperationarn-url"></a>

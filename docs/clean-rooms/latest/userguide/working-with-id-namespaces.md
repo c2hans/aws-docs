@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/working-wit
 ---
 
 # ID namespaces in AWS Clean Rooms
-<a name="working-with-id-namespaces"></a>
 
 An *ID namespace* is a wrapper around your identity table that enables you to provide metadata explaining your dataset and how to use it in an ID mapping workflow. An *ID mapping workflow* is a data processing job that maps data from an input data source to an input data target based on the specified ID mapping method. It produces an ID mapping table.
 

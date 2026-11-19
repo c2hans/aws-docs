@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Por
 ---
 
 # PortalTypeEntry
-<a name="API_PortalTypeEntry"></a>
 
 The configuration entry associated with the specific portal type. The `portalTypeConfiguration` is a map of the `portalTypeKey` to the `PortalTypeEntry`.
 

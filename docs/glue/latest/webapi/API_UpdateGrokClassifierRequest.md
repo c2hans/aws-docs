@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateGrokClassif
 ---
 
 # UpdateGrokClassifierRequest
-<a name="API_UpdateGrokClassifierRequest"></a>
 
 Specifies a grok classifier to update when passed to `UpdateClassifier`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Descr
 ---
 
 # DescribeMergeConflicts
-<a name="API_DescribeMergeConflicts"></a>
 
 Returns information about one or more merge conflicts in the attempted merge of two commit specifiers using the squash or three-way merge strategy. If the merge option for the attempted merge is specified as FAST\_FORWARD\_MERGE, an exception is thrown.
 

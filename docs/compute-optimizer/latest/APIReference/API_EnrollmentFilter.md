@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # EnrollmentFilter
-<a name="API_EnrollmentFilter"></a>
 
 Describes a filter that returns a more specific list of account enrollment statuses. Use this filter with the [GetEnrollmentStatusesForOrganization](API_GetEnrollmentStatusesForOrganization.md) action.
 

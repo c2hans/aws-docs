@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_StartDep
 ---
 
 # StartDeployment
-<a name="API_StartDeployment"></a>
 
 Starts a deployment for a manually deployed app. Manually deployed apps are not connected to a Git repository.
 

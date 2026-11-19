@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableCloudFrontOriginFailover`
-<a name="automation-aws-enable-cloudfront-failover"></a>
 
  **Description**
 

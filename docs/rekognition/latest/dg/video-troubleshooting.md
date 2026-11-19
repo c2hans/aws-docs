@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/video-troubleshoot
 ---
 
 # Troubleshooting Amazon Rekognition Video
-<a name="video-troubleshooting"></a>
 
 The following covers troubleshooting information for working with Amazon Rekognition Video and stored videos.
 

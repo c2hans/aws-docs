@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Use expression attribute names in DynamoDB with an AWS SDK
-<a name="example_dynamodb_Scenario_ExpressionAttributeNames_section"></a>
 
 The following code examples show how to use expression attribute names in DynamoDB.
 + Work with reserved words in DynamoDB expressions.

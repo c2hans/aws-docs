@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_ListJ
 ---
 
 # ListJobRuns
-<a name="API_ListJobRuns"></a>
 
 Lists job runs based on a set of parameters. A job run is a unit of work, such as a Spark jar, PySpark script, or SparkSQL query, that you submit to Amazon EMR on EKS.
 

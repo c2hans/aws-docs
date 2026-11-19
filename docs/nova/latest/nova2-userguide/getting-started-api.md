@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/getting-star
 ---
 
 # Getting started with the API
-<a name="getting-started-api"></a>
 
 Before you get started with APIs, follow these procedures if you are new to AWS or need to install the AWS CLI or an AWS SDK. If neither of these apply to you, move to [Get credentials to grant programmatic access](#grant-program-access).
 

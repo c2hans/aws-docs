@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/add-step-cli.
 ---
 
 # Adding steps to an Amazon EMR cluster with the AWS CLI
-<a name="add-step-cli"></a>
 
 The following procedures demonstrate how to add steps to a newly created cluster and to a running cluster with the AWS CLI. Both examples use the `--steps` subcommand to add steps to the cluster.
 

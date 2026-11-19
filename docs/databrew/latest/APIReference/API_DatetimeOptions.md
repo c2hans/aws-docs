@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Datetim
 ---
 
 # DatetimeOptions
-<a name="API_DatetimeOptions"></a>
 
 Represents additional options for correct interpretation of datetime parameters used in the Amazon S3 path of a dataset.
 

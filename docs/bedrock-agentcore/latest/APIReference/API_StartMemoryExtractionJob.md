@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # StartMemoryExtractionJob
-<a name="API_StartMemoryExtractionJob"></a>
 
  Starts a memory extraction job that processes events that failed extraction previously in an AgentCore Memory resource and produces structured memory records. When earlier extraction attempts have left events unprocessed, this job will pick up and extract those as well.
 

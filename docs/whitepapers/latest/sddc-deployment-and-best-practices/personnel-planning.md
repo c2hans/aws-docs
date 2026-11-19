@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-b
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Personnel planning
-<a name="personnel-planning"></a>
 
  A critical first step in the planning process is to identify personnel that will be involved in the initial account onboarding process, and technical personnel involved in the deployment of the SDDC. The following is a list of common “roles” required to activate the service and deploy an SDDC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetI
 ---
 
 # GetImportTask
-<a name="API_GetImportTask"></a>
 
 Retrieves a specified import task.
 

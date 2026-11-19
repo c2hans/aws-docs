@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-box-
 ---
 
 # Set up OAuth 2.0 authentication for Box
-<a name="kb-managed-box-oauth2-setup"></a>
 
 OAuth 2.0 authentication (`OAUTH2`) authenticates as a Box app on behalf of a specific user, using the OAuth 2.0 (3LO) flow. The connector crawls the content that user can access. OAuth 2.0 authentication is user-specific and does not support document-level access control (ACLs); use it only when Client Credentials Grant authentication is not viable. The user must sign in manually to generate tokens.
 

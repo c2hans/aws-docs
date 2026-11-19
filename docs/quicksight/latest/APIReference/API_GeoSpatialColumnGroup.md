@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GeoSp
 ---
 
 # GeoSpatialColumnGroup
-<a name="API_GeoSpatialColumnGroup"></a>
 
 Geospatial column group that denotes a hierarchy.
 

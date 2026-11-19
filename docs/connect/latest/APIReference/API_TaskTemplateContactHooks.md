@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TaskTemp
 ---
 
 # TaskTemplateContactHooks
-<a name="API_TaskTemplateContactHooks"></a>
 
 The event hooks that are set on tasks created by using this template.
 

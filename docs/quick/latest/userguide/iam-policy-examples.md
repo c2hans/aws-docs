@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/iam-policy-exampl
 ---
 
 # IAM policy examples for Quick
-<a name="iam-policy-examples"></a>
 
 This section provides examples of IAM policies that you can use with Quick.
 

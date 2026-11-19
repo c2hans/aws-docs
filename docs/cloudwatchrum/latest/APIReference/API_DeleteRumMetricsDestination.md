@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_De
 ---
 
 # DeleteRumMetricsDestination
-<a name="API_DeleteRumMetricsDestination"></a>
 
 Deletes a destination for CloudWatch RUM extended metrics, so that the specified app monitor stops sending extended metrics to that destination.
 

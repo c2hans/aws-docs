@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DeleteL
 ---
 
 # DeleteLaunchConfiguration
-<a name="API_DeleteLaunchConfiguration"></a>
 
 Deletes the specified launch configuration.
 

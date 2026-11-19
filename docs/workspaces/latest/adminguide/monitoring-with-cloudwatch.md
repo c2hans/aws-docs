@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/monitoring-
 ---
 
 # WorkSpaces Pools metrics and dimensions
-<a name="monitoring-with-cloudwatch"></a>
 
 Amazon WorkSpaces sends the following WorkSpaces Pools metrics and dimension information to Amazon CloudWatch.
 

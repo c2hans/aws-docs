@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector-gcp.html
 ---
 
 # Integrating Amazon Inspector with Google Cloud Platform
-<a name="inspector-gcp"></a>
 
 You can create an integration to Google Cloud Platform (GCP) in Amazon Inspector to detect software vulnerabilities in your GCP resources. After you create the connector, Amazon Inspector continuously scans your Compute Engine VM instances, Cloud Run functions, and Artifact Registry images for known vulnerabilities and generates findings with remediation guidance.
 

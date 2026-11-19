@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Application monitoring
-<a name="observability-app-monitoring"></a>
 
 Application monitoring provides a real-time view of how your services are performing. It combines topology data stored in OpenSearch with time-series RED metrics (Rate, Errors, Duration) from Amazon Managed Service for Prometheus to surface health, latency, throughput, and error information across your distributed system.
 

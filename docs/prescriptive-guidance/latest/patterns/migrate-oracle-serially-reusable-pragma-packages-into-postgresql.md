@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate Oracle SERIALLY\_REUSABLE Pragma packages into Amazon Aurora or Amazon RDS for PostgreSQL
-<a name="migrate-oracle-serially-reusable-pragma-packages-into-postgresql"></a>
 
 *Vinay Paladi, Amazon Web Services*
 

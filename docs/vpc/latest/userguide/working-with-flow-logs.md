@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/working-with-flow-l
 ---
 
 # Work with flow logs
-<a name="working-with-flow-logs"></a>
 
 You can work with flow logs using consoles for Amazon EC2 and Amazon VPC.
 

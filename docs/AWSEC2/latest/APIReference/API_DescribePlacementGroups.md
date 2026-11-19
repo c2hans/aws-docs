@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeP
 ---
 
 # DescribePlacementGroups
-<a name="API_DescribePlacementGroups"></a>
 
 Describes the specified placement groups or all of your placement groups.
 

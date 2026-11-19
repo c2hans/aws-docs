@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AxisD
 ---
 
 # AxisDataOptions
-<a name="API_AxisDataOptions"></a>
 
 The data options for an axis.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Centralized egress for IPv6
-<a name="centralized-egress-for-ipv6"></a>
 
  To support IPv6 egress in dual stack deployments that have centralized IPv4 egress, one of two patterns must be chosen:
 +  Centralized IPv4 egress with decentralized IPv6 egress

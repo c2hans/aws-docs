@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Component
 ---
 
 # ComponentVersionListItem
-<a name="API_ComponentVersionListItem"></a>
 
 Contains information about a component version in a list.
 

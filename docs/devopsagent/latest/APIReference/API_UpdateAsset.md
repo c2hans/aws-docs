@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Upda
 ---
 
 # UpdateAsset
-<a name="API_UpdateAsset"></a>
 
 Updates an asset in the specified agent space
 

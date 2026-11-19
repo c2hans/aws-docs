@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_EntityInfo.h
 ---
 
 # EntityInfo
-<a name="API_EntityInfo"></a>
 
 Contains details about the specified entity (user or role).
 

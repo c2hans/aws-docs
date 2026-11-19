@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # IAMFederationOptionsInput
-<a name="API_IAMFederationOptionsInput"></a>
 
 Input parameters for configuring IAM identity federation settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/lighting.h
 ---
 
 # .lighting
-<a name="lighting"></a>
 
 Used by photographers, designers, architects, engineers, and others with an interest in lighting.
 

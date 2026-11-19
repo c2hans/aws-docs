@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # VisaAttributes
-<a name="API_VisaAttributes"></a>
 
 Parameters to derive the confidentiality and integrity keys for a Visa payment card.
 

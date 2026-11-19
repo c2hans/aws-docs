@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/rhel-netweaver-
 ---
 
 # Operations
-<a name="rhel-netweaver-ha-operations"></a>
 
 This section covers the following topics.
 

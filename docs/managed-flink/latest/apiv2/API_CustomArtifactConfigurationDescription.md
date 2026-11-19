@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CustomArt
 ---
 
 # CustomArtifactConfigurationDescription
-<a name="API_CustomArtifactConfigurationDescription"></a>
 
 Specifies a dependency JAR or a JAR of user-defined functions.
 

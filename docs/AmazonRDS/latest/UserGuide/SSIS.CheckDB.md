@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSIS.CheckDB.
 ---
 
 # Checking the integrity of the SSISDB database
-<a name="SSIS.CheckDB"></a>
 
 To check the logical and physical integrity of the SSISDB database, use the `rds_dbcc_checkdb` stored procedure. The procedure runs `DBCC CHECKDB` on the database that you specify with the `ALL_ERRORMSGS`, `NO_INFOMSGS`, and `TABLERESULTS` options. The procedure supports only the SSISDB database, and the database must be online.
 

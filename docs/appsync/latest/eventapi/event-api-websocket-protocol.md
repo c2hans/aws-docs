@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/event-api-websoc
 ---
 
 # Understanding the Event API WebSocket protocol
-<a name="event-api-websocket-protocol"></a>
 
 AWS AppSync Events' WebSocket API allows a client to subscribe and receive events in real-time. After the client is connected, the client can also publish to channels. Establishing a valid connection and subscribing to receive events is a simple multi-step process.
 

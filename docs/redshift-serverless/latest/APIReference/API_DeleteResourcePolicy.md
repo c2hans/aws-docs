@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # DeleteResourcePolicy
-<a name="API_DeleteResourcePolicy"></a>
 
 Deletes the specified resource policy.
 

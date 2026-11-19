@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/sh-security
 ---
 
 # Troubleshooting AWS Security Hub identity and access
-<a name="sh-security_iam_troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with AWS Security Hub and IAM.
 

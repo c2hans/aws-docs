@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_StartVirt
 ---
 
 # StartVirtualMachinesMetadataSync
-<a name="API_StartVirtualMachinesMetadataSync"></a>
 
 This action sends a request to sync metadata across the specified virtual machines.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CustomRespon
 ---
 
 # CustomResponseBody
-<a name="API_CustomResponseBody"></a>
 
 The response body to use in a custom response to a web request. This is referenced by key from [CustomResponse](API_CustomResponse.md) `CustomResponseBodyKey`.
 

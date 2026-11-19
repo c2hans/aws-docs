@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/templates-and-
 ---
 
 # Mapping templates and implicit object types in Customer Profiles
-<a name="templates-and-implicit-types"></a>
 
 With mapping templates, you can ingest data from well-known sources without writing field and key definitions yourself. With implicit object types, you can use a template by name without explicitly creating it first. This topic explains both and how they interact with explicit object types.
 

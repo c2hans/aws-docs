@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # DeleteCluster
-<a name="API_elastic_DeleteCluster"></a>
 
 Delete an elastic cluster.
 

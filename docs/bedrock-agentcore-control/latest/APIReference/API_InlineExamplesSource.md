@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # InlineExamplesSource
-<a name="API_InlineExamplesSource"></a>
 
  Inline examples provided directly in the request body.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DescribeReservedCacheNodes
-<a name="API_DescribeReservedCacheNodes"></a>
 
 Returns information about reserved cache nodes for this account, or about a specified reserved cache node.
 

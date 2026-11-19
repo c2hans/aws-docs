@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon MemoryDB
-<a name="amazonmemorydb"></a>
 
 Amazon MemoryDB provides the following APIs for data retrieval.
 

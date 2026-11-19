@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_AuthCha
 ---
 
 # AuthChallengeResponseEvent
-<a name="API_AuthChallengeResponseEvent"></a>
 
 An authentication verification event response by a third party authentication server to Amazon Q Business.
 

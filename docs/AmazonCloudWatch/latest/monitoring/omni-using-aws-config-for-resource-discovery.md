@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Using AWS Config for resource discovery
-<a name="omni-using-aws-config-for-resource-discovery"></a>
 
 CloudWatch Omni uses AWS Config to find the AWS resources in your account. Omni then adds those resources to the context graph. This page lists the resource types that AWS Config records for Omni, and describes how the recorder works.
 

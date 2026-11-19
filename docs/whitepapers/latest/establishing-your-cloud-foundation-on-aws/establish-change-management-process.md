@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Establish a change management process
-<a name="establish-change-management-process"></a>
 
 Change management practices are designed to reduce incidents and meet regulatory standards. These practices ensure efficient and prompt handling of changes to IT infrastructure and code. Modern change management methodologies can include rolling out new services, managing current ones, resolving problems in code, breaking down silos, providing context and transparency, eliminating bottlenecks, and minimizing risk.
 

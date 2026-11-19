@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Tutorial: Patch a server environment using the AWS CLI
-<a name="patch-manager-patch-servers-using-the-aws-cli"></a>
 
 The following procedure describes how to patch a server environment by using a custom patch baseline, patch groups, and a maintenance window.
 

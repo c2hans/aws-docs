@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GroupPr
 ---
 
 # GroupProfileSummary
-<a name="API_GroupProfileSummary"></a>
 
 The details of a group profile.
 

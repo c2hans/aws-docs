@@ -3,13 +3,16 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostCategoryValues
-<a name="API_CostCategoryValues"></a>
 
 The Cost Categories values used for filtering the costs.
 
-If `Values` and `Key` are not specified, the `ABSENT` `MatchOption` is applied to all Cost Categories. That is, it filters on resources that aren't mapped to any Cost Categories.
+In operations that support `ABSENT`, such as `GetCostAndUsage`, you can filter on resources that aren't mapped to any Cost Categories. Set `MatchOptions` to `ABSENT` and omit `Key` and `Values`. Not all operations support `ABSENT`. For example, `GetReservationCoverage`, `GetSavingsPlansCoverage`, and cost category rules don't.
 
-If `Values` is provided and `Key` isn't specified, the `ABSENT` `MatchOption` is applied to the Cost Categories `Key` only. That is, it filters on resources without the given Cost Categories key.
+To filter on resources without a given Cost Categories key, set `MatchOptions` to `ABSENT`, specify the `Key`, and omit `Values`.
+
+A `Key` without `Values` doesn't apply `ABSENT`. In Cost Explorer operations such as `GetCostAndUsage`, unless `MatchOptions` includes `ABSENT`, you must specify both `Key` and `Values`, or the request fails with a `ValidationException`.
+
+If `MatchOptions` includes `ABSENT` and you also specify `Values`, the request fails with a `ValidationException`.
 
 ## Contents
 <a name="API_CostCategoryValues_Contents"></a>
@@ -22,7 +25,11 @@ Pattern: `^(?! )[\p{L}\p{N}\p{Z}-_]*(?<! )$`
 Required: No
 
  ** MatchOptions **   <a name="awscostmanagement-Type-CostCategoryValues-MatchOptions"></a>
-The match options that you can use to filter your results. MatchOptions is only applicable for actions related to cost category. The default values for `MatchOptions` is `EQUALS` and `CASE_SENSITIVE`.
+The match options that you can use to filter your results. The supported values depend on the operation. Refer to the documentation for each specific API to see what is supported. For example, `GetCostAndUsage` supports the following values:
++  `EQUALS` - Matches values exactly.
++  `ABSENT` - Matches costs that don't have a value for the key.
++  `CASE_SENSITIVE` - Matches values with case sensitivity.
+The default values for `MatchOptions` are `EQUALS` and `CASE_SENSITIVE`.
 Type: Array of strings
 Valid Values: `EQUALS | ABSENT | STARTS_WITH | ENDS_WITH | CONTAINS | CASE_SENSITIVE | CASE_INSENSITIVE | GREATER_THAN_OR_EQUAL`
 Required: No

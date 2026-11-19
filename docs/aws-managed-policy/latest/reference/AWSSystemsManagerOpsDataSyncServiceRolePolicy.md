@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSystemsManagerOpsDataSyncServiceRolePolicy
-<a name="AWSSystemsManagerOpsDataSyncServiceRolePolicy"></a>
 
 **Description**: IAM role for SSM Explorer to manage OpsData related operations
 

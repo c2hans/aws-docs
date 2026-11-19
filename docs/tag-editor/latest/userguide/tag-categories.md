@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tag-editor/latest/userguide/tag-categori
 ---
 
 # Tagging categories
-<a name="tag-categories"></a>
 
 Companies that are most effective in their use of tags typically create business-relevant tag groupings to organize their resources along technical, business, and security dimensions. Companies that use automated processes to manage their infrastructure also include additional, automation-specific tags.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/production
 ---
 
 # .productions
-<a name="productions"></a>
 
 Used by studios and production houses that make commercials, radio ads, and music videos.
 

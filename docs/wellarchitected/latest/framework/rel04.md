@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel04.h
 ---
 
 # Design interactions in a distributed system to prevent failures
-<a name="rel04"></a>
 
  Distributed systems connect components over networks that lose packets, add latency, and partition without warning. A workload has to keep working when a dependency slows down, returns an error, or delivers the same message twice. The way components talk to each other decides whether one component's trouble stays contained or spreads across the workload, so the interaction design is where reliability is won or lost.
 

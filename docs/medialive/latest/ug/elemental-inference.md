@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/elemental-inference.
 ---
 
 # AWS Elemental Inference
-<a name="elemental-inference"></a>
 
 AWS Elemental MediaLive includes features that are seamless implementations of the features of AWS Elemental Inference. Elemental Inference is an AI service that lets you easily apply machine learning foundational models to video, audio, and image content for automated analysis, classification, and insights generation.
 

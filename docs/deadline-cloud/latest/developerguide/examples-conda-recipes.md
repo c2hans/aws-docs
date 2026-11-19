@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Conda recipe examples for Deadline Cloud
-<a name="examples-conda-recipes"></a>
 
 The [conda\_recipes](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes) directory on the GitHub website contains sample tools for creating an Amazon S3 conda channel and building packages into it. The recipes use [rattler-build](https://prefix-dev.github.io/rattler-build/) on the prefix.dev website or, in some cases, the older [conda-build](https://docs.conda.io/projects/conda-build/) on the conda website.
 

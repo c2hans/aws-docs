@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # IncludedOauth2ProviderConfigInput
-<a name="API_IncludedOauth2ProviderConfigInput"></a>
 
 Configuration settings for connecting to a supported OAuth2 provider. This includes client credentials and OAuth2 discovery information for providers that have built-in support.
 

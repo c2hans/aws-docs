@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # UpdateResourceServer
-<a name="API_UpdateResourceServer"></a>
 
 Updates the name and scopes of a resource server. All other fields are read-only. For more information about resource servers, see [Access control with resource servers](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-define-resource-servers.html).
 

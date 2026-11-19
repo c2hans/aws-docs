@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Creating a custom patch baseline for Windows Server
-<a name="patch-manager-create-a-patch-baseline-for-windows"></a>
 
 Use the following procedure to create a custom patch baseline for Windows managed nodes in Patch Manager.
 

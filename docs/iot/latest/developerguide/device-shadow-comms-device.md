@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-
 ---
 
 # Using shadows in devices
-<a name="device-shadow-comms-device"></a>
 
 This section describes device communications with shadows using MQTT messages, the preferred method for devices to communicate with the AWS IoT Device Shadow service.
 

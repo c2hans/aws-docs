@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Subscri
 ---
 
 # SubscribedGroup
-<a name="API_SubscribedGroup"></a>
 
 The group that subscribes to the asset.
 

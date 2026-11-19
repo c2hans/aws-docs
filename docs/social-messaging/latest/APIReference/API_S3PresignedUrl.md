@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # S3PresignedUrl
-<a name="API_S3PresignedUrl"></a>
 
 You can use presigned URLs to grant time-limited access to objects in Amazon S3 without updating your bucket policy. For more information, see [Working with presigned URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html) in the *Amazon S3 User Guide*.
 

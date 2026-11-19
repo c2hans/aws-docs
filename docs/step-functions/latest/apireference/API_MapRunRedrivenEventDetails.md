@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_M
 ---
 
 # MapRunRedrivenEventDetails
-<a name="API_MapRunRedrivenEventDetails"></a>
 
 Contains details about a Map Run that was redriven.
 

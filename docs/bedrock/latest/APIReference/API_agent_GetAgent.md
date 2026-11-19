@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ge
 ---
 
 # GetAgent
-<a name="API_agent_GetAgent"></a>
 
 Gets information about an agent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/go
 ---
 
 # AWS Encryption SDK for Go
-<a name="go"></a>
 
 This topic explains how to install and use the AWS Encryption SDK for Go. For details about programming with the AWS Encryption SDK for Go, see [go](https://github.com/aws/aws-encryption-sdk/tree/mainline/releases/go/encryption-sdk/) directory of the aws-encryption-sdk repository on GitHub.
 

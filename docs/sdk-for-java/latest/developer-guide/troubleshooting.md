@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/trou
 ---
 
 # Troubleshooting FAQs
-<a name="troubleshooting"></a>
 
 As you use the AWS SDK for Java 2.x in your applications, you might encounter the runtime errors listed in this topic. Use the suggestions here to help you uncover the root cause and resolve the error.
 

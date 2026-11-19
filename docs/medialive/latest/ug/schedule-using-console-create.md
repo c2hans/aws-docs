@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/schedule-using-conso
 ---
 
 # Creating actions in the schedule (console)
-<a name="schedule-using-console-create"></a>
 
 You can create different actions in the schedule. For a list of supported actions, see [Types of actions in the schedule](x-actions-in-schedule.md).
 

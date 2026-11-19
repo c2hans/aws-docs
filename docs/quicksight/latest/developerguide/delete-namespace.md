@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/delete-
 ---
 
 # DeleteNamespace
-<a name="delete-namespace"></a>
 
 Use the `DeleteNamespace` API operation to delete a namespace and the users and groups that are associated with the namespace. This is an asynchronous process. Assets including dashboards, analyses, datasets, and data sources are not deleted. To delete these assets, you use the relevant API operations for each asset, such as `DeleteDashboard` or `DeleteDataSet`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # ServicePrincipalNameSummary
-<a name="API_ServicePrincipalNameSummary"></a>
 
 The service principal name that the connector uses to authenticate with Active Directory.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/high-availabilit
 ---
 
 # Availability and durability: Single-AZ and Multi-AZ file systems
-<a name="high-availability-multiAZ"></a>
 
 Amazon FSx for Windows File Server offers two file system deployment types: Single-AZ and Multi-AZ. The following sections provide information to help you choose the right deployment type for your workloads. For information on the service's availability SLA (Service Level Agreement), see [Amazon FSx Service Level Agreement](https://aws.amazon.com/fsx/sla/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Archiv
 ---
 
 # ArchiveDistribution
-<a name="API_ArchiveDistribution"></a>
 
 Contains the number and percentage of archived and unarchived findings.
 

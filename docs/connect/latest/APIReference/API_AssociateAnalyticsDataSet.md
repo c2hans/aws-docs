@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Associat
 ---
 
 # AssociateAnalyticsDataSet
-<a name="API_AssociateAnalyticsDataSet"></a>
 
 Associates the specified dataset for a Connect Customer instance with the target account. You can associate only one dataset in a single call.
 

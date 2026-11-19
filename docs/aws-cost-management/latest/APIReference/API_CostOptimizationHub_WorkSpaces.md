@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # WorkSpaces
-<a name="API_CostOptimizationHub_WorkSpaces"></a>
 
 The WorkSpaces recommendation details.
 

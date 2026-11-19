@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchCo
 ---
 
 # SearchContactsAdditionalTimeRange
-<a name="API_SearchContactsAdditionalTimeRange"></a>
 
 Time range that you **additionally** want to filter on.
 

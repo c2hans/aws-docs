@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ProgramManagementAccountTypeSort
-<a name="API_channel_ProgramManagementAccountTypeSort"></a>
 
 Type-specific sorting options for program management accounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_R
 ---
 
 # ResultSetMetadata
-<a name="API_ResultSetMetadata"></a>
 
 The metadata of the result set returned by a SQL statement.
 

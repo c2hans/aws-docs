@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeMetric
-<a name="API_DescribeMetric"></a>
 
 Retrieves the full definition of an existing metric from the specified Connect Customer instance.
 

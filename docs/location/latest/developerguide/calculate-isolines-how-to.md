@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/calculate
 ---
 
 # Learn how to use CalculateIsolines
-<a name="calculate-isolines-how-to"></a>
 
 In this section you learn how to use `CalculateIsolines` with ranges of time or distance, as well as to set areas to avoid.
 

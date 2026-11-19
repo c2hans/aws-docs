@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Se
 ---
 
 # SearchSampleQueriesSearchResult
-<a name="API_SearchSampleQueriesSearchResult"></a>
 
  A search result returned by the `SearchSampleQueries` operation.
 

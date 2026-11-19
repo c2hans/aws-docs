@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/granting-access
 ---
 
 # Granting access for Gremlin Amazon S3 export feature
-<a name="granting-access-gremlin"></a>
 
  **Required IAM policies**
 

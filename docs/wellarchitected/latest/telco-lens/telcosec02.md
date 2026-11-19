@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcos
 ---
 
 # Infrastructure protection
-<a name="telcosec02"></a>
 
 |  TELCOSEC02: How do you implement holistic security within your telco network to avoid risks and provide integrity?  |
 | --- |

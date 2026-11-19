@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/using-encryp
 ---
 
 # Using encrypted S3 buckets for your recommendations export
-<a name="using-encrypted-s3-buckets"></a>
 
 For the destination of your Compute Optimizer recommendations exports, you can specify S3 buckets that are encrypted with either Amazon S3 customer managed keys or AWS Key Management Service (AWS KMS) keys. Using your own AWS KMS key gives you more control over who can decrypt your exported recommendations.
 

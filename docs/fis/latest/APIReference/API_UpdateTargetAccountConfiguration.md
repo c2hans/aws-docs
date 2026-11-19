@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_UpdateTarget
 ---
 
 # UpdateTargetAccountConfiguration
-<a name="API_UpdateTargetAccountConfiguration"></a>
 
 Updates the target account configuration for the specified experiment template.
 

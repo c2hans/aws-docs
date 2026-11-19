@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ROSA
 ---
 
 # ROSAWorkerInstancePolicy
-<a name="ROSAWorkerInstancePolicy"></a>
 
 **Description**: Allows Red Hat OpenShift Service on AWS (ROSA) worker nodes in your account read-only access to Amazon EC2 instances and AWS Regions for compute node lifecycle management.
 

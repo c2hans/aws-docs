@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailChecksConfig
-<a name="API_runtime_GuardrailChecksConfig"></a>
 
 The configuration for inline guardrail checks. Specify one or more check types to run against the messages.
 

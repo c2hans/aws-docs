@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_FargatePla
 ---
 
 # FargatePlatformConfiguration
-<a name="API_FargatePlatformConfiguration"></a>
 
 The platform configuration for jobs that are running on Fargate resources. Jobs that run on Amazon EC2 resources must not specify this parameter.
 

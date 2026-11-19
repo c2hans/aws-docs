@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/security
 ---
 
 # Security in Microsoft SQL Server on Amazon EC2
-<a name="security-sql-ha-server-on-ec2"></a>
 
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from a data center and network architecture that is built to meet the requirements of the most security-sensitive organizations.
 

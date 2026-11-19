@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_Statement.ht
 ---
 
 # Statement
-<a name="API_Statement"></a>
 
 Contains a reference to a `Statement` element in a policy document that determines the result of the simulation.
 

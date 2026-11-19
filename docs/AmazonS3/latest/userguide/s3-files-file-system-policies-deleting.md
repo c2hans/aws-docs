@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-file-
 ---
 
 # Deleting file system policies
-<a name="s3-files-file-system-policies-deleting"></a>
 
 You can delete a file system policy using the Amazon S3 console and the AWS CLI.
 

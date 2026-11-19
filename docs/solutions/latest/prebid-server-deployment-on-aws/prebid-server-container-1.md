@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Prebid Server container
-<a name="prebid-server-container-1"></a>
 
 This container hosted in Amazon ECR runs the open source Prebid Server. The solution’s default container image is a customized build of the Prebid Server implementation in Java. The Dockerfiles for building this container image are located at `deployment/ecr/prebid-server/Dockerfile.alpine` and `deployment/ecr/prebid-server/Dockerfile.al2023`. An accompanying configuration file is at `deployment/ecr/prebid-server/docker-build-config.json`. This configuration file provides the version of Prebid Server through the `GIT_TAG_VERSION` parameter (`3.43.0` in this version), and defines the supported base images (`SUPPORTED_BASES`) and the default base image (`DEFAULT_BASE`).
 

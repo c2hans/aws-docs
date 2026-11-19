@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrialS
 ---
 
 # TrialSource
-<a name="API_TrialSource"></a>
 
 The source of the trial.
 

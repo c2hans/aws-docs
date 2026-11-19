@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_N
 ---
 
 # NetworkRouteDestination
-<a name="API_NetworkRouteDestination"></a>
 
 Describes the destination of a network route.
 

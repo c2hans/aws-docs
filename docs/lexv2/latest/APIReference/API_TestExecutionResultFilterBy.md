@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestExecut
 ---
 
 # TestExecutionResultFilterBy
-<a name="API_TestExecutionResultFilterBy"></a>
 
 Contains information about the method by which to filter the results of the test execution.
 

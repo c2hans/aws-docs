@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ListViews
-<a name="API_ListViews"></a>
 
 Lists the views in the caller's account and region.
 

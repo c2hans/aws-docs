@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Trust
 ---
 
 # TrustedAdvisorCheckResult
-<a name="API_TrustedAdvisorCheckResult"></a>
 
 The results of a Trusted Advisor check returned by [DescribeTrustedAdvisorCheckResult](API_DescribeTrustedAdvisorCheckResult.md).
 

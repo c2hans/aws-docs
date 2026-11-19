@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_CollectorRes
 ---
 
 # CollectorResponse
-<a name="API_CollectorResponse"></a>
 
 Describes a Fleet Advisor collector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ScanFilter
-<a name="API_ScanFilter"></a>
 
 A filter that is used to specify which resource types to scan.
 

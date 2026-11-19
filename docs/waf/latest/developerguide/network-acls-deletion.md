@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/network-acls-d
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Deleting a Firewall Manager network ACL policy
-<a name="network-acls-deletion"></a>
 
 This section describes what happens in Firewall Manager when you delete a Firewall Manager network ACL policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/state-fail.html
 ---
 
 # Fail workflow state
-<a name="state-fail"></a>
 
 **Managing state and transforming data**
 Learn about [Passing data between states with variables](workflow-variables.md) and [Transforming data with JSONata](transforming-data.md).

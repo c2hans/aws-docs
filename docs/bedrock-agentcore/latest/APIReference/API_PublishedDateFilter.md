@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # PublishedDateFilter
-<a name="API_PublishedDateFilter"></a>
 
 A publication time range for the results. Both bounds are optional, and both are inclusive. If `publishedAfter` is later than `publishedBefore`, the request fails with a `ValidationException`.
 

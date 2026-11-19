@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_ListAc
 ---
 
 # ListAccelerators
-<a name="API_ListAccelerators"></a>
 
 List the accelerators for an AWS account.
 

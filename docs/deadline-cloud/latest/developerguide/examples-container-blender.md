@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Build a Blender Docker image for GPU rendering on Deadline Cloud
-<a name="examples-container-blender"></a>
 
 The [blender-aswf-ci-base](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/containers/blender/blender-aswf-ci-base) example on the GitHub website builds a Docker image that packages Blender with the [deadline-cloud-for-blender](https://github.com/aws-deadline/deadline-cloud-for-blender) adaptor and GPU support (CUDA/OptiX) for rendering on Deadline Cloud service-managed fleets. The base image is `aswf/ci-base:2026` (Rocky Linux 8, CUDA 12.9, VFX Platform 2026).
 

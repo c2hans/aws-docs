@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # View an AWS Cloud WAN core network policy change set
-<a name="cloudwan-policy-version-view"></a>
 
 View proposed changes to a policy before deploying those changes to become the new live policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/xdcv-console-sessi
 ---
 
 # Using Xdcv with console sessions
-<a name="xdcv-console-sessions"></a>
 
 **Note**
 This configuration is not needed on Linux with Wayland.

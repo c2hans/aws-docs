@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-connecting-li
 ---
 
 # Connecting to a Amazon DCV session using the Linux client
-<a name="using-connecting-linux"></a>
 
 The steps for connecting to a Amazon DCV session are the same across all Linux clients.
 

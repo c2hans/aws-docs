@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # RollbackServiceSoftwareOptions
-<a name="API_RollbackServiceSoftwareOptions"></a>
 
 Details about the rollback options for a service software update.
 

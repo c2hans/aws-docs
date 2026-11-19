@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/update-ml-m
 ---
 
 # Updating a configured lookalike model
-<a name="update-ml-model-configured-model"></a>
 
 After you have associated a configured a lookalike model, you can update it to change information such as the name, metrics to share, or output Amazon S3 location.
 

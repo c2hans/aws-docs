@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave-cli.h
 ---
 
 # Nitro Enclaves Command Line Interface
-<a name="nitro-enclave-cli"></a>
 
 The Nitro Enclaves CLI (Nitro CLI) is a command line tool for managing the lifecycle of enclaves. You can use the Nitro CLI to create, manage, and terminate enclaves. The Nitro CLI must be installed on the Amazon EC2 parent instance.
 

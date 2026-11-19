@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Termin
 ---
 
 # TerminateWorkflowExecution
-<a name="API_TerminateWorkflowExecution"></a>
 
 Records a `WorkflowExecutionTerminated` event and forces closure of the workflow execution identified by the given domain, runId, and workflowId. The child policy, registered with the workflow type or specified when starting this execution, is applied to any open child workflow executions of this workflow execution.
 
@@ -14,7 +13,7 @@ If the identified workflow execution was in progress, it is terminated immediate
 If a runId isn't specified, then the `WorkflowExecutionTerminated` event is recorded in the history of the current open workflow with the matching workflowId in the domain.
 
 **Note**
-You should consider using [RequestCancelWorkflowExecution](API_RequestCancelWorkflowExecution.md) action instead because it allows the workflow to gracefully close while [TerminateWorkflowExecution](#API_TerminateWorkflowExecution) doesn't.
+You should consider using [RequestCancelWorkflowExecution](API_RequestCancelWorkflowExecution.md) action instead because it allows the workflow to gracefully close while [TerminateWorkflowExecution](API_TerminateWorkflowExecution.md) doesn't.
 
  **Access Control**
 

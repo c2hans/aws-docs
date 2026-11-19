@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_C
 ---
 
 # Configuration
-<a name="API_Configuration"></a>
 
 A configuration specification to be used when provisioning an application. A configuration consists of a classification, properties, and optional nested configurations. A classification refers to an application-specific configuration file. Properties are the settings you want to change in that file.
 
@@ -19,7 +18,7 @@ Required: Yes
 
  ** configurations **   <a name="emrserverless-Type-Configuration-configurations"></a>
 A list of additional configurations to apply within a configuration object.
-Type: Array of [Configuration](#API_Configuration) objects
+Type: Array of [Configuration](API_Configuration.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No
 

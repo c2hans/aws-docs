@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Tag.ht
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A tag object containing a key-value pair.
 

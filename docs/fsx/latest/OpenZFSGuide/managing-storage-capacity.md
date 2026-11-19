@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/managing-storage
 ---
 
 # Modifying provisioned SSD storage capacity and IOPS
-<a name="managing-storage-capacity"></a>
 
 When you need additional storage for your dataset, you can increase the solid state drive (SSD) storage capacity of your Amazon FSx for OpenZFS file system without any disruption to your end users or applications by using the Amazon FSx console, Amazon FSx API, or AWS Command Line Interface (AWS CLI).
 

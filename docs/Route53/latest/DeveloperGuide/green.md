@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/green.html
 ---
 
 # .green
-<a name="green"></a>
 
 Used for websites devoted to conservation, ecology, the environment, and the green lifestyle.
 

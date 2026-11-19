@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/visual-
 ---
 
 # Overview of the visual design experience interface
-<a name="visual-designer-interface-overview"></a>
 
 The visual design experience for Systems Manager Automation is a low-code visual workflow designer that helps you create automation runbooks.
 

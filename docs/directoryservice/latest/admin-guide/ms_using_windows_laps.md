@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_u
 ---
 
 # Using Windows LAPS with AWS Managed Microsoft AD
-<a name="ms_using_windows_laps"></a>
 
 Windows Local Administrator Password Solution (Windows LAPS) automatically manages and backs up local administrator passwords on domain-joined Windows machines. Passwords are stored securely in Active Directory and rotated on a configurable schedule, eliminating the security risk of shared or static local administrator passwords across your fleet.
 

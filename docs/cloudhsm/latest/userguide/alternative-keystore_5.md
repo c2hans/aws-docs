@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/alternative-ke
 ---
 
 # AWS CloudHSM KeyStore Java class for Client SDK 5
-<a name="alternative-keystore_5"></a>
 
 The AWS CloudHSM `KeyStore` class provides a special-purpose PKCS12 key store. This key store can store certificates along with your key data and correlate them to key data stored on AWS CloudHSM. The AWS CloudHSM `KeyStore` class implements the `KeyStore` Service Provider Interface (SPI) of the Java Cryptography Extension (JCE). For more information about using `KeyStore`, see [Class KeyStore](https://devdocs.io/openjdk~8/java/security/keystore).
 

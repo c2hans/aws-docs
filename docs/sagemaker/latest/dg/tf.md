@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/tf.html
 ---
 
 # Resources for using TensorFlow with Amazon SageMaker AI
-<a name="tf"></a>
 
 You can use Amazon SageMaker AI to train and deploy a model using custom TensorFlow code. The SageMaker AI Python SDK TensorFlow ModelTrainers and models and the SageMaker AI open-source TensorFlow containers can help. Use the following list of resources to find more information, based on which version of TensorFlow you're using and what you want to do.
 

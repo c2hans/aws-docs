@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/example_translate_St
 ---
 
 # Use `StartTextTranslationJob` with an AWS SDK
-<a name="example_translate_StartTextTranslationJob_section"></a>
 
 The following code examples show how to use `StartTextTranslationJob`.
 

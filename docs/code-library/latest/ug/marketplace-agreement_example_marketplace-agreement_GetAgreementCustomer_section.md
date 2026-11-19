@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-agree
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Get customer ID from an agreement using an AWS SDK
-<a name="marketplace-agreement_example_marketplace-agreement_GetAgreementCustomer_section"></a>
 
 The following code examples show how to get customer ID from an agreement.
 

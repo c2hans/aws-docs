@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListTagsForResource
-<a name="API_AWSBCMPricingCalculator_ListTagsForResource"></a>
 
  Lists all tags associated with a specified resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CrossAccoun
 ---
 
 # Cross-account log data sharing using Lambda
-<a name="CrossAccountSubscriptions-Lambda"></a>
 
 In this example, a log data recipient (account **999999999999**) sets up a Lambda function as a cross-account subscription destination, and a log data sender (account **111111111111**) creates a subscription filter that delivers log events to it.
 

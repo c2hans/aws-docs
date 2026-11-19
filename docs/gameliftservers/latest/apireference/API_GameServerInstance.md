@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # GameServerInstance
-<a name="API_GameServerInstance"></a>
 
  Additional properties, including status, that describe an EC2 instance in a game server group. Instance configurations are set with game server group properties (see `DescribeGameServerGroup`) and with the EC2 launch template that was used when creating the game server group.
 

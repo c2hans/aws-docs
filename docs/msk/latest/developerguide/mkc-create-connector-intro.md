@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/mkc-create-con
 ---
 
 # Create a connector
-<a name="mkc-create-connector-intro"></a>
 
 This procedure describes how to create a connector using the AWS Management Console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLoc
 ---
 
 # DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation
-<a name="API_DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociation"></a>
 
  Deletes a local gateway route table virtual interface group association.
 

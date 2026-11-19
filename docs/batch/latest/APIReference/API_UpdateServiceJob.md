@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateServ
 ---
 
 # UpdateServiceJob
-<a name="API_UpdateServiceJob"></a>
 
 Updates the priority of a specified service job in an AWS Batch job queue.
 

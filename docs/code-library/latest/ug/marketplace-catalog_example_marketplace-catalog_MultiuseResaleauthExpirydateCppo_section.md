@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Publish multi-use resale authorization with an expiration date using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_MultiuseResaleauthExpirydateCppo_section"></a>
 
 The following code examples show how to publish multi-use resale authorization with an expiration date for an AMI product with hourly annual pricing so a Channel Partner can use it to create a CPPO.
 

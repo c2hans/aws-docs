@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GridL
 ---
 
 # GridLayoutCanvasSizeOptions
-<a name="API_GridLayoutCanvasSizeOptions"></a>
 
 Configuration options for the canvas of a grid layout.
 

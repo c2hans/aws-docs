@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # VocabularyEntitySummary
-<a name="API_data-automation_VocabularyEntitySummary"></a>
 
 A summary of a vocabulary entity.
 

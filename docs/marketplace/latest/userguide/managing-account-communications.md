@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/managing-ac
 ---
 
 # Managing account communications
-<a name="managing-account-communications"></a>
 
 AWS Marketplace uses your AWS account root email address for important communications, including KYC verification updates and account-related requests. Monitor this address regularly and respond from the same email when requested.
 

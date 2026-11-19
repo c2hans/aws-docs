@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/dicomweb-r
 ---
 
 # Getting DICOM instance metadata from HealthImaging
-<a name="dicomweb-retrieve-instance-metadata"></a>
 
 Use the `GetDICOMInstanceMetadata` action to retrieve the metadata from a DICOM instance in a HealthImaging [ data store](getting-started-concepts.md#concept-data-store) by specifying the Series, Study, and Instance UIDs associated with the resource. The API will only return instance metadata from primary image sets unless the optional [ image set](getting-started-concepts.md#concept-image-set) parameter is provided. You can retrieve any instance metadata (from primary or non-primary image sets) in the data store by specifying the `imageSetId` as a query parameter.
 

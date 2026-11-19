@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation
 ---
 
 # Use foundation models with the SageMaker Python SDK
-<a name="jumpstart-foundation-models-use-python-sdk"></a>
 
 All JumpStart foundation models are available for programmatic deployment using the SageMaker Python SDK.
 

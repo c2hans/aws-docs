@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/transfer-to-ag
 ---
 
 # Transfer contacts to a specific agent in Connect Customer
-<a name="transfer-to-agent"></a>
 
 There are two ways to route contacts directly to an agent:
 + **Use routing criteria to prefer an agent**. This method is better when:

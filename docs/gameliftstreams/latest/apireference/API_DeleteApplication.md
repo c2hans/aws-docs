@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # DeleteApplication
-<a name="API_DeleteApplication"></a>
 
 Permanently deletes an Amazon GameLift Streams application resource. This also deletes the application content files stored with Amazon GameLift Streams. However, this does not delete the original files that you uploaded to your Amazon S3 bucket; you can delete these any time after Amazon GameLift Streams creates an application, which is the only time Amazon GameLift Streams accesses your Amazon S3 bucket.
 

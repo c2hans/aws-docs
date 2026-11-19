@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_FileV
 ---
 
 # FileVersion
-<a name="API_FileVersion"></a>
 
 Information about a version of a file.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/mapping-page.
 ---
 
 # Using the ACE Mappings page
-<a name="mapping-page"></a>
 
 AWS Partner Central provides the following ways to navigate to the **ACE Mappings** page:
 + From the App launcher, search for and choose **AWS Partner CRM connector**.

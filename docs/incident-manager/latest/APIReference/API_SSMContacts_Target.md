@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # Target
-<a name="API_SSMContacts_Target"></a>
 
 The contact or contact channel that's being engaged.
 

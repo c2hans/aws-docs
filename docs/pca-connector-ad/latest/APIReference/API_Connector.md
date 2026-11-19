@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # Connector
-<a name="API_Connector"></a>
 
  AWS Private CA Connector for Active Directory is a service that links your Active Directory with AWS Private CA. The connector brokers the exchange of certificates from AWS Private CA to domain-joined users and machines managed with Active Directory.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryResu
 ---
 
 # QueryResultsS3AccessGrantsConfiguration
-<a name="API_QueryResultsS3AccessGrantsConfiguration"></a>
 
 Specifies whether Amazon S3 access grants are enabled for query results.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::TableOptimizer IcebergConfiguration
-<a name="aws-properties-glue-tableoptimizer-icebergconfiguration"></a>
 
  IcebergConfiguration is a property type within the `AWS::Glue::TableOptimizer` resource in AWS CloudFormation. This configuration is used when setting up table optimization for Iceberg tables in AWS Glue.
 

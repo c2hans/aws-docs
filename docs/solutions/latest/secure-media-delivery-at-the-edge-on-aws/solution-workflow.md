@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Solution workflow
-<a name="solution-workflow"></a>
 
  This solution provides code constructs (as a NodeJS library) that makes it simpler to generate a token upon verifying the viewer’s permissions when playback URL is requested. Integrating token generation into authorization flow in your application is a key element in the effectiveness of the solution.
 

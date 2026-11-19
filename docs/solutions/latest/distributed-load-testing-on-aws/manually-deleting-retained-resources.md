@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Manually deleting retained resources
-<a name="manually-deleting-retained-resources"></a>
 
 After deleting the stack, see the following sections for how to delete remaining resources.
 

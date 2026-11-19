@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/edit-asse
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Editing an assessment in AWS Audit Manager
-<a name="edit-assessment"></a>
 
 You might encounter situations where you need to edit your existing assessments in AWS Audit Manager. Perhaps the scope of your audit has changed, requiring updates to the AWS accounts included in the assessment. Or, you might need to revise the list of audit owners assigned to the assessment due to personnel changes. In such cases, you can edit your active assessments and make necessary adjustments without disrupting your evidence collection.
 

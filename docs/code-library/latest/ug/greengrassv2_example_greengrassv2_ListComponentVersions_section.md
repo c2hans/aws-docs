@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/greengrassv2_exam
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `ListComponentVersions` with an AWS SDK or CLI
-<a name="greengrassv2_example_greengrassv2_ListComponentVersions_section"></a>
 
 The following code examples show how to use `ListComponentVersions`.
 

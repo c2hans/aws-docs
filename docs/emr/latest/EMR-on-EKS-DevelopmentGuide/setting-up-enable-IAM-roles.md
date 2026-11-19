@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Enable IAM Roles for the EKS cluster
-<a name="setting-up-enable-IAM-roles"></a>
 
 The following topics detail options for enabling IAM roles.
 

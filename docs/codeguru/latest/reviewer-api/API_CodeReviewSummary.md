@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_CodeRev
 ---
 
 # CodeReviewSummary
-<a name="API_CodeReviewSummary"></a>
 
 Information about the summary of the code review.
 

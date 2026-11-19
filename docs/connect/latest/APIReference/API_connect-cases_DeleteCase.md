@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DeleteCase
-<a name="API_connect-cases_DeleteCase"></a>
 
  The DeleteCase API permanently deletes a case and all its associated resources from the cases data store. After a successful deletion, you cannot:
 + Retrieve related items

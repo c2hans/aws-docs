@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_G
 ---
 
 # GrantPermissions
-<a name="API_GrantPermissions"></a>
 
 Grants permissions to the principal to access metadata in the Data Catalog and data organized in underlying data storage such as Amazon S3.
 

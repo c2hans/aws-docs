@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateDomain
 ---
 
 # UpdateDomainConfiguration
-<a name="API_UpdateDomainConfiguration"></a>
 
 Updates values stored in the domain configuration. Domain configurations for default endpoints can't be updated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/secur
 ---
 
 # AWS managed policy: AWSServiceRoleForNeptuneGraphPolicy
-<a name="security-iam-awsmanpol-slr-policy"></a>
 
 The [AWSServiceRoleForNeptuneGraphPolicy](https://console.aws.amazon.com/iam/home#policies/AWSServiceRoleForNeptuneGraphPolicy) managed policy gives Neptune Analytics graphs access to CloudWatch to publish operational and usage metrics and logs. This policy is attached to the Neptune Analytics service-linked role and is not intended to be attached to users directly.
 

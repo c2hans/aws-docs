@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/idt-custom-tes
 ---
 
 # Develop and run your own IDT test suites
-<a name="idt-custom-tests"></a>
 
 <a name="idt-byotc-idt"></a>Starting in IDT v4.0.0, IDT for FreeRTOS combines a standardized configuration setup and result format with a test suite environment that enables you to develop custom test suites for your devices and device software. You can add custom tests for your own internal validation or provide them to your customers for device verification.
 

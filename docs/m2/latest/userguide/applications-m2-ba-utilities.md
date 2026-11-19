@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/userguide/applications-m2-ba-u
 **AWS Mainframe Modernization Service (Managed Runtime Environment experience)** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization Service (Managed Runtime Environment experience) explore AWS Mainframe Modernization Service (Self-Managed Experience). Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
 
 # Configure access to utilities for managed applications
-<a name="applications-m2-ba-utilities"></a>
 
 When you refactor a mainframe application with AWS Transform for mainframe, you might need to provide support for various legacy platform utility programs, such as IDCAMS, INFUTILB, SORT, and so on, if your application depends on them. AWS Transform for mainframe refactoring provides this access with a dedicated web application that is deployed alongside modernized applications. This web application requires a configuration file, `application-utility-pgm.yml`, that you must provide. If you don't provide this configuration file, the web application can't deploy alongside your application and won't be available.
 

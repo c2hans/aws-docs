@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # S3Destination
-<a name="API_DataExports_S3Destination"></a>
 
 Describes the destination Amazon Simple Storage Service (Amazon S3) bucket name and object keys of a data exports file.
 

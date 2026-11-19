@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/advanced-
 ---
 
 # Advanced usage
-<a name="advanced-usage"></a>
 
 This section covers advanced usage patterns and techniques for the S3 Transfer Manager.
 

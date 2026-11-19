@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_MergeRouterI
 ---
 
 # MergeRouterInputConfiguration
-<a name="API_MergeRouterInputConfiguration"></a>
 
 Configuration settings for a merge router input that combines two input sources.
 

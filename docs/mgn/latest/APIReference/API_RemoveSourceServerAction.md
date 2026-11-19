@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_RemoveSource
 ---
 
 # RemoveSourceServerAction
-<a name="API_RemoveSourceServerAction"></a>
 
 Remove source server post migration custom action.
 

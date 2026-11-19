@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Index
 ---
 
 # IndexedRecoveryPoint
-<a name="API_IndexedRecoveryPoint"></a>
 
 This is a recovery point that has an associated backup index.
 

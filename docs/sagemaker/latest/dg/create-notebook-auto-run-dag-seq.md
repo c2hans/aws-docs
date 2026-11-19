@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/create-notebook-auto
 ---
 
 # Pass information to and from your notebook step
-<a name="create-notebook-auto-run-dag-seq"></a>
 
 The following sections describe ways to pass information to your notebook as environment variables and parameters.
 

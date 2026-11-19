@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_In
 ---
 
 # InsertAdBreak
-<a name="API_InsertAdBreak"></a>
 
 Inserts an ad marker in the playlist for the specified channel and duration using the ad configuration associated with the channel.
 

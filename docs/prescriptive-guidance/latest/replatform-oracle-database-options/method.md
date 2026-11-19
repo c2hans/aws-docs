@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Migration approach
-<a name="method"></a>
 
 There are two approaches for migrating Oracle Database from on premises to AWS: offline migration and online migration.
 

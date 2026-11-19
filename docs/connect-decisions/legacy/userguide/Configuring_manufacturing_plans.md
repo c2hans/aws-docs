@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/Confi
 ---
 
 # Configuring Manufacturing Plans
-<a name="Configuring_manufacturing_plans"></a>
 
 Configure Manufacturing Plans to generate material, transfer, and production requirements for components and finished good items.
 

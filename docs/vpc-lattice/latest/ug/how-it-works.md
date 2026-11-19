@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/how-it-works.html
 ---
 
 # How VPC Lattice works
-<a name="how-it-works"></a>
 
 VPC Lattice is designed to help you easily and effectively discover, secure, connect, and monitor all of the services and resources within it. Each component within VPC Lattice communicates unidirectionally or bi-directionally within the service network based on its association with the service network and its access settings. Access settings are comprised of authentication and authorization policies required for this communication.
 

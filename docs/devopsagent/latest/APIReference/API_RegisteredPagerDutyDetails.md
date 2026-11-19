@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Regi
 ---
 
 # RegisteredPagerDutyDetails
-<a name="API_RegisteredPagerDutyDetails"></a>
 
 Details specific to a registered PagerDuty service.
 

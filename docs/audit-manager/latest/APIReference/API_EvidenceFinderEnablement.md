@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Ev
 ---
 
 # EvidenceFinderEnablement
-<a name="API_EvidenceFinderEnablement"></a>
 
 The settings object that specifies whether evidence finder is enabled. This object also describes the related event data store, and the backfill status for populating the event data store with evidence data.
 

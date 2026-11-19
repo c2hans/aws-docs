@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_KubeApiServe
 ---
 
 # KubeApiServerConfigResponse
-<a name="API_KubeApiServerConfigResponse"></a>
 
 The Kubernetes API server configuration for an Amazon EKS cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-sp-managi
 ---
 
 # Stored procedures for audit policies for RDS for Db2
-<a name="db2-sp-managing-audit-policies"></a>
 
 The built-in stored procedures described in this topic manage audit policies for Amazon RDS for Db2 databases that use audit logging. For more information, see [Db2 audit logging](Db2.Options.Audit.md). To run these procedures, the master user must first connect to the `rdsadmin` database.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-objlen.
 ---
 
 # JSON.OBJLEN
-<a name="json-objlen"></a>
 
 Gets the number of keys in the object values at the path.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Recu
 ---
 
 # RecurringPrefetchConfiguration
-<a name="API_RecurringPrefetchConfiguration"></a>
 
 The configuration that defines how MediaTailor performs recurring prefetch.
 

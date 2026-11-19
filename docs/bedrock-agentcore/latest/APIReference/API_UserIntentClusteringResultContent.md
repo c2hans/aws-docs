@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # UserIntentClusteringResultContent
-<a name="API_UserIntentClusteringResultContent"></a>
 
 The user intent clustering result containing grouped user intents identified across evaluated sessions.
 

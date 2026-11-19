@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RelayAuthentication
-<a name="API_RelayAuthentication"></a>
 
 Authentication for the relay destination server—specify the secretARN where the SMTP credentials are stored, or specify an empty NoAuthentication structure if the relay destination server does not require SMTP credential authentication.
 

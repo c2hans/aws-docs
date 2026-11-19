@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAthe
 ---
 
 # AwsAthenaWorkGroupDetails
-<a name="API_AwsAthenaWorkGroupDetails"></a>
 
  Provides information about an Amazon Athena workgroup.
 

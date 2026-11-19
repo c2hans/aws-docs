@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-operati
 ---
 
 # Operating System Maintenance
-<a name="net-win-operating-system-maintenance"></a>
 
 In general, operating system maintenance across large numbers of EC2 instances can be managed by:
 + Tools specific to each operating system, such as Microsoft System Center

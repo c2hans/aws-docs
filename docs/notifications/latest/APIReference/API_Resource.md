@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Re
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
 A resource affected by or closely linked to an event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # GetUserAuthFactors
-<a name="API_GetUserAuthFactors"></a>
 
 Lists the authentication options for the currently signed-in user. Returns the following:
 

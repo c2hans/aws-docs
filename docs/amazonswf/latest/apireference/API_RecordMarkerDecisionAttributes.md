@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Record
 ---
 
 # RecordMarkerDecisionAttributes
-<a name="API_RecordMarkerDecisionAttributes"></a>
 
 Provides the details of the `RecordMarker` decision.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # KnowledgeBaseLookupInput
-<a name="API_agent-runtime_KnowledgeBaseLookupInput"></a>
 
 Contains details about the knowledge base to look up and the query to be made.
 

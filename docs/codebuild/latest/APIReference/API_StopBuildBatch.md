@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StopBu
 ---
 
 # StopBuildBatch
-<a name="API_StopBuildBatch"></a>
 
 Stops a running batch build.
 

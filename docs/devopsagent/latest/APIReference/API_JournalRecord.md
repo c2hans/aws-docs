@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Jour
 ---
 
 # JournalRecord
-<a name="API_JournalRecord"></a>
 
 Represents a journal record containing execution details and content
 

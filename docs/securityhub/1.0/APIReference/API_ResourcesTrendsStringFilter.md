@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourcesTrendsStringFilter
-<a name="API_ResourcesTrendsStringFilter"></a>
 
 A filter for string-based fields in resources trend data, such as resource type or account ID.
 

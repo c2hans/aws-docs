@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_UpdateError.html
 ---
 
 # UpdateError
-<a name="API_UpdateError"></a>
 
 Describes the error(s) encountered with the last update of the environment.
 

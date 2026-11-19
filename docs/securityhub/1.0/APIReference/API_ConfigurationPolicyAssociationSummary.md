@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Configu
 ---
 
 # ConfigurationPolicyAssociationSummary
-<a name="API_ConfigurationPolicyAssociationSummary"></a>
 
  An object that contains the details of a configuration policy association that’s returned in a `ListConfigurationPolicyAssociations` request.
 

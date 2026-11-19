@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_L
 ---
 
 # LibraryItemMember
-<a name="API_qapps_LibraryItemMember"></a>
 
 A library item is a snapshot of an Amazon Q App that can be published so the users in their Amazon Q Apps library can discover it, clone it, and run it.
 

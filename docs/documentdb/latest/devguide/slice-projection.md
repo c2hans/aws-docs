@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/slice-project
 ---
 
 # $slice
-<a name="slice-projection"></a>
 
 The `$slice` projection operator limits the number of array elements returned in a query result. It allows you to retrieve a specific number of elements from the start or end of an array field without loading the entire array.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Building a Consolidated Dashboard
-<a name="building-a-consolidated-dashboard"></a>
 
 ## Last Updated
 <a name="last-updated"></a>

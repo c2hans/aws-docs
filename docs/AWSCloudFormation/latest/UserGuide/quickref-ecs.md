@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # Amazon Elastic Container Service sample templates
-<a name="quickref-ecs"></a>
 
 Amazon Elastic Container Service (Amazon ECS) is a container management service that makes it easy to run, stop, and manage Docker containers on a cluster of Amazon Elastic Compute Cloud (Amazon EC2) instances.
 

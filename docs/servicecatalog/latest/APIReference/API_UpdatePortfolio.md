@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_U
 ---
 
 # UpdatePortfolio
-<a name="API_UpdatePortfolio"></a>
 
 Updates the specified portfolio.
 

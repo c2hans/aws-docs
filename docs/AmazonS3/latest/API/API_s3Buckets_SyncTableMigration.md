@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_SyncTa
 ---
 
 # SyncTableMigration
-<a name="API_s3Buckets_SyncTableMigration"></a>
 
 Migrates the changes in the source table since the previous start or sync, such as added and deleted source objects, into the destination table. The sync runs asynchronously: this operation returns the migration ID of the sync and its initial state, and you track progress with `GetTableMigration`.
 

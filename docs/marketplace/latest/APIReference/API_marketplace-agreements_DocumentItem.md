@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # DocumentItem
-<a name="API_marketplace-agreements_DocumentItem"></a>
 
 Includes the list of references to legal resources proposed by the proposer to the acceptor. Each `DocumentItem` refers to an individual reference.
 
@@ -17,8 +16,8 @@ In the following list, the required parameters are described first.
 Category of the document. Document types include:
 +  `CustomEula` – A custom EULA provided by you as seller. A URL for a EULA stored in an accessible Amazon S3 bucket is required for this document type.
 +  `CustomDsa` – A custom Data Subscription Agreement (DSA) provided by you as seller. A URL for a DSA stored in an accessible Amazon S3 bucket is required for this document type.
-+  `StandardEula` – The Standard Contract for AWS Marketplace (SCMP). For more information about SCMP, see the AWS Marketplace Seller Guide. You don’t provide a URL for this type because it’s managed by AWS Marketplace.
-+  `StandardDsa` – DSA for AWS Marketplace. For more information about the DSA, see the AWS Data Exchange User Guide. You don’t provide a URL for this type because it’s managed by AWS Marketplace.
++  `StandardEula` – The Standard Contract for AWS Marketplace (SCMP). For more information about SCMP, see the AWS Marketplace Seller Guide. You don't provide a URL for this type because it's managed by AWS Marketplace.
++  `StandardDsa` – DSA for AWS Marketplace. For more information about the DSA, see the AWS Data Exchange User Guide. You don't provide a URL for this type because it's managed by AWS Marketplace.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 4096.
 Pattern: `(.)+`

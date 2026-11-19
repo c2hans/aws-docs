@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Creat
 ---
 
 # CreateProject
-<a name="API_CreateProject"></a>
 
 Creates a project.
 

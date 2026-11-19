@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Nwana's typology and the rise of software agents
-<a name="nwana-typology"></a>
 
 The formalization of the software agent concept in the mid-1990s marked a turning point in the evolution of intelligent systems. Among the most influential contributions to this formalization is Hyacinth S. Nwana's seminal paper, [Software Agents: An Overview](https://teaching.shu.ac.uk/aces/rh1/elearning/multiagents/introduction/nwana.pdf)** **(Nwana 1996), which provided one of the first comprehensive frameworks for categorizing and understanding software agents across various dimensions.
 

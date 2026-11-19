@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/example_kinesis_ListS
 ---
 
 # Use `ListStreamConsumers` with an AWS SDK
-<a name="example_kinesis_ListStreamConsumers_section"></a>
 
 The following code example shows how to use `ListStreamConsumers`.
 

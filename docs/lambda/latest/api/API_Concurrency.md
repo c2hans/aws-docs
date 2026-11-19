@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_Concurrency.html
 ---
 
 # Concurrency
-<a name="API_Concurrency"></a>
 
 ## Contents
 <a name="API_Concurrency_Contents"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Exponenti
 ---
 
 # ExponentialRolloutRate
-<a name="API_ExponentialRolloutRate"></a>
 
 Structure representing exponential rate of rollout for an over-the-air (OTA) task.
 

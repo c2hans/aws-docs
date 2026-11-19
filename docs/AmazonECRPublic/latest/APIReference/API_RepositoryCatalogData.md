@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # RepositoryCatalogData
-<a name="API_RepositoryCatalogData"></a>
 
 The catalog data for a repository. This data is publicly visible in the Amazon ECR Public Gallery.
 

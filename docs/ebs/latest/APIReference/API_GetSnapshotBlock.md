@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/APIReference/API_GetSnapshotB
 ---
 
 # GetSnapshotBlock
-<a name="API_GetSnapshotBlock"></a>
 
 Returns the data in a block in an Amazon Elastic Block Store snapshot.
 

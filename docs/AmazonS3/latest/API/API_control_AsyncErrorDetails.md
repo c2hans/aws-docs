@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_AsyncErr
 ---
 
 # AsyncErrorDetails
-<a name="API_control_AsyncErrorDetails"></a>
 
 Error details for the failed asynchronous operation.
 

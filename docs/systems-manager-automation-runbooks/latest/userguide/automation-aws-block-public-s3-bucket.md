@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-ConfigureS3BucketPublicAccessBlock`
-<a name="automation-aws-block-public-s3-bucket"></a>
 
  **Description**
 

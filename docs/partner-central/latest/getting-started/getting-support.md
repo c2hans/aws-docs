@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/g
 ---
 
 # Getting support
-<a name="getting-support"></a>
 
 ## Ask questions to AWS assistant
 <a name="ask-questions-amazon-q"></a>

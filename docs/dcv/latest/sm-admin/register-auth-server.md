@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/register-auth-server
 ---
 
 # register-auth-server
-<a name="register-auth-server"></a>
 
 Registers an external authentication server for use with the broker.
 

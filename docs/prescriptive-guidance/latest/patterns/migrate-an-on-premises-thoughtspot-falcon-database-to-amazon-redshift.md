@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises ThoughtSpot Falcon database to Amazon Redshift
-<a name="migrate-an-on-premises-thoughtspot-falcon-database-to-amazon-redshift"></a>
 
 *Battulga Purevragchaa and Antony Prasad Thevaraj, Amazon Web Services*
 

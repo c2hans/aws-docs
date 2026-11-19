@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial
 ---
 
 # Using Amazon ECS Windows containers with domainless gMSA using the AWS CLI
-<a name="tutorial-gmsa-windows"></a>
 
 The following tutorial shows how to create an Amazon ECS task that runs a Windows container that has credentials to access Active Directory with the AWS CLI. By using domainless gMSA, the container instance isn't joined to the domain, other applications on the instance can't use the credentials to access the domain, and tasks that join different domains can run on the same instance.
 

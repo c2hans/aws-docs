@@ -3,4 +3,3 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Transformation policy errors
-<a name="transformation-policy-errors"></a>

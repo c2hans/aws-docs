@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 11.2 – Define an approach to maintain availability
-<a name="best-practice-11-2"></a>
 
 Maintain availability by having a resilient architecture that can sustain the failure of a single technical component or AWS service. Implement mechanisms, which could include redundant capacity, load balancing, and software clusters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Connectivity
-<a name="aurora-faq-connectivity"></a>
 
 **Topics**
 + [When should I use the Data API vs. database drivers?](#aurora-faq-when-should-i-use-the-data-api-vs-database-drivers)

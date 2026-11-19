@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/p
 ---
 
 # Restrict access to an AWS Lambda function URL origin
-<a name="private-content-restricting-access-to-lambda"></a>
 
 CloudFront provides *origin access control* (OAC) for restricting access to a Lambda function URL origin.
 

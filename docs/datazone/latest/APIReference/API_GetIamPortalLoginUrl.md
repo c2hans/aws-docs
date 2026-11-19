@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetIamP
 ---
 
 # GetIamPortalLoginUrl
-<a name="API_GetIamPortalLoginUrl"></a>
 
 Gets the data portal URL for the specified Amazon DataZone domain.
 

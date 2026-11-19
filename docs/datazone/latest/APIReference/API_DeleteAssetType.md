@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteA
 ---
 
 # DeleteAssetType
-<a name="API_DeleteAssetType"></a>
 
 Deletes an asset type in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Teardown
-<a name="dashboard-teardown"></a>
 
 ## Teardown of CloudFormation deployment (Automated)
 <a name="teardown-of-cloudformation-deployment-automated"></a>

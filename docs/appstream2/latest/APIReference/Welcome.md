@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/Welcome.h
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This is the *Amazon WorkSpaces Applications API Reference*. This documentation provides descriptions and syntax for each of the actions and data types in WorkSpaces Applications. WorkSpaces Applications is a fully managed, secure application streaming service that lets you stream desktop applications to users without rewriting applications. WorkSpaces Applications manages the AWS resources that are required to host and run your applications, scales automatically, and provides access to your users on demand.
 
@@ -14,4 +13,4 @@ To learn more about WorkSpaces Applications, see the following resources:
 +  [Amazon WorkSpaces Applications product page](http://aws.amazon.com/appstream2)
 +  [Amazon WorkSpaces Applications documentation](http://aws.amazon.com/documentation/appstream2)
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

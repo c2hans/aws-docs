@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_N
 ---
 
 # NFSFileShareInfo
-<a name="API_NFSFileShareInfo"></a>
 
 The Unix file permissions and ownership information assigned, by default, to native S3 objects when an S3 File Gateway discovers them in S3 buckets. This operation is only supported in S3 File Gateways.
 

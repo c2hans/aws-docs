@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-r
 ---
 
 # Choosing the replatforming environment
-<a name="choosing-replatforming-environment"></a>
 
 We recommend that you replatform an application in the AWS Cloud to use capabilities such as [Amazon Elastic Block Store (Amazon EBS) snapshots](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html) or cloning an [EC2 instance to create an AMI](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/tkv-create-ami-from-instance.html). These capabilities help your upgrading and testing process.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-sche
 ---
 
 # Adding context attributes in EventBridge Scheduler
-<a name="managing-schedule-context-attributes"></a>
 
  Use of the following keywords in the payload you pass to the target to collect metadata about the schedule. EventBridge Scheduler replaces each keyword with its respective value when your schedule invokes the target.
 +  **`<aws.scheduler.schedule-arn>`** – The ARN of the schedule.

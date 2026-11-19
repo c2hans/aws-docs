@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/store-restore-ho
 ---
 
 # How AMI store and restore works
-<a name="store-restore-how-it-works"></a>
 
 To store and restore an AMI using S3, you use the following APIs:
 + `CreateStoreImageTask` – Stores the AMI in an S3 bucket

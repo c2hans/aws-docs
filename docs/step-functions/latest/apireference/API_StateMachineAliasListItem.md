@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_S
 ---
 
 # StateMachineAliasListItem
-<a name="API_StateMachineAliasListItem"></a>
 
 Contains details about a specific state machine alias.
 

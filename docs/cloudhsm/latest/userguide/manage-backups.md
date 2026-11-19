@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/manage-backups
 ---
 
 # Cluster backups in AWS CloudHSM
-<a name="manage-backups"></a>
 
  AWS CloudHSM makes periodic backups of your cluster at least once every 24 hours. Each backup contains encrypted copies of the following data:
 + Users (COs, CUs, and AUs)

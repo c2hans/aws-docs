@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_TagFi
 ---
 
 # TagFilter
-<a name="API_TagFilter"></a>
 
 Represents a tag.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/xray-api-sampling.h
 ---
 
 # Using sampling rules with the X-Ray API
-<a name="xray-api-sampling"></a>
 
 The AWS X-Ray SDK uses the X-Ray API to get sampling rules, report sampling results, and get quotas. You can use these APIs to get a better understanding of how sampling rules work, or to implement sampling in a language that the X-Ray SDK doesn't support.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
 ---
 
 # Collection of operational metrics
-<a name="collection-of-operational-metrics"></a>
 
  This guidance includes an option to send anonymous operational metrics to AWS. We use this data to better understand how customers it and related services and products. When activated, the following information is collected and sent to AWS:
 +  **Solution ID** - The guidance identifier.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListVolumes
-<a name="API_ListVolumes"></a>
 
 Lists the persistent volumes in a fleet.
 

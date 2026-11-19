@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Que
 ---
 
 # Query
-<a name="API_Query"></a>
 
 Defines the query to run against an object.
 

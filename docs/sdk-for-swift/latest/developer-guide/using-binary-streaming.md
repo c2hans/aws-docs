@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/usi
 ---
 
 # Binary streaming with AWS SDK for Swift
-<a name="using-binary-streaming"></a>
 
 ## Overview
 <a name="binary-streaming-overview"></a>

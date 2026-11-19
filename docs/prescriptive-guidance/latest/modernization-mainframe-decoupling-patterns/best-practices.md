@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 During the mobilization and planning stages of migration, we recommend the following best practices:
 + Perform code analysis to produce a dependency map for the mainframe applications. We recommend that you automate code analysis by using discovery tools (see the [Resources](resources.md) section) for this exercise.

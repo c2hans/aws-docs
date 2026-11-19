@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/deploy-th
 ---
 
 # Deploy the guidance
-<a name="deploy-the-solution"></a>
 
 This guidance uses [AWS CloudFormation templates and stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html) to automate its deployment. The CloudFormation templates to describe the AWS resources included in this guidance and their properties. The CloudFormation stack provisions the resources that are described in the template.
 

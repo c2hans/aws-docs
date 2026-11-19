@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-idc-s3ag.
 ---
 
 # Working with S3 Access Grants on an IAM Identity Center enabled EMR cluster
-<a name="emr-idc-s3ag"></a>
 
 You can integrate [S3 Access Grants](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants.html) with your AWS IAM Identity Center enabled EMR cluster.
 

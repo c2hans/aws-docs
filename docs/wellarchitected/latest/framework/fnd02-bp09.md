@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd02-b
 ---
 
 # FND02-BP09 Establish a process to continually review and refine permissions
-<a name="fnd02-bp09"></a>
 
  Continuously review and refine permissions to keep pace with your organization's changing needs. This process verifies that identities have requisite access only when they need it, reducing the risk of unauthorized access. A systematic approach to permission reviews strengthens security and improves operational efficiency across your cloud footprint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/vpc-interfaces.ht
 ---
 
 # VPC interfaces
-<a name="vpc-interfaces"></a>
 
 A virtual private cloud (VPC) based on the Amazon Virtual Private Cloud service is your private, logically isolated network in the AWS Cloud. You can set up a VPC interface to establish a connection between your AWS Elemental MediaConnect flow and your VPC.
 

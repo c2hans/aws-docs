@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_BatchDelet
 ---
 
 # BatchDeleteUser
-<a name="API_BatchDeleteUser"></a>
 
 Deletes multiple users from a specified Wickr network. This operation permanently removes user accounts and their associated data from the network.
 

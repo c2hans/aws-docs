@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-iam
 ---
 
 # Configuring IAM authentication for RDS Proxy
-<a name="rds-proxy-iam-setup"></a>
 
 To set up AWS Identity and Access Management (IAM) authentication for RDS Proxy in Amazon RDS, create and configure an IAM policy that grants the necessary permissions.
 

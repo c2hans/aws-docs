@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/graphics.h
 ---
 
 # .graphics
-<a name="graphics"></a>
 
 Used by those in the graphics industry.
 

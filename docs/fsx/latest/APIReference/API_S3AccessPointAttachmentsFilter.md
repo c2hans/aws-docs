@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_S3AccessPoin
 ---
 
 # S3AccessPointAttachmentsFilter
-<a name="API_S3AccessPointAttachmentsFilter"></a>
 
 A set of Name and Values pairs used to view a select set of S3 access point attachments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UtteranceB
 ---
 
 # UtteranceBotResponse
-<a name="API_UtteranceBotResponse"></a>
 
 An object that contains a response to the utterance from the bot.
 

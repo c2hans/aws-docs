@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AddTags
-<a name="API_AddTags"></a>
 
 Attaches tags to an existing Amazon OpenSearch Service domain, data source, or application.
 

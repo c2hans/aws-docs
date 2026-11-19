@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/join-auto-call.html
 ---
 
 # Joining an auto-call meeting
-<a name="join-auto-call"></a>
 
 You can use the desktop client and web app to join an auto-call meeting.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Pipeline maintenance
-<a name="pipeline-maintenance"></a>
 
  This guidance provides three features to help you manage and operate the data pipeline after it gets created.
 

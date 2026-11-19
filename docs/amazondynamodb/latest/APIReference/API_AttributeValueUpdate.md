@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_A
 ---
 
 # AttributeValueUpdate
-<a name="API_AttributeValueUpdate"></a>
 
 For the `UpdateItem` operation, represents the attributes to be modified, the action to perform on each, and the new value for each.
 

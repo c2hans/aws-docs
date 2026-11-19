@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Partner central account management
-<a name="list_partnercentral-account-management"></a>
 
 AWS Partner central account management (service prefix: `partnercentral-account-management`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

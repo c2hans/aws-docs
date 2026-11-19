@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/applying-update
 ---
 
 # Applying the service updates
-<a name="applying-updates"></a>
 
 You can start applying the service updates to your fleet from the time that the updates have an **available** status. Service updates are cumulative. In other words, any updates that you haven't applied yet are included with your latest update.
 

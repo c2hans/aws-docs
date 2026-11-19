@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # KeywordFilter
-<a name="API_KeywordFilter"></a>
 
 The information for keywords that meet a specified criteria.
 

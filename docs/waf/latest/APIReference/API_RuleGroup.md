@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RuleGroup.ht
 ---
 
 # RuleGroup
-<a name="API_RuleGroup"></a>
 
  A rule group defines a collection of rules to inspect and control web requests that you can use in a [WebACL](API_WebACL.md). When you create a rule group, you define an immutable capacity limit. If you update a rule group, you must stay within the capacity. This allows others to reuse the rule group with confidence in its capacity requirements.
 

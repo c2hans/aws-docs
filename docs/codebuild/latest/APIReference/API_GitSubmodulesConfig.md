@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_GitSub
 ---
 
 # GitSubmodulesConfig
-<a name="API_GitSubmodulesConfig"></a>
 
  Information about the Git submodules configuration for an AWS CodeBuild build project.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # AWS application design and migration strategy
-<a name="aws-application-design-and-migration-strategy"></a>
 
 Designing and documenting the future state of your application is a key migration success factor. We recommend creating a design for any type of migration strategy, no matter how simple or complex. Creating the design will surface potential blockers, dependencies, and opportunities to optimize the application even in cases where the architecture is not expected to change. In addition, the resulting design will serve as a base for further evolution after the migration.
 

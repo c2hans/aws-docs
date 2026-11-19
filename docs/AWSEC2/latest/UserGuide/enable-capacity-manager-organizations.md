@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enable-capacity-
 ---
 
 # Enabling EC2 Capacity Manager with AWS Organizations
-<a name="enable-capacity-manager-organizations"></a>
 
 You can enable EC2 Capacity Manager with AWS Organizations for organization-level visibility and management of your capacity across all member accounts. This integration allows you to monitor, analyze, and manage capacity usage from a centralized location.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SourceFlowC
 ---
 
 # SourceFlowConfig
-<a name="API_SourceFlowConfig"></a>
 
  Contains information about the configuration of the source connector used in the flow.
 

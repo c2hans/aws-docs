@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dev-endpoint-workflow.htm
 ---
 
 # Development endpoint workflow
-<a name="dev-endpoint-workflow"></a>
 
 To use an AWS Glue development endpoint, you can follow this workflow:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Prerequisites
-<a name="producersdk-javaapi-prerequisites"></a>
 
 Before you set up the Java producer SDK, ensure that you have the following prerequisites:
 + In the sample code, you provide credentials by specifying a profile that you set up in your AWS credentials profile file. If you haven't already done so, first set up your credentials profile. For more information, see [ Set up AWS Credentials and Region for Development](http://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html) in the *AWS SDK for Java*.

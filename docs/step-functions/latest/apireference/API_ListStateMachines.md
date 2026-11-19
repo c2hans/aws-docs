@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_L
 ---
 
 # ListStateMachines
-<a name="API_ListStateMachines"></a>
 
 Lists the existing state machines.
 

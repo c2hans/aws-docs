@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/scope-time-ma
 ---
 
 # Managing the scope time
-<a name="scope-time-managing"></a>
 
 Customize the scope time used to limit the data displayed on entity profiles.
 

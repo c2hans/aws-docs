@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/running
 ---
 
 # Running a diagnosis and optional remediation for unmanaged EC2 instances
-<a name="running-diagnosis-execution-ec2"></a>
 
 Use the following procedure to diagnose the network-related and VPC-related issues that might be preventing Systems Manager from managing your EC2 instances.
 

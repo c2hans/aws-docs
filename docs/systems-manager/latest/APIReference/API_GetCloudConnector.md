@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetCloudConnector
-<a name="API_GetCloudConnector"></a>
 
 Returns detailed information about a cloud connector.
 

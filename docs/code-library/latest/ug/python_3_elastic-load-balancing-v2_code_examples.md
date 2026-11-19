@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/python_3_elastic-
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Elastic Load Balancing - Version 2 examples using SDK for Python (Boto3)
-<a name="python_3_elastic-load-balancing-v2_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Python (Boto3) with Elastic Load Balancing - Version 2.
 

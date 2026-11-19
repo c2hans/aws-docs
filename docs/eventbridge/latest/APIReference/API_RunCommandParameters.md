@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_RunC
 ---
 
 # RunCommandParameters
-<a name="API_RunCommandParameters"></a>
 
 This parameter contains the criteria (either InstanceIds or a tag) used to specify which EC2 instances are to be sent the command.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Collec
 ---
 
 # CollectionConfig
-<a name="API_CollectionConfig"></a>
 
 Configuration for your collection.
 

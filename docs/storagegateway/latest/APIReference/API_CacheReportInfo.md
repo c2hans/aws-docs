@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_C
 ---
 
 # CacheReportInfo
-<a name="API_CacheReportInfo"></a>
 
 Contains all informational fields associated with a cache report. Includes name, ARN, tags, status, progress, filters, start time, and end time.
 

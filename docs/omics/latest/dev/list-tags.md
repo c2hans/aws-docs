@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/list-tags.html
 ---
 
 # Listing tags for a resource
-<a name="list-tags"></a>
 
 Follow these steps to use the AWS CLI to view a list of the AWS tags for an HealthOmics resource. If no tags have been added, the returned list is empty.
 

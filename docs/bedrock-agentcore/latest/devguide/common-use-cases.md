@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/common
 ---
 
 # Supported authentication patterns
-<a name="common-use-cases"></a>
 
 AgentCore Identity supports two primary authentication patterns that address different agent use cases. Understanding these patterns will help you choose the right approach for your specific agent implementation.
 

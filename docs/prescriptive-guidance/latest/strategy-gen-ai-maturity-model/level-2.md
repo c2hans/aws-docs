@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Generative AI maturity model level 2: Experiment
-<a name="level-2"></a>
 
 Building upon the foundational awareness established in the previous level, the Experiment level marks a crucial transition from theoretical exploration to practical implementation of generative AI technologies. At this level, organizations move beyond conceptual understanding to engage in hands-on PoC projects and pilot programs. These PoC and pilot projects are designed to validate business value and build core competencies. This level is characterized by structured experimentation, where organizations form dedicated teams, establish governance frameworks, and begin developing internal technical expertise. Through carefully controlled pilot projects, organizations can test their hypotheses about generative AI's potential while minimizing risks and maximizing learning opportunities. This sets the stage for broader implementation and scaling of successful initiatives.
 

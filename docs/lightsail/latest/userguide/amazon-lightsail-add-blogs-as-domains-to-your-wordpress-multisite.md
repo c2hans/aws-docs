@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Add blogs as domains to your WordPress Multisite on Lightsail
-<a name="amazon-lightsail-add-blogs-as-domains-to-your-wordpress-multisite"></a>
 
 A WordPress Multisite instance in Amazon Lightsail is designed to use multiple domains, or subdomains, for each blog site that you create within that instance. In this guide, we’ll show you how to add a blog site using a different domain than your main blog’s primary domain on your WordPress Multisite instance. For example, if your main blog’s primary domain is `example.com`, you can create new blog sites that use the `another-example.com` and `third-example.com` domains on the same instance.
 

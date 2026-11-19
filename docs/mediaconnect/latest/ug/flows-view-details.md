@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/flows-view-detail
 ---
 
 # Viewing the details of a flow
-<a name="flows-view-details"></a>
 
 You can view a flow's details, such as ARN, Availability Zone, status, source, entitlements, and outputs.
 

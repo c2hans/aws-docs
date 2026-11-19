@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateCon
 ---
 
 # UpdateContactList
-<a name="API_UpdateContactList"></a>
 
 Updates contact list metadata. This operation does a complete replacement.
 

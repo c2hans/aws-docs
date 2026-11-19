@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/apartments
 ---
 
 # .apartments
-<a name="apartments"></a>
 
 Used by real estate agents, landlords, and renters.
 

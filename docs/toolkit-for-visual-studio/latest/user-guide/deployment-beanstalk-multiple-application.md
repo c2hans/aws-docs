@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Multiple Application Support for .NET and Elastic Beanstalk
-<a name="deployment-beanstalk-multiple-application"></a>
 
 Using the deployment manifest, you have the ability to deploy multiple applications to the same Elastic Beanstalk environment.
 

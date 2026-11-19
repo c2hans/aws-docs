@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/first.html
 ---
 
 # $first
-<a name="first"></a>
 
 New from version 5.0.
 

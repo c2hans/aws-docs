@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/hive-metastore-iam-acce
 ---
 
 # Allow Lambda function access to external Hive metastores
-<a name="hive-metastore-iam-access-lambda"></a>
 
 To invoke a Lambda function in your account, you must create a role that has the following permissions:
 + `AWSLambdaVPCAccessExecutionRole` – An [AWS Lambda execution role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) permission to manage elastic network interfaces that connect your function to a VPC. Ensure that you have a sufficient number of network interfaces and IP addresses available.

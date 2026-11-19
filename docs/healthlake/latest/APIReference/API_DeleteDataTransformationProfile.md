@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Delet
 ---
 
 # DeleteDataTransformationProfile
-<a name="API_DeleteDataTransformationProfile"></a>
 
 Deletes a data transformation profile and all its versions, including the DRAFT and all published versions.
 

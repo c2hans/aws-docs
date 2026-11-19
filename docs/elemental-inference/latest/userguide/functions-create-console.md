@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Creating a function using the console
-<a name="functions-create-console"></a>
 
 1. Open the Elemental Inference console at [https://console.aws.amazon.com/elemental-inference/](https://console.aws.amazon.com/elemental-inference/).
 

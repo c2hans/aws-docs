@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Optimize costs for AWS Fargate tasks on Amazon ECS
-<a name="optimizer-ecs-fargate"></a>
 
 ## Overview
 <a name="optimizer-ecs-fargate-overview"></a>

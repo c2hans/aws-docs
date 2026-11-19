@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/tutorial-configuring-
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Tutorial: Configuring manual workload management (WLM) queues
-<a name="tutorial-configuring-workload-management"></a>
 
 With Amazon Redshift, you can configure manual workload management (WLM) queues to prioritize and allocate resources for different types of queries and users. Manual WLM queues allow you to control the memory and concurrency settings for specific queues, ensuring that critical workloads receive the necessary resources while preventing low-priority queries from monopolizing the system. The following sections guide you through the process of creating and configuring manual WLM queues in Amazon Redshift to meet your workload management requirements.
 

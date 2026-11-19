@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ApplicationSignals::InstrumentationConfig CodeCaptureConfiguration
-<a name="aws-properties-applicationsignals-instrumentationconfig-codecaptureconfiguration"></a>
 
 Defines what data to capture for code-level instrumentation, including arguments, return values, stack traces, local variables, and safety limits.
 

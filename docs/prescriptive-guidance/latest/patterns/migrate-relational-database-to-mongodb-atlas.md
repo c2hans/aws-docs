@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate a relational database to MongoDB Atlas on AWS
-<a name="migrate-relational-database-to-mongodb-atlas"></a>
 
 *Battulga Purevragchaa and Igor Alekseev, Amazon Web Services*
 

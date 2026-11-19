@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/web-client-con
 ---
 
 # Web Client configuration files
-<a name="web-client-config-files"></a>
 
 The Web Client configuration has two configuration files (`/etc/dcv-access-console-webclient/access-console-webclient.properties` and `/etc/dcv-access-console-webclient/access-console-webclient-secrets.properties`) that include parameters that can be configured to customize the Amazon DCV Access Console functionality connecting to different components.
 

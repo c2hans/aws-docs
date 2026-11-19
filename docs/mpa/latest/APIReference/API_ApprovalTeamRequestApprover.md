@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_ApprovalTeam
 ---
 
 # ApprovalTeamRequestApprover
-<a name="API_ApprovalTeamRequestApprover"></a>
 
 Contains details for an approver.
 

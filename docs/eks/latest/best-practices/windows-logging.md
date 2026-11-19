@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/windows-loggin
 ---
 
 # Logging
-<a name="windows-logging"></a>
 
 Containerized applications typically direct application logs to STDOUT. The container runtime traps these logs and does something with them - typically writes to a file. Where these files are stored depends on the container runtime and configuration.
 

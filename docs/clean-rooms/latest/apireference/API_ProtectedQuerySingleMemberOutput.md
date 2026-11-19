@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedQuerySingleMemberOutput
-<a name="API_ProtectedQuerySingleMemberOutput"></a>
 
 Details about the member who received the query result.
 

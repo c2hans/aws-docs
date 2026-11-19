@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_CreateData
 ---
 
 # CreateDataRetentionBot
-<a name="API_CreateDataRetentionBot"></a>
 
 Creates a data retention bot in a Wickr network. Data retention bots are specialized bots that handle message archiving and compliance by capturing and storing messages for regulatory or organizational requirements.
 

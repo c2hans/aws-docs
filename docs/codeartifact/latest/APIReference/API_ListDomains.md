@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Lis
 ---
 
 # ListDomains
-<a name="API_ListDomains"></a>
 
  Returns a list of [DomainSummary](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_PackageVersionDescription.html) objects for all domains owned by the AWS account that makes this call. Each returned `DomainSummary` object contains information about a domain.
 

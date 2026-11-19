@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/python-lambd
 ---
 
 # Use AWS Lambda layers
-<a name="python-lambda-layers"></a>
 
 There are two ways you can use layers to enable CodeGuru in Lambda functions using Python. The preferred method uses a wrapper script and only works for applications that run on Python 3.8 or 3.9. The second method works for Python 3.7, and can also be used for Python 3.8 and 3.9 if you already have a lambda wrapper or if the preferred method otherwise does not work.
 

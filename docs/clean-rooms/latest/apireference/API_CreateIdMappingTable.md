@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Crea
 ---
 
 # CreateIdMappingTable
-<a name="API_CreateIdMappingTable"></a>
 
 Creates an ID mapping table.
 

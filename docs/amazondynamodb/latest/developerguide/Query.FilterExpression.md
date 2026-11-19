@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Que
 ---
 
 # Filter expressions for the Query operation in DynamoDB
-<a name="Query.FilterExpression"></a>
 
 If you need to further refine the `Query` results, you can optionally provide a filter expression. A *filter expression* determines which items within the `Query` results should be returned to you. All of the other results are discarded.
 

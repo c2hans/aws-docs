@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/sdk-witho
 ---
 
 # Building the script file
-<a name="sdk-without-package-manager-building"></a>
 
 This section provides step-by-step instructions for creating a browser-consumable bundle from the SDK npm packages.
 

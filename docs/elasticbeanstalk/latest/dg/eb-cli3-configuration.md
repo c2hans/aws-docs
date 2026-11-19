@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-confi
 ---
 
 # Configure the EB CLI
-<a name="eb-cli3-configuration"></a>
 
 After [installing the EB CLI](eb-cli3.md#eb-cli3-install), you are ready to configure your project directory and the EB CLI by running **eb init**.The following example shows the configuration steps when running **eb init** for the first time in a project folder named `eb`.
 

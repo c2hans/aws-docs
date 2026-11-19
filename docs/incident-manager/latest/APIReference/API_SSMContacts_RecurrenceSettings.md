@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # RecurrenceSettings
-<a name="API_SSMContacts_RecurrenceSettings"></a>
 
 Information about when an on-call rotation is in effect and how long the rotation period lasts.
 

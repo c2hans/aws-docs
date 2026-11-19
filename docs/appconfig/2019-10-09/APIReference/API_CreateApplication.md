@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Cr
 ---
 
 # CreateApplication
-<a name="API_CreateApplication"></a>
 
 Creates an application. In AWS AppConfig, an application is simply an organizational construct like a folder. This organizational construct has a relationship with some unit of executable code. For example, you could create an application called MyMobileApp to organize and manage configuration data for a mobile application installed by your users.
 

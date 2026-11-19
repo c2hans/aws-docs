@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-e
 ---
 
 # Example conversational analytics output files for a call
-<a name="contact-lens-example-output-files"></a>
 
 The following sections provide examples of the output that results when conversational analytics detects issues, matches categories, indicates loudness, redacts sensitive data, and skipped analysis.
 

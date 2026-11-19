@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Heade
 ---
 
 # Headers
-<a name="API_Headers"></a>
 
 Contains a list of HTTP header names.
 

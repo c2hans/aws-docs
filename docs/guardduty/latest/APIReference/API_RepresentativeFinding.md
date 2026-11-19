@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Repres
 ---
 
 # RepresentativeFinding
-<a name="API_RepresentativeFinding"></a>
 
 Contains a representative finding for an affected resource. GuardDuty selects one finding for each affected resource, based on severity.
 

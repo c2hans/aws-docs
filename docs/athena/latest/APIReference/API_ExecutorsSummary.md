@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Executors
 ---
 
 # ExecutorsSummary
-<a name="API_ExecutorsSummary"></a>
 
 Contains summary information about an executor.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_GetSampledRe
 ---
 
 # GetSampledRequests
-<a name="API_GetSampledRequests"></a>
 
 Gets detailed information about a specified number of requests--a sample--that AWS WAF randomly selects from among the first 5,000 requests that your AWS resource received during a time range that you choose. You can specify a sample size of up to 500 requests, and you can specify any time range in the previous three hours.
 

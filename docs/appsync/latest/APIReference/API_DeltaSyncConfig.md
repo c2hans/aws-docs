@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DeltaSyn
 ---
 
 # DeltaSyncConfig
-<a name="API_DeltaSyncConfig"></a>
 
 Describes a Delta Sync configuration.
 

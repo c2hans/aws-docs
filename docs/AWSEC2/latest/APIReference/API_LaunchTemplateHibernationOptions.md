@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LaunchTem
 ---
 
 # LaunchTemplateHibernationOptions
-<a name="API_LaunchTemplateHibernationOptions"></a>
 
 Indicates whether an instance is configured for hibernation.
 

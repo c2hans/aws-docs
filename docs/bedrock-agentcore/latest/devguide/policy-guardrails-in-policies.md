@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Guardrails in policies
-<a name="policy-guardrails-in-policies"></a>
 
 This section explains how to put guardrails in policies, so that a policy’s decision depends on whether request or response content holds unsafe material. The content check itself is performed by a *guardrail*, which Policy in AgentCore calls during evaluation. Today guardrails are backed by [Amazon Bedrock Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html).
 

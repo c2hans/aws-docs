@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
 ---
 
 # Amazon Virtual Private Cloud Connectivity Options
-<a name="welcome"></a>
 
 Publication date: **April 5, 2023** ([Document revisions](document-revisions.md))
 

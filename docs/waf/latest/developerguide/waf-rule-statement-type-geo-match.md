@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-state
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Geographic match rule statement
-<a name="waf-rule-statement-type-geo-match"></a>
 
 This section explains what a geographic match statement is and how it works.
 

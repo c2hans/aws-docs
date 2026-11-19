@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-dele
 ---
 
 # Deleting a service-linked role for AWS Marketplace
-<a name="buyer-delete-service-linked-role"></a>
 
 If you no longer need to use a feature or service that requires a service-linked role, we recommend that you delete that role. That way you don’t have an unused entity that is not actively monitored or maintained. However, you must clean up the resources for your service-linked role before you can manually delete it.
 

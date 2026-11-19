@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Low level C-Function APIs
-<a name="managedintegrations-sdk-device-api"></a>
 
 Integrate your device-specific code with Managed Integrations using the provided low level C-Function APIs. This section describes the API operations available for each cluster in the AWS data model for efficient device to cloud interactions. Learn how to implement callback functions, emit events, notify attribute changes, and register clusters for your device endpoints.
 

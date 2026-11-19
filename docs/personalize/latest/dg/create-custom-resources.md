@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/create-custom-reso
 ---
 
 # Custom resources for training and deploying Amazon Personalize models
-<a name="create-custom-resources"></a>
 
  If you are using a custom recipe, after you [import data](import-data.md) you are ready to create the custom resources for training and deploying Amazon Personalize models. You use these resources to get recommendations. When you create custom resources, you do the following:
 

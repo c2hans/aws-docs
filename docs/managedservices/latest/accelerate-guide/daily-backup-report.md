@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Backup report (daily)
-<a name="daily-backup-report"></a>
 
 The backup report covers primary and secondary (when applicable) regions. It covers the status of backups (success/failure), and data on snapshots taken.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Cos
 ---
 
 # Identify your unused resources in DynamoDB
-<a name="CostOptimization_UnusedResources"></a>
 
 This section provides an overview of how to evaluate your unused resources regularly. As your application requirements evolve you should make sure no resources are unused and contributing to unnecessary Amazon DynamoDB costs. The procedures described below will use Amazon CloudWatch metrics to identify unused resources and will help you identify and take action on those resources to reduce costs.
 

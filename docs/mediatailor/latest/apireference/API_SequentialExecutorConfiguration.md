@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Sequ
 ---
 
 # SequentialExecutorConfiguration
-<a name="API_SequentialExecutorConfiguration"></a>
 
 The configuration for a `SEQUENTIAL_EXECUTOR` function. A `SEQUENTIAL_EXECUTOR` runs a sequence of child functions in order, passing data between steps through temporary data. For more information, see [SEQUENTIAL\_EXECUTOR](https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-functions-types-sequential-executor.html) in the *MediaTailor User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_AnomalousService.htm
 ---
 
 # AnomalousService
-<a name="API_AnomalousService"></a>
 
 The service within the service graph that has anomalously high fault rates.
 

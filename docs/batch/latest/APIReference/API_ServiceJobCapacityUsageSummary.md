@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ServiceJob
 ---
 
 # ServiceJobCapacityUsageSummary
-<a name="API_ServiceJobCapacityUsageSummary"></a>
 
 The capacity usage for a service job, including the unit of measure and quantity of resources being used.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-send
 ---
 
 # Testing a quantum task with the local simulator
-<a name="braket-send-to-local-simulator"></a>
 
 You can send quantum tasks directly to a local simulator for rapid prototyping and testing. This simulator runs in your local environment, so you do not need to specify an Amazon S3 location. The results are computed directly in your session. To run a quantum task on the local simulator, you must only specify the shots parameter.
 

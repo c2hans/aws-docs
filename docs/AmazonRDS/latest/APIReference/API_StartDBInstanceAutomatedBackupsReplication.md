@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_StartD
 ---
 
 # StartDBInstanceAutomatedBackupsReplication
-<a name="API_StartDBInstanceAutomatedBackupsReplication"></a>
 
 Enables replication of automated backups to a different AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/accelerate-
 ---
 
 # Accelerating SAP HANA Backup and Recovery Using Amazon FSx for NetApp ONTAP Snapshots and Commvault
-<a name="introduction"></a>
 
 *Shreejesh MV, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # ListRegistrationsFromBrandProfile
-<a name="API_ListRegistrationsFromBrandProfile"></a>
 
 Retrieves a paginated list of the registrations that were created from a brand profile through the synchronization operations.
 

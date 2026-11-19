@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/api-and-sdk-referenc
 ---
 
 # APIs, CLI, and SDKs
-<a name="api-and-sdk-reference-overview"></a>
 
 Amazon SageMaker AI provides APIs, SDKs, and a command line interface that you can use to create and manage notebook instances and train and deploy models.
 + [[Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable)](https://sagemaker.readthedocs.io/en/stable/) (Recommended)

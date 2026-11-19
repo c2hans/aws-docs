@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribeWebAppCustomization
-<a name="API_DescribeWebAppCustomization"></a>
 
 Describes the web app customization object that's identified by `WebAppId`.
 

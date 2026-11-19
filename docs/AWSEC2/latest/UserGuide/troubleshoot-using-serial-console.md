@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshoot-usi
 ---
 
 # Troubleshoot your Amazon EC2 instance using the EC2 Serial Console
-<a name="troubleshoot-using-serial-console"></a>
 
 By using EC2 Serial Console, you can troubleshoot boot, network configuration, and other issues by connecting to your instance's serial port.
 

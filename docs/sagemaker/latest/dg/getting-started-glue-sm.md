@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/getting-started-glue
 ---
 
 # Get Started with AWS Glue Interactive Sessions
-<a name="getting-started-glue-sm"></a>
 
 In this guide, you learn how to initiate an AWS Glue interactive session in SageMaker AI Studio Classic, and manage your environment with Jupyter magics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # ListGroupingAttributeDefinitions
-<a name="API_ListGroupingAttributeDefinitions"></a>
 
 Returns the current grouping configuration for this account, including all custom grouping attribute definitions that have been configured. These definitions determine how services are logically grouped based on telemetry attributes, AWS tags, or predefined mappings.
 

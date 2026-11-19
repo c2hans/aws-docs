@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsCardMedia
-<a name="API_RcsCardMedia"></a>
 
 The media content of a rich card, including the file URL, optional thumbnail, and display height.
 

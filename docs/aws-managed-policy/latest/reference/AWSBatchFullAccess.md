@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBatchFullAccess
-<a name="AWSBatchFullAccess"></a>
 
 **Description**: Provides full access for AWS Batch resources.
 

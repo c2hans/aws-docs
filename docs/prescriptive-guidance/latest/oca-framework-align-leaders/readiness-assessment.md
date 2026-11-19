@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 2.4 Organization readiness assessment
-<a name="readiness-assessment"></a>
 
 ## Overview
 <a name="readiness-assessment-overview"></a>

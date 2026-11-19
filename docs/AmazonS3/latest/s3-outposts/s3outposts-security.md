@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/s3-outposts/s3outposts-s
 ---
 
 # Security in S3 on Outposts
-<a name="s3outposts-security"></a>
 
 Cloud security at AWS is the highest priority. As an AWS customer, you benefit from data centers and network architectures that are built to meet the requirements of the most security-sensitive organizations.
 

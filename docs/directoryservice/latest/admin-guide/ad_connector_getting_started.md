@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_c
 ---
 
 # Getting started with AD Connector
-<a name="ad_connector_getting_started"></a>
 
 With AD Connector you can connect Directory Service to your existing enterprise Active Directory. When connected to your existing directory, all of your directory data remains on your domain controllers. Directory Service does not replicate any of your directory data.
 

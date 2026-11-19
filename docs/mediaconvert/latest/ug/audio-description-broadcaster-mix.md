@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/audio-description
 ---
 
 # Configuring a job for pre-mixed audio descriptions
-<a name="audio-description-broadcaster-mix"></a>
 
 If you have an input that already has pre-mixed audio descriptions, and does not contain an *audio description audio signal* or an *audio description data stream*, set **Audio description broadcaster mix** to **Broadcaster mixed AD**.
 

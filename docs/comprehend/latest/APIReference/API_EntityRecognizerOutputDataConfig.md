@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # EntityRecognizerOutputDataConfig
-<a name="API_EntityRecognizerOutputDataConfig"></a>
 
 Output data configuration.
 

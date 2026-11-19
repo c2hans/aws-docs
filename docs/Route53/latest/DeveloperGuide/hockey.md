@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hockey.htm
 ---
 
 # .hockey
-<a name="hockey"></a>
 
 Used for websites devoted to the game of hockey.
 

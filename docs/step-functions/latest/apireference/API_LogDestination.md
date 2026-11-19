@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_L
 ---
 
 # LogDestination
-<a name="API_LogDestination"></a>
 
 ## Contents
 <a name="API_LogDestination_Contents"></a>

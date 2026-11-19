@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-trails.html
 ---
 
 # Trails
-<a name="acxd-trails"></a>
 
 Query the audit trail of changes made to workspace resources. Trails use an async query pattern, submit a query, then poll for results.
 

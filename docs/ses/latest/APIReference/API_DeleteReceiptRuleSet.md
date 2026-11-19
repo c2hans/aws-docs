@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteReceip
 ---
 
 # DeleteReceiptRuleSet
-<a name="API_DeleteReceiptRuleSet"></a>
 
 Deletes the specified receipt rule set and all of the receipt rules it contains.
 

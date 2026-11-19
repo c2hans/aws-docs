@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_StopDbNode.h
 ---
 
 # StopDbNode
-<a name="API_StopDbNode"></a>
 
 Stops the specified DB node in a VM cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Datas
 ---
 
 # DatasetMetadata
-<a name="API_DatasetMetadata"></a>
 
 A structure that represents a dataset.
 

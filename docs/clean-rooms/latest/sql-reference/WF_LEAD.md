@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/WF_LEAD
 ---
 
 # LEAD window function
-<a name="WF_LEAD"></a>
 
  The LEAD window function returns the values for a row at a given offset below (after) the current row in the partition.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Advanced capabilities of Amazon Q Developer
-<a name="advanced-capabilities"></a>
 
 Although this guide focuses on using Amazon Q Developer in hands-on programming tasks, it also offers the following advanced capabilities:
 + Amazon Q Developer code transformation

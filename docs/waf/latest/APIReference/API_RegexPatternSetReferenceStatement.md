@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RegexPattern
 ---
 
 # RegexPatternSetReferenceStatement
-<a name="API_RegexPatternSetReferenceStatement"></a>
 
 A rule statement used to search web request components for matches with regular expressions. To use this, create a [RegexPatternSet](API_RegexPatternSet.md) that specifies the expressions that you want to detect, then use the ARN of that set in this statement. A web request matches the pattern set rule statement if the request component matches any of the patterns in the set. To create a regex pattern set, see [CreateRegexPatternSet](API_CreateRegexPatternSet.md).
 

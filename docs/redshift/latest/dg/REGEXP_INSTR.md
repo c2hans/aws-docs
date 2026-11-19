@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/REGEXP_INSTR.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # REGEXP\_INSTR function
-<a name="REGEXP_INSTR"></a>
 
 Searches a string for a regular expression pattern and returns an integer that indicates the beginning position or ending position of the matched substring. If no match is found, then the function returns `0`. REGEXP\_INSTR is similar to the [POSITION](r_POSITION.md) function, but with REGEXP\_INSTR, you can search a string for a regular expression pattern. For more information about regular expressions, see [POSIX operators](pattern-matching-conditions-posix.md) and [Regular expression](https://en.wikipedia.org/wiki/Regular_expression) in Wikipedia.
 

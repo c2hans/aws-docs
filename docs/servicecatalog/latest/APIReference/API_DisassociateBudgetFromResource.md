@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DisassociateBudgetFromResource
-<a name="API_DisassociateBudgetFromResource"></a>
 
 Disassociates the specified budget from the specified resource.
 

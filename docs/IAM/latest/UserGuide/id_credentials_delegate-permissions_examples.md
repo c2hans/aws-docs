@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_dele
 ---
 
 # Example policies for administering IAM resources
-<a name="id_credentials_delegate-permissions_examples"></a>
 
 Following are examples of IAM policies that allow users to perform tasks associated with managing IAM users, groups, and credentials. This includes policies that permit users manage their own passwords, access keys, and multi-factor authentication (MFA) devices.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CustomConsolidationConfigurationInput
-<a name="API_CustomConsolidationConfigurationInput"></a>
 
 Input for a custom consolidation configuration.
 

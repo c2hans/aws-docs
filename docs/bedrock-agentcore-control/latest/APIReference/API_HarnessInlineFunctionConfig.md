@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessInlineFunctionConfig
-<a name="API_HarnessInlineFunctionConfig"></a>
 
 Configuration for an inline function tool. When the agent calls this tool, the tool call is returned to the caller for external execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Automat
 ---
 
 # AutomationRulesResourceFieldsUpdateV2
-<a name="API_AutomationRulesResourceFieldsUpdateV2"></a>
 
 Allows you to define the structure for modifying specific fields of resources.
 

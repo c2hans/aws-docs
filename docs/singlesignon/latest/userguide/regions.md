@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/regions.ht
 ---
 
 # IAM Identity Center Region data storage and operations
-<a name="regions"></a>
 
 Learn how IAM Identity Center handles data storage and operations across AWS Regions.
 

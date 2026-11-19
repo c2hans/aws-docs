@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_DeleteResour
 ---
 
 # DeleteResourceShare
-<a name="API_DeleteResourceShare"></a>
 
 Deletes the specified resource share.
 

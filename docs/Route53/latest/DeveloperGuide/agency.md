@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/agency.htm
 ---
 
 # .agency
-<a name="agency"></a>
 
 Used by any businesses or groups that identify as agencies.
 

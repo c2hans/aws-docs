@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMR
 ---
 
 # Copying data between DynamoDB and HDFS
-<a name="EMRforDynamoDB.CopyingData.HDFS"></a>
 
 If you have data in a DynamoDB table, you can use Hive to copy the data to the Hadoop Distributed File System (HDFS).
 

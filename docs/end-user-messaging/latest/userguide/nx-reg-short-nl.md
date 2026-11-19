@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Netherlands
-<a name="nx-reg-short-nl"></a>
 
 To send messages that use a short code in Netherlands, you must complete the Netherlands short code registration.
 

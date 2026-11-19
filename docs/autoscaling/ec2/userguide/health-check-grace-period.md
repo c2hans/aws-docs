@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/health-check-g
 ---
 
 # Set the health check grace period for an Auto Scaling group
-<a name="health-check-grace-period"></a>
 
 When an Amazon EC2 Auto Scaling health check determines that an `InService` instance is unhealthy, it replaces it with a new instance. The health check grace period specifies the minimum amount of time (in seconds) to keep a new instance in service before terminating it if it's found to be unhealthy.
 

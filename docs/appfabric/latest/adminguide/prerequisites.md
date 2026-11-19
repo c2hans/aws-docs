@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/prerequisite
 ---
 
 # Prerequisites and recommendations to use AWS AppFabric
-<a name="prerequisites"></a>
 
 If you're a new AWS customer, complete the setup prerequisites that are listed on this page before you start using AWS AppFabric for security. For these setup procedures, you use the AWS Identity and Access Management (IAM) service. For complete information about IAM, see the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/).
 

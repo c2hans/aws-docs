@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SaudiArabiaAdditionalInfo
-<a name="API_taxSettings_SaudiArabiaAdditionalInfo"></a>
 
  Additional tax information associated with your TRN in Saudi Arabia.
 

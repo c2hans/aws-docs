@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/monito
 ---
 
 # Monitor usage
-<a name="monitor-usage"></a>
 
 ![Monitor usage](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_resource_usage.png)
 

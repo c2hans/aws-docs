@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_SendEven
 ---
 
 # SendEvent
-<a name="API_SendEvent"></a>
 
 Sends an event to a room. Use this within your application’s business logic to send events to clients of a room; e.g., to notify clients to change the way the chat UI is rendered.
 

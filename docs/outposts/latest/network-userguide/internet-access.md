@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/network-userguide/intern
 ---
 
 # Internet access for AWS Outposts workloads
-<a name="internet-access"></a>
 
 This section explains how AWS Outposts workloads can access the internet in the following ways:
 + Through the parent AWS Region

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyDef
 ---
 
 # ModifyDefaultCreditSpecification
-<a name="API_ModifyDefaultCreditSpecification"></a>
 
 Modifies the default credit option for CPU usage of burstable performance instances. The default credit option is set at the account level per AWS Region, and is specified per instance family. All new burstable performance instances in the account launch using the default credit option.
 

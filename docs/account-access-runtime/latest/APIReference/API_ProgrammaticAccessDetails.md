@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access-runtime/latest/APIReferen
 ---
 
 # ProgrammaticAccessDetails
-<a name="API_ProgrammaticAccessDetails"></a>
 
 A set of temporary AWS credentials for programmatic access. Treat these values as sensitive.
 

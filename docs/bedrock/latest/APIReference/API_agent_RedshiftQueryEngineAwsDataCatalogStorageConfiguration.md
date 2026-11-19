@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Re
 ---
 
 # RedshiftQueryEngineAwsDataCatalogStorageConfiguration
-<a name="API_agent_RedshiftQueryEngineAwsDataCatalogStorageConfiguration"></a>
 
 Contains configurations for storage in AWS Glue Data Catalog.
 

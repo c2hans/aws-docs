@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/ss-endpoints-table.h
 ---
 
 # Identifiers for service-specific endpoints
-<a name="ss-endpoints-table"></a>
 
 For information on how and where to use the identifiers in the following table, see [Service-specific endpoints](feature-ss-endpoints.md).
 

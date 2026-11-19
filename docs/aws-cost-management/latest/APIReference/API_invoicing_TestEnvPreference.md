@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TestEnvPreference
-<a name="API_invoicing_TestEnvPreference"></a>
 
 Contains configuration settings for testing the procurement portal integration in a non-production environment.
 

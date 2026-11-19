@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Types
 ---
 
 # Amazon Timestream Write
-<a name="API_Types_Amazon_Timestream_Write"></a>
 
 The following data types are supported by Amazon Timestream Write:
 +  [BatchLoadProgressReport](API_BatchLoadProgressReport.md)

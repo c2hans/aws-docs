@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/dg/deleting-namespaces.
 ---
 
 # Deleting an AWS Cloud Map namespace
-<a name="deleting-namespaces"></a>
 
 After you're done using a namespace, you can delete it. When you delete a namespace, you can no longer use it to register or discover service instances.
 

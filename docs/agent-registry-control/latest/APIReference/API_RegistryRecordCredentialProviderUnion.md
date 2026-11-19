@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # RegistryRecordCredentialProviderUnion
-<a name="API_RegistryRecordCredentialProviderUnion"></a>
 
 The credential provider details for a registry record. Exactly one member is populated, matching the configured credential provider type.
 

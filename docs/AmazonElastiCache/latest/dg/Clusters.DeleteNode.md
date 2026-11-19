@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Clusters.Del
 ---
 
 # Removing nodes from an ElastiCache cluster
-<a name="Clusters.DeleteNode"></a>
 
 You can delete a node from a Valkey, Memcached, or Redis OSS cluster using the AWS Management Console, the AWS CLI, or the ElastiCache API.
 

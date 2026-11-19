@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Features and benefits
-<a name="features-and-benefits"></a>
 
 The Security Automations for AWS WAF solution provides the following features and benefits.
 

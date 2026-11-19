@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # ListTrackerConsumers
-<a name="API_WaypointTracking_ListTrackerConsumers"></a>
 
 Lists geofence collections currently associated to the given tracker resource.
 

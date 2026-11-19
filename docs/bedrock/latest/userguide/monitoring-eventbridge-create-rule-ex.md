@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-even
 ---
 
 # [Example] Create a rule to handle Amazon Bedrock state change events
-<a name="monitoring-eventbridge-create-rule-ex"></a>
 
 This example shows how to set up notification of Amazon Bedrock state change events. You configure an Amazon Simple Notification Service topic, subscribe to the topic, and create a rule in Amazon EventBridge to notify you of state changes.
 

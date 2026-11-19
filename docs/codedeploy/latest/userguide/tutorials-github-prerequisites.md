@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-gi
 ---
 
 # Prerequisites
-<a name="tutorials-github-prerequisites"></a>
 
 Before you start this tutorial, do the following:
 + Install Git on your local machine. To install Git, see [Git downloads](http://git-scm.com/downloads).

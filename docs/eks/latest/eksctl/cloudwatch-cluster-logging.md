@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/cloudwatch-cluster-log
 ---
 
 # CloudWatch logging
-<a name="cloudwatch-cluster-logging"></a>
 
 This topic explains how to configure Amazon CloudWatch logging for your EKS cluster’s control plane components. CloudWatch logging provides visibility into your cluster’s control plane operations, which is essential for troubleshooting issues, auditing cluster activities, and monitoring the health of your Kubernetes components.
 

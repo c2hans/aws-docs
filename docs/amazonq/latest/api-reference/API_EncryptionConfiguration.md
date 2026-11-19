@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Encrypt
 ---
 
 # EncryptionConfiguration
-<a name="API_EncryptionConfiguration"></a>
 
 Provides the identifier of the AWS KMS key used to encrypt data indexed by Amazon Q Business. Amazon Q Business doesn't support asymmetric keys.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # France
-<a name="nx-reg-short-fr"></a>
 
 To send messages that use a short code in France, you must complete the France short code registration.
 

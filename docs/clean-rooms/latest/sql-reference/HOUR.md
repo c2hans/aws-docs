@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/HOUR.ht
 ---
 
 # HOUR function
-<a name="HOUR"></a>
 
 The HOUR function is a time extraction function that takes a time or timestamp as input and returns the hour component (a value between 0 and 23).
 

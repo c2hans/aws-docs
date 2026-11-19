@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/customizing-quick
 ---
 
 # Setting a default theme for AWS Quick analyses with the AWS Quick APIs
-<a name="customizing-quicksight-default-theme"></a>
 
 **To set a default theme by using the API**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_UpdateAp
 ---
 
 # UpdateApplicationResourceLifecycle
-<a name="API_UpdateApplicationResourceLifecycle"></a>
 
 Modifies lifecycle settings for an application.
 

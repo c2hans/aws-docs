@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/speke/latest/documentation/kid-override.
 ---
 
 # SPEKE API v1 - Overriding the key identifier
-<a name="kid-override"></a>
 
 The encryptor creates a new key identifier (KID) each time that it rotates keys. It passes the KID to the DRM key provider in its requests. Almost always, the key provider responds using the same KID, but it can provide a different value for the KID in the response.
 

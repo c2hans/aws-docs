@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConnectionTypeVar
 ---
 
 # ConnectionTypeVariant
-<a name="API_ConnectionTypeVariant"></a>
 
 Represents a variant of a connection type in AWS Glue. Connection type variants provide specific configurations and behaviors for different implementations of the same general connection type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Api backendEnvironmentName GenerateModels
-<a name="backend-appid-api-backendenvironmentname-generatemodels"></a>
 
 The generated datastore models for your Amplify app. Web clients can consume these to use the datastore.
 

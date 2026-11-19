@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # PrivatePricingAddendum
-<a name="API_billing_PrivatePricingAddendum"></a>
 
 The details of a private pricing addendum contract.
 

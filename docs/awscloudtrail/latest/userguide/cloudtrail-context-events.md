@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # Enrich CloudTrail events by adding resource tag keys and IAM global condition keys
-<a name="cloudtrail-context-events"></a>
 
 You can enrich CloudTrail management events and data events by adding resource tag keys, principal tag keys, and IAM global condition keys when you create or update an event data store. This allows you to categorize, search, and analyze CloudTrail events based on the business context, such as cost allocation and financial management, operations, and data security requirements. You can analyze events by running queries in CloudTrail Lake. You can also choose to [federate](query-federation.md) your event data store and run queries in Amazon Athena. You can add resource tag keys and IAM global condition keys to an event data store using the [CloudTrail console](query-event-data-store-cloudtrail.md), [AWS CLI](lake-cli-manage-eds.md#lake-cli-put-event-configuration), and SDKs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Using wildcards with Hook target names
-<a name="wildcard-hook-targets"></a>
 
 You can use wildcards as part of the target name. You can use wildcard characters (`*` and `?`) within your Hook target names. The asterisk (`*`) represents any combination of characters. The question mark (`?`) represents any single character. You can use multiple `*` and `?` characters in a target name.
 

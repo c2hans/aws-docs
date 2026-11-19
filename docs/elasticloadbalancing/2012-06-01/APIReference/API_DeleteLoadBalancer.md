@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # DeleteLoadBalancer
-<a name="API_DeleteLoadBalancer"></a>
 
 Deletes the specified load balancer.
 

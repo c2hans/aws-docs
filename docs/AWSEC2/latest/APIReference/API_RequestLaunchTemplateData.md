@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RequestLa
 ---
 
 # RequestLaunchTemplateData
-<a name="API_RequestLaunchTemplateData"></a>
 
 The information to include in the launch template.
 

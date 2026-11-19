@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/image-reci
 ---
 
 # List and view image recipe details
-<a name="image-recipe-details"></a>
 
 This section describes the various ways that you can find information and view details for your EC2 Image Builder image recipes.
 

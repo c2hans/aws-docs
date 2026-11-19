@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_Cre
 ---
 
 # CreateSavingsPlan
-<a name="API_CreateSavingsPlan"></a>
 
 Creates a Savings Plan.
 

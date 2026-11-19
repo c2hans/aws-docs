@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # RegistryRecordCredentialProviderConfiguration
-<a name="API_RegistryRecordCredentialProviderConfiguration"></a>
 
 A credential provider configuration that specifies how to authenticate when fetching descriptor content from a registry record's source URL.
 

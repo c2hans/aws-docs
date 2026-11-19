@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_AgeR
 ---
 
 # AgeRange
-<a name="API_AgeRange"></a>
 
 Structure containing the estimated age range, in years, for a face.
 

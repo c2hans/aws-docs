@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Trai
 ---
 
 # TrainingData
-<a name="API_TrainingData"></a>
 
 The dataset used for training.
 

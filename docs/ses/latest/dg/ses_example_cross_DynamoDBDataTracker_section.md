@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_cross_DynamoDB
 ---
 
 # Create a web application to track DynamoDB data
-<a name="ses_example_cross_DynamoDBDataTracker_section"></a>
 
 The following code examples show how to create a web application that tracks work items in an Amazon DynamoDB table and uses Amazon Simple Email Service (Amazon SES) to send reports.
 

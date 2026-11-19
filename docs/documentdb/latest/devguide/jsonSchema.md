@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/jsonSchema.ht
 ---
 
 # $jsonSchema
-<a name="jsonSchema"></a>
 
 New from version 4.0.
 

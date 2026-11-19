@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Upda
 ---
 
 # UpdateStage
-<a name="API_UpdateStage"></a>
 
 Updates a stage’s configuration.
 

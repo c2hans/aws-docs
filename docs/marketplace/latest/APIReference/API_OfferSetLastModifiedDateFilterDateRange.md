@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferSetLastModifiedDateFilterDateRange
-<a name="API_OfferSetLastModifiedDateFilterDateRange"></a>
 
 Allows filtering on the `LastModifiedDate` of an offer set with date range as input.
 

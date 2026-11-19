@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Gremlin link prediction queries using link-prediction models in Neptune ML
-<a name="machine-learning-gremlin-link-prediction-queries"></a>
 
 Link-prediction models can solve problems such as the following:
 + **Head-node prediction**: Given a vertex and an edge type, what vertices is that vertex likely to link from?

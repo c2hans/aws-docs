@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # User journeys
-<a name="next-gen-api-journeys-actions"></a>
 
 | Action | Method | Description |
 | --- | --- | --- |

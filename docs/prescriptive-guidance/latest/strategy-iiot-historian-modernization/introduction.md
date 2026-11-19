@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ii
 ---
 
 # Modernizing data historians for the manufacturing industry in the AWS Cloud
-<a name="introduction"></a>
 
 *Devender Satija, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeTopicV2
-<a name="API_DescribeTopicV2"></a>
 
 Describes a Q topic.
 

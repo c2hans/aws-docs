@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-DataFresh
 ---
 
 # DataFreshness
-<a name="dqdl-rule-types-DataFreshness"></a>
 
 Checks the freshness of data in a column by evaluating the difference between the current time and the values of a date column. You can specify a time-based expression for this rule type to make sure that column values are up to date.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DynamoDB::GlobalTable ReadProvisionedThroughputSettings
-<a name="aws-properties-dynamodb-globaltable-readprovisionedthroughputsettings"></a>
 
 Allows you to specify the read capacity settings for a replica table or a replica global secondary index when the `BillingMode` is set to `PROVISIONED`. You must specify a value for either `ReadCapacityUnits` or `ReadCapacityAutoScalingSettings`, but not both. You can switch between fixed capacity and auto scaling.
 

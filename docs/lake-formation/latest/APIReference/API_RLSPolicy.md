@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_R
 ---
 
 # RLSPolicy
-<a name="API_RLSPolicy"></a>
 
 A structure that describes a row-level security policy, including the columns its filter expression references and the filter expression itself.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanT
 ---
 
 # HumanTaskConfig
-<a name="API_HumanTaskConfig"></a>
 
 Information required for human workers to complete a labeling task.
 

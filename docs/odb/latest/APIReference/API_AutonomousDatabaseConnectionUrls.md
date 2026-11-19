@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AutonomousDa
 ---
 
 # AutonomousDatabaseConnectionUrls
-<a name="API_AutonomousDatabaseConnectionUrls"></a>
 
 The connection URLs for accessing tools and services for an Autonomous Database.
 

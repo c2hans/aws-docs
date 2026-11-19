@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/sftp-connector
 ---
 
 # VPC connectivity for SFTP connectors
-<a name="sftp-connectors-vpc-overview"></a>
 
 AWS Transfer Family SFTP connectors support connectivity to remote SFTP servers through your VPC environments using Amazon VPC Lattice. This enables you to connect with privately hosted SFTP servers or route internet traffic through your VPC's security controls, and use your own NAT gateways and Elastic IP addresses.
 

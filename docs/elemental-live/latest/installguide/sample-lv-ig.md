@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/installguide/sampl
 ---
 
 # Sample install
-<a name="sample-lv-ig"></a>
 
 Following is a screen printout of a typical install for AWS Elemental Live. It shows the prompts and possible responses.
 

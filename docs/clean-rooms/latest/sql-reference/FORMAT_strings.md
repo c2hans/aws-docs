@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/FORMAT_
 ---
 
 # Datetime format strings
-<a name="FORMAT_strings"></a>
 
 You can use datetime patterns in the following common scenarios:
 + When working with CSV and JSON data sources to parse and format datetime content

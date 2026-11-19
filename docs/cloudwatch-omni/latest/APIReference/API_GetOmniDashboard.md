@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # GetOmniDashboard
-<a name="API_GetOmniDashboard"></a>
 
 Retrieves a dashboard by ID within a space.
 

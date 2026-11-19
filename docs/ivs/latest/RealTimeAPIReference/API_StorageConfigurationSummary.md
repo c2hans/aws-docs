@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Stor
 ---
 
 # StorageConfigurationSummary
-<a name="API_StorageConfigurationSummary"></a>
 
 Summary information about a storage configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DescribeNFSFileShares
-<a name="API_DescribeNFSFileShares"></a>
 
 Gets a description for one or more Network File System (NFS) file shares from an S3 File Gateway. This operation is only supported for S3 File Gateways.
 

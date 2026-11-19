@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Adding the SSL option
-<a name="Appendix.Oracle.Options.SSL.OptionGroup"></a>
 
 To use SSL, your RDS for Oracle DB instance must be associated with an option group that includes the `SSL` option.
 

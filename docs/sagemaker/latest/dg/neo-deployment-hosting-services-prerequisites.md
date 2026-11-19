@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-deployment-hosti
 ---
 
 # Prerequisites
-<a name="neo-deployment-hosting-services-prerequisites"></a>
 
 **Note**
 Follow the instructions in this section if you compiled your model using AWS SDK for Python (Boto3), AWS CLI, or the SageMaker AI console.

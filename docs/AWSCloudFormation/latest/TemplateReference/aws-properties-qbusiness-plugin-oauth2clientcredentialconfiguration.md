@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QBusiness::Plugin OAuth2ClientCredentialConfiguration
-<a name="aws-properties-qbusiness-plugin-oauth2clientcredentialconfiguration"></a>
 
 Information about the OAuth 2.0 authentication credential/token used to configure a plugin.
 

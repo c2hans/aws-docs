@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/tutorial-
 ---
 
 # View event history
-<a name="tutorial-event-history"></a>
 
 This section describes how to use the CloudTrail **Event history** page on the CloudTrail console to view the last 90 days of management events for your AWS account for the current AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MSTe
 ---
 
 # MSTeamsConfiguration
-<a name="API_MSTeamsConfiguration"></a>
 
 Configuration for connecting a Microsoft Teams team to the DevOps Agent service. Use this configuration to specify which team to connect and how to route agent notifications to channels within that team.
 

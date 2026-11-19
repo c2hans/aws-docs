@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DisassociateIpAccessSettings
-<a name="API_DisassociateIpAccessSettings"></a>
 
 Disassociates IP access settings from a web portal.
 

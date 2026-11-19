@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Rule.
 ---
 
 # Rule
-<a name="API_Rule"></a>
 
 Represents a condition for a device pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Delet
 ---
 
 # DeleteRecoveryPoint
-<a name="API_DeleteRecoveryPoint"></a>
 
 Deletes the recovery point specified by a recovery point ID.
 

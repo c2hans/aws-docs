@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-prom
 ---
 
 # Detect prompt attacks with Amazon Bedrock Guardrails
-<a name="guardrails-prompt-attack"></a>
 
 Prompt attacks are user prompts intended to bypass the safety and moderation capabilities of a foundation model to generate harmful content, and ignore and override instructions specified by the developer, or extract confidential information such as system prompts.
 

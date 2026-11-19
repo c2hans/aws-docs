@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_D
 ---
 
 # DisruptionCompliance
-<a name="API_DisruptionCompliance"></a>
 
 Defines the compliance against the resiliency policy for a disruption.
 

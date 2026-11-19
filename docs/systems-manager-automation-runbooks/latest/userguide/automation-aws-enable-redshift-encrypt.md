@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableRedshiftClusterEncryption`
-<a name="automation-aws-enable-redshift-encrypt"></a>
 
  **Description**
 

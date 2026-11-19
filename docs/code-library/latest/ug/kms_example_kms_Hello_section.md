@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/kms_example_kms_H
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Hello AWS Key Management Service
-<a name="kms_example_kms_Hello_section"></a>
 
 The following code examples show how to get started using AWS Key Management Service.
 

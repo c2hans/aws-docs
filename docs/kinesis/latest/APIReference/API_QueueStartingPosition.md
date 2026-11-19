@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_QueueSta
 ---
 
 # QueueStartingPosition
-<a name="API_QueueStartingPosition"></a>
 
 The position in a data stream from which a queue begins delivering records.
 

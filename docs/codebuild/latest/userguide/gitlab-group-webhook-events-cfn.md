@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/gitlab-group-
 ---
 
 # Filter GitLab group webhook events (CloudFormation)
-<a name="gitlab-group-webhook-events-cfn"></a>
 
  To use a CloudFormation template to filter group webhook events, use the AWS CodeBuild project's `ScopeConfiguration` property. For more information about group GitLab webhooks, see [GitLab group webhooks](gitlab-group-webhook.md).
 

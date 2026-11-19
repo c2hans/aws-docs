@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EntityResolution::SchemaMapping SchemaInputAttribute
-<a name="aws-properties-entityresolution-schemamapping-schemainputattribute"></a>
 
 A configuration object for defining input data fields in AWS Entity Resolution. The `SchemaInputAttribute` specifies how individual fields in your input data should be processed and matched.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Organi
 ---
 
 # OrganizationAnalysis
-<a name="API_OrganizationAnalysis"></a>
 
 Contains an analysis of the findings across an organization.
 

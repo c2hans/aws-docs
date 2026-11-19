@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Res
 ---
 
 # ResourceSet
-<a name="API_ResourceSet"></a>
 
 The set of resources authorized by a permit. Specify either all resources in the Region or a list of specific resources.
 

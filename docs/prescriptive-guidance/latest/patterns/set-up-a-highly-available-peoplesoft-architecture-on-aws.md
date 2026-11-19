@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Set up a highly available PeopleSoft architecture on AWS
-<a name="set-up-a-highly-available-peoplesoft-architecture-on-aws"></a>
 
 *Ramanathan Muralidhar, Amazon Web Services*
 

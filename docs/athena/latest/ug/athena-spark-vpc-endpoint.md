@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/athena-spark-vpc-endpoi
 ---
 
 # Connect to Athena Spark sessions using an interface VPC endpoint
-<a name="athena-spark-vpc-endpoint"></a>
 
 For workgroups using [Apache Spark version 3.5](https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-release-versions.html#notebooks-spark-release-versions-spark-35), you can connect directly to Athena Spark sessions using an interface VPC endpoint (AWS PrivateLink) in your Virtual Private Cloud (VPC) instead of connecting over the internet. When you use an interface VPC endpoint, communication between your VPC and Athena Spark session endpoints is conducted entirely within the AWS network.
 

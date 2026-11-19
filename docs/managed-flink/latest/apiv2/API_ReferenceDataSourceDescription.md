@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Reference
 ---
 
 # ReferenceDataSourceDescription
-<a name="API_ReferenceDataSourceDescription"></a>
 
 For a SQL-based Kinesis Data Analytics application, describes the reference data source configured for an application.
 

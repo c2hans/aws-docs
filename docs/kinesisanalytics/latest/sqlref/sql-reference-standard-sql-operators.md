@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Standard SQL Operators
-<a name="sql-reference-standard-sql-operators"></a>
 
 The following topics discuss standard SQL operators:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # PaymentConnectorSummary
-<a name="API_PaymentConnectorSummary"></a>
 
 Contains summary information about a payment connector.
 

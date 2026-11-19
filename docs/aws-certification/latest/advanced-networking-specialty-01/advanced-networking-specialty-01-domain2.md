@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/advanced-networ
 ---
 
 # Content Domain 2: Network Implementation
-<a name="advanced-networking-specialty-01-domain2"></a>
 
 **Topics**
 + [Task 2.1: Implement routing and connectivity between on-premises networks and the AWS Cloud](#advanced-networking-specialty-01-domain2-task1)

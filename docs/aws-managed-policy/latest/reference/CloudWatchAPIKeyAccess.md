@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchAPIKeyAccess
-<a name="CloudWatchAPIKeyAccess"></a>
 
 **Description**: Grants permissions to call CloudWatch using API key authentication.
 

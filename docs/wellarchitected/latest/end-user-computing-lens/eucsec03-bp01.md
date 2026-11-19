@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSEC03-BP01 Restrict user permissions to the minimum required to perform their role
-<a name="eucsec03-bp01"></a>
 
  To implement the principle of least privilege when configuring AWS EUC services, define appropriate access controls for role categories like users, service desk users, first-level administrators, second-level administrators, and accounts used for automation.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/developerguide/audience-
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Delete endpoints from Amazon Pinpoint programmatically
-<a name="audience-define-remove"></a>
 
 An endpoint represents a single method of contacting one of your customers. Each endpoint can refer to a customer's email address, mobile device identifier, phone number, or other type of destination that you can send messages to. In many jurisdictions, this type of information might be considered personal. You can delete endpoints when you no longer want to message a certain destination—such as when the destination becomes unreachable, or when a customer closes an account.
 

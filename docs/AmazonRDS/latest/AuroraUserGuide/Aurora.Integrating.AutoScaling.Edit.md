@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.
 ---
 
 # Editing an auto scaling policy for an Amazon Aurora DB cluster
-<a name="Aurora.Integrating.AutoScaling.Edit"></a>
 
 You can edit a scaling policy using the AWS Management Console, the AWS CLI, or the Application Auto Scaling API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListAut
 ---
 
 # ListAutomationRulesV2
-<a name="API_ListAutomationRulesV2"></a>
 
 Returns a list of automation rules and metadata for the calling account.
 

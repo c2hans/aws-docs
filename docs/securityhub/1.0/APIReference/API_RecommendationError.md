@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Recomme
 ---
 
 # RecommendationError
-<a name="API_RecommendationError"></a>
 
 Contains information about the reason that the retrieval of a recommended policy for a finding failed.
 

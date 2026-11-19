@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/multicastwin.html
 ---
 
 # Set up multicast for Windows Server in AWS Transit Gateway
-<a name="multicastwin"></a>
 
  You'll need to perform additional steps when setting up multicast to work with transit gateways on Windows Server 2019 or 2022. To set this up you'll need to use PowerShell, and run the following commands:
 

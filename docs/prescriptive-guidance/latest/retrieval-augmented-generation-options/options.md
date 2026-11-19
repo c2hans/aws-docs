@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-a
 ---
 
 # Generative AI options for querying custom documents
-<a name="options"></a>
 
 Organizations often have various sources of structured and unstructured data. This guide focuses on how you can use generative AI to answer questions from unstructured data.
 

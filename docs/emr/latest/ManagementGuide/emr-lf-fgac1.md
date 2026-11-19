@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-lf-fgac1.
 ---
 
 # Open-table format support
-<a name="emr-lf-fgac1"></a>
 
 Amazon EMR releases 6.15.0 and higher include support for fine-grained access control based on AWS Lake Formation with Hive tables, Apache Iceberg, Apache Hudi, and Delta Lake when you read and write data with Spark SQL. Amazon EMR supports table, row, column, and cell-level access control with Apache Hudi. Amazon EMR releases 6.15.0 and higher include support for fine-grained access control at the row, column, or cell level based on AWS Lake Formation. Starting with EMR 7.12, DML and DDL operations that modify table data are supported for Apache Hive, Apache Iceberg, and Delta Lake tables using Lake Formation vended credentials.
 

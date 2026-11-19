@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Met
 ---
 
 # MetricWindow
-<a name="API_MetricWindow"></a>
 
 Contains a time interval window used for data aggregate computations (for example, average, sum, count, and so on).
 

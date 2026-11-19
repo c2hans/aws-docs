@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSOPS06-BP02 Manage regulatory changes
-<a name="dsops06-bp02"></a>
 
  Regulatory changes directly impact cloud operations, security controls, and compliance status. A regulatory change in one jurisdiction might require updates to the common baseline that affect other jurisdictions. A structured change management process helps you assess impact, implement updates, and verify compliance across jurisdictions.
 

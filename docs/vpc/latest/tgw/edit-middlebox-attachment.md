@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/edit-middlebox-attachment
 ---
 
 # Remove AWS Transit Gateway metering policy middlebox attachments
-<a name="edit-middlebox-attachment"></a>
 
 By default, metering costs are attributed to the middlebox attachment owner. However, you can modify these assignments to ensure costs are properly allocated to the actual source or destination of the traffic. You can add or remove up to 10 total middlebox attachment for a metering policy.
 

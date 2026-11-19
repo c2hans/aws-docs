@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_CreateDBCluste
 ---
 
 # CreateDBClusterSnapshot
-<a name="API_CreateDBClusterSnapshot"></a>
 
 Creates a snapshot of a DB cluster.
 

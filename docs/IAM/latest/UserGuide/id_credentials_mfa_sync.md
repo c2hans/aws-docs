@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_
 ---
 
 # Resynchronize virtual and hardware MFA devices
-<a name="id_credentials_mfa_sync"></a>
 
 You can use AWS to resynchronize your virtual and hardware multi-factor authentication (MFA) devices. If your device is not synchronized when you try to use it, the sign-in attempt fails and IAM prompts you to resynchronize the device.
 

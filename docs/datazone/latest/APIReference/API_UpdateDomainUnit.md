@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateD
 ---
 
 # UpdateDomainUnit
-<a name="API_UpdateDomainUnit"></a>
 
 Updates the domain unit.
 

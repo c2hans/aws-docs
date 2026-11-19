@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchGetThreatModelJobTasks
-<a name="API_BatchGetThreatModelJobTasks"></a>
 
 Retrieves information about one or more tasks within a threat model job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # Additional AWS services for perimeter security
-<a name="perimeter-additional-services"></a>
 
 |  |
 | --- |

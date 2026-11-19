@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Activate a Guard Hook in your account
-<a name="guard-hooks-activate-hooks"></a>
 
 The following topic shows you how to activate a Guard Hook in your account, which makes it usable in the account and Region it was activated in.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_VectorSe
 ---
 
 # VectorSearchBedrockRerankingConfiguration
-<a name="API_VectorSearchBedrockRerankingConfiguration"></a>
 
 Configuration for using Amazon Bedrock foundation models to rerank Knowledge Base vector search results. This enables more sophisticated relevance ranking using large language models.
 

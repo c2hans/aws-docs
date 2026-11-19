@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # OriginationIdentityMetadata
-<a name="API_OriginationIdentityMetadata"></a>
 
 The metadata for an origination identity associated with a pool.
 

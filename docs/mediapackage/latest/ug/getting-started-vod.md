@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/getting-started-v
 ---
 
 # Getting started with VOD content delivery in MediaPackage
-<a name="getting-started-vod"></a>
 
 This Getting Started tutorial shows you how to use the AWS Elemental MediaPackage console to ingest video on demand (VOD) content and make it available for playback.
 

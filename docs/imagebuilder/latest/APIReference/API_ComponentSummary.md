@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Com
 ---
 
 # ComponentSummary
-<a name="API_ComponentSummary"></a>
 
 A high-level summary of a component.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartEx
 ---
 
 # StartExportJobV2
-<a name="API_StartExportJobV2"></a>
 
 Starts an ad hoc export job that writes Security Hub findings to an Amazon Simple Storage Service (Amazon S3) bucket that you own. Because the export runs asynchronously, this operation returns only the `ExportJobId` of the new job; it doesn't wait for the export to finish. Use `GetExportJobV2` to poll the job, and `ListExportJobsV2` to view the export jobs in your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/rule-refer
 ---
 
 # LambdaInvoke
-<a name="rule-reference-LambdaInvoke"></a>
 
 When you create a condition, you can add the `LambdaInvoke` rule. This section provides a reference for the rule parameters. For more information about rules and conditions, see [How do stage conditions work?](concepts-how-it-works-conditions.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Authorization in Amazon SageMaker Unified Studio
-<a name="security-authorization"></a>
 
 Amazon SageMaker Unified Studio’s interface consists of a management console within AWS and an off-console web application.
 

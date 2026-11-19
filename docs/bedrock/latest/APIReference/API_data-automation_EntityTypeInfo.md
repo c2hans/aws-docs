@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # EntityTypeInfo
-<a name="API_data-automation_EntityTypeInfo"></a>
 
 Information about an entity type.
 

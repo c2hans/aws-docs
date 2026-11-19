@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # ContentBlockDeltaEvent
-<a name="API_runtime_ContentBlockDeltaEvent"></a>
 
 The content block delta event.
 

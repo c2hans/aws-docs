@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/userguide/what-is-in
 ---
 
 # What is AWS Interconnect?
-<a name="what-is-interconnect"></a>
 
 ## What is AWS Interconnect?
 <a name="what-is-title"></a>

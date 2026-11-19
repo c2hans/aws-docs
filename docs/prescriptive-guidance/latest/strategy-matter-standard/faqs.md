@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # FAQs
-<a name="faqs"></a>
 
 ## What are the membership levels with Matter?
 <a name="faq-membership-levels"></a>

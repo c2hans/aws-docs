@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetList
 ---
 
 # GetListing
-<a name="API_GetListing"></a>
 
 Gets a listing (a record of an asset at a given time). If you specify a listing version, only details that are specific to that version are returned.
 

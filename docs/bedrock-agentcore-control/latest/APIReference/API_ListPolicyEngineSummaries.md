@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListPolicyEngineSummaries
-<a name="API_ListPolicyEngineSummaries"></a>
 
 Retrieves a paginated list of metadata-only policy engine summaries without decrypting customer content. This lightweight read operation returns resource identifiers, status, and timestamps for each policy engine, but does not include descriptions or status reasons. Because this operation does not require access to the customer's AWS KMS key, it is suitable for resource discovery, inventory, and integration scenarios where only metadata is needed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DataReposito
 ---
 
 # DataRepositoryFailureDetails
-<a name="API_DataRepositoryFailureDetails"></a>
 
 Provides detailed information about the data repository if its `Lifecycle` is set to `MISCONFIGURED` or `FAILED`.
 

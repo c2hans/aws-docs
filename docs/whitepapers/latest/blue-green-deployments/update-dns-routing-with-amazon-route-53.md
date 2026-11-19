@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Update DNS Routing with Amazon Route 53
-<a name="update-dns-routing-with-amazon-route-53"></a>
 
  DNS routing through record updates is a common approach to blue/green deployments. DNS is used as a mechanism for switching traffic from the blue environment to the green and vice versa when rollback is necessary. This approach works with a wide variety of environment configurations, as long as you can express the endpoint into the environment as a DNS name or IP address.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # 01-create-table.js
-<a name="DAX.client.run-application-nodejs.01-create-table"></a>
 
 The `01-create-table.js` program creates a table (`TryDaxTable`). The remaining Node.js programs in this section depend on this table.
 

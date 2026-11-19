@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # CreateClusterSnapshot
-<a name="API_elastic_CreateClusterSnapshot"></a>
 
 Creates a snapshot of an elastic cluster.
 

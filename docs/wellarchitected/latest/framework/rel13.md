@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel13.h
 ---
 
 # Plan for Disaster Recovery (DR)
-<a name="rel13"></a>
 
  Backups and redundant workload components are where disaster recovery starts, not where it ends. A disaster recovery plan sets how fast a workload returns to service and how much data it can afford to lose, then puts the strategy, testing, and automation in place to hit those targets. [RTO and RPO](rel-availability-and-recovery-objectives.md) are the objectives that anchor the plan, set from business need rather than technical convenience. Availability and disaster recovery share practices such as monitoring for failures, deploying to multiple locations, and automatic failover, but availability works on the components of a workload while disaster recovery works with discrete copies of the whole workload and measures success by time to recover after a disaster.
 

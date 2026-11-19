@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/vonage-configuring-connec
 ---
 
 # Configuring Vonage connections
-<a name="vonage-configuring-connections"></a>
 
 Vonage connections use basic authentication. You store the credential in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

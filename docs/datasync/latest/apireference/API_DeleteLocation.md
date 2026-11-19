@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_DeleteL
 ---
 
 # DeleteLocation
-<a name="API_DeleteLocation"></a>
 
 Deletes a transfer location resource from AWS DataSync.
 

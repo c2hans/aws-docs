@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentSu
 ---
 
 # ExperimentSummary
-<a name="API_ExperimentSummary"></a>
 
 Provides a summary of an experiment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHealt
 ---
 
 # GetHealthCheckStatus
-<a name="API_GetHealthCheckStatus"></a>
 
 Gets status of a specified health check.
 

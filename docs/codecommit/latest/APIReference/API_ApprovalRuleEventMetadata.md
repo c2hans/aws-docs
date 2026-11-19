@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Appro
 ---
 
 # ApprovalRuleEventMetadata
-<a name="API_ApprovalRuleEventMetadata"></a>
 
 Returns information about an event for an approval rule.
 

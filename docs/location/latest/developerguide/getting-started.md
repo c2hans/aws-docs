@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/getting-s
 ---
 
 # Get started with Amazon Location Service
-<a name="getting-started"></a>
 
 This topic helps you get started with Amazon Location Service. Follow these steps to create your first application and understand how to choose the appropriate Amazon Location API based on common use cases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_CacheCon
 ---
 
 # CacheConfig
-<a name="API_CacheConfig"></a>
 
 Describes the cache configuration for an Amplify app.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RoutePe
 ---
 
 # RoutePedestrianLegDetails
-<a name="API_RoutePedestrianLegDetails"></a>
 
 Details that are specific to a pedestrian leg.
 

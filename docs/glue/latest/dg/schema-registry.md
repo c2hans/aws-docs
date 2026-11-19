@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/schema-registry.html
 ---
 
 # AWS Glue Schema registry
-<a name="schema-registry"></a>
 
 **Note**
 AWS Glue Schema Registry is not supported in the following Regions in the AWS Glue console: Middle East (UAE).

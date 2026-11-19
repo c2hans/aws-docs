@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ams-acceler
 ---
 
 # AMS Accelerate operations plan governance best practices
-<a name="introduction"></a>
 
 *Marta Tari, Amazon Web Services*
 

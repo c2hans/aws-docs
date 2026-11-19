@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EmailRec
 ---
 
 # EmailRecipient
-<a name="API_EmailRecipient"></a>
 
 Information about the email recipient
 

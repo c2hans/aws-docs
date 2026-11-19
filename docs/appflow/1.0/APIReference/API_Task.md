@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Task.html
 ---
 
 # Task
-<a name="API_Task"></a>
 
  A class for modeling different type of tasks. Task implementation varies based on the `TaskType`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-ref
 ---
 
 # SQL naming rules
-<a name="sql-ref-naming"></a>
 
 The following sections explain the SQL naming rules in AWS Clean Rooms.
 

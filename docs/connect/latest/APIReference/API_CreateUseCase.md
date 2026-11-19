@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateUs
 ---
 
 # CreateUseCase
-<a name="API_CreateUseCase"></a>
 
 Creates a use case for an integration association.
 

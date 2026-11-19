@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fedramp/latest/userguide/aws-identity-an
 ---
 
 # AWS Identity and Access Management (IAM)
-<a name="aws-identity-and-access-management-iam"></a>
 
 This guide provides security configuration requirements and implementation examples for AWS Identity and Access Management (IAM) in accordance with FedRAMP requirements.
 

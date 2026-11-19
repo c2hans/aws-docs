@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/next-generation-sagemaker/latest/usergui
 ---
 
 # Get started with SageMaker Lakehouse integrated access controls for Athena federated queries in Amazon SageMaker Unified Studio
-<a name="lakehouse-athena-federated-queries"></a>
 
 Scaling data infrastructure creates challenges with data silos, fragmented access controls, and complex connectivity requirements. Data analysts need to access information across multiple storage systems but are frequently hindered by:
 + **Complex connectivity setup** - Configuring connections to various data sources requires technical expertise and access to configuration details that analysts may not have.

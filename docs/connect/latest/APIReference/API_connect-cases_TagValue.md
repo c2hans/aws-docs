@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # TagValue
-<a name="API_connect-cases_TagValue"></a>
 
 Object for case tag filter values.
 

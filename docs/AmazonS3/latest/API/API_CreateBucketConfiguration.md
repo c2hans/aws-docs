@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_CreateBucketConf
 ---
 
 # CreateBucketConfiguration
-<a name="API_CreateBucketConfiguration"></a>
 
 The configuration information for the bucket.
 

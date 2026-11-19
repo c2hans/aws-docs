@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/create-destination.h
 ---
 
 # Configure destination settings
-<a name="create-destination"></a>
 
 This section describes the settings that you must configure for your Firehose stream based on the destination you select.
 

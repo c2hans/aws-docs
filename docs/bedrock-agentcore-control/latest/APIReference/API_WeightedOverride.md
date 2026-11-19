@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # WeightedOverride
-<a name="API_WeightedOverride"></a>
 
 A weighted configuration bundle override that splits traffic between multiple bundle versions.
 

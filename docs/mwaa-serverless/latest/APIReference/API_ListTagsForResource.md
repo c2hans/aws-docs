@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa-serverless/latest/APIReference/API_
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Lists all tags that are associated with a specified Amazon Managed Workflows for Apache Airflow Serverless resource.
 

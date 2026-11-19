@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/examp
 ---
 
 # Use `DescribeAlarmContributors` with an AWS SDK
-<a name="example_cloudwatch_DescribeAlarmContributors_section"></a>
 
 The following code examples show how to use `DescribeAlarmContributors`.
 

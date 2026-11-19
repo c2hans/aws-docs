@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/best-practices-
 ---
 
 # Best practices for using the AWS CLI and SDKs with Neptune
-<a name="best-practices-cli-sdk"></a>
 
 By default, the AWS CLI and AWS SDKs time out after 60 seconds and automatically retry failed requests. For queries that take longer than 60 seconds to complete, this default behavior causes duplicate query execution. The retry fires a new request while the original query is still running on the server.
 

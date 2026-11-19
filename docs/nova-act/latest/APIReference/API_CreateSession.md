@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_CreateS
 ---
 
 # CreateSession
-<a name="API_CreateSession"></a>
 
 Creates a new session context within a workflow run to manage conversation state and acts.
 

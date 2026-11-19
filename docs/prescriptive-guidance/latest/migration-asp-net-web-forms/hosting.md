@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-a
 ---
 
 # Hosting ASP.NET Web Forms applications on AWS
-<a name="hosting"></a>
 
 AWS provides three options for rehosting your ASP.NET Web Forms applications: Amazon EC2, AWS Elastic Beanstalk, and containerization. Choose the approach that best fits your requirements, skills, and existing infrastructure when you migrate your ASP.NET Web Forms applications to the AWS Cloud.
 

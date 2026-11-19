@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Param
 ---
 
 # ParametersInCacheKeyAndForwardedToOrigin
-<a name="API_ParametersInCacheKeyAndForwardedToOrigin"></a>
 
 This object determines the values that CloudFront includes in the cache key. These values can include HTTP headers, cookies, and URL query strings. CloudFront uses the cache key to find an object in its cache that it can return to the viewer.
 

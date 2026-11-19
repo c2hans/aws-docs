@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-pytorch.h
 ---
 
 # PyTorch
-<a name="tutorial-pytorch"></a>
 
 ## Activating PyTorch
 <a name="tutorial-pytorch-overview"></a>

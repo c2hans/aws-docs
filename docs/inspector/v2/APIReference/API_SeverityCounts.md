@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_SeverityCo
 ---
 
 # SeverityCounts
-<a name="API_SeverityCounts"></a>
 
 An object that contains the counts of aggregated finding per severity.
 

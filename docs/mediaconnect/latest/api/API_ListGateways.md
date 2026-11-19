@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListGateways
 ---
 
 # ListGateways
-<a name="API_ListGateways"></a>
 
  Displays a list of gateways that are associated with this account. This request returns a paginated result.
 

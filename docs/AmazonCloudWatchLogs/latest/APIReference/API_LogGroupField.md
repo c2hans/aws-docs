@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # LogGroupField
-<a name="API_LogGroupField"></a>
 
 The fields contained in log events found by a `GetLogGroupFields` operation, along with the percentage of queried log events in which each field appears.
 

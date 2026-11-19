@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSPERF16-BP01 Deploy intelligent traffic shaping with security-aware bandwidth allocation for different data types
-<a name="lsperf16-bp01"></a>
 
  Develop traffic classification systems to identify life sciences data transfers and apply security and throughput policies based on sensitivity and size. Set up dynamic bandwidth allocation that prioritizes large research data transfers during off-peak times while maintaining security measures. Implement compression and de-duplication before encryption to reduce transmission volume and improve efficiency without compromising security.
 

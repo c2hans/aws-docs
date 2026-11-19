@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Configuring OpenSearch Ingestion pipelines for cross-account ingestion
-<a name="cross-account-pipelines"></a>
 
 For push-based sources such as HTTP and OTel, Amazon OpenSearch Ingestion enables you to share pipelines across AWS accounts from a virtual private cloud (VPC) to a pipeline endpoint in a separate VPC. Teams that share analytics with other teams in their organization use this feature for a more streamlined means of, for example, sharing log analytics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/complian
 ---
 
 # Compliance Validation for AWS SDK for Ruby
-<a name="compliance-validation"></a>
 
 AWS SDK for Ruby follows the [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model) through the specific Amazon Web Services (AWS) services it supports. For AWS service security information, see the [AWS service security documentation page](https://aws.amazon.com/security/?id=docs_gateway#aws-security) and [AWS services that are in scope of AWS compliance efforts by compliance program](https://aws.amazon.com/compliance/services-in-scope/).
 

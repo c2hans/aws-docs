@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_VeevaMetada
 ---
 
 # VeevaMetadata
-<a name="API_VeevaMetadata"></a>
 
  The connector metadata specific to Veeva.
 

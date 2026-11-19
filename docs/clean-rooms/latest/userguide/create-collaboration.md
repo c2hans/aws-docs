@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-coll
 ---
 
 # Creating a collaboration
-<a name="create-collaboration"></a>
 
 There are three ways to create a collaboration in AWS Clean Rooms.
 

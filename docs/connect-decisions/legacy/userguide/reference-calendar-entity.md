@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/refer
 ---
 
 # calendar
-<a name="reference-calendar-entity"></a>
 
 **Primary key (PK)**
 

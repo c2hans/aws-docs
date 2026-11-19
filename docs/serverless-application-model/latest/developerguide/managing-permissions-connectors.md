@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Managing resource permissions with AWS SAM connectors
-<a name="managing-permissions-connectors"></a>
 
 Connectors are an AWS Serverless Application Model (AWS SAM) abstract resource type, identified as `AWS::Serverless::Connector`, that provides simple and well-scoped permissions between your serverless application resources.
 

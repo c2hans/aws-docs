@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-prer
 ---
 
 # Set up permissions
-<a name="gettingstarted-prereqs-permissions"></a>
 
 To make full use of Resource Groups and Tag Editor, you might need additional permissions to tag resources or to see a resource's tag keys and values. These permissions fall into the following categories:
 + Permissions for individual services so that you can tag resources from those services and include them in resource groups.

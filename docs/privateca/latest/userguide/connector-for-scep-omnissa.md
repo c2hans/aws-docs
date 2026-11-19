@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/connector-for
 ---
 
 # Configure Omnissa Workspace ONE for Connector for SCEP
-<a name="connector-for-scep-omnissa"></a>
 
 You can use AWS Private CA as an external certificate authority (CA) with the Omnissa Workspace ONE UEM (Unified Endpoint Management) system. This guide provides instructions on how to configure Omnissa Workspace ONE after you create a SCEP connector in AWS.
 

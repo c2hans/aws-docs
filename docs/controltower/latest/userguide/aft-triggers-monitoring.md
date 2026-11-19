@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-trigge
 ---
 
 # Monitoring and traceability
-<a name="aft-triggers-monitoring"></a>
 
 Each customization execution (whether triggered by an OU change, a manual invocation, or an account request) writes an audit record to a DynamoDB table. You can use these records to understand why a customization ran, which accounts were affected, and how the execution relates to other pipeline activity.
 

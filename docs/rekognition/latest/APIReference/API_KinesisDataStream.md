@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Kine
 ---
 
 # KinesisDataStream
-<a name="API_KinesisDataStream"></a>
 
 The Kinesis data stream Amazon Rekognition to which the analysis results of a Amazon Rekognition stream processor are streamed. For more information, see [CreateStreamProcessor](API_CreateStreamProcessor.md).
 

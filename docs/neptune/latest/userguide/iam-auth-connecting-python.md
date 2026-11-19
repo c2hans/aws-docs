@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-connec
 ---
 
 # Connecting to Amazon Neptune databases using IAM authentication with Python
-<a name="iam-auth-connecting-python"></a>
 
 The `boto3` `neptunedata` client provides the simplest way to connect to an IAM-enabled Neptune database from Python. The client handles Signature Version 4 signing automatically, so you don't need to sign requests yourself.
 

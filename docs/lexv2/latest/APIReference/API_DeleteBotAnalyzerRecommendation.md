@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteBotA
 ---
 
 # DeleteBotAnalyzerRecommendation
-<a name="API_DeleteBotAnalyzerRecommendation"></a>
 
 Permanently deletes the recommendations and analysis results for a specific bot analysis request. This operation is provided for GDPR compliance and cannot be undone.
 

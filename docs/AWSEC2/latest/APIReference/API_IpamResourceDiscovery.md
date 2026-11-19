@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamResou
 ---
 
 # IpamResourceDiscovery
-<a name="API_IpamResourceDiscovery"></a>
 
 A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
 

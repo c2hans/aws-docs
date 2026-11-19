@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DeleteFirewa
 ---
 
 # DeleteFirewallManagerRuleGroups
-<a name="API_DeleteFirewallManagerRuleGroups"></a>
 
 Deletes all rule groups that are managed by AWS Firewall Manager from the specified [WebACL](API_WebACL.md).
 

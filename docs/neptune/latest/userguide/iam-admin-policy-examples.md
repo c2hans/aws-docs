@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-admin-polic
 ---
 
 # Creating IAM administrative policy statements for Amazon Neptune
-<a name="iam-admin-policy-examples"></a>
 
 ## General administrative policy examples
 <a name="iam-admin-policy-general-examples"></a>

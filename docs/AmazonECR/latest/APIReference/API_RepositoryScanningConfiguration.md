@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Reposi
 ---
 
 # RepositoryScanningConfiguration
-<a name="API_RepositoryScanningConfiguration"></a>
 
 The details of the scanning configuration for a repository.
 

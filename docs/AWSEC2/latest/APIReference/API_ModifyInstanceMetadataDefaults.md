@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyIns
 ---
 
 # ModifyInstanceMetadataDefaults
-<a name="API_ModifyInstanceMetadataDefaults"></a>
 
 Modifies the default instance metadata service (IMDS) settings at the account level in the specified AWS  Region.
 

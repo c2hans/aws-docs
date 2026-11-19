@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Stage 2: Design and implement
-<a name="stage-2"></a>
 
 In the previous stage, you set your resilience objectives. Now at the *design and implement* stage, you try to anticipate failure modes and identify design choices, as guided by the objectives you set in the previous stage. You also define strategies for change management and develop software code and infrastructure configuration. The following sections highlight AWS best practices that you should consider while taking trade-offs such as cost, complexity, and operational overhead into account.
 

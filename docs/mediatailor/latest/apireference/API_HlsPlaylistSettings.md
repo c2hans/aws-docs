@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_HlsP
 ---
 
 # HlsPlaylistSettings
-<a name="API_HlsPlaylistSettings"></a>
 
 HLS playlist configuration parameters.
 

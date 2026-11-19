@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/monitoring-console-g
 ---
 
 # Monitoring using the MediaLive console
-<a name="monitoring-console-general"></a>
 
 You can monitor the state and health of channels and multiplexes.
 

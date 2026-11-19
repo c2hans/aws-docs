@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDASEC07-BP01 Deploy continuous monitoring tools
-<a name="midasec07-bp01"></a>
 
  Implement continuous monitoring of your industrial systems to detect and respond to threats in real time. Monitoring should span cloud, edge, and on-premises systems across both IT and OT environments.
 

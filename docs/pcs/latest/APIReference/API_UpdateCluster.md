@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_UpdateCluste
 ---
 
 # UpdateCluster
-<a name="API_UpdateCluster"></a>
 
 Updates a cluster configuration. You can update the scheduler version, modify scheduler settings, and update accounting configuration for an existing cluster. For more information about updating the scheduler version, see [Updating the scheduler version on a cluster](https://docs.aws.amazon.com/pcs/latest/userguide/working-with_clusters_version_update.html) in the * AWS PCS User Guide*.
 

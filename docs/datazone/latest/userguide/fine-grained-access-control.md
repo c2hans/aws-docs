@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/fine-grained-a
 ---
 
 # Fine-grained access control to data in Amazon DataZone
-<a name="fine-grained-access-control"></a>
 
 In the current release of Amazon DataZone, fine-grained access control of your data is supported, enabling you to have granular access control over your sensitive data. You can control which project can access specific records of data within your data assets published to the Amazon DataZone business data catalog. Amazon DataZone supports row and column filters to implement fine-grained access control.
 

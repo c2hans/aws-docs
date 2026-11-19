@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # Dual Stack Amazon VPC Connectivity with AWS Transit Gateway
-<a name="ipv6-transit-gateway"></a>
 
 Publication date: **June 23, 2022 ([Diagram history](#ipv6-13-diagram-history))**
 

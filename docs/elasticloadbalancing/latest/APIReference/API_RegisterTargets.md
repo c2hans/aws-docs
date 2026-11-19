@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # RegisterTargets
-<a name="API_RegisterTargets"></a>
 
 Registers the specified targets with the specified target group.
 

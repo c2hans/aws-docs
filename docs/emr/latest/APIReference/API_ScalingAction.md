@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ScalingActio
 ---
 
 # ScalingAction
-<a name="API_ScalingAction"></a>
 
 The type of adjustment the automatic scaling activity makes when triggered, and the periodicity of the adjustment.
 

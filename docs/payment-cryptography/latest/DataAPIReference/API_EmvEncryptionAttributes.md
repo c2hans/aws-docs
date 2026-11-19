@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # EmvEncryptionAttributes
-<a name="API_EmvEncryptionAttributes"></a>
 
 Parameters for plaintext encryption using EMV keys.
 

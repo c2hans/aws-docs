@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # RegisterTaskWithMaintenanceWindow
-<a name="API_RegisterTaskWithMaintenanceWindow"></a>
 
 Adds a new task to a maintenance window.
 

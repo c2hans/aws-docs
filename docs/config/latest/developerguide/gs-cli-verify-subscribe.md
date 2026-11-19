@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/gs-cli-veri
 ---
 
 # Verifying that AWS Config is Successfully Started with the AWS CLI
-<a name="gs-cli-verify-subscribe"></a>
 
 After you have started AWS Config, you can use AWS CLI commands to check that the AWS Config is running and that AWS Config has created a configuration recorder and a delivery channel. You can also confirm that AWS Config has started recording and delivering configurations to the delivery channel.
 

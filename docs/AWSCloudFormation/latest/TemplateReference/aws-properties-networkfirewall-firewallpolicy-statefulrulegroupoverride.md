@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::NetworkFirewall::FirewallPolicy StatefulRuleGroupOverride
-<a name="aws-properties-networkfirewall-firewallpolicy-statefulrulegroupoverride"></a>
 
 The setting that allows the policy owner to change the behavior of the rule group within a policy.
 

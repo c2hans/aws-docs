@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListDom
 ---
 
 # ListDomainUnitsForParent
-<a name="API_ListDomainUnitsForParent"></a>
 
 Lists child domain units for the specified parent domain unit.
 

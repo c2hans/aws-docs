@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_DeleteReference.htm
 ---
 
 # DeleteReference
-<a name="API_DeleteReference"></a>
 
 Deletes a reference genome and returns a response with no body if the operation is successful. The read set associated with the reference genome must first be deleted before deleting the reference genome. After the reference genome is deleted, you can delete the reference store using the `DeleteReferenceStore` API operation.
 

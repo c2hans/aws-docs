@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_E
 ---
 
 # EntitlementDetails
-<a name="API_EntitlementDetails"></a>
 
 Contains detailed information about an entitlement, including the principal, IAM role, and target account.
 

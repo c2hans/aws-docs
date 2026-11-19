@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_LogsLo
 ---
 
 # LogsLocation
-<a name="API_LogsLocation"></a>
 
 Information about build logs in CloudWatch Logs.
 

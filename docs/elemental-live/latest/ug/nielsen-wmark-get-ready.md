@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/nielsen-wmark-g
 ---
 
 # Getting ready
-<a name="nielsen-wmark-get-ready"></a>
 
 **To get ready for watermarks**
 

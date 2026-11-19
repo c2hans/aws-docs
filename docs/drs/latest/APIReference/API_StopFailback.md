@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_StopFailback
 ---
 
 # StopFailback
-<a name="API_StopFailback"></a>
 
 Stops the failback process for a specified Recovery Instance. This changes the Failback State of the Recovery Instance back to FAILBACK\_NOT\_STARTED.
 

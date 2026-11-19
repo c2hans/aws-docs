@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_A
 ---
 
 # AddonInstance
-<a name="API_AddonInstance"></a>
 
 An Add On instance represents a specific configuration of an Add On.
 

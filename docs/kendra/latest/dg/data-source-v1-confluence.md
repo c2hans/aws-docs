@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/dg/data-source-v1-confluen
 Amazon Kendra is no longer open to new customers. For capabilities similar to Amazon Kendra, explore Amazon Bedrock Knowledge Bases. [Learn more](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
 # Confluence connector V1.0
-<a name="data-source-v1-confluence"></a>
 
 Confluence is a collaborative work-management tool designed for sharing, storing, and working on project planning, software development, and product management. You can use Amazon Kendra to index your Confluence spaces, pages (including nested pages), blogs, and comments and attachments to indexed pages and blogs.
 

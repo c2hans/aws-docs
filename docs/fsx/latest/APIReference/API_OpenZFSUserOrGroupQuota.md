@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_OpenZFSUserO
 ---
 
 # OpenZFSUserOrGroupQuota
-<a name="API_OpenZFSUserOrGroupQuota"></a>
 
 Used to configure quotas that define how much storage a user or group can use on an FSx for OpenZFS volume. For more information, see [Volume properties](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/managing-volumes.html#volume-properties) in the FSx for OpenZFS User Guide.
 

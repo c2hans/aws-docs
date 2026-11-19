@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-serverl
 ---
 
 # How Amazon DocumentDB serverless works
-<a name="docdb-serverless-how-it-works"></a>
 
 **Topics**
 + [Overview](#docdb-serverlerss-overviewn)

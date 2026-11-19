@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/accessc
 ---
 
 # Controlling access for Cost Anomaly Detection
-<a name="accesscontrol-ad"></a>
 
 You can use resource-level access controls and attribute-based access control (ABAC) tags for cost anomaly monitors and anomaly subscriptions. Each anomaly monitor and anomaly subscription resource has a unique Amazon Resource Name (ARN). You can also attach tags (key-value pairs) to each feature. Both resource ARNs and ABAC tags can be used to give granular access control to user roles or groups within your AWS accounts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsp
 ---
 
 # Data retrieval APIs for AWS Parallel Computing Service
-<a name="awsparallelcomputingservice"></a>
 
 AWS Parallel Computing Service provides the following APIs for data retrieval.
 

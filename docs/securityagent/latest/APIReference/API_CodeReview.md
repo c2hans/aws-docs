@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Co
 ---
 
 # CodeReview
-<a name="API_CodeReview"></a>
 
 Represents a code review configuration that defines the parameters for automated security-focused code analysis, including target assets and logging configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # UpdateIntegration
-<a name="API_UpdateIntegration"></a>
 
 Updates an existing integration, identified by its id, ARN, or name. Only the fields you provide are changed.
 

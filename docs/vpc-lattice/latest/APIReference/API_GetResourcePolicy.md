@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_GetR
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
 Retrieves information about the specified resource policy. The resource policy is an IAM policy created on behalf of the resource owner when they share a resource.
 

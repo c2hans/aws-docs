@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Direct Connect
-<a name="direct-connect"></a>
 
 While VPN over internet is a great option to get started, internet connectivity may not be reliable for production traffic. Because of this unreliability, many customers choose [Direct Connect](http://aws.amazon.com/directconnect/). Direct Connect is a networking service that provides an alternative to using the internet to connect to AWS. Using Direct Connect, data that would have previously been transported over the internet is delivered through a private network connection between your facilities and AWS. In many circumstances, private network connections can reduce costs, increase bandwidth, and provide a more consistent network experience than internet-based connections. There are several ways to use Direct Connect to connect to VPCs:
 

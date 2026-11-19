@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_EventDeta
 ---
 
 # EventDetails
-<a name="API_EventDetails"></a>
 
  Contains a `Bounce` object if the event type is `BOUNCE`. Contains a `Complaint` object if the event type is `COMPLAINT`.
 

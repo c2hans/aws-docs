@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # How to customize starter pipelines with AWS SAM
-<a name="serverless-customizing-starter-pipelines"></a>
 
 As a CI/CD administrator, you may want to customize a starter pipeline template, and associated guided prompts, that developers in your organization can use to create pipeline configurations.
 

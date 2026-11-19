@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/resourc
 ---
 
 # Deleting a resource with AWS Cloud Control API
-<a name="resource-operations-delete"></a>
 
 Use the `delete-resource` command to delete an existing resource. You can delete the resource whether or not the resource was originally provisioned using Cloud Control API.
 

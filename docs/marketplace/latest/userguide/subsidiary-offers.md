@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/subsidiary-
 ---
 
 # Creating private offers as a subsidiary account
-<a name="subsidiary-offers"></a>
 
 Many AWS partners operate through more than one legal entity. For example, you might have one entity per country, one per region, or one that you inherited through an acquisition.
 

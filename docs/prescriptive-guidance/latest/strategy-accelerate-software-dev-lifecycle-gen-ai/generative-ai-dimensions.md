@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # 5-I framework for an AI-powered software development experience
-<a name="generative-ai-dimensions"></a>
 
 The 5-I framework provides a structured approach for software development teams to effectively integrate generative AI into their development practices. It helps you establish a robust foundation for using generative AI throughout the SDLC. It also helps you set up the right development practices, workflows, and mindsets to fully harness the potential of generative AI.
 

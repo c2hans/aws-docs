@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Prerequisites
-<a name="prerequisites"></a>
 
 You must meet the following prerequisites before launching the stack.
 

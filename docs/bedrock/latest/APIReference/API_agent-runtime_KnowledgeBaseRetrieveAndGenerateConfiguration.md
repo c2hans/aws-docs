@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # KnowledgeBaseRetrieveAndGenerateConfiguration
-<a name="API_agent-runtime_KnowledgeBaseRetrieveAndGenerateConfiguration"></a>
 
 Contains details about the resource being queried.
 

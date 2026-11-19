@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ListTemplate
 ---
 
 # ListTemplates
-<a name="API_ListTemplates"></a>
 
 Lists the email templates present in your Amazon SES account in the current AWS Region.
 

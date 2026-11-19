@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Kubern
 ---
 
 # KubernetesActivity
-<a name="API_KubernetesActivity"></a>
 
 Contains details about Kubernetes activity. A record contains either `ApiCall` and `Enrichment`, or `Anomaly` and `Workload`.
 

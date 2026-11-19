@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteTags
-<a name="API_DeleteTags"></a>
 
 Deletes the specified tags from an SageMaker resource.
 

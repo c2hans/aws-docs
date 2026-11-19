@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/blue-gr
 ---
 
 # Deleting a blue/green deployment in Amazon Aurora
-<a name="blue-green-deployments-deleting"></a>
 
 You can delete a blue/green deployment before or after you switch it over.
 

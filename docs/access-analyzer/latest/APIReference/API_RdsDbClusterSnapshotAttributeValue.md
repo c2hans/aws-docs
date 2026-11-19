@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # RdsDbClusterSnapshotAttributeValue
-<a name="API_RdsDbClusterSnapshotAttributeValue"></a>
 
 The values for a manual Amazon RDS DB cluster snapshot attribute.
 

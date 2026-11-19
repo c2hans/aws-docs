@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/self-deployed-insta
 ---
 
 # Step 4a (local storage): Prepare the VCF Installer
-<a name="self-deployed-install-vcf"></a>
 
 After your hosts are in the `CREATED` state and your DNS records resolve, you install VMware Cloud Foundation (VCF) with the VCF Installer. This step prepares an ESX host and a temporary datastore for the VCF Installer appliance, deploys the appliance, and downloads the VCF software. In [Step 4b (local storage): Run VCF bringup](sd-install-bringup.md), you run bringup.
 

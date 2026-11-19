@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Recommended alarms
-<a name="msk-data-delivery-s3-alarms"></a>
 
 | Alarm | Condition | Recommended threshold | Action |
 | --- | --- | --- | --- |

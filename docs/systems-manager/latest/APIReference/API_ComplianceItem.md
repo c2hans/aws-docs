@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ComplianceItem
-<a name="API_ComplianceItem"></a>
 
 Information about the compliance as defined by the resource type. For example, for a patch resource type, `Items` includes information about the PatchSeverity, Classification, and so on.
 

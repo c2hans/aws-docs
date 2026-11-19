@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Descri
 ---
 
 # DescribeImagesFilter
-<a name="API_DescribeImagesFilter"></a>
 
 An object representing a filter on a [DescribeImages](API_DescribeImages.md) operation.
 

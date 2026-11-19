@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # AWS OpsWorks deploy action reference
-<a name="action-reference-OpsWorks"></a>
 
 You use an AWS OpsWorks action to deploy with OpsWorks using your pipeline.
 

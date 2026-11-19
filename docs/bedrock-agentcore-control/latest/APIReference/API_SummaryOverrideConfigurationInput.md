@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SummaryOverrideConfigurationInput
-<a name="API_SummaryOverrideConfigurationInput"></a>
 
 Input for summary override configuration in a memory strategy.
 

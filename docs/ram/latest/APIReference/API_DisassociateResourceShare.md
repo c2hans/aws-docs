@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_Disassociate
 ---
 
 # DisassociateResourceShare
-<a name="API_DisassociateResourceShare"></a>
 
 Removes the specified principals, resources, or source constraints from participating in the specified resource share.
 

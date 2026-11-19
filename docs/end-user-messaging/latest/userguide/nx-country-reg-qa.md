@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-c
 ---
 
 # Qatar registration
-<a name="nx-country-reg-qa"></a>
 
 The following registrations are available for Qatar.
 

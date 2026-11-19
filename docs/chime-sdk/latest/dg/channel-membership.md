@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/channel-membership.h
 ---
 
 # Creating a channel membership for an AppInstanceBot for Amazon Chime SDK messaging
-<a name="channel-membership"></a>
 
 Once you create the AppInstanceBot, you add it as a member to a new or existing channel. For more information see [CreateChannel](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannel.html) and [ CreateChannelMembership](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_CreateChannelMembership.html) in the *Amazon Chime SDK messaging API* documentation.
 

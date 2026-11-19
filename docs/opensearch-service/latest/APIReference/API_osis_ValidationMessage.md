@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ValidationMessage
-<a name="API_osis_ValidationMessage"></a>
 
 A validation message associated with a `ValidatePipeline` request in OpenSearch Ingestion.
 

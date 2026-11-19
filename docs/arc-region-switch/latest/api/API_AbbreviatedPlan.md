@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Abbrevi
 ---
 
 # AbbreviatedPlan
-<a name="API_AbbreviatedPlan"></a>
 
 A summarized representation of a Region switch plan. This structure contains key information about a plan without all the detailed workflow and step data.
 

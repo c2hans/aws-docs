@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-preview-model
 ---
 
 # Preview your model
-<a name="canvas-preview-model"></a>
 
 **Note**
 The following functionality is only available for custom models built with tabular datasets. Multi-category text prediction models are also excluded.

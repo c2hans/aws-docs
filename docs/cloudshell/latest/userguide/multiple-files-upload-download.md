@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudshell/latest/userguide/multiple-fil
 ---
 
 # Copying multiple files between your local machine and CloudShell
-<a name="multiple-files-upload-download"></a>
 
 This tutorial shows how to copy multiple files between your local machine and CloudShell.
 

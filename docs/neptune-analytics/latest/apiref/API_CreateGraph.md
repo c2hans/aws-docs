@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Crea
 ---
 
 # CreateGraph
-<a name="API_CreateGraph"></a>
 
 Creates a new Neptune Analytics graph.
 

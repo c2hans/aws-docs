@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ChargeSummary
-<a name="API_marketplace-agreements_ChargeSummary"></a>
 
 The `ChargeSummary` provides a detailed breakdown of charges that are associated with an agreement request. This is applicable only when a request is created for a `PurchaseAgreement`.
 
@@ -20,7 +19,7 @@ The charge timing is `BILLING_PERIOD`, so the charge amount is not determined at
 In the following list, the required parameters are described first.
 
  ** currencyCode **   <a name="AWSMarketplaceService-Type-marketplace-agreements_ChargeSummary-currencyCode"></a>
-The three-letter currency code for all charges (e.g., USD).
+The three-letter currency code for all charges (for example, USD).
 Type: String
 Length Constraints: Fixed length of 3.
 Pattern: `[A-Z]+`

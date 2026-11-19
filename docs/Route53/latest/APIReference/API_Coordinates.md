@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Coordina
 ---
 
 # Coordinates
-<a name="API_Coordinates"></a>
 
  A complex type that lists the coordinates for a geoproximity resource record.
 

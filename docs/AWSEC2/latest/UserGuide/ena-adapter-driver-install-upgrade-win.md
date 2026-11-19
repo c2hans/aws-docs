@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena-adapter-driv
 ---
 
 # Install the ENA driver on EC2 Windows instances
-<a name="ena-adapter-driver-install-upgrade-win"></a>
 
 If your instance isn't based on one of the latest Windows Amazon Machine Images (AMIs) that Amazon provides, use the following procedure to install the current ENA driver on your instance. You should perform this update at a time when it’s convenient to reboot your instance. If the install script doesn’t automatically reboot your instance, we recommend that you reboot the instance as the final step.
 

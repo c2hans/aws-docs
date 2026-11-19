@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPoolRegionalConfigurationAttachment
-<a name="aws-resource-cognito-userpoolregionalconfigurationattachment"></a>
 
 The Regional settings for a user pool replica, including email configuration, SMS configuration, AWS Lambda triggers, tags, and replica status. Create this resource in the secondary (replica) Region. The replica must be in `ACTIVE` or `INACTIVE` status before you create this resource.
 

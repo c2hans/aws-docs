@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/periodToDateMinOv
 ---
 
 # periodToDateMinOverTime
-<a name="periodToDateMinOverTime-function"></a>
 
 The `periodToDateMinOverTime` function calculates the minimum of a measure for a given time granularity (for instance, a quarter) up to a point in time.
 

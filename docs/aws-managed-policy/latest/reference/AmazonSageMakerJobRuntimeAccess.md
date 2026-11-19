@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerJobRuntimeAccess
-<a name="AmazonSageMakerJobRuntimeAccess"></a>
 
 **Description**: Provides permissions for agent runtimes to invoke the Amazon SageMaker job runtime APIs used during model customization for sample generation, trajectory completion, and reward submission.
 

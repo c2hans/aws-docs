@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StandardRout
 ---
 
 # StandardRouterOutputStreamDetails
-<a name="API_StandardRouterOutputStreamDetails"></a>
 
 Configuration details for a standard router output stream type. Contains information about the destination IP address and connection state for basic output routing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # UpdateAnalyzer
-<a name="API_UpdateAnalyzer"></a>
 
 Modifies the configuration of an existing analyzer.
 

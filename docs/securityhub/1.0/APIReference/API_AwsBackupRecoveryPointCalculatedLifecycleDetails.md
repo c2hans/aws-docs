@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsBack
 ---
 
 # AwsBackupRecoveryPointCalculatedLifecycleDetails
-<a name="API_AwsBackupRecoveryPointCalculatedLifecycleDetails"></a>
 
 Specifies how long in days before a recovery point transitions to cold storage or is deleted.
 

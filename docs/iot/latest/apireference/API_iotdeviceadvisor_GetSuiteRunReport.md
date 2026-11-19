@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # GetSuiteRunReport
-<a name="API_iotdeviceadvisor_GetSuiteRunReport"></a>
 
 Gets a report download link for a successful Device Advisor qualifying test suite run.
 

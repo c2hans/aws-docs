@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTra
 ---
 
 # ModifyTransitGatewayPeeringAttachment
-<a name="API_ModifyTransitGatewayPeeringAttachment"></a>
 
 Modifies the options for a transit gateway peering attachment. The peering attachment must be in the `available` state.
 

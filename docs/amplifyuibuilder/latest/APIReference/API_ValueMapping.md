@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ValueMapping
-<a name="API_ValueMapping"></a>
 
 Associates a complex object with a display value. Use `ValueMapping` to store how to represent complex objects when they are displayed.
 

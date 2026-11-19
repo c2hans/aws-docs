@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/mediapackage-output.
 ---
 
 # MediaPackage output
-<a name="mediapackage-output"></a>
 
 In a MediaPackage output, MediaLive supports SCTE 35 features as follows:
 + Passthrough of the SCTE 35 messages – Always enabled.

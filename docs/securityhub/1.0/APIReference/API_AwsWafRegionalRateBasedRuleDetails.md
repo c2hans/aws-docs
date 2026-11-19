@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafR
 ---
 
 # AwsWafRegionalRateBasedRuleDetails
-<a name="API_AwsWafRegionalRateBasedRuleDetails"></a>
 
 contains details about a rate-based rule for Regional resources. A rate-based rule provides settings to indicate when to allow, block, or count a request. Rate-based rules include the number of requests that arrive over a specified period of time.
 

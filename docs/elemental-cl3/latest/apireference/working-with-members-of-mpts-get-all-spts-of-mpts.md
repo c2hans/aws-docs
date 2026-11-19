@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # GET List: Get All SPTS of an MPTS
-<a name="working-with-members-of-mpts-get-all-spts-of-mpts"></a>
 
 Get a list of all the SPTS programs in the specified MPTS output.
 

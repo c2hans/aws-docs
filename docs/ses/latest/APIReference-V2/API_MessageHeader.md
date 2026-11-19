@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_MessageHe
 ---
 
 # MessageHeader
-<a name="API_MessageHeader"></a>
 
 Contains the name and value of a message header that you add to an email.
 

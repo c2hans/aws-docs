@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-writing-to.htm
 ---
 
 # Writing to Salesforce
-<a name="salesforce-writing-to"></a>
 
 **Prerequisites**
 

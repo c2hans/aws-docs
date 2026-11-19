@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/va
 ---
 
 # Validate database objects after migrating from Oracle to Amazon Aurora PostgreSQL
-<a name="validate-database-objects-after-migrating-from-oracle-to-amazon-aurora-postgresql"></a>
 
 *Venkatramana Chintha and Eduardo Valentim, Amazon Web Services*
 

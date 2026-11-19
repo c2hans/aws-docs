@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/share-requirement
 ---
 
 # Requirements
-<a name="share-requirements"></a>
 
 To share a job with Support, the following requirements apply:
 

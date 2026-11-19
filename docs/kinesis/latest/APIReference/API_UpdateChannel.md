@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateCh
 ---
 
 # UpdateChannel
-<a name="API_UpdateChannel"></a>
 
 Updates the data freshness interval or the Amazon CloudWatch Logs configuration of an existing channel. You cannot change the destination, source stream, record format, schema, encryption configuration, or service execution role of an existing channel. To change any other setting, delete the channel and create a new one.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/kms-examp
 ---
 
 # Working with keys using the AWS KMS API and the AWS SDK for PHP Version 3
-<a name="kms-example-keys"></a>
 
 The primary resources in AWS Key Management Service (AWS KMS) are [AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms_keys). You can use a KMS key to encrypt your data.
 

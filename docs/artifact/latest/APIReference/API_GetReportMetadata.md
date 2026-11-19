@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_GetRepo
 ---
 
 # GetReportMetadata
-<a name="API_GetReportMetadata"></a>
 
 Get the metadata for a single report.
 

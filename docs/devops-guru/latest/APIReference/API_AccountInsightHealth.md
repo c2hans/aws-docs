@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Acco
 ---
 
 # AccountInsightHealth
-<a name="API_AccountInsightHealth"></a>
 
  Information about the number of open reactive and proactive insights that can be used to gauge the health of your system.
 

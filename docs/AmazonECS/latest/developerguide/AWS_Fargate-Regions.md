@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Farg
 ---
 
 # Supported Regions for Amazon ECS on AWS Fargate
-<a name="AWS_Fargate-Regions"></a>
 
 You can use the following tables to verify the Region support for Linux containers on AWS Fargate and Windows containers on AWS Fargate.
 

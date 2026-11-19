@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/flow-logic-steps.
 ---
 
 # Flow logic steps
-<a name="flow-logic-steps"></a>
 
 Flow logic steps control how your flow runs.
 

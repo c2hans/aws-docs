@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListUser
 ---
 
 # ListUserProficiencies
-<a name="API_ListUserProficiencies"></a>
 
 Lists proficiencies associated with a user.
 

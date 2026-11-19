@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Appli
 ---
 
 # Application
-<a name="API_Application"></a>
 
 Describes an application in the application catalog.
 

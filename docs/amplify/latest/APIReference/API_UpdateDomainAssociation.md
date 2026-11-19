@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_UpdateDo
 ---
 
 # UpdateDomainAssociation
-<a name="API_UpdateDomainAssociation"></a>
 
 Creates a new domain association for an Amplify app.
 

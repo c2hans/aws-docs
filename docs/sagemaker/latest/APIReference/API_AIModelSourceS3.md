@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIMode
 ---
 
 # AIModelSourceS3
-<a name="API_AIModelSourceS3"></a>
 
 The Amazon S3 model source configuration.
 

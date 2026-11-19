@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListTagsF
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Lists the tags for a specified resource.
 

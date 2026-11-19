@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/d
 ---
 
 # Create a distribution
-<a name="distribution-web-creating-console"></a>
 
 This topic explains how to use the CloudFront console to create a distribution.<a name="create-download-distribution-task-list"></a>
 

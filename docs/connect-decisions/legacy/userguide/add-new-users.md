@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/add-n
 ---
 
 # Adding new users
-<a name="add-new-users"></a>
 
 To add new users, follow these steps:
 

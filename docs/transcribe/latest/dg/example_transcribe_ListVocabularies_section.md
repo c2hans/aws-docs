@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/example_transcribe_
 ---
 
 # Use `ListVocabularies` with an AWS SDK or CLI
-<a name="example_transcribe_ListVocabularies_section"></a>
 
 The following code examples show how to use `ListVocabularies`.
 

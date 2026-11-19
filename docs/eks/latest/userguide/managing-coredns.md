@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/managing-coredns.ht
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Manage CoreDNS for DNS in Amazon EKS clusters
-<a name="managing-coredns"></a>
 
 **Tip**
 With Amazon EKS Auto Mode, you don’t need to install or upgrade networking add-ons. Auto Mode includes pod networking and load balancing capabilities.

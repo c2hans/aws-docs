@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Overview
-<a name="solution-overview"></a>
 
 Modular Cloud Studio (MCS) on AWS is a solution that helps studios and production teams to build secure, scalable, and highly customizable content production studios in the AWS Cloud. You can build a tailored, cloud-based production environment within hours without extensive cloud expertise or costly upfront investments. MCS simplifies the setup by providing you with integration choices and automating deployment. Its modular framework presents options to launch remote workstations, storage, and other modules with Amazon Web Services (AWS) services and AWS Partner production systems. You can securely expand studio access to global talent, scale resources to meet project demands, and add capabilities with additional modules from the AWS Marketplace, where you can find software that runs on AWS. This way, your teams can focus on creative innovation, not technical logistics.
 

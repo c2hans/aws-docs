@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/creating-aut
 ---
 
 # Creating automation rules with CloudFormation
-<a name="creating-automation-rules-with-cloudformation"></a>
 
 AWS Compute Optimizer integrates with AWS CloudFormation, enabling you to define and deploy automation rules with infrastructure as code. You can create a template that describes the automation rules you want, and CloudFormation provisions and configures those rules for you. When you use CloudFormation, you can reuse your template to set up your automation rules consistently and repeatedly across multiple AWS accounts.
 

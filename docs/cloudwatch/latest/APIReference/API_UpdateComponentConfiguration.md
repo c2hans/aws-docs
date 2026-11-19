@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Updat
 ---
 
 # UpdateComponentConfiguration
-<a name="API_UpdateComponentConfiguration"></a>
 
 Updates the monitoring configurations for the component. The configuration input parameter is an escaped JSON of the configuration and should match the schema of what is returned by `DescribeComponentConfigurationRecommendation`.
 

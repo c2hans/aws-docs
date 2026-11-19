@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/text-classification-
 ---
 
 # Input and output interface for the Text Classification - TensorFlow algorithm
-<a name="text-classification-tensorflow-inputoutput"></a>
 
 Each of the pretrained models listed in TensorFlow Hub Models can be fine-tuned to any dataset made up of text sentences with any number of classes. The pretrained model attaches a classification layer to the Text Embedding model and initializes the layer parameters to random values. The output dimension of the classification layer is determined based on the number of classes detected in the input data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/assigning-mul
 ---
 
 # Assigning multiple opportunities
-<a name="assigning-multiple-opportunities"></a>
 
 You can assign multiple opportunities to another user in your Partner Central account simultaneously using the bulk assign functionality. This feature streamlines the process of assigning opportunities, reducing manual effort.
 

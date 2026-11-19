@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/using-graphite-
 ---
 
 # Connect to a Graphite data source
-<a name="using-graphite-in-AMG"></a>
 
  Grafana has an advanced Graphite query editor that lets you quickly navigate the metric space, add functions, change function parameters and much more. The editor can handle all types of graphite queries. It can even handle complex nested queries through the use of query references.
 

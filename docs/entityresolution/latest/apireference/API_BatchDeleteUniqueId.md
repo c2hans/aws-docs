@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # BatchDeleteUniqueId
-<a name="API_BatchDeleteUniqueId"></a>
 
 Deletes multiple unique IDs in a matching workflow.
 

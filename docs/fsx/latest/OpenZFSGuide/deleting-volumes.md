@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/deleting-volumes
 ---
 
 # Deleting an Amazon FSx for OpenZFS volume
-<a name="deleting-volumes"></a>
 
 This section provides information on how to delete an FSx for OpenZFS volume using the Amazon FSx console, the AWS CLI, and the Amazon FSx API.
 

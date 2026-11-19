@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_featur
 ---
 
 # BatchWriteRecord
-<a name="API_feature_store_BatchWriteRecord"></a>
 
 Writes a batch of `Records` to one or more `FeatureGroup`s. Use this API for bulk ingestion of records into the `OnlineStore` and `OfflineStore`.
 

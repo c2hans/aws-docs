@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # ManagedRuleDescription
-<a name="API_ManagedRuleDescription"></a>
 
  Contains information about managed Contributor Insights rules, as returned by `ListManagedInsightRules`.
 

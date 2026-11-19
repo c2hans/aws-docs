@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-js-captcha
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Managing API keys for the JS CAPTCHA API
-<a name="waf-js-captcha-api-key"></a>
 
 This section provides instructions for generating and deleting API keys.
 

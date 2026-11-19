@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Identit
 ---
 
 # IdentityDocumentField
-<a name="API_IdentityDocumentField"></a>
 
 Structure containing both the normalized type of the extracted information and the text associated with it. These are extracted as Type and Value respectively.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Targe
 ---
 
 # TargetGroupInfo
-<a name="API_TargetGroupInfo"></a>
 
 Information about a target group in Elastic Load Balancing to use in a deployment. Instances are registered as targets in a target group, and traffic is routed to the target group.
 

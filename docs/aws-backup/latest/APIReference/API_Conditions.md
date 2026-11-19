@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Condi
 ---
 
 # Conditions
-<a name="API_Conditions"></a>
 
 Contains information about which resources to include or exclude from a backup plan using their tags. Conditions are case sensitive.
 

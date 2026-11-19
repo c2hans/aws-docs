@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ag/archive-retention.html
 **End of support notice**: On February 20, 2026, AWS will end support for the Amazon Chime service. After February 20, 2026, you will no longer be able to access the Amazon Chime console or Amazon Chime application resources. For more information, visit the [blog post](https://aws.amazon.com/blogs/messaging-and-targeting/update-on-support-for-amazon-chime/). **Note:** This does not impact the availability of the [Amazon Chime SDK service](https://aws.amazon.com/chime/chime-sdk/).
 
 # Managing chat retention policies
-<a name="archive-retention"></a>
 
 If you administer one or more Amazon Chime Enterprise accounts, you can set chat retention policies for the following:
 + Chat conversations that include only members of your Enterprise account.

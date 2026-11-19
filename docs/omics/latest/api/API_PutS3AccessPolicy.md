@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_PutS3AccessPolicy.h
 ---
 
 # PutS3AccessPolicy
-<a name="API_PutS3AccessPolicy"></a>
 
 Adds an access policy to the specified store.
 

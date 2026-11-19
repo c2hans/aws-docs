@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # UpdateDomain
-<a name="API_connect-customer-profiles_UpdateDomain"></a>
 
 Updates the properties of a domain, including creating or selecting a dead letter queue or an encryption key.
 

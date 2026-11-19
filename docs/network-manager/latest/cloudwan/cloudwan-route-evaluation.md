@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Route evaluation
-<a name="cloudwan-route-evaluation"></a>
 
 Cloud WAN evaluates routes at each core network edge in the following order:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_PrefixConfi
 ---
 
 # PrefixConfig
-<a name="API_PrefixConfig"></a>
 
 Specifies elements that Amazon AppFlow includes in the file and folder names in the flow destination.
 

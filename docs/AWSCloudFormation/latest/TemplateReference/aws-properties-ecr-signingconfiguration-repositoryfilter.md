@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ECR::SigningConfiguration RepositoryFilter
-<a name="aws-properties-ecr-signingconfiguration-repositoryfilter"></a>
 
 A repository filter used to determine which repositories have their images automatically signed on push. Each filter consists of a filter type and filter value.
 

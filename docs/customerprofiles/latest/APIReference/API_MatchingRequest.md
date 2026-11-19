@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # MatchingRequest
-<a name="API_connect-customer-profiles_MatchingRequest"></a>
 
 The flag that enables the matching process of duplicate profiles.
 

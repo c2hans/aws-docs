@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ct-
 ---
 
 # [CT.KMS.PV.6] Require that an AWS KMS customer-managed key (CMK) is configured with key material originating from an external key store (XKS)
-<a name="ct-kms-pv-6"></a>
 
 This control disallows creation of KMS keys that do not have a key origin of `EXTERNAL_KEY_STORE`.
 

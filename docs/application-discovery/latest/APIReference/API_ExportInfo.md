@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/APIReferenc
 ---
 
 # ExportInfo
-<a name="API_ExportInfo"></a>
 
 Information regarding the export status of discovered data. The value is an array of objects.
 

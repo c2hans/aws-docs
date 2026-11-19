@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/infrastructure-an
 ---
 
 # Infrastructure security in AWS Quick
-<a name="infrastructure-and-network-access"></a>
 
 |  |
 | --- |

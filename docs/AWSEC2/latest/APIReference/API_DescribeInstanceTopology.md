@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeInstanceTopology
-<a name="API_DescribeInstanceTopology"></a>
 
 Describes a tree-based hierarchy that represents the physical host placement of your EC2 instances within an Availability Zone or Local Zone. You can use this information to determine the relative proximity of your EC2 instances within the AWS network to support your tightly coupled workloads.
 

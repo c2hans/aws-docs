@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/extsdkguide/api-reference.htm
 ---
 
 # API Reference
-<a name="api-reference"></a>
 
 All messages sent from the extensions to Amazon DCV are of a type of request. Messages from Amazon DCV to extensions can be of type response or event.
 

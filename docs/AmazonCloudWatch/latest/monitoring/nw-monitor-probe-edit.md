@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/nw-mo
 ---
 
 # Edit a probe
-<a name="nw-monitor-probe-edit"></a>
 
 You can change any information for an existing probe, regardless of whether that probe is active or inactive.
 

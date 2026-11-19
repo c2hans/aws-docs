@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/sc-transformation-r
 ---
 
 # Transformation rules in DMS Schema Conversion
-<a name="sc-transformation-rules"></a>
 
 *Transformation rules* let you customize how DMS Schema Conversion converts your database objects, overriding default naming and data type mappings. You can apply these rules to databases, schemas, tables, views, columns, function return values, routine parameters, and local variables.
 

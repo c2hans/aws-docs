@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Regi
 ---
 
 # RegisteredGitLabServiceDetails
-<a name="API_RegisteredGitLabServiceDetails"></a>
 
 Details specific to a registered GitLab instance.
 

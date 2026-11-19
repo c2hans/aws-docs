@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # CreateLoadBalancer
-<a name="API_CreateLoadBalancer"></a>
 
 Creates an Application Load Balancer, Network Load Balancer, or Gateway Load Balancer.
 

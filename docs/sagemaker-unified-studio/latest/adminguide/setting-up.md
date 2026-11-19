@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Setting up Amazon SageMaker Unified Studio
-<a name="setting-up"></a>
 
 To configure Amazon SageMaker Unified Studio with authentication through AWS IAM Identity Center, perform these steps.
 

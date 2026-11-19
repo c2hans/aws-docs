@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Creat
 ---
 
 # CreateFieldLevelEncryptionConfig
-<a name="API_CreateFieldLevelEncryptionConfig"></a>
 
 Create a new field-level encryption configuration.
 

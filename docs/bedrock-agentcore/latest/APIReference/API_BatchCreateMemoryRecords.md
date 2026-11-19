@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # BatchCreateMemoryRecords
-<a name="API_BatchCreateMemoryRecords"></a>
 
 Creates multiple memory records in a single batch operation for the specified memory with custom content.
 

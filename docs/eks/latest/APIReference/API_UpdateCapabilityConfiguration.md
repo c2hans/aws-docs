@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateCapabi
 ---
 
 # UpdateCapabilityConfiguration
-<a name="API_UpdateCapabilityConfiguration"></a>
 
 Configuration updates for a capability. The structure varies depending on the capability type.
 

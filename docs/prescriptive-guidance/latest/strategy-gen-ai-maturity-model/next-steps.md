@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 The generative AI maturity model provides a structured approach for organizations to navigate their generative AI adoption journey on AWS. Understanding the different maturity levels and activities helps organizations assess their readiness and take informed steps toward realizing the full potential of generative AI. This framework helps organizations develop tailored strategies that align with their unique business objectives so that generative AI becomes a key driver of growth and innovation.
 

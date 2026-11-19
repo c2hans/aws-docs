@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/getti
 ---
 
 # Prerequisites
-<a name="getting-started-storefront"></a>
 
 Before you begin using AWS Marketplace Storefront, ensure you meet the following requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetCloudFormationStackRecords
-<a name="API_GetCloudFormationStackRecords"></a>
 
 Returns the CloudFormation stack record created as a result of the `create cloud formation stack` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Logo.
 ---
 
 # Logo
-<a name="API_Logo"></a>
 
 The logo configuration.
 

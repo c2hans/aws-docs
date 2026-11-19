@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/example_clo
 ---
 
 # Hello CloudWatch Logs
-<a name="example_cloudwatch-logs_Hello_section"></a>
 
 The following code example shows how to get started using CloudWatch Logs.
 

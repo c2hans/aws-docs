@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/servic
 ---
 
 # Amazon Comprehend and Application Auto Scaling
-<a name="services-that-can-integrate-comprehend"></a>
 
 You can scale Amazon Comprehend document classification and entity recognizer endpoints using target tracking scaling policies and scheduled scaling.
 

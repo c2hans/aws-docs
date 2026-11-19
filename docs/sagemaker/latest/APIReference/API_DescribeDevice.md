@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeDevice
-<a name="API_DescribeDevice"></a>
 
 Describes the device.
 

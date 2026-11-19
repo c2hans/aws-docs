@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AssetTa
 ---
 
 # AssetTargetNameMap
-<a name="API_AssetTargetNameMap"></a>
 
 The name map for assets.
 

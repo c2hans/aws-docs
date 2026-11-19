@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeT
 ---
 
 # DescribeTransitGatewayMeteringPolicies
-<a name="API_DescribeTransitGatewayMeteringPolicies"></a>
 
 Describes one or more transit gateway metering policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # GetImages
-<a name="API_reader_GetImages"></a>
 
 Managed support for images provides a fully managed way to get images from the video data streamed and stored in Kinesis Video Streams. You can use images to run machine learning (ML) workloads such as person, pet, or vehicle detection. Images can also be used to add interactive elements to playback, such as image previews for motion events and scrubbing for a video clip.
 

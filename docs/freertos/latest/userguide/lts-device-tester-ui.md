@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/lts-device-tes
 ---
 
 # UI for IDT for FreeRTOS qualification suite 2.0 (FRQ 2.0)
-<a name="lts-device-tester-ui"></a>
 
 AWS IoT Device Tester for FreeRTOS (IDT for FreeRTOS) includes a web-based user interface (UI) where you can interact with the IDT command line application and related configuration files. You use the IDT for FreeRTOS UI to create a new configuration, or modify an existing one, for your device. You can also use the UI to call the IDT application and run the FreeRTOS tests against your device.
 

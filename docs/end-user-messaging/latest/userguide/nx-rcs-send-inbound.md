@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Inbound messaging
-<a name="nx-rcs-send-inbound"></a>
 
 You can test inbound RCS messaging by configuring a keyword with an auto-response and then sending a message from your test device that matches that keyword.
 

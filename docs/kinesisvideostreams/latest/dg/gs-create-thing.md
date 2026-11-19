@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-create-
 ---
 
 # Create an AWS IoT thing and get AWS IoT Core credentials
-<a name="gs-create-thing"></a>
 
 At this point you've created:
 + An IAM permissions policy. See [Create an IAM permissions policy](gs-iam-role.md).

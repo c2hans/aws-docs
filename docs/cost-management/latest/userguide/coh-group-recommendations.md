@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/coh-gro
 ---
 
 # Grouping related recommendations
-<a name="coh-group-recommendations"></a>
 
 Use the following procedure to view related recommendations and their estimated savings.
 

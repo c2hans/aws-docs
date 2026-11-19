@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # Working with Members of an MPTS
-<a name="working-with-members-of-mpts"></a>
 
 **Topics**
 + [POST: Add an SPTS to an MPTS](working-with-members-of-mpts-add-spts.md)

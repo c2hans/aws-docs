@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Up
 ---
 
 # UpdateManagedNotificationChannelAssociation
-<a name="API_UpdateManagedNotificationChannelAssociation"></a>
 
 Updates the `isSensitiveEventsSubscribed` property of a particular ManagedNotification channel association.
 

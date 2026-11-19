@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/telemetry.h
 ---
 
 # Gather system health telemetry data from AWS IoT Greengrass core devices
-<a name="telemetry"></a>
 
 System health telemetry data is diagnostic data that can help you monitor the performance of critical operations on your Greengrass core devices. You can create projects and applications to retrieve, analyze, transform, and report telemetry data from your edge devices. Domain experts, such as process engineers, can use these applications to gain insights into fleet health.
 

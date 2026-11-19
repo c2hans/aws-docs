@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/apg-wai
 ---
 
 # IO:BufFileRead and IO:BufFileWrite
-<a name="apg-waits.iobuffile"></a>
 
 The `IO:BufFileRead` and `IO:BufFileWrite` events occur when Aurora PostgreSQL creates temporary files. When operations require more memory than the working memory parameters currently define, they write temporary data to persistent storage. This operation is sometimes called *spilling to disk*. For more information about the temporary files and their usage, see [Managing temporary files with PostgreSQL](PostgreSQL.ManagingTempFiles.md).
 

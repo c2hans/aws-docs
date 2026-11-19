@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # IncidentRecordSource
-<a name="API_IncidentRecordSource"></a>
 
 Details about what created the incident record and when it was created.
 

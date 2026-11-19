@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Lambda
 ---
 
 # LambdaFunctionScheduledEventAttributes
-<a name="API_LambdaFunctionScheduledEventAttributes"></a>
 
 Provides the details of the `LambdaFunctionScheduled` event. It isn't set for other event types.
 

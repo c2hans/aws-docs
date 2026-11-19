@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/security-iam-awsm
 ---
 
 # AWS managed policies for AWS Batch
-<a name="security-iam-awsmanpol"></a>
 
 You can use AWS managed policies for simpler identity access management for your team and provisioned AWS resources. AWS managed policies cover a variety of common use cases, are available by default in your AWS account, and are maintained and updated on your behalf. You can't change the permissions in AWS managed policies. If you require greater flexibility, you can alternatively choose to create IAM customer managed policies. This way, you can provide your team provisioned resources with only the exact permissions they need.
 

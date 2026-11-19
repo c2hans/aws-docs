@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-storage
 ---
 
 # Observability
-<a name="observability-and-monitoring"></a>
 
 Monitoring storage performance is vital for maintaining optimal system operations in both VMware and AWS environments. While VMware relies on built-in vSphere tools and third-party integrations to track metrics, AWS provides centralized monitoring through Amazon CloudWatch that covers all its storage services. This section describes various approaches and tools for optimizing storage resources.
 

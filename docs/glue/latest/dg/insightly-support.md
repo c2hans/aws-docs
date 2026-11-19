@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/insightly-support.html
 ---
 
 # AWS Glue support for Insightly
-<a name="insightly-support"></a>
 
 AWS Glue supports Insightly as follows:
 

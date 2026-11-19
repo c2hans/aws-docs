@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.FT.1] Ensure individual component functionality with unit tests
-<a name="qa.ft.1-ensure-individual-component-functionality-with-unit-tests"></a>
 
  **Category:** FOUNDATIONAL
 

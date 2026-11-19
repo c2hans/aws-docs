@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ec2-examp
 ---
 
 # Using regions and availability zones for Amazon EC2 with AWS SDK for PHP Version 3
-<a name="ec2-examples-using-regions-and-zones"></a>
 
 Amazon EC2 is hosted in multiple locations worldwide. These locations are composed of AWS Regions and Availability Zones. Each Region is a separate geographic area, with multiple isolated locations known as Availability Zones. Amazon EC2 provides the ability to place instances and data in multiple locations.
 

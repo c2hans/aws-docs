@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/multi-container-j
 ---
 
 # Create job definitions using EcsProperties
-<a name="multi-container-jobs"></a>
 
 With AWS Batch job definitions using [`EcsProperties`](https://docs.aws.amazon.com/batch/latest/APIReference/API_EcsProperties.html), you can model hardware, sensors, 3D environments and other simulations in separate containers. You can use this feature to logically organize your workload components, and separate them from the main application. This feature can be used with AWS Batch on Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS), and AWS Fargate.
 

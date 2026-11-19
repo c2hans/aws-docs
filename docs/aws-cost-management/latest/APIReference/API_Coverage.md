@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Coverage
-<a name="API_Coverage"></a>
 
 The amount of instance usage that a reservation covered.
 
@@ -11,7 +10,7 @@ The amount of instance usage that a reservation covered.
 <a name="API_Coverage_Contents"></a>
 
  ** CoverageCost **   <a name="awscostmanagement-Type-Coverage-CoverageCost"></a>
-The amount of cost that the reservation covered.
+The cost of the On-Demand Instance usage that reservations didn't cover, at public On-Demand rates.
 Type: [CoverageCost](API_CoverageCost.md) object
 Required: No
 

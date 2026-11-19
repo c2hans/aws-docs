@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # Amazon Kinesis Video Streams
-<a name="API_Operations_Amazon_Kinesis_Video_Streams"></a>
 
 The following actions are supported by Amazon Kinesis Video Streams:
 +  [CreateSignalingChannel](API_CreateSignalingChannel.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/other-setup
 ---
 
 # Using Amazon Q Developer with other services
-<a name="other-setup"></a>
 
 ## AWS Identity and Access Management permissions for other services
 <a name="q-dev-IAM-policies-other"></a>

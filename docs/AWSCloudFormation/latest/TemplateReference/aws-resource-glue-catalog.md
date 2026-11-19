@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Catalog
-<a name="aws-resource-glue-catalog"></a>
 
 The `AWS::Glue::Catalog` resource specifies a catalog object that represents a logical grouping of databases in the AWS Glue Data Catalog or a federated source. You can create a Redshift-federated catalog or a catalog containing resource links to Redshift databases in another account or region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/drupa
 ---
 
 # Source configuration for Drupal Core
-<a name="drupal-core-source-setup"></a>
 
 ## Integrating with Drupal Core
 <a name="drupal-core-integration"></a>

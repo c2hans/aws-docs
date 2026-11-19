@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::OnlineEvaluationConfig Filter
-<a name="aws-properties-bedrockagentcore-onlineevaluationconfig-filter"></a>
 
  A filter that applies conditions to agent traces during online evaluation to determine which traces should be evaluated.
 

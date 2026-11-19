@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/advanced-producers.ht
 ---
 
 # Optimize Kinesis Data Streams producers
-<a name="advanced-producers"></a>
 
 You can further optimize your Amazon Kinesis Data Streams producers depending on specific behavior you see. Review the following topics to identify solutions.
 

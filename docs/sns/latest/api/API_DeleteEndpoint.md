@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_DeleteEndpoint.html
 ---
 
 # DeleteEndpoint
-<a name="API_DeleteEndpoint"></a>
 
 Deletes the endpoint for a device and mobile app from Amazon SNS. This action is idempotent. For more information, see [Using Amazon SNS Mobile Push Notifications](https://docs.aws.amazon.com/sns/latest/dg/SNSMobilePush.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2S
 ---
 
 # AwsEc2SecurityGroupIpv6Range
-<a name="API_AwsEc2SecurityGroupIpv6Range"></a>
 
 A range of IPv6 addresses.
 

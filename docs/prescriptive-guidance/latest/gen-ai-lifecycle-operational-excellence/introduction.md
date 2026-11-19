@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Generative AI Lifecycle Operational Excellence framework on AWS
-<a name="introduction"></a>
 
 *Melanie Li, Alessandro Cerè, Derrick Choo, Deepak Dalakoti, Frank Huang, Dustin Liu, Faisal Masood, Nicholas Moore, Mahsa Paknezhad, James Schafer, Aaron Su, Eng-Hwa Tan, Tony Trinh, Romain Vivier, Vincent Wang, and Rafa XU, Amazon Web Services*
 

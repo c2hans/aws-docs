@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/onelo
 ---
 
 # CloudWatch pipelines configuration for OneLogin Identity
-<a name="onelogin-identity-pipeline-setup"></a>
 
 Collects event logs from OneLogin using OAuth2 authentication.
 

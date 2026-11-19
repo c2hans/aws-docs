@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluating-
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 In this guide, we discussed Migration Readiness Assessment (MRA), which is a method for identifying where an enterprise is in their cloud journey. Using the AWS CAF ensures that you're looking at your enterprise's environment holistically and considering buy-in and business concerns instead of focusing solely on the technical aspects of migration. To learn more, contact an AWS Account Manager.
 

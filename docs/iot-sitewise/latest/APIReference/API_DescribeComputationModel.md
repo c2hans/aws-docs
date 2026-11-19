@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeComputationModel
-<a name="API_DescribeComputationModel"></a>
 
 Retrieves information about a computation model.
 

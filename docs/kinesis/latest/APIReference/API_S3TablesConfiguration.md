@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_S3Tables
 ---
 
 # S3TablesConfiguration
-<a name="API_S3TablesConfiguration"></a>
 
 Specifies a destination streaming table on Apache Iceberg.
 

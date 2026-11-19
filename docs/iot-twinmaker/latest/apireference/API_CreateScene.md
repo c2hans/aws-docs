@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Cr
 ---
 
 # CreateScene
-<a name="API_CreateScene"></a>
 
 Creates a scene.
 

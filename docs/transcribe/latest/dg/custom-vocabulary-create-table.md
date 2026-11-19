@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/custom-vocabulary-c
 ---
 
 # Creating a custom vocabulary using a table
-<a name="custom-vocabulary-create-table"></a>
 
 Using a table format is the preferred way to create your custom vocabulary. Vocabulary tables must consist of four columns (Phrase, SoundsLike, IPA, and DisplayAs), which can be included in any order:
 

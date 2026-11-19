@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterLifeCycleConfig
-<a name="API_ClusterLifeCycleConfig"></a>
 
 The lifecycle configuration for a SageMaker HyperPod cluster.
 

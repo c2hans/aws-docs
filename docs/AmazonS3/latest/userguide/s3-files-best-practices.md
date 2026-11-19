@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-best-
 ---
 
 # S3 Files best practices
-<a name="s3-files-best-practices"></a>
 
 This page describes the recommended best practices for working with S3 file systems.
 

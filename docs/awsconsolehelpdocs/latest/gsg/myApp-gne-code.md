@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/myApp-gne-
 ---
 
 # Creating code snippets in myApplications
-<a name="myApp-gne-code"></a>
 
 myApplications creates code snippets for all of your applications. You can use code snippets to automatically add newly created resources to an application using Infrastructure as Code (IaC) tools. All added resources are tagged with the AWS application tag to associate it with your application.
 

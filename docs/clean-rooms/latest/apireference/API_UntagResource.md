@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Unta
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes a tag or list of tags from a resource.
 

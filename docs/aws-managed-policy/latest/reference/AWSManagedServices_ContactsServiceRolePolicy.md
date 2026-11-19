@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSManagedServices\_ContactsServiceRolePolicy
-<a name="AWSManagedServices_ContactsServiceRolePolicy"></a>
 
 **Description**: Allows AWS Managed Services to read the values of the tags on AWS resources
 

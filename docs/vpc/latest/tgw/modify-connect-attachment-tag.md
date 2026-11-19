@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/modify-connect-attachment
 ---
 
 # Modify Connect attachment and Connect peer tags in AWS Transit Gateway
-<a name="modify-connect-attachment-tag"></a>
 
 You can modify the tags for your Connect attachment.
 

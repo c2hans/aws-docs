@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchPr
 ---
 
 # SearchPrompts
-<a name="API_SearchPrompts"></a>
 
 Searches prompts in an Connect Customer instance, with optional filtering.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_SourceAp
 ---
 
 # SourceApiAssociationSummary
-<a name="API_SourceApiAssociationSummary"></a>
 
 Describes the ARNs and IDs of associations, Merged APIs, and source APIs.
 

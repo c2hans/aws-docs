@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_RegisterCon
 ---
 
 # RegisterConnector
-<a name="API_RegisterConnector"></a>
 
 Registers a new custom connector with your AWS account. Before you can register the connector, you must deploy the associated AWS lambda function in your account.
 

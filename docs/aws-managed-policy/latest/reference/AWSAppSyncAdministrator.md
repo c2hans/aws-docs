@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAppSyncAdministrator
-<a name="AWSAppSyncAdministrator"></a>
 
 **Description**: Provides administrative access to the AppSync service, though not enough to access via the console.
 

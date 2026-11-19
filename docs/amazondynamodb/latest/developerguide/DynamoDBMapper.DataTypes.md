@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Dyn
 ---
 
 # Supported data types for DynamoDBMapper for Java
-<a name="DynamoDBMapper.DataTypes"></a>
 
 This section describes the supported primitive Java data types, collections, and arbitrary data types in Amazon DynamoDB.
 

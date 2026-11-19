@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Tags in Lightsail
-<a name="amazon-lightsail-faq-tagging"></a>
 
 ## What are tags?
 <a name="what-are-tags"></a>

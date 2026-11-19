@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/bobi-linu
 ---
 
 # Planning
-<a name="bobi-linux-planning"></a>
 
 The following topics are important for planning the SAP BOBI Platform in AWS Cloud.
 

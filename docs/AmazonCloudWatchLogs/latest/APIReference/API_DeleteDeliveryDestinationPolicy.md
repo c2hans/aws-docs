@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DeleteDeliveryDestinationPolicy
-<a name="API_DeleteDeliveryDestinationPolicy"></a>
 
 Deletes a delivery destination policy. For more information about these policies, see [PutDeliveryDestinationPolicy](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestinationPolicy.html).
 

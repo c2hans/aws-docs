@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 ---
 
 # Device posture for AWS Client VPN
-<a name="device-posture"></a>
 
 With AWS Client VPN device posture, you can control access to your network based on the security health of the connecting device, not just the identity of the user. When device posture is enabled, Client VPN evaluates the health of each device before it grants access, and continues to evaluate it for the life of the session.
 

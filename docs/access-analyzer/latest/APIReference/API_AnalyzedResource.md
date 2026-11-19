@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # AnalyzedResource
-<a name="API_AnalyzedResource"></a>
 
 Contains details about the analyzed resource.
 

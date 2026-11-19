@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Descr
 ---
 
 # DescribeSessions
-<a name="API_DescribeSessions"></a>
 
 Retrieves a list that describes the streaming sessions for a specified stack and fleet. If a UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
 

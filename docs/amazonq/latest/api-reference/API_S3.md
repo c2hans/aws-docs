@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_S3.html
 ---
 
 # S3
-<a name="API_S3"></a>
 
 Information required for Amazon Q Business to find a specific file in an Amazon S3 bucket.
 

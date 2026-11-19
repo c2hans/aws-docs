@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_NonCompliant
 ---
 
 # NonCompliantResource
-<a name="API_NonCompliantResource"></a>
 
 Information about the resource that was noncompliant with the audit check.
 

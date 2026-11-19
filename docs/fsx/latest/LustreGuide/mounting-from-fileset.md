@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/mounting-from-fil
 ---
 
 # Mounting specific filesets
-<a name="mounting-from-fileset"></a>
 
 By using the Lustre fileset feature, you can mount only a subset of the file system namespace, which is called a *fileset*. To mount a fileset of the file system, on the client you specify the subdirectory path after the file system name. A fileset mount (also called a subdirectory mount) limits the file system namespace visibility on a specific client.
 

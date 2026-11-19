@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/serv
 ---
 
 # Configuration options for debugging serverless applications
-<a name="serverless-apps-run-debug-config-ref"></a>
 
 When you open the `launch.json` file to edit debug configurations, you can use the VS Code [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) feature to view and automatically complete valid properties. To trigger IntelliSense in the editor, press **Ctrl**\+**Spacebar**.
 

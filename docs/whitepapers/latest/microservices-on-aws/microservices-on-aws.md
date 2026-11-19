@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 ---
 
 # Implementing Microservices on AWS
-<a name="microservices-on-aws"></a>
 
 Publication date: **July 31, 2023** ([Document history](document-revisions.md))
 

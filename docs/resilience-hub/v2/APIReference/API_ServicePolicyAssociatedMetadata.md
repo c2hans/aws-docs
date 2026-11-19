@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServicePolicyAssociatedMetadata
-<a name="API_ServicePolicyAssociatedMetadata"></a>
 
 Metadata for a service policy associated event.
 

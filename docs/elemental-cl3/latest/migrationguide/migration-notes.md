@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Important notes
-<a name="migration-notes"></a>
 
 Following is some key advice about migration.
 

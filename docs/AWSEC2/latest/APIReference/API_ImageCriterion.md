@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ImageCrit
 ---
 
 # ImageCriterion
-<a name="API_ImageCriterion"></a>
 
 The criteria that are evaluated to determine which AMIs are discoverable and usable in your account for the specified AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_CloudWatchLogsLogDe
 ---
 
 # CloudWatchLogsLogDelivery
-<a name="API_CloudWatchLogsLogDelivery"></a>
 
 The settings for delivering connector logs to Amazon CloudWatch Logs.
 

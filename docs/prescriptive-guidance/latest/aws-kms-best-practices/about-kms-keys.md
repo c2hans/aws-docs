@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-kms-bes
 ---
 
 # About AWS KMS keys
-<a name="about-kms-keys"></a>
 
 AWS Key Management Service (AWS KMS) allows you to create cryptographic keys that can be used on data that you pass to the service. The primary resource type is the KMS key, of which there are [three types](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html):
 + **Advanced Encryption Standard (AES) symmetric keys** – These are 256-bit keys that you use with the Galois Counter Mode (GCM) of AES. These keys provide authenticated encryption and decryption of data that is up to 4096 bytes (4 KB) in size. This is the most common type of key. You can use it to protect other data keys, such as those used in your applications or by AWS services that encrypt data on your behalf.

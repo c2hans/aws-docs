@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetVolume
-<a name="API_GetVolume"></a>
 
 Gets a persistent volume.
 

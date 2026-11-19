@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/map-pre
 ---
 
 # Prerequisites for using Amazon Location maps
-<a name="map-prerequisites"></a>
 
 Before you start utilizing the mapping capabilities of Amazon Location Service, there are a few prerequisites that need to be fulfilled. This page outlines the necessary steps and requirements to ensure a smooth integration of interactive maps into your applications.
 

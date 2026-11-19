@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Traffic
 ---
 
 # TrafficSourceIdentifier
-<a name="API_TrafficSourceIdentifier"></a>
 
 Identifying information for a traffic source.
 

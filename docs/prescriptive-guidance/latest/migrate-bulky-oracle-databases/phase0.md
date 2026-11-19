@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bul
 ---
 
 # Phase 0: Setup phase
-<a name="phase0"></a>
 
 1. Install Oracle Database 12.1.0.2 or later on the target [Amazon Elastic Compute Cloud (Amazon EC2)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/) instance.
 

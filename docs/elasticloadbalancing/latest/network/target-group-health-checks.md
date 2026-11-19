@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/targ
 ---
 
 # Health checks for Network Load Balancer target groups
-<a name="target-group-health-checks"></a>
 
 You register your targets with one or more target groups. The load balancer starts routing requests to a newly registered target as soon as the registration process completes and the targets pass the initial health checks. It can take a few minutes for the registration process to complete and health checks to start.
 

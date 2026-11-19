@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_T
 ---
 
 # AppRegistry
-<a name="API_Types_AWS_Service_Catalog_App_Registry"></a>
 
 The following data types are supported by AppRegistry:
 +  [Application](API_app-registry_Application.md)

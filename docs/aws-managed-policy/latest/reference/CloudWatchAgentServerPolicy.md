@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudWatchAgentServerPolicy
-<a name="CloudWatchAgentServerPolicy"></a>
 
 **Description**: Permissions required to use AmazonCloudWatchAgent on servers
 

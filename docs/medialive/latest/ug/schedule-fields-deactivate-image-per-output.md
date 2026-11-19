@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/schedule-fields-deac
 ---
 
 # Fields for deactivating a per-outputs image overlay
-<a name="schedule-fields-deactivate-image-per-output"></a>
 
 This table shows the fields that apply for an action to deactivate the image. The deactivate action operates on one per-output layer that you specify and on the outputs that you specify. It doesn't operate on a specific image.
 

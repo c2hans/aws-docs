@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Required roles and permissions for CloudWatch canaries
-<a name="CloudWatch_Synthetics_Canaries_Roles"></a>
 
 Both the users who create and manage canaries, and the canaries themselves, must have certain permissions.
 

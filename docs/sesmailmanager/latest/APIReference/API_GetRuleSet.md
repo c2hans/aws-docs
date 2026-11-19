@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_G
 ---
 
 # GetRuleSet
-<a name="API_GetRuleSet"></a>
 
 Fetch attributes of a rule set.
 

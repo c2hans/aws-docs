@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_GetWork
 ---
 
 # GetWorkflowRun
-<a name="API_GetWorkflowRun"></a>
 
 Retrieves the current state, configuration, and execution details of a workflow run.
 

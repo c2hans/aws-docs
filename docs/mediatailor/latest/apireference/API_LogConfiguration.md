@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_LogC
 ---
 
 # LogConfiguration
-<a name="API_LogConfiguration"></a>
 
 Defines where AWS Elemental MediaTailor sends logs for the playback configuration.
 

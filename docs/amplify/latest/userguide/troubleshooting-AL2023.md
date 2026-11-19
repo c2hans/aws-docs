@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/troubleshooting
 ---
 
 # Troubleshooting Amazon Linux 2023 build image issues
-<a name="troubleshooting-AL2023"></a>
 
 The following information can help you troubleshoot issues with the Amazon Linux 2023 (AL2023) build image.
 

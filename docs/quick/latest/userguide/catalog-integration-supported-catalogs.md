@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/catalog-integrati
 ---
 
 # Supported catalogs
-<a name="catalog-integration-supported-catalogs"></a>
 
 The following table lists the supported catalogs and their capabilities in this preview.
 

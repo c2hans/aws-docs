@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_TagsError.html
 ---
 
 # TagsError
-<a name="API_TagsError"></a>
 
 An object that contains details about an error related to retrieving tags.
 

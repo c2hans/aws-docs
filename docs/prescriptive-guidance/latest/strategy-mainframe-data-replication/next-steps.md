@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Next steps and resources
-<a name="next-steps"></a>
 
 As described in [Strategic approach for mainframe data replication](approach.md) in this guide, the first step is to begin assessing and planning your mainframe data replication journey. We recommend that you share this guide with the relevant stakeholders in your organization, including executive officers, IT representatives, the infrastructure team, and data leadership.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/workbench.sett
 ---
 
 # Download NoSQL Workbench
-<a name="workbench.settingup"></a>
 
 Follow these instructions to download and install NoSQL Workbench.
 

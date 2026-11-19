@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # AssistantAssociationOutputData
-<a name="API_amazon-q-connect_AssistantAssociationOutputData"></a>
 
 The data that is output as a result of the assistant association.
 

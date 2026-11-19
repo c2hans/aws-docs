@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/work-with-default-v
 ---
 
 # Work with your default VPC and default subnets
-<a name="work-with-default-vpc"></a>
 
 This section describes how to work with default VPCs and default subnets.
 

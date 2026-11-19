@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strateg
 ---
 
 # Tool scope
-<a name="mcp-tool-strategy-scope"></a>
 
 There are two approaches for developing tools: granular and coarse-grained.
 

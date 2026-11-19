@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task: Kicking off the migrate phase
-<a name="task-kickoff"></a>
 
 This meeting occurs once during the large migration project. Typically, you conduct this meeting as early as possible in stage 1, initializing a large migration. Aligning the project team members and setting expectations early helps the workstreams understand their responsibilities and build their runbooks. The purpose is to align the stakeholders and workstreams regarding the project scope, guiding principles, communication plan, and team member responsibilities.
 

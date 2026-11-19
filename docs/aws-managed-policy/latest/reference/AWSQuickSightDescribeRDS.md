@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSightDescribeRDS
-<a name="AWSQuickSightDescribeRDS"></a>
 
 **Description**: Allow QuickSight to describe the RDS resources
 

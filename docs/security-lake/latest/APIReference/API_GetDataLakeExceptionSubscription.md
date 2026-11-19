@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Ge
 ---
 
 # GetDataLakeExceptionSubscription
-<a name="API_GetDataLakeExceptionSubscription"></a>
 
 Retrieves the protocol and endpoint that were provided when subscribing to Amazon SNS topics for exception notifications.
 

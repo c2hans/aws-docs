@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # GetLogDeliveryConfiguration
-<a name="API_GetLogDeliveryConfiguration"></a>
 
 Given a user pool ID, returns the logging configuration. User pools can export message-delivery error and threat-protection activity logs to external AWS services. For more information, see [Exporting user pool logs](https://docs.aws.amazon.com/cognito/latest/developerguide/exporting-quotas-and-usage.html).
 

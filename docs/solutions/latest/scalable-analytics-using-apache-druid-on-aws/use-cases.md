@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Real time ingestion and fast query performance**
 

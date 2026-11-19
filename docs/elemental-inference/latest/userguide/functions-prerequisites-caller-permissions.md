@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Permissions for managing functions
-<a name="functions-prerequisites-caller-permissions"></a>
 
 The identity that creates and attaches functions — a person in the console, or an application calling the API — needs the Elemental Inference function actions, plus permission to pass the feed's access role to Elemental Inference. Function ARNs have the form `arn:aws:elemental-inference:{{region}}:{{111122223333}}:function/{{function-id}}`.
 

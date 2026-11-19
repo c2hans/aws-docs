@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/inputs-single-standa
 ---
 
 # Supported input class
-<a name="inputs-single-standard-vpc"></a>
 
 In MediaLive there are two kinds of class for inputs — standard class inputs and single-class inputs. Some inputs can be set up as either input class. Some inputs can be set up only as single-class inputs.
 

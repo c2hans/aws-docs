@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AuthenticationCon
 ---
 
 # AuthenticationConfiguration
-<a name="API_AuthenticationConfiguration"></a>
 
 A structure containing the authentication configuration.
 

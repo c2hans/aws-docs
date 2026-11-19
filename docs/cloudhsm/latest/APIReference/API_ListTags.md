@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_ListTag
 ---
 
 # ListTags
-<a name="API_ListTags"></a>
 
 Gets a list of tags for the specified AWS CloudHSM cluster.
 

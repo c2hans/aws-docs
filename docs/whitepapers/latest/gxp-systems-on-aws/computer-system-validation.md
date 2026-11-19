@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/co
 ---
 
 # Computer systems assurance
-<a name="computer-system-validation"></a>
 
 Computer Software Assurance (CSA) in GxP environments are guidelines referring to a modern, risk-based approach to software validation. These guidelines are designed to ensure product quality, patient safety, and data integrity across all stages of the product lifecycle. Historically, the industry has relied on Computer System Validation (CSV) as a compliance framework, particularly in accordance with the U.S. Food and Drug Administration (FDA) requirements outlined in 21 CFR Part 11 for electronic records and signatures and 21 CFR Part 820 for quality system regulations in medical device manufacturing. However, the FDA's guidance on Computer Software Assurance for Production and Quality System Software, published in September 2025, marks a significant shift toward a more flexible and risk-based approach to software validation.
 

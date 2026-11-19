@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/encrypt-zip-package.htm
 ---
 
 # Encrypting Lambda .zip deployment packages
-<a name="encrypt-zip-package"></a>
 
 AWS Lambda always provides server-side encryption at rest for .zip deployment packages and function configuration details with an AWS KMS key. By default, Lambda uses an [AWS owned key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk). If this default behavior suits your workflow, you don't need to set up anything else. AWS doesn't charge you to use this key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/APIReference/API_ListGroupRes
 ---
 
 # ListGroupResourcesItem
-<a name="API_ListGroupResourcesItem"></a>
 
 A structure returned by the [ListGroupResources](API_ListGroupResources.md) operation that contains identity and group membership status information for one of the resources in the group.
 

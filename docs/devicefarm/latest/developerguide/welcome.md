@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/welcome
 ---
 
 # What is AWS Device Farm?
-<a name="welcome"></a>
 
 Device Farm is an app testing service that you can use to test and interact with your Android, iOS, and web apps on real, physical phones and tablets that are hosted by Amazon Web Services (AWS).
 

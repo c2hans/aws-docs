@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsOrga
 ---
 
 # AwsOrganizationScope
-<a name="API_AwsOrganizationScope"></a>
 
 Specifies an AWS Organizations scope. Data from the specified organization or organizational unit is included in the response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/using-identity
 ---
 
 # IAM customer managed policies for AWS DataSync
-<a name="using-identity-based-policies"></a>
 
 In addition to AWS managed policies, you also can create your own identity-based policies for AWS DataSync and attach them to the AWS Identity and Access Management (IAM) identities that require those permissions. These are known as *customer managed policies*, which are standalone policies that you administer in your own AWS account.
 

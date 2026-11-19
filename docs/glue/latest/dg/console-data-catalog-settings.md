@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/console-data-catalog-sett
 ---
 
 # Data Catalog settings
-<a name="console-data-catalog-settings"></a>
 
  The Data Catalog settings contains options to set encryption and permissions options for the Data Catalog in your account.
 

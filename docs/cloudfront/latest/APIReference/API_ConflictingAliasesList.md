@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Confl
 ---
 
 # ConflictingAliasesList
-<a name="API_ConflictingAliasesList"></a>
 
 A list of aliases (also called CNAMEs) and the CloudFront standard distributions and AWS accounts that they are associated with. In the list, the standard distribution and account IDs are partially hidden, which allows you to identify the standard distributions and accounts that you own, but helps to protect the information of ones that you don't own.
 

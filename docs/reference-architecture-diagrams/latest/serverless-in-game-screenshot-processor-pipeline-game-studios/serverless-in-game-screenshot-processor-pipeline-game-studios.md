@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Serverless In-Game Screenshot Processor Pipeline for Game Studios
-<a name="serverless-in-game-screenshot-processor-pipeline-game-studios"></a>
 
 Publication date: **December 23, 2021 ([Diagram history](#diagram-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Docume
 ---
 
 # Document
-<a name="API_Document"></a>
 
 The content and content type of a document.
 

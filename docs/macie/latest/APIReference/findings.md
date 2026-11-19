@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/findings.html
 ---
 
 # Finding List
-<a name="findings"></a>
 
 The Finding List resource provides a subset of information about the findings for your Amazon Macie account. A *finding* is a detailed report of a potential issue with the security or privacy of an Amazon Simple Storage Service (Amazon S3) general purpose bucket or sensitive data in an S3 object.
 

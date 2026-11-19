@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contactlens-in
 ---
 
 # Supported flow blocks for conversational analytics integration
-<a name="contactlens-integration-supportedflowblocks"></a>
 
 The following tables list the flow blocks that you can use to specify how Connect Customer processes the audio stream sessions.
 

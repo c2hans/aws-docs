@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/trick-play-i-fr
 ---
 
 # Trick-play track via I-frames
-<a name="trick-play-i-frames"></a>
 
 In an HLS output group, you can support a trick-play track by providing an I-frame-only manifest.
 

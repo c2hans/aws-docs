@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/comprehend-availabi
 ---
 
 # Amazon Comprehend feature availability change
-<a name="comprehend-availability-change"></a>
 
 **Note**
 Amazon Comprehend topic modeling, event detection, and prompt safety classification features are no longer available to new customers.

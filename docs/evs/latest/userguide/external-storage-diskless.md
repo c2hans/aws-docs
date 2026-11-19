@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/external-storage-di
 ---
 
 # External storage options for diskless hosts
-<a name="external-storage-diskless"></a>
 
 This page applies to Self-deployed environments that run VCF 9.x on diskless hosts. For how EVS-deployed environments (VCF 5.2.x) differ, see [Differences between deployment modes](deployment-mode-differences.md).
 

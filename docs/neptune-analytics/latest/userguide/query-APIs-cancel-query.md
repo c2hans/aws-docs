@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/query
 ---
 
 # CancelQuery
-<a name="query-APIs-cancel-query"></a>
 
 CancelQuery cancels a specific query request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-f
 ---
 
 # Managing outbound endpoints
-<a name="resolver-forwarding-outbound-queries-managing"></a>
 
 To manage outbound endpoints, perform the applicable procedure.
 

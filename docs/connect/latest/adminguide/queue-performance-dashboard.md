@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/queue-performa
 ---
 
 # Queue and agent performance dashboard in Connect Customer
-<a name="queue-performance-dashboard"></a>
 
 The **Queue and agent performance** dashboard helps you understand the performance of your queues and agents compared over configurable periods of time. It uses key metrics such as contacts handled, service level, and average handle time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Classif
 ---
 
 # ClassificationStatus
-<a name="API_ClassificationStatus"></a>
 
 Provides details about the current status of the sensitive data detection.
 

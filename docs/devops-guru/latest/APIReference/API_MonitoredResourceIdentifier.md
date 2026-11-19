@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Moni
 ---
 
 # MonitoredResourceIdentifier
-<a name="API_MonitoredResourceIdentifier"></a>
 
  Information about the resource that is being monitored, including the name of the resource, the type of resource, and whether or not permission is given to DevOps Guru to access that resource.
 

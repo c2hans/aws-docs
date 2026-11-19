@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Java
-<a name="appinsights-metrics-java"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

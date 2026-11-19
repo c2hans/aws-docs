@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/drm-content-key-e
 ---
 
 # Using encrypted content keys with DRM
-<a name="drm-content-key-encryption"></a>
 
 For the most secure DRM encryption solution, use encrypted content keys in addition to encrypted content. To use encrypted content keys, you must import suitable certificates into AWS Certificate Manager (ACM), and then prepare them for use with AWS Elemental MediaConvert. For information about ACM, see the [AWS Certificate Manager User Guide](https://docs.aws.amazon.com/acm/latest/userguide/).
 

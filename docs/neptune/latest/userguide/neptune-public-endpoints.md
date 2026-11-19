@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/neptune-public-
 ---
 
 # Neptune Public Endpoints
-<a name="neptune-public-endpoints"></a>
 
 ## Overview
 <a name="neptune-public-endpoints-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Anthropic Claude 3.5 Haiku
-<a name="model-evaluation-type-kb-haiku35"></a>
 
 Prompts used with Anthropic Claude 3.5 Haiku.
 

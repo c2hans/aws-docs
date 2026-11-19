@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Design considerations
-<a name="design-considerations"></a>
 
 This section describes important design decisions and configuration options for the Distributed Load Testing on AWS solution, including supported applications, test types, scheduling options, and deployment considerations.
 

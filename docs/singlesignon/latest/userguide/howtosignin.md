@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/howtosigni
 ---
 
 # Signing in to the AWS access portal
-<a name="howtosignin"></a>
 
 The AWS access portal provides IAM Identity Center users with single sign-on access to all their assigned AWS accounts and applications through a web portal. The following outlines how you can sign in to the AWS access portal, tips for signing in, and how to sign out of the AWS access portal.
 

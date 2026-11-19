@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Android SDK
-<a name="android-sdk"></a>
 
 ## Introduction
 <a name="introduction"></a>

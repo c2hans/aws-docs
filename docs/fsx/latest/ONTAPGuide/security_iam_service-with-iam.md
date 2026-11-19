@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/security_iam_servi
 ---
 
 # How Amazon FSx for NetApp ONTAP works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Amazon FSx, learn what IAM features are available to use with Amazon FSx.
 

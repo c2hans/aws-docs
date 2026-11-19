@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ListTagsForResource
-<a name="API_messaging-chime_ListTagsForResource"></a>
 
 Lists the tags applied to an Amazon Chime SDK messaging resource.
 

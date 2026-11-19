@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Service
 ---
 
 # ServiceDiscovery
-<a name="API_ServiceDiscovery"></a>
 
 An object that represents the service discovery information for a virtual node.
 

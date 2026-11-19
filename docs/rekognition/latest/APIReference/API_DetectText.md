@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dete
 ---
 
 # DetectText
-<a name="API_DetectText"></a>
 
 Detects text in the input image and converts it into machine-readable text.
 

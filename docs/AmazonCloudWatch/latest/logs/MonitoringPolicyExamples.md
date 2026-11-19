@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/MonitoringP
 ---
 
 # Creating metric filters
-<a name="MonitoringPolicyExamples"></a>
 
 The following procedure and examples show how to create metric filters.
 

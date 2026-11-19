@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/choose-runt
 ---
 
 # Choose your runtime (Greengrass nucleus or Greengrass nucleus lite)
-<a name="choose-runtime"></a>
 
 Choosing between Greengrass nucleus and Greengrass nucleus lite depends on your device resources and the features your Lambda functions use. Review the event source compatibility matrix in the following table, then use the decision flow diagram to determine which runtime is appropriate for your migration. For a detailed comparison of Greengrass nucleus and Greengrass nucleus lite features, see [Choosing your runtime](choosing-your-runtime.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/domain
 ---
 
 # RoutingRules
-<a name="domainnames-domainname-routingrules"></a>
 
 Represents a collection of routing rules.
 

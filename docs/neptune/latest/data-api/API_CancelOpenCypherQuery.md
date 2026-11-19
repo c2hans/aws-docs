@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_CancelOpenCy
 ---
 
 # CancelOpenCypherQuery
-<a name="API_CancelOpenCypherQuery"></a>
 
 Cancels a specified openCypher query. See [Neptune openCypher status endpoint](https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-opencypher-status.html) for more information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_V
 ---
 
 # Via
-<a name="API_Via"></a>
 
 The list of network function groups and edge overrides for the service insertion action. Used for both the `send-to` and `send-via` actions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_VpcConfigResponse.h
 ---
 
 # VpcConfigResponse
-<a name="API_VpcConfigResponse"></a>
 
 VPC configuration for workflow runs with computed VPC ID.
 

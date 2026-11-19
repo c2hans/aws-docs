@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/maori-data-lens/a
 ---
 
 # Application of the Māori data guidance
-<a name="application-of-the-māori-data-guidance"></a>
 
  This section outlines how the Māori data guidance could be applied to the digital archive solution scenario and the proposed solution architecture. It is written from the perspective of the software development company.
 

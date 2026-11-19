@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/add-profileexp
 ---
 
 # Show Profile Explorer in the agent workspace
-<a name="add-profileexplorer-to-agentworkspace"></a>
 
 By default, the Customer Profiles app in the agent workspace uses a fixed layout. You can replace it with a Profile Explorer layout, so agents see the customer data that are relevant to their work. For example, a travel company might show loyalty status and upcoming trips, while a telecommunications provider might show churn risk and service addresses.
 

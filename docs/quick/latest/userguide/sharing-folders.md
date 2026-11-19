@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sharing-folders.h
 ---
 
 # Create and manage membership permissions for Quick shared folders
-<a name="sharing-folders"></a>
 
 **Shared folders (unrestricted)**
 

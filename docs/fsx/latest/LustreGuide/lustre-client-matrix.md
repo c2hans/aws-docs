@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/lustre-client-mat
 ---
 
 # Lustre file system and client kernel compatibility
-<a name="lustre-client-matrix"></a>
 
 We highly recommend using the Lustre version for your FSx for Lustre file system that is compatible with the Linux kernel versions of your client instances.
 

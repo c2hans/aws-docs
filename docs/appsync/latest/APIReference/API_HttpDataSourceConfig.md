@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_HttpData
 ---
 
 # HttpDataSourceConfig
-<a name="API_HttpDataSourceConfig"></a>
 
 Describes an HTTP data source configuration.
 

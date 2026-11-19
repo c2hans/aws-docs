@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Billing and Cost Management Dashboards
-<a name="API_Types_AWS_Billing_and_Cost_Management_Dashboards"></a>
 
 The following data types are supported by AWS Billing and Cost Management Dashboards:
 +  [BudgetQuery](API_bcmDashboards_BudgetQuery.md)

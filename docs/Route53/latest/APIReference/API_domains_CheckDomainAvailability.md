@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # CheckDomainAvailability
-<a name="API_domains_CheckDomainAvailability"></a>
 
 This operation checks the availability of one domain name. Note that if the availability status of a domain is pending, you must submit another request to determine the availability of the domain name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Update
 ---
 
 # UpdateAccelerator
-<a name="API_UpdateAccelerator"></a>
 
 Update an accelerator to make changes, such as the following:
 + Change the name of the accelerator.

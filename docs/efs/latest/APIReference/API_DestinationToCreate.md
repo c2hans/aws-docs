@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_DestinationT
 ---
 
 # DestinationToCreate
-<a name="API_DestinationToCreate"></a>
 
 Describes the new or existing destination file system for the replication configuration.
 + If you want to replicate to a new file system, do not specify the File System ID for the destination file system. Amazon EFS creates a new, empty file system. For One Zone storage, specify the Availability Zone to create the file system in. To use an AWS Key Management Service key other than the default KMS key, then specify it. For more information, see [Configuring replication to new Amazon EFS file system](https://docs.aws.amazon.com/efs/latest/ug/create-replication.html) in the *Amazon EFS User Guide*.

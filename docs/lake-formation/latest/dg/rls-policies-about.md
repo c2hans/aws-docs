@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/rls-policies-ab
 ---
 
 # How RLS policies work in detail
-<a name="rls-policies-about"></a>
 
 This section covers how row-level security (RLS) policies are structured, enforced, and used in practice, including a worked end-to-end example.
 

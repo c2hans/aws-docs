@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-cost-op
 ---
 
 # Objectives
-<a name="targeted-business-outcomes"></a>
 
 Implementing the strategies in this guide helps organizations achieve measurable improvements across cost, reliability, and operations:
 + **Reduced infrastructure costs: **Reduce compute spend by up to 30-60% through intelligent node provisioning, Spot and Graviton adoption, right-sizing pod requests, and eliminating extended support charges.

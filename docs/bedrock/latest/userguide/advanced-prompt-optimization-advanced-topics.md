@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompt
 ---
 
 # Advanced topics and strategies
-<a name="advanced-prompt-optimization-advanced-topics"></a>
 
 ## Topics on this page
 <a name="advanced-prompt-optimization-advanced-topics-toc"></a>

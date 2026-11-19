@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-overview-ama
 ---
 
 # AWS Shared Security Responsibility Model
-<a name="aws-shared-security-responsibility-model"></a>
 
 Security and compliance is a shared responsibility between AWS and the customer. The [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/) can help relieve the customer's operational burden because AWS operates, manages, and controls the components from the host operating system and virtualization layer down to the physical security of the facilities in which the service operates.
 

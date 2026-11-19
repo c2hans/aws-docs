@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/personalize-event
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Basic examples for Amazon Personalize Events using AWS SDKs
-<a name="personalize-events_code_examples_basics"></a>
 
 The following code examples show how to use the basics of Amazon Personalize Events with AWS SDKs.
 

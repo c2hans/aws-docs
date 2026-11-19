@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/LL-in-formats.html
 ---
 
 # Linear learner response formats
-<a name="LL-in-formats"></a>
 
 ## JSON response formats
 <a name="LL-json"></a>

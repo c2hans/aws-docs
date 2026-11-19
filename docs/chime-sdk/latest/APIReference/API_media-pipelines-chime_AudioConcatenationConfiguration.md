@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # AudioConcatenationConfiguration
-<a name="API_media-pipelines-chime_AudioConcatenationConfiguration"></a>
 
 The audio artifact concatenation configuration object.
 

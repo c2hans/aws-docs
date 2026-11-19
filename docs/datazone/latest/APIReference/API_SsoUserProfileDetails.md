@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SsoUser
 ---
 
 # SsoUserProfileDetails
-<a name="API_SsoUserProfileDetails"></a>
 
 The SSO user profile detail.
 

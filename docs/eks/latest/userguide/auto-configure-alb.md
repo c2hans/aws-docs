@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-configure-alb.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create an IngressClass to configure an Application Load Balancer
-<a name="auto-configure-alb"></a>
 
 EKS Auto Mode automates routine tasks for load balancing, including exposing cluster apps to the internet.
 

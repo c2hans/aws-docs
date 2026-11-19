@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # Introduction to denial of service attacks
-<a name="introduction-denial-of-service-attacks"></a>
 
  A Denial of Service (DoS) attack, or event, is a deliberate attempt to make a website or application unavailable to users, such as by flooding it with network traffic. Attackers use a variety of techniques that consume large amounts of network bandwidth or tie up other system resources, disrupting access for legitimate users. In its simplest form, a lone attacker uses a single source to carry out a DoS attack against a target, as shown in the following figure.
 

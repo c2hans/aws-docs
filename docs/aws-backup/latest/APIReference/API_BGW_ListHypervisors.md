@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_L
 ---
 
 # ListHypervisors
-<a name="API_BGW_ListHypervisors"></a>
 
 Lists your hypervisors.
 

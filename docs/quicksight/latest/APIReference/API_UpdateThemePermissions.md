@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateThemePermissions
-<a name="API_UpdateThemePermissions"></a>
 
 Updates the resource permissions for a theme. Permissions apply to the action to grant or revoke permissions on, for example `"quicksight:DescribeTheme"`.
 

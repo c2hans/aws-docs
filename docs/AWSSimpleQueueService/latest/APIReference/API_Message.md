@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # Message
-<a name="API_Message"></a>
 
 An Amazon SQS message.
 

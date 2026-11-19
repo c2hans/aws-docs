@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # UserPoolDescriptionType
-<a name="API_UserPoolDescriptionType"></a>
 
 A short description of a user pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # IdleEstimatedMonthlySavings
-<a name="API_IdleEstimatedMonthlySavings"></a>
 
 Describes the estimated monthly savings possible for idle resources by adopting Compute Optimizer recommendations.
 

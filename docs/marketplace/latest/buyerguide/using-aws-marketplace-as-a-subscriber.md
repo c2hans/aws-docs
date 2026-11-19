@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/using-aws-
 ---
 
 # Using AWS Marketplace as a buyer
-<a name="using-aws-marketplace-as-a-subscriber"></a>
 
 As a buyer, you go to [AWS Marketplace](https://aws.amazon.com/marketplace) to search, filter, and navigate to a product that runs on Amazon Web Services.
 

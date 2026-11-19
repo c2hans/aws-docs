@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/using-other-services-
 ---
 
 # Write to Kinesis Data Streams using third-party integrations
-<a name="using-other-services-third-party"></a>
 
 You can write data to Kinesis Data Streams using one of the following third-party options that integrate with Kinesis Data Streams. Select the option that you want to learn more about and find resources and links to relevant documentation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBParameters
-<a name="API_DescribeDBParameters"></a>
 
 Returns the detailed parameter list for a particular DB parameter group.
 

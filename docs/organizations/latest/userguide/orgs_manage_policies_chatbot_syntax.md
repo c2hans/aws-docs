@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Chat applications policy syntax and examples
-<a name="orgs_manage_policies_chatbot_syntax"></a>
 
 This topic describes chat applications policy syntax and provides examples.
 

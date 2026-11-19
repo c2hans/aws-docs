@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_ServiceSummary.
 ---
 
 # ServiceSummary
-<a name="API_ServiceSummary"></a>
 
 Provides summary information for an AWS App Runner service.
 

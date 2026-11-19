@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConnectorAuthoriz
 ---
 
 # ConnectorAuthorizationCodeProperties
-<a name="API_ConnectorAuthorizationCodeProperties"></a>
 
 OAuth2 authorization code configuration that defines the properties needed for the Authorization Code grant type flow.
 

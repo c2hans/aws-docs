@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Overr
 ---
 
 # OverridePullRequestApprovalRules
-<a name="API_OverridePullRequestApprovalRules"></a>
 
 Sets aside (overrides) all approval rule requirements for a specified pull request.
 

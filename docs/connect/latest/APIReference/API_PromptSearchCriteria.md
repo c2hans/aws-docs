@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PromptSe
 ---
 
 # PromptSearchCriteria
-<a name="API_PromptSearchCriteria"></a>
 
 The search criteria to be used to return prompts.
 
@@ -12,12 +11,12 @@ The search criteria to be used to return prompts.
 
  ** AndConditions **   <a name="connect-Type-PromptSearchCriteria-AndConditions"></a>
 A list of conditions which would be applied together with an AND condition.
-Type: Array of [PromptSearchCriteria](#API_PromptSearchCriteria) objects
+Type: Array of [PromptSearchCriteria](API_PromptSearchCriteria.md) objects
 Required: No
 
  ** OrConditions **   <a name="connect-Type-PromptSearchCriteria-OrConditions"></a>
 A list of conditions which would be applied together with an OR condition.
-Type: Array of [PromptSearchCriteria](#API_PromptSearchCriteria) objects
+Type: Array of [PromptSearchCriteria](API_PromptSearchCriteria.md) objects
 Required: No
 
  ** StringCondition **   <a name="connect-Type-PromptSearchCriteria-StringCondition"></a>

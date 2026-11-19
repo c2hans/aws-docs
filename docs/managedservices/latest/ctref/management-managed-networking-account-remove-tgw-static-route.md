@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/management-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # Networking Account \| Remove TGW Static Route
-<a name="management-managed-networking-account-remove-tgw-static-route"></a>
 
 Remove the specified TGW static route from the specified transit gateway (TGW) route table. Use this multi-account landing zone (MALZ) change type only in a Networking account.
 

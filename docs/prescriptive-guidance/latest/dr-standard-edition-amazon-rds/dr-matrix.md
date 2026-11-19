@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard
 ---
 
 # DR solution decision matrix
-<a name="dr-matrix"></a>
 
 Use the following table to review RPO, RTO, licensing and other features of disaster recovery options for Amazon RDS for Oracle and SQL Server and find the solutions that best fit your business requirements.
 

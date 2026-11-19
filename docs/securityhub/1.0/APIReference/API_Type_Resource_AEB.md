@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # AWS Elastic Beanstalk
-<a name="API_Type_Resource_AEB"></a>
 
 ****AWS Elastic Beanstalk objects****
 + [AwsElasticBeanstalkEnvironmentDetails](API_AwsElasticBeanstalkEnvironmentDetails.md)

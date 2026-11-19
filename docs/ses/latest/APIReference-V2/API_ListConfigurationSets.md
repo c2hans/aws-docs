@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListConfi
 ---
 
 # ListConfigurationSets
-<a name="API_ListConfigurationSets"></a>
 
 List all of the configuration sets associated with your account in the current region.
 

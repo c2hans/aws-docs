@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_remove.htm
 ---
 
 # Remove or deactivate an IAM user
-<a name="id_users_remove"></a>
 
 [Best practices](best-practices.md#remove-credentials) recommend that you remove unused IAM users from your AWS account. If you want to retain the IAM users credentials for future use, instead of deleting them from the account you can deactivate the user's access. For more information, see [Deactivating an IAM user](#id_users_deactivating).
 

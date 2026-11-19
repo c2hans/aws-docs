@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Respo
 ---
 
 # ResponseHeadersPolicyAccessControlAllowMethods
-<a name="API_ResponseHeadersPolicyAccessControlAllowMethods"></a>
 
 A list of HTTP methods that CloudFront includes as values for the `Access-Control-Allow-Methods` HTTP response header.
 

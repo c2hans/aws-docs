@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 ---
 
 # Uninstall the CodeDeploy agent
-<a name="codedeploy-agent-operations-uninstall"></a>
 
 You can remove the CodeDeploy agent from instances when it is no longer needed or when you want to perform a fresh installation.
 

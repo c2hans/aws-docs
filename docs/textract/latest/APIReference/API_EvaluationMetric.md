@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Evaluat
 ---
 
 # EvaluationMetric
-<a name="API_EvaluationMetric"></a>
 
 The evaluation metrics (F1 score, Precision, and Recall) for an adapter version.
 

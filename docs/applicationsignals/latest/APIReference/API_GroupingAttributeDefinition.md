@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # GroupingAttributeDefinition
-<a name="API_GroupingAttributeDefinition"></a>
 
 A structure that defines how services should be grouped based on specific attributes. This includes the friendly name for the grouping, the source keys to derive values from, and an optional default value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Sche
 ---
 
 # SchemaStatusDetail
-<a name="API_SchemaStatusDetail"></a>
 
 Information about the schema status.
 

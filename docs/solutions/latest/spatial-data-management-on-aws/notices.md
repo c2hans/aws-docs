@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Notices
-<a name="notices"></a>
 
 This section contains notices for Spatial Data Management on AWS.
 

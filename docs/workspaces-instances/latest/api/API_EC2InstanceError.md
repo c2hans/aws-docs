@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_EC2I
 ---
 
 # EC2InstanceError
-<a name="API_EC2InstanceError"></a>
 
 Captures detailed error information for EC2 instance operations.
 

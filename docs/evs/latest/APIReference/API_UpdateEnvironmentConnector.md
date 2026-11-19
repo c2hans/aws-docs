@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_UpdateEnviro
 ---
 
 # UpdateEnvironmentConnector
-<a name="API_UpdateEnvironmentConnector"></a>
 
 Updates a connector for an Amazon EVS environment. You can update the AWS Secrets Manager secret ARN or the appliance FQDN to reconfigure the connector metadata.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # GeocodeFilter
-<a name="API_geoplaces_GeocodeFilter"></a>
 
 Geocode structure which contains a set of inclusion/exclusion properties that results must possess in order to be returned as a result.
 

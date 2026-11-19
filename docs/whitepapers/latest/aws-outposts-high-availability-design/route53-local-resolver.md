@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-ava
 ---
 
 # Route 53 Local Resolver on Outposts
-<a name="route53-local-resolver"></a>
 
 When the AWS Outposts service link gets impacted by a temporary disconnect, the local DNS resolution fails, making it difficult for applications and services to discover other services, even when they are running on the same Outposts rack. However, with Route 53 Resolver on AWS Outposts, applications and services will continue to benefit from local DNS resolution to discover other services – even in the case of connectivity loss to the parent AWS Region. At the same time, for DNS resolution for on-premises host names, the Route 53 Resolver on Outposts helps to reduce latency as query results are cached and served locally, while being fully integrated with Route 53 Resolver endpoints.
 

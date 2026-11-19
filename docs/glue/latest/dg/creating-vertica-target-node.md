@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-vertica-target-n
 ---
 
 # Creating a Vertica target node
-<a name="creating-vertica-target-node"></a>
 
 ## Prerequisites needed
 <a name="creating-vertica-target-node-prerequisites"></a>

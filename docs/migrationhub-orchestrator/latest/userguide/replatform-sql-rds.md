@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/usergui
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Replatform SQL on Amazon RDS template
-<a name="replatform-sql-rds"></a>
 
  With **Replatform SQL server on Amazon RDS** template, you can replatform your SQL Server databases on an instance to Amazon RDS using native backup and restore. You can also migrate databases that are encrypted with transparent data encryption. This template migrates User database items, Certificates, Logins and Agent Jobs that are associated with your SQL Server.
 

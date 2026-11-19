@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewayHttpConnectionPool
-<a name="API_VirtualGatewayHttpConnectionPool"></a>
 
 An object that represents a type of connection pool.
 

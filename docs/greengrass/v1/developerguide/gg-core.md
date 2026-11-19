@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.htm
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # Configure the AWS IoT Greengrass core
-<a name="gg-core"></a>
 
 An AWS IoT Greengrass core is an AWS IoT thing (device) that acts as a hub or gateway in edge environments. Like other AWS IoT devices, a core exists in the registry, has a device shadow, and uses a device certificate to authenticate with AWS IoT Core and AWS IoT Greengrass. The core device runs the AWS IoT Greengrass Core software, which enables it to manage local processes for Greengrass groups, such as communication, shadow sync, and token exchange.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DescribeCache
-<a name="API_DescribeCache"></a>
 
 Returns information about the cache of a gateway. This operation is only supported in the cached volume, tape, and file gateway types.
 

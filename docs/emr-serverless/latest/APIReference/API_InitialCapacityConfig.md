@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_I
 ---
 
 # InitialCapacityConfig
-<a name="API_InitialCapacityConfig"></a>
 
 The initial capacity configuration per worker.
 

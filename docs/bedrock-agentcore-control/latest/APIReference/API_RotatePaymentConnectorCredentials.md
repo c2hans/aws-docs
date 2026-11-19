@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RotatePaymentConnectorCredentials
-<a name="API_RotatePaymentConnectorCredentials"></a>
 
 Replaces the service-managed credentials of a payment connector with newly issued credentials.
 

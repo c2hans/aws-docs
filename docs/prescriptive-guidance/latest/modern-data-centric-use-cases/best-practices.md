@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modern-data
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 We recommend that you follow storage and technical best practices. These best practices can help you get the most out of your data-centric archicture.
 

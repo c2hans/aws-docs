@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SrtDecryptio
 ---
 
 # SrtDecryptionConfiguration
-<a name="API_SrtDecryptionConfiguration"></a>
 
 Contains the configuration settings for decrypting SRT streams, including the encryption key details and decryption parameters.
 

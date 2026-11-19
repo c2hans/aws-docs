@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-de
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 Your next steps are to begin assessment and planning. To get started, you can do the following:
 

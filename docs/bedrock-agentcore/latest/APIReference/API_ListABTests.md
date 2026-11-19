@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ListABTests
-<a name="API_ListABTests"></a>
 
 Lists all A/B tests in the account.
 

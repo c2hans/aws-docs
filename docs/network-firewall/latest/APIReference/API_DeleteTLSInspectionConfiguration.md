@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DeleteTLSInspectionConfiguration
-<a name="API_DeleteTLSInspectionConfiguration"></a>
 
 Deletes the specified [TLSInspectionConfiguration](API_TLSInspectionConfiguration.md).
 

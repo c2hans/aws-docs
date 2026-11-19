@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_P
 ---
 
 # PipeTargetSageMakerPipelineParameters
-<a name="API_PipeTargetSageMakerPipelineParameters"></a>
 
 The parameters for using a SageMaker AI pipeline as a target.
 

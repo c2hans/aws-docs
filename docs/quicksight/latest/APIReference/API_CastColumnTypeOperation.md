@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CastC
 ---
 
 # CastColumnTypeOperation
-<a name="API_CastColumnTypeOperation"></a>
 
 A transform operation that casts a column to a different type.
 

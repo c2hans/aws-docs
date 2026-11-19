@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ResourceShar
 ---
 
 # ResourceShareConfiguration
-<a name="API_ResourceShareConfiguration"></a>
 
 The configuration of the resource share
 

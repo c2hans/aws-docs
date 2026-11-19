@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ListChannels
-<a name="API_messaging-chime_ListChannels"></a>
 
 Lists all Channels created under a single Chime App as a paginated list. You can specify filters to narrow results.
 

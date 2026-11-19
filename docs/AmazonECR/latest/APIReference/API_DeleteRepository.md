@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Delete
 ---
 
 # DeleteRepository
-<a name="API_DeleteRepository"></a>
 
 Deletes a repository. If the repository isn't empty, you must either delete the contents of the repository or use the `force` option to delete the repository and have Amazon ECR delete all of its contents on your behalf.
 

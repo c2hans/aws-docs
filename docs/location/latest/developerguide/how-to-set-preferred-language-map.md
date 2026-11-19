@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-se
 ---
 
 # How to set a preferred language for a map
-<a name="how-to-set-preferred-language-map"></a>
 
 Amazon Location Service enables you to set the preferred language at the client-side by updating the style descriptor for a specific language. You can set a preferred language and display content in that language where embedded. Otherwise, it will fall back to another language.
 

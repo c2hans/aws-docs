@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/configure-cdc-
 ---
 
 # Configure permissions to work with CDC streams in Amazon Keyspaces
-<a name="configure-cdc-permissions"></a>
 
 To enable CDC streams, the principal, for example an IAM user or role, needs the following permissions.
 

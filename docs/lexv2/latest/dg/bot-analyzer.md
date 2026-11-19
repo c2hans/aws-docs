@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/bot-analyzer.html
 ---
 
 # Optimize Bot using AI-powered Bot Analyzer
-<a name="bot-analyzer"></a>
 
 Analyze your Amazon Lex V2 bot configuration against AWS best practices using AI-powered recommendations. Bot Analyzer uses Amazon Bedrock's generative AI capabilities to identify configuration issues and provide actionable guidance to improve intent classification and slot resolution performance.
 

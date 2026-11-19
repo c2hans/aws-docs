@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/openssl-provid
 ---
 
 # OpenSSL Provider Supported Mechanisms
-<a name="openssl-provider-mechanisms"></a>
 
 The AWS CloudHSM OpenSSL Provider SDK supports a comprehensive set of cryptographic mechanisms for various operations including digital signatures, asymmetric encryption, symmetric encryption, key exchange, and more.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ListSolNetwo
 ---
 
 # ListSolNetworkOperationsInfo
-<a name="API_ListSolNetworkOperationsInfo"></a>
 
 Information parameters for a network operation.
 

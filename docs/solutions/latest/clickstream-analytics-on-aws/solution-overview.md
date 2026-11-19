@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # An end-to-end guidance to collect, ingest, analyze, and visualize clickstream data inside your web and mobile applications
-<a name="solution-overview"></a>
 
  The Clickstream Analytics on AWS guidance allows you to collect, ingest, process and analyze clickstream data from websites and mobile applications to drive your business growth. You can use the guidance to spin up an analytics platform that fits your organizational needs, and maintain complete ownership and control over your valuable user behavior data. The solution can be applied to various use cases such as user behavior analysis and marketing analysis to improve website and application's performance.
 

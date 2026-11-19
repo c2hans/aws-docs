@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeProject
-<a name="API_DescribeProject"></a>
 
 Retrieves information about a project.
 

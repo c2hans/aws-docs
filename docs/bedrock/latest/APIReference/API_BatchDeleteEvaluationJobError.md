@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_BatchDel
 ---
 
 # BatchDeleteEvaluationJobError
-<a name="API_BatchDeleteEvaluationJobError"></a>
 
 A JSON array that provides the status of the evaluation jobs being deleted.
 

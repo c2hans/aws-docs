@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-s3-int
 ---
 
 # Transferring files between Amazon RDS for Oracle and an Amazon S3 bucket
-<a name="oracle-s3-integration.using"></a>
 
 To transfer files between an RDS for Oracle DB instance and an Amazon S3 bucket, you can use the Amazon RDS package `rdsadmin_s3_tasks`. You can compress files with GZIP when uploading them, and decompress them when downloading.
 

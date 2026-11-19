@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 ---
 
 # Configuring MFA, authentication, verification and invitation messages
-<a name="cognito-user-pool-settings-message-customizations"></a>
 
 With Amazon Cognito, you can customize SMS and email authentication, verification, and user invitation messages to enhance the security and user experience of your application. You can choose between code-based and one-click link verifications for some messages. This topic discusses how you can personalize authentication and verification communications in the Amazon Cognito console.
 

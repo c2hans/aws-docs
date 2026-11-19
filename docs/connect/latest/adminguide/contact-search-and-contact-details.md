@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-search
 ---
 
 # Contact search and contact details
-<a name="contact-search-and-contact-details"></a>
 
 **Important**
 To enable consolidated contact search for your ACGR instance, please reach out to [AWS Support](https://console.aws.amazon.com/support/home).

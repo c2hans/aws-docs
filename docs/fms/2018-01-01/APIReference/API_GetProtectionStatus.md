@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_GetProte
 ---
 
 # GetProtectionStatus
-<a name="API_GetProtectionStatus"></a>
 
 If you created a Shield Advanced policy, returns policy-level attack summary information in the event of a potential DDoS attack. Other policy types are currently unsupported.
 

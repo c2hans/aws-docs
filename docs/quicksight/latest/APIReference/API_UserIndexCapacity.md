@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UserI
 ---
 
 # UserIndexCapacity
-<a name="API_UserIndexCapacity"></a>
 
 A summary of a user's index capacity consumption.
 

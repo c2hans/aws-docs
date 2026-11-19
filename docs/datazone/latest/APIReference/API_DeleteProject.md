@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteP
 ---
 
 # DeleteProject
-<a name="API_DeleteProject"></a>
 
 Deletes a project in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/create-cwe
 ---
 
 # Amazon ECR source actions and EventBridge resources
-<a name="create-cwe-ecr-source"></a>
 
 To add an Amazon ECR source action in CodePipeline, you can choose either to:
 + Use the CodePipeline console **Create pipeline** wizard ([Create a custom pipeline (console)](pipelines-create.md#pipelines-create-console)) or **Edit action** page to choose the **Amazon ECR** provider option. The console creates an EventBridge rule that starts your pipeline when the source changes.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-
 ---
 
 # Build a Basic Web Application
-<a name="build-web-app-s3-lambda-api-gateway-dynamodb"></a>
 
 |  |  |
 | --- |--- |

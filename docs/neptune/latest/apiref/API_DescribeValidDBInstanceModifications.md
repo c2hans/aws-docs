@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DescribeValidD
 ---
 
 # DescribeValidDBInstanceModifications
-<a name="API_DescribeValidDBInstanceModifications"></a>
 
-You can call [DescribeValidDBInstanceModifications](#API_DescribeValidDBInstanceModifications) to learn what modifications you can make to your DB instance. You can use this information when you call [ModifyDBInstance](API_ModifyDBInstance.md).
+You can call [DescribeValidDBInstanceModifications](API_DescribeValidDBInstanceModifications.md) to learn what modifications you can make to your DB instance. You can use this information when you call [ModifyDBInstance](API_ModifyDBInstance.md).
 
 ## Request Parameters
 <a name="API_DescribeValidDBInstanceModifications_RequestParameters"></a>
@@ -23,7 +22,7 @@ Required: Yes
 The following element is returned by the service.
 
  ** ValidDBInstanceModificationsMessage **
-Information about valid modifications that you can make to your DB instance. Contains the result of a successful call to the [DescribeValidDBInstanceModifications](#API_DescribeValidDBInstanceModifications) action. You can use this information when you call [ModifyDBInstance](API_ModifyDBInstance.md).
+Information about valid modifications that you can make to your DB instance. Contains the result of a successful call to the [DescribeValidDBInstanceModifications](API_DescribeValidDBInstanceModifications.md) action. You can use this information when you call [ModifyDBInstance](API_ModifyDBInstance.md).
 Type: [ValidDBInstanceModificationsMessage](API_ValidDBInstanceModificationsMessage.md) object
 
 ## Errors

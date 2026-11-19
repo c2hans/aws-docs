@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/mul.html
 ---
 
 # $mul
-<a name="mul"></a>
 
 The `$mul` operator in Amazon DocumentDB is used to multiply the value of a field by a specified number. This can be useful for updating multiple documents atomically and consistently, such as updating flight miles based on a credit card status.
 

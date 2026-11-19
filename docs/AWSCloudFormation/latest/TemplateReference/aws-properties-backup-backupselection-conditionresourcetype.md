@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::BackupSelection ConditionResourceType
-<a name="aws-properties-backup-backupselection-conditionresourcetype"></a>
 
 Specifies an object that contains an array of triplets made up of a condition type (such as `STRINGEQUALS`), a key, and a value. Conditions are used to filter resources in a selection that is assigned to a backup plan.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/active-dire
 ---
 
 # WorkSpaces Pools Active Directory Administration
-<a name="active-directory-admin"></a>
 
 Setting up and using Active Directory with WorkSpaces Pools involves the following administrative tasks.
 

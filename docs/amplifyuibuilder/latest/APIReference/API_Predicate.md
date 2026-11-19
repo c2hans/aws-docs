@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # Predicate
-<a name="API_Predicate"></a>
 
 Stores information for generating Amplify DataStore queries. Use a `Predicate` to retrieve a subset of the data in a collection.
 
@@ -12,7 +11,7 @@ Stores information for generating Amplify DataStore queries. Use a `Predicate` t
 
  ** and **   <a name="amplifyuibuilder-Type-Predicate-and"></a>
 A list of predicates to combine logically.
-Type: Array of [Predicate](#API_Predicate) objects
+Type: Array of [Predicate](API_Predicate.md) objects
 Required: No
 
  ** field **   <a name="amplifyuibuilder-Type-Predicate-field"></a>
@@ -38,7 +37,7 @@ Required: No
 
  ** or **   <a name="amplifyuibuilder-Type-Predicate-or"></a>
 A list of predicates to combine logically.
-Type: Array of [Predicate](#API_Predicate) objects
+Type: Array of [Predicate](API_Predicate.md) objects
 Required: No
 
 ## See Also

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/access-con
 ---
 
 # Using identity-based policies (IAM policies) for AWS Control Tower
-<a name="access-control-managing-permissions"></a>
 
 This topic provides examples of identity-based policies that demonstrate how an account administrator can attach permissions policies to IAM identities (that is, users, groups, and roles) and thereby grant permissions to perform operations on AWS Control Tower resources.
 

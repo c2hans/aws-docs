@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # InputFile
-<a name="API_agent-runtime_InputFile"></a>
 
 Contains details of the source files.
 

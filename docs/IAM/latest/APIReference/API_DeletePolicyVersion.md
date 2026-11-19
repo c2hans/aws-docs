@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeletePolicy
 ---
 
 # DeletePolicyVersion
-<a name="API_DeletePolicyVersion"></a>
 
 Deletes the specified version from the specified managed policy.
 

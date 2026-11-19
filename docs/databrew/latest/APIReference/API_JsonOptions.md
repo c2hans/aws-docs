@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_JsonOpt
 ---
 
 # JsonOptions
-<a name="API_JsonOptions"></a>
 
 Represents the JSON-specific options that define how input is to be interpreted by AWS Glue DataBrew.
 

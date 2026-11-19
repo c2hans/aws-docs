@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Dele
 ---
 
 # DeleteServiceNetworkResourceAssociation
-<a name="API_DeleteServiceNetworkResourceAssociation"></a>
 
 Deletes the association between a service network and a resource configuration.
 

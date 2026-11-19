@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AwsLambdaF
 ---
 
 # AwsLambdaFunctionDetails
-<a name="API_AwsLambdaFunctionDetails"></a>
 
  A summary of information about the AWS Lambda function.
 

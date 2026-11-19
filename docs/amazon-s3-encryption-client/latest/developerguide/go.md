@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-s3-encryption-client/latest/devel
 ---
 
 # Amazon S3 Encryption Client for Go
-<a name="go"></a>
 
 **Note**
 This documentation describes the Amazon S3 Encryption Client version 3.*x* and newer, which is an independent library. For information about previous versions of the Amazon S3 Encryption Client, see the AWS SDK Developer Guide for your programming language.

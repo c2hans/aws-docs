@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/tips-for-a
 ---
 
 # Administrative tips for landing zone setup
-<a name="tips-for-admin-setup"></a>
 
 Here are some tips for setting up and configuring your landing zone.
 + The AWS Region where you do the most work should be your home Region.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Allow IAM users or groups to access Infrastructure Performance
-<a name="CloudWatch-InfrastructurePerformance-IAM-Allow-Access"></a>
 
 Users who sign in to the AWS Management Console or AWS CLI must have permissions to access specific resources. You provide those permissions by using IAM, through policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk starts using Amazon EC2 launch templates on November 25, 2019
-<a name="release-2019-11-25-launchtemplates"></a>
 
 AWS Elastic Beanstalk started using Amazon Elastic Compute Cloud (Amazon EC2) launch templates to launch instances when necessary.
 

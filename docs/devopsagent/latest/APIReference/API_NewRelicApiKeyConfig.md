@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_NewR
 ---
 
 # NewRelicApiKeyConfig
-<a name="API_NewRelicApiKeyConfig"></a>
 
 API key authentication configuration for New Relic service.
 

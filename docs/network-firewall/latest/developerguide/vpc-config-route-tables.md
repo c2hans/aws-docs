@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/v
 ---
 
 # VPC route table configuration for AWS Network Firewall
-<a name="vpc-config-route-tables"></a>
 
 After you create your firewall, you reroute your VPC network traffic through the firewall endpoints so they can start filtering traffic. Perform the following steps:
 

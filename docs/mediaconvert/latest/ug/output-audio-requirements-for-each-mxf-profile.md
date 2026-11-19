@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/output-audio-requ
 ---
 
 # Audio settings requirements for different MXF profiles
-<a name="output-audio-requirements-for-each-mxf-profile"></a>
 
 This table shows the requirements for how you set up your output audio tracks in your AWS Elemental MediaConvert job. The requirements are different for each MXF profile that you choose.
 

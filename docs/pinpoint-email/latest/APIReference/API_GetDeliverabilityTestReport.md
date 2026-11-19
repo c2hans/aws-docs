@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_G
 ---
 
 # GetDeliverabilityTestReport
-<a name="API_GetDeliverabilityTestReport"></a>
 
 Retrieve the results of a predictive inbox placement test.
 

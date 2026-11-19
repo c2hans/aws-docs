@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetData
 ---
 
 # GetDataExportConfiguration
-<a name="API_GetDataExportConfiguration"></a>
 
 Gets data export configuration details.
 

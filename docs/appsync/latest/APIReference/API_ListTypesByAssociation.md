@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListType
 ---
 
 # ListTypesByAssociation
-<a name="API_ListTypesByAssociation"></a>
 
 Lists `Type` objects by the source API association ID.
 

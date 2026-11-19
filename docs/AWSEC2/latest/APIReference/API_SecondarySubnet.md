@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Secondary
 ---
 
 # SecondarySubnet
-<a name="API_SecondarySubnet"></a>
 
 Describes a secondary subnet.
 

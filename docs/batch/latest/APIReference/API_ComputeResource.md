@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ComputeRes
 ---
 
 # ComputeResource
-<a name="API_ComputeResource"></a>
 
 An object that represents an AWS Batch compute resource. For more information, see [Compute environments](https://docs.aws.amazon.com/batch/latest/userguide/compute_environments.html) in the * AWS Batch User Guide*.
 

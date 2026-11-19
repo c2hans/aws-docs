@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHoste
 ---
 
 # GetHostedZoneCount
-<a name="API_GetHostedZoneCount"></a>
 
 Retrieves the number of hosted zones that are associated with the current AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_Operat
 ---
 
 # AWS Snowball Edge
-<a name="API_Operations_Amazon_Import_Export_Snowball"></a>
 
 The following actions are supported by AWS Snowball Edge:
 +  [CancelCluster](API_CancelCluster.md)

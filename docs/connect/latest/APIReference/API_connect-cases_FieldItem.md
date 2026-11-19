@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # FieldItem
-<a name="API_connect-cases_FieldItem"></a>
 
 Object for field related information.
 

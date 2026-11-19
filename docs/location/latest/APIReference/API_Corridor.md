@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Corrido
 ---
 
 # Corridor
-<a name="API_Corridor"></a>
 
 Geometry defined as a corridor - a LineString with a radius that defines the width of the corridor.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # OPS 11. How do you evolve operations?
-<a name="ops-11"></a>
 
  Dedicate time and resources for nearly continuous incremental improvement to evolve the effectiveness and efficiency of your operations.
 

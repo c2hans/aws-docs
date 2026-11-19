@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/troublesh
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 Find solutions to commonly seen errors when using AWS Security Agent.
 

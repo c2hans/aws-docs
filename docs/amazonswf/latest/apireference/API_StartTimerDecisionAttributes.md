@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_StartT
 ---
 
 # StartTimerDecisionAttributes
-<a name="API_StartTimerDecisionAttributes"></a>
 
 Provides the details of the `StartTimer` decision.
 

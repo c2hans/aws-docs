@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # SSM Command document for patching: `AWS-RunPatchBaselineAssociation`
-<a name="patch-manager-aws-runpatchbaselineassociation"></a>
 
 Like the `AWS-RunPatchBaseline` document, `AWS-RunPatchBaselineAssociation` performs patching operations on instances for both security related and other types of updates. You can also use the document `AWS-RunPatchBaselineAssociation` to apply patches for both operating systems and applications. (On Windows Server, application support is limited to updates for applications released by Microsoft.)
 

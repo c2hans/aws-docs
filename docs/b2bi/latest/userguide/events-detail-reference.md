@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/events-detail-refe
 ---
 
 # AWS B2B Data Interchange events detail reference
-<a name="events-detail-reference"></a>
 
 All events from AWS services have a common set of fields containing metadata about the event, such as the AWS service that is the source of the event, the time the event was generated, the account and region in which the event took place, and others. For definitions of these general fields, see [Event structure reference](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-events-structure.html) in the *Amazon EventBridge User Guide*.
 

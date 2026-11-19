@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Inte
 ---
 
 # IntermediateTableDependency
-<a name="API_IntermediateTableDependency"></a>
 
 Contains information about a base table that an intermediate table depends on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # CryptogramAuthResponse
-<a name="API_CryptogramAuthResponse"></a>
 
 Parameters that are required for Authorization Response Cryptogram (ARPC) generation after Authorization Request Cryptogram (ARQC) verification is successful.
 

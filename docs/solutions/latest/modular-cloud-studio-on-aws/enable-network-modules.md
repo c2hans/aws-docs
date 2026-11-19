@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Step 1: Enable Network modules
-<a name="enable-network-modules"></a>
 
 Follow these steps to enable the Network modules.
 

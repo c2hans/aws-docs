@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/batchupdatecommand-p
 ---
 
 # JSON payload in different interfaces
-<a name="batchupdatecommand-payloads"></a>
 
 The JSON payload for the command is different for the different interfaces:
 + In the AWS CLI, the contents of the payload depend on how you use the command:

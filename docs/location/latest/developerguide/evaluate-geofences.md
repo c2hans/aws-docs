@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/evaluate-
 ---
 
 # Evaluate device positions against geofences
-<a name="evaluate-geofences"></a>
 
 There are two ways to evaluate positions against geofences to generate geofence events:
 + You can link Trackers and Geofence Collections. For more information, see the section: [Link a tracker to a geofence collection](associate-consumer.md).

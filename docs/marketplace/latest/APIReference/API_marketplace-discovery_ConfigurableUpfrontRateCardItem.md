@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ConfigurableUpfrontRateCardItem
-<a name="API_marketplace-discovery_ConfigurableUpfrontRateCardItem"></a>
 
 A rate card item within a configurable upfront pricing term, including a selector for choosing the configuration and per-unit rates.
 

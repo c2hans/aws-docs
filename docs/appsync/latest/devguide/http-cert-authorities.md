@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/http-cert-author
 ---
 
 # Certificate Authorities (CA) Recognized by AWS AppSync for HTTPS Endpoints
-<a name="http-cert-authorities"></a>
 
 **Note**
 Let's Encrypt is accepted via the *identrust* and *isrgrootx1* certificates. No action on your part is required if you use Let's Encrypt.

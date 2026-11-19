@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Network access to OpenSearch UI
-<a name="application-networking"></a>
 
 The topics in this section cover how users reach an OpenSearch UI application. For information about controlling how the application reaches your data, see [Managing data source associations and Virtual Private Cloud access permissions](application-data-sources-and-vpc.md).
 

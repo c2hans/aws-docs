@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/translation
 ---
 
 # Translation and languages
-<a name="translation"></a>
 
 By default, AWS Marketplace translates your product listings and offers into the following languages:
 + French (fr-FR)

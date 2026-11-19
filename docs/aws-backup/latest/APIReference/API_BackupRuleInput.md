@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Backu
 ---
 
 # BackupRuleInput
-<a name="API_BackupRuleInput"></a>
 
 Specifies a scheduled task used to back up a selection of resources.
 

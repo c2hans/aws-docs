@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inge
 ---
 
 # Ingestion workflow
-<a name="ingestion-workflow"></a>
 
 The ingestion workflow includes AWS Step Functions and [AWS Lambda](https://aws.amazon.com/lambda/), which orchestrate the specific ingestion workflow for a video, image, audio file, or document. When a customer uploads a new media file to the Amazon S3 ingestion bucket through the Media2Cloud on AWS web interface, the ingestion process starts. The workflow generates an asset unique identifier, computes and validates an [MD5](https://en.wikipedia.org/wiki/MD5) checksum, and extracts media information such as bitrate, formats, audio channels container format for video, or EXIF information such as GPS location, model, and make for image.
 

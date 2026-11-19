@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/userguide/system-database-util
 **AWS Mainframe Modernization Service (Managed Runtime Environment experience)** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization Service (Managed Runtime Environment experience) explore AWS Mainframe Modernization Service (Self-Managed Experience). Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
 
 # Database Utilities
-<a name="system-database-utilities"></a>
 
 This section is about database related utilities. On legacy platforms, these programs usually operate on DB2 databases, whereas alternative databases are chosen (AWS Aurora being a popular choice) on modern environments.
 

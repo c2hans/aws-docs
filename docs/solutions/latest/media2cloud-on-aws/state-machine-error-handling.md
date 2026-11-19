@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/stat
 ---
 
 # State machine error handling
-<a name="state-machine-error-handling"></a>
 
  The error handling of the main state machine is handled by using an Amazon CloudWatch Event Rule attached to an AWS Lambda function.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/cli/cli-mon-list
 ---
 
 # mon-list-metrics
-<a name="cli-mon-list-metrics"></a>
 
 ## Description
 <a name="w2aab9c43b3"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Disassoc
 ---
 
 # DisassociateUserProficiencies
-<a name="API_DisassociateUserProficiencies"></a>
 
 Disassociates a set of proficiencies from a user.
 

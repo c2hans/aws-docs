@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSPERF05-BP01 Enable a dedicated leader node for OpenSearch Service domain
-<a name="aosperf05-bp01"></a>
 
  Configure dedicated leader nodes with appropriate instance types to improve cluster stability and performance. This separation of cluster management tasks helps prevent split-brain scenarios and optimizes resource utilization as your OpenSearch Service domain grows.
 

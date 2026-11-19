@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/getting-starte
 ---
 
 # Delete a keyspace in Amazon Keyspaces
-<a name="getting-started.clean-up.keyspace"></a>
 
 To avoid being charged for keyspaces, delete all the keyspaces that you're not using. When you delete a keyspace, the keyspace and all its tables are deleted and you stop accruing charges for them.
 

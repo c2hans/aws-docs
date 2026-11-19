@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCertif
 ---
 
 # UpdateCertificate
-<a name="API_UpdateCertificate"></a>
 
 Updates the status of the specified certificate. This operation is idempotent.
 

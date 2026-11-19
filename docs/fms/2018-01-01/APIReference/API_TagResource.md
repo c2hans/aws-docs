@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_TagResou
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds one or more tags to an AWS resource.
 

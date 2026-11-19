@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/crud-mpts-pasthr
 ---
 
 # Including passthrough streams in an MPTS
-<a name="crud-mpts-pasthrough-streams"></a>
 
 Read this section if you want to include passthrough streams in the MPTS. For guidelines and rules about the streams that you can pass through, see [Passing through custom streams](mpts-passthrough-high-pids.md) and [Passing through SI/PSI tables](mpts-passthrough-PSI-pids.md)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Modernizing ASP.NET (ASMX) web services incrementally by using containers and Amazon API Gateway
-<a name="introduction"></a>
 
 *Dan Broadway and Silas Silva, Amazon Web Services*
 

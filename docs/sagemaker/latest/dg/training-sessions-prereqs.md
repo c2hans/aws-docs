@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-sessions-pr
 ---
 
 # Prerequisites
-<a name="training-sessions-prereqs"></a>
 
 The training session APIs extend serverless model customization with the SageMaker AI `CreateTrainingSession` API and a set of runtime operations that run training and sampling against an active session. Before you create your first session, configure three things: the IAM identity that calls the API (the *caller identity*), the IAM execution role that the session assumes (the `RoleArn` you pass to `CreateTrainingSession`), and a model package group for your checkpoints.
 

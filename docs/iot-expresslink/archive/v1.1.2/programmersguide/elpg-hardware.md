@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.1.2/programme
 ---
 
 # 2 Hardware
-<a name="elpg-hardware"></a>
 
 The ideal hardware requirements are based on:
 + a FreeRTOS qualified MCU, capable of network connectivity (ethernet, Wi-Fi, cellular)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## What about shuffle-sharding?
 <a name="what-about-shuffle-sharding"></a>

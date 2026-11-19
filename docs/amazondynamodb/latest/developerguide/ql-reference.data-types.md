@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-
 ---
 
 # PartiQL data types for DynamoDB
-<a name="ql-reference.data-types"></a>
 
 The following table lists the data types you can use with PartiQL for DynamoDB.
 

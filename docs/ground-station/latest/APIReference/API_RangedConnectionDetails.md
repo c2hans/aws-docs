@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_R
 ---
 
 # RangedConnectionDetails
-<a name="API_RangedConnectionDetails"></a>
 
 Ingress address of AgentEndpoint with a port range and an optional mtu.
 

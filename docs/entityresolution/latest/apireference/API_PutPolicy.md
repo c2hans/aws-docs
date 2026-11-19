@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # PutPolicy
-<a name="API_PutPolicy"></a>
 
 Updates the resource-based policy.
 

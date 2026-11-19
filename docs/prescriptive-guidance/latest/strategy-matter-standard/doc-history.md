@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Document history
-<a name="doc-history"></a>
 
 |
 |

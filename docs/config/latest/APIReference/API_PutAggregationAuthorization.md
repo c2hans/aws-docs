@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutAggreg
 ---
 
 # PutAggregationAuthorization
-<a name="API_PutAggregationAuthorization"></a>
 
 Authorizes the aggregator account and region to collect data from the source account and region.
 

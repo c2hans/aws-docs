@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticLoadBalancingClassicServiceRolePolicy
-<a name="AWSElasticLoadBalancingClassicServiceRolePolicy"></a>
 
 **Description**: Service Linked Role Policy for AWS Elastic Load Balancing Control Plane - Classic
 

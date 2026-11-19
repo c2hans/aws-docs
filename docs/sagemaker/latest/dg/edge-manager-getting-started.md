@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-manager-getting
 ---
 
 # First Steps with Amazon SageMaker AI Edge Manager
-<a name="edge-manager-getting-started"></a>
 
 This guide demonstrates how to complete the necessary steps to register, deploy, and manage a fleet of devices, and how to satisfy Amazon SageMaker AI Edge Manager prerequisites.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/snapshots-descr
 ---
 
 # Describing snapshots
-<a name="snapshots-describing"></a>
 
 The following procedures show you how to display a list of your snapshots. If you desire, you can also view the details of a particular snapshot.
 

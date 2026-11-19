@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_GetProf
 ---
 
 # GetProfile
-<a name="API_GetProfile"></a>
 
  Gets the aggregated profile of a profiling group for a specified time range. Amazon CodeGuru Profiler collects posted agent profiles for a profiling group into aggregated profiles.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TestConnectionInp
 ---
 
 # TestConnectionInput
-<a name="API_TestConnectionInput"></a>
 
 A structure that is used to specify testing a connection to a service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_React
 ---
 
 # ReactionForComment
-<a name="API_ReactionForComment"></a>
 
 Information about the reaction values provided by users on a comment.
 

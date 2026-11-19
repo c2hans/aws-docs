@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # AccessGrant
-<a name="API_AccessGrant"></a>
 
 Full AccessGrant structure returned by API operations.
 

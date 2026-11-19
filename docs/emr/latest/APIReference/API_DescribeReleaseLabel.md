@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_DescribeRele
 ---
 
 # DescribeReleaseLabel
-<a name="API_DescribeReleaseLabel"></a>
 
 Provides Amazon EMR release label details, such as the releases available the Region where the API request is run, and the available applications for a specific Amazon EMR release label. Can also list Amazon EMR releases that support a specified version of Spark.
 

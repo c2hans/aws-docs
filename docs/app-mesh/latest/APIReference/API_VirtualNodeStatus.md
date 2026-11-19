@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualNodeStatus
-<a name="API_VirtualNodeStatus"></a>
 
 An object that represents the current status of the virtual node.
 

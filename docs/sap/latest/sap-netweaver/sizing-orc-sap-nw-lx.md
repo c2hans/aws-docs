@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sizing-orc-sap-
 ---
 
 # Sizing
-<a name="sizing-orc-sap-nw-lx"></a>
 
 Sizing applies to three key areas - compute, network, and storage.
 

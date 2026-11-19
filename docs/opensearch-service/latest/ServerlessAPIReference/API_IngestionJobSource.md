@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # IngestionJobSource
-<a name="API_IngestionJobSource"></a>
 
 The source that an ingestion job ingests data from.
 

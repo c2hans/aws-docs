@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Amazon CloudWatch agent
-<a name="CloudWatch-OTLPCloudWatchAgent"></a>
 
 The CloudWatch agent is built on the OpenTelemetry Collector, so you can use it to receive OpenTelemetry data and send it to the CloudWatch OTLP endpoints. In most cases, this is the recommended way to send OpenTelemetry data to CloudWatch, because a single agent can also power curated experiences such as CloudWatch Application Signals and CloudWatch Enhanced Container Insights. For more information about installing the agent, see [Collect metrics, logs, and traces using the CloudWatch agent](Install-CloudWatch-Agent.md).
 

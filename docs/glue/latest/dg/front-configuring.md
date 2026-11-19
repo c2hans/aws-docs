@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/front-configuring.html
 ---
 
 # Configuring Front
-<a name="front-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Front, you must meet the following requirements:
 

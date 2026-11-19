@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SpeechMode
 ---
 
 # SpeechModelConfig
-<a name="API_SpeechModelConfig"></a>
 
 Configuration settings that define which speech-to-text model to use for processing speech input.
 

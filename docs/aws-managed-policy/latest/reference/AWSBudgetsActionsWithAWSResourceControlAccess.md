@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBudgetsActionsWithAWSResourceControlAccess
-<a name="AWSBudgetsActionsWithAWSResourceControlAccess"></a>
 
 **Description**: Provides full access to AWS Budgets Actions including using Budgets Actions to control states of running AWS resources via AWS Management Console
 

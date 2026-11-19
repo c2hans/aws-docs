@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_EC2Sec
 ---
 
 # EC2SecurityGroup
-<a name="API_EC2SecurityGroup"></a>
 
 This data type is used as a response element in the following actions:
 +  `AuthorizeDBSecurityGroupIngress`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failov
 ---
 
 # How health checks work in simple Amazon Route 53 configurations
-<a name="dns-failover-simple-configs"></a>
 
 When you have two or more resources that perform the same function, such as two or more web servers for example.com, you can use the following health-checking features to route traffic only to the healthy resources:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Sc
 ---
 
 # SchemaChangeRequestDetails
-<a name="API_SchemaChangeRequestDetails"></a>
 
 Extra details specific to this schema change type notification.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteConfig
 ---
 
 # DeleteConfigurationSet
-<a name="API_DeleteConfigurationSet"></a>
 
 Deletes a configuration set. Configuration sets enable you to publish email sending events. For information about using configuration sets, see the [Amazon SES Developer Guide](https://docs.aws.amazon.com/ses/latest/dg/monitor-sending-activity.html).
 

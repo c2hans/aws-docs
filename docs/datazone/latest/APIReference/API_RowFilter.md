@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_RowFilt
 ---
 
 # RowFilter
-<a name="API_RowFilter"></a>
 
 The row filter.
 
@@ -15,7 +14,7 @@ This data type is a UNION, so only one of the following members can be specified
 
  ** and **   <a name="datazone-Type-RowFilter-and"></a>
 The 'and' clause of the row filter.
-Type: Array of [RowFilter](#API_RowFilter) objects
+Type: Array of [RowFilter](API_RowFilter.md) objects
 Required: No
 
  ** expression **   <a name="datazone-Type-RowFilter-expression"></a>
@@ -26,7 +25,7 @@ Required: No
 
  ** or **   <a name="datazone-Type-RowFilter-or"></a>
 The 'or' clause of the row filter.
-Type: Array of [RowFilter](#API_RowFilter) objects
+Type: Array of [RowFilter](API_RowFilter.md) objects
 Required: No
 
 ## See Also

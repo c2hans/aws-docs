@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Building a Scalable and Secure Multi-VPC AWS Network Infrastructure
-<a name="welcome"></a>
 
 Publication date: **April 17, 2024** ([Document history](document-revisions.md))
 

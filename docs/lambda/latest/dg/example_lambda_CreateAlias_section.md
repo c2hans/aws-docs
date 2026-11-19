@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_lambda_CreateAl
 ---
 
 # Use `CreateAlias` with a CLI
-<a name="example_lambda_CreateAlias_section"></a>
 
 The following code examples show how to use `CreateAlias`.
 

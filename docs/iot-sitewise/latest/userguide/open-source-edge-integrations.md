@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/open-sourc
 ---
 
 # Process and visualize data with SiteWise Edge and open-source tools
-<a name="open-source-edge-integrations"></a>
 
 Configure AWS IoT SiteWise Edge MQTT-enabled gateways with open-source tools for local processing and visualization to enhance your industrial data management capabilities.
 

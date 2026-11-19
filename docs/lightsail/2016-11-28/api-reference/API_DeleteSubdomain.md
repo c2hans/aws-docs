@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DeleteSubdomain
-<a name="API_DeleteSubdomain"></a>
 
 Deletes a Lightsail subdomain.
 

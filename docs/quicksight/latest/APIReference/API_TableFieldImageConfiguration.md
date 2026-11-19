@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableFieldImageConfiguration
-<a name="API_TableFieldImageConfiguration"></a>
 
 The image configuration of a table field URL.
 

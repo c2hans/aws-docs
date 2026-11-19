@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # AWS Systems Manager in Accelerate
-<a name="ssm-documents"></a>
 
 An AWS Systems Manager document (SSM document) defines the actions that Systems Manager performs on your AWS resources. Systems Manager includes more than a dozen pre-configured documents that you can use by specifying parameters at runtime. Documents use JavaScript Object Notation (JSON) or YAML, and they include steps and parameters that you specify.
 

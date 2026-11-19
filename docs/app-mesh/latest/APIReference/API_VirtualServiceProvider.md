@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualServiceProvider
-<a name="API_VirtualServiceProvider"></a>
 
 An object that represents the provider for a virtual service.
 

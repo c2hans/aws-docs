@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_LogTargetCon
 ---
 
 # LogTargetConfiguration
-<a name="API_LogTargetConfiguration"></a>
 
 The target configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Firewal
 ---
 
 # FirewallPolicyStatefulRuleGroupReferencesDetails
-<a name="API_FirewallPolicyStatefulRuleGroupReferencesDetails"></a>
 
 A stateful rule group that is used by the firewall policy.
 

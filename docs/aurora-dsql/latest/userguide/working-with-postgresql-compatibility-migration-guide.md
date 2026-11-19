@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/working-wit
 ---
 
 # Migrating from PostgreSQL to Aurora DSQL
-<a name="working-with-postgresql-compatibility-migration-guide"></a>
 
 Aurora DSQL is designed to be [PostgreSQL compatible](working-with-postgresql-compatibility.md), supporting core relational features such as ACID transactions, secondary indexes, joins, and standard DML operations. Most existing PostgreSQL applications can migrate to Aurora DSQL with minimal changes.
 

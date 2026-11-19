@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryPlan
 ---
 
 # RecoveryPlanExecutionServer
-<a name="API_RecoveryPlanExecutionServer"></a>
 
 A server within a recovery plan execution step, enriched with execution state.
 

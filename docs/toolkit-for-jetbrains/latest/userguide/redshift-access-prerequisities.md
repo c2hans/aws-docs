@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/r
 ---
 
 # Prerequisites for accessing Amazon Redshift clusters
-<a name="redshift-access-prerequisities"></a>
 
 Before you start can interacting with an Amazon Redshift cluster using AWS Toolkit for JetBrains, you need to complete the following tasks:
 + [Create an Amazon Redshift cluster and set up its authentication method](#cluster-authentication)

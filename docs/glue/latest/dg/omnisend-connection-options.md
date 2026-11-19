@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/omnisend-connection-optio
 ---
 
 # Omnisend connection options
-<a name="omnisend-connection-options"></a>
 
 The following are connection options for Omnisend:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Omnisend object to read.

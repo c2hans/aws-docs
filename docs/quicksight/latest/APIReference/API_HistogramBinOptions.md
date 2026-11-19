@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Histo
 ---
 
 # HistogramBinOptions
-<a name="API_HistogramBinOptions"></a>
 
 The options that determine the presentation of histogram bins.
 

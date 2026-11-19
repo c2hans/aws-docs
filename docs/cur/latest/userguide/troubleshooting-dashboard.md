@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/troubleshooting-das
 ---
 
 # Troubleshooting the cost and usage dashboard
-<a name="troubleshooting-dashboard"></a>
 
 **Topics**
 + [Why did my cost and usage dashboard export fail right after I created it?](#dataexports-failed-export)

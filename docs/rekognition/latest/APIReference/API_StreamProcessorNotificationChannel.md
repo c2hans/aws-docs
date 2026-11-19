@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Stre
 ---
 
 # StreamProcessorNotificationChannel
-<a name="API_StreamProcessorNotificationChannel"></a>
 
 The Amazon Simple Notification Service topic to which Amazon Rekognition publishes the object detection results and completion status of a video analysis operation.
 

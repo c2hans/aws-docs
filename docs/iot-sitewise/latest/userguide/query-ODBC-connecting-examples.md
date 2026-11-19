@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-ODBC
 ---
 
 # Connection string examples for the AWS IoT SiteWise ODBC driver
-<a name="query-ODBC-connecting-examples"></a>
 
 ## Example of connecting to the ODBC driver with IAM credentials
 <a name="query-ODBC-connecting-examples-iam"></a>

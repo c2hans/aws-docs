@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Content integrity, brand safety, and ad fraud prevention
-<a name="advsec04"></a>
 
  Advertising decisions depend on claims about the creative, content environment, seller, supply path, and viewer session. This capability establishes evidence for those claims and keeps an approved decision valid from campaign activation through delivery.
 

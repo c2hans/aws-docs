@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_ECSSe
 ---
 
 # ECSService
-<a name="API_ECSService"></a>
 
  Contains the service and cluster names used to identify an Amazon ECS deployment's target.
 

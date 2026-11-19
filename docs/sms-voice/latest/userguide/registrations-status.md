@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # Check a registration's status in AWS End User Messaging SMS
-<a name="registrations-status"></a>
 
 Your registration will be in one of these different statuses:
 + **AUTHENTICATION\_REQUIRED** – You need to complete two-factor authentication for your registration.

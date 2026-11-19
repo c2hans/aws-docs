@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/ListBulkIm
 ---
 
 # List AWS IoT SiteWise bulk import jobs (AWS CLI)
-<a name="ListBulkImportJobs"></a>
 
 Use the [ListBulkImportJobs](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListBulkImportJobss.html) API operation to retrieve a list of summaries for bulk import jobs in AWS IoT SiteWise. This operation provides an efficient way to monitor and manage your data import processes. It returns the following key information for each job:
 + Job ID. A unique identifier for each bulk import job

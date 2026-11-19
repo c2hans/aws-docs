@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/userguide/channels-email
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Creating an email orchestration sending role in Amazon Pinpoint
-<a name="channels-email-orchestration-sending-role"></a>
 
 Amazon Pinpoint uses your Amazon SES resources for sending email messages that are either part of a campaign or a journey. To set up Amazon Pinpoint to use your Amazon SES resources to send email, create or update an IAM role to grant Amazon Pinpoint access.
 

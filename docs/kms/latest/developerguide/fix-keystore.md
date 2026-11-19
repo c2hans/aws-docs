@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/fix-keystore.h
 ---
 
 # Troubleshooting a custom key store
-<a name="fix-keystore"></a>
 
 AWS CloudHSM key stores are designed to be available and resilient. However, there are some error conditions that you might have to repair to keep your AWS CloudHSM key store operational.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/merge.html
 ---
 
 # $merge
-<a name="merge"></a>
 
 Introduced in 8.0
 

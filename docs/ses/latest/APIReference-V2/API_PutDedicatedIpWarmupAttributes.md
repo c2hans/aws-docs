@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutDedica
 ---
 
 # PutDedicatedIpWarmupAttributes
-<a name="API_PutDedicatedIpWarmupAttributes"></a>
 
 ## Request Syntax
 <a name="API_PutDedicatedIpWarmupAttributes_RequestSyntax"></a>

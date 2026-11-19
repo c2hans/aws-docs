@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StartOut
 ---
 
 # StartOutboundVoiceContact
-<a name="API_StartOutboundVoiceContact"></a>
 
 Places an outbound call to a contact, and then initiates the flow. It performs the actions in the flow that's specified (in `ContactFlowId`).
 

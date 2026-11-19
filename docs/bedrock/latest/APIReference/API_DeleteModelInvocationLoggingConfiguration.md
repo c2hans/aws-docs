@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteMo
 ---
 
 # DeleteModelInvocationLoggingConfiguration
-<a name="API_DeleteModelInvocationLoggingConfiguration"></a>
 
 Delete the invocation logging.
 

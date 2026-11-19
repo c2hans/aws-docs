@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListComponents
-<a name="API_ListComponents"></a>
 
 Returns the list of components that you have access to. By default, the response doesn't include components in the `DEPRECATED` state. To list deprecated components, use the `status` filter with the value `DEPRECATED`.
 

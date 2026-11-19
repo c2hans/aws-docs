@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # FeedAssociation
-<a name="API_FeedAssociation"></a>
 
 Contains information about the resource that is associated with a feed. It is used in the FeedSummary that is used in the response of a ListFeeds action.
 

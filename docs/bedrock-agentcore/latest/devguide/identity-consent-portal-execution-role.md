@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Consent portal execution role
-<a name="identity-consent-portal-execution-role"></a>
 
 A consent portal assumes an IAM role that you pass as `executionRoleArn` when you create the portal. The Consent Portal service assumes this role to read the gateway and OAuth2 credential provider configurations and to retrieve the OAuth client secret. Before you create a consent portal, create this execution role with the trust policy and permissions policy described in this topic. You supply the role’s ARN as `executionRoleArn` when you [create a consent portal with the console](identity-create-consent-portal-console.md) or [create a consent portal with the AWS CLI](identity-create-consent-portal.md). For information about creating an IAM role, see [IAM role creation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html).
 

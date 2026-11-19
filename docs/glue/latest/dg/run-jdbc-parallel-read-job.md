@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/run-jdbc-parallel-read-jo
 ---
 
 # Reading from JDBC tables in parallel
-<a name="run-jdbc-parallel-read-job"></a>
 
 You can set properties of your JDBC table to enable AWS Glue to read data in parallel. When you set certain properties, you instruct AWS Glue to run parallel SQL queries against logical partitions of your data. You can control partitioning by setting a hash field or a hash expression. You can also control the number of parallel reads that are used to access your data.
 

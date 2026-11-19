@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-mset.ht
 ---
 
 # JSON.MSET
-<a name="json-mset"></a>
 
 Supported for Valkey version 8.1 and above.
 

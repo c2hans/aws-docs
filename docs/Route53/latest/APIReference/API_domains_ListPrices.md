@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # ListPrices
-<a name="API_domains_ListPrices"></a>
 
 Lists the following prices for either all the TLDs supported by Route 53, or the specified TLD:
 + Registration

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/activating-e
 ---
 
 # Activating enhanced infrastructure metrics at the resource level
-<a name="activating-eim-resource-level"></a>
 
 This section provides you with instructions on how to activate or deactivate enhanced infrastructure metrics at the resource level. Recommendation preferences activated at the resource level apply only to the individual resource.
 

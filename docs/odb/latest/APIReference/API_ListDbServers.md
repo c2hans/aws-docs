@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListDbServer
 ---
 
 # ListDbServers
-<a name="API_ListDbServers"></a>
 
 Returns information about the database servers that belong to the specified Exadata infrastructure.
 

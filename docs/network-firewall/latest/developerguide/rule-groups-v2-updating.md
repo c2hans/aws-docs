@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/r
 ---
 
 # Updating a rule group for a Next Generation policy
-<a name="rule-groups-v2-updating"></a>
 
 To change your rule group settings, use the following procedure.
 

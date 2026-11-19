@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/extended-sup
 ---
 
 # ElastiCache and customer responsibilities with ElastiCache Extended Support
-<a name="extended-support-responsibilities"></a>
 
 Following are the responsibilities of Amazon ElastiCache, and your responsibilities with ElastiCache Extended Support.
 

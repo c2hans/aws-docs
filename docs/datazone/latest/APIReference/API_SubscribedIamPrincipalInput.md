@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Subscri
 ---
 
 # SubscribedIamPrincipalInput
-<a name="API_SubscribedIamPrincipalInput"></a>
 
 The details of the subscribed IAM principal.
 

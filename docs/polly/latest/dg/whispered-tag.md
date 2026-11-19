@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/whispered-tag.html
 ---
 
 # Whispering
-<a name="whispered-tag"></a>
 
 *<amazon:effect name="whispered">*
 

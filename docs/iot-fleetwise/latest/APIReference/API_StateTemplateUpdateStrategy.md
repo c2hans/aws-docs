@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_St
 ---
 
 # StateTemplateUpdateStrategy
-<a name="API_StateTemplateUpdateStrategy"></a>
 
 The update strategy for the state template. Vehicles associated with the state template can stream telemetry data with either an `onChange` or `periodic` update strategy.
 

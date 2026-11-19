@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/security-
 ---
 
 # Example Security Lake queries for Security Hub CSPM findings
-<a name="security-hub-query-examples-sourceversion2"></a>
 
 Security Hub CSPM provides you with a comprehensive view of your security state in AWS and helps you check your environment against security industry standards and best practices. Security Hub CSPM produces findings for security checks and receives findings from third-party services.
 

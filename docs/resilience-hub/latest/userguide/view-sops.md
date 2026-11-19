@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/view-sop
 ---
 
 # Viewing standard operating procedures
-<a name="view-sops"></a>
 
 **To view the implemented SOPs from applications**
 

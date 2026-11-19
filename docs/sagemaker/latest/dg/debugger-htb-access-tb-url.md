@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-htb-access-
 ---
 
 # Open TensorBoard using the `sagemaker.interactive_apps.tensorboard` module
-<a name="debugger-htb-access-tb-url"></a>
 
 The `sagemaker.interactive_apps.tensorboard` module provides a function called `get_app_url` that generates unsigned or presigned URLs to open the TensorBoard application in any environment in SageMaker AI or Amazon EC2. This is to provide a unified experience for both Studio Classic and non-Studio Classic users. For the Studio environment, you can open TensorBoard by running the `get_app_url()` function as it is, or you can also specify a job name to start tracking as the TensorBoard application opens. For non-Studio Classic environments, you can open TensorBoard by providing your domain and user profile information to the utility function. With this functionality, regardless of where or how you run training code and launch training jobs, you can directly access TensorBoard by running the `get_app_url` function in your Jupyter notebook or terminal.
 

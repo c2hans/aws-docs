@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/cloudfront-perform
 ---
 
 # Optimizing MediaTailor performance with CloudFront features
-<a name="cloudfront-performance-optimization"></a>
 
 AWS Elemental MediaTailor performance with Amazon CloudFront can be enhanced through additional features beyond basic configuration. After setting up your basic CloudFront configuration with MediaTailor, you can implement additional features to enhance performance, reliability, and customization options. These optimizations help deliver a better viewing experience. They also reduce costs and origin load.
 

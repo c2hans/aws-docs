@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-sync
 ---
 
 # Sync a data source
-<a name="kb-managed-sync"></a>
 
 After you create your knowledge base, you ingest or sync your data so that the data can be queried. Ingestion converts the raw data in your data source into vector embeddings.
 

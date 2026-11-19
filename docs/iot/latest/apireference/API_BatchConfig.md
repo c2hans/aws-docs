@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_BatchConfig.
 ---
 
 # BatchConfig
-<a name="API_BatchConfig"></a>
 
 Configuration settings for batching.
 

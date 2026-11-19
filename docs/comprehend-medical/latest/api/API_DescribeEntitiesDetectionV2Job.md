@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_Descri
 ---
 
 # DescribeEntitiesDetectionV2Job
-<a name="API_DescribeEntitiesDetectionV2Job"></a>
 
 Gets the properties associated with a medical entities detection job. Use this operation to get the status of a detection job.
 

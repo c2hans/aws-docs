@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_StateCapa
 ---
 
 # StateCapability
-<a name="API_StateCapability"></a>
 
 State capabilities added for the managed thing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Connector
 ---
 
 # ConnectorConfiguration
-<a name="API_ConnectorConfiguration"></a>
 
 The provider-specific configuration for connecting to the third-party cloud service provider. You must specify exactly one provider configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PutFi
 ---
 
 # PutFileEntry
-<a name="API_PutFileEntry"></a>
 
 Information about a file added or updated as part of a commit.
 

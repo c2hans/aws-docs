@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/insta
 ---
 
 # Install the CloudWatch agent using AWS Systems Manager
-<a name="installing-cloudwatch-agent-ssm"></a>
 
  Using AWS Systems Manager makes it easier to install the CloudWatch agent on a fleet of Amazon EC2 instances. You can download the agent into one server and create your CloudWatch agent configuration file for all servers in the fleet. Then you can use Systems Manager to install the agent on the other servers, using the configuration file that you created. Use the following topics to install and run the CloudWatch agent using AWS Systems Manager.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-3
 ---
 
 # Using BytePlus with the IVS Broadcast SDK
-<a name="broadcast-3p-camera-filters-integrating-byteplus"></a>
 
 This document explains how to use the BytePlus Effects SDK with the IVS broadcast SDK.
 

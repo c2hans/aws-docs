@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # CoverageTime
-<a name="API_SSMContacts_CoverageTime"></a>
 
 Information about when an on-call shift begins and ends.
 

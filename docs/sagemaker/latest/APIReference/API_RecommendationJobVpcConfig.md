@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Recomm
 ---
 
 # RecommendationJobVpcConfig
-<a name="API_RecommendationJobVpcConfig"></a>
 
 Inference Recommender provisions SageMaker endpoints with access to VPC in the inference recommendation job.
 

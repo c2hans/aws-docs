@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USERRec
 ---
 
 # Dismissing Amazon Aurora recommendations
-<a name="USERRecommendationsManage.DismissRecommendation"></a>
 
 You can dismiss one or more Amazon Aurora recommendations using the Amazon RDS console, AWS CLI, or Amazon RDS API.
 

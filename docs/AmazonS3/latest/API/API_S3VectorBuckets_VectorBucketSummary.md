@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # VectorBucketSummary
-<a name="API_S3VectorBuckets_VectorBucketSummary"></a>
 
 Summary information about a vector bucket.
 

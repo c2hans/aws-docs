@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/project
 ---
 
 # Projects in AWS Device Farm
-<a name="projects"></a>
 
 A project in Device Farm represents a logical workspace in Device Farm that contains runs, one run for each test of a single app against one or more devices. Projects enable you to organize workspaces in whatever way you choose. For example, there can be one project per app title, or there can be one project per platform. You can create as many projects as you need.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # AWS Cloud WAN core network policy examples
-<a name="cloudwan-policy-examples"></a>
 
 This section provides example JSON AWS Cloud WAN policies. You can modify any of these examples for your own use. For a description of the required and optional parameters in the JSON file, see [Core network policy version parameters in AWS Cloud WAN](cloudwan-policies-json.md).
 

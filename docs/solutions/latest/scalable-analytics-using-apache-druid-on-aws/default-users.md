@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Default users
-<a name="default-users"></a>
 
 The guidance uses Druid’s authentication and authorization module for user authentication, with basic authentication enabled by default.
 

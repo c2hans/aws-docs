@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/A
 ---
 
 # DeleteConnector
-<a name="API_DeleteConnector"></a>
 
 Deletes the specified [Connector](https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/API_Connector.html). This operation also deletes any challenges associated with the connector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Getting started with AI services opt-out policies
-<a name="orgs_manage_policies-ai-opt-out_getting-started"></a>
 
 Follow these steps to get started using Artificial Intelligence (AI) services opt-out policies.
 

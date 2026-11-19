@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_D
 ---
 
 # DeleteAppVersionAppComponent
-<a name="API_DeleteAppVersionAppComponent"></a>
 
 Deletes an AppComponent from the AWS Resilience Hub application.
 

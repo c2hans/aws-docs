@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_I
 ---
 
 # Instance
-<a name="API_Instance"></a>
 
 Describes an instance (a virtual private server).
 

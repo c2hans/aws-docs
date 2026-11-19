@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/speke/latest/documentation/standard-payl
 ---
 
 # SPEKE API v2.1 - Standard payload components
-<a name="standard-payload-components-v2-1"></a>
 
 Through a single SPEKE request, the encryptor can request multiple content keys, together with the necessary manifest signaling for multiple packaging formats, according to the encryption contract that the encryptor defines for the content.
 

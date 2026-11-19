@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Visua
 ---
 
 # VisualInteractionOptions
-<a name="API_VisualInteractionOptions"></a>
 
 The general visual interactions setup for visual publish options
 

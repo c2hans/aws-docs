@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ss
 ---
 
 # AWS Systems Manager in AWS GovCloud (US)
-<a name="govcloud-ssm"></a>
 
 Use AWS Systems Manager to organize, monitor, and automate management tasks on your AWS resources.
 

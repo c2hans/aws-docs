@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/security_iam_i
 ---
 
 # Identity-based policy examples for Amazon Managed Service for Apache Flink
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify Managed Service for Apache Flink resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::PCAConnectorAD::Template PrivateKeyFlagsV2
-<a name="aws-properties-pcaconnectorad-template-privatekeyflagsv2"></a>
 
 Private key flags for v2 templates specify the client compatibility, if the private key can be exported, and if user input is required when using a private key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Send, receive, and delete Amazon Simple Queue Service messages
-<a name="examples-sqs-messages"></a>
 
 A message is a piece of data that can be sent and received by distributed components. Messages are always delivered using an [SQS Queue](examples-sqs-message-queues.md).
 

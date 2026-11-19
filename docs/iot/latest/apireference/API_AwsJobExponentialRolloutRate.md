@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AwsJobExpone
 ---
 
 # AwsJobExponentialRolloutRate
-<a name="API_AwsJobExponentialRolloutRate"></a>
 
 The rate of increase for a job rollout. This parameter allows you to define an exponential rate increase for a job rollout.
 

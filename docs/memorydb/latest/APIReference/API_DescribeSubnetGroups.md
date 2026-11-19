@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Describ
 ---
 
 # DescribeSubnetGroups
-<a name="API_DescribeSubnetGroups"></a>
 
 Returns a list of subnet group descriptions. If a subnet group name is specified, the list contains only the description of that group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ge
 ---
 
 # GetIntegration
-<a name="API_GetIntegration"></a>
 
 Retrieves information about an integration.
 

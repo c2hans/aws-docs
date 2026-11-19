@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost05-
 ---
 
 # COST05-BP02 Analyze all components of the workload
-<a name="cost05-bp02"></a>
 
  A workload has many components, and small ones add up as usage grows. Review every component, and scale review depth to potential savings.
 

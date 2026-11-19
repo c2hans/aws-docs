@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/example-u
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Example use cases for evidence finder
-<a name="example-use-cases-for-evidence-finder"></a>
 
 Evidence finder can help you with several use cases. This page provides some examples and suggests the search filters that you can use in each scenario.
 

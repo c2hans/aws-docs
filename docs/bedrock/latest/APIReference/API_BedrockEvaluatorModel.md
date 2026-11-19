@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_BedrockE
 ---
 
 # BedrockEvaluatorModel
-<a name="API_BedrockEvaluatorModel"></a>
 
 The evaluator model used in knowledge base evaluation job or in model evaluation job that use a model as judge. This model computes all evaluation related metrics.
 

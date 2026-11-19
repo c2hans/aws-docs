@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # FreeTrialSummary
-<a name="API_marketplace-agreements_FreeTrialSummary"></a>
 
 Contains details about the free trial of an agreement, including when the free trial ends.
 

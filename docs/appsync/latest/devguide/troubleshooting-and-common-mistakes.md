@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/troubleshooting-
 ---
 
 # Troubleshooting and common mistakes in AWS AppSync
-<a name="troubleshooting-and-common-mistakes"></a>
 
 This section discusses some common errors and how to troubleshoot them.
 

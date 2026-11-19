@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Del
 ---
 
 # DeleteAccessToken
-<a name="API_DeleteAccessToken"></a>
 
 Deletes a specified personal access token (PAT). A personal access token can only be deleted by the user who created it.
 

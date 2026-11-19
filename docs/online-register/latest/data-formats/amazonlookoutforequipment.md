@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Lookout for Equipment
-<a name="amazonlookoutforequipment"></a>
 
 Amazon Lookout for Equipment provides the following APIs for data retrieval.
 

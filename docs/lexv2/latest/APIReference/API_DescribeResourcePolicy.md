@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeRe
 ---
 
 # DescribeResourcePolicy
-<a name="API_DescribeResourcePolicy"></a>
 
 Gets the resource policy and policy revision for a bot or bot alias.
 

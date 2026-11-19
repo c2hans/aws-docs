@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DeleteAp
 ---
 
 # DeleteApiCache
-<a name="API_DeleteApiCache"></a>
 
 Deletes an `ApiCache` object.
 

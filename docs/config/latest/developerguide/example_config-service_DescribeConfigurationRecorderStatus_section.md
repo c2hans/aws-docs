@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/example_con
 ---
 
 # Use `DescribeConfigurationRecorderStatus` with a CLI
-<a name="example_config-service_DescribeConfigurationRecorderStatus_section"></a>
 
 The following code examples show how to use `DescribeConfigurationRecorderStatus`.
 

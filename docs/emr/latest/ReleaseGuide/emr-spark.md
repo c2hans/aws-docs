@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark.html
 ---
 
 # Apache Spark
-<a name="emr-spark"></a>
 
 [Apache Spark](https://aws.amazon.com/emr/features/spark/) is a distributed processing framework and programming model that helps you do machine learning, stream processing, or graph analytics with Amazon EMR clusters. Similar to Apache Hadoop, Spark is an open-source, distributed processing system commonly used for big data workloads. However, Spark has several notable differences from Hadoop MapReduce. Spark has an optimized directed acyclic graph (DAG) execution engine and actively caches data in-memory, which can boost performance, especially for certain algorithms and interactive queries.
 

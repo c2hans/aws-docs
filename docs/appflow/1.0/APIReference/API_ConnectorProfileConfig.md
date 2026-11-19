@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorPr
 ---
 
 # ConnectorProfileConfig
-<a name="API_ConnectorProfileConfig"></a>
 
  Defines the connector-specific configuration and credentials for the connector profile.
 

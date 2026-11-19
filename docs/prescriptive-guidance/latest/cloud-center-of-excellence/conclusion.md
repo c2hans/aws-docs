@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-cente
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 Establishing a Cloud Center of Excellence (CCoE) is not just a trend. It's a strategic move that can transform the way organizations approach cloud adoption. CCoEs provide a structured framework for achieving better governance, enhanced security, cost optimization, and continuous innovation in the cloud. While challenges might arise along the way, with the right leadership, a cross-functional team, and a commitment to best practices, these challenges can be overcome.
 

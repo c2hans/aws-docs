@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecyclePolicyResourceSelection
-<a name="API_LifecyclePolicyResourceSelection"></a>
 
 Resource selection criteria for the lifecycle policy. You must provide exactly one selection criteria: either recipes or a tag map, not both.
 

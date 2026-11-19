@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ComputeEnvironmen
 ---
 
 # ComputeEnvironmentConfiguration
-<a name="API_ComputeEnvironmentConfiguration"></a>
 
 An object containing configuration for a compute environment (such as Spark, Python or Athena) returned by the `DescribeConnectionType` API.
 

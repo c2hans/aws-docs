@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ReadA
 ---
 
 # ReadAuthorizationCodeGrantMetadata
-<a name="API_ReadAuthorizationCodeGrantMetadata"></a>
 
 Read-only metadata for OAuth2 authorization code grant authentication configuration.
 

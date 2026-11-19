@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys
 ---
 
 # Create a KMS key with imported key material
-<a name="importing-keys-conceptual"></a>
 
 Imported key material lets you protect your AWS resources under cryptographic keys that you generate. The following overview explains how to import your key material into AWS KMS. For more details about each step in the process, see the corresponding topics.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/peering/create-vpc-peering-co
 ---
 
 # Create a VPC peering connection
-<a name="create-vpc-peering-connection"></a>
 
 To create a VPC peering connection, first create a request to peer with another VPC. To activate the request, the owner of the accepter VPC must accept the request. The following peering connections are supported:
 + Between VPCs in the same account and Region

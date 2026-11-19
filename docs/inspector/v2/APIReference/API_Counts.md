@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Counts.htm
 ---
 
 # Counts
-<a name="API_Counts"></a>
 
 a structure that contains information on the count of resources within a group.
 

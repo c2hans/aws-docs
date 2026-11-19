@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_AutocommitPe
 ---
 
 # AutocommitPeriod
-<a name="API_AutocommitPeriod"></a>
 
 Sets the autocommit period of files in an FSx for ONTAP SnapLock volume, which determines how long the files must remain unmodified before they're automatically transitioned to the write once, read many (WORM) state.
 

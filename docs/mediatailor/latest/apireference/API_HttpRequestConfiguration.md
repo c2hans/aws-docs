@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Http
 ---
 
 # HttpRequestConfiguration
-<a name="API_HttpRequestConfiguration"></a>
 
 The configuration for an `HTTP_REQUEST` function. Specifies the HTTP method, URL, headers, body, timeout, and output expressions for the request. For more information, see [HTTP\_REQUEST](https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-functions-types-http-request.html) in the *MediaTailor User Guide*.
 

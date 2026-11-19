@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicySourceDocument
-<a name="API_AutomatedReasoningPolicySourceDocument"></a>
 
 Represents a source document that was processed during a build workflow. Contains the document content, metadata, and a hash for verification.
 

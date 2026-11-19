@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_TextWithH
 ---
 
 # TextWithHighlights
-<a name="API_TextWithHighlights"></a>
 
 Provides text and information about where to highlight the text.
 

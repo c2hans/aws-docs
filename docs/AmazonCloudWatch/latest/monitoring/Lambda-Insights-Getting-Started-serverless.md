@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambd
 ---
 
 # Use Serverless Framework to enable Lambda Insights on an existing Lambda function
-<a name="Lambda-Insights-Getting-Started-serverless"></a>
 
 Follow these steps to use Serverless Framework to enable Lambda Insights on an existing Lambda function. For more information about Serverless Framework, see [serverless.com](https://www.serverless.com/).
 

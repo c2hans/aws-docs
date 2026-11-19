@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RuleSet
-<a name="API_RuleSet"></a>
 
 A rule set contains a list of rules that are evaluated in order. Each rule is evaluated sequentially for each email.
 

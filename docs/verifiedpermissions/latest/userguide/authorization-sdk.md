@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/aut
 ---
 
 # Integrating your authorization models with applications
-<a name="authorization-sdk"></a>
 
 To implement Amazon Verified Permissions in your application, you must define the policies and schema that you want your app to enforce. With your authorization model in place and tested, your next step is to start generating API requests from the point of enforcement. To do this, you must set up application logic to collect user data and populate it to authorization requests.
 

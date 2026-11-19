@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Expir
 ---
 
 # ExpireSession
-<a name="API_ExpireSession"></a>
 
 Immediately stops the specified streaming session.
 

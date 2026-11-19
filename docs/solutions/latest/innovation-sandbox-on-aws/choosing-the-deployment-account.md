@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Choosing the deployment accounts
-<a name="choosing-the-deployment-account"></a>
 
 ## Accounts
 <a name="accounts"></a>

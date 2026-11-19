@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Data loading strategies
-<a name="index-data-loading"></a>
 
 ## Initial data migration
 <a name="loading-initial"></a>

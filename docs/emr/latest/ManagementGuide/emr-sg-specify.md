@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-sg-specif
 ---
 
 # Specifying Amazon EMR-managed and additional security groups
-<a name="emr-sg-specify"></a>
 
 You can specify security groups using the AWS Management Console, the AWS CLI, or the Amazon EMR API. If you don't specify security groups, Amazon EMR creates default security groups. Specifying additional security groups is optional. You can assign additional security groups for primary instances, core and task instances, and service access (private subnets only).
 

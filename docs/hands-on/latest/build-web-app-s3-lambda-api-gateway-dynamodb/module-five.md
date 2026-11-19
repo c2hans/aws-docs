@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-
 ---
 
 # Task 5: Add Interactivity to Your Web App
-<a name="module-five"></a>
 
 |  |  |
 | --- |--- |

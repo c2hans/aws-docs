@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_S
 ---
 
 # SecretVersionsListEntry
-<a name="API_SecretVersionsListEntry"></a>
 
 A structure that contains information about one version of a secret.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/version-upgrad
 ---
 
 # Best practices for version upgrades
-<a name="version-upgrades-best-practices"></a>
 
 To ensure client continuity during the rolling update that is performed as part of the Kafka version upgrade process, review the configuration of your clients and your Apache Kafka topics as follows:
 + Set the topic replication factor (RF) to a minimum value of `2` for two-AZ clusters and a minimum value of `3` for three-AZ clusters. An RF value of `2` can lead to offline partitions during patching.

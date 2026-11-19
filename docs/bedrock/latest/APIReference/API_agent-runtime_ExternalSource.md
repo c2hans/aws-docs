@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ExternalSource
-<a name="API_agent-runtime_ExternalSource"></a>
 
 The unique external source of the content contained in the wrapper object.
 

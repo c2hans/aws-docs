@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-gitl
 ---
 
 # GitLab connector for Amazon AppFlow
-<a name="connectors-gitlab"></a>
 
 GitLab is an open source code repository and software development platform. If you're a GitLab user, your account contains data about your projects and repositories. You can use Amazon AppFlow to transfer data from GitLab to certain AWS services or other supported applications.
 

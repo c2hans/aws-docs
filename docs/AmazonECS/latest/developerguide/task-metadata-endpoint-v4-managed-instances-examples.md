@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-met
 ---
 
 # Amazon ECS task metadata v4 examples for tasks on Amazon ECS Managed Instances
-<a name="task-metadata-endpoint-v4-managed-instances-examples"></a>
 
 The following examples show sample outputs from the task metadata endpoints for Amazon ECS tasks run on Amazon ECS Managed Instances.
 

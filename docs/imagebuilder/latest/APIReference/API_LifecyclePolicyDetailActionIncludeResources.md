@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lif
 ---
 
 # LifecyclePolicyDetailActionIncludeResources
-<a name="API_LifecyclePolicyDetailActionIncludeResources"></a>
 
 Specifies how the lifecycle policy should apply actions to selected resources.
 

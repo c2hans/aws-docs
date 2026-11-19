@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # `aws:assertAwsResourceProperty` – Assert an AWS resource state or event state
-<a name="automation-action-assertAwsResourceProperty"></a>
 
 The `aws:assertAwsResourceProperty` action lets you assert a specific resource state or event state for a specific Automation step.
 

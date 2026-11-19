@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListA
 ---
 
 # ListAnalyses
-<a name="API_ListAnalyses"></a>
 
 Lists Amazon Quick Sight analyses that exist in the specified AWS account.
 

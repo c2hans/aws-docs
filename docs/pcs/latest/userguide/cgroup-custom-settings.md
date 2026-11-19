@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/cgroup-custom-setti
 ---
 
 # Configuring custom cgroup settings in AWS PCS
-<a name="cgroup-custom-settings"></a>
 
 Slurm uses the Linux cgroup subsystem to manage and constrain resources for jobs, including memory, CPU cores, devices, and swap space. AWS PCS lets you customize `cgroup.conf` settings at the cluster level through the `CgroupCustomSettings` property of `SlurmConfiguration` during cluster creation or update.
 

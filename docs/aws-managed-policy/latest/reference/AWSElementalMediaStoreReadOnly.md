@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElementalMediaStoreReadOnly
-<a name="AWSElementalMediaStoreReadOnly"></a>
 
 **Description**: Provides read-only permissions for MediaStore APIs
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/update-
 ---
 
 # UpdateFolder
-<a name="update-folder"></a>
 
 Use the `UpdateFolder` operation to update the name of a folder. To use this operation, you need the ID of the folder whose permissions you want to view. The folder ID is part of the folder URL in Quick Sight. You can also use the `ListFolders` operation to get the ID.
 

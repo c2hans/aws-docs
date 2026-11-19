@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/activem
 ---
 
 # Managing Amazon MQ for ActiveMQ engine versions
-<a name="activemq-version-management"></a>
 
  Apache ActiveMQ organizes version numbers according to semantic versioning specification as `X.Y.Z`. In Amazon MQ for ActiveMQ implementations, `X` denotes the major version, `Y` represents the minor version, and `Z` denotes the patch version number. Amazon MQ considers a version change to be major if the major version numbers change. For example, upgrading from version **5**.17 to **6**.0 is considered a *major version upgrade*. A version change is considered minor if only the minor or patch version number changes. For example, upgrading from version 5.**18** to 5.**19** is considered a *minor version upgrade*. When `autoMinorVersionUpgrade` is turned on, Amazon MQ upgrades your broker to the newest available patch version.
 

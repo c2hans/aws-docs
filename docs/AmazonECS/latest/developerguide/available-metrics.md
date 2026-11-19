@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/availabl
 ---
 
 # Amazon ECS CloudWatch metrics
-<a name="available-metrics"></a>
 
 You can use CloudWatch usage metrics to provide visibility into your accounts usage of resources. Use these metrics to visualize your current service usage on CloudWatch graphs and dashboards.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Activi
 ---
 
 # ActivityTypeConfiguration
-<a name="API_ActivityTypeConfiguration"></a>
 
 Configuration settings registered with the activity type.
 

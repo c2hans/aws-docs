@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ExtensionFie
 ---
 
 # ExtensionField
-<a name="API_ExtensionField"></a>
 
 Additional X-headers to include in the Delivery Status Notification (DSN) when an email that Amazon SES receives on your behalf bounces.
 

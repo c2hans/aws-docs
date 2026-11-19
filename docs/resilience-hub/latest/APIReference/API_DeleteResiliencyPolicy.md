@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_D
 ---
 
 # DeleteResiliencyPolicy
-<a name="API_DeleteResiliencyPolicy"></a>
 
 Deletes a resiliency policy. This is a destructive action that can't be undone.
 

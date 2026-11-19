@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Dep
 ---
 
 # DeploymentSpecificationsField
-<a name="API_DeploymentSpecificationsField"></a>
 
 A field that details a specification of a deployment pattern.
 

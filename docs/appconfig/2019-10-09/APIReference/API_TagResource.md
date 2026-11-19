@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ta
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Assigns metadata to an AWS AppConfig resource. Tags help organize and categorize your AWS AppConfig resources. Each tag consists of a key and an optional value, both of which you define. You can specify a maximum of 50 tags for a resource.
 

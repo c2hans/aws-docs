@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_Describe
 ---
 
 # DescribeWorkspace
-<a name="API_DescribeWorkspace"></a>
 
 Displays information about one Amazon Managed Grafana workspace.
 

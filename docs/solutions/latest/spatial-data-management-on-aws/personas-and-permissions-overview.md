@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Personas and Permissions Overview
-<a name="personas-and-permissions-overview"></a>
 
 Spatial Data Management on AWS uses resource-based access control to provide fine-grained permissions management. The solution does not define business personas as fixed roles in the system. Instead, it provides flexible permission levels (Owner, Manager, Contributor, and Viewer) that can be assigned to users on specific resources (libraries, projects, and assets). Projects also support a Consumer level for download-only access. This approach allows customers to grant appropriate permissions to users based on their actual responsibilities and needs, rather than predefined role assignments. The business personas described in this guide (IT Admin, Project Admin, Asset Creator, and Asset Consumer) represent common user types to help you understand how to apply permissions effectively in your organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/athena-explain-statemen
 ---
 
 # Using EXPLAIN and EXPLAIN ANALYZE in Athena
-<a name="athena-explain-statement"></a>
 
 The `EXPLAIN` statement shows the logical or distributed execution plan of a specified SQL statement, or validates the SQL statement. You can output the results in text format or in a data format for rendering into a graph.
 

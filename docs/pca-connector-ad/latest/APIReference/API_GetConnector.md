@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # GetConnector
-<a name="API_GetConnector"></a>
 
 Lists information about your connector. You specify the connector on input by its ARN (Amazon Resource Name).
 

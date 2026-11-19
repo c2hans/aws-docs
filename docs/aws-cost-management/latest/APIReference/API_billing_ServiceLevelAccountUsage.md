@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ServiceLevelAccountUsage
-<a name="API_billing_ServiceLevelAccountUsage"></a>
 
 Service-level usage details by account.
 

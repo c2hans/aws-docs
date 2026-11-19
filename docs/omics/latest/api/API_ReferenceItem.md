@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ReferenceItem.html
 ---
 
 # ReferenceItem
-<a name="API_ReferenceItem"></a>
 
 A genome reference.
 

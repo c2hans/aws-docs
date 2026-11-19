@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-de
 ---
 
 # Optimize
-<a name="optimize"></a>
 
 The optimize phase is the commitment to perpetual enhancement and the key to sustaining the benefits of mainframe modernization on AWS. The optimize phase is about continuous improvement of people, process, and technology. This phase represents the ongoing efforts to enhance and refine the modernized mainframe applications hosted on AWS. To ensure the health, security, and efficiency of the application environment, the optimize phase is based on continuous monitoring, including real-time visibility and proactive management.
 

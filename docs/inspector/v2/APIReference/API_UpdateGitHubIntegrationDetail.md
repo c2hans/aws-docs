@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateGitH
 ---
 
 # UpdateGitHubIntegrationDetail
-<a name="API_UpdateGitHubIntegrationDetail"></a>
 
 Contains details required to update an integration with GitHub.
 

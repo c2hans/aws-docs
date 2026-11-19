@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Updating a firewall policy in AWS Network Firewall
-<a name="firewall-policy-updating"></a>
 
 To change your Network Firewall firewall policy settings, use the following procedure:
 

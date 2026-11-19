@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/lt-aggregatio
 ---
 
 # $lt
-<a name="lt-aggregation"></a>
 
 The `$lt` aggregation operator compares two values and returns `true` if the first value is less than the second, otherwise returns `false`.
 

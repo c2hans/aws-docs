@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSResourceGroupsReadOnlyAccess
-<a name="AWSResourceGroupsReadOnlyAccess"></a>
 
 **Description**: This is the read only policy for AWS Resource Groups
 

@@ -3,6 +3,5 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/building-a-
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 *Discuss considerations, tips, and recommended best practices associated with this workstream or domain.*

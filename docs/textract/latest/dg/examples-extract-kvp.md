@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/examples-extract-kvp.
 ---
 
 # Extracting Key-Value Pairs from a Form Document
-<a name="examples-extract-kvp"></a>
 
 The following Python example shows how to extract key-value pairs in form documents from [Block](https://docs.aws.amazon.com/textract/latest/APIReference/API_Block.html) objects that are stored in a map. Block objects are returned from a call to [AnalyzeDocument](https://docs.aws.amazon.com/textract/latest/APIReference/API_AnalyzeDocument.html). For more information, see [Form Data (Key-Value Pairs)](how-it-works-kvp.md).
 

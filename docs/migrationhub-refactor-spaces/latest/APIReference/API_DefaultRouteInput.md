@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # DefaultRouteInput
-<a name="API_DefaultRouteInput"></a>
 
  The configuration for the default route type.
 

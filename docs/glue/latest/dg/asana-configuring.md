@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/asana-configuring.html
 ---
 
 # Configuring Asana
-<a name="asana-configuring"></a>
 
 Before you can use AWS Glue to transfer from Asana, you must meet the following requirements:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/st
 ---
 
 # Storage & backup
-<a name="storageandbackup-pattern-list"></a>
 
 **Topics**
 + [Automatically encrypt existing and new Amazon EBS volumes](automatically-encrypt-existing-and-new-amazon-ebs-volumes.md)

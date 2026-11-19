@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/output-locking-
 ---
 
 # Output locking use cases
-<a name="output-locking-general"></a>
 
 Implement output locking for either or both of these reasons:
 + To enhance output redundancy.

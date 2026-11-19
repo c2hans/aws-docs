@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Creat
 ---
 
 # CreateRestoreAccessBackupVault
-<a name="API_CreateRestoreAccessBackupVault"></a>
 
 Creates a restore access backup vault that provides temporary access to recovery points in a logically air-gapped backup vault, subject to MPA approval.
 

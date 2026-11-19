@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StartCon
 ---
 
 # StartContactConversationalAnalyticsJob
-<a name="API_StartContactConversationalAnalyticsJob"></a>
 
 Starts a Contact Lens post-call analytics job for the specified contact. This API runs Conversational Analytics post-contact analysis on a voice recording that is already attached to the contact, generating transcription, sentiment analysis, redaction, and summarization results based on the provided configuration.
 

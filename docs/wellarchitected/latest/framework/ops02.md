@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops02.h
 ---
 
 # Derive essential insights
-<a name="ops02"></a>
 
  Keep your workload healthy by observing it, not by assuming it. Use relevant metrics, logs, and traces to build a comprehensive view of workload performance, and start with key performance indicators (KPIs): define them before you develop telemetry, derive them from the business outcomes the workload exists to achieve, and analyze what you collect against them. That alignment keeps teams making decisions on measurements that genuinely matter, for the system and for the business.
 

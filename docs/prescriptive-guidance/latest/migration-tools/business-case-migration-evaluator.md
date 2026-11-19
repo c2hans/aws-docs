@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Migration Evaluator
-<a name="business-case-migration-evaluator"></a>
 
 *Last update: May 15, 2023*
 

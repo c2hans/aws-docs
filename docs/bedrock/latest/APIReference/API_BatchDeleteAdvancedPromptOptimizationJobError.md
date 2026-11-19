@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_BatchDel
 ---
 
 # BatchDeleteAdvancedPromptOptimizationJobError
-<a name="API_BatchDeleteAdvancedPromptOptimizationJobError"></a>
 
 Information about an error deleting a job.
 

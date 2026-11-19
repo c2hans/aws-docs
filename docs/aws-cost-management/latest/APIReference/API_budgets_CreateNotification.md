@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CreateNotification
-<a name="API_budgets_CreateNotification"></a>
 
 Creates a notification. You must create the budget before you create the associated notification.
 

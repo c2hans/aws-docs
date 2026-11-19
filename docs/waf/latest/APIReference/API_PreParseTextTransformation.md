@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_PreParseText
 ---
 
 # PreParseTextTransformation
-<a name="API_PreParseTextTransformation"></a>
 
 A pre-parse text transformation that normalizes the raw query string before AWS WAF parses it into individual query arguments. Pre-parse text transformations are only supported when `FieldToMatch` is `SingleQueryArgument` or `AllQueryArguments`.
 

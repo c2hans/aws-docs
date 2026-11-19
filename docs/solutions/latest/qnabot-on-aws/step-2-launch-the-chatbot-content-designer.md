@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/step-2-la
 ---
 
 # Step 2: Launch the chatbot content designer
-<a name="step-2-launch-the-chatbot-content-designer"></a>
 
 After successfully deploying the stack, you will receive an email at the email address listed in the deployment parameters with the subject *QnABot on AWS Signup Verification Code*. This email contains a generated temporary password that you can use to sign in to the content designer and create your own password.
 

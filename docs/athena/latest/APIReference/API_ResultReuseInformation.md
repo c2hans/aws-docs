@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ResultReu
 ---
 
 # ResultReuseInformation
-<a name="API_ResultReuseInformation"></a>
 
 Contains information about whether the result of a previous query was reused.
 

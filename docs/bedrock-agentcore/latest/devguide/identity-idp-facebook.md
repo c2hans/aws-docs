@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Facebook
-<a name="identity-idp-facebook"></a>
 
 Facebook can be configured as an AgentCore Identity credential provider for outbound resource access. This allows your agents to authenticate users through Facebook’s OAuth2 service and obtain access tokens for Facebook API resources.
 

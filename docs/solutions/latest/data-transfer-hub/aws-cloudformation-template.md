@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/aws-c
 ---
 
 # AWS CloudFormation template
-<a name="aws-cloudformation-template"></a>
 
  To automate deployment, this Guidance uses the following AWS CloudFormation templates, which you can download before deployment:
 

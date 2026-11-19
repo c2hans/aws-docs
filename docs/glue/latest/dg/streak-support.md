@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/streak-support.html
 ---
 
 # AWS Glue support for Streak
-<a name="streak-support"></a>
 
 AWS Glue supports Streak as follows:
 

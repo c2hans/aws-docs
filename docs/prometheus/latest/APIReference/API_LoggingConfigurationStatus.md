@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Loggi
 ---
 
 # LoggingConfigurationStatus
-<a name="API_LoggingConfigurationStatus"></a>
 
 The status of the logging configuration.
 

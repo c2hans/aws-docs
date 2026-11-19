@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-la
 ---
 
 # Strategy and best practices for AWS large migrations
-<a name="introduction"></a>
 
 *Damien Renner, Chris Baker, Dwayne Bordelon, Rodolfo Jr. Cerrada, Pratik Chunawala, Bill David, Dev Kar, Jon Madison, Tuhin Mukherjee, Abhishek Naik, Amit Rudraraju, and Senay Swinney, Amazon Web Services*
 

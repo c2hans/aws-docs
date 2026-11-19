@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ReliabilityP
 ---
 
 # Amazon ElastiCache Well-Architected Lens Reliability Pillar
-<a name="ReliabilityPillar"></a>
 
 The reliability pillar focuses on workloads performing their intended functions and how to recover quickly from failure to meet demands. Key topics include distributed system design, recovery planning, and adapting to changing requirements.
 

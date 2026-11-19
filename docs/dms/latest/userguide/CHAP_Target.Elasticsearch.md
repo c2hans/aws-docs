@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.Elastic
 ---
 
 # Using an Amazon OpenSearch Service cluster as a target for AWS Database Migration Service
-<a name="CHAP_Target.Elasticsearch"></a>
 
 You can use AWS DMS to migrate data to Amazon OpenSearch Service (OpenSearch Service). OpenSearch Service is a managed service that makes it easy to deploy, operate, and scale an OpenSearch Service cluster.
 
@@ -60,7 +59,7 @@ AWS DMS does not support migration of LOB data types.
 ## Prerequisites for using Amazon OpenSearch Service as a target for AWS Database Migration Service
 <a name="CHAP_Target.Elasticsearch.Prerequisites"></a>
 
-Before you begin work with an OpenSearch Service database as a target for AWS DMS, make sure that you create an AWS Identity and Access Management (IAM) role. This role should let AWS DMS access the OpenSearch Service indexes at the target endpoint. The minimum set of access permissions is shown in the following IAM policy.
+Before you begin work with an OpenSearch Service database as a target for AWS DMS, make sure that you create an AWS Identity and Access Management (IAM) role. This role should let AWS DMS access the OpenSearch Service indexes at the target endpoint. The minimum set of access permissions is shown in the following IAM policy. For role naming restrictions, see [Creating the IAM roles to use with AWS DMS](security-iam.md#CHAP_Security.APIRole).
 
 ------
 #### [ JSON ]

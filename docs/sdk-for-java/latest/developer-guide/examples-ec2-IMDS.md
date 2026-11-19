@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with Amazon EC2 instance metadata
-<a name="examples-ec2-IMDS"></a>
 
 A Java SDK client for the Amazon EC2 Instance Metadata Service (metadata client) allows your applications to access metadata on their local EC2 instance. The metadata client works with the local instance of [IMDSv2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html) (Instance Metadata Service v2) and uses session-oriented requests.
 

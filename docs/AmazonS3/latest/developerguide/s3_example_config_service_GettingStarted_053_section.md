@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Getting started with configuration management
-<a name="s3_example_config_service_GettingStarted_053_section"></a>
 
 The following code example shows how to:
 + Create an Amazon S3 bucket

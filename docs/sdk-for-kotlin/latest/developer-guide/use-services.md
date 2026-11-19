@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/us
 ---
 
 # Work with AWS services using the AWS SDK for Kotlin
-<a name="use-services"></a>
 
 This chapter contains information about how to work with AWS services by using the SDK for Kotlin.
 

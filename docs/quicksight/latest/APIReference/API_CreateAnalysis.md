@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateAnalysis
-<a name="API_CreateAnalysis"></a>
 
 Creates an analysis in Amazon Quick Sight. Analyses can be created either from a template or from an `AnalysisDefinition`.
 

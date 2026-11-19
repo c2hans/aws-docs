@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Da
 ---
 
 # DataLakeLifecycleTransition
-<a name="API_DataLakeLifecycleTransition"></a>
 
 Provide transition lifecycle details of Amazon Security Lake object.
 

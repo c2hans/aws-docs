@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/configure-sts-endpo
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure the AWS Security Token Service endpoint for a service account
-<a name="configure-sts-endpoint"></a>
 
 If you’re using a Kubernetes service account with [IAM roles for service accounts](iam-roles-for-service-accounts.md), then you can configure the type of AWS Security Token Service endpoint that’s used by the service account.
 

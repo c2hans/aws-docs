@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/resourc
 ---
 
 # Creating a resource with AWS Cloud Control API
-<a name="resource-operations-create"></a>
 
 Use the `create-resource` command to create a resource.
 

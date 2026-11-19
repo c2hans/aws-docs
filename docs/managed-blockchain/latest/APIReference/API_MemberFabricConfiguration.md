@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # MemberFabricConfiguration
-<a name="API_MemberFabricConfiguration"></a>
 
 Configuration properties for Hyperledger Fabric for a member in a Managed Blockchain network that is using the Hyperledger Fabric framework.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_D
 ---
 
 # DeleteKeyRequestListItem
-<a name="API_kvs_DeleteKeyRequestListItem"></a>
 
 List item for keys to delete.
 

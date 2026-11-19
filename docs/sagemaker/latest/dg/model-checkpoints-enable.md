@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-checkpoints-en
 ---
 
 # Enable checkpointing
-<a name="model-checkpoints-enable"></a>
 
 After you enable checkpointing, SageMaker AI saves checkpoints to Amazon S3 and syncs your training job with the checkpoint S3 bucket. You can use either S3 general purpose or S3 directory buckets for your checkpoint S3 bucket.
 

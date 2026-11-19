@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EndAssoc
 ---
 
 # EndAssociatedTasksActionDefinition
-<a name="API_EndAssociatedTasksActionDefinition"></a>
 
 End associated tasks related to a case.
 

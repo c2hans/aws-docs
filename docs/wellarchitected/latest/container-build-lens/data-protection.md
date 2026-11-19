@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Data protection
-<a name="data-protection"></a>
 
 | CONTAINER\_BUILD\_SEC\_05: How do you handle data within your containerized applications? |
 | --- |

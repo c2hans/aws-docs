@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Retrieve knowledge article content
-<a name="3P-apps-ai-agents-getknowledgecontent"></a>
 
 Retrieves the full content of a knowledge article, including a pre-signed URL for rendering. Use this to display the source content referenced by citations in AI Agent responses.
 

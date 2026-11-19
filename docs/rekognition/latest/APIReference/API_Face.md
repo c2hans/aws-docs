@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Face
 ---
 
 # Face
-<a name="API_Face"></a>
 
 Describes the face properties such as the bounding box, face ID, image ID of the input image, and external image ID that you assigned.
 

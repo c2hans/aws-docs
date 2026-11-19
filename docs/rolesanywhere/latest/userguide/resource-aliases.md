@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/resource-
 ---
 
 # Using aliases for trust anchors, profiles, and CRLs
-<a name="resource-aliases"></a>
 
 An *alias* is a readable name that you assign to a trust anchor, a profile, or a certificate revocation list (CRL). When a resource has an alias, IAM Roles Anywhere gives it a second ARN, called its *alias ARN*. You can use the alias ARN in place of the resource ID or the resource ARN in many of the IAM Roles Anywhere operations that identify that resource, including `CreateSession` and the credential helper. For the list, see [Use an alias ARN](#resource-aliases-use).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/snapshots-upgr
 ---
 
 # Upgrade an existing application to enhanced snapshots
-<a name="snapshots-upgrade"></a>
 
 This page describes how to upgrade an existing Amazon Managed Service for Apache Flink application to enhanced snapshot mode. You upgrade with an [`UpdateApplication`](https://docs.aws.amazon.com/managed-service-for-apache-flink/latest/apiv2/API_UpdateApplication.html) request. The page lists the changes to make before you upgrade. The page also describes how the upgrade affects your application snapshots (legacy).
 

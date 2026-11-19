@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/ssr-environment
 ---
 
 # Making environment variables accessible to server-side runtimes
-<a name="ssr-environment-variables"></a>
 
 Amplify Hosting supports adding environment variables to your application's builds by setting them in the project's configuration in the Amplify console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-multip
 ---
 
 # Submit multiple account requests
-<a name="aft-multiple-account-requests"></a>
 
  AFT processes account requests one at a time, but you can submit multiple account requests to the AFT pipeline. When you submit multiple account requests to the AFT pipeline, AFT queues and processes the account requests in a first-in, first-out order.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/onedriv
 ---
 
 # Enable and Administer OneDrive for Business for Your WorkSpaces Applications Users
-<a name="onedrive"></a>
 
 WorkSpaces Applications supports the following persistent storage options for users in your organization.
 + OneDrive for Business
@@ -23,4 +22,4 @@ To enable OneDrive for Business for stacks associated with multi-session fleets,
 **Topics**
 + [Enable OneDrive for Your WorkSpaces Applications Users](enable-onedrive.md)
 + [Disable OneDrive for Your WorkSpaces Applications Users](disable-onedrive.md)
-+ [Controlling OneDrive Re-authentication](onedrive-reauthentication.md)
++ [Controlling OneDrive re-authentication](onedrive-reauthentication.md)

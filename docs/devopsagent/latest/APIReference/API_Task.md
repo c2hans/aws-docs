@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Task
 ---
 
 # Task
-<a name="API_Task"></a>
 
 Represents a backlog task with all its properties and metadata
 

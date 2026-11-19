@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/c_Loading_tables_auto
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Loading tables with automatic compression
-<a name="c_Loading_tables_auto_compress"></a>
 
 You can apply compression encodings to columns in tables manually, based on your own evaluation of the data. Or you can use the COPY command with COMPUPDATE set to ON to analyze and apply compression automatically based on sample data.
 

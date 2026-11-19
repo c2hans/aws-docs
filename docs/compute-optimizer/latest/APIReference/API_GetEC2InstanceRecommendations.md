@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # GetEC2InstanceRecommendations
-<a name="API_GetEC2InstanceRecommendations"></a>
 
 Returns Amazon EC2 instance recommendations.
 

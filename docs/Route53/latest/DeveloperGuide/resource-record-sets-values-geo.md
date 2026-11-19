@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-r
 ---
 
 # Values specific for geolocation records
-<a name="resource-record-sets-values-geo"></a>
 
 When you create geolocation records, you specify the following values.
 

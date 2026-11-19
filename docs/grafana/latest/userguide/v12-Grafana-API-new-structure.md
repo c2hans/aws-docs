@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v12-Grafana-API
 ---
 
 # New API structure
-<a name="v12-Grafana-API-new-structure"></a>
 
 Starting in Grafana version 12, Grafana HTTP APIs are transitioning to a new standardized API structure with consistent versioning. The new APIs follow a Kubernetes-style path format:
 

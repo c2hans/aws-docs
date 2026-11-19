@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::BackupSelection Conditions
-<a name="aws-properties-backup-backupselection-conditions"></a>
 
 Contains information about which resources to include or exclude from a backup plan using their tags. Conditions are case sensitive.
 

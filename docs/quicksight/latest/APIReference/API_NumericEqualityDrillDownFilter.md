@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Numer
 ---
 
 # NumericEqualityDrillDownFilter
-<a name="API_NumericEqualityDrillDownFilter"></a>
 
 The numeric equality type drill down filter.
 

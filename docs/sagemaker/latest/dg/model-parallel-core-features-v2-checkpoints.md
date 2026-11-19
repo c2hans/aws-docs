@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-core-
 ---
 
 # Checkpointing using SMP
-<a name="model-parallel-core-features-v2-checkpoints"></a>
 
 The SageMaker model parallelism (SMP) library supports PyTorch APIs for checkpoints, and provides APIs that help checkpoint properly while using the SMP library.
 

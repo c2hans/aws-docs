@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/ReadWriteCapac
 ---
 
 # Change the capacity mode of a table in Amazon Keyspaces
-<a name="ReadWriteCapacityMode.SwitchReadWriteCapacityMode"></a>
 
 When you switch a table from provisioned capacity mode to on-demand capacity mode, Amazon Keyspaces makes several changes to the structure of your table and partitions. This process can take several minutes. During the switching period, your table delivers throughput that is consistent with the previously provisioned WCU and RCU amounts.
 

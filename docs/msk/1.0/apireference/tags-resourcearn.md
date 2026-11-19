@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/tags-resourcearn.ht
 ---
 
 # Tags
-<a name="tags-resourcearn"></a>
 
 Represents the set of tags for an MSK resource. A tag is a key-value pair that you define for the cluster. Using tags is a simple yet powerful way to manage Amazon resources and organize data, including billing data.
 

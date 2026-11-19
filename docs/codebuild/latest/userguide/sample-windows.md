@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-window
 ---
 
 # Run Microsoft Windows samples for CodeBuild
-<a name="sample-windows"></a>
 
 These samples use an AWS CodeBuild build environment running Microsoft Windows Server 2019, the .NET Framework, and the .NET Core SDK to build runtime files out of code written in F\# and Visual Basic.
 

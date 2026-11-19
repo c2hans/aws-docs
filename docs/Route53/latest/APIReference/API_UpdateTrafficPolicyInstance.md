@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateTr
 ---
 
 # UpdateTrafficPolicyInstance
-<a name="API_UpdateTrafficPolicyInstance"></a>
 
 **Note**
 After you submit a `UpdateTrafficPolicyInstance` request, there's a brief delay while Route 53 creates the resource record sets that are specified in the traffic policy definition. Use `GetTrafficPolicyInstance` with the `id` of updated traffic policy instance confirm that the `UpdateTrafficPolicyInstance` request completed successfully. For more information, see the `State` response element.

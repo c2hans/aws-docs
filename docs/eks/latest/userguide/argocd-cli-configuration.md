@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-cli-configur
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Using the Argo CD CLI with the managed capability
-<a name="argocd-cli-configuration"></a>
 
 The Argo CD command line interface (CLI) works the same with the managed capability as it does with upstream Argo CD for most operations, but authentication and cluster registration differ.
 

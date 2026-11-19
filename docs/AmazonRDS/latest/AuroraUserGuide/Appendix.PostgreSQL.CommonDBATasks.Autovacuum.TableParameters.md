@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Appendi
 ---
 
 # Setting table-level autovacuum parameters
-<a name="Appendix.PostgreSQL.CommonDBATasks.Autovacuum.TableParameters"></a>
 
 You can set autovacuum-related [storage parameters](https://www.postgresql.org/docs/current/static/sql-createtable.html#SQL-CREATETABLE-STORAGE-PARAMETERS) at a table level, which can be better than altering the behavior of the entire database. For large tables, you might need to set aggressive settings and you might not want to make autovacuum behave that way for all tables.
 

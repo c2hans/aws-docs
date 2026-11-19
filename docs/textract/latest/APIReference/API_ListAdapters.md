@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_ListAda
 ---
 
 # ListAdapters
-<a name="API_ListAdapters"></a>
 
 Lists all adapters that match the specified filtration criteria.
 

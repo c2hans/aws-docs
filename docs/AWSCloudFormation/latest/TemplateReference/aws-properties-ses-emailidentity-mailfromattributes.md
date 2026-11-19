@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::EmailIdentity MailFromAttributes
-<a name="aws-properties-ses-emailidentity-mailfromattributes"></a>
 
 Used to enable or disable the custom Mail-From domain configuration for an email identity.
 

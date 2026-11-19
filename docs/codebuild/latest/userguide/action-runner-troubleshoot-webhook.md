@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/action-runner
 ---
 
 # Troubleshoot the webhook
-<a name="action-runner-troubleshoot-webhook"></a>
 
 **Issue: **The webhook you set up in [Tutorial: Configure a CodeBuild-hosted GitHub Actions runner](action-runner.md) isn't working or your workflow job is hanging on GitHub.
 

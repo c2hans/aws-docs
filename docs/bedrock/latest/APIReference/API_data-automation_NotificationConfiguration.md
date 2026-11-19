@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # NotificationConfiguration
-<a name="API_data-automation_NotificationConfiguration"></a>
 
 Notification configuration for ingestion jobs.
 

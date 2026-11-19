@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_AccountUsag
 ---
 
 # AccountUsage
-<a name="API_AccountUsage"></a>
 
 Contains your current web function usage for the current AWS Region.
 

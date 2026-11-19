@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Use `ExecuteStatement` with an AWS SDK
-<a name="example_dynamodb_ExecuteStatement_section"></a>
 
 The following code examples show how to use `ExecuteStatement`.
 

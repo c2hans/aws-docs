@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_FargateProfi
 ---
 
 # FargateProfileSelector
-<a name="API_FargateProfileSelector"></a>
 
 An object representing an AWS Fargate profile selector.
 

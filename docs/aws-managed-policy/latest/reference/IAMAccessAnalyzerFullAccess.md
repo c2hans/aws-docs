@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IAMA
 ---
 
 # IAMAccessAnalyzerFullAccess
-<a name="IAMAccessAnalyzerFullAccess"></a>
 
 **Description**: Provides full access to IAM Access Analyzer
 

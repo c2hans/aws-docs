@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DM
 ---
 
 # Managing data migrations
-<a name="USER_DMS_migration.Managing"></a>
 
 After using the **Migrate data from EC2 database** action from the RDS console, Aurora starts the migration automatically.
 

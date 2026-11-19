@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # SuppressionPeriod
-<a name="API_SuppressionPeriod"></a>
 
 If you are suppressing an anomaly temporariliy, this structure defines how long the suppression period is to be.
 

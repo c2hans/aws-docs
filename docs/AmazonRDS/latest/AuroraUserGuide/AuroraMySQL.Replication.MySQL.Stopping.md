@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Stopping binary log replication for Aurora MySQL
-<a name="AuroraMySQL.Replication.MySQL.Stopping"></a>
 
 To stop binary log replication with a MySQL DB instance, external MySQL database, or another Aurora DB cluster, follow these steps, discussed in detail following in this topic.
 

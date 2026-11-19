@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/silk/latest/developerguide/css3.html
 ---
 
 # CSS3 support in Amazon Silk
-<a name="css3"></a>
 
 Amazon Silk supports basic CSS3 features like backgrounds, opacity, rounded corners, and text effects, as well as other features. Though not intended to be comprehensive, this page describes supported features and notes Amazon Silk-specific implementation details, where applicable.
 

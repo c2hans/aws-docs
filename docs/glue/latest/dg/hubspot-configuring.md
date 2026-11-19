@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/hubspot-configuring.html
 ---
 
 # Configuring HubSpot
-<a name="hubspot-configuring"></a>
 
 Before you can use AWS Glue to transfer data from HubSpot, you must meet these requirements:
 

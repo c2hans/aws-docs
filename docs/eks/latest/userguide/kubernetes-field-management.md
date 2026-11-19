@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-field-ma
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Determine fields you can customize for Amazon EKS add-ons
-<a name="kubernetes-field-management"></a>
 
 Amazon EKS add-ons are installed to your cluster using standard, best practice configurations. For more information about adding an Amazon EKS add-on to your cluster, see [Amazon EKS add-ons](eks-add-ons.md).
 

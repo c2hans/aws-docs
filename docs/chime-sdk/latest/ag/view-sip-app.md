@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/view-sip-app.html
 ---
 
 # Viewing a SIP media application
-<a name="view-sip-app"></a>
 
 Other administrators can view your SIP media applications, including their details, and you can view theirs.
 

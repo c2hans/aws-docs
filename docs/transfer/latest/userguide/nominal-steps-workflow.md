@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/nominal-steps-
 ---
 
 # Use predefined steps
-<a name="nominal-steps-workflow"></a>
 
 When you're creating a workflow, you can choose to add one of the following predefined steps discussed in this topic. You can also choose to add your own custom file-processing steps. For more information, see [Use custom file-processing steps](custom-step-details.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/developerguide/creat
 ---
 
 # CreateGroup
-<a name="creategroup"></a>
 
 Groups can be created through a `POST` request to the `/Groups` endpoint with the body containing the information of the group.
 

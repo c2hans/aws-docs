@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ListNotebook
 ---
 
 # ListNotebookExecutions
-<a name="API_ListNotebookExecutions"></a>
 
 Provides summaries of all notebook executions. You can filter the list based on multiple criteria such as status, time range, and editor id. Returns a maximum of 50 notebook executions and a marker to track the paging of a longer notebook execution list across multiple `ListNotebookExecutions` calls.
 

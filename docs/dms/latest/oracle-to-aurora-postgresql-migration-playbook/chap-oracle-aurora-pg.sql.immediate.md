@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle EXECUTE IMMEDIATE and PostgreSQL EXECUTE and PREPARE
-<a name="chap-oracle-aurora-pg.sql.immediate"></a>
 
 With AWS DMS, you can run dynamic SQL statements and prepared statements on source and target databases during a database migration. Oracle’s `EXECUTE IMMEDIATE` statement evaluates a string literal containing SQL statements at runtime. PostgreSQL’s `EXECUTE` statement executes a previously prepared statement, while `PREPARE` creates a prepared statement from a string literal.
 

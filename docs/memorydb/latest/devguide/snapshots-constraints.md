@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/snapshots-const
 ---
 
 # Snapshot constraints
-<a name="snapshots-constraints"></a>
 
 Consider the following constraints when planning or making snapshots:
 + For MemoryDB clusters, snapshot and restore are available for all supported node types.

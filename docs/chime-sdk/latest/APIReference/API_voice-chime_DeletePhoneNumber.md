@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # DeletePhoneNumber
-<a name="API_voice-chime_DeletePhoneNumber"></a>
 
 Moves the specified phone number into the **Deletion queue**. A phone number must be disassociated from any users or Amazon Chime SDK Voice Connectors before it can be deleted.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Automat
 ---
 
 # AutomationRulesFindingFieldsUpdate
-<a name="API_AutomationRulesFindingFieldsUpdate"></a>
 
  Identifies the finding fields that the automation rule action updates when a finding matches the defined criteria.
 

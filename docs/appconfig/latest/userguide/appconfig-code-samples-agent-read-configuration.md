@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-cod
 ---
 
 # Using AWS AppConfig Agent to read a freeform configuration profile
-<a name="appconfig-code-samples-agent-read-configuration"></a>
 
 Each of the following samples includes comments about the actions performed by the code.
 

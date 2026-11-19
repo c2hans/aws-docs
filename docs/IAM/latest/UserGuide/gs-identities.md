@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/gs-identities.html
 ---
 
 # Plan access to your AWS account
-<a name="gs-identities"></a>
 
 When setting up AWS, plan how you intend people to access your AWS account and resources. A well-designed identity management solution keeps your account secure.
 

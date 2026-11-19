@@ -3,21 +3,20 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # CreateRfc
-<a name="API_CreateRfc"></a>
 
 **Note**
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 Creates a new RFC.
 
-To create a request for change, begin by calling [CreateRfc](#API_CreateRfc). After creating the basic RFC and before submitting it, you can add or update information (`Description`, `ExpectedOutcome`, `ImplementationPlan`, `RollbackPlan`, and `WorstCaseScenario`) by using the `UpdateRfc` operation ([UpdateRfc](API_UpdateRfc.md)).
+To create a request for change, begin by calling [CreateRfc](API_CreateRfc.md). After creating the basic RFC and before submitting it, you can add or update information (`Description`, `ExpectedOutcome`, `ImplementationPlan`, `RollbackPlan`, and `WorstCaseScenario`) by using the `UpdateRfc` operation ([UpdateRfc](API_UpdateRfc.md)).
 
 When all necessary information has been added, use [SubmitRfc](API_SubmitRfc.md) to activate the RFC.
 
 **Note**
-Although only the change type (`ChangeTypeId` and `ChangeTypeVersion`) and `Title` are required to initially create an RFC, you must provide values for these fields (either in the original [CreateRfc](#API_CreateRfc) call or by using the corresponding `UpdateRfc` ([UpdateRfc](API_UpdateRfc.md) operation) before calling [SubmitRfc](API_SubmitRfc.md):
- `RequestedStartTime` ([CreateRfc](#API_CreateRfc) and `RequestedEndTime`, if you want to schedule the RFC. If scheduling is unimportant, leave off these values and execution begins as soon as the RFC is approved. This is part of a feature known as ASAP, or un-scheduled RFC.
- `ExecutionParameters` that comply with the JSON `ExecutionInputSchema` of the change type that is associated with the RFC ([CreateRfc](#API_CreateRfc) or [UpdateRfc](API_UpdateRfc.md))
+Although only the change type (`ChangeTypeId` and `ChangeTypeVersion`) and `Title` are required to initially create an RFC, you must provide values for these fields (either in the original [CreateRfc](API_CreateRfc.md) call or by using the corresponding `UpdateRfc` ([UpdateRfc](API_UpdateRfc.md) operation) before calling [SubmitRfc](API_SubmitRfc.md):
+ `RequestedStartTime` ([CreateRfc](API_CreateRfc.md) and `RequestedEndTime`, if you want to schedule the RFC. If scheduling is unimportant, leave off these values and execution begins as soon as the RFC is approved. This is part of a feature known as ASAP, or un-scheduled RFC.
+ `ExecutionParameters` that comply with the JSON `ExecutionInputSchema` of the change type that is associated with the RFC ([CreateRfc](API_CreateRfc.md) or [UpdateRfc](API_UpdateRfc.md))
 
 For more information and examples, see [Change Management](https://docs.aws.amazon.com/managedservices/latest/userguide/change-mgmt.html) in the *AWS Managed Services User Guide*.
 

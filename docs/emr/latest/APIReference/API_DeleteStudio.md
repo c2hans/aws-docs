@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_DeleteStudio
 ---
 
 # DeleteStudio
-<a name="API_DeleteStudio"></a>
 
 Removes an Amazon EMR Studio from the Studio metadata store.
 

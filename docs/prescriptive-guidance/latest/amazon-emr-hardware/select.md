@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-emr-
 ---
 
 # Selecting and deploying an Amazon EMR cluster
-<a name="select"></a>
 
 Identify and organize the *node types*. When you define your Amazon EMR cluster, it is important to understand its hardware. How does it work? How is it composed? The answers to these questions include three parts:
 + The type of nodes

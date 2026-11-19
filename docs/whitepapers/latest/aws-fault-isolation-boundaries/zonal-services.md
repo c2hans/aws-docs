@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 ---
 
 # Zonal services
-<a name="zonal-services"></a>
 
  You can use zonal services, such as Amazon EC2 and Amazon EBS, to provision and operate resources in an Availability Zone that you specify. Zonal services have zonal data planes that operate independently in each Availability Zone within a Region, and more importantly, fail independently in each Availability Zone. We call this pattern [Availability Zone Independence (AZI)](https://aws.amazon.com/builders-library/static-stability-using-availability-zones/). In some cases, such as with Amazon EC2, the service also includes zonal control planes for zonally aligned operations, such as launching an Amazon EC2 instance. Each zonal service also provides a regional control plane endpoint to manage regionally scoped functionality and simplify interacting with the service’s zonal control planes by providing a routing and aggregation layer. This is shown in the following figure.
 

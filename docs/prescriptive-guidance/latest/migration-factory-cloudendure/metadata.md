@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # The migration metadata pipeline tool
-<a name="metadata"></a>
 
 Cloud Migration Factory includes a migration metadata pipeline tool and automation scripts. The metadata pipeline tool integrates with other migration tools and scripts through Representational State Transfer (REST) APIs, as shown in the following diagram. This enables migration metadata to flow from one tool to another to support end-to-end automation. Currently, Cloud Migration Factory is natively integrated with the AWS Managed Services (AMS) workload ingest process. By integrating this process, Cloud Migration Factory can automate migration tasks across multiple tools.
 

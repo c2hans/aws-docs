@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DetachPrinci
 ---
 
 # DetachPrincipalPolicy
-<a name="API_DetachPrincipalPolicy"></a>
 
 Removes the specified policy from the specified certificate.
 

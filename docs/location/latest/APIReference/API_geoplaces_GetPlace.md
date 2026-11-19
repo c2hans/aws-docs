@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # GetPlace
-<a name="API_geoplaces_GetPlace"></a>
 
  `GetPlace` finds a place by its unique ID. A `PlaceId` is returned by other place operations.
 

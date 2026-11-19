@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Dyn
 ---
 
 # DynamoDB and optimistic locking with version number
-<a name="DynamoDBMapper.OptimisticLocking"></a>
 
 *Optimistic locking* is a strategy to make sure that the client-side item that you are updating (or deleting) is the same as the item in Amazon DynamoDB. If you use this strategy, your database writes are protected from being overwritten by the writes of others, and vice versa.
 

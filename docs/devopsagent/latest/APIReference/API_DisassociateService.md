@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Disa
 ---
 
 # DisassociateService
-<a name="API_DisassociateService"></a>
 
 Deletes a specific service association from an AgentSpace. This operation is idempotent and returns a 204 No Content response on success.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListChannelHandshakesTypeSort
-<a name="API_channel_ListChannelHandshakesTypeSort"></a>
 
 Type-specific sorting options for listing channel handshakes.
 

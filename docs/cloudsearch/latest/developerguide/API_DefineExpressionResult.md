@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_De
 ---
 
 # DefineExpressionResult
-<a name="API_DefineExpressionResult"></a>
 
 ## Description
 <a name="API_DefineExpressionResult_Description"></a>

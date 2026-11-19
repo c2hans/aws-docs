@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMCPSignInOAuthAccessPolicy
-<a name="AWSMCPSignInOAuthAccessPolicy"></a>
 
 **Description**: Provides access to authenticate to the AWS MCP server using AWS Sign-In OAuth
 

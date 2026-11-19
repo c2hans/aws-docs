@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_featur
 ---
 
 # BatchGetRecord
-<a name="API_feature_store_BatchGetRecord"></a>
 
 Retrieves a batch of `Records` from a `FeatureGroup`.
 

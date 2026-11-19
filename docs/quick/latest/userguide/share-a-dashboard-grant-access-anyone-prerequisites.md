@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/share-a-dashboard
 ---
 
 # Before you start
-<a name="share-a-dashboard-grant-access-anyone-prerequisites"></a>
 
 Before you can share a dashboard with anyone on the internet, make sure to do the following:
 

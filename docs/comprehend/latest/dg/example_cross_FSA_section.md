@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/example_cross_FSA_s
 ---
 
 # Create an application that analyzes customer feedback and synthesizes audio
-<a name="example_cross_FSA_section"></a>
 
 The following code examples show how to create an application that analyzes customer comment cards, translates them from their original language, determines their sentiment, and generates an audio file from the translated text.
 

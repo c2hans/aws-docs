@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_Instanc
 ---
 
 # InstanceTypeItem
-<a name="API_InstanceTypeItem"></a>
 
 Information about an instance type.
 

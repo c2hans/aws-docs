@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_Q
 ---
 
 # QueryPlanningContext
-<a name="API_QueryPlanningContext"></a>
 
 A structure containing information about the query plan.
 

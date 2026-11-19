@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Pip
 ---
 
 # PipelineVariable
-<a name="API_PipelineVariable"></a>
 
 A pipeline-level variable used for a pipeline execution.
 

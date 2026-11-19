@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/delete-ass
 ---
 
 # Delete asset models, component models, and interfaces in AWS IoT SiteWise
-<a name="delete-asset-models"></a>
 
 You can use the AWS IoT SiteWise console or API to delete an asset model, component model, or interface.
 

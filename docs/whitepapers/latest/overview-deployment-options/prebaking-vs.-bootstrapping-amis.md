@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-o
 ---
 
 # Prebaking vs. bootstrapping AMIs
-<a name="prebaking-vs.-bootstrapping-amis"></a>
 
  If your application relies heavily on customizing or deploying applications onto Amazon EC2 instances, then you can optimize your deployments through *bootstrapping* and *prebaking* practices.
 

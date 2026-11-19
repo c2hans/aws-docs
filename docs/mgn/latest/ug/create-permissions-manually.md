@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/create-permissions-manuall
 ---
 
 # Create roles manually
-<a name="create-permissions-manually"></a>
 
 To create permissions manually, you create the **AWSApplicationMigrationConnectorManagementRole** needed to install and run the connector. The connector assumes the **AWSApplicationMigrationConnectorSharingRole\_management-account-id** role as needed, for example, to install the replication agent on a source server.
 

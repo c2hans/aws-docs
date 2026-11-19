@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/sns-payload.ht
 ---
 
 # Use the Amazon SNS payload after enabling message streaming in Connect Customer
-<a name="sns-payload"></a>
 
 After you’ve enabled message streaming successfully, you might need to filter the message to send it to the intended participant: agent, customer, or all.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/safetyrule.h
 ---
 
 # CreateSafetyRule, UpdateSafetyRule
-<a name="safetyrule"></a>
 
 ## URI
 <a name="safetyrule-url"></a>

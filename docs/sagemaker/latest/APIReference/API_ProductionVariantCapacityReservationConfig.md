@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Produc
 ---
 
 # ProductionVariantCapacityReservationConfig
-<a name="API_ProductionVariantCapacityReservationConfig"></a>
 
 Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint.
 

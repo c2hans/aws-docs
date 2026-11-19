@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/set-constra
 ---
 
 # `SET CONSTRAINTS`
-<a name="set-constraints-syntax-support"></a>
 
 `SET CONSTRAINTS` sets the behavior of foreign key constraint checking within the current transaction.
 

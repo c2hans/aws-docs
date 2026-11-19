@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # Toll-free number registration rejection reasons
-<a name="registrations-tfn-rejection-reason"></a>
 
 If your Toll-free number registration was rejected, use the following table to determine why it was rejected and what you can do to fix your Toll-free number registration. After you determine why the registration was rejected, you can modify the existing registration to address that issue and resubmit. For more information, see [Edit a registration in AWS End User Messaging SMS](registrations-edit.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # GetBlueprint
-<a name="API_data-automation_GetBlueprint"></a>
 
 Gets details about a blueprint or blueprint version.
 

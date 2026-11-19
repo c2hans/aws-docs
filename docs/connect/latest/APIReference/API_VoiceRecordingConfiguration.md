@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_VoiceRec
 ---
 
 # VoiceRecordingConfiguration
-<a name="API_VoiceRecordingConfiguration"></a>
 
 Contains information about the recording configuration settings.
 

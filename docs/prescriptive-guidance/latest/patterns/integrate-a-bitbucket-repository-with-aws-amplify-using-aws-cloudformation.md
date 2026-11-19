@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/in
 ---
 
 # Integrate a Bitbucket repository with AWS Amplify using AWS CloudFormation
-<a name="integrate-a-bitbucket-repository-with-aws-amplify-using-aws-cloudformation"></a>
 
 *Alwin Abraham, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ArrayPrope
 ---
 
 # ArrayPropertiesDetail
-<a name="API_ArrayPropertiesDetail"></a>
 
 An object that represents the array properties of a job.
 

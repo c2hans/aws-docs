@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # PatchOrchestratorFilter
-<a name="API_PatchOrchestratorFilter"></a>
 
 Defines a filter used in Patch Manager APIs. Supported filter keys depend on the API operation that includes the filter. Patch Manager API operations that use `PatchOrchestratorFilter` include the following:
 +  [DescribeAvailablePatches](API_DescribeAvailablePatches.md)

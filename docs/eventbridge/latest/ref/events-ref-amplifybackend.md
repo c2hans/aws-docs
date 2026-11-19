@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-amplif
 ---
 
 # AWS Amplify Admin events
-<a name="events-ref-amplifybackend"></a>
 
 Amplify Admin sends service events to EventBridge via AWS CloudTrail.
 

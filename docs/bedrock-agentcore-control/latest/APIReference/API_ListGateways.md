@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListGateways
-<a name="API_ListGateways"></a>
 
 Lists all gateways in the account.
 

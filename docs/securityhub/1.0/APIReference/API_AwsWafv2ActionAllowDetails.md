@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsWafv
 ---
 
 # AwsWafv2ActionAllowDetails
-<a name="API_AwsWafv2ActionAllowDetails"></a>
 
  Specifies that AWS WAF should allow the request and optionally defines additional custom handling for the request.
 

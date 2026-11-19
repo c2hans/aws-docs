@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/developerguide/permissio
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # IAM role for retrieving recommendations from Amazon Personalize
-<a name="permissions-get-recommendations"></a>
 
 You can configure Amazon Pinpoint to retrieve recommendation data from an Amazon Personalize solution that's been deployed as an Amazon Personalize campaign. You can use this data to send personalized recommendations to message recipients based on each recipient's attributes and behavior. To learn more, see [Machine learning models](https://docs.aws.amazon.com/pinpoint/latest/userguide/ml-models.html) in the *Amazon Pinpoint User Guide*.
 

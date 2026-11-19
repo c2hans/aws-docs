@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-fi
 ---
 
 # Exposure findings in Security Hub
-<a name="exposure-findings"></a>
 
  An exposure finding in Security Hub represents the correlation of multiple security signals that identify potential security risks in your AWS environment. Exposure findings help you understand and prioritize security risks. They automatically analyze combinations of vulnerabilities, configurations, threats, and resource relationships. An exposure finding includes traits and signals. A signal can include one or more types of exposure traits. Security Hub generates an exposure finding when signals from Security Hub CSPM, Amazon Inspector, GuardDuty, Macie, or other AWS services indicate the presence of an exposure. A resource can be the primary resource in, at most, one exposure finding. If a resource does not have any exposure traits or has insufficient traits, Security Hub does not generate an exposure finding for that resource.
 

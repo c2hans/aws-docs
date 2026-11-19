@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/monitoring-cloudw
 ---
 
 # MediaConnect output status change event
-<a name="monitoring-cloudwatch-events-output-status-change"></a>
 
 AWS Elemental MediaConnect publishes this event when an output's status changes. The possible values are `ENABLED` and `DISABLED`.
 

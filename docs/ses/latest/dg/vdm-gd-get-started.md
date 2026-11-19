@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/vdm-gd-get-started.html
 ---
 
 # Getting started with global deliverability
-<a name="vdm-gd-get-started"></a>
 
 To start using global deliverability, you enable it from the Virtual Deliverability Manager Settings page in the Amazon SES console. After enabling, you select which of your verified sending domains to monitor.
 

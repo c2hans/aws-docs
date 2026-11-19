@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Enable HTTPS on your WordPress instance with a Lightsail managed domain
-<a name="amazon-lightsail-enabling-https-on-wordpress"></a>
 
 Lightsail Setup helps you quickly connect your domain to your WordPress instance. Lightsail Setup creates a Let's Encrypt certificate that automatically renews every 60 to 90 days. When the setup is complete, visitors can securely access your website using your custom domain name.
 

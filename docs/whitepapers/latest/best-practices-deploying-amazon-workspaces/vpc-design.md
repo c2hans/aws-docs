@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # VPC design
-<a name="vpc-design"></a>
 
  This section describes best practices for sizing your VPC and subnets, traffic flow, and implications for directory services design.
 

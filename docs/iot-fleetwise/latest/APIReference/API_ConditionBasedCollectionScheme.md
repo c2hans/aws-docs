@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Co
 ---
 
 # ConditionBasedCollectionScheme
-<a name="API_ConditionBasedCollectionScheme"></a>
 
 Information about a collection scheme that uses a simple logical expression to recognize what data to collect.
 

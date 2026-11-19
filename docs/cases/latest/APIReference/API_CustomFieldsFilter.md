@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_CustomFiel
 ---
 
 # CustomFieldsFilter
-<a name="API_connect-cases_CustomFieldsFilter"></a>
 
 A filter for fields in `Custom` type related items. Only one value can be provided.
 
@@ -15,7 +14,7 @@ This data type is a UNION, so only one of the following members can be specified
 
  ** andAll **   <a name="connect-Type-connect-cases_CustomFieldsFilter-andAll"></a>
 Provides "and all" filtering.
-Type: Array of [CustomFieldsFilter](#API_connect-cases_CustomFieldsFilter) objects
+Type: Array of [CustomFieldsFilter](API_connect-cases_CustomFieldsFilter.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
 
@@ -27,13 +26,13 @@ Required: No
 
  ** not **   <a name="connect-Type-connect-cases_CustomFieldsFilter-not"></a>
 Excludes items matching the filter.
-Type: [CustomFieldsFilter](#API_connect-cases_CustomFieldsFilter) object
+Type: [CustomFieldsFilter](API_connect-cases_CustomFieldsFilter.md) object
  **Note: **This object is a Union. Only one member of this object can be specified or returned.
 Required: No
 
  ** orAll **   <a name="connect-Type-connect-cases_CustomFieldsFilter-orAll"></a>
 Provides "or all" filtering.
-Type: Array of [CustomFieldsFilter](#API_connect-cases_CustomFieldsFilter) objects
+Type: Array of [CustomFieldsFilter](API_connect-cases_CustomFieldsFilter.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 Required: No
 

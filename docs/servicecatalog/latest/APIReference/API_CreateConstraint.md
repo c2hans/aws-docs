@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_C
 ---
 
 # CreateConstraint
-<a name="API_CreateConstraint"></a>
 
 Creates a constraint.
 

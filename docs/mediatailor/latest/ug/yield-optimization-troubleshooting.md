@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/yield-optimization
 ---
 
 # Troubleshooting and monitoring
-<a name="yield-optimization-troubleshooting"></a>
 
 This page helps you monitor Yield Optimization performance, diagnose common issues, and validate that your configuration is working correctly.
 

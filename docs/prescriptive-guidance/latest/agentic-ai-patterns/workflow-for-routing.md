@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Workflow for routing
-<a name="workflow-for-routing"></a>
 
 In the routing pattern, a classifier or router agent uses an LLM to interpret the intent or category of a query, then routes the input to a specialized downstream task or agent.
 

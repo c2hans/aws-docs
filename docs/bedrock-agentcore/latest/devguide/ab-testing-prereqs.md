@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/ab-tes
 ---
 
 # A/B testing prerequisites
-<a name="ab-testing-prereqs"></a>
 
 Before you create an A/B test, ensure the following resources are in place.
 

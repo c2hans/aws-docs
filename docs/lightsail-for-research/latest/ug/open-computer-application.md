@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/open-co
 ---
 
 # Access a Lightsail for Research virtual computer application
-<a name="open-computer-application"></a>
 
 Complete the following steps to launch the application that's running on your Lightsail for Research virtual computer.
 

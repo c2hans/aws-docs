@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-app
 ---
 
 # Supported languages for business rules extraction
-<a name="transform-app-mainframe-reimagine-supported"></a>
 
 AWS Transform runs a reimagine job that analyzes your code and data, identifies business domains, extracts business logic, and generates modernization requirements for each business domain. This topic covers the business rules extraction (BRE) step of that job: the step that recovers the legacy logic from your source.
 

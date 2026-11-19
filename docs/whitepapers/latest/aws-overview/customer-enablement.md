@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/customer
 ---
 
 # ![AWS customer enablement category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/customer-enablement-icon.png)Customer enablement
-<a name="customer-enablement"></a>
 
 ------
 #### [ AWS Managed Services ]

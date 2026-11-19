@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Stati
 ---
 
 # StaticFileSource
-<a name="API_StaticFileSource"></a>
 
 The source of the static file.
 

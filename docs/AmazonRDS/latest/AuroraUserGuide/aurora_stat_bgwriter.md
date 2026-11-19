@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora_
 ---
 
 # aurora\_stat\_bgwriter
-<a name="aurora_stat_bgwriter"></a>
 
 `aurora_stat_bgwriter` is a statistics view showing information about Optimized Reads cache writes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/transform-userguide/getting-s
 ---
 
 # Tagging with AWS Tools
-<a name="getting-started-step2-Automation"></a>
 
 We encourage you to use AWS tools when tagging your resources as much as possible. You can bulk apply tags by adding a tag line to your AWS CloudFormation template, AWS Cloud Development Kit (AWS CDK), AWS Transform MGN (MGN), Cloud Migration Factory Solution (CMF), and AWS Serverless Application Model (SAM). You can also use the AWS Tag Editor to help with your tagging.
 

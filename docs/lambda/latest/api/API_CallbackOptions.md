@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CallbackOptions.ht
 ---
 
 # CallbackOptions
-<a name="API_CallbackOptions"></a>
 
 Configuration options for callback operations in durable executions, including timeout settings and retry behavior.
 

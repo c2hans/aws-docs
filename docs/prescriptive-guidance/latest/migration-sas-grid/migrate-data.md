@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Migrating data associated with SAS
-<a name="migrate-data"></a>
 
 We recommend that you move the data associated with your SAS applications to AWS. This migration has several benefits:
 + Gaining access to cloud-based data lakes and data warehouses

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsReds
 ---
 
 # AwsRedshiftClusterLoggingStatus
-<a name="API_AwsRedshiftClusterLoggingStatus"></a>
 
 Provides information about the logging status of the cluster.
 

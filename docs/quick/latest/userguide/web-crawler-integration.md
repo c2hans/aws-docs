@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/web-crawler-integ
 ---
 
 # Web Crawler integration
-<a name="web-crawler-integration"></a>
 
 |  |
 | --- |

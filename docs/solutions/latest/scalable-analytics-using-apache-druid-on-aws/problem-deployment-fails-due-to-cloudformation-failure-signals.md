@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Problem: Deployment fails due to CloudFormation FAILURE signals
-<a name="problem-deployment-fails-due-to-cloudformation-failure-signals"></a>
 
 When deploying the guidance, the deployment may fail due to CloudFormation FAILURE signals.
 

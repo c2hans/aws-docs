@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportapp/latest/APIReference/API_ListS
 ---
 
 # ListSlackChannelConfigurations
-<a name="API_ListSlackChannelConfigurations"></a>
 
 Lists the Slack channel configurations for an AWS account.
 

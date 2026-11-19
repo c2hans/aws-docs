@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qbiz-indexes-perm
 ---
 
 # Setting up permissions
-<a name="qbiz-indexes-permissions"></a>
 
 To use Amazon Q Business indexes in AWS Quick, you need to set up the appropriate permissions based on your implementation method:
 

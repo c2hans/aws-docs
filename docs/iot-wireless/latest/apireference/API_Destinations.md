@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Des
 ---
 
 # Destinations
-<a name="API_Destinations"></a>
 
 Describes a destination.
 

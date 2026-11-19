@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-api-gat
 ---
 
 # Create API Gateway REST APIs with Step Functions
-<a name="connect-api-gateway"></a>
 
 Learn how to use Amazon API Gateway to create, publish, maintain, and monitor HTTP and REST APIs with Step Functions. To integrate with API Gateway, you define a `Task` state in Step Functions that directly calls an API Gateway HTTP or API Gateway REST endpoint, without writing code or relying on other infrastructure. A `Task` state definition includes all the necessary information for the API call. You can also select different authorization methods.
 

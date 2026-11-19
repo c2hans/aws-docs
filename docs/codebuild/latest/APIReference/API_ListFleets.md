@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ListFl
 ---
 
 # ListFleets
-<a name="API_ListFleets"></a>
 
 Gets a list of compute fleet names with each compute fleet name representing a single compute fleet.
 

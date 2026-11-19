@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Delete
 ---
 
 # DeleteTenantDatabase
-<a name="API_DeleteTenantDatabase"></a>
 
 Deletes a tenant database from your DB instance. This command only applies to RDS for Oracle container database (CDB) instances.
 

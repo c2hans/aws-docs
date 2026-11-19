@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Remedia
 ---
 
 # RemediationFilters
-<a name="API_RemediationFilters"></a>
 
 Contains the criteria used to filter remediation targets, such as resource type, priority, or status.
 

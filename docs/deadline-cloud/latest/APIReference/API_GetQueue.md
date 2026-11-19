@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_G
 ---
 
 # GetQueue
-<a name="API_GetQueue"></a>
 
 Gets a queue.
 

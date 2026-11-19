@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # API reference
-<a name="api-reference"></a>
 
 This section provides API references for the solution.
 

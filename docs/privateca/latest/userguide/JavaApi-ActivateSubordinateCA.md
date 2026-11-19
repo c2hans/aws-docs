@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-Activ
 ---
 
 # Create and activate a subordinate CA programmatically
-<a name="JavaApi-ActivateSubordinateCA"></a>
 
 This Java sample shows how to activate a subordinate CA using the following AWS Private CA API actions:
 + [GetCertificateAuthorityCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_GetCertificateAuthorityCertificate.html)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_ListDatasetExp
 ---
 
 # ListDatasetExportJobs
-<a name="API_ListDatasetExportJobs"></a>
 
 Returns a list of dataset export jobs that use the given dataset. When a dataset is not specified, all the dataset export jobs associated with the account are listed. The response provides the properties for each dataset export job, including the Amazon Resource Name (ARN). For more information on dataset export jobs, see [CreateDatasetExportJob](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetExportJob.html). For more information on datasets, see [CreateDataset](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDataset.html).
 

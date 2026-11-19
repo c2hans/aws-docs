@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkSpacesSelfServiceAccess
-<a name="AmazonWorkSpacesSelfServiceAccess"></a>
 
 **Description**: Provides access to Amazon WorkSpaces backend service to perform Workspace Self Service actions
 

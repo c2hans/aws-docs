@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # DeleteFirewallRuleGroup
-<a name="API_route53resolver_DeleteFirewallRuleGroup"></a>
 
 Deletes the specified firewall rule group.
 

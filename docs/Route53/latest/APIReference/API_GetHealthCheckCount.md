@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetHealt
 ---
 
 # GetHealthCheckCount
-<a name="API_GetHealthCheckCount"></a>
 
 Retrieves the number of health checks that are associated with the current AWS account.
 

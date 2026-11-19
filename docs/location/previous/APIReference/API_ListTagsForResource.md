@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ListT
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Returns a list of tags that are applied to the specified Amazon Location resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/self-deployed-clean
 ---
 
 # Clean up a Self-deployed environment
-<a name="self-deployed-cleanup"></a>
 
 When you no longer need your Amazon Elastic VMware Service environment, delete its connectors, hosts, and the environment itself, to stop the charges for the hosts. You can use the Amazon EVS console or the AWS CLI. Then delete the network resources that you created outside of Amazon EVS.
 

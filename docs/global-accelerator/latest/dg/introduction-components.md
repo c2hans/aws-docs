@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/introductio
 ---
 
 # AWS Global Accelerator components
-<a name="introduction-components"></a>
 
 AWS Global Accelerator includes the following components:
 

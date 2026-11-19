@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Cooki
 ---
 
 # CookieNames
-<a name="API_CookieNames"></a>
 
 Contains a list of cookie names.
 

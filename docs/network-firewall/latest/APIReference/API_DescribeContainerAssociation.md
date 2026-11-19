@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DescribeContainerAssociation
-<a name="API_DescribeContainerAssociation"></a>
 
 Retrieves the configuration and status of a container association.
 

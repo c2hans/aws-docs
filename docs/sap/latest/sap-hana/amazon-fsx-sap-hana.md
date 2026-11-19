@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.
 ---
 
 # Set up FSx for ONTAP file system, SVMs, and volumes
-<a name="amazon-fsx-sap-hana"></a>
 
 Before you create FSx for ONTAP file system, determine the total storage space you need for your SAP HANA workload. You can increase the storage size later. To decrease the storage size, you must create a new file system.
 

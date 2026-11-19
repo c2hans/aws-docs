@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-bedrock
 ---
 
 # Invoke Amazon Bedrock AgentCore harness with Step Functions
-<a name="connect-bedrockagentcore"></a>
 
 You can integrate Step Functions with Amazon Bedrock AgentCore to invoke a harness from your state machine. A harness is a managed runtime that orchestrates model inference, tool use, and multi-turn conversations. In Workflow Studio, search for **AgentCore InvokeHarness** to find this state and drag it into your workflow.
 

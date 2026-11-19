@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # RecommendationTrigger
-<a name="API_amazon-q-connect_RecommendationTrigger"></a>
 
 A recommendation trigger provides context on the event that produced the referenced recommendations. Recommendations are only referenced in `recommendationIds` by a single RecommendationTrigger.
 

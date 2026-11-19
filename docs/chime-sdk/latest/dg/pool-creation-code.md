@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/pool-creation-code.h
 ---
 
 # Example code for Kinesis Video Streams pools for Amazon Chime SDK media stream pipelines
-<a name="pool-creation-code"></a>
 
 The following examples show how to create, update, get, list, and delete Kinesis Video Streams (KVS) pools. Expand each section to learn more.
 

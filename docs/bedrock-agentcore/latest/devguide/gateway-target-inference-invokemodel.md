@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Use the Amazon Bedrock InvokeModel API with inference targets
-<a name="gateway-target-inference-invokemodel"></a>
 
 Amazon Bedrock AgentCore Gateway inference targets support the Amazon Bedrock `InvokeModel` and `InvokeModelWithResponseStream` application programming interface (API) wire format on the aggregated `/inference` endpoint. With this support, you can keep your existing Amazon Bedrock SDK integration and reach any model provider through one governed endpoint. You don’t need to rewrite client code for each provider. The gateway supports `InvokeModel` in two directions:
 + A client that uses the Amazon Bedrock SDK (for example, the Boto3 `bedrock-runtime` client) can send `InvokeModel` requests to the gateway. The gateway forwards them to a Bedrock target unchanged, or translates them to a non-Bedrock provider (such as OpenAI or Anthropic) when the `InvokeModel` body already matches that provider’s payload schema. For the supported translations, see [Request routing and translation](#gateway-target-inference-invokemodel-how).

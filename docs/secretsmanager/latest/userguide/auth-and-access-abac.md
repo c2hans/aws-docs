@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and
 ---
 
 # Control access to secrets using attribute-based access control (ABAC)
-<a name="auth-and-access-abac"></a>
 
 Attribute-based access control (ABAC) is an authorization strategy that defines permissions based on attributes or characteristics of the user, the data, or the environment, such as the department, business unit, or other factors that could affect the authorization outcome. In AWS, these attributes are called *tags*.
 

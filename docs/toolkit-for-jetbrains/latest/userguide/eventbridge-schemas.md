@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/e
 ---
 
 # Working with Amazon EventBridge schemas
-<a name="eventbridge-schemas"></a>
 
 You can use the AWS Toolkit for JetBrains to work with Amazon EventBridge Schemas as follows.
 

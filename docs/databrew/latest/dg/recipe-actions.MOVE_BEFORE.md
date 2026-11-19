@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.MOVE_B
 ---
 
 # MOVE\_BEFORE
-<a name="recipe-actions.MOVE_BEFORE"></a>
 
 Moves a column to the position immediately before another column.
 

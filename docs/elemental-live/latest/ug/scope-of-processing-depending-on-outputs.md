@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/scope-of-proces
 ---
 
 # Scope of processing depending on outputs
-<a name="scope-of-processing-depending-on-outputs"></a>
 
 The following table summarizes which options apply to which kind of output. Following the table are details for each output type.
 

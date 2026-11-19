@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: AWS Elastic Beanstalk console adds more languages on November 2, 2018
-<a name="release-2018-11-02-console-locales"></a>
 
 Elastic Beanstalk console added several new languages.
 

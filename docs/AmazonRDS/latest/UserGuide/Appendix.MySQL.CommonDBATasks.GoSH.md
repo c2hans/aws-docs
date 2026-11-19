@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.MySQ
 ---
 
 # Managing the Global Status History for RDS for MySQL
-<a name="Appendix.MySQL.CommonDBATasks.GoSH"></a>
 
 **Tip**
 To analyze database performance, you can also use Performance Insights on Amazon RDS. For more information, see [Monitoring DB load with Amazon CloudWatch Database Insights on Amazon RDS](USER_PerfInsights.md).

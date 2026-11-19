@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Automate the testing of your software applications at scale
-<a name="solution-overview"></a>
 
 Distributed Load Testing on AWS helps you automate performance testing of your software applications at scale to identify bottlenecks before you release your application. This solution simulates thousands of connected users generating HTTP requests at a sustained rate without the need to provision servers.
 

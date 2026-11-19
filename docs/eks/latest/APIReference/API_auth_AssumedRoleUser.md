@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_auth_Assumed
 ---
 
 # AssumedRoleUser
-<a name="API_auth_AssumedRoleUser"></a>
 
 An object with the permanent IAM role identity and the temporary session name.
 

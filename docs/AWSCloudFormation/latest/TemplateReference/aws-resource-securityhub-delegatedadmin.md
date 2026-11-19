@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SecurityHub::DelegatedAdmin
-<a name="aws-resource-securityhub-delegatedadmin"></a>
 
 The `AWS::SecurityHub::DelegatedAdmin` resource designates the delegated AWS Security Hub CSPM administrator account for an organization. You must enable the integration between Security Hub CSPM and AWS Organizations before you can designate a delegated Security Hub CSPM administrator. Only the management account for an organization can designate the delegated Security Hub CSPM administrator account. For more information, see [Designating the delegated Security Hub CSPM administrator](https://docs.aws.amazon.com/securityhub/latest/userguide/designate-orgs-admin-account.html#designate-admin-instructions) in the *AWS Security Hub CSPM User Guide*.
 

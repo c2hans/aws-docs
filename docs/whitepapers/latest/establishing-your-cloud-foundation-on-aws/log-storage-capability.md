@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Log Storage capability
-<a name="log-storage-capability"></a>
 
  The Log Storage capability enables you to collect and store your environment logs centrally and securely. This will enable you to evaluate, monitor, alert, and audit access and actions performed on your cloud resources and objects.
 

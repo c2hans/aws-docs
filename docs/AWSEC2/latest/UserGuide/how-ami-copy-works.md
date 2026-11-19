@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-ami-copy-wor
 ---
 
 # How Amazon EC2 AMI copy works
-<a name="how-ami-copy-works"></a>
 
 Copying a source AMI results in an identical but distinct new AMI that we also refer to as the *target* AMI. The target AMI has its own unique AMI ID. You can change or deregister the source AMI with no effect on the target AMI. The reverse is also true.
 

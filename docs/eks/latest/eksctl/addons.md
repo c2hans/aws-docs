@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/addons.html
 ---
 
 # Addons
-<a name="addons"></a>
 
 This topic describes how to manage Amazon EKS Add-Ons for your Amazon EKS clusters using eksctl. EKS Add-Ons is a feature that lets you enable and manage Kubernetes operational software through the EKS API, simplifying the process of installing, configuring, and updating cluster add-ons.
 

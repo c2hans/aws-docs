@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_BouncedRecip
 ---
 
 # BouncedRecipientInfo
-<a name="API_BouncedRecipientInfo"></a>
 
 Recipient-related information to include in the Delivery Status Notification (DSN) when an email that Amazon SES receives on your behalf bounces.
 

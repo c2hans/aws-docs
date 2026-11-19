@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_PresignedUrl
 ---
 
 # PresignedUrlConfig
-<a name="API_PresignedUrlConfig"></a>
 
 Configuration for pre-signed S3 URLs.
 

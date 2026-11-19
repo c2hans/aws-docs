@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Projec
 ---
 
 # ProjectArtifacts
-<a name="API_ProjectArtifacts"></a>
 
 Information about the build output artifacts for the build project.
 

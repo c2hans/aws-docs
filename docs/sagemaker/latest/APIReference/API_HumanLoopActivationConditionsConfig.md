@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanL
 ---
 
 # HumanLoopActivationConditionsConfig
-<a name="API_HumanLoopActivationConditionsConfig"></a>
 
 Defines under what conditions SageMaker creates a human loop. Used within [CreateFlowDefinition](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateFlowDefinition.html). See [HumanLoopActivationConditionsConfig](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HumanLoopActivationConditionsConfig.html) for the required format of activation conditions.
 

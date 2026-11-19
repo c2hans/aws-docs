@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CreateCloudFormationStack
-<a name="API_CreateCloudFormationStack"></a>
 
 Creates an AWS CloudFormation stack, which creates a new Amazon EC2 instance from an exported Amazon Lightsail snapshot. This operation results in a CloudFormation stack record that can be used to track the AWS CloudFormation stack created. Use the `get cloud formation stack records` operation to get a list of the CloudFormation stacks created.
 

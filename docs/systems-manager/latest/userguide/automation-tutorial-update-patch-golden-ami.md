@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # Update a golden AMI using Automation, AWS Lambda, and Parameter Store
-<a name="automation-tutorial-update-patch-golden-ami"></a>
 
 The following example uses the model where an organization maintains and periodically patches their own, proprietary AMIs rather than building from Amazon Elastic Compute Cloud (Amazon EC2) AMIs.
 

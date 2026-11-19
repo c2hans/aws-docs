@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # IdMappingTechniques
-<a name="API_IdMappingTechniques"></a>
 
 An object which defines the ID mapping technique and any additional configurations.
 

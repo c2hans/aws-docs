@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ParseKeyValue
-<a name="API_ParseKeyValue"></a>
 
 This processor parses a specified field in the original log event into key-value pairs.
 

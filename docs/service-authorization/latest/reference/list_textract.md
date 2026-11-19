@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon Textract
-<a name="list_textract"></a>
 
 Amazon Textract (service prefix: `textract`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

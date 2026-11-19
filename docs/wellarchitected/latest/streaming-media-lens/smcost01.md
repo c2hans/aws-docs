@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Storage and delivery costs
-<a name="smcost01"></a>
 
 Storage and data transfer often represent the largest cost components. A strategy for lifecycle management and edge caching reduces these costs while maintaining access performance.
 

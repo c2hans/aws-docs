@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMediaLiveAnywhereServiceRolePolicy
-<a name="AWSMediaLiveAnywhereServiceRolePolicy"></a>
 
 **Description**: Allows MediaLive Anywhere to create and manage AWS resources on your behalf.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ts-as-healthch
 ---
 
 # Troubleshoot unhealthy instances in Amazon EC2 Auto Scaling
-<a name="ts-as-healthchecks"></a>
 
 The following are error messages returned by Amazon EC2 Auto Scaling, the potential causes, and the steps you can take to resolve the issues.
 

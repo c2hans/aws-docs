@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServiceEvent
-<a name="API_ServiceEvent"></a>
 
 Represents an event in the service event log.
 

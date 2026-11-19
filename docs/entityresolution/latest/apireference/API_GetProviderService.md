@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # GetProviderService
-<a name="API_GetProviderService"></a>
 
 Returns the `ProviderService` of a given name.
 

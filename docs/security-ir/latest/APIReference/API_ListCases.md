@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_List
 ---
 
 # ListCases
-<a name="API_ListCases"></a>
 
 Lists all cases the requester has access to.
 

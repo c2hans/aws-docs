@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DescribeCostCategoryDefinition
-<a name="API_DescribeCostCategoryDefinition"></a>
 
 Returns the name, Amazon Resource Name (ARN), rules, definition, and effective dates of a cost category that's defined in the account.
 

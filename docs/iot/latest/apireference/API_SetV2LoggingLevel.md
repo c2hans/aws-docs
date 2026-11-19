@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_SetV2Logging
 ---
 
 # SetV2LoggingLevel
-<a name="API_SetV2LoggingLevel"></a>
 
 Sets the logging level.
 

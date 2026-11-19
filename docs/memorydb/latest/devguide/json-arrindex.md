@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-arrindex.h
 ---
 
 # JSON.ARRINDEX
-<a name="json-arrindex"></a>
 
 Search for the first occurrence of a scalar JSON value in the arrays at the path.
 + Out of range errors are treated by rounding the index to the array's start and end.

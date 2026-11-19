@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # CloudWatch Logs Insights language query syntax
-<a name="CWL_QuerySyntax"></a>
 
  This section provides details about the Logs Insights QL. The query syntax supports different functions and operations that include but aren't limited to general functions, arithmetic and comparison operations, and regular expressions.
 

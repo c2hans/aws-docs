@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Secon
 ---
 
 # SecondaryValueOptions
-<a name="API_SecondaryValueOptions"></a>
 
 The options that determine the presentation of the secondary value of a KPI visual.
 

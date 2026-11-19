@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestExecut
 ---
 
 # TestExecutionTarget
-<a name="API_TestExecutionTarget"></a>
 
 Contains information about the bot used for the test execution.
 

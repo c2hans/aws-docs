@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/export-fi
 ---
 
 # Create Jira issues for findings
-<a name="export-findings-to-issue-tracker"></a>
 
 AWS Security Agent provides the ability to create Jira issues directly from security findings, so your team can track and resolve them in Jira. You can create issues for findings from a penetration test or a code review. For information about connecting Jira, see [Connect AWS Security Agent to Jira](connect-jira.md).
 

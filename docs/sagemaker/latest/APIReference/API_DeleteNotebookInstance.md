@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteNotebookInstance
-<a name="API_DeleteNotebookInstance"></a>
 
  Deletes an SageMaker AI notebook instance. Before you can delete a notebook instance, you must call the `StopNotebookInstance` API.
 

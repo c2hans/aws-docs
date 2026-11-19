@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # UpdateBrandProfileFromRegistration
-<a name="API_UpdateBrandProfileFromRegistration"></a>
 
 Imports or refreshes the attributes of an existing brand profile from an existing registration. This operation runs asynchronously. Use the GetJob operation to track its progress.
 

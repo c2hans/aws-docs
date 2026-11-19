@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_IpamC
 ---
 
 # IpamCidrConfig
-<a name="API_IpamCidrConfig"></a>
 
 Configuration for an IPAM CIDR that defines a specific IP address range, IPAM pool, and associated Anycast IP address.
 

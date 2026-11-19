@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_TagResource.html
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Attaches tags to the specified resource.
 

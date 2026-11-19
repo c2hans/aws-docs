@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-org-ou-ARN.h
 ---
 
 # Get the ARN of an organization or organizational unit
-<a name="get-org-ou-ARN"></a>
 
 The organization and the organizational unit ARNs contain the 12-digit management account number. If you don't know the management account number, you can describe the organization and the organizational unit to get the ARN for each. In the following examples, `123456789012` is the account ID of the management account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_SetSecurityT
 ---
 
 # SetSecurityTokenServicePreferences
-<a name="API_SetSecurityTokenServicePreferences"></a>
 
 Sets the specified version of the global endpoint token as the token version used for the AWS account.
 

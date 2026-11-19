@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::FcaPolicy InstanceFcaPolicyDocument
-<a name="aws-properties-ec2-fcapolicy-instancefcapolicydocument"></a>
 
 Specifies how shared network costs are allocated and reported for an EC2 instance.
 

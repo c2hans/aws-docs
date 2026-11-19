@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EventsV2::EventBus
-<a name="aws-resource-eventsv2-eventbus"></a>
 
 Resource type definition for `AWS::EventsV2::EventBus`, an Amazon EventBridge custom event bus that receives events and delivers them to matching subscribers.
 

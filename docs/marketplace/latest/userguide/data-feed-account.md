@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-a
 ---
 
 # Account data feed
-<a name="data-feed-account"></a>
 
 This data feed provides information about all the accounts you interact with: your own, any channel partners you work with, buyers, payers, and all taxed accounts.
 

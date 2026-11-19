@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/configure-use-car
 ---
 
 # Configure and use Cargo with CodeArtifact
-<a name="configure-use-cargo"></a>
 
 You can use Cargo to publish and download crates from CodeArtifact repositories or to fetch crates from [crates.io](https://crates.io/), the Rust community's crate registry. This topic describes how to configure Cargo to authenticate with and use a CodeArtifact repository.
 
@@ -146,7 +145,7 @@ You can use the Cargo (`cargo`) CLI to quickly install a specific version of a C
 
 **To install Cargo crates from a CodeArtifact repository with `cargo`**
 
-1. If you haven't, follow the steps in [Configure and use Cargo with CodeArtifact](#configure-use-cargo) to configure the `cargo` CLI to use your CodeArtifact repository with proper credentials.
+1. If you haven't, follow the steps in [Configure and use Cargo with CodeArtifact](configure-use-cargo.md) to configure the `cargo` CLI to use your CodeArtifact repository with proper credentials.
 
 1. Use the following command to install Cargo crates from CodeArtifact:
 
@@ -161,7 +160,7 @@ You can use the Cargo (`cargo`) CLI to quickly install a specific version of a C
 
 Use the following procedure to publish Cargo crates to a CodeArtifact repository using the `cargo` CLI.
 
-1. If you haven't, follow the steps in [Configure and use Cargo with CodeArtifact](#configure-use-cargo) to configure the `cargo` CLI to use your CodeArtifact repository with proper credentials.
+1. If you haven't, follow the steps in [Configure and use Cargo with CodeArtifact](configure-use-cargo.md) to configure the `cargo` CLI to use your CodeArtifact repository with proper credentials.
 
 1. Use the following command to publish Cargo crates to a CodeArtifact repository:
 

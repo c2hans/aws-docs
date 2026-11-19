@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # LogEvent
-<a name="API_LogEvent"></a>
 
 This structure contains the information for one sample log event that is associated with an anomaly found by a log anomaly detector.
 

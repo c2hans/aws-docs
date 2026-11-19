@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
 ---
 
 # Fault tolerance and fault isolation
-<a name="fault-tolerance-and-fault-isolation"></a>
 
  These are two important concepts when we think about availability. Fault tolerance is the ability to [withstand subsystem failure](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/design-your-workload-to-withstand-component-failures.html) and maintain availability (doing the right thing within an established SLA). To implement fault tolerance, workloads use spare (or redundant) subsystems. When one of the subsystems in a redundant set fails, another picks up its work, typically almost seamlessly. In this case, spares are truly spare capacity; they are available to assume 100% of the work from the failed subsystem. With true spares, multiple subsystem failures are required to produce an adverse impact on the workload.
 

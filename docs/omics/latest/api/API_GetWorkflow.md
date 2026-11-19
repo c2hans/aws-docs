@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetWorkflow.html
 ---
 
 # GetWorkflow
-<a name="API_GetWorkflow"></a>
 
 Gets all information about a workflow using its ID.
 

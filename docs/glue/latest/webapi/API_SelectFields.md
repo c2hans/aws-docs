@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SelectFields.html
 ---
 
 # SelectFields
-<a name="API_SelectFields"></a>
 
 Specifies a transform that chooses the data property keys that you want to keep.
 

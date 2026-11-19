@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Configuring Security Hub CSPM to integrate with Google Cloud Platform
-<a name="securityhub-gcp-setup-securityhub"></a>
 
 After you complete the [prerequisite tasks](securityhub-gcp-prereqs.md) and [configure your Google Cloud Platform (GCP) environment](securityhub-gcp-setup-gcp.md), you can configure AWS Security Hub CSPM to integrate with GCP. To configure Security Hub CSPM to integrate with GCP, you create a connector. After you create the connector, the following events occur:
 

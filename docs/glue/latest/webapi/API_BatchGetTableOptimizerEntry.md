@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchGetTableOpti
 ---
 
 # BatchGetTableOptimizerEntry
-<a name="API_BatchGetTableOptimizerEntry"></a>
 
 Represents a table optimizer to retrieve in the `BatchGetTableOptimizer` operation.
 

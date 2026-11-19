@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/disable-content-q
 ---
 
 # Disabling content quality analysis for a flow
-<a name="disable-content-quality-analysis-flows"></a>
 
 ## Prerequisites
 <a name="disable-content-quality-analysis-flows-prerequisites"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomContentVisual
-<a name="API_CustomContentVisual"></a>
 
 A visual that contains custom content.
 

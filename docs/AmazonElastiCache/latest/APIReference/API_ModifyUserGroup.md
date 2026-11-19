@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ModifyUserGroup
-<a name="API_ModifyUserGroup"></a>
 
 Changes the list of users that belong to the user group.
 

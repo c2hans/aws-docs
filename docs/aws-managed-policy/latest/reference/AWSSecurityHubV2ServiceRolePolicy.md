@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSecurityHubV2ServiceRolePolicy
-<a name="AWSSecurityHubV2ServiceRolePolicy"></a>
 
 **Description**: This policy allows Security Hub to manage AWS Config rules and Security Hub resources in your organization and on your behalf.
 

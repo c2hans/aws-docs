@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateRecove
 ---
 
 # UpdateRecoveryPlan
-<a name="API_UpdateRecoveryPlan"></a>
 
 Updates a Recovery Plan's name or description.
 

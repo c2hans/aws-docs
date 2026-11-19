@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_J
 ---
 
 # JobRunAsUser
-<a name="API_JobRunAsUser"></a>
 
 Identifies the user for a job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIRefe
 ---
 
 # StepInput
-<a name="API_StepInput"></a>
 
 A map of key value pairs that is generated when you create a migration workflow. The key value pairs will differ based on your selection of the template.
 

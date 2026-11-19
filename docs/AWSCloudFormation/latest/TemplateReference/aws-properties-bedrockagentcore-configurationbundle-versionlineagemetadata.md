@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::ConfigurationBundle VersionLineageMetadata
-<a name="aws-properties-bedrockagentcore-configurationbundle-versionlineagemetadata"></a>
 
 The version lineage metadata that tracks parent versions and creation source. Supports git-like two-parent merges for branch management.
 

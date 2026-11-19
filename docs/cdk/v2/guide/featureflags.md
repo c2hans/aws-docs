@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/featureflags.html
 ---
 
 # AWS CDK feature flags
-<a name="featureflags"></a>
 
 The AWS CDK uses *feature flags* to enable potentially breaking behaviors in a release. Flags are stored as [Context values and the AWS CDK](context.md) values in `cdk.json` (or `~/.cdk.json`). They are not removed by the `cdk context --reset` or `cdk context --clear` commands.
 

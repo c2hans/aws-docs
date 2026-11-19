@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.STD.4] Structure teams around desired business outcomes
-<a name="oa.std.4-structure-teams-around-desired-business-outcomes"></a>
 
  **Category:** FOUNDATIONAL
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/privacy-builder-
 ---
 
 # Privacy and data in AWS Builder ID
-<a name="privacy-builder-id"></a>
 
 The [AWS Privacy Notice](https://aws.amazon.com/privacy/) outlines how we handle your personal data. For information on how to delete your AWS Builder ID profile, see [Delete your AWS Builder ID](delete-builder-id.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_T
 ---
 
 # TrafficPolicy
-<a name="API_TrafficPolicy"></a>
 
 The structure of a traffic policy resource which is a container for policy statements.
 

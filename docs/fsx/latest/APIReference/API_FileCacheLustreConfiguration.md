@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_FileCacheLus
 ---
 
 # FileCacheLustreConfiguration
-<a name="API_FileCacheLustreConfiguration"></a>
 
 The configuration for the Amazon File Cache resource.
 

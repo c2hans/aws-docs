@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-launch-
 ---
 
 # ec2-launch-template-tagged
-<a name="ec2-launch-template-tagged"></a>
 
 Checks if Amazon EC2 launch templates have tags. Optionally, you can specify tag keys for the rule. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.
 

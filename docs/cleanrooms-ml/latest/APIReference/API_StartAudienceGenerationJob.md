@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_St
 ---
 
 # StartAudienceGenerationJob
-<a name="API_StartAudienceGenerationJob"></a>
 
 Information necessary to start the audience generation job.
 

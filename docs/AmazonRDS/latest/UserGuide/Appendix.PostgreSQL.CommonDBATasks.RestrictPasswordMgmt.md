@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Post
 ---
 
 # Delegating and controlling user password management
-<a name="Appendix.PostgreSQL.CommonDBATasks.RestrictPasswordMgmt"></a>
 
 As a DBA, you might want to delegate the management of user passwords. Or, you might want to prevent database users from changing their passwords or reconfiguring password constraints, such as password lifetime. To ensure that only the database users that you choose can change password settings, you can turn on the restricted password management feature. When you activate this feature, only those database users that have been granted the `rds_password` role can manage passwords.
 

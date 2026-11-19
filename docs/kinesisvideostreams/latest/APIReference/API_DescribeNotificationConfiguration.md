@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # DescribeNotificationConfiguration
-<a name="API_DescribeNotificationConfiguration"></a>
 
 Gets the `NotificationConfiguration` for a given Kinesis video stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonOneEnterpriseReadOnlyAccess
-<a name="AmazonOneEnterpriseReadOnlyAccess"></a>
 
 **Description**: This policy grants read only permissions to all Amazon One Enterprise resources and operations.
 

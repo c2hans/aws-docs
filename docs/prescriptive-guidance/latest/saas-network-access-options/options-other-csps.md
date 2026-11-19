@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # SaaS consumers operating on other cloud service providers
-<a name="options-other-csps"></a>
 
 This scenario describes solutions for consumers on other cloud service providers (CSPs). This scenario shares some commonalities with connections to on-premises data centers. In fact, all connectivity options for on-premises environments are equally valid for consumers on other CSPs, even a private connection with AWS Direct Connect is possible with some CSPs. Most CSPs offer documentation and support about how to connect to the AWS Cloud through AWS Site-to-Site VPN or AWS Direct Connect.
 

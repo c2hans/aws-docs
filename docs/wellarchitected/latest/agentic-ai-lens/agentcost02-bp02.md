@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTCOST02-BP02 Cost optimize token consumption through efficient prompt engineering
-<a name="agentcost02-bp02"></a>
 
  Every token in a system prompt is paid for on every invocation, so prompt bloat compounds linearly with traffic. Compressing system prompts, tool descriptions, and output formats makes the fixed cost of each agent call proportional to the decision it has to make, not the verbosity of its instructions.
 

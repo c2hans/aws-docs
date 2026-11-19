@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_SamplingRuleRecord.h
 ---
 
 # SamplingRuleRecord
-<a name="API_SamplingRuleRecord"></a>
 
 A [SamplingRule](https://docs.aws.amazon.com/xray/latest/api/API_SamplingRule.html) and its metadata.
 

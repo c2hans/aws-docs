@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GroupSu
 ---
 
 # GroupSummary
-<a name="API_GroupSummary"></a>
 
 Summary information for groups.
 

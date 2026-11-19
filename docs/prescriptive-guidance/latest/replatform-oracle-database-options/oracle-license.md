@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Oracle license
-<a name="oracle-license"></a>
 
 On AWS, there are two licensing models for running Oracle databases:
 + Bring Your Own License (BYOL)

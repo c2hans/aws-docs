@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-t
 ---
 
 # Architecture 1: AWS PrivateLink
-<a name="architecture-1"></a>
 
 [AWS PrivateLink](https://aws.amazon.com/privatelink/) is a feature of Amazon Virtual Private Cloud (Amazon VPC) that provides private connectivity between VPCs and AWS services. Network traffic that uses PrivateLink doesn't travel over the public internet, which reduces the risk of external threats, such as exposure to brute force and distributed denial-of-service (DDoS) attacks. It provides a way for two parties to establish private connectivity without requiring an internet gateway. Both parties can deploy private VPCs that are insulated from threats on the internet.
 

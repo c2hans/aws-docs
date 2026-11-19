@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BusinessSupportDiscount
-<a name="API_billing_BusinessSupportDiscount"></a>
 
 A discount applied to a Business Support account charge, including the discount amount, percentage, type, and source.
 

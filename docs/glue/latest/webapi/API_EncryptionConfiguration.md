@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_EncryptionConfigu
 ---
 
 # EncryptionConfiguration
-<a name="API_EncryptionConfiguration"></a>
 
 Specifies an encryption configuration.
 

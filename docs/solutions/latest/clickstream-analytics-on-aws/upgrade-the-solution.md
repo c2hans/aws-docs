@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Upgrade the guidance
-<a name="upgrade-the-solution"></a>
 
 **Note**
 Be advised that upgrading directly from version 1.0.x to 1.1.6(\+) version is not supported. It is necessary to upgrade to version 1.1.5 first.

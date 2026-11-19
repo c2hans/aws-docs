@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-contra
 ---
 
 # Pricing for SaaS contracts
-<a name="saas-contracts"></a>
 
 SaaS contracts allow customers to purchase your software through an upfront agreement. Under the agreement, customers are entitled to a specified quantity of use of your SaaS product. You define the usage categories, dimensions, and the length of the contract. AWS Marketplace bills your customers upfront or by the payment schedule that you define. For additional usage above their contract, your software reports the usage through the AWS Marketplace Metering Service (AWS Marketplace Metering Service).
 

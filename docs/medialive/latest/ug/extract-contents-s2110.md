@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/extract-contents-s21
 ---
 
 # Identifying content in a SMPTE 2110 source
-<a name="extract-contents-s2110"></a>
 
 The content in a SMPTE 2110 source is always a set of streams consisting of one video asset, zero or more audio assets, and zero or more captions (ancillary data) assets. Each asset is in its own stream.
 

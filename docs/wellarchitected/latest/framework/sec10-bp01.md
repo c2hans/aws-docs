@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec10-b
 ---
 
 # SEC10-BP01 Identify key personnel and external resources
-<a name="sec10-bp01"></a>
 
  Before an incident occurs, identify the internal responders, external partners, and legal contacts who investigate, communicate, and make decisions during a security event. Keep the list current so you can reach the right people quickly when one occurs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-l
 ---
 
 # Using adaptive data rate (ADR) with AWS IoT Core for LoRaWAN
-<a name="iot-lorawan-adr"></a>
 
 To optimize the device transmission power consumption while making sure that messages from the end devices are received at the gateways, AWS IoT Core for LoRaWAN uses adaptive data rate. Adaptive data rate instructs the end devices to optimize the data rate, transmission power, and the number of retransmissions while attempting to reduce the error rate of the packets received at the gateways. For example, if your end device is located close to the gateways, adaptive data rate reduces the transmission power and increases the data rate.
 

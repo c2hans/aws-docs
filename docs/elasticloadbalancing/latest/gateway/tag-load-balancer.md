@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/tag-
 ---
 
 # Tag a Gateway Load Balancer
-<a name="tag-load-balancer"></a>
 
 Tags help you to categorize your load balancers in different ways, for example, by purpose, owner, or environment.
 

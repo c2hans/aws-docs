@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/manua
 ---
 
 # Manual installation on Amazon EC2
-<a name="manual-installation"></a>
 
 **Note**
 Make sure the prerequisites are completed before installing the CloudWatch agent for the first time.

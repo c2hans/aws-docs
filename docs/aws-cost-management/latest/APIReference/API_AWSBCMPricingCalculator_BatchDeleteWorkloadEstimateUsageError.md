@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchDeleteWorkloadEstimateUsageError
-<a name="API_AWSBCMPricingCalculator_BatchDeleteWorkloadEstimateUsageError"></a>
 
  Represents an error that occurred when deleting usage in a workload estimate.
 

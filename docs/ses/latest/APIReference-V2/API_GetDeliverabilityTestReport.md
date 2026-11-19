@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetDelive
 ---
 
 # GetDeliverabilityTestReport
-<a name="API_GetDeliverabilityTestReport"></a>
 
 Retrieve the results of a predictive inbox placement test.
 

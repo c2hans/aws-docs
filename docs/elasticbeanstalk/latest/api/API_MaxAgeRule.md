@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_MaxAgeRu
 ---
 
 # MaxAgeRule
-<a name="API_MaxAgeRule"></a>
 
 A lifecycle rule that deletes application versions after the specified number of days.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/al-troubl
 ---
 
 # Troubleshooting ambient documentation
-<a name="al-troubleshooting"></a>
 
 **Topics**
 + [Session start and configuration](#al-troubleshooting-session-start)

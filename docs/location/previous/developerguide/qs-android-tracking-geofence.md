@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-andr
 ---
 
 # Tutorial: Create a Geofence Collection
-<a name="qs-android-tracking-geofence"></a>
 
 Now will you create a geofence collection. You can use either the console, API or CLI. The following procedures walk you through each option.
 + Create a geofence collection using the Amazon Location console:

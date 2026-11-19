@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeContactFlowAlias
-<a name="API_DescribeContactFlowAlias"></a>
 
 Returns information about a specific flow alias, including the version that it points to.
 

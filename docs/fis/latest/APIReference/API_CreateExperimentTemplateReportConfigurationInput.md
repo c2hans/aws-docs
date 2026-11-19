@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_CreateExperi
 ---
 
 # CreateExperimentTemplateReportConfigurationInput
-<a name="API_CreateExperimentTemplateReportConfigurationInput"></a>
 
 Specifies the configuration for experiment reports.
 

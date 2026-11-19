@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/filtering-arrays.html
 ---
 
 # Filter arrays
-<a name="filtering-arrays"></a>
 
 Create an array from a collection of rows if they match the filter criteria.
 

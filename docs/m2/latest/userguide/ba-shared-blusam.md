@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/m2/latest/userguide/ba-shared-blusam.htm
 **AWS Mainframe Modernization Service (Managed Runtime Environment experience)** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization Service (Managed Runtime Environment experience) explore AWS Mainframe Modernization Service (Self-Managed Experience). Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
 
 # AWS Transform for mainframe Blusam
-<a name="ba-shared-blusam"></a>
 
 On mainframe systems (referred to in the following topic as "legacy"), business data is often stored using VSAM (Virtual Storage Access Method). The data is stored in "records" (byte arrays), belonging to a "data set".
 

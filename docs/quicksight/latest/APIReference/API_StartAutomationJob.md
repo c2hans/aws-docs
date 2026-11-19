@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Start
 ---
 
 # StartAutomationJob
-<a name="API_StartAutomationJob"></a>
 
 Starts a new job for a specified automation. The job runs the automation with the provided input payload.
 

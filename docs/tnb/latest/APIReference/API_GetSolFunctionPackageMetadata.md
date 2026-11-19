@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolFuncti
 ---
 
 # GetSolFunctionPackageMetadata
-<a name="API_GetSolFunctionPackageMetadata"></a>
 
 Metadata related to the function package.
 

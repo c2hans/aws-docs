@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-config
 ---
 
 # Configure Spark
-<a name="emr-spark-configure"></a>
 
 You can configure [Spark on Amazon EMR ](https://aws.amazon.com/elasticmapreduce/details/spark/) with configuration classifications. For more information about configuration classifications, see [Configure applications](emr-configure-apps.md).
 

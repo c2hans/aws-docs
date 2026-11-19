@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # AssociateWhatsAppBusinessAccount
-<a name="API_AssociateWhatsAppBusinessAccount"></a>
 
 This is only used through the AWS console during sign-up to associate your WhatsApp Business Account to your AWS account.
 

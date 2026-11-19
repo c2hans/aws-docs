@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/import-snapsh
 ---
 
 # Create an EBS volume from an imported snapshot
-<a name="import-snapshot-next-steps"></a>
 
 You can create EBS volumes from an EBS snapshot. You can attach an EBS volume to an EC2 instance.
 

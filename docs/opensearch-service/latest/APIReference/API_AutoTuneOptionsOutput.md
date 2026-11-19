@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AutoTuneOptionsOutput
-<a name="API_AutoTuneOptionsOutput"></a>
 
 The Auto-Tune settings for a domain, displayed when enabling or disabling Auto-Tune.
 

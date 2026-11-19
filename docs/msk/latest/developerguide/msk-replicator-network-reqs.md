@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator
 ---
 
 # Network requirements
-<a name="msk-replicator-network-reqs"></a>
 
 MSK Replicator uses IAM access control to connect to your clusters, which uses port 9098. The networking requirements differ depending on whether you are setting up cross-region or same-region replication.
 

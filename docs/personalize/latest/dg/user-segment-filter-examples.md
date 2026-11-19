@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/user-segment-filte
 ---
 
 # User segment filter expressions
-<a name="user-segment-filter-examples"></a>
 
 The following filter expressions show how to filter user segments based on item interactions data and user metadata. They are organized by data type.
 

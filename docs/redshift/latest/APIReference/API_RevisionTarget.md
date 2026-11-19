@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Revisio
 ---
 
 # RevisionTarget
-<a name="API_RevisionTarget"></a>
 
 Describes a `RevisionTarget`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Deplo
 ---
 
 # DeploymentGroupInfo
-<a name="API_DeploymentGroupInfo"></a>
 
 Information about a deployment group.
 

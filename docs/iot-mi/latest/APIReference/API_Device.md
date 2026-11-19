@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Device.ht
 ---
 
 # Device
-<a name="API_Device"></a>
 
 Describe the device using the relevant metadata and supported clusters for device discovery.
 

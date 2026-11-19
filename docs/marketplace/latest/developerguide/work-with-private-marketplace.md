@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/work-w
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Work with the private marketplace using the AWS Marketplace API
-<a name="work-with-private-marketplace"></a>
 
 You can use the AWS Marketplace Catalog API to manage a *private marketplace* for your AWS account or [organization](https://docs.aws.amazon.com/organizations/latest/userguide/).
 

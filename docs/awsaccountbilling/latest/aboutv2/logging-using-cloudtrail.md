@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/logging
 ---
 
 # Logging Billing and Cost Management API calls with AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Billing and Cost Management is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Billing and Cost Management. CloudTrail captures API calls for Billing and Cost Management as events, including calls from the Billing and Cost Management console and from code calls to the Billing and Cost Management APIs. For a full list of CloudTrail events related to Billing, see [AWS Billing CloudTrail events](#billing-cloudtrail-events).
 

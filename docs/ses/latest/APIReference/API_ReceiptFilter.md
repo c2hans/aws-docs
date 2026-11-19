@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ReceiptFilte
 ---
 
 # ReceiptFilter
-<a name="API_ReceiptFilter"></a>
 
 A receipt IP address filter enables you to specify whether to accept or reject mail originating from an IP address or range of IP addresses.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # AccessGrantPrincipalAttribute
-<a name="API_AccessGrantPrincipalAttribute"></a>
 
 A single attribute condition used to match principals for attribute-based access.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # SoftwareInformation
-<a name="API_devicemanagement_SoftwareInformation"></a>
 
 Information about the software on the device.
 

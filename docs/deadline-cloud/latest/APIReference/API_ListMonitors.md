@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListMonitors
-<a name="API_ListMonitors"></a>
 
 Gets a list of your monitors in Deadline Cloud.
 

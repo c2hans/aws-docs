@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/set-up-v2-t
 ---
 
 # Set up a new device to test V1 applications on V2
-<a name="set-up-v2-test-device"></a>
 
 Set up a new AWS IoT Greengrass V2 core device to deploy and test AWS-provided components and AWS Lambda functions for your AWS IoT Greengrass V1 applications. You can also use this V2 core device to develop and test additional custom Greengrass components that run native processes on core devices. After you test your applications on a V2 core device, you can upgrade your existing V1 core devices to V2 and deploy the V2 components that provide your V1 functionality.
 

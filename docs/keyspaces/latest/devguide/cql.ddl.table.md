@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/cql.ddl.table.
 ---
 
 # Tables
-<a name="cql.ddl.table"></a>
 
 *Tables* are the primary data structures in Amazon Keyspaces. Data in a table is organized into rows and columns. A subset of those columns is used to determine partitioning (and ultimately data placement) through the specification of a partition key.
 

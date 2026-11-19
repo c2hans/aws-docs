@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-long
 ---
 
 # Configuring an Amazon EMR cluster to continue or terminate after step execution
-<a name="emr-plan-longrunning-transient"></a>
 
 This topic explains the differences between using a long-running cluster and creating a transient cluster that shuts down after the last step runs. It also covers how to configure step execution for a cluster.
 

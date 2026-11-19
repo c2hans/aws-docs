@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_D
 ---
 
 # DescribeSecret
-<a name="API_DescribeSecret"></a>
 
 Retrieves the details of a secret. It does not include the encrypted secret value. Secrets Manager only returns fields that have a value in the response.
 

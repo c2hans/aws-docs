@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/dev/textanalys
 ---
 
 # Detect PHI
-<a name="textanalysis-phi"></a>
 
 Use the **DetectPHI** operation when you only want to detect Protected Health Information (PHI) data when scanning the clinical text. To detect all available entities in the clinical text use **DetectEntitiesV2**.
 

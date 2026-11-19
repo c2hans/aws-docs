@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 ---
 
 # Enhanced Container Insights (Classic) metric reference
-<a name="container-insights-eks-classic-metrics"></a>
 
 Enhanced Container Insights (Classic) publishes metrics to the `ContainerInsights` namespace in CloudWatch. The following tables list all metrics by category, along with their dimensions and descriptions.
 

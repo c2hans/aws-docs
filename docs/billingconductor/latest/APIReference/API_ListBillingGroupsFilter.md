@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListBillingGroupsFilter
-<a name="API_ListBillingGroupsFilter"></a>
 
 The filter that specifies the billing groups and pricing plans to retrieve billing group information.
 

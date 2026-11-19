@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetails"></a>
 
 A mount point for the data volumes in the container.
 

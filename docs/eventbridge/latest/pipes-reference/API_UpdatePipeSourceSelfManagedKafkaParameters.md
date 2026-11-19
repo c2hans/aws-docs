@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_U
 ---
 
 # UpdatePipeSourceSelfManagedKafkaParameters
-<a name="API_UpdatePipeSourceSelfManagedKafkaParameters"></a>
 
 The parameters for using a self-managed Apache Kafka stream as a source.
 

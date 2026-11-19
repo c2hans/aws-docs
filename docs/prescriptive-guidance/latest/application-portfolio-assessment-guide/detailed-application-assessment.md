@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Detailed application assessment
-<a name="detailed-application-assessment"></a>
 
 The goal of a detailed application assessment is the complete understanding of the targeted application and its associated infrastructure (compute, storage, and network). High-fidelity data is necessary to avoid pitfalls. For example, it is common for organizations to assume that they fully understand the application. This is natural, and it's true in many cases. However, to minimize risk to the business, it is important to validate institutional knowledge and static documentation by obtaining programmatic data as much as possible. This will take care of the heavy lifting of the discovery process. You can focus on the data elements that come from alternative sources, such as business-specific information, strategic roadmaps, and others.
 

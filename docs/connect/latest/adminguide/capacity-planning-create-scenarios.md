@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/capacity-plann
 ---
 
 # Create capacity planning scenarios in Connect Customer
-<a name="capacity-planning-create-scenarios"></a>
 
 A scenario has two parts:
 + Scenario inputs: The maximum occupancy, daily attrition, full-time equivalent (FTE) hours per week. For example, you might enter data that represent your best case scenarios (everyone is at work) or worst case scenarios (a large number of people are out sick during winter months).

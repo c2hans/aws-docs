@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Cost and licensing
-<a name="licensing"></a>
 
 At a high level, the cost of migrating a SAS workload to AWS assumes establishing a new environment on AWS. The cost includes accounting for personnel time and effort as well as provisioning computing resources and licensing software for the new environment.
 

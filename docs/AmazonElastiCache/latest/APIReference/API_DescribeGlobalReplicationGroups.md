@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DescribeGlobalReplicationGroups
-<a name="API_DescribeGlobalReplicationGroups"></a>
 
 Returns information about a particular global replication group. If no identifier is specified, returns information about all Global datastores.
 

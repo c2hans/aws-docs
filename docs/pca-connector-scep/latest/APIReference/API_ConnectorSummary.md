@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/A
 ---
 
 # ConnectorSummary
-<a name="API_ConnectorSummary"></a>
 
 Lists the AWS Private CA SCEP connectors belonging to your AWS account.
 

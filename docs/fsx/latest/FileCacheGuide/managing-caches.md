@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/managing-cache
 ---
 
 # Managing caches
-<a name="managing-caches"></a>
 
 A cache is the primary Amazon File Cache resource. You can create, list, update, and delete an Amazon File Cache using the AWS Management Console, AWS Command Line Interface (AWS CLI), and API.
 

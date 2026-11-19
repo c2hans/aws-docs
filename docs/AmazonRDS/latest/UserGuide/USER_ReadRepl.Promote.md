@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl
 ---
 
 # Promoting a read replica to be a standalone DB instance
-<a name="USER_ReadRepl.Promote"></a>
 
 You can promote a read replica into a standalone DB instance. If a source DB instance has several read replicas, promoting one of the read replicas to a DB instance has no effect on the other replicas.
 

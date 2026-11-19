@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-knowledge-b
 ---
 
 # Knowledge base documents
-<a name="acxd-knowledge-base-documents"></a>
 
 Manage uploaded files within a knowledge base. Documents are registered via the API and uploaded via pre-signed URLs.
 

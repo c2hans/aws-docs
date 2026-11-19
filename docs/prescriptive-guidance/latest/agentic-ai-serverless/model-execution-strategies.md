@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Model execution strategies for AI workloads
-<a name="model-execution-strategies"></a>
 
 At the core of any AI architecture is the model execution layer, the component that performs inference, powers predictions, or generates content. AWS offers two powerful, serverless-ready paths for executing AI workloads:
 + [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html) provides access to foundation models (FMs) for generative AI use cases.

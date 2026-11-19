@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Recu
 ---
 
 # Recurrence
-<a name="API_Recurrence"></a>
 
 Recurrence cadence for a time-range schedule
 

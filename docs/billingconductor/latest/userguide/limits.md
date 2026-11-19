@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/limits
 ---
 
 # Quotas and restrictions
-<a name="limits"></a>
 
 The following table describes quotas and restrictions within AWS Billing Conductor.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ListG
 ---
 
 # ListGeofenceCollectionsResponseEntry
-<a name="API_ListGeofenceCollectionsResponseEntry"></a>
 
 Contains the geofence collection details.
 

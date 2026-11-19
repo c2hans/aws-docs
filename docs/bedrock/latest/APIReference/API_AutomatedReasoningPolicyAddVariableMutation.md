@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyAddVariableMutation
-<a name="API_AutomatedReasoningPolicyAddVariableMutation"></a>
 
 A mutation operation that adds a new variable to the policy definition during the build process.
 

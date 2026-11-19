@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # IdMappingWorkflowOutputSource
-<a name="API_IdMappingWorkflowOutputSource"></a>
 
 The output source for the ID mapping workflow.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceRevision
-<a name="API_ServiceRevision"></a>
 
 Information about the service revision.
 

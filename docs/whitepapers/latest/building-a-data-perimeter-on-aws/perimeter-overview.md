@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-a-data-perim
 ---
 
 # Perimeter overview
-<a name="perimeter-overview"></a>
 
 This section provides an overview of a data perimeter’s objectives and the AWS services used to implement it.
 

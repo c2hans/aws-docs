@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Cont
 ---
 
 # ContainerSecuritySummary
-<a name="API_ContainerSecuritySummary"></a>
 
 The details of the resource assessed under the Container Security framework.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Container-based application design
-<a name="application-design"></a>
 
 ## Java EE replatforming challenges
 <a name="java-ee-replatforming-challenges.8a9fef8b-0f9f-5b2a-ba81-d74380942c39"></a>

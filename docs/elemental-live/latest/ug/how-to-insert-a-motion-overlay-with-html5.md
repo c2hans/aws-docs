@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/how-to-insert-a
 ---
 
 # How to insert a motion overlay with HTML5
-<a name="how-to-insert-a-motion-overlay-with-html5"></a>
 
 You can insert a motion overlay with HTML5. The overlay could be an animated overlay such as a sports scoreboard, a stock price ticker tape, or the current time and temperature. You use an HTML5 *authoring system* to create and publish an HTML asset. This system usually has an authoring component that lets you create the overlay content, and a control component that lets you control how and when the overlay is visible.
 

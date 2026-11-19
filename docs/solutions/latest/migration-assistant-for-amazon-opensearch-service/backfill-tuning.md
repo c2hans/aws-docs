@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Backfill tuning
-<a name="backfill-tuning"></a>
 
 Configure RFS settings under `documentBackfillConfig` in the workflow configuration. For one-off manual runs, the same behavior is exposed by the `console backfill` and RFS command-line options.
 

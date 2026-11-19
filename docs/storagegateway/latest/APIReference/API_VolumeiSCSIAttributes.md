@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_V
 ---
 
 # VolumeiSCSIAttributes
-<a name="API_VolumeiSCSIAttributes"></a>
 
 Lists iSCSI information about a volume.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Infrastructure protection
-<a name="infrastructure-protection"></a>
 
 |  MIDASEC04: How do you enable network segmentation and access controls for industrial data?  |
 | --- |

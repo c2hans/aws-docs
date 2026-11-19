@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::Integration ApiKeyCredential
-<a name="aws-properties-cloudwatch-integration-apikeycredential"></a>
 
 API-key credential material that can be rotated in place on update.
 

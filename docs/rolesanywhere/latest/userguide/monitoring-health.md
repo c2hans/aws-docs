@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/monitorin
 ---
 
 # Monitoring IAM Roles Anywhere notifications with AWS Health
-<a name="monitoring-health"></a>
 
 You can monitor IAM Roles Anywhere health notifications in [AWS Health](https://docs.aws.amazon.com/health/latest/ug/). Notifications from IAM Roles Anywhere are delivered to AWS Health when certificates (both CA certificates in trust anchors and end-entity certificates) that are configured with IAM Roles Anywhere are nearing expiry. You can use these AWS Health notifications to take renewal actions on your certificates. For more information see [Monitoring AWS Health events with Amazon EventBridge](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html)
 

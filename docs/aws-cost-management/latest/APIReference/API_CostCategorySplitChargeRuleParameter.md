@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostCategorySplitChargeRuleParameter
-<a name="API_CostCategorySplitChargeRuleParameter"></a>
 
 The parameters for a split charge method.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # AggregateLogGroupSummary
-<a name="API_AggregateLogGroupSummary"></a>
 
 Contains an aggregate summary of log groups grouped by data source characteristics, including the count of log groups and their grouping identifiers.
 

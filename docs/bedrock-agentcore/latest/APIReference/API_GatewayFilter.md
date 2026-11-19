@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GatewayFilter
-<a name="API_GatewayFilter"></a>
 
 A filter to restrict which gateway target paths are included in the A/B test.
 

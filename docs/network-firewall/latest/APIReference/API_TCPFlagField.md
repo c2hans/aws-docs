@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # TCPFlagField
-<a name="API_TCPFlagField"></a>
 
 TCP flags and masks to inspect packets for, used in stateless rules [MatchAttributes](API_MatchAttributes.md) settings.
 

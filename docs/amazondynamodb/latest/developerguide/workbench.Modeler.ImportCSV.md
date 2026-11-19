@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/wor
 ---
 
 # Importing sample data from a CSV file
-<a name="workbench.Modeler.ImportCSV"></a>
 
 If you have preexisting sample data in a CSV file, you can import it into NoSQL Workbench. This enables you to quickly populate your model with sample data without having to enter it line by line.
 

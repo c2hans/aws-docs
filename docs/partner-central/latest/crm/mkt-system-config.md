@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/mkt-system-co
 ---
 
 # Entering system configuration settings
-<a name="mkt-system-config"></a>
 
 After you onboard an AWS seller account, you enter several system settings. Follow these steps.
 

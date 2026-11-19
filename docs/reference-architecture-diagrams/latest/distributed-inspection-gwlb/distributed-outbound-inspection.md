@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # North/South Outbound Distributed Inspection
-<a name="distributed-outbound-inspection"></a>
 
 Publication date: **July 21, 2022 ([Diagram history](#dout-diagram-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Bas
 ---
 
 # BaselineSummary
-<a name="API_BaselineSummary"></a>
 
 Returns a summary of information about a `Baseline` object.
 

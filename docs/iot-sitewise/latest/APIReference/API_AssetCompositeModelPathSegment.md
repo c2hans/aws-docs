@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetCompositeModelPathSegment
-<a name="API_AssetCompositeModelPathSegment"></a>
 
 Represents one level between a composite model and the root of the asset.
 

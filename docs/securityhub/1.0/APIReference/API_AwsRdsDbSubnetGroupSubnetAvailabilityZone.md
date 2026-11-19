@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsD
 ---
 
 # AwsRdsDbSubnetGroupSubnetAvailabilityZone
-<a name="API_AwsRdsDbSubnetGroupSubnetAvailabilityZone"></a>
 
 An Availability Zone for a subnet in a subnet group.
 

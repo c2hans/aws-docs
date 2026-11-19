@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # AssociateResourceError
-<a name="API_AssociateResourceError"></a>
 
 A representation of a resource association error.
 

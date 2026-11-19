@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 ---
 
 # Supported device trust providers
-<a name="device-posture-providers"></a>
 
 AWS Client VPN device posture supports the following device trust providers. You configure each one on your endpoint. The provider makes a device posture token available on the connecting device, which Client VPN evaluates against your authorization policy.
 

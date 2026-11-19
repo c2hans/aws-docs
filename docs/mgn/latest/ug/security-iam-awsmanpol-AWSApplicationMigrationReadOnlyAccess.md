@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWS
 ---
 
 # AWS managed policy: AWSApplicationMigrationReadOnlyAccess
-<a name="security-iam-awsmanpol-AWSApplicationMigrationReadOnlyAccess"></a>
 
 You can attach the `AWSApplicationMigrationReadOnlyAccess` policy to your IAM identities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CatalogTarget.htm
 ---
 
 # CatalogTarget
-<a name="API_CatalogTarget"></a>
 
 Specifies an AWS Glue Data Catalog target.
 

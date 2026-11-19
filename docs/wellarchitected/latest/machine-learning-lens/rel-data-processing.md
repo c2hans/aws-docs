@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Data processing
-<a name="rel-data-processing"></a>
 
 **Topics**
 + [MLREL02-BP01 Use a data catalog](mlrel02-bp01.md)

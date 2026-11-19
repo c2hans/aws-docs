@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Coll
 ---
 
 # CollaborationPrivacyBudgetTemplate
-<a name="API_CollaborationPrivacyBudgetTemplate"></a>
 
 An array that specifies the information for a collaboration's privacy budget template.
 

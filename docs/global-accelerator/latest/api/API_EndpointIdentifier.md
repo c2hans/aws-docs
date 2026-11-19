@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Endpoi
 ---
 
 # EndpointIdentifier
-<a name="API_EndpointIdentifier"></a>
 
 A complex type for an endpoint. Specifies information about the endpoint to remove from the endpoint group.
 

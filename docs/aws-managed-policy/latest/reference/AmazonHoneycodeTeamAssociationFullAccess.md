@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonHoneycodeTeamAssociationFullAccess
-<a name="AmazonHoneycodeTeamAssociationFullAccess"></a>
 
 **Description**: Provides full access to Honeycode Team Association via the AWS Management Console and the SDK.
 

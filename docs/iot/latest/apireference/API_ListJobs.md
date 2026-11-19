@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListJobs.htm
 ---
 
 # ListJobs
-<a name="API_ListJobs"></a>
 
 Lists jobs.
 

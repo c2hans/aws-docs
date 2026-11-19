@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # KnowledgeBaseRetrievalConfiguration
-<a name="API_agent-runtime_KnowledgeBaseRetrievalConfiguration"></a>
 
 Contains configurations for knowledge base query. For more information, see [Query configurations](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-test-config.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Frequently asked questions
-<a name="frequently-asked-questions"></a>
 
 ## General
 <a name="general"></a>

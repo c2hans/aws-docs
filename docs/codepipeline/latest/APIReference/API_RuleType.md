@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Rul
 ---
 
 # RuleType
-<a name="API_RuleType"></a>
 
 The rule type, which is made up of the combined values for category, owner, provider, and version.
 

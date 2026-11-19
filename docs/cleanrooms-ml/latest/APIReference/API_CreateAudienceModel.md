@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Cr
 ---
 
 # CreateAudienceModel
-<a name="API_CreateAudienceModel"></a>
 
 Defines the information necessary to create an audience model. An audience model is a machine learning model that Clean Rooms ML trains to measure similarity between users. Clean Rooms ML manages training and storing the audience model. The audience model can be used in multiple calls to the [StartAudienceGenerationJob](API_StartAudienceGenerationJob.md) API.
 

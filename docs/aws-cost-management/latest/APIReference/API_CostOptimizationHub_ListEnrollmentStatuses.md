@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListEnrollmentStatuses
-<a name="API_CostOptimizationHub_ListEnrollmentStatuses"></a>
 
 Retrieves the enrollment status for an account. It can also return the list of accounts that are enrolled under the organization.
 

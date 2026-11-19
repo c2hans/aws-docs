@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 ---
 
 # Applying policies to Amazon MQ for RabbitMQ
-<a name="rabbitmq-defaults-applying-policies"></a>
 
  You can apply custom policies and limits with Amazon MQ recommended default values. If you have deleted the recommended default policies and limits, and want to re-create them, or you have created additional vhosts and want to apply the default policies and limits to your new vhosts, you can use the following steps.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/mixpanel-connection-optio
 ---
 
 # Mixpanel connection options
-<a name="mixpanel-connection-options"></a>
 
 The following are connection options for Mixpanel:
 +  `ENTITY_NAME` (String) – (Required) Used for Read/Write. The name of your Object in Mixpanel.

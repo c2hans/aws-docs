@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutReg
 ---
 
 # PutRegistryPolicy
-<a name="API_PutRegistryPolicy"></a>
 
 Creates or updates the permissions policy for your registry.
 

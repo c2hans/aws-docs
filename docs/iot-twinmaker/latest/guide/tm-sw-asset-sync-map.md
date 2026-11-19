@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/tm-sw-asset-s
 ---
 
 # Resources synced from AWS IoT SiteWise
-<a name="tm-sw-asset-sync-map"></a>
 
 This topic lists which assets you can sync from AWS IoT SiteWise to your AWS IoT TwinMaker workspace.
 

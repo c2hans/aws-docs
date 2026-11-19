@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # RuleMetadata
-<a name="API_RuleMetadata"></a>
 
 Metadata for a single firewall engine rule. Use it to disable a rule without removing it and to attach a description. When you describe a rule group in `RULES_STRING` format, Network Firewall renders a disabled rule and its description as `#` comment lines above the rule.
 

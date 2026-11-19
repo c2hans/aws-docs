@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/interface-endpoin
 ---
 
 # Configure an interface endpoint
-<a name="interface-endpoints"></a>
 
 After you create an interface VPC endpoint, you can update its configuration.
 

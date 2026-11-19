@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IVS::Stage ParticipantRecordingHlsConfiguration
-<a name="aws-properties-ivs-stage-participantrecordinghlsconfiguration"></a>
 
 Object specifying a configuration of participant HLS recordings for individual participant recording.
 

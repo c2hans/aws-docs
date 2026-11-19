@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Candid
 ---
 
 # CandidateProperties
-<a name="API_CandidateProperties"></a>
 
 The properties of an AutoML candidate job.
 

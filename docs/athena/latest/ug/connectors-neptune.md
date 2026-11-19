@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-neptune.html
 ---
 
 # Amazon Athena Neptune connector
-<a name="connectors-neptune"></a>
 
 Amazon Neptune is a fast, reliable, fully managed graph database service that makes it easy to build and run applications that work with highly connected datasets. Neptune's purpose-built, high-performance graph database engine stores billions of relationships optimally and queries graphs with a latency of only milliseconds. For more information, see the [Neptune User Guide](https://docs.aws.amazon.com/neptune/latest/userguide/intro.html).
 

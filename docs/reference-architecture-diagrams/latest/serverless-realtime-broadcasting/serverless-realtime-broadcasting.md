@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Serverless Web App Real-Time Data Broadcasting
-<a name="serverless-realtime-broadcasting"></a>
 
 Publication date: **March 24, 2021 ([Diagram history](#diagram-history))**
 

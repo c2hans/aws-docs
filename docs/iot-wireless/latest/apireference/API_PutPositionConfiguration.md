@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Put
 ---
 
 # PutPositionConfiguration
-<a name="API_PutPositionConfiguration"></a>
 
  *This action has been deprecated.*
 

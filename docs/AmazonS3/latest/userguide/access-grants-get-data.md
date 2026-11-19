@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-
 ---
 
 # Accessing S3 data using credentials vended by S3 Access Grants
-<a name="access-grants-get-data"></a>
 
 After a grantee [obtains temporary credentials](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-credentials.html) through their access grant, they can use these temporary credentials to call Amazon S3 API operations to access your data.
 

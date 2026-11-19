@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/eventbridge_examp
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Hello EventBridge
-<a name="eventbridge_example_eventbridge_Hello_section"></a>
 
 The following code examples show how to get started using EventBridge.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/configuration-self-mana
 ---
 
 # Self-managed S3 code storage
-<a name="configuration-self-managed-storage"></a>
 
 By default, when you create or update a Lambda Event Function or layer from a .zip file archive, Lambda stores a copy of your code in Lambda-managed storage. Each AWS account has a 300 GB quota for Lambda-managed storage per Region.
 

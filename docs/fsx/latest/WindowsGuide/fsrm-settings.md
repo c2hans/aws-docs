@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/fsrm-settings.ht
 ---
 
 # FSRM Settings
-<a name="fsrm-settings"></a>
 
 FSRM settings provide system-wide configuration that allows you to customize behavior and streamline feature management. Use these settings to control how FSRM operates across your file system and to set default values that simplify creating and configuring features like storage reports and file screening.
 

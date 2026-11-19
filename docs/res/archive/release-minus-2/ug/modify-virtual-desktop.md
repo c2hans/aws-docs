@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/modify-vi
 ---
 
 # Modify a virtual desktop
-<a name="modify-virtual-desktop"></a>
 
 You can update the hardware of your virtual desktop or change the session name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/plugins.html
 ---
 
 # Configure plugins for the CDK Toolkit
-<a name="plugins"></a>
 
 The AWS CDK Toolkit supports plugins that add new capabilities to your CDK workflows. Plugins are primarily designed for use with the CDK Command Line Interface (CDK CLI), though they can also be used with the CDK Toolkit Library programmatically. They provide a standardized way to extend functionality, such as alternative credential sources.
 

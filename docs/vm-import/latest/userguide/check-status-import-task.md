@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/check-status-
 ---
 
 # Monitor an import snapshot task
-<a name="check-status-import-task"></a>
 
 After you start an import snapshot task using VM Import/Export, you can monitor the import operation. If the task status is `active`, it means that the import task is in progress. The snapshot is ready to use when the status is `completed`.
 

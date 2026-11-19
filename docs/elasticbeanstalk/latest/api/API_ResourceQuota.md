@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Resource
 ---
 
 # ResourceQuota
-<a name="API_ResourceQuota"></a>
 
 The AWS Elastic Beanstalk quota information for a single resource type in an AWS account. It reflects the resource's limits for this account.
 

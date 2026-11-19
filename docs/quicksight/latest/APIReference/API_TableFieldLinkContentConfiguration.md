@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Table
 ---
 
 # TableFieldLinkContentConfiguration
-<a name="API_TableFieldLinkContentConfiguration"></a>
 
 The URL content (text, icon) for the table link configuration.
 

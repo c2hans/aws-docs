@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ExportThemes
-<a name="API_ExportThemes"></a>
 
 Exports theme configurations to code that is ready to integrate into an Amplify app.
 

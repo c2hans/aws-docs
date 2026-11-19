@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/im
 ---
 
 # Implement a Trunk branching strategy for multi-account DevOps environments
-<a name="implement-a-trunk-branching-strategy-for-multi-account-devops-environments"></a>
 
 *Mike Stephens and Rayjan Wilson, Amazon Web Services*
 

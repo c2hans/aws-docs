@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_AddJobFlowSt
 ---
 
 # AddJobFlowSteps
-<a name="API_AddJobFlowSteps"></a>
 
 AddJobFlowSteps adds new steps to a running cluster. A maximum of 256 steps are allowed in each job flow.
 

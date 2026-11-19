@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateLabels
 ---
 
 # UpdateLabelsPayload
-<a name="API_UpdateLabelsPayload"></a>
 
 An object representing a Kubernetes `label` change for a managed node group.
 

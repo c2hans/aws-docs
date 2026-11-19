@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ElastiCacheS
 ---
 
 # Event Notifications and Amazon SNS
-<a name="ElastiCacheSNS"></a>
 
 ElastiCache can publish messages using Amazon Simple Notification Service (SNS) when significant events happen on a cluster. This feature can be used to refresh the server-lists on client machines connected to individual cache node endpoints of a cache cluster.
 

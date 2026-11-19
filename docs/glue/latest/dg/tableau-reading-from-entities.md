@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/tableau-reading-from-enti
 ---
 
 # Reading from Tableau entities
-<a name="tableau-reading-from-entities"></a>
 
 **Prerequisites**
 

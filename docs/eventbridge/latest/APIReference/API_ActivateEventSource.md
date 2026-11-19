@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Acti
 ---
 
 # ActivateEventSource
-<a name="API_ActivateEventSource"></a>
 
 Activates a partner event source that has been deactivated. Once activated, your matching event bus will start receiving events from the event source.
 

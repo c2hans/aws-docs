@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # GlobalReplicationGroupInfo
-<a name="API_GlobalReplicationGroupInfo"></a>
 
 The name of the Global datastore and role of this replication group in the Global datastore.
 

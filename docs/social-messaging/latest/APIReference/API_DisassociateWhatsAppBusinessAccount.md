@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # DisassociateWhatsAppBusinessAccount
-<a name="API_DisassociateWhatsAppBusinessAccount"></a>
 
 Disassociate a WhatsApp Business Account (WABA) from your AWS account.
 

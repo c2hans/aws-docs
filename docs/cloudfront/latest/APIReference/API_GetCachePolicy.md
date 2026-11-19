@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetCa
 ---
 
 # GetCachePolicy
-<a name="API_GetCachePolicy"></a>
 
 Gets a cache policy, including the following metadata:
 + The policy's identifier.

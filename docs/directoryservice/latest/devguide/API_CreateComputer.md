@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Cre
 ---
 
 # CreateComputer
-<a name="API_CreateComputer"></a>
 
 Creates an Active Directory computer object in the specified directory.
 

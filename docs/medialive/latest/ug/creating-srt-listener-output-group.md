@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/creating-srt-listene
 ---
 
 # Create the SRT output in listener mode
-<a name="creating-srt-listener-output-group"></a>
 
 After you have completed the prerequisites and coordinated with the downstream systems, you can create the SRT output in listener mode.
 

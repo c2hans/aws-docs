@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # Record
-<a name="API_Record"></a>
 
  The record.
 

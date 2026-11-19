@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-encryp
 ---
 
 # Amazon S3 Encryption Client Migration (V1 to V2) in the AWS SDK for PHP Version 3
-<a name="s3-encryption-migration-v1-v2"></a>
 
 **Note**
 If you are using Version 2 (V2) of the Amazon S3 encryption client and want to migrate to Version 3 (V3), see [Amazon S3 Encryption Client Migration (V2 to V3) in the AWS SDK for PHP Version 3](s3-encryption-migration-v2-v3.md).

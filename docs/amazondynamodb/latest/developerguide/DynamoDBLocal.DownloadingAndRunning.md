@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Dyn
 ---
 
 # Deploying DynamoDB locally on your computer
-<a name="DynamoDBLocal.DownloadingAndRunning"></a>
 
 **Note**
 DynamoDB local is available in three versions: v3.x (Current), v2.x (Legacy), and v1.x (Deprecated).

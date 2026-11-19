@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_Webhook.
 ---
 
 # Webhook
-<a name="API_Webhook"></a>
 
 Describes a webhook that connects repository events to an Amplify app.
 

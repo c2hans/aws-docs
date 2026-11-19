@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateD
 ---
 
 # CreateDesignation
-<a name="API_CreateDesignation"></a>
 
 Creates a new user-defined designation with a Cedar permit policy. The designation defines a named role that can be assigned to project members through `CreateProjectMembership` or granted through `AddPolicyGrant`.
 

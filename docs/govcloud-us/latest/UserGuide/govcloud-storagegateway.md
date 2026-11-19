@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-st
 ---
 
 # AWS Storage Gateway in AWS GovCloud (US)
-<a name="govcloud-storagegateway"></a>
 
 AWS Storage Gateway is a service that connects an on-premises software appliance with cloud-based storage to provide seamless and secure integration between your on-premises IT environment and the AWS storage infrastructure in the cloud.
 

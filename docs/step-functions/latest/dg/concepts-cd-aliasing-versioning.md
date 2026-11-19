@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/concepts-cd-ali
 ---
 
 # Manage continuous deployments with versions and aliases in Step Functions
-<a name="concepts-cd-aliasing-versioning"></a>
 
 You can use Step Functions to manage continuous deployments of your workflows through state machine *versions* and *aliases*. A *version* is a numbered, immutable snapshot of a state machine that you can run. An *alias* is a pointer for up to two versions of a state machine.
 

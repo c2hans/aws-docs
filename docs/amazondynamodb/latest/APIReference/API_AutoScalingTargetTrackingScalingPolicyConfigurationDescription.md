@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_A
 ---
 
 # AutoScalingTargetTrackingScalingPolicyConfigurationDescription
-<a name="API_AutoScalingTargetTrackingScalingPolicyConfigurationDescription"></a>
 
 Represents the properties of a target tracking scaling policy.
 

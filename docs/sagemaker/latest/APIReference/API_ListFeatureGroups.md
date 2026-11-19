@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListFe
 ---
 
 # ListFeatureGroups
-<a name="API_ListFeatureGroups"></a>
 
 List `FeatureGroup`s based on given filter and order.
 

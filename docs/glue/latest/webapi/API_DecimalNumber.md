@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DecimalNumber.htm
 ---
 
 # DecimalNumber
-<a name="API_DecimalNumber"></a>
 
 Contains a numeric value in decimal format.
 

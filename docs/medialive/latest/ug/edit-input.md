@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/edit-input.html
 ---
 
 # Editing an input
-<a name="edit-input"></a>
 
 The rules for editing an input in MediaLive are as follows.
 

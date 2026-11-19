@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/troubleshoot
 ---
 
 # General troubleshooting issues
-<a name="troubleshooting-general"></a>
 
 **Topics**
 + [General troubleshooting checklist](#troubleshooting-checklist)

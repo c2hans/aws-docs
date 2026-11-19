@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ai-data-preparation-
 ---
 
 # Regions and limits for SageMaker AI Data Preparation
-<a name="ai-data-preparation-regions-limits"></a>
 
 ## Supported Regions
 <a name="ai-data-preparation-regions-limits-regions"></a>

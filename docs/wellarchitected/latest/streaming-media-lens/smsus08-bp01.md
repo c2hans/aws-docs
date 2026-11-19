@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMSUS08-BP01 use AWS managed services for efficient resource utilization
-<a name="smsus08-bp01"></a>
 
 Use managed services in place of self-operated equivalents wherever a workload fits one. Managed services share infrastructure across many customers and scale with demand, so they reach a far higher average utilization than a self-managed component that each team provisions for its own peak and leaves idle the rest of the time.
 

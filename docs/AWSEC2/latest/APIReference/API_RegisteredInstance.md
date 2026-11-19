@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Registere
 ---
 
 # RegisteredInstance
-<a name="API_RegisteredInstance"></a>
 
 Describes an Amazon EC2 instance that is enabled for SQL Server High Availability standby detection monitoring.
 

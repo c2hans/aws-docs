@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/range.html
 ---
 
 # $range
-<a name="range"></a>
 
 The `$range` aggregation operator in Amazon DocumentDB is used to create an array of consecutive numbers within a specified range. This operator is particularly useful for generating sequences of numbers, such as mile markers for aid stations in a race, as demonstrated in the following examples.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_TerminateReque
 ---
 
 # TerminateRequest
-<a name="API_TerminateRequest"></a>
 
 Describes the information used to terminate a WorkSpace.
 

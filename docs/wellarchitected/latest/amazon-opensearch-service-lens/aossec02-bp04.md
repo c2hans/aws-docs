@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSSEC02-BP04 Assess your OpenSearch Service domain's configuration with AWS Config
-<a name="aossec02-bp04"></a>
 
  Use AWS Config to evaluate your OpenSearch Service domain's configuration settings, gaining visibility into potential issues or areas for improvement and enhancing compliance and security.
 

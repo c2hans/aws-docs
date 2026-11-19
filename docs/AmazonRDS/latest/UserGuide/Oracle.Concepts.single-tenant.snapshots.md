@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Concep
 ---
 
 # Backing up and restoring a CDB
-<a name="Oracle.Concepts.single-tenant.snapshots"></a>
 
 You can back up and restore your CDB using either RDS DB snapshots or Recovery Manager (RMAN).
 

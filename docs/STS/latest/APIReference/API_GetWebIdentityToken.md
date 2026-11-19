@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/STS/latest/APIReference/API_GetWebIdenti
 ---
 
 # GetWebIdentityToken
-<a name="API_GetWebIdentityToken"></a>
 
 Returns a signed JSON Web Token (JWT) that represents the calling AWS identity. The returned JWT can be used to authenticate with external services that support OIDC discovery. The token is signed by AWS STS and can be publicly verified using the verification keys published at the issuer's JWKS endpoint.
 

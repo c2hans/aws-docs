@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # GetSchemaMapping
-<a name="API_GetSchemaMapping"></a>
 
 Returns the SchemaMapping of a given name.
 

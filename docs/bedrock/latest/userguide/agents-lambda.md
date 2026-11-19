@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-lambda.h
 ---
 
 # Configure Lambda functions to send information that an Amazon Bedrock agent elicits from the user
-<a name="agents-lambda"></a>
 
 You can define a Lambda function to program the business logic for an action group. After an Amazon Bedrock agent determines the API operation that it needs to invoke in an action group, it sends information from the API schema alongside relevant metadata as an input event to the Lambda function. To write your function, you must understand the following components of the Lambda function:
 + **Input event** – Contains relevant metadata and populated fields from the request body of the API operation or the function parameters for the action that the agent determines must be called.

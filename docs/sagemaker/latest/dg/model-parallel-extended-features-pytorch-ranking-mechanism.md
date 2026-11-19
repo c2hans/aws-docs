@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-exten
 ---
 
 # Ranking Mechanism when Using a Combination of Pipeline Parallelism and Tensor Parallelism
-<a name="model-parallel-extended-features-pytorch-ranking-mechanism"></a>
 
 This section explains how the ranking mechanism of model parallelism works with tensor parallelism. This is extended from the [Ranking Basics](https://sagemaker.readthedocs.io/en/v2.199.0/api/training/smd_model_parallel_general.html#ranking-basics) for [Core Features of the SageMaker Model Parallelism Library](model-parallel-core-features.md). With tensor parallelism, the library introduces three types of ranking and process group APIs: `smp.tp_rank()` for tensor parallel rank, `smp.pp_rank()` for pipeline parallel rank, and `smp.rdp_rank()` for reduced-data parallel rank. The corresponding communication process groups are tensor parallel group (`TP_GROUP`), pipeline parallel group (`PP_GROUP`), and reduced-data parallel group (`RDP_GROUP`). These groups are defined as follows:
 + A *tensor parallel group* (`TP_GROUP`) is an evenly divisible subset of the data parallel group, over which tensor parallel distribution of modules takes place. When the degree of pipeline parallelism is 1, `TP_GROUP` is the same as *model parallel group* (`MP_GROUP`).

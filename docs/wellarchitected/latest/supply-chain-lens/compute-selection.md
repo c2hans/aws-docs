@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Compute selection
-<a name="compute-selection"></a>
 
 | SCPERF02: How do you select your compute architecture? |
 | --- |

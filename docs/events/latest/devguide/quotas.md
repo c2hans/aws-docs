@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/quotas.html
 ---
 
 # Quotas and throttling
-<a name="quotas"></a>
 
  Each operation in the following table has its own quota on how many requests you can make per minute.
 

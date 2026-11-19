@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DomainMembersh
 ---
 
 # DomainMembership
-<a name="API_DomainMembership"></a>
 
 An Active Directory Domain membership record associated with a DB instance.
 

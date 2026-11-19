@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/general/latest/gr/amazonqdev.html
 ---
 
 # Amazon Q Developer endpoints and quotas
-<a name="amazonqdev"></a>
 
 Service quotas, also referred to as limits, are the maximum number of service resources or operations for your AWS account. The following are the service quotas for this service.
 

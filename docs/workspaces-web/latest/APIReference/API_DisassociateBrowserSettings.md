@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_D
 ---
 
 # DisassociateBrowserSettings
-<a name="API_DisassociateBrowserSettings"></a>
 
 Disassociates browser settings from a web portal.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TaskTemp
 ---
 
 # TaskTemplateFieldIdentifier
-<a name="API_TaskTemplateFieldIdentifier"></a>
 
 The identifier of the task template field.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/poker.html
 ---
 
 # .poker
-<a name="poker"></a>
 
 Used by poker players and gaming websites.
 

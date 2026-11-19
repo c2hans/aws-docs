@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReportIns
 ---
 
 # ReportInstanceStatus
-<a name="API_ReportInstanceStatus"></a>
 
-Submits feedback about the status of an instance. The instance must be in the `running` state. If your experience with the instance differs from the instance status returned by [DescribeInstanceStatus](API_DescribeInstanceStatus.md), use [ReportInstanceStatus](#API_ReportInstanceStatus) to report your experience with the instance. Amazon EC2 collects this information to improve the accuracy of status checks.
+Submits feedback about the status of an instance. The instance must be in the `running` state. If your experience with the instance differs from the instance status returned by [DescribeInstanceStatus](API_DescribeInstanceStatus.md), use [ReportInstanceStatus](API_ReportInstanceStatus.md) to report your experience with the instance. Amazon EC2 collects this information to improve the accuracy of status checks.
 
 Use of this action does not change the value returned by [DescribeInstanceStatus](API_DescribeInstanceStatus.md).
 

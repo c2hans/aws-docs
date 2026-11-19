@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Dele
 ---
 
 # DeleteIngestConfiguration
-<a name="API_DeleteIngestConfiguration"></a>
 
 Deletes a specified IngestConfiguration, so it can no longer be used to broadcast. An IngestConfiguration cannot be deleted if the publisher is actively streaming to a stage, unless `force` is set to `true`.
 

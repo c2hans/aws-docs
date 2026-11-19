@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_FrameMe
 ---
 
 # FrameMetric
-<a name="API_FrameMetric"></a>
 
  The frame name, metric type, and thread states. These are used to derive the value of the metric for the frame.
 

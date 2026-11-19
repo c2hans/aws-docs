@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Conclusion and resources
-<a name="resources"></a>
 
 This guide presents a lifecycle that helps you continuously improve the resilience of your applications by implementing best practices across five stages: *Set objectives, Design and implement, Evaluate and test, Operate, and Respond and learn*.
 

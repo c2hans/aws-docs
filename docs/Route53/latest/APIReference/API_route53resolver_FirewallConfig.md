@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # FirewallConfig
-<a name="API_route53resolver_FirewallConfig"></a>
 
 Configuration of the firewall behavior provided by DNS Firewall for a single VPC from Amazon Virtual Private Cloud (Amazon VPC).
 

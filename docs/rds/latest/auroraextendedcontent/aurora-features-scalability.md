@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Scalability
-<a name="aurora-features-scalability"></a>
 
 **Topics**
 + [Serverless](#aurora-features-serverless)

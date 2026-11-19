@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/selinux.html
 ---
 
 # SELinux
-<a name="selinux"></a>
 
 In AL2027, SELinux is set to **enforcing** mode by default. This is a change from AL2023, which used permissive mode by default. For more information about the default status and modes, see [Default SELinux status and modes for AL2027](default-SELinux-modes-states.md).
 

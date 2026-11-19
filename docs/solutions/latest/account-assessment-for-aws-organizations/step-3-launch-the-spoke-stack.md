@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # Step 3: Deploy the Spoke stack
-<a name="step-3-launch-the-spoke-stack"></a>
 
 Deploy the Spoke stack to every account that the guidance assesses, including the Hub account if you want to assess it.
 

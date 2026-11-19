@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/clean-up-guardduty-a
 ---
 
 # Cleaning up security agent resources
-<a name="clean-up-guardduty-agent-resources-process"></a>
 
 This section explains how you can clean up the AWS resources associated with the security agent. As listed in [Disabling, uninstalling, and resource cleanup](runtime-monitoring-agent-resource-clean-up.md), GuardDuty will not delete or remove all the security agent resources. The following section provides instructions on how you can delete the security agent resources.
 

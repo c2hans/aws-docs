@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Supported configurations
-<a name="msk-data-delivery-s3-supported-configs"></a>
 
 | Configuration | Amazon S3 general purpose buckets |
 | --- | --- |

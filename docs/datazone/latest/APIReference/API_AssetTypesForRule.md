@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AssetTy
 ---
 
 # AssetTypesForRule
-<a name="API_AssetTypesForRule"></a>
 
 The asset type for the rule details.
 

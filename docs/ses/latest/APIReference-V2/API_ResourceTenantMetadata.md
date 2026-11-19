@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ResourceT
 ---
 
 # ResourceTenantMetadata
-<a name="API_ResourceTenantMetadata"></a>
 
 A structure that contains information about a tenant associated with a resource.
 

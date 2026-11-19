@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ne
 ---
 
 # NetworkTrafficConfig
-<a name="API_NetworkTrafficConfig"></a>
 
 The network traffic configuration for a pentest, including custom headers and traffic rules.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/pie-chart.html
 ---
 
 # Using pie charts
-<a name="pie-chart"></a>
 
 Use pie charts to compare values for items in a dimension. The best use for this type of chart is to show a percentage of a total amount.
 

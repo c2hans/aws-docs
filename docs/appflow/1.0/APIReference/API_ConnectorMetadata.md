@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ConnectorMe
 ---
 
 # ConnectorMetadata
-<a name="API_ConnectorMetadata"></a>
 
  A structure to specify connector-specific metadata such as `oAuthScopes`, `supportedRegions`, `privateLinkServiceUrl`, and so on.
 

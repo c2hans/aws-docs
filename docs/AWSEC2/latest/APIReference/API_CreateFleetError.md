@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateFle
 ---
 
 # CreateFleetError
-<a name="API_CreateFleetError"></a>
 
 Describes the instances that could not be launched by the fleet.
 

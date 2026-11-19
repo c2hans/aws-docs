@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Az
 ---
 
 # AzureDevOpsRepositoryMetadata
-<a name="API_AzureDevOpsRepositoryMetadata"></a>
 
 Metadata for an integrated Azure DevOps repository.
 

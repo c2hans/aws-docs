@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Add and balance data files
-<a name="data-files"></a>
 
 The SQL Server databases provided with EnterpriseOne can often benefit from additional files. Additional files enable optimal balancing across storage and processor cores. Balancing the files is a multi-step process. Many of these steps require exclusive access to the database objects, so you would have to take EnterpriseOne and other systems accessing the database offline.
 

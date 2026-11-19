@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_SpaceS
 ---
 
 # SpaceStorageSettings
-<a name="API_SpaceStorageSettings"></a>
 
 The storage settings for a space.
 

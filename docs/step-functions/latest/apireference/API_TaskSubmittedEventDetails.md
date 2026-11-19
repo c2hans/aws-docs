@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_T
 ---
 
 # TaskSubmittedEventDetails
-<a name="API_TaskSubmittedEventDetails"></a>
 
 Contains details about a task submitted to a resource .
 

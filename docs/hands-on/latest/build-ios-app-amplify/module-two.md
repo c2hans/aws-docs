@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-ios-app-amplify/mo
 ---
 
 # Module 2: Initialize Amplify
-<a name="module-two"></a>
 
 |  |  |
 | --- |--- |

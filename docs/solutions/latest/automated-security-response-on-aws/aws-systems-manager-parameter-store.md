@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # AWS Systems Manager Parameter Store
-<a name="aws-systems-manager-parameter-store"></a>
 
 Automated Security Response on AWS uses AWS Systems Manager Parameter Store for storage of operational data. The following parameters are stored in Parameter Store:
 

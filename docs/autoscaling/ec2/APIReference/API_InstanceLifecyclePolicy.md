@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Instanc
 ---
 
 # InstanceLifecyclePolicy
-<a name="API_InstanceLifecyclePolicy"></a>
 
  The instance lifecycle policy for the Auto Scaling group. This policy controls instance behavior when an instance transitions through its lifecycle states. Configure retention triggers to specify when instances should move to a `Retained` state instead of automatic termination.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/custom-model-us
 ---
 
 # Purchase Provisioned Throughput for a custom model
-<a name="custom-model-use-pt"></a>
 
 To use a custom model with dedicated compute capacity and guaranteed throughput, you can purchase Provisioned Throughput for it. You can then use the resulting provisioned model for inference. For more information about Provisioned Throughput, see [Increase model invocation capacity with Provisioned Throughput in Amazon Bedrock](prov-throughput.md).
 

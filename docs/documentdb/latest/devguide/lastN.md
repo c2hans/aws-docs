@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/lastN.html
 ---
 
 # $lastN
-<a name="lastN"></a>
 
 New from version 8.0.1.
 

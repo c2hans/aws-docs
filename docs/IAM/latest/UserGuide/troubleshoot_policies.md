@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_polici
 ---
 
 # Troubleshoot IAM policies
-<a name="troubleshoot_policies"></a>
 
 A [policy](access_policies.md) is an entity in AWS that, when attached to an identity or resource, defines their permissions. AWS evaluates these policies when a principal, such as a user, makes a request. Permissions in the policies determine whether the request is allowed or denied.
 

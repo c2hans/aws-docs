@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # TaskSummary
-<a name="API_devicemanagement_TaskSummary"></a>
 
 Information about the task assigned to one or many devices.
 

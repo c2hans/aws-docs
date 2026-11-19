@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_StartSigning
 ---
 
 # StartSigningJobParameter
-<a name="API_StartSigningJobParameter"></a>
 
 Information required to start a signing job.
 

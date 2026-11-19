@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/fra
 ---
 
 # Frameworks supported
-<a name="frameworks-supported"></a>
 
 The controls available in Control Catalog support several industry frameworks.
 + ACSC-Essential-Eight-Nov-2022

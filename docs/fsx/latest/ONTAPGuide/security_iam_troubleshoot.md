@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/security_iam_troub
 ---
 
 # Troubleshooting Amazon FSx for NetApp ONTAP identity and access
-<a name="security_iam_troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with Amazon FSx and IAM.
 

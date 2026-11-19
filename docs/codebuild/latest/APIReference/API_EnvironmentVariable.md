@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Enviro
 ---
 
 # EnvironmentVariable
-<a name="API_EnvironmentVariable"></a>
 
 Information about an environment variable for a build project or a build.
 

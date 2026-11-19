@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Remo
 ---
 
 # RemoteAgentSigV4AuthorizationConfig
-<a name="API_RemoteAgentSigV4AuthorizationConfig"></a>
 
 SigV4 authorization configuration for remote A2A agent.
 

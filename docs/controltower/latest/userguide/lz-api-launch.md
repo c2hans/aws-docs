@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/lz-api-lau
 ---
 
 # Step 2: Launch your landing zone using the AWS Control Tower APIs
-<a name="lz-api-launch"></a>
 
  You can use AWS Control Tower APIs to launch your landing zone. This section describes how to create the required *landing zone manifest file* and use it with the `CreateLandingZone` API operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/query-alb-connection-lo
 ---
 
 # Example queries for ALB connection logs
-<a name="query-alb-connection-logs-examples"></a>
 
 The following query count occurrences where the value for `tls_verify_status` was not `'Success'`, grouped by client IP address:
 

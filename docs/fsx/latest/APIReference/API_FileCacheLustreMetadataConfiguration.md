@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_FileCacheLus
 ---
 
 # FileCacheLustreMetadataConfiguration
-<a name="API_FileCacheLustreMetadataConfiguration"></a>
 
 The configuration for a Lustre MDT (Metadata Target) storage volume. The metadata on Amazon File Cache is managed by a Lustre Metadata Server (MDS) while the actual metadata is persisted on an MDT.
 

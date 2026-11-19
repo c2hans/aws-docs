@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_IDCConfig.html
 ---
 
 # IDCConfig
-<a name="API_IDCConfig"></a>
 
 Specifies the configurations of the identity center.
 

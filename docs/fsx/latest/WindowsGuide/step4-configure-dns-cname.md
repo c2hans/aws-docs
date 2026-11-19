@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/step4-configure-
 ---
 
 # Update or create a DNS CNAME record
-<a name="step4-configure-dns-cname"></a>
 
 After you properly configure SPNs for your file system, you can cut over to Amazon FSx by replacing each DNS record that resolved to the original file system with a DNS record that resolves to the default DNS name of the Amazon FSx file system.
 

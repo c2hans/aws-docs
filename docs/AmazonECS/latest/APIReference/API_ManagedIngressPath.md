@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedIngressPath
-<a name="API_ManagedIngressPath"></a>
 
 The entry point into the Express service.
 

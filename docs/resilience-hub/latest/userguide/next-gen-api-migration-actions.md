@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Migration
-<a name="next-gen-api-migration-actions"></a>
 
 | Action | Method | Description |
 | --- | --- | --- |

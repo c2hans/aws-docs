@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeL
 ---
 
 # DescribeLocalGatewayRouteTableVpcAssociations
-<a name="API_DescribeLocalGatewayRouteTableVpcAssociations"></a>
 
 Describes the specified associations between VPCs and local gateway route tables.
 

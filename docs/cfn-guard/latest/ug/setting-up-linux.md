@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cfn-guard/latest/ug/setting-up-linux.htm
 ---
 
 # Installing Guard for Linux and macOS
-<a name="setting-up-linux"></a>
 
 You can install AWS CloudFormation Guard for Linux and macOS by using the pre-built release binary, Cargo, or through Homebrew.
 

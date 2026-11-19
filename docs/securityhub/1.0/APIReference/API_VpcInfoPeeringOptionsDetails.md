@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_VpcInfo
 ---
 
 # VpcInfoPeeringOptionsDetails
-<a name="API_VpcInfoPeeringOptionsDetails"></a>
 
 Provides information about the VPC peering connection options for the accepter or requester VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_C
 ---
 
 # CreateDataCellsFilter
-<a name="API_CreateDataCellsFilter"></a>
 
 Creates a data cell filter to allow one to grant access to certain columns on certain rows.
 

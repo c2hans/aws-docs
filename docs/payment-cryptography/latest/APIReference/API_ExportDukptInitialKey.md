@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # ExportDukptInitialKey
-<a name="API_ExportDukptInitialKey"></a>
 
 Parameter information for IPEK generation during export.
 

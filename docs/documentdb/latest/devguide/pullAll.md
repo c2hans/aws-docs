@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/pullAll.html
 ---
 
 # $pullAll
-<a name="pullAll"></a>
 
 The `$pullAll` operator in Amazon DocumentDB is used to remove all instances of the specified values from an array field. This is particularly useful when you need to remove multiple elements from an array in a single operation.
 

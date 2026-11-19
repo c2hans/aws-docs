@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Salesforc
 ---
 
 # SalesforceChatterFeedConfiguration
-<a name="API_SalesforceChatterFeedConfiguration"></a>
 
 The configuration information for syncing a Salesforce chatter feed. The contents of the object comes from the Salesforce FeedItem table.
 

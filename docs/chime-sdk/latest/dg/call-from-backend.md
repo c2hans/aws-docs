@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/call-from-backend.ht
 ---
 
 # Making SDK calls from a back-end service for Amazon Chime SDK messaging
-<a name="call-from-backend"></a>
 
 Once you create a user to represent your back-end services, you create a channel, send messages to that channel, and read messages from that channel.
 

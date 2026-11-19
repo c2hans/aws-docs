@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/cloudformation-exe
 ---
 
 # AWS CloudFormation Execute Change Set task
-<a name="cloudformation-execute-changeset"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

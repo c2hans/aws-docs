@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-opensearch-targe
 ---
 
 # Creating a OpenSearch Service target node
-<a name="creating-opensearch-target-node"></a>
 
 ## Prerequisites needed
 <a name="creating-opensearch-target-node-prerequisites"></a>

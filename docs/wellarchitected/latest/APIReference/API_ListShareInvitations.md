@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListShareInvitations
-<a name="API_ListShareInvitations"></a>
 
 List the share invitations.
 

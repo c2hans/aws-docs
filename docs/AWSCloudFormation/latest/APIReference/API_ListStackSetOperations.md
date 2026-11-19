@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListStackSetOperations
-<a name="API_ListStackSetOperations"></a>
 
 Returns summary information about operations performed on a StackSet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Pu
 ---
 
 # PublicKey
-<a name="API_PublicKey"></a>
 
 Contains information about a returned public key.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTREL01-BP05 Implement adaptive provisioning
-<a name="agentrel01-bp05"></a>
 
  Static provisioning forces a choice between overpaying for peak and failing under load. Agent workloads shift minute to minute, so capacity, model tier, and quota must respond to task complexity and current demand without operator intervention.
 

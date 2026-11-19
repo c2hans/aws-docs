@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/settings-
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Configuring your default assessment report destination
-<a name="settings-destination"></a>
 
 When you generate an assessment report, Audit Manager publishes the report to the S3 bucket of your choice. This S3 bucket is referred to as an [](concepts.md#assessment-report-destination). You can choose the S3 bucket that Audit Manager stores your assessment reports in.
 

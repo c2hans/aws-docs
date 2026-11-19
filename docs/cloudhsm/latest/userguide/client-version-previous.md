@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/client-version
 ---
 
 # AWS CloudHSM previous Client SDK releases
-<a name="client-version-previous"></a>
 
 This section lists previous Client SDK releases.
 

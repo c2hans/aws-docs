@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLProblemTypeResolvedAttributes
-<a name="API_AutoMLProblemTypeResolvedAttributes"></a>
 
 Stores resolved attributes specific to the problem type of an AutoML job V2.
 

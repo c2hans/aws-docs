@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Workflow-driven operating model
-<a name="workflow-driven-operating-model"></a>
 
 Migration Assistant 3.0 is built around three ideas:
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::Integration IntegrationCredential
-<a name="aws-properties-cloudwatch-integration-integrationcredential"></a>
 
 Write-only API-key credential material for the integration. Stored encrypted and never returned on read.
 

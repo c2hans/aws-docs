@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_regio
 ---
 
 # Execution block permissions
-<a name="security_iam_region_switch_execution_blocks"></a>
 
  The following sections provide sample IAM policies that provide the required permissions for specific execution blocks that you add to a Region switch plan.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-cente
 ---
 
 # The CCoE tenets
-<a name="ccoe-tenets"></a>
 
 A Cloud Center of Excellence (CCoE) typically operates based on a set of tenets or guiding principles that help shape its mission and activities. These tenets provide a framework for the CCoE's operation, and they align its efforts with the organization's broader goals and cloud strategy. While the specific tenets might vary from one organization to another, you can start with the following common CCoE tenets (often known as *REALMS*). Note that these tenets are currently documented from the perspective of AWS Partners, but any AWS customer can define KPIs that support their own cloud journey:
 + **Research** means that, based on field experiences and value propositions, AWS Partners can decide which areas to explore, create best practices, and automate manual tasks to deliver business outcomes or  benefits to their customers.

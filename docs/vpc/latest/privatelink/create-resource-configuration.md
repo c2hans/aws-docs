@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/create-resource-c
 ---
 
 # Create a resource configuration in VPC Lattice
-<a name="create-resource-configuration"></a>
 
 Create a resource configuration.
 

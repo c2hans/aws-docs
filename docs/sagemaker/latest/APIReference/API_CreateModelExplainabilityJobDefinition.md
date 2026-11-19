@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateModelExplainabilityJobDefinition
-<a name="API_CreateModelExplainabilityJobDefinition"></a>
 
 Creates the definition for a model explainability job.
 

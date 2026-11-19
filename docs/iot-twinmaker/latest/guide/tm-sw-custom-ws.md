@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/guide/tm-sw-custom-
 ---
 
 # Using a custom workspace
-<a name="tm-sw-custom-ws"></a>
 
 Review these prerequisites before turning on asset sync.
 

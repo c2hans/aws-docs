@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSUS03-BP02 Adapt the AutoStop timeout and idle disconnect timeout for Amazon DCV
-<a name="eucsus03-bp02"></a>
 
  The AutoStop timeout in WorkSpaces is only available with AutoStop. This is not applicable to AlwaysOn WorkSpaces. In WorkSpaces, you can configure how long a user can be inactive while connected to a WorkSpace before they are disconnected. Amazon DCV (Desktop Cloud Virtualization) is the remote display protocol used by Amazon WorkSpaces to stream pixels, keystrokes and mouse movements.
 

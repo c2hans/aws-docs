@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/lending-document-clas
 ---
 
 # Analyzing Lending Documents
-<a name="lending-document-classification-extraction"></a>
 
 Analyze Lending is a document processing API for mortgage documents. With Analyze Lending, you can automatically extract, classify, and validate information in mortgage-related documents. Analyze Lending receives a loan document and then splits it into pages, classifying them according to the type of document. The document pages are then automatically routed to Amazon Textract text processing operations for accurate data extraction and analysis.
 

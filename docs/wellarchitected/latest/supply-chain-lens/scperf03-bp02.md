@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCPERF03-BP02 Select your storage architecture based on workload
-<a name="scperf03-bp02"></a>
 
  Data lineage is important in the world of producers and consumers of the data. This lineage can be verified and validated when it is tracked from the source system to the destination systems. As a result, well-organized data leads to better understanding.
 

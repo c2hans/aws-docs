@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/faq.html
 ---
 
 # Eksctl FAQ
-<a name="faq"></a>
 
 ## General
 <a name="_general"></a>

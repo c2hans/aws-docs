@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_TagResou
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds a tag to a resource. Tags are supported only for monitors in Internet Monitor. You can add a maximum of 50 tags in Internet Monitor.
 

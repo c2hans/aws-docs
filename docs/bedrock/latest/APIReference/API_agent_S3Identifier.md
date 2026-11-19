@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_S3
 ---
 
 # S3Identifier
-<a name="API_agent_S3Identifier"></a>
 
 The identifier information for an Amazon S3 bucket.
 

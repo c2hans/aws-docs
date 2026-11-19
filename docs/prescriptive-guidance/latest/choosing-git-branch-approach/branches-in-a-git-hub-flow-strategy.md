@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-gi
 ---
 
 # Branches in a GitHub Flow strategy
-<a name="branches-in-a-git-hub-flow-strategy"></a>
 
 A GitHub Flow branching strategy commonly has the following branches.
 

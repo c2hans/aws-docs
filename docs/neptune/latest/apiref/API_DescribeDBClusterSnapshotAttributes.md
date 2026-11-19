@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DescribeDBClus
 ---
 
 # DescribeDBClusterSnapshotAttributes
-<a name="API_DescribeDBClusterSnapshotAttributes"></a>
 
 Returns a list of DB cluster snapshot attribute names and values for a manual DB cluster snapshot.
 
@@ -27,7 +26,7 @@ Required: Yes
 The following element is returned by the service.
 
  ** DBClusterSnapshotAttributesResult **
-Contains the results of a successful call to the [DescribeDBClusterSnapshotAttributes](#API_DescribeDBClusterSnapshotAttributes) API action.
+Contains the results of a successful call to the [DescribeDBClusterSnapshotAttributes](API_DescribeDBClusterSnapshotAttributes.md) API action.
 Manual DB cluster snapshot attributes are used to authorize other Amazon accounts to copy or restore a manual DB cluster snapshot. For more information, see the [ModifyDBClusterSnapshotAttribute](API_ModifyDBClusterSnapshotAttribute.md) API action.
 Type: [DBClusterSnapshotAttributesResult](API_DBClusterSnapshotAttributesResult.md) object
 

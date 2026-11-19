@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_Action.html
 ---
 
 # Action
-<a name="API_Action"></a>
 
 Describes a bid action.
 

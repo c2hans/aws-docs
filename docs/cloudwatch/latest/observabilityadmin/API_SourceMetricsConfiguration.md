@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # SourceMetricsConfiguration
-<a name="API_SourceMetricsConfiguration"></a>
 
 Configuration for selecting source metrics for centralization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_JobDr
 ---
 
 # JobDriver
-<a name="API_JobDriver"></a>
 
 Specify the driver that the job runs on. Exactly one of the two available job drivers is required, either sparkSqlJobDriver or sparkSubmitJobDriver.
 

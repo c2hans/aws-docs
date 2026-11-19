@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-gc.html
 ---
 
 # `cdk gc`
-<a name="ref-cli-cmd-gc"></a>
 
 Use the AWS Cloud Development Kit (AWS CDK) command line interface (CLI) `cdk gc` command to perform garbage collection on unused assets stored in the resources of your bootstrap stack. Use this command to view, manage, and delete assets that you no longer need.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops02-b
 ---
 
 # OPS02-BP01 Develop key performance indicators
-<a name="ops02-bp01"></a>
 
  Key performance indicators (KPIs) tie a workload's behavior to the business outcomes it produces. Derive each KPI from a business outcome or priority, then analyze it against its target and adjust as the workload and business change.
 

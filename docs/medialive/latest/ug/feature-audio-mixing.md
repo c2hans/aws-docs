@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/feature-audio-mixing
 ---
 
 # Audio channel mixing and remixing
-<a name="feature-audio-mixing"></a>
 
 AWS Elemental MediaLive provides a two-stage audio processing pipeline that you can use to combine audio from multiple sources and remap channels for your output. You can pre-mix multiple audio PIDs or tracks into a single combined stream, and then remix that stream into your desired output channel layout.
 

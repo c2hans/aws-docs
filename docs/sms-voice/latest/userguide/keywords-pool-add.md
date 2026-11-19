@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/keywords-pool
 ---
 
 # Add a keyword to a phone pool in AWS End User Messaging SMS
-<a name="keywords-pool-add"></a>
 
 Use the AWS End User Messaging SMS console or AWS CLI to customize the keyword responses for your phone pool.
 

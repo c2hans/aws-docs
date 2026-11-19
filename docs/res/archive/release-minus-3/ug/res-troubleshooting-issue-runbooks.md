@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/res-troub
 ---
 
 # Issue RunBooks
-<a name="res-troubleshooting-issue-runbooks"></a>
 
 The following section contains issues that may occur, how to detect them, and suggestions on how to resolve the issue.
 + [Installation issues](#installation-issues)

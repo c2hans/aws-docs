@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListAccountsForProvisionedPermissionSet
-<a name="API_ListAccountsForProvisionedPermissionSet"></a>
 
 Lists all the AWS accounts where the specified permission set is provisioned.
 

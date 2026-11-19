@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DescribeConnectionsOnInterconnect
-<a name="API_DescribeConnectionsOnInterconnect"></a>
 
 **Note**
 Deprecated. Use [DescribeHostedConnections](API_DescribeHostedConnections.md) instead.

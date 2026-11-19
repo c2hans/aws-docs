@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ListServic
 ---
 
 # ListServiceJobs
-<a name="API_ListServiceJobs"></a>
 
 Returns a list of service jobs for a specified job queue.
 

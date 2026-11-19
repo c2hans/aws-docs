@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS service documentation
 <a name="9999999999999999aws-service--documentation.08b97980-be8a-5037-90c8-54e82afbaca4"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Workspac
 ---
 
 # Workspace
-<a name="API_Workspace"></a>
 
 Contains information about a workspace, which defines the user experience by mapping views to pages.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cognito-use
 ---
 
 # cognito-user-pool-password-policy-check
-<a name="cognito-user-pool-password-policy-check"></a>
 
 Checks if the password policy for Amazon cognito user pool meets the specified requirements indicated in the parameters. The rule is NON\_COMPLIANT if the user pool password policy does not meet the specified requirements.
 

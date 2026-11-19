@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/deliver-content-faster/d
 ---
 
 # Deliver Content Faster with Amazon CloudFront
-<a name="deliver-content-faster"></a>
 
 |  |  |
 | --- |--- |

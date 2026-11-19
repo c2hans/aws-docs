@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/applic
 ---
 
 # Suspend and resume scaling for Application Auto Scaling
-<a name="application-auto-scaling-suspend-resume-scaling"></a>
 
 This topic explains how to suspend and then resume one or more of the scaling activities for the scalable targets in your application. The suspend-resume feature is used to temporarily pause scaling activities triggered by your scaling policies and scheduled actions. This can be useful, for example, when you don't want automatic scaling to potentially interfere while you are making a change or investigating a configuration issue. Your scaling policies and scheduled actions can be retained, and when you are ready, scaling activities can be resumed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Detect
 ---
 
 # DetectionRuleRuntimeMonitoringDetails
-<a name="API_DetectionRuleRuntimeMonitoringDetails"></a>
 
 Contains Runtime Monitoring-specific details for a custom detection rule.
 

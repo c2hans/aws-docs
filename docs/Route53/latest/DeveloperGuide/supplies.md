@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/supplies.h
 ---
 
 # .supplies
-<a name="supplies"></a>
 
 Used by businesses that sell goods online.
 

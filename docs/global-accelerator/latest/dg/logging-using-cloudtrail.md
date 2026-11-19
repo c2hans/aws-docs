@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/logging-usi
 ---
 
 # Using AWS CloudTrail to log AWS Global Accelerator API calls
-<a name="logging-using-cloudtrail"></a>
 
 AWS Global Accelerator is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Global Accelerator. CloudTrail captures all API calls for Global Accelerator as events, including calls from the Global Accelerator console and from code calls to the Global Accelerator API. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for Global Accelerator. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**.
 

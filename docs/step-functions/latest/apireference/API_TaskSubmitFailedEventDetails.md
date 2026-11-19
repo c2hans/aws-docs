@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_T
 ---
 
 # TaskSubmitFailedEventDetails
-<a name="API_TaskSubmitFailedEventDetails"></a>
 
 Contains details about a task that failed to submit during an execution.
 

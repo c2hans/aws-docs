@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Telemetry ingestion
-<a name="telemetry-integration-stack"></a>
 
 The telemetry ingestion layer connects IoT Core to the MSK cluster.
 

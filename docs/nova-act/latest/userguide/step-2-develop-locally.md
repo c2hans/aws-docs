@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/step-2-develop
 ---
 
 # Step 2: Develop locally
-<a name="step-2-develop-locally"></a>
 
  **Prerequisites:** Python development environment (Python 3.10 or later)
 

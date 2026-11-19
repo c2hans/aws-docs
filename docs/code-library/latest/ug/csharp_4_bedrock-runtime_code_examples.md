@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/csharp_4_bedrock-
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Amazon Bedrock Runtime examples using SDK for .NET (v4)
-<a name="csharp_4_bedrock-runtime_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for .NET (v4) with Amazon Bedrock Runtime.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/storage-gatewa
 ---
 
 # Understanding Storage Gateway Resources and Resource IDs
-<a name="storage-gateway-resource-id"></a>
 
 In Storage Gateway, the primary resource is a *gateway* but other resource types include: *volume*, * virtual tape*, *iSCSI target*, and *vtl device*. These are referred to as *subresources* and they don't exist unless they are associated with a gateway.
 

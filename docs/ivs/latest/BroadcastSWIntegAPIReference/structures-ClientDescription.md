@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # ClientDescription
-<a name="structures-ClientDescription"></a>
 
 Complex type specifying client software and configuration.
 

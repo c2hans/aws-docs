@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/diagnostic-tools/latest/APIReference/API
 ---
 
 # GetTool
-<a name="API_GetTool"></a>
 
 Retrieve a tool (optionally a specific version) by its id and versionId.
 

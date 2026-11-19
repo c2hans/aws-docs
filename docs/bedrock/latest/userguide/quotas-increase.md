@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-increase
 ---
 
 # Request an increase for Amazon Bedrock quotas
-<a name="quotas-increase"></a>
 
 Quota increase requests in Amazon Bedrock differ depending on which endpoint you use. To request an increase, see the section that applies to your endpoint:
 + For `bedrock-runtime` quotas, see [Requesting a quota increase](quotas-runtime.md#quotas-runtime-increase).

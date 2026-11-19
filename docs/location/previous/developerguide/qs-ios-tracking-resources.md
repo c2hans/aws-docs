@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-ios-
 ---
 
 # Tutorial: Create Amazon Location resources for your app
-<a name="qs-ios-tracking-resources"></a>
 
 To begin you will need to create the required Amazon Location resources. These resources will be essential for the functionality of the application and executing the provided code snippets.
 

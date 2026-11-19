@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Upd
 ---
 
 # UpdatePackageVersionsStatus
-<a name="API_UpdatePackageVersionsStatus"></a>
 
  Updates the status of one or more versions of a package. Using `UpdatePackageVersionsStatus`, you can update the status of package versions to `Archived`, `Published`, or `Unlisted`. To set the status of a package version to `Disposed`, use [DisposePackageVersions](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_DisposePackageVersions.html).
 

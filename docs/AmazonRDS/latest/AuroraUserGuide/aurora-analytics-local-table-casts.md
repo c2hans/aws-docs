@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Joining foreign tables with local tables
-<a name="aurora-analytics-local-table-casts"></a>
 
 A *local table* is a regular Aurora PostgreSQL table or materialized view stored in Aurora storage. A *local column* is a column in a local table.
 

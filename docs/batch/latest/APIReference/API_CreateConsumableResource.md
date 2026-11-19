@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_CreateCons
 ---
 
 # CreateConsumableResource
-<a name="API_CreateConsumableResource"></a>
 
 Creates an AWS Batch consumable resource.
 

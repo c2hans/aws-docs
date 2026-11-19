@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/configure-
 ---
 
 # Configuring visible Regions in the AWS Management Console
-<a name="configure-visible-regions"></a>
 
 You can choose which AWS Regions appear in the Region selector for all users in your account.
 

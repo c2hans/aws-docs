@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # SpeakerSearchResult
-<a name="API_voice-chime_SpeakerSearchResult"></a>
 
 The result of a speaker search analysis.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_EvaluationMetrics
 ---
 
 # EvaluationMetrics
-<a name="API_EvaluationMetrics"></a>
 
 Evaluation metrics provide an estimate of the quality of your machine learning transform.
 

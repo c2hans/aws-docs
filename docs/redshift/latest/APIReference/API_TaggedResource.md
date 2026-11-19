@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_TaggedR
 ---
 
 # TaggedResource
-<a name="API_TaggedResource"></a>
 
 A tag and its associated resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-cente
 ---
 
 # The CCoE phases
-<a name="ccoe-phases"></a>
 
 Each phase of the CCoE is mapped to the [AWS Cloud Adoption Framework (AWS CAF)](https://d1.awsstatic.com/whitepapers/aws-caf-ebook.pdf). The AWS CAF uses AWS experience and best practices to digitally transform and accelerate the business outcomes through innovative use of AWS. The AWS CAF identifies specific organizational capabilities that underpin successful cloud transformations. These capabilities provide best-practice guidance that helps you improve your cloud readiness.
 

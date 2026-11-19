@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # Data protection
-<a name="data-protection"></a>
 
  Microsoft workloads often handle sensitive enterprise data that requires protection through encryption, access controls, and secure data handling practices. This focus area explores how to implement comprehensive data protection strategies that secure data at rest, in transit, and in use, while using both Microsoft and AWS security capabilities.
 

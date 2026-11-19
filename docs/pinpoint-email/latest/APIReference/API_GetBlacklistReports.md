@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_G
 ---
 
 # GetBlacklistReports
-<a name="API_GetBlacklistReports"></a>
 
 Retrieve a list of the blacklists that your dedicated IP addresses appear on.
 

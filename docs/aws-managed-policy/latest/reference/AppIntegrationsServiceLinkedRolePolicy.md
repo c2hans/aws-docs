@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AppI
 ---
 
 # AppIntegrationsServiceLinkedRolePolicy
-<a name="AppIntegrationsServiceLinkedRolePolicy"></a>
 
 **Description**: Allows AppIntegrations to manage AppFlow resources and publish CloudWatch metric data on your behalf.
 

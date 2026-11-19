@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/describ
 ---
 
 # DescribeDataSourcePermissions
-<a name="describe-data-source-operation"></a>
 
 Use the `DescribeDataSourcePermissions` API operation to describe the resource permissions for a data source. To use this operation, you need the ID of the data source whose permissions you want to view. The data source ID is part of the data source URL in Quick Sight. You can also use the `ListDataSources` API operation to get the ID.
 

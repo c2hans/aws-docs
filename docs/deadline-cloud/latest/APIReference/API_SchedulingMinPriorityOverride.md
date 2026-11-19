@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SchedulingMinPriorityOverride
-<a name="API_SchedulingMinPriorityOverride"></a>
 
 Defines the override behavior for jobs at the minimum priority (0) in weighted balanced scheduling.
 

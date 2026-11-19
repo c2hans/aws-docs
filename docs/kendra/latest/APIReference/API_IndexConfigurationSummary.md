@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_IndexConf
 ---
 
 # IndexConfigurationSummary
-<a name="API_IndexConfigurationSummary"></a>
 
 Summary information on the configuration of an index.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrat
 ---
 
 # AWS services that use AWS Secrets Manager secrets
-<a name="integrating"></a>
 
 **Topics**
 + [App Runner](integrating_how-services-use-secrets_ARlong.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_Script.html
 ---
 
 # Script
-<a name="API_Script"></a>
 
  **[Custom snapshot policies that target instances only]** Information about pre and/or post scripts for a snapshot lifecycle policy that targets instances. For more information, see [ Automating application-consistent snapshots with pre and post scripts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/automate-app-consistent-backups.html).
 

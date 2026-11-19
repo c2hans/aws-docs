@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/download-capac
 ---
 
 # Download a capacity plan in Connect Customer
-<a name="download-capacity-plan"></a>
 
 When you download a capacity plan file, it downloads as a .csv file type with multiple tabs. It's helpful to open this file using Excel. The following image shows an example of what a capacity plan file looks like in Excel.
 

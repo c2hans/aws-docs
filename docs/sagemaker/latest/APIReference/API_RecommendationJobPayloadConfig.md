@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Recomm
 ---
 
 # RecommendationJobPayloadConfig
-<a name="API_RecommendationJobPayloadConfig"></a>
 
 The configuration for the payload for a recommendation job.
 

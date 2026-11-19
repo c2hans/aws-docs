@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # UpdateTarget
-<a name="API_UpdateTarget"></a>
 
 A track that you can switch the current track to.
 

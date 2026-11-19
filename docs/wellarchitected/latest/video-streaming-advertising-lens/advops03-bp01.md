@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVOPS03-BP01 Mitigate deployment risks for publisher workload changes
-<a name="advops03-bp01"></a>
 
  Controlled deployment mechanisms help publishers reduce the risk of deploying changes to Prebid adapter configurations, SGAI manifest generation logic, FAST channel schedules, and ad format rendering code. These mechanisms limit the scope of impact of bad deployments and enable rapid rollback.
 

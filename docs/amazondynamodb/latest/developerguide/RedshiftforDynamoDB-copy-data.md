@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Red
 ---
 
 # Loading data from DynamoDB into Amazon Redshift with the COPY command
-<a name="RedshiftforDynamoDB-copy-data"></a>
 
 Amazon Redshift works with Amazon DynamoDB with advanced business intelligence capabilities and a powerful SQL-based interface. When you copy data from a DynamoDB table into Amazon Redshift, you can perform complex data analysis queries on that data, including joins with other tables in your Amazon Redshift cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-versions_faq.
 ---
 
 # Frequently asked questions about Slurm versions in AWS PCS
-<a name="slurm-versions_faq"></a>
 
 AWS PCS maintains support for multiple Slurm versions. When a new Slurm version is introduced, AWS PCS provides technical support and security patches until that version reaches its end of support (EOS) from SchedMD. AWS PCS refers to the EOS date for a Slurm version as end of life (EOL) to be consistent with AWS terminology.
 

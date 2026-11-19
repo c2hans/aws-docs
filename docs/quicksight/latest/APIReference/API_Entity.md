@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Entit
 ---
 
 # Entity
-<a name="API_Entity"></a>
 
 An object, structure, or sub-structure of an analysis, template, or dashboard.
 

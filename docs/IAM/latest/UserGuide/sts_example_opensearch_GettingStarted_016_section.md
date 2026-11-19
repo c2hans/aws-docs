@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/sts_example_opensea
 ---
 
 # Getting started with search and analytics engines
-<a name="sts_example_opensearch_GettingStarted_016_section"></a>
 
 The following code example shows how to:
 + Create an OpenSearch Service domain

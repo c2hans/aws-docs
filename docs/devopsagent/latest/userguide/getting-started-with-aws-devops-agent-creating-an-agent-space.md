@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/getting-sta
 ---
 
 # Creating an Agent Space
-<a name="getting-started-with-aws-devops-agent-creating-an-agent-space"></a>
 
 An Agent Space defines the tools and infrastructure that AWS DevOps Agent has access to. This guide walks you through creating an Agent Space, configuring primary account access, and enabling the DevOps Agent Web App. See “What is an Agent Space” to learn more about the Agent Space concept.
 

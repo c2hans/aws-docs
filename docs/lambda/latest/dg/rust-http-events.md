@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/rust-http-events.html
 ---
 
 # Processing HTTP events with Rust
-<a name="rust-http-events"></a>
 
 Amazon API Gateway APIs, Application Load Balancers, and [Lambda function URLs](urls-configuration.md) can send HTTP events to Lambda. You can use the [aws\_lambda\_events](https://crates.io/crates/aws_lambda_events) crate from crates.io to process events from these sources.
 

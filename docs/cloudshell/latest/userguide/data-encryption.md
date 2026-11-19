@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudshell/latest/userguide/data-encrypt
 ---
 
 # Data encryption
-<a name="data-encryption"></a>
 
 Data encryption refers to protecting data when at rest while stored in AWS CloudShell and when in transit it travels between AWS CloudShell and service endpoints.
 

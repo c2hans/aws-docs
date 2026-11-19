@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # DeleteLicenseAssetRuleset
-<a name="API_DeleteLicenseAssetRuleset"></a>
 
 Deletes a license asset ruleset.
 

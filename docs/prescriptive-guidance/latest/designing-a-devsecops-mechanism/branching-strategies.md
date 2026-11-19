@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-a
 ---
 
 # Branching strategies for IaC
-<a name="branching-strategies"></a>
 
 Typical Git methodology uses a primary trunk base (such as `main`) branch for production, a development branch, and feature branches. Many organizations instantly adopt this same design for infrastructure as code (IaC). However, Git methodology is not directly compatible with common infrastructure design patterns. Consider the following points:
 + Applications have several environments.

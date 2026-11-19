@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/environments.html
 ---
 
 # Environments for the AWS CDK
-<a name="environments"></a>
 
 An environment consists of the AWS account and AWS Region that you deploy an AWS Cloud Development Kit (AWS CDK) stack to.
 

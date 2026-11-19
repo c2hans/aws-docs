@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/add-connector
 ---
 
 # Connect to third-party services
-<a name="add-connector-third-party"></a>
 
 **Topics**
 + [OpenAPI Connector vs. API Connector](#add-connector-third-party-openapi-vs-api)

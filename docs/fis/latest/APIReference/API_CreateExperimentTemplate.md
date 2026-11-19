@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_CreateExperi
 ---
 
 # CreateExperimentTemplate
-<a name="API_CreateExperimentTemplate"></a>
 
 Creates an experiment template.
 

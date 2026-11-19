@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GlueTa
 ---
 
 # GlueTableSource
-<a name="API_s3Buckets_GlueTableSource"></a>
 
 An AWS Glue Data Catalog table to migrate. The table must be an external Apache Hive table whose data is stored as Parquet in a general purpose bucket in the same account and Region as the table bucket. Views, transactional (ACID) tables, tables in an open table format such as Apache Iceberg, and tables registered with AWS Lake Formation can't be migrated. If the table can't be migrated, the migration fails, and the table compatibility report lists the reason.
 

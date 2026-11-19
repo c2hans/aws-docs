@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_ListA
 ---
 
 # ListAssociatedStacks
-<a name="API_ListAssociatedStacks"></a>
 
 Retrieves the name of the stack with which the specified fleet is associated.
 

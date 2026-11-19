@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/using-errors.htm
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Handling errors
-<a name="using-errors"></a>
 
 AWS service calls can fail for reasons that your application must anticipate. For example, a resource doesn't exist, a request is throttled, or the network is unreachable. The AWS SDK for Python v4 raises a typed exception for each failure instead of returning an error code, so you can handle each kind of failure in its own `except` clause. Synchronous and asynchronous clients raise the same exception types. This page shows how to catch modeled service errors, handle SDK runtime exceptions, and understand the retries that the SDK makes before an error reaches your code.
 

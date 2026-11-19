@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Managed Integrations data model
-<a name="managedintegrations-data-model"></a>
 
 The Managed Integrations data model manages all communication between the end user and Managed Integrations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Appen
 ---
 
 # AppendOperation
-<a name="API_AppendOperation"></a>
 
 A transform operation that combines rows from two data sources by stacking them vertically (union operation).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeRecipe
 ---
 
 # DescribeRecipe
-<a name="API_DescribeRecipe"></a>
 
 Describes a recipe.
 

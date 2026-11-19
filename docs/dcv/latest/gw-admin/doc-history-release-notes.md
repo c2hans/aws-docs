@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-
 ---
 
 # Release notes and document history for Amazon DCV Connection Gateway
-<a name="doc-history-release-notes"></a>
 
 This page provides the release notes and document history for Amazon DCV Connection Gateway.
 

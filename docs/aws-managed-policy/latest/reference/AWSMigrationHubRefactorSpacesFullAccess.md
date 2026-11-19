@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMigrationHubRefactorSpacesFullAccess
-<a name="AWSMigrationHubRefactorSpacesFullAccess"></a>
 
 **Description**: Grants full access to AWS MigrationHub Refactor Spaces, AWS MigrationHub Refactor Spaces console features and other related AWS services except permissions required for AWS Lambda and AWS Resource Access Manager as they can be scoped down based on tags.
 

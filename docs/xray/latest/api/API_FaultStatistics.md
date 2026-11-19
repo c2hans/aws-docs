@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_FaultStatistics.html
 ---
 
 # FaultStatistics
-<a name="API_FaultStatistics"></a>
 
 Information about requests that failed with a 5xx Server Error status code.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/failback.html
 ---
 
 # Using Elastic Disaster Recovery for recovery and failback
-<a name="failback"></a>
 
 In the event of a disaster, AWS Elastic Disaster Recovery facilitates the recovery of your workloads by launching recovery instances in AWS. Once the disaster has been mitigated, you can also use AWS Elastic Disaster Recovery to perform failback to the original source infrastructure.
 

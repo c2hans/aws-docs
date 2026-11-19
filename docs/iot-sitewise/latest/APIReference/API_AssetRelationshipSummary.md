@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetRelationshipSummary
-<a name="API_AssetRelationshipSummary"></a>
 
 Contains information about assets that are related to one another.
 

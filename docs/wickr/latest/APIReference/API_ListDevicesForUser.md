@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_ListDevice
 ---
 
 # ListDevicesForUser
-<a name="API_ListDevicesForUser"></a>
 
 Retrieves a paginated list of devices associated with a specific user in a Wickr network. This operation returns information about all devices where the user has logged into Wickr.
 

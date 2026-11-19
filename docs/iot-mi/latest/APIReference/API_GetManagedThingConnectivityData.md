@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetManage
 ---
 
 # GetManagedThingConnectivityData
-<a name="API_GetManagedThingConnectivityData"></a>
 
 Get the connectivity status of a managed thing.
 

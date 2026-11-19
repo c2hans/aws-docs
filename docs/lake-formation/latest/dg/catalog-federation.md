@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/catalog-federat
 ---
 
 # Catalog federation to remote Iceberg catalogs
-<a name="catalog-federation"></a>
 
 Catalog federation in AWS Glue provides direct and secure access to Iceberg tables, stored in Amazon S3 and cataloged in remote catalogs, using AWS analytics engines. Catalog federation synchronizes metadata across Data Catalog and remote catalogs when you access remote tables. It is supported by a wide variety of analytics engines, including Amazon Redshift, Amazon EMR, Amazon Athena, AWS Glue, third-party engines like Apache Spark, and more.
 

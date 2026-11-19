@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrieveAndGenerateStreamResponseOutput
-<a name="API_agent-runtime_RetrieveAndGenerateStreamResponseOutput"></a>
 
 A retrieve and generate stream response output.
 

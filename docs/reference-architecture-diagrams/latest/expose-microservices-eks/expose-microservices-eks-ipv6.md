@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # Expose Amazon EKS Microservices in IPv6 Clusters
-<a name="expose-microservices-eks-ipv6"></a>
 
 This architecture shows how to expose Amazon EKS microservices with IPv6 and connect to both IPv6 and IPv4 endpoints on the internet. Moving to IPv6 also solves pod IP exhaustion because you do not need to work around IPv4 limits.
 

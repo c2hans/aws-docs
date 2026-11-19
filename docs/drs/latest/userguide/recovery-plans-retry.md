@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans-retr
 ---
 
 # Retrying a failed step
-<a name="recovery-plans-retry"></a>
 
 Retrying a step recovers only the servers in that step that failed or timed out. Servers in the step that already recovered stay as they are, and AWS Elastic Disaster Recovery does not recover them a second time. After the retried step completes, the execution continues automatically with the steps that follow it.
 

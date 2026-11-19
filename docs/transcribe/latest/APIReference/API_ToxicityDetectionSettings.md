@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Toxic
 ---
 
 # ToxicityDetectionSettings
-<a name="API_ToxicityDetectionSettings"></a>
 
 Contains `ToxicityCategories`, which is a required parameter if you want to enable toxicity detection (`ToxicityDetection`) in your transcription request.
 

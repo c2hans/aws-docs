@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/userguide/what-is.html
 ---
 
 # What is Multi-party approval?
-<a name="what-is"></a>
 
 **Security through approval**
 

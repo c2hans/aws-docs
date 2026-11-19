@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-memory-d
 ---
 
 # Disable agent memory
-<a name="agents-memory-disable"></a>
 
 You can disable memory for your agent at any time. You cannot access memory sessions after you disable memory for your agent.
 

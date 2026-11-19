@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # UpdateIdentityStore
-<a name="API_UpdateIdentityStore"></a>
 
 Updates the configuration of the specified identity store, including its network configuration.
 

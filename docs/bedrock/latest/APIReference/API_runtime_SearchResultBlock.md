@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # SearchResultBlock
-<a name="API_runtime_SearchResultBlock"></a>
 
 A search result block that enables natural citations with proper source attribution for retrieved content.
 

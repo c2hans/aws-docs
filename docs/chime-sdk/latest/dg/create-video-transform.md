@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-video-transfo
 ---
 
 # Creating the VideoTransformDevice object for the Amazon Chime SDK
-<a name="create-video-transform"></a>
 
 The following example shows how to create a `VideoTransformDevice` object that contains the `VideoFxProcessor`.
 

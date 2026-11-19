@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_RuleMet
 ---
 
 # RuleMetadata
-<a name="API_RuleMetadata"></a>
 
 Metadata about a rule. Rule metadata includes an ID, a name, a list of tags, and a short and long description. CodeGuru Reviewer uses rules to analyze code. A rule's recommendation is included in analysis results if code is detected that violates the rule.
 

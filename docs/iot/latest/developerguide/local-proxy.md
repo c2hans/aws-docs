@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/local-proxy.ht
 ---
 
 # Local proxy
-<a name="local-proxy"></a>
 
 The local proxy transmits data sent by the application running on the source device by using secure tunneling over a WebSocket secure connection. You can download the local proxy source from [GitHub](https://github.com/aws-samples/aws-iot-securetunneling-localproxy).
 

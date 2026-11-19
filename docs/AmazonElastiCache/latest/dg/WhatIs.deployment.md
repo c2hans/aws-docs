@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WhatIs.deplo
 ---
 
 # Choosing between deployment options
-<a name="WhatIs.deployment"></a>
 
 Amazon ElastiCache has two deployment options:
 + Serverless caching

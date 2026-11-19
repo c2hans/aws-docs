@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DeleteCluste
 ---
 
 # DeleteCluster
-<a name="API_DeleteCluster"></a>
 
 Deletes an Amazon EKS cluster control plane.
 

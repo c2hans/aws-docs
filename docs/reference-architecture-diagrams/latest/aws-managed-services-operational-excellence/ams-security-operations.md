@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # AMS for Security Operations
-<a name="ams-security-operations"></a>
 
 Use this reference architecture to understand how AWS Managed Services (AMS) accelerates security and compliance in an AWS environment. AMS enables numerous security guardrails as part of account onboarding, providing a well-monitored and secure environment from day one.
 

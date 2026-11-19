@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Pinpoint::PushTemplate DefaultPushNotificationTemplate
-<a name="aws-properties-pinpoint-pushtemplate-defaultpushnotificationtemplate"></a>
 
 Specifies the default settings and content for a message template that can be used in messages that are sent through a push notification channel.
 

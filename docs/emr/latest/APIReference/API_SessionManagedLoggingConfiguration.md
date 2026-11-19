@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_SessionManag
 ---
 
 # SessionManagedLoggingConfiguration
-<a name="API_SessionManagedLoggingConfiguration"></a>
 
 The Amazon EMR-managed logging configuration for a session.
 

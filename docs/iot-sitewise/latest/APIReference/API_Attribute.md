@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Att
 ---
 
 # Attribute
-<a name="API_Attribute"></a>
 
 Contains an asset attribute property. For more information, see [Attributes](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/asset-properties.html#attributes) in the * AWS IoT SiteWise User Guide*.
 

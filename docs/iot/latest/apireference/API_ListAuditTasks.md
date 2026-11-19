@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListAuditTas
 ---
 
 # ListAuditTasks
-<a name="API_ListAuditTasks"></a>
 
 Lists the Device Defender audits that have been performed during a given time period.
 

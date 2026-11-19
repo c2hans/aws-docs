@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Migration flow
-<a name="schema-migration-flow"></a>
 
 This section describes how you can apply an iterative approach to migrating your Solr schema to an Amazon OpenSearch Service index.
 

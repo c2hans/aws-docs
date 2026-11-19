@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDetectiveFullAccess
-<a name="AmazonDetectiveFullAccess"></a>
 
 **Description**: Provides full access to Amazon Detective service and scoped access to the console UI dependencies
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ItemError.html
 ---
 
 # ItemError
-<a name="API_ItemError"></a>
 
 An error that occurred when retrieving an iterable form item.
 

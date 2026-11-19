@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteDeviceFleet
-<a name="API_DeleteDeviceFleet"></a>
 
 Deletes a fleet.
 

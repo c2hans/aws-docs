@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/preparing-failover.
 ---
 
 # Preparing for recovery
-<a name="preparing-failover"></a>
 
  After installing the AWS Elastic Disaster Recovery Agent on your Source Servers, we recommend validating your Source Server settings and testing (drilling) frequently in preparation of a recovery event. Configuration of the recovery environment includes DRS Launch Settings, EC2 Launch Template, and Post-Launch Actions.
 

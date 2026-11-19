@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobDashboardOverrideTags
-<a name="API_AssetBundleImportJobDashboardOverrideTags"></a>
 
 An object that contains a list of tags to be assigned to a list of dashboard IDs.
 

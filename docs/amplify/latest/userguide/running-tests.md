@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/running-tests.h
 ---
 
 # Setting up end-to-end Cypress tests for your Amplify application
-<a name="running-tests"></a>
 
 You can run end-to-end (E2E) tests in the test phase of your Amplify app to catch regressions before pushing code to production. The test phase can be configured in the build specification YAML. Currently, you can run only the Cypress testing framework during a build.
 

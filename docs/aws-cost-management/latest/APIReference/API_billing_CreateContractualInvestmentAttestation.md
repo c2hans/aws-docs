@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CreateContractualInvestmentAttestation
-<a name="API_billing_CreateContractualInvestmentAttestation"></a>
 
 Creates an attestation that claims an investment award for a completed milestone or outcome within a private pricing contract. Supply a `clientToken` to make the request idempotent so a safe retry does not create a duplicate attestation. This operation starts an asynchronous review and returns an `attestationId` while the attestation is pending.
 

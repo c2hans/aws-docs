@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetMe
 ---
 
 # GetMergeCommit
-<a name="API_GetMergeCommit"></a>
 
 Returns information about a specified merge commit.
 

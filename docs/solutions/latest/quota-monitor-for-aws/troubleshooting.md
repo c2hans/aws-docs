@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/t
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 The Quota Monitor for AWS logs errors, warnings, informational messages, and debugging messages for the solution’s Lambda functions. To choose the type of messages to log, find the applicable function in the Lambda console, and change the **LOG\_LEVEL** environment variable to the applicable type of message.
 

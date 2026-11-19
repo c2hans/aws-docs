@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedAgUiDescriptor
-<a name="API_UpdatedAgUiDescriptor"></a>
 
 The AG-UI descriptor patch wrapper. Omit to leave the descriptor unchanged; supply an empty object to remove it; supply optionalValue to patch its fields.
 

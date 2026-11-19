@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Diff
 ---
 
 # DifferentialPrivacyTemplateUpdateParameters
-<a name="API_DifferentialPrivacyTemplateUpdateParameters"></a>
 
 The epsilon and noise parameter values that you want to update in the differential privacy template.
 

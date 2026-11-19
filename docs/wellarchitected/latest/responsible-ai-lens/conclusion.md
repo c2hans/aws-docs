@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
  The Responsible AI Lens provides guidance on implementing trustworthy AI systems. The eight focus areas of the Lens guide builder teams from initial use case definition through development, deployment, and ongoing operations.
 

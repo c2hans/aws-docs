@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetDevEndpoint.ht
 ---
 
 # GetDevEndpoint
-<a name="API_GetDevEndpoint"></a>
 
 Retrieves information about a specified development endpoint.
 

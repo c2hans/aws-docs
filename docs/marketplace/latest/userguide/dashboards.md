@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/dashboards.
 ---
 
 # Seller dashboards
-<a name="dashboards"></a>
 
 AWS Marketplace provides dashboards powered by [AWS Quick](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) with charts, graphs, and insights that help you access and analyze financial, sales, and marketing data. The seller dashboards include:
 

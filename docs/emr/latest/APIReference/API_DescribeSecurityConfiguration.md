@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_DescribeSecu
 ---
 
 # DescribeSecurityConfiguration
-<a name="API_DescribeSecurityConfiguration"></a>
 
 Provides the details of a security configuration by returning the configuration JSON.
 

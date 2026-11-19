@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Attachm
 ---
 
 # AttachmentOutput
-<a name="API_AttachmentOutput"></a>
 
 The details of a file uploaded during chat.
 

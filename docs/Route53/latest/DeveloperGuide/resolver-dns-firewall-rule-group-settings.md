@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-d
 ---
 
 # Rule group settings in DNS Firewall
-<a name="resolver-dns-firewall-rule-group-settings"></a>
 
 When you create or edit a DNS Firewall rule group, you specify the following values:
 

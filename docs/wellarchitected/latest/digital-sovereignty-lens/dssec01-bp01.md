@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSSEC01-BP01 Establish secure foundations aligned with regulatory requirements
-<a name="dssec01-bp01"></a>
 
  Sovereign workloads carry regulatory obligations that are best met when security and sovereignty controls are part of the foundation rather than added later. A foundation with automated guardrails for data residency, jurisdictional access, and continuous compliance monitoring means teams can deploy new workloads without rebuilding these controls each time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Setting the default edition for a DB instance
-<a name="Appendix.Oracle.CommonDBATasks.DefaultEdition"></a>
 
 You can redefine database objects in a private environment called an edition. You can use edition-based redefinition to upgrade an application's database objects with minimal downtime.
 

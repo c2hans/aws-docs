@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Unproce
 ---
 
 # UnprocessedSecurityControl
-<a name="API_UnprocessedSecurityControl"></a>
 
  Provides details about a security control for which a response couldn't be returned.
 

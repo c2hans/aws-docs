@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/ko
 ---
 
 # Amazon Pinpoint examples using SDK for Kotlin
-<a name="kotlin_pinpoint_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Kotlin with Amazon Pinpoint.
 

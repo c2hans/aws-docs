@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Regist
 ---
 
 # RegisterDevices
-<a name="API_RegisterDevices"></a>
 
 Register devices.
 

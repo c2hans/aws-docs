@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-la
 ---
 
 # People perspective
-<a name="people"></a>
 
 This section focuses on the following key areas of the people perspective:
 + [Executive support](#executive-support) - Identifying a single-threaded leader who's empowered to make decisions

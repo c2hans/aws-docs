@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingPlanExtension
-<a name="API_TrainingPlanExtension"></a>
 
 Details about an extension to a training plan, including the offering ID, dates, status, and cost information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Fille
 ---
 
 # FilledMapConditionalFormattingOption
-<a name="API_FilledMapConditionalFormattingOption"></a>
 
 Conditional formatting options of a `FilledMapVisual`.
 

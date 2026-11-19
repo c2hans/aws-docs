@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENPERF02-BP02 Optimize inference parameters to improve response quality
-<a name="genperf02-bp02"></a>
 
  Foundation model response quality can be affected by inference hyperparameters. Optimize inference hyperparameters for your use case to help maintain consistent response quality and to help control the non-deterministic nature of foundation models.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-cev-sq
 ---
 
 # Working with custom engine versions for RDS Custom for SQL Server
-<a name="custom-cev-sqlserver"></a>
 
 A *custom engine version (CEV)* for RDS Custom for SQL Server is an Amazon Machine Image (AMI) that includes Microsoft SQL Server.
 

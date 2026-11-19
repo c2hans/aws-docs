@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListPro
 ---
 
 # ListProjectProfiles
-<a name="API_ListProjectProfiles"></a>
 
 Lists project profiles.
 

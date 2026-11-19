@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ServiceUpdate
-<a name="API_ServiceUpdate"></a>
 
 An update that you can apply to your Valkey or Redis OSS clusters.
 

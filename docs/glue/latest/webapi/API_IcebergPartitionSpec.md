@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergPartitionS
 ---
 
 # IcebergPartitionSpec
-<a name="API_IcebergPartitionSpec"></a>
 
 Defines the partitioning specification for an Iceberg table, determining how table data will be organized and partitioned for optimal query performance.
 

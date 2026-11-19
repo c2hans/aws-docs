@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/googleads-configuring.htm
 ---
 
 # Configuring Google Ads
-<a name="googleads-configuring"></a>
 
 Before you can use AWS Glue to transfer from Google Ads, you must meet these requirements:
 

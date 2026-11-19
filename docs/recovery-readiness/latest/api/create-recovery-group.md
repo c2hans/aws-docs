@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/create-rec
 ---
 
 # Create a recovery group
-<a name="create-recovery-group"></a>
 
 The following is an example of a request to list the cells in an account, and the response.
 

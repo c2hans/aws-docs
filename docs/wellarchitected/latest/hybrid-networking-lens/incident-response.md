@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # Incident response
-<a name="incident-response"></a>
 
  Security incidents can span both on-premises and cloud infrastructure, requiring coordinated response capabilities across environment boundaries. The complexity of hybrid architectures - with multiple connection types, intricate routing policies, and layered security controls - creates unique challenges for incident response teams. Responders must understand how incidents can propagate across interconnection points and impact different parts of the infrastructure while coordinating containment and remediation efforts across both environments.
 

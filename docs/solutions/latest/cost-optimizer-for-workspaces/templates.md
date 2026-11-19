@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # AWS CloudFormation templates
-<a name="templates"></a>
 
 You can download the CloudFormation templates for this solution before deploying it.
 

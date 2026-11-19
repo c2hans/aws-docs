@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ListSpaces
-<a name="API_ListSpaces"></a>
 
 Returns the spaces in the account, optionally filtered by domain.
 

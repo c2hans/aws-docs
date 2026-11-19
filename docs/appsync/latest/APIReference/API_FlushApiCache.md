@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_FlushApi
 ---
 
 # FlushApiCache
-<a name="API_FlushApiCache"></a>
 
 Flushes an `ApiCache` object.
 

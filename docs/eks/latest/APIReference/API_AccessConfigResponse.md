@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AccessConfig
 ---
 
 # AccessConfigResponse
-<a name="API_AccessConfigResponse"></a>
 
 The access configuration for the cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # ServerSummary
-<a name="API_ServerSummary"></a>
 
  Object containing details about the servers imported by Application Discovery Service
 

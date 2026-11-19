@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataInstanceMarketOptionsSpotOptionsDetails
-<a name="API_AwsEc2LaunchTemplateDataInstanceMarketOptionsSpotOptionsDetails"></a>
 
  Provides details about the market (purchasing) options for Spot Instances.
 

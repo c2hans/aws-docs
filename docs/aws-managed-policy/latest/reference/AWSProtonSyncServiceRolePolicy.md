@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSProtonSyncServiceRolePolicy
-<a name="AWSProtonSyncServiceRolePolicy"></a>
 
 **Description**: Policy which allows AWS Proton to sync your git repository contents to Proton or sync Proton contents to your git repositories.
 

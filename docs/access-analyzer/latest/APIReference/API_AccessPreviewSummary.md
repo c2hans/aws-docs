@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # AccessPreviewSummary
-<a name="API_AccessPreviewSummary"></a>
 
 Contains a summary of information about an access preview.
 

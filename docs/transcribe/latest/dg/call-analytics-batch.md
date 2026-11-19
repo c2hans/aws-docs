@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/call-analytics-batc
 ---
 
 # Post-call analytics
-<a name="call-analytics-batch"></a>
 
 Call Analytics provides post-call analyses, which are useful for monitoring customer service trends.
 

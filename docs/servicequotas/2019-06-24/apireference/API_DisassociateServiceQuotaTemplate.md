@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # DisassociateServiceQuotaTemplate
-<a name="API_DisassociateServiceQuotaTemplate"></a>
 
 Disables your quota request template. After a template is disabled, the quota increase requests in the template are not applied to new AWS accounts in your organization. Disabling a quota request template does not apply its quota increase requests.
 

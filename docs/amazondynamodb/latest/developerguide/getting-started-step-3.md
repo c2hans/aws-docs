@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/get
 ---
 
 # Step 3: Read data from a DynamoDB table
-<a name="getting-started-step-3"></a>
 
 In this step, you'll read back one of the items that you created in [Step 2: Write data to a DynamoDB table](getting-started-step-2.md). You can use the DynamoDB console or the AWS CLI to read an item from the `Music` table by specifying `Artist` and `SongTitle`.
 

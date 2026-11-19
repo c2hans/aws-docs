@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-eks-checkp
 ---
 
 # Memory mapped dataloader
-<a name="sagemaker-eks-checkpointless-features-mmap"></a>
 
 Another restart overhead stems from data loading: the training cluster remains idle while the dataloader initializes, downloads data from remote file systems, and processes it into batches.
 

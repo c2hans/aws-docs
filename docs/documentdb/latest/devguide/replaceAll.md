@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/replaceAll.ht
 ---
 
 # $replaceAll
-<a name="replaceAll"></a>
 
 Introduced in 5.0
 

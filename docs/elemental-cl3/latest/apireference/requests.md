@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/reques
 ---
 
 # Requests
-<a name="requests"></a>
 
 Requests consist of a URL, a header, and a body.
 

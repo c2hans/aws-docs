@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # EXP
-<a name="sql-reference-exp"></a>
 
 ```
 EXP ( <number-expression> )

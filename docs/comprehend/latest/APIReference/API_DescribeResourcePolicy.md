@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Descr
 ---
 
 # DescribeResourcePolicy
-<a name="API_DescribeResourcePolicy"></a>
 
 Gets the details of a resource-based policy that is attached to a custom model, including the JSON body of the policy.
 

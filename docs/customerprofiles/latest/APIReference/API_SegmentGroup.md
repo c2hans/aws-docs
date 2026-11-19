@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # SegmentGroup
-<a name="API_connect-customer-profiles_SegmentGroup"></a>
 
 Contains all groups of the segment definition.
 

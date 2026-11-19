@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/tut
 ---
 
 # Train 3D Gaussian Splatting from your own video
-<a name="tutorial-gsplat-pipeline"></a>
 
 This tutorial walks you through training your own 3D Gaussian Splatting point cloud from a video that you capture. You submit the [Gaussian Splatting pipeline job bundle](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/gsplat_pipeline) on the GitHub website to your Deadline Cloud farm. The job takes a video file as input and produces a Gaussian Splatting `.ply` file as output. When the job completes, you can view the result in any Gaussian Splatting viewer, such as [SuperSplat](https://github.com/playcanvas/supersplat) on the GitHub website.
 

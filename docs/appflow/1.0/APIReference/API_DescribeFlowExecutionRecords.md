@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DescribeFlo
 ---
 
 # DescribeFlowExecutionRecords
-<a name="API_DescribeFlowExecutionRecords"></a>
 
  Fetches the execution history of the flow.
 

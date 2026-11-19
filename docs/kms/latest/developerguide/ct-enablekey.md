@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-enablekey.h
 ---
 
 # EnableKey
-<a name="ct-enablekey"></a>
 
 The following example shows an AWS CloudTrail log entry for the [EnableKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_EnableKey.html) operation. For information about enabling and disabling AWS KMS keys in AWS KMS, see [Enable and disable keys](enabling-keys.md)..
 

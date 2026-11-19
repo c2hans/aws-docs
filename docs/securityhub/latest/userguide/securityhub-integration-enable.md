@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 ---
 
 # Enabling the flow of findings from a Security Hub CSPM integration
-<a name="securityhub-integration-enable"></a>
 
 On the **Integrations** page of the AWS Security Hub CSPM console, you can see the required steps to enable each integration.
 

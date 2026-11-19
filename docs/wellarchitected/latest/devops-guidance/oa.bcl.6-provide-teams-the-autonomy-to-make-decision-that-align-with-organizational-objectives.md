@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.BCL.6] Provide teams the autonomy to make decision that align with organizational objectives
-<a name="oa.bcl.6-provide-teams-the-autonomy-to-make-decision-that-align-with-organizational-objectives"></a>
 
  **Category:** FOUNDATIONAL
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/using-transcript-confide
 ---
 
 # Using voice transcription confidence scores to improve conversations with your Lex V2 bot
-<a name="using-transcript-confidence-scores"></a>
 
  When a user makes a voice utterance, Amazon Lex V2 uses automatic speech recognition (ASR) to transcribe the user's request before it is interpreted. By default, Amazon Lex V2 uses the most likely transcription of the audio for interpretation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/ce-dl-cr.h
 ---
 
 # Downloading your Savings Plans coverage report
-<a name="ce-dl-cr"></a>
 
 You can download a CSV file of your Savings Plans coverage report data.<a name="ce-dl-pr-howto"></a>
 

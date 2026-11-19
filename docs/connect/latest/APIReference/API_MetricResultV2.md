@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricRe
 ---
 
 # MetricResultV2
-<a name="API_MetricResultV2"></a>
 
 Contains information about the metric results.
 

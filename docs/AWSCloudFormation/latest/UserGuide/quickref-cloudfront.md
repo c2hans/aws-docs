@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # Amazon CloudFront template snippets
-<a name="quickref-cloudfront"></a>
 
 Use these sample template snippets with your Amazon CloudFront distribution resource in CloudFormation. For more information, see the [Amazon CloudFront resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/AWS_CloudFront.html).
 

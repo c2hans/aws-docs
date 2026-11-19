@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-ds-info.html
 ---
 
 # View data source information for your Amazon Bedrock knowledge base
-<a name="kb-ds-info"></a>
 
 **Important**
 For optimized retrieval accuracy and a managed experience, we recommend [Amazon Bedrock Managed Knowledge Base](kb-build-managed.md).

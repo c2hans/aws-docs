@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_StatisticsSu
 ---
 
 # StatisticsSummary
-<a name="API_StatisticsSummary"></a>
 
 Information about the characteristic sets generated in the statistics.
 

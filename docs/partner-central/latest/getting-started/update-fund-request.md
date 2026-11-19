@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/u
 ---
 
 # Updating a fund request
-<a name="update-fund-request"></a>
 
 Once a Fund Request has been submitted, users can edit or update details by recalling a Fund Request. The Recall function will bring the Fund Request back to the Created stage where users can perform edits. The Recall function is only available for Fund Requests prior to entering the Pre-Approval Stage, at which point, the Fund Request can no longer be recalled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Ba
 ---
 
 # BatchConfiguration
-<a name="API_BatchConfiguration"></a>
 
 Batching configuration for a subscriber.
 

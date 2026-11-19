@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # RdsSalSettings
-<a name="API_RdsSalSettings"></a>
 
 Server settings that are specific to a Remote Desktop Services (RDS) license server.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-creating-volume
 ---
 
 # Create an Amazon EBS volume
-<a name="ebs-creating-volume"></a>
 
 You can create an Amazon EBS volume and then attach it to any EC2 instance in the same Availability Zone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/summary-page.
 ---
 
 # Using the Detective summary dashboard
-<a name="summary-page"></a>
 
 Use the Summary dashboard in Amazon Detective to identify entities to investigate the origin of activity during the previous 24 hours. The Amazon Detective Summary dashboard helps you to identify entities that are associated with specific types of unusual activity. It is one of several possible starting points for an investigation.
 

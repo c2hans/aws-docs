@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Communication and governance planning
-<a name="communication-governance-planning"></a>
 
 ## Communication and governance strategy
 <a name="communication-governance-strategy"></a>

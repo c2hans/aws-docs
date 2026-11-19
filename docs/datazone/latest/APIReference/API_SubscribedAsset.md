@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Subscri
 ---
 
 # SubscribedAsset
-<a name="API_SubscribedAsset"></a>
 
 The details of the asset for which the subscription grant is created.
 

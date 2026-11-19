@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/delete-coll
 ---
 
 # Deleting collaborations
-<a name="delete-collaboration"></a>
 
 As a collaboration creator, you can delete a collaboration that you created.
 

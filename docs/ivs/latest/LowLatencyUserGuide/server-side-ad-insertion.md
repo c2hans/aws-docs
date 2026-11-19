@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/server-si
 ---
 
 # Server-Side Ad Insertion (SSAI)
-<a name="server-side-ad-insertion"></a>
 
 Amazon IVS server-side ad insertion (SSAI) enables you to monetize your streams with video ads. IVS SSAI integrates with AWS Elemental MediaTailor, giving you access to capabilities such as ad decisioning, audience targeting, and personalization. IVS supports two types of ad breaks:
 + **Mid-roll** — Manually triggered during a live stream using the `InsertAdBreak` API.

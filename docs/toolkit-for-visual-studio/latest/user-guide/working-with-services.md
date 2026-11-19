@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Working with AWS Services
-<a name="working-with-services"></a>
 
 The following topics describes how to get started working with AWS services from the AWS Toolkit for Visual Studio with Amazon Q.
 

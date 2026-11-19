@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Gateway
 ---
 
 # GatewayRouteHostnameMatch
-<a name="API_GatewayRouteHostnameMatch"></a>
 
 An object representing the gateway route host name to match.
 

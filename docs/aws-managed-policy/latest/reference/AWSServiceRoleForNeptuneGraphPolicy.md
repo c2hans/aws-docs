@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForNeptuneGraphPolicy
-<a name="AWSServiceRoleForNeptuneGraphPolicy"></a>
 
 **Description**: Provides Cloudwatch access to publish operational and usage metrics and logs for Amazon Neptune
 

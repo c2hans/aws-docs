@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # PingBeacon
-<a name="API_PingBeacon"></a>
 
 Information about a UDP ping beacon that can be used to measure network latency between a player device and an Amazon GameLift Servers hosting location.
 

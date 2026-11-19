@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_GenerateBo
 ---
 
 # GenerateBotElement
-<a name="API_GenerateBotElement"></a>
 
 Generates sample utterances for an intent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTREL01-BP04 Standardize communication protocols
-<a name="agentrel01-bp04"></a>
 
  Custom message formats between every agent pair turn new integrations into one-off engineering projects. Standardized schemas, versioned endpoints, and a canonical error format let agents compose into workflows without a translation layer at every boundary.
 

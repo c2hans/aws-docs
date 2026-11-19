@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Cloud deployment strategies
-<a name="cloud-deployment-strategies"></a>
 
 AWS defines cloud computing as the on-demand delivery of IT resources over the internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services, such as computing power, storage, and databases, on an as-needed basis from a cloud provider. Cloud computing allows educational institutions to avoid undifferentiated heavy lifting such as hardware procurement, maintenance, and capacity planning. When you adopt and deploy cloud solutions, you can choose from several models: single cloud, hybrid cloud, and multicloud.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/asff-resour
 ---
 
 # Other object in ASFF
-<a name="asff-resourcedetails-other"></a>
 
 In the AWS Security Finding Format (ASFF), the `Other` object specifies custom fields and values. For more information about ASFF, see [AWS Security Finding Format (ASFF)](securityhub-findings-format.md).
 

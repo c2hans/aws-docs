@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PostC
 ---
 
 # PostCommentForComparedCommit
-<a name="API_PostCommentForComparedCommit"></a>
 
 Posts a comment on the comparison between two commits.
 

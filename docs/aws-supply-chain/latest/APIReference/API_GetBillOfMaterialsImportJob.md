@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # GetBillOfMaterialsImportJob
-<a name="API_GetBillOfMaterialsImportJob"></a>
 
 Get status and details of a BillOfMaterialsImportJob.
 

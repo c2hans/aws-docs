@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_DeleteR
 ---
 
 # DeleteRecipeVersion
-<a name="API_DeleteRecipeVersion"></a>
 
 Deletes a single version of a DataBrew recipe.
 

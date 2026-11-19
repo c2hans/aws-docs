@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # GetDNSView
-<a name="API_route53globalresolver_GetDNSView"></a>
 
 Retrieves information about a DNS view.
 

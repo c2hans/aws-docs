@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Disas
 ---
 
 # DisassociateSoftwareFromImageBuilder
-<a name="API_DisassociateSoftwareFromImageBuilder"></a>
 
 Removes license included application(s) association(s) from an image builder instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_Identity.htm
 ---
 
 # Identity
-<a name="API_Identity"></a>
 
 An object representing an identity provider.
 

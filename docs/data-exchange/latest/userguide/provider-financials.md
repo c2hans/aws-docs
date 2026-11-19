@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/provider-
 ---
 
 # AWS Data Exchange provider financials on AWS Marketplace
-<a name="provider-financials"></a>
 
 The following topics cover financial information about providing data through AWS Data Exchange.
 

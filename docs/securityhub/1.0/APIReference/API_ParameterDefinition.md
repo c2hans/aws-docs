@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Paramet
 ---
 
 # ParameterDefinition
-<a name="API_ParameterDefinition"></a>
 
  An object that describes a security control parameter and the options for customizing it.
 

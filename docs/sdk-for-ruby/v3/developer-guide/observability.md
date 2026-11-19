@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/observab
 ---
 
 # Configuring observability features in the AWS SDK for Ruby
-<a name="observability"></a>
 
  Observability is the extent to which a system's current state can be inferred from the data it emits. The data emitted is commonly referred to as telemetry. The AWS SDK for Ruby can provide the traces as a telemetry signal. You can wire up a `TelemetryProvider` to collect and send telemetry data to an observability backend. The SDK currently supports OpenTelemetry (OTel) as a telemetry provider and OpenTelemetry has many ways to export your telemetry data, including using [AWS X-Ray](https://docs.aws.amazon.com/xray/?icmpid=docs_homepage_devtools) or [Amazon CloudWatch](https://docs.aws.amazon.com/cloudwatch/?icmpid=docs_homepage_mgmtgov). For more information on OpenTelemetry exporters for Ruby, see [Exporters](https://opentelemetry.io/docs/languages/ruby/exporters) on the OpenTelemetry website.
 

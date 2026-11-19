@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/s3-integration-tr
 ---
 
 # Troubleshooting Amazon S3 integration issues
-<a name="s3-integration-troubleshooting"></a>
 
 If you encounter issues connecting to your Amazon S3 bucket, review the following common causes and solutions.
 

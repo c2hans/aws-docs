@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle DBMS\_SQL
-<a name="chap-oracle-aurora-mysql.sql.dynamic"></a>
 
 When working with Oracle databases migrated to AWS you can use `DBMS_SQL` to maintain application functionality to run dynamic SQL statements. You can also use `DBMS_SQL` for automating database operations. The following sections cover the details of using `DBMS_SQL` with code examples.
 

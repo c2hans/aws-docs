@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_CreateSolNet
 ---
 
 # CreateSolNetworkPackage
-<a name="API_CreateSolNetworkPackage"></a>
 
 Creates a network package.
 

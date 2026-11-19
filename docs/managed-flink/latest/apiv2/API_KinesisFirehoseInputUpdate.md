@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_KinesisFi
 ---
 
 # KinesisFirehoseInputUpdate
-<a name="API_KinesisFirehoseInputUpdate"></a>
 
 For a SQL-based Kinesis Data Analytics application, when updating application input configuration, provides information about a Kinesis Data Firehose delivery stream as the streaming source.
 

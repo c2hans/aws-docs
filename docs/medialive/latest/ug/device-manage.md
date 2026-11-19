@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/device-manage.html
 ---
 
 # Managing Link devices
-<a name="device-manage"></a>
 
 This section provides reference information for operations you can perform on the Link device. For complete procedures to use Link in a MediaLive channel or a MediaConnect flow, see [Using Link with a MediaLive input](device-use-input.md) and [Using Link with a MediaConnect flow](device-use-flow.md).
 

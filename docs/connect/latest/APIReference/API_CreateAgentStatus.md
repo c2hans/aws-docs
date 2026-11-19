@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateAg
 ---
 
 # CreateAgentStatus
-<a name="API_CreateAgentStatus"></a>
 
 Creates an agent status for the specified Connect Customer instance.
 

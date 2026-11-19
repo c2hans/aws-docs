@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # Choosing the right GitOps tool for your Amazon EKS cluster
-<a name="introduction"></a>
 
 *Pradip kumar Pandey and Pratap Kumar Nanda, Amazon Web Services*
 

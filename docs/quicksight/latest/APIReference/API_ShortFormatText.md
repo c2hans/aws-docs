@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Short
 ---
 
 # ShortFormatText
-<a name="API_ShortFormatText"></a>
 
 The text format for the title.
 

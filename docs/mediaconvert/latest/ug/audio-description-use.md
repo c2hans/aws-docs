@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/audio-description
 ---
 
 # Configuring a job that mixes audio descriptions
-<a name="audio-description-use"></a>
 
 When you mix audio descriptions, jobs have the following requirements:
 

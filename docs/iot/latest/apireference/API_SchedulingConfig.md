@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_SchedulingCo
 ---
 
 # SchedulingConfig
-<a name="API_SchedulingConfig"></a>
 
 Specifies the date and time that a job will begin the rollout of the job document to all devices in the target group. Additionally, you can specify the end behavior for each job execution when it reaches the scheduled end time.
 

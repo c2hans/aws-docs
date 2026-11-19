@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteOAuthClientApplication
-<a name="API_DeleteOAuthClientApplication"></a>
 
 Deletes an OAuthClientApplication.
 

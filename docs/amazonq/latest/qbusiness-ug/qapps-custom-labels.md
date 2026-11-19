@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qapps-custom
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Custom labels for Amazon Q Apps
-<a name="qapps-custom-labels"></a>
 
  To organize and classify apps based on your unique business needs, Administrators can customize the labels available for published Q Apps. You can add up to 10 labels, and remove or update existing labels. Labels help web experience users find Q Apps in the library.
 

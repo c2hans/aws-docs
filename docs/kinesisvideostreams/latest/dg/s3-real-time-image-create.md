@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/s3-real-ti
 ---
 
 # Automated real-time image generation
-<a name="s3-real-time-image-create"></a>
 
 Amazon Kinesis Video Streams offers the capability to transcode and deliver images. Kinesis Video Streams automatically extracts images from video data in real-time, and delivers the images to your specified Amazon S3 bucket. Implementing real-time, automated image extraction involves the following steps:
 + Creating an S3 bucket to receive the generated images.

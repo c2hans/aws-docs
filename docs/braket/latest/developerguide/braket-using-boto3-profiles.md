@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-usin
 ---
 
 # Configure AWS CLI profiles for Boto3 and the Braket SDK
-<a name="braket-using-boto3-profiles"></a>
 
 The Amazon Braket SDK relies upon the default AWS CLI credentials, unless you explicitly specify otherwise. We recommend that you keep the default when you run on a managed Amazon Braket notebook because you must provide an IAM role that has permissions to launch the notebook instance.
 

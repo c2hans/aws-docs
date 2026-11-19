@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/pro
 ---
 
 # Provide applications for your jobs
-<a name="provide-applications"></a>
 
 You can use a queue environment to load applications to process your jobs. When you create a service-managed fleet using the Deadline Cloud console, you have the option of creating a queue environment that uses the conda package manager to load applications.
 

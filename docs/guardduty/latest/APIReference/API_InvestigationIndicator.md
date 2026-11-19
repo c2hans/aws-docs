@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationIndicator
-<a name="API_InvestigationIndicator"></a>
 
 Contains a threat indicator, such as an IP address, a domain, or a file hash.
 

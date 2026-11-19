@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # Managing partitions for ETL output in AWS Glue
-<a name="aws-glue-programming-etl-partitions"></a>
 
 Partitioning is an important technique for organizing datasets so they can be queried efficiently. It organizes data in a hierarchical directory structure based on the distinct values of one or more columns.
 

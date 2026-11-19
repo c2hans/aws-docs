@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_UpdateTr
 ---
 
 # UpdateTrafficPolicyComment
-<a name="API_UpdateTrafficPolicyComment"></a>
 
 Updates the comment for a specified traffic policy version.
 

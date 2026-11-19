@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec09-b
 ---
 
 # SEC09-BP03 Authenticate network communications
-<a name="sec09-bp03"></a>
 
  Authenticating network communications means each party verifies the other's identity before they exchange data, using protocols that support authentication. An attacker with unauthorized network access can move laterally and send requests that appear internal, so network location alone is insufficient evidence of identity. Apply it to internal service-to-service traffic as well as traffic from external users.
 

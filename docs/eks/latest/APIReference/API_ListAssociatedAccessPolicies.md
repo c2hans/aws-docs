@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ListAssociat
 ---
 
 # ListAssociatedAccessPolicies
-<a name="API_ListAssociatedAccessPolicies"></a>
 
 Lists the access policies associated with an access entry.
 

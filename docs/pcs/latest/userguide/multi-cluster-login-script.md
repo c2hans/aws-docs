@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/multi-cluster-login
 ---
 
 # Connecting a standalone login node to multiple clusters in AWS PCS
-<a name="multi-cluster-login-script"></a>
 
 The `pcs-multi-cluster-login-configure.sh` script provides an automated way to configure multiple Slurm `sackd` daemons on a single standalone login node. It enables the login node to communicate with multiple clusters. The script automates the following operations:
 + Uses AWS PCS API actions to get cluster information

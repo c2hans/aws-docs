@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-ecs
 ---
 
 # Prerequisites
-<a name="tutorial-ecs-prereqs"></a>
 
 To complete this tutorial, you must first:
 +  Complete steps 2 and 3 in [Getting started with CodeDeploy](getting-started-codedeploy.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/monitor-bgp-route-securi
 ---
 
 # Monitor BGP route protection
-<a name="monitor-bgp-route-security"></a>
 
 IPAM BGP route protection monitors Resource Public Key Infrastructure (RPKI) validity for all Bring Your Own IP (BYOIP) prefixes across accounts and Regions from a single dashboard, detects route overlaps that may indicate hijacking, and, with delegated RPKI, eliminates manual Route Origin Authorization (ROA) management at ARIN, RIPE, APNIC, LACNIC, and NIC.br. You go from logging into Internet Registry (RIR/NIR) portals per-prefix to zero manual ROA operations.
 

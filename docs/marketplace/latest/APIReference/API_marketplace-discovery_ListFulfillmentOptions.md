@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ListFulfillmentOptions
-<a name="API_marketplace-discovery_ListFulfillmentOptions"></a>
 
 Returns the fulfillment options available for a product, including deployment details such as version information, operating systems, usage instructions, and release notes.
 

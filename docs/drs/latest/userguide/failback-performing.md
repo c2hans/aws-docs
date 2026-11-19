@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/failback-performing
 ---
 
 # Failback to on-premises environment
-<a name="failback-performing"></a>
 
 ## Using the Failback Client
 <a name="failback-performing-on-prem"></a>

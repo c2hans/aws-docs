@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/rbac.html
 ---
 
 # RBAC for AWS KMS
-<a name="rbac"></a>
 
 Role-based access control (RBAC) is an authorization strategy that only provides users with the permissions required to perform their job duties, and nothing more. AWS KMS supports RBAC by allowing you to control access to your keys by specifying granular permissions on key usage within [key policies](key-policies.md). Key policies specify a resource, action, effect, principal, and optional conditions to grant access to keys.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DeleteResourcePolicy
-<a name="API_DeleteResourcePolicy"></a>
 
 Deletes a Systems Manager resource policy. A resource policy helps you to define the IAM entity (for example, an AWS account) that can manage your Systems Manager resources. The following resources support Systems Manager resource policies.
 +  `OpsItemGroup` - The resource policy for `OpsItemGroup` enables AWS accounts to view and interact with OpsCenter operational work items (OpsItems).

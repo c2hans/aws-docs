@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_StorageL
 ---
 
 # StorageLensConfiguration
-<a name="API_control_StorageLensConfiguration"></a>
 
 A container for the Amazon S3 Storage Lens configuration.
 
@@ -32,6 +31,11 @@ A container for the AWS organization for this S3 Storage Lens configuration.
 Type: [StorageLensAwsOrg](API_control_StorageLensAwsOrg.md) data type
 Required: No
 
+ ** CostAndUsageReportsPublish **   <a name="AmazonS3-Type-control_StorageLensConfiguration-CostAndUsageReportsPublish"></a>
+A container for the configuration used to publish S3 Storage Lens cost data to AWS Cost and Usage Reports (AWS CUR).
+Type: [StorageLensCostAndUsageReportsPublish](API_control_StorageLensCostAndUsageReportsPublish.md) data type
+Required: No
+
  ** DataExport **   <a name="AmazonS3-Type-control_StorageLensConfiguration-DataExport"></a>
 A container to specify the properties of your S3 Storage Lens metrics export including, the destination, schema and format.
 Type: [StorageLensDataExport](API_control_StorageLensDataExport.md) data type
@@ -50,6 +54,11 @@ Required: No
  ** Include **   <a name="AmazonS3-Type-control_StorageLensConfiguration-Include"></a>
 A container for what is included in this configuration. This container can only be valid if there is no `Exclude` container submitted, and it's not empty.
 Type: [Include](API_control_Include.md) data type
+Required: No
+
+ ** IntAccessTiers **   <a name="AmazonS3-Type-control_StorageLensConfiguration-IntAccessTiers"></a>
+A container element for S3 Storage Lens Intelligent-Tiering access tier metrics.
+Type: [IntAccessTiers](API_control_IntAccessTiers.md) data type
 Required: No
 
  ** PrefixDelimiter **   <a name="AmazonS3-Type-control_StorageLensConfiguration-PrefixDelimiter"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # LoggingConfiguration
-<a name="API_LoggingConfiguration"></a>
 
 Defines how AWS Network Firewall performs logging for a [Firewall](API_Firewall.md).
 

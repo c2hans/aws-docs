@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTFleetwiseServiceRolePolicy
-<a name="AWSIoTFleetwiseServiceRolePolicy"></a>
 
 **Description**: Grants permissions to AWS Resources and metaData used or managed by AWSIoTFleetwise for auxiliary features
 

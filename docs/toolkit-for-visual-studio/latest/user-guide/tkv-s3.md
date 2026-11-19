@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Using Amazon S3 from AWS Explorer
-<a name="tkv-s3"></a>
 
 Amazon Simple Storage Service (Amazon S3) enables you to store and retrieve data from any connection to the Internet. All data you store on Amazon S3 is associated with your account and, by default, can only be accessed by you. The Toolkit for Visual Studio enables you to store data on Amazon S3 and to view, manage, retrieve, and distribute that data.
 

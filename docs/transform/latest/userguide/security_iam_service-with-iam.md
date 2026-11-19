@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/security_iam_
 ---
 
 # How AWS Transform works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AWS Transform, learn what IAM features are available to use with AWS Transform.
 

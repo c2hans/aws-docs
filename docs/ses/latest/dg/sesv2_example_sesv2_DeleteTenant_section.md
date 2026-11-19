@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sesv2_example_sesv2_Delete
 ---
 
 # Use `DeleteTenant` with an AWS SDK
-<a name="sesv2_example_sesv2_DeleteTenant_section"></a>
 
 The following code example shows how to use `DeleteTenant`.
 

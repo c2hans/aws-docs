@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_St
 ---
 
 # StartPatientInsightsJob
-<a name="API_StartPatientInsightsJob"></a>
 
 Starts a new patient insights job.
 

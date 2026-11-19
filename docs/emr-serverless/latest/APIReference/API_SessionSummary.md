@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_S
 ---
 
 # SessionSummary
-<a name="API_SessionSummary"></a>
 
 The summary of attributes associated with a session.
 

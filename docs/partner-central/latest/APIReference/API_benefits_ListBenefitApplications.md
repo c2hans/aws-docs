@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListBenefitApplications
-<a name="API_benefits_ListBenefitApplications"></a>
 
 Retrieves a paginated list of benefit applications based on specified filter criteria.
 

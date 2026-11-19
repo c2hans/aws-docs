@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MFGSCE2: Industrial data catalog
-<a name="mfgsce2-industrial-data-catalog"></a>
 
  In modern manufacturing (industry 4.0), organizations collect massive volumes of data from disparate sources, like IoT sensors and control systems on the shop floor, MES and ERP applications, and even vision systems. Without a unified catalog and governance, this data often ends up in silos, making it difficult for engineers and analysts to find, trust, and use the right data. An industrial data catalog addresses this challenge by cataloging the data assets (with metadata) in one place so that OT and IT professionals can discover what data exists, understand its context, and access it for analytics or machine learning. In an Industry 4.0 data environment, the data requires cataloging so that consumers can identify what is available.
 

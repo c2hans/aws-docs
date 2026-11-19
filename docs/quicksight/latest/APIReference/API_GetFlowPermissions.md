@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GetFl
 ---
 
 # GetFlowPermissions
-<a name="API_GetFlowPermissions"></a>
 
 Get permissions for a flow.
 

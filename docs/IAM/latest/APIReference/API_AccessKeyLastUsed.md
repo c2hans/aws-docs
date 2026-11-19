@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_AccessKeyLas
 ---
 
 # AccessKeyLastUsed
-<a name="API_AccessKeyLastUsed"></a>
 
 Contains information about the last time an AWS access key was used since IAM began tracking this information on April 22, 2015.
 

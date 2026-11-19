@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # DeleteAlias
-<a name="API_DeleteAlias"></a>
 
 Deletes the alias, but doesn't affect the underlying key.
 

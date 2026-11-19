@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteG
 ---
 
 # DeleteGlossary
-<a name="API_DeleteGlossary"></a>
 
 Deletes a business glossary in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/filtering-the-li
 ---
 
 # Filter Amazon EC2 resources by tag
-<a name="filtering-the-list-by-tag"></a>
 
 After you add tags, you can filter your Amazon EC2 resources based tag keys and tag values.
 

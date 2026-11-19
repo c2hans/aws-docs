@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/tes
 ---
 
 # Test the configuration of your worker host
-<a name="test-software"></a>
 
 After you have installed the worker agent, installed the software necessary to process your jobs, and configured the AWS credentials for the worker agent, you should test that the installation can process your jobs before creating an AMI for your fleet. You should test the following:
 + The Deadline Cloud worker agent is properly configured to run as a system service.

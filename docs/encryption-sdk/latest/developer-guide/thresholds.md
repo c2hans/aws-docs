@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/th
 ---
 
 # Setting cache security thresholds
-<a name="thresholds"></a>
 
 When you implement data key caching, you need to configure the security thresholds that the [caching CMM](data-caching-details.md#caching-cmm) enforces.
 

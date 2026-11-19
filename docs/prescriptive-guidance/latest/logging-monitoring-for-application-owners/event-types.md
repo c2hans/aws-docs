@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/logging-mon
 ---
 
 # Event types
-<a name="event-types"></a>
 
 One of the most important considerations when establishing an application logging strategy is deciding which events and actions to log. Although the requirements of your organization and application might affect this decision, we recommend that you always log the following if they apply to your application:
 + **Input validation failures** – Examples include protocol violations, unacceptable encodings, and invalid parameter names and values.

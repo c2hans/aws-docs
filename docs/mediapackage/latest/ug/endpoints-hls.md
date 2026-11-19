@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/endpoints-hls.htm
 ---
 
 # Creating an HLS endpoint
-<a name="endpoints-hls"></a>
 
 Create an endpoint that formats content for devices that support Apple HLS.
 

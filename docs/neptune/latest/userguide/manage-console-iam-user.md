@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/manage-console-
 ---
 
 # Creating an IAM user with permissions for Neptune
-<a name="manage-console-iam-user"></a>
 
 To access the Neptune console to create and manage a Neptune DB cluster, you need to create an IAM user with all the necessary permissions.
 

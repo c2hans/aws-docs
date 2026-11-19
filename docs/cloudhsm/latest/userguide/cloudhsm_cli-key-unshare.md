@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-k
 ---
 
 # Unshare a key using CloudHSM CLI
-<a name="cloudhsm_cli-key-unshare"></a>
 
 Use the **key unshare** command in CloudHSM CLI to unshare a key with other CUs in your AWS CloudHSM cluster.
 

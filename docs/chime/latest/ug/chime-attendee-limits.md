@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chime-attendee-limits.ht
 ---
 
 # Meeting size limits
-<a name="chime-attendee-limits"></a>
 
 A maximum of 250 attendees can join Amazon Chime meetings scheduled by users with Amazon Chime Pro permissions. If you want to use auto-call, you must include **meet@chime.aws** in the meeting invite.
 

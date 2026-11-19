@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_S3Tag.h
 ---
 
 # S3Tag
-<a name="API_S3Tag"></a>
 
 Specifies the key-value pair that are assigned to a file during the execution of a Tagging step.
 

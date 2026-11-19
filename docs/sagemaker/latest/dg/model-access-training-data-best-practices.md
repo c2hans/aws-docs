@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-access-trainin
 ---
 
 # Choosing an input mode and a storage unit
-<a name="model-access-training-data-best-practices"></a>
 
 The best data source for your training job depends on workload characteristics such as the size of the dataset, the file format, the average size of files, the training duration, a sequential or random data loader read pattern, and how fast your model can consume the training data. The following best practices provide guidelines to get started with the most suitable input mode and data storage service for your use case.
 

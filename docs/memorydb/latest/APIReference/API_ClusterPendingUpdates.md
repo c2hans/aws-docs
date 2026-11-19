@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Cluster
 ---
 
 # ClusterPendingUpdates
-<a name="API_ClusterPendingUpdates"></a>
 
 A list of updates being applied to the cluster
 

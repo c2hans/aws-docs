@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-t
 ---
 
 # Tag connections resources
-<a name="connections-tag"></a>
 
 A *tag* is a custom attribute label that you or AWS assigns to an AWS resource. Each AWS tag has two parts:
 + A *tag key* (for example, `CostCenter`, `Environment`, or  `Project`). Tag keys are case sensitive.

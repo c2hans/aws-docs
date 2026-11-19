@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/list-packages.htm
 ---
 
 # List package names
-<a name="list-packages"></a>
 
 Use the `list-packages` command in CodeArtifact to get a list of all the package names in a repository. This command returns only the package names, not the versions.
 

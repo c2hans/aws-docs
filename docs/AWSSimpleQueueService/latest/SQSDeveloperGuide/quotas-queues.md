@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Amazon SQS standard queue quotas
-<a name="quotas-queues"></a>
 
 The following table lists quotas related to standard queues.
 

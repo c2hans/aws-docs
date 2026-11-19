@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeAIWorkloadConfig
-<a name="API_DescribeAIWorkloadConfig"></a>
 
 Returns details of an AI workload configuration, including the dataset configuration, benchmark tool settings, tags, and creation time.
 

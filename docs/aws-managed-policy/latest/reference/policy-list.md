@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 ---
 
 # AWS managed policies
-<a name="policy-list"></a>
 
 **Topics**
 + [AccessAnalyzerServiceRolePolicy](AccessAnalyzerServiceRolePolicy.md)
@@ -483,10 +482,13 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [AmazonSageMakerFullAccess](AmazonSageMakerFullAccess.md)
 + [AmazonSageMakerGeospatialExecutionRole](AmazonSageMakerGeospatialExecutionRole.md)
 + [AmazonSageMakerGeospatialFullAccess](AmazonSageMakerGeospatialFullAccess.md)
++ [AmazonSageMakerGlobalInferenceGatewayExecutionAccess](AmazonSageMakerGlobalInferenceGatewayExecutionAccess.md)
 + [AmazonSageMakerGroundTruthExecution](AmazonSageMakerGroundTruthExecution.md)
 + [AmazonSageMakerHyperPodGatedModelAccess](AmazonSageMakerHyperPodGatedModelAccess.md)
 + [AmazonSageMakerHyperPodInferenceAccess](AmazonSageMakerHyperPodInferenceAccess.md)
 + [AmazonSageMakerHyperPodInferenceGatewayAccess](AmazonSageMakerHyperPodInferenceGatewayAccess.md)
++ [AmazonSageMakerHyperPodInferenceGatewayGlobalRoutingAccess](AmazonSageMakerHyperPodInferenceGatewayGlobalRoutingAccess.md)
++ [AmazonSageMakerHyperPodInferenceGatewayMetricsPublisherAccess](AmazonSageMakerHyperPodInferenceGatewayMetricsPublisherAccess.md)
 + [AmazonSageMakerHyperPodObservabilityAdminAccess](AmazonSageMakerHyperPodObservabilityAdminAccess.md)
 + [AmazonSageMakerHyperPodServiceRolePolicy](AmazonSageMakerHyperPodServiceRolePolicy.md)
 + [AmazonSageMakerHyperPodTrainingOperatorAccess](AmazonSageMakerHyperPodTrainingOperatorAccess.md)
@@ -615,6 +617,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [AWSAccountUsageReportAccess](AWSAccountUsageReportAccess.md)
 + [AWSAgentlessDiscoveryService](AWSAgentlessDiscoveryService.md)
 + [AWSAgentRegistryServiceRolePolicy](AWSAgentRegistryServiceRolePolicy.md)
++ [AWSAPIPortalServiceRolePolicy](AWSAPIPortalServiceRolePolicy.md)
 + [AWSAppConfigServiceRolePolicy](AWSAppConfigServiceRolePolicy.md)
 + [AWSAppFabricFullAccess](AWSAppFabricFullAccess.md)
 + [AWSAppFabricReadOnlyAccess](AWSAppFabricReadOnlyAccess.md)
@@ -1132,6 +1135,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [AWSPartnerCentralChannelManagement](AWSPartnerCentralChannelManagement.md)
 + [AWSPartnerCentralFullAccess](AWSPartnerCentralFullAccess.md)
 + [AWSPartnerCentralMarketingManagement](AWSPartnerCentralMarketingManagement.md)
++ [AWSPartnerCentralMarketingServiceRolePolicy](AWSPartnerCentralMarketingServiceRolePolicy.md)
 + [AWSPartnerCentralOpportunityManagement](AWSPartnerCentralOpportunityManagement.md)
 + [AWSPartnerCentralRevenueAttributionManagement](AWSPartnerCentralRevenueAttributionManagement.md)
 + [AWSPartnerCentralSandboxFullAccess](AWSPartnerCentralSandboxFullAccess.md)

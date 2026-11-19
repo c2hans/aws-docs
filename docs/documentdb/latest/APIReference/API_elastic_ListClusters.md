@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_elast
 ---
 
 # ListClusters
-<a name="API_elastic_ListClusters"></a>
 
 Returns information about provisioned Amazon DocumentDB elastic clusters.
 

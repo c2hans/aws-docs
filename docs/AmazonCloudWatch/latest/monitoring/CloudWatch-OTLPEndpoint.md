@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # OTLP Endpoints
-<a name="CloudWatch-OTLPEndpoint"></a>
 
 OpenTelemetry Protocol (OTLP) is a general-purpose telemetry data delivery protocol designed for the OpenTelemetry. CloudWatch OpenTelemetry endpoints are HTTP 1.1 endpoints. You need to configure your OpenTelemetry collector to start sending open telemetry data to CloudWatch. For more information, see [Getting started](CloudWatch-OTLPGettingStarted.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AutomationExecutionMetadata
-<a name="API_AutomationExecutionMetadata"></a>
 
 Details about a specific Automation execution.
 

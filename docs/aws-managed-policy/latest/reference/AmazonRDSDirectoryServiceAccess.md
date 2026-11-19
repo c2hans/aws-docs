@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRDSDirectoryServiceAccess
-<a name="AmazonRDSDirectoryServiceAccess"></a>
 
 **Description**: Allow RDS to access Directory Service Managed AD on behalf of the customer for domain-joined SQL Server DB instances.
 

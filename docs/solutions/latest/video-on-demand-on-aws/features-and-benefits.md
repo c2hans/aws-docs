@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/
 ---
 
 # Features and benefits
-<a name="features-and-benefits"></a>
 
 The solution provides the following features:
 

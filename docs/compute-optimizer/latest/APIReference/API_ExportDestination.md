@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ExportDestination
-<a name="API_ExportDestination"></a>
 
 Describes the destination of the recommendations export and metadata files.
 

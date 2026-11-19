@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Enable try it for an API Gateway product REST endpoint in your portal
-<a name="apigateway-portals-try-it"></a>
 
 Use try it to let an API consumer invoke your product endpoint from your portal. When an API consumer uses try it, they enter method request parameters and invoke your product endpoint. Then, API Gateway invokes your API over the public internet and returns the response in the try it window. You can use a custom product page to provide any additional information about required parameters to access your API.
 

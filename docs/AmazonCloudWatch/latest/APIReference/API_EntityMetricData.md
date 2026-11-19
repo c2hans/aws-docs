@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # EntityMetricData
-<a name="API_EntityMetricData"></a>
 
 A set of metrics that are associated with an entity, such as a specific service or resource. Contains the entity and the list of metric data associated with it.
 

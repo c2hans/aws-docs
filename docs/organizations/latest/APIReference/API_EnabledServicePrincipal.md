@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_En
 ---
 
 # EnabledServicePrincipal
-<a name="API_EnabledServicePrincipal"></a>
 
 A structure that contains details of a service principal that represents an AWS service that is enabled to integrate with AWS Organizations.
 

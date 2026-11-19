@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/controls-to
 ---
 
 # Suggested controls to disable in Security Hub CSPM
-<a name="controls-to-disable"></a>
 
 We recommend disabling some AWS Security Hub CSPM controls to reduce finding noise and usage costs.
 

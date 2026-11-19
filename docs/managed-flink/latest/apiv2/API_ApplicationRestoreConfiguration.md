@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Applicati
 ---
 
 # ApplicationRestoreConfiguration
-<a name="API_ApplicationRestoreConfiguration"></a>
 
 Specifies the method and snapshot to use when restarting an application using previously saved application state.
 

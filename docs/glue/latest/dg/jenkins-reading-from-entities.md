@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/jenkins-reading-from-enti
 ---
 
 # Reading from Jenkins entities
-<a name="jenkins-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops03-b
 ---
 
 # OPS03-BP03 Implement practices to improve code quality
-<a name="ops03-bp03"></a>
 
  Defects are cheapest to remove before a change is deployed. Practices such as test-driven development, code reviews, pair programming, and shared coding standards raise quality at the source, so fewer defects reach testing and production. A second reviewer catches errors, security flaws, and standards violations the author cannot see, and spreads knowledge across the team.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # S3Location
-<a name="API_runtime_S3Location"></a>
 
 A storage location in an Amazon S3 bucket.
 

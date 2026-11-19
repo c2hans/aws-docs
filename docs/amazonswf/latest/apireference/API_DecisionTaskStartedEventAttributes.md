@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Decisi
 ---
 
 # DecisionTaskStartedEventAttributes
-<a name="API_DecisionTaskStartedEventAttributes"></a>
 
 Provides the details of the `DecisionTaskStarted` event.
 

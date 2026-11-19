@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/managing-u
 ---
 
 # Managing user sessions
-<a name="managing-user-sessions"></a>
 
 With Amazon Cognito user pool session management, you can track, list, and revoke a user's active sessions across all of their devices and apps. You can also limit how many active sessions a user can hold. With session management, you can build sign-out and session-visibility experiences, respond to compromised accounts, and enforce active-device limits. Session management builds on the revocation methods in [Ending user sessions with token revocation](token-revocation.md) and tracks the lifecycle of the [Refresh tokens](amazon-cognito-user-pools-using-the-refresh-token.md) that your user pool issues.
 

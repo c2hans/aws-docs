@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel08-b
 ---
 
 # REL08-BP02 Integrate functional testing as part of your deployment
-<a name="rel08-bp02"></a>
 
  Functional tests confirm that code behaves as the requirements specify before it reaches customers. When these tests run automatically inside the deployment pipeline and a failure stops the release, defects are caught in a controlled environment before they reach production.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricing-calculator/latest/userguide/reso
 ---
 
 # Resources
-<a name="resources"></a>
 
 The following related resources can help you as you work with this service.
 

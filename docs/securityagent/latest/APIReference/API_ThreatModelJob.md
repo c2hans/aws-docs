@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Th
 ---
 
 # ThreatModelJob
-<a name="API_ThreatModelJob"></a>
 
 Represents a threat model job, which is an execution instance of a threat model.
 

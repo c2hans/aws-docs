@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Conforman
 ---
 
 # ConformancePackStatusDetail
-<a name="API_ConformancePackStatusDetail"></a>
 
 Status details of a conformance pack.
 

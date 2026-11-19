@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_ModelLi
 ---
 
 # ModelLifecycle
-<a name="API_ModelLifecycle"></a>
 
 Lifecycle information for an AI model.
 

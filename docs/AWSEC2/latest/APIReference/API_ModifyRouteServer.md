@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyRou
 ---
 
 # ModifyRouteServer
-<a name="API_ModifyRouteServer"></a>
 
 Modifies the configuration of an existing route server.
 

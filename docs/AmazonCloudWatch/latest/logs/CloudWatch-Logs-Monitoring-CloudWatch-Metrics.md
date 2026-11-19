@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-
 ---
 
 # Monitoring with CloudWatch metrics
-<a name="CloudWatch-Logs-Monitoring-CloudWatch-Metrics"></a>
 
  You can use the tables in this section to review the metrics that Amazon CloudWatch Logs sends to Amazon CloudWatch every minute.
 

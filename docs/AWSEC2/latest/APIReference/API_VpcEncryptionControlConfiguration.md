@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpcEncryp
 ---
 
 # VpcEncryptionControlConfiguration
-<a name="API_VpcEncryptionControlConfiguration"></a>
 
 Describes the configuration settings for VPC Encryption Control.
 

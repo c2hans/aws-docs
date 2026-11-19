@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DeleteDevice
-<a name="API_DeleteDevice"></a>
 
 Deletes an existing device. You must first disassociate the device from any links and customer gateways.
 

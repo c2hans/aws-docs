@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Patch Manager prerequisites
-<a name="patch-manager-prerequisites"></a>
 
 Make sure that you have met the required prerequisites before using Patch Manager, a tool in AWS Systems Manager.
 

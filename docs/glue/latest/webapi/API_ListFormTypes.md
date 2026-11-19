@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListFormTypes.htm
 ---
 
 # ListFormTypes
-<a name="API_ListFormTypes"></a>
 
 Lists the form types defined in AWS Glue Data Catalog.
 

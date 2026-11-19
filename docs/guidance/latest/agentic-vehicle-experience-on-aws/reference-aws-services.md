@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # AWS Services Used in AVX
-<a name="reference-aws-services"></a>
 
 The following AWS services are used in the Agentic Vehicle Experience. Each service fulfills a distinct role in the agentic, data, and channel layers.
 

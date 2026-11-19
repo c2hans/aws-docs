@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ami-getting
 ---
 
 # Understanding AMI-based products in AWS Marketplace
-<a name="ami-getting-started"></a>
 
 As an AWS Marketplace seller, you can deliver your products to buyers with [Amazon Machine Images (AMIs)](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#AmazonMachineImage). An AMI provides the information required to launch an Amazon Elastic Compute Cloud (Amazon EC2) instance. The following section explains the key concepts for working with AMI-based products.
 

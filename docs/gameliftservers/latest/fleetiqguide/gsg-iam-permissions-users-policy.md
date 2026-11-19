@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/fleetiqguide/gsg-
 ---
 
 # Reference: Amazon GameLift Servers FleetIQ\_policy
-<a name="gsg-iam-permissions-users-policy"></a>
 
 The following is an example of the Amazon GameLift Servers FleetIQ\_policy for your reference:
 

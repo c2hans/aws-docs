@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-recommende
 ---
 
 # Troubleshoot Inference Recommender errors
-<a name="inference-recommender-troubleshooting"></a>
 
 This section contains information about how to understand and prevent common errors, the error messages they generate, and guidance on how to resolve these errors.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel12-b
 ---
 
 # REL12-BP02 Perform post-incident analysis
-<a name="rel12-bp02"></a>
 
  Post-incident analysis is the structured review of a customer-impacting event to find its contributing factors and prevent recurrence. Done well, it produces durable improvements across every workload that shares the same design, which helps you avoid repeating incidents.
 

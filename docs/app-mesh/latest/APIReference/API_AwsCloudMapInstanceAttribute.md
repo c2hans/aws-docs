@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_AwsClou
 ---
 
 # AwsCloudMapInstanceAttribute
-<a name="API_AwsCloudMapInstanceAttribute"></a>
 
 An object that represents the AWS Cloud Map attribute information for your virtual node.
 

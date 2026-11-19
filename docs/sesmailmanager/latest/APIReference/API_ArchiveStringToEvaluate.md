@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_A
 ---
 
 # ArchiveStringToEvaluate
-<a name="API_ArchiveStringToEvaluate"></a>
 
 Specifies the email attribute to evaluate in a string expression.
 

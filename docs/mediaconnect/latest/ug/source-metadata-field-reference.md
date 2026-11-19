@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/source-metadata-f
 ---
 
 # Source metadata field reference
-<a name="source-metadata-field-reference"></a>
 
 The fields returned by source metadata monitoring depend on the protocol of the incoming source. This section describes the fields for each supported protocol.
 

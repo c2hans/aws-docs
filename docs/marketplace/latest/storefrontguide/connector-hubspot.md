@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/conne
 ---
 
 # HubSpot connector
-<a name="connector-hubspot"></a>
 
 Use the HubSpot connector to synchronize deal, company, and contact data with HubSpot.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Files::AccessPoint CreationPermissions
-<a name="aws-properties-s3files-accesspoint-creationpermissions"></a>
 
 Specifies the POSIX IDs and permissions to apply when creating the root directory for an access point.
 

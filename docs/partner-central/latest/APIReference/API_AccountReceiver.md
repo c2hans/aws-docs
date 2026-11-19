@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AccountReceiver
-<a name="API_AccountReceiver"></a>
 
 Contains the account details of the partner who received the Engagement Invitation, including the AWS account ID and company name.
 

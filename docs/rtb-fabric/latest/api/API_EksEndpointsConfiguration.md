@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_EksEndpointsCo
 ---
 
 # EksEndpointsConfiguration
-<a name="API_EksEndpointsConfiguration"></a>
 
 Describes the configuration of an Amazon Elastic Kubernetes Service endpoint.
 

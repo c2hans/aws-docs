@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pinecone-reading-from-ent
 ---
 
 # Reading from Pinecone entities
-<a name="pinecone-reading-from-entities"></a>
 
 **Prerequisites**
 

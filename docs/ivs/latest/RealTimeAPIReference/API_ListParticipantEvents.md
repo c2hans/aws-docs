@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_List
 ---
 
 # ListParticipantEvents
-<a name="API_ListParticipantEvents"></a>
 
 Lists events for a specified participant that occurred during a specified stage session.
 

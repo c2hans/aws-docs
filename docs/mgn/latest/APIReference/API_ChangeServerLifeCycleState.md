@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ChangeServer
 ---
 
 # ChangeServerLifeCycleState
-<a name="API_ChangeServerLifeCycleState"></a>
 
 Allows the user to set the SourceServer.LifeCycle.state property for specific Source Server IDs to one of the following: READY\_FOR\_TEST or READY\_FOR\_CUTOVER. This command only works if the Source Server is already launchable (dataReplicationInfo.lagDuration is not null.)
 

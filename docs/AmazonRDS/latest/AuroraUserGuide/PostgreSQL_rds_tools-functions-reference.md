@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Postgre
 ---
 
 # rds\_tools functions reference
-<a name="PostgreSQL_rds_tools-functions-reference"></a>
 
 The `rds_tools` extension provides a set of utility functions for managing and monitoring your Aurora PostgreSQL DB instance. Using these functions, you can diagnose replication, vacuum, and configuration issues directly from SQL, without separate monitoring tools. These functions are in addition to the standard PostgreSQL functions. For more information about standard PostgreSQL functions, see [Functions and Operators](https://www.postgresql.org/docs/current/functions.html) in the PostgreSQL documentation.
 

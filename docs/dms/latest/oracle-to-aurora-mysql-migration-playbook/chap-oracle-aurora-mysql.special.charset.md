@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle and MySQL character sets
-<a name="chap-oracle-aurora-mysql.special.charset"></a>
 
 With AWS DMS, you can migrate databases between different platforms while preserving character set encodings and collations. Character sets define the encoding used to represent characters, while collations determine the sorting order and comparison rules. Properly configuring character sets and collations is crucial for applications that handle multilingual data or have specific sorting requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/using-p
 ---
 
 # Finding services and products using AWS Price List Query API
-<a name="using-price-list-query-api"></a>
 
 |  |
 | --- |

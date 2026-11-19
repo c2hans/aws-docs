@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CaseSlaC
 ---
 
 # CaseSlaConfiguration
-<a name="API_CaseSlaConfiguration"></a>
 
 The SLA configuration for Case SlaAssignmentType.
 

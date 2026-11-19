@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRedshiftServiceLinkedRolePolicy
-<a name="AmazonRedshiftServiceLinkedRolePolicy"></a>
 
 **Description**: Allows Amazon Redshift to call AWS services on your behalf
 

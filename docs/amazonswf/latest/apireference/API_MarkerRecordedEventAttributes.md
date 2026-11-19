@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Marker
 ---
 
 # MarkerRecordedEventAttributes
-<a name="API_MarkerRecordedEventAttributes"></a>
 
 Provides the details of the `MarkerRecorded` event.
 

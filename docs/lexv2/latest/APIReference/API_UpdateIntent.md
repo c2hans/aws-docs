@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateInte
 ---
 
 # UpdateIntent
-<a name="API_UpdateIntent"></a>
 
 Updates the settings for an intent.
 

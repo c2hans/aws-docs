@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Trigger.
 ---
 
 # Trigger
-<a name="API_Trigger"></a>
 
 Describes a trigger.
 

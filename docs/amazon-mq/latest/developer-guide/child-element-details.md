@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/child-e
 ---
 
 # Amazon MQ Child Element Attributes
-<a name="child-element-details"></a>
 
 The following is a detailed explanation of child element attributes. For more information, see [XML Configuration](https://activemq.apache.org/xml-configuration.html) in the Apache ActiveMQ documentation.
 

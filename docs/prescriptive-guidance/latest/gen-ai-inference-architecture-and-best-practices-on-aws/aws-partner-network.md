@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-infe
 ---
 
 # AWS Partner Network
-<a name="aws-partner-network"></a>
 
 The [AWS Partner Network (APN)](https://aws.amazon.com/partners/) is a global community of partners that leverage programs, expertise, and resources to build, market, and sell customer solutions. [AWS AI Competency Partners](https://aws.amazon.com/ai/generative-ai/partners/) drive the advancement of services, tools, data strategy, and infrastructure pivotal for implementing generative AI (gen AI) technologies across diverse industries. Their customer success and technical best practices have been validated by gen AI specialists at AWS. Partners in the Generative AI category can help organizations in the following ways:
 + **Consulting services** – Partners with deep expertise can assist organizations with the following:

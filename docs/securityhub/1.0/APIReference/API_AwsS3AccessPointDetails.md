@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3Ac
 ---
 
 # AwsS3AccessPointDetails
-<a name="API_AwsS3AccessPointDetails"></a>
 
  Returns configuration information about the specified Amazon S3 access point. S3 access points are named network endpoints that are attached to buckets that you can use to perform S3 object operations.
 

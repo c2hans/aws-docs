@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Page
 ---
 
 # PagerDutyAuthorizationConfig
-<a name="API_PagerDutyAuthorizationConfig"></a>
 
 Authorization configuration options for PagerDuty service.
 

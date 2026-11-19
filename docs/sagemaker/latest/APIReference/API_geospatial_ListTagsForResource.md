@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # ListTagsForResource
-<a name="API_geospatial_ListTagsForResource"></a>
 
 Lists the tags attached to the resource.
 

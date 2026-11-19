@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with IAM
-<a name="examples-iam"></a>
 
 This section provides examples of programming AWS Identity and Access Management (IAM) by using the AWS SDK for Java 2.x.
 

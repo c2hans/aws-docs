@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-replay-a
 ---
 
 # Creating replays of archived events in Amazon EventBridge
-<a name="eb-replay-archived-event"></a>
 
 When you start a new replay, you specify a time period for the event you want EventBridge to resend to the source event bus. You can also specify for EventBridge to send the events to specific rules.
 

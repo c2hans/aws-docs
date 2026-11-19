@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Configure Root Certificate Authority for Amazon Bedrock AgentCore Code Interpreter
-<a name="code-interpreter-root-ca-certificates"></a>
 
 By default, Amazon Bedrock AgentCore Code Interpreter sessions trust only publicly recognized certificate authorities. If your agents need to access internal services or resources behind a TLS-intercepting proxy that use certificates signed by a private CA, you must provide your custom root CA certificates when starting a session.
 

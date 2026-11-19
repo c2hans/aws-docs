@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # UpdatedDescriptorsFields
-<a name="API_UpdatedDescriptorsFields"></a>
 
 The patchable descriptor fields applied during an UpdateRegistryRecord call. Each field is independently patchable.
 

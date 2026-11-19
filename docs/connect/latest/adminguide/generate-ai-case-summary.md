@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/generate-ai-ca
 ---
 
 # Generate AI-powered Case summary
-<a name="generate-ai-case-summary"></a>
 
 Agents have the ability to generate an AI-powered Case summary by choosing Generate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_AmiP
 ---
 
 # AmiProductVisibilityFilter
-<a name="API_AmiProductVisibilityFilter"></a>
 
 Object that allows filtering on the visibility of the product in the AWS Marketplace.
 

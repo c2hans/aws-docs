@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/data-lake-f
 ---
 
 # Reference architecture
-<a name="reference-architecture"></a>
 
 The following diagram shows this guide's reference architecture for growing and scaling a data lake on the AWS Cloud.
 

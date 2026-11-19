@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_DeviceSum
 ---
 
 # DeviceSummary
-<a name="API_DeviceSummary"></a>
 
 Includes information about the device.
 

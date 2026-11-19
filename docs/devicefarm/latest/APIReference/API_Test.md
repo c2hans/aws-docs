@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Test.
 ---
 
 # Test
-<a name="API_Test"></a>
 
 Represents a condition that is evaluated.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ActorP
 ---
 
 # ActorProcess
-<a name="API_ActorProcess"></a>
 
 Contains information about a process involved in a GuardDuty finding, including process identification, execution details, and file information.
 

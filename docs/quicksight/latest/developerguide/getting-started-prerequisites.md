@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/getting
 ---
 
 # Prerequisites
-<a name="getting-started-prerequisites"></a>
 
 If you plan to access Quick Sight through its API, make sure you're familiar with the following:
 + JSON

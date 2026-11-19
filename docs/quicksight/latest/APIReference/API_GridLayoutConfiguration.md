@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GridL
 ---
 
 # GridLayoutConfiguration
-<a name="API_GridLayoutConfiguration"></a>
 
 The configuration for a grid layout. Also called a tiled layout.
 

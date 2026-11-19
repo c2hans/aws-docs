@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Recomm
 ---
 
 # RecommendedActionParameter
-<a name="API_RecommendedActionParameter"></a>
 
 A single parameter to use with the `RecommendedAction` API operation to apply the action.
 

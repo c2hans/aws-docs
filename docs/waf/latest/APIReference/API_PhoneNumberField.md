@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_PhoneNumberF
 ---
 
 # PhoneNumberField
-<a name="API_PhoneNumberField"></a>
 
 The name of a field in the request payload that contains part or all of your customer's primary phone number.
 

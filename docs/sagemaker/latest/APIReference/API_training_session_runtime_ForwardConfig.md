@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # ForwardConfig
-<a name="API_training_session_runtime_ForwardConfig"></a>
 
 The configuration for a forward-only pass through the model. This computes loss values without computing gradients.
 

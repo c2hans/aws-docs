@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/search-featu
 ---
 
 # Search features and limits
-<a name="search-features-limits"></a>
 
 ## Search availability
 <a name="search-availability"></a>

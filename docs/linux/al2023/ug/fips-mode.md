@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/fips-mode.html
 ---
 
 # Enable FIPS Mode on AL2023
-<a name="fips-mode"></a>
 
 This section explains how to enable Federal Information Processing Standards (FIPS) on AL2023. For more information about FIPS, see:
 + [Federal Information Processing Standard (FIPS)](https://aws.amazon.com/compliance/fips/)

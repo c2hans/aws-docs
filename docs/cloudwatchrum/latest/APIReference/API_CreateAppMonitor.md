@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Cr
 ---
 
 # CreateAppMonitor
-<a name="API_CreateAppMonitor"></a>
 
 Creates a Amazon CloudWatch RUM app monitor, which collects telemetry data from your application and sends that data to RUM. The data includes performance and reliability information such as page load time, client-side errors, and user behavior.
 
@@ -43,6 +42,7 @@ Content-type: application/json
    "Domain": "{{string}}",
    "DomainList": [ "{{string}}" ],
    "Name": "{{string}}",
+   "Platform": "{{string}}",
    "Tags": {
       "{{string}}" : "{{string}}"
    }
@@ -103,6 +103,12 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `(?!\.)[\.\-_#A-Za-z0-9]+`
 Required: Yes
+
+ ** [Platform](#API_CreateAppMonitor_RequestSyntax) **   <a name="cloudwatchrum-CreateAppMonitor-request-Platform"></a>
+The platform type for the app monitor. Valid values are `Web` for web applications, `Android` for Android applications, and `iOS` for IOS applications. If you omit this parameter, the default is `Web`.
+Type: String
+Valid Values: `Web | Android | iOS`
+Required: No
 
  ** [Tags](#API_CreateAppMonitor_RequestSyntax) **   <a name="cloudwatchrum-CreateAppMonitor-request-Tags"></a>
 Assigns one or more tags (key-value pairs) to the app monitor.

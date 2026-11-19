@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/using-trusted-identity-
 ---
 
 # Configure and deploy resources using AWS CloudFormation
-<a name="using-trusted-identity-propagation-cloudformation"></a>
 
 You can configure and deploy resources using CloudFormation templates to start using Trusted Identity Propagation with Athena drivers as following.
 

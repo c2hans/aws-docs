@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Re
 ---
 
 # RetrievalInstructionContent
-<a name="API_agent_RetrievalInstructionContent"></a>
 
 The instruction content, as a set of named fields. Every field is optional; at least one must be present. Service-side validation enforces per-field and aggregate size limits.
 

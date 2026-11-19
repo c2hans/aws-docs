@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Performing an incremental backup of a tenant database
-<a name="Appendix.Oracle.CommonDBATasks.BackupTenantDatabaseIncremental"></a>
 
 You can perform an incremental backup of the current tenant database in your CDB. Use the Amazon RDS procedure `rdsadmin.rdsadmin_rman_util.backup_tenant_incremental`.
 

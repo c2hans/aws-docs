@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # SearchGroupedFilterExpressions
-<a name="API_SearchGroupedFilterExpressions"></a>
 
 The search terms for a resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/jdbc-v3-driver-advanced
 ---
 
 # Advanced connection parameters
-<a name="jdbc-v3-driver-advanced-connection-parameters"></a>
 
 The following sections describe the advanced connection parameters for the JDBC 3.x driver.
 

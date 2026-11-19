@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_PullR
 ---
 
 # PullRequestEvent
-<a name="API_PullRequestEvent"></a>
 
 Returns information about a pull request event.
 

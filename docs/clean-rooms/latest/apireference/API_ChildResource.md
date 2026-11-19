@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Chil
 ---
 
 # ChildResource
-<a name="API_ChildResource"></a>
 
 Contains information about a child resource of a given resource in a collaboration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-cont
 ---
 
 # Use contextual grounding check to filter hallucinations in responses
-<a name="guardrails-contextual-grounding-check"></a>
 
 Amazon Bedrock Guardrails supports contextual grounding checks to detect and filter hallucinations in model responses when a reference source and a user query is provided. The supported use cases include summarization, paraphrasing, and question answering. Standard tier also supports responses that include reasoning or conversational content. Classic tier does not support conversational use cases. For more information, see [Safeguard tiers for contextual grounding checks](#guardrails-contextual-grounding-tiers) on this page.
 

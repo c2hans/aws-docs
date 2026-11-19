@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 ---
 
 # DescribeVpcPeeringConnections
-<a name="API_DescribeVpcPeeringConnections"></a>
 
  **This API works with the following fleet types:** EC2
 

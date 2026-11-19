@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_U
 ---
 
 # UpdateDirectConnectGatewayAttachment
-<a name="API_UpdateDirectConnectGatewayAttachment"></a>
 
 Updates the edge locations associated with an AWS Direct Connect gateway attachment.
 

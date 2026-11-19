@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # Oracle function-based indexes and PostgreSQL expression indexes
-<a name="chap-oracle-aurora-pg.tables.expression"></a>
 
 With AWS DMS, you can create function-based indexes in Oracle databases and expression indexes in PostgreSQL databases to improve query performance. Function-based indexes in Oracle allow indexing on expressions or function results, while expression indexes in PostgreSQL index expressions based on one or more columns.
 

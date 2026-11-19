@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_A
 ---
 
 # AssociateCrossAccountReplica
-<a name="API_AssociateCrossAccountReplica"></a>
 
 Links a primary secret in your account to a replica secret in a different AWS account and starts replication to this replica. The replica secret must already exist in the other AWS account. Create the replica with [CreateSecret](API_CreateSecret.md) and set its `CrossAccountPrimaryARN` field set to this primary secret's ARN. When you call AssociateCrossAccountReplica, Secrets Manager calls AcceptCrossAccountReplication on the replica secret on your behalf.
 

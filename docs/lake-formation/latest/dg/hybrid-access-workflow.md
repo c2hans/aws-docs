@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/hybrid-access-w
 ---
 
 # How hybrid access mode works
-<a name="hybrid-access-workflow"></a>
 
 The following diagram shows how Lake Formation authorization works in hybrid access mode when you query the Data Catalog resources.
 

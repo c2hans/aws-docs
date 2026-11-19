@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Workspac
 ---
 
 # WorkspaceThemeImages
-<a name="API_WorkspaceThemeImages"></a>
 
 Contains image configuration for a workspace theme.
 

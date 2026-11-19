@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/convers
 ---
 
 # Conversion prerequisites for License Manager license types
-<a name="conversion-prerequisites"></a>
 
 To convert license types with License Manager, there are general and operating system specific prerequisites.
 

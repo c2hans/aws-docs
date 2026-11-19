@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Create a JWT authorizer for a REST API
-<a name="rest-api-jwt-authorizer-create"></a>
 
 You can create a JWT authorizer by using the API Gateway console, the AWS CLI, an AWS SDK, AWS CloudFormation, or an OpenAPI definition. Before you create a JWT authorizer, you must create a REST API. For more information, see [Tutorial: Create a REST API with a Lambda proxy integration](api-gateway-create-api-as-simple-proxy-for-lambda.md).
 

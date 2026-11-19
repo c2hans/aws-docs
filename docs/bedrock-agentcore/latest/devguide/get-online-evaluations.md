@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/get-on
 ---
 
 # Get online evaluation
-<a name="get-online-evaluations"></a>
 
 The `GetOnlineEvaluationConfig` API retrieves the complete details and current status of an existing online evaluation configuration. This synchronous operation returns the full configuration including data sources, evaluators, execution status, and operational metadata.
 

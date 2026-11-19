@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostDifference
-<a name="API_AWSBCMPricingCalculator_CostDifference"></a>
 
  Represents the difference between historical and estimated costs.
 

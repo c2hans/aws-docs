@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/certificate-authori
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Rotate the EKS cluster certificate authority (CA)
-<a name="certificate-authority-rotation"></a>
 
 In public key infrastructure (PKI), a certificate authority (CA) is a trusted entity that issues and signs digital certificates. These certificates establish identity and enable encrypted communication between systems using TLS (Transport Layer Security). When a client connects to a server, the server presents a certificate signed by a CA. The client verifies the server’s certificate against the CAs it trusts before allowing the connection to proceed.
 

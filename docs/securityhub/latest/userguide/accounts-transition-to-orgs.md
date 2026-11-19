@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/accounts-tr
 ---
 
 # Transitioning to Organizations to manage accounts in Security Hub CSPM
-<a name="accounts-transition-to-orgs"></a>
 
 When you manage accounts manually in AWS Security Hub CSPM, you must invite prospective member accounts and configure each member account separately in each AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSO
 ---
 
 # AWSOutpostsAuthorizeServerPolicy
-<a name="AWSOutpostsAuthorizeServerPolicy"></a>
 
 **Description**: This policy grants permissions that allow you to install an Outpost server on your on-premises network.
 

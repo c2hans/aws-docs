@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-connect-se
 ---
 
 # Use custom offset storage topic
-<a name="msk-connect-set-offset-storage-topic"></a>
 
 To provide offset continuity between source connectors, you can use an offset storage topic of your choice instead of the default topic. Specifying an offset storage topic helps you accomplish tasks like creating a source connector that resumes reading from the last offset of a previous connector.
 

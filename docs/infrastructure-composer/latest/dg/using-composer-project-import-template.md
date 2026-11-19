@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Import an existing project template in the Infrastructure Composer console
-<a name="using-composer-project-import-template"></a>
 
 When you import an existing CloudFormation or AWS SAM template, Infrastructure Composer automatically generates a visualization of your application architecture on the canvas.
 

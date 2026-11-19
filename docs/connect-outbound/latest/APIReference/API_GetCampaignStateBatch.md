@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API
 ---
 
 # GetCampaignStateBatch
-<a name="API_connect-outbound-campaigns_GetCampaignStateBatch"></a>
 
 Returns the state of listed of outbound campaigns.
 

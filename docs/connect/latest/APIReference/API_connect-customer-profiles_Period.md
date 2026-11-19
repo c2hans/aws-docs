@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # Period
-<a name="API_connect-customer-profiles_Period"></a>
 
 Defines a limit and the time period during which it is enforced.
 

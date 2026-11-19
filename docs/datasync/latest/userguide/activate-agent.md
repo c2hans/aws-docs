@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/activate-agent
 ---
 
 # Activating your AWS DataSync agent
-<a name="activate-agent"></a>
 
 To finish creating your AWS DataSync agent, you must activate it. This step associates the agent with your AWS account.
 

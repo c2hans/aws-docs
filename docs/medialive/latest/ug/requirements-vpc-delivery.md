@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/requirements-vpc-del
 ---
 
 # Requirements for Amazon Elastic Compute Cloud—delivery via VPC
-<a name="requirements-vpc-delivery"></a>
 
 Your deployment might include setting up some channels for delivery to output endpoints in Amazon Virtual Private Cloud (Amazon VPC).
 

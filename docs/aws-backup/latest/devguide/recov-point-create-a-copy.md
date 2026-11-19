@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/recov-point-c
 ---
 
 # Backup and tag copy
-<a name="recov-point-create-a-copy"></a>
 
 You can copy backups to multiple AWS accounts or AWS Regions on demand or automatically as part of a scheduled backup plan for most resource types, though backups in cold storage or archive tiers cannot be copied. See [Feature availability by resource](backup-feature-availability.md#features-by-resource) and [Encryption for a backup copy to a different account or AWS Region](encryption.md#copy-encryption) for details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Lis
 ---
 
 # ListHarvestJobs
-<a name="API_ListHarvestJobs"></a>
 
 Retrieves a list of harvest jobs that match the specified criteria.
 

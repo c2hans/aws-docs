@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/lambda-prereq.html
 ---
 
 # Prerequisites for integrating Amazon SNS with Lambda functions across regions
-<a name="lambda-prereq"></a>
 
 To invoke Lambda functions using Amazon SNS notifications, you need the following:
 + A Lambda function

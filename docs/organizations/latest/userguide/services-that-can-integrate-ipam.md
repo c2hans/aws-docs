@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # Amazon VPC IP Address Manager (IPAM) and AWS Organizations
-<a name="services-that-can-integrate-ipam"></a>
 
 Amazon VPC IP Address Manager (IPAM) is a VPC feature that makes it easier for you to plan, track, and monitor IP addresses for your AWS workloads.
 

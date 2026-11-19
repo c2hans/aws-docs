@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSTransformRevenueAttributionPolicy
-<a name="AWSTransformRevenueAttributionPolicy"></a>
 
 **Description**: Enables the AWS Transform service to manage customer revenue attribution for incentives.
 

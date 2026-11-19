@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_TrendmicroC
 ---
 
 # TrendmicroConnectorProfileProperties
-<a name="API_TrendmicroConnectorProfileProperties"></a>
 
  The connector-specific profile properties required when using Trend Micro.
 

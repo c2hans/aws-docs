@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Tags.
 ---
 
 # Tags
-<a name="API_Tags"></a>
 
 A complex type that contains zero or more `Tag` elements.
 

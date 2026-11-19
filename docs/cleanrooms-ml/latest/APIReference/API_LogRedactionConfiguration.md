@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Lo
 ---
 
 # LogRedactionConfiguration
-<a name="API_LogRedactionConfiguration"></a>
 
 The configuration for log redaction.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/tutorials-basic
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Getting started with AWS Cloud9
-<a name="tutorials-basic"></a>
 
 Use this tutorial to get started with AWS Cloud9. You can use AWS Cloud9 console or [AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/) to use the AWS Cloud9 IDE. In this tutorial, you'll learn how to set up an AWS Cloud9 development environment, and then use the AWS Cloud9 IDE to code, run, and debug your first application. For more information about AWS Cloud9, see [What is AWS Cloud9](welcome.md).
 
@@ -304,7 +303,7 @@ However, if you used an SSH environment instead of following the tutorial, and t
 ## Related information
 <a name="tutorial-final-info"></a>
 
-The following is additional information for [Getting started with AWS Cloud9 Console](#tutorials-basic).
+The following is additional information for [Getting started with AWS Cloud9 Console](tutorials-basic.md).
 + When you create an EC2 environment, the environment doesn't contain any sample code by default. To create an environment with sample code, see the following topic:
   +  [Working with Amazon Lightsail instances in the AWS Cloud9 IDE](lightsail-instances.md)
 + While the AWS Cloud9 development environment is being created, you're directed AWS Cloud9 to create an Amazon EC2 instance. AWS Cloud9 created the instance and then connected the environment to it. You can alternatively use an existing cloud compute instance or your own server, which is called an *SSH environment*. For more information, see [Creating an environment in AWS Cloud9](create-environment.md).

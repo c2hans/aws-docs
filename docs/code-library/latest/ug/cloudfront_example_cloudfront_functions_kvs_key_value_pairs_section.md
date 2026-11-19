@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudfront_exampl
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use key-value pairs in a CloudFront Functions viewer request
-<a name="cloudfront_example_cloudfront_functions_kvs_key_value_pairs_section"></a>
 
 The following code example shows how to use key-value pairs in a CloudFront Functions viewer request.
 

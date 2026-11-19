@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # Expenditure and usage awareness
-<a name="expenditure-and-usage-awareness"></a>
 
  To effectively manage costs and drive efficiency, it's essential to understand your organization's expenses, identify cost drivers, and attribute resource costs to specific workloads, teams, or product owners. This understanding informs your decisions about resource allocation and encourages efficient usage behavior.
 

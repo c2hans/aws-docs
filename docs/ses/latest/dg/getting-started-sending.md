@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/getting-started-sending.ht
 ---
 
 # Getting started with sending email
-<a name="getting-started-sending"></a>
 
 Follow this page to set up Amazon Simple Email Service (Amazon SES) to send email. By the end, you have a verified domain, safe account defaults, and your first email sent. Each step gives AWS CLI and console instructions, and then explains what it set up, with links to the full topics. The resources that you create might result in charges to your AWS account, and the last section explains how to clean them up.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ex
 ---
 
 # ExperimentRunResult
-<a name="API_ExperimentRunResult"></a>
 
 The result of an experiment run, including the executive summary and launch decision rationale.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 ---
 
 # Configure KMS key for a registry
-<a name="registry-configure-encryption"></a>
 
 The KMS key determines how your registry encrypts data at rest. You can choose between an AWS owned key or a customer managed key that you store in your account and manage through AWS KMS. You can only configure the KMS key during registry creation. You cannot change the KMS key after the registry is created.
 

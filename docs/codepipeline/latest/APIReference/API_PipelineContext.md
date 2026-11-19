@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Pip
 ---
 
 # PipelineContext
-<a name="API_PipelineContext"></a>
 
 Represents information about a pipeline to a job worker.
 

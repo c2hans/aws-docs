@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ChannelHandshakeSummary
-<a name="API_channel_ChannelHandshakeSummary"></a>
 
 Summary information about a channel handshake.
 

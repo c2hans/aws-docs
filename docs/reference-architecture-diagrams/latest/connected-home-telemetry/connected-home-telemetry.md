@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Connected Home Telemetry on AWS
-<a name="connected-home-telemetry"></a>
 
 Publication date: **March 22, 2021 ([Diagram history](#diagram-history))**
 

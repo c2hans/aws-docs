@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Managing
 ---
 
 # Managing manual backups
-<a name="USER_ManagingManualBackups"></a>
 
 This section shows how to manage manual backups for DB instances and DB clusters.
 

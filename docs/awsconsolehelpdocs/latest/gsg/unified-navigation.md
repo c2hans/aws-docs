@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/unified-na
 ---
 
 # Using the AWS Management Console navigation bar via Unified Navigation
-<a name="unified-navigation"></a>
 
 This topic describes how to use Unified Navigation. Unified Navigation refers to the navigation bar that acts as the header and footer of the console. You can use Unified Navigation to:
 + Search for and access AWS services, features, products, and more.

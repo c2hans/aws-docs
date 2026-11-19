@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/sts_example_iam_Get
 ---
 
 # Getting started with machine learning feature stores
-<a name="sts_example_iam_GettingStarted_028_section"></a>
 
 The following code example shows how to:
 + Set up IAM permissions

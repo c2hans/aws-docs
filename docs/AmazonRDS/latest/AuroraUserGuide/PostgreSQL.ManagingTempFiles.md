@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Postgre
 ---
 
 # Managing temporary files with PostgreSQL
-<a name="PostgreSQL.ManagingTempFiles"></a>
 
 In PostgreSQL, a complex query might perform several sort or hash operations at the same time, with each operation using instance memory to store results up to the value specified in the [`work_mem`](https://www.postgresql.org/docs/current/runtime-config-resource.html#GUC-WORK-MEM) parameter. When the instance memory is not sufficient, temporary files are created to store the results. These are written to disk to complete the query execution. Later, these files are automatically removed after the query completes. In Aurora PostgreSQL, these files share local storage with other log files. You can monitor your Aurora PostgreSQL DB cluster's local storage space by watching the Amazon CloudWatch metric for `FreeLocalStorage`. For more information, see [ Troubleshoot local storage issues](https://aws.amazon.com/premiumsupport/knowledge-center/postgresql-aurora-storage-issue/).
 

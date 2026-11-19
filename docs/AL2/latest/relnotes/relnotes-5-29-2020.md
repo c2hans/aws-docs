@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-5-29-2020.h
 ---
 
 # Amazon Linux 2 05/29/2020 release notes
-<a name="relnotes-5-29-2020"></a>
 
 These are release notes for Amazon Linux 2.
 

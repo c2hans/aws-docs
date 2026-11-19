@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/connect-keysto
 ---
 
 # Connect an AWS CloudHSM key store
-<a name="connect-keystore"></a>
 
 New AWS CloudHSM key stores are not connected. Before you can create and use AWS KMS keys in your AWS CloudHSM key store, you need to connect it to its associated AWS CloudHSM cluster. You can connect and disconnect your AWS CloudHSM key store at any time, and [view its connection state](view-keystore.md#view-keystore-console).
 

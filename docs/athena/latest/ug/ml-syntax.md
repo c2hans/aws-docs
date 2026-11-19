@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ml-syntax.html
 ---
 
 # Use ML with Athena syntax
-<a name="ml-syntax"></a>
 
 The `USING EXTERNAL FUNCTION` clause specifies an ML with Athena function or multiple functions that can be referenced by a subsequent `SELECT` statement in the query. You define the function name, variable names, and data types for the variables and return values.
 

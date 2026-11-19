@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/estate.htm
 ---
 
 # .estate
-<a name="estate"></a>
 
 Used for information about housing and the housing sector.
 

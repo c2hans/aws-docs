@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-cluster-mo
 ---
 
 # Modifying an Amazon DocumentDB cluster
-<a name="db-cluster-modify"></a>
 
 To modify a cluster, the cluster must be in the *available* state. You cannot modify a cluster that is stopped. If the cluster is stopped, first start the cluster, wait for the cluster to become *available*, and then make the desired modifications. For more information, see [Stopping and starting an Amazon DocumentDB cluster](db-cluster-stop-start.md).
 

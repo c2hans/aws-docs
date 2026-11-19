@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fee
 ---
 
 # Troubleshooting schedule action requests
-<a name="feed-scheduling-errors"></a>
 
 The schedule action operations can return the following errors.
 

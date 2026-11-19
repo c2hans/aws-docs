@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/how-it-works.
 ---
 
 # How AWS Client VPN works
-<a name="how-it-works"></a>
 
 With AWS Client VPN, there are two types of user personas that interact with the Client VPN endpoint: administrators and clients.
 

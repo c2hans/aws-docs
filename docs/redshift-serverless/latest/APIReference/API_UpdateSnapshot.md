@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # UpdateSnapshot
-<a name="API_UpdateSnapshot"></a>
 
 Updates a snapshot.
 

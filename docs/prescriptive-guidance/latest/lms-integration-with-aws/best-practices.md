@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integra
 ---
 
 # Detailed integration architecture options
-<a name="best-practices"></a>
 
 This section provides architectural guidelines, implementation details, and best practices for each key integration option. Each pattern includes components, workflow, security considerations, and practical implementation guidance to help you design effective AWS-LMS integrations.
 

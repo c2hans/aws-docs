@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_C
 ---
 
 # CreateApplication
-<a name="API_CreateApplication"></a>
 
 Creates an application.
 

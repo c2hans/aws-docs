@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-wor
 ---
 
 # Shared Responsibility Model for Resiliency
-<a name="shared-responsibility-model-for-resiliency"></a>
 
  Resiliency is a shared responsibility between AWS and you, the customer. It is important that you understand how disaster recovery and availability, as part of resiliency, operate under this shared model.
 

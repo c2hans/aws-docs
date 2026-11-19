@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_d
 ---
 
 # Tag
-<a name="API_dax_Tag"></a>
 
 A description of a tag. Every tag is a key-value pair. You can add up to 50 tags to a single DAX cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Resto
 ---
 
 # RestoreAccessBackupVaultListMember
-<a name="API_RestoreAccessBackupVaultListMember"></a>
 
 Contains information about a restore access backup vault.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompt
 ---
 
 # Define evaluation methods
-<a name="advanced-prompt-optimization-evaluation"></a>
 
 ## Overview
 <a name="advanced-prompt-optimization-evaluation-overview"></a>

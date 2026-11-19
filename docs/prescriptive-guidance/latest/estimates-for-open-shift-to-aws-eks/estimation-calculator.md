@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Migration lifecycle phases
-<a name="estimation-calculator"></a>
 
 Structure your OpenShift to Amazon EKS migration using a phased approach that aligns with standard software development lifecycle (SDLC) practices. Each phase requires specific activities and effort allocation.
 

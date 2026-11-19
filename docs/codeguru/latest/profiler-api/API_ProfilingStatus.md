@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_Profili
 ---
 
 # ProfilingStatus
-<a name="API_ProfilingStatus"></a>
 
  Profiling status includes information about the last time a profile agent pinged back, the last time a profile was received, and the aggregation period and start time for the most recent aggregated profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-ai-a
 ---
 
 # AI agent products
-<a name="buyer-ai-agents-products"></a>
 
 AI agents and tools in AWS Marketplace help you quickly deploy pre-built, production-ready AI capabilities from trusted partners without months of development work. You can discover specialized AI agents for tasks like customer service, content creation, and data analysis, as well as individual AI tools like guardrails, knowledge bases, and integration protocols.
 

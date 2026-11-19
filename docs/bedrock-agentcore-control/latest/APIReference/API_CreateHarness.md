@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CreateHarness
-<a name="API_CreateHarness"></a>
 
 Operation to create a harness.
 

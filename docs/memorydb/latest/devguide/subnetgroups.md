@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/subnetgroups.ht
 ---
 
 # Subnets and subnet groups
-<a name="subnetgroups"></a>
 
 A *subnet group* is a collection of subnets (typically private) that you can designate for your clusters running in an Amazon Virtual Private Cloud (VPC) environment.
 

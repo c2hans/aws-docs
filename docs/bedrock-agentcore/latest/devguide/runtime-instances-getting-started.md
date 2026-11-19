@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Get started with Instances
-<a name="runtime-instances-getting-started"></a>
 
 These tutorials walk through hosting an agent on the **Instances** compute type. You first create a [capacity provider](runtime-instances-how-it-works.md#runtime-instances-capacity-provider) that defines the EC2 infrastructure, then create an agent runtime that uses it, and finally invoke the agent. Choose the path that matches how you work: the AWS Management Console, or the AWS CLI and SDKs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/applica
 ---
 
 # Managing your application logs
-<a name="application-manager-viewing-logs"></a>
 
 In Application Manager, a component of AWS Systems Manager, the **Logs** tab displays a list of log groups from Amazon CloudWatch Logs.
 

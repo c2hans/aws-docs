@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # CAST
-<a name="sql-reference-cast"></a>
 
 CAST lets you convert one value expression or data type to another value expression or data type.
 

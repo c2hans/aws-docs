@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/tracking-
 ---
 
 # Tracker concepts
-<a name="tracking-components"></a>
 
 This section details common trackers concepts.
 

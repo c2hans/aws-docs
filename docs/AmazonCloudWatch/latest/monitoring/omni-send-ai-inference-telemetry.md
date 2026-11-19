@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Collect AI inference telemetry
-<a name="omni-send-ai-inference-telemetry"></a>
 
 In CloudWatch Omni, AI Inference Insights is the monitoring experience for inference telemetry. It covers self-hosted vLLM engines that run on Amazon ECS or on Amazon EKS. Setting it up needs no application code changes, because you configure your engine and a collector rather than your application.
 

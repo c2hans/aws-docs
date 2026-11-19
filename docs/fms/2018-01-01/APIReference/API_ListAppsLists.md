@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ListApps
 ---
 
 # ListAppsLists
-<a name="API_ListAppsLists"></a>
 
 Returns an array of `AppsListDataSummary` objects.
 

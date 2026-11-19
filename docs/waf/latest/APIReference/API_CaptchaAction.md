@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CaptchaActio
 ---
 
 # CaptchaAction
-<a name="API_CaptchaAction"></a>
 
 Specifies that AWS WAF should run a `CAPTCHA` check against the request:
 + If the request includes a valid, unexpired `CAPTCHA` token, AWS WAF applies any custom request handling and labels that you've configured and then allows the web request inspection to proceed to the next rule, similar to a `CountAction`.

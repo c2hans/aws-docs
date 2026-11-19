@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/prepare-dat
 ---
 
 # Preparing data tables in Snowflake
-<a name="prepare-data-snowflake"></a>
 
 You can query data tables that have been stored in Snowflake data warehouse.
 

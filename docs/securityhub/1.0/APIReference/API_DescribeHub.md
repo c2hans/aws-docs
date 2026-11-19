@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Describ
 ---
 
 # DescribeHub
-<a name="API_DescribeHub"></a>
 
 Returns details about the Hub resource in your account, including the `HubArn` and the time when you enabled Security Hub CSPM.
 

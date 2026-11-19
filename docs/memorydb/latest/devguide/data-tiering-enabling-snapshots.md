@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/data-tiering-en
 ---
 
 # Restoring data from a snapshot into clusters
-<a name="data-tiering-enabling-snapshots"></a>
 
 You can restore a snapshot to a new cluster with data tiering enabled using the (Console), (AWS CLI) or (MemoryDB API). When you create a cluster using node types in the r6gd family, data tiering is enabled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/redshift-cl
 ---
 
 # redshift-cluster-multi-az-enabled
-<a name="redshift-cluster-multi-az-enabled"></a>
 
 Checks if an Amazon Redshift cluster has multiple Availability Zones deployments enabled. This rule is NON\_COMPLIANT if Amazon Redshift cluster does not have multiple Availability Zones deployments enabled.
 

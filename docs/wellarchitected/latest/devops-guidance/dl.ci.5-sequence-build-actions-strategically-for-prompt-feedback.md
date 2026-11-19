@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.CI.5] Sequence build actions strategically for prompt feedback
-<a name="dl.ci.5-sequence-build-actions-strategically-for-prompt-feedback"></a>
 
  **Category:** RECOMMENDED
 

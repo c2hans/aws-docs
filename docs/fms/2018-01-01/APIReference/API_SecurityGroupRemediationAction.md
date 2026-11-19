@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Security
 ---
 
 # SecurityGroupRemediationAction
-<a name="API_SecurityGroupRemediationAction"></a>
 
 Remediation option for the rule specified in the `ViolationTarget`.
 

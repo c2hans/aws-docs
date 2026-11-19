@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Migration tools
-<a name="migration-tools"></a>
 
 The following tools are listed in order of logical migration to physical migration.
 

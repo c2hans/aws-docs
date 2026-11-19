@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/examples-export-table
 ---
 
 # Exporting Tables into a CSV File
-<a name="examples-export-table-csv"></a>
 
 These Python examples show how to export tables from an image of a document into a comma-separated values (CSV) file.
 

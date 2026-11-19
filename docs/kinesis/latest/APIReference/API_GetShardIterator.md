@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShard
 ---
 
 # GetShardIterator
-<a name="API_GetShardIterator"></a>
 
 Gets an Amazon Kinesis shard iterator. A shard iterator expires 5 minutes after it is returned to the requester.
 
@@ -14,13 +13,13 @@ A shard iterator specifies the shard position from which to start reading data r
 
 You must specify the shard iterator type. For example, you can set the `ShardIteratorType` parameter to read exactly from the position denoted by a specific sequence number by using the `AT_SEQUENCE_NUMBER` shard iterator type. Alternatively, the parameter can read right after the sequence number by using the `AFTER_SEQUENCE_NUMBER` shard iterator type, using sequence numbers returned by earlier calls to [PutRecord](API_PutRecord.md), [PutRecords](API_PutRecords.md), [GetRecords](API_GetRecords.md), or [DescribeStream](API_DescribeStream.md). In the request, you can specify the shard iterator type `AT_TIMESTAMP` to read records from an arbitrary point in time, `TRIM_HORIZON` to cause `ShardIterator` to point to the last untrimmed record in the shard in the system (the oldest data record in the shard), or `LATEST` so that you always read the most recent data in the shard.
 
-When you read repeatedly from a stream, use a [GetShardIterator](#API_GetShardIterator) request to get the first shard iterator for use in your first [GetRecords](API_GetRecords.md) request and for subsequent reads use the shard iterator returned by the [GetRecords](API_GetRecords.md) request in `NextShardIterator`. A new shard iterator is returned by every [GetRecords](API_GetRecords.md) request in `NextShardIterator`, which you use in the `ShardIterator` parameter of the next [GetRecords](API_GetRecords.md) request.
+When you read repeatedly from a stream, use a [GetShardIterator](API_GetShardIterator.md) request to get the first shard iterator for use in your first [GetRecords](API_GetRecords.md) request and for subsequent reads use the shard iterator returned by the [GetRecords](API_GetRecords.md) request in `NextShardIterator`. A new shard iterator is returned by every [GetRecords](API_GetRecords.md) request in `NextShardIterator`, which you use in the `ShardIterator` parameter of the next [GetRecords](API_GetRecords.md) request.
 
-If a [GetShardIterator](#API_GetShardIterator) request is made too often, you receive a `ProvisionedThroughputExceededException`. For more information about throughput limits, see [GetRecords](API_GetRecords.md), and [Streams Limits](https://docs.aws.amazon.com/kinesis/latest/dev/service-sizes-and-limits.html) in the *Amazon Kinesis Data Streams Developer Guide*.
+If a [GetShardIterator](API_GetShardIterator.md) request is made too often, you receive a `ProvisionedThroughputExceededException`. For more information about throughput limits, see [GetRecords](API_GetRecords.md), and [Streams Limits](https://docs.aws.amazon.com/kinesis/latest/dev/service-sizes-and-limits.html) in the *Amazon Kinesis Data Streams Developer Guide*.
 
-If the shard is closed, [GetShardIterator](#API_GetShardIterator) returns a valid iterator for the last sequence number of the shard. A shard can be closed as a result of using [SplitShard](API_SplitShard.md) or [MergeShards](API_MergeShards.md).
+If the shard is closed, [GetShardIterator](API_GetShardIterator.md) returns a valid iterator for the last sequence number of the shard. A shard can be closed as a result of using [SplitShard](API_SplitShard.md) or [MergeShards](API_MergeShards.md).
 
- [GetShardIterator](#API_GetShardIterator) has a limit of five transactions per second per account per open shard.
+ [GetShardIterator](API_GetShardIterator.md) has a limit of five transactions per second per account per open shard.
 
 ## Request Syntax
 <a name="API_GetShardIterator_RequestSyntax"></a>

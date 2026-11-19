@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateMethodRe
 ---
 
 # UpdateMethodResponse
-<a name="API_UpdateMethodResponse"></a>
 
 Updates an existing MethodResponse resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3CatalogTarget.h
 ---
 
 # S3CatalogTarget
-<a name="API_S3CatalogTarget"></a>
 
 Specifies a data target that writes to Amazon S3 using the AWS Glue Data Catalog.
 

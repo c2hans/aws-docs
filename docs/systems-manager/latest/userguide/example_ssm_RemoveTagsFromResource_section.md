@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `RemoveTagsFromResource` with a CLI
-<a name="example_ssm_RemoveTagsFromResource_section"></a>
 
 The following code examples show how to use `RemoveTagsFromResource`.
 

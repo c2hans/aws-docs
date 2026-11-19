@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # DeleteAIPromptVersion
-<a name="API_amazon-q-connect_DeleteAIPromptVersion"></a>
 
 Delete and Amazon Q in Connect AI Prompt version.
 

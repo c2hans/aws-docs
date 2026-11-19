@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/access-
 ---
 
 # Create an Interface Endpoint to Access WorkSpaces Applications API Operations and CLI Commands
-<a name="access-api-cli-through-interface-vpc-endpoint-create-interface-endpoint"></a>
 
 Perform the following steps to create an interface endpoint.
 

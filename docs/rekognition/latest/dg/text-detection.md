@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/text-detection.htm
 ---
 
 # Detecting text
-<a name="text-detection"></a>
 
 Amazon Rekognition can detect text in images and videos. It can then convert the detected text into machine-readable text. You can use machine-readable text detection in images to implement solutions such as:
 + Visual search. For example, retrieving and displaying images that contain the same text.

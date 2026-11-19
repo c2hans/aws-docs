@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTSiteWiseMonitorServiceRolePolicy
-<a name="AWSIoTSiteWiseMonitorServiceRolePolicy"></a>
 
 **Description**: This role grants AWS IoT SiteWise monitor permissions to access your AWS IoT SiteWise assets & asset properties, and create AWS IoT Sitewise projects, dashboards & access policies through AWS IoT SiteWise portals.
 

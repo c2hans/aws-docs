@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateAccountCustomization
-<a name="API_CreateAccountCustomization"></a>
 
 Creates Amazon Quick Sight customizations. Currently, you can add a custom default theme by using the `CreateAccountCustomization` or `UpdateAccountCustomization` API operation. To further customize Amazon Quick Sight by removing Amazon Quick Sight sample assets and videos for all new users, see [Customizing Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/customizing-quicksight.html) in the *Amazon Quick Sight User Guide.*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_So
 ---
 
 # Sort
-<a name="API_Sort"></a>
 
 Sort search results.
 

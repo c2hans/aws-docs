@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 ---
 
 # Data retrieval APIs for AWS Amplify UI Builder
-<a name="awsamplifyuibuilder"></a>
 
 AWS Amplify UI Builder provides the following APIs for data retrieval.
 

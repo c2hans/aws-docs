@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_E
 ---
 
 # ExecutionParameter
-<a name="API_ExecutionParameter"></a>
 
 Details of an execution parameter value that is passed to a self-service action when executed on a provisioned product.
 

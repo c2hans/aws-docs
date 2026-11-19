@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_StopSa
 ---
 
 # StopSandbox
-<a name="API_StopSandbox"></a>
 
 Stops a sandbox.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeV
 ---
 
 # DescribeVpcEndpointServiceConfigurations
-<a name="API_DescribeVpcEndpointServiceConfigurations"></a>
 
 Describes the VPC endpoint service configurations in your account (your services).
 

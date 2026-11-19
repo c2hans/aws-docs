@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Regi
 ---
 
 # RegisteredRemoteAgentSigV4Details
-<a name="API_RegisteredRemoteAgentSigV4Details"></a>
 
 Details specific to a registered SigV4-authenticated remote A2A agent.
 

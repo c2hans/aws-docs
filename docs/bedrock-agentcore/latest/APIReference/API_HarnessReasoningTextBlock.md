@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessReasoningTextBlock
-<a name="API_HarnessReasoningTextBlock"></a>
 
 A block of reasoning text from the model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENSUS02-BP01 Optimize data processing and storage to minimize energy consumption
-<a name="gensus02-bp01"></a>
 
  Organizations should optimize data processing and storage, which aims to enhance the sustainability and cost-effectiveness of their data processing and storage systems, particularly for generative AI workloads. Optimizing the use of computational resources helps you minimize energy consumption and operational costs while maintaining high performance and scalability.
 

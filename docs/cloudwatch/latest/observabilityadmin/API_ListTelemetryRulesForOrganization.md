@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # ListTelemetryRulesForOrganization
-<a name="API_ListTelemetryRulesForOrganization"></a>
 
  Lists all telemetry rules in your organization. This operation can only be called by the organization's management account or a delegated administrator account.
 

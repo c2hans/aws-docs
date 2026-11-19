@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/customi
 ---
 
 # Change System Environment Variables
-<a name="customize-fleets-system-environment-variables"></a>
 
 Follow these steps to change system environment variables across your fleet instances.
 

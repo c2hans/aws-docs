@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/sdk-witho
 ---
 
 # Using the SDK with StreamsJS
-<a name="sdk-without-package-manager-streamsjs"></a>
 
 This section explains how to use the prebuilt bundle in a solution that uses Connect Customer Streams (StreamsJS).
 

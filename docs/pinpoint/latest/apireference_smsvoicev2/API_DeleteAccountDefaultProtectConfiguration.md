@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeleteAccountDefaultProtectConfiguration
-<a name="API_DeleteAccountDefaultProtectConfiguration"></a>
 
 Removes the current account default protect configuration.
 

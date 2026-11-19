@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/security
 ---
 
 # How Amazon Simple Workflow Service works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Amazon SWF, learn what IAM features are available to use with Amazon SWF.
 

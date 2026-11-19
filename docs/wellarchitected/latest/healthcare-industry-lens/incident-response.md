@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Incident response
-<a name="incident-response"></a>
 
 | HCL\_SEC9. What is your disaster recovery for critical systems? |
 | --- |

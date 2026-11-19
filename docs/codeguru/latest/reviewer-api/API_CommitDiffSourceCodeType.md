@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_CommitD
 ---
 
 # CommitDiffSourceCodeType
-<a name="API_CommitDiffSourceCodeType"></a>
 
 A type of [SourceCodeType](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_SourceCodeType) that specifies the commit diff for a pull request on an associated repository. The `SourceCommit` and `DestinationCommit` fields are required to do a pull request code review.
 

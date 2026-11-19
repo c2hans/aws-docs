@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteE
 ---
 
 # DeleteEnvironmentAction
-<a name="API_DeleteEnvironmentAction"></a>
 
 Deletes an action for the environment, for example, deletes a console link for an analytics tool that is available in this environment.
 

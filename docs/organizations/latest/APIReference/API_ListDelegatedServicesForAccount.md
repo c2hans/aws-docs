@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Li
 ---
 
 # ListDelegatedServicesForAccount
-<a name="API_ListDelegatedServicesForAccount"></a>
 
 List the AWS services for which the specified account is a delegated administrator.
 

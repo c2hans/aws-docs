@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/devices
 ---
 
 # Device support in AWS Device Farm
-<a name="devices"></a>
 
 The following sections provide information about device support in Device Farm.
 

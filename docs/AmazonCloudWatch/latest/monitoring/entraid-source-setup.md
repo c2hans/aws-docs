@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/entra
 ---
 
 # Source configuration for Microsoft Entra ID
-<a name="entraid-source-setup"></a>
 
 ## Integrating with Microsoft Entra ID
 <a name="entraid-integration"></a>

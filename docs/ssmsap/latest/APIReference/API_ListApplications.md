@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_ListAppli
 ---
 
 # ListApplications
-<a name="API_ListApplications"></a>
 
 Lists all the applications registered with AWS Systems Manager for SAP.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-heterogeneous-
 ---
 
 # Modify your training script to assign instance groups
-<a name="train-heterogeneous-cluster-modify-training-script"></a>
 
 With the heterogeneous cluster configuration in the previous sections, you have prepared the SageMaker training environment and instances for your training job. To further assign the instance groups to certain training and data processing tasks, the next step is to modify your training script. By default, the training job simply makes training script replicas for all nodes regardless the size of the instance, and this might lead to performance loss.
 

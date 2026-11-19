@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_ValidationCo
 ---
 
 # ValidationConfiguration
-<a name="API_ValidationConfiguration"></a>
 
 Contains the validation method, validation status, and validation challenge details for a domain. This structure appears in [DomainValidationSummary](API_DomainValidationSummary.md) as both the active and requested validation configuration.
 

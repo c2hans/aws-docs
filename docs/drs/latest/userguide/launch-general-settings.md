@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/launch-general-sett
 ---
 
 # DRS launch settings
-<a name="launch-general-settings"></a>
 
 The **DRS launch settings** section allows you to control server-specific settings.
 

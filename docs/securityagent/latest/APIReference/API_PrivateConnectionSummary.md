@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Pr
 ---
 
 # PrivateConnectionSummary
-<a name="API_PrivateConnectionSummary"></a>
 
 Summarizes a private connection.
 

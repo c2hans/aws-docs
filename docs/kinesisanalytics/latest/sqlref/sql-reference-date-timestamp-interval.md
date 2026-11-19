@@ -3,14 +3,13 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Date, Timestamp, and Interval Operators
-<a name="sql-reference-date-timestamp-interval"></a>
 
 The arithmetic operators \+, -, \*, and / are binary operators.
 
 | Operator | Description | Notes |
 | --- | --- | --- |
 | \+ | Addition | interval \+ interval = interval<br />interval \+ datetime = datetime<br />datetime \+ interval = datetime |
-| - | Subtraction | interval - interval = interval<br />datetime - interval = datetime<br />( <datetime> - <datetime> ) [Date, Timestamp, and Interval Operators](#sql-reference-date-timestamp-interval) <interval qualifier> = interval |
+| - | Subtraction | interval - interval = interval<br />datetime - interval = datetime<br />( <datetime> - <datetime> ) [Date, Timestamp, and Interval Operators](sql-reference-date-timestamp-interval.md) <interval qualifier> = interval |
 | \* | Multiplication | interval \* numeric = interval<br />numeric \* interval = interval |
 | / | Division | interval / numeric = interval |
 

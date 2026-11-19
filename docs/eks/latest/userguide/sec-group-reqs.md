@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sec-group-reqs.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # View Amazon EKS security group requirements for clusters
-<a name="sec-group-reqs"></a>
 
 This topic describes the security group requirements of an Amazon EKS cluster.
 

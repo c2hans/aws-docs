@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RecommendedAction
-<a name="API_BillingAndCostManagementRecommendedActions_RecommendedAction"></a>
 
 Describes a specific recommended action.
 

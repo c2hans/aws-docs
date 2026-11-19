@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/semantic-la
 ---
 
 # Technology Tradeoffs & Alternatives
-<a name="technology-tradeoffs-alternatives"></a>
 
 **Note**
 : AWS service features, pricing, instance families, and capabilities evolve over time. The technical details, comparisons, and recommendations in this section are accurate as of **May 2026**. Always verify current service capabilities, limits, and pricing against the latest [AWS documentation](https://docs.aws.amazon.com/) before making architectural decisions.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/arch-guide-failure-sc
 ---
 
 # Failure scenarios
-<a name="arch-guide-failure-scenarios"></a>
 
 For the failure scenarios below, the primary consideration is the physical unavailability of the compute and/or storage capacity within the Availability Zones.
 

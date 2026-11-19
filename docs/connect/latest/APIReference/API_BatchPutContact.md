@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchPut
 ---
 
 # BatchPutContact
-<a name="API_BatchPutContact"></a>
 
 **Note**
 Only the Connect Customer outbound campaigns service principal is allowed to assume a role in your account and call this API.

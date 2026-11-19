@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/delegatio
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Viewing your notifications for incoming delegation requests
-<a name="delegation-for-delegates-viewing-notifications"></a>
 
 When an audit owner requests your assistance with reviewing a control set, you receive a notification that informs you of the control set that they delegated to you.
 

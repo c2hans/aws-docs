@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/logging-setting-u
 ---
 
 # Setting up alarms on error logs
-<a name="logging-setting-up-alarms"></a>
 
 We recommend setting up a monitoring system on your `ERROR` logs to alert you of consistent failures. You can use Amazon CloudWatch metric filters and alarms to detect error patterns automatically.
 

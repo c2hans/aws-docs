@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Subscri
 ---
 
 # SubscribedListingItem
-<a name="API_SubscribedListingItem"></a>
 
 The published asset for which the subscription grant is created.
 

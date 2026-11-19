@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListV
 ---
 
 # ListVPCEConfigurations
-<a name="API_ListVPCEConfigurations"></a>
 
 Returns information about all Amazon Virtual Private Cloud (VPC) endpoint configurations in the AWS account.
 

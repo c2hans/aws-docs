@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Advanced.Endpo
 ---
 
 # Security group configuration for AWS DMS
-<a name="CHAP_Advanced.Endpoints.securitygroup"></a>
 
 Security group in AWS DMS must allow inbound and outbound connections for your replication instances on the appropriate database port. If you are using Amazon RDS, you must configure the security group between DMS and RDS for your instances.
 

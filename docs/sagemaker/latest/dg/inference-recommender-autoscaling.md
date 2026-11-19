@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-recommende
 ---
 
 # Get autoscaling policy recommendations
-<a name="inference-recommender-autoscaling"></a>
 
 With Amazon SageMaker Inference Recommender, you can get recommendations for autoscaling policies for your SageMaker AI endpoint based on your anticipated traffic pattern. If you’ve already completed an inference recommendation job, you can provide the details of the job to get a recommendation for an autoscaling policy that you can apply to your endpoint.
 

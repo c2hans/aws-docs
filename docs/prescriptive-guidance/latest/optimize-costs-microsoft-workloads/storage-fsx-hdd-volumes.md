@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Understand HDD volume usage in Amazon FSx
-<a name="storage-fsx-hdd-volumes"></a>
 
 ## Overview
 <a name="storage-fsx-hdd-volumes-overview"></a>

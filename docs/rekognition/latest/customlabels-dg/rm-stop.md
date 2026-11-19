@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/rm-st
 ---
 
 # Stopping an Amazon Rekognition Custom Labels model
-<a name="rm-stop"></a>
 
 You can stop running an Amazon Rekognition Custom Labels model by using the console or by using the [StopProjectVersion](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StopProjectVersion) operation.
 

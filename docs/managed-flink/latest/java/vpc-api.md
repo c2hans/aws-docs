@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/vpc-api.html
 ---
 
 # Use the Managed Service for Apache Flink VPC API
-<a name="vpc-api"></a>
 
 Use the following Managed Service for Apache Flink API operations to manage VPCs for your application. For information on using the Managed Service for Apache Flink API, see [Managed Service for Apache Flink API example code](api-examples.md).
 

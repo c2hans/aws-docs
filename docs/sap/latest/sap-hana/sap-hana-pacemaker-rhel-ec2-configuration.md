@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-r
 ---
 
 # EC2 Instance Configuration
-<a name="sap-hana-pacemaker-rhel-ec2-configuration"></a>
 
 Amazon EC2 instance settings can be applied using Infrastructure as Code or manually using AWS Command Line Interface or AWS Console. We recommend Infrastructure as Code automation to reduce manual steps, and ensure consistency.
 

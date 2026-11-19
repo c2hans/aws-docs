@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListServiceProfiles
-<a name="API_ListServiceProfiles"></a>
 
 Lists the service profiles registered to your AWS account.
 

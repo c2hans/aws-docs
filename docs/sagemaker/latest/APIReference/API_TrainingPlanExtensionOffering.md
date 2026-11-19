@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingPlanExtensionOffering
-<a name="API_TrainingPlanExtensionOffering"></a>
 
 Details about an available extension offering for a training plan. Use the offering ID with the ` [ExtendTrainingPlan](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ExtendTrainingPlan.html) ` API to extend a training plan.
 

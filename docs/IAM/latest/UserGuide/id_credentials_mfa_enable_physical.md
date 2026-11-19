@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_
 ---
 
 # Assign a hardware TOTP token in the AWS Management Console
-<a name="id_credentials_mfa_enable_physical"></a>
 
 **Important**
 AWS recommends that you use a passkey or security key for MFA to AWS, wherever possible. For more information, see [Assign a passkey or security key in the AWS Management Console](id_credentials_mfa_enable_fido.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/ug/accept-org-agreement.
 ---
 
 # Accepting agreements for your organization in AWS Artifact
-<a name="accept-org-agreement"></a>
 
 If you're the owner of the management account of an AWS Organizations organization, then you can accept an agreement with AWS on behalf of all AWS accounts in your organization.
 

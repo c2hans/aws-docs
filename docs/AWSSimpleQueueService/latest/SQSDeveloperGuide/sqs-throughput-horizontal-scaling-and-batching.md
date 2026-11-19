@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Increasing throughput using horizontal scaling and action batching with Amazon SQS
-<a name="sqs-throughput-horizontal-scaling-and-batching"></a>
 
 Amazon SQS supports high-throughput messaging. For details on throughput limits, refer to [Amazon SQS message quotas](quotas-messages.md).
 

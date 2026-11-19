@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # 04-query-test.py
-<a name="DAX.client.run-application-python.04-query-test"></a>
 
 The `04-query-test.py` program performs `Query` operations on `TryDaxTable`.
 

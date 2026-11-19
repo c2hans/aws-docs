@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/userguide/journeys-troub
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Troubleshooting journeys
-<a name="journeys-troubleshooting"></a>
 
 Verify that logging is turned on to assist in identifying the cause of failure. For more information on logging, see [Monitoring and logging](troubleshooting.md#troubleshooting-logging) and [Journey events](https://docs.aws.amazon.com/pinpoint/latest/developerguide/event-streams-data-journey.html).
 

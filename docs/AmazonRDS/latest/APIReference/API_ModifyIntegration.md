@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Modify
 ---
 
 # ModifyIntegration
-<a name="API_ModifyIntegration"></a>
 
 Modifies a zero-ETL integration with Amazon Redshift.
 

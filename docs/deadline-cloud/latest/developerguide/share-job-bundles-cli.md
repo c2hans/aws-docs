@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/sha
 ---
 
 # Work with shared bundles from the command line
-<a name="share-job-bundles-cli"></a>
 
 Use the CLI commands in this section to script bundle operations and to check the state of a queue's bundles while you develop them.
 

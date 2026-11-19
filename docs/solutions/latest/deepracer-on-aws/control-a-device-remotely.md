@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/contro
 ---
 
 # Control a device remotely
-<a name="control-a-device-remotely"></a>
 
 To control a device, choose **Devices** under **Device management** in the left sidebar, then select a device to open its action panel. The following actions are available.
 

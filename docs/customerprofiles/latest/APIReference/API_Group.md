@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # Group
-<a name="API_connect-customer-profiles_Group"></a>
 
 Contains dimensions that determine what to segment on.
 

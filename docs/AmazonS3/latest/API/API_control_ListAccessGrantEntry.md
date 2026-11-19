@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListAcce
 ---
 
 # ListAccessGrantEntry
-<a name="API_control_ListAccessGrantEntry"></a>
 
 Information about the access grant.
 

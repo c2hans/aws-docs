@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HyperP
 ---
 
 # HyperParameterTuningJobConsumedResources
-<a name="API_HyperParameterTuningJobConsumedResources"></a>
 
 The total resources consumed by your hyperparameter tuning job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pipeliner-reading-from-en
 ---
 
 # Reading from Pipeliner entities
-<a name="pipeliner-reading-from-entities"></a>
 
 **Prerequisites**
 

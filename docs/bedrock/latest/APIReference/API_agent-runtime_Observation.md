@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # Observation
-<a name="API_agent-runtime_Observation"></a>
 
 Contains the result or output of an action group or knowledge base, or the response to the user.
 

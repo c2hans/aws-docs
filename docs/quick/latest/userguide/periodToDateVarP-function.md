@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/periodToDateVarP-
 ---
 
 # periodToDateVarP
-<a name="periodToDateVarP-function"></a>
 
 The `periodToDateVarP` function calculates the population variance of the set of numbers in the specified measure for a given time granularity (for instance, a quarter) up to a point in time, relevant to that period.
 

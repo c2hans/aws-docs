@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # API key example for AWS SAM
-<a name="serverless-controlling-access-to-apis-keys"></a>
 
 You can control access to your APIs by requiring API keys within your AWS SAM template. To do this, you use the [ApiAuth](sam-property-api-apiauth.md) data type.
 

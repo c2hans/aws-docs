@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/cloudtrail.html
 ---
 
 # Using AWS CloudTrail to log API calls
-<a name="cloudtrail"></a>
 
 The Amazon Chime SDK is integrated with AWS CloudTrail, a service that provides a record of actions taken in the Amazon Chime SDK by a user, role, or AWS service. CloudTrail captures all API calls for the Amazon Chime SDK as events, including calls from the Amazon Chime SDK console and code calls to the Amazon Chime SDK APIs.
 

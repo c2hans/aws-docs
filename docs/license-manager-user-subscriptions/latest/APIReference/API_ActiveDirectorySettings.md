@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # ActiveDirectorySettings
-<a name="API_ActiveDirectorySettings"></a>
 
 Contains network access and credential details that are needed for user administration in the Active Directory.
 

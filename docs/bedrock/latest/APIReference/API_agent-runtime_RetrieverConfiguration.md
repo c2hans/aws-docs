@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # RetrieverConfiguration
-<a name="API_agent-runtime_RetrieverConfiguration"></a>
 
 Configuration for a retriever, specified as a union of retriever types.
 

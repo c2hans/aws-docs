@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/iam-no-inli
 ---
 
 # iam-no-inline-policy-check
-<a name="iam-no-inline-policy-check"></a>
 
 Checks if the inline policy feature is not in use. The rule is NON\_COMPLIANT if an AWS Identity and Access Management (IAM) user, IAM role or IAM group has any inline policy.
 

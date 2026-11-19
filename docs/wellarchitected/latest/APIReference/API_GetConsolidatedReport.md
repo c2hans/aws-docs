@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # GetConsolidatedReport
-<a name="API_GetConsolidatedReport"></a>
 
 Get a consolidated report of your workloads.
 
@@ -107,7 +106,7 @@ The following data is returned in JSON format by the service.
  ** [Base64String](#API_GetConsolidatedReport_ResponseSyntax) **   <a name="wellarchitected-GetConsolidatedReport-response-Base64String"></a>
 The Base64-encoded string representation of a lens review report.
 This data can be used to create a PDF file.
-Only returned by [GetConsolidatedReport](#API_GetConsolidatedReport) when `PDF` format is requested.
+Only returned by [GetConsolidatedReport](API_GetConsolidatedReport.md) when `PDF` format is requested.
 Type: String
 
  ** [Metrics](#API_GetConsolidatedReport_ResponseSyntax) **   <a name="wellarchitected-GetConsolidatedReport-response-Metrics"></a>

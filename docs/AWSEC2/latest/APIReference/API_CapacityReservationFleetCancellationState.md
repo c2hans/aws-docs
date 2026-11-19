@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityR
 ---
 
 # CapacityReservationFleetCancellationState
-<a name="API_CapacityReservationFleetCancellationState"></a>
 
 Describes a Capacity Reservation Fleet that was successfully cancelled.
 

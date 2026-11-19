@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/diagnose-session-i
 ---
 
 # Fix CDN session management and tracking issues for MediaTailor
-<a name="diagnose-session-issues"></a>
 
 AWS Elemental MediaTailor content delivery network (CDN) session management is critical for proper ad personalization and tracking. If you encounter session-related errors or inconsistent behavior across requests:
 

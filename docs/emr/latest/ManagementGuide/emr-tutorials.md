@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-tutorials
 ---
 
 # Amazon EMR tutorials
-<a name="emr-tutorials"></a>
 
  An EMR cluster runs in a complex ecosystem. The following tutorial covers important use cases.
 

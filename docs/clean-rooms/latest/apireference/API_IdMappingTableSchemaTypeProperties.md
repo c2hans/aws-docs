@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_IdMa
 ---
 
 # IdMappingTableSchemaTypeProperties
-<a name="API_IdMappingTableSchemaTypeProperties"></a>
 
 Additional properties that are specific to the type of the associated schema.
 

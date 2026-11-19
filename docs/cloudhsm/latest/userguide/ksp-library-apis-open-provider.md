@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-ap
 ---
 
 # NCryptOpenStorageProvider function with Key Storage Provider (KSP)
-<a name="ksp-library-apis-open-provider"></a>
 
 The `NCryptOpenStorageProvider` function loads and initializes the Key Storage Provider (KSP).
 

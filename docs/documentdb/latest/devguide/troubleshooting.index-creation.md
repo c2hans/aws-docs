@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/troubleshooti
 ---
 
 # Troubleshooting indexes
-<a name="troubleshooting.index-creation"></a>
 
 The following topics address what to do if your index or background index build fails.
 

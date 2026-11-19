@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # DisassociateMpaTeam
-<a name="API_DisassociateMpaTeam"></a>
 
 Removes the association between a Multi-Party Approval (MPA) team and a protected operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/task-templates
 ---
 
 # Task templates in Connect Customer
-<a name="task-templates"></a>
 
 Task templates make it easy for agents to capture the right information to create and complete a [task](tasks.md). All the fields they need to create a given type of task are provided for them.
 

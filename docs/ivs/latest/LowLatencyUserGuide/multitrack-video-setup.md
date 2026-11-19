@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrac
 ---
 
 # Amazon IVS Multitrack Video: Setup Guide
-<a name="multitrack-video-setup"></a>
 
 This document is focused on customers that integrate Amazon IVS APIs and SDKs into their applications.
 

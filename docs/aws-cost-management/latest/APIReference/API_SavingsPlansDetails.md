@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlansDetails
-<a name="API_SavingsPlansDetails"></a>
 
 The attribute details on a specific Savings Plan.
 

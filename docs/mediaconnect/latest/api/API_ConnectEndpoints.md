@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ConnectEndpo
 ---
 
 # ConnectEndpoints
-<a name="API_ConnectEndpoints"></a>
 
 Connects a source endpoint to a destination endpoint.
 

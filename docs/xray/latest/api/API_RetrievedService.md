@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_RetrievedService.htm
 ---
 
 # RetrievedService
-<a name="API_RetrievedService"></a>
 
  Retrieved information about an application that processed requests, users that made requests, or downstream services, resources, and applications that an application used.
 

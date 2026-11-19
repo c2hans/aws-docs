@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aurora-repl
 ---
 
 # Comparing Amazon Aurora Replicas, Aurora cross-Region Replicas, and Aurora global databases
-<a name="introduction"></a>
 
 *Naveen Garg, Amazon Web Services*
 

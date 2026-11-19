@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ScheduledWindowExecution
-<a name="API_ScheduledWindowExecution"></a>
 
 Information about a scheduled execution for a maintenance window.
 

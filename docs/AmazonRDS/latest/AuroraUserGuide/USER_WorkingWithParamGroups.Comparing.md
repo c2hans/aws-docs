@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Wo
 ---
 
 # Comparing DB parameter groups
-<a name="USER_WorkingWithParamGroups.Comparing"></a>
 
 You can use the AWS Management Console to view the differences between two DB parameter groups.
 

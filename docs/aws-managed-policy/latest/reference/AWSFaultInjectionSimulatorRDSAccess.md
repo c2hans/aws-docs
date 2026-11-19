@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSF
 ---
 
 # AWSFaultInjectionSimulatorRDSAccess
-<a name="AWSFaultInjectionSimulatorRDSAccess"></a>
 
 **Description**: This policy grants the Fault Injection Simulator Service permission in RDS and other required services to perform FIS actions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Describe
 ---
 
 # DescribeSecurityProfile
-<a name="API_DescribeSecurityProfile"></a>
 
 Gets basic information about the security profile.
 

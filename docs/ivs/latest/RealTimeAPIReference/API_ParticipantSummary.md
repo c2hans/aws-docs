@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Part
 ---
 
 # ParticipantSummary
-<a name="API_ParticipantSummary"></a>
 
 Summary object describing a participant that has joined a stage.
 

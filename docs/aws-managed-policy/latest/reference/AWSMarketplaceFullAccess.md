@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplaceFullAccess
-<a name="AWSMarketplaceFullAccess"></a>
 
 **Description**: Provides the ability to subscribe and unsubscribe to AWS Marketplace software, allows users to manage Marketplace software instances from the Marketplace 'Your Software' page, and provides administrative access to EC2.
 

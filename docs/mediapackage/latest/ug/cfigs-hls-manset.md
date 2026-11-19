@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/cfigs-hls-manset.
 ---
 
 # Manifest settings fields
-<a name="cfigs-hls-manset"></a>
 
 Specify the format of the manifest that AWS Elemental MediaPackage delivers from an asset that uses this packaging configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # MetricValue
-<a name="API_MetricValue"></a>
 
 The aggregated value for a metric.
 

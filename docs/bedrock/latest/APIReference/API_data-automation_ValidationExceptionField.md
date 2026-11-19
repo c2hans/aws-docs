@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # ValidationExceptionField
-<a name="API_data-automation_ValidationExceptionField"></a>
 
 Error information for a field that failed validation.
 

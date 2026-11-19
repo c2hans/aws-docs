@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Tieri
 ---
 
 # TieringConfigurationsListMember
-<a name="API_TieringConfigurationsListMember"></a>
 
 This contains metadata about a tiering configuration returned in a list.
 

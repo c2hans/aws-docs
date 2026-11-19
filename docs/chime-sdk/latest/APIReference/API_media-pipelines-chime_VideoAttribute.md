@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # VideoAttribute
-<a name="API_media-pipelines-chime_VideoAttribute"></a>
 
 Defines the settings for a video tile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 ---
 
 # AWS Partner Central dashboard
-<a name="partner-central-dashboard"></a>
 
 The AWS Partner Central console dashboard provides a customizable interface that helps you track and manage your partnership with AWS. The dashboard features key widgets that display important information and guide you through essential actions.
 

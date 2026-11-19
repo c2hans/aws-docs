@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/example_cross_PAM_
 ---
 
 # Create a photo asset management application that lets users manage photos using labels
-<a name="example_cross_PAM_section"></a>
 
 The following code examples show how to create a serverless application that lets users manage photos using labels.
 

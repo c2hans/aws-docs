@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/con
 ---
 
 # Configure storage profiles for fleets
-<a name="configuring-storage-profiles-for-fleets"></a>
 
 You can configure a fleet to include a storage profile that models the file system locations on all workers in the fleet. The host file system configuration of all workers in a fleet must match their fleet's storage profile. Workers with different file system configurations must be in separate fleets.
 

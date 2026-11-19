@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/lms-integra
 ---
 
 # Concrete generative AI example with Amazon Bedrock
-<a name="faq"></a>
 
 This section demonstrates practical implementation approaches for integrating Amazon Bedrock's generative AI capabilities with Learning Management Systems. The most appropriate pattern should be chosen based on the particular use case.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # SchemaInputAttribute
-<a name="API_SchemaInputAttribute"></a>
 
 A configuration object for defining input data fields in AWS Entity Resolution. The `SchemaInputAttribute` specifies how individual fields in your input data should be processed and matched.
 

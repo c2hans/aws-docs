@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/c
 ---
 
 # Context-aware rules in AWS Network Firewall
-<a name="context-aware-rules"></a>
 
 Context-aware rules match traffic by the *context* of its source and destination: the AWS resources, such as a VPC or subnet, that send and receive it. You can use context in addition to, or instead of, IP addresses and ports. A rule references these resources by their IDs, called *context IDs*. A context ID is the ID of a VPC, Amazon VPC security group, subnet, or transit gateway attachment. You can use a context ID in a rule's source position, its destination position, or both. For example, a rule can allow only application subnets to reach database subnets, or alert on all traffic from a quarantined Amazon VPC security group. Because the match is based on resource identity, a rule applies to every resource in the boundaries that it references, including resources created after you write the rule. Context-aware rules work in both the firewall and IPS rule groups of a Next Generation Firewall policy, and in the stateful rule groups of a Classic Network Firewall policy. For the policy kinds, see [AWS Network Firewall firewall policy versions](firewall-policy-versions.md).
 

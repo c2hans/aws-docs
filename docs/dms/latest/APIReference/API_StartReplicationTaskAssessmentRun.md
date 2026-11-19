@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StartReplica
 ---
 
 # StartReplicationTaskAssessmentRun
-<a name="API_StartReplicationTaskAssessmentRun"></a>
 
 Starts a new premigration assessment run for one or more individual assessments of a migration task.
 

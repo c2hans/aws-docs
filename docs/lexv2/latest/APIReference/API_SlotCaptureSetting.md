@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotCaptur
 ---
 
 # SlotCaptureSetting
-<a name="API_SlotCaptureSetting"></a>
 
 Settings used when Amazon Lex successfully captures a slot value from a user.
 

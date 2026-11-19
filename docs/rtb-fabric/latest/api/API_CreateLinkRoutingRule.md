@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_CreateLinkRout
 ---
 
 # CreateLinkRoutingRule
-<a name="API_CreateLinkRoutingRule"></a>
 
 Creates a routing rule for a link.
 

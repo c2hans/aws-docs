@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/keywords-pool
 ---
 
 # View keywords used by a phone pool in AWS End User Messaging SMS
-<a name="keywords-pool-list"></a>
 
 Use the AWS End User Messaging SMS console or AWS CLI to view the keyword responses for your phone pool.
 

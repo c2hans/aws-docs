@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CapacityProviderLo
 ---
 
 # CapacityProviderLoggingConfig
-<a name="API_CapacityProviderLoggingConfig"></a>
 
 The capacity provider's Amazon CloudWatch Logs configuration settings.
 

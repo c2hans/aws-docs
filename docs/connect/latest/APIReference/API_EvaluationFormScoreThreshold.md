@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormScoreThreshold
-<a name="API_EvaluationFormScoreThreshold"></a>
 
 Information about a score threshold for a performance category.
 

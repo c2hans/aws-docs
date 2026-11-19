@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # VariantResult
-<a name="API_VariantResult"></a>
 
 Statistical results for a treatment variant compared against the control.
 

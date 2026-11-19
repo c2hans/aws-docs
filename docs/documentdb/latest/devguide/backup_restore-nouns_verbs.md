@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/backup_restor
 ---
 
 # Back up and restore: concepts
-<a name="backup_restore-nouns_verbs"></a>
 
 | Noun | Description | APIs (Verbs) |
 | --- | --- | --- |

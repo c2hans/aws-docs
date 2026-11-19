@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # AccessGrantPrincipal
-<a name="API_AccessGrantPrincipal"></a>
 
 The principal receiving the grant. Specify principalId, principalAttributes, or both.
 

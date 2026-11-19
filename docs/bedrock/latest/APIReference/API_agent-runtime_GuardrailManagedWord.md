@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # GuardrailManagedWord
-<a name="API_agent-runtime_GuardrailManagedWord"></a>
 
 The managed word details for the filter in the Guardrail.
 

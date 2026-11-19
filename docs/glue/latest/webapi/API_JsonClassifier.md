@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_JsonClassifier.ht
 ---
 
 # JsonClassifier
-<a name="API_JsonClassifier"></a>
 
 A classifier for `JSON` content.
 

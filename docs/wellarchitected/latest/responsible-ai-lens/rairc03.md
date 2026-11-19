@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Select metrics
-<a name="rairc03"></a>
 
 | RAIRC03: How will you select metrics for the release criteria across each responsible AI dimension? |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/pass-through-or
 ---
 
 # Archive procedure
-<a name="pass-through-or-removal-archive"></a>
 
 You enable or disable passthrough at the output level: only in outputs that have an MPEG-2 TS container.
 

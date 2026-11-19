@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-password-t
 ---
 
 # Connecting to your cluster with sign-in credentials
-<a name="msk-password-tutorial-connect"></a>
 
 After you create a secret and associate it with your cluster, you can connect your client to the cluster. The following procedure demonstrates how to connect a client to a cluster that uses SASL/SCRAM authentication. It also shows how to produce to and consume from an example topic.
 

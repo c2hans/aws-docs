@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Specify custom metadata
-<a name="CloudWatch-RUM-custom-metadata"></a>
 
 CloudWatch RUM attaches additional data to each event as metadata. Event metadata consists of attributes in the form of key-value pairs. You can use these attributes to search or filter events in the CloudWatch RUM console. By default, CloudWatch RUM creates some metadata for you. For more information about the default metadata, see [RUM event metadata](CloudWatch-RUM-datacollected.md#CloudWatch-RUM-datacollected-metadata).
 

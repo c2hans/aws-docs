@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_GetMe
 ---
 
 # GetMedicalVocabulary
-<a name="API_GetMedicalVocabulary"></a>
 
 Provides information about the specified custom medical vocabulary.
 

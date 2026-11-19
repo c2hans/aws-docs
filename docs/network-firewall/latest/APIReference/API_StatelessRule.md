@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # StatelessRule
-<a name="API_StatelessRule"></a>
 
 A single stateless rule. This is used in [StatelessRulesAndCustomActions](API_StatelessRulesAndCustomActions.md).
 

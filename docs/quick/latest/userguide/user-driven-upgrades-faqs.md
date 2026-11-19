@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/user-driven-upgra
 ---
 
 # User-driven license upgrades FAQ
-<a name="user-driven-upgrades-faqs"></a>
 
 |  |
 | --- |

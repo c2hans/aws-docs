@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/understanding-new-flows.
 ---
 
 # Changes to conversation flows in Amazon Lex V2
-<a name="understanding-new-flows"></a>
 
 On August 17, 2022 Amazon Lex V2 released a change to the way that conversations are managed with the user. This change gives you more control over the path that the user takes through the conversation.
 

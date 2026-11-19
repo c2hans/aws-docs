@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CreateCertif
 ---
 
 # CreateCertificateAuthority
-<a name="API_CreateCertificateAuthority"></a>
 
 Appends a successor certificate authority (CA) to your cluster, beginning the CA rotation process.
 

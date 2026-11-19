@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ActionL
 ---
 
 # ActionLocalIpDetails
-<a name="API_ActionLocalIpDetails"></a>
 
 Provides information about the IP address where the scanned port is located.
 

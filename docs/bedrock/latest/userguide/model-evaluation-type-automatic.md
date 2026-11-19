@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Required steps before creating your first automatic model evaluation job
-<a name="model-evaluation-type-automatic"></a>
 
 Automatic model evaluation jobs require access to the following service level resources. Use the linked topics to learn more about getting setting up.
 

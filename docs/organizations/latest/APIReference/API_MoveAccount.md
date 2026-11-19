@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Mo
 ---
 
 # MoveAccount
-<a name="API_MoveAccount"></a>
 
 Moves an account from its current source parent root or organizational unit (OU) to the specified destination parent root or OU.
 

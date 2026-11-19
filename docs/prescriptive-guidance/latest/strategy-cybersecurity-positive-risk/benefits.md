@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cy
 ---
 
 # Benefits of positive risk
-<a name="benefits"></a>
 
 Especially in an industry such as cybersecurity, which is focused on protecting the business from potential loss, it's easy to frame risk from a negative perspective. Reframing cybersecurity risks based on their potential gains can benefit the business by promoting positive outcomes, increasing the security posture of the organization, and increasing customer trust.
 

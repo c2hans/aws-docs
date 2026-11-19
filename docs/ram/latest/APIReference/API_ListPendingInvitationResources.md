@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ListPendingI
 ---
 
 # ListPendingInvitationResources
-<a name="API_ListPendingInvitationResources"></a>
 
 Lists the resources in a resource share that is shared with you but for which the invitation is still `PENDING`. That means that you haven't accepted or rejected the invitation and the invitation hasn't expired.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/manage-pgp-key
 ---
 
 # Manage PGP keys
-<a name="manage-pgp-keys"></a>
 
 To manage your PGP keys, use AWS Secrets Manager.
 

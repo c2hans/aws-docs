@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_DeleteCh
 ---
 
 # DeleteChimeWebhookConfiguration
-<a name="API_DeleteChimeWebhookConfiguration"></a>
 
 Deletes a Amazon Chime webhook configuration for Amazon Q Developer.
 

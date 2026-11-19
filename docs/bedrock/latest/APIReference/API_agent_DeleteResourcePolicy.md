@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_De
 ---
 
 # DeleteResourcePolicy
-<a name="API_agent_DeleteResourcePolicy"></a>
 
 Removes the resource policy associated with a knowledge base. After deletion, other AWS accounts can no longer access the knowledge base using cross-account permissions.
 

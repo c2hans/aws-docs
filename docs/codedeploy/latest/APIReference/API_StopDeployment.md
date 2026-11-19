@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_StopD
 ---
 
 # StopDeployment
-<a name="API_StopDeployment"></a>
 
 Attempts to stop an ongoing deployment.
 

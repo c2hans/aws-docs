@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIReco
 ---
 
 # AIRecommendationComputeSpec
-<a name="API_AIRecommendationComputeSpec"></a>
 
 The compute resource specification for an AI recommendation job.
 

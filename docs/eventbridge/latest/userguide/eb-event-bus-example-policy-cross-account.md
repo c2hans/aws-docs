@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-bu
 ---
 
 # Example policy: Send events to the default bus in a different account in Amazon EventBridge
-<a name="eb-event-bus-example-policy-cross-account"></a>
 
 The following example policy grants the account 111122223333 permission to publish events to the default event bus in the account 123456789012.
 

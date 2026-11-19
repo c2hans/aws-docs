@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/troubleshootin
 ---
 
 # Upstream or source throttling from a Kinesis data stream
-<a name="troubleshooting-source-throttling"></a>
 
 **Symptom**: The application is encountering `LimitExceededExceptions` from their upstream source Kinesis data stream.
 

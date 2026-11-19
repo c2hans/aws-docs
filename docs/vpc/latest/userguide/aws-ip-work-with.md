@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-work-with.ht
 ---
 
 # Find the IP address ranges for AWS services
-<a name="aws-ip-work-with"></a>
 
 The AWS IP address range JSON file provided by AWS can be a valuable resource for finding the IP addresses of various AWS services and using that information to enhance your network security and access control. By parsing the detailed data contained within this JSON file, you can precisely identify the IP address ranges associated with specific AWS services and Regions.
 

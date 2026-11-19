@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Option
 ---
 
 # Oracle SQLT
-<a name="Oracle.Options.SQLT"></a>
 
 Amazon RDS supports Oracle SQLTXPLAIN (SQLT) through the use of the SQLT option. You can use SQLT with any edition of Oracle Database 19c and higher.
 

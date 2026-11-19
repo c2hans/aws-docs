@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # GetMetricDataQueryDefinition
-<a name="API_GetMetricDataQueryDefinition"></a>
 
 Returns a metric data query definition, including its expression.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/uploa
 ---
 
 # Uploading files for the first time
-<a name="uploading_files"></a>
 
 You can use the AWS Supply Chain Auto-association feature to upload your raw data and automatically associate your raw data with AWS Supply Chain data model. You can also view the *required* columns and tables for each AWS Supply Chain module within the AWS Supply Chain web application.
 

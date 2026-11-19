@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Aggregate
 ---
 
 # AggregateConformancePackComplianceSummary
-<a name="API_AggregateConformancePackComplianceSummary"></a>
 
 Provides a summary of compliance based on either account ID or region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_SlotResolu
 ---
 
 # SlotResolutionTestResultItemCounts
-<a name="API_SlotResolutionTestResultItemCounts"></a>
 
 Information about the counts for a slot resolution in the results of a test execution.
 

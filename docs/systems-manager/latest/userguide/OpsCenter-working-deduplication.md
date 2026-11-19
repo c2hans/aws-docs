@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/OpsCent
 ---
 
 # Managing duplicate OpsItems
-<a name="OpsCenter-working-deduplication"></a>
 
 OpsCenter can receive multiple duplicate OpsItems for a single source from multiple AWS services. OpsCenter uses a combination of built-in logic and configurable deduplication strings to avoid creating duplicate OpsItems. AWS Systems Manager applies deduplication built-in logic when the [CreateOpsItem](https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_CreateOpsItem.html) API operation is called.
 

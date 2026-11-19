@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Stre
 ---
 
 # StreamProcessor
-<a name="API_StreamProcessor"></a>
 
 An object that recognizes faces or labels in a streaming video. An Amazon Rekognition stream processor is created by a call to [CreateStreamProcessor](API_CreateStreamProcessor.md). The request parameters for `CreateStreamProcessor` describe the Kinesis video stream source for the streaming video, face recognition parameters, and where to stream the analysis resullts.
 

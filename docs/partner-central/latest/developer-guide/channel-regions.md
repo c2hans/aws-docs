@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/c
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
 # Supported AWS regions for the AWS Partner Central Channel API
-<a name="channel-regions"></a>
 
 You can access the AWS Partner Central channel management service from any AWS commercial region with the following end point.
 

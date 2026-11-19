@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # ResponseResourceMetric
-<a name="API_ResponseResourceMetric"></a>
 
 An object that contains the full name, description, and unit of a metric.
 

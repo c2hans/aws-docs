@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CustomConfigurationInput
-<a name="API_CustomConfigurationInput"></a>
 
 Input for custom configuration of a memory strategy.
 

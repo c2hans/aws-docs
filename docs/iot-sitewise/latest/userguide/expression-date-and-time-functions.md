@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/expression
 ---
 
 # Use date and time functions in formula expressions
-<a name="expression-date-and-time-functions"></a>
 
 In [transforms](transforms.md) and [metrics](metrics.md), you can use the date and time functions in the following ways:
 + Retrieve the current timestamp of a data point in UTC or in the local time zone.

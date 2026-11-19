@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Li
 ---
 
 # ListOrganizationalUnitsForParent
-<a name="API_ListOrganizationalUnitsForParent"></a>
 
 Lists the organizational units (OUs) in a parent organizational unit or root.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/example_iot_He
 ---
 
 # Hello AWS IoT
-<a name="example_iot_Hello_section"></a>
 
 The following code examples show how to get started using AWS IoT.
 

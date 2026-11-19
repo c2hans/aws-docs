@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSPERF06-BP04 Evaluate `filter_path` criteria
-<a name="aosperf06-bp04"></a>
 
  Reduce response and request sizes by optimizing the filter\_path criteria, minimizing download traffic.
 

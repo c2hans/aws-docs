@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # AWS CodeBuild
-<a name="aws-codebuild"></a>
 
 [AWS CodeBuild](https://aws.amazon.com/codebuild) is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy. You don’t need to provision, manage, and scale your own build servers. CodeBuild can use either of GitHub, GitHub Enterprise, BitBucket, AWS CodeCommit, or Amazon S3 as a source provider.
 

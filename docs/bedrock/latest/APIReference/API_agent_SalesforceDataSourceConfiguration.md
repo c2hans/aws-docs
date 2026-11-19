@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Sa
 ---
 
 # SalesforceDataSourceConfiguration
-<a name="API_agent_SalesforceDataSourceConfiguration"></a>
 
 The configuration information to connect to Salesforce as your data source.
 

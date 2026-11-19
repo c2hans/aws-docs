@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-profi
 ---
 
 # Customer Profiles standard communication record object fields
-<a name="customer-profiles-standard-communication-record-object-fields"></a>
 
  The following table lists all the fields in the Customer Profiles standard communication record object.
 

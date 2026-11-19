@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Ins
 ---
 
 # InstanceAccessControlAttributeConfiguration
-<a name="API_InstanceAccessControlAttributeConfiguration"></a>
 
 Specifies the attributes to add to your attribute-based access control (ABAC) configuration.
 

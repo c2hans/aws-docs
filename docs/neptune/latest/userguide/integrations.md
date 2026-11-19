@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/integrations.ht
 ---
 
 # Working with other AWS services
-<a name="integrations"></a>
 
 You can use Amazon Neptune in conjunction with many other AWS services:
 

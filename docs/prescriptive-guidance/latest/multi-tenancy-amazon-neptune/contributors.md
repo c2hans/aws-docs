@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenan
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Contributors to this guide include:
 + Brian O'Keefe, Principal WW SSA Neptune, AWS

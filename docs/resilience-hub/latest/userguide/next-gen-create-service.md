@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Create a service
-<a name="next-gen-create-service"></a>
 
 **To create a service (console)**
 

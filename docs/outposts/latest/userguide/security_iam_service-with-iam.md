@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/userguide/security_iam_s
 ---
 
 # How AWS Outposts works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AWS Outposts, learn what IAM features are available to use with AWS Outposts.
 

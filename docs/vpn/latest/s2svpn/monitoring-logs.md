@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/monitoring-logs.html
 ---
 
 # AWS Site-to-Site VPN logs
-<a name="monitoring-logs"></a>
 
 AWS Site-to-Site VPN logs provide you with deeper visibility into your Site-to-Site VPN deployments. With this feature, you have access to Site-to-Site VPN connection logs that provide details on IP Security (IPsec) tunnel establishment, Internet Key Exchange (IKE) negotiations, dead peer detection (DPD) protocol messages, Border Gateway protocol (BGP) status and routing updates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_RuntimeHin
 ---
 
 # RuntimeHintValue
-<a name="API_RuntimeHintValue"></a>
 
 Provides the phrase that Amazon Lex should look for in the user's input to the bot.
 

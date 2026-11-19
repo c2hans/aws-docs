@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-jobs-dat
 ---
 
 # StartCommandExecution
-<a name="API_iot-jobs-data_StartCommandExecution"></a>
 
 Using the command created with the `CreateCommand` API, start a command execution on a specific device.
 

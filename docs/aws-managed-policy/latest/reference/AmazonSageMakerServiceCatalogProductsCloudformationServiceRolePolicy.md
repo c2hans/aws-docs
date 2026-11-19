@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy
-<a name="AmazonSageMakerServiceCatalogProductsCloudformationServiceRolePolicy"></a>
 
 **Description**: Service role policy used by the AWS CloudFormation within the AWS ServiceCatalog provisioned products from Amazon SageMaker portfolio of products. Grants permissions to a subset of related services including SageMaker and others.
 

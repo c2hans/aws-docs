@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Proces
 ---
 
 # Process
-<a name="API_Process"></a>
 
 Contains information about a process in a process lineage. `ParentUuid` links each process to its parent process.
 

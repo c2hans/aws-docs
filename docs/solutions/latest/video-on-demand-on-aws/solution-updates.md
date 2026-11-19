@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws/
 ---
 
 # Solution updates
-<a name="solution-updates"></a>
 
 To continue using this solution with the latest features and improvements, you must deploy the latest version of this stack. For information about updating your stack, refer to [Update the solution](update-the-solution.md).
 

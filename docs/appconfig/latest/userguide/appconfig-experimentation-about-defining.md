@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-exp
 ---
 
 # Documenting your hypothesis
-<a name="appconfig-experimentation-about-defining"></a>
 
 When you create a new experiment, you specify a name for it and define the goals on the **Document your hypothesis** page in AWS AppConfig experimentation. Enter a name that identifies the experiment goal, for example *Increase add-to-cart rate by adding a button for each product displayed*. If you're creating multiple versions of the same experiment, specify version numbers in the name, for example *V2-Increase add-to-cart rate by adding a button for each product displayed*.
 

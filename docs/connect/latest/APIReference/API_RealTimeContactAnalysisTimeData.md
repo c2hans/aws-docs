@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisTimeData
-<a name="API_RealTimeContactAnalysisTimeData"></a>
 
 Object describing time with which the segment is associated. It can have different representations of time. Currently supported: absoluteTime
 

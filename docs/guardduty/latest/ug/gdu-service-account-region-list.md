@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/gdu-service-account-
 ---
 
 # GuardDuty service accounts by AWS Region
-<a name="gdu-service-account-region-list"></a>
 
 When a snapshot gets created and shared with a GuardDuty service account, a new event gets created in your CloudTrail logs. This event specifies the corresponding `snapshotId` and `userId` (GuardDuty service account for that AWS Region). For more information, see [How GuardDuty scans EBS volumes for malware detection](guardduty_malware_protection-ebs-volume-data.md).
 

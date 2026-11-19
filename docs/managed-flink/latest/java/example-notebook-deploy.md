@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/example-notebo
 ---
 
 # Tutorial: Deploy a Studio notebook as a Managed Service for Apache Flink application with durable state
-<a name="example-notebook-deploy"></a>
 
 The following tutorial demonstrates how to deploy a Studio notebook as a Managed Service for Apache Flink application with durable state.
 

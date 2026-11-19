@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/prebu
 ---
 
 # Prebuilt dashboards
-<a name="prebuilt_dashboards"></a>
 
 AWS Supply Chain Analytics supports the following prebuilt dashboards.
 + Plan-over-plan variance analysis – Use this dashboard to compare two demand plans and view the difference in both units and values across key dimensions such as product, site, and time periods.

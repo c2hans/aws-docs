@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-
 ---
 
 # JSON mutate processors
-<a name="CloudWatch-Logs-Transformation-JSONMutate"></a>
 
 This section contains information about the JSON mutate processors that you can use with a log event transformer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/k
 ---
 
 # Associate a key value store with a function
-<a name="kvs-with-functions-associate"></a>
 
 After you create your key value store, you can update your function to associate it with your key value store. You must make this association to use the key-value pairs from that store in that function. The following rules apply:
 + A function can have only one key value store

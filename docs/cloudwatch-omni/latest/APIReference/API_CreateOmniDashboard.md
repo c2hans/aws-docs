@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # CreateOmniDashboard
-<a name="API_CreateOmniDashboard"></a>
 
 Creates a new dashboard within a space.
 

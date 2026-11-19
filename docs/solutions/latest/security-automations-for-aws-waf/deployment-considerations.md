@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Deployment considerations
-<a name="deployment-considerations"></a>
 
 The following sections provide constraints and considerations for implementing this solution.
 

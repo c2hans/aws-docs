@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # SQL analytics project profile
-<a name="sql-analytics"></a>
 
 The SQL analytics project profiles enables your users to query Amazon SageMaker Lakehouse, Amazon Redshift and Amazon Athena data in their Amazon SageMaker Unified Studio projects. Amazon SageMaker Unified Studio project members can analyze their data in Amazon SageMaker Lakehouse using SQL.
 

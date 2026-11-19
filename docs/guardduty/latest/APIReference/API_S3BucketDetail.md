@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_S3Buck
 ---
 
 # S3BucketDetail
-<a name="API_S3BucketDetail"></a>
 
 Contains information on the S3 bucket.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/c9-replication-
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Migrate from AWS Cloud9 to Amazon CodeCatalyst
-<a name="c9-replication-cc"></a>
 
 AWS Cloud9 in CodeCatalyst provides a fully managed experience for interacting with AWS Cloud9. You can manually replicate your current AWS Cloud9 code resources in Amazon CodeCatalyst. The process is detailed in the following sections. To move your code resources and replicate them, create a Space within CodeCatalyst. A space represents your company, department, or group. You need to create spaces to add projects, members, and the associated cloud resources that you create in CodeCatalyst. When a user accepts an invitation to a project, CodeCatalyst automatically adds them to the space. Users with the **Space administrator** role can manage the space.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetails"></a>
 
 The log configuration specification for the container.
 

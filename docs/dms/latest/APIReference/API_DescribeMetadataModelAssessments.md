@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeMeta
 ---
 
 # DescribeMetadataModelAssessments
-<a name="API_DescribeMetadataModelAssessments"></a>
 
 Returns a paginated list of metadata model assessment requests for a migration project, initiated by [StartMetadataModelAssessment](https://docs.aws.amazon.com/dms/latest/APIReference/API_StartMetadataModelAssessment.html).
 

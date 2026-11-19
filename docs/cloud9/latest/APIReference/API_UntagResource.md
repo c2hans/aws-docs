@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_UntagReso
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from an AWS Cloud9 development environment.
 

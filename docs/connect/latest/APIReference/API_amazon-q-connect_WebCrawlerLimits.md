@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # WebCrawlerLimits
-<a name="API_amazon-q-connect_WebCrawlerLimits"></a>
 
 The configuration of crawl limits for the web URLs.
 

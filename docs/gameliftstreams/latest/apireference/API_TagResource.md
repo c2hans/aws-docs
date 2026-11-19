@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Assigns one or more tags to a Amazon GameLift Streams resource. Use tags to organize AWS resources for a range of purposes. You can assign tags to the following Amazon GameLift Streams resource types:
 + Application

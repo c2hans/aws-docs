@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteBudgetAction
-<a name="API_budgets_DeleteBudgetAction"></a>
 
  Deletes a budget action.
 

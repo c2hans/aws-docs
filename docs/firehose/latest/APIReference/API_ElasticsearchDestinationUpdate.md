@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Elastic
 ---
 
 # ElasticsearchDestinationUpdate
-<a name="API_ElasticsearchDestinationUpdate"></a>
 
 Describes an update for a destination in Amazon OpenSearch Service.
 

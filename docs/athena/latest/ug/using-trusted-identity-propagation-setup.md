@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/using-trusted-identity-
 ---
 
 # Connect Athena to IAM Identity Center
-<a name="using-trusted-identity-propagation-setup"></a>
 
 The following section lists the process of connecting Athena to IAM Identity Center.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Regi
 ---
 
 # RegisterService
-<a name="API_RegisterService"></a>
 
 This operation registers the specified service
 

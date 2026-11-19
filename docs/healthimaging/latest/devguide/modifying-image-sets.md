@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/modifying-
 ---
 
 # Modifying image sets with AWS HealthImaging
-<a name="modifying-image-sets"></a>
 
 DICOM import jobs typically require you to modify your [image sets](getting-started-concepts.md#concept-image-set) for the following reasons:
 + Patient safety

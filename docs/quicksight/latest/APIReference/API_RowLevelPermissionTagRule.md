@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_RowLe
 ---
 
 # RowLevelPermissionTagRule
-<a name="API_RowLevelPermissionTagRule"></a>
 
 A set of rules associated with a tag.
 

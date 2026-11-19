@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/setting-up-iam-policy
 ---
 
 # Adding permissions for data resources for an IAM role
-<a name="setting-up-iam-policy-for-data-resources-role"></a>
 
 To connect to data, AWS Glue DataBrew needs to have an IAM role that it can pass on behalf of the user. Following, you can find how to create the policy that you later attach to an IAM role.
 

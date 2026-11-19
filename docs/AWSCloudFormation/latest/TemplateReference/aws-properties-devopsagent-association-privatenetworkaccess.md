@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Association PrivateNetworkAccess
-<a name="aws-properties-devopsagent-association-privatenetworkaccess"></a>
 
 Private network access to your application inside a VPC, through a private connection.
 

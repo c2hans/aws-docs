@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_GettingStarted
 ---
 
 # Set up for AWS Database Migration Service
-<a name="CHAP_GettingStarted.SettingUp"></a>
 
 ## Sign up for an AWS account
 <a name="sign-up-for-aws"></a>

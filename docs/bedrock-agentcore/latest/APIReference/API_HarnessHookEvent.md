@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessHookEvent
-<a name="API_HarnessHookEvent"></a>
 
 A lifecycle hook event emitted in the invocation stream for visibility into hook decisions.
 

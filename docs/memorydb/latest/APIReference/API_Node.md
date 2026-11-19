@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Node.ht
 ---
 
 # Node
-<a name="API_Node"></a>
 
 Represents an individual node within a cluster. Each node runs its own instance of the cluster's protocol-compliant caching software.
 

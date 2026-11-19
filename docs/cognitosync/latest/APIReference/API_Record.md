@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitosync/latest/APIReference/API_Reco
 ---
 
 # Record
-<a name="API_Record"></a>
 
 The basic data structure of a dataset.
 

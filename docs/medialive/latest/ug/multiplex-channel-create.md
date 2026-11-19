@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/multiplex-channel-cr
 ---
 
 # Creating a channel
-<a name="multiplex-channel-create"></a>
 
 The MediaLive channel attached to a program is a regular channel in which the output group is always a multiplex output group.
 

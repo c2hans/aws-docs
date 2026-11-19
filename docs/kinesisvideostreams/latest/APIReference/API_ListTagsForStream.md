@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # ListTagsForStream
-<a name="API_ListTagsForStream"></a>
 
 Returns a list of tags associated with the specified stream.
 

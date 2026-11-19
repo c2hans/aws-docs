@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_infere
 ---
 
 # InvokeInferenceRouterAsync
-<a name="API_inference_router_runtime_InvokeInferenceRouterAsync"></a>
 
 Submits an asynchronous inference request to an inference router. Before you call this operation, upload the input data to Amazon S3 in the router's AWS Region. The router returns as soon as it accepts the request, and sends the request to one of the destinations of the routing target. The destination reads the input from Amazon S3, and the inference response is written to the Amazon S3 output path that the routing target specifies.
 

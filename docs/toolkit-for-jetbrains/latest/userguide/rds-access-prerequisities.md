@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/r
 ---
 
 # Prerequisites for accessing Amazon RDS databases
-<a name="rds-access-prerequisities"></a>
 
 Before you can connect to an Amazon RDS database using AWS Toolkit for JetBrains, you need to complete the following tasks:
 + [Create a DB instance and set up its authentication method](#db-authentication)

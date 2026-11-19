@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-resolve
 ---
 
 # Resolve DNS performance issues with Route 53 Global Resolver
-<a name="gr-resolve-performance-issues"></a>
 
 Route 53 Global Resolver is designed for optimal performance with global anycast architecture, but various factors can affect DNS resolution speed. Address slow DNS resolution and optimize query response times for better client device performance using Route 53 Global Resolver.
 

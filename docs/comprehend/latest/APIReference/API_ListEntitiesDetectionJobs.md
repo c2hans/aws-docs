@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_ListE
 ---
 
 # ListEntitiesDetectionJobs
-<a name="API_ListEntitiesDetectionJobs"></a>
 
 Gets a list of the entity detection jobs that you have submitted.
 

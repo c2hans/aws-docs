@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/automated-disc
 ---
 
 # Automated Sensitive Data Discovery - Configuration
-<a name="automated-discovery-configuration"></a>
 
 The Configuration resource for automated sensitive data discovery provides access to configuration settings for performing automated sensitive data discovery, and the status of the configuration. To configure the settings or change the status of the configuration, you must be the Amazon Macie administrator for an organization or have a standalone Macie account.
 

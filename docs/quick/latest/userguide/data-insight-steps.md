@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/data-insight-step
 ---
 
 # Data insight steps
-<a name="data-insight-steps"></a>
 
 Data insight steps retrieve information from your Quick data sources.
 

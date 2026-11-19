@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Inferenc
 ---
 
 # InferenceConfiguration
-<a name="API_InferenceConfiguration"></a>
 
 Inference parameters for a model.
 

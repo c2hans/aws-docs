@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus02-b
 ---
 
 # SUS02-BP04 Define the baseload for predictable and steady-state workloads
-<a name="sus02-bp04"></a>
 
  Most workloads combine two kinds of demand: a steady-state baseload that runs continuously, and variable demand that rises and falls on top of that baseload. Handle variable demand with elasticity, as described in [SUS02-BP01 Implement elasticity for variable workloads](sus02-bp01.md). You pay for an oversized baseline every hour of every day, so the same percentage of waste costs far more resource over a year in the baseload than in a component that runs briefly.
 

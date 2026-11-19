@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonWorkMailReadOnlyAccess
-<a name="AmazonWorkMailReadOnlyAccess"></a>
 
 **Description**: Provides read only access to WorkMail and SES.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-update
 ---
 
 # Update an existing account
-<a name="aft-update-account"></a>
 
 **Auto Enroll Compatibility**
 If your organization uses Auto Enroll for automatic account enrollment, be aware that AFT has limitations with importing these accounts. Accounts enrolled through Auto Enroll lack the Service Catalog provisioned products required by AFT's import workflow.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/data-protection.htm
 ---
 
 # Data protection for Amazon EVS
-<a name="data-protection"></a>
 
 The [AWS shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/) applies to data protection in Amazon Elastic VMware Service. As described in this model, AWS is responsible for protecting the global infrastructure that runs all of the AWS Cloud. You are responsible for maintaining control over your content that is hosted on this infrastructure, including the VMware Cloud Foundation (VCF) components. You are also responsible for the security configuration and management tasks for the AWS services that you use. For more information about data privacy, see the [Data Privacy FAQ](https://aws.amazon.com/compliance/data-privacy-faq). For information about data protection in Europe, see the [AWS Shared Responsibility Model and GDPR blog post](https://aws.amazon.com/blogs/security/the-aws-shared-responsibility-model-and-gdpr) on the * AWS Security Blog*.
 

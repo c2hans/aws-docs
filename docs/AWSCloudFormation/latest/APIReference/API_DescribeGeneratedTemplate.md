@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DescribeGeneratedTemplate
-<a name="API_DescribeGeneratedTemplate"></a>
 
 Describes a generated template. The output includes details about the progress of the creation of a generated template started by a `CreateGeneratedTemplate` API action or the update of a generated template started with an `UpdateGeneratedTemplate` API action.
 

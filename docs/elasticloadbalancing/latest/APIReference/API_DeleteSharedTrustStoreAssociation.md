@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DeleteSharedTrustStoreAssociation
-<a name="API_DeleteSharedTrustStoreAssociation"></a>
 
 Deletes a shared trust store association.
 

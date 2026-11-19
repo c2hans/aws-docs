@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # SnapshotCopyConfiguration
-<a name="API_SnapshotCopyConfiguration"></a>
 
 The object that you configure to copy snapshots from one namespace to a namespace in another AWS Region.
 

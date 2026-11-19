@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/getting-s
 ---
 
 # Setting up the AWS MCP Server
-<a name="getting-started-aws-mcp-server"></a>
 
 If you already have an AWS account, skip to [Set up the AWS MCP Server](#mcp-set-up-process). If you are new to AWS, [sign up for an AWS account](https://portal.aws.amazon.com/billing/signup) and then continue with the setup process.
 

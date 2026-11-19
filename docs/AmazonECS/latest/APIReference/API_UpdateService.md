@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Update
 ---
 
 # UpdateService
-<a name="API_UpdateService"></a>
 
 Modifies the parameters of a service.
 

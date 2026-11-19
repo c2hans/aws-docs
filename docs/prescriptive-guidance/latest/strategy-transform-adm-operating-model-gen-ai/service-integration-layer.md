@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Service integration layer of an ADM operating model
-<a name="service-integration-layer"></a>
 
 The service integration layer acts as a critical bridge between business requirements and technical execution, orchestrating interactions across IT services. The integration of AI into this layer brings changes in *service management* and *service governance*.
 

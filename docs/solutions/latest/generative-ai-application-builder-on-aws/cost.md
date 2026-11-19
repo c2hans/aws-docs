@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Cost
-<a name="cost"></a>
 
 With this AWS Solution, you pay only for the resources you use and there are no minimum fees or setup charges. Users pay for the dashboard used to launch Generative AI use cases and, and for any use cases that are deployed. The cost of deployed use cases depends on the configurations. Example configurations:
 

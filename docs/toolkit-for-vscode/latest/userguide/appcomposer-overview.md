@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/appc
 ---
 
 # Working with AWS Infrastructure Composer in the Toolkit
-<a name="appcomposer-overview"></a>
 
 AWS Infrastructure Composer for the AWS Toolkit for Visual Studio Code allows you to visually design applications through an interactive canvas. You can also use Infrastructure Composer to visualize and modify CloudFormation and AWS Serverless Application Model (AWS SAM) templates. While working with Infrastructure Composer, your changes are stored persistently enabling you to switch seamlessly between editing files directly in the VS Code editor or using the interactive canvas.
 

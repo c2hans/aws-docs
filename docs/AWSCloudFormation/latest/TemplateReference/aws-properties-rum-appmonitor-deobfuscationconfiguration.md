@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RUM::AppMonitor DeobfuscationConfiguration
-<a name="aws-properties-rum-appmonitor-deobfuscationconfiguration"></a>
 
  A structure that contains the configuration for how an app monitor can deobfuscate stack traces.
 

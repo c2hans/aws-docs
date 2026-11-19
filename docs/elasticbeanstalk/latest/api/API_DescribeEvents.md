@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Describe
 ---
 
 # DescribeEvents
-<a name="API_DescribeEvents"></a>
 
 Returns list of event descriptions matching criteria up to the last 6 weeks.
 
@@ -95,7 +94,7 @@ The following elements are returned by the service.
 Type: Array of [EventDescription](API_EventDescription.md) objects
 
  ** NextToken **
- If returned, this indicates that there are more results to obtain. Use this token in the next [DescribeEvents](#API_DescribeEvents) call to get the next batch of events.
+ If returned, this indicates that there are more results to obtain. Use this token in the next [DescribeEvents](API_DescribeEvents.md) call to get the next batch of events.
 Type: String
 
 ## Errors

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_ListGatew
 ---
 
 # ListGateways
-<a name="API_ListGateways"></a>
 
 Lists backup gateways owned by an AWS account in an AWS Region. The returned list is ordered by gateway Amazon Resource Name (ARN).
 

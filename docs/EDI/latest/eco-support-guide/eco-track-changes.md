@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/EDI/latest/eco-support-guide/eco-track-c
 ---
 
 # Track changes in your EDI accounts
-<a name="eco-track-changes"></a>
 
 ECO provides log management and an interface that you can query through the Amazon Athena console to help you track ECO automation and changes that the ECO operations team makes.
 

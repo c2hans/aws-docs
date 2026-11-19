@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_CreateCustom
 ---
 
 # CreateCustomVerificationEmailTemplate
-<a name="API_CreateCustomVerificationEmailTemplate"></a>
 
 Creates a new custom verification email template.
 

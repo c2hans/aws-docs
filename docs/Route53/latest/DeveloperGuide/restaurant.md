@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/restaurant
 ---
 
 # .restaurant
-<a name="restaurant"></a>
 
 Used by the restaurant industry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_UpdateSlurmR
 ---
 
 # UpdateSlurmRestRequest
-<a name="API_UpdateSlurmRestRequest"></a>
 
 The Slurm REST API configuration includes settings for enabling and configuring the Slurm REST API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetSellingSystemSettings
-<a name="API_GetSellingSystemSettings"></a>
 
 Retrieves the currently set system settings, which include the IAM Role used for resource snapshot jobs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_CreateStart
 ---
 
 # CreateStarterMappingTemplate
-<a name="API_CreateStarterMappingTemplate"></a>
 
  AWS B2B Data Interchange uses a mapping template in JSONata or XSLT format to transform a customer input file into a JSON or XML file that can be converted to EDI.
 

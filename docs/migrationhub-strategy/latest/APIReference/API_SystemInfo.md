@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # SystemInfo
-<a name="API_SystemInfo"></a>
 
  Information about the server that hosts application components.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Understanding the software development experience
-<a name="dev-experience"></a>
 
 The *software development experience* encompasses the environment, tools, and processes your development teams use throughout the software development lifecycle (SDLC). It includes the integrated development environment (IDE), collaboration platforms, testing frameworks, knowledge management systems, deployment pipelines, and more.
 

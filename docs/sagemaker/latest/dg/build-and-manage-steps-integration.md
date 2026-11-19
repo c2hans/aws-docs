@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-ste
 ---
 
 # Add integration
-<a name="build-and-manage-steps-integration"></a>
 
 MLflow integration allows you to use MLflow with pipelines to select a tracking server or serverless application, choose an experiment, and log metrics.
 

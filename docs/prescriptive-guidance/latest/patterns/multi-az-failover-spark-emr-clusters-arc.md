@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mu
 ---
 
 # Manage Multi-AZ failover for EMR clusters by using Application Recovery Controller
-<a name="multi-az-failover-spark-emr-clusters-arc"></a>
 
 *Aarti Rajput, Ashish Bhatt, Neeti Mishra, and Nidhi Sharma, Amazon Web Services*
 

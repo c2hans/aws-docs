@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/warm-pool-even
 ---
 
 # Create EventBridge rules for warm pool events
-<a name="warm-pool-events-eventbridge-rules"></a>
 
 The following example creates an EventBridge rule to invoke programmatic actions. It does this each time that your Auto Scaling group emits an event when a new instance is added to the warm pool.
 

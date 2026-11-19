@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Resources.
 ---
 
 # Related information
-<a name="Resources"></a>
 
 The following related resources can help you as you work with this service.
 

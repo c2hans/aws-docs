@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/azure-to-aw
 ---
 
 # Targeted Business Outcomes
-<a name="targeted-business-outcomes"></a>
 
 Data platform migration is a common enterprise initiative, typically taking one of the following forms:
 + Lift-and-shift or re-platforming

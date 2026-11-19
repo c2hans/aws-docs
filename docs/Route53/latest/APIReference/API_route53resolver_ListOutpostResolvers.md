@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # ListOutpostResolvers
-<a name="API_route53resolver_ListOutpostResolvers"></a>
 
 Lists all the Resolvers on Outposts that were created using the current AWS account.
 

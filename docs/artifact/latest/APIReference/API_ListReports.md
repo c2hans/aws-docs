@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_ListRep
 ---
 
 # ListReports
-<a name="API_ListReports"></a>
 
 List available reports.
 

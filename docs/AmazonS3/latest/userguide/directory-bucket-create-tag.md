@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # Creating directory buckets with tags
-<a name="directory-bucket-create-tag"></a>
 
 You can tag Amazon S3 directory buckets when you create them. There is no additional charge for using tags on directory buckets beyond the standard S3 API request rates. For more information, see [Amazon S3 pricing](https://aws.amazon.com/s3/pricing/). For more information about tagging directory buckets, see [Using tags with S3 directory buckets](directory-buckets-tagging.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-
 ---
 
 # Create a launch configuration
-<a name="create-launch-config"></a>
 
 **Important**
 Limitations:

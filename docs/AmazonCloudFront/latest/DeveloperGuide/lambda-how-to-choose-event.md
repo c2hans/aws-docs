@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/l
 ---
 
 # Choose the event to trigger the function
-<a name="lambda-how-to-choose-event"></a>
 
 When you're deciding which CloudFront event you want to use to trigger a Lambda function, consider the following:
 

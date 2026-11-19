@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Choosing a beacon type
-<a name="choosing-beacon-type"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/Lineitem-columns.ht
 ---
 
 # Line item details
-<a name="Lineitem-columns"></a>
 
 Columns under the **lineItem** header in AWS Cost and Usage Reports are static fields that appear in all Cost and Usage Reports. They cover all of the cost and usage information for your usage. This includes the following columns:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/fl
 ---
 
 # Connecting to fleet instances
-<a name="fleets-remote-access"></a>
 
 You can remotely connect to any active Amazon GameLift Servers managed EC2 or managed container fleet instance to troubleshoot game server issues, inspect logs, and debug runtime behavior. Connect using the Amazon GameLift Servers console or the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Update a brand profile attribute
-<a name="nx-features-brand-profiles-attr-update"></a>
 
 Update an attribute to change its value, category, or description. For image and document attributes, upload new binary content to replace the stored file.
 

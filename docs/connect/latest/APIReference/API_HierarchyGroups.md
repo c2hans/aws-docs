@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Hierarch
 ---
 
 # HierarchyGroups
-<a name="API_HierarchyGroups"></a>
 
 Information about the agent hierarchy. Hierarchies can be configured with up to five levels.
 

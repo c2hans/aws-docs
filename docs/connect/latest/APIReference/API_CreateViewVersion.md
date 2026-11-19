@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateVi
 ---
 
 # CreateViewVersion
-<a name="API_CreateViewVersion"></a>
 
 Publishes a new version of the view identifier.
 

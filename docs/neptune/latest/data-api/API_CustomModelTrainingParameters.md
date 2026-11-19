@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_CustomModelT
 ---
 
 # CustomModelTrainingParameters
-<a name="API_CustomModelTrainingParameters"></a>
 
 Contains custom model training parameters. See [Custom models in Neptune ML](https://docs.aws.amazon.com/neptune/latest/userguide/machine-learning-custom-models.html).
 

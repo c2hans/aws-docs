@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/editing-user-g
 ---
 
 # Editing user groups
-<a name="editing-user-groups"></a>
 
 You can edit a user group directly from the Access Console, and are able to modify the group name, users in the group and templates assigned to the group.
 

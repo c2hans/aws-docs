@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # StartKeyUsage
-<a name="API_StartKeyUsage"></a>
 
 Enables an AWS Payment Cryptography key, which makes it active for cryptographic operations within AWS Payment Cryptography
 

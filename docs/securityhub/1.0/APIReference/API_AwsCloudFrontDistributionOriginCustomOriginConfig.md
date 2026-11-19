@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsClou
 ---
 
 # AwsCloudFrontDistributionOriginCustomOriginConfig
-<a name="API_AwsCloudFrontDistributionOriginCustomOriginConfig"></a>
 
 A custom origin. A custom origin is any origin that is not an Amazon S3 bucket, with one exception. An Amazon S3 bucket that is [configured with static website hosting](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html) is a custom origin.
 

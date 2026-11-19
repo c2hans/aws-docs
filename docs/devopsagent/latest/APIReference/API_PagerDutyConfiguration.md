@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Page
 ---
 
 # PagerDutyConfiguration
-<a name="API_PagerDutyConfiguration"></a>
 
 Configuration for Pagerduty integration.
 

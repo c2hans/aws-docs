@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListComputationModelDataBindingUsages
-<a name="API_ListComputationModelDataBindingUsages"></a>
 
  Lists all data binding usages for computation models. This allows to identify where specific data bindings are being utilized across the computation models. This track dependencies between data sources and computation models.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dollar-update
 ---
 
 # $
-<a name="dollar-update"></a>
 
 The `$` positional operator updates the first array element that matches the query condition. It acts as a placeholder for the matched array element's position.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPartnerCentralChannelManagement
-<a name="AWSPartnerCentralChannelManagement"></a>
 
 **Description**: Provides necessary access for channel management activities.
 

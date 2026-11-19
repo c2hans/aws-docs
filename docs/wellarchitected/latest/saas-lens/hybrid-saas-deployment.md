@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/hybrid-
 ---
 
 # Hybrid SaaS deployment
-<a name="hybrid-saas-deployment"></a>
 
  The needs of customers in SaaS environments can vary significantly for a business. While there are significant cost and operational advantages to building a SaaS solution that has all customers running in shared infrastructure model (pool), there might be times when customers are not willing to share infrastructure resources with other tenants.
 

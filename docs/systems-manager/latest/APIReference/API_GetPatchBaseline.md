@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetPatchBaseline
-<a name="API_GetPatchBaseline"></a>
 
 Retrieves information about a patch baseline.
 

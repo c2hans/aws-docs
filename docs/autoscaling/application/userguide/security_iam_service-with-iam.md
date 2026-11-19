@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/securi
 ---
 
 # How Application Auto Scaling works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 **Note**
 In December 2017, there was an update for Application Auto Scaling, enabling several service-linked roles for Application Auto Scaling integrated services. Specific IAM permissions *and* an Application Auto Scaling service-linked role (or a service role for Amazon EMR auto scaling) are required so that users can configure scaling.

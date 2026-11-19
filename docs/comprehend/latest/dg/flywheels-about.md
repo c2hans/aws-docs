@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/flywheels-about.htm
 ---
 
 # Flywheel overview
-<a name="flywheels-about"></a>
 
 A *flywheel* is an Amazon Comprehend resource that orchestrates the training and evaluation of new versions of a custom model. You can create a flywheel to use an existing trained model, or Amazon Comprehend can create and train a new model for the flywheel. Use flywheels with plain-text custom models for custom classification or custom entity recognition.
 

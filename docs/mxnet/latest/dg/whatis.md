@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mxnet/latest/dg/whatis.html
 ---
 
 # What Is Apache MXNet?
-<a name="whatis"></a>
 
 Apache MXNet (MXNet) is an open source deep learning framework that allows you to define, train, and deploy deep neural networks on a wide array of platforms, from cloud infrastructure to mobile devices. It is highly scalable, which allows for fast model training, and it supports a flexible programming model and multiple languages.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Durability.L
 ---
 
 # Limitations
-<a name="Durability.Limitations"></a>
 + Durability for ElastiCache is supported on Valkey 9.0 or later.
 + Durability for ElastiCache is supported for the following instance type families: R8g, R7g, R6g, M8g, M7g, M6g, C8gn, and C7gn.
 + Durability is not supported with ElastiCache Serverless.

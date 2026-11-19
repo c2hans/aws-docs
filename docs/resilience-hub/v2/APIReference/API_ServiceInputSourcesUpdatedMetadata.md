@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServiceInputSourcesUpdatedMetadata
-<a name="API_ServiceInputSourcesUpdatedMetadata"></a>
 
 Metadata for a service input sources updated event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/schedule-using-conso
 ---
 
 # Working with the schedule (console)
-<a name="schedule-using-console"></a>
 
 You can use the AWS Elemental MediaLive console to create or delete any of the [schedule actions](x-actions-in-schedule.md) in a channel. You can work with the schedule when the channel is running or when it is idle.
 

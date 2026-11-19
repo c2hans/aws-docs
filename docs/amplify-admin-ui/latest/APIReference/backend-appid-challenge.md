@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Challenge
-<a name="backend-appid-challenge"></a>
 
 The one-time challenge code used to authenticate a user into your Amplify Admin UI.
 

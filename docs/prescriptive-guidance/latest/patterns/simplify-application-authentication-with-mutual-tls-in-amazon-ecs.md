@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/si
 ---
 
 # Simplify application authentication with mutual TLS in Amazon ECS by using Application Load Balancer
-<a name="simplify-application-authentication-with-mutual-tls-in-amazon-ecs"></a>
 
 *Olawale Olaleye and Shamanth Devagari, Amazon Web Services*
 

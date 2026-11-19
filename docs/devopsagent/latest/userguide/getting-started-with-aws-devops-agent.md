@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/getting-sta
 ---
 
 # Getting started with AWS DevOps Agent
-<a name="getting-started-with-aws-devops-agent"></a>
 
 In this getting started guide, you'll create a basic Agent Space, configure minimal permissions, and conduct your first AI-powered investigation.
 

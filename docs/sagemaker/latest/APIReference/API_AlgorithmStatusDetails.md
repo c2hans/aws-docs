@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Algori
 ---
 
 # AlgorithmStatusDetails
-<a name="API_AlgorithmStatusDetails"></a>
 
 Specifies the validation and image scan statuses of the algorithm.
 

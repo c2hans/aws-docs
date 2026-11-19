@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationFlowSQLTransformationConfiguration
-<a name="API_DataIntegrationFlowSQLTransformationConfiguration"></a>
 
 The SQL DataIntegrationFlow transformation configuration parameters.
 

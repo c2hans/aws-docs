@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/payment-cryptogra
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Getting started with payment security cryptography
-<a name="payment-cryptography_example_payment_cryptography_GettingStarted_067_section"></a>
 
 The following code example shows how to:
 + Create a key

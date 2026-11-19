@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-publishi
 ---
 
 # Prerequisites
-<a name="ml-publishing-prereq"></a>
 
 Before you can publish your model package or algorithm in AWS Marketplace, you must have the following:
 +  An AWS account that is registered as an AWS Marketplace seller. You can do this in the [AWS Marketplace Management Portal](https://us-east-1.console.aws.amazon.com/partnercentral/home).

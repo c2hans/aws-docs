@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Filter.html
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 Specifies a transform that splits a dataset into two, based on a filter condition.
 

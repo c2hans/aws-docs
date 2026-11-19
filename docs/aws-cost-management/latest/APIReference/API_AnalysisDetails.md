@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AnalysisDetails
-<a name="API_AnalysisDetails"></a>
 
 Details about the analysis.
 

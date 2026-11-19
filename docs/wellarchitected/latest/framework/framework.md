@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/framewo
 ---
 
 # AWS Well-Architected Framework
-<a name="framework"></a>
 
  Last updated: **November 16, 2026** ([Release notes](release-notes.md))
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-set.html
 ---
 
 # JSON.SET
-<a name="json-set"></a>
 
 Set JSON values at the path.
 

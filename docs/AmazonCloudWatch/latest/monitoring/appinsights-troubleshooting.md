@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # View and troubleshoot problems detected by Amazon CloudWatch Application Insights
-<a name="appinsights-troubleshooting"></a>
 
 The topics in this section provide detailed information about the detected problems and insights displayed by Application Insights. It also provides suggested resolutions for detected issues with your account or your configuration.
 

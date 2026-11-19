@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::Image ImageLoggingConfiguration
-<a name="aws-properties-imagebuilder-image-imageloggingconfiguration"></a>
 
 The logging configuration that's defined for the image. Image Builder uses the defined settings to direct execution log output during image creation.
 

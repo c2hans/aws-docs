@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Verifying the service-linked role exists in a member account
-<a name="next-gen-troubleshoot-verify-slr"></a>
 
 From the member account, run the following command to verify the service-linked role exists:
 

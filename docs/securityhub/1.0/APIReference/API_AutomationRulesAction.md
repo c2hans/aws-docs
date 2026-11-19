@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Automat
 ---
 
 # AutomationRulesAction
-<a name="API_AutomationRulesAction"></a>
 
  One or more actions that AWS Security Hub CSPM takes when a finding matches the defined criteria of a rule.
 

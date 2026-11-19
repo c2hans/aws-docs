@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sending-email-suppression-
 ---
 
 # Using tenant-level suppression lists in Amazon SES
-<a name="sending-email-suppression-list-tenant-level"></a>
 
 If you use Amazon Simple Email Service (SES) multi-tenancy to send email on behalf of multiple tenants, you can give each tenant its own suppression list. Tenant-level suppression isolates bounces and complaints so that they affect only the tenant that sent the email. Without this feature, all tenants share the account-level suppression list. When a recipient bounces or complains about one tenant's email, that address is suppressed for every tenant in the account. Tenant-level suppression prevents this cross-tenant contamination by maintaining a separate list of suppressed addresses for each tenant.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/core
 ---
 
 # Creating a core network endpoint
-<a name="core-network-endpoints-create"></a>
 
 To create a core network endpoint, connect a global resolver to a Cloud WAN core network that you own. After you create the endpoint, the core network's segments can be used as access sources for DNS resolution.
 

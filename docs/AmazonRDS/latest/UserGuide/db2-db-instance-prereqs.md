@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-db-instan
 ---
 
 # Prerequisites for creating an Amazon RDS for Db2 DB instance
-<a name="db2-db-instance-prereqs"></a>
 
 The following items are prerequisites before creating a DB instance.
 

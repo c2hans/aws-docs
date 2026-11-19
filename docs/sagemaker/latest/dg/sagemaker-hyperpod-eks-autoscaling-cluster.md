@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Create and configure a HyperPod cluster with Karpenter autoscaling
-<a name="sagemaker-hyperpod-eks-autoscaling-cluster"></a>
 
 In the following steps, you'll create a SageMaker HyperPod cluster with continuous provisioning enabled and configure it to use Karpenter-based autoscaling.
 

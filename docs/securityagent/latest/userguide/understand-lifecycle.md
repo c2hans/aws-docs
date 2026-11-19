@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/understan
 ---
 
 # Understand the resource hierarchy and lifecycle
-<a name="understand-lifecycle"></a>
 
 AWS Security Agent organizes security testing resources in a hierarchical structure that determines what’s shared across your organization and what’s scoped per application. Understanding this structure helps you configure AWS Security Agent effectively and know where to find and manage different resources.
 

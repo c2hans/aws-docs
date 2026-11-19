@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/key-c
 ---
 
 # Key Concepts and Terminology
-<a name="key-concepts-and-terminology"></a>
 
 ## Decisioning
 <a name="key-concepts-decisioning"></a>

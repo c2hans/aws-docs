@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Disabling an AWS Managed Microsoft AD user
-<a name="ms_ad_disable_user"></a>
 
 Use the following procedure to disable an AWS Managed Microsoft AD user with AWS Directory Service Data in the AWS Management Console, AWS CLI, or AWS Tools for PowerShell.
 

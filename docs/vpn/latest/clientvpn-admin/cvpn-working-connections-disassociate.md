@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-
 ---
 
 # Terminate an AWS Client VPN client connection
-<a name="cvpn-working-connections-disassociate"></a>
 
 You can terminate a Client VPN client connection using the Amazon VPC Console or the AWS CLI.
 

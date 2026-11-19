@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Database
 ---
 
 # Turning on the Standard mode of Database Insights for Amazon RDS
-<a name="USER_DatabaseInsights.TurningOnStandard"></a>
 
 To turn on the Standard mode of Database Insights for Amazon RDS, use the following procedures.
 

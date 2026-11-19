@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-notif
 ---
 
 # Delete triggers from an AWS CodeCommit repository
-<a name="how-to-notify-delete"></a>
 
 You might want to delete triggers if they are no longer being used. You cannot undo the deletion of a trigger, but you can create one again.
 

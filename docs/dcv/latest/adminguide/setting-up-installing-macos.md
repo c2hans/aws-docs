@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-install
 ---
 
 # Installing the Amazon DCV Server on macOS
-<a name="setting-up-installing-macos"></a>
 
 The Amazon DCV server software can be installed on an Amazon EC2 Mac instance and run your Amazon DCV sessions from there. Before installing the software, check that your server meets the prerequisites for running the software. The process for installing the software can either be done manually through an installation wizard or automatically installed by Amazon DCV.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SchedulePeriod
-<a name="API_bcmDashboards_SchedulePeriod"></a>
 
 Defines the active time period for execution of the scheduled report.
 

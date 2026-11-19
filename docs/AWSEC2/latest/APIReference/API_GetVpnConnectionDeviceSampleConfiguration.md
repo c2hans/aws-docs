@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetVpnCon
 ---
 
 # GetVpnConnectionDeviceSampleConfiguration
-<a name="API_GetVpnConnectionDeviceSampleConfiguration"></a>
 
 Download an AWS-provided sample configuration file to be used with the customer gateway device specified for your Site-to-Site VPN connection.
 

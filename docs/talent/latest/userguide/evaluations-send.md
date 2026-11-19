@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/userguide/evaluations-send
 ---
 
 # Sending evaluations to candidates
-<a name="evaluations-send"></a>
 
 This page covers how to send evaluation invitations to candidates in Amazon Connect Talent.
 

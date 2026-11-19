@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Cost
-<a name="cost"></a>
 
 You’re responsible for the cost of the AWS services used while running the Security Automations for AWS WAF solution. The total cost for running this solution depends on the protection activated and the amount of data ingested, stored, and processed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-la
 ---
 
 # Managing labels
-<a name="md-labels"></a>
 
 You can manage labels by using the Amazon Rekognition Custom Labels console. There isn't a specific API for managing labels – labels are added to the dataset when you create the dataset with `CreateDataset` or when you add more images to the dataset with `UpdateDatasetEntries`.
 

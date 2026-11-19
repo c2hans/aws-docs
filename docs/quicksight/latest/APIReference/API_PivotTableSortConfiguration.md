@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableSortConfiguration
-<a name="API_PivotTableSortConfiguration"></a>
 
 The sort configuration for a `PivotTableVisual`.
 

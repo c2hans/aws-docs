@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_TagPropaga
 ---
 
 # TagPropagationConfiguration
-<a name="API_connect-cases_TagPropagationConfiguration"></a>
 
 Defines tag propagation configuration for resources created within a domain. Tags specified here will be automatically applied to resources being created for the specified resource type.
 

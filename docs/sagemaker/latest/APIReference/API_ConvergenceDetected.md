@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Conver
 ---
 
 # ConvergenceDetected
-<a name="API_ConvergenceDetected"></a>
 
 A flag to indicating that automatic model tuning (AMT) has detected model convergence, defined as a lack of significant improvement (1% or less) against an objective metric.
 

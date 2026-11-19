@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This Guidance logs errors, warnings, informational messages, and debugging messages for its Lambda functions. To choose the type of messages to log:
 

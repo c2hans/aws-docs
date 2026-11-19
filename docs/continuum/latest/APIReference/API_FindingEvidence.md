@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Findin
 ---
 
 # FindingEvidence
-<a name="API_FindingEvidence"></a>
 
 A code citation supporting a validation verdict.
 

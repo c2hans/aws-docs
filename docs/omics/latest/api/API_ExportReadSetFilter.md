@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ExportReadSetFilter
 ---
 
 # ExportReadSetFilter
-<a name="API_ExportReadSetFilter"></a>
 
 An read set export job filter.
 

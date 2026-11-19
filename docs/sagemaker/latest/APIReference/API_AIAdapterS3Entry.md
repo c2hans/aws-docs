@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIAdap
 ---
 
 # AIAdapterS3Entry
-<a name="API_AIAdapterS3Entry"></a>
 
 A LoRA adapter entry identified by an Amazon S3 URI.
 

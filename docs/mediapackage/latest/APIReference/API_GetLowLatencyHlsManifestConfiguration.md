@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Get
 ---
 
 # GetLowLatencyHlsManifestConfiguration
-<a name="API_GetLowLatencyHlsManifestConfiguration"></a>
 
 Retrieve the low-latency HTTP live streaming (HLS) manifest configuration.
 

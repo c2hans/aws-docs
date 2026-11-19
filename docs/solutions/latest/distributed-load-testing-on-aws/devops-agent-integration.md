@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # AWS DevOps Agent integration
-<a name="devops-agent-integration"></a>
 
 With [AWS DevOps Agent](https://aws.amazon.com/devops-agent/), you can automate investigation of your load test results directly from the Distributed Load Testing on AWS solution. When you connect an Agent Space, you can send completed test runs to the agent for analysis. The agent proactively identifies performance bottlenecks, determines root causes, and suggests remediation steps—without requiring you to manually correlate Amazon CloudWatch metrics, logs, and traces.
 

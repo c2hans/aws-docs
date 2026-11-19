@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle and MySQL run plans
-<a name="chap-oracle-aurora-mysql.tuning.runplans"></a>
 
 With AWS DMS, you can analyze the performance of your database migration tasks by reviewing Oracle and MySQL run plans. An Oracle or MySQL run plan provides detailed information about the run plan for a specific SQL statement, including the steps involved, data access methods, and potential performance bottlenecks.
 

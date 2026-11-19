@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Pac
 ---
 
 # PackageOriginRestrictions
-<a name="API_PackageOriginRestrictions"></a>
 
 Details about the origin restrictions set on the package. The package origin restrictions determine how new versions of a package can be added to a specific repository.
 

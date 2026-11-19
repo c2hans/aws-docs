@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discovery-too
 ---
 
 # Data collection
-<a name="discovery-tool-data-collection"></a>
 
 ## Discovery tool collection schedule
 <a name="discovery-tool-scheduling"></a>

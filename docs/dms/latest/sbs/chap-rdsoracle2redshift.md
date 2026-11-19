@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdsoracle2redshift.h
 ---
 
 # Migrating an Amazon RDS for Oracle Database to Amazon Redshift
-<a name="chap-rdsoracle2redshift"></a>
 
 This walkthrough gets you started with heterogeneous database migration from Amazon RDS for Oracle to Amazon Redshift using AWS Database Migration Service (AWS DMS) and the AWS Schema Conversion Tool (AWS SCT). This introductory exercise doesn’t cover all scenarios but provides you with a good understanding of the steps involved in such a migration.
 

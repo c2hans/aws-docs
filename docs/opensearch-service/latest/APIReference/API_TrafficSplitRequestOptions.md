@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # TrafficSplitRequestOptions
-<a name="API_TrafficSplitRequestOptions"></a>
 
 The traffic shift to perform for a cloned blue/green upgrade.
 

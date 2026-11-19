@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/db-cluster-st
 ---
 
 # Determining a cluster's status
-<a name="db-cluster-status"></a>
 
 You can determine a cluster's status using the AWS Management Console or AWS CLI.
 

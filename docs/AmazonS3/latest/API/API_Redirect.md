@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Redirect.html
 ---
 
 # Redirect
-<a name="API_Redirect"></a>
 
 Specifies how requests are redirected. In the event of an error, you can specify a different error code to return.
 

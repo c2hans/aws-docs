@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/timecode-configure-m
 ---
 
 # Including timecode metadata in the output
-<a name="timecode-configure-metadata"></a>
 
 You can set up a MediaLive channel to include timecode metadata in the individual output encode. Timecode metadata is supported in any type of output group except Frame Capture.
 

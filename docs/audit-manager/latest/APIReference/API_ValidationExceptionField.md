@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Va
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
  Indicates that the request has invalid or missing parameters for the field.
 

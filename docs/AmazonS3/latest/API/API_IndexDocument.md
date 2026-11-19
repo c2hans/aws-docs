@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_IndexDocument.ht
 ---
 
 # IndexDocument
-<a name="API_IndexDocument"></a>
 
 Container for the `Suffix` element.
 

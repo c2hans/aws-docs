@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/getstarted-aw
 ---
 
 # Using Amazon Lightsail with the AWS CLI
-<a name="getstarted-awscli"></a>
 
 This tutorial guides you through common Amazon Lightsail operations using the AWS Command Line Interface (AWS CLI). You will learn how to create and manage Lightsail resources including key pairs, instances, storage, and snapshots.
 

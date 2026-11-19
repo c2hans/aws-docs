@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # GuardrailTopic
-<a name="API_agent-runtime_GuardrailTopic"></a>
 
 The details for a specific topic defined in the Guardrail.
 

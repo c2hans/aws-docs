@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Snaps
 ---
 
 # SnapshotS3DestinationConfiguration
-<a name="API_SnapshotS3DestinationConfiguration"></a>
 
 A structure that describes the Amazon S3 settings to use to save the generated dashboard snapshot.
 

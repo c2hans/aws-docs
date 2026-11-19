@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/SAR-compl
 ---
 
 # Compliance Validation for the AWS Serverless Application Repository
-<a name="SAR-compliance"></a>
 
 Third-party auditors assess the security and compliance of the AWS Serverless Application Repository as part of multiple AWS compliance programs. These include SOC, PCI, FedRAMP, and others.
 

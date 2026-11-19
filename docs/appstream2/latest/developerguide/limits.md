@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/limits.
 ---
 
 # Amazon WorkSpaces Applications Service Quotas
-<a name="limits"></a>
 
 WorkSpaces Applications provides different resources that you can use. WorkSpaces Applications resources include stacks, fleets, images, and image builders. When you create your Amazon Web Services account, we set default quotas (also referred to as limits) on the number of resources that you can create, and on the number of users who can use the WorkSpaces Applications service.
 

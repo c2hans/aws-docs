@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_VoiceCal
 ---
 
 # VoiceCallEntryPointParameters
-<a name="API_VoiceCallEntryPointParameters"></a>
 
 Parameters for initiating a voice call test.
 

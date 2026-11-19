@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/saas-free-t
 ---
 
 # Creating a SaaS free trial offer in AWS Marketplace
-<a name="saas-free-trials"></a>
 
 As an AWS Marketplace seller, you can create software as a service (SaaS) free trial offers in AWS Partner Central. With a free trial, you let buyers evaluate your product before they buy it. After a buyer subscribes to your product, your product performs entitlement checks the same way it does for paid buyers.
 

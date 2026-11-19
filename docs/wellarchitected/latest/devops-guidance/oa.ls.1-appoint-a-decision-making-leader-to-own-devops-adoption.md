@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.LS.1] Appoint a decision-making leader to own DevOps adoption
-<a name="oa.ls.1-appoint-a-decision-making-leader-to-own-devops-adoption"></a>
 
  **Category:** FOUNDATIONAL
 

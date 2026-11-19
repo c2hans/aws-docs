@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Repla
 ---
 
 # ReplaceContentEntry
-<a name="API_ReplaceContentEntry"></a>
 
 Information about a replacement content entry in the conflict of a merge or pull request operation.
 

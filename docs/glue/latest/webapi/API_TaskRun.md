@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TaskRun.html
 ---
 
 # TaskRun
-<a name="API_TaskRun"></a>
 
 The sampling parameters that are associated with the machine learning transform.
 

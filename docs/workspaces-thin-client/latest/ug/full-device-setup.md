@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/full-de
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/workspacesthinclient-end-of-support.html).
 
 # Your WorkSpaces Thin Client device is ready
-<a name="full-device-setup"></a>
 
 After you connect all of your peripherals, your WorkSpaces Thin Client is ready to be turned on.
 

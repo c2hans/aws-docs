@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/trustedadvisor/latest/APIReference/API_R
 ---
 
 # RecommendationPillarSpecificAggregates
-<a name="API_RecommendationPillarSpecificAggregates"></a>
 
 Recommendation pillar aggregates
 

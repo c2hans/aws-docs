@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ObjectLockRetent
 ---
 
 # ObjectLockRetention
-<a name="API_ObjectLockRetention"></a>
 
 A Retention configuration for an object.
 

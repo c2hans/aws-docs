@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-bot-contro
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Adding the AWS WAF Bot Control managed rule group to your web ACL
-<a name="waf-bot-control-rg-using"></a>
 
 This section explains how to add and configure the `AWSManagedRulesBotControlRuleSet` rule group.
 

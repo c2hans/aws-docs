@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # Generating presigned URLs to share objects directory bucket
-<a name="directory-buckets-objects-generate-presigned-url-Examples"></a>
 
  The following code examples show how to generate presigned URLs to share objects from an Amazon S3 directory bucket.
 

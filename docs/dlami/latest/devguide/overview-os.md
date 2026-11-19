@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/overview-os.html
 ---
 
 # DLAMI Operating System Options
-<a name="overview-os"></a>
 
 DLAMIs are offered in the following operating systems.
 + Amazon Linux 2

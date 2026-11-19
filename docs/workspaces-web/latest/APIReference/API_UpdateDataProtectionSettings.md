@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_U
 ---
 
 # UpdateDataProtectionSettings
-<a name="API_UpdateDataProtectionSettings"></a>
 
 Updates data protection settings.
 

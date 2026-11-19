@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListT
 ---
 
 # ListTags
-<a name="API_ListTags"></a>
 
 Returns the tags assigned to the resource, such as a target recovery point, backup plan, or backup vault.
 

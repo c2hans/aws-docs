@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/us
 ---
 
 # Use Amazon Q Developer as a coding assistant to increase your productivity
-<a name="use-q-developer-as-coding-assistant-to-increase-productivity"></a>
 
 *Ram Kandaswamy, Amazon Web Services*
 

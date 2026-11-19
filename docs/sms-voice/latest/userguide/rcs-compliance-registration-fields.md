@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-complianc
 ---
 
 # Understanding registration fields
-<a name="rcs-compliance-registration-fields"></a>
 
 Your country launch registration contains two categories of fields: fields that become part of your agent's public profile visible to end users on their device, and fields that are only seen by the carrier reviewer during the approval process.
 

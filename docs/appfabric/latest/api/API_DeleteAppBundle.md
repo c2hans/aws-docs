@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_DeleteAppBundle
 ---
 
 # DeleteAppBundle
-<a name="API_DeleteAppBundle"></a>
 
 Deletes an app bundle. You must delete all associated app authorizations before you can delete an app bundle.
 

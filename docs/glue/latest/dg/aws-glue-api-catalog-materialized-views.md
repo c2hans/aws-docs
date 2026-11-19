@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-mate
 ---
 
 # Materialized view API
-<a name="aws-glue-api-catalog-materialized-views"></a>
 
 The materialized view API describes the AWS Glue data types and operations for starting, stopping, and monitoring materialized view refresh task runs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/modify-work
 ---
 
 # Modify a WorkSpace in WorkSpaces Personal
-<a name="modify-workspaces"></a>
 
 After you launch a WorkSpace, you can modify its configuration in three ways:
 + You can change the size of its root volume (for Windows, drive C; for Linux, /) and its user volume (for Windows, drive D; for Linux /home).

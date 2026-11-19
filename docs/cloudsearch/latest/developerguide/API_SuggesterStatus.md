@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Su
 ---
 
 # SuggesterStatus
-<a name="API_SuggesterStatus"></a>
 
 ## Description
 <a name="API_SuggesterStatus_Description"></a>

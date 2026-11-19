@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_RecipeA
 ---
 
 # RecipeAction
-<a name="API_RecipeAction"></a>
 
 Represents a transformation and associated parameters that are used to apply a change to a DataBrew dataset. For more information, see [Recipe actions reference](https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions-reference.html).
 

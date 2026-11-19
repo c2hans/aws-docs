@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_EcsP
 ---
 
 # EcsParameters
-<a name="API_EcsParameters"></a>
 
 The custom parameters to be used when the target is an Amazon ECS task.
 

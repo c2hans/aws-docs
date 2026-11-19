@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/post-c
 ---
 
 # POST: Create a Channel
-<a name="post-create-a-channel"></a>
 
 Create a new channel.
 

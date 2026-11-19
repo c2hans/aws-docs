@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/speke-encryption-
 ---
 
 # SPEKE encryption parameters
-<a name="speke-encryption-parameters"></a>
 
 When you request encryption, you provide input parameters that allow the service to locate your DRM solution provider's key server, to authenticate you as a user and to request the proper encoding keys. Some options are available only for particular output groups.
 

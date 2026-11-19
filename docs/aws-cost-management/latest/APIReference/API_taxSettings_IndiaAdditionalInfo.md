@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # IndiaAdditionalInfo
-<a name="API_taxSettings_IndiaAdditionalInfo"></a>
 
  Additional tax information in India.
 

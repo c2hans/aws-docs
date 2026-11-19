@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-autoshif
 ---
 
 # Blocked windows and allowed windows (in UTC)
-<a name="arc-zonal-autoshift.how-it-works.blocked-windows"></a>
 
 You have the option to *block* or *allow* practice runs for specific calendar dates, or for specific time windows, that is, days and times, specified in UTC.
 

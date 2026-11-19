@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # MetaLibraryTemplateDefinition
-<a name="API_MetaLibraryTemplateDefinition"></a>
 
 Defines the complete structure and content of a template in Meta's library.
 

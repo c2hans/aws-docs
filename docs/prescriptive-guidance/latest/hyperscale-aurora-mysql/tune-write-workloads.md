@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hyperscale-
 ---
 
 # Tuning write workloads
-<a name="tune-write-workloads"></a>
 
 Implementing load-balancing and freeing up the writer instance will help your write workload to perform better during high spikes. To achieve better write performance at high concurrency, follow these additional steps.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixScooterOptions
-<a name="API_RouteMatrixScooterOptions"></a>
 
 Travel mode options when the provided travel mode is `Scooter`.
 

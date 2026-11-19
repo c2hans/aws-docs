@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Asse
 ---
 
 # AssessmentTargetSummary
-<a name="API_AssessmentTargetSummary"></a>
 
 Identifies the entity or change set that was assessed.
 

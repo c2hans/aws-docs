@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/deploy-webapp-amplify/mo
 ---
 
 # Task 3: Build the Frontend
-<a name="module-three"></a>
 
 |  |  |
 | --- |--- |

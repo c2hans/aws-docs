@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_DeleteCor
 ---
 
 # DeleteCoreDevice
-<a name="API_DeleteCoreDevice"></a>
 
 Deletes a Greengrass core device, which is an AWS IoT thing. This operation removes the core device from the list of core devices. This operation doesn't delete the AWS IoT thing. For more information about how to delete the AWS IoT thing, see [DeleteThing](https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteThing.html) in the * AWS IoT API Reference*.
 

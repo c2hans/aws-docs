@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/menu.html
 ---
 
 # .menu
-<a name="menu"></a>
 
 Used by restaurants, cafes, and food service businesses to showcase their menus.
 

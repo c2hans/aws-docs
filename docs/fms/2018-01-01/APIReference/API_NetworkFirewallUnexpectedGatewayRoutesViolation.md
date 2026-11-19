@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkF
 ---
 
 # NetworkFirewallUnexpectedGatewayRoutesViolation
-<a name="API_NetworkFirewallUnexpectedGatewayRoutesViolation"></a>
 
 Violation detail for an unexpected gateway route that’s present in a route table.
 

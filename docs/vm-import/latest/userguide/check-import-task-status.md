@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/check-import-
 ---
 
 # Monitor an import image task
-<a name="check-import-task-status"></a>
 
 You can monitor the progress of an import image task for VM Import/Export. The following are the status values for an import image task:
 + `active` — The import task is in progress.

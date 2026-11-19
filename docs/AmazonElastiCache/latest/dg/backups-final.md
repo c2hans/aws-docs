@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/backups-fina
 ---
 
 # Creating a final backup
-<a name="backups-final"></a>
 
 You can create a final backup using the ElastiCache console, the AWS CLI, or the ElastiCache API.
 

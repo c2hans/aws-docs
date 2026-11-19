@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # DeleteLicenseConfiguration
-<a name="API_DeleteLicenseConfiguration"></a>
 
 Deletes the specified license configuration.
 

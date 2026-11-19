@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-job-compilation-
 ---
 
 # Compile a Model (AWS Command Line Interface)
-<a name="neo-job-compilation-cli"></a>
 
 This section shows how to manage Amazon SageMaker Neo compilation jobs for machine learning models using AWS Command Line Interface (CLI). You can create, describe, stop, and list the compilation jobs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cluster-high-a
 ---
 
 # AWS CloudHSM cluster high availability and load balancing
-<a name="cluster-high-availability-load-balancing"></a>
 
 When you create an AWS CloudHSM cluster with more than one HSM, you automatically get load balancing. Load balancing means that the [AWS CloudHSM client](client-tools-and-libraries.md) distributes cryptographic operations across all HSMs in the cluster based on each HSM's capacity for additional processing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # Using tags with S3 Access Points for directory buckets
-<a name="access-points-db-tagging"></a>
 
 An AWS tag is a key-value pair that holds metadata about resources, in this case Amazon S3 Access Points for directory buckets. You can tag access points when you create them or manage tags on existing access points. For general information about tags, see [Tagging for cost allocation or attribute-based access control (ABAC)](tagging.md).
 

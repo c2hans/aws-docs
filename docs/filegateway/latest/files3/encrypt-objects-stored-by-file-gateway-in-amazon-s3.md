@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/encrypt-object
 ---
 
 # Encrypt objects stored by File Gateway in Amazon S3
-<a name="encrypt-objects-stored-by-file-gateway-in-amazon-s3"></a>
 
 S3 File Gateway supports the following methods of server-side encryption for the data that it stores in Amazon S3:
 + **SSE-S3** — By default, all new objects uploaded to Amazon S3 buckets use server-side encryption with Amazon S3 managed keys. For more information, see [Using server-side encryption with Amazon S3 managed keys](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingServerSideEncryption.html) in the *Amazon Simple Storage Service User Guide*.

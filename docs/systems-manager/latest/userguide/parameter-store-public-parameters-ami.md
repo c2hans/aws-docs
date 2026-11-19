@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 ---
 
 # Calling AMI public parameters in Parameter Store
-<a name="parameter-store-public-parameters-ami"></a>
 
 Amazon Elastic Compute Cloud (Amazon EC2) Amazon Machine Image (AMI) public parameters are available for Amazon Linux 2, Amazon Linux 2023 (AL2023), macOS, and Windows Server from the following paths:
 + Amazon Linux 2, and Amazon Linux 2023: `/aws/service/ami-amazon-linux-latest`

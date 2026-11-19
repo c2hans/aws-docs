@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationFormSingleSelectQuestionAutomationOption
-<a name="API_EvaluationFormSingleSelectQuestionAutomationOption"></a>
 
 Information about the automation option of a single select question.
 

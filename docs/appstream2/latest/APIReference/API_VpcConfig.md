@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_VpcCo
 ---
 
 # VpcConfig
-<a name="API_VpcConfig"></a>
 
 Describes VPC configuration information for fleets and image builders.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Granting Amazon OpenSearch Ingestion pipelines access to collections
-<a name="pipeline-collection-access"></a>
 
 An Amazon OpenSearch Ingestion pipeline can write to an OpenSearch Serverless public collection or VPC collection. To provide access to the collection, you configure an AWS Identity and Access Management (IAM) pipeline role with a permissions policy that grants access to the collection. The pipeline assumes this role in order to sign requests to the OpenSearch Serverless collection sink.
 

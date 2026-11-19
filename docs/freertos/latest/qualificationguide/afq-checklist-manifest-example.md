@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/qualificationguide/afq-c
 ---
 
 # Example manifest.yml
-<a name="afq-checklist-manifest-example"></a>
 
 ```
 ---

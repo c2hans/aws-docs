@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Documen
 ---
 
 # DocumentContent
-<a name="API_DocumentContent"></a>
 
 The contents of a document.
 

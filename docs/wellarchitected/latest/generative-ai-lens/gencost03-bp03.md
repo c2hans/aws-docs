@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENCOST03-BP03 Implement prompt caching to reduce token costs
-<a name="gencost03-bp03"></a>
 
  Implement prompt caching for supported foundation models to reduce inference response latency and input token costs. This best practice helps organizations optimize costs by caching frequently used portions of prompts to avoid recomputation, while maintaining performance and reliability.
 

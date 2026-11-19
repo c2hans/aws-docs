@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Device control
-<a name="managedintegrations-sdk-v2-control"></a>
 
 Managed Integrations handles device registration, command execution, and control. You can build end-user experiences without knowledge of device-specific protocols using its vendor and protocol-agnostic device management.
 

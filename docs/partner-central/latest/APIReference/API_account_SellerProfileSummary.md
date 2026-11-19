@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # SellerProfileSummary
-<a name="API_account_SellerProfileSummary"></a>
 
 A summary view of a seller profile containing basic identifying information.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/devenviron
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Editing a repository devfile for a Dev Environment
-<a name="devenvironment-devfile-moving"></a>
 
 Use the following procedure to edit a repository devfile for a Dev Environment.
 

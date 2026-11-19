@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_C
 ---
 
 # CreateRecommendationTemplate
-<a name="API_CreateRecommendationTemplate"></a>
 
 Creates a new recommendation template for the AWS Resilience Hub application.
 

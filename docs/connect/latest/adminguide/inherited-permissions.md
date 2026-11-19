@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/inherited-perm
 ---
 
 # Inherited permissions for Connect Customer and Contact Control Panel (CCP) security profiles
-<a name="inherited-permissions"></a>
 
 Some security profiles included inherited permissions: when you give a user explicit permissions to **View** or **Edit** one resource type, such as queues, they implicitly inherit permissions to **View** another resource type, such as phone numbers.
 

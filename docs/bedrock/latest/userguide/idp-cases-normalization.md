@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/idp-cases-norma
 ---
 
 # Create Blueprints for Normalization
-<a name="idp-cases-normalization"></a>
 
 BDA provides normalization capabilities that allow you to convert and standardize the extracted data according to your specific requirements. These normalization tasks can be categorized into Key Normalization and Value Normalization.
 

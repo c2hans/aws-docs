@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # CreateLoadBalancer
-<a name="API_CreateLoadBalancer"></a>
 
 Creates a Classic Load Balancer.
 

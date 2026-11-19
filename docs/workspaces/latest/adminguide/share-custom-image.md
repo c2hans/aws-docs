@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/share-custo
 ---
 
 # Share or unshare a custom image in WorkSpaces Personal
-<a name="share-custom-image"></a>
 
 You can share custom WorkSpaces images across AWS accounts within the same AWS Region. After an image has been shared, the recipient account can copy the image to other AWS Regions as needed. For more information about copying images, see [Copy a custom image in WorkSpaces Personal](copy-custom-image.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-r
 ---
 
 # Replatforming backend databases
-<a name="replatforming-backend-databases"></a>
 
 The approach for replatforming backend databases is different for COTS and in-house applications. This is because the source code is typically only available for in-house applications. The following illustration shows the replatforming options available for your application's backend databases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_SequenceStoreDetail
 ---
 
 # SequenceStoreDetail
-<a name="API_SequenceStoreDetail"></a>
 
 Details about a sequence store.
 

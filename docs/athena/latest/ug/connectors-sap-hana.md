@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-sap-hana.htm
 ---
 
 # Amazon Athena SAP HANA connector
-<a name="connectors-sap-hana"></a>
 
 This connector can be registered with Glue Data Catalog as a federated catalog. It supports data access controls defined in Lake Formation at the catalog, database, table, column, row, and tag levels. This connector uses Glue Connections to centralize configuration properties in Glue.
 

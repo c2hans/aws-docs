@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # IBM Instana Observability on AWS
-<a name="ibm-instana-observability"></a>
 
 Publication date: **February 28, 2023 ([Diagram history](#diagram-history))**
 

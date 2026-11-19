@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Price List
-<a name="API_Operations_AWS_Price_List_Service"></a>
 
 The following actions are supported by AWS Price List:
 +  [DescribeServices](API_pricing_DescribeServices.md)

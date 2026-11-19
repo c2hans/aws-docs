@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/managing-re
 ---
 
 # Changing the recording frequency for the customer managed configuration recorder
-<a name="managing-recorder_console-change-recording-frequency"></a>
 
 AWS Config supports continuous recording and daily recording:
 + *Continuous recording* allows you to record configuration changes continuously whenever a change occurs.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoverySnap
 ---
 
 # RecoverySnapshot
-<a name="API_RecoverySnapshot"></a>
 
 A snapshot of a Source Server used during recovery.
 

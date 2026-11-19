@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Pe
 ---
 
 # PeriodicStateTemplateUpdateStrategy
-<a name="API_PeriodicStateTemplateUpdateStrategy"></a>
 
 Vehicles associated with the state template will stream telemetry data during a specified time period.
 

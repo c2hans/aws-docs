@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/applications-
 ---
 
 # Creating an application
-<a name="applications-create"></a>
 
 Use the following procedure to create an application in App Studio.
 

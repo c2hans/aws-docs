@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/mv-hevc-spatial-v
 ---
 
 # Creating MV-HEVC spatial video outputs with AWS Elemental MediaConvert
-<a name="mv-hevc-spatial-video"></a>
 
 MV-HEVC (Multi-View HEVC) is an output codec format that encodes two video views—left eye and right eye—into a single bitstream, enabling spatial and 3D video playback.
 

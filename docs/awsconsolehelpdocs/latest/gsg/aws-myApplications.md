@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/aws-myAppl
 ---
 
 # What is myApplications in AWS Console Home?
-<a name="aws-myApplications"></a>
 
 **Note**
 myApplications no longer allows creation of new applications. For resource grouping capabilities, explore AWS Resource Groups. [Learn more](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/aws-myApplications-availability-change.html).

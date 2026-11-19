@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_User.html
 ---
 
 # User
-<a name="API_User"></a>
 
 Represents a user account in a Wickr network with detailed profile information, status, security settings, and authentication details.
 

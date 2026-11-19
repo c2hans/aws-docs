@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ai-data-preparation.
 ---
 
 # Preparing Data with SageMaker AI Data Preparation
-<a name="ai-data-preparation"></a>
 
 Customizing or evaluating a model starts with data that fits the task. That data is often missing, too small, unlabeled, or of unknown quality. SageMaker AI Data Preparation is a set of data preparation capabilities that close those gaps. Synthetic data generation, data quality evaluation, data transformation, and auto-labeling run as jobs that SageMaker AI manages. Jobs that produce data register it as a dataset in your account, ready for the next step or for model training. Human-in-the-loop annotation runs in a labeling space where people review and correct labels.
 

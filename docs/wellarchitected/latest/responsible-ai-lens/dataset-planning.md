@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Dataset planning
-<a name="dataset-planning"></a>
 
  Developing an AI system to solve a use case requires developing two logically distinct solution stacks: the *AI evaluation stack* and the *AI system stack*.
 

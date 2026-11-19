@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelC
 ---
 
 # ModelCardExportOutputConfig
-<a name="API_ModelCardExportOutputConfig"></a>
 
 Configure the export output details for an Amazon SageMaker Model Card.
 

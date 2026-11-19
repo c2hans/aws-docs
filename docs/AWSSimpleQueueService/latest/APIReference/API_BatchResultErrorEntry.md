@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # BatchResultErrorEntry
-<a name="API_BatchResultErrorEntry"></a>
 
 Gives a detailed description of the result of an action on each entry in the request.
 

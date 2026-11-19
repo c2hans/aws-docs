@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Ta
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A tag consisting of a key-value pair that can be applied to a resource.
 

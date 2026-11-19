@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Process and culture
-<a name="process-and-culture"></a>
 
 | DRHCPERF04: How do you know if your edge workload performance characteristics are healthy or at risk? |
 | --- |

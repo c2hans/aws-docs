@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # PredictiveScalingMetricDimension
-<a name="API_PredictiveScalingMetricDimension"></a>
 
  Describes the dimension of a metric.
 

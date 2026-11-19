@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/troubleshooting-se
 ---
 
 # MediaTailor session variable ad skipping troubleshooting
-<a name="troubleshooting-session-variables-skipping"></a>
 
 Session variables play a critical role in ad targeting and selection in AWS Elemental MediaTailor. Incorrect session variable configuration is a common cause of ad skipping issues. This comprehensive troubleshooting guide explains how to identify and resolve session variable problems that can prevent successful ad insertion.
 

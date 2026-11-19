@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElbL
 ---
 
 # AwsElbLoadBalancerHealthCheck
-<a name="API_AwsElbLoadBalancerHealthCheck"></a>
 
 Contains information about the health checks that are conducted on the load balancer.
 

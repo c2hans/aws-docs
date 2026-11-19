@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 ---
 
 # Partitional services best practices
-<a name="partitional-services-best-practices"></a>
 
 This section provides best practices for using partitional services in your recovery operations.
 

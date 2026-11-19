@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListPositionConfigurations
-<a name="API_ListPositionConfigurations"></a>
 
  *This action has been deprecated.*
 

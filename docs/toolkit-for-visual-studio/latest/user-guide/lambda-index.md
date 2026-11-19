@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # AWS Lambda
-<a name="lambda-index"></a>
 
 Develop and deploy your .NET Core-based C\# Lambda functions with the AWS Toolkit for Visual Studio. AWS Lambda is a compute service that lets you run code without provisioning or managing servers. The Toolkit for Visual Studio includes AWS Lambda .NET Core project templates for Visual Studio.
 

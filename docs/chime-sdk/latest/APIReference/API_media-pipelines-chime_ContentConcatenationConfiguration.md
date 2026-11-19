@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # ContentConcatenationConfiguration
-<a name="API_media-pipelines-chime_ContentConcatenationConfiguration"></a>
 
 The composited content configuration object for a specified media pipeline.
 

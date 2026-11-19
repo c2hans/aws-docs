@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_DisableDel
 ---
 
 # DisableDelegatedAdminAccount
-<a name="API_DisableDelegatedAdminAccount"></a>
 
 Disables the Amazon Inspector delegated administrator for your organization.
 

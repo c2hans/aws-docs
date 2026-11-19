@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_DataCatal
 ---
 
 # DataCatalogSummary
-<a name="API_DataCatalogSummary"></a>
 
 The summary information for the data catalog, which includes its name and type.
 

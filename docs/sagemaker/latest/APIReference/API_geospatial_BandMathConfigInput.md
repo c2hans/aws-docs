@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # BandMathConfigInput
-<a name="API_geospatial_BandMathConfigInput"></a>
 
 Input structure for the BandMath operation type. Defines Predefined and CustomIndices to be computed using BandMath.
 

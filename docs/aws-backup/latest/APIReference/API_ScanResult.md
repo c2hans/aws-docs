@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ScanR
 ---
 
 # ScanResult
-<a name="API_ScanResult"></a>
 
 Contains the results of a security scan, including scanner information, scan state, and any findings discovered.
 

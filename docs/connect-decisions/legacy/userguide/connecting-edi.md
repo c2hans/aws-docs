@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/conne
 ---
 
 # Connecting to an EDI
-<a name="connecting-edi"></a>
 
 To ingest data from an EDI data source, follow the procedure below.
 

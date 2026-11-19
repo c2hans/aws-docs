@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_TimestreamDi
 ---
 
 # TimestreamDimension
-<a name="API_TimestreamDimension"></a>
 
 Metadata attributes of the time series that are written in each measure record.
 

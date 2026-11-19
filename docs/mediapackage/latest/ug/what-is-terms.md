@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/what-is-terms.htm
 ---
 
 # Concepts and terminology
-<a name="what-is-terms"></a>
 
 AWS Elemental MediaPackage (MediaPackage) includes the following components:
 

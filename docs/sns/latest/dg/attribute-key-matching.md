@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/attribute-key-matching.htm
 ---
 
 # Key matching
-<a name="attribute-key-matching"></a>
 
 Use the `exists` operator in a filter policy to match incoming messages based on whether a specific property is present or absent.
 + `exists` works only on leaf nodes (final attributes in the structure).

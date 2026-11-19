@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverlessrepo/latest/devguide/resources
 ---
 
 # Resources
-<a name="resources"></a>
 
 The AWS Serverless Application Repository REST API includes the following resources.
 

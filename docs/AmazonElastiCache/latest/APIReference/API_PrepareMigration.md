@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # PrepareMigration
-<a name="API_PrepareMigration"></a>
 
 Prepares the serverless cache for data migration by validating the configuration and setting up the migration resources.
 

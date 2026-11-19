@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_JobTimeout
 ---
 
 # JobTimeout
-<a name="API_JobTimeout"></a>
 
 An object that represents a job timeout configuration.
 

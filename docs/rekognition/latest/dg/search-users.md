@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/search-users.html
 ---
 
 # Searching for users (face ID/ user ID)
-<a name="search-users"></a>
 
 You can use the [SearchUsers](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchUsers.html) operation to to search for users in a specified collection that match a supplied face ID or user ID. The operation lists the returned `UserIds` ranked by the highest similarity score above the requested UserMatchThreshold. The user ID is created in the CreateUsers operation. For more information, see [Managing users in a collection](managing-face-collections.md#collections-manage-users).
 

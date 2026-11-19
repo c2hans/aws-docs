@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/message-filtering-apply.ht
 ---
 
 # Applying a subscription filter policy in Amazon SNS
-<a name="message-filtering-apply"></a>
 
 Message filtering in Amazon SNS allows you to selectively deliver messages to subscribers based on filter policies. These policies define conditions that messages must meet to be delivered to a subscription. While raw message delivery is an option that can affect message processing, it is not required for subscription filters to work.
 

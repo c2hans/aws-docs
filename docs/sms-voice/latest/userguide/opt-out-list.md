@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/opt-out-list.
 ---
 
 # Opt-out lists in AWS End User Messaging SMS
-<a name="opt-out-list"></a>
 
 An *opt-out list* is list of destination phone numbers that should not have messages sent to them. When you send SMS messages, destination identities are automatically added to the opt-out list if they reply to your originator phone number with the keyword STOP (unless you enable the self-managed opt-out option). If you attempt to send a message to a destination number that is on an opt-out list, and the opt-out list is associated with the phone number used to send the message, AWS End User Messaging SMS doesn't attempt to send the message.
 

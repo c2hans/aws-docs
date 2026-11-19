@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_Recommendati
 ---
 
 # RecommendationSettings
-<a name="API_RecommendationSettings"></a>
 
 Provides information about the required target engine settings.
 

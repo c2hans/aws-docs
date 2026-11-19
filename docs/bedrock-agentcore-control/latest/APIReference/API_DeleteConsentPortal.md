@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DeleteConsentPortal
-<a name="API_DeleteConsentPortal"></a>
 
 Deletes a consent portal.
 

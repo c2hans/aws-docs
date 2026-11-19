@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # DeleteWhatsAppMessageTemplate
-<a name="API_DeleteWhatsAppMessageTemplate"></a>
 
 Deletes a WhatsApp message template.
 

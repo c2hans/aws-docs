@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_Recommendati
 ---
 
 # RecommendationData
-<a name="API_RecommendationData"></a>
 
 Provides information about the target engine for the specified source database.
 

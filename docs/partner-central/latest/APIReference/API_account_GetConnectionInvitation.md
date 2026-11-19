@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetConnectionInvitation
-<a name="API_account_GetConnectionInvitation"></a>
 
 Retrieves detailed information about a specific connection invitation.
 

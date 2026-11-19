@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/api/API_GetRules.ht
 Amazon Fraud Detector is no longer be open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker AI, AutoGluon, and AWS WAF.
 
 # GetRules
-<a name="API_GetRules"></a>
 
 Get all rules for a detector (paginated) if `ruleId` and `ruleVersion` are not specified. Gets all rules for the detector and the `ruleId` if present (paginated). Gets a specific rule if both the `ruleId` and the `ruleVersion` are specified.
 

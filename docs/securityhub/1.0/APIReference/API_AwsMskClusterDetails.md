@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsMskC
 ---
 
 # AwsMskClusterDetails
-<a name="API_AwsMskClusterDetails"></a>
 
  Provides details about an Amazon Managed Streaming for Apache Kafka (Amazon MSK) cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBProxyTargetGroups
-<a name="API_DescribeDBProxyTargetGroups"></a>
 
 Returns information about DB proxy target groups, represented by `DBProxyTargetGroup` data structures.
 

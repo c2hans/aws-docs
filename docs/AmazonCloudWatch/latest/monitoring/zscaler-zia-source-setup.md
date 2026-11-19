@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/zscal
 ---
 
 # Source configuration for Zscaler Internet Access
-<a name="zscaler-zia-source-setup"></a>
 
 ## Integrating with Zscaler Internet Access
 <a name="zscaler-zia-integration"></a>

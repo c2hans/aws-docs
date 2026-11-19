@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-ama
 ---
 
 # Amazon
-<a name="model-cards-amazon"></a>
 
 The following Amazon models are available in Amazon Bedrock:
 

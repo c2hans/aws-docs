@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/workspaces-u
 ---
 
 # Getting started with your WorkSpace
-<a name="workspaces-user-getting-started"></a>
 
 After your administrator creates your WorkSpace, you receive an invitation email. Complete the following tasks to start using your WorkSpace.
 

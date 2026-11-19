@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Runtim
 ---
 
 # RuntimeSignals
-<a name="API_RuntimeSignals"></a>
 
 Contains a summary of runtime signals.
 

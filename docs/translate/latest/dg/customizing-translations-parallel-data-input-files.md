@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/customizing-translat
 ---
 
 # Parallel data input files for Amazon Translate
-<a name="customizing-translations-parallel-data-input-files"></a>
 
 Before you can create a parallel data resource in Amazon Translate, you must create an input file that contains your translation examples. Your parallel data input file must use languages that Amazon Translate supports. For a list of these languages, see [Supported languages and language codes](what-is-languages.md).
 

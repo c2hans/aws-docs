@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CodeLine.h
 ---
 
 # CodeLine
-<a name="API_CodeLine"></a>
 
 Contains information on the lines of code associated with a code snippet.
 

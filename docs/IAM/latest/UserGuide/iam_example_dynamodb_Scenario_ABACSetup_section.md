@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_dynamod
 ---
 
 # Set up Attribute-Based Access Control for DynamoDB using AWS Command Line Interface v2
-<a name="iam_example_dynamodb_Scenario_ABACSetup_section"></a>
 
 The following code example shows how to implement Attribute-Based Access Control (ABAC) for DynamoDB.
 + Create an IAM policy for ABAC.

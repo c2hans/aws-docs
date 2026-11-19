@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_RetryB
 ---
 
 # RetryBuildBatch
-<a name="API_RetryBuildBatch"></a>
 
 Restarts a failed batch build. Only batch builds that have failed can be retried.
 

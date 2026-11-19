@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-
 ---
 
 # Use service discovery to connect Amazon ECS services with DNS names
-<a name="service-discovery"></a>
 
 Your Amazon ECS service can optionally be configured to use Amazon ECS service discovery. Service discovery uses AWS Cloud Map API actions to manage HTTP and DNS namespaces for your Amazon ECS services. For more information, see [What Is AWS Cloud Map](https://docs.aws.amazon.com/cloud-map/latest/dg/Welcome.html) in the *AWS Cloud Map Developer Guide*.
 

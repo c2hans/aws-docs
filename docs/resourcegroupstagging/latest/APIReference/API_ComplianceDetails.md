@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReferenc
 ---
 
 # ComplianceDetails
-<a name="API_ComplianceDetails"></a>
 
 Information that shows whether a resource is compliant with the effective tag policy, including details on any noncompliant tag keys.
 

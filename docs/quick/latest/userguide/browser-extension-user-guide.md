@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/browser-extension
 ---
 
 # AWS Quick browser extension
-<a name="browser-extension-user-guide"></a>
 
 **Important**
 The AWS Quick browser extension extension doesn't need any admin setup to install and use.

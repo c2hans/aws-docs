@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/inference-api-r
 ---
 
 # API restrictions
-<a name="inference-api-restrictions"></a>
 
 The following restrictions apply to the `InvokeModel`, `InvokeModelWithResponseStream`, `Converse`, and `ConverseStream` operations. Some restrictions vary by operation or model as noted below:
 + When using these operations, you can only include images and documents if the `role` is `user`.

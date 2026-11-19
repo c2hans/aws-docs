@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/transform-d
 ---
 
 # Transforming .NET applications with Amazon Q Developer
-<a name="transform-dotnet-IDE"></a>
 
 Amazon Q Developer can port your Windows-based .NET applications to Linux-compatible cross-platform .NET applications through a generative AI-powered refactoring workflow. Amazon Q also helps you upgrade outdated versions of cross-platform .NET applications to newer versions.
 

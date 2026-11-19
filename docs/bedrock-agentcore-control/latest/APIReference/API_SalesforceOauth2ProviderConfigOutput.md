@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SalesforceOauth2ProviderConfigOutput
-<a name="API_SalesforceOauth2ProviderConfigOutput"></a>
 
 Output configuration for a Salesforce OAuth2 provider.
 

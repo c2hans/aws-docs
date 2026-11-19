@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/security
 ---
 
 # Security and compliance
-<a name="security-and-compliance"></a>
 
 ## Security
 <a name="security"></a>

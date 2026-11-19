@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailInvocationMetrics
-<a name="API_runtime_GuardrailInvocationMetrics"></a>
 
 The invocation metrics for the guardrail.
 

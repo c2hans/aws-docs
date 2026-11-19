@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/predictor-monitoring-
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # Viewing Monitoring Results
-<a name="predictor-monitoring-results"></a>
 
 After you generate a forecast and then import more data, you can view the results of predictor monitoring. You can see a visualization of results with the Forecast console or you can programmatically retrieve results with the [ListMonitorEvaluations](API_ListMonitorEvaluations.md) operation.
 

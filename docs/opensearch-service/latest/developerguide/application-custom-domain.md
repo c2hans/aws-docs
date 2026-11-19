@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Setting up a friendly URL for OpenSearch UI applications (self-service)
-<a name="application-custom-domain"></a>
 
 OpenSearch UI applications have auto-generated URLs like `https://application-{{name}}-{{id}}.{{Region}}.opensearch.amazonaws.com`. These URLs are long and difficult to remember. You can set up a friendly URL (such as `https://prod.example.com`). This URL redirects to your application, so you can access dashboards directly without navigating through the AWS Management Console.
 

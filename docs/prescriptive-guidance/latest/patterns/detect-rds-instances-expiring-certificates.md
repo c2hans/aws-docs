@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 ---
 
 # Detect Amazon RDS and Aurora database instances that have expiring CA certificates
-<a name="detect-rds-instances-expiring-certificates"></a>
 
 *Stephen DiCato and Eugene Shifer, Amazon Web Services*
 

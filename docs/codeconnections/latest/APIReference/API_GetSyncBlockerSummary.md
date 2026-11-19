@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # GetSyncBlockerSummary
-<a name="API_GetSyncBlockerSummary"></a>
 
 Returns a list of the most recent sync blockers.
 

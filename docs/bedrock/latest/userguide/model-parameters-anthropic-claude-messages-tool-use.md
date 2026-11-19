@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Anthropic Claude tool use
-<a name="model-parameters-anthropic-claude-messages-tool-use"></a>
 
 **Warning**
 Several functions below are offered in beta as indicated. These features are made available to you as a "Beta Service" as defined in the AWS Service Terms. It is subject to your Agreement with AWS and the AWS Service Terms, and the applicable model EULA.

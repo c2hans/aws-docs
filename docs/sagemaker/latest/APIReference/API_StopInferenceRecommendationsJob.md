@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopIn
 ---
 
 # StopInferenceRecommendationsJob
-<a name="API_StopInferenceRecommendationsJob"></a>
 
 Stops an Inference Recommender job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/change-m
 ---
 
 # Change management
-<a name="change-management"></a>
 
 | IOTREL08: How do you update device firmware on your IoT device? |
 | --- |

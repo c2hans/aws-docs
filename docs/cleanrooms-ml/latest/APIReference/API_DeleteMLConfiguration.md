@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_De
 ---
 
 # DeleteMLConfiguration
-<a name="API_DeleteMLConfiguration"></a>
 
 Deletes a ML modeling configuration.
 

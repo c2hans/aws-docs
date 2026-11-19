@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AutonomousDa
 ---
 
 # AutonomousDatabaseWalletDetails
-<a name="API_AutonomousDatabaseWalletDetails"></a>
 
 The wallet details for an Autonomous Database.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/aws-sql-
 ---
 
 # Best practices and recommendations for SQL Server clustering on Amazon EC2
-<a name="aws-sql-ec2-clustering"></a>
 
 You can configure Microsoft SQL Server on Amazon EC2 instances for high availability. SQL Server Always On availability groups offer high availability without the requirement for shared storage. The list of best practices in this topic, in addition to the prerequisites listed at [Prerequisites, Restrictions, and Recommendations for Always On availability groups](https://msdn.microsoft.com/en-us/library/ff878487.aspx), can help you optimize operating a SQL Server Always On availability groups on AWS. The practices listed in this topic also offer a method to gather logs.
 

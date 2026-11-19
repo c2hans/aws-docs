@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-CopyEC2Instance`
-<a name="automation-awssupport-copyec2instance"></a>
 
  **Description**
 

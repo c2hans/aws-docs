@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/recycle-bin-unlock.
 ---
 
 # Unlock a Recycle Bin retention rule to allow it to be updated or deleted
-<a name="recycle-bin-unlock"></a>
 
 You can't modify or delete a locked retention rule. If you need to modify a locked retention rule, you must first unlock it. After you have unlocked the retention rule, you must wait for the unlock delay period to expire before you can modify or delete it. You can't modify or delete a retention rule during the unlock delay period.
 

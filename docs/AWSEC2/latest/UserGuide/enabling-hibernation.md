@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/enabling-hiberna
 ---
 
 # Enable hibernation for an Amazon EC2 instance
-<a name="enabling-hibernation"></a>
 
 To hibernate an instance, you must first enable it for hibernation while launching the instance.
 

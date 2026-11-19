@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/tracking-
 ---
 
 # Authenticating your requests
-<a name="tracking-identity-pool"></a>
 
 Once you create a tracker resource and you're ready to begin evaluating device positions against geofences, choose how you would authenticate your requests:
 + To explore ways you can access the services, see [Authenticate with Amazon Location Service](access.md).

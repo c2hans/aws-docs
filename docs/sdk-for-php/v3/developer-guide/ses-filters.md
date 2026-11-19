@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ses-filte
 ---
 
 # Managing email filters using the Amazon SES API and the AWS SDK for PHP Version 3
-<a name="ses-filters"></a>
 
 In addition to sending emails, you can also receive email with Amazon Simple Email Service (Amazon SES). An IP address filter enables you to optionally specify whether to accept or reject mail that originates from an IP address or range of IP addresses. For more information, see [Managing IP Address Filters for Amazon SES Email Receiving](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/receiving-email-managing-ip-filters.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Counte
 ---
 
 # CountermeasureAction
-<a name="API_CountermeasureAction"></a>
 
 Contains an action that you can take to respond to a threat.
 

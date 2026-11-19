@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Bat
 ---
 
 # BatchGetAssetPropertyValueHistoryErrorEntry
-<a name="API_BatchGetAssetPropertyValueHistoryErrorEntry"></a>
 
 A list of the errors (if any) associated with the batch request. Each error entry contains the `entryId` of the entry that failed.
 

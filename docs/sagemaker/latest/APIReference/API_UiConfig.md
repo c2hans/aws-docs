@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UiConf
 ---
 
 # UiConfig
-<a name="API_UiConfig"></a>
 
 Provided configuration information for the worker UI for a labeling job. Provide either `HumanTaskUiArn` or `UiTemplateS3Uri`.
 

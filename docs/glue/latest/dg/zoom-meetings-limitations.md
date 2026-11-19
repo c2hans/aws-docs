@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zoom-meetings-limitations
 ---
 
 # Zoom Meetings limitations
-<a name="zoom-meetings-limitations"></a>
 
 The following are limitations or notes for Zoom Meetings:
 + Zoom Meetings does not support orderby.

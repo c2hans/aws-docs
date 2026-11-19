@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 ---
 
 # Data retrieval APIs for AWS Elastic Load Balancing V2
-<a name="awselasticloadbalancingv2"></a>
 
 AWS Elastic Load Balancing V2 provides the following APIs for data retrieval.
 

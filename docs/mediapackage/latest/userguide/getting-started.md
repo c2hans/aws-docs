@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/getting-st
 ---
 
 # Getting started with AWS Elemental MediaPackage
-<a name="getting-started"></a>
 
 This tutorial describes how to get started with MediaPackage, using the console to create a channel and endpoints for streaming live videos.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TestSetSlo
 ---
 
 # TestSetSlotDiscrepancyItem
-<a name="API_TestSetSlotDiscrepancyItem"></a>
 
 Contains information about discrepancy in a slot information between the test set and the bot.
 

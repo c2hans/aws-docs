@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/logging-enclaves-us
 ---
 
 # Logging API calls for the Nitro Enclaves with AWS CloudTrail
-<a name="logging-enclaves-using-cloudtrail"></a>
 
 AWS Nitro Enclaves is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user or role in Nitro Enclaves. CloudTrail captures AWS KMS API calls made from enclaves as events. If you create a trail, you can enable continuous delivery of the events to an Amazon Simple Storage Service (Amazon S3) bucket. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. You can use the information collected by CloudTrail to audit AWS KMS API calls made by enclaves.
 

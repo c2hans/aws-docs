@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/context-mem
 ---
 
 # Generating a memory bank for Amazon Q chat
-<a name="context-memory-bank"></a>
 
 Amazon Q can automatically generate memory bank files that provide a quick index of your project's structure, technology stack, and product information. This feature analyzes key files in your project to create summary files that help Amazon Q understand your codebase without having to analyze the entire project each time you ask a question.
 

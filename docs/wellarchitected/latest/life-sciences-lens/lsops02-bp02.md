@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSOPS02-BP02 Implement regulatory reviews
-<a name="lsops02-bp02"></a>
 
  Incorporate and electronically document formal reviews throughout the project lifecycle to improve regulatory adherence. This includes initial framework assessment reviews, design control gates, change management reviews, pre-submission readiness checks, and periodic audits to verify ongoing adherence. Document the decisions and maintain traceability of regulatory requirements implementation throughout each stage.
 

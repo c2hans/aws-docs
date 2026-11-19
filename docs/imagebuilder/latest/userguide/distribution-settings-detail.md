@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/distributi
 ---
 
 # List and view distribution configuration detail
-<a name="distribution-settings-detail"></a>
 
 This section describes the various ways that you can find information and view details for your EC2 Image Builder distribution configuration.
 

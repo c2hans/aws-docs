@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail-for-research/latest/ug/create-
 ---
 
 # Tag Lightsail for Research resources
-<a name="create-tags"></a>
 
 Complete the following steps to create a tag for your Lightsail for Research virtual computer. The steps are similar for Lightsail for Research disks and snapshots.
 

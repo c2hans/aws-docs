@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/assistant/latest/userguide/data-protecti
 ---
 
 # Data protection in the AWS assistant
-<a name="data-protection"></a>
 
 Don't put confidential or sensitive information in tags, resource names, or other free-form fields. Questions and responses can be included in service and diagnostic data as described in this chapter.
 

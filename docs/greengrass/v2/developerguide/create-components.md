@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/create-comp
 ---
 
 # Create AWS IoT Greengrass components
-<a name="create-components"></a>
 
 You can develop custom AWS IoT Greengrass components on a local development computer or a Greengrass core device. AWS IoT Greengrass provides the [AWS IoT Greengrass Development Kit Command-Line Interface (GDK CLI)](greengrass-development-kit-cli.md) to help you create, build, and publish components from predefined component templates and [community components](greengrass-software-catalog.md). You can also run built-in shell commands to create, build, and publish components. Choose from the following options to create custom Greengrass components:
 + **Use the Greengrass Development Kit CLI**

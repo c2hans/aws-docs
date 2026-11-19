@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # How it works
-<a name="aurora-analytics-how-it-works"></a>
 
 Aurora PostgreSQL runs your analytical queries inside your DB cluster, reading Iceberg and Parquet data directly from Amazon S3, without moving it into Aurora or running a separate system. You point a PostgreSQL foreign table at your data in Amazon S3, Amazon S3 Tables, or the AWS Glue Data Catalog, then query it with standard SQL. The foreign table stores only metadata (schema and location); no data is copied into Aurora.
 

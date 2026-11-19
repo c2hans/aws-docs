@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_CreateW
 ---
 
 # CreateWorkflowDefinition
-<a name="API_CreateWorkflowDefinition"></a>
 
 Creates a new workflow definition template that can be used to execute multiple workflow runs.
 

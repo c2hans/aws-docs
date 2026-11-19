@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/using-streaming-nat
 ---
 
 # Streaming modes on Windows, Linux, and macOS clients
-<a name="using-streaming-native"></a>
 
 The steps depend on the client used.
 

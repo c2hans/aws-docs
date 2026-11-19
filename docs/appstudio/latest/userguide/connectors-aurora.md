@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/connectors-au
 ---
 
 # Connect to Amazon Aurora
-<a name="connectors-aurora"></a>
 
 To connect App Studio with Aurora to enable builders to access and use Aurora resources in applications, you must perform the following steps:
 

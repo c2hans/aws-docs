@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/configura
 ---
 
 # Configurations
-<a name="configurations"></a>
 
 This is a collection of configurations. A configuration contains all of the settings for your broker. For more information, see [Configuration](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/configuration.html) and [Amazon MQ Broker Configuration Parameters](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-broker-configuration-parameters.html) in the Amazon MQ Developer Guide.
 

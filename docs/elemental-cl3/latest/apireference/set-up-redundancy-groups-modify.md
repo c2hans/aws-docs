@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # PUT: Modify a Redundancy Group
-<a name="set-up-redundancy-groups-modify"></a>
 
 Change the name of the specified redundancy group.
 

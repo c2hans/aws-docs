@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DescribeCon
 ---
 
 # DescribeConnectorProfiles
-<a name="API_DescribeConnectorProfiles"></a>
 
  Returns a list of `connector-profile` details matching the provided `connector-profile` names and `connector-types`. Both input lists are optional, and you can use them to filter the result.
 

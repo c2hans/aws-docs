@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/AuthUsing
 ---
 
 # Making requests using AWS account or IAM user credentials
-<a name="AuthUsingAcctOrUserCredentials"></a>
 
 You can use your AWS account or IAM user security credentials to send authenticated requests to Amazon S3. This section provides examples of how you can send authenticated requests using the AWS SDK for Java, AWS SDK for .NET, and AWS SDK for PHP. For a list of available AWS SDKs, go to [Sample Code and Libraries](https://aws.amazon.com/code/).
 

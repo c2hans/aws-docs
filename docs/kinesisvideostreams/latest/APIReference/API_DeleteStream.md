@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # DeleteStream
-<a name="API_DeleteStream"></a>
 
 Deletes a Kinesis video stream and the data contained in the stream.
 

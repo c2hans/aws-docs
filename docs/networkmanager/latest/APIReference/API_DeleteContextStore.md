@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DeleteContextStore
-<a name="API_DeleteContextStore"></a>
 
 Deletes a context store. The context store must be in the `AVAILABLE` state. You must disassociate all transit gateways from the context store before you can delete it.
 

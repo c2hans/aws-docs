@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ModelMapping
-<a name="API_ModelMapping"></a>
 
 The configuration that translates model IDs between client-facing names and provider model IDs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # StrategySummary
-<a name="API_StrategySummary"></a>
 
  Object containing the summary of the strategy recommendations.
 

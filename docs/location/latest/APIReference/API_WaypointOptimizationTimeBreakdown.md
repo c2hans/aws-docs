@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationTimeBreakdown
-<a name="API_WaypointOptimizationTimeBreakdown"></a>
 
 Time breakdown for the sequence.
 

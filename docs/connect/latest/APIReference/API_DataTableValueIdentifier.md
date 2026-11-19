@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DataTabl
 ---
 
 # DataTableValueIdentifier
-<a name="API_DataTableValueIdentifier"></a>
 
 A data table value identifier.
 

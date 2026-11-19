@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-exp
 ---
 
 # Example experiment workflow
-<a name="appconfig-experimentation-example-flow"></a>
 
 At a high level, the process of creating, running, and ending an experiment using AWS AppConfig experimentation works as follows:
 

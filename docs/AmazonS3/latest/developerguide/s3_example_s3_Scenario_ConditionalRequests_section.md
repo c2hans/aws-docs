@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Make Amazon S3 conditional requests using an AWS SDK
-<a name="s3_example_s3_Scenario_ConditionalRequests_section"></a>
 
 The following code examples show how to add preconditions to Amazon S3 requests.
 

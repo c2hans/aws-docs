@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/reple
 ---
 
 # inbound\_order\_line\_schedule
-<a name="replenishment-inbound-order-line-schedule-entity"></a>
 
 **Primary key (PK)**
 

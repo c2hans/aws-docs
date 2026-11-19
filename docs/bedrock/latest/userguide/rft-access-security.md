@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/rft-access-secu
 ---
 
 # Access and security for Amazon Nova models
-<a name="rft-access-security"></a>
 
 Before you begin reinforcement fine-tuning, make sure that you understand what kind of access Amazon Bedrock needs for RFT-specific operations. RFT requires additional permissions beyond standard fine-tuning due to its reward function execution capabilities.
 

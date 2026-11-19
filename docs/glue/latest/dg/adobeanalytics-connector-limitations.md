@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/adobeanalytics-connector-
 ---
 
 # Limitations
-<a name="adobeanalytics-connector-limitations"></a>
 
 The following are limitations for the Adobe Analytics connector:
 + Adobe Analytics doesn’t support field based and record-based partitioning. Field based partitioning is not supported as you cannot query fields that you partition. Record based partitioning cannot be supported as there is no provision to get ‘offset’ for pagination.

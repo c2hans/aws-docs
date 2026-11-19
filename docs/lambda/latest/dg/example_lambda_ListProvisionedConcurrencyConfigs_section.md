@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_lambda_ListProv
 ---
 
 # Use `ListProvisionedConcurrencyConfigs` with a CLI
-<a name="example_lambda_ListProvisionedConcurrencyConfigs_section"></a>
 
 The following code examples show how to use `ListProvisionedConcurrencyConfigs`.
 

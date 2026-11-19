@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-s
 ---
 
 # Orchestrating SageMaker HyperPod clusters with Slurm
-<a name="sagemaker-hyperpod-slurm"></a>
 
 Slurm support in SageMaker HyperPod helps you provision resilient clusters for running machine learning (ML) workloads and developing state-of-the-art models such as large language models (LLMs), diffusion models, and foundation models (FMs). It accelerates development of FMs by removing undifferentiated heavy-lifting involved in building and maintaining large-scale compute clusters powered by thousands of accelerators such as AWS Trainium and NVIDIA A100 and H100 Graphical Processing Units (GPUs). When accelerators fail, the resiliency features of SageMaker HyperPod monitors the cluster instances automatically detect and replace the faulty hardware on the fly so that you can focus on running ML workloads. Additionally, with lifecycle configuration support in SageMaker HyperPod, you can customize your computing environment to best suit your needs and configure it with the Amazon SageMaker AI distributed training libraries to achieve optimal performance on AWS.
 

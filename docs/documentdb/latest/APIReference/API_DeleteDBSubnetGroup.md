@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Delet
 ---
 
 # DeleteDBSubnetGroup
-<a name="API_DeleteDBSubnetGroup"></a>
 
 Deletes a subnet group.
 

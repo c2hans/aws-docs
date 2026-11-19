@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/timestr
 For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # How Amazon Timestream for InfluxDB uses secrets
-<a name="timestream-for-influx-security-db-secrets"></a>
 
 Timestream for InfluxDB supports username and password authentication through the user interface, and token credentials for least privilege client and application connections. Timestream for InfluxDB users have `allAccess` permissions within their organization while tokens can have any set of permissions. Following best practices for secure API token management, users should be created to manage tokens for fine-grain access within an organization. Additional information on admin best practices with Timestream for InfluxDB can be found in the [Influxdata documentation](https://docs.influxdata.com/influxdb/v2/admin/tokens/create-token/).
 

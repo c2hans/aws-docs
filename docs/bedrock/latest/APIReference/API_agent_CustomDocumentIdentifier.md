@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Cu
 ---
 
 # CustomDocumentIdentifier
-<a name="API_agent_CustomDocumentIdentifier"></a>
 
 Contains information about the identifier of the document to ingest into a custom data source.
 

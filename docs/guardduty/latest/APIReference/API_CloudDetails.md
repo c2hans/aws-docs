@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_CloudD
 ---
 
 # CloudDetails
-<a name="API_CloudDetails"></a>
 
 Contains details about the cloud environment associated with an investigation.
 

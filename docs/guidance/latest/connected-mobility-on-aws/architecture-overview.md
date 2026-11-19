@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
 This section provides a high-level description of the guidance architecture, including the 14 integrated stacks that comprise the guidance. The architecture uses [AWS Cloud Development Kit (AWS CDK)](https://aws.amazon.com/cdk/) for infrastructure deployment with a phase-based approach that ensures proper dependency management and efficient deployment.
 

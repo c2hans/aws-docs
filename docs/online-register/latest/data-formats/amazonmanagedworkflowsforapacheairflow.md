@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Managed Workflows for Apache Airflow
-<a name="amazonmanagedworkflowsforapacheairflow"></a>
 
 Amazon Managed Workflows for Apache Airflow provides the following APIs for data retrieval.
 

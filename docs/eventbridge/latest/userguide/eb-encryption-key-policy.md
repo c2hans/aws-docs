@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-encrypti
 ---
 
 # Authorizing EventBridge to use a customer managed key
-<a name="eb-encryption-key-policy"></a>
 
 If you use a customer managed key in your account to protect your EventBridge resources, the policies on that KMS key must give EventBridge permission to use it on your behalf. You provide these permissions in a [key policy](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html).
 

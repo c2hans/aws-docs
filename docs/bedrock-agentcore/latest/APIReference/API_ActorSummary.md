@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ActorSummary
-<a name="API_ActorSummary"></a>
 
 Contains summary information about an actor in an AgentCore Memory resource.
 

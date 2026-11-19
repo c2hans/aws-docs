@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # RecommenderFilter
-<a name="API_connect-customer-profiles_RecommenderFilter"></a>
 
 A filter that specifies criteria for including or excluding items from recommendations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models-r
 ---
 
 # RFT
-<a name="customizing-models-rft"></a>
 
 Reinforcement Fine-Tuning (RFT) uses reinforcement learning to optimize model behavior based on reward signals rather than explicit input-output examples. Amazon SageMaker AI supports two RFT variants: RLVR (Reinforcement Learning with Verifiable Rewards) and RLAIF (Reinforcement Learning from AI Feedback).
 

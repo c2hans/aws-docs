@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # Tag
-<a name="API_route53resolver_Tag"></a>
 
 One tag that you want to add to the specified resource. A tag consists of a `Key` (a name for the tag) and a `Value`.
 

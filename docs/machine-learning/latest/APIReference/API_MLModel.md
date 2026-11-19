@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # MLModel
-<a name="API_MLModel"></a>
 
  Represents the output of a `GetMLModel` operation.
 

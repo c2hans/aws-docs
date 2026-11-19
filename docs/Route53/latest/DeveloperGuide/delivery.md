@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/delivery.h
 ---
 
 # .delivery
-<a name="delivery"></a>
 
 Used by companies that deliver any kind of merchandise or service.
 

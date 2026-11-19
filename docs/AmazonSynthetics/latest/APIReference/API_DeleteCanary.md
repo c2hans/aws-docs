@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # DeleteCanary
-<a name="API_DeleteCanary"></a>
 
 Permanently deletes the specified canary.
 

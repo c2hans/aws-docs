@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Snapsho
 ---
 
 # SnapshotCopyGrant
-<a name="API_SnapshotCopyGrant"></a>
 
 The snapshot copy grant that grants Amazon Redshift permission to encrypt copied snapshots with the specified encrypted symmetric key from AWS KMS in the destination region.
 

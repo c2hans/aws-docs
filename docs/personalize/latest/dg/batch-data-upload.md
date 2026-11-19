@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/batch-data-upload.
 ---
 
 # Preparing input data for batch recommendations
-<a name="batch-data-upload"></a>
 
  A batch inference job imports your batch input JSON data from an Amazon S3 bucket, uses your custom solution version to generate recommendations, and then exports the item recommendations to an Amazon S3 bucket. Before you can get batch recommendations, you must prepare and upload your JSON file to an Amazon S3 bucket. We recommend that you create an output folder in your Amazon S3 bucket or use a separate output Amazon S3 bucket. You can then run multiple batch inference jobs using the same input data location.
 

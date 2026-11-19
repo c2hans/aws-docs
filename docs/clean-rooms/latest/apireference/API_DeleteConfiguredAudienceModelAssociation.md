@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Dele
 ---
 
 # DeleteConfiguredAudienceModelAssociation
-<a name="API_DeleteConfiguredAudienceModelAssociation"></a>
 
 Provides the information necessary to delete a configured audience model association.
 

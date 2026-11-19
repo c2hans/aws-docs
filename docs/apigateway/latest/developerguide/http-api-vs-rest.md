@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-ap
 ---
 
 # Choose between REST APIs and HTTP APIs
-<a name="http-api-vs-rest"></a>
 
 REST APIs and HTTP APIs are both RESTful API products. REST APIs support more features than HTTP APIs, while HTTP APIs are designed with minimal features so that they can be offered at a lower price. Choose REST APIs if you need features such as API keys, per-client throttling, request validation, AWS WAF integration, or private API endpoints. Choose HTTP APIs if you don't need the features included with REST APIs.
 

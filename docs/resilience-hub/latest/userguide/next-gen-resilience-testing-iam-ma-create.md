@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Create the roles and attach them to your test
-<a name="next-gen-resilience-testing-iam-ma-create"></a>
 
 In the orchestrator account, create the orchestrator role.
 

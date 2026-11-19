@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/getting-sta
 ---
 
 # Getting started with Amazon Q Developer
-<a name="getting-started-q-dev"></a>
 
 This section provides comprehensive guidance on getting started with Amazon Q Developer. It covers the different tiers of service (Free and Pro), explains the various sign-in methods available, and walks you through the setup process for personal accounts (Builder IDs) and workforce identities in AWS IAM Identity Center. Whether you're an individual developer or an administrator setting up Amazon Q Developer for your organization, this section will help you choose the right approach for getting started quickly with Amazon Q.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_RDFGraphSumm
 ---
 
 # RDFGraphSummary
-<a name="API_RDFGraphSummary"></a>
 
 The RDF graph summary API returns a read-only list of classes and predicate keys, along with counts of quads, subjects, and predicates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-outb
 ---
 
 # Establishing private connectivity between internal applications
-<a name="private-connectivity-internal-apps"></a>
 
 Cloud-based applications' endpoints can be shared privately on the AWS Cloud by using AWS PrivateLink. For more information and example architectures, see the [AWS PrivateLink documentation](https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html).
 

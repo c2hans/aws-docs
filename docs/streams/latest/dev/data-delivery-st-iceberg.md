@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-st-iceb
 ---
 
 # Iceberg behaviors for streaming table
-<a name="data-delivery-st-iceberg"></a>
 
  Use this topic to learn how streaming table maps data from AWS Glue Schema Registry schemas to Apache Iceberg tables, including type mapping, field handling, table maintenance, and format specifications.
 

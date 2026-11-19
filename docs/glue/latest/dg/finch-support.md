@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/finch-support.html
 ---
 
 # AWS Glue support for Finch
-<a name="finch-support"></a>
 
 AWS Glue supports Finch as follows:
 

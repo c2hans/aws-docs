@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Proactive
 ---
 
 # ProactiveRefreshTokenRenewal
-<a name="API_ProactiveRefreshTokenRenewal"></a>
 
 Configuration settings for proactively refreshing OAuth tokens before they expire.
 

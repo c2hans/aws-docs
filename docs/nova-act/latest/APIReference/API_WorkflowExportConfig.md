@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_Workflo
 ---
 
 # WorkflowExportConfig
-<a name="API_WorkflowExportConfig"></a>
 
 Configuration settings for exporting workflow execution data and logs to Amazon Simple Storage Service (Amazon S3).
 

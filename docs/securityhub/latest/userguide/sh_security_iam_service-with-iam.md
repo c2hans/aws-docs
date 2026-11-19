@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/sh_security
 ---
 
 # How Security Hub works with IAM
-<a name="sh_security_iam_service-with-iam"></a>
 
 Before you use AWS Identity and Access Management (IAM) to manage access to AWS Security Hub, learn which IAM features are available to use with Security Hub.
 

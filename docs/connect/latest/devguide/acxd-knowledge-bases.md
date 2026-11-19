@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-knowledge-b
 ---
 
 # Knowledge bases
-<a name="acxd-knowledge-bases"></a>
 
 Manage knowledge sources for AI-powered responses. Knowledge bases can contain articles (structured Q&A) or documents (uploaded files). They must be published before they are available in conversations.
 

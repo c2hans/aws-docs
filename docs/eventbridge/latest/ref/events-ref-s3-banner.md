@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-s3-ban
 ---
 
 # Amazon Simple Storage Service Object Lambda events
-<a name="events-ref-s3-banner"></a>
 
 Amazon S3 Object Lambda sends service events to EventBridge via AWS CloudTrail.
 

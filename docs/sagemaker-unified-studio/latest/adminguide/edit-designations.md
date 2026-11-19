@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Edit designations
-<a name="edit-designations"></a>
 
 When you update a designation's permissions, the change takes effect immediately for all members assigned that designation across all projects. You don't need to reassign the designation to members.
 

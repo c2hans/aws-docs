@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/data-sources-cha
 ---
 
 # Working with data sources for AWS AppSync Event APIs
-<a name="data-sources-chapter"></a>
 
 Data sources are resources in your AWS account that AWS AppSync Events can interact with. AWS AppSync supports multiple data sources including AWS Lambda, Amazon DynamoDB, Amazon Aurora Serverless, Amazon OpenSearch Service, and HTTP endpoints. An AWS AppSync Events API can be configured to interact with multiple data sources, enabling you to process and route events efficiently.
 

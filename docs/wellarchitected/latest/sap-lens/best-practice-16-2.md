@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 16.2 – Establish baseline performance requirements
-<a name="best-practice-16-2"></a>
 
 Every SAP application has unique performance requirements. Using historical monitoring data helps SAP administration teams understand the baseline performance of these applications, enabling them to identify and understand the extent of any performance changes. Relevant alerts can be put in place to detect anomalies, such as unintended CPU spikes, storage throughput deltas, memory consumption increases, and more complex performance decrements. This monitoring data can be used to further fine-tune performance.
 

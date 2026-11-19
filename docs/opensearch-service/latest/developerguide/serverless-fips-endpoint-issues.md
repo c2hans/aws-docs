@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Resolve FIPS endpoint connectivity issues in private hosted zones
-<a name="serverless-fips-endpoint-issues"></a>
 
 FIPS endpoints work with Amazon OpenSearch Serverless collections that have public access. For newly created VPC collections that use newly created VPC endpoints, FIPS endpoints function as expected. For other VPC collections, you might need to perform manual setup to ensure FIPS endpoints operate correctly.
 

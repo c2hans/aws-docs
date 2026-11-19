@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.BCL.10] Make informed decisions using data
-<a name="oa.bcl.10-make-informed-decisions-using-data"></a>
 
  **Category:** RECOMMENDED
 

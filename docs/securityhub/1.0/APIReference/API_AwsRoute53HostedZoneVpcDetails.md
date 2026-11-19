@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRout
 ---
 
 # AwsRoute53HostedZoneVpcDetails
-<a name="API_AwsRoute53HostedZoneVpcDetails"></a>
 
  For private hosted zones, this is a complex type that contains information about an Amazon VPC.
 

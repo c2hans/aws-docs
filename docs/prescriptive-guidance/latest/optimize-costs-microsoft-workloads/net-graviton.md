@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Use Graviton instances and containers
-<a name="net-graviton"></a>
 
 ## Overview
 <a name="net-graviton-overview"></a>

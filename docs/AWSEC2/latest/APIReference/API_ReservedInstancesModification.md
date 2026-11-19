@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReservedI
 ---
 
 # ReservedInstancesModification
-<a name="API_ReservedInstancesModification"></a>
 
 Describes a Reserved Instance modification.
 

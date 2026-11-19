@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/setup-rule-bas
 ---
 
 # Set up rule-based matching for Identity Resolution in Connect Customer
-<a name="setup-rule-based-matching"></a>
 
 This topic provides an illustrative walkthrough of the steps that you use to edit rule-based matching attribute types, rule-based matching rules, rule-based matching merge rules, and rule-based match locations. It also shows how to reset rule-based matching rules.
 

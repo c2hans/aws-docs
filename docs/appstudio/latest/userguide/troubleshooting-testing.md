@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/troubleshooti
 ---
 
 # Troubleshooting in the Testing environment
-<a name="troubleshooting-testing"></a>
 
 This topic contains information about troubleshooting apps published to the Testing environment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel12.h
 ---
 
 # Test reliability
-<a name="rel12"></a>
 
  A workload designed for resilience is not the same as a workload proven to be resilient. Latent bugs, performance bottlenecks, and untested recovery paths stay hidden until real load or a failure exposes them, and they usually surface in production where the cost is highest. Testing closes the gap between the resilience you designed and the resilience you actually have.
 

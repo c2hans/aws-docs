@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonCodeGuruReviewerServiceRolePolicy
-<a name="AmazonCodeGuruReviewerServiceRolePolicy"></a>
 
 **Description**: A service-linked role required for Amazon CodeGuru Reviewer to access resources on your behalf.
 

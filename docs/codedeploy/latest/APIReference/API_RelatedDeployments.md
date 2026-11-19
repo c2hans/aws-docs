@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Relat
 ---
 
 # RelatedDeployments
-<a name="API_RelatedDeployments"></a>
 
 Information about deployments related to the specified deployment.
 

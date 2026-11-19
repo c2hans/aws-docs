@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteServ
 ---
 
 # RouteServerPropagation
-<a name="API_RouteServerPropagation"></a>
 
 Describes the route propagation configuration between a route server and a route table.
 

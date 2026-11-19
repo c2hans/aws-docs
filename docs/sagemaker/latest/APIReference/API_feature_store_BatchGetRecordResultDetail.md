@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_featur
 ---
 
 # BatchGetRecordResultDetail
-<a name="API_feature_store_BatchGetRecordResultDetail"></a>
 
 The output of records that have been retrieved in a batch.
 

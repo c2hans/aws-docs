@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource WebCrawlerUrls
-<a name="aws-properties-kendra-datasource-webcrawlerurls"></a>
 
 Specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl.
 

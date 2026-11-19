@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/refunds.htm
 ---
 
 # Refunds and cancellations in AWS Marketplace
-<a name="refunds"></a>
 
 All paid products in AWS Marketplace must have a stated refund policy for software charges. The refund policy must include the terms of the refund and a method of contacting the seller to request a refund.
 

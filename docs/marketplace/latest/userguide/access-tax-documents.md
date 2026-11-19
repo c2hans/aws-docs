@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/access-tax-
 ---
 
 # Access tax documents
-<a name="access-tax-documents"></a>
 
 You can access your tax documents, such as 1099 forms, from AWS Partner Central.
 

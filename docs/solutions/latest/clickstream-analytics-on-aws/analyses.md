@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Analyses
-<a name="analyses"></a>
 
  Analyses module allows you to create and modify dashboards based on the clickstream datasets in a drag-and-drop approach. It provides greater flexibility for users to create business-specific metrics and visualizations. You can use the module to:
 +  create dashboard that are not provided in preset dashboard or not supported by explorations.

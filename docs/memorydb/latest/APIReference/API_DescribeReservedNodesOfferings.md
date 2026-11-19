@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Describ
 ---
 
 # DescribeReservedNodesOfferings
-<a name="API_DescribeReservedNodesOfferings"></a>
 
 Lists available reserved node offerings.
 

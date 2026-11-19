@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListMetricVa
 ---
 
 # ListMetricValues
-<a name="API_ListMetricValues"></a>
 
 Lists the values reported for an AWS IoT Device Defender metric (device-side metric, cloud-side metric, or custom metric) by the given thing during the specified time period.
 

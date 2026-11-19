@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Continuity management in AMS Accelerate
-<a name="acc-backup"></a>
 
  AMS leverages AWS Backup to centralize and automate the backing up of your data across AWS services. AMS backup plans provide best practices for various use cases; however, you are welcome to continue to use your existing backup plans. After you onboard to AMS backup management, AMS provides backup reports, and AMS experts continuously monitor your backup tasks to ensure you have a reliable backup solution.
 

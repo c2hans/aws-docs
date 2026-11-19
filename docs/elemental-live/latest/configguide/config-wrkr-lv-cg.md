@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/config
 ---
 
 # Initial configuration of the Elemental Live node
-<a name="config-wrkr-lv-cg"></a>
 
 This section describes how to finish the initial configuration of your Elemental Live node. You might have completed some of this setup through the install script during the first phase of installation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PricingPlanManager/latest/UserGuide/moni
 ---
 
 # Monitoring and Managing Costs
-<a name="monitoring-costs"></a>
 
 ## AWS Cost Explorer
 <a name="cost-explorer"></a>

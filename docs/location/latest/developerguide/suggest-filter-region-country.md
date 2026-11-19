@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/suggest-f
 ---
 
 # Use Suggest and the ability to filter for a region or country
-<a name="suggest-filter-region-country"></a>
 
 The Suggest API enables completing queries for places or categories of results. The results are sorted for most likely to less likely matches. Additionally, you can further filter results to specific regions or countries.
 

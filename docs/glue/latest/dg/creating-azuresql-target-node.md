@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-azuresql-target-
 ---
 
 # Creating a Azure SQL target node
-<a name="creating-azuresql-target-node"></a>
 
 ## Prerequisites needed
 <a name="creating-azuresql-target-node-prerequisites"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-id-m
 ---
 
 # Creating and populating a new ID mapping table
-<a name="create-id-mapping-table"></a>
 
 **Prerequisites**
 

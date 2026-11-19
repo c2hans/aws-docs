@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Granted
 ---
 
 # GrantedEntity
-<a name="API_GrantedEntity"></a>
 
 The details of a listing for which a subscription is granted.
 

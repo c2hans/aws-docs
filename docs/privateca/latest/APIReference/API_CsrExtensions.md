@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/APIReference/API_CsrExt
 ---
 
 # CsrExtensions
-<a name="API_CsrExtensions"></a>
 
 Describes the certificate extensions to be added to the certificate signing request (CSR).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Vocabula
 ---
 
 # Vocabulary
-<a name="API_Vocabulary"></a>
 
 Contains information about a custom vocabulary.
 

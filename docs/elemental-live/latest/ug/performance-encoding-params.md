@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/performance-enc
 ---
 
 # Encoding parameters that affect performance
-<a name="performance-encoding-params"></a>
 
 You can tune the quality, speed, and density of the video encodes in each event.
 

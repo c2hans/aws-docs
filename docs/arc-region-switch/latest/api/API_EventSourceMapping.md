@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_EventSo
 ---
 
 # EventSourceMapping
-<a name="API_EventSourceMapping"></a>
 
 The AWS Lambda event source mapping configuration, containing the resource ARN and optional cross-account configuration.
 

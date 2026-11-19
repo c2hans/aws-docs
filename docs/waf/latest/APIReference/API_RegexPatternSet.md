@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RegexPattern
 ---
 
 # RegexPatternSet
-<a name="API_RegexPatternSet"></a>
 
 Contains one or more regular expressions.
 

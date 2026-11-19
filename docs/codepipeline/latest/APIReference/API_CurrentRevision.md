@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Cur
 ---
 
 # CurrentRevision
-<a name="API_CurrentRevision"></a>
 
 Represents information about a current revision.
 

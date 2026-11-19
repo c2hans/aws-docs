@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sesv2_example_sesv2_Newsle
 ---
 
 # A complete Amazon SES API v2 Newsletter scenario using an AWS SDK
-<a name="sesv2_example_sesv2_NewsletterWorkflow_section"></a>
 
 The following code examples show how to run the Amazon SES API v2 newsletter scenario.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetails
-<a name="API_AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetails"></a>
 
 An environment variable to pass to the container.
 

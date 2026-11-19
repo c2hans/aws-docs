@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ma
 ---
 
 # Management
-<a name="management-pattern-list"></a>
 
 **Topics**
 + [Cost management](costmanagement-pattern-list.md)

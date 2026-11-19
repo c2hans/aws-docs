@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # AcceptAgreementRequest
-<a name="API_marketplace-agreements_AcceptAgreementRequest"></a>
 
 Accepts an agreement request to finalize the agreement. The acceptor can optionally provide purchase orders to associate with the agreement charges.
 
@@ -115,6 +114,22 @@ The unique identifier for the resource.
  ** resourceType **
 The type of resource.
 HTTP Status Code: 404
+
+ ** ServiceQuotaExceededException **
+Request exceeded the maximum allowed limit (quota) for a specific resource or API operation.
+ ** message **
+Description of the error.
+ ** quotaCode **
+The code of the quota that was exceeded.
+ ** requestId **
+The unique identifier for the error.
+ ** resourceId **
+The unique identifier of the resource that exceeded the quota.
+ ** resourceType **
+The type of the resource that exceeded the quota.
+ ** serviceCode **
+The code of the service whose quota was exceeded.
+HTTP Status Code: 402
 
  ** ThrottlingException **
 Request was denied due to request throttling.

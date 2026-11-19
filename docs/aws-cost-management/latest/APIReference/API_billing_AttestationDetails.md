@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AttestationDetails
-<a name="API_billing_AttestationDetails"></a>
 
 The details of an investment attestation submission, including the value being attested and how the resulting investment is distributed.
 

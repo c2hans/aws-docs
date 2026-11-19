@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 ---
 
 # AWS Global Infrastructure
-<a name="aws-global-infrastructure"></a>
 
  The AWS Global Cloud Infrastructure comprises AWS Regions and Availability Zones. A Region is a physical location around the world where we cluster data centers. We call each group of logical data centers an Availability Zone (AZ). Each Region consists of multiple isolated and physically separate AZs within a geographic area. Each AZ has independent power, cooling, and physical security and is connected by redundant, ultra-low-latency networks. AWS customers focused on high availability can design their applications to run in multiple AZs to achieve even greater fault-tolerance. Customers can learn more about these topics by downloading the [Amazon Web Services' Approach to Operational Resilience in the Financial Sector & Beyond](https://docs.aws.amazon.com/whitepapers/latest/aws-operational-resilience/aws-operational-resilience.html) whitepaper.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_S
 ---
 
 # StartJobRun
-<a name="API_StartJobRun"></a>
 
 Starts a job run.
 

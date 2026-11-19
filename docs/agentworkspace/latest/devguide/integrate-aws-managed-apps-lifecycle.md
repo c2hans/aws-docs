@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/integrate
 ---
 
 # Application lifecycle management
-<a name="integrate-aws-managed-apps-lifecycle"></a>
 
 Application lifecycle management is essential when adding and removing applications throughout a page's life. If you launch an application once at startup and keep it open, lifecycle management is optional. However, if you launch and close apps as part of the user's workflow, then these lifecycle states help you create a better user experience.
 

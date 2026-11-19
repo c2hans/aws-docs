@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateBasePath
 ---
 
 # UpdateBasePathMapping
-<a name="API_UpdateBasePathMapping"></a>
 
 Changes information about the BasePathMapping resource.
 

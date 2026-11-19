@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Part
 ---
 
 # ParticipantReplica
-<a name="API_ParticipantReplica"></a>
 
 Information about the replicated destination stage for a participant.
 

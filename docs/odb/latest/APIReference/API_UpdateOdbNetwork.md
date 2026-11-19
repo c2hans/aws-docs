@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateOdbNet
 ---
 
 # UpdateOdbNetwork
-<a name="API_UpdateOdbNetwork"></a>
 
 Updates properties of a specified ODB network.
 

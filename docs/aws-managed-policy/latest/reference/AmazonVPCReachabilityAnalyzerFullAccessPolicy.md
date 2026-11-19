@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonVPCReachabilityAnalyzerFullAccessPolicy
-<a name="AmazonVPCReachabilityAnalyzerFullAccessPolicy"></a>
 
 **Description**: Provides permissions to describe AWS resources, run Reachability Analyzer, and create or delete tags on Network Insights Path and Network Insights Analysis.
 

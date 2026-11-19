@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsU
 ---
 
 # AnalyticsUtteranceAttributeResult
-<a name="API_AnalyticsUtteranceAttributeResult"></a>
 
 An object containing the intent that the bot mapped the utterance to.
 

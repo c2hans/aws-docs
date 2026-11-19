@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-tagging-re
 ---
 
 # Tag restrictions
-<a name="msk-tagging-restrictions"></a>
 
 The following restrictions apply to tags in Amazon MSK.
 

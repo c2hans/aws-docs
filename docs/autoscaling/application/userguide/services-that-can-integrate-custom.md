@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/servic
 ---
 
 # Custom resources and Application Auto Scaling
-<a name="services-that-can-integrate-custom"></a>
 
 You can scale custom resources using target tracking scaling policies, step scaling policies, and scheduled scaling.
 

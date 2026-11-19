@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/news.html
 ---
 
 # .news
-<a name="news"></a>
 
 Used for distributing any newsworthy information such as current events or information related to journalism and communication.
 

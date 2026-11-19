@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.DEP.1] Establish a controlled, multi-environment landing zone
-<a name="ag.dep.1-establish-a-controlled-multi-environment-landing-zone"></a>
 
  **Category:** FOUNDATIONAL
 

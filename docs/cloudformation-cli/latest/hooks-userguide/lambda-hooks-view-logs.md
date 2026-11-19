@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # View logs for the Lambda Hooks in your account
-<a name="lambda-hooks-view-logs"></a>
 
 When using a Lambda Hook, your validation output report log file can be found in the Lambda console.
 

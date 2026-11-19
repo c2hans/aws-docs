@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Infere
 ---
 
 # InferenceAccelerator
-<a name="API_InferenceAccelerator"></a>
 
  *This data type has been deprecated.*
 

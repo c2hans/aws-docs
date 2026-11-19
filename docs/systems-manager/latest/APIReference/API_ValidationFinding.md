@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ValidationFinding
-<a name="API_ValidationFinding"></a>
 
 A validation finding from a cloud connector validation check.
 

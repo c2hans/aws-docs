@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_UpdateConf
 ---
 
 # UpdateConfigurationInheritance
-<a name="API_UpdateConfigurationInheritance"></a>
 
 The per-scan-type inheritance reset settings for the `UpdateConfiguration` operation. Each member is independently optional. Including a member in this structure resets that scan type's configuration to inherit from the delegated administrator.
 

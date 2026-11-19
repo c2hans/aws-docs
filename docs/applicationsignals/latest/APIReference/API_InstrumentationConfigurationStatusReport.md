@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # InstrumentationConfigurationStatusReport
-<a name="API_InstrumentationConfigurationStatusReport"></a>
 
 The status of a single instrumentation configuration reported by an SDK instance.
 

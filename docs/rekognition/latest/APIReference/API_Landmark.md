@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Land
 ---
 
 # Landmark
-<a name="API_Landmark"></a>
 
 Indicates the location of the landmark on the face.
 

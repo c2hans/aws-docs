@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/replication.htm
 ---
 
 # Understanding MemoryDB replication
-<a name="replication"></a>
 
 MemoryDB implements replication with data partitioned across up to 500 shards.
 

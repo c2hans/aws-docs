@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/type-reference.h
 ---
 
 # GraphQL type reference
-<a name="type-reference"></a>
 
 Scalar types in GraphQL represent primitive leaf values in a GraphQL schema. These are the most basic data types that resolve to a single value. Unlike object types, scalar types cannot have sub-fields. GraphQL comes with a set of default scalar types:
 + **Int**: A signed 32-bit integer

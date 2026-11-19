@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/context-pin
 ---
 
 # Pinning context items
-<a name="context-pinning"></a>
 
 **Note**
 Context pinning is currently only available in the VS Code IDE.

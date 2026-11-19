@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-id
 ---
 
 # Getting started with user pools
-<a name="cognito-identity-provider_example_cognito_identity_provider_GettingStarted_066_section"></a>
 
 The following code example shows how to:
 + Create a user pool

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-applic
 **End of support notice:** On October 30, 2026, AWS ended support for Amazon Pinpoint. You can no longer access the Amazon Pinpoint console or Amazon Pinpoint resources (endpoints, segments, campaigns, journeys, and analytics). For more information, see [Amazon Pinpoint end of support](https://docs.aws.amazon.com/console/pinpoint/migration-guide). **Note:** APIs related to SMS, voice, mobile push, OTP, and phone number validate are not impacted by this change and are supported by AWS End User Messaging.
 
 # Journey Execution Metrics
-<a name="apps-application-id-journeys-journey-id-execution-metrics"></a>
 
 A *journey execution metric* is a measurable value, also referred to as a *key performance indicator (KPI)*, that can help you assess the status of participants in a journey. For example, you can use this type of metric to determine how many participants are actively proceeding through the activities in the journey. Amazon Pinpoint automatically collects, aggregates, and stores this data for all of your journeys.
 

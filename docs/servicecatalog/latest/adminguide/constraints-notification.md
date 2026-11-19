@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/constra
 ---
 
 # AWS Service Catalog Notification Constraints
-<a name="constraints-notification"></a>
 
 **Note**
 AWS Service Catalog does not support notification constraints for Terraform Open Source or Terraform Cloud products.

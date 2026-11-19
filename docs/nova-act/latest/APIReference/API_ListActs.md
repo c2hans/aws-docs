@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_ListAct
 ---
 
 # ListActs
-<a name="API_ListActs"></a>
 
 Lists all acts within a specific session with their current status and execution details.
 

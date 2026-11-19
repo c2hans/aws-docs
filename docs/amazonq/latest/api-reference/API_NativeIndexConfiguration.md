@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_NativeI
 ---
 
 # NativeIndexConfiguration
-<a name="API_NativeIndexConfiguration"></a>
 
 Configuration information for an Amazon Q Business index.
 

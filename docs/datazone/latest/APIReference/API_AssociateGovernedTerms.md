@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Associa
 ---
 
 # AssociateGovernedTerms
-<a name="API_AssociateGovernedTerms"></a>
 
 Associates governed terms with an asset.
 

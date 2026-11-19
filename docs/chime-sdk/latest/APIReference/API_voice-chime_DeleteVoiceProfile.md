@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # DeleteVoiceProfile
-<a name="API_voice-chime_DeleteVoiceProfile"></a>
 
 Deletes a voice profile, including its voice print and enrollment data. WARNING: This action is not reversible.
 

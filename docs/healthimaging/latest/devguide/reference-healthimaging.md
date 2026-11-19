@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/reference-
 ---
 
 # AWS HealthImaging reference
-<a name="reference-healthimaging"></a>
 
 This section contains supporting data that is relevant to AWS HealthImaging.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsOpen
 ---
 
 # AwsOpenSearchServiceDomainMasterUserOptionsDetails
-<a name="API_AwsOpenSearchServiceDomainMasterUserOptionsDetails"></a>
 
 Specifies information about the master user of the domain.
 

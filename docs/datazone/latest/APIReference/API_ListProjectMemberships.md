@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListPro
 ---
 
 # ListProjectMemberships
-<a name="API_ListProjectMemberships"></a>
 
 Lists all members of the specified project.
 

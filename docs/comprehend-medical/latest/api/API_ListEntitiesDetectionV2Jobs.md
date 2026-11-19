@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_ListEn
 ---
 
 # ListEntitiesDetectionV2Jobs
-<a name="API_ListEntitiesDetectionV2Jobs"></a>
 
 Gets a list of medical entity detection jobs that you have submitted.
 

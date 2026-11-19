@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud-map/latest/api/API_ListNamespaces.
 ---
 
 # ListNamespaces
-<a name="API_ListNamespaces"></a>
 
 Lists summary information about the namespaces that were created by the current AWS account and shared with the current AWS account.
 

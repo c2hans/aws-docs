@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_C
 ---
 
 # CreatePipe
-<a name="API_CreatePipe"></a>
 
 Create a pipe. Amazon EventBridge Pipes connect event sources to targets and reduces the need for specialized knowledge and integration code.
 

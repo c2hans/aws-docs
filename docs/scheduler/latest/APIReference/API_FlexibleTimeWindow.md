@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_Flexib
 ---
 
 # FlexibleTimeWindow
-<a name="API_FlexibleTimeWindow"></a>
 
 Allows you to configure a time window during which EventBridge Scheduler invokes the schedule.
 

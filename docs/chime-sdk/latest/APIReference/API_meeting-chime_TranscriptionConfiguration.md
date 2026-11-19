@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # TranscriptionConfiguration
-<a name="API_meeting-chime_TranscriptionConfiguration"></a>
 
 The configuration for the current transcription operation. Must contain `EngineTranscribeSettings` or `EngineTranscribeMedicalSettings`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/customer_managed_po
 ---
 
 # Launch Actions Policy - AWSElasticDisasterRecoveryLaunchActionsPolicy
-<a name="customer_managed_policies_launch_actions"></a>
 
 This policy allows you to use Amazon SSM and additional services required permissions to run post-launch actions in AWS Elastic Disaster Recovery (AWS DRS). Attach this policy to your IAM roles or users.
 

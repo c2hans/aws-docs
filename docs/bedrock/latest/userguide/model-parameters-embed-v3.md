@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Cohere Embed v3
-<a name="model-parameters-embed-v3"></a>
 
 **Topics**
 + [Request and Response](#model-parameters-embed-v3-request-response)

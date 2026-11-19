@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Access AWS Cloud WAN transit gateway network dashboards
-<a name="cloudwan-tgw-networks"></a>
 
 View dashboard information about transit gateways registered registered in your AWS Cloud WAN global network. For more information about the Cloud WAN transit gateway dashboards see [Cloud WAN transit gateway network dashboards](cloudwan-visualize-tgw.md#cloudwan-dashboard-tgw-network).
 

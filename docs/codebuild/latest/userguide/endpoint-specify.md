@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/endpoint-spec
 ---
 
 # Specify the AWS CodeBuild endpoint
-<a name="endpoint-specify"></a>
 
  You can use the AWS Command Line Interface (AWS CLI) or one of the AWS SDKs to specify the endpoint used by AWS CodeBuild. There is an endpoint for each region in which CodeBuild is available. In addition to a regional endpoint, four regions also have a Federal Information Processing Standards (FIPS) endpoint. For more information about FIPS endpoints, see [FIPS 140-2 overview](https://aws.amazon.com/compliance/fips/).
 

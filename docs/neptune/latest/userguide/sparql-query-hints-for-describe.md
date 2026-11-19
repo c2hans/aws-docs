@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/sparql-query-hi
 ---
 
 # SPARQL query hints used with DESCRIBE
-<a name="sparql-query-hints-for-describe"></a>
 
 A SPARQL `DESCRIBE` query provides a flexible mechanism for requesting resource descriptions. However, the SPARQL specifications do not define the precise semantics of `DESCRIBE`.
 

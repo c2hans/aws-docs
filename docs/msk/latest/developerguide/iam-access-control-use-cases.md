@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/iam-access-con
 ---
 
 # Common use cases for client authorization policy
-<a name="iam-access-control-use-cases"></a>
 
 The first column in the following table shows some common use cases. To authorize a client to carry out a given use case, include the required actions for that use case in the client's authorization policy, and set `Effect` to `Allow`.
 

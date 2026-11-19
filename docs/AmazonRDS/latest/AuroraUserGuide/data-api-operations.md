@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-ap
 ---
 
 # Amazon RDS Data API operations reference
-<a name="data-api-operations"></a>
 
 The Amazon RDS Data API provides the following operations to perform SQL statements.
 

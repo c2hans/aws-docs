@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TcpRout
 ---
 
 # TcpRouteAction
-<a name="API_TcpRouteAction"></a>
 
 An object that represents the action to take if a match is determined.
 

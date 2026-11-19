@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/failback-failover-d
 ---
 
 # Installing the DRSFA Client
-<a name="failback-failover-drsfa-launching"></a>
 
 Installing the DRSFA client is a one-time operation.
 

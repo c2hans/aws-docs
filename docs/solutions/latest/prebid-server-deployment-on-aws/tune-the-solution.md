@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Tune the solution
-<a name="tune-the-solution"></a>
 
 ## CloudFront distribution domain name
 <a name="cloudfront-distribution-domain-name"></a>

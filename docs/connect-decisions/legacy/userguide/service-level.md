@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/servi
 ---
 
 # Service level
-<a name="service-level"></a>
 
 If you use in-stock percentage to manage your inventory levels, you can use this policy setting to drive the calculation of target inventory level and replenishment.
 

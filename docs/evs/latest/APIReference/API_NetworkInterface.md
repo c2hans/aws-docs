@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_NetworkInter
 ---
 
 # NetworkInterface
-<a name="API_NetworkInterface"></a>
 
 An elastic network interface (ENI) that connects hosts to the VLAN subnets. Amazon EVS provisions two identically configured ENIs in the VMkernel management subnet during host creation. One ENI is active, and the other is in standby mode for automatic switchover during a failure scenario.
 

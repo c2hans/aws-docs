@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelQ
 ---
 
 # ModelQuality
-<a name="API_ModelQuality"></a>
 
 Model quality statistics and constraints.
 

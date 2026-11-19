@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteMe
 ---
 
 # DeleteMetric
-<a name="API_DeleteMetric"></a>
 
 Deletes an existing metric from the specified Connect Customer instance. This operation fails with `ResourceConflictException` if the metric is currently in use in a dashboard.
 

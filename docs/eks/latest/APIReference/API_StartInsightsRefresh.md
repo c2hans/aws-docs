@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_StartInsight
 ---
 
 # StartInsightsRefresh
-<a name="API_StartInsightsRefresh"></a>
 
 Initiates an on-demand refresh operation for cluster insights, getting the latest analysis outside of the standard refresh schedule.
 

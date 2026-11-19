@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v13-alerting-se
 ---
 
 # Adding an external Alertmanager
-<a name="v13-alerting-setup-alertmanager"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 13.x**.

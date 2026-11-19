@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/userguide/getting-started.ht
 ---
 
 # Getting started with AWS B2B Data Interchange
-<a name="getting-started"></a>
 
 To use AWS B2B Data Interchange, you create profiles, transformers, capabilities, and partnerships. This topic describes how to create and configure these basic building blocks for this service. After you have met the prerequisites, follow the instructions in [Transforming and generating EDI](transform-variations.md) or use the [Quick setup using the console](getting-started-quick.md)
 

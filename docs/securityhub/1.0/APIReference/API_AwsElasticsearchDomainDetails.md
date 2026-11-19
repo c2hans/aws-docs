@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElas
 ---
 
 # AwsElasticsearchDomainDetails
-<a name="API_AwsElasticsearchDomainDetails"></a>
 
 Information about an Elasticsearch domain.
 

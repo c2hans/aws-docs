@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Configuring custom Kubernetes labels and taints in Amazon SageMaker HyperPod
-<a name="sagemaker-hyperpod-eks-custom-labels-and-taints"></a>
 
 Amazon SageMaker HyperPod clusters with Amazon Elastic Kubernetes Service (Amazon EKS) orchestrator support custom Kubernetes labels and taints for nodes within instance groups. Labels and taints are fundamental scheduling and organization mechanisms in Kubernetes that give you fine-grained control over pod placement and resource utilization.
 

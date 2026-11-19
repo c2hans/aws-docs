@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/optimizing-solutio
 ---
 
 # Optimizing a solution with events configuration
-<a name="optimizing-solution-events-config"></a>
 
 **Important**
 By default, all new solutions use automatic training. With automatic training, you incur training costs while your solution is active. To avoid unnecessary costs, when you are finished you can [update the solution](updating-solution.md) to turn off automatic training. For information about training costs, see [Amazon Personalize pricing](https://aws.amazon.com/personalize/pricing/).

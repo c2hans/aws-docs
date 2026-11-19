@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # Access point compatibility
-<a name="access-points-service-api-support"></a>
 
 You can use access points to access objects using the following subset of Amazon S3 APIs. All the operations listed below can accept either access point ARNs or access point aliases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeT
 ---
 
 # DescribeTags
-<a name="API_DescribeTags"></a>
 
 Describes the specified tags for your EC2 resources.
 

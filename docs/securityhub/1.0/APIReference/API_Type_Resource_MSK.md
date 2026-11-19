@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # Amazon MSK objects
-<a name="API_Type_Resource_MSK"></a>
 
 ****Amazon MSK objects****
 + [AwsMskClusterDetails](API_AwsMskClusterDetails.md)

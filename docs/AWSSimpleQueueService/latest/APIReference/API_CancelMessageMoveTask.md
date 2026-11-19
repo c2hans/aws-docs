@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # CancelMessageMoveTask
-<a name="API_CancelMessageMoveTask"></a>
 
 Cancels a specified message movement task. A message movement can only be cancelled when the current status is RUNNING. Cancelling a message movement task does not revert the messages that have already been moved. It can only stop the messages that have not been moved yet.
 

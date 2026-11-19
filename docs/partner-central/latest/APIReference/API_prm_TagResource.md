@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # TagResource
-<a name="API_prm_TagResource"></a>
 
 Adds or overwrites one or more tags for the specified resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/disassociat
 ---
 
 # Disassociating configured tables
-<a name="disassociate-config-table"></a>
 
 As a collaboration member, you can disassociate a configured table from the collaboration. This action prevents the member who can query from querying the table.
 

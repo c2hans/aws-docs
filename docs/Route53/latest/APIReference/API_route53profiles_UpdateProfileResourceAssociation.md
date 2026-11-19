@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 ---
 
 # UpdateProfileResourceAssociation
-<a name="API_route53profiles_UpdateProfileResourceAssociation"></a>
 
  Updates the specified Route 53 Profile resourse association.
 

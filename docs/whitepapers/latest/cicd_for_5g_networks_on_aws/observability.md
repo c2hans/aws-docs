@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 ---
 
 # Observability
-<a name="observability"></a>
 
 AWS enables observability for the 5G CNFs that are deployed on AWS by default. This is enabled by Amazon CloudWatch. CloudWatch brings complete visibility to your cloud resources and applications.
 

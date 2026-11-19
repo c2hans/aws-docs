@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/customizing-translat
 ---
 
 # Adding your parallel data to Amazon Translate
-<a name="customizing-translations-parallel-data-adding"></a>
 
 To add parallel data to Amazon Translate, you import a parallel data input file from Amazon S3. Afterwards, you can use the parallel data to customize the output produced by a batch translation job.
 

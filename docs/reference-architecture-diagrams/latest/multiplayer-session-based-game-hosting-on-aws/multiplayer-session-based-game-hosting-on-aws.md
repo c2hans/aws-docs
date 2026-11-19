@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/m
 ---
 
 # Multiplayer Session-based Game Hosting on AWS
-<a name="multiplayer-session-based-game-hosting-on-aws"></a>
 
 Publication date: **September 1, 2022 ([Diagram history](#diagram-history))**
 

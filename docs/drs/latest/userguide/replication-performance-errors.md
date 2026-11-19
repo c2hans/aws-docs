@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/replication-perform
 ---
 
 # Replication performance errors
-<a name="replication-performance-errors"></a>
 
 This topic covers replication errors related to performance, convergence, and lag in AWS Elastic Disaster Recovery.
 

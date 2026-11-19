@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_MaxCount
 ---
 
 # MaxCountRule
-<a name="API_MaxCountRule"></a>
 
 A lifecycle rule that deletes the oldest application version when the maximum count is exceeded.
 

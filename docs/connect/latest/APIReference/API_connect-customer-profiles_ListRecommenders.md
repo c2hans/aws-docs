@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ListRecommenders
-<a name="API_connect-customer-profiles_ListRecommenders"></a>
 
 Returns a list of recommenders in the specified domain.
 

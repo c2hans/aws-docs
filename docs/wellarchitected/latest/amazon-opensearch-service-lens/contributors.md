@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # Contributors
-<a name="contributors"></a>
 
  The following individuals and organizations contributed to this document:
 +  Muslim Abu-Taha, Senior OpenSearch Solutions Architect, EMEA, Amazon Web Services

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/dms-sbs-welcome.html
 ---
 
 # Database Migration Step-by-Step Walkthroughs
-<a name="dms-sbs-welcome"></a>
 
 You can use AWS Database Migration Service (AWS DMS) to migrate your data to and from most widely used commercial and open-source databases such as Oracle, PostgreSQL, Microsoft SQL Server, Amazon Redshift, Amazon Aurora, MariaDB, and MySQL. The service supports homogeneous migrations such as Oracle to Oracle, and also heterogeneous migrations between different database platforms, such as Oracle to MySQL or MySQL to Amazon Aurora MySQL-Compatible Edition. Alternatively, you can use AWS DMS to move from existing, self-managed, open-source, and commercial databases to fully managed AWS databases of the same engine.
 

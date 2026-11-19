@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-cards-console-
 ---
 
 # Delete a model card
-<a name="model-cards-console-delete"></a>
 
 Follow these steps to permanently delete one or more model cards.
 

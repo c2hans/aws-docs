@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcsT
 ---
 
 # AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetails
-<a name="API_AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetails"></a>
 
 A network configuration parameter to provide to the Container Network Interface (CNI) plugin.
 

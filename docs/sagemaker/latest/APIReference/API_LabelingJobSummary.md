@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Labeli
 ---
 
 # LabelingJobSummary
-<a name="API_LabelingJobSummary"></a>
 
 Provides summary information about a labeling job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCPERF01-BP03 Consider disaster recovery (DR) requirements when architecting your AWS EUC solution
-<a name="eucperf01-bp03"></a>
 
  Will a secondary Region support the latency that is acceptable to support the selected AWS EUC service in a DR scenario, or can you accept degraded performance and relaxed service level agreements to continue to do business?
 

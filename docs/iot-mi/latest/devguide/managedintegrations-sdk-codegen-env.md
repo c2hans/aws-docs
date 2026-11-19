@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Environment setup
-<a name="managedintegrations-sdk-codegen-env"></a>
 
 Learn how to configure your environment to use the `codegen.py` code generator.
 

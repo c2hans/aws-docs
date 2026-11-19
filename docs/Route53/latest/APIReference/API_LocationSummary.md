@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_Location
 ---
 
 # LocationSummary
-<a name="API_LocationSummary"></a>
 
 A complex type that contains information about the CIDR location.
 

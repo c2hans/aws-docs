@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetDevice
 ---
 
 # GetDeviceDiscovery
-<a name="API_GetDeviceDiscovery"></a>
 
  Get the current state of a device discovery.
 

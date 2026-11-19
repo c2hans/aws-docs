@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/troubleshootin
 ---
 
 # Troubleshooting on-premises gateway issues
-<a name="troubleshooting-on-premises-gateway-issues"></a>
 
 You can find information following about typical issues that you might encounter working with your on-premises gateways, and how to activate Support to help troubleshoot your gateway.
 

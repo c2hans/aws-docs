@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Cont
 ---
 
 # ContentType
-<a name="API_ContentType"></a>
 
 Contains information regarding the confidence and name of a detected content type.
 

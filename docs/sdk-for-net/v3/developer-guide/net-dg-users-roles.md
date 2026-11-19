@@ -7,7 +7,6 @@ The AWS SDK for .NET V3 has reached end-of-support.
 We recommend that you migrate to [AWS SDK for .NET V4](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/welcome.html). For additional details and information on how to migrate, please refer to our [end-of-support announcement](https://aws.amazon.com/blogs/developer/aws-sdk-for-net-v3-end-of-support-announcement/).
 
 # Additional information about users and roles
-<a name="net-dg-users-roles"></a>
 
 For doing .NET development on AWS or for running .NET applications on AWS, you need to have some combination of users, permission sets, and service roles that are appropriate for these tasks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonDevOpsGuruOrganizationsAccess
-<a name="AmazonDevOpsGuruOrganizationsAccess"></a>
 
 **Description**: Provide access to enable and manage Amazon DevOps Guru within an organization.
 

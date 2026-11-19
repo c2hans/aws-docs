@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_HubAcc
 ---
 
 # HubAccessConfig
-<a name="API_HubAccessConfig"></a>
 
 The configuration for a private hub model reference that points to a public SageMaker JumpStart model.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # DeleteProfileShare
-<a name="API_DeleteProfileShare"></a>
 
 Delete a profile share.
 

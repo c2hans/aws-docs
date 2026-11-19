@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # NotifyConfigurationFilter
-<a name="API_NotifyConfigurationFilter"></a>
 
 The information for notify configurations that meet a specified criteria.
 

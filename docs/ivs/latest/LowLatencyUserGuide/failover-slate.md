@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/failover-
 ---
 
 # Amazon IVS Failover Slate
-<a name="failover-slate"></a>
 
 Amazon IVS failover slate helps you maintain viewer engagement when broadcasters experience temporary network disruptions or technical difficulties. When a broadcaster's connection is interrupted, IVS automatically displays a failover slate to viewers instead of showing a buffering wheel or frozen frame. This provides a smoother viewing experience and helps retain your audience during momentary interruptions. Failover slate is particularly useful when broadcasting from a mobile device with unreliable connectivity.
 

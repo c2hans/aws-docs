@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/get-connect-nu
 ---
 
 # Get a local toll-free or DID Connect Customer phone number
-<a name="get-connect-number"></a>
 
 To place or receive calls in your Connect Customer instance, you need to claim a DID or toll-free phone number. If you did not claim a phone number when you created your Connect Customer instance, follow these steps to claim one now.
 

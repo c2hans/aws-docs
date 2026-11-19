@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_GetDe
 ---
 
 # GetDevicePoolCompatibility
-<a name="API_GetDevicePoolCompatibility"></a>
 
 Gets information about compatibility with a device pool.
 

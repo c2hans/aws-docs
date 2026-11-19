@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # AttendeeCapabilities
-<a name="API_meeting-chime_AttendeeCapabilities"></a>
 
 The media capabilities of an attendee: audio, video, or content.
 

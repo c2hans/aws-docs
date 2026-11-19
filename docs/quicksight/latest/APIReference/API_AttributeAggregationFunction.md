@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Attri
 ---
 
 # AttributeAggregationFunction
-<a name="API_AttributeAggregationFunction"></a>
 
 Aggregation for attributes.
 

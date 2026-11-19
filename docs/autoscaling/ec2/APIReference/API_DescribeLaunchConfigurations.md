@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Describ
 ---
 
 # DescribeLaunchConfigurations
-<a name="API_DescribeLaunchConfigurations"></a>
 
 Gets information about the launch configurations in the account and Region.
 

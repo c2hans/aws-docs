@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # RejectChannelHandshake
-<a name="API_channel_RejectChannelHandshake"></a>
 
 Rejects a pending channel handshake request.
 

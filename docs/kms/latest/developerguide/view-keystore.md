@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/view-keystore.
 ---
 
 # View an AWS CloudHSM key store
-<a name="view-keystore"></a>
 
 You can view the AWS CloudHSM key stores in each account and Region by using the AWS KMS console or the [DescribeCustomKeyStores](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeCustomKeyStores.html) operation.
 

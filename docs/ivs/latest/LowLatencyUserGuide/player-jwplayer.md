@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/player-jw
 ---
 
 # IVS Player SDK: JW Player Integration
-<a name="player-jwplayer"></a>
 
 This document describes the most important functions available in the Amazon Interactive Video Service (IVS) JW Player integration.
 

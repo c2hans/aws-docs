@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Monitoring discovery status
-<a name="next-gen-discovery-status"></a>
 
 After you enable dependency discovery, the `DependencyDiscoveryConfig` object returned by the `GetService` and `ListServices` API operations includes fields that indicate whether eligible resources have been found and whether dependency analysis is still in progress.
 

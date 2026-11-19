@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ProcessPayment
-<a name="API_ProcessPayment"></a>
 
 Processes a payment using a payment instrument within a payment session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # AccountSharingInfo
-<a name="API_AccountSharingInfo"></a>
 
 Information includes the AWS account ID where the current document is shared and the version shared with that account.
 

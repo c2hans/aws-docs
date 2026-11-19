@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-a
 ---
 
 # FAQ
-<a name="faq"></a>
 
 **Q. Why should I use a hexagonal architecture? **
 

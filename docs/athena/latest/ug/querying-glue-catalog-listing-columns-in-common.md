@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-glue-catalog-l
 ---
 
 # List the columns that specific tables have in common
-<a name="querying-glue-catalog-listing-columns-in-common"></a>
 
 You can list the columns that specific tables in a database have in common.
 + Use the syntax `SELECT column_name FROM information_schema.columns`.

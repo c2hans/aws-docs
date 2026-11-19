@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/use-distrib
 ---
 
 # Using distributed training in AWS Clean Rooms ML
-<a name="use-distributed-training"></a>
 
 Prerequisites:
 + An AWS account with access to AWS Clean Rooms

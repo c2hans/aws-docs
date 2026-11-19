@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/using-a
 ---
 
 # Downloading artifacts in a custom test environment
-<a name="using-artifacts-custom"></a>
 
 In a custom test environment, Device Farm gathers artifacts such as custom reports, log files, and images. These artifacts are available for each device in the test run.
 

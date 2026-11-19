@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Create and transform content with AWS Deadline Cloud
-<a name="connector-deadline-cloud"></a>
 
 The AWS Deadline Cloud connector submits compute jobs to [AWS Deadline Cloud](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/what-is-deadline-cloud.html).
 

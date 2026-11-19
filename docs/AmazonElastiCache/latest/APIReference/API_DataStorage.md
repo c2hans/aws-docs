@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DataStorage
-<a name="API_DataStorage"></a>
 
 The data storage limit.
 

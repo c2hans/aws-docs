@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Appli
 ---
 
 # ApplicationSettingsResponse
-<a name="API_ApplicationSettingsResponse"></a>
 
 Describes the persistent application settings for users of a stack.
 

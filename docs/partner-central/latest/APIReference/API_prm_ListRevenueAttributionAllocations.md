@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ListRevenueAttributionAllocations
-<a name="API_prm_ListRevenueAttributionAllocations"></a>
 
 Returns a paginated list of committed allocations with support for filtering by entity, customer, status, or date range.
 

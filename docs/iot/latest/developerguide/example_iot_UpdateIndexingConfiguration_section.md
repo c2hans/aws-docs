@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/example_iot_Up
 ---
 
 # Use `UpdateIndexingConfiguration` with an AWS SDK or CLI
-<a name="example_iot_UpdateIndexingConfiguration_section"></a>
 
 The following code examples show how to use `UpdateIndexingConfiguration`.
 

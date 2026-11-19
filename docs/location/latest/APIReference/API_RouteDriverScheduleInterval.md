@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteDr
 ---
 
 # RouteDriverScheduleInterval
-<a name="API_RouteDriverScheduleInterval"></a>
 
 Interval of the driver work-rest schedule. Stops are added to fulfil the provided rest schedule.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/dg/search-service-rerank.h
 Amazon Kendra is no longer open to new customers. For capabilities similar to Amazon Kendra, explore Amazon Bedrock Knowledge Bases. [Learn more](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
 # Semantically ranking a search service's results
-<a name="search-service-rerank"></a>
 
 Amazon Kendra Intelligent Ranking uses Amazon Kendra's semantic search capabilities to re-rank a search service's results. It does this by taking into account the search query's context, plus all the available information from the search service documents. Amazon Kendra Intelligent Ranking can improve simple keyword matching.
 

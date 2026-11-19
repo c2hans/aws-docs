@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/u
 ---
 
 # Configuring Automatic Updates
-<a name="update-configuration-options"></a>
 
 Use the `appsettings.json` configuration file to enable automatic updating of Amazon Kinesis Agent for Microsoft Windows and the configuration file for Kinesis Agent for Windows. To control the update behavior, specify the `Plugins` key-value pair at the same level in the configuration file as `Sources`, `Sinks`, and `Pipes`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorksp
 ---
 
 # DescribeWorkspaceDirectories
-<a name="API_DescribeWorkspaceDirectories"></a>
 
 Describes the available directories that are registered with Amazon WorkSpaces.
 

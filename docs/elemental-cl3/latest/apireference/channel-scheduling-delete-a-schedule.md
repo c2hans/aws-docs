@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/channe
 ---
 
 # DELETE: Delete a Schedule
-<a name="channel-scheduling-delete-a-schedule"></a>
 
 Permanently delete a schedule.
 

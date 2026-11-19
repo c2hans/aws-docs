@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-mult
 ---
 
 # FAQ
-<a name="faq"></a>
 
 **Q: Who can I share resources with?**
 

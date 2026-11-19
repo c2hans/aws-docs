@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppIntegrations::DataIntegration ScheduleConfig
-<a name="aws-properties-appintegrations-dataintegration-scheduleconfig"></a>
 
 The name of the data and how often it should be pulled from the source.
 

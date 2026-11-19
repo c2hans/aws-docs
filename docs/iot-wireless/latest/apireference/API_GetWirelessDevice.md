@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetWirelessDevice
-<a name="API_GetWirelessDevice"></a>
 
 Gets information about a wireless device.
 

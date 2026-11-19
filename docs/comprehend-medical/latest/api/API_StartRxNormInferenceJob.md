@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_StartR
 ---
 
 # StartRxNormInferenceJob
-<a name="API_StartRxNormInferenceJob"></a>
 
 Starts an asynchronous job to detect medication entities and link them to the RxNorm ontology. Use the `DescribeRxNormInferenceJob` operation to track the status of a job.
 

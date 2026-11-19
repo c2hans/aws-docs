@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateTopicR
 ---
 
 # CreateTopicRuleDestination
-<a name="API_CreateTopicRuleDestination"></a>
 
 Creates a topic rule destination. The destination must be confirmed prior to use.
 

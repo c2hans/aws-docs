@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-optio
 ---
 
 # Configuration options for Beanstalk Cluster environments
-<a name="command-options-general-eks"></a>
 
 A Beanstalk Cluster environment is configured through the twelve namespaces on this page. They are the only namespaces that a Beanstalk Cluster environment accepts. The classic namespaces in [Configuration options for Beanstalk Standard environments](command-options-general.md) configure Beanstalk Standard environments and do not apply, and passing one of them to a Beanstalk Cluster environment returns an `InvalidParameterValueException` rather than being ignored.
 

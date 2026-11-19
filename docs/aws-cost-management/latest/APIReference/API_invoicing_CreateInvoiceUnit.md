@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CreateInvoiceUnit
-<a name="API_invoicing_CreateInvoiceUnit"></a>
 
 This creates a new invoice unit with the provided definition.
 

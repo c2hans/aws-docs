@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # ResourcePolicyStatement
-<a name="sam-property-api-resourcepolicystatement"></a>
 
 Configures a resource policy for all methods and paths of an API. For more information about resource policies, see [Controlling access to an API with API Gateway resource policies](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-resource-policies.html) in the *API Gateway Developer Guide*.
 

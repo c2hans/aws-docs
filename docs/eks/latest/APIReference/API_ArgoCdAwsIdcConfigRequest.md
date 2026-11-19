@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ArgoCdAwsIdc
 ---
 
 # ArgoCdAwsIdcConfigRequest
-<a name="API_ArgoCdAwsIdcConfigRequest"></a>
 
 Configuration for integrating Argo CD with IAM Identity CenterIAM; Identity Center. This allows you to use your organization's identity provider for authentication to Argo CD.
 

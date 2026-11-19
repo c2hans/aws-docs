@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/facebook-step-1.html
 ---
 
 # Step 1: Create a Facebook application
-<a name="facebook-step-1"></a>
 
 On the Facebook developer portal, create a Facebook application and a Facebook page.
 

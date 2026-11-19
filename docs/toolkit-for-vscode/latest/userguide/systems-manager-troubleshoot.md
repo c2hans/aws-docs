@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/syst
 ---
 
 # Troubleshooting Systems Manager Automation documents in Toolkit for VS Code
-<a name="systems-manager-troubleshoot"></a>
 
 **I saved my Automation document in VS Code, but I don’t see it in the AWS Management Console.**
 Saving an Automation document in VS Code does not publish the Automation document to AWS. For more information on publishing your Automation document, see [Publishing a Systems Manager Automation document](systems-manager-automation-docs.md#systems-manager-publish).

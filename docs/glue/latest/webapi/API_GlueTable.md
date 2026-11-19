@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GlueTable.html
 ---
 
 # GlueTable
-<a name="API_GlueTable"></a>
 
 The database and table in the AWS Glue Data Catalog that is used for input or output data.
 

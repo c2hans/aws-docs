@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_Workspac
 ---
 
 # WorkspaceSummary
-<a name="API_WorkspaceSummary"></a>
 
 A structure that contains some information about one workspace in the account.
 

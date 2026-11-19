@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_StartR
 ---
 
 # StartReplicationBackfill
-<a name="API_StartReplicationBackfill"></a>
 
 Starts a replication backfill for a registry. A replication backfill replicates a registry's existing images that match its replication configuration to the specified destination. Use the [DescribeReplicationBackfillResults](API_DescribeReplicationBackfillResults.md) operation to monitor the progress of a replication backfill, and to retrieve its per-image results after it reaches a terminal status.
 

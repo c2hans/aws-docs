@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/wazuh
 ---
 
 # Source configuration for Wazuh Platform
-<a name="wazuh-platform-source-config"></a>
 
 ## Integrating with Wazuh Platform
 <a name="wazuh-platform-integration"></a>

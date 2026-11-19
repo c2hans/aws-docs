@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/trade.html
 ---
 
 # .trade
-<a name="trade"></a>
 
 Used as a general extension, but ideal for commerce websites or trading services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # CreateGrant
-<a name="API_CreateGrant"></a>
 
 Creates a grant for the specified license. A grant shares the use of license entitlements with a specific AWS account, an organization, or an organizational unit (OU). For more information, see [Granted licenses in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/granted-licenses.html) in the * AWS License Manager User Guide*.
 

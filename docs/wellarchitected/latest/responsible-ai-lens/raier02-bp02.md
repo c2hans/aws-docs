@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIER02-BP02 Summarize critical information and review with appropriate internal stakeholders
-<a name="raier02-bp02"></a>
 
  Organize evidence from your use case, risk assessments, release criteria testing, datasets, and system design evidence into a single document/source of truth that contains the information needed to make a release decision. Include verification that appropriate mitigations are in place for risks across relevant responsible AI dimensions. Update the system registry with the go/no-go decision.
 

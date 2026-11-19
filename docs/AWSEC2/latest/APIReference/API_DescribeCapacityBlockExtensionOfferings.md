@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeC
 ---
 
 # DescribeCapacityBlockExtensionOfferings
-<a name="API_DescribeCapacityBlockExtensionOfferings"></a>
 
 Describes Capacity Block extension offerings available for purchase in the AWS Region that you're currently using.
 

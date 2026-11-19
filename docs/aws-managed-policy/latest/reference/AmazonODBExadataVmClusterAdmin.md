@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonODBExadataVmClusterAdmin
-<a name="AmazonODBExadataVmClusterAdmin"></a>
 
 **Description**: Provides administrative access to manage Exadata VM cluster resources in Oracle Database@AWS.
 

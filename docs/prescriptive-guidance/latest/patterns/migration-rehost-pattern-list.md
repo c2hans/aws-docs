@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Rehost
-<a name="migration-rehost-pattern-list"></a>
 
 **Topics**
 + [Accelerate the discovery and migration of Microsoft workloads to AWS](accelerate-the-discovery-and-migration-of-microsoft-workloads-to-aws.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/logging-using-cloudtrail.
 ---
 
 # Log AWS Transit Gateway API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 AWS Transit Gateway; is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html), a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for Transit Gateway as events. The calls captured include calls from the Transit Gateway console and code calls to the Transit Gateway API operations. Using the information collected by CloudTrail, you can determine the request that was made to Transit Gateway, the IP address from which the request was made, when it was made, and additional details.
 

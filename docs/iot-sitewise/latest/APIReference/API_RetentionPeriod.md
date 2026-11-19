@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ret
 ---
 
 # RetentionPeriod
-<a name="API_RetentionPeriod"></a>
 
 The number of days your data is kept in the hot tier. By default, your data is kept indefinitely in the hot tier.
 

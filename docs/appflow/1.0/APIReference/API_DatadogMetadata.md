@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DatadogMeta
 ---
 
 # DatadogMetadata
-<a name="API_DatadogMetadata"></a>
 
  The connector metadata specific to Datadog.
 

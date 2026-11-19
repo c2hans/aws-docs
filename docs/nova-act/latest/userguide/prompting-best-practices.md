@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/prompting-best
 ---
 
 # Prompting best practices
-<a name="prompting-best-practices"></a>
 
 Writing effective prompts is essential for getting reliable results from Nova Act workflows. Well-structured prompts help the agent understand your intent, navigate UI elements accurately, and complete tasks successfully.
 

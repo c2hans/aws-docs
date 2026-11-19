@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # Example of `explain` output for a relationship lookup with a limit
-<a name="access-graph-opencypher-explain-example-2"></a>
 
 This query looks for relationships between two anonymous nodes with type `route`, and returns at most 10. Again, the `explain` mode is `details` and the output format is the default ASCII format.
 

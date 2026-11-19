@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Tag.h
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Adds metadata, in the form of a key:value pair, to the specified resource.
 

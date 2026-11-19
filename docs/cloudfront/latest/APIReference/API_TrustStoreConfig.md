@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Trust
 ---
 
 # TrustStoreConfig
-<a name="API_TrustStoreConfig"></a>
 
 A trust store configuration.
 

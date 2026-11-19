@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Tieri
 ---
 
 # TieringConfigurationInputForUpdate
-<a name="API_TieringConfigurationInputForUpdate"></a>
 
 This contains metadata about a tiering configuration for update operations.
 

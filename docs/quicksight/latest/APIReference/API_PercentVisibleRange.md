@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Perce
 ---
 
 # PercentVisibleRange
-<a name="API_PercentVisibleRange"></a>
 
 The percent range in the visible range.
 

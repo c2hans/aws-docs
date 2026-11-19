@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Denied.html
 ---
 
 # Denied
-<a name="API_Denied"></a>
 
 Contains information that denied the authorization.
 

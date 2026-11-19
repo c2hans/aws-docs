@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/training-sessions-vp
 ---
 
 # Configure a VPC for SageMaker AI training sessions
-<a name="training-sessions-vpc"></a>
 
 When you provide a `VpcConfig` in your `CreateTrainingSession` request, SageMaker AI training sessions place a proxy elastic network interface (ENI) in your VPC. All customer data traffic — including access to your Amazon S3 buckets for checkpoints and model artifacts — flows through this ENI. This keeps data within your VPC network boundary.
 

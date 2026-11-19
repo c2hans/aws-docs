@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Get
 ---
 
 # GetDashManifestConfiguration
-<a name="API_GetDashManifestConfiguration"></a>
 
 Retrieve the DASH manifest configuration.
 

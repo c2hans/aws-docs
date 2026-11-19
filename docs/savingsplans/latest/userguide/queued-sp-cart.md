@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/queued-sp-
 ---
 
 # Queuing a Savings Plan purchase
-<a name="queued-sp-cart"></a>
 
 You can *queue*, or schedule, a Savings Plan purchase to occur on a future date. The date can be specific to the exact second that you want to start coverage. Any upfront or recurring fee is charged only when the queued purchase is processed on the start date you choose. You can delete this queued purchase at any time before the start date.<a name="queued-sp-cart-howto"></a>
 

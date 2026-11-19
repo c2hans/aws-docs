@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetContainerServiceDeployments
-<a name="API_GetContainerServiceDeployments"></a>
 
 Returns the deployments for your Amazon Lightsail container service
 

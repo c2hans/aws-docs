@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BodyS
 ---
 
 # BodySectionRepeatConfiguration
-<a name="API_BodySectionRepeatConfiguration"></a>
 
 Describes the configurations that are required to declare a section as repeating.
 

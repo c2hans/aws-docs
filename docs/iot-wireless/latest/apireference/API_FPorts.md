@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_FPo
 ---
 
 # FPorts
-<a name="API_FPorts"></a>
 
 List of FPort assigned for different LoRaWAN application packages to use
 

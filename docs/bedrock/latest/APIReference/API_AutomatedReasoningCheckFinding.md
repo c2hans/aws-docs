@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningCheckFinding
-<a name="API_AutomatedReasoningCheckFinding"></a>
 
 Represents the result of an Automated Reasoning validation check, indicating whether the content is logically valid, invalid, or falls into other categories based on the policy rules.
 

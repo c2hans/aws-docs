@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DeleteWorkspac
 ---
 
 # DeleteWorkspaceImage
-<a name="API_DeleteWorkspaceImage"></a>
 
 Deletes the specified image from your account. To delete an image, you must first delete any bundles that are associated with the image and unshare the image if it is shared with other accounts.
 

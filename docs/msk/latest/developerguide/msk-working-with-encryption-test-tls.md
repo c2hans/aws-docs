@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-working-wi
 ---
 
 # Test Amazon MSK TLS encryption
-<a name="msk-working-with-encryption-test-tls"></a>
 
 This process describes how to test TLS encryption on Amazon MSK.
 

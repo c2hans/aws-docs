@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 ---
 
 # Infrastructure deployment
-<a name="infrastructure-deployment-tools"></a>
 
 Infrastructure deployment includes all the prerequisites for the network function to be successfully deployed and configured.
 

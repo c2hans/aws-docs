@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Ide
 ---
 
 # Ide
-<a name="API_Ide"></a>
 
 Information about an integrated development environment (IDE) used in a Dev Environment.
 

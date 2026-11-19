@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_GetWor
 ---
 
 # GetWorkflowExecutionHistory
-<a name="API_GetWorkflowExecutionHistory"></a>
 
 Returns the history of the specified workflow execution. The results may be split into multiple pages. To retrieve subsequent pages, make the call again using the `nextPageToken` returned by the initial call.
 

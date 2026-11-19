@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # Amazon EC2 Auto Scaling
-<a name="API_Type_Resource_AutoScaling"></a>
 
 ****Amazon EC2 Auto Scaling objects****
 + [AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetails](API_AwsAutoScalingAutoScalingGroupAvailabilityZonesListDetails.md)

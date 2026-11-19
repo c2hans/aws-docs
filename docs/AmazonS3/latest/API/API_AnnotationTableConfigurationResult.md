@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_AnnotationTableC
 ---
 
 # AnnotationTableConfigurationResult
-<a name="API_AnnotationTableConfigurationResult"></a>
 
 Contains the current state of the annotation table associated with a bucket's Amazon S3 Metadata configuration, including its provisioning status and identifiers.
 

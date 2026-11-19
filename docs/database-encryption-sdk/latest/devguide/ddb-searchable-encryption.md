@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Searchable encryption in DynamoDB
-<a name="ddb-searchable-encryption"></a>
 
 To configure your Amazon DynamoDB tables for searchable encryption, you must use the [AWS KMS Hierarchical keyring](use-hierarchical-keyring.md) to generate, encrypt, and decrypt the data keys used to protect your items. You must also include the [`SearchConfig`](ddb-net-using.md#ddb-net-search-config) in your table encryption configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Shadow
 ---
 
 # ShadowModelVariantConfig
-<a name="API_ShadowModelVariantConfig"></a>
 
 The name and sampling percentage of a shadow variant.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteServ
 ---
 
 # RouteServerRouteInstallationDetail
-<a name="API_RouteServerRouteInstallationDetail"></a>
 
 Describes the installation status of a route in a route table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-a
 ---
 
 # Subscribe a callback function when an Connect Customer agent workspace agent's availability state changes
-<a name="3P-apps-agent-events-availabilitystatechanged-sub"></a>
 
 Subscribes a callback function to be invoked whenever the agent's availability state changes in the Connect Customer agent workspace.
 

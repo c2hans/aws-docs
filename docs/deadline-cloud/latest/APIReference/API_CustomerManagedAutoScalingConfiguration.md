@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_C
 ---
 
 # CustomerManagedAutoScalingConfiguration
-<a name="API_CustomerManagedAutoScalingConfiguration"></a>
 
 The auto scaling configuration settings for a customer managed fleet.
 

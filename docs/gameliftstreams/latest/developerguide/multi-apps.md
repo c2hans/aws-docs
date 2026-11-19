@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/mu
 ---
 
 # Overview of multi-application stream groups
-<a name="multi-apps"></a>
 
 A *multi-application stream group* is a stream group that's linked to multiple applications. This enables you to stream multiple applications by using the same set of compute resources in a single stream group.
 

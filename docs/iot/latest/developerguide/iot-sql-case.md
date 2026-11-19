@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-case.h
 ---
 
 # Case statements
-<a name="iot-sql-case"></a>
 
 Case statements can be used for branching execution, like a switch statement.
 

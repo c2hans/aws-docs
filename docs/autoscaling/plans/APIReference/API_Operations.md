@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_Opera
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [CreateScalingPlan](API_CreateScalingPlan.md)

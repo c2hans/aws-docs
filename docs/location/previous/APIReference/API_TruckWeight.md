@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Truck
 ---
 
 # TruckWeight
-<a name="API_TruckWeight"></a>
 
 Contains details about the truck's weight specifications. Used to avoid roads that can't support or allow the total weight for requests that specify `TravelMode` as `Truck`.
 

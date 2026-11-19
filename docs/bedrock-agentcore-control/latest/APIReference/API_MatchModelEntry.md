@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # MatchModelEntry
-<a name="API_MatchModelEntry"></a>
 
 A model ID or pattern to match against the requested model, and the operator to use for the comparison.
 

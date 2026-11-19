@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-pla
 ---
 
 # AWS Cloud Adoption Framework: Platform perspective
-<a name="introduction"></a>
 
 *Sasa Baskarada, Alex Torres (AWS), Bruce Cooper, Paul Duvall, Alex Livingstone, Michael Rhyndress, Tony Santiago, Sneh Shah, Jeremy Tennant, Ravinder Thota, Matias Undurraga, and Sausan Yazji, Amazon Web Services*
 

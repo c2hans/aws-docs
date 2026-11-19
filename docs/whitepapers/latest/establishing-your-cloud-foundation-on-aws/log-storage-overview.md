@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Overview
-<a name="log-storage-overview"></a>
 
 The Log Storage capability primary mapping is to Security. The **Security team **should be responsible for implementing this capability according to your governance requirements.
 

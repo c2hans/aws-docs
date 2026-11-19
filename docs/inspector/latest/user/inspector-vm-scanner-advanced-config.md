@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/inspector-vm-scann
 ---
 
 # Advanced configuration
-<a name="inspector-vm-scanner-advanced-config"></a>
 
  This section describes advanced configuration options for Inspector VM Scanner.
 

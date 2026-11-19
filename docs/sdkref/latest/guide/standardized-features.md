@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/standardized-feature
 ---
 
 # AWS SDKs and Tools standardized features
-<a name="standardized-features"></a>
 
 Many features have been standardized to consistent defaults and to work the same way across many SDKs. This consistency increases productivity and clarity when coding across multiple SDKs. All settings can be overridden in code, see your specific SDK API for details.
 

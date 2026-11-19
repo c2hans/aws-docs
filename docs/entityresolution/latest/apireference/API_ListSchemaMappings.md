@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ListSchemaMappings
-<a name="API_ListSchemaMappings"></a>
 
 Returns a list of all the `SchemaMappings` that have been created for an AWS account.
 

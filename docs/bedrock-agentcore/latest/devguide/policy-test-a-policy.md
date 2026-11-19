@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Test a policy in LOG\_ONLY mode
-<a name="policy-test-a-policy"></a>
 
 Using the policy-level enforcement mode, you can toggle between `ACTIVE` and `LOG_ONLY` to answer the question: "What would this policy do to my traffic if it was applied?" Per policy `LOG_ONLY` mode lets you test a policy on real traffic without affecting authorization decisions. The policy evaluates every request as if it were enforced, but only writes results to logs. Nothing is blocked or permitted as a result of a policy whose enforcement mode is `LOG_ONLY`. Once you trust the results, promote it to `ACTIVE`.
 

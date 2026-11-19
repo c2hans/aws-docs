@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_UpdateAp
 ---
 
 # UpdateApplicationLayerAutomaticResponse
-<a name="API_UpdateApplicationLayerAutomaticResponse"></a>
 
 Updates an existing Shield Advanced automatic application layer DDoS mitigation configuration for the specified resource.
 

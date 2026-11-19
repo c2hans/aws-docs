@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_P
 ---
 
 # PipeTargetBatchJobParameters
-<a name="API_PipeTargetBatchJobParameters"></a>
 
 The parameters for using an AWS Batch job as a target.
 

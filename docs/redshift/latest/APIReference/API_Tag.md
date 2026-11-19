@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Tag.htm
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 A tag consisting of a name/value pair for a resource.
 

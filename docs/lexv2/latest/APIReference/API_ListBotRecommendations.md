@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotRec
 ---
 
 # ListBotRecommendations
-<a name="API_ListBotRecommendations"></a>
 
 Get a list of bot recommendations that meet the specified criteria.
 

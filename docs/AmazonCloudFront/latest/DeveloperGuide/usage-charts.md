@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/u
 ---
 
 # View CloudFront usage reports
-<a name="usage-charts"></a>
 
 The CloudFront usage reports include the following information:
 + **Number of requests** – Shows the total number of requests that CloudFront responds to from edge locations in the selected region during each time interval for the specified CloudFront distribution.

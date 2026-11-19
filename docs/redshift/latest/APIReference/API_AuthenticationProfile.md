@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Authent
 ---
 
 # AuthenticationProfile
-<a name="API_AuthenticationProfile"></a>
 
 Describes an authentication profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Query a DynamoDB table with strongly consistent reads using an AWS SDK
-<a name="example_dynamodb_Scenarios_QueryWithStronglyConsistentReads_section"></a>
 
 The following code examples show how to query a table with strongly consistent reads.
 + Configure the consistency level for DynamoDB queries.

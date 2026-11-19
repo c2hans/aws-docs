@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/monitor-with-cloudtrail
 ---
 
 # Log Amazon Athena API calls with AWS CloudTrail
-<a name="monitor-with-cloudtrail"></a>
 
 Athena is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Athena.
 

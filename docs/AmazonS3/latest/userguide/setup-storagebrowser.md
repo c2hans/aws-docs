@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/setup-storageb
 ---
 
 # Setting up Storage Browser for S3
-<a name="setup-storagebrowser"></a>
 
 To connect end users with Amazon S3 *locations*, you must first set up an authentication and authorization method. There are three methods to set up an authentication and authorization method with Storage Browser:
 + [Method 1: Managing data access for your customers and third party partners](#setup-storagebrowser-method1)

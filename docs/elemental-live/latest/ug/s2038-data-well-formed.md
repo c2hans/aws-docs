@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/s2038-data-well
 ---
 
 # Well-formed SMPTE 2038 source
-<a name="s2038-data-well-formed"></a>
 
 For Elemental Live to handle the ancillary data, the SMPTE 2038 must meet certain criteria:
 + The SMPTE 2038 packet must be present in every PMT.

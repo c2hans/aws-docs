@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLoc
 ---
 
 # DeleteLocalGatewayVirtualInterfaceGroup
-<a name="API_DeleteLocalGatewayVirtualInterfaceGroup"></a>
 
 Delete the specified local gateway interface group.
 

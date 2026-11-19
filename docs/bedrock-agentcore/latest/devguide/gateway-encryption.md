@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Encrypt your AgentCore gateway with a customer-managed KMS key
-<a name="gateway-encryption"></a>
 
 By default, Gateway encrypts your data at rest using a service-managed AWS Key Management Service key. However, you can optionally provide your own customer managed KMS key for encrypting data at rest when you:
 + Create a gateway.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.SPLIT_
 ---
 
 # SPLIT\_COLUMN\_SINGLE\_DELIMITER
-<a name="recipe-actions.SPLIT_COLUMN_SINGLE_DELIMITER"></a>
 
 Splits a column into one or more new columns, according to a specific delimiter.
 

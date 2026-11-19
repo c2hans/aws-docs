@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServe
 ---
 
 # Linked Servers with Teradata ODBC in RDS for SQL Server
-<a name="USER_SQLServerTeradata"></a>
 
 Support for linked servers with the Teradata ODBC driver on RDS for SQL Server lets you access external data sources on a Teradata database. You can read data and run commands from remote Teradata database servers outside of your RDS for SQL Server instance. Use linked-servers with Teradata ODBC to enable the following capabilities:
 + Directly access data sources other than SQL Server.

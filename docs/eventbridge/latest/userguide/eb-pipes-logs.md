@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes-lo
 ---
 
 # Logging Amazon EventBridge Pipes performance
-<a name="eb-pipes-logs"></a>
 
 EventBridge Pipes logging enables you to have EventBridge Pipes send records detailing pipe performance to supported AWS services. Use logs to gain insight into your pipe’s execution performance, and to help with troubleshooting and debugging.
 

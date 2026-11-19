@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Devic
 ---
 
 # DeviceSelectionResult
-<a name="API_DeviceSelectionResult"></a>
 
 Contains the run results requested by the device selection configuration and how many devices were returned. For an example of the JSON response syntax, see [ScheduleRun](API_ScheduleRun.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonTextractFullAccess
-<a name="AmazonTextractFullAccess"></a>
 
 **Description**: Access to all Amazon Textract APIs
 

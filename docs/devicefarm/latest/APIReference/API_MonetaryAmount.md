@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Monet
 ---
 
 # MonetaryAmount
-<a name="API_MonetaryAmount"></a>
 
 A number that represents the monetary amount for an offering or transaction.
 

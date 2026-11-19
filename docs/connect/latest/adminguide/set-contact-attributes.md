@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-contact-at
 ---
 
 # Flow block in Connect Customer: Set contact attributes
-<a name="set-contact-attributes"></a>
 
 This topic defines the flow block for storing key-value pairs as contact attributes, and then setting a value that is later referenced in a flow.
 

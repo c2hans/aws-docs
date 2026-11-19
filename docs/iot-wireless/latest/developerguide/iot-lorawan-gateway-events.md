@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-l
 ---
 
 # Enable notifications for LoRaWAN gateway connection status events
-<a name="iot-lorawan-gateway-events"></a>
 
 AWS IoT Core for LoRaWAN can publish messages to notify you of connection status events for LoRaWAN gateways that you onboard to AWS IoT. Connection status events notify you when the connection status of a LoRaWAN gateway changes to connected or disconnected.
 

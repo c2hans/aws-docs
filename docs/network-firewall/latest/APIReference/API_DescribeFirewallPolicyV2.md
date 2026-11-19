@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DescribeFirewallPolicyV2
-<a name="API_DescribeFirewallPolicyV2"></a>
 
 Returns the data objects for the specified Next Generation policy.
 

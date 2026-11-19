@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_RevisionErr
 ---
 
 # RevisionError
-<a name="API_RevisionError"></a>
 
 A single error encountered while creating or reading a web function revision. The error describes the affected attribute, an error code, and a human-readable message. This structure is present only when the revision has errors.
 

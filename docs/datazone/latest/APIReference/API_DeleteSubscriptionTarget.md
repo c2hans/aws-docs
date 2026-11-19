@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DeleteS
 ---
 
 # DeleteSubscriptionTarget
-<a name="API_DeleteSubscriptionTarget"></a>
 
 Deletes a subscription target in Amazon DataZone.
 

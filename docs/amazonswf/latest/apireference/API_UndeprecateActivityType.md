@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Undepr
 ---
 
 # UndeprecateActivityType
-<a name="API_UndeprecateActivityType"></a>
 
 Undeprecates a previously deprecated *activity type*. After an activity type has been undeprecated, you can create new tasks of that activity type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ReplicationI
 ---
 
 # ReplicationInstance
-<a name="API_ReplicationInstance"></a>
 
 Provides information that defines a replication instance.
 

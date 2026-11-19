@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedding-quicksi
 ---
 
 # Embedding the AWS Quick Sight Q search bar (Classic)
-<a name="embedding-quicksight-q"></a>
 
 |  |
 | --- |

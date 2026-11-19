@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Upd
 ---
 
 # UpdateImagePipeline
-<a name="API_UpdateImagePipeline"></a>
 
 Updates an image pipeline. Use image pipelines to automate the creation and distribution of images. You must specify exactly one recipe for your image, using either a `containerRecipeArn` or an `imageRecipeArn`. The recipe must be the same type, image or container, as the pipeline's current recipe.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-gpu-monit
 ---
 
 # Monitor GPUs with CloudWatch
-<a name="tutorial-gpu-monitoring-gpumon"></a>
 
 When you use your DLAMI with a GPU you might find that you are looking for ways to track its usage during training or inference. This can be useful for optimizing your data pipeline, and tuning your deep learning network.
 
@@ -230,7 +229,7 @@ The following is an example CloudWatch chart reporting on a run of gpumon.py mon
 
 You might be interested in these other topics on GPU monitoring and optimization:
 + [Monitoring](tutorial-gpu-monitoring.md)
-  + [Monitor GPUs with CloudWatch](#tutorial-gpu-monitoring-gpumon)
+  + [Monitor GPUs with CloudWatch](tutorial-gpu-monitoring-gpumon.md)
 + [Optimization](tutorial-gpu-opt.md)
   + [Preprocessing](tutorial-gpu-opt-preprocessing.md)
   + [Training](tutorial-gpu-opt-training.md)

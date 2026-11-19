@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_GitCon
 ---
 
 # GitConfigForUpdate
-<a name="API_GitConfigForUpdate"></a>
 
 Specifies configuration details for a Git repository when the repository is updated.
 

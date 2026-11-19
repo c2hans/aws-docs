@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/t
 ---
 
 # AWS Site-to-Site VPN to an Amazon VPC
-<a name="encryption-vpn-to-vpc"></a>
 
 Publication date: **March 5, 2025 ([Diagram history](#tevpc-diagram-history))**
 

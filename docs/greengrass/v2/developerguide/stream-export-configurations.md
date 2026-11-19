@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/stream-expo
 ---
 
 # Export configurations for supported AWS Cloud destinations
-<a name="stream-export-configurations"></a>
 
 User-defined Greengrass components use `StreamManagerClient` in the Stream Manager SDK to interact with stream manager. When a component [creates a stream](work-with-streams.md#streammanagerclient-create-message-stream) or [updates a stream](work-with-streams.md#streammanagerclient-create-message-stream), it passes a `MessageStreamDefinition` object that represents stream properties, including the export definition. The `ExportDefinition` object contains the export configurations defined for the stream. Stream manager uses these export configurations to determine where and how to export the stream.
 

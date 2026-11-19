@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # NodeSummary
-<a name="API_NodeSummary"></a>
 
 A summary of configuration properties for a node.
 

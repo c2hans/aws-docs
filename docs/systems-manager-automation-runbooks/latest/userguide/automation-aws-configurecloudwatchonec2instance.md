@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-ConfigureCloudWatchOnEC2Instance`
-<a name="automation-aws-configurecloudwatchonec2instance"></a>
 
  **Description**
 

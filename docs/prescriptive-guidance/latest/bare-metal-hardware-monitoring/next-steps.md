@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/bare-metal-
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 By following the architecture and best practices described in this guide, you can collect data from your on-premises bare-metal servers and then send that data to AWS for storage and visualization. We recommend that you use Amazon Managed Service for Prometheus to reliably store the data and monitor the Prometheus instances. Then, you can use Amazon Managed Grafana to query, correlate, and visualize the data.
 

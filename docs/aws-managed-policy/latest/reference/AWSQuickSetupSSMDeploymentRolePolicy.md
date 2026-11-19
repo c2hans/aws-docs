@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSetupSSMDeploymentRolePolicy
-<a name="AWSQuickSetupSSMDeploymentRolePolicy"></a>
 
 **Description**: This policy grants administrative permssions that allow Quick Setup to create resources that are used during the Systems Manager onboarding process.
 

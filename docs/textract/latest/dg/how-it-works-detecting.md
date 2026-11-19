@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/how-it-works-detectin
 ---
 
 # Detecting Text
-<a name="how-it-works-detecting"></a>
 
 Amazon Textract provides synchronous and asynchronous operations that return only the text detected in a document. For both sets of operations, the following information is returned in multiple [Block](https://docs.aws.amazon.com/textract/latest/APIReference/API_Block.html) objects:
 + The lines and words of detected text

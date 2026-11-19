@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/action-connectors
 ---
 
 # Using Quick connectors in threshold alerts
-<a name="action-connectors-in-threshold-alerts"></a>
 
 ## Prerequisites
 <a name="action-connectors-in-threshold-alerts-prerequisites"></a>

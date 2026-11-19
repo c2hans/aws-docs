@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/ml-troubles
 ---
 
 # Troubleshooting machine learning inference
-<a name="ml-troubleshooting"></a>
 
 Use the troubleshooting information and solutions in this section to help resolve issues with your machine learning components. For the public machine learning inference components, see the error messages in the following component logs:
 

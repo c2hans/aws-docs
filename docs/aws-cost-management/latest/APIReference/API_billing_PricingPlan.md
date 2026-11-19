@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # PricingPlan
-<a name="API_billing_PricingPlan"></a>
 
 A pricing plan for Enterprise Support billing.
 

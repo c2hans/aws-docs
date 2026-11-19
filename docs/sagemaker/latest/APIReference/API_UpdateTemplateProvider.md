@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateTemplateProvider
-<a name="API_UpdateTemplateProvider"></a>
 
  Contains configuration details for updating an existing template provider in the project.
 

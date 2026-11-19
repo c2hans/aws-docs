@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/invoke-imported
 ---
 
 # Invoke your imported model
-<a name="invoke-imported-model"></a>
 
 The model import job can take several minutes to import your model after you send [CreateModelImportJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateModelImportJob.html) request. You can check the status of your import job in the console or by calling the [GetModelImportJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetModelImportJob.html) operation and checking the `Status` field in the response. The import job is complete if the Status for the model is **Complete**.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # SuggestHighlights
-<a name="API_geoplaces_SuggestHighlights"></a>
 
 Describes how the parts of the textQuery matched the input query by returning the sections of the response which matched to textQuery terms.
 

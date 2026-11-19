@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # About managing a large migration
-<a name="managing-large-migration"></a>
 
 To manage and effectively govern a large migration project, the project manager needs to have a high-level understanding of the portfolio, the phases of a large migration, and the responsibilities of each workstream.
 

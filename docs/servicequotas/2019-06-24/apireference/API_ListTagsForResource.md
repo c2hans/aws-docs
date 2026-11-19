@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Returns a list of the tags assigned to the specified applied quota.
 

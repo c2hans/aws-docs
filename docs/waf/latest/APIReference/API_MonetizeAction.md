@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_MonetizeActi
 ---
 
 # MonetizeAction
-<a name="API_MonetizeAction"></a>
 
 Specifies the monetize action settings for a rule. When AWS WAF applies this action, it returns an HTTP 402 Payment Required response containing pricing information that the requesting client uses to complete payment and gain access to the resource. This is a terminating action-if the client does not complete the 402 payment flow, the request is blocked. This action is available only for web ACLs associated with Amazon CloudFront distributions. You must configure a `MonetizationConfig` on the web ACL or rule group before adding rules that use this action. You cannot use the Monetize action for rate-based rules.
 

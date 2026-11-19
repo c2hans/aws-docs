@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # DescribeGroup
-<a name="API_DescribeGroup"></a>
 
 Returns information about a specific group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_GetLink.html
 ---
 
 # GetLink
-<a name="API_GetLink"></a>
 
 Retrieves information about a link between gateways.
 

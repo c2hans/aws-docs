@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/what-is.html
 ---
 
 # What is AWS Quick?
-<a name="what-is"></a>
 
 AWS Quick is an AI-powered service for automating tasks, analyzing data, building web applications, and conducting research. You interact with Quick through natural language chat, and Quick uses AI agents to process your requests against connected data sources and applications.
 

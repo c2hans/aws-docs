@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zero-etl-sources.html
 ---
 
 # Configuring a source for a zero-ETL integration
-<a name="zero-etl-sources"></a>
 
 Setting up an integration requires some prerequisites on the source such as configuring IAM roles or policies which AWS Glue uses to access data from the source (in order to write to the target), the use of KMS keys to encrypt the data in intermediate location, etc.
 
@@ -243,7 +242,7 @@ Using your zero-ETL integration you can perform the following DDL operations for
 Create a source role to allow the zero-ETL integration to access your connection. This is applicable only for SaaS sources. This is a prerequisite for creating integrations with SaaS sources.
 
 **Note**
-To restrict access to only a few connections, you can first create the connection to obtain the connection ARN. See [Configuring a source for a zero-ETL integration](#zero-etl-sources).
+To restrict access to only a few connections, you can first create the connection to obtain the connection ARN. See [Configuring a source for a zero-ETL integration](zero-etl-sources.md).
 
 Create a role which has permissions for the integration to access the connection:
 

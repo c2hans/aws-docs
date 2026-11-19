@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Use cases
-<a name="use-cases"></a>
 
  **Fleet Management and Optimization**
 

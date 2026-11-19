@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/ebs-metrics-
 ---
 
 # EBS volume metrics
-<a name="ebs-metrics-analyzed"></a>
 
 Compute Optimizer analyzes the following CloudWatch metrics of your EBS volumes.
 

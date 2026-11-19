@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CodeConte
 ---
 
 # CodeContentDescription
-<a name="API_CodeContentDescription"></a>
 
 Describes details about the code of a Managed Service for Apache Flink application.
 

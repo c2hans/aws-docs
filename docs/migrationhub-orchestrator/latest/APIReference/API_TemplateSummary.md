@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIRefe
 ---
 
 # TemplateSummary
-<a name="API_TemplateSummary"></a>
 
 The summary of the template.
 

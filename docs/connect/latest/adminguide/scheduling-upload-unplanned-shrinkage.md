@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-upl
 ---
 
 # Upload unplanned shrinkage data to published schedules in Connect Customer
-<a name="scheduling-upload-unplanned-shrinkage"></a>
 
 You can upload unplanned shrinkage assumptions to improve the accuracy of published schedules. Unplanned shrinkage accounts for anticipated deviations from the schedule, such as late logins, early logouts, and last-minute sick call outs.
 

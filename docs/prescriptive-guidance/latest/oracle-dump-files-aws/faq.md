@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oracle-dump
 ---
 
 # FAQ
-<a name="faq"></a>
 
 The services in this process have quotas and limitations that you should review before you begin.
 

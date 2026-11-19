@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/blackout-restriction
 ---
 
 # Blackout restriction flags
-<a name="blackout-restriction-flags"></a>
 
 This section provides information about the restriction flags that you can set in a MediaLive channel, when you set up for blackout.
 

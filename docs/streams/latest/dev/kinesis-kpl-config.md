@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/kinesis-kpl-config.ht
 ---
 
 # Configure the Amazon Kinesis Producer Library
-<a name="kinesis-kpl-config"></a>
 
 Although the default settings should work well for most use cases, you may want to change some of the default settings to tailor the behavior of the `KinesisProducer` to your needs. An instance of the `KinesisProducerConfiguration` class can be passed to the `KinesisProducer` constructor to do so, for example:
 

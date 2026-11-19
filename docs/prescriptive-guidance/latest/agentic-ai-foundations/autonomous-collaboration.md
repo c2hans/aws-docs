@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Autonomous collaboration and intentionality
-<a name="autonomous-collaboration"></a>
 
 The purpose of software agents is to bring autonomy, context-awareness, and intelligent delegation to modern computing. Because agents are built on the principles of the actor model and embodied in the perceive, reason, act cycle, they enable systems that are not only reactive, but proactive and purposeful.
 

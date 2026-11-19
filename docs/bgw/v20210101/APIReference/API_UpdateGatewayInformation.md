@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_UpdateGat
 ---
 
 # UpdateGatewayInformation
-<a name="API_UpdateGatewayInformation"></a>
 
 Updates a gateway's name. Specify which gateway to update using the Amazon Resource Name (ARN) of the gateway in your request.
 

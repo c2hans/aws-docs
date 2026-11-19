@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Iceber
 ---
 
 # IcebergSortOrder
-<a name="API_s3Buckets_IcebergSortOrder"></a>
 
 Defines the sort order for data within an Iceberg table. Sorting data can improve query performance by enabling more efficient data skipping.
 

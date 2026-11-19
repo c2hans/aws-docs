@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/application-discovery/latest/APIReferenc
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 A filter that can use conditional operators.
 

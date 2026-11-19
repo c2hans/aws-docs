@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # Comparing micro-frontends with alternative architectures
-<a name="micro-frontend-alternatives"></a>
 
 As with all architectural strategies, base your decision to adopt micro-frontends on evaluation criteria that your organization's principles guide. Micro-frontends have advantages and disadvantages. If your organization decides to use micro-frontends, you must have strategies in place to address the challenges of distributed systems.
 

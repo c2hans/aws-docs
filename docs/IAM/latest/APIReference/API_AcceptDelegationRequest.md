@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_AcceptDelega
 ---
 
 # AcceptDelegationRequest
-<a name="API_AcceptDelegationRequest"></a>
 
 Accepts a delegation request, granting the requested temporary access.
 

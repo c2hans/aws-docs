@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/custom-language-mod
 ---
 
 # Changing encryption configuration for a custom language model
-<a name="custom-language-models-updating"></a>
 
 To change the encryption configuration of an existing custom language model, use the [`UpdateLanguageModel`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_UpdateLanguageModel.html) operation. This operation does not support changes to the model content or training data. To retrain a model, create a new custom language model.
 

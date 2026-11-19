@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateIn
 ---
 
 # CreateIntegrationAssociation
-<a name="API_CreateIntegrationAssociation"></a>
 
 Creates an AWS resource association with an Connect Customer instance.
 

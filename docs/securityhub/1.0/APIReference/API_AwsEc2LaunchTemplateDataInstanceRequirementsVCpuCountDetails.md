@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataInstanceRequirementsVCpuCountDetails
-<a name="API_AwsEc2LaunchTemplateDataInstanceRequirementsVCpuCountDetails"></a>
 
  The minimum and maximum number of vCPUs for an Amazon EC2 instance.
 

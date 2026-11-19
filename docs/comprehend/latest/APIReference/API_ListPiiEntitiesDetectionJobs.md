@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_ListP
 ---
 
 # ListPiiEntitiesDetectionJobs
-<a name="API_ListPiiEntitiesDetectionJobs"></a>
 
 Gets a list of the PII entity detection jobs that you have submitted.
 

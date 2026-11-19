@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Evaluatio
 ---
 
 # EvaluationStatus
-<a name="API_EvaluationStatus"></a>
 
 Returns status details of an evaluation.
 

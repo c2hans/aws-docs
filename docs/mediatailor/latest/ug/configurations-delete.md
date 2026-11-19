@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/configurations-del
 ---
 
 # Deleting MediaTailor configurations
-<a name="configurations-delete"></a>
 
 You can delete a configuration to make it unavailable for playback with AWS Elemental MediaTailor.
 

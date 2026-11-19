@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/monitoring.html
 ---
 
 # Monitoring workflow activity on Conductor Live
-<a name="monitoring"></a>
 
 This topic covers the operations you use to run and manage nodes in AWS Elemental Conductor Live.
 

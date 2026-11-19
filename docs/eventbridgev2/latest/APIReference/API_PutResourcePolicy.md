@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Pu
 ---
 
 # PutResourcePolicy
-<a name="API_PutResourcePolicy"></a>
 
 Attaches a named resource policy to an event bus — the only resource type that supports policies; other resource ARNs are rejected. Each bus holds two named policies: "default" (customer-managed, full IAM policy language including Deny) and "AWS\_RAM" (written exclusively by AWS Resource Access Manager to reflect resource shares). Both policies are evaluated on cross-account authorization; an explicit Deny in either overrides an Allow in the other. Operations that omit PolicyName target "default". A "default" policy that would grant public access is rejected with PublicPolicyException and is not attached; this check is always on and cannot be disabled.
 

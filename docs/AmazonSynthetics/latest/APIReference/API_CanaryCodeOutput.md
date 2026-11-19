@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # CanaryCodeOutput
-<a name="API_CanaryCodeOutput"></a>
 
 This structure contains information about the canary's Lambda handler and where its code is stored by CloudWatch Synthetics.
 

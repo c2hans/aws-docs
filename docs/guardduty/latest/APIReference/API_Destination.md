@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Destin
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 Contains information about the publishing destination, including the ID, type, and status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/back-u
 ---
 
 # Backing Up the Conductor Database
-<a name="back-up-conductor-database"></a>
 
 **Topics**
 + [PUT: Modify Database Backup Settings](back-up-conductor-database-modify-settings.md)

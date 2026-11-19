@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # Managing permissions for neptune.read()
-<a name="access-graph-opencypher-21-extensions-s3-read-permissions"></a>
 
 ## Required IAM Policies
 <a name="access-graph-opencypher-21-extensions-s3-read-permissions-iam"></a>

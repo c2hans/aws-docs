@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DynamoDBELTConnec
 ---
 
 # DynamoDBELTConnectorSource
-<a name="API_DynamoDBELTConnectorSource"></a>
 
 Specifies a DynamoDB ELT connector source for extracting data from DynamoDB tables.
 

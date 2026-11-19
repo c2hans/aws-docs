@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListS
 ---
 
 # ListSuites
-<a name="API_ListSuites"></a>
 
 Gets information about test suites for a given job.
 

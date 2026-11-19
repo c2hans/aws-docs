@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Dataset
 ---
 
 # DatasetParameter
-<a name="API_DatasetParameter"></a>
 
 Represents a dataset parameter that defines type and conditions for a parameter in the Amazon S3 path of the dataset.
 

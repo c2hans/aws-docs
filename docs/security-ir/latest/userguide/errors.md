@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/errors.html
 ---
 
 # Errors
-<a name="errors"></a>
 
  **AccessDeniedException**
 

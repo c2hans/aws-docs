@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # AWS Systems Manager application tools
-<a name="systems-manager-application-management"></a>
 
 Application tools are a suite of capabilities that help you manage your applications running in AWS.
 

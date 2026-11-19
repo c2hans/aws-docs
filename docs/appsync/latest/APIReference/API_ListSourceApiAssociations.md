@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListSour
 ---
 
 # ListSourceApiAssociations
-<a name="API_ListSourceApiAssociations"></a>
 
 Lists the `SourceApiAssociationSummary` data.
 

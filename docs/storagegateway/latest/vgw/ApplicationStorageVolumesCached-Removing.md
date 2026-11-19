@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/ApplicationSto
 ---
 
 # Deleting storage volumes
-<a name="ApplicationStorageVolumesCached-Removing"></a>
 
 You might need to delete a volume as your application needs change—for example, if you migrate your application to use a larger storage volume. Before you delete a volume, make sure that there are no applications currently writing to the volume. Also, make sure that there are no snapshots in progress for the volume. If a snapshot schedule is defined for the volume, you can check it on the **Snapshot Schedules** tab of the Storage Gateway console. For more information, see [Editing a snapshot schedule](SchedulingSnapshot.md).
 

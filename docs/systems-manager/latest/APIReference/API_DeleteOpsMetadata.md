@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DeleteOpsMetadata
-<a name="API_DeleteOpsMetadata"></a>
 
 Delete OpsMetadata related to an application.
 

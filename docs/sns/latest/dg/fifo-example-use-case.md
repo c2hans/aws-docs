@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/fifo-example-use-case.html
 ---
 
 # Amazon SNS FIFO topic example use case
-<a name="fifo-example-use-case"></a>
 
 The following example describes an ecommerce platform built by an auto parts manufacturer using Amazon SNS FIFO topics and Amazon SQS queues. The platform is composed of four serverless applications:
 + Inventory managers use a price management application to set the price for each item in stock. At this company, product prices can change based on currency exchange fluctuation, market demand, and shifts in sales strategy. The price management application uses an AWS Lambda function that publishes price updates to an Amazon SNS FIFO topic whenever prices change.

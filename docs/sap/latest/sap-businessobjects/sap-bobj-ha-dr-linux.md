@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-businessobjects/sap-bobj-
 ---
 
 # SAP BusinessObjects BI Platform on AWS: HA/DR Guide for Linux
-<a name="sap-bobj-ha-dr-linux"></a>
 
  *SAP specialists, Amazon Web Services (AWS)*
 

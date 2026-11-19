@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/tutorial-transform
 ---
 
 # Build ETL pipelines using AWS Glue
-<a name="tutorial-transform-data-with-glue"></a>
 
 Data engineering teams often have raw data landing on an FSx for ONTAP volume from applications, daily file drops, or partner integrations over NFS or SMB. Preparing that data for downstream analytics requires reading, transforming, enriching, or repartitioning it at scale, and making the curated output available to analysts and applications.
 

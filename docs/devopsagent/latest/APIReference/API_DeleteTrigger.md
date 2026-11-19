@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Dele
 ---
 
 # DeleteTrigger
-<a name="API_DeleteTrigger"></a>
 
 Deletes a Trigger from the specified agent space
 

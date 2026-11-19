@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-compute-en
 ---
 
 # Tutorial: Create a managed compute environment using Amazon EC2 resources
-<a name="create-compute-environment-managed-ec2"></a>
 
 Complete the following steps to create a managed compute environment using Amazon Elastic Compute Cloud (Amazon EC2) resources.
 

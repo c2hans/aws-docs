@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/personalize_examp
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `CreateEventTracker` with an AWS SDK
-<a name="personalize_example_personalize_CreateEventTracker_section"></a>
 
 The following code examples show how to use `CreateEventTracker`.
 

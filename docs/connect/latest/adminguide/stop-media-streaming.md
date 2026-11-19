@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/stop-media-str
 ---
 
 # Flow block in Connect Customer: Stop media streaming
-<a name="stop-media-streaming"></a>
 
 This topic defines the flow block to stop capturing customer audio.
 

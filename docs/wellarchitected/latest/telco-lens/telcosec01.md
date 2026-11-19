@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcos
 ---
 
 # Security foundations
-<a name="telcosec01"></a>
 
 |  TELCOSEC01: Is your network compatible with the telecom industry and regulatory requirements?  |
 | --- |

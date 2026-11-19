@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ListDataQualityRu
 ---
 
 # ListDataQualityRulesetEvaluationRuns
-<a name="API_ListDataQualityRulesetEvaluationRuns"></a>
 
 Lists all the runs meeting the filter criteria, where a ruleset is evaluated against a data source.
 

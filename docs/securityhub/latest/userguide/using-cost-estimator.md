@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/using-cost-
 ---
 
 # Using the cost estimator
-<a name="using-cost-estimator"></a>
 
 ## Accessing the cost estimator
 <a name="accessing-cost-estimator"></a>

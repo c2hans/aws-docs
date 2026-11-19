@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # IsraelAdditionalInfo
-<a name="API_taxSettings_IsraelAdditionalInfo"></a>
 
  Additional tax information associated with your TRN in Israel.
 

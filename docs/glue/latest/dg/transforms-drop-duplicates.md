@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-drop-duplicate
 ---
 
 # Using Drop Duplicates
-<a name="transforms-drop-duplicates"></a>
 
  The Drop Duplicates transform removes rows from your data source by giving you two options. You can choose to remove the duplicate row that are completely the same, or you can choose to choose the fields to match and remove only those rows based on your chosen fields.
 

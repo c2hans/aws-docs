@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Write and examine the code
-<a name="producersdk-cpp-write"></a>
 
 In this section of the [Use the C\+\+ producer library](producer-sdk-cpp.md), you examine the code in the C\+\+ test harness (`tst/ProducerTestFixture.h` and other files). You downloaded this code in the previous section.
 

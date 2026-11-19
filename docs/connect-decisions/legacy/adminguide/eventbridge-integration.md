@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/adminguide/even
 ---
 
 # Managing AWS Supply Chain events using Amazon EventBridge
-<a name="eventbridge-integration"></a>
 
 Using EventBridge, you can automate other services to respond to the execution status changes of a Step Functions Standard Workflow.
 

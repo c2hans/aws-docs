@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ImportJob
 ---
 
 # ImportJobSummary
-<a name="API_ImportJobSummary"></a>
 
 A summary of the import job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Step 1: Launch the instance scheduler hub stack
-<a name="step-1-launch-the-instance-scheduler-hub-stack"></a>
 
 Follow the step-by-step instructions in this section to deploy the solution into your account.
 

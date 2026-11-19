@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Knowledge and Grounding
-<a name="knowledge-and-grounding"></a>
 
 AVX uses a dual grounding strategy to deliver accurate, contextual answers across every persona and channel. A Bedrock Knowledge Base provides reference-document retrieval for unstructured automotive content; AgentCore Memory provides metadata-tagged long-term memory (LTM) for structured, per-persona tabular data sourced from ADP data products. Together they ensure that every agent response is grounded in authoritative data rather than generated from the model’s training knowledge alone.
 

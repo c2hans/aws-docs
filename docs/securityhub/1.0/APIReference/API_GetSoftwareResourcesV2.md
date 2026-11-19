@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetSoft
 ---
 
 # GetSoftwareResourcesV2
-<a name="API_GetSoftwareResourcesV2"></a>
 
 Returns a list of resources that contain a specific software package. You identify the package with `PackageName` and `PackageType`. To narrow the results to one version of the package, include `PackageVersion`.
 

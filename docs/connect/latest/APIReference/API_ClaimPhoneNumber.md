@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ClaimPho
 ---
 
 # ClaimPhoneNumber
-<a name="API_ClaimPhoneNumber"></a>
 
 Claims an available phone number to your Connect Customer instance or traffic distribution group. You can call this API only in the same AWS Region where the Connect Customer instance or traffic distribution group was created.
 

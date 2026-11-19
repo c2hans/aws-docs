@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Reso
 ---
 
 # ResourceGatewaySummary
-<a name="API_ResourceGatewaySummary"></a>
 
 Summary information about a resource gateway.
 

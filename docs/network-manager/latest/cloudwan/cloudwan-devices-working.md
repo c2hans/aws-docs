@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # View device details in an AWS Cloud WAN global network
-<a name="cloudwan-devices-working"></a>
 
 View details about a device. On the device details page you can access tabs:
 +  **Overview**

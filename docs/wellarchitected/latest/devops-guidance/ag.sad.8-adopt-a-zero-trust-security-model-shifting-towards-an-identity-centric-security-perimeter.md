@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.SAD.8] Adopt a zero trust security model, shifting towards an identity-centric security perimeter
-<a name="ag.sad.8-adopt-a-zero-trust-security-model-shifting-towards-an-identity-centric-security-perimeter"></a>
 
  **Category:** RECOMMENDED
 

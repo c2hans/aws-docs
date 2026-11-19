@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_StepConfig.h
 ---
 
 # StepConfig
-<a name="API_StepConfig"></a>
 
 Specification for a cluster (job flow) step.
 

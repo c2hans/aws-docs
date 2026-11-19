@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TlsVali
 ---
 
 # TlsValidationContext
-<a name="API_TlsValidationContext"></a>
 
 An object that represents how the proxy will validate its peer during Transport Layer Security (TLS) negotiation.
 

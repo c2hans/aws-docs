@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # MatchmakingSucceeded
-<a name="match-events-matchmakingsucceeded"></a>
 
 Matchmaking has successfully completed and a game session has been created.
 

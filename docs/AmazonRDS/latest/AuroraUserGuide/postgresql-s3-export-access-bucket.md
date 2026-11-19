@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/postgre
 ---
 
 # Setting up access to an Amazon S3 bucket
-<a name="postgresql-s3-export-access-bucket"></a>
 
 To export data to Amazon S3, give your PostgreSQL DB cluster permission to access the Amazon S3 bucket that the files are to go in.
 

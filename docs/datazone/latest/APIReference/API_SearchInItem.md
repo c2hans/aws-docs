@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_SearchI
 ---
 
 # SearchInItem
-<a name="API_SearchInItem"></a>
 
 The details of the search.
 

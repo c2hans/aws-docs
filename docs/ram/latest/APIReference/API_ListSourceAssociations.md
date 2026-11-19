@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ListSourceAs
 ---
 
 # ListSourceAssociations
-<a name="API_ListSourceAssociations"></a>
 
 Lists source associations for resource shares. Source associations control which sources can be used with service principals in resource shares. This operation provides visibility into source associations for resource share owners.
 

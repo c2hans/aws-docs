@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend
-<a name="backend"></a>
 
 All Amplify apps have a backend. The backend has settings and configurations for data storage, security, and other important logic that your app's users don't see. The easiest way to manage your Amplify app backend is using the Amplify Admin UI for your app.
 

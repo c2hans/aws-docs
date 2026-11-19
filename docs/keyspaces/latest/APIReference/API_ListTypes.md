@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_ListTy
 ---
 
 # ListTypes
-<a name="API_ListTypes"></a>
 
  The `ListTypes` operation returns a list of types for a specified keyspace.
 

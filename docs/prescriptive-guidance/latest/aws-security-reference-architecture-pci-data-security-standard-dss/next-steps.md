@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-securit
 ---
 
 # System Hardening and Secure Configuration
-<a name="next-steps"></a>
 
 System hardening and secure configuration establish the foundational security posture of all system components within the cardholder data environment. PCI DSS Requirement 2 mandates applying secure configurations to all system components, ensuring that vendor defaults are changed, unnecessary services are disabled, and security parameters are configured to prevent misuse. In cloud environments, infrastructure-as-code, automated configuration management, and continuous compliance monitoring provide opportunities to implement and maintain secure configurations with greater consistency, auditability, and scalability than traditional manual configuration approaches.
 

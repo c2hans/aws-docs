@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # PutAlarmMuteRule
-<a name="API_PutAlarmMuteRule"></a>
 
 Creates or updates an alarm mute rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-manifest-paths.h
 ---
 
 # Customizing the paths inside HLS manifests
-<a name="hls-manifest-paths"></a>
 
 When you create an HLS output group in a standard MediaLive channel, you can set up custom manifests.
 

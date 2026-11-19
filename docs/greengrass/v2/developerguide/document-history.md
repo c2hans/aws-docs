@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/document-hi
 ---
 
 # Document history for the AWS IoT Greengrass V2 Developer Guide
-<a name="document-history"></a>
 
 The following table describes the documentation for this release of AWS IoT Greengrass Version 2.
 + **API version:** 2020-11-30

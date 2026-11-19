@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-rdsoracle2aurora.ste
 ---
 
 # Step 11: Delete Walkthrough Resources
-<a name="chap-rdsoracle2aurora.steps.deleteresources"></a>
 
 After you have completed this walkthrough, perform the following steps to avoid being charged further for AWS resources used in the walkthrough. It’s necessary that you do the steps in order, because some resources cannot be deleted if they have a dependency upon another resource.
 

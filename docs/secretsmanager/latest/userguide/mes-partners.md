@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Managed external secrets Partners
-<a name="mes-partners"></a>
 
 Secrets Manager natively integrates with third party applications to rotate secrets held by the partner. Each partner defines the metadata and secret value fields required to rotate the secrets.
 

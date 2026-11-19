@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/c
 ---
 
 # Step 2: Create the revocation Connection Function
-<a name="create-revocation-connection-function"></a>
 
 Create a Connection Function that checks certificate serial numbers against the KeyValueStore to determine if certificates are revoked.
 

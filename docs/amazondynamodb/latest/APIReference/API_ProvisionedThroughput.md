@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_P
 ---
 
 # ProvisionedThroughput
-<a name="API_ProvisionedThroughput"></a>
 
 Represents the provisioned throughput settings for the specified global secondary index. You must use `ProvisionedThroughput` or `OnDemandThroughput` based on your table’s capacity mode.
 

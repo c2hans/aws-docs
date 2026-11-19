@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCPERF05-BP04 Use instance storage when available and appropriate
-<a name="eucperf05-bp04"></a>
 
  An instance store provides temporary block-level storage for your instance. This storage is located on disks that are physically attached to the host computer. Instance store is ideal for temporary storage of information that changes frequently, such as buffers, caches, scratch data, and other temporary content.
 

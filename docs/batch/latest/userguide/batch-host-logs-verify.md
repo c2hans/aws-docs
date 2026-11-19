@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-host-logs-v
 ---
 
 # Step 4: Verify and troubleshoot
-<a name="batch-host-logs-verify"></a>
 
 After you submit a job that triggers instance scale-up, verify that log files appear in the Amazon S3 bucket.
 

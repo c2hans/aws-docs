@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/continuous-deployment-pi
 ---
 
 # Set Up a Continuous Deployment Pipeline Using AWS CodePipeline
-<a name="continuous-deployment-pipeline"></a>
 
 |  |  |
 | --- |--- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-rules-ed
 ---
 
 # Edit or replace a rules configuration file
-<a name="AMP-rules-edit"></a>
 
 If you want to change the rules in a rule file that you have already uploaded to Amazon Managed Service for Prometheus, you can either upload a new rules file to replace the existing configuration, or you can edit the current configuration directly in the console. Optionally, you can download the current file, edit it in a text editor, then upload the new version.
 

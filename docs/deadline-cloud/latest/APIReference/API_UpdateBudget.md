@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UpdateBudget
-<a name="API_UpdateBudget"></a>
 
 Updates a budget that sets spending thresholds for rendering activity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-custom.html
 ---
 
 # Use custom setup for Amazon SageMaker AI
-<a name="onboard-custom"></a>
 
 The **Set up for organizations** (custom setup) guides you through an advanced setup for your Amazon SageMaker AI domain. This option provides information and recommendations to help you understand and control all aspects of the account configuration, including permissions, integrations, and encryption. Use this option if you want to set up a custom domain. For information about domains, see [Amazon SageMaker AI domain overview](gs-studio-onboard.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/flowlog-fh-create-source.
 ---
 
 # Create the AWS Transit Gateway Flow Logs source account role for Amazon Data Firehose
-<a name="flowlog-fh-create-source"></a>
 
 From the source account, create the source role in the AWS Identity and Access Management console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/actions-d
 ---
 
 # DeleteMessage (Publish)
-<a name="actions-deletemessage-publish"></a>
 
 Instructs other clients to delete a message.
 

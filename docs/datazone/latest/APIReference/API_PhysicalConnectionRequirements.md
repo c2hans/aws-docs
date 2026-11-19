@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Physica
 ---
 
 # PhysicalConnectionRequirements
-<a name="API_PhysicalConnectionRequirements"></a>
 
 Physical connection requirements of a connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dh-outpost-alloc
 ---
 
 # Allocate an Amazon EC2 Dedicated Host on AWS Outposts
-<a name="dh-outpost-allocate"></a>
 
 You allocate and use Dedicated Hosts on Outposts in the same way that would with Dedicated Hosts in an AWS Region.
 

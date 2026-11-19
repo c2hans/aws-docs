@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_As
 ---
 
 # AssociateVirtualInterface
-<a name="API_AssociateVirtualInterface"></a>
 
 Associates a virtual interface with a specified link aggregation group (LAG) or connection. Connectivity to AWS is temporarily interrupted as the virtual interface is being migrated. If the target connection or LAG has an associated virtual interface with a conflicting VLAN number or a conflicting IP address, the operation fails.
 

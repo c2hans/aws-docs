@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListT
 ---
 
 # ListTestGridProjectsRequest
-<a name="API_ListTestGridProjectsRequest"></a>
 
 ## Contents
 <a name="API_ListTestGridProjectsRequest_Contents"></a>

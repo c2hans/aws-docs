@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Call a REST API integrated with an Amazon Cognito user pool
-<a name="apigateway-invoke-api-integrated-with-cognito-user-pool"></a>
 
 To call a method with a user pool authorizer configured, the client must do the following:
 + Enable the user to sign up with the user pool.

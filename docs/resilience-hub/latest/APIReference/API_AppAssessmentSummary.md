@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # AppAssessmentSummary
-<a name="API_AppAssessmentSummary"></a>
 
 Defines an application assessment summary.
 

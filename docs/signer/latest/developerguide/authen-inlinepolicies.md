@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/authen-inli
 ---
 
 # Inline policies for Signer
-<a name="authen-inlinepolicies"></a>
 
 Inline policies are standalone identity-based policies that an administrator creates and embeds directly into a single principal (user, group, or role). Administrators can create and manage policies using the [AWS Management Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html), the [AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-cli.html), or the [IAM API](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-api.html).
 

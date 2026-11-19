@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/UserGuide/managing-targ
 ---
 
 # Using templated targets in EventBridge Scheduler
-<a name="managing-targets-templated"></a>
 
  *Templated targets* are a set of common API operations across a group of core AWS services, such as Amazon SQS, Lambda, and Step Functions. For example, you can target Lambda's [`Invoke`](https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke) operation by providing the function ARN, or Amazon SQS's [`SendMessage`](https://docs.aws.amazon.com/) operation using the queue ARN. To configure a templated target, you must also grant permissions to the schedule's execution role to perform the targeted API operation.
 

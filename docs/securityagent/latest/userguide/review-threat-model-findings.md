@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/review-th
 ---
 
 # Review threats from a threat model
-<a name="review-threat-model-findings"></a>
 
 After a threat model run completes, review the system overview and threats to understand how your application could be attacked and what to do about it. The system overview is a comprehensive document describing your application’s architecture, trust boundaries, data flows, and security posture. Each threat includes a statement, severity level, STRIDE classification, affected assets, and a recommendation for addressing it.
 

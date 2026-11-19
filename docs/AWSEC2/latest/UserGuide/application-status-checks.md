@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/application-stat
 ---
 
 # Application status checks
-<a name="application-status-checks"></a>
 
 Application status checks help you monitor the performance and health of your applications running on Amazon EC2. With application status checks, you can detect and respond to application health impairments by monitoring your applications through configurable paths and ports. For example, you can use application status checks to confirm that your web server is listening on its expected port and accepting new connections.
 

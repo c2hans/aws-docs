@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/de
 ---
 
 # Deploy a CockroachDB cluster in Amazon EKS by using Terraform
-<a name="deploy-cockroachdb-on-eks-using-terraform"></a>
 
 *Sandip Gangapadhyay and Kalyan Senthilnathan, Amazon Web Services*
 

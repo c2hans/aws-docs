@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_Operation.html
 ---
 
 # Operation
-<a name="API_Operation"></a>
 
 Information about an operation within a durable execution.
 

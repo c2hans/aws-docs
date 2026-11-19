@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::EndpointConfig CaptureContentTypeHeader
-<a name="aws-properties-sagemaker-endpointconfig-capturecontenttypeheader"></a>
 
 Specifies the JSON and CSV content types of the data that the endpoint captures.
 

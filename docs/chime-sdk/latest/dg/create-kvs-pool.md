@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-kvs-pool.html
 ---
 
 # Creating a Kinesis Video Streams pool for Amazon Chime SDK media stream pipelines
-<a name="create-kvs-pool"></a>
 
 The Kinesis Video Streams (KVS) pool for your media stream pipeline must belong to the same AWS account as the Amazon Chime SDK meeting. You create a Kinesis Video Streams pool by calling the [CreateMediaPipelineKinesisVideoStreamPool](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaPipelineKinesisVideoStreamPool.html) API.
 

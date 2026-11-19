@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Build your own centralized log analytics platform with Amazon OpenSearch Service in 20 minutes
-<a name="solution-overview"></a>
 
 **Important**
 This AWS Solution will retire in December 2026. We encourage customers to explore using [Amazon CloudWatch's new unified data management and analytics capabilities](https://aws.amazon.com/blogs/aws/amazon-cloudwatch-introduces-unified-data-management-and-analytics-for-operations-security-and-compliance/). Learn more about [AWS CloudWatch unified data and telemetry](https://aws.amazon.com/cloudwatch/features/unified-data-and-telemetry/) and give it a try in the [AWS CloudWatch console](https://console.aws.amazon.com/cloudwatch/).

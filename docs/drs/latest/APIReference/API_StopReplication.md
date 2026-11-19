@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_StopReplicat
 ---
 
 # StopReplication
-<a name="API_StopReplication"></a>
 
 Stops replication for a Source Server. This action would make the Source Server unprotected, delete its existing snapshots and stop billing for it.
 

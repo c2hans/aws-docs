@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # AIPromptVersionSummary
-<a name="API_amazon-q-connect_AIPromptVersionSummary"></a>
 
 The summary of the AI Prompt version.
 

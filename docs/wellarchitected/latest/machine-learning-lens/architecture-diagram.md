@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # ML lifecycle architecture diagram
-<a name="architecture-diagram"></a>
 
  Figure 3 shows the ML lifecycle phases with the *data processing phase* (for example, Process Data) expanded into a *data collection sub-phase* (Collect Data) and a *data preparation sub-phase* (Pre-process Data and Engineer Features). These sub-phases are discussed in more detail in this section.
 

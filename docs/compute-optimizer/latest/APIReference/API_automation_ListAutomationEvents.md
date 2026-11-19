@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ListAutomationEvents
-<a name="API_automation_ListAutomationEvents"></a>
 
 Lists automation events based on specified filters. You can retrieve events that were created within the past year.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/definiti
 ---
 
 # Definitions
-<a name="definitions-rel"></a>
 
  Reliability encompasses four focus areas:
 

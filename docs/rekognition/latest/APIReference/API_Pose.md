@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Pose
 ---
 
 # Pose
-<a name="API_Pose"></a>
 
 Indicates the pose of the face as determined by its pitch, roll, and yaw.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/connect-odbc-
 ---
 
 # Connect to Amazon DocumentDB from Microsoft Power BI Desktop
-<a name="connect-odbc-power-bi"></a>
 
 **Topics**
 + [Prerequisites](#odbc-power-bi-prerequisites)

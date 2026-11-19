@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/enab
 ---
 
 # Enable zonal shift for your Network Load Balancer
-<a name="enable-zonal-shift"></a>
 
 Zonal shift is disabled by default and must be enabled on each Network Load Balancer. This ensures that you can start a zonal shift using only the specific Network Load Balancers that you want. For more information, see [Zonal shift for your Network Load Balancer](zonal-shift.md).
 

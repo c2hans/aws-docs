@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # LogFieldsListItem
-<a name="API_LogFieldsListItem"></a>
 
 Represents a log field with its name and data type information for a specific data source.
 

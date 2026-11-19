@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/intro-lifecycl
 ---
 
 # Adding filters to Lifecycle rules
-<a name="intro-lifecycle-filters"></a>
 
 Filters are an optional Lifecyle rule element that you can use to specify which objects that the rule applies to.
 

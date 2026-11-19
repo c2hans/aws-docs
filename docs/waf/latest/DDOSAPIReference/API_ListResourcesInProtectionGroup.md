@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_ListReso
 ---
 
 # ListResourcesInProtectionGroup
-<a name="API_ListResourcesInProtectionGroup"></a>
 
 Retrieves the resources that are included in the protection group.
 

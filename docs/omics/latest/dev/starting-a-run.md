@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/starting-a-run.html
 ---
 
 # Start a run in HealthOmics
-<a name="starting-a-run"></a>
 
 When you start a run, you specify the resources that HealthOmics allocates for the run. The following settings are available:
 

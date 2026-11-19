@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/getstar
 ---
 
 # Step 5: Create launch roles
-<a name="getstarted-launchrole-Terraform"></a>
 
 In this step, you will create an IAM role (launch role) specifying the permissions that the Terraform provisioning engine and AWS Service Catalog can assume when an end user launches a HashiCorp Terraform product.
 

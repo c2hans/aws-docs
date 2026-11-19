@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedServer
-<a name="API_DescribedServer"></a>
 
 Describes the properties of a file transfer protocol-enabled server that was specified.
 

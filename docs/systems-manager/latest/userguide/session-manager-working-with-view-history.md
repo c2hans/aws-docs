@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/session
 ---
 
 # View session history
-<a name="session-manager-working-with-view-history"></a>
 
 You can use the AWS Systems Manager console or the AWS Command Line Interface (AWS CLI) to view information about sessions in your account. In the console, you can view session details such as the following:
 + The ID of the session

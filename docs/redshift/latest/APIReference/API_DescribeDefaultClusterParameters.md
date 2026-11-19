@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeDefaultClusterParameters
-<a name="API_DescribeDefaultClusterParameters"></a>
 
 Returns a list of parameter settings for the specified parameter group family.
 
@@ -21,7 +20,7 @@ Length Constraints: Maximum length of 2147483647.
 Required: Yes
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeDefaultClusterParameters](#API_DescribeDefaultClusterParameters) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeDefaultClusterParameters](API_DescribeDefaultClusterParameters.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 Required: No

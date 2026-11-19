@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/security-sandbox-
 ---
 
 # Security and sandbox in apps in Quick
-<a name="security-sandbox-apps"></a>
 
 Apps in Quick inherits the enterprise-grade authentication and authorization of AWS Quick. Users access apps through their existing Quick identity, and every app runs inside a secure sandboxed iframe.
 

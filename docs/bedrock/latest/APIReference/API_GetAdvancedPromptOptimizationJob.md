@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GetAdvan
 ---
 
 # GetAdvancedPromptOptimizationJob
-<a name="API_GetAdvancedPromptOptimizationJob"></a>
 
 Gets information about an advanced prompt optimization job.
 

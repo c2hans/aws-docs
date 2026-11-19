@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/auth-conc
 ---
 
 # Authentication overview
-<a name="auth-concept-overview"></a>
 
 Amazon Location Service supports three authentication methods, each designed for different use cases. They differ in the APIs they can access, complexity, flexibility, and intended audience.
 

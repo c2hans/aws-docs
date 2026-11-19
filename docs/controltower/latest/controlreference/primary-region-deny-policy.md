@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/pri
 ---
 
 # Deny access to AWS based on the requested AWS Region
-<a name="primary-region-deny-policy"></a>
 
 *This control is commonly referred to as the Region deny control, or *landing zone* Region deny control.*
 

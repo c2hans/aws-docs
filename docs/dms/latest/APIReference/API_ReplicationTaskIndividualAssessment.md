@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ReplicationT
 ---
 
 # ReplicationTaskIndividualAssessment
-<a name="API_ReplicationTaskIndividualAssessment"></a>
 
 Provides information that describes an individual assessment from a premigration assessment run.
 

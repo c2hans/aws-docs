@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/c-sdk.html
 ---
 
 # AWS IoT Device SDK for Embedded C
-<a name="c-sdk"></a>
 
 **Note**
 This SDK is intended for use by experienced embedded-software developers.

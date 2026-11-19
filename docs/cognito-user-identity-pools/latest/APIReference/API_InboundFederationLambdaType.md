@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # InboundFederationLambdaType
-<a name="API_InboundFederationLambdaType"></a>
 
 The properties of an inbound federation Lambda trigger.
 

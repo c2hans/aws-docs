@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-cluster
 ---
 
 # rds-cluster-multi-az-enabled
-<a name="rds-cluster-multi-az-enabled"></a>
 
 Checks if Amazon Aurora DB clusters have DB instances deployed across multiple Availability Zones. The rule is NON\_COMPLIANT if the cluster's multiAZ property is false.
 

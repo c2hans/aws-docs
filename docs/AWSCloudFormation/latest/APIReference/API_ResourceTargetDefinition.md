@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ResourceTargetDefinition
-<a name="API_ResourceTargetDefinition"></a>
 
 The field that CloudFormation will change, such as the name of a resource's property, and whether the resource will be recreated.
 

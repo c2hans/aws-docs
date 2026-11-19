@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DeleteSegmentDefinition
-<a name="API_connect-customer-profiles_DeleteSegmentDefinition"></a>
 
 Deletes a segment definition from the domain.
 

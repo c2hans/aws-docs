@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListInstances
-<a name="API_ListInstances"></a>
 
 Lists the details of the organization and account instances of IAM Identity Center that were created in or visible to the account calling this API.
 

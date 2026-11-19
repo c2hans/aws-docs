@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-gi
 ---
 
 # Step 6: Deploy the application to the instance
-<a name="tutorials-github-deploy-application"></a>
 
 In this step, you use the CodeDeploy console or the AWS CLI to deploy the sample revision from your GitHub repository to your instance.
 

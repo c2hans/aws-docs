@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 ---
 
 # ImageState
-<a name="API_ImageState"></a>
 
 Image status and the reason for that status.
 

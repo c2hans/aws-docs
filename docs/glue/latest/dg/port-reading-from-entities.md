@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/port-reading-from-entitie
 ---
 
 # Reading from Port entities
-<a name="port-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/scc.h
 ---
 
 # Strongly connected components algorithm
-<a name="scc"></a>
 
 Strongly connected components (SCC) are the maximally connected subgraphs of a directed graph where every node is reachable from every other node (in other words, there exists a path between every node in the subgraph).
 

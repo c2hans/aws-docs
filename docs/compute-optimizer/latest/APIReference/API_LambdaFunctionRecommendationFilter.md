@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # LambdaFunctionRecommendationFilter
-<a name="API_LambdaFunctionRecommendationFilter"></a>
 
 Describes a filter that returns a more specific list of AWS Lambda function recommendations. Use this filter with the [GetLambdaFunctionRecommendations](API_GetLambdaFunctionRecommendations.md) action.
 

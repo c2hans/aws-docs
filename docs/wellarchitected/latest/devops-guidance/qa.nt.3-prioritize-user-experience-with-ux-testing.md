@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 ---
 
 # [QA.NT.3] Prioritize user experience with UX testing
-<a name="qa.nt.3-prioritize-user-experience-with-ux-testing"></a>
 
  **Category:** RECOMMENDED
 

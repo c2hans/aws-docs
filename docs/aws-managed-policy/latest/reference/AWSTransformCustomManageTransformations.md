@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSTransformCustomManageTransformations
-<a name="AWSTransformCustomManageTransformations"></a>
 
 **Description**: Enables the management of transformation resources and execution of transformations in AWS Transform custom.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_Accounting.h
 ---
 
 # Accounting
-<a name="API_Accounting"></a>
 
 The accounting configuration includes configurable settings for Slurm accounting. It's a property of the **ClusterSlurmConfiguration** object.
 

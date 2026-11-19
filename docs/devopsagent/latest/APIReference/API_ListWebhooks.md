@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListWebhooks
-<a name="API_ListWebhooks"></a>
 
 List all webhooks for given Association
 

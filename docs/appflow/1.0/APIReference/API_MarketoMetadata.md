@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_MarketoMeta
 ---
 
 # MarketoMetadata
-<a name="API_MarketoMetadata"></a>
 
  The connector metadata specific to Marketo.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-using-identity-based-p
 ---
 
 # Using identity-based policies with Amazon SNS
-<a name="sns-using-identity-based-policies"></a>
 
 Amazon Simple Notification Service integrates with AWS Identity and Access Management (IAM) so that you can specify which Amazon SNS actions a user in your AWS account can perform with Amazon SNS resources. You can specify a particular topic in the policy. For example, you could use variables when creating an IAM policy that grants certain users in your organization permission to use the `Publish` action with specific topics in your AWS account. For more information, see [Policy Variables](https://docs.aws.amazon.com/IAM/latest/UserGuide/PolicyVariables.html) in the *Using IAM* guide.
 

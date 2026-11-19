@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-
 ---
 
 # Create an AWS Lambda Compute Platform deployment (CLI)
-<a name="deployments-create-lambda-cli"></a>
 
 After you have created the application and revision (in AWS Lambda deployments, this is the AppSpec file):
 

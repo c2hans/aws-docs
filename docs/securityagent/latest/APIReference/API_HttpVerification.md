@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ht
 ---
 
 # HttpVerification
-<a name="API_HttpVerification"></a>
 
 Contains HTTP route verification details for a target domain, including the route path and token to serve for domain ownership verification.
 

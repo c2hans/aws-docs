@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_DBEng
 ---
 
 # DBEngineVersion
-<a name="API_DBEngineVersion"></a>
 
  Detailed information about an engine version.
 

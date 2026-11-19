@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/re
 ---
 
 # Amazon GameLift Servers reference guides
-<a name="reference-intro"></a>
 
 This section contains reference documentation for using Amazon GameLift Servers.
 

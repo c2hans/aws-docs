@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-migr
 ---
 
 # Setting up table migration
-<a name="s3-tables-migrate-setting-up"></a>
 
 Before you migrate a table, make sure that you have the required resources and permissions. You can also choose how migration writes your destination table.
 

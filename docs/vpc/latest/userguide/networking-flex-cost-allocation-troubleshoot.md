@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/networking-flex-cos
 ---
 
 # Troubleshoot Networking Flexible Cost Allocation
-<a name="networking-flex-cost-allocation-troubleshoot"></a>
 
 The following topics help you troubleshoot common issues that you might encounter when you use Networking Flexible Cost Allocation (FCA).
 

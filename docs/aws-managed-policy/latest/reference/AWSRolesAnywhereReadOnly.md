@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSRolesAnywhereReadOnly
-<a name="AWSRolesAnywhereReadOnly"></a>
 
 **Description**: Provides read-only permissions to IAM Roles Anywhere resources, including but not limited to: GetTrustAnchor, ListProfiles, GetCRL. There will be no other permissions for other services included in this policy.
 

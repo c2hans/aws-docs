@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateAp
 ---
 
 # UpdateApiCache
-<a name="API_UpdateApiCache"></a>
 
 Updates the cache for the GraphQL API.
 

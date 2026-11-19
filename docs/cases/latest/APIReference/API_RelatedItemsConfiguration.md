@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_RelatedIte
 ---
 
 # RelatedItemsConfiguration
-<a name="API_connect-cases_RelatedItemsConfiguration"></a>
 
 Specifies which types of related items to move from the secondary case to the primary case when you merge cases. Moved related items keep their related item ID, creator, association time, and tags.
 

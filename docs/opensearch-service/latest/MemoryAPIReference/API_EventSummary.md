@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # EventSummary
-<a name="API_EventSummary"></a>
 
 A summary of an event, as returned by `ListEvents`. It doesn't include the payload.
 

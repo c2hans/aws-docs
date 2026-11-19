@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/images.html
 ---
 
 # Working with images
-<a name="images"></a>
 
 This section covers the types of analysis that Amazon Rekognition Image can perform on images.
 + [Object and scene detection](labels.md)

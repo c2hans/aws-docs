@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-c
 ---
 
 # Sri Lanka registration
-<a name="nx-country-reg-lk"></a>
 
 The following registrations are available for Sri Lanka.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_St
 ---
 
 # StreamSessionSummary
-<a name="API_StreamSessionSummary"></a>
 
 Summary information about a stream session.
 

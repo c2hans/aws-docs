@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.DB2.htm
 ---
 
 # Using Amazon RDS for Db2 and IBM Db2 LUW as a target for AWS DMS
-<a name="CHAP_Target.DB2"></a>
 
 You can migrate data to an Amazon RDS for Db2 or an on-premises Db2 database from a Db2 LUW database using AWS Database Migration Service (AWS DMS).
 

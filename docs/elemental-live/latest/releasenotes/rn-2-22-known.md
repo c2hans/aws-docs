@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/releasenotes/rn-2-
 ---
 
 # Newly identified issues in version 2.22 and 3.22
-<a name="rn-2-22-known"></a>
 
 The **Version** column shows the point release that the issue applies to.
 

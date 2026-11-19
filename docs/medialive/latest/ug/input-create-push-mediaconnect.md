@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-create-push-me
 ---
 
 # Setting up a MediaConnect input
-<a name="input-create-push-mediaconnect"></a>
 
 This section describes how to create a MediaConnect input. With a MediaConnect input, the service provider pushes content through AWS Elemental MediaConnect to MediaLive. (From the point of view of MediaLive, the upstream system is MediaConnect. The upstream system is not the service provider.)
 

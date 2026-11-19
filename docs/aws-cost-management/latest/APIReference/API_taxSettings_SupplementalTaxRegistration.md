@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SupplementalTaxRegistration
-<a name="API_taxSettings_SupplementalTaxRegistration"></a>
 
  Supplemental TRN details.
 

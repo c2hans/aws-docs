@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle and MySQL regular expressions
-<a name="chap-oracle-aurora-mysql.sql.regularexpressions"></a>
 
  *Regular expressions* help you locate and manipulate specific patterns within text data. You can leverage regular expressions for tasks such as data cleansing, validation, or transformation. The following sections provide details on constructing and utilizing regular expressions in Oracle and MySQL with AWS DMS.
 

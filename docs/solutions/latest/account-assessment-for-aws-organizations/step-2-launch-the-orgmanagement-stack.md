@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # Step 2: Deploy the Org-Management stack
-<a name="step-2-launch-the-orgmanagement-stack"></a>
 
 Deploy the Org-Management stack to the AWS Organizations management account.
 

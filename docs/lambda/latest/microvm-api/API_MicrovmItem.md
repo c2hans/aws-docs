@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_MicrovmIte
 ---
 
 # MicrovmItem
-<a name="API_MicrovmItem"></a>
 
 Contains summary information about a MicroVM instance.
 

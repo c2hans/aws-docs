@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-byo
 ---
 
 # Differences between Developer Edition and BYOM
-<a name="sqlserver-byom-comparison"></a>
 
 The following table compares Developer Edition BYOM with Standard and Enterprise Edition BYOM on RDS for SQL Server.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_DeleteC
 ---
 
 # DeleteClusterSecurityGroup
-<a name="API_DeleteClusterSecurityGroup"></a>
 
 Deletes an Amazon Redshift security group.
 

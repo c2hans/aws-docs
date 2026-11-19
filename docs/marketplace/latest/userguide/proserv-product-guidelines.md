@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/proserv-pro
 ---
 
 # Requirements for professional services products on AWS Marketplace
-<a name="proserv-product-guidelines"></a>
 
 AWS Marketplace maintains requirements for all products and offerings on AWS Marketplace. These requirements help to promote a safe, secure, and trustworthy curated digital catalog for our customers. We encourage sellers to review the implementation of additional controls and protocols as applicable to meet the needs of their specific products.
 

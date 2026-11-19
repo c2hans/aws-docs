@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/va-data-retention.ht
 ---
 
 # Understanding data retention for Amazon Chime SDK voice analytics
-<a name="va-data-retention"></a>
 
 By default, Amazon Chime SDK voice analytics deletes voice embeddings after 3 years. We do this because people’s voices change over time, and also for security. You can use the [UpdateVoiceProfile](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_UpdateVoiceProfile.html) API to update expired voice embeddings.
 

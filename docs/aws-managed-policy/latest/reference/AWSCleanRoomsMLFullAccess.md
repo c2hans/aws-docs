@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCleanRoomsMLFullAccess
-<a name="AWSCleanRoomsMLFullAccess"></a>
 
 **Description**: Allows full access to AWS Clean Rooms ML resources and access to related AWS services.
 

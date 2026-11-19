@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/batch-
 ---
 
 # Getting started with batch evaluation
-<a name="batch-evaluations-getting-started"></a>
 
 This walkthrough takes you from a deployed agent to batch evaluation results using an Acme Store customer support agent. You will create the agent, deploy it, generate sample sessions, run a batch evaluation, and read the results.
 

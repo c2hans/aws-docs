@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomActionNavigationOperation
-<a name="API_CustomActionNavigationOperation"></a>
 
 The navigation operation that navigates between different sheets in the same analysis.
 

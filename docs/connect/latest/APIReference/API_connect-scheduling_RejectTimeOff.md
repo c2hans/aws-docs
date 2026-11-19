@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # RejectTimeOff
-<a name="API_connect-scheduling_RejectTimeOff"></a>
 
 Rejects a time off request.
 

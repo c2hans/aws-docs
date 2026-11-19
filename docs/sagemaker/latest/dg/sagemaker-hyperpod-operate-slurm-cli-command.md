@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-o
 ---
 
 # Managing SageMaker HyperPod Slurm clusters using the AWS CLI
-<a name="sagemaker-hyperpod-operate-slurm-cli-command"></a>
 
 The following topics provide guidance on writing SageMaker HyperPod API request files in JSON format and run them using the AWS CLI commands.
 

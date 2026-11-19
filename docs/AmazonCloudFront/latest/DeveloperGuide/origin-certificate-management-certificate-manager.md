@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/o
 ---
 
 # Certificate management with AWS Certificate Manager
-<a name="origin-certificate-management-certificate-manager"></a>
 
 [AWS Certificate Manager (ACM)](https://aws.amazon.com/certificate-manager/) stores the client certificates that CloudFront presents to your origin servers during origin mutual TLS authentication.
 

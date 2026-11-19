@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EbsCardIn
 ---
 
 # EbsCardInfo
-<a name="API_EbsCardInfo"></a>
 
 Describes the performance characteristics of an EBS card on the instance type.
 

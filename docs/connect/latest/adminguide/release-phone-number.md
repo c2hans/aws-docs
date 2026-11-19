@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/release-phone-
 ---
 
 # Release a phone number from Connect Customer back to inventory
-<a name="release-phone-number"></a>
 
 If you want a different phone number, or have extra numbers that you aren't using, you can release them back to inventory. You can do this using the Connect Customer console, or programmatically by using the [ReleasePhoneNumber](https://docs.aws.amazon.com/connect/latest/APIReference/API_ReleasePhoneNumber.html) API.
 

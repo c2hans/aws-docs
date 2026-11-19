@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus02-b
 ---
 
 # SUS02-BP01 Implement elasticity for variable workloads
-<a name="sus02-bp01"></a>
 
  For workloads with variable or unpredictable demand, implement elasticity through serverless technologies and auto-scaling capabilities to allow your infrastructure to dynamically adjust to actual demand. This approach verifies that resources are only consumed when needed and automatically scaled back during periods of low activity, significantly reducing idle capacity and wasted resources.
 

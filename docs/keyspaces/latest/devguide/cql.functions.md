@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/cql.functions.
 ---
 
 # Built-in functions in Amazon Keyspaces
-<a name="cql.functions"></a>
 
 Amazon Keyspaces (for Apache Cassandra) supports a variety of built-in functions that you can use in Cassandra Query Language (CQL) statements.
 

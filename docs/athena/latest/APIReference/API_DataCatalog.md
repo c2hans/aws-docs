@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_DataCatal
 ---
 
 # DataCatalog
-<a name="API_DataCatalog"></a>
 
 Contains information about a data catalog in an AWS account.
 

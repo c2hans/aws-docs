@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayRoute
-<a name="API_GatewayRoute"></a>
 
 A gateway route, which represents the association between a service and a gateway and the service-specific infrastructure that the gateway manages for the service's revisions.
 

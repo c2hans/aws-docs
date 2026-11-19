@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_AcmeExternal
 ---
 
 # AcmeExternalAccountBinding
-<a name="API_AcmeExternalAccountBinding"></a>
 
 Contains detailed information about an ACME external account binding.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # Amazon Security Lake and AWS Organizations
-<a name="services-that-can-integrate-sl"></a>
 
 Amazon Security Lake centralizes security data from cloud, on-premises, and custom sources into a data lake that's stored in your account. By integrating with Organizations, you can create a data lake that collects logs and events across your accounts. For more information see [ Managing multiple accounts with AWS Organizations](https://docs.aws.amazon.com/security-lake/latest/userguide/multi-account-management.html) in the *Amazon Security Lake user guide*.
 

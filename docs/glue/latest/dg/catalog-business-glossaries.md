@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/catalog-business-glossari
 ---
 
 # Business glossaries for AWS Glue Data Catalog
-<a name="catalog-business-glossaries"></a>
 
 **Note**
 Business context and semantic search is in preview for AWS Glue and is subject to change.

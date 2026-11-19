@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAuto
 ---
 
 # AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetails
-<a name="API_AwsAutoScalingAutoScalingGroupMixedInstancesPolicyLaunchTemplateDetails"></a>
 
 Describes a launch template and overrides for a mixed instances policy.
 

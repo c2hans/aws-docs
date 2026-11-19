@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_O
 ---
 
 # OemProgramTrackSettings
-<a name="API_OemProgramTrackSettings"></a>
 
 Program track settings for [OEMEphemeris](API_OEMEphemeris.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/swift-troubleshoo
 ---
 
 # Swift troubleshooting
-<a name="swift-troubleshooting"></a>
 
 The following information might help you troubleshoot common issues with Swift and CodeArtifact.
 

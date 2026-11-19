@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_StepAdj
 ---
 
 # StepAdjustment
-<a name="API_StepAdjustment"></a>
 
 Describes information used to create a step adjustment for a step scaling policy.
 

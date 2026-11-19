@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-custom-o
 ---
 
 # Customize your Amazon Bedrock Agent's behavior with custom orchestration
-<a name="agents-custom-orchestration"></a>
 
 Amazon Bedrock provides you with an option to customize your agent’s orchestration strategy. Custom orchestration gives you full control of how you want your agents to handle multi-step tasks, make decisions, and execute workflows.
 

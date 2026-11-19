@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_D
 ---
 
 # DimensionMapping
-<a name="API_DimensionMapping"></a>
 
 Maps source data to a dimension in the target Timestream for LiveAnalytics table.
 

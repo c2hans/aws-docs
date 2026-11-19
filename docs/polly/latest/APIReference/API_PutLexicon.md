@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/APIReference/API_PutLexicon
 ---
 
 # PutLexicon
-<a name="API_PutLexicon"></a>
 
 Stores a pronunciation lexicon in an AWS Region. If a lexicon with the same name already exists in the region, it is overwritten by the new lexicon. Lexicon operations have eventual consistency, therefore, it might take some time before the lexicon is available to the SynthesizeSpeech operation.
 

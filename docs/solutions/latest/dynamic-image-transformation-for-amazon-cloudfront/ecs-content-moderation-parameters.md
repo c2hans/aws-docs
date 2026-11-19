@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Content moderation parameters
-<a name="ecs-content-moderation-parameters"></a>
 
 **Note**
  **Supported in:** ECS architecture only (v8.1\+).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-publishi
 ---
 
 # Listing your product in AWS Marketplace
-<a name="ml-publishing-your-product-in-aws-marketplace"></a>
 
 After you package your code into model package images or algorithm images, upload your images, and create your Amazon SageMaker AI resources, you can publish your machine learning product in AWS Marketplace. The following sections walk you through the publishing process, which includes creating your product listing, testing your product, and signing off for publishing. Once your product is published, you request changes to update your listing. For more information, see [Managing your machine learning products](ml-product-management.md).
 

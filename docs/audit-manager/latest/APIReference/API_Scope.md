@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Sc
 ---
 
 # Scope
-<a name="API_Scope"></a>
 
  The wrapper that contains the AWS accounts that are in scope for the assessment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeImageAttribute
-<a name="API_DescribeImageAttribute"></a>
 
 Describes the specified attribute of the specified AMI. You can specify only one attribute at a time.
 

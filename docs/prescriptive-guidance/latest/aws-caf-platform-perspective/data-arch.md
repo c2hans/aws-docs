@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-pla
 ---
 
 # Data architecture
-<a name="data-arch"></a>
 
 **Design and evolve a fit-for-purpose data and analytics architecture.**
 

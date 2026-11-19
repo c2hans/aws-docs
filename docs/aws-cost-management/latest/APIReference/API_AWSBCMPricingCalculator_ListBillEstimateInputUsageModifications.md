@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListBillEstimateInputUsageModifications
-<a name="API_AWSBCMPricingCalculator_ListBillEstimateInputUsageModifications"></a>
 
  Lists the input usage modifications associated with a bill estimate.
 

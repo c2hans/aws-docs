@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ForecastResult
-<a name="API_ForecastResult"></a>
 
 The forecast that's created for your query.
 

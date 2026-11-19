@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/automating-awsglue-with-c
 ---
 
 # Automating AWS Glue with EventBridge
-<a name="automating-awsglue-with-cloudwatch-events"></a>
 
 You can use Amazon EventBridge to automate your AWS services and respond automatically to system events such as application availability issues or resource changes. Events from AWS services are delivered to EventBridge in near real time. You can write simple rules to indicate which events are of interest to you, and what automated actions to take when an event matches a rule. The actions that can be automatically triggered include the following:
 + Invoking an AWS Lambda function

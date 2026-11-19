@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sentry-connection-options
 ---
 
 # Sentry connection options
-<a name="sentry-connection-options"></a>
 
 The following are connection options for Sentry:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Sentry object to read.

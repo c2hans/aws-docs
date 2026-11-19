@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/blackbaud-reading-from-en
 ---
 
 # Reading from Blackbaud Raiser's Edge NXT entities
-<a name="blackbaud-reading-from-entities"></a>
 
 **Prerequisite**
 

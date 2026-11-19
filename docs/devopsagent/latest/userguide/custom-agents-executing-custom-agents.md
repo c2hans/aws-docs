@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/custom-agen
 ---
 
 # Executing custom agents
-<a name="custom-agents-executing-custom-agents"></a>
 
 You can execute a custom agent on demand or configure triggers to run it automatically.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_U
 ---
 
 # UpdateApp
-<a name="API_UpdateApp"></a>
 
 Updates an application.
 

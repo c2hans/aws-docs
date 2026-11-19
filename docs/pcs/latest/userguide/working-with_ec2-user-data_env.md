@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_ec2-us
 ---
 
 # Example: Set global environment variables for AWS PCS
-<a name="working-with_ec2-user-data_env"></a>
 
  Provide this script as the value of `"userData"` in your launch template. For more information, see [Working with Amazon EC2 user data for AWS PCS](working-with_ec2-user-data.md).
 

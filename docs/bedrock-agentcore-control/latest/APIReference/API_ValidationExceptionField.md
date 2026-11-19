@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Stores information about a field passed inside a request that resulted in an exception.
 

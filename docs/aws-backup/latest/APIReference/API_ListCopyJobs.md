@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListC
 ---
 
 # ListCopyJobs
-<a name="API_ListCopyJobs"></a>
 
 Returns metadata about your copy jobs.
 

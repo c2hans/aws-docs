@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-s3.
 ---
 
 # Restore S3 data using AWS Backup
-<a name="restoring-s3"></a>
 
 You can restore the S3 data that you backed up using AWS Backup to the S3 Standard storage class. You can restore all the objects in a bucket or specific objects. You can restore them to an existing or new bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-mult
 ---
 
 # Resources
-<a name="resources"></a>
 + [Access an AWS service using an interface VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) (Amazon VPC documentation)
 + [Share your VPC subnets with other accounts](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html) (Amazon VPC documentation)
 + [Shareable Amazon VPC resources](https://docs.aws.amazon.com/ram/latest/userguide/shareable.html#shareable-vpc) (AWS RAM documentation)

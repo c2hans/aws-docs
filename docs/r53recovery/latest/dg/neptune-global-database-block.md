@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/neptune-global-dat
 ---
 
 # Amazon Neptune Global Cluster execution block
-<a name="neptune-global-database-block"></a>
 
 The Amazon Neptune Global Database execution block allows you to perform a *failover* or *switchover* recovery workflow for a Neptune global database.
 + Switchover – This operation was previously called *managed planned failover*. Use this approach for controlled scenarios, such as operational maintenance and other planned operational procedures where all the Amazon Neptune clusters and other services they interact with are in a healthy state. Because this feature synchronizes secondary DB clusters with the primary before making any other changes, RPO is 0 (no data loss).

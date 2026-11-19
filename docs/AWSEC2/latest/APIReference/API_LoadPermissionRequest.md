@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_LoadPermi
 ---
 
 # LoadPermissionRequest
-<a name="API_LoadPermissionRequest"></a>
 
 Describes a load permission.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListComputationModels
-<a name="API_ListComputationModels"></a>
 
 Retrieves a paginated list of summaries of all computation models.
 

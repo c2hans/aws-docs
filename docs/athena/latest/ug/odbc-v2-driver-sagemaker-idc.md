@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-sagemake
 ---
 
 # SageMaker Browser IDC
-<a name="odbc-v2-driver-sagemaker-idc"></a>
 
 An authentication plugin that connects to Amazon Athena through SageMaker Unified Studio. It opens a browser for AWS Identity and Access Management Identity Center sign-in using the OAuth 2.0 Authorization Code flow with PKCE, then exchanges the resulting token for temporary credentials scoped to your SageMaker Unified Studio domain and Athena project environment.
 

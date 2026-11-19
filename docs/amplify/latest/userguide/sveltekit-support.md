@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/sveltekit-suppo
 ---
 
 # Amplify support for SvelteKit
-<a name="sveltekit-support"></a>
 
 SvelteKit is a framework for creating full stack web applications with Svelte.
 

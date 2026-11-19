@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::InspectorV2::CodeSecurityScanConfiguration ScopeSettings
-<a name="aws-properties-inspectorv2-codesecurityscanconfiguration-scopesettings"></a>
 
 The scope settings that define which repositories will be scanned. If the `ScopeSetting` parameter is `ALL` the scan configuration applies to all existing and future projects imported into Amazon Inspector.
 

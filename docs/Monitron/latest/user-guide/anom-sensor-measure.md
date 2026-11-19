@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/Monitron/latest/user-guide/anom-sensor-m
 Amazon Monitron is no longer open to new customers. Existing customers can continue to use the service as normal. For capabilities similar to Amazon Monitron, see our [blog post](https://aws.amazon.com/blogs/machine-learning/maintain-access-and-consider-alternatives-for-amazon-monitron).
 
 # Understanding sensor measurements
-<a name="anom-sensor-measure"></a>
 
 When a sensor is initially paired to an asset, Amazon Monitron will learn from the vibration and temperature data collected from the equipment, establishing a baseline to determine what is "normal" for that asset. It will use this learning to detect potential failures in the future.
 

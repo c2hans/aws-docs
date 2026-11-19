@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ctref/management-
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # EC2 Instance \| Terminate
-<a name="management-standalone-ec2-instance-terminate"></a>
 
 Terminate up to fifty EC2 instances. The automation checks that none of the instances are part of an Auto Scaling group and none have termination protection enabled. Instances meeting either of those criteria are not terminated. Standalone resources for testing purposes are created by AMS upon your request, they are not part of a stack and can't be deleted with ct-0q0bic0ywqk6c.
 

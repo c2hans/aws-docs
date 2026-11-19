@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_CellS
 ---
 
 # CellSignals
-<a name="API_CellSignals"></a>
 
 The cellular network communication infrastructure that the device uses.
 

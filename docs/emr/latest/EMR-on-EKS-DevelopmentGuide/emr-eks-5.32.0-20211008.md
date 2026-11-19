@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # emr-5.32.0-20211008
-<a name="emr-eks-5.32.0-20211008"></a>
 
 **Release notes**: `emr-5.32.0-20211008` was released on Dec 9, 2021. Compared to the previous version, this version contains issue fixes and security updates.
 

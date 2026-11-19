@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # HttpHeader
-<a name="API_HttpHeader"></a>
 
 The HTTP header in the `ContextData` parameter.
 

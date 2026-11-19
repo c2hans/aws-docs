@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/slack-extension-u
 ---
 
 # AWS Quick Slack extension user guide
-<a name="slack-extension-user-guide"></a>
 
 As a user, you can access AWS Quick directly within Slack to get AI-powered assistance without leaving your workspace. The extension integrates seamlessly into your Slack environment, providing instant access to knowledge bases and intelligent responses.
 

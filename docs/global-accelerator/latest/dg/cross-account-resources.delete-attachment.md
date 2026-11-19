@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/cross-accou
 ---
 
 # Delete a cross-account attachment in Global Accelerator
-<a name="cross-account-resources.delete-attachment"></a>
 
 Follow the steps in this section to delete a cross-account attachment using the AWS Global Accelerator console.
 

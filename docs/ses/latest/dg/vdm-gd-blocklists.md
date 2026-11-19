@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/vdm-gd-blocklists.html
 ---
 
 # Blocklists
-<a name="vdm-gd-blocklists"></a>
 
 Blocklist monitoring watches your dedicated IPs and sending domains against the industry's major blocklist operators, with hourly checks and proactive alerts through Virtual Deliverability Manager Advisor when anything is listed.
 

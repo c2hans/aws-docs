@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # DimensionGroupDetail
-<a name="API_DimensionGroupDetail"></a>
 
 Information about dimensions within a dimension group.
 

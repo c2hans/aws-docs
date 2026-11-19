@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-n
 ---
 
 # IVS Release Notes \| Low-Latency Streaming
-<a name="release-notes"></a>
 
 This document contains all Amazon IVS Low-Latency Streaming release notes, latest first, organized by date of release.
 

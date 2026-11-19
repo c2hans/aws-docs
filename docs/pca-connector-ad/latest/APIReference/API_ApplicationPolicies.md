@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # ApplicationPolicies
-<a name="API_ApplicationPolicies"></a>
 
 Application policies describe what the certificate can be used for.
 

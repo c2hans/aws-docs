@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/getting-sta
 ---
 
 # Getting Started with IVS Real-Time Streaming
-<a name="getting-started"></a>
 
 This document takes you through the steps involved in integrating Amazon IVS Real-Time Streaming into your app.
 

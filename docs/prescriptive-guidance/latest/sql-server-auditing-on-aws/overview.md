@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Overview of SQL Server auditing levels and process
-<a name="overview"></a>
 
 The following sections provide information about server-level and database-level auditing, auditing processes, benefits, and disadvantages.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_
 ---
 
 # MonitorSummary
-<a name="API_MonitorSummary"></a>
 
 A summary of information about a monitor, including the ARN, the name, and the status.
 

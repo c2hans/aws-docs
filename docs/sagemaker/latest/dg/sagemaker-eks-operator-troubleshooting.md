@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-eks-operat
 ---
 
 # Troubleshooting
-<a name="sagemaker-eks-operator-troubleshooting"></a>
 
 See the following sections to learn how to troubleshoot error when using the training operator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/app-blo
 ---
 
 # App Blocks
-<a name="app-blocks"></a>
 
 App blocks represent a virtual hard disk (VHD) that is stored within an Amazon S3 bucket within your account that contains the application files and binaries necessary to launch the applications your users will use. App blocks also include the setup script that informs the operating system how to handle the VHD file.
 

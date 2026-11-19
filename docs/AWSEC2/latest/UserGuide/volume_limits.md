@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.ht
 ---
 
 # Amazon EBS volume limits for Amazon EC2 instances
-<a name="volume_limits"></a>
 
 The maximum number of Amazon EBS volumes that you can attach to an instance depends on the instance type and instance size. If you exceed the volume attachment limit for an instance, the attachment request fails with the `AttachmentLimitExceeded` error.
 

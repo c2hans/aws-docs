@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListAutonomo
 ---
 
 # ListAutonomousDatabasePeers
-<a name="API_ListAutonomousDatabasePeers"></a>
 
 Lists the peer databases of the specified Autonomous Database.
 

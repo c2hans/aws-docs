@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-en
 ---
 
 # Layer 1: Building reliable data and compute infrastructure for generative AI
-<a name="infrastructure"></a>
 
 For developing generative AI applications, particularly if training or fine-tuning a foundation model is necessary, a robust data foundation and compute infrastructure is critical. As enterprises embark on their generative AI journey, they need infrastructure that can support the entire machine learning lifecycle. They also need to strike the right balance between performance, cost, and operational efficiency.
 

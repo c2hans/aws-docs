@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSREL08-BP03 Align architecture priorities with scientific and regulatory context
-<a name="lsrel08-bp03"></a>
 
  Early in the design cycle, evaluate the scientific and regulatory priorities of each workload. In patient-facing clinical workloads, design for continuous availability with reconciliation workflows. In regulated manufacturing, prioritize data integrity in the architecture, even if this limits availability. Planning with these priorities in mind avoids trade-off surprises later.
 

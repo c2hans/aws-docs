@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsd
 ---
 
 # Data retrieval APIs for AWS Data Pipeline
-<a name="awsdatapipeline"></a>
 
 AWS Data Pipeline provides the following APIs for data retrieval.
 

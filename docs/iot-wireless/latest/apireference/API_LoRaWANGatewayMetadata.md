@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANGatewayMetadata
-<a name="API_LoRaWANGatewayMetadata"></a>
 
 LoRaWAN gateway metatdata.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-
 ---
 
 # Integrations for REST APIs in API Gateway
-<a name="how-to-integration-settings"></a>
 
  After setting up an API method, you must integrate it with an endpoint in the backend. A backend endpoint is also referred to as an integration endpoint and can be a Lambda function, an HTTP webpage, or an AWS service action.
 

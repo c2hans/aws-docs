@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # NodeFailureEvent
-<a name="API_agent-runtime_NodeFailureEvent"></a>
 
 Contains information about a failure that occurred at a specific node during a flow execution.
 

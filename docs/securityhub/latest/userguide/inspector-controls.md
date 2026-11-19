@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/inspector-c
 ---
 
 # Security Hub CSPM controls for Amazon Inspector
-<a name="inspector-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the Amazon Inspector service and resources.
 

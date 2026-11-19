@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_Unloc
 ---
 
 # UnlockDelay
-<a name="API_UnlockDelay"></a>
 
 Information about the retention rule unlock delay. The unlock delay is the period after which a retention rule can be modified or edited after it has been unlocked by a user with the required permissions. The retention rule can't be modified or deleted during the unlock delay.
 

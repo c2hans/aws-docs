@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MediaDevi
 ---
 
 # MediaDeviceMemoryInfo
-<a name="API_MediaDeviceMemoryInfo"></a>
 
 Describes the memory available to the media accelerator.
 

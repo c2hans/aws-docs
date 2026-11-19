@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/doc-history.html
 ---
 
 # Document history for Amazon Transcribe
-<a name="doc-history"></a>
 + **Latest documentation update:** 13 November 2023
 
 The following table describes important changes in each release of Amazon Transcribe. For notification about updates to this documentation, you can subscribe to an RSS feed.
@@ -101,4 +100,4 @@ The following table describes important changes in each release of Amazon Transc
 | [New feature](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_TranscriptionJobSummary.html) | You can now specify your own location to store the output from a transcription job. | July 11, 2018 |
 | [New feature](https://docs.aws.amazon.com/transcribe/latest/dg/monitoring-transcribe.html) | Added AWS CloudTrail and Amazon CloudWatch Events integration. | June 28, 2018 |
 | [New feature](https://docs.aws.amazon.com/transcribe/latest/dg/custom-vocabulary.html) | Amazon Transcribe adds support for custom vocabularies. | April 4, 2018 |
-| [New guide](#doc-history) | This is the first release of the *Amazon Transcribe Developer Guide*. | November 29, 2017 |
+| [New guide](doc-history.md) | This is the first release of the *Amazon Transcribe Developer Guide*. | November 29, 2017 |

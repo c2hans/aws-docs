@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/c
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
 # Notifications for the AWS Partner Central Channel API
-<a name="channel-api-events"></a>
 
 Events for the channel API provide real-time notifications about changes in the status or the details of channel-related activities. These events help keep your systems in sync with AWS Partner Central, and help ensure timely responses and updates.
 

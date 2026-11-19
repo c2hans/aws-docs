@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # UrlConfiguration
-<a name="API_amazon-q-connect_UrlConfiguration"></a>
 
 The configuration of the URL/URLs for the web content that you want to crawl. You should be authorized to crawl the URLs.
 

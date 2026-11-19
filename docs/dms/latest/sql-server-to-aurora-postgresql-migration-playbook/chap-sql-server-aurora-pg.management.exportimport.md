@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Export and import features
-<a name="chap-sql-server-aurora-pg.management.exportimport"></a>
 
 This topic provides reference information on data export and import capabilities in Microsoft SQL Server and PostgreSQL, with a focus on migration scenarios. You can use various tools and utilities to export data from SQL Server and import it into PostgreSQL, which is particularly useful when migrating to Amazon Aurora PostgreSQL.
 

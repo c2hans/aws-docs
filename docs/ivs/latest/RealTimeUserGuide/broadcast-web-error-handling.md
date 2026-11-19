@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-w
 ---
 
 # Error Handling in the IVS Web Broadcast SDK \| Real-Time Streaming
-<a name="broadcast-web-error-handling"></a>
 
 This section is an overview of error conditions, how the Web broadcast SDK reports them to the application, and what an application should do when those errors are encountered. Errors are reported by the SDK to listeners of the `StageEvents.ERROR` event:
 

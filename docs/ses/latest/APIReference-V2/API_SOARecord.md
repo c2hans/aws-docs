@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SOARecord
 ---
 
 # SOARecord
-<a name="API_SOARecord"></a>
 
 An object that contains information about the start of authority (SOA) record associated with the identity.
 

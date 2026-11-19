@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/elastic-clust
 ---
 
 # Stopping and starting an Amazon DocumentDB elastic cluster
-<a name="elastic-cluster-stop-start"></a>
 
 Stopping and starting Amazon DocumentDB elastic clusters can help you manage costs for development and test environments. Instead of creating and deleting elastic clusters each time you use Amazon DocumentDB, you can temporarily stop your cluster when it isn't needed. You can then start it again when you resume your testing.
 

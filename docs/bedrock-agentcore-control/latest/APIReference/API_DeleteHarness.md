@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # DeleteHarness
-<a name="API_DeleteHarness"></a>
 
 Operation to delete a Harness.
 

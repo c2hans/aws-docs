@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientVpn
 ---
 
 # ClientVpnAuthorizationRuleStatus
-<a name="API_ClientVpnAuthorizationRuleStatus"></a>
 
 Describes the state of an authorization rule.
 

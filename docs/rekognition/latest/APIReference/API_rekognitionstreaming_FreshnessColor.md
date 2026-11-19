@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # FreshnessColor
-<a name="API_rekognitionstreaming_FreshnessColor"></a>
 
 Represents the colors to be flashed to the end user, each color represented in RGB values.
 

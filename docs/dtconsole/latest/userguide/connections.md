@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections.h
 ---
 
 # Working with connections
-<a name="connections"></a>
 
 *Connections* are configurations that you use to connect AWS resources to external code repositories. Each connection is a resource that can be given to services such as AWS CodePipeline to connect to a third-party repository such as Bitbucket. For example, you can add the connection in CodePipeline so that it triggers your pipeline when a code change is made to your third-party code repository. You can also connect your AWS resources to an installed provider type such as GitHub Enterprise Server.
 

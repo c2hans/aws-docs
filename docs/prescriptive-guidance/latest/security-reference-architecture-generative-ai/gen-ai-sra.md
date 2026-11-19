@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # AWS SRA for AI
-<a name="gen-ai-sra"></a>
 
 |  |
 | --- |

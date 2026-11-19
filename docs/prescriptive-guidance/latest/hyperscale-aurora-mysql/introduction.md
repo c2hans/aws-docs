@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hyperscale-
 ---
 
 # Hyperscaling Aurora MySQL-Compatible to handle sudden traffic growth
-<a name="introduction"></a>
 
 *Oliver Francis, Vikram singh Rai, and Shyam Sunder Rakhecha, Amazon Web Services*
 

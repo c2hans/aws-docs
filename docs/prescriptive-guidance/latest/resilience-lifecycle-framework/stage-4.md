@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-
 ---
 
 # Stage 4: Operate
-<a name="stage-4"></a>
 
 After you've completed *Stage 3: Evaluate and test*, you're ready to deploy the application to production. In the *Operate* stage, you deploy your application to production and manage your customers' experience.  The design and implementation of your application determine many of its resilience outcomes, but this stage focuses on the operational practices your system uses to maintain and improve resilience. Building a culture of operational excellence helps create standards and consistency in these practices.
 

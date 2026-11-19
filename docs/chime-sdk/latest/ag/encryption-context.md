@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/encryption-context.h
 ---
 
 # Using encryption context
-<a name="encryption-context"></a>
 
 An encryption context is an optional set of key-value pairs that contain additional contextual information about the data. AWS KMS uses the encryption context to support authenticated encryption.
 

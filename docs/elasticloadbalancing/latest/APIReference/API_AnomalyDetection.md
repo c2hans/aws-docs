@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # AnomalyDetection
-<a name="API_AnomalyDetection"></a>
 
 Information about anomaly detection and mitigation.
 

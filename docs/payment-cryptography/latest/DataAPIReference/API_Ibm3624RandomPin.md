@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # Ibm3624RandomPin
-<a name="API_Ibm3624RandomPin"></a>
 
 Parameters that are required to generate or verify Ibm3624 random PIN.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/api-refer
 ---
 
 # Connect Customer SDK Voice API
-<a name="api-reference-3P-apps-voice-client"></a>
 
 The Connect Customer SDK provides a `VoiceClient` which serves as an interface that your app in the Connect Customer agent workspace can use to make data requests on voice contacts.
 

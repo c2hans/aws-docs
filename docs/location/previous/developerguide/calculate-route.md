@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/calcula
 ---
 
 # Calculate a route with Amazon Location
-<a name="calculate-route"></a>
 
 You can use Amazon Location Service to calculate routes between an origin and a destination, with up to 23 waypoints along the route, for different modes of transportation, avoidances, and traffic conditions.
 

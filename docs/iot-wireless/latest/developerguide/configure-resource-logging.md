@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/confi
 ---
 
 # Configure resource logging for AWS IoT Wireless resources
-<a name="configure-resource-logging"></a>
 
 By default, if you create the IAM role, `IoTWirelessLogsRole`, as described in [Create logging role and policy for AWS IoT Wireless monitoring](create-logging-role-policy.md), you'll see CloudWatch logs in the AWS Management Console that have a default log level of `ERROR`. To change the default log level for all your resources or for specific resources, you can configure the logging settings.
 
@@ -56,7 +55,7 @@ You can use the following API actions to configure logging of resources. The tab
 
 You've learned how to create a logging role to log your AWS IoT Wireless resources. By default, logs have a log level of `ERROR`, so if you want to see only error information, go to [View CloudWatch AWS IoT Wireless log entries](cwl-format.md) to monitor your wireless resources by viewing the log entries.
 
-If you want more information in the log entries, you can configure the default log level for your resources or for different event types, such as setting the log level to `INFO`. For information about configuring logging for your resources, see [Configure resource logging for AWS IoT Wireless resources](#configure-resource-logging).
+If you want more information in the log entries, you can configure the default log level for your resources or for different event types, such as setting the log level to `INFO`. For information about configuring logging for your resources, see [Configure resource logging for AWS IoT Wireless resources](configure-resource-logging.md).
 
 ### How to configure logging using the AWS CLI
 <a name="configure-logging-api-how"></a>

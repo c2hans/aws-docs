@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Get
 ---
 
 # GetQueryResults
-<a name="API_GetQueryResults"></a>
 
 Retrieves the paginated results of a query. Returns empty rows if the query is not yet complete.
 

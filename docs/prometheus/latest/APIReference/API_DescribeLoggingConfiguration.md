@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Descr
 ---
 
 # DescribeLoggingConfiguration
-<a name="API_DescribeLoggingConfiguration"></a>
 
 Returns complete information about the current rules and alerting logging configuration of the workspace.
 

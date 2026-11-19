@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Up
 ---
 
 # UpdateConnectionsBillingMode
-<a name="API_UpdateConnectionsBillingMode"></a>
 
 Updates the billing mode for the specified Direct Connect connections. You can update the billing mode for up to 200 connections in a single request.
 

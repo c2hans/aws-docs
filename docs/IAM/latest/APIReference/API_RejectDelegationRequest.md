@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_RejectDelega
 ---
 
 # RejectDelegationRequest
-<a name="API_RejectDelegationRequest"></a>
 
 Rejects a delegation request, denying the requested temporary access.
 

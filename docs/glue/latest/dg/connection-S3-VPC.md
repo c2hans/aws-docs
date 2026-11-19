@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connection-S3-VPC.html
 ---
 
 # Crawling an Amazon S3 data store using a VPC endpoint
-<a name="connection-S3-VPC"></a>
 
 For security, auditing, or control purposes you may want your Amazon S3 data store or Amazon S3 backed Data Catalog tables to only be accessed through an Amazon Virtual Private Cloud environment (Amazon VPC). This topic describes how to create and test a connection to the Amazon S3 data store or Amazon S3 backed Data Catalog tables in a VPC endpoint using the `Network` connection type.
 

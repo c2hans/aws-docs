@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/how-it-w
 ---
 
 # How Deadline Cloud works
-<a name="how-it-works"></a>
 
 With Deadline Cloud, you can create and manage rendering projects and jobs directly from digital content creation (DCC) pipelines and workstations.
 

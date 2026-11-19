@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 ---
 
 # GAMEPERF06-BP04 Implement log rotation and retention policies
-<a name="gameperf06-bp04"></a>
 
  Establish log rotation and retention policies to manage the growth of log data and optimize storage utilization.
 

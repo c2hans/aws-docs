@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # RegistrantVerificationDetails
-<a name="API_account_RegistrantVerificationDetails"></a>
 
 Contains the personal information required for verifying an individual's identity as part of the partner registration process in AWS Partner Central.
 

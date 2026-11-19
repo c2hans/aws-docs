@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sus02.h
 ---
 
 # Optimize resource provisioning
-<a name="sus02"></a>
 
  Optimizing resource provisioning means that you allocate only the resources needed for your workloads, reducing waste and improving efficiency. This section covers using reserved capacity for predictable workloads, implementing elasticity through auto-scaling, event-driven invocation, and serverless technologies for variable workloads, dynamically provisioning development environments to eliminate idle resources during non-working hours, and matching resource allocation precisely to business requirements to avoid over-provisioning.
 

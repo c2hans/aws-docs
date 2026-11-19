@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_List
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Lists tags associated with a specified resource.
 

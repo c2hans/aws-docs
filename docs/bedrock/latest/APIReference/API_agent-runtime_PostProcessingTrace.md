@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # PostProcessingTrace
-<a name="API_agent-runtime_PostProcessingTrace"></a>
 
 Details about the post-processing step, in which the agent shapes the response.
 

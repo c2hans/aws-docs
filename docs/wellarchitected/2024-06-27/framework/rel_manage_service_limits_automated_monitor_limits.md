@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL01-BP05 Automate quota management
-<a name="rel_manage_service_limits_automated_monitor_limits"></a>
 
  Implement tools to alert you when thresholds are being approached. You can automate quota increase requests by using AWS Service Quotas APIs.
 

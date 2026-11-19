@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/iam
 ---
 
 # IAM policy to grant access to search a vector index
-<a name="iam-policy-example-search-vectors"></a>
 
 The following policy grants permissions to perform `SearchVectors` operations on a specific vector index. The resource ARN for a vector index uses the same format as other DynamoDB indexes.
 

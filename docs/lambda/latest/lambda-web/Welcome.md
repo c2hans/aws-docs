@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 AWS Lambda Web Functions is a capability of AWS Lambda that you can use to run web applications and API backends as serverless HTTP servers. Your code listens on a network port and handles requests directly. You can use familiar Node.js web frameworks such as Express, Hono, or React Router with no Lambda-specific adapters or wrappers. You develop and run your server locally like any other Node.js web app.
 
@@ -20,4 +19,4 @@ Use Web Functions for workloads that receive and respond to HTTP traffic directl
 
 For event-driven processing, such as handling queue messages or file uploads, use [Lambda Event Functions](https://docs.aws.amazon.com/lambda/latest/dg/lambda-functions-chapter.html) instead. For more information about Web Functions, see [Lambda Web Functions](https://docs.aws.amazon.com/lambda/latest/dg/web-functions.html) in the *AWS Lambda Developer Guide*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

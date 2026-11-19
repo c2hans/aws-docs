@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Use policies
-<a name="policy-use-policies"></a>
 
 This section explains how to create and manage Cedar policies.
 

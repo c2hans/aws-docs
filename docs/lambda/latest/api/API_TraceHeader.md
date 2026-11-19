@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_TraceHeader.html
 ---
 
 # TraceHeader
-<a name="API_TraceHeader"></a>
 
 Contains trace headers for the Lambda durable execution.
 

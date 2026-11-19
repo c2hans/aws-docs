@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hibernating-resu
 ---
 
 # Start a hibernated Amazon EC2 instance
-<a name="hibernating-resuming"></a>
 
 Start a hibernated instance by starting it in the same way that you would start a stopped instance.
 

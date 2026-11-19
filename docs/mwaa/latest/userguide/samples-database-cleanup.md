@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/samples-database-c
 ---
 
 # Aurora PostgreSQL database cleanup on an Amazon MWAA environment
-<a name="samples-database-cleanup"></a>
 
 Amazon Managed Workflows for Apache Airflow uses an Aurora PostgreSQL database as the Apache Airflow metadata database, where DAG runs and task instances are stored. The following sample code periodically clears out entries from the dedicated Aurora PostgreSQL database for your Amazon MWAA environment.
 

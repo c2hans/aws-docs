@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/configure-
 ---
 
 # Configure Client Endpoints
-<a name="configure-endpoints"></a>
 
 **Warning**
  Endpoint resolution is an advanced SDK topic. By changing these settings you risk breaking your code. The default settings should be applicable to most users in production environments.

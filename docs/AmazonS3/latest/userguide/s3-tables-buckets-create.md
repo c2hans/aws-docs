@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-buck
 ---
 
 # Creating a table bucket
-<a name="s3-tables-buckets-create"></a>
 
 Amazon S3 table buckets are an S3 bucket type that you can use to create and store tables as S3 resources. To start using S3 Tables, you create a table bucket where you store and manage tables. When you create a table bucket, you choose a bucket name and AWS Region. The table bucket name must be unique for your account in the chosen Region. After you create a table bucket, you can't change the bucket name or Region. For information about naming table buckets, see [Amazon S3 table bucket, table, and namespace naming rules](s3-tables-buckets-naming.md).
 

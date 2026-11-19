@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_CertificateD
 ---
 
 # CertificateDetail
-<a name="API_CertificateDetail"></a>
 
 Contains metadata about an ACM certificate. This structure is returned in the response to a [DescribeCertificate](API_DescribeCertificate.md) request.
 

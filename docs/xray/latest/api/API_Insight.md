@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_Insight.html
 ---
 
 # Insight
-<a name="API_Insight"></a>
 
 When fault rates go outside of the expected range, X-Ray creates an insight. Insights tracks emergent issues within your applications.
 

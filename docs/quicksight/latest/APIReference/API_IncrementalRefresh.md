@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Incre
 ---
 
 # IncrementalRefresh
-<a name="API_IncrementalRefresh"></a>
 
 The incremental refresh configuration for a dataset.
 

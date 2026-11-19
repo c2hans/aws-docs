@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-posix
 ---
 
 # POSIX permissions in S3 Files
-<a name="s3-files-posix-permissions"></a>
 
 POSIX file systems require ownership and permissions on every file. Amazon S3 stores data as objects with access controlled by IAM policies and bucket policies and does not natively store file ownership or permission attributes. S3 Files bridges this difference by storing POSIX metadata, including the owner, group, and file permissions, as user-defined metadata on each S3 object. When you create or modify a file through S3 Files, the service writes all permission metadata automatically. When an object is written to your S3 bucket outside the file system, for example through the Amazon S3 console, AWS CLI, or AWS SDK, no POSIX metadata exists on that object. S3 Files assigns those objects a default value of `root:root` ownership and `644` permissions, which allow non-root users to read the file but not write to it. If these defaults meet your access requirements, no action is required. If your application requires it, you can override the default permissions on those objects. This tutorial walks through applying custom permissions.
 

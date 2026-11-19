@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/troubleshootin
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 Use the following information to help you resolve issues that you might encounter when working with Amazon File Cache.
 

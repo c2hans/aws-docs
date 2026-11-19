@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Resources
-<a name="resources-rel"></a>
 
  **Related documents:**
 +  [Amazon WorkSpaces Documentation](https://docs.aws.amazon.com/workspaces/)

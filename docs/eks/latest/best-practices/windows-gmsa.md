@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/windows-gmsa.h
 ---
 
 # Configure gMSA for Windows Pods and containers
-<a name="windows-gmsa"></a>
 
 ## What is a gMSA account
 <a name="_what_is_a_gmsa_account"></a>

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/console
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/workspacesthinclient-end-of-support.html).
 
 # Devices
-<a name="console-devices"></a>
 
 Each WorkSpaces Thin Client end user has a dedicated device that connects them to their virtual desktop environments and online resources. These devices are managed through the WorkSpaces Thin Client administrator console on the [AWS site](https://aws.amazon.com/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # SaasFulfillmentOption
-<a name="API_marketplace-discovery_SaasFulfillmentOption"></a>
 
 Describes a Software as a Service (SaaS) fulfillment option.
 

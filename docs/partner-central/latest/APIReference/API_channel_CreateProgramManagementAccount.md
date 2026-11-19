@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreateProgramManagementAccount
-<a name="API_channel_CreateProgramManagementAccount"></a>
 
 Creates a new program management account for managing partner relationships.
 

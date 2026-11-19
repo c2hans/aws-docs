@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # CreateConnector
-<a name="API_CreateConnector"></a>
 
 Creates a connector between AWS Private CA and an Active Directory. You must specify the private CA, directory ID, and security groups.
 

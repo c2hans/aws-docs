@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # AWS AppSync Events and API Gateway
-<a name="appsync-api-gateway"></a>
 
 AWS AppSync Events and Amazon API Gateway both provide a managed WebSocket experience for your microservices.
 

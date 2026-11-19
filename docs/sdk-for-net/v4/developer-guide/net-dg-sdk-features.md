@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Using the AWS SDK for .NET
-<a name="net-dg-sdk-features"></a>
 
 This section provides information about features of the AWS SDK for .NET that you might need to consider when creating your applications.
 

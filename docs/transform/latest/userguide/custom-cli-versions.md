@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-cli-ve
 ---
 
 # AWS Transform CLI version history
-<a name="custom-cli-versions"></a>
 
 Review the following table for details about current and past releases of the AWS Transform CLI. The table includes the version, release date, and release notes for each version.
 

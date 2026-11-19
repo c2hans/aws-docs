@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/user
 ---
 
 # Manual Implementation
-<a name="user-agent-implementation"></a>
 
 Follow these steps to implement User Agent strings in your regular AWS API/CLI calls for Partner Revenue Measurement:
 

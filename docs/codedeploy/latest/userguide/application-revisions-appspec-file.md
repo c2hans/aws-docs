@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/application-
 ---
 
 # Add an application specification file to a revision for CodeDeploy
-<a name="application-revisions-appspec-file"></a>
 
 This topic shows how to add an AppSpec file to your deployment. It also includes templates to create an AppSpec file for an AWS Lambda and EC2/On-Premises deployment.
 

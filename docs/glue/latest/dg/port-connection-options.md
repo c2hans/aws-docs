@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/port-connection-options.h
 ---
 
 # Port connection options
-<a name="port-connection-options"></a>
 
 The following are connection options for Port:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Port object to read.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_FargateProfi
 ---
 
 # FargateProfileHealth
-<a name="API_FargateProfileHealth"></a>
 
 The health status of the Fargate profile. If there are issues with your Fargate profile's health, they are listed here.
 

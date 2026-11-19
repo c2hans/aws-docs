@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Crea
 ---
 
 # CreateCluster
-<a name="API_CreateCluster"></a>
 
 The CreateCluster API allows you to create both single-Region clusters and multi-Region clusters. With the addition of the *multiRegionProperties* parameter, you can create a cluster with witness Region support and establish peer relationships with clusters in other Regions during creation.
 

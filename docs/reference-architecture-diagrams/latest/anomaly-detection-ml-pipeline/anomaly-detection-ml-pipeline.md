@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Build Your Own Anomaly Detection ML Pipeline
-<a name="anomaly-detection-ml-pipeline"></a>
 
 Publication date: **June 1, 2021 ([Diagram history](#diagram-history))**
 

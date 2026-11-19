@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeleteRegistration
-<a name="API_DeleteRegistration"></a>
 
 Permanently delete an existing registration from your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/manage-fs-access-create-de
 ---
 
 # Creating mount targets
-<a name="manage-fs-access-create-delete-mount-targets"></a>
 
 To access an EFS file system in a VPC, you need to create mount targets for the file system.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/runtime-referenc
 ---
 
 # Event API runtime reference
-<a name="runtime-reference"></a>
 
 The following sections contain the `APPSYNC_JS` runtime reference:
 + [Runtime reference overview](runtime-reference-overview.md) — Learn more about how runtime data sources work in AWS AppSync Events.

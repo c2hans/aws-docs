@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_DocumentA
 ---
 
 # DocumentAttributeTarget
-<a name="API_DocumentAttributeTarget"></a>
 
 The target document attribute or metadata field you want to alter when ingesting documents into Amazon Kendra.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # ScalingActivity
-<a name="API_ScalingActivity"></a>
 
 Represents a scaling activity.
 

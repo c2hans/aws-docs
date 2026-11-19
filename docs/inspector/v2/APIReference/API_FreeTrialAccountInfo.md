@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_FreeTrialA
 ---
 
 # FreeTrialAccountInfo
-<a name="API_FreeTrialAccountInfo"></a>
 
 Information about the Amazon Inspector free trial for an account.
 

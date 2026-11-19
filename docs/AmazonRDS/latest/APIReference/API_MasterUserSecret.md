@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Master
 ---
 
 # MasterUserSecret
-<a name="API_MasterUserSecret"></a>
 
 Contains the secret managed by RDS in AWS Secrets Manager for the master user password.
 

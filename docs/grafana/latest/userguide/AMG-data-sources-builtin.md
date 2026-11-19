@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-data-source
 ---
 
 # Connect to built-in data sources
-<a name="AMG-data-sources-builtin"></a>
 
 The following data sources are supported in every Amazon Managed Grafana workspace.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/market
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Create a private offer with hourly pricing for an AMI product using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_CreatePrivateOfferWithHourlyPricingForAmiProduct_section"></a>
 
 The following code examples show how to create a private offer with hourly pricing for an AMI product.
 

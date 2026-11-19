@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeleteVerifiedDestinationNumber
-<a name="API_DeleteVerifiedDestinationNumber"></a>
 
 Delete a verified destination phone number.
 

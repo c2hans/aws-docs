@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # CitationSourceContentDelta
-<a name="API_runtime_CitationSourceContentDelta"></a>
 
 Contains incremental updates to the source content text during streaming responses, allowing clients to build up the cited content progressively.
 

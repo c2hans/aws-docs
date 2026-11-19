@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # AMOS Implementation on AWS
-<a name="amos-implementation"></a>
 
 Publication date: **April 19, 2022 ([Diagram history](#amos-implementation-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsI
 ---
 
 # AnalyticsIntentGroupBySpecification
-<a name="API_AnalyticsIntentGroupBySpecification"></a>
 
 Contains the category by which to group the intents.
 

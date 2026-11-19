@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-invoke
 ---
 
 # Using the Invoke API
-<a name="using-invoke-api"></a>
 
  The Invoke API provides direct access to Amazon Nova models with more ability to control the request and response format. Unlike the Converse API which abstracts model-specific details, the Invoke API allows you to work directly with the model's native request and response structures.
 

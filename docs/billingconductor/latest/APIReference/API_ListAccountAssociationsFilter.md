@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/APIReference/API
 ---
 
 # ListAccountAssociationsFilter
-<a name="API_ListAccountAssociationsFilter"></a>
 
 The filter on the account ID of the linked account, or any of the following:
 

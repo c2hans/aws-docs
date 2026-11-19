@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/resour
 ---
 
 # Tagging support for Application Auto Scaling
-<a name="resource-tagging-support"></a>
 
 You can use the AWS CLI or an SDK to tag Application Auto Scaling scalable targets. Scalable targets are the entities that represent the AWS or custom resources that Application Auto Scaling can scale.
 

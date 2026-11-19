@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/train-custom-classi
 ---
 
 # Train custom classifiers (API)
-<a name="train-custom-classifier-api"></a>
 
 To create and train a custom classifier, use the [CreateDocumentClassifier](https://docs.aws.amazon.com/comprehend/latest/APIReference/API_CreateDocumentClassifier.html) operation.
 

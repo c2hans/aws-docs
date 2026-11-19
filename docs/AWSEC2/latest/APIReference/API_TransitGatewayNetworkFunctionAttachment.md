@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayNetworkFunctionAttachment
-<a name="API_TransitGatewayNetworkFunctionAttachment"></a>
 
 Contains information about a transit gateway network function attachment, including the attachment ID, the transit gateway, the endpoint service, the Availability Zones, and the state of the attachment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/run-docker-
 ---
 
 # Run a Docker container
-<a name="run-docker-container"></a>
 
 You can configure AWS IoT Greengrass components to run a [Docker](https://www.docker.com/) container from images stored in the following locations:
 + Public and private image repositories in Amazon Elastic Container Registry (Amazon ECR)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-data-flow-edi
 ---
 
 # Edit data flow steps
-<a name="canvas-data-flow-edit-steps"></a>
 
 In Amazon SageMaker Canvas, you can edit individual steps in your data flows to transform your dataset without having to create a new data flow. The following page covers how to edit join and concatenate steps, as well as data source steps.
 

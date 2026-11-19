@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_HealthCh
 ---
 
 # HealthCheckConfig
-<a name="API_HealthCheckConfig"></a>
 
 A complex type that contains information about the health check.
 

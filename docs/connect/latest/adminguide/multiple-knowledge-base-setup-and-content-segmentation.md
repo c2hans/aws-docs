@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/multiple-knowl
 ---
 
 # Knowledge base retrieval configuration
-<a name="multiple-knowledge-base-setup-and-content-segmentation"></a>
 
 When using orchestration AI agents, you can configure Retrieve tools that allow your AI agent to search knowledge bases and return relevant information to answer user questions.
 

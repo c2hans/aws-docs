@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/using-file-share
 ---
 
 # Accessing data using file shares
-<a name="using-file-shares"></a>
 
 A Microsoft Windows *file share* is a specific folder or directory on your file system. It includes any sub folders that might exist. Clients access the file shares on your file system using the Server Message Block (SMB) protocol. Your FSx for Windows File Server file system comes with a default Windows file share, named `share`. You can create and manage as many other file shares as you want by using the Windows *Shared Folders* graphical user interface (GUI) tool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # API provider: Share your private custom domain name using the API Gateway AWS CLI
-<a name="apigateway-private-custom-domains-provider-share-cli"></a>
 
 You can share a private custom domain name using the API Gateway AWS CLI, but we recommend that you use AWS RAM to reduce your operational overhead. For instructions on how to use AWS RAM to share your private custom domain name, see [API provider: Share your private custom domain name using AWS RAM](apigateway-private-custom-domains-provider-share.md).
 

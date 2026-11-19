@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_JobSum
 ---
 
 # JobSummary
-<a name="API_JobSummary"></a>
 
 Provides summary information about a job, returned by the `ListJobs` operation. Use `DescribeJob` to get full details for a specific job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/simulation-exa
 ---
 
 # Simulation example
-<a name="simulation-example"></a>
 
 **Contact flow example**
 

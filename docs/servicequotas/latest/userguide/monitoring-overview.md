@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/latest/userguide/monitorin
 ---
 
 # Logging and monitoring Service Quotas
-<a name="monitoring-overview"></a>
 
 ## Overview
 <a name="monitor-sq"></a>

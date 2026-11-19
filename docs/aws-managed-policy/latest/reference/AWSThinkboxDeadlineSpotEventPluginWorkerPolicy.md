@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSThinkboxDeadlineSpotEventPluginWorkerPolicy
-<a name="AWSThinkboxDeadlineSpotEventPluginWorkerPolicy"></a>
 
 **Description**: Grant permissions required for an EC2 instance running AWS Thinkbox Deadline Spot Event Plugin Worker software.
 

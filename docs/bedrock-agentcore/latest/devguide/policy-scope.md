@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Policy scope
-<a name="policy-scope"></a>
 
 The scope defines what the policy applies to. Every Cedar policy specifies three components:
 

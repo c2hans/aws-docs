@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Li
 ---
 
 # ListAgentCollaborators
-<a name="API_agent_ListAgentCollaborators"></a>
 
 Retrieve a list of an agent's collaborators.
 

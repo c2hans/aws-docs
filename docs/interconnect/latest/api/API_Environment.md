@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_Environment.
 ---
 
 # Environment
-<a name="API_Environment"></a>
 
 Defines the logical topology that an AWS Interconnect [Connection](API_Connection.md) is created upon.
 
@@ -18,7 +17,7 @@ Type: [Bandwidths](API_Bandwidths.md) object
 Required: Yes
 
  ** environmentId **   <a name="interconnect-Type-Environment-environmentId"></a>
-The identifier of this [Environment](#API_Environment)
+The identifier of this [Environment](API_Environment.md)
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 64.
 Required: Yes
@@ -36,7 +35,7 @@ Type: [Provider](API_Provider.md) object
 Required: Yes
 
  ** state **   <a name="interconnect-Type-Environment-state"></a>
-The state of the [Environment](#API_Environment). Possible values:
+The state of the [Environment](API_Environment.md). Possible values:
 +  `available`: The environment is available and new [Connection](API_Connection.md) objects can be requested.
 +  `limited`: The environment is available, but overall capacity is limited. The set of available bandwidths
 +  `unavailable`: The environment is currently unavailable.
@@ -45,7 +44,7 @@ Valid Values: `available | limited | unavailable`
 Required: Yes
 
  ** type **   <a name="interconnect-Type-Environment-type"></a>
-The specific product type of [Connection](API_Connection.md) objects provided by this [Environment](#API_Environment).
+The specific product type of [Connection](API_Connection.md) objects provided by this [Environment](API_Environment.md).
 Type: String
 Length Constraints: Minimum length of 5. Maximum length of 32.
 Required: Yes

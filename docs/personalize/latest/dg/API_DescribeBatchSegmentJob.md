@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeBatchS
 ---
 
 # DescribeBatchSegmentJob
-<a name="API_DescribeBatchSegmentJob"></a>
 
 Gets the properties of a batch segment job including name, Amazon Resource Name (ARN), status, input and output configurations, and the ARN of the solution version used to generate segments.
 

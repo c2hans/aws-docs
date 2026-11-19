@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes the prerequisites, supported Regions, cost, security, and quota considerations before deploying the guidance.
 

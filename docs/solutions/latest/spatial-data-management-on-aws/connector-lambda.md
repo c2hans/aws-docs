@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # AWS Lambda connector
-<a name="connector-lambda"></a>
 
 The AWS Lambda connector invokes Lambda functions with resource metadata as the payload. It is a dual-mode primitive — it can publish data outward to a Lambda function, or derive content by invoking a function and routing the response back into the asset record as metadata attributes or derived files.
 

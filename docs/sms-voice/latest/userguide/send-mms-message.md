@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/send-mms-mess
 ---
 
 # Example of sending an MMS message using AWS End User Messaging SMS
-<a name="send-mms-message"></a>
 
 If you are using a shared resource then you must use the full Amazon Resource Name (ARN) of the resource. You can use the AWS CLI or AWS End User Messaging SMS and voice v2 API to send MMS messages to your customers.
 

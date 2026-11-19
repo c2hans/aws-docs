@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Update
 ---
 
 # UpdateCustomRoutingListener
-<a name="API_UpdateCustomRoutingListener"></a>
 
 Update a listener for a custom routing accelerator.
 

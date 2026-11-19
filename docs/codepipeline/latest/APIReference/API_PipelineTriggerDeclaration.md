@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Pip
 ---
 
 # PipelineTriggerDeclaration
-<a name="API_PipelineTriggerDeclaration"></a>
 
 Represents information about the specified trigger configuration, such as the filter criteria and the source stage for the action that contains the trigger.
 

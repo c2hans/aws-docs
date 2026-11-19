@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AutoScaling::AutoScalingGroup MixedInstancesPolicy
-<a name="aws-properties-autoscaling-autoscalinggroup-mixedinstancespolicy"></a>
 
 Use this structure to launch multiple instance types and On-Demand Instances and Spot Instances within a single Auto Scaling group.
 

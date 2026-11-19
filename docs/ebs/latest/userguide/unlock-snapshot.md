@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/unlock-snapshot.htm
 ---
 
 # Unlock an Amazon EBS snapshot
-<a name="unlock-snapshot"></a>
 
 You can unlock a snapshot only if it is locked in governance mode, or if it is locked in compliance mode and it is still within the cooling-off period.
 

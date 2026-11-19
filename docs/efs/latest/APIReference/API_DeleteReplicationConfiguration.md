@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_DeleteReplic
 ---
 
 # DeleteReplicationConfiguration
-<a name="API_DeleteReplicationConfiguration"></a>
 
 Deletes a replication configuration. Deleting a replication configuration ends the replication process. After a replication configuration is deleted, the destination file system becomes `Writeable` and its replication overwrite protection is re-enabled. For more information, see [Delete a replication configuration](https://docs.aws.amazon.com/efs/latest/ug/delete-replications.html).
 

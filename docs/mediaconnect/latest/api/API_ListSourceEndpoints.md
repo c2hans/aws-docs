@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_ListSourceEn
 ---
 
 # ListSourceEndpoints
-<a name="API_ListSourceEndpoints"></a>
 
 Retrieves a list of the source endpoints in your account. The results are paginated. Use the NextToken value that's returned to retrieve additional results.
 

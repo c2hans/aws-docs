@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Alternate
 ---
 
 # AlternatePathHint
-<a name="API_AlternatePathHint"></a>
 
 Describes an potential intermediate component of a feasible path.
 

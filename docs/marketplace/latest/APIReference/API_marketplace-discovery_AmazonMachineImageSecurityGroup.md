@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # AmazonMachineImageSecurityGroup
-<a name="API_marketplace-discovery_AmazonMachineImageSecurityGroup"></a>
 
 Contains a recommended security group configuration for an AMI fulfillment option.
 

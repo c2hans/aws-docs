@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-kust
 ---
 
 # Kustomer connector for Amazon AppFlow
-<a name="connectors-kustomer"></a>
 
 Kustomer is a Customer Relationship Management (CRM) service that helps companies create and maintain operational solutions with customers. If you’re a Kustomer user, your account contains customer data across a number of digital channels. You can use Amazon AppFlow to transfer data from Kustomer to certain AWS services or other supported applications.
 

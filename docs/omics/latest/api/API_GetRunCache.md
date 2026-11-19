@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetRunCache.html
 ---
 
 # GetRunCache
-<a name="API_GetRunCache"></a>
 
 Retrieves detailed information about the specified run cache using its ID.
 

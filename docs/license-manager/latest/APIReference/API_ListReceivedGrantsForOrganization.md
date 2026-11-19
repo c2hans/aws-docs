@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ListReceivedGrantsForOrganization
-<a name="API_ListReceivedGrantsForOrganization"></a>
 
 Lists the grants received for all accounts in the organization.
 

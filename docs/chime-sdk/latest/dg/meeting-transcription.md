@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/meeting-transcriptio
 ---
 
 # Using Amazon Chime SDK live transcription
-<a name="meeting-transcription"></a>
 
 You use Amazon Chime SDK live transcription to generate live, user-attributed transcripts of your meetings. Amazon Chime SDK live transcription integrates with the Amazon Transcribe and Amazon Transcribe Medical services to generate transcripts of Amazon Chime SDK meetings while they're in progress.
 

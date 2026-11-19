@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-copper
 ---
 
 # Connecting to Copper in AWS Glue Studio
-<a name="connecting-to-data-copper"></a>
 
 Copper is a CRM that integrates with Google Workspace. Because you are a Copper user, you can connect AWS Glue to your Copper account. You can then use Copper as a data source in your AWS Glue ETL jobs to transfer data between Copper and AWS services or other supported applications.
 

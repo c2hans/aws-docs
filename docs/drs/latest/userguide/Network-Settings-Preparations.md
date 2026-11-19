@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/Network-Settings-Pr
 ---
 
 # Elastic Disaster Recovery network setting preparations
-<a name="Network-Settings-Preparations"></a>
 
 **Topics**
 + [Staging area subnet](#Staging-Area)

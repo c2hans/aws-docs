@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Job.htm
 ---
 
 # Job
-<a name="API_Job"></a>
 
 Represents all of the attributes of a DataBrew job.
 

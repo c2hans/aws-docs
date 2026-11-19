@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/python-connect-exam
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Examples of using the Amazon Redshift Python connector
-<a name="python-connect-examples"></a>
 
 Following are examples of how to use the Amazon Redshift Python connector. To run them, you must first install the Python connector. For more information on installing the Amazon Redshift Python connector, see [Installing the Amazon Redshift Python connector](python-driver-install.md). For more information on configuration options you can use with the Python connector, see [Configuration options for the Amazon Redshift Python connector](python-configuration-options.md).
 

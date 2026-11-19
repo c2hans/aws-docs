@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/r
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Working with application components in Strategy Recommendations
-<a name="recommendations-view-app-components"></a>
 
 This section describes how to use Migration Hub Strategy Recommendations in the Migration Hub console to view and configure migration and modernization strategy recommendations.
 

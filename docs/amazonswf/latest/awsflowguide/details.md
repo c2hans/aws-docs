@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/details.ht
 ---
 
 # Understanding a Task in AWS Flow Framework for Java
-<a name="details"></a>
 
 **Topics**
 + [Task](#details.task)

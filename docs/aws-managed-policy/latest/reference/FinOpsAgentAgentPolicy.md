@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/FinO
 ---
 
 # FinOpsAgentAgentPolicy
-<a name="FinOpsAgentAgentPolicy"></a>
 
 **Description**: Provides permissions required by the AWS FinOps Agent to perform cost analysis and spot cost saving opportunity on customer AWS resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PercentageRange
-<a name="API_marketplace-agreements_PercentageRange"></a>
 
 A range of price increase percentages that the proposer can choose from before the adjustment deadline of the agreement.
 

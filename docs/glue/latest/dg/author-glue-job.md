@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/author-glue-job.html
 ---
 
 # Working with jobs in AWS Glue
-<a name="author-glue-job"></a>
 
 The following sections provide information on ETL and Ray jobs in AWS Glue.
 

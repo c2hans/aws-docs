@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Put
 ---
 
 # PutPipelineDefinition
-<a name="API_PutPipelineDefinition"></a>
 
 Adds tasks, schedules, and preconditions to the specified pipeline. You can use `PutPipelineDefinition` to populate a new pipeline.
 

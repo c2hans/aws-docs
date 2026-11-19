@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ci
 ---
 
 # The CI/CD litmus test: Is your pipeline fully CI/CD?
-<a name="introduction"></a>
 
 *Steven Guggenheimer and Ananya koduri, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCPERF08-BP03 Monitor Amazon WorkSpaces Personal CloudWatch metrics
-<a name="eucperf08-bp03"></a>
 
  Use CloudWatch to establish and monitor your Amazon WorkSpaces workload's performance against these KPIs and requirements.
 

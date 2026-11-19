@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel03-b
 ---
 
 # REL03-BP01 Choose how to segment your workload
-<a name="rel03-bp01"></a>
 
  How you divide a workload (segmentation) sets the boundaries for where teams work and where faults are contained. Finer-grained segments improve agility and limit the blast radius of a failure, but they add the complexity of a distributed system. The right level depends on your reliability requirements, your team structure, and how much operational overhead you can absorb.
 

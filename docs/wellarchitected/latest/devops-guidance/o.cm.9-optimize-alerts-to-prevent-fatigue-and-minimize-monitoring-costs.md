@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [O.CM.9] Optimize alerts to prevent fatigue and minimize monitoring costs
-<a name="o.cm.9-optimize-alerts-to-prevent-fatigue-and-minimize-monitoring-costs"></a>
 
  **Category:** RECOMMENDED
 

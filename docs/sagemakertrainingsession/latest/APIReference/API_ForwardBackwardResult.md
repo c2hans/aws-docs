@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # ForwardBackwardResult
-<a name="API_ForwardBackwardResult"></a>
 
 The result of a forward and backward pass through the model, including computed gradients.
 

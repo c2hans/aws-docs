@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Architecture details
-<a name="companion-architecture"></a>
 
 ## What it reads, and from where
 <a name="companion-apis"></a>

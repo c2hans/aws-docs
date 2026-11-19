@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-secret
 ---
 
 # AWS Secrets Manager events
-<a name="events-ref-secretsmanager"></a>
 
 Secrets Manager sends service events to EventBridge via AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/maint-policy.html
 ---
 
 # AWS SDKs and Tools maintenance policy
-<a name="maint-policy"></a>
 
 ## Overview
 <a name="maint-overview"></a>

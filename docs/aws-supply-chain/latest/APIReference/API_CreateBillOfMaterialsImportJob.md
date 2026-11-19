@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # CreateBillOfMaterialsImportJob
-<a name="API_CreateBillOfMaterialsImportJob"></a>
 
 CreateBillOfMaterialsImportJob creates an import job for the Product Bill Of Materials (BOM) entity. For information on the product\_bom entity, see the AWS Supply Chain User Guide.
 

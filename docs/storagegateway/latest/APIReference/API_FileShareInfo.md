@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_F
 ---
 
 # FileShareInfo
-<a name="API_FileShareInfo"></a>
 
 Describes a file share. Only supported S3 File Gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/inputs-video-encodin
 ---
 
 # Video encoding schemes supported in a source
-<a name="inputs-video-encoding-schemes"></a>
 
 This section provides information about the encoding schemes that MediaLive supports in sources for the codecs that have such schemes.
 

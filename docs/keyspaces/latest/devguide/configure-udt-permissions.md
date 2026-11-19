@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/configure-udt-
 ---
 
 # Configure permissions to work with user-defined types (UDTs) in Amazon Keyspaces
-<a name="configure-udt-permissions"></a>
 
 Like tables, UDTs are bound to a specific keyspace. But unlike tables, you can't define permissions directly for UDTs. UDTs are not considered resources in AWS and they have no unique identifiers in the format of an Amazon Resource Name (ARN). Instead, to give an IAM principal permissions to perform specific actions on a UDT, you have to define permissions for the keyspace that the UDT is bound to. To work with UDTs in multi-Region keyspaces, additional permissions are required.
 

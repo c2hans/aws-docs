@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-archiving-
 ---
 
 # Required IAM permissions for archiving Amazon EBS snapshots
-<a name="snapshot-archiving-iam"></a>
 
 By default, users don't have permission to use snapshot archiving. To allow users to use snapshot archiving, you must create IAM policies that grant permission to use specific resources and API actions. For more information, see [Creating IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) in the IAM User Guide.
 

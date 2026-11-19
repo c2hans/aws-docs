@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/expensedocuments.html
 ---
 
 # Invoice and Receipt Response Objects
-<a name="expensedocuments"></a>
 
 When you submit an invoice or a receipt to the AnalyzeExpense API, it returns a series of ExpenseDocuments objects. Each ExpenseDocument is further separated into `LineItemGroups` and `SummaryFields`. Most invoices and receipts contain information such as the vendor name, receipt number, receipt date, or total amount. AnalyzeExpense returns this information under `SummaryFields`. Receipts and invoices also contain details about the items purchased. The AnalyzeExpense API returns this information under `LineItemGroups`. The `ExpenseIndex` field uniquely identifies the expense, and associates the appropriate `SummaryFields` and `LineItemGroups` detected in that expense. Finally, expense analysis will return a `Block` object, giving you the same information as text detection would on your document.
 

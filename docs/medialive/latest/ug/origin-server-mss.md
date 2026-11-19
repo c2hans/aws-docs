@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/origin-server-mss.ht
 ---
 
 # Coordinate with the downstream system
-<a name="origin-server-mss"></a>
 
 You and the operator of the downstream system must agree about the destination for the output of the Microsoft Smooth output group.
 

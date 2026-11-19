@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_VpcConfigReq
 ---
 
 # VpcConfigRequest
-<a name="API_VpcConfigRequest"></a>
 
 An object representing the VPC configuration to use for an Amazon EKS cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ImportReferenceFilt
 ---
 
 # ImportReferenceFilter
-<a name="API_ImportReferenceFilter"></a>
 
 A filter for import references.
 

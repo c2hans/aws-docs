@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/fleets.html
 ---
 
 # Run builds on reserved capacity fleets
-<a name="fleets"></a>
 
 CodeBuild offers the following compute fleets:
 + On-demand fleets

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # KnowledgeBaseAssociationData
-<a name="API_amazon-q-connect_KnowledgeBaseAssociationData"></a>
 
 Association information about the knowledge base.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/security-iam-troubl
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Troubleshooting IAM
-<a name="security-iam-troubleshoot"></a>
 
 This topic covers some common errors that you may see while using Amazon EKS with IAM and how to work around them.
 

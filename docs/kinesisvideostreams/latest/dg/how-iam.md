@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/how-iam.ht
 ---
 
 # Controlling access to Kinesis Video Streams resources using IAM
-<a name="how-iam"></a>
 
 You can use AWS Identity and Access Management (IAM) with Amazon Kinesis Video Streams, to control whether users in your organization can perform a task using specific Kinesis Video Streams API operations and whether they can use specific AWS resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_R
 ---
 
 # R53HostedZoneDeletionState
-<a name="API_R53HostedZoneDeletionState"></a>
 
 Describes the deletion state of an Amazon Route 53 hosted zone for a domain that is being automatically delegated to an Amazon Lightsail DNS zone.
 

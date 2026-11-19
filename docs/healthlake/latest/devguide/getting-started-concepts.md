@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/getting-start
 ---
 
 # AWS HealthLake concepts
-<a name="getting-started-concepts"></a>
 
 The following terminology and concepts are central to your understanding and use of AWS HealthLake.
 

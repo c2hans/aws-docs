@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/security_iam_troubleshoot.
 ---
 
 # Troubleshooting Amazon Elastic File System identity and access
-<a name="security_iam_troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with Amazon EFS and IAM.
 

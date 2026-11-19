@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateDashboard
-<a name="API_UpdateDashboard"></a>
 
 Updates a dashboard in an AWS account.
 

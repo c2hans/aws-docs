@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TopBo
 ---
 
 # TopBottomMoversComputation
-<a name="API_TopBottomMoversComputation"></a>
 
 The top movers and bottom movers computation setup.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/aba
 ---
 
 # Examples for using ABAC with DynamoDB tables and indexes
-<a name="abac-example-use-cases"></a>
 
 The following examples depict some use cases to implement attribute-based conditions using tags.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/cloud.html
 ---
 
 # .cloud
-<a name="cloud"></a>
 
 Used as a general extension, but ideal for companies that provide cloud computing technologies and services.
 

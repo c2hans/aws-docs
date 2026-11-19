@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-exp
 ---
 
 # Step 3: Starting an experiment
-<a name="appconfig-experimentation-creating-starting"></a>
 
 Before you start an experiment, verify you completed the prerequisites. For more information, see [Step 1: Configuring prerequisites](appconfig-experimentation-creating-prerequisites.md). Before running an experiment in production, read [About running and monitoring an experiment](appconfig-experimentation-about-running-an-experiment.md) to familiarize yourself with recommended practices for safely starting and monitoring the experiment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/quotas.htm
 ---
 
 # Quotas in AWS Elemental MediaPackage
-<a name="quotas"></a>
 
 This section describes the quotas for AWS Elemental MediaPackage. For information about requesting an increase to soft quotas, see [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html). You can't request an increase to hard quotas.
 

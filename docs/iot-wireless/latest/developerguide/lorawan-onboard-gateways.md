@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Onboard your gateways to AWS IoT Core for LoRaWAN
-<a name="lorawan-onboard-gateways"></a>
 
 If you're using AWS IoT Core for LoRaWAN for the first time, you can add your first LoRaWAN gateway and device by using the console.
 

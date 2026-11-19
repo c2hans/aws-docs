@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Pendin
 ---
 
 # PendingProductionVariantSummary
-<a name="API_PendingProductionVariantSummary"></a>
 
 The production variant summary for a deployment when an endpoint is creating or updating with the [CreateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateEndpoint.html) or [UpdateEndpoint](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateEndpoint.html) operations. Describes the `VariantStatus `, weight and capacity for a production variant associated with an endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-rules-examples.html
 ---
 
 # Rule set examples
-<a name="eb-rules-examples"></a>
 
 Use these examples to identify the pattern that matches your email-processing goal. Each example explains which recipients or messages the rule selects, which `Unless` conditions exclude matches, the order in which actions run, and the expected result.
 

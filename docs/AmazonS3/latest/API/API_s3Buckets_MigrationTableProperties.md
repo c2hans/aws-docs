@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Migrat
 ---
 
 # MigrationTableProperties
-<a name="API_s3Buckets_MigrationTableProperties"></a>
 
 The properties of the data files that a migration writes. The migration also sets the compression codec and dictionary encoding as the destination table's write properties, so they remain the table's defaults after you complete the migration.
 

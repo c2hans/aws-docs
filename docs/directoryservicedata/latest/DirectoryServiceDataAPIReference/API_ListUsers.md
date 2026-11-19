@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectorySer
 ---
 
 # ListUsers
-<a name="API_ListUsers"></a>
 
  Returns user information for the specified directory.
 

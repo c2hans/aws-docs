@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetMe
 ---
 
 # GetMergeConflicts
-<a name="API_GetMergeConflicts"></a>
 
 Returns information about merge conflicts between the before and after commit IDs for a pull request in a repository.
 

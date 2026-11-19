@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/lambda-even
 ---
 
 # Best practices for implementing partial batch responses
-<a name="best-practices-partial-batch-responses"></a>
 
 This section provides best practices for configuring partial batch responses for Amazon SQS event sources.
 + Configure a [dead-letter queue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html) to avoid creating a snowball anti-pattern in your serverless application's architecture. For more information, see the **Avoiding snowball anti-patterns** section.

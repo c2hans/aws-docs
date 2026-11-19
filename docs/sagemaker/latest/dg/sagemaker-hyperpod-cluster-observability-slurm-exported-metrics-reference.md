@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-c
 ---
 
 # Exported metrics reference
-<a name="sagemaker-hyperpod-cluster-observability-slurm-exported-metrics-reference"></a>
 
 The following sections present comprehensive lists of metrics exported from SageMaker HyperPod to Amazon Managed Service for Prometheus upon the successful configuration of the CloudFormation stack for SageMaker HyperPod observability. You can start monitoring these metrics visualized in the Amazon Managed Grafana dashboards.
 

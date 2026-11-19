@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/iam_example_iam_G
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `GetRole` with an AWS SDK or CLI
-<a name="iam_example_iam_GetRole_section"></a>
 
 The following code examples show how to use `GetRole`.
 

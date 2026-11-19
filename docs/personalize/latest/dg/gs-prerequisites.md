@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/gs-prerequisites.h
 ---
 
 # Getting started prerequisites
-<a name="gs-prerequisites"></a>
 
 The following steps are prerequisites for the getting started exercises.
 

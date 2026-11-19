@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-oracle2postgresql.ro
 ---
 
 # Rolling Back the Migration
-<a name="chap-oracle2postgresql.rollback"></a>
 
 If there are major issues with the migration that cannot be resolved in a timely manner, you can roll back the migration. These steps assume that you have already prepared for the rollback as described in [Step 8: Cut Over to PostgreSQL](chap-rdsoracle2postgresql.steps.cutover.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_In
 ---
 
 # IndexDocumentsResult
-<a name="API_IndexDocumentsResult"></a>
 
 ## Description
 <a name="API_IndexDocumentsResult_Description"></a>

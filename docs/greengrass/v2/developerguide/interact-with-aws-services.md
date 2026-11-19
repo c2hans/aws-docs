@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/interact-wi
 ---
 
 # Interact with AWS services
-<a name="interact-with-aws-services"></a>
 
 Greengrass core devices use X.509 certificates to connect to AWS IoT Core using TLS mutual authentication protocols. These certificates let devices interact with AWS IoT without AWS credentials, which typically comprise an access key ID and a secret access key. Other AWS services require AWS credentials instead of X.509 certificates to call API operations at service endpoints. AWS IoT Core has a credentials provider that enables devices to use their X.509 certificate to authenticate AWS requests. The AWS IoT credentials provider authenticates devices using an X.509 certificate and issues AWS credentials in the form a temporary, limited-privilege security token. Devices can use this token to sign and authenticate any AWS request. This eliminates the need to store AWS credentials on Greengrass core devices. For more information, see [Authorizing direct calls to AWS services](https://docs.aws.amazon.com/iot/latest/developerguide/authorizing-direct-aws.html) in the *AWS IoT Core Developer Guide*.
 

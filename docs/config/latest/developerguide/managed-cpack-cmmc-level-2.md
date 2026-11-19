@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/managed-cpa
 ---
 
 # Cybersecurity Maturity Model Certification (CMMC) 2.0 - Level 2
-<a name="managed-cpack-cmmc-level-2"></a>
 
 This AWS Config managed conformance pack provides a curated mapping between the Cybersecurity Maturity Model Certification (CMMC) Level 2 practices and AWS Config managed rules. Each Config rule evaluates specific AWS resources and is associated with one or more CMMC practices. AWS Config maintains and automatically updates the managed conformance pack as supported rules and resource types evolve. Refer to the table below for details on the rules, associated controls, guidance, and AWS Region availability.
 

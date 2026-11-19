@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/api-operat
 ---
 
 # Amazon Route 53 API actions by function
-<a name="api-operations-by-function"></a>
 
 This topic lists all Route 53 and Route 53 Resolver API actions in groups by the function they perform.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Working with foreign tables
-<a name="aurora-analytics-foreign-tables"></a>
 
 Foreign tables give your Aurora PostgreSQL database read-only access to Apache Parquet and Apache Iceberg data stored in Amazon S3, without copying it into Aurora. You query a foreign table with standard SQL, on its own or joined with your local PostgreSQL tables, and the data stays in place in Amazon S3.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_QueryLanguag
 ---
 
 # QueryLanguageVersion
-<a name="API_QueryLanguageVersion"></a>
 
 Structure for expressing the query language version.
 

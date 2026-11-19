@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Send
 ---
 
 # SendMessageContentBlockDeltaEvent
-<a name="API_SendMessageContentBlockDeltaEvent"></a>
 
 Event emitted for each incremental content delta within a content block
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetStringListFilterCondition
-<a name="API_DataSetStringListFilterCondition"></a>
 
 A filter condition that includes or excludes string values from a specified list.
 

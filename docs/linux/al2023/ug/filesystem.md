@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/filesystem.html
 ---
 
 # Filesystem Layout
-<a name="filesystem"></a>
 
  This section covers the filesystem layout of an AL2023 system, including details that may be specific to instances or AL2023 based containers. See the `file-hierarchy(7)` man page for more information.
 

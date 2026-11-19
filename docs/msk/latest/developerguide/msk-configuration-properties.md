@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-configurat
 ---
 
 # Custom Amazon MSK configurations
-<a name="msk-configuration-properties"></a>
 
 You can use Amazon MSK to create a custom MSK configuration where you set the following Apache Kafka configuration properties. Properties that you don't set explicitly get the values they have in [Default Amazon MSK configuration](msk-default-configuration.md). For more information about configuration properties, see [Apache Kafka Configuration](https://kafka.apache.org/documentation/#configuration).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/monitor-
 ---
 
 # Sign in to the desktop monitor with the AWS Management Console or an AWS profile
-<a name="monitor-sign-in-aws-credentials"></a>
 
 You usually sign in to the AWS Deadline Cloud monitor desktop application with a monitor URL and an AWS IAM Identity Center user. If you access Deadline Cloud with AWS Identity and Access Management (IAM) credentials instead of a monitor URL, you can use two more sign-in methods. These methods require the desktop application version 1.3.0 or later:
 

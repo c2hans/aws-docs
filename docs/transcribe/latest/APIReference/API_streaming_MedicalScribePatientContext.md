@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # MedicalScribePatientContext
-<a name="API_streaming_MedicalScribePatientContext"></a>
 
 Contains patient-specific information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvid
 ---
 
 # Nemotron Nano 3 30B
-<a name="model-card-nvidia-nemotron-nano-3-30b"></a>
 
 ## ![NVIDIA logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/nvidia.png) NVIDIA — Nemotron Nano 3 30B
 <a name="model-card-nvidia-nemotron-nano-3-30b-header"></a>

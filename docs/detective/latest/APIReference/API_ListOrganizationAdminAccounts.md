@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_ListOr
 ---
 
 # ListOrganizationAdminAccounts
-<a name="API_ListOrganizationAdminAccounts"></a>
 
 Returns information about the Detective administrator account for an organization. Can only be called by the organization management account.
 

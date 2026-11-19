@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerDetails
-<a name="API_MCPServerDetails"></a>
 
 Complete service details for MCP server integration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/runtime-securi
 ---
 
 # Runtime security
-<a name="runtime-security"></a>
 
 Runtime security provides active protection for your containers while they’re running. The idea is to detect and/or prevent malicious activity from occurring inside the container. This can be achieved with a number of mechanisms in the Linux kernel or kernel extensions that are integrated with Kubernetes, such as Linux capabilities, secure computing (seccomp), AppArmor, or SELinux. There are also options like Amazon GuardDuty and third party tools that can assist with establishing baselines and detecting anomalous activity with less manual configuration of Linux kernel mechanisms.
 

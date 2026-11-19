@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_S
 ---
 
 # StopInstance
-<a name="API_StopInstance"></a>
 
 Stops a specific Amazon Lightsail instance that is currently running.
 

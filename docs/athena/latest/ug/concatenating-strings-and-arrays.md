@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/concatenating-strings-a
 ---
 
 # Concatenate strings and arrays
-<a name="concatenating-strings-and-arrays"></a>
 
 Concatenating strings and concatenating arrays use similar techniques.
 

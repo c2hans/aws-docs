@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cognito::UserPoolDomain RoutingType
-<a name="aws-properties-cognito-userpooldomain-routingtype"></a>
 
 Specifies routing configuration for user pool domains. Contains failover settings for multi-region deployments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # FailoverGlobalReplicationGroup
-<a name="API_FailoverGlobalReplicationGroup"></a>
 
 Used to failover the primary region to a secondary region. The secondary region will become primary, and all other clusters will become secondary.
 

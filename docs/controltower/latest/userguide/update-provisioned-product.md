@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/update-pro
 ---
 
 # Update the provisioned product in Service Catalog
-<a name="update-provisioned-product"></a>
 
 The following procedure guides you through how to update your account in Account Factory or move it to a new OU, by updating the account's provisioned product in Service Catalog.
 

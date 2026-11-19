@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [DecryptData](API_DecryptData.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListEnti
 ---
 
 # ListEntitySecurityProfiles
-<a name="API_ListEntitySecurityProfiles"></a>
 
  Lists all security profiles attached to a Q in Connect AIAgent Entity in an Amazon Connect instance.
 

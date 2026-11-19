@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Turning on the Standard mode of Database Insights for Aurora PostgreSQL Limitless Database
-<a name="limitless-monitoring.cwdbi.standard"></a>
 
 To turn on the Standard mode of Database Insights for your Aurora PostgreSQL Limitless Database, use the following procedures.
 

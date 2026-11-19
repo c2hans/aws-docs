@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/getti
 ---
 
 # Creating an Amazon VPC endpoint policy for Neptune Analytics data plane
-<a name="gettingStarted-connecting-private-link-create-policy"></a>
 
 **Note**
  AWS PrivateLink for Neptune Analytics does not support VPC endpoint policies for the control plane service `neptune-graph`. VPC endpoint policies are only supported for the Neptune Analytics data plane service `neptune-graph-data`.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Socket
 ---
 
 # SocketAddress
-<a name="API_SocketAddress"></a>
 
 An IP address/port combination.
 

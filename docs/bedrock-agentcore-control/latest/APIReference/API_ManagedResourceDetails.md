@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ManagedResourceDetails
-<a name="API_ManagedResourceDetails"></a>
 
 Details of a resource created and managed by the gateway for private endpoint connectivity.
 

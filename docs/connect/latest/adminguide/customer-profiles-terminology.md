@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customer-profi
 ---
 
 # Object type mapping terminology and concepts
-<a name="customer-profiles-terminology"></a>
 
 The following terms are central to understanding object type mapping in Connect Customer Customer Profiles. Each term links to the topic where it's covered in depth.
 

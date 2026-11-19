@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Ge
 ---
 
 # GetEventConfiguration
-<a name="API_GetEventConfiguration"></a>
 
 Retrieves the current event configuration settings for the specified event data store or trail. The response includes maximum event size configuration, the context key selectors configured for the event data store, and any aggregation settings configured for the trail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/working-with-a
 ---
 
 # Associated accounts in Amazon DataZone
-<a name="working-with-associated-accounts"></a>
 
 Associating your AWS accounts with your Amazon DataZone domain enables domain users to publish and consume data from these AWS accounts. There are three steps to setting up an account association.
 + First, share the domain with the desired AWS account by requesting association. Amazon DataZone uses AWS Resource Access Manager (RAM) if the AWS account is different from the domain’s AWS account. An account association can only be initiated by the Amazon DataZone domain.

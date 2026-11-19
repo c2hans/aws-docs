@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeJobT
 ---
 
 # DescribeJobTemplate
-<a name="API_DescribeJobTemplate"></a>
 
 Returns information about a job template.
 

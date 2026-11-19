@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/routes-qu
 ---
 
 # Routes Quota and Usage
-<a name="routes-quota-usage"></a>
 
 ## Service Quota
 <a name="service-quota"></a>

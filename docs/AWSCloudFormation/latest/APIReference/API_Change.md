@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # Change
-<a name="API_Change"></a>
 
 The `Change` structure describes the changes CloudFormation will perform if you execute the change set.
 

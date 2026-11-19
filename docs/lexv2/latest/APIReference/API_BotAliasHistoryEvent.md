@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotAliasHi
 ---
 
 # BotAliasHistoryEvent
-<a name="API_BotAliasHistoryEvent"></a>
 
 Provides a record of an event that affects a bot alias. For example, when the version of a bot that the alias points to changes.
 

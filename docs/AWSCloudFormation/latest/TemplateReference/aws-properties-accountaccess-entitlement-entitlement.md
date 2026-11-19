@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AccountAccess::Entitlement Entitlement
-<a name="aws-properties-accountaccess-entitlement-entitlement"></a>
 
 Specifies the entitlement configuration for an account access manager application, defining which principal can assume which IAM role.
 

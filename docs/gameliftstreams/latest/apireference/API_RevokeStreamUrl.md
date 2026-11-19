@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # RevokeStreamUrl
-<a name="API_RevokeStreamUrl"></a>
 
 Revokes a stream URL so that it can no longer start new stream sessions. By default, stream sessions that are already running continue until they end on their own. To also end running sessions, set `RevocationMode` to `REVOKE_AND_TERMINATE_SESSIONS`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # ListResourcesForTagOption
-<a name="API_ListResourcesForTagOption"></a>
 
 Lists the resources associated with the specified TagOption.
 

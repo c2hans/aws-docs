@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/warning_codes.htm
 ---
 
 # Warning codes
-<a name="warning_codes"></a>
 
 AWS Elemental MediaConvert returns warning codes when transcoding jobs run into problems that do not prevent the job from completing. You can use Amazon EventBridge to track the warning codes that the service returns. For more information, see [Using EventBridge with AWS Elemental MediaConvert](eventbridge_events.md).
 

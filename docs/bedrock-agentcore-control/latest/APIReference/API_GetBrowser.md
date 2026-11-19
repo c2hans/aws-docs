@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetBrowser
-<a name="API_GetBrowser"></a>
 
 Gets information about a custom browser.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/sns-examp
 ---
 
 # Sending SMS messages in Amazon SNS with the AWS SDK for PHP Version 3
-<a name="sns-examples-sending-sms"></a>
 
 You can use Amazon Simple Notification Service (Amazon SNS) to send text messages, or SMS messages, to SMS-enabled devices. You can send a message directly to a phone number, or you can send a message to multiple phone numbers at once by subscribing those phone numbers to a topic and sending your message to the topic.
 

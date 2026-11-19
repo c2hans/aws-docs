@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sonarcloud-support.html
 ---
 
 # AWS Glue support for SonarCloud
-<a name="sonarcloud-support"></a>
 
 AWS Glue supports SonarCloud as follows:
 

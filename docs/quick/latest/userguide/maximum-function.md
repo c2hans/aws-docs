@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/maximum-function.
 ---
 
 # Maximum computation
-<a name="maximum-function"></a>
 
 The maximum computation finds the maximum dimension by value. For example, you can create a computation to find the month with the highest revenue.
 

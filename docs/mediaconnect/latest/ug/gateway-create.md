@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/gateway-create.ht
 ---
 
 # Setting up a MediaConnect Gateway
-<a name="gateway-create"></a>
 
 Setup begins with creating the gateway. This can be done in the MediaConnect console, programmatically using the MediaConnect API, or by using AWS CloudFormation.
 

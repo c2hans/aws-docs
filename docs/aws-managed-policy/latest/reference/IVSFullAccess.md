@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IVSF
 ---
 
 # IVSFullAccess
-<a name="IVSFullAccess"></a>
 
 **Description**: Provides full access to Interactive Video Service (IVS), Also included permissions for dependent services, needed for full access to the ivs console.
 

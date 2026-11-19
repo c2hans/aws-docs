@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Glo
 ---
 
 # GlobalIdentity
-<a name="API_GlobalIdentity"></a>
 
 Global identity information.
 

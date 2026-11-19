@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # FieldGroup
-<a name="API_connect-cases_FieldGroup"></a>
 
 Object for a group of fields and associated properties.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # Run interactive sessions with Amazon EMR on EKS through Spark Connect
-<a name="emr-eks-spark-connect"></a>
 
 With Amazon EMR on EKS release `emr-7.14.0` and later (or `emr-spark-8.1.0` and later), you can connect to a managed Spark Connect endpoint from self-managed PySpark clients such as VS Code, PyCharm, and Jupyter notebooks. Spark Connect uses a client-server architecture that decouples your application code from the Spark driver process. You develop and debug PySpark code in your local IDE while Spark operations run on your EKS cluster through Amazon EMR on EKS. Spark Connect offers the following benefits:
 + Connect to Amazon EMR on EKS from any PySpark client, including VS Code, PyCharm, and Jupyter notebooks

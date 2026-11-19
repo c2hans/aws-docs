@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Spark Application Logs
-<a name="spark-operator-monitoring-application-logs"></a>
 
 You can define this configuration in the following way.
 

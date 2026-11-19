@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # PartialResults
-<a name="API_PartialResults"></a>
 
 Indicates whether a query returned partial results.
 

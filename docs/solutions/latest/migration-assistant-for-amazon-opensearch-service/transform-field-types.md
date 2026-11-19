@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Transform field types
-<a name="transform-field-types"></a>
 
 When you migrate metadata to the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection, the Metadata Migration phase rewrites index settings, mappings, templates, and aliases into a shape the target can accept. As part of this, it applies built-in field-type transformations that resolve version-specific field types that are deprecated or unsupported on newer engines. Most migrations are fully served by these built-in transformations, so start there and only add a custom transformer if a pilot run shows a field type the built-ins do not cover.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EdgeDe
 ---
 
 # EdgeDeploymentStatus
-<a name="API_EdgeDeploymentStatus"></a>
 
 Contains information summarizing the deployment stage results.
 

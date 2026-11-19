@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # FileUploaderFieldConfig
-<a name="API_FileUploaderFieldConfig"></a>
 
 Describes the configuration for the file uploader field.
 

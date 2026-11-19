@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Customer-managed keys (optional)
-<a name="next-gen-cmk"></a>
 
 Next generation Resilience Hub supports customer-managed AWS KMS keys (CMKs) for encrypting your data. To use a CMK, ensure your IAM policy includes the following AWS KMS permissions:
 + `kms:DescribeKey`

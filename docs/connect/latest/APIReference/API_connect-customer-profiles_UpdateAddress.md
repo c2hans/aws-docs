@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # UpdateAddress
-<a name="API_connect-customer-profiles_UpdateAddress"></a>
 
 Updates associated with the address properties of a customer profile.
 

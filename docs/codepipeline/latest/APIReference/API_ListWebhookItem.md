@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Lis
 ---
 
 # ListWebhookItem
-<a name="API_ListWebhookItem"></a>
 
 The detail returned for each webhook after listing webhooks, such as the webhook URL, the webhook name, and the webhook ARN.
 

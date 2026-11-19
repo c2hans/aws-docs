@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/iam-id-center-pr
 ---
 
 # AWS PrivateLink for Access Portal
-<a name="iam-id-center-privatelink"></a>
 
 AWS IAM Identity Center (successor to AWS Single Sign-On) supports AWS PrivateLink, enabling you to access IAM Identity Center sign-in from within your Amazon VPC without traversing the public internet. You can configure a VPC endpoint for IAM Identity Center to keep workforce sign-in traffic on the AWS network, and configure network controls to require that sign-in requests originate from that VPC endpoint.
 

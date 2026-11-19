@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/w
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
 # Using the AWS Partner Central Channel API
-<a name="working-with-channel-management"></a>
 
 AWS Partner Central Channel APIs enable you to programmatically manage your authorized AWS reselling business. These APIs allow AWS Solution Providers, AWS Distributors, and AWS Distribution Sellers to:
 + Report AWS management accounts used for resale programs to Partner Central

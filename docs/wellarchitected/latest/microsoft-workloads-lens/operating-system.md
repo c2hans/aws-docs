@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # Operating system
-<a name="operating-system"></a>
 
  Optimizing Windows EC2 costs is essential for managing cloud expenses effectively. AWS provides multiple approaches to reduce costs while maintaining performance, including instance right-sizing through AWS Compute Optimizer, automated scheduling for non-production workloads, and flexible licensing options like BYOL. By implementing these strategies, organizations can significantly reduce their Windows workload operating costs while leveraging AWS's scalability and flexibility.
 

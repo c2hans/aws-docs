@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/idp-set-textract-op
 ---
 
 # Setting text extraction options
-<a name="idp-set-textract-options"></a>
 
  By default, Amazon Comprehend performs the following actions to extract text from a file, based on the input file type:
 + **Word files** – Amazon Comprehend parser extracts the text.

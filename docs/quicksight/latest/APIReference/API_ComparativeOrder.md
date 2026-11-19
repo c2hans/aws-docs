@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Compa
 ---
 
 # ComparativeOrder
-<a name="API_ComparativeOrder"></a>
 
 A structure that represents a comparative order.
 

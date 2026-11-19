@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/dashboard
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Using the Audit Manager dashboard
-<a name="dashboard"></a>
 
 With the Audit Manager dashboard, you can visualize non-compliant evidence in your active assessments. It's a convenient and fast way to monitor your assessments, stay informed, and remediate issues proactively. By default, the dashboard provides a top-down, aggregated view of all your active assessments. Using this view, you can visually identify issues in your assessments without first needing to sift through vast amounts of individual evidence.
 

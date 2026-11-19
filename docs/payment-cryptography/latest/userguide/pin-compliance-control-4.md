@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/pi
 ---
 
 # Control Objective 4: Key-loading to HSMs and POI PIN-acceptance devices is handled in a secure manner.
-<a name="pin-compliance-control-4"></a>
 
 *Requirement 12:* You are responsible for loading keys from components or shares. Management of HSM main keys was assessed as part of the service’s PIN assessment. AWS Payment Cryptography does not load keys from individual shares or components. See the [Cryptographic details](cryptographic-details.md) section.
 

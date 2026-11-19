@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteProject
-<a name="API_DeleteProject"></a>
 
 Delete the specified project.
 

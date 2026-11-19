@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # TRIM
-<a name="sql-reference-trim"></a>
 
 ```
 TRIM ( [ [ <trim-specification> ] [ <trim-character> ] FROM ] <trim-source> )

@@ -7,7 +7,6 @@ The AWS SDK for .NET V3 has reached end-of-support.
 We recommend that you migrate to [AWS SDK for .NET V4](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/welcome.html). For additional details and information on how to migrate, please refer to our [end-of-support announcement](https://aws.amazon.com/blogs/developer/aws-sdk-for-net-v3-end-of-support-announcement/).
 
 # Start a new project
-<a name="net-dg-start-new-project"></a>
 
 There are several techniques you can use to start a new project to access AWS services. The following are some of those techniques:
 + If you're new to .NET development on AWS or at least new to the AWS SDK for .NET, you can see complete examples in [Take a quick tour](quick-start.md). It gives you an introduction to the SDK.

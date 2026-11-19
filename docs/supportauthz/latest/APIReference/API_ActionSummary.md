@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Act
 ---
 
 # ActionSummary
-<a name="API_ActionSummary"></a>
 
 A summary of a support action.
 

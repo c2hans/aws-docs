@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53ResolverFullAccess
-<a name="AmazonRoute53ResolverFullAccess"></a>
 
 **Description**: Full access policy for Route 53 Resolver
 

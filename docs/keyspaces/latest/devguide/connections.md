@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/connections.ht
 ---
 
 # Optimize client driver connections for the serverless environment
-<a name="connections"></a>
 
 To communicate with Amazon Keyspaces, you can use any of the existing Apache Cassandra client drivers of your choice. Because Amazon Keyspaces is a serverless service, we recommend that you optimize the connection configuration of your client driver for the throughput needs of your application. This topic introduces best practices including how to calculate how many connections your application requires, as well as monitoring and error handling of connections.
 

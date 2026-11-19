@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Compliance validation for Amazon GameLift Servers
-<a name="gamelift-compliance"></a>
 
 Amazon GameLift Servers is not in scope of any AWS compliance programs.
 

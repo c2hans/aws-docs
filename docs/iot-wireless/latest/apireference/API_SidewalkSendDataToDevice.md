@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkSendDataToDevice
-<a name="API_SidewalkSendDataToDevice"></a>
 
 Information about a Sidewalk router.
 

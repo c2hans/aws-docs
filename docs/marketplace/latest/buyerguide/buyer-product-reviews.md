@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-prod
 ---
 
 # Product reviews for items listed in AWS Marketplace
-<a name="buyer-product-reviews"></a>
 
 AWS Marketplace wants buyers to get the information they need to make smart buying choices. As an AWS customer, you can submit reviews for items listed in AWS Marketplace and view reviews from other customers to inform your purchasing decisions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Descr
 ---
 
 # DescribeAppLicenseUsage
-<a name="API_DescribeAppLicenseUsage"></a>
 
 Retrieves license included application usage information.
 

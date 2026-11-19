@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ProviderDe
 ---
 
 # ProviderDetailUpdate
-<a name="API_ProviderDetailUpdate"></a>
 
 The provider-specific configuration details for updating a connector.
 

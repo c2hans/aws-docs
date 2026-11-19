@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_C
 ---
 
 # Category
-<a name="API_qapps_Category"></a>
 
 A category used to classify and filter library items for Amazon Q Apps.
 

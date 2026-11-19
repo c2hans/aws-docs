@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Configuring and querying a Security Lake data source in OpenSearch Dashboards
-<a name="direct-query-security-lake-configure"></a>
 
 Now that you've created your data source, you can set it up in OpenSearch Dashboards.
 

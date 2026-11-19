@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-lambda
 ---
 
 # Using CloudFormation to create a workflow in Step Functions
-<a name="tutorial-lambda-state-machine-cloudformation"></a>
 
 In this tutorial, you will create a AWS Lambda function using AWS CloudFormation. You'll use the CloudFormation console and a YAML template to create a *stack* (IAM roles, the Lambda function, and the state machine). Then, you'll use the Step Functions console to start the state machine execution.
 

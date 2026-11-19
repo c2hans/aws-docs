@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeTableRestoreStatus
-<a name="API_DescribeTableRestoreStatus"></a>
 
 Lists the status of one or more table restore requests made using the [RestoreTableFromClusterSnapshot](API_RestoreTableFromClusterSnapshot.md) API action. If you don't specify a value for the `TableRestoreRequestId` parameter, then `DescribeTableRestoreStatus` returns the status of all table restore requests ordered by the date and time of the request in ascending order. Otherwise `DescribeTableRestoreStatus` returns the status of the table specified by `TableRestoreRequestId`.
 
@@ -41,7 +40,7 @@ Required: No
 The following elements are returned by the service.
 
  ** Marker **
-A pagination token that can be used in a subsequent [DescribeTableRestoreStatus](#API_DescribeTableRestoreStatus) request.
+A pagination token that can be used in a subsequent [DescribeTableRestoreStatus](API_DescribeTableRestoreStatus.md) request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 

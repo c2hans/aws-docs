@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/snapshot-autodelet
 ---
 
 # Creating a Snapshot autodelete policy
-<a name="snapshot-autodelete-policy"></a>
 
 You can create a policy to automatically delete snapshots when the amount of available space in your volume is running low. Use the [volume snapshot autodelete modify](https://docs.netapp.com/us-en/ontap-cli-9131/volume-snapshot-autodelete-modify.html) ONTAP CLI command to establish an autodelete policy for a volume.
 

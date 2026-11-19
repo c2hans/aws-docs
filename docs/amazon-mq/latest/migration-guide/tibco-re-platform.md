@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/tibco-r
 ---
 
 # Re-platforming TIBCO EMS to Amazon MQ
-<a name="tibco-re-platform"></a>
 
  You can use the following procedure to migrate the TIBCO EMS architecture shown [here](tibco-ems-typical-architecture.md) to an equivalent Amazon MQ architecture without impacting *App 1* or *App 2*:
 

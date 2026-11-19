@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/feature
 ---
 
 # USB Devices
-<a name="feature-support-USB-devices-qualified"></a>
 
 The following sections provide information about WorkSpaces Applications support for USB devices.
 
@@ -24,7 +23,7 @@ USB redirection is currently not supported for Linux-based fleet instances, or w
 ## Smart Cards
 <a name="feature-support-USB-devices-qualified-smart-cards"></a>
 
-WorkSpaces Applications supports using a smart card for Windows sign in to Active Directory-joined streaming instances and in-session authentication for streaming applications. Because smart card redirection is enabled by default, users can use smart card readers that are connected to their local computer and their smart cards without USB redirection.
+WorkSpaces Applications supports using a smart card for Windows sign in to Active Directory-joined streaming instances and in-session authentication for streaming applications. When **Smart card redirection** is enabled on the stack, users can use smart card readers that are connected to their local computer and their smart cards without USB redirection.
 
 **Topics**
 + [Windows Sign In and In-Session Authentication](#feature-support-USB-devices-qualified-smart-cards-windows-signin-in-session-auth)

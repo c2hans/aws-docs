@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/red
 ---
 
 # Amazon Redshift controls
-<a name="redshift-rules"></a>
 
 **Topics**
 + [[CT.REDSHIFT.PR.1] Require an Amazon Redshift cluster to prohibit public access](#ct-redshift-pr-1-description)

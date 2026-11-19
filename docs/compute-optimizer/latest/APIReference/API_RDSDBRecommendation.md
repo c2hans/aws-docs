@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RDSDBRecommendation
-<a name="API_RDSDBRecommendation"></a>
 
  Describes an Amazon Aurora and RDS database recommendation.
 

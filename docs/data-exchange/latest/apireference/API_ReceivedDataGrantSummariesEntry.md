@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Re
 ---
 
 # ReceivedDataGrantSummariesEntry
-<a name="API_ReceivedDataGrantSummariesEntry"></a>
 
 Information about a received data grant.
 

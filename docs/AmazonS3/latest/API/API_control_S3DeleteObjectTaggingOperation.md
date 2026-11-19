@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_S3Delete
 ---
 
 # S3DeleteObjectTaggingOperation
-<a name="API_control_S3DeleteObjectTaggingOperation"></a>
 
 Contains no configuration parameters because the DELETE Object tagging (`DeleteObjectTagging`) API operation accepts only the bucket name and key name as parameters, which are defined in the job's manifest.
 

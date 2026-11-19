@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle OLAP functions and MySQL Window functions
-<a name="chap-oracle-aurora-mysql.sql.olap"></a>
 
 The following sections detail the steps for configuring AWS DMS to handle OLAP functions and Window functions during replication.
 

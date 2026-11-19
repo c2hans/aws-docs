@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_ListDat
 ---
 
 # ListDatasets
-<a name="API_ListDatasets"></a>
 
 Lists all of the DataBrew datasets.
 

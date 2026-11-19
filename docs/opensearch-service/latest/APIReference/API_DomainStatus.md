@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DomainStatus
-<a name="API_DomainStatus"></a>
 
 The current status of an OpenSearch Service domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_TableR
 ---
 
 # TableRecordExpirationConfigurationValue
-<a name="API_s3Buckets_TableRecordExpirationConfigurationValue"></a>
 
 The expiration configuration settings for records in a table, and the status of the configuration. If the status of the configuration is enabled, records expire and are automatically removed after the number of days specified in the record expiration settings for the table.
 

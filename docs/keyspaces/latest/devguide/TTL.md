@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/TTL.html
 ---
 
 # Expire data with Time to Live (TTL) for Amazon Keyspaces (for Apache Cassandra)
-<a name="TTL"></a>
 
 Amazon Keyspaces (for Apache Cassandra) Time to Live (TTL) helps you simplify your application logic and optimize the price of storage by expiring data from tables automatically. Data that you no longer need is automatically deleted from your table based on the Time to Live value that you set.
 

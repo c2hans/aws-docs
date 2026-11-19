@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-sqlser
 ---
 
 # Troubleshooting Active Directory
-<a name="custom-sqlserver-WinAuth.Troubleshoot"></a>
 
 The following are issues you might encounter when you set up or modify an AD.
 

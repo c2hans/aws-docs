@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/what-i
 ---
 
 # Serverless concepts for AWS Infrastructure Composer
-<a name="what-is-concepts"></a>
 
 Learn about basic serverless concepts before using AWS Infrastructure Composer.
 

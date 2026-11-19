@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Project
 ---
 
 # ProjectProfileSummary
-<a name="API_ProjectProfileSummary"></a>
 
 The summary of a project profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # NodeFilters
-<a name="API_NodeFilters"></a>
 
 Criteria for selecting nodes in a context graph query.
 

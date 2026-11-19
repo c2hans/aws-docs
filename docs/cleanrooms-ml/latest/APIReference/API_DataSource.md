@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Da
 ---
 
 # DataSource
-<a name="API_DataSource"></a>
 
 Defines information about the Glue data source that contains the training data.
 

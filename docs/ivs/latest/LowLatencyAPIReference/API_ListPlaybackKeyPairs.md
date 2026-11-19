@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Li
 ---
 
 # ListPlaybackKeyPairs
-<a name="API_ListPlaybackKeyPairs"></a>
 
 Gets summary information about playback key pairs. For more information, see [Setting Up Private Channels](https://docs.aws.amazon.com/ivs/latest/userguide/private-channels.html) in the *Amazon IVS User Guide*.
 

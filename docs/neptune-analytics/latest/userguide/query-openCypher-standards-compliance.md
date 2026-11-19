@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/query
 ---
 
 # Neptune Analytics OpenCypher specification compliance
-<a name="query-openCypher-standards-compliance"></a>
 
  Refer to the Neptune Database documentation found [here](https://docs.aws.amazon.com/neptune/latest/userguide/feature-opencypher-compliance.html) for openCypher specification compliance, with the exception that Neptune Analytics does not support custom edge IDs.
 

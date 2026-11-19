@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Input
 ---
 
 # InputDataConfig
-<a name="API_InputDataConfig"></a>
 
 Contains the Amazon S3 location of the training data you want to use to create a new custom language model, and permissions to access this location.
 

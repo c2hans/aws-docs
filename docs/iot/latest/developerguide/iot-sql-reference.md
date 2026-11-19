@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-refere
 ---
 
 # AWS IoT SQL reference
-<a name="iot-sql-reference"></a>
 
 In AWS IoT, rules are defined using an SQL-like syntax. SQL statements are composed of three types of clauses:
 

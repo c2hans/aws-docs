@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/workspaces-
 ---
 
 # workspaces-user-volume-encryption-enabled
-<a name="workspaces-user-volume-encryption-enabled"></a>
 
 Checks if an Amazon WorkSpace volume has the user volume encryption settings set to enabled. This rule is NON\_COMPLIANT if the encryption setting is not enabled for the user volume.
 

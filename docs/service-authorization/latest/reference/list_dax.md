@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for Amazon DynamoDB Accelerator (DAX)
-<a name="list_dax"></a>
 
 Amazon DynamoDB Accelerator (DAX) (service prefix: `dax`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

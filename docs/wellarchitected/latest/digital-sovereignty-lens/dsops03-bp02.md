@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # DSOPS03-BP02 Automate evidence collection and reporting
-<a name="dsops03-bp02"></a>
 
  Manual evidence collection is time-consuming, error-prone, and doesn't scale across jurisdictions. Automating evidence collection and reporting improves accuracy, reduces audit preparation effort, and provides continuous visibility into compliance status.
 

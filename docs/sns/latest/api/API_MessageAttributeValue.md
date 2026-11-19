@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_MessageAttributeValue
 ---
 
 # MessageAttributeValue
-<a name="API_MessageAttributeValue"></a>
 
 The user-specified message attribute value. For string data types, the value attribute has the same restrictions on the content as the message body. For more information, see [Publish](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html).
 

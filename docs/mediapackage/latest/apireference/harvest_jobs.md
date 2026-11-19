@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/apireference/harvest
 ---
 
 # Harvest\_jobs
-<a name="harvest_jobs"></a>
 
 HarvestJobs provide details about the video on demand (VOD) assets that you want to harvest, or extract, from live content streams.
 

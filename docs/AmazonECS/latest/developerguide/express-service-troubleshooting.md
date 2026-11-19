@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-
 ---
 
 # Troubleshooting Amazon ECS Express Mode services
-<a name="express-service-troubleshooting"></a>
 
 This section helps you identify and resolve common issues when deploying and managing Express Mode services.
 

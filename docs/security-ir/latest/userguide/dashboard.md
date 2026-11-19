@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/dashboard.h
 ---
 
 # Security Incident Response dashboard
-<a name="dashboard"></a>
 
  On the AWS Security Incident Response console, the dashboard provides you with an overview of your incident response team, your proactive response status, and a four-week rolling count of cases.
 

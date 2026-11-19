@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-EnableRdsCopyTagsToSnapshot`
-<a name="automation-awssupportremediator-enablerdscopytagstosnapshot"></a>
 
 **Description**
 

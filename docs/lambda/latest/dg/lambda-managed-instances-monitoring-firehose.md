@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 ---
 
 # Sending capacity provider system logs to Firehose
-<a name="lambda-managed-instances-monitoring-firehose"></a>
 
 You can send capacity provider system logs to Amazon Data Firehose. With Firehose, you can stream logs in real time to various destinations, including third-party analytics tools and custom endpoints.
 

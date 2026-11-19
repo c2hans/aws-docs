@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudTrailServiceRolePolicy
-<a name="CloudTrailServiceRolePolicy"></a>
 
 **Description**: Permission policy for CloudTrail ServiceLinkedRole
 

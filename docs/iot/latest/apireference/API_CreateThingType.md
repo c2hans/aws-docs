@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateThingT
 ---
 
 # CreateThingType
-<a name="API_CreateThingType"></a>
 
 Creates a new thing type. If this call is made multiple times using the same thing type name and configuration, the call will succeed. If this call is made with the same thing type name but different configuration a `ResourceAlreadyExistsException` is thrown.
 

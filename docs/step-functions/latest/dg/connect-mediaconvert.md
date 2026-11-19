@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-mediaco
 ---
 
 # Create an AWS Elemental MediaConvert job with Step Functions
-<a name="connect-mediaconvert"></a>
 
 Learn how to use Step Functions to create an AWS Elemental MediaConvert job using the [`CreateJob`](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobspost) API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/all-packages-
 ---
 
 # Amazon Linux 2023 RPM packages as of the 2023.12.20261021 release
-<a name="all-packages-AL2023.12"></a>
 
 The following list includes all packages for Amazon Linux 2023 release [2023.12.20261021](relnotes-2023.12.20261021.md).
 

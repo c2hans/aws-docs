@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/s35-scope-s2110
 ---
 
 # SMPTE 2110 output
-<a name="s35-scope-s2110"></a>
 
 SMPTE 2110 output supports passthrough of the SCTE-35 messages. Therefore, workable options are:
 

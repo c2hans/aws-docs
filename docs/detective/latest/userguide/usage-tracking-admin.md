@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/usage-trackin
 ---
 
 # Monitoring usage for a Detective administrator account
-<a name="usage-tracking-admin"></a>
 
 Amazon Detective bills each account for the data used in each behavior graph that the account belongs to. Detective charges a tiered flat rate per GB for all data regardless of the source.
 

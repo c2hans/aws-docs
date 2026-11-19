@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # MemoryListSummary
-<a name="API_MemoryListSummary"></a>
 
 A summary of a memory, as returned by `ListMemories`: its ID, type, provenance, and tags. It doesn't include `content`. Call `GetMemory` for the full memory.
 

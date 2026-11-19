@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Image
 ---
 
 # ImageSetConfiguration
-<a name="API_ImageSetConfiguration"></a>
 
 The image set configuration.
 

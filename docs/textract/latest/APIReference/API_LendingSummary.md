@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Lending
 ---
 
 # LendingSummary
-<a name="API_LendingSummary"></a>
 
 Contains information regarding DocumentGroups and UndetectedDocumentTypes.
 

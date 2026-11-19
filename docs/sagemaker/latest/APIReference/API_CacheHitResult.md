@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CacheH
 ---
 
 # CacheHitResult
-<a name="API_CacheHitResult"></a>
 
 Details on the cache hit of a pipeline execution step.
 

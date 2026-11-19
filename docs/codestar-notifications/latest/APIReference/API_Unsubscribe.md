@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # Unsubscribe
-<a name="API_Unsubscribe"></a>
 
 Removes an association between a notification rule and an Amazon Q Developer in chat applications topic so that subscribers to that topic stop receiving notifications when the events described in the rule are triggered.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # InvokeAgentRuntimeCommandRequestBody
-<a name="API_InvokeAgentRuntimeCommandRequestBody"></a>
 
 The request body structure for the `InvokeAgentRuntimeCommand` operation, containing the command to execute and optional configuration parameters.
 

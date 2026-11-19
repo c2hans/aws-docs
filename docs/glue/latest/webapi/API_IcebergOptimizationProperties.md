@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergOptimizati
 ---
 
 # IcebergOptimizationProperties
-<a name="API_IcebergOptimizationProperties"></a>
 
 A structure that specifies Iceberg table optimization properties for the catalog, including configurations for compaction, retention, and orphan file deletion operations.
 

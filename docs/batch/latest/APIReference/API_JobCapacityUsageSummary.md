@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_JobCapacit
 ---
 
 # JobCapacityUsageSummary
-<a name="API_JobCapacityUsageSummary"></a>
 
 The capacity usage for a job, including the unit of measure and quantity of resources being used.
 

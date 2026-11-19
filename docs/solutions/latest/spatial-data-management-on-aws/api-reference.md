@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # API Reference
-<a name="api-reference"></a>
 
 This section provides a complete reference for the Spatial Data Management on AWS REST API (version 2025-04-18). The API provides comprehensive spatial data organization, storage, and collaboration capabilities. You can organize spatial assets into libraries and projects, manage access controls, and integrate with external data sources through connectors.
 

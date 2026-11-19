@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/understanding-sso.ht
 ---
 
 # How IAM Identity Center authentication is resolved for AWS SDKs and tools
-<a name="understanding-sso"></a>
 
 ## Relevant IAM Identity Center terms
 <a name="ssoterms"></a>

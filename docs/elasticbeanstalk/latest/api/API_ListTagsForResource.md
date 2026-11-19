@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_ListTags
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Return the tags applied to an AWS Elastic Beanstalk resource. The response contains a list of tag key-value pairs.
 

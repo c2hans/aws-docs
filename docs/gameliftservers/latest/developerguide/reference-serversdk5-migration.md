@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/re
 ---
 
 # Migrate to server SDK 5.x for Amazon GameLift Servers
-<a name="reference-serversdk5-migration"></a>
 
 To update a game project to use server SDK version 5.x, make the following changes:
 

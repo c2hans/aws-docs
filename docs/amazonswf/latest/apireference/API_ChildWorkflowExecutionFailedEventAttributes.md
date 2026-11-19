@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ChildW
 ---
 
 # ChildWorkflowExecutionFailedEventAttributes
-<a name="API_ChildWorkflowExecutionFailedEventAttributes"></a>
 
 Provides the details of the `ChildWorkflowExecutionFailed` event.
 

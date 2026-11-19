@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Hub onboarding setup
-<a name="managedintegrations-sdk-v2-cookbook-hubsetup"></a>
 
 Complete these setup steps for each hub device before you begin the fleet provisioning onboarding process. This section describes how to create managed things, set up directory structures, and configure the required certificates.
 

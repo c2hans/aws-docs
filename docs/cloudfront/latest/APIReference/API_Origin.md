@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origi
 ---
 
 # Origin
-<a name="API_Origin"></a>
 
 An origin.
 

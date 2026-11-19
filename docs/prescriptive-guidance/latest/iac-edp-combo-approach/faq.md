@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iac-edp-com
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## Can updating the deployment of a CloudFormation stack (involving IaC code changes) fix drift?
 <a name="update-fix-drift-question"></a>

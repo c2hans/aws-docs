@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # Document history
-<a name="document-history"></a>
 
 The following table describes significant changes to this guide. To receive notifications about future updates, subscribe to the RSS feed.
 

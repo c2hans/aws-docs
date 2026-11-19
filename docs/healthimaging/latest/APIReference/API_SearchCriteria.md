@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Se
 ---
 
 # SearchCriteria
-<a name="API_SearchCriteria"></a>
 
 The search criteria.
 

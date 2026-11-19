@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactC
 ---
 
 # ContactConfiguration
-<a name="API_ContactConfiguration"></a>
 
 The contact configuration for push notification registration.
 

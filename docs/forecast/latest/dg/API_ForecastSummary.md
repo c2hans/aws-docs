@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/API_ForecastSummary.h
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # ForecastSummary
-<a name="API_ForecastSummary"></a>
 
 Provides a summary of the forecast properties used in the [ListForecasts](API_ListForecasts.md) operation. To get the complete set of properties, call the [DescribeForecast](API_DescribeForecast.md) operation, and provide the `ForecastArn` that is listed in the summary.
 

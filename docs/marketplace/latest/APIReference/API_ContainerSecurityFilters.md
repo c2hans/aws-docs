@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Cont
 ---
 
 # ContainerSecurityFilters
-<a name="API_ContainerSecurityFilters"></a>
 
 Filters that apply to assessments performed against the Container Security framework.
 

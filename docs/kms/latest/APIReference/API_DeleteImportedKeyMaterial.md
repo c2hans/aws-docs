@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_DeleteImport
 ---
 
 # DeleteImportedKeyMaterial
-<a name="API_DeleteImportedKeyMaterial"></a>
 
 Deletes key material that was previously imported. This operation makes the specified KMS key temporarily unusable. To restore the usability of the KMS key, reimport the same key material. For more information about importing key material into AWS KMS, see [Importing Key Material](https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys.html) in the * AWS Key Management Service Developer Guide*.
 

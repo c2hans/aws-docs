@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/limits.html
 ---
 
 # Amazon EFS quotas
-<a name="limits"></a>
 
 Following, you can find out about quotas when working with Amazon EFS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetSavingsPlansPurchaseRecommendation
-<a name="API_GetSavingsPlansPurchaseRecommendation"></a>
 
 Retrieves the Savings Plans recommendations for your account. First use `StartSavingsPlansPurchaseRecommendationGeneration` to generate a new set of recommendations, and then use `GetSavingsPlansPurchaseRecommendation` to retrieve them.
 

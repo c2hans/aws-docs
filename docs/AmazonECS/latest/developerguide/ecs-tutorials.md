@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-tuto
 ---
 
 # Tutorials for Amazon ECS
-<a name="ecs-tutorials"></a>
 
 The following tutorials show you how to perform common tasks when using Amazon ECS.
 

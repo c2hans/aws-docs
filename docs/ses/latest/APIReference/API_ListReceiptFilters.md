@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ListReceiptF
 ---
 
 # ListReceiptFilters
-<a name="API_ListReceiptFilters"></a>
 
 Lists the IP address filters associated with your AWS account in the current AWS Region.
 

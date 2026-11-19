@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/start-image-e
 ---
 
 # Start an export image task
-<a name="start-image-export"></a>
 
 When you export your image using VM Import/Export, the exported file is written to the specified S3 bucket using the following S3 key:
 

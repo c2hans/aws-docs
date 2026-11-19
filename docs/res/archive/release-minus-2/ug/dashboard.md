@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/dashboard
 ---
 
 # Dashboard
-<a name="dashboard"></a>
 
 ![Session management dashboard](https://docs.aws.amazon.com/res/archive/release-minus-2/ug/images/virtualdesktopdashboard.jpg)
 

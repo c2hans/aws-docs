@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/example_support_S
 ---
 
 # Learn the basics of Support with an AWS SDK
-<a name="example_support_Scenario_GetStartedSupportCases_section"></a>
 
 The following code examples show how to:
 + Get and display available services and severity levels for cases.

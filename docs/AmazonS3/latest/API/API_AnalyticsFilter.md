@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_AnalyticsFilter.
 ---
 
 # AnalyticsFilter
-<a name="API_AnalyticsFilter"></a>
 
 The filter used to describe a set of objects for analyses. A filter must have exactly one prefix, one tag, or one conjunction (AnalyticsAndOperator). If no filter is provided, all objects will be considered in any analysis.
 

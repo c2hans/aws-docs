@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/etl-jobs-section.html
 ---
 
 # Working with Spark jobs in AWS Glue
-<a name="etl-jobs-section"></a>
 
 Provides information on AWS Glue for Spark ETL jobs.
 

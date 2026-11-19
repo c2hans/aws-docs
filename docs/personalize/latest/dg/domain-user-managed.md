@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/domain-user-manage
 ---
 
 # Configuring Amazon OpenSearch Service domain security
-<a name="domain-user-managed"></a>
 
 To use the plugin with OpenSearch Service, the user or role that's accessing your domain must have `PassRole` permissions for the [IAM service role for OpenSearch Service](service-role-managed.md) you just created. Also, the user or role must have permission to perform the `es:ESHttpGet` and `es:ESHttpPut` actions.
 

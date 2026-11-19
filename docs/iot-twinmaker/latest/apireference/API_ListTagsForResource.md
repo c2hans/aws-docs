@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Li
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Lists all tags associated with a resource.
 

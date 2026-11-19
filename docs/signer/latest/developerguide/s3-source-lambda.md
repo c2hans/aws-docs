@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/s3-source-l
 ---
 
 # Create and populate an Amazon S3 source bucket for your unsigned object files
-<a name="s3-source-lambda"></a>
 
 This topic discusses how to prepare an Amazon S3 bucket and add your unsigned object files it.
 

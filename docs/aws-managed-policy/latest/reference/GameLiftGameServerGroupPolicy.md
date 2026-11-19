@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Game
 ---
 
 # GameLiftGameServerGroupPolicy
-<a name="GameLiftGameServerGroupPolicy"></a>
 
 **Description**: Policy to allow Gamelift GameServerGroups to manage customer resources
 

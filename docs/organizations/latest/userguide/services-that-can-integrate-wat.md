@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Well-Architected Tool and AWS Organizations
-<a name="services-that-can-integrate-wat"></a>
 
 The AWS Well-Architected Tool helps you document the state of your workloads and compares them to the latest AWS architectural best practices.
 

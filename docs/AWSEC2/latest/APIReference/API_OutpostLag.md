@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_OutpostLa
 ---
 
 # OutpostLag
-<a name="API_OutpostLag"></a>
 
 Describes an Outpost link aggregation group (LAG).
 

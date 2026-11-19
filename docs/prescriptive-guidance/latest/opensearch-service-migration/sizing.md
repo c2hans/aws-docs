@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Sizing
-<a name="sizing"></a>
 
 Sizing helps you determine the right instance type, number of data nodes, and storage requirement for your target environment. We recommend that you size first by the storage and then by CPUs. If you're already using Elasticsearch or OpenSearch, the sizing will generally remain the same. However, you need to identify the instance type that is equivalent to your current environment. To help determine the right size, we recommend using the following guidelines.
 

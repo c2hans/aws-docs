@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/data-encryp
 ---
 
 # Data encryption for Amazon Aurora DSQL
-<a name="data-encryption"></a>
 
 Amazon Aurora DSQL encrypts all user data at rest. For enhanced security, this encryption uses AWS Key Management Service (AWS KMS). This functionality helps reduce the operational burden and complexity involved in protecting sensitive data. Encryption at rest helps you:
 + Reduce the operational burden of protecting sensitive data

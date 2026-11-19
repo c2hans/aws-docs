@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/claimdevic
 ---
 
 # Input devices: claim device
-<a name="claimdevice"></a>
 
 ## URI
 <a name="claimdevice-url"></a>

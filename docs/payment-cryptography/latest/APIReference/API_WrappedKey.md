@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # WrappedKey
-<a name="API_WrappedKey"></a>
 
 Parameter information for generating a WrappedKeyBlock for key exchange.
 

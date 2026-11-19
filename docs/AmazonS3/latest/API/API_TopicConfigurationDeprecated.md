@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_TopicConfigurati
 ---
 
 # TopicConfigurationDeprecated
-<a name="API_TopicConfigurationDeprecated"></a>
 
 A container for specifying the configuration for publication of messages to an Amazon Simple Notification Service (Amazon SNS) topic when Amazon S3 detects specified events. This data type is deprecated. Use [TopicConfiguration](https://docs.aws.amazon.com/AmazonS3/latest/API/API_TopicConfiguration.html) instead.
 

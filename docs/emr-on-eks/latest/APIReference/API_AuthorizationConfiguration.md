@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Autho
 ---
 
 # AuthorizationConfiguration
-<a name="API_AuthorizationConfiguration"></a>
 
 Authorization-related configuration inputs for the security configuration.
 

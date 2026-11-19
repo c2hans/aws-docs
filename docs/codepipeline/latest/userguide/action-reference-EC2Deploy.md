@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/action-ref
 ---
 
 # Amazon EC2 action reference
-<a name="action-reference-EC2Deploy"></a>
 
 You use an Amazon EC2 `EC2` action to deploy application code to your deployment fleet. Your deployment fleet can consist of Amazon EC2 Linux instances or Linux SSM-managed nodes. Your instances must have the SSM agent installed.
 

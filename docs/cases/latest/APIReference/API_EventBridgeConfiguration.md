@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_EventBridg
 ---
 
 # EventBridgeConfiguration
-<a name="API_connect-cases_EventBridgeConfiguration"></a>
 
 Configuration to enable EventBridge case event delivery and determine what data is delivered.
 

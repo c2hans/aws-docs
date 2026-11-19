@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/e
 ---
 
 # Amazon Elastic Container Service (Amazon ECS) Exec in AWS Toolkit
-<a name="ecs-exec"></a>
 
 You can use the Amazon ECS Exec feature to issue single commands or run a shell in an Amazon Elastic Container Service (Amazon ECS) container, directly from the AWS Toolkit.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/mapssoattr
 ---
 
 # Mapping user attributes between IAM Identity Center and Microsoft AD directory
-<a name="mapssoattributestocdattributes"></a>
 
 You can use the following procedure to specify how your user attributes in IAM Identity Center should map to corresponding attributes in your Microsoft AD directory.
 

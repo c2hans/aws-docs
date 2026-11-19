@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-f
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Filtering recommendations in AWS Well-Architected Agent
-<a name="agent-filter-rec"></a>
 
 Use filters to narrow down recommendations based on specific criteria to focus on the most relevant optimizations for your environment and priorities.
 

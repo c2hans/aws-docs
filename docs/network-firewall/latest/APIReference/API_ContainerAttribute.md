@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # ContainerAttribute
-<a name="API_ContainerAttribute"></a>
 
 A key-value filter pair used in container association monitoring configurations to narrow which containers are tracked. The key must match exactly. The value can be an exact value or a wildcard pattern.
 

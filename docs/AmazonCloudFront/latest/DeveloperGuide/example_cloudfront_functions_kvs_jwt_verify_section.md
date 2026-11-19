@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Validate a simple token in a CloudFront Functions viewer request
-<a name="example_cloudfront_functions_kvs_jwt_verify_section"></a>
 
 The following code example shows how to validate a simple token in a CloudFront Functions viewer request.
 

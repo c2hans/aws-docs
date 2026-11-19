@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Descri
 ---
 
 # DescribeAppInstance
-<a name="API_DescribeAppInstance"></a>
 
 Returns the full details of an `AppInstance`.
 

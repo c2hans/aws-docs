@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_U
 ---
 
 # UpdateKeys
-<a name="API_kvs_UpdateKeys"></a>
 
 Puts or deletes multiple key-value pairs in a single, all-or-nothing operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/create-private-workflow
 ---
 
 # Create a private workflow
-<a name="create-private-workflow"></a>
 
 Create a workflow using the HealthOmics console, AWS CLI commands, or one of the AWS SDKs.
 

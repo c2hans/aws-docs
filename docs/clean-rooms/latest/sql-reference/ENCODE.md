@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/ENCODE.
 ---
 
 # ENCODE function
-<a name="ENCODE"></a>
 
 The ENCODE function is used to convert a string to its binary representation using a specified character encoding.
 

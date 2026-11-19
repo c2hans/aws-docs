@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Medi
 ---
 
 # MediaAnalysisInput
-<a name="API_MediaAnalysisInput"></a>
 
 Contains input information for a media analysis job.
 

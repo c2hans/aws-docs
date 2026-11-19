@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_O
 ---
 
 # Origin
-<a name="API_Origin"></a>
 
 Describes the origin resource of an Amazon Lightsail content delivery network (CDN) distribution.
 

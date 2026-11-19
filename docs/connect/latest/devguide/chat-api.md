@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/chat-api.html
 ---
 
 # Chat actions
-<a name="chat-api"></a>
 
  The following API actions are available for chats:
 + [CreatePersistentContactAssociation](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreatePersistentContactAssociation.html)

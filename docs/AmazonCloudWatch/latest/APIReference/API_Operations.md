@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [AssociateDatasetKmsKey](API_AssociateDatasetKmsKey.md)

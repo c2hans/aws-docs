@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_CreateSys
 ---
 
 # CreateSystemTableConfiguration
-<a name="API_CreateSystemTableConfiguration"></a>
 
 Enables system tables for the current account. System tables are enabled or disabled for the entire account: creating this configuration enables them. If a configuration already exists, use [UpdateSystemTableConfiguration](API_UpdateSystemTableConfiguration.md) to update it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DataSour
 ---
 
 # DataSource
-<a name="API_DataSource"></a>
 
 Describes a data source.
 

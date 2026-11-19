@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Locat
 ---
 
 # Location
-<a name="API_Location"></a>
 
 Returns information about the location of a change or comment in the comparison between two commits or a pull request.
 

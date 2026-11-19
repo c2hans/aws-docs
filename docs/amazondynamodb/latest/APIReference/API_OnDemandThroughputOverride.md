@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_O
 ---
 
 # OnDemandThroughputOverride
-<a name="API_OnDemandThroughputOverride"></a>
 
 Overrides the on-demand throughput settings for this replica table. If you don't specify a value for this parameter, it uses the source table's on-demand throughput settings.
 

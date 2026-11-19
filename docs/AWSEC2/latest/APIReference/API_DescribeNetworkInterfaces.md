@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeN
 ---
 
 # DescribeNetworkInterfaces
-<a name="API_DescribeNetworkInterfaces"></a>
 
 Describes the specified network interfaces or all your network interfaces.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/policy-anatomy.html
 ---
 
 # Amazon SES policy anatomy
-<a name="policy-anatomy"></a>
 
 Policies adhere to a specific structure, contain elements, and must meet certain requirements.
 

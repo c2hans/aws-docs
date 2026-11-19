@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/CHAP_api_re
 ---
 
 # Aurora DSQL API reference
-<a name="CHAP_api_reference"></a>
 
  In addition to the AWS Management Console and the AWS Command Line Interface (AWS CLI), Aurora DSQL also provides an API interface. You can use the API operations to manage your resources in Aurora DSQL.
 

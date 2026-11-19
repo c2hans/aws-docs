@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-
 ---
 
 # PartiQL statements for DynamoDB
-<a name="ql-reference.statements"></a>
 
 Amazon DynamoDB supports the following PartiQL statements.
 

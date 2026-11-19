@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/unload.html
 ---
 
 # UNLOAD
-<a name="unload"></a>
 
 Writes query results from a `SELECT` statement to the specified data format. Supported formats for `UNLOAD` include Apache Parquet, ORC, Apache Avro, and JSON. CSV is the only output format supported by the Athena `SELECT` command, but you can use the `UNLOAD` command, which supports a variety of output formats, to enclose your `SELECT` query and rewrite its output to one of the formats that `UNLOAD` supports.
 

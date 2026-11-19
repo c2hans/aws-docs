@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-clou
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS references
 <a name="9999999999999999aws--references.7b50bf3c-37b5-54f4-8df2-4d0d5b1ad155"></a>

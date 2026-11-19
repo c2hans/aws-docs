@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restore-testi
 ---
 
 # Restore testing validation
-<a name="restore-testing-validation"></a>
 
 You have the option of creating an event-driven validation that runs when a restore testing job completes.
 

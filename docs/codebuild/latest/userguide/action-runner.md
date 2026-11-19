@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/action-runner
 ---
 
 # Tutorial: Configure a CodeBuild-hosted GitHub Actions runner
-<a name="action-runner"></a>
 
-This tutorial shows you how to configure your CodeBuild projects to run GitHub Actions jobs. For more information about using GitHub Actions with CodeBuild see [Tutorial: Configure a CodeBuild-hosted GitHub Actions runner](#action-runner).<a name="sample-github-action-runners-prerequisites"></a>
+This tutorial shows you how to configure your CodeBuild projects to run GitHub Actions jobs. For more information about using GitHub Actions with CodeBuild see [Tutorial: Configure a CodeBuild-hosted GitHub Actions runner](action-runner.md).<a name="sample-github-action-runners-prerequisites"></a>
 
 To complete this tutorial, you must first:
 + Connect with a personal access token, a Secrets Manager secret, OAuth app, or GitHub App. If you'd like to connect with an OAuth app, you must use the CodeBuild console to do so. If you'd like to create a personal access token, you can either use the CodeBuild console or use the [ImportSourceCredentials API](https://docs.aws.amazon.com/codebuild/latest/APIReference/API_ImportSourceCredentials.html). For more instructions, see [GitHub and GitHub Enterprise Server access in CodeBuild](access-tokens-github-overview.md).

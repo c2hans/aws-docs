@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Au
 ---
 
 # AudienceSizeConfig
-<a name="API_AudienceSizeConfig"></a>
 
 Returns the relevance scores at these audience sizes when used in the [GetAudienceGenerationJob](API_GetAudienceGenerationJob.md) for a specified audience generation job and configured audience model.
 

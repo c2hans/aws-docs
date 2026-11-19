@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ScheduleItem
-<a name="API_marketplace-discovery_ScheduleItem"></a>
 
 A payment installment within a payment schedule term.
 

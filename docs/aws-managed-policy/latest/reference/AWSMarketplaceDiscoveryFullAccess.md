@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplaceDiscoveryFullAccess
-<a name="AWSMarketplaceDiscoveryFullAccess"></a>
 
 **Description**: Provides full access to the AWS Marketplace Discovery API for searching and retrieving product and pricing information.
 

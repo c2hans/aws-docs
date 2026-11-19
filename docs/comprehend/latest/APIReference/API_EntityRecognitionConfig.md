@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Entit
 ---
 
 # EntityRecognitionConfig
-<a name="API_EntityRecognitionConfig"></a>
 
 Configuration required for an entity recognition model.
 

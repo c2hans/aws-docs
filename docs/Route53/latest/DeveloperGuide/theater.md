@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/theater.ht
 ---
 
 # .theater
-<a name="theater"></a>
 
 Used for websites dedicated to theaters, plays, and musicals.
 

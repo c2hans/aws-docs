@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/launch-node-ubuntu.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create self-managed Ubuntu Linux nodes
-<a name="launch-node-ubuntu"></a>
 
 **Note**
 Managed node groups might offer some advantages for your use case. For more information, see [Simplify node lifecycle with managed node groups](managed-node-groups.md).

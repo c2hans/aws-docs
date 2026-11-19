@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/manual-instrumentat
 ---
 
 # Migrate to OpenTelemetry Go
-<a name="manual-instrumentation-go"></a>
 
 Use the following code examples to manually instrument your Go applications with the OpenTelemetry SDK when migrating from X-Ray.
 

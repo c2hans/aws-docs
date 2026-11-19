@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DescribeTagOption
-<a name="API_DescribeTagOption"></a>
 
 Gets information about the specified TagOption.
 

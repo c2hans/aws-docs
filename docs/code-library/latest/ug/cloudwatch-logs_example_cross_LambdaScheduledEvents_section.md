@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudwatch-logs_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use scheduled events to invoke a Lambda function
-<a name="cloudwatch-logs_example_cross_LambdaScheduledEvents_section"></a>
 
 The following code examples show how to create an AWS Lambda function invoked by an Amazon EventBridge scheduled event.
 

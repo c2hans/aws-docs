@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Invisibl
 ---
 
 # InvisibleFieldInfo
-<a name="API_InvisibleFieldInfo"></a>
 
 A field that is invisible to an agent.
 

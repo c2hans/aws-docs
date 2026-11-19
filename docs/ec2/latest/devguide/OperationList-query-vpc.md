@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/OperationList-query-
 ---
 
 # Amazon VPC actions
-<a name="OperationList-query-vpc"></a>
 
 The following API actions are available for Amazon VPC. To learn more about Amazon VPC, see the [Amazon VPC product page](https://aws.amazon.com/vpc/) and the [Amazon VPC documentation](https://docs.aws.amazon.com/vpc/).
 

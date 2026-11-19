@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListD
 ---
 
 # ListDataTransformationProfileVersions
-<a name="API_ListDataTransformationProfileVersions"></a>
 
 Lists all versions of a specific data transformation profile (DRAFT and published), in reverse chronological order (newest first). Use `GetDataTransformationProfile` to retrieve profile content. Results are paginated. Use the `NextToken` parameter to retrieve additional results.
 

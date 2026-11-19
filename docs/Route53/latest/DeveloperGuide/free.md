@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/free.html
 ---
 
 # .free
-<a name="free"></a>
 
 Used for websites offering free products, services, or content.
 

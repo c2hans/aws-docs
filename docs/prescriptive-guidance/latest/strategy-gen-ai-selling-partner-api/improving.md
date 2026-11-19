@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Continuously improving and optimizing your analytics and generative AI strategies
-<a name="improving"></a>
 
 To continuously improve and optimize your analytics and generative AI strategies for your Amazon seller and vendor data, we recommend that you do the following:
 + **Continuously monitor performance** – Regularly review the usage and performance metrics of the analytics and generative AI solutions to identify areas for improvement. Monitor key indicators, such as user engagement, data processing throughput, API response times, and error rates. Use this data to optimize system configurations, identify bottlenecks, and make informed decisions about enhancements.

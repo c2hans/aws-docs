@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PricingPlanManager/latest/UserGuide/plan
 ---
 
 # Available Plans
-<a name="plans"></a>
 
 ## CloudFront Flat-Rate Plans
 <a name="cloudfront-plans"></a>

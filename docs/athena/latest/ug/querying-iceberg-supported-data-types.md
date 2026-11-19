@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg-suppor
 ---
 
 # Supported data types for Iceberg tables in Athena
-<a name="querying-iceberg-supported-data-types"></a>
 
 Athena can query Iceberg tables that contain the following data types:
 

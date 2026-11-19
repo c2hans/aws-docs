@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # The AWS Cloud differentiator for the semiconductor industry
-<a name="the-aws-cloud-differentiator-for-semiconductor-industry"></a>
 
 The business case for migrating from on-premises environments to AWS can be highly compelling for semiconductor companies. On-premises infrastructure can be expensive to manage, requires significant upfront investments, requires a significant amount of effort to maintain and stay current with the latest technology, and requires sourcing security tooling from a wide range of independent vendors. With AWS, you pay only for the resources you use, which can help you optimize costs for workloads. AWS also provides instant access to the latest [high-performance computing (HPC)](https://aws.amazon.com/hpc/) and [cloud storage](https://aws.amazon.com/products/storage/) services and features. As an example, [Amazon FSx for NetApp ONTAP](https://aws.amazon.com/fsx/netapp-ontap/) is a commonly used storage service. You can use it to seamlessly migrate data from on-premises NetApp storage to the AWS Cloud, and it provides network isolation, resource-level permissions, identity-based authentication, encryption, logging, and auditing.
 

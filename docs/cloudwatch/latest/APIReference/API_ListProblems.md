@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_ListP
 ---
 
 # ListProblems
-<a name="API_ListProblems"></a>
 
 Lists the problems with your application.
 

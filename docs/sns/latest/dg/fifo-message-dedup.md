@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/fifo-message-dedup.html
 ---
 
 # Amazon SNS message deduplication for FIFO topics
-<a name="fifo-message-dedup"></a>
 
  Amazon SNS FIFO topics and Amazon SQS FIFO queues support message deduplication, which provides exactly-once message delivery and processing as long as the following conditions are met:
 + The subscribed Amazon SQS FIFO queue exists and has permissions that allow the Amazon SNS service principal to deliver messages to the queue.

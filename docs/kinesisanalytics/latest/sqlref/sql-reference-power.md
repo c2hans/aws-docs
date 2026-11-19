@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # POWER
-<a name="sql-reference-power"></a>
 
 ```
  POWER ( <base>, <exponent> )

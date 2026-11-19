@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/c
 ---
 
 # Channel management
-<a name="channel-management-section"></a>
 
 For more information, see [Channel Management](https://docs.aws.amazon.com/partner-central/latest/getting-started/channel-management.html).
 + **Channel partner management:** Native in the AWS Console. Designed for partners who resell AWS services as an authorized AWS Channel Partner.

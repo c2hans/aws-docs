@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Ge
 ---
 
 # GetMLInputChannel
-<a name="API_GetMLInputChannel"></a>
 
 Returns information about an ML input channel.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Audio
 ---
 
 # AudioExtractionConfiguration
-<a name="API_AudioExtractionConfiguration"></a>
 
 The configuration for audio extraction from knowledge base documents.
 

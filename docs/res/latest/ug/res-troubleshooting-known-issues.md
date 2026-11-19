@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/res/latest/ug/res-troubleshooting-known-
 End of development notice: AWS is discontinuing development of Research and Engineering Studio on AWS (RES). 2026.09 is the final release, supported through September 30, 2027. RES remains open source and keeps running in your account. For more information, see [RES end of support](res-end-of-support.md).
 
 # Known Issues
-<a name="res-troubleshooting-known-issues"></a>
 + [Known Issues 2024.x](#res-troubleshooting-known-issues-2024x)
   + [(2024.12 and 2024.12.01) Regex failure when registering a new Cognito user](#res-troubleshooting-known-issues-2024x-regex-failure-cognito)
   + [(2024.12.01 and earlier) Invalid bad cert error when connecting to VDI using a custom domain](#res-troubleshooting-known-issues-2024x-invalid-bad-cert)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # BedrockSessionContentBlock
-<a name="API_agent-runtime_BedrockSessionContentBlock"></a>
 
 A block of content that you pass to, or receive from, a Amazon Bedrock session in an invocation step. You pass the content to a session in the `payLoad` of the [PutInvocationStep](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_PutInvocationStep.html) API operation. You retrieve the content with the [GetInvocationStep](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetInvocationStep.html) API operation.
 

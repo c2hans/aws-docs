@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_S
 ---
 
 # SourceConnectionDetail
-<a name="API_SourceConnectionDetail"></a>
 
 Provides details about the configured `SourceConnection`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ml-operatio
 ---
 
 # Monitoring
-<a name="monitoring"></a>
 
 When models are already in production and delivering business value, run continuous checks to identify when models must be retrained or taken action upon.
 

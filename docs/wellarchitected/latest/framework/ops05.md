@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops05.h
 ---
 
 # Establish workload supportability for production
-<a name="ops05"></a>
 
  Evaluate the operational readiness of your workload, processes, procedures, and personnel to understand the operational risks related to your workload. Manage the flow of change into your environments.
 

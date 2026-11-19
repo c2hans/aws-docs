@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/create-target-grou
 ---
 
 # Create a VPC Lattice target group
-<a name="create-target-group"></a>
 
 You register your targets with a target group. By default, the VPC Lattice service sends requests to registered targets using the port and protocol that you specified for the target group. You can override this port when you register each target with the target group.
 

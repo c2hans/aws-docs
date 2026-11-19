@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_ListAcce
 ---
 
 # ListAccessPointsDescription
-<a name="API_S3Files_ListAccessPointsDescription"></a>
 
 Contains information about an S3 File System Access Point returned in list operations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Describ
 ---
 
 # DescribeVirtualGateway
-<a name="API_DescribeVirtualGateway"></a>
 
 Describes an existing virtual gateway.
 

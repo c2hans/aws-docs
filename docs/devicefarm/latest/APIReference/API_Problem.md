@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Probl
 ---
 
 # Problem
-<a name="API_Problem"></a>
 
 Represents a specific warning or failure.
 

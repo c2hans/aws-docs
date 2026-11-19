@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes the cost, network security, supported AWS Regions, quotas, and other considerations prior to deploying the solution.
 

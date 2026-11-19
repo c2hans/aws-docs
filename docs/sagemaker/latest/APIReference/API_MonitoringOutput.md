@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringOutput
-<a name="API_MonitoringOutput"></a>
 
 The output object for a monitoring job.
 

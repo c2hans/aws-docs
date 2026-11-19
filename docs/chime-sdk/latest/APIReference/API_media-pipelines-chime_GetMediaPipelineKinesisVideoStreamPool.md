@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # GetMediaPipelineKinesisVideoStreamPool
-<a name="API_media-pipelines-chime_GetMediaPipelineKinesisVideoStreamPool"></a>
 
 Gets an Kinesis video stream pool.
 

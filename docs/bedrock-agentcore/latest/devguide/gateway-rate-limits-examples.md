@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Rate limit API examples
-<a name="gateway-rate-limits-examples"></a>
 
 The following examples show how to manage rate limits using the AWS CLI and AWS Python SDK (Boto3).
 

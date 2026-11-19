@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invita
 ---
 
 # Invitation
-<a name="API_Invitation"></a>
 
 Contains information about the invitation to become a member account.
 

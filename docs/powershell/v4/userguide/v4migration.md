@@ -7,7 +7,6 @@ AWS Tools for PowerShell V4 has reached end of support.
 We recommend that you migrate to [AWS Tools for PowerShell V5](https://docs.aws.amazon.com/powershell/v5/userguide/). For additional details and information on how to migrate, please refer to our [end of support announcement](https://aws.amazon.com/blogs/developer/aws-tools-for-powershell-v4-end-of-support-announcement/).
 
 # Migrating from AWS Tools for PowerShell Version 3.3 to Version 4
-<a name="v4migration"></a>
 
 AWS Tools for PowerShell version 4 is a backward-compatible update to AWS Tools for PowerShell version 3.3. It adds significant improvements while maintaining existing cmdlet behavior.
 

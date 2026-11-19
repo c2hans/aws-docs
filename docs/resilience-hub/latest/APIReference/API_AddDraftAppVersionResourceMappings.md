@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_A
 ---
 
 # AddDraftAppVersionResourceMappings
-<a name="API_AddDraftAppVersionResourceMappings"></a>
 
 Adds the source of resource-maps to the draft version of an application. During assessment, AWS Resilience Hub will use these resource-maps to resolve the latest physical ID for each resource in the application template. For more information about different types of resources supported by AWS Resilience Hub and how to add them in your application, see [Step 2: How is your application managed?](https://docs.aws.amazon.com/resilience-hub/latest/userguide/how-app-manage.html) in the AWS Resilience Hub User Guide.
 

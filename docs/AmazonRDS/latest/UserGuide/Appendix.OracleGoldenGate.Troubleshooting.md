@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Troubleshooting Oracle GoldenGate
-<a name="Appendix.OracleGoldenGate.Troubleshooting"></a>
 
 This section explains the most common issues when using Oracle GoldenGate with Amazon RDS for Oracle.
 

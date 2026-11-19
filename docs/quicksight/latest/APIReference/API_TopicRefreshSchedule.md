@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicRefreshSchedule
-<a name="API_TopicRefreshSchedule"></a>
 
 A structure that represents a topic refresh schedule.
 

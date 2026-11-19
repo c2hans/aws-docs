@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/macie-statu
 ---
 
 # macie-status-check
-<a name="macie-status-check"></a>
 
 Checks if Amazon Macie is enabled in your account per region. The rule is NON\_COMPLIANT if the 'status' attribute is not set to 'ENABLED'.
 

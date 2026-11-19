@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/del
 ---
 
 # Step C: Deliver the source media
-<a name="deliver-source"></a>
 
 To deliver the source media, you must use an AWS API or SDK. You can't deliver the media using the Elemental Inference console.
 

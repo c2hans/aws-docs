@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateD
 ---
 
 # CreateDomainUnit
-<a name="API_CreateDomainUnit"></a>
 
 Creates a domain unit in Amazon DataZone.
 

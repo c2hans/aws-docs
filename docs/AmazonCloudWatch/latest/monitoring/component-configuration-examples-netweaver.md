@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/compo
 ---
 
 # SAP NetWeaver on Amazon EC2
-<a name="component-configuration-examples-netweaver"></a>
 
 The following example shows a component configuration in JSON format for SAP NetWeaver on Amazon EC2.
 

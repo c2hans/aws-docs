@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # ListManagedFirewallDomainLists
-<a name="API_route53globalresolver_ListManagedFirewallDomainLists"></a>
 
 Returns a paginated list of the AWS Managed DNS Lists and the categories for DNS Firewall. The categories are either `THREAT` or `CONTENT`.
 

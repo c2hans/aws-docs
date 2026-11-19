@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Validating database files in RDS for Oracle
-<a name="Appendix.Oracle.CommonDBATasks.ValidateDBFiles"></a>
 
 You can use the Amazon RDS package `rdsadmin.rdsadmin_rman_util` to validate Amazon RDS for Oracle database files, such as data files, tablespaces, control files, and server parameter files (SPFILEs).
 

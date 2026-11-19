@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_DescribeJobs
 ---
 
 # DescribeJobsRequestFilters
-<a name="API_DescribeJobsRequestFilters"></a>
 
 A set of filters by which to return Jobs.
 

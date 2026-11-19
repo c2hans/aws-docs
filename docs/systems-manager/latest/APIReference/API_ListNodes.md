@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ListNodes
-<a name="API_ListNodes"></a>
 
 Takes in filters and returns a list of managed nodes matching the filter criteria.
 

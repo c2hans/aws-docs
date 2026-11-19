@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Troubleshooting OpenSearch UI applications
-<a name="application-troubleshooting"></a>
 
 The following topics cover problems that are specific to OpenSearch UI. The sections in this topic cover problems that you can resolve inside the interface itself.
 

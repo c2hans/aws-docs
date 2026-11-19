@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/file-processing-app.htm
 ---
 
 # Create a serverless file-processing app
-<a name="file-processing-app"></a>
 
 One of the most common use cases for Lambda is to perform file processing tasks. For example, you might use a Lambda function to automatically create PDF files from HTML files or images, or to create thumbnails when a user uploads an image.
 

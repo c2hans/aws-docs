@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_GlueDataC
 ---
 
 # GlueDataCatalogConfigurationUpdate
-<a name="API_GlueDataCatalogConfigurationUpdate"></a>
 
 Updates to the configuration of the Glue Data Catalog that you use for SQL queries that you write in a Managed Service for Apache Flink Studio notebook.
 

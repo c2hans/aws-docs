@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListGiVersio
 ---
 
 # ListGiVersions
-<a name="API_ListGiVersions"></a>
 
 Returns information about Oracle Grid Infrastructure (GI) software versions that are available for a VM cluster for the specified shape.
 

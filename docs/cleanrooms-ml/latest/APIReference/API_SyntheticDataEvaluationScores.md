@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Sy
 ---
 
 # SyntheticDataEvaluationScores
-<a name="API_SyntheticDataEvaluationScores"></a>
 
 Comprehensive evaluation metrics for synthetic data that assess both the utility of the generated data for machine learning tasks and its privacy preservation characteristics.
 

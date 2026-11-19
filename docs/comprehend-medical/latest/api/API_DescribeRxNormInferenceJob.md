@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_Descri
 ---
 
 # DescribeRxNormInferenceJob
-<a name="API_DescribeRxNormInferenceJob"></a>
 
 Gets the properties associated with an InferRxNorm job. Use this operation to get the status of an inference job.
 

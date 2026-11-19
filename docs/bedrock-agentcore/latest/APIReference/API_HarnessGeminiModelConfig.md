@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # HarnessGeminiModelConfig
-<a name="API_HarnessGeminiModelConfig"></a>
 
 Configuration for a Google Gemini model provider. Requires an API key stored in AgentCore Identity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateTopicV2
-<a name="API_UpdateTopicV2"></a>
 
 Updates the definition of a Q topic.
 

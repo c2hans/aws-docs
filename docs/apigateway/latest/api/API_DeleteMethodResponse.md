@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteMethodRe
 ---
 
 # DeleteMethodResponse
-<a name="API_DeleteMethodResponse"></a>
 
 Deletes an existing MethodResponse resource.
 

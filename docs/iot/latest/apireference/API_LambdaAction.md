@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_LambdaAction
 ---
 
 # LambdaAction
-<a name="API_LambdaAction"></a>
 
 Describes an action to invoke a Lambda function.
 

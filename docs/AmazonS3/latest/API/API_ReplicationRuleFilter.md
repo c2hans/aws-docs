@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ReplicationRuleF
 ---
 
 # ReplicationRuleFilter
-<a name="API_ReplicationRuleFilter"></a>
 
 A filter that identifies the subset of objects to which the replication rule applies. A `Filter` must specify exactly one `Prefix`, `Tag`, or an `And` child element.
 

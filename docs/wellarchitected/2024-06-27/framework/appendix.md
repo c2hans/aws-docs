@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Appendix: Questions and best practices
-<a name="appendix"></a>
 
 This appendix summarizes all the questions and best practices in the AWS Well-Architected Framework.
 

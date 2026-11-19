@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSR
 ---
 
 # AWSRoboMaker\_FullAccess
-<a name="AWSRoboMaker_FullAccess"></a>
 
 **Description**: Provides full access to AWS RoboMaker via the AWS Management Console and SDK. Also provides select access to related services (e.g., S3, IAM).
 

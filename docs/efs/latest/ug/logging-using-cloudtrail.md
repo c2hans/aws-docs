@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/logging-using-cloudtrail.h
 ---
 
 # Logging Amazon EFS API calls with AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Amazon EFS is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Amazon EFS. CloudTrail captures all API calls for Amazon EFS as events, including calls from the Amazon EFS console and from code calls to Amazon EFS API operations.
 

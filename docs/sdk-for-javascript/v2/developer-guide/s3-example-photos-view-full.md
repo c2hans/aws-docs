@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/s3
 The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
 
 # Viewing Photos in an Amazon S3 Bucket: Full Code
-<a name="s3-example-photos-view-full"></a>
 
 This section contains the full HTML and JavaScript code for the example in which photos in an Amazon S3 bucket can be viewed. See the [parent section](s3-example-photos-view.md) for details and prerequisites.
 

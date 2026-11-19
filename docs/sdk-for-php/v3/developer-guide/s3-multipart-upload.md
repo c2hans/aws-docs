@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/s3-multip
 ---
 
 # Using Amazon S3 multipart uploads with AWS SDK for PHP Version 3
-<a name="s3-multipart-upload"></a>
 
 With a single `PutObject` operation, you can upload objects up to 5 GB in size. However, by using the multipart upload methods (for example, `CreateMultipartUpload`, `UploadPart`, `CompleteMultipartUpload`, `AbortMultipartUpload`), you can upload objects from 5 MB to 5 TB in size.
 

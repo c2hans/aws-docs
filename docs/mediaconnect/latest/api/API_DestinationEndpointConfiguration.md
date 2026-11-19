@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_DestinationE
 ---
 
 # DestinationEndpointConfiguration
-<a name="API_DestinationEndpointConfiguration"></a>
 
 The configuration settings for a destination endpoint. This is a union type, so exactly one of its members is set, depending on the type of the destination endpoint.
 

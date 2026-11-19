@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Resource Group Tagging API
-<a name="amazonresourcegrouptaggingapi"></a>
 
 Amazon Resource Group Tagging API provides the following APIs for data retrieval.
 

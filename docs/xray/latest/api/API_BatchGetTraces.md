@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_BatchGetTraces.html
 ---
 
 # BatchGetTraces
-<a name="API_BatchGetTraces"></a>
 
 **Note**
 You cannot find traces through this API if Transaction Search is enabled since trace is not indexed in X-Ray.

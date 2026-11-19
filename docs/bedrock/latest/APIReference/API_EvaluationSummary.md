@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationSummary
-<a name="API_EvaluationSummary"></a>
 
 Summary information of an evaluation job.
 

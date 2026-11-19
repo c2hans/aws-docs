@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/snapshot-archive-pr
 ---
 
 # Pricing and billing for archiving Amazon EBS snapshots
-<a name="snapshot-archive-pricing"></a>
 
 Archived snapshots are billed at a rate of $0.0125 per GB-month. For example, if you archive a 100 GiB snapshot, you are billed $1.25 (100 GiB \* $0.0125) per month.
 

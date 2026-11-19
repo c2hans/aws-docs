@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Verificat
 ---
 
 # VerificationInfo
-<a name="API_VerificationInfo"></a>
 
 An object that contains additional information about the verification status for the identity.
 

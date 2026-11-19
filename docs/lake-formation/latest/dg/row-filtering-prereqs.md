@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/row-filtering-p
 ---
 
 # Permissions required for querying tables with cell-level filtering
-<a name="row-filtering-prereqs"></a>
 
 The following AWS Identity and Access Management (IAM) permissions are required to run queries against tables with cell-level filtering.
 

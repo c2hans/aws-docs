@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # ReferencedImageDetail
-<a name="API_ReferencedImageDetail"></a>
 
 An object that describes the image tag details that are returned by a [DescribeImageTags](API_DescribeImageTags.md) action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_TrafficP
 ---
 
 # TrafficPolicy
-<a name="API_TrafficPolicy"></a>
 
 A complex type that contains settings for a traffic policy.
 

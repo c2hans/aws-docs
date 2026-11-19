@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_FailedDel
 ---
 
 # FailedDeleteRemediationExceptionsBatch
-<a name="API_FailedDeleteRemediationExceptionsBatch"></a>
 
 List of each of the failed delete remediation exceptions with specific reasons.
 

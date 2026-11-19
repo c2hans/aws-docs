@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Descr
 ---
 
 # DescribeDBClusterParameters
-<a name="API_DescribeDBClusterParameters"></a>
 
 Returns the detailed parameter list for a particular cluster parameter group.
 

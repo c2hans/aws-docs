@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaPackage::PackagingConfiguration MssPackage
-<a name="aws-properties-mediapackage-packagingconfiguration-msspackage"></a>
 
 Parameters for a packaging configuration that uses Microsoft Smooth Streaming (MSS) packaging.
 

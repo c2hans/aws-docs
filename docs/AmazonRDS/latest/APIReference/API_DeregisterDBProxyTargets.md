@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Deregi
 ---
 
 # DeregisterDBProxyTargets
-<a name="API_DeregisterDBProxyTargets"></a>
 
 Remove the association between one or more `DBProxyTarget` data structures and a `DBProxyTargetGroup`.
 

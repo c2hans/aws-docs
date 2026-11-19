@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Creat
 ---
 
 # CreateVocabulary
-<a name="API_CreateVocabulary"></a>
 
 Creates a new custom vocabulary.
 

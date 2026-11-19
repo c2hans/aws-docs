@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-dev
 ---
 
 # Viewing and managing custom engine versions
-<a name="sqlserver-dev-edition.managing"></a>
 
 To view all your RDS for SQL Server Developer Edition CEVs, use the `describe-db-engine-versions` command with `--engine sqlserver-dev-ee` for Enterprise Edition capabilities, or `--engine sqlserver-dev-se` for Standard Edition capabilities (SQL Server 2025 only).
 

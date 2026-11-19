@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSS3OnOutpostsServiceRolePolicy
-<a name="AWSS3OnOutpostsServiceRolePolicy"></a>
 
 **Description**: Allow Amazon S3 on Outposts service to manage EC2 network resources on your behalf.
 

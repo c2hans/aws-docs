@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Customi
 ---
 
 # CustomizationConfiguration
-<a name="API_CustomizationConfiguration"></a>
 
 Contains the configuration information to customize the logo, font, and color of an Amazon Q Business web experience with individual files for each property or a CSS file for them all.
 

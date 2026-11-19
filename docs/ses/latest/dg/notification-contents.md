@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/notification-contents.html
 ---
 
 # Amazon SNS notification contents for Amazon SES
-<a name="notification-contents"></a>
 
 Bounce, complaint, and delivery notifications are published to [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/sns) topics in JavaScript Object Notation (JSON) format. The top-level JSON object contains a `notificationType` string, a `mail` object, and either a `bounce` object, a `complaint` object, or a `delivery` object.
 

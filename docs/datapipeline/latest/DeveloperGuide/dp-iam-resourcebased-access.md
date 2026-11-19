@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-ia
 AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
 
 # IAM Policies for AWS Data Pipeline
-<a name="dp-iam-resourcebased-access"></a>
 
 By default, IAM entities don't have permission to create or modify AWS resources. To allow IAM entities to create or modify resources and perform tasks, you must create IAM policies that grant IAM entities permission to use the specific resources and API actions they'll need, and then attach those policies to the IAM entities that require those permissions.
 

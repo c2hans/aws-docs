@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/connector-for
 ---
 
 # Set up Connector for SCEP
-<a name="connector-for-scep-setting-up"></a>
 
 The procedures in this section help you get started with Connector for SCEP. It assumes that you've already created an AWS account. After you complete the steps on this page, you can proceed with creating a connector for SCEP.
 

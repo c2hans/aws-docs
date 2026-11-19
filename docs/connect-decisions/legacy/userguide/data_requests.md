@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data_
 ---
 
 # Data requests
-<a name="data_requests"></a>
 
 You can request data from your partners that have accepted your invite and are in the AWS Supply Chain network. The **Portal status** under **Partners** must display *Active* before you request data.
 

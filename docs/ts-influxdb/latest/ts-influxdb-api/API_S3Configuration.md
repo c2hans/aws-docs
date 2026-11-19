@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_S
 ---
 
 # S3Configuration
-<a name="API_S3Configuration"></a>
 
 Configuration for S3 bucket log delivery.
 

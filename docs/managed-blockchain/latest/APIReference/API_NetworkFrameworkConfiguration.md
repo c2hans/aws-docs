@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # NetworkFrameworkConfiguration
-<a name="API_NetworkFrameworkConfiguration"></a>
 
  Configuration properties relevant to the network for the blockchain framework that the network uses.
 

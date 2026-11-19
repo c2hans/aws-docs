@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSZ
 ---
 
 # AWSZoneGroupAccessManagementServiceRolePolicy
-<a name="AWSZoneGroupAccessManagementServiceRolePolicy"></a>
 
 **Description**: Provides read-only access to the APIs needed to support zone-group access-management for organizations.
 

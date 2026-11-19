@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteIn
 ---
 
 # RouteIntermodalOptions
-<a name="API_RouteIntermodalOptions"></a>
 
 Options related to intermodal routing.
 

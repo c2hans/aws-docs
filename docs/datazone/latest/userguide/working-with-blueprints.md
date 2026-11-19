@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/working-with-b
 ---
 
 # Amazon DataZone built-in blueprints
-<a name="working-with-blueprints"></a>
 
 A blueprint with which an environment is created defines what tools and services members of the project to which the environment belongs can use as they work with assets in the Amazon DataZone catalog. In the current release of Amazon DataZone, there are the following built-in blueprints:
 + Data lake blueprint

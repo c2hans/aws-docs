@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Code examples for AWS Marketplace Catalog API using AWS SDKs
-<a name="marketplace-catalog_code_examples"></a>
 
 The following code examples show you how to use AWS Marketplace Catalog API with an AWS software development kit (SDK).
 

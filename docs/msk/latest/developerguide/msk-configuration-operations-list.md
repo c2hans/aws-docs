@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-configurat
 ---
 
 # List configurations in your account for the current Region
-<a name="msk-configuration-operations-list"></a>
 
 This process describes how to list all Amazon MSK configurations in your account for the current AWS Region.
 + Run the following command.

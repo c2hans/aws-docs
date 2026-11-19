@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Confl
 ---
 
 # ConfluenceParameters
-<a name="API_ConfluenceParameters"></a>
 
 The parameters that are required to connect to a Confluence data source
 

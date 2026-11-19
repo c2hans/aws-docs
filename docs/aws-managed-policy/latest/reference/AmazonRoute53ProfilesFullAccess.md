@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53ProfilesFullAccess
-<a name="AmazonRoute53ProfilesFullAccess"></a>
 
 **Description**: This policy grants full access to Amazon Route 53 Profile resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-5240-release
 ---
 
 # Amazon EMR release 5.24.0
-<a name="emr-5240-release"></a>
 
 ## 5.24.0 application versions
 <a name="emr-5240-app-versions"></a>

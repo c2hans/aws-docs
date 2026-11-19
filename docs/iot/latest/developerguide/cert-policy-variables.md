@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/cert-policy-va
 ---
 
 # X.509 Certificate AWS IoT Core policy variables
-<a name="cert-policy-variables"></a>
 
 X.509 certificate policy variables assist with writing AWS IoT Core policies. These policies grant permissions based on X.509 certificate attributes. The following sections describe how to use these certificate policy variables.
 

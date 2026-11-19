@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Extracti
 ---
 
 # ExtractionDefinitionDisplay
-<a name="API_ExtractionDefinitionDisplay"></a>
 
 The display configuration for an extraction definition.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL13-BP01 Define recovery objectives for downtime and data loss
-<a name="rel_planning_for_recovery_objective_defined_recovery"></a>
 
  The workload has a recovery time objective (RTO) and recovery point objective (RPO).
 

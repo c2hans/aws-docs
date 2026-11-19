@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/IAMA
 ---
 
 # IAMAccessAnalyzerReadOnlyAccess
-<a name="IAMAccessAnalyzerReadOnlyAccess"></a>
 
 **Description**: Provides read only access to IAM Access Analyzer resources
 

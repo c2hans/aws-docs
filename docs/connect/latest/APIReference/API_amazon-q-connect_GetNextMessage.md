@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # GetNextMessage
-<a name="API_amazon-q-connect_GetNextMessage"></a>
 
 Retrieves next message on an Amazon Q in Connect session.
 

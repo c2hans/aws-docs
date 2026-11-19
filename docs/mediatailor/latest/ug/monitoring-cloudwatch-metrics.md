@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monitoring-cloudwa
 ---
 
 # Monitoring AWS Elemental MediaTailor with Amazon CloudWatch metrics
-<a name="monitoring-cloudwatch-metrics"></a>
 
 You can monitor AWS Elemental MediaTailor metrics using CloudWatch. CloudWatch collects raw data about the performance of the service and processes that data into readable, near real-time metrics. These statistics are kept for 15 months, so that you can access historical information and gain a better perspective on how your web application or service is performing. You can also set alarms that watch for certain thresholds, and send notifications or take actions when those thresholds are met. For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/).
 

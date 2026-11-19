@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_Authori
 ---
 
 # AuthorizationToken
-<a name="API_AuthorizationToken"></a>
 
 Contains authorization information for accessing third-party repositories.
 

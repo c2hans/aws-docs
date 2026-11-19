@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/android-pub
 ---
 
 # Publishing & Subscribing with the IVS Android Broadcast SDK \| Real-Time Streaming
-<a name="android-publish-subscribe"></a>
 
 This document takes you through the steps involved in publishing and subscribing to a stage using the IVS real-time streaming Android broadcast SDK.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ThingGroupPr
 ---
 
 # ThingGroupProperties
-<a name="API_ThingGroupProperties"></a>
 
 Thing group properties.
 

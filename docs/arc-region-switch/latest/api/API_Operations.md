@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Operati
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [ApprovePlanExecutionStep](API_ApprovePlanExecutionStep.md)

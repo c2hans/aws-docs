@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/APIReference/API
 ---
 
 # MetaFlowHealthStatus
-<a name="API_MetaFlowHealthStatus"></a>
 
 Contains the overall health status and per-entity breakdown for a WhatsApp Flow.
 

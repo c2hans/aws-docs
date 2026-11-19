@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Produc
 ---
 
 # ProductionVariantServerlessConfig
-<a name="API_ProductionVariantServerlessConfig"></a>
 
 Specifies the serverless configuration for an endpoint variant.
 

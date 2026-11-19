@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Connect
 ---
 
 # ConnectivityProperties
-<a name="API_ConnectivityProperties"></a>
 
 Contains the network and authentication settings for a connection, including connection credentials, physical network requirements, and compute-environment validation options.
 

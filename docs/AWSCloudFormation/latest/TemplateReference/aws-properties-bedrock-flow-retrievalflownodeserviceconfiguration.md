@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::Flow RetrievalFlowNodeServiceConfiguration
-<a name="aws-properties-bedrock-flow-retrievalflownodeserviceconfiguration"></a>
 
 Contains configurations for the service to use for retrieving data to return as the output from the node.
 

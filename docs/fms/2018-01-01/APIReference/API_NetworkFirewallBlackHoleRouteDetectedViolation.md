@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkF
 ---
 
 # NetworkFirewallBlackHoleRouteDetectedViolation
-<a name="API_NetworkFirewallBlackHoleRouteDetectedViolation"></a>
 
 Violation detail for an internet gateway route with an inactive state in the customer subnet route table or Network Firewall subnet route table.
 

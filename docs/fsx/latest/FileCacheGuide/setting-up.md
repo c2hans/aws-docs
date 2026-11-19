@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/setting-up.htm
 ---
 
 # Setting up
-<a name="setting-up"></a>
 
 Before you use Amazon File Cache for the first time, complete the tasks in the [Sign up for an AWS account](#sign-up-for-aws) section. To complete the [Getting started tutorial](getting-started.md), make sure the Amazon S3 bucket that you'll link to your cache has the permissions listed in [Adding permissions to use data repositories in Amazon S3](#fsx-adding-permissions-s3).
 

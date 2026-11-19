@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/deleting-expired-res
 ---
 
 # Deleting an expired reservation
-<a name="deleting-expired-reservation"></a>
 
 When a reservation has expired, you can delete it.
 

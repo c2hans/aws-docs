@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ExponentialR
 ---
 
 # ExponentialRolloutRate
-<a name="API_ExponentialRolloutRate"></a>
 
 Allows you to create an exponential rate of rollout for a job.
 

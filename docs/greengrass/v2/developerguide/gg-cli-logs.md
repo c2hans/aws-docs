@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-cli-logs
 ---
 
 # logs
-<a name="gg-cli-logs"></a>
 
 Use the `logs` command to analyze Greengrass logs on your core device.
 

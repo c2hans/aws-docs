@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CodegenFeatureFlags
-<a name="API_CodegenFeatureFlags"></a>
 
 Describes the feature flags that you can specify for a code generation job.
 

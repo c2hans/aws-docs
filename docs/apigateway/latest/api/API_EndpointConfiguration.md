@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_EndpointConfig
 ---
 
 # EndpointConfiguration
-<a name="API_EndpointConfiguration"></a>
 
 The endpoint configuration to indicate the types of endpoints an API (RestApi) or its custom domain name (DomainName) has and the IP address types that can invoke it.
 

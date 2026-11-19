@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3Files::FileSystem
-<a name="aws-resource-s3files-filesystem"></a>
 
 The `AWS::S3Files::FileSystem` resource specifies an Amazon S3 Files file system scoped to a bucket or prefix within a bucket, enabling file system access to S3 data.
 

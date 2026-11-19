@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/java/cloudwatch-log
 ---
 
 # Set up application logging in Managed Service for Apache Flink
-<a name="cloudwatch-logs"></a>
 
 By adding an Amazon CloudWatch logging option to your Managed Service for Apache Flink application, you can monitor for application events or configuration problems.
 

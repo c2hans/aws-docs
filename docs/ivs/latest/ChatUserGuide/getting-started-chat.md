@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/getting-started
 ---
 
 # Getting Started with Amazon IVS Chat
-<a name="getting-started-chat"></a>
 
 Amazon Interactive Video Service (IVS) Chat is a managed, live-chat feature to go alongside your live video streams. (IVS Chat also can be used without a video stream.) You can create chat rooms and enable chat sessions between your users.
 

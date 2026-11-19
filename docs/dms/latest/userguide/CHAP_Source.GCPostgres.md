@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.GCPostg
 ---
 
 # Using Google Cloud for PostgreSQL as a source for AWS DMS
-<a name="CHAP_Source.GCPostgres"></a>
 
 With AWS DMS, you can use Google Cloud for PostgreSQL as a source in much the same way as you do self-managed PostgreSQL databases.
 

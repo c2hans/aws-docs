@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Enabling auditing for the SYS.AUD$ table
-<a name="Appendix.Oracle.CommonDBATasks.EnablingAuditing"></a>
 
 To enable auditing on the database audit trail table `SYS.AUD$`, use the Amazon RDS procedure `rdsadmin.rdsadmin_master_util.audit_all_sys_aud_table`. The only supported audit property is `ALL`. You can't audit or not audit individual statements or operations.
 

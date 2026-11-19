@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # GetWorkloadAccessTokenForUserId
-<a name="API_GetWorkloadAccessTokenForUserId"></a>
 
 Obtains a workload access token for agentic workloads acting on behalf of a user, using the user's ID.
 

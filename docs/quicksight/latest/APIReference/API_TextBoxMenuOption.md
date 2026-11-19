@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TextB
 ---
 
 # TextBoxMenuOption
-<a name="API_TextBoxMenuOption"></a>
 
 The menu options for the interactions of a textbox.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/conver
 ---
 
 # Sending WhatsApp conversion events in AWS End User Messaging Social
-<a name="conversions-api"></a>
 
 If you run "Ads that Click to WhatsApp" campaigns on Meta, you can send conversion events (such as purchases, leads, or content views) back to Meta for ad attribution and optimization. Send these events directly through AWS End User Messaging Social, without calling the Meta Graph API.
 

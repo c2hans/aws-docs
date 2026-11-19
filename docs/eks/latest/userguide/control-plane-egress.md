@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/control-plane-egres
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configuring control plane egress routing
-<a name="control-plane-egress"></a>
 
 By default, Amazon EKS manages the egress networking from the Kubernetes control plane to resources in your VPC. Use *control plane egress routing* to change this behavior and manage the network path yourself. This gives you full control over how traffic from the control plane elastic network interfaces (ENIs) reaches your VPC resources. You can route through your own NAT gateways, firewalls, or inspection appliances.
 

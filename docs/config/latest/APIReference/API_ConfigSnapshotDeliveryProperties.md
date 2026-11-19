@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ConfigSna
 ---
 
 # ConfigSnapshotDeliveryProperties
-<a name="API_ConfigSnapshotDeliveryProperties"></a>
 
 Provides options for how often AWS Config delivers configuration snapshots to the Amazon S3 bucket in your delivery channel.
 

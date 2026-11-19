@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_BatchGetTableOpti
 ---
 
 # BatchGetTableOptimizerError
-<a name="API_BatchGetTableOptimizerError"></a>
 
 Contains details on one of the errors in the error list returned by the `BatchGetTableOptimizer` operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/notification-c
 ---
 
 # Event message structure
-<a name="notification-content-structure"></a>
 
 The notification message that Amazon S3 sends to publish an event is in the JSON format.
 

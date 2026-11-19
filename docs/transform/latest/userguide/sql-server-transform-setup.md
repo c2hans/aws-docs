@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/sql-server-tr
 ---
 
 # AWS Transform setup
-<a name="sql-server-transform-setup"></a>
 
 Begin your modernization journey by accessing the AWS Transform console and initiating a new modernization project. This step establishes your workspace and sets up the foundational configuration for your full-stack transformation.
 

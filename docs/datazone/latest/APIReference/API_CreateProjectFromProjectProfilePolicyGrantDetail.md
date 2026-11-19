@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CreateP
 ---
 
 # CreateProjectFromProjectProfilePolicyGrantDetail
-<a name="API_CreateProjectFromProjectProfilePolicyGrantDetail"></a>
 
 Specifies whether to create a project from project profile policy grant details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonChimeUserManagement
-<a name="AmazonChimeUserManagement"></a>
 
 **Description**: Provides user management access to Amazon Chime Admin Console via the AWS Management Console.
 

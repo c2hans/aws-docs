@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-toolkit/latest/userguide/security_
 ---
 
 # Identity-based policy examples for AWS MCP Server
-<a name="security_iam_id-based-policy-examples"></a>
 
 The following examples show how to use IAM policies with the MCP condition context keys to control access through AWS MCP Server. Each example shows the policy statement to include within your IAM policy document.
 

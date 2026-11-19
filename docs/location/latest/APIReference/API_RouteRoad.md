@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteRo
 ---
 
 # RouteRoad
-<a name="API_RouteRoad"></a>
 
 The road on the route.
 

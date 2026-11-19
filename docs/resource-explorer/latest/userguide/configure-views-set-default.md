@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/confi
 ---
 
 # Setting a default view in an AWS Region
-<a name="configure-views-set-default"></a>
 
 In AWS Resource Explorer, you can define many views in an AWS Region, where each view addresses different search requirements. We recommend that you set ***one*** view in each Region as the *default view* for that Region.
 

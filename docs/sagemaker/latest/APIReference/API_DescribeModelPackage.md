@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeModelPackage
-<a name="API_DescribeModelPackage"></a>
 
 Returns a description of the specified model package, which is used to create SageMaker models or list them on AWS Marketplace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Tag.
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Represents a key-value metadata tag.
 

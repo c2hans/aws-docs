@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Ba
 ---
 
 # BatchGetRumMetricDefinitions
-<a name="API_BatchGetRumMetricDefinitions"></a>
 
 Retrieves the list of metrics and dimensions that a RUM app monitor is sending to a single destination.
 

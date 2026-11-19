@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/retrie
 ---
 
 # Getting Statistics for Numeric Fields in Amazon CloudSearch
-<a name="retrieving-stats"></a>
 
 Amazon CloudSearch can return the following statistics for facet-enabled numeric fields:
 + `count`–The number of documents that contain a value in the specified field.

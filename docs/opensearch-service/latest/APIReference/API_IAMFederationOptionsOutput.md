@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # IAMFederationOptionsOutput
-<a name="API_IAMFederationOptionsOutput"></a>
 
 Output parameters showing the current IAM identity federation configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Use a document model for DynamoDB using an AWS SDK
-<a name="example_dynamodb_MidLevelInterface_section"></a>
 
 The following code example shows how to perform Create, Read, Update, and Delete (CRUD) and batch operations using a document model for DynamoDB and an AWS SDK.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Syste
 ---
 
 # SystemServiceDisassociatedMetadata
-<a name="API_SystemServiceDisassociatedMetadata"></a>
 
 Metadata for a system service disassociated event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateWo
 ---
 
 # UpdateWorkspaceVisibility
-<a name="API_UpdateWorkspaceVisibility"></a>
 
 Updates the visibility setting of a workspace, controlling whether it is available to all users, assigned users only, or none.
 

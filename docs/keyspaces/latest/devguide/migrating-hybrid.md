@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/migrating-hybr
 ---
 
 # Using a hybrid migration solution: Apache Cassandra to Amazon Keyspaces
-<a name="migrating-hybrid"></a>
 
 The following migration solution can be considered a hybrid between online and offline migration. With this hybrid approach, data is written to the destination database in near real time without providing read after write consistency. This means that newly written data won’t be immediately available and delays are to be expected. If you need read after write consistency, see [Online migration to Amazon Keyspaces: strategies and best practices](migrating-online.md).
 

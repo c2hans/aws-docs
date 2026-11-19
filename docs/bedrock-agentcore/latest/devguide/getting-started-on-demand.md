@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gettin
 ---
 
 # Getting started with on-demand evaluation
-<a name="getting-started-on-demand"></a>
 
 Follow these steps to set up and run your first on-demand evaluation.
 

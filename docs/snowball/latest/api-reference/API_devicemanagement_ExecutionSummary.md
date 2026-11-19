@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # ExecutionSummary
-<a name="API_devicemanagement_ExecutionSummary"></a>
 
 The summary of a task execution on a specified device.
 

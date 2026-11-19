@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/assistan
 ---
 
 # Troubleshooting
-<a name="assistant-troubleshooting"></a>
 
 This section describes common issues you might encounter when using the Deadline Cloud assistant and how to resolve them.
 

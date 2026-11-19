@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk Linux-based platform updates on October 17, 2019
-<a name="release-2019-10-17-linux"></a>
 
 This release provides new Linux-based platform versions for AWS Elastic Beanstalk. The release includes security updates. It also includes Multicontainer Docker, Go, Node.js, PHP, and Ruby updates and an nginx update.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/id-based-po
 ---
 
 # Administrator permissions
-<a name="id-based-policy-examples-admins"></a>
 
 The following policies allow Amazon Q Developer administrators to perform administrative tasks in the Amazon Q subscription management console and Amazon Q Developer console.
 

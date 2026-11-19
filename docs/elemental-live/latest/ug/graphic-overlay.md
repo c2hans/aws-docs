@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/graphic-overlay
 ---
 
 # Overview of graphic overlay solutions
-<a name="graphic-overlay"></a>
 
 You can insert a graphic onto the video in an Elemental Live event using the graphic overlay feature. There are two types of graphic overlay available — static and motion.
 

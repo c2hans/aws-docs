@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTransitNotice
-<a name="API_RouteTransitNotice"></a>
 
 A notice that indicates an issue that occurred during route calculation.
 

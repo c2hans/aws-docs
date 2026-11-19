@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/domain-policies.h
 ---
 
 # Domain policies
-<a name="domain-policies"></a>
 
 CodeArtifact supports using resource-based permissions to control access. Resource-based permissions let you specify who has access to a resource and which actions they can perform on it. By default, only the AWS account that owns the domain can create and access repositories in the domain. You can apply a policy document to a domain to allow other IAM principals to access it.
 

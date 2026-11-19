@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Satellite Operator Maximum Resiliency
-<a name="satellite-operator-maximum-resiliency"></a>
 
 Publication date: **April 25, 2023 ([Diagram history](diagram-history.md))**
 

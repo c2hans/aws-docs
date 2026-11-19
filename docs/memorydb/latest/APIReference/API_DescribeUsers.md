@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_Describ
 ---
 
 # DescribeUsers
-<a name="API_DescribeUsers"></a>
 
 Returns a list of users.
 

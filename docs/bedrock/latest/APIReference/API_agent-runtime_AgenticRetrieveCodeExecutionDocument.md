@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveCodeExecutionDocument
-<a name="API_agent-runtime_AgenticRetrieveCodeExecutionDocument"></a>
 
 A document that a code execution action reads.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Tag.ht
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Contains information about a tag key-value pair.
 

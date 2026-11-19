@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_UpdateMicr
 ---
 
 # UpdateMicrovmImage
-<a name="API_UpdateMicrovmImage"></a>
 
 Updates the configuration of a MicroVM image and triggers a new version build. This operation uses PUT semantics — all required fields (codeArtifact, baseImageArn, buildRoleArn) must be provided with every request.
 

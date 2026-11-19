@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Au
 ---
 
 # AudienceGenerationJobSummary
-<a name="API_AudienceGenerationJobSummary"></a>
 
 Provides information about the configured audience generation job.
 

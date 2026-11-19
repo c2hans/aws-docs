@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # ECS architecture
-<a name="ecs-existing-distribution"></a>
 
 For the ECS architecture, deploy the solution as-is to provision all necessary resources. Then manually configure your existing CloudFront distribution to use the solution’s resources.
 

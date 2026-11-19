@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # AnalyzableServerSummary
-<a name="API_AnalyzableServerSummary"></a>
 
 A summary of information about an analyzable server.
 

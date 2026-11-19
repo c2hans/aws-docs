@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geotags
 ---
 
 # TagResource
-<a name="API_geotags_TagResource"></a>
 
 Assigns one or more tags (key-value pairs) to the specified Amazon Location Service resource.
 

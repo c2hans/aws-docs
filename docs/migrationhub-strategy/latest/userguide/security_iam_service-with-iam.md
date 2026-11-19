@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/s
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # How Migration Hub Strategy Recommendations works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Strategy Recommendations, learn what IAM features are available to use with Strategy Recommendations.
 

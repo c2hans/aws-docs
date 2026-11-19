@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSSMForSAPServiceLinkedRolePolicy
-<a name="AWSSSMForSAPServiceLinkedRolePolicy"></a>
 
 **Description**: Provides AWS Systems Manager for SAP with the permissions needed to manage and integrate SAP software with AWS.
 

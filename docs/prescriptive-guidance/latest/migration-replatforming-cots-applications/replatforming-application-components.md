@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-r
 ---
 
 # Replatforming application components running on unsupported OSs
-<a name="replatforming-application-components"></a>
 
 The replatforming approach for application components that run on unsupported OSs is different for each application component. The following table summarizes the replatforming options available for application components that reached EOS.
 

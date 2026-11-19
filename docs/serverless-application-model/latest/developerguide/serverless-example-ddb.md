@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # Process DynamoDB events with AWS SAM
-<a name="serverless-example-ddb"></a>
 
 With this example application, you build on what you learned in the overview and the Quick Start guide, and install another example application. This application consists of a Lambda Event Function that's invoked by a DynamoDB table event source. The Lambda function is very simple—it logs data that was passed in through the event source message.
 

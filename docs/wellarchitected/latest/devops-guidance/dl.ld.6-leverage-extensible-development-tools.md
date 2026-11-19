@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.LD.6] Leverage extensible development tools
-<a name="dl.ld.6-leverage-extensible-development-tools"></a>
 
  **Category:** RECOMMENDED
 

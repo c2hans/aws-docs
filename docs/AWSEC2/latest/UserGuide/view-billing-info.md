@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/view-billing-inf
 ---
 
 # Finding AMI billing and usage details
-<a name="view-billing-info"></a>
 
 The following properties can help you verify AMI charges on your bill:
 + **Platform details**

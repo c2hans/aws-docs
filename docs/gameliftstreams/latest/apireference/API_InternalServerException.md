@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # InternalServerException
-<a name="API_InternalServerException"></a>
 
 The service encountered an internal error and is unable to complete the request.
 

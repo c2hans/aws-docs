@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/sso-iam.html
 ---
 
 # SSO – SAP Cloud Identity Services and AWS IAM Identity Center
-<a name="sso-iam"></a>
 
 One of the security best practices for RISE with SAP is to centralize the user access control through the integration with a corporate Identity Provider (IdP). This makes it easier for you to provision, de-provision and manage your user access across the company including RISE with SAP, AWS services, and others.
 

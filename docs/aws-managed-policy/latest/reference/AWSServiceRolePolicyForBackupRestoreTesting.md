@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRolePolicyForBackupRestoreTesting
-<a name="AWSServiceRolePolicyForBackupRestoreTesting"></a>
 
 **Description**: This policy contains permissions for testing restores and for cleaning up resources created during tests.
 

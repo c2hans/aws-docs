@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Device42
-<a name="discovery-device42"></a>
 
 *Last update: May 15, 2023*
 

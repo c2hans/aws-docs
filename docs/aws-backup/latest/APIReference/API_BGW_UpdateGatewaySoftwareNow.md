@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_U
 ---
 
 # UpdateGatewaySoftwareNow
-<a name="API_BGW_UpdateGatewaySoftwareNow"></a>
 
 Updates the gateway virtual machine (VM) software. The request immediately triggers the software update.
 

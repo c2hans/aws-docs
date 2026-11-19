@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UsageS
 ---
 
 # UsageStatistics
-<a name="API_UsageStatistics"></a>
 
 Contains the result of GuardDuty usage. If a UsageStatisticType is provided the result for other types will be null.
 

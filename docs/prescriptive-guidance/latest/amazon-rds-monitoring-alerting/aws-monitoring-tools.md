@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Additional AWS services
-<a name="aws-monitoring-tools"></a>
 
 AWS provides several supporting services, which also integrate with Amazon RDS and CloudWatch, to further enhance the observability of your databases. These include Amazon EventBridge, Amazon CloudWatch Logs, and AWS CloudTrail.
 + [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) is a serverless event bus that can receive, filter, transform, route, and deliver events from your applications and AWS resources, including your Amazon RDS DB instances. An *Amazon RDS event* indicates a change in the Amazon RDS environment. For example, when a DB instance changes its status from *Available* to *Stopped*, Amazon RDS generates the event `RDS-EVENT-0087 / The DB instance has been stopped`. Amazon RDS delivers events to CloudWatch Events and EventBridge in near real time. Using EventBridge and CloudWatch Events, you can define rules to send alerts on specific Amazon RDS events of interest and automate actions to be taken when an event matches the rule. A variety of targets is available in response to an event, such as an AWS Lambda function that can perform a corrective action, or an Amazon SNS topic that can send an email or SMS to notify DBAs or DevOps engineers about the event.

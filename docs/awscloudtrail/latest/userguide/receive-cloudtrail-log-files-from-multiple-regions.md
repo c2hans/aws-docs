@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-c
 ---
 
 # Receiving CloudTrail log files from multiple Regions
-<a name="receive-cloudtrail-log-files-from-multiple-regions"></a>
 
 When you create a multi-Region trail, CloudTrail logs events from all Regions enabled in your account. CloudTrail delivers log files to the same S3 bucket and CloudWatch Logs log group. As long as CloudTrail has permissions to write to an S3 bucket, the bucket for a multi-Region trail does not have to be in the trail's home Region.
 

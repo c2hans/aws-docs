@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/exiting-full-screen
 ---
 
 # Exiting full screen on multiple monitors
-<a name="exiting-full-screen-multiple-monitors"></a>
 
 To exit full screen on multiple monitors, do one of the following depending on your client.
 

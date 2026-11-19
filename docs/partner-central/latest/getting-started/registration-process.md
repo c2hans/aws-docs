@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/r
 ---
 
 # Registration process
-<a name="registration-process"></a>
 
 Before you start the AWS Partner Central registration process, make sure you complete the [preparation](https://docs.aws.amazon.com/partner-central/latest/getting-started/registering.html).
 

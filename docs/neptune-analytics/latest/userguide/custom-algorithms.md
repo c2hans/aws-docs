@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/custo
 ---
 
 # Misc. graph procedures
-<a name="custom-algorithms"></a>
 
  The miscellaneous graph procedures can be ran on your graphs to give you insight into your graphs and their metrics.
 

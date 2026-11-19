@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_DeleteJ
 ---
 
 # DeleteJob
-<a name="API_DeleteJob"></a>
 
 Deletes the specified DataBrew job.
 

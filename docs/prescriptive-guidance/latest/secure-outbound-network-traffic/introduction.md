@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-outb
 ---
 
 # Secure your VPC's outbound network traffic in the AWS Cloud
-<a name="introduction"></a>
 
 *Kirankumar Chandrashekar and Abdal Garuba, Amazon Web Services*
 

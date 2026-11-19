@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/config
 ---
 
 # Add SDI video routers
-<a name="config-wrkr-lv-cg-sdi-rou"></a>
 
 If your deployment includes SDI video inputs that pass through a router, provide information about your router configuration on the AWS Elemental Live node.
 

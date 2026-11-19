@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_ImageRepository
 ---
 
 # ImageRepository
-<a name="API_ImageRepository"></a>
 
 Describes a source image repository.
 

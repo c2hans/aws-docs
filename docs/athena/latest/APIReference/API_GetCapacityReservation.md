@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCapaci
 ---
 
 # GetCapacityReservation
-<a name="API_GetCapacityReservation"></a>
 
 Returns information about the capacity reservation with the specified name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # AdminScopeFilterInput
-<a name="API_AdminScopeFilterInput"></a>
 
 Determines which accounts and organizational units are in an administrator's scope. This is the input form, which uses account and organizational unit IDs.
 

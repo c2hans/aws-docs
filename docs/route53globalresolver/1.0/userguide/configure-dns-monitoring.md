@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/route53globalresolver/1.0/userguide/conf
 ---
 
 # Configure DNS monitoring and logging with Amazon Route 53 Global Resolver
-<a name="configure-dns-monitoring"></a>
 
 Configure DNS monitoring in Amazon Route 53 Global Resolver to capture detailed information about DNS queries, responses, and security actions. This section covers the steps to set up logging destinations and configure monitoring tools.
 

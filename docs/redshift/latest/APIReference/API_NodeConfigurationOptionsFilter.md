@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_NodeCon
 ---
 
 # NodeConfigurationOptionsFilter
-<a name="API_NodeConfigurationOptionsFilter"></a>
 
 A set of elements to filter the returned node configurations.
 

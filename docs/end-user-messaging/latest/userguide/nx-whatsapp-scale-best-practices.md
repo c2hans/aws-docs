@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-w
 ---
 
 # Best practices
-<a name="nx-whatsapp-scale-best-practices"></a>
 
 WhatsApp messaging is governed by Meta's quality and policy rules, and your messaging limit rises or falls with how recipients respond to your messages. The following practices protect your quality rating and messaging limits and help your program scale.
 

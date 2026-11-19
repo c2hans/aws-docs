@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_S3BucketSour
 ---
 
 # S3BucketSource
-<a name="API_S3BucketSource"></a>
 
 S3 bucket source.
 

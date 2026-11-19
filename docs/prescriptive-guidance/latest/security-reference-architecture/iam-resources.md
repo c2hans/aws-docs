@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/security-re
 ---
 
 # IAM resources
-<a name="iam-resources"></a>
 
 Although AWS Identity and Access Management (IAM) is not a service that is included in a traditional architecture diagram, it touches every aspect of the AWS organization, AWS accounts, and AWS services. You cannot deploy any AWS services without creating IAM entities and granting permissions first. A full explanation of IAM is beyond the scope of this document, but this section provides important summaries of best practice recommendations and pointers to additional resources.
 + For IAM best practices, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) in the AWS documentation, [IAM articles](https://aws.amazon.com/blogs/security/category/security-identity-compliance/aws-identity-and-access-management-iam/) in the AWS Security blog, and [AWS re:Invent presentations](https://www.youtube.com/watch?v=YQsK4MtsELU).

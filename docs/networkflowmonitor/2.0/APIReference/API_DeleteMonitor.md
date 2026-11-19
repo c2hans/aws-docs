@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_
 ---
 
 # DeleteMonitor
-<a name="API_DeleteMonitor"></a>
 
 Deletes a monitor in Network Flow Monitor.
 

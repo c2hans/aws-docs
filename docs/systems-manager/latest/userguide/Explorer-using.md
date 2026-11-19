@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/Explore
 ---
 
 # Using Explorer
-<a name="Explorer-using"></a>
 
 This section includes information about how to customize AWS Systems Manager Explorer by changing the widget layout and by changing the data that displays in the dashboard.
 

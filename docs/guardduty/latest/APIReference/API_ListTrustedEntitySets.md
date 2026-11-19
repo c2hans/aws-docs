@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListTr
 ---
 
 # ListTrustedEntitySets
-<a name="API_ListTrustedEntitySets"></a>
 
 Lists the trusted entity sets associated with the specified GuardDuty detector ID. If you use this operation from a member account, the trusted entity sets that are returned as a response, belong to the administrator account.
 

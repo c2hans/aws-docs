@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/ec2-metrics-
 ---
 
 # EC2 instance metrics
-<a name="ec2-metrics-analyzed"></a>
 
 **Topics**
 + [Metrics analyzed for EC2 instances](#ec2-metrics-list)

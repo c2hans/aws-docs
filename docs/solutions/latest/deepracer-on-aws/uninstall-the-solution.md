@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/uninst
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 To uninstall the solution, use the AWS Management Console or the AWS Command Line Interface (AWS CLI).
 

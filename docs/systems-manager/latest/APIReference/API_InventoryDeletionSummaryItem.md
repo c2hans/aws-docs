@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InventoryDeletionSummaryItem
-<a name="API_InventoryDeletionSummaryItem"></a>
 
 Either a count, remaining count, or a version number in a delete inventory summary.
 

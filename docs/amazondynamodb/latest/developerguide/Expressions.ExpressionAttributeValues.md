@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Exp
 ---
 
 # Using expression attribute values in DynamoDB
-<a name="Expressions.ExpressionAttributeValues"></a>
 
 *Expression attribute values* in Amazon DynamoDB act as variables. They're substitutes for the actual values that you want to compare—values that you might not know until runtime. An expression attribute value must begin with a colon (`:`) and be followed by one or more alphanumeric characters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonLexReadOnly
-<a name="AmazonLexReadOnly"></a>
 
 **Description**: Provides read-only access to Amazon Lex.
 

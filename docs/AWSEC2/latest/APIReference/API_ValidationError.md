@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Validatio
 ---
 
 # ValidationError
-<a name="API_ValidationError"></a>
 
 The error code and error message that is returned for a parameter or parameter combination that is not valid when a new launch template or new version of a launch template is created.
 

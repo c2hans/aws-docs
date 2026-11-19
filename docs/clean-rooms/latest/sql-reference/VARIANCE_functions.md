@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/VARIANC
 ---
 
 # VAR\_SAMP and VAR\_POP functions
-<a name="VARIANCE_functions"></a>
 
  The VAR\_SAMP and VAR\_POP functions return the sample and population variance of a set of numeric values (integer, decimal, or floating-point). The result of the VAR\_SAMP function is equivalent to the squared sample standard deviation of the same set of values.
 

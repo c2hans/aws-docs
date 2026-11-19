@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/vpcs.mdb.html
 ---
 
 # Understanding MemoryDB and VPCs
-<a name="vpcs.mdb"></a>
 
 MemoryDB is fully integrated with Amazon VPC. For MemoryDB users, this means the following:
 + MemoryDB always launches your cluster in a VPC.

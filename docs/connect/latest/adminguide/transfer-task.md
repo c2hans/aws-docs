@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/transfer-task.
 ---
 
 # Transfer a task to another agent or queue in the Connect Customer Contact Control Panel (CCP)
-<a name="transfer-task"></a>
 
 You can transfer a task that's assigned to you to another agent or queue.
 

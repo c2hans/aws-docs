@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/get-routing-
 ---
 
 # Get routing control state
-<a name="get-routing-control-state"></a>
 
 The following is an example of a request to get a routing control state, and the response.
 

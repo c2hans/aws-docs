@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/lf-limitations.
 ---
 
 # Lake Formation best practices, considerations, and limitations
-<a name="lf-limitations"></a>
 
 Use this section to quickly find best practices, considerations, and limitations within AWS Lake Formation.
 

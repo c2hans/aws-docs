@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraP
 ---
 
 # Fast recovery after failover with cluster cache management for Aurora PostgreSQL
-<a name="AuroraPostgreSQL.cluster-cache-mgmt"></a>
 
 For fast recovery of the writer DB instance in your Aurora PostgreSQL clusters if there's a failover, use cluster cache management for Amazon Aurora PostgreSQL. Cluster cache management ensures that application performance is maintained if there's a failover.
 

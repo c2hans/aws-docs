@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TagResou
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds the specified tags to the specified resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowAliasRoutingConfigurationListItem
-<a name="API_agent_FlowAliasRoutingConfigurationListItem"></a>
 
 Contains information about a version that the alias maps to.
 

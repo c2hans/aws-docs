@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_SourceApp
 ---
 
 # SourceApplicationDescription
-<a name="API_SourceApplicationDescription"></a>
 
 Describes the application that an enhanced snapshot was created from.
 

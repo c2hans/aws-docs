@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Working with existing landing zones
-<a name="working-with-existing-landing-zones"></a>
 
 This solution can integrate with and manage your accounts and OUs in existing landing zone environments. Remember the following when deploying the solution to an existing environment.
 

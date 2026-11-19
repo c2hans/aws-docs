@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Softwar
 ---
 
 # SoftwareCompositeFilter
-<a name="API_SoftwareCompositeFilter"></a>
 
 Enables the creation of criteria for software packages in Security Hub.
 
@@ -12,7 +11,7 @@ Enables the creation of criteria for software packages in Security Hub.
 
  ** NestedCompositeFilters **   <a name="securityhub-Type-SoftwareCompositeFilter-NestedCompositeFilters"></a>
 Provides an additional level of filtering, creating a three-layer nested structure. The first layer is a `CompositeFilters` array with a `CompositeOperator` (`AND`/`OR`). The second layer is a `CompositeFilter` object that contains direct filters and `NestedCompositeFilters`. The third layer is `NestedCompositeFilters`, which contains additional filter conditions.
-Type: Array of [SoftwareCompositeFilter](#API_SoftwareCompositeFilter) objects
+Type: Array of [SoftwareCompositeFilter](API_SoftwareCompositeFilter.md) objects
 Required: No
 
  ** Operator **   <a name="securityhub-Type-SoftwareCompositeFilter-Operator"></a>

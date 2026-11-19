@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/d
 ---
 
 # Choosing an AWS database service
-<a name="databases-on-aws-how-to-choose"></a>
 
 **Taking the first step**
 

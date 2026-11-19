@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_EncryptionKe
 ---
 
 # EncryptionKeyConfigurationInput
-<a name="API_EncryptionKeyConfigurationInput"></a>
 
 The configuration of the encryption key to use for an Autonomous Database. This is a union, so only one of the following members can be specified.
 

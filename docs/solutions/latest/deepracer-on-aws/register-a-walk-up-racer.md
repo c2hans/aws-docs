@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/regist
 ---
 
 # Register a walk-up racer
-<a name="register-a-walk-up-racer"></a>
 
 Registration managers, race facilitators, and admins can create accounts for walk-up participants. To do this, choose **Register racer**, then enter the participant’s email address. You can add an optional two-letter country code. Choose **Register racer**.
 

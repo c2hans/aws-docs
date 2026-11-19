@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Instanc
 ---
 
 # InstanceMonitoring
-<a name="API_InstanceMonitoring"></a>
 
 Describes whether detailed monitoring is enabled for the Auto Scaling instances.
 

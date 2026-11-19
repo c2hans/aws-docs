@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/color-space-simplifi
 ---
 
 # Input requirements
-<a name="color-space-simplified-supported-inputs"></a>
 
 MediaLive can work with the [supported color space](color-space-simplified-standards.md) in all [supported types of input](inputs-supported-formats.md) with the following notes.
 

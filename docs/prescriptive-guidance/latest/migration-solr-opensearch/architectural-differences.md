@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Core architectural differences
-<a name="architectural-differences"></a>
 
 ## Distributed cluster management model
 <a name="cluster-management"></a>

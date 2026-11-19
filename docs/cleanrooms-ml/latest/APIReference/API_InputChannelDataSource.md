@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_In
 ---
 
 # InputChannelDataSource
-<a name="API_InputChannelDataSource"></a>
 
 Provides the data source that is used to define an input channel.
 

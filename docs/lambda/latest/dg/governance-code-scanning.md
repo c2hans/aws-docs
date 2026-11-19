@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/governance-code-scannin
 ---
 
 # Automate security assessments for Lambda with Amazon Inspector
-<a name="governance-code-scanning"></a>
 
  [Amazon Inspector](https://aws.amazon.com/inspector/) is a vulnerability management service that continually scans workloads for known software vulnerabilities and unintended network exposure. Amazon Inspector creates a finding that describes the vulnerability, identifies the affected resource, rates the severity of the vulnerability, and provides remediation guidance.
 

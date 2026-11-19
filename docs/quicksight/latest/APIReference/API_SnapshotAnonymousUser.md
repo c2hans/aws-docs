@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Snaps
 ---
 
 # SnapshotAnonymousUser
-<a name="API_SnapshotAnonymousUser"></a>
 
 A structure that contains information on the anonymous user configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Bat
 ---
 
 # BatchGetAssetPropertyValueEntry
-<a name="API_BatchGetAssetPropertyValueEntry"></a>
 
 Contains information for an asset property value entry that is associated with the [BatchGetAssetPropertyValue](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_BatchGetAssetPropertyValue.html) API.
 

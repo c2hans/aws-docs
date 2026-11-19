@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_SetFi
 ---
 
 # SetFileModeEntry
-<a name="API_SetFileModeEntry"></a>
 
 Information about the file mode changes.
 

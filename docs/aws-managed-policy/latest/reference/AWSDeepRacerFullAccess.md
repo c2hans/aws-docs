@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDeepRacerFullAccess
-<a name="AWSDeepRacerFullAccess"></a>
 
 **Description**: Provides full access to AWS DeepRacer. Also provides select access to related services (e.g., S3).
 

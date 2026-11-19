@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/config-start.html
 ---
 
 # Configure and start the Agent
-<a name="config-start"></a>
 
 **To configure and start the agent**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateCustomPermissions
-<a name="API_CreateCustomPermissions"></a>
 
 Creates a custom permissions profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/run-troubleshooters.html
 ---
 
 # Running the device troubleshooters
-<a name="run-troubleshooters"></a>
 
 During a meeting, if you have trouble with a mic, speakers, or a Bluetooth connection, you can start the Microsoft Windows troubleshooters for those items. You can use the troubleshooters without leaving the meeting.
 

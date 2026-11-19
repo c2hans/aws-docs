@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Service execution role
-<a name="msk-data-delivery-iceberg-iam-service-role"></a>
 
 A Channel assumes a service execution role to deliver data. The role needs a trust policy plus a permission policy that matches your destination type. The following policies are the authoritative reference for the required permissions.
 

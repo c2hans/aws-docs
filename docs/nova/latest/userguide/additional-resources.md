@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/additional-resourc
 ---
 
 # Additional resources
-<a name="additional-resources"></a>
 
 The following AWS Workshops are available for Amazon Nova:
 + [Unleashing Creativity: Mastering Nova Canvas and Nova Reel for creative success](https://catalog.us-east-1.prod.workshops.aws/workshops/66a0984a-ad2b-481f-a1cf-e7896ea9595b/en-US)

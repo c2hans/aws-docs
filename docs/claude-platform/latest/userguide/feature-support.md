@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/claude-platform/latest/userguide/feature
 ---
 
 # Feature support
-<a name="feature-support"></a>
 
 Claude Platform on AWS uses the Anthropic Messages API directly. You get full feature parity with the first-party Claude API, except where noted in [Features not currently available](#features-not-currently-available):
 +  **Beta features:** Pass the standard `anthropic-beta` header to access beta features, just as you would with the Claude API.

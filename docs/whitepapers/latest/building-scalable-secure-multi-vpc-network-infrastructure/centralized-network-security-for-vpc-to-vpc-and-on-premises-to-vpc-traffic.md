@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Centralized network security for VPC-to-VPC and on-premises to VPC traffic
-<a name="centralized-network-security-for-vpc-to-vpc-and-on-premises-to-vpc-traffic"></a>
 
 There might be scenarios where a customer wants to implement a layer 3-7 ﬁrewall/IPS/IDS within their multi-account environment to inspect traﬃc ﬂows between VPCs (east-west traffic) or between an on-premises data center and a VPC (north-south traffic). This can be achieved diﬀerent ways, depending on use case and requirements. For example, you could incorporate the Gateway Load Balancer, Network Firewall, Transit VPC, or use centralized architectures with Transit Gateways. These scenarios are discussed in the following section.
 

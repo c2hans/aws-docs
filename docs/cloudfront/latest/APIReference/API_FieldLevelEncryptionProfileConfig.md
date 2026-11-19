@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Field
 ---
 
 # FieldLevelEncryptionProfileConfig
-<a name="API_FieldLevelEncryptionProfileConfig"></a>
 
 A complex data type of profiles for the field-level encryption.
 

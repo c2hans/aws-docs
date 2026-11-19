@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Get
 ---
 
 # GetDirectoryLimits
-<a name="API_GetDirectoryLimits"></a>
 
 Obtains directory limit information for the current Region.
 

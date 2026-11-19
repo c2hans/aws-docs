@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_MicrovmIma
 ---
 
 # MicrovmImageHooks
-<a name="API_MicrovmImageHooks"></a>
 
 Configuration for hooks invoked during MicroVM image build events such as ready and validate.
 

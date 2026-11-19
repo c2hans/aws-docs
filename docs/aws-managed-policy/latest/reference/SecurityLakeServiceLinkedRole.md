@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Secu
 ---
 
 # SecurityLakeServiceLinkedRole
-<a name="SecurityLakeServiceLinkedRole"></a>
 
 **Description**: This policy grants permissions to operate the Amazon Security Lake service on your behalf
 

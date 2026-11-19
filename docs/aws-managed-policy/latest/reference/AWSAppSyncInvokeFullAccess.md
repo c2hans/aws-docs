@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAppSyncInvokeFullAccess
-<a name="AWSAppSyncInvokeFullAccess"></a>
 
 **Description**: Provides full invoking access to the AppSync service - both through the console and independently
 

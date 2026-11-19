@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_S3Desti
 ---
 
 # S3DestinationConfiguration
-<a name="API_S3DestinationConfiguration"></a>
 
 Describes the configuration of a destination in Amazon S3.
 

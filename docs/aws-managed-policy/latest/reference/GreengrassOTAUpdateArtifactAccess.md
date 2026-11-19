@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Gree
 ---
 
 # GreengrassOTAUpdateArtifactAccess
-<a name="GreengrassOTAUpdateArtifactAccess"></a>
 
 **Description**: Provides read access to the Greengrass OTA Update artifacts in all Greengrass regions
 

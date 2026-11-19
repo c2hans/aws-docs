@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/troubleshootin
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Troubleshooting cluster health metrics
-<a name="troubleshooting-v3-cluster-health-metrics"></a>
 
 Cluster health metrics are added to the AWS ParallelCluster Amazon CloudWatch dashboard starting with AWS ParallelCluster version 3.6.0. In the following sections, you can learn about the dashboard health metrics, and actions you can take to troubleshoot and resolve issues.
 

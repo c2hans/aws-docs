@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/Grafana-teams.h
 ---
 
 # Managing teams
-<a name="Grafana-teams"></a>
 
 Using *teams* enables you to grant permissions to a group of users at the same time. You can also set up team sync to automatically synchronize team membership between your Grafana workspace and your authorization provider.
 

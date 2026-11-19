@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MAP/latest/transform-userguide/getting-s
 ---
 
 # CloudFormation
-<a name="getting-started-step2-Automation-CFN"></a>
 
 **AWS CloudFormation**
 

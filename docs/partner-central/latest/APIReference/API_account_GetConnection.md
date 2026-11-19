@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # GetConnection
-<a name="API_account_GetConnection"></a>
 
 Retrieves detailed information about a specific connection between partners.
 

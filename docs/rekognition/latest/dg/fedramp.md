@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/fedramp.html
 ---
 
 # Using Amazon Rekognition as a FedRAMP authorized service
-<a name="fedramp"></a>
 
 The AWS FedRAMP compliance program includes Amazon Rekognition as a FedRAMP-authorized service. If you're a federal or commercial customer, you can use the service to process and store sensitive workloads in the AWS US East and US West Regions, with data up to the moderate-impact level. You can use the service for sensitive workloads in the AWS GovCloud (US) Region's authorization boundary, with data up to the high-impact level. For more information about FedRAMP compliance, see [AWS FedRAMP Compliance](https://aws.amazon.com/compliance/fedramp/).
 

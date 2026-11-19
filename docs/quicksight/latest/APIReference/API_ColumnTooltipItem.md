@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Colum
 ---
 
 # ColumnTooltipItem
-<a name="API_ColumnTooltipItem"></a>
 
 The tooltip item for the columns that are not part of a field well.
 

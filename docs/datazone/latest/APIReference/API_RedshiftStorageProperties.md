@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Redshif
 ---
 
 # RedshiftStorageProperties
-<a name="API_RedshiftStorageProperties"></a>
 
 The Amazon Redshift storage properties.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # CancelExportTask
-<a name="API_CancelExportTask"></a>
 
 Cancels the specified export task.
 

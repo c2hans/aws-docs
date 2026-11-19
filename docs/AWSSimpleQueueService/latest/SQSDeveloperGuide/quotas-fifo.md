@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Amazon SQS FIFO queue quotas
-<a name="quotas-fifo"></a>
 
 ## Amazon SQS quotas
 <a name="quotas-fifo-queues"></a>

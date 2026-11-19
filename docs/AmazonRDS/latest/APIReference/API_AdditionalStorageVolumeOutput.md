@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Additi
 ---
 
 # AdditionalStorageVolumeOutput
-<a name="API_AdditionalStorageVolumeOutput"></a>
 
 Contains information about an additional storage volume for a DB instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/au
 ---
 
 # Automate database tasks in SQL Server Express on Amazon EC2 by using AWS Lambda and Task Scheduler
-<a name="automate-database-tasks-in-sql-server-express-edition-running-on-amazon-ec2"></a>
 
 *Subhani Shaik, Amazon Web Services*
 

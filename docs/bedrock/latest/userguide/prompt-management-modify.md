@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-manageme
 ---
 
 # Modify a prompt using Prompt management
-<a name="prompt-management-modify"></a>
 
 To learn how to modify prompts using Prompt management, choose the tab for your preferred method, and then follow the steps:
 

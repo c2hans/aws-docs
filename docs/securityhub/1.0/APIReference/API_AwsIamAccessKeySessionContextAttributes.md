@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsIamA
 ---
 
 # AwsIamAccessKeySessionContextAttributes
-<a name="API_AwsIamAccessKeySessionContextAttributes"></a>
 
 Attributes of the session that the key was used for.
 

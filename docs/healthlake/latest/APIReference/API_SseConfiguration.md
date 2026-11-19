@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_SseCo
 ---
 
 # SseConfiguration
-<a name="API_SseConfiguration"></a>
 
 The server-side encryption key configuration for a customer-provided encryption key.
 

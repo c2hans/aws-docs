@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/refactor.html
 ---
 
 # Preserve deployed resources when refactoring CDK code
-<a name="refactor"></a>
 
 **Important**
 CDK refactoring is in preview release and is subject to change.

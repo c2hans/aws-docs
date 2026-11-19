@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/update-snapshot-retention
 ---
 
 # Updating snapshot retention optimizer
-<a name="update-snapshot-retention"></a>
 
  You can update the existing configuration of an snapshot retention optimizer for a particular Apache Iceberg table using the AWS Glue console, AWS CLI, or the UpdateTableOptimizer API.
 

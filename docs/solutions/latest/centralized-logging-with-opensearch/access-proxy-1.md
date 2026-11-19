@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Access proxy
-<a name="access-proxy-1"></a>
 
 By default, an Amazon OpenSearch Service domain within VPC cannot be accessed from the internet. Centralized Logging with OpenSearch creates a highly available [NGINX cluster](https://aws.amazon.com/premiumsupport/knowledge-center/opensearch-outside-vpc-nginx/) that allows you to access the OpenSearch Dashboards from the internet. Alternatively, you can choose to access the Amazon OpenSearch Service domains using [SSH Tunnel](https://aws.amazon.com/premiumsupport/knowledge-center/opensearch-outside-vpc-ssh/). Refer to the [Access proxy architecture](access-proxy.md) for more implementation details.
 

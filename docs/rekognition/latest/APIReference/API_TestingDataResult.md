@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Test
 ---
 
 # TestingDataResult
-<a name="API_TestingDataResult"></a>
 
 Sagemaker Groundtruth format manifest files for the input, output and validation datasets that are used and created during testing.
 

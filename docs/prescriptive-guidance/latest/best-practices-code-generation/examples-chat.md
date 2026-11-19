@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Chat examples
-<a name="examples-chat"></a>
 
 Amazon Q Developer chat assists developers with a variety of tasks from coding, testing, and upgrading applications, to diagnosing errors, performing security scanning and fixes, and optimizing AWS resources. This section addresses how chatting with Amazon Q can support a developer in typical programming tasks such as the following:
 + [Ask about AWS services](#services-chat)

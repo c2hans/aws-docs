@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Conta
 ---
 
 # Sample NGINX Plus workload for Amazon ECS clusters
-<a name="ContainerInsights-Prometheus-Setup-nginx-plus-ecs"></a>
 
 NGINX Plus is the commerical version of NGINX. You must have a licence to use it. For more information, see [ NGINX Plus](https://www.nginx.com/products/nginx/)
 

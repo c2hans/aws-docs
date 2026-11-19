@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Unta
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes the specified tags from the specified resource.
 

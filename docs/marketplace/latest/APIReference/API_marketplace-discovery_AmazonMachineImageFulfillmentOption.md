@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # AmazonMachineImageFulfillmentOption
-<a name="API_marketplace-discovery_AmazonMachineImageFulfillmentOption"></a>
 
 Describes an Amazon Machine Image (AMI) fulfillment option, including version details, supported operating systems, and recommended instance types.
 

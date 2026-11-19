@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_GetSendSta
 ---
 
 # Use `GetSendStatistics` with a CLI
-<a name="ses_example_ses_GetSendStatistics_section"></a>
 
 The following code examples show how to use `GetSendStatistics`.
 

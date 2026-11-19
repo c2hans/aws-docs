@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # AWS Resources
-<a name="aws-resources"></a>
 
 This document provides a comprehensive inventory of all AWS resources deployed by the Spatial Data Management Application (SDMA), including their purposes, configurations, and interdependencies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/ssr-supported-f
 ---
 
 # SSR supported features
-<a name="ssr-supported-features"></a>
 
 This section provides information about Amplify's support for SSR features.
 

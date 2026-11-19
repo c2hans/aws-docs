@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/monitor
 ---
 
 # WorkSpaces Applications Metrics and Dimensions
-<a name="monitoring-with-cloudwatch"></a>
 
 Amazon WorkSpaces Applications sends the following metrics and dimension information to Amazon CloudWatch.
 

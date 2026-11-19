@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_UpdateA
 ---
 
 # UpdateAdapter
-<a name="API_UpdateAdapter"></a>
 
 Update the configuration for an adapter. FeatureTypes configurations cannot be updated. At least one new parameter must be specified as an argument.
 

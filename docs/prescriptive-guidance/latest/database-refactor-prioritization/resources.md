@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-re
 ---
 
 # Resources
-<a name="resources"></a>
 
 **AWS SCT documentation**
 + [Using the multiserver assessor to create an aggregate report](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_AssessmentReport.Multiserver.html)

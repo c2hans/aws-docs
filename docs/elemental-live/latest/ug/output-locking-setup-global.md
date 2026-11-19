@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/output-locking-
 ---
 
 # Step 3: Set up the global controls
-<a name="output-locking-setup-global"></a>
 
 This section shows how to set up global controls to enable output locking and epoch locking in an Elemental Live event. You must set up the controls that apply to the entire event—the timecode and the communications mechanism.
 

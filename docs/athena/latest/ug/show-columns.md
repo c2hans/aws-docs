@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/show-columns.html
 ---
 
 # SHOW COLUMNS
-<a name="show-columns"></a>
 
 Shows only the column names for a single specified table, Athena view, or Data Catalog view. To obtain more detailed information for Athena views, query the AWS Glue Data Catalog instead. For information and examples, see the following sections of the [Query the AWS Glue Data Catalog](querying-glue-catalog.md) topic:
 + To view column metadata such as data type, see [List or search columns for a specified table or view](querying-glue-catalog-listing-columns.md).

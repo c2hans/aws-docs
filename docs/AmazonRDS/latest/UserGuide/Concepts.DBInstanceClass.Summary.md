@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBIn
 ---
 
 # Hardware specifications for DB instance classes
-<a name="Concepts.DBInstanceClass.Summary"></a>
 
 In the tables in this section, you can find hardware details about the Amazon RDS DB instance classes.
 

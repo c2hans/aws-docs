@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/get-image-
 ---
 
 # Getting image set pixel data
-<a name="get-image-frame"></a>
 
 An [image frame](getting-started-concepts.md#concept-image-frame) is the pixel data that exists within an image set to make up a 2D medical image. Use the `GetImageFrame` action to retrieve an HTJ2K-encoded or native JPEG 2000 lossless image frame for a given [image set](getting-started-concepts.md#concept-image-set) in HealthImaging. The following menus provide code examples for the AWS CLI and AWS SDKs. For more information, see [`GetImageFrame`](https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_GetImageFrame.html) in the *AWS HealthImaging API Reference*.
 

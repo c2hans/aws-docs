@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_OrderedOrgan
 ---
 
 # OrderedOrganizationPolicyType
-<a name="API_OrderedOrganizationPolicyType"></a>
 
 Represents one level of an Organizations hierarchy—the organization root, an organizational unit (OU), or an account—together with the service control policies (SCPs) that apply at that level. Each element in the list represents one level of the hierarchy, ordered from the organization root down to the account.
 

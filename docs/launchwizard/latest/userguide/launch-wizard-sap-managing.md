@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Manage application resources with AWS Launch Wizard for SAP
-<a name="launch-wizard-sap-managing"></a>
 
 After you have deployed an SAP application, you can manage and update it as follows:
 

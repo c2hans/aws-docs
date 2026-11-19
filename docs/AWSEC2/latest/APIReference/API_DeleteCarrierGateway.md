@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteCar
 ---
 
 # DeleteCarrierGateway
-<a name="API_DeleteCarrierGateway"></a>
 
 Deletes a carrier gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Da
 ---
 
 # DataPartition
-<a name="API_DataPartition"></a>
 
 The configuration for signal data storage and upload options. You can only specify these options when the campaign's spooling mode is `TO_DISK`.
 

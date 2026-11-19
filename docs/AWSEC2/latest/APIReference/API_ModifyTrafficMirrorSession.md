@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTra
 ---
 
 # ModifyTrafficMirrorSession
-<a name="API_ModifyTrafficMirrorSession"></a>
 
 Modifies a Traffic Mirror session.
 

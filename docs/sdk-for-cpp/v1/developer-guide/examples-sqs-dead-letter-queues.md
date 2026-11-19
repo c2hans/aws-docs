@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Using Dead Letter Queues in Amazon SQS
-<a name="examples-sqs-dead-letter-queues"></a>
 
 Amazon SQS provides support for *dead letter queues*. A dead letter queue is a queue that other queues can target for messages that can’t be processed successfully. You can set aside and isolate these messages in the dead letter queue to determine why their processing did not succeed.
 

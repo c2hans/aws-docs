@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCREL04-BP01 Establish data integrity with replication and backup strategies
-<a name="eucrel04-bp01"></a>
 
 Implement data replication and backup strategies to safeguard user data and configurations. Use automated backup solutions such as Amazon WorkSpaces Automated Snapshots to create regular backups of WorkSpaces volumes. Store data backups securely and verify that you can promptly restore backups in the event of data loss or corruption.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # The agent function: perceive, reason, act
-<a name="perceive-reason-act"></a>
 
 At the core of every software agent is a cognitive cycle that is often described as the *perceive, reason, act *loop. This process is illustrated in the following diagram. It defines how agents operate autonomously in dynamic environments.
 

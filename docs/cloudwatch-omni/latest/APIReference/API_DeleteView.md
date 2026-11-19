@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # DeleteView
-<a name="API_DeleteView"></a>
 
 Deletes the specified view.
 

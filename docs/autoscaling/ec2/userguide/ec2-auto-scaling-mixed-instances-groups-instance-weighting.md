@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scali
 ---
 
 # Configure an Auto Scaling group to use instance weights
-<a name="ec2-auto-scaling-mixed-instances-groups-instance-weighting"></a>
 
 When you use multiple instance types, you can specify how many units to associate with each instance type, and then specify the capacity of your group with the same unit of measurement. This capacity specification option is known as weights.
 

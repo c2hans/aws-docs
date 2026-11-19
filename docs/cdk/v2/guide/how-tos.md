@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/how-tos.html
 ---
 
 # AWS CDK tutorials and examples
-<a name="how-tos"></a>
 
 This section contains tutorials and examples for the AWS Cloud Development Kit (AWS CDK).<a name="tutorials"></a>
 

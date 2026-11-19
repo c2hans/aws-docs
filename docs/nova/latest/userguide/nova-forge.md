@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-forge.html
 ---
 
 # Amazon Nova Forge
-<a name="nova-forge"></a>
 
 Amazon Nova Forge is a first-of-its-kind service that offers organizations the easiest and most cost-effective way to build their own frontier models using Nova.
 

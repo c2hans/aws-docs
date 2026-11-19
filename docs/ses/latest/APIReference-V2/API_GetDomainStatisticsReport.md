@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetDomain
 ---
 
 # GetDomainStatisticsReport
-<a name="API_GetDomainStatisticsReport"></a>
 
 Retrieve inbox placement and engagement rates for the domains that you use to send email.
 

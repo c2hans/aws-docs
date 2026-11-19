@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-r
 ---
 
 # Values specific for IP-based records
-<a name="resource-record-sets-values-ipbased"></a>
 
 When you create IP-based records, you specify the following values.
 

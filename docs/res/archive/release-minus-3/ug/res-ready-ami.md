@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/res-ready
 ---
 
 # Configure RES-ready AMIs
-<a name="res-ready-ami"></a>
 
 With RES-ready Amazon Machine Images (AMIs), you can pre-install RES dependencies for virtual desktop instances (VDIs) on your custom AMIs. Using RES-ready AMIs improve boot times for VDI instances using the pre-baked images. Using EC2 Image Builder, you can build and register your AMIs as new software stacks. For more information on Image Builder, see the [ Image Builder User Guide](https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html).
 

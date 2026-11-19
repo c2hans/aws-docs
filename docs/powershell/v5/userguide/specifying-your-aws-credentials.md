@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Using AWS Credentials
-<a name="specifying-your-aws-credentials"></a>
 
 Each AWS Tools for PowerShell command must include a set of AWS credentials, which are used to cryptographically sign the corresponding web service request. You can specify credentials per command, per session, or for all sessions.
 

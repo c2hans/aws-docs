@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Topic
 ---
 
 # TopicNullFilter
-<a name="API_TopicNullFilter"></a>
 
 The structure that represents a null filter.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/reso
 ---
 
 # Included AWS Services
-<a name="resource-tagging-included-services"></a>
 
 The following AWS services are supported for resource tagging implementation. Resources must be tagged with key `aws-apn-id-{{partner-central-aws-account-id}}` and value `pc:{{product-code}}` format. For how to construct your tag key, see [Constructing Your Tag Key and Value](manual-tagging.md#tag-key-construction).
 

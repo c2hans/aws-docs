@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC06-BP06 Validate software integrity
-<a name="sec_protect_compute_validate_software_integrity"></a>
 
  Implement mechanisms (for example, code signing) to validate that the software, code and libraries used in the workload are from trusted sources and have not been tampered with. For example, you should verify the code signing certificate of binaries and scripts to confirm the author, and ensure it has not been tampered with since created by the author. [AWS Signer](https://docs.aws.amazon.com/signer/latest/developerguide/Welcome.html) can help ensure the trust and integrity of your code by centrally managing the code- signing lifecycle, including signing certification and public and private keys. You can learn how to use advanced patterns and best practices for code signing with [AWS Lambda](https://aws.amazon.com/blogs/security/best-practices-and-advanced-patterns-for-lambda-code-signing/). Additionally, a checksum of software that you download, compared to that of the checksum from the provider, can help ensure it has not been tampered with.
 

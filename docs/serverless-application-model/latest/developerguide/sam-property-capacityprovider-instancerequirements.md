@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # InstanceRequirements
-<a name="sam-property-capacityprovider-instancerequirements"></a>
 
 Specifies the requirements for EC2 instances that will be launched by the capacity provider, including architectures and instance type constraints.
 

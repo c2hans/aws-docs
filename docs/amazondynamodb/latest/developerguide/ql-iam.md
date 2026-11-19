@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-
 ---
 
 # IAM security policies with PartiQL for DynamoDB
-<a name="ql-iam"></a>
 
 The following permissions are required:
 + To read items using PartiQL for DynamoDB, you must have `dynamodb:PartiQLSelect` permission on the table or index.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/c
 ---
 
 # Canceling a fund request
-<a name="ccancel-fund-request"></a>
 
 ## Canceling from the AWS Partner Central in AWS Console
 <a name="w2aac41c15b3"></a>

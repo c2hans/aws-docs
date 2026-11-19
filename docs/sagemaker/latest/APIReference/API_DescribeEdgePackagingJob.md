@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeEdgePackagingJob
-<a name="API_DescribeEdgePackagingJob"></a>
 
 A description of edge packaging jobs.
 

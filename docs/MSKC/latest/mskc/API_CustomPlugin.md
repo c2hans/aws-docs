@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_CustomPlugin.html
 ---
 
 # CustomPlugin
-<a name="API_CustomPlugin"></a>
 
 A plugin is an AWS resource that contains the code that defines a connector's logic.
 

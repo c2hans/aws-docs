@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteSi
 ---
 
 # RouteSignpost
-<a name="API_RouteSignpost"></a>
 
 Sign post information of the action, applicable only for TurnByTurn steps. See RouteSignpost for details of sub-attributes.
 

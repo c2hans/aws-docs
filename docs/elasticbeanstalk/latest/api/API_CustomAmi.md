@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_CustomAm
 ---
 
 # CustomAmi
-<a name="API_CustomAmi"></a>
 
 A custom AMI available to platforms.
 

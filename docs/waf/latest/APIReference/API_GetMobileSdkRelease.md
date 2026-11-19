@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_GetMobileSdk
 ---
 
 # GetMobileSdkRelease
-<a name="API_GetMobileSdkRelease"></a>
 
 Retrieves information for the specified mobile SDK release, including release notes and tags.
 

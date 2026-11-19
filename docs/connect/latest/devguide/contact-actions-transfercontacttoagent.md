@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/contact-actions-
 ---
 
 # TransferContactToAgent
-<a name="contact-actions-transfercontacttoagent"></a>
 
 Ends the current flow and transfers the customer to an agent. If the agent is already with someone else, the contact is disconnected. Transfer contact to agent works only for voice interactions.
 

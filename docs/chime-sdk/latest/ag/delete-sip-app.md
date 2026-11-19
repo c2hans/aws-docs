@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/delete-sip-app.html
 ---
 
 # Deleting a SIP media application
-<a name="delete-sip-app"></a>
 
 You delete a SIP media application for several reasons, such as the following:
 + You stop using a phone number or a Request URI hostname.

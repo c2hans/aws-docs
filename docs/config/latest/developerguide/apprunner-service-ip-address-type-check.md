@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/apprunner-s
 ---
 
 # apprunner-service-ip-address-type-check
-<a name="apprunner-service-ip-address-type-check"></a>
 
 Checks if an AWS App Runner service is configured with the specified IP address type for incoming public network configuration. The rule is NON\_COMPLIANT if the service is not configured with the IP address type specified in the required rule parameter.
 

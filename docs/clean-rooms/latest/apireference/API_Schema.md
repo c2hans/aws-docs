@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Sche
 ---
 
 # Schema
-<a name="API_Schema"></a>
 
 A schema is a relation within a collaboration.
 

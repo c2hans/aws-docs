@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/datacatalogs-iam-policy
 ---
 
 # Control access to data catalogs with IAM policies
-<a name="datacatalogs-iam-policy"></a>
 
 To control access to data catalogs, use resource-level IAM permissions or identity-based IAM policies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # Inbound messaging
-<a name="nx-sms-send-inbound"></a>
 
 With two-way SMS, you receive incoming messages from your customers. When a customer sends a message to your phone number, AWS End User Messaging delivers the message body to an Amazon SNS topic or an Connect Customer instance that you designate, where your application processes it – for example with Lambda or Amazon Lex to build interactive experiences.
 

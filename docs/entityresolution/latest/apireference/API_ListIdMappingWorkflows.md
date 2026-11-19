@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ListIdMappingWorkflows
-<a name="API_ListIdMappingWorkflows"></a>
 
 Returns a list of all the `IdMappingWorkflows` that have been created for an AWS account.
 

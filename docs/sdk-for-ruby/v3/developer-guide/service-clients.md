@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/service-
 ---
 
 # Making AWS service requests using the AWS SDK for Ruby
-<a name="service-clients"></a>
 
  To programmatically access AWS services, SDKs use a client class for each AWS service. For example, if your application needs to access Amazon EC2, your application creates an Amazon EC2 client object to interface with that service. You then use the service client to make requests to that AWS service.
 

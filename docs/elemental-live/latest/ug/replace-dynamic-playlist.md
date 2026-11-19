@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/replace-dynamic
 ---
 
 # Replace dynamic playlist
-<a name="replace-dynamic-playlist"></a>
 
 In the specified event (which must be currently running), remove all non-Active inputs from the dynamic playlist and append the specified file input or inputs. After this command, only the Active input remains from the original dynamic playlist; the rest of the dynamic playlist consists of new inputs.
 

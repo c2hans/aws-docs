@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_ProxyConf
 ---
 
 # ProxyConfiguration
-<a name="API_ProxyConfiguration"></a>
 
 Provides the configuration information for a web proxy to connect to website hosts.
 

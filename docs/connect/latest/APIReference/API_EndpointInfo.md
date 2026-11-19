@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Endpoint
 ---
 
 # EndpointInfo
-<a name="API_EndpointInfo"></a>
 
 Information about the endpoint.
 

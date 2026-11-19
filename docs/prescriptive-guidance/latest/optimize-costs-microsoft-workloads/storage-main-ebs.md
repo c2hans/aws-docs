@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Amazon EBS
-<a name="storage-main-ebs"></a>
 
 [Amazon Elastic Block Store](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html) (Amazon EBS) is a fully managed block storage service that enables you to store persistent block-level storage volumes that you can use with Amazon Elastic Compute Cloud (Amazon EC2) instances. You can take advantage of several features in Amazon EBS to effectively manage and optimize your storage resources for Windows workloads in the cloud. For example, you can use Amazon EBS to provision the input/output operations per second (IOPS) and throughput that your workload requires, select from a range of volume types to match your workload requirements, and use tools to identify and eliminate wasted storage resources. This granular control over storage performance and usage helps you optimize your storage resources while avoiding unnecessary costs.
 

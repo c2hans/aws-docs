@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Configure the solution
-<a name="configure-the-solution"></a>
 
 This section provides instructions for configuring Guidance for Deploying a Prebid Server on AWS.
 

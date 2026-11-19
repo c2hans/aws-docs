@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ListIPSets.h
 ---
 
 # ListIPSets
-<a name="API_ListIPSets"></a>
 
 Retrieves an array of [IPSetSummary](API_IPSetSummary.md) objects for the IP sets that you manage.
 

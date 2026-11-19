@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # CapabilityBaseRequestConfig
-<a name="API_CapabilityBaseRequestConfig"></a>
 
 The base configuration for registering a capability. Contains capability-specific configuration such as AI settings.
 

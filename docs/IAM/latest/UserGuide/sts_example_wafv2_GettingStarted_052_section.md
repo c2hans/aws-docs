@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/sts_example_wafv2_G
 ---
 
 # Getting started with web application firewalls
-<a name="sts_example_wafv2_GettingStarted_052_section"></a>
 
 The following code example shows how to:
 + Create a web ACL

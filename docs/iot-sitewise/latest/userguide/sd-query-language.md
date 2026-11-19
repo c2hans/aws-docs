@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sd-query-l
 ---
 
 # Scenario Discovery query language reference
-<a name="sd-query-language"></a>
 
 ## Query workflow
 <a name="sd-query-workflow"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/generative-
 ---
 
 # Evaluating LLMs for healthcare and life science applications
-<a name="evaluation"></a>
 
 This section provides a comprehensive overview of the requirements and considerations for evaluating large language models (LLMs) in healthcare and life science use cases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_GetAp
 ---
 
 # GetApplicationRevision
-<a name="API_GetApplicationRevision"></a>
 
 Gets information about an application revision.
 

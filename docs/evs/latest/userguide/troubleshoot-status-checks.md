@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/troubleshoot-status
 ---
 
 # Troubleshoot environment status checks
-<a name="troubleshoot-status-checks"></a>
 
 Amazon Elastic VMware Service runs status checks on your environment and reports the result in the environment status. This page applies to both deployment modes.
 

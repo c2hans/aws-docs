@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/creating-databases-quer
 ---
 
 # Create a database
-<a name="creating-databases-query-editor"></a>
 
 After you have set up a query results location, creating a database in the Athena console query editor is straightforward.
 

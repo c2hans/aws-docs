@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # StringSearch
-<a name="API_billing_StringSearch"></a>
 
  A structure that defines how to search for string values. You can specify a search option and the value to search for.
 

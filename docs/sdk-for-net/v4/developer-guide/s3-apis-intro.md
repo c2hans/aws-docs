@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
 
 # Using Amazon Simple Storage Service Internet storage
-<a name="s3-apis-intro"></a>
 
 The AWS SDK for .NET supports [Amazon S3](https://aws.amazon.com/s3/), which is storage for the Internet. It is designed to make web-scale computing easier for developers.
 

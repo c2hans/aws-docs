@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_CancelJobs
 ---
 
 # CancelJobs
-<a name="API_CancelJobs"></a>
 
 Cancels up to 50 jobs in an AWS Batch job queue. This is a bulk version of [CancelJob](API_CancelJob.md). Jobs that are in a `SUBMITTED`, `PENDING`, or `RUNNABLE` state are cancelled and the job status is updated to `FAILED`.
 

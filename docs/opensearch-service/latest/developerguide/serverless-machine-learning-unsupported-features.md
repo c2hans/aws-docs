@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Unsupported Machine Learning APIs and features
-<a name="serverless-machine-learning-unsupported-features"></a>
 
 ## Unsupported APIs
 <a name="serverless-unsupported-ml-api"></a>

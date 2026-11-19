@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-guardduty.html
 ---
 
 # Query Amazon GuardDuty findings
-<a name="querying-guardduty"></a>
 
 [Amazon GuardDuty](https://aws.amazon.com/guardduty/) is a security monitoring service for helping to identify unexpected and potentially unauthorized or malicious activity in your AWS environment. When it detects unexpected and potentially malicious activity, GuardDuty generates security [findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html) that you can export to Amazon S3 for storage and analysis. After you export your findings to Amazon S3, you can use Athena to query them. This article shows how to create a table in Athena for your GuardDuty findings and query them.
 

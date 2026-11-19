@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_DescribeFarg
 ---
 
 # DescribeFargateProfile
-<a name="API_DescribeFargateProfile"></a>
 
 Describes an AWS Fargate profile.
 

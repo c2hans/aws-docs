@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/logging-mon
 ---
 
 # FAQ
-<a name="faq"></a>
 
 ## Can I use my current monitoring service?
 <a name="faq1"></a>

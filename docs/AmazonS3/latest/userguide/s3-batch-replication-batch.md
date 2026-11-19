@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-batch-repli
 ---
 
 # Replicating existing objects with Batch Replication
-<a name="s3-batch-replication-batch"></a>
 
 S3 Batch Replication differs from live replication, which continuously and automatically replicates new objects across Amazon S3 buckets. Instead, S3 Batch Replication occurs on demand on existing objects. You can use S3 Batch Replication to replicate the following types of objects:
 + Objects that existed before a replication configuration was in place

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Custom
-<a name="custom"></a>
 
  The aforementioned services and features are not an exhaustive list. AWS is continuously adding new capabilities. For more information, we encourage you to review the [What's New at AWS](https://aws.amazon.com/new/) and [AWS Cloud Security](https://aws.amazon.com/security/) pages. In addition to the security services that AWS offers as native cloud services, you might be interested in building your own capabilities on top of AWS services.
 

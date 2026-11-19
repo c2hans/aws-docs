@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshoot-athe
 ---
 
 # Query timeout when using Athena with AWS Quick Sight
-<a name="troubleshoot-athena-query-timeout"></a>
 
 If your query times out, you can try these options to resolve your problem.
 

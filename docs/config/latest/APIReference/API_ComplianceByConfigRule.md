@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Complianc
 ---
 
 # ComplianceByConfigRule
-<a name="API_ComplianceByConfigRule"></a>
 
 Indicates whether an AWS Config rule is compliant. A rule is compliant if all of the resources that the rule evaluated comply with it. A rule is noncompliant if any of these resources do not comply.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/mi
  The [AWS SDK for JavaScript V3 API Reference Guide](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/) describes in detail all the API operations for the AWS SDK for JavaScript version 3 (V3).
 
 # Notes on specific service clients
-<a name="migrate-service-client-notes"></a>
 
 ## AWS Lambda
 <a name="aws-lambda-notes"></a>

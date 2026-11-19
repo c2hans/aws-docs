@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Globa
 ---
 
 # GlobalClusterMember
-<a name="API_GlobalClusterMember"></a>
 
 A data structure with information about any primary and secondary clusters associated with an Amazon DocumentDB global clusters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-cross-
 ---
 
 # Enabling cross account access
-<a name="feature-store-cross-account-access"></a>
 
 The access permissions are read-only, read-write, and admin permissions. The permission name, description, and list of specific APIs available for each permission are listed in the following:
 + Read-only permission (`AWSRAMPermissionSageMakerFeatureGroupReadOnly`): The read privilege allows resource consumer accounts to read records in the shared feature groups and view details and metadata.

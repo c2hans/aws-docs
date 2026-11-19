@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 8: Submit the pilot and approve the gates
-<a name="pb-es68-submit-pilot"></a>
 
 Submit the pilot workflow and watch it through the interactive manage interface:
 

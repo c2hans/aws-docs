@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateStage.ht
 ---
 
 # UpdateStage
-<a name="API_UpdateStage"></a>
 
 Changes information about a Stage resource.
 

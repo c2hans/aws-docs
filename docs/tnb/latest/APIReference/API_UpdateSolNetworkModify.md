@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_UpdateSolNet
 ---
 
 # UpdateSolNetworkModify
-<a name="API_UpdateSolNetworkModify"></a>
 
 Information parameters and/or the configurable properties for a network function.
 

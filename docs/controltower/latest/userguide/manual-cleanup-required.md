@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/manual-cle
 ---
 
 # Manual cleanup tasks required after decommissioning
-<a name="manual-cleanup-required"></a>
 
 This section lists manual cleanup tasks you must perform after the initial decommissioning step.
 + You must specify different email addresses for the Log archive and Audit accounts if you create a new landing zone after decommissioning one, or follow the procedure for bringing your own existing Log archive or Audit accounts.

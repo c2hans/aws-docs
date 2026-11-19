@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # GET Bitrate: Get the Bitrate of an MPTS Output
-<a name="working-with-mpts-get-bitrate"></a>
 
 ## HTTP Request and Response
 <a name="working-with-mpts-get-bitrate-http-request-response"></a>

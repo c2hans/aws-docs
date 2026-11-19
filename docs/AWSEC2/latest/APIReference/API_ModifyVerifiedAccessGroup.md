@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVer
 ---
 
 # ModifyVerifiedAccessGroup
-<a name="API_ModifyVerifiedAccessGroup"></a>
 
 Modifies the specified AWS Verified Access group configuration.
 

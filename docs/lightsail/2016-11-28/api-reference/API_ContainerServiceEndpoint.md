@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # ContainerServiceEndpoint
-<a name="API_ContainerServiceEndpoint"></a>
 
 Describes the public endpoint configuration of a deployment of an Amazon Lightsail container service.
 

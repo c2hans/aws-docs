@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Aurora MySQL thread states
-<a name="AuroraMySQL.Reference.thread-states"></a>
 
 The following are some common thread states for Aurora MySQL.
 

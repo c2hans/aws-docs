@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/qualificationguide/afq-g
 ---
 
 # Creating a Getting Started with FreeRTOS guide for your board
-<a name="afq-gsg"></a>
 
 To qualify for FreeRTOS, you must create a Getting Started with FreeRTOS guide for your board. This guide walks users through setting up the hardware and development environment for developing applications for FreeRTOS devices, and building, running, and flashing the created demo application on a device.
 

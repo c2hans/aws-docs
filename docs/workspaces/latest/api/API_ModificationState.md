@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ModificationSt
 ---
 
 # ModificationState
-<a name="API_ModificationState"></a>
 
 Describes a WorkSpace modification.
 

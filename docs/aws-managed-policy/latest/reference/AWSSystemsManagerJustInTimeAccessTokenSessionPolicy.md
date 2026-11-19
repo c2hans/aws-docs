@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSystemsManagerJustInTimeAccessTokenSessionPolicy
-<a name="AWSSystemsManagerJustInTimeAccessTokenSessionPolicy"></a>
 
 **Description**: The managed policy AWSSystemsManagerJustInTimeAccessTokenSessionPolicy allows Systems Manager to apply scoped down permissions to a just-in-time node access session once it is started.
 

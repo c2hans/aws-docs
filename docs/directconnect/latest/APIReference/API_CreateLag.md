@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Cr
 ---
 
 # CreateLag
-<a name="API_CreateLag"></a>
 
 Creates a link aggregation group (LAG) with the specified number of bundled physical dedicated connections between the customer network and a specific Direct Connect location. A LAG is a logical interface that uses the Link Aggregation Control Protocol (LACP) to aggregate multiple interfaces, enabling you to treat them as a single interface.
 

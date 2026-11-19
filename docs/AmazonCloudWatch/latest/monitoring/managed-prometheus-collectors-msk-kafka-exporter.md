@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/manag
 ---
 
 # Collect Amazon MSK consumer-group metrics in CloudWatch
-<a name="managed-prometheus-collectors-msk-kafka-exporter"></a>
 
 With an Amazon CloudWatch managed Prometheus collector and a managed Kafka exporter, you can collect consumer-group metrics from your Amazon MSK Provisioned clusters, such as consumer lag, committed offsets, and the number of members in each consumer group. The collector runs the exporter for you and delivers the metrics directly to CloudWatch, so you do not deploy or operate an exporter yourself. The collector connects to your cluster with AWS Identity and Access Management (IAM) authentication, and you grant it access with an Amazon MSK cluster policy.
 

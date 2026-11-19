@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # BatchPutProfileObject
-<a name="API_connect-customer-profiles_BatchPutProfileObject"></a>
 
 Adds multiple profile objects to a domain of a given ObjectType in a single API call.
 

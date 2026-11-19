@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # ScheduleConfiguration
-<a name="API_query_ScheduleConfiguration"></a>
 
 Configuration of the schedule of the query.
 

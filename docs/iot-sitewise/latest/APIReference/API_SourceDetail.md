@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Sou
 ---
 
 # SourceDetail
-<a name="API_SourceDetail"></a>
 
 The details of the dataset source associated with the dataset.
 

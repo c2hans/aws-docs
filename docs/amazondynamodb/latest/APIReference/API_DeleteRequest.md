@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_D
 ---
 
 # DeleteRequest
-<a name="API_DeleteRequest"></a>
 
 Represents a request to perform a `DeleteItem` operation on an item.
 

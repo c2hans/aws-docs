@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # CreatePerformanceAnalysisReport
-<a name="API_CreatePerformanceAnalysisReport"></a>
 
 Creates a new performance analysis report for a specific time period for the DB instance.
 

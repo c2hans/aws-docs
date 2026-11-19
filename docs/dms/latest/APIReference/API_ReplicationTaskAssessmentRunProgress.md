@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ReplicationT
 ---
 
 # ReplicationTaskAssessmentRunProgress
-<a name="API_ReplicationTaskAssessmentRunProgress"></a>
 
 The progress values reported by the `AssessmentProgress` response element.
 

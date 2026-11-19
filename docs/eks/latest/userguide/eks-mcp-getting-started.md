@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/eks-mcp-getting-sta
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Getting Started with the Amazon EKS MCP Server
-<a name="eks-mcp-getting-started"></a>
 
 This guide walks you through the steps to set up and use the EKS MCP Server with your AI code assistants. You’ll learn how to configure your environment, connect to the server, and start managing your EKS clusters through natural language interactions.
 

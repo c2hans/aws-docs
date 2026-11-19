@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Diff
 ---
 
 # DifferentialPrivacyPreviewAggregation
-<a name="API_DifferentialPrivacyPreviewAggregation"></a>
 
 Provides an estimate of the number of aggregation functions that the member who can query can run given the epsilon and noise parameters.
 

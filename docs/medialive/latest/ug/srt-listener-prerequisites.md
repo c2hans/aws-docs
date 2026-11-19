@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/srt-listener-prerequ
 ---
 
 # Prerequisites for listener mode
-<a name="srt-listener-prerequisites"></a>
 
 Before you create SRT outputs in listener mode, you must complete the following prerequisites:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Hardening the generative AI application through a GenAIOps framework
-<a name="preprod-hardening"></a>
 
 The evolution of generative AI applications from PoC to production-ready systems requires a comprehensive hardening process that promotes reliability, security, and continuous improvement. Through the implementation of a GenAIOps framework, organizations can transform experimental prototypes into robust, enterprise-grade applications that meet stringent quality and compliance standards.
 

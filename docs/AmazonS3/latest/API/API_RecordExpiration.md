@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_RecordExpiration
 ---
 
 # RecordExpiration
-<a name="API_RecordExpiration"></a>
 
  The journal table record expiration settings for a journal table in an S3 Metadata configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_DeleteSMSSandboxPhone
 ---
 
 # DeleteSMSSandboxPhoneNumber
-<a name="API_DeleteSMSSandboxPhoneNumber"></a>
 
 Deletes an AWS account's verified or pending phone number from the SMS sandbox.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/best-practices.htm
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Best practices
-<a name="best-practices"></a>
 
 ## Best practices: master instance type selection
 <a name="best-practices-master-instance-type"></a>

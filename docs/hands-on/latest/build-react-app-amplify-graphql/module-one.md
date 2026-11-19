@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-react-app-amplify-
 ---
 
 # Task 1: Deploy and Host a React App
-<a name="module-one"></a>
 
 |  |  |
 | --- |--- |

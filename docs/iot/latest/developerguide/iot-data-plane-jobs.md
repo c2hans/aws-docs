@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-data-plane
 ---
 
 # Authorizing your devices to securely use AWS IoT Jobs on the data plane
-<a name="iot-data-plane-jobs"></a>
 
 To authorize your devices to interact securely with AWS IoT Jobs on the data plane, you must use AWS IoT Core policies. AWS IoT Core policies for jobs are JSON documents containing policy statements. These policies also use *Effect*, *Action*, and *Resource* elements, and follow a similar convention to IAM policies. For more information about the elements, see [IAM JSON Policy Elements Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_elements.html) in the *IAM user Guide*.
 

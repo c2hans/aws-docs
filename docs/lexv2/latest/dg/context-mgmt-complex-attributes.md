@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/context-mgmt-complex-att
 ---
 
 # Setting complex attributes in your Lex V2 bot
-<a name="context-mgmt-complex-attributes"></a>
 
 Session and request attributes are string-to-string maps of attributes and values. In many cases, you can use the string map to transfer attribute values between your client application and a bot. In some cases, however, you might need to transfer binary data or a complex structure that can't be easily converted to a string map. For example, the following JSON object represents an array of the three most populous cities in the United States:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Button.htm
 ---
 
 # Button
-<a name="API_Button"></a>
 
 Describes a button to use on a response card used to gather slot values from a user.
 

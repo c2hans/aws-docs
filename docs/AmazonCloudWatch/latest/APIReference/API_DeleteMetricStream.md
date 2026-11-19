@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # DeleteMetricStream
-<a name="API_DeleteMetricStream"></a>
 
 Permanently deletes the metric stream that you specify.
 

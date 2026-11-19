@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-
 ---
 
 # Interacting with shadows
-<a name="device-shadow-data-flow"></a>
 
 This topic describes the messages associated with each of the three methods that AWS IoT provides for working with shadows. These methods include the following:
 

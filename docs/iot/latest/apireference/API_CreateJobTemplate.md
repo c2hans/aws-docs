@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateJobTem
 ---
 
 # CreateJobTemplate
-<a name="API_CreateJobTemplate"></a>
 
 Creates a job template.
 

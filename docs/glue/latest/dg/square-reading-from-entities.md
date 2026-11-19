@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/square-reading-from-entit
 ---
 
 # Reading from Square entities
-<a name="square-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListRecommendations
-<a name="API_ListRecommendations"></a>
 
 Lists recommendations for the specified agent space
 

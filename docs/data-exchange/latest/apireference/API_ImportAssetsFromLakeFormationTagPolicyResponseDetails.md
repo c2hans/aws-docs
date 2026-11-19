@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Im
 ---
 
 # ImportAssetsFromLakeFormationTagPolicyResponseDetails
-<a name="API_ImportAssetsFromLakeFormationTagPolicyResponseDetails"></a>
 
 Details from an import AWS Lake Formation tag policy job response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/nbi-al2.html
 ---
 
 # Amazon Linux 2 notebook instances
-<a name="nbi-al2"></a>
 
 **Important**
 On June 30, 2026, Amazon Linux 2 reaches end of support for notebook instances. Existing in-service instances may continue to function but will not receive security updates or bug fixes. Starting July 1, 2026, you can no longer create new or restart stopped AL2 notebook instances. JupyterLab 1 and JupyterLab 3 have been deprecated since June 30, 2025. For more information, see [JupyterLab version maintenance](nbi-jl.md#nbi-jl-version-maintenance).

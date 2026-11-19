@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/mediapackage-create-
 ---
 
 # Result of this procedure
-<a name="mediapackage-create-result"></a>
 
 With a MediaPackage output group, you don't configure as many fields as you do with a regular HLS output group. Instead, MediaLive automatically sets up the output group as follows:
 

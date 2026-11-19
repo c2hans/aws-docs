@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Delete
 ---
 
 # DeleteInvitations
-<a name="API_DeleteInvitations"></a>
 
 Deletes invitations sent to the current member account by AWS accounts specified by their account IDs.
 

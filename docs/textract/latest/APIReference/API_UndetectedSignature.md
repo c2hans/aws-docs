@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Undetec
 ---
 
 # UndetectedSignature
-<a name="API_UndetectedSignature"></a>
 
 A structure containing information about an undetected signature on a page where it was expected but not found.
 

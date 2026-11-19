@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/queues-api.html
 ---
 
 # Queue actions
-<a name="queues-api"></a>
 
 The following API actions are available for queues:
 + [CreateQueue](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateQueue.html)

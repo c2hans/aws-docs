@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Get
 ---
 
 # GetSubscription
-<a name="API_GetSubscription"></a>
 
 Returns information about the AWS account used for billing purposes and the billing plan for the space.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/qs-reports-add-de
 ---
 
 # Adding, moving, and deleting sections
-<a name="qs-reports-add-delete-section"></a>
 
 ## Add a new section
 <a name="paginated-reports-add-section"></a>

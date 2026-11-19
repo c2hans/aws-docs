@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reserva
 ---
 
 # Capacity Reservation pricing and billing
-<a name="capacity-reservations-pricing-billing"></a>
 
 The topics in this section provide an overview of pricing and billing for Capacity Reservations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_GetRepo
 ---
 
 # GetReport
-<a name="API_GetReport"></a>
 
 Get the content for a single report.
 

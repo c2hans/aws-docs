@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Scaling.Memc
 ---
 
 # Manual scaling for Memcached clusters
-<a name="Scaling.Memcached.manually"></a>
 
 Manually horizontally scaling a Memcached cluster in or out is as easy as adding or removing nodes from the cluster. Memcached clusters are composed of 1 to 60 nodes.
 

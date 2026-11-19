@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/create-de
 ---
 
 # Create a demo environment
-<a name="create-demo-env"></a>
 
 Follow the steps in this section to try out Research and Engineering Studio on AWS. This demo deploys a non-production environment with a minimal set of parameters using the [ Research and Engineering Studio on AWS demo environment stack template](https://github.com/aws-samples/aws-hpc-recipes/blob/main/recipes/res/res_demo_env/assets/res-demo-stack.yaml). It uses a Keycloak server for SSO.
 

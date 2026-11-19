@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_Application.
 ---
 
 # Application
-<a name="API_Application"></a>
 
 ## Contents
 <a name="API_Application_Contents"></a>

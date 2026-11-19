@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/cpp_cogni
 ---
 
 # Amazon Cognito Identity Provider examples using SDK for C\+\+
-<a name="cpp_cognito-identity-provider_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for C\+\+ with Amazon Cognito Identity Provider.
 

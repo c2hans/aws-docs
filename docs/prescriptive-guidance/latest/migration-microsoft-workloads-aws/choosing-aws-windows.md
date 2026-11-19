@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Why choose AWS for Microsoft workloads?
-<a name="choosing-aws-windows"></a>
 
 AWS has been helping customers migrate and modernize their Microsoft workloads for over 14 years and has the broadest portfolio of services, programs, and expertise to accelerate the transformation of key applications that power businesses. If you use AWS to migrate and modernize, you can look forward to the following benefits:
 + **Unlock innovation**  –** **Moving from a traditional monolithic architecture to a cloud-based microservices architecture can give you the freedom to adapt and experiment quickly, unlocking innovation faster. AWS offers a broad set of container technologies, including [Amazon Elastic Container Service (Amazon ECS)](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html), [Amazon Elastic Kubernetes Service (Amazon EKS)](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html), and [AWS Fargate](https://docs.aws.amazon.com/eks/latest/userguide/fargate.html). It also offers a comprehensive serverless portfolio, led by [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html). With deeply integrated .NET support, open-source database options (such as [Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html)), DevOps automation tools, and a growing suite of generative AI services, AWS provides the tools you need to build and modernize applications at any scale.

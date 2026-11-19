@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datatransferterminal/latest/userguide/tr
 ---
 
 # Troubleshooting network connection issues
-<a name="troubleshooting-connection"></a>
 
 If you experience issues connecting to the network while using AWS Data Transfer Terminal, such as not being able to connect the internet or slow connection speeds, consider the following troubleshooting tips.
 

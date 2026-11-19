@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cr
 ---
 
 # CreateThreat
-<a name="API_CreateThreat"></a>
 
 Creates a new threat under a threat model job.
 

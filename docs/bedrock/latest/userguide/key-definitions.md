@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/key-definitions
 ---
 
 # Key terminology
-<a name="key-definitions"></a>
 
 This chapter explains terminology that will help you understand what Amazon Bedrock offers and how it works. Read through the following list to understand generative AI terminology and Amazon Bedrock's fundamental capabilities:
 + **Foundation model (FM)** – An AI model with a large number of parameters and trained on a massive amount of diverse data. A foundation model can generate a variety of responses for a wide range of use cases. Foundation models can generate text or image, and can also convert input into *embeddings*. For more information about foundation models, see [Supported foundation models in Amazon Bedrock](models-supported.md).

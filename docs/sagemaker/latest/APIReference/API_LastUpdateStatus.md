@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_LastUp
 ---
 
 # LastUpdateStatus
-<a name="API_LastUpdateStatus"></a>
 
 A value that indicates whether the update was successful.
 

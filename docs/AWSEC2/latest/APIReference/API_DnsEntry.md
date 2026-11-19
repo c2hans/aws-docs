@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DnsEntry.
 ---
 
 # DnsEntry
-<a name="API_DnsEntry"></a>
 
 Describes a DNS entry.
 

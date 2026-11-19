@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeQPersonalizationConfiguration
-<a name="API_DescribeQPersonalizationConfiguration"></a>
 
 Describes a personalization configuration.
 

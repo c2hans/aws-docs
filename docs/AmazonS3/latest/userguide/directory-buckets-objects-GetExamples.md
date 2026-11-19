@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # Downloading an object from a directory bucket
-<a name="directory-buckets-objects-GetExamples"></a>
 
  The following code examples show how to read data from (download) an object in an Amazon S3 directory bucket by using the `GetObject` API operation.
 

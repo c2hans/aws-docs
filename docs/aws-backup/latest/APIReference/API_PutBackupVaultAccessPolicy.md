@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_PutBa
 ---
 
 # PutBackupVaultAccessPolicy
-<a name="API_PutBackupVaultAccessPolicy"></a>
 
 Sets a resource-based policy that is used to manage access permissions on the target backup vault. Requires a backup vault name and an access policy document in JSON format.
 

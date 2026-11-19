@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geojobs
 ---
 
 # GetJob
-<a name="API_geojobs_GetJob"></a>
 
  `GetJob` retrieves detailed information about a specific job, including its current status, configuration, and error information if the job failed.
 

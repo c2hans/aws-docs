@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ActionTarget
 ---
 
 # ActionTarget
-<a name="API_ActionTarget"></a>
 
 Describes a target for an action.
 

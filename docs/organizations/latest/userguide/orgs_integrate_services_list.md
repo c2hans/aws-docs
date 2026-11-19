@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_inte
 ---
 
 # AWS services that you can use with AWS Organizations
-<a name="orgs_integrate_services_list"></a>
 
 With AWS Organizations you can perform account management activities at scale by consolidating multiple AWS accounts into a single organization. Consolidating accounts simplifies how you use other AWS services. You can leverage the multi-account management services available in AWS Organizations with select AWS services to perform tasks on all accounts that are members of your organization.
 

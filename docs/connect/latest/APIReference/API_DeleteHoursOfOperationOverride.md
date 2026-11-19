@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteHo
 ---
 
 # DeleteHoursOfOperationOverride
-<a name="API_DeleteHoursOfOperationOverride"></a>
 
 Deletes an hours of operation override in an Connect Customer hours of operation resource.
 

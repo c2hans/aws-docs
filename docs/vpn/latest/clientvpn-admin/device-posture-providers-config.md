@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/device-postur
 ---
 
 # Configuring a trust provider
-<a name="device-posture-providers-config"></a>
 
 For each trust provider you configure on an endpoint, supply these values in the endpoint's device posture options:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_DescribeC
 ---
 
 # DescribeComponent
-<a name="API_DescribeComponent"></a>
 
 Retrieves metadata for a version of a component.
 

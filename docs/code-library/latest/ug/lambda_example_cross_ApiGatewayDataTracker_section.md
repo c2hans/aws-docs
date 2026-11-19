@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/lambda_example_cr
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Create an API Gateway REST API to track COVID-19 data
-<a name="lambda_example_cross_ApiGatewayDataTracker_section"></a>
 
 The following code example shows how to create a REST API that simulates a system to track daily cases of COVID-19 in the United States, using fictional data.
 

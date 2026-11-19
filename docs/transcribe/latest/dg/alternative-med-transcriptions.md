@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/alternative-med-tra
 ---
 
 # Generating alternative transcriptions
-<a name="alternative-med-transcriptions"></a>
 
 When you use Amazon Transcribe Medical, you get the transcription that has the highest confidence level. However, you can configure Amazon Transcribe Medical to return additional transcriptions with lower confidence levels.
 

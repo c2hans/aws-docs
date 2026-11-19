@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Prote
 ---
 
 # ProtectedResourceConditions
-<a name="API_ProtectedResourceConditions"></a>
 
 The conditions that you define for resources in your restore testing plan using tags.
 

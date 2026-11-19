@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_C
 ---
 
 # ControlSummary
-<a name="API_ControlSummary"></a>
 
 Overview of information about a control.
 

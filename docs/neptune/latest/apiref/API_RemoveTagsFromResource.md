@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_RemoveTagsFrom
 ---
 
 # RemoveTagsFromResource
-<a name="API_RemoveTagsFromResource"></a>
 
 Removes metadata tags from an Amazon Neptune resource.
 

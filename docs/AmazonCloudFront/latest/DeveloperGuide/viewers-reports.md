@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/v
 ---
 
 # View CloudFront viewers reports
-<a name="viewers-reports"></a>
 
 The CloudFront viewers reports include the following information for any date range in the previous 60 days:
 + **Devices** – The types of devices most frequently used to access your content (such as Desktop or Mobile)

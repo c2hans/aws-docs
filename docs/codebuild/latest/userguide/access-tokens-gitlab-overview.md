@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/access-tokens
 ---
 
 # GitLab access in CodeBuild
-<a name="access-tokens-gitlab-overview"></a>
 
 For GitLab, you use a GitLab connection to access the source provider.
 

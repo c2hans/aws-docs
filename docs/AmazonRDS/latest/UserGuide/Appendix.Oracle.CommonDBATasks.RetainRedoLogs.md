@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Retaining archived redo logs
-<a name="Appendix.Oracle.CommonDBATasks.RetainRedoLogs"></a>
 
 You can retain archived redo logs locally on your DB instance for use with products like Oracle LogMiner (`DBMS_LOGMNR`). After you have retained the redo logs, you can use LogMiner to analyze the logs. For more information, see [Using LogMiner to analyze redo log files](https://docs.oracle.com/en/database/oracle/oracle-database/19/sutil/oracle-logminer-utility.html) in the Oracle documentation.
 

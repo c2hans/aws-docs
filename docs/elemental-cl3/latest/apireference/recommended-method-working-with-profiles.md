@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/recomm
 ---
 
 # Recommended Method for Working with Profiles
-<a name="recommended-method-working-with-profiles"></a>
 
 The body of a POST or PUT profile request can contain a lot of elements (attributes of the profile). We recommend that you follow the procedures in this section to create the body.
 

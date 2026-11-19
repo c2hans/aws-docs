@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Using log centralization with multilocation canaries
-<a name="CloudWatch_Synthetics_MultiLocation_Log_Centralization"></a>
 
 When you configure a canary to run from multiple locations, each execution produces logs in its respective Region. You can use CloudWatch Logs centralization to aggregate these logs into a single Region, making it easier to monitor and troubleshoot canary results from one place.
 

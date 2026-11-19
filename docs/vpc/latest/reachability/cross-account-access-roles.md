@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/reachability/cross-account-ac
 ---
 
 # Cross-account access roles for Reachability Analyzer
-<a name="cross-account-access-roles"></a>
 
 When you enable trusted access for Reachability Analyzer, we use CloudFormation StackSets to deploy the IAMRoleForReachabilityAnalyzerCrossAccountResourceAccess IAM role to all member accounts in the organization. This role allows the management account and delegated administrator accounts to specify resources from member accounts in path analyses.
 

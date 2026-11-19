@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-serverl
 ---
 
 # Managing Amazon DocumentDB serverless
-<a name="docdb-serverless-managing"></a>
 
 ## Viewing and modifying a cluster’s scaling capacity range configuration
 <a name="docdb-serverless-range-config"></a>

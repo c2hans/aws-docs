@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Start
 ---
 
 # StartBackupJob
-<a name="API_StartBackupJob"></a>
 
 Starts an on-demand backup job for the specified resource.
 

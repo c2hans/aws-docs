@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-p
 ---
 
 # Send a message
-<a name="nx-push-send"></a>
 
 After you create an application and enable one or more push channels, you can send push notifications to the devices registered with your app. You send a push notification through the channel that matches the recipient device, and AWS End User Messaging Push forwards the message to the corresponding push notification service – Apple Push Notification service (APNs), Firebase Cloud Messaging (FCM), Amazon Device Messaging (ADM), or Baidu Cloud Push – which delivers it to the device.
 

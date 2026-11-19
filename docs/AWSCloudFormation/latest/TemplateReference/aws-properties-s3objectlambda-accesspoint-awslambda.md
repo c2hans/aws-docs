@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::S3ObjectLambda::AccessPoint AwsLambda
-<a name="aws-properties-s3objectlambda-accesspoint-awslambda"></a>
 
 <a name="aws-properties-s3objectlambda-accesspoint-awslambda-description"></a>The `AwsLambda` property type specifies Property description not available. for an [AWS::S3ObjectLambda::AccessPoint](aws-resource-s3objectlambda-accesspoint.md).
 

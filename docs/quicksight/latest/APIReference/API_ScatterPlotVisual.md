@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Scatt
 ---
 
 # ScatterPlotVisual
-<a name="API_ScatterPlotVisual"></a>
 
 A scatter plot.
 

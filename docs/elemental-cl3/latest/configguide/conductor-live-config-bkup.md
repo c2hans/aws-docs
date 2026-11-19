@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/conduct
 ---
 
 # Configuring for backup
-<a name="conductor-live-config-bkup"></a>
 
 This section describes how to modify the backup configuration so that AWS Elemental Conductor Live creates database backups on a remote server. (The default configuration is to back up to a directory on the node.)
 

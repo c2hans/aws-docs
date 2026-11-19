@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomValuesConfiguration
-<a name="API_CustomValuesConfiguration"></a>
 
 The configuration of custom values for the destination parameter in `DestinationParameterValueConfiguration`.
 

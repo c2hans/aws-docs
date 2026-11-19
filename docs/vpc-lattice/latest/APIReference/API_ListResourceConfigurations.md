@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_List
 ---
 
 # ListResourceConfigurations
-<a name="API_ListResourceConfigurations"></a>
 
 Lists the resource configurations owned by or shared with this account.
 

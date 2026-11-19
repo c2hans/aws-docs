@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/salesforce-AMG-
 ---
 
 # Connect to a Salesforce data source
-<a name="salesforce-AMG-datasource"></a>
 
 **Note**
 This data source is for Grafana Enterprise only. For more information, see [Manage access to Enterprise plugins](upgrade-to-enterprise-plugins.md).

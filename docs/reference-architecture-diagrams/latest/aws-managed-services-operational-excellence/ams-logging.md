@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # AMS for Logging
-<a name="ams-logging"></a>
 
 Use this reference architecture to understand how AWS Managed Services (AMS) provides centralized observability with logging and tracing. AMS enables and aggregates multiple logs as part of account onboarding.
 

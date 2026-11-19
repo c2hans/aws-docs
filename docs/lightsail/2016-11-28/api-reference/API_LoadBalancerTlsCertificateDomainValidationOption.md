@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_L
 ---
 
 # LoadBalancerTlsCertificateDomainValidationOption
-<a name="API_LoadBalancerTlsCertificateDomainValidationOption"></a>
 
 Contains information about the domain names on an SSL/TLS certificate that you will use to validate domain ownership.
 

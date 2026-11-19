@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-a
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Conducting architecture reviews
-<a name="agent-architecture-reviews"></a>
 
 Architecture reviews analyze your infrastructure as code (IaC) templates against the AWS Well-Architected Framework and return deployment-ready updated templates with best-practice fixes applied. Unlike resource and application recommendations, architecture reviews target templates before deployment, enabling you to identify and resolve issues before they reach production.
 

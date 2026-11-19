@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/understand
 ---
 
 # Understanding image sets
-<a name="understanding-image-sets"></a>
 
 Image sets are an AWS that resemble a DICOM Series, and serve as the foundation for AWS HealthImaging. Image sets are created when you import your DICOM data into HealthImaging. The service attempts to organize imported P10 data according to the DICOM hierarchy of Study, Series, and Instance.
 

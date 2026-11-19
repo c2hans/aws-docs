@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/ftp-package-exclusion.ht
 ---
 
 # `ftp` Package
-<a name="ftp-package-exclusion"></a>
 
 The `ftp` package in AL2 is no longer available in Amazon Linux starting with AL2023. This decision was made as part of our ongoing commitment to security, maintainability, and modern software development practices. As part of (or before) migrating to AL2023, we recommend migrating any use of the legacy `ftp` package to one of its alternatives.
 

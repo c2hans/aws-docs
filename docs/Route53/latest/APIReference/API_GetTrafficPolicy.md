@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetTraff
 ---
 
 # GetTrafficPolicy
-<a name="API_GetTrafficPolicy"></a>
 
 Gets information about a specific traffic policy version.
 

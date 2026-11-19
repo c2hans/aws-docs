@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Restore
 ---
 
 # RestoreTableFromClusterSnapshot
-<a name="API_RestoreTableFromClusterSnapshot"></a>
 
 Creates a new table from a table in an Amazon Redshift cluster snapshot. You must create the new table within the Amazon Redshift cluster that the snapshot was taken from.
 
@@ -75,7 +74,7 @@ Required: No
 The following element is returned by the service.
 
  ** TableRestoreStatus **
-Describes the status of a [RestoreTableFromClusterSnapshot](#API_RestoreTableFromClusterSnapshot) operation.
+Describes the status of a [RestoreTableFromClusterSnapshot](API_RestoreTableFromClusterSnapshot.md) operation.
 Type: [TableRestoreStatus](API_TableRestoreStatus.md) object
 
 ## Errors

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Querying your Amazon OpenSearch Service data with SQL
-<a name="sql-support"></a>
 
 You can use SQL to query your Amazon OpenSearch Service, rather than using the JSON-based [OpenSearch query DSL](https://docs.opensearch.org/latest/opensearch/query-dsl/full-text/). Querying with SQL is useful if you're already familiar with the language or want to integrate your domain with an application that uses it. SQL support is available on domains running OpenSearch or Elasticsearch 6.5 or higher.
 

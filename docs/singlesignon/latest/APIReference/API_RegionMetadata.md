@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Reg
 ---
 
 # RegionMetadata
-<a name="API_RegionMetadata"></a>
 
 Contains information about an enabled Region of an IAM Identity Center instance, including the Region name, status, date added, and whether it is the primary Region.
 

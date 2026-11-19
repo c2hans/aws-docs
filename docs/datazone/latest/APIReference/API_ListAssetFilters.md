@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListAss
 ---
 
 # ListAssetFilters
-<a name="API_ListAssetFilters"></a>
 
 Lists asset filters.
 

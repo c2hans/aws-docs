@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/cryptographic-details/kms-int
 ---
 
 # AWS KMS internal operations
-<a name="kms-internals"></a>
 
 AWS KMS internals are required to scale and secure HSMs for a globally distributed key management service.
 

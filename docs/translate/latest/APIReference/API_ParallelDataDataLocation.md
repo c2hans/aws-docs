@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Parall
 ---
 
 # ParallelDataDataLocation
-<a name="API_ParallelDataDataLocation"></a>
 
 The location of the most recent parallel data input file that was successfully imported into Amazon Translate.
 

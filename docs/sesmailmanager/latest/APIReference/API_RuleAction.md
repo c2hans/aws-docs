@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RuleAction
-<a name="API_RuleAction"></a>
 
 The action for a rule to take. Only one of the contained actions can be set.
 

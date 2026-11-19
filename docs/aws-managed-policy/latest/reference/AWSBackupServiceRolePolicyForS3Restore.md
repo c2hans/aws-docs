@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBackupServiceRolePolicyForS3Restore
-<a name="AWSBackupServiceRolePolicyForS3Restore"></a>
 
 **Description**: Policy containing permissions necessary for AWS Backup to restore a S3 backup to a bucket. This includes read/write permissions to all S3 buckets, and permissions to GenerateDataKey and DescribeKey for all KMS keys.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/getting-help.
 ---
 
 # Getting help
-<a name="getting-help"></a>
 
 For help with a CRM integration, submit a support case in AWS Partner Central.
 

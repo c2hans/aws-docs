@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gatewa
 ---
 
 # Set up inbound authorization for your gateway
-<a name="gateway-inbound-auth"></a>
 
 Before you create your gateway, you must set up inbound authorization. Inbound authorization validates users who attempt to access targets through your AgentCore gateway. AgentCore supports the following types of inbound authorization:
 +  **JSON Web Token (JWT)** – A secure and compact token used for authorization. After creating the JWT, you specify it as the authorization configuration when you create the gateway. You can create a JWT with any of the identity providers at [Provider setup and configuration](identity-idps.md).

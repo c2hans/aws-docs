@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-trouble
 ---
 
 # Troubleshoot session errors
-<a name="notebooks-spark-troubleshooting-sessions"></a>
 
 Use the information in this section to troubleshoot session issues.
 
@@ -36,7 +35,7 @@ Custom configuration errors that occur during a session start are logged by [Ama
 
 For more information about Spark logging, see [Log Spark application events in Athena](notebooks-spark-logging.md).
 
-For more information about troubleshooting sessions in Athena for Spark, see [Troubleshoot session errors](#notebooks-spark-troubleshooting-sessions).
+For more information about troubleshooting sessions in Athena for Spark, see [Troubleshoot session errors](notebooks-spark-troubleshooting-sessions.md).
 
 ## Specific session issues
 <a name="notebooks-spark-troubleshooting-sessions-specific-error-messages"></a>

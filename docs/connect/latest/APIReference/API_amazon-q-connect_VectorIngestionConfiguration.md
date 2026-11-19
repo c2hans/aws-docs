@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # VectorIngestionConfiguration
-<a name="API_amazon-q-connect_VectorIngestionConfiguration"></a>
 
 Contains details about how to ingest the documents in a data source.
 

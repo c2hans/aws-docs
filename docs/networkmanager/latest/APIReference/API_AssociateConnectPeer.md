@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_A
 ---
 
 # AssociateConnectPeer
-<a name="API_AssociateConnectPeer"></a>
 
 Associates a core network Connect peer with a device and optionally, with a link.
 

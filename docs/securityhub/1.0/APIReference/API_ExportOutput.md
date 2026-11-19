@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ExportO
 ---
 
 # ExportOutput
-<a name="API_ExportOutput"></a>
 
 Specifies what data to export and how to format it. This is a union: you must specify exactly one member. Currently, the only supported member is `Findings`.
 

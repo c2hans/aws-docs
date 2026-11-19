@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyLoc
 ---
 
 # ModifyLocalGatewayRoute
-<a name="API_ModifyLocalGatewayRoute"></a>
 
 Modifies the specified local gateway route.
 

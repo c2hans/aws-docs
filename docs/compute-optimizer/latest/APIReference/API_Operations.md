@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported by AWS Compute Optimizer:
 +  [DeleteRecommendationPreferences](API_DeleteRecommendationPreferences.md)

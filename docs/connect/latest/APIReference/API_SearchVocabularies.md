@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchVo
 ---
 
 # SearchVocabularies
-<a name="API_SearchVocabularies"></a>
 
 Searches for vocabularies within a specific Connect Customer instance using `State`, `NameStartsWith`, and `LanguageCode`.
 

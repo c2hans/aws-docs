@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/metrics-api.html
 ---
 
 # Metrics actions
-<a name="metrics-api"></a>
 
 The following API actions are available for metrics:
 + [GetContactMetrics](https://docs.aws.amazon.com/connect/latest/APIReference/API_GetContactMetrics.html)

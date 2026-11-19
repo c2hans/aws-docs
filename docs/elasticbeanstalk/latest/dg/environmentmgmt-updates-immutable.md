@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environmentmg
 ---
 
 # Immutable environment updates
-<a name="environmentmgmt-updates-immutable"></a>
 
 Immutable environment updates are an alternative to [rolling updates](using-features.rollingupdates.md). Immutable environment updates ensure that configuration changes that require replacing instances are applied efficiently and safely. If an immutable environment update fails, the rollback process requires only terminating an Auto Scaling group. A failed rolling update, on the other hand, requires performing an additional rolling update to roll back the changes.
 

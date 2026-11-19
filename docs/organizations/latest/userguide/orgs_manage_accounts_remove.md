@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Removing a member account from an organization with AWS Organizations
-<a name="orgs_manage_accounts_remove"></a>
 
  Removing a member account does not close the account, instead it removes the member account from the organization. The former member account becomes a standalone AWS account that is no longer managed by AWS Organizations.
 

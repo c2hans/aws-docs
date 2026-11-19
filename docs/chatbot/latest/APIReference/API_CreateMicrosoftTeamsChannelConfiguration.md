@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_CreateMi
 ---
 
 # CreateMicrosoftTeamsChannelConfiguration
-<a name="API_CreateMicrosoftTeamsChannelConfiguration"></a>
 
 Creates an Amazon Q Developer configuration for Microsoft Teams.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/er
 ---
 
 # Error handling
-<a name="error-handling"></a>
 
 Understanding how and when the AWS SDK for Kotlin throws exceptions is important to building high-quality applications using the SDK. The following sections describe the different cases of exceptions that are thrown by the SDK and how to handle them appropriately.
 

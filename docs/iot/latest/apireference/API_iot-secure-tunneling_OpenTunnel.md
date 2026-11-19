@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-secure-t
 ---
 
 # OpenTunnel
-<a name="API_iot-secure-tunneling_OpenTunnel"></a>
 
 Creates a new tunnel, and returns two client access tokens for clients to use to connect to the AWS IoT Secure Tunneling proxy server.
 

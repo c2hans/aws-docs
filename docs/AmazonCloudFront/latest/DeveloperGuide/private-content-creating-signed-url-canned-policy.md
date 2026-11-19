@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/p
 ---
 
 # Create a signed URL using a canned policy
-<a name="private-content-creating-signed-url-canned-policy"></a>
 
 To create a signed URL using a canned policy, complete the following steps.<a name="private-content-creating-signed-url-canned-policy-procedure"></a>
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/porting.html
 ---
 
 # Porting existing phone numbers
-<a name="porting"></a>
 
 **Important**
 Starting Friday, March, 01, 2024, Amazon Chime SDK phone number porting requests moved to the **Account and billing** section of the AWS Support Center console. To create a new support case for phone number porting, choose **Account and billing**, open the **Services** dropdown menu, and choose **Chime (Number Management)**.

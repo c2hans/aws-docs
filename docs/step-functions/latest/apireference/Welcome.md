@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/Welco
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 With AWS Step Functions, you can create workflows, also called *state machines*, to build distributed applications, automate processes, orchestrate microservices, and create data and machine learning pipelines.
 
@@ -16,4 +15,4 @@ For more information about developing solutions with Step Functions, see the * [
 **Important**
 If you use the Step Functions API actions using AWS SDK integrations, make sure the API actions are in camel case and parameter names are in Pascal case. For example, you might use Step Functions API action `startSyncExecution` and specify its parameter as `StateMachineArn`.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

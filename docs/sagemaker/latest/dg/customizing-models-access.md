@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models-a
 ---
 
 # How to access model customization
-<a name="customizing-models-access"></a>
 
 Amazon SageMaker AI provides multiple interfaces for model customization. The following table summarizes your options — choose the interface that best fits your workflow and level of control.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oracle-dump
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 When working with the AWS CLI, Amazon S3, Amazon RDS, Amazon EFS, and IAM, use the best practices in the following resources:
 + [Data protection in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/data-protection.html)

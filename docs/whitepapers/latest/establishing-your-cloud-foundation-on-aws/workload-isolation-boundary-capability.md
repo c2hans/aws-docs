@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Workload Isolation capability
-<a name="workload-isolation-boundary-capability"></a>
 
  The Workload Isolation capability enables you to create and manage isolated environments for your workloads. This approach reduces the impact of vulnerabilities and threats, and eases the complexity of compliance by providing mechanisms to isolate access to resources.
 

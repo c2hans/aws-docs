@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Security
-<a name="aurora-features-security"></a>
 
 **Topics**
 + [Network isolation](#aurora-features-network-isolation)

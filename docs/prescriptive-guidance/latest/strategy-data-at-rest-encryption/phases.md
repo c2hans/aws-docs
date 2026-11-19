@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Phases of building an encryption strategy
-<a name="phases"></a>
 
 Building an enterprise-level encryption strategy requires a multi-phased approach. Each phase defines a set of controls to help you achieve your desired, tangible results. This document guides you through these phases and asks you specific questions to help you customize your encryption strategy.
 

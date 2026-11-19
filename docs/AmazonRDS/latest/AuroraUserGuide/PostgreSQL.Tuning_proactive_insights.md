@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Postgre
 ---
 
 # Tuning Aurora PostgreSQL with Amazon DevOps Guru proactive insights
-<a name="PostgreSQL.Tuning_proactive_insights"></a>
 
 DevOps Guru proactive insights detects conditions on your Aurora PostgreSQL DB clusters that can cause problems, and lets you know about them before they occur. Proactive insights can alert you to a long running idle in transaction connection. For more information about troubleshooting long running idle in transaction connections, see [Database has long running idle in transaction connection](#proactive-insights.idle-txn)
 

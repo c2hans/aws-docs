@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/run-tests.html
 ---
 
 # Run the FreeRTOS qualification suite
-<a name="run-tests"></a>
 
 You use the AWS IoT Device Tester for FreeRTOS executable to interact with IDT for FreeRTOS. The following command line examples show you how to run the qualification tests for a device pool (a set of identical devices).
 
@@ -173,7 +172,7 @@ Use the `--test-id` to run an individual test case.
 ```
 devicetester_{{[linux | mac | win_x86-64]}} run-suite --group-id mqtt --test-id mqtt_test
 ```
-For a complete list of options see [Run the FreeRTOS qualification suite](#run-tests).
+For a complete list of options see [Run the FreeRTOS qualification suite](run-tests.md).
 Starting in IDT v3.0.0, IDT checks online for newer test suites. For more information, see [Test suite versions](idt-test-suite-versions.md).
 
 ------

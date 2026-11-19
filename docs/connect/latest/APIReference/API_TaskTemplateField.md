@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_TaskTemp
 ---
 
 # TaskTemplateField
-<a name="API_TaskTemplateField"></a>
 
 Describes a single task template field.
 

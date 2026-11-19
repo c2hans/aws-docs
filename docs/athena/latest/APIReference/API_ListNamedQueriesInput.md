@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_ListNamed
 ---
 
 # ListNamedQueriesInput
-<a name="API_ListNamedQueriesInput"></a>
 
 ## Contents
 <a name="API_ListNamedQueriesInput_Contents"></a>

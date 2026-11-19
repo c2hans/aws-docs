@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ExtractionJob
-<a name="API_ExtractionJob"></a>
 
 Represents the metadata of a memory extraction job such as the message identifiers that compose this job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootEKSNetwork`
-<a name="automation-awssupport-troubleshooteksnetwork"></a>
 
 ## Description
 <a name="automation-awssupport-troubleshooteksnetwork-description"></a>

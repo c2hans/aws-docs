@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2F
 ---
 
 # EC2FleetTimeShiftableServiceRolePolicy
-<a name="EC2FleetTimeShiftableServiceRolePolicy"></a>
 
 **Description**: Policy granting permissions to EC2 Fleet to launch instances in the future.
 

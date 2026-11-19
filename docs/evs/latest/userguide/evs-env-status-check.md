@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/evs-env-status-chec
 ---
 
 # Monitor environment status
-<a name="evs-env-status-check"></a>
 
 You can monitor the status of your Amazon Elastic VMware Service environment and its underlying AWS resources with the Amazon EVS console or the AWS CLI. The environment status tells you whether the environment has issues that need your attention. Which status checks Amazon EVS runs depends on the deployment mode and on the connectors that you create.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateCo
 ---
 
 # UpdateContactTaskTemplate
-<a name="API_UpdateContactTaskTemplate"></a>
 
 Updates the task template association on an existing task contact. You can update the task template on a contact before assignment to support tasks that are created without a template (for example [Rules](https://docs.aws.amazon.com/connect/latest/adminguide/connect-rules.html) or [disconnect flows](https://docs.aws.amazon.com/connect/latest/adminguide/set-disconnect-flow.html)) or change the agent interaction form to represent the latest task data (for example an initial request that was submitted as a refund gets updated to an account cancellation and requires a new template).
 

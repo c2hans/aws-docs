@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ContentStartEvent
-<a name="API_ContentStartEvent"></a>
 
 An event that signals the start of content streaming from a command execution. This event is sent when the command begins producing output.
 

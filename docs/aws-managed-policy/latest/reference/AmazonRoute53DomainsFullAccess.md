@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53DomainsFullAccess
-<a name="AmazonRoute53DomainsFullAccess"></a>
 
 **Description**: Provides full access to all Route53 Domains actions and Create Hosted Zone to allow Hosted Zone creation as part of domain registrations.
 

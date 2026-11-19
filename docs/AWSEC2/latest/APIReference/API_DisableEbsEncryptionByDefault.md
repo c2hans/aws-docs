@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableEb
 ---
 
 # DisableEbsEncryptionByDefault
-<a name="API_DisableEbsEncryptionByDefault"></a>
 
 Disables EBS encryption by default for your account in the current Region.
 

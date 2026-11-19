@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcor
 ---
 
 # TELCOREL02-BP05 Optimize failure recovery timers for the shared tenancy and potential for transient network issues in cloud environments
-<a name="telcorel02-bp05"></a>
 
  Network-function vendors often set health-monitoring timers for on-premises networks with redundant physical paths, where a lost heartbeat reliably means failure. In the cloud, transient variance from shared tenancy can trip those aggressive timers and cause failovers even though the function is healthy. This best practice retunes those timers for cloud conditions with the vendors who own them. **Desired outcome:**
 +  Network functions detect, react to, and recover from genuine network issues and failures.

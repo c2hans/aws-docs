@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Workload architecture
-<a name="workload-architecture"></a>
 
 | CONTAINER\_BUILD\_REL\_02: How do you handle persistent data in a container application? |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # Command
-<a name="API_devicemanagement_Command"></a>
 
 The command given to the device to execute.
 

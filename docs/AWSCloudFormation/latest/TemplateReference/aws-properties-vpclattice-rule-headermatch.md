@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::VpcLattice::Rule HeaderMatch
-<a name="aws-properties-vpclattice-rule-headermatch"></a>
 
 Describes the constraints for a header match. Matches incoming requests with rule based on request header value before applying rule action.
 

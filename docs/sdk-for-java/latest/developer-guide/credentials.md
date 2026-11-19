@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/cred
 ---
 
 # Using credentials providers in the AWS SDK for Java 2.x
-<a name="credentials"></a>
 
 The role of a credentials provider in the AWS SDK for Java 2.x is to source and supply credentials to the SDK's AWS service clients. The SDK uses the credentials it sources to authenticate with the service by cryptographically signing each request. Credentials usually consist of access keys—an access key ID and a secret access key together.
 

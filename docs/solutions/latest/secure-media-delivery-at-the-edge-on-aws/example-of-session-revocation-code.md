@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 ---
 
 # Example of session revocation code
-<a name="example-of-session-revocation-code"></a>
 
 ```
 //Import library

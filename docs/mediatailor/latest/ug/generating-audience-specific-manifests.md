@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/generating-audienc
 ---
 
 # Generating audience-specific manifests
-<a name="generating-audience-specific-manifests"></a>
 
 To retrieve a manifest for a particular audience, use the `aws.mediatailor.channel.audienceId` query parameter. This query parameter may be dynamically appended by your CDN or added through a call to your content or customer-management system. You must maintain the association of a given playback session to an `audienceId` outside of MediaTailor. This will retrieve an audience-specific manifest with any alternate media defined for that audience in place of default content. It is important that once a manifest is requested for a particular audience that the player always requests the manifest with that same audience ID or there could be playback errors.
 

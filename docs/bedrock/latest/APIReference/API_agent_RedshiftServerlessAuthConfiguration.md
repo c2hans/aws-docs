@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Re
 ---
 
 # RedshiftServerlessAuthConfiguration
-<a name="API_agent_RedshiftServerlessAuthConfiguration"></a>
 
 Specifies configurations for authentication to a Redshift Serverless. Specify the type of authentication to use in the `type` field and include the corresponding field. If you specify IAM authentication, you don't need to include another field.
 

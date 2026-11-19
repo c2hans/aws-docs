@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Stage 1: Initializing a large migration
-<a name="stage-one-initialization"></a>
 
 In the initialize stage, the goal is to define standard operating procedures (SOPs) for the large migration, also known as *runbooks*. You build custom runbooks based on your company's policies and processes. If another team member is responsible for defining the runbooks in your large migration project, skip to [Stage 2: Implementing a large migration](stage-two-implementation.md), where you will use the runbooks to prioritize applications and perform wave planning. Stage 1 consists of the following tasks and steps:
 + [Task 1: Validating the migration patterns and migration metadata](task-one-pattern-validation.md)

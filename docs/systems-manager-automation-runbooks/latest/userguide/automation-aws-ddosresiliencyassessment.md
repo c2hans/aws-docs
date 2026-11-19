@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSPremiumSupport-DDoSResiliencyAssessment`
-<a name="automation-aws-ddosresiliencyassessment"></a>
 
  **Description**
 

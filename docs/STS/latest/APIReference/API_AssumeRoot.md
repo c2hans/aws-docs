@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoot.h
 ---
 
 # AssumeRoot
-<a name="API_AssumeRoot"></a>
 
 Returns a set of short term credentials you can use to perform privileged tasks on a member account in your organization. You must use credentials from an AWS Organizations management account or a delegated administrator account for IAM to call `AssumeRoot`. You cannot use root user credentials to make this call.
 

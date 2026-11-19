@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Attach
 ---
 
 # Attachment
-<a name="API_Attachment"></a>
 
 A cross-account attachment in AWS Global Accelerator. A cross-account attachment specifies the *principals* who have permission to work with *resources* in your account, which you also list in the attachment.
 

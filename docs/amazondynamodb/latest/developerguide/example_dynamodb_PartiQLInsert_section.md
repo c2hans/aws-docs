@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Insert DynamoDB data using PartiQL INSERT statements with an AWS SDK
-<a name="example_dynamodb_PartiQLInsert_section"></a>
 
 The following code example shows how to insert data using PartiQL INSERT statements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/migrate-
 ---
 
 # Update the Amazon ECS deployment strategy
-<a name="migrate-deployment-strategies"></a>
 
 Amazon ECS supports multiple deployment strategies for updating your services. You can migrate between these strategies based on your application requirements. This topic explains how to migrate between rolling deployments and blue/green deployments.
 

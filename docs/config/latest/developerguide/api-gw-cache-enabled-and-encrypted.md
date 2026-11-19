@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/api-gw-cach
 ---
 
 # api-gw-cache-enabled-and-encrypted
-<a name="api-gw-cache-enabled-and-encrypted"></a>
 
 Checks if all methods in Amazon API Gateway stages have cache enabled and cache encrypted. The rule is NON\_COMPLIANT if any method in an Amazon API Gateway stage is not configured to cache or the cache is not encrypted.
 

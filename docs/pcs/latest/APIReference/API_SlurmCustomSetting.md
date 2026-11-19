@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_SlurmCustomS
 ---
 
 # SlurmCustomSetting
-<a name="API_SlurmCustomSetting"></a>
 
 Additional settings that directly map to Slurm settings.
 

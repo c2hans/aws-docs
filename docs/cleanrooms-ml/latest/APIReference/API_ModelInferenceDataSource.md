@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Mo
 ---
 
 # ModelInferenceDataSource
-<a name="API_ModelInferenceDataSource"></a>
 
 Defines information about the data source used for model inference.
 

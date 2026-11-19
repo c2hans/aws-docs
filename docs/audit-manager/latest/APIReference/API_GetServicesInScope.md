@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Ge
 ---
 
 # GetServicesInScope
-<a name="API_GetServicesInScope"></a>
 
 Gets a list of the AWS services from which Audit Manager can collect evidence.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/object-type-ma
 ---
 
 # Object type mapping for the standard loyalty promotion
-<a name="object-type-mapping-standard-loyalty-promotion"></a>
 
 The topics in this section provide the standard loyalty promotion definition.
 

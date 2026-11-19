@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # SlackOauth2ProviderConfigOutput
-<a name="API_SlackOauth2ProviderConfigOutput"></a>
 
 Output configuration for a Slack OAuth2 provider.
 

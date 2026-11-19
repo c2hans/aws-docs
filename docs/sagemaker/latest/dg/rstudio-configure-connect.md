@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-configure-co
 ---
 
 # Add an RStudio Connect URL
-<a name="rstudio-configure-connect"></a>
 
 RStudio Connect is a publishing platform for Shiny applications, R Markdown reports, dashboards, plots, and more. RStudio Connect makes it easy to surface machine learning and data science insights by making hosting content simple and scalable. If you have an RStudio Connect server, then you can set the server as the default place where apps are published. For more information about RStudio Connect, see [RStudio Connect](https://www.rstudio.com/products/connect/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_L
 ---
 
 # ListApplications
-<a name="API_ListApplications"></a>
 
 Lists the account access manager applications in your account. Use pagination to ensure that the operation returns quickly and successfully.
 

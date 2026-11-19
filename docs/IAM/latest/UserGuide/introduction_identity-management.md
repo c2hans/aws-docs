@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_identi
 ---
 
 # Compare IAM identities and credentials
-<a name="introduction_identity-management"></a>
 
 The identities managed in AWS Identity and Access Management are IAM users, IAM roles, and IAM groups. These identities are in addition to your root user that AWS created along with your AWS account.
 

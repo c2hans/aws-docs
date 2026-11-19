@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-rules-setup.html
 ---
 
 # Create and manage rule sets
-<a name="eb-rules-setup"></a>
 
 An ingress endpoint receives email for Mail Manager. After its traffic policy accepts a recipient, its assigned rule set processes the email. A rule set contains ordered rules. Each rule can use `Conditions` and `Unless` entries to select recipients, then run ordered `Actions`.
 

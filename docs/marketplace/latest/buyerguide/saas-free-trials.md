@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/saas-free-
 ---
 
 # Subscribing to SaaS free trials
-<a name="saas-free-trials"></a>
 
 Some vendors offer free trials for their SaaS products through AWS Marketplace for evaluation purposes. You can search through SaaS products in AWS Marketplace and filter results to show only those with free trials. All free trial products display the **Free trial** badge next to the product logo. On the product procurement page, you can find the duration of the free trial and what happens when the free trial ends.
 

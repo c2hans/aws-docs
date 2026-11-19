@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_HealthEv
 ---
 
 # HealthEventsConfig
-<a name="API_HealthEventsConfig"></a>
 
 A complex type with the configuration information that determines the threshold and other conditions for when Internet Monitor creates a health event for an overall performance or availability issue, across an application's geographies.
 

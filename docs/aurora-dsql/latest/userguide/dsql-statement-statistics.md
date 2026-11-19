@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/dsql-statem
 ---
 
 # Monitoring SQL statements with Aurora DSQL statement statistics
-<a name="dsql-statement-statistics"></a>
 
 Aurora DSQL statement statistics provide aggregated statistics for each SQL statement that your cluster runs. For each statement, Aurora DSQL records the number of execution calls, the planning and execution time, the rows, and the distributed processing units (DPUs) that the statement used. Aurora DSQL publishes these statistics as Amazon CloudWatch OpenTelemetry (OTel) metrics. It also writes up to 32 KiB of the normalized SQL text of each statement to Amazon CloudWatch Logs.
 

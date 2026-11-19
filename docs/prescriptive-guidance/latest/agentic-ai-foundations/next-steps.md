@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 This guide discussed the history and foundations of agentic AI, which represents the evolution of traditional software agents into autonomous, intelligent systems that are powered by generative AI. It described how early software agents followed predefined rules and logic to automate tasks within fixed boundaries, and explained how agentic AI builds on this foundation by incorporating large language models, which enable agents to reason, learn, and adapt dynamically in open-ended environments.
 

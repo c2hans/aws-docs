@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-python/v4/guide/choosing-sdk.htm
 **Developer Preview**: This documentation covers the AWS SDK for Python v4, which is in Developer Preview and intended for evaluation and testing only. Do not use it for production workloads. For production applications, use the [AWS SDK for Python (Boto3)](https://docs.aws.amazon.com/boto3/latest/guide/quickstart.html). To understand the differences between the two SDKs, see [Choosing the right AWS SDK for Python](choosing-sdk.md).
 
 # Choosing the right AWS SDK for Python
-<a name="choosing-sdk"></a>
 
 AWS provides two SDKs for building Python applications on AWS. This page compares them to help you choose the right SDK for your needs.
 

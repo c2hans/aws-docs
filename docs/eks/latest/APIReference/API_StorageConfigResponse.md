@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_StorageConfi
 ---
 
 # StorageConfigResponse
-<a name="API_StorageConfigResponse"></a>
 
 Indicates the status of the request to update the block storage capability of your EKS Auto Mode cluster.
 

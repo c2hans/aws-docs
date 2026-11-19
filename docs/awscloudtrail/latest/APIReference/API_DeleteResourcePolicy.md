@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_De
 ---
 
 # DeleteResourcePolicy
-<a name="API_DeleteResourcePolicy"></a>
 
  Deletes the resource-based policy attached to the CloudTrail event data store, dashboard, or channel.
 

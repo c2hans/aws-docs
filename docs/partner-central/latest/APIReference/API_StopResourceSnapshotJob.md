@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # StopResourceSnapshotJob
-<a name="API_StopResourceSnapshotJob"></a>
 
 Stops a resource snapshot job. The job must be started prior to being stopped.
 

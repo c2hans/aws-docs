@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribedIdentityCenterConfig
-<a name="API_DescribedIdentityCenterConfig"></a>
 
 A structure that contains the details of the IAM Identity Center used for your web app. Returned during a call to `DescribeWebApp`.
 

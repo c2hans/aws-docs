@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_PackageSumma
 ---
 
 # PackageSummary
-<a name="API_PackageSummary"></a>
 
 A summary of information about a software package.
 

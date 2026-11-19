@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-hudi-in-athena
 ---
 
 # Considerations and limitations
-<a name="querying-hudi-in-athena-considerations-and-limitations"></a>
 
 When you use Athena to read Apache Hudi tables, consider the following points.
 + **Read and write operations** – Athena can read compacted Hudi datasets but not write Hudi data.

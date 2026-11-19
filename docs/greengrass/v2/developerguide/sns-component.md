@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/sns-compone
 ---
 
 # Amazon SNS
-<a name="sns-component"></a>
 
 The Amazon SNS component (`aws.greengrass.SNS`) publishes messages to an Amazon Simple Notification Service (Amazon SNS) topic. You can use this component to send events from Greengrass core devices to web servers, email addresses, and other message subscribers. For more information, see [What is Amazon SNS?](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) in the *Amazon Simple Notification Service Developer Guide*.
 

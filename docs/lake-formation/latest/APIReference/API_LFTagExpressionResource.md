@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_L
 ---
 
 # LFTagExpressionResource
-<a name="API_LFTagExpressionResource"></a>
 
 A structure containing a LF-Tag expression (keys and values).
 

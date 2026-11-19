@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/fsx-ontap.html
 ---
 
 # FSx for ONTAP configuration
-<a name="fsx-ontap"></a>
 
 ## Overview
 <a name="fsx-ontap-overview"></a>

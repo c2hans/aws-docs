@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/create-
 ---
 
 # Creating a usage budget
-<a name="create-usage-budget"></a>
 
 Use this procedure to create a budget that's based on your usage.<a name="usage-budget"></a>
 

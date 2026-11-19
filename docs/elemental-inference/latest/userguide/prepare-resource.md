@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/pre
 ---
 
 # Reference
-<a name="prepare-resource"></a>
 
 ## Media requirements
 <a name="source-media-reqs"></a>

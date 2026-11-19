@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/claude-platform/latest/userguide/welcome
 ---
 
 # What is Claude Platform on AWS?
-<a name="welcome"></a>
 
  *Access Claude’s full platform capabilities through AWS with Anthropic-managed infrastructure.*
 

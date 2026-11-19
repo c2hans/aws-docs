@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cassandra::Table ProvisionedThroughput
-<a name="aws-properties-cassandra-table-provisionedthroughput"></a>
 
 The provisioned throughput for the table, which consists of `ReadCapacityUnits` and `WriteCapacityUnits`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/list-e
 ---
 
 # List evaluators
-<a name="list-evaluators"></a>
 
 The `ListEvaluators` API returns a paginated list of all custom evaluators in your account and Region, including both your custom evaluators and built-in evaluators. Built-in evaluators are returned first.
 

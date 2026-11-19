@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/data-not-delivered-t
 ---
 
 # Troubleshooting Amazon OpenSearch Service
-<a name="data-not-delivered-to-es"></a>
 
 Check the following if data is not delivered to your OpenSearch Service domain.
 

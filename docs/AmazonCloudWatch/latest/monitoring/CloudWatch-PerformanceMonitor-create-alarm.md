@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Create alarms with Performance Monitor
-<a name="CloudWatch-PerformanceMonitor-create-alarm"></a>
 
 When you create a monitor, you can turn on a recommended CloudWatch alarm for High impact to get notified when network degradation occurs. You can also set a custom alarm threshold for High impact.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-em
 AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
 
 # Supported Amazon EC2 Instances for Amazon EMR Clusters
-<a name="dp-emr-supported-instance-types"></a>
 
 This table lists the Amazon EC2 instances that AWS Data Pipeline supports and can create for Amazon EMR clusters, if specified. For more information, see [Supported Instance Types](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-supported-instance-types.html) in the *Amazon EMR Management Guide*.
 

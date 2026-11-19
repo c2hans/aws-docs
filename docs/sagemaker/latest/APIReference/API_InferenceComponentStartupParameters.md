@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceComponentStartupParameters
-<a name="API_InferenceComponentStartupParameters"></a>
 
 Settings that take effect while the model container starts up.
 

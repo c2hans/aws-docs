@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_S
 ---
 
 # SingleMeasureMapping
-<a name="API_SingleMeasureMapping"></a>
 
 Maps a single source data field to a single record in the specified Timestream for LiveAnalytics table.
 

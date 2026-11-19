@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/transit-gateway-authentic
 ---
 
 # Identity and access management in AWS Transit Gateway
-<a name="transit-gateway-authentication-access-control"></a>
 
 AWS uses security credentials to identify you and to grant you access to your AWS resources. You can use features of AWS Identity and Access Management (IAM) to allow other users, services, and applications to use your AWS resources fully or in a limited way, without sharing your security credentials.
 

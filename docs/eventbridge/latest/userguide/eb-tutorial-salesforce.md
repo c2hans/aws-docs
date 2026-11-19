@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-tutorial
 ---
 
 # Tutorial: Send events to Salesforce from Amazon EventBridge
-<a name="eb-tutorial-salesforce"></a>
 
 You can use EventBridge to route [events](eb-events.md) to third-party services, such as [Salesforce](https://www.salesforce.com/).
 

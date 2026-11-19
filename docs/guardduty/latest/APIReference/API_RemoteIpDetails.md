@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Remote
 ---
 
 # RemoteIpDetails
-<a name="API_RemoteIpDetails"></a>
 
 Contains information about the remote IP address of the connection.
 

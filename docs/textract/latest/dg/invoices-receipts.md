@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/invoices-receipts.htm
 ---
 
 # Analyzing Invoices and Receipts
-<a name="invoices-receipts"></a>
 
 Amazon Textract extracts relevant data such as vendor and receiver contact information, from almost any invoice or receipt without the need for any templates or configuration. Invoices and receipts often use various layouts, making it difficult and time-consuming to manually extract data at scale. Amazon Textract uses ML to understand the context of invoices and receipts. It automatically extracts data such as invoice or receipt date, invoice or receipt number, item prices, total amount, and payment terms.
 

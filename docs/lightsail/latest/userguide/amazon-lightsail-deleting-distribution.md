@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Delete Lightsail distributions
-<a name="amazon-lightsail-deleting-distribution"></a>
 
 You can delete your Amazon Lightsail distribution at any time if you're no longer using it.
 

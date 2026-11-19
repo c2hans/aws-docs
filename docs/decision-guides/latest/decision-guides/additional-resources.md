@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/a
 ---
 
 # Additional resources
-<a name="additional-resources"></a>
 
 The following resources can help you learn more about AWS services and make informed decisions about your architecture.
 + [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) — Provides architectural best practices for building secure, high-performing, resilient, and efficient infrastructure.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-priv
 ---
 
 # Private offers in AWS Marketplace
-<a name="buyer-private-offers"></a>
 
  The AWS Marketplace seller private offer feature enables you to receive product pricing and EULA terms from a seller. These terms aren't publicly available. You negotiate pricing and terms with the seller, and the seller creates a private offer for the AWS account that you designate. You accept the private offer and start receiving the negotiated price and terms of use.
 

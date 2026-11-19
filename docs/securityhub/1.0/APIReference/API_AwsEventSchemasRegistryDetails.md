@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEven
 ---
 
 # AwsEventSchemasRegistryDetails
-<a name="API_AwsEventSchemasRegistryDetails"></a>
 
  A schema defines the structure of events that are sent to Amazon EventBridge. Schema registries are containers for schemas. They collect and organize schemas so that your schemas are in logical groups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/importing-file
 ---
 
 # Importing files from your data repository
-<a name="importing-files"></a>
 
 When you create a Amazon File Cache resource, you can create a data repository association (DRA) to link your cache to an Amazon S3 or NFS data repository. Amazon File Cache transparently copies the content of a file from your repository and loads it into the cache, if it doesn't already exist, when your application accesses the file.
 

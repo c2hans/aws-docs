@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/single-ami-
 ---
 
 # Creating a change request for an AMI-based product in AWS Marketplace
-<a name="single-ami-create-change-request"></a>
 
 To make changes to a product or version in AWS Marketplace, you submit a **change request** through the AWS Marketplace Management Portal. Change requests are added to a queue and can take from minutes to days to resolve, depending on the type of request. You can see the status of requests in the AWS Marketplace Management Portal. This topic provides the procedures that you can use to create a change request for a single-AMI product in AWS Marketplace, including the option to use the self-service experience.
 

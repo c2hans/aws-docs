@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterFsxOpenZfsConfig
-<a name="API_ClusterFsxOpenZfsConfig"></a>
 
 Defines the configuration for attaching an Amazon FSx for OpenZFS file system to instances in a SageMaker HyperPod cluster instance group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # MedicalScribePostStreamAnalyticsSettings
-<a name="API_streaming_MedicalScribePostStreamAnalyticsSettings"></a>
 
 The settings for post-stream analytics.
 

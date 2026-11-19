@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BGW_U
 ---
 
 # UntagResource
-<a name="API_BGW_UntagResource"></a>
 
 Removes tags from the resource.
 

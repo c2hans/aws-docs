@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_L
 ---
 
 # ListAddressListImportJobs
-<a name="API_ListAddressListImportJobs"></a>
 
 Lists jobs for an address list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # Codefresh
-<a name="codefresh"></a>
 
 Codefresh is a modern CI/CD platform that supports GitOps principles, particularly for Kubernetes deployments. Codefresh offers a comprehensive set of CI/CD features, and its GitOps capabilities are notable.
 

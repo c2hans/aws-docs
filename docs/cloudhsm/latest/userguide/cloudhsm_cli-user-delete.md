@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-u
 ---
 
 # Delete an AWS CloudHSM user with CloudHSM CLI
-<a name="cloudhsm_cli-user-delete"></a>
 
 The **user delete** command in CloudHSM CLI deletes a user from your AWS CloudHSM cluster. Only user accounts with the admin role may run this command. You cannot delete a user who is currently logged into an HSM.
 

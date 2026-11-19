@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-v
 ---
 
 # Spending and cost
-<a name="nx-voice-scale-spending"></a>
 
 This topic explains how to monitor the amount of money that you spend when you send voice messages through AWS End User Messaging. If you only want to view your monthly charges, including the amount of money you've spent, use the AWS Billing and Cost Management console, which provides an estimate of your bill for the current month and your final charges for previous months.
 

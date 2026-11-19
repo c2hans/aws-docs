@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ChannelMembership
-<a name="API_messaging-chime_ChannelMembership"></a>
 
 The details of a channel member.
 

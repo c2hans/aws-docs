@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-email-authentication-
 ---
 
 # Complying with DMARC authentication protocol in Amazon SES
-<a name="send-email-authentication-dmarc"></a>
 
 Domain-based Message Authentication, Reporting and Conformance (DMARC) is an email authentication protocol that uses Sender Policy Framework (SPF) and DomainKeys Identified Mail (DKIM) to detect email spoofing and phishing. In order to comply with DMARC, messages must be authenticated through either SPF or DKIM, but ideally, when both are used with DMARC, you'll be ensuring the highest level of protection possible for your email sending.
 

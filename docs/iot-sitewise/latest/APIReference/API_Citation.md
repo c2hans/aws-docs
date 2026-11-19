@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Cit
 ---
 
 # Citation
-<a name="API_Citation"></a>
 
 Contains text content to which the SiteWise Assistant refers to, and generate the final response. It also contains information about the source.
 

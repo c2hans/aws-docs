@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Get
 ---
 
 # GetBaseline
-<a name="API_GetBaseline"></a>
 
 Retrieve details about an existing `Baseline` resource by specifying its identifier. For usage examples, see [*the AWS Control Tower User Guide*](https://docs.aws.amazon.com/controltower/latest/userguide/baseline-api-examples.html).
 

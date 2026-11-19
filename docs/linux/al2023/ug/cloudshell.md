@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/cloudshell.html
 ---
 
 # Using AL2023 in AWS CloudShell
-<a name="cloudshell"></a>
 
  AWS CloudShell is a browser-based, pre-authenticated shell that you can launch directly from the AWS Management Console. You can navigate to CloudShell from the AWS Management Console a few different ways. For more information, see [How to get started with AWS CloudShell?](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html#how-to-get-started)
 

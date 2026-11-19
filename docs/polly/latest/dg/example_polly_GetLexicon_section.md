@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/example_polly_GetLexicon
 ---
 
 # Use `GetLexicon` with an AWS SDK or CLI
-<a name="example_polly_GetLexicon_section"></a>
 
 The following code examples show how to use `GetLexicon`.
 

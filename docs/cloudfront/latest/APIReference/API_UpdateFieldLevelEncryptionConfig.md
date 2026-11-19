@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateFieldLevelEncryptionConfig
-<a name="API_UpdateFieldLevelEncryptionConfig"></a>
 
 Update a field-level encryption configuration.
 

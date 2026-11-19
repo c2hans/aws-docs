@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_In
 ---
 
 # IndexFieldStatus
-<a name="API_IndexFieldStatus"></a>
 
 ## Description
 <a name="API_IndexFieldStatus_Description"></a>

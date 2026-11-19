@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonDeployment
-<a name="API_DaemonDeployment"></a>
 
 Information about a daemon deployment. A daemon deployment orchestrates the progressive rollout of daemon task updates across container instances.
 

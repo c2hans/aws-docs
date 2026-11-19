@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-spark-trouble
 ---
 
 # Use CloudTrail to troubleshoot Athena notebook API calls
-<a name="notebooks-spark-troubleshooting-cloudtrail"></a>
 
 To troubleshoot notebook API calls, you can examine Athena CloudTrail logs to investigate anomalies or discover actions initiated by users. For detailed information about using CloudTrail with Athena, see [Log Amazon Athena API calls with AWS CloudTrail](monitor-with-cloudtrail.md).
 

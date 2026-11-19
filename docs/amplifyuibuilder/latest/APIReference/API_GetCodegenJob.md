@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # GetCodegenJob
-<a name="API_GetCodegenJob"></a>
 
 Returns an existing code generation job.
 

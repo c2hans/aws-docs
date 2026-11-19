@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AttributeValue
-<a name="API_pricing_AttributeValue"></a>
 
 The values of a given attribute, such as `Throughput Optimized HDD` or `Provisioned IOPS` for the `Amazon EC2` `volumeType` attribute.
 

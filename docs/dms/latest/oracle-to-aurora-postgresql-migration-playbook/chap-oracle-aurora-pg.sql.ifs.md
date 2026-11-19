@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-m
 ---
 
 # INSERT FROM SELECT statement
-<a name="chap-oracle-aurora-pg.sql.ifs"></a>
 
 The following sections provide details on running the `INSERT FROM SELECT` statement, including syntax examples and best practices for efficient data transfer.
 

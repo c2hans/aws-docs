@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/a
 ---
 
 # Choosing an AWS analytics service
-<a name="analytics-on-aws-how-to-choose"></a>
 
 **Taking the first step**
 

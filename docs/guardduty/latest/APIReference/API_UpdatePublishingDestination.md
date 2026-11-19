@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Update
 ---
 
 # UpdatePublishingDestination
-<a name="API_UpdatePublishingDestination"></a>
 
 Updates information about the publishing destination specified by the `destinationId`.
 

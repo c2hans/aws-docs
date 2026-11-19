@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Option
 ---
 
 # Oracle Label Security
-<a name="Oracle.Options.OLS"></a>
 
 Amazon RDS supports Oracle Label Security for the Enterprise Edition of Oracle Database through the use of the OLS option.
 

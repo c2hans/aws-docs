@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # DeploymentTargets
-<a name="API_DeploymentTargets"></a>
 
 Specifies the AWS Organizations accounts where you want to create, update, or delete stack instances. You can target either your entire organization or specific accounts using organizational units (OUs) and account filter options.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Disas
 ---
 
 # DisassociateRecoveryPointFromParent
-<a name="API_DisassociateRecoveryPointFromParent"></a>
 
 This action to a specific child (nested) recovery point removes the relationship between the specified recovery point and its parent (composite) recovery point.
 

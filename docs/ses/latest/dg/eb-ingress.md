@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-ingress.html
 ---
 
 # Ingress endpoints
-<a name="eb-ingress"></a>
 
 An ingress endpoint is the key infrastructure component in Mail Manager that receives, routes, and manages your email by utilizing policies and rules you configure to determine which emails should be rejected, which ones should be allowed, and which ones should be acted upon.
 

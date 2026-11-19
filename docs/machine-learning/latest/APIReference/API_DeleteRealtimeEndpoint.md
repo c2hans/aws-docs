@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # DeleteRealtimeEndpoint
-<a name="API_DeleteRealtimeEndpoint"></a>
 
 Deletes a real time endpoint of an `MLModel`.
 

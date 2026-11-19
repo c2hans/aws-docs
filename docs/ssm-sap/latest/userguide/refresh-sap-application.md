@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/refresh-sap-app
 ---
 
 # Refresh SAP application
-<a name="refresh-sap-application"></a>
 
 The following steps will guide you through a refresh of your SAP HANA application or of your single node setup of SAP ABAP application. This refresh updates the application metadata in the AWS Systems Manager for SAP.
 

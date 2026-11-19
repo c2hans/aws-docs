@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PricingUnit
-<a name="API_marketplace-discovery_PricingUnit"></a>
 
 A pricing unit that defines the billing dimension for a listing, such as users, hosts, bandwidth, or data.
 

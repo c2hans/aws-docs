@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Operation
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [AddApplicationCloudWatchLoggingOption](API_AddApplicationCloudWatchLoggingOption.md)

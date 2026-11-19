@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteModelBiasJobDefinition
-<a name="API_DeleteModelBiasJobDefinition"></a>
 
 Deletes an Amazon SageMaker AI model bias job definition.
 

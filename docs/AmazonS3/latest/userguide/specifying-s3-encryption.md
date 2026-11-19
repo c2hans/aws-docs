@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/specifying-s3-
 ---
 
 # Specifying server-side encryption with Amazon S3 managed keys (SSE-S3)
-<a name="specifying-s3-encryption"></a>
 
 All Amazon S3 buckets have encryption configured by default, and all new objects that are uploaded to an S3 bucket are automatically encrypted at rest. Server-side encryption with Amazon S3 managed keys (SSE-S3) is the default encryption configuration for every bucket in Amazon S3. To use a different type of encryption, you can either specify the type of server-side encryption to use in your S3 `PUT` requests, or you can update the default encryption configuration in the destination bucket.
 

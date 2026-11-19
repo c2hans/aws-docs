@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # ListExecutions
-<a name="API_devicemanagement_ListExecutions"></a>
 
 Returns the status of tasks for one or more target devices.
 

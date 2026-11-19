@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/LOWER.h
 ---
 
 # LOWER function
-<a name="LOWER"></a>
 
 Converts a string to lowercase. LOWER supports UTF-8 multibyte characters, up to a maximum of four bytes per character.
 

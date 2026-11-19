@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/kafka-versions.html
 ---
 
 # Apache Kafka Versions
-<a name="kafka-versions"></a>
 
 Objects that represent Apache Kafka versions.
 

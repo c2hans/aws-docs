@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_CreateHe
 ---
 
 # CreateHealthCheck
-<a name="API_CreateHealthCheck"></a>
 
 Creates a new health check.
 

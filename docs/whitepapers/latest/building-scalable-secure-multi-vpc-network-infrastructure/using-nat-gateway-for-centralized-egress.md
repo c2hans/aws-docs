@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Using the NAT gateway for centralized IPv4 egress
-<a name="using-nat-gateway-for-centralized-egress"></a>
 
 NAT gateway is a managed network address translation service. Deploying a NAT gateway in every spoke VPC can become cost prohibitive because you pay an hourly charge for every NAT gateway you deploy (refer to [Amazon VPC pricing](http://aws.amazon.com/vpc/pricing/)). Centralizing NAT gateways can be a viable option to reduce costs. To centralize, you create a separate egress VPC in the network services account, deploy NAT gateways in the egress VPC, and route all egress traffic from the spoke VPCs to the NAT gateways residing in the egress VPC using Transit Gateway or CloudWAN, as shown in the following figure.
 

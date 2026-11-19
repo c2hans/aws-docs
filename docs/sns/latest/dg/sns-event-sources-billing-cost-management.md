@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources-billing-
 ---
 
 # Billing & cost management services
-<a name="sns-event-sources-billing-cost-management"></a>
 
 The following table describes how AWS Billing and Cost Management integrates with Amazon SNS to provide notifications for budgets, price changes, and cost anomalies.
 

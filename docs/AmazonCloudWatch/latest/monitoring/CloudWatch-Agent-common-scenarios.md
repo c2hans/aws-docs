@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Common scenarios with the CloudWatch agent
-<a name="CloudWatch-Agent-common-scenarios"></a>
 
  This section provides you with different scenarios that outline how to complete common configuration and customization tasks for the CloudWatch agent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # Homogeneous
-<a name="API_Homogeneous"></a>
 
  The object containing details about homogeneous database preferences.
 

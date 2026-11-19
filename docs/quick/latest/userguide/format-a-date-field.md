@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/format-a-date-fie
 ---
 
 # Format a date field
-<a name="format-a-date-field"></a>
 
 When you format a date field, you can choose a list of common formatting options. Or you can open the **Format data** pane to choose from a list of common formats, or specify custom formatting for the date and time values.
 

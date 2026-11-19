@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Secr
 ---
 
 # SecretsManagerAccessTokenConfiguration
-<a name="API_SecretsManagerAccessTokenConfiguration"></a>
 
 AWS Secrets Manager access token configuration parameters. For information about Secrets Manager access token authentication, see [Working with AWS Secrets Manager access token authentication](https://docs.aws.amazon.com/mediatailor/latest/ug/channel-assembly-access-configuration-access-token.html).
 

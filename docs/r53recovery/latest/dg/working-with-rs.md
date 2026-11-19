@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/working-with-rs.ht
 ---
 
 # Working with Region switch
-<a name="working-with-rs"></a>
 
 This section provides step-by-step instructions for working with Region switch plans, which you can use to recover multi-Region applications. Region switch enables you to create plans for both active/passive and active/active recovery approaches.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # MessageTemplateQueryField
-<a name="API_amazon-q-connect_MessageTemplateQueryField"></a>
 
 The message template fields to query message templates by. The following is the list of supported field names:
 + name

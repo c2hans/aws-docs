@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RemoveFlowMe
 ---
 
 # RemoveFlowMediaStream
-<a name="API_RemoveFlowMediaStream"></a>
 
  Removes a media stream from a flow. This action is only available if the media stream is not associated with a source or output.
 

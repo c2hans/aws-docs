@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Re
 ---
 
 # ResourcePolicy
-<a name="API_ResourcePolicy"></a>
 
 A structure that contains details about a resource policy.
 

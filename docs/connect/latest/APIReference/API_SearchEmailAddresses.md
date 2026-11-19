@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchEm
 ---
 
 # SearchEmailAddresses
-<a name="API_SearchEmailAddresses"></a>
 
 Searches email address in an instance, with optional filtering.
 

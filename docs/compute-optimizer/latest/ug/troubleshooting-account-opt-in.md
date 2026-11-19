@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/troubleshoot
 ---
 
 # Troubleshooting in AWS Compute Optimizer
-<a name="troubleshooting-account-opt-in"></a>
 
 This section describes errors that might occur while using AWS Compute Optimizer and provides solutions to resolve them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/interfaces
 ---
 
 # Manage interfaces, linked asset models, and properties
-<a name="interfaces-manage"></a>
 
 After creating interfaces and linking them to asset models, you can manage relationships, edit, and delete interfaces through the console or AWS CLI.
 

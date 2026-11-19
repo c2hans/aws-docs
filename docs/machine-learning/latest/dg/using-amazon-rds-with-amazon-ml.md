@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/dg/using-amazon-
 We are no longer updating the Amazon Machine Learning service or accepting new users for it. This documentation is available for existing users, but we are no longer updating it. For more information, see [ What is Amazon Machine Learning](https://docs.aws.amazon.com/machine-learning/latest/dg/what-is-amazon-machine-learning.html).
 
 # Using Data from an Amazon RDS Database to Create an Amazon ML Datasource
-<a name="using-amazon-rds-with-amazon-ml"></a>
 
 Amazon ML allows you to create a datasource object from data stored in a MySQL database in Amazon Relational Database Service (Amazon RDS). When you perform this action, Amazon ML creates an AWS Data Pipeline object that executes the SQL query that you specify, and places the output into an S3 bucket of your choice. Amazon ML uses that data to create the datasource.
 

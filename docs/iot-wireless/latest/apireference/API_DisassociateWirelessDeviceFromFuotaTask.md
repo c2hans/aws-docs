@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Dis
 ---
 
 # DisassociateWirelessDeviceFromFuotaTask
-<a name="API_DisassociateWirelessDeviceFromFuotaTask"></a>
 
 Disassociates a wireless device from a FUOTA task.
 

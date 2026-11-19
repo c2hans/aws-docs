@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Sync Infrastructure Composer to deploy to the AWS Cloud
-<a name="using-composer-ide-sync"></a>
 
 Use the **sync** button in AWS Infrastructure Composer from the AWS Toolkit for Visual Studio Code to deploy your application to the AWS Cloud.
 

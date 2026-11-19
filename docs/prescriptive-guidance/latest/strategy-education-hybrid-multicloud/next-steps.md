@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ed
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 Selecting the right deployment model for cloud workloads requires careful consideration. Use the recommendations outlined in this paper to guide your decision-making and to avoid common pitfalls such as unnecessary complexity, increasing staff demands, inconsistent governance, and lowest common denominator approaches. By following these best practices, you can accelerate your cloud adoption to meet and exceed your institutional goals more effectively.
 

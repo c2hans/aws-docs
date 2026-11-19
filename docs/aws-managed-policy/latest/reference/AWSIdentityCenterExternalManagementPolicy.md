@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIdentityCenterExternalManagementPolicy
-<a name="AWSIdentityCenterExternalManagementPolicy"></a>
 
 **Description**: Provides access to manage IAM Identity Center users from an external provider.
 

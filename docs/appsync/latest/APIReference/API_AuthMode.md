@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_AuthMode
 ---
 
 # AuthMode
-<a name="API_AuthMode"></a>
 
 Describes an authorization configuration. Use `AuthMode` to specify the publishing and subscription authorization configuration for an Event API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-bu
 ---
 
 # Configuring logs for Amazon EventBridge event buses
-<a name="eb-event-bus-logs"></a>
 
 You can configure EventBridge to send logs detailing how an event bus is processing events, to help with troubleshooting and debugging.
 

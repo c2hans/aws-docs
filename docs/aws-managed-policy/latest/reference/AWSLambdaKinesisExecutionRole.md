@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLambdaKinesisExecutionRole
-<a name="AWSLambdaKinesisExecutionRole"></a>
 
 **Description**: Provides list and read access to Kinesis streams and write permissions to CloudWatch logs.
 

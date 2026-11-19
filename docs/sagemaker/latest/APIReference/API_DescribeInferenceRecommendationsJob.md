@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeInferenceRecommendationsJob
-<a name="API_DescribeInferenceRecommendationsJob"></a>
 
 Provides the results of the Inference Recommender job. One or more recommendation jobs are returned.
 

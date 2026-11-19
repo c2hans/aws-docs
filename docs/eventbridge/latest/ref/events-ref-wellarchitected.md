@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-wellar
 ---
 
 # AWS Well-Architected Tool events
-<a name="events-ref-wellarchitected"></a>
 
 AWS Well-Architected Tool sends service events to EventBridge via AWS CloudTrail.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/twilio-reading-from-entit
 ---
 
 # Reading from Twilio entities
-<a name="twilio-reading-from-entities"></a>
 
 **Prerequisite**
 

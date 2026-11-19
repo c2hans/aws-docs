@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/devguide
 ---
 
 # Logging AWS Network Security Manager API calls with AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 AWS Network Security Manager is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for AWS Network Security Manager as management events. The calls captured include calls from the AWS Network Security Manager console and programmatic calls to the AWS Network Security Manager API operations.
 

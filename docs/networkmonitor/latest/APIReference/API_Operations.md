@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_O
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [CreateMonitor](API_CreateMonitor.md)

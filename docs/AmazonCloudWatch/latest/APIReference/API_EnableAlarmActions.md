@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # EnableAlarmActions
-<a name="API_EnableAlarmActions"></a>
 
 Enables the actions for the specified alarms.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Combo
 ---
 
 # ComboChartConfiguration
-<a name="API_ComboChartConfiguration"></a>
 
 The configuration of a `ComboChartVisual`.
 

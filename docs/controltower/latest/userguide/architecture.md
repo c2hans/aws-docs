@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/architectu
 ---
 
 # Architecture overview
-<a name="architecture"></a>
 
 Deploying CfCT builds the following environment in the AWS Cloud, with an Amazon S3 bucket as a configuration source.
 

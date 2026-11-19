@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Bedroc
 ---
 
 # BedrockGuardrailResource
-<a name="API_BedrockGuardrailResource"></a>
 
 Contains details about an Amazon Bedrock guardrail evaluated during a model invocation.
 

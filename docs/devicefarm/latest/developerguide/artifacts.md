@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/artifac
 ---
 
 # Downloading artifacts in Device Farm
-<a name="artifacts"></a>
 
 Device Farm gathers artifacts such as reports, log files, and images for each test in the run.
 

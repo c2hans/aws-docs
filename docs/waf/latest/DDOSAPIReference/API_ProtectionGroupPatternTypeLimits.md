@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Protecti
 ---
 
 # ProtectionGroupPatternTypeLimits
-<a name="API_ProtectionGroupPatternTypeLimits"></a>
 
 Limits settings by pattern type in the protection groups for your subscription.
 

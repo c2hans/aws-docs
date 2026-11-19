@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/ru
 ---
 
 # AWS Encryption SDK for Rust
-<a name="rust"></a>
 
 This topic explains how to install and use the AWS Encryption SDK for Rust. For details about programming with the AWS Encryption SDK for Rust, see the [Rust](https://github.com/aws/aws-encryption-sdk-dafny/tree/mainline/AwsEncryptionSDK/runtimes/rust/) directory of the aws-encryption-sdk repository on GitHub.
 

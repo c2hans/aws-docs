@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_GeoMatchStat
 ---
 
 # GeoMatchStatement
-<a name="API_GeoMatchStatement"></a>
 
 A rule statement that labels web requests by country and region and that matches against web requests based on country code. A geo match rule labels every request that it inspects regardless of whether it finds a match.
 + To manage requests only by country, you can use this statement by itself and specify the countries that you want to match against in the `CountryCodes` array.

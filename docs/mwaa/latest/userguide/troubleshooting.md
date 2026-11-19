@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/troubleshooting.ht
 ---
 
 # Troubleshooting Amazon Managed Workflows for Apache Airflow
-<a name="troubleshooting"></a>
 
 This chapter describes common issues and errors you can encounter when using Apache Airflow on Amazon Managed Workflows for Apache Airflow and recommended steps to resolve these errors.
 

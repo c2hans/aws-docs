@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ConnectorF
 ---
 
 # ConnectorFilterCriteria
-<a name="API_ConnectorFilterCriteria"></a>
 
 Contains the filter criteria for narrowing the results returned by a `ListConnectors` request. You can filter by connector ARN, AWS account ID, AWS Config connector ARN, connector type, or cloud provider.
 

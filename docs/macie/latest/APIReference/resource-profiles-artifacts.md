@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/resource-profi
 ---
 
 # Resource Sensitivity Profile - Artifacts
-<a name="resource-profiles-artifacts"></a>
 
 The Resource Sensitivity Profile Artifacts resource provides information about Amazon Simple Storage Service (Amazon S3) objects that Amazon Macie selected for analysis from individual S3 buckets for your account. If you're the Macie administrator for an organization, this includes objects in S3 buckets that your member accounts own.
 

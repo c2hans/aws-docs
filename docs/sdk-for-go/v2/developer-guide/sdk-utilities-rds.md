@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/sdk-utilit
 ---
 
 # Amazon RDS Utilities
-<a name="sdk-utilities-rds"></a>
 
 ## IAM Authentication
 <a name="iam-authentication"></a>

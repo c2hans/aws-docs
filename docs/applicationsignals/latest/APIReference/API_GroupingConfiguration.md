@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # GroupingConfiguration
-<a name="API_GroupingConfiguration"></a>
 
 A structure that contains the complete grouping configuration for an account, including all defined grouping attributes and metadata about when it was last updated.
 

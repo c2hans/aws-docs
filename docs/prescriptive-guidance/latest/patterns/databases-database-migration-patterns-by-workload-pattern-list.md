@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 ---
 
 # Database migration patterns by workload
-<a name="databases-database-migration-patterns-by-workload-pattern-list"></a>
 
 **Topics**
 + [IBM](databases-database-migration-patterns-by-workload-ibm-pattern-list.md)

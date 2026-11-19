@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Co
 ---
 
 # ConfluenceSourceConfiguration
-<a name="API_agent_ConfluenceSourceConfiguration"></a>
 
 The endpoint information to connect to your Confluence data source.
 

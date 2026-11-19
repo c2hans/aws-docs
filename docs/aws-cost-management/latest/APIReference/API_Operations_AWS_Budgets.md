@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AWS Budgets
-<a name="API_Operations_AWS_Budgets"></a>
 
 The following actions are supported by AWS Budgets:
 +  [CreateBudget](API_budgets_CreateBudget.md)

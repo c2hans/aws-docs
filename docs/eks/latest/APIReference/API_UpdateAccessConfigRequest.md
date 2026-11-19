@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateAccess
 ---
 
 # UpdateAccessConfigRequest
-<a name="API_UpdateAccessConfigRequest"></a>
 
 The access configuration information for the cluster.
 

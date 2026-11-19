@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scalable-analytics-usin
 ---
 
 # Activate cost allocation tags associated with the guidance
-<a name="activate-cost-allocation-tags-associated-with-the-solution"></a>
 
 After you confirm the cost tags associated with this guidance, you must activate the cost allocation tags to see the costs for this guidance. The cost allocation tags can only be activated from the management account for the organization.
 

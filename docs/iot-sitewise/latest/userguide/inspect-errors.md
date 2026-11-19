@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/inspect-er
 ---
 
 # Inspect errors for AWS IoT SiteWise
-<a name="inspect-errors"></a>
 
 ## Inspect error details (console)
 <a name="inspect-errors-console"></a>

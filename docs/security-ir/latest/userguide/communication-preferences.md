@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/communicati
 ---
 
 # Communication preferences
-<a name="communication-preferences"></a>
 
  Configure your communication preferences to control how you receive notifications and interact with the incident response system during security incidents.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_IntelligentTieri
 ---
 
 # IntelligentTieringFilter
-<a name="API_IntelligentTieringFilter"></a>
 
 The `Filter` is used to identify objects that the S3 Intelligent-Tiering configuration applies to.
 

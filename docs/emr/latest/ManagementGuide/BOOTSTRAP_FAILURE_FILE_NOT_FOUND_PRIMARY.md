@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/BOOTSTRAP_FAI
 ---
 
 # BOOTSTRAP\_FAILURE\_FILE\_NOT\_FOUND\_PRIMARY
-<a name="BOOTSTRAP_FAILURE_FILE_NOT_FOUND_PRIMARY"></a>
 
 ## Overview
 <a name="BOOTSTRAP_FAILURE_FILE_NOT_FOUND_PRIMARY_overview"></a>

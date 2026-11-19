@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_DescribeA
 ---
 
 # DescribeAffectedEntitiesForOrganization
-<a name="API_DescribeAffectedEntitiesForOrganization"></a>
 
 Returns a list of entities that have been affected by one or more events for one or more accounts in your organization in AWS Organizations, based on the filter criteria. Entities can refer to individual customer resources, groups of customer resources, or any other construct, depending on the AWS service.
 
@@ -27,7 +26,10 @@ This operation doesn't support resource-level permissions. You can't use this op
       {
          "awsAccountId": "{{string}}",
          "eventArn": "{{string}}",
-         "statusCodes": [ "{{string}}" ]
+         "statusCodes": [ "{{string}}" ],
+         "tags": {
+            "{{string}}" : [ "{{string}}" ]
+         }
       }
    ],
    "organizationEntityFilters": [
@@ -86,6 +88,9 @@ Required: No
 {
    "entities": [
       {
+         "accountTags": {
+            "string" : "string"
+         },
          "awsAccountId": "string",
          "entityArn": "string",
          "entityMetadata": {
@@ -95,10 +100,10 @@ Required: No
          "entityValue": "string",
          "eventArn": "string",
          "lastUpdatedTime": number,
-         "statusCode": "string",
-         "tags": {
+         "resourceTags": {
             "string" : "string"
-         }
+         },
+         "statusCode": "string"
       }
    ],
    "failedSet": [

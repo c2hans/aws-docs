@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSIPERF09: How do you monitor and tune AI system performance?
-<a name="fsiperf09-how-do-you-monitor-and-tune-ai-system-performance"></a>
 
  Financial services AI systems require sophisticated monitoring and tuning approaches to maintain optimal performance while meeting regulatory requirements and business objectives.
 

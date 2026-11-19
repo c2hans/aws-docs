@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys
 ---
 
 # Step 2: Download the wrapping public key and import token
-<a name="importing-keys-get-public-key-and-token"></a>
 
 After you [create a AWS KMS key with no key material](importing-keys-create-cmk.md), download a wrapping public key and an import token for that KMS key by using the AWS KMS console or the [GetParametersForImport](https://docs.aws.amazon.com/kms/latest/APIReference/API_GetParametersForImport.html) API. The wrapping public key and import token are an indivisible set that must be used together.
 

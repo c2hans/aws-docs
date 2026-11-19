@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ListConfigurationBundleVersions
-<a name="API_ListConfigurationBundleVersions"></a>
 
 Lists all versions of a configuration bundle, with optional filtering by branch name or creation source.
 

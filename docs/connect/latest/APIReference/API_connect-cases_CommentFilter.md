@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CommentFilter
-<a name="API_connect-cases_CommentFilter"></a>
 
 A filter for related items of type `Comment`.
 

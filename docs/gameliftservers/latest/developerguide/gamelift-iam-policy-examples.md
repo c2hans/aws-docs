@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # IAM permission examples for Amazon GameLift Servers
-<a name="gamelift-iam-policy-examples"></a>
 
 Use the syntax in these examples to set AWS Identity and Access Management (IAM) permissions for users that need access to Amazon GameLift Servers resources. For more information on managing user permissions, see [Set user permissions for Amazon GameLift Servers](setting-up-aws-login.md#getting-started-create-iam-user). When managing permissions for users outside of the IAM Identity Center, as a best practice always attach permissions to IAM roles or user groups, not individual users.
 

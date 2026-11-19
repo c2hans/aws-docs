@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 ---
 
 # Auth0 OAuth Client Secret
-<a name="mes-partner-Auth0OAuthClientSecret"></a>
 
 ## Secret Value Fields
 <a name="w2aac29c13c13b3"></a>

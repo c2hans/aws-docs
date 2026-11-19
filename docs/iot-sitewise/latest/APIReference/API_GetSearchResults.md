@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Get
 ---
 
 # GetSearchResults
-<a name="API_GetSearchResults"></a>
 
 Retrieves the ranked results of a search, ordered by descending relevance score. Results are available only after the search has reached the `SUCCEEDED` status. Calling this on a search that exists but has not yet completed returns `InvalidRequestException`, while calling it on a search that does not exist returns `ResourceNotFoundException`. The response is paginated: when `nextToken` is present, pass it on a subsequent call to retrieve the next page.
 

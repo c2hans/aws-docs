@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/media-pipelines-limi
 ---
 
 # Understanding the default limits for active Amazon Chime SDK media pipelines
-<a name="media-pipelines-limits"></a>
 
 The following table lists the default limits for active media pipelines in each Region. Each type of pipeline counts toward the limit. If you exceed the limit for any Region, the [CreateMediaCapturePipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaCapturePipeline.html), [CreateMediaConcatenationPipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaConcatenationPipeline.html), and [CreateMediaLiveConnectorPipeline](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_CreateMediaLiveConnectorPipeline.html) APIs will throw **Resource Limit Exceeded** exceptions.
 

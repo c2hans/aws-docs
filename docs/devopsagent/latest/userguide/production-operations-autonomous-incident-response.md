@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/production-
 ---
 
 # Autonomous incident response
-<a name="production-operations-autonomous-incident-response"></a>
 
 ## Starting Investigations
 <a name="starting-investigations"></a>

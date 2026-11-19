@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PricingDe
 ---
 
 # PricingDetail
-<a name="API_PricingDetail"></a>
 
 Describes a Reserved Instance offering.
 

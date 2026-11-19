@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Target
 ---
 
 # TargetTrackingScalingConfiguration
-<a name="API_TargetTrackingScalingConfiguration"></a>
 
 Defines when a new instance is auto-scaled into the compute fleet.
 

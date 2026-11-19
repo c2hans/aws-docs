@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-linux-subscriptions/late
 ---
 
 # DeregisterSubscriptionProvider
-<a name="API_DeregisterSubscriptionProvider"></a>
 
 Remove a third-party subscription provider from the Bring Your Own License (BYOL) subscriptions registered to your account.
 

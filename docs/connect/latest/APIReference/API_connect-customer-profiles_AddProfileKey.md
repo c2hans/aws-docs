@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # AddProfileKey
-<a name="API_connect-customer-profiles_AddProfileKey"></a>
 
 Associates a new key value with a specific profile, such as a Contact Record ContactId.
 

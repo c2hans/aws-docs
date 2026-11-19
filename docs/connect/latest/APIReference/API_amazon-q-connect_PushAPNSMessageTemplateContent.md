@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # PushAPNSMessageTemplateContent
-<a name="API_amazon-q-connect_PushAPNSMessageTemplateContent"></a>
 
 The content of the push message template that applies to APNS (Apple Push Notification service) notification service.
 

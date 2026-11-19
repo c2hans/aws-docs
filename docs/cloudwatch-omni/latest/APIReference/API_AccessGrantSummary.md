@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # AccessGrantSummary
-<a name="API_AccessGrantSummary"></a>
 
 Summary of an AccessGrant. Call GetAccessGrant for the full grant.
 

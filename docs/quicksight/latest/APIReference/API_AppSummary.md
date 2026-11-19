@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_AppSu
 ---
 
 # AppSummary
-<a name="API_AppSummary"></a>
 
 A summary of an app, including its identifier, name, and metadata.
 

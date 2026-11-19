@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/scheduling-cre
 ---
 
 # Create groups and rules for staffing and scheduling in Connect Customer
-<a name="scheduling-create-staffing-groups"></a>
 
 A *staffing group* is a group or team of agents who are skilled to take specific types of contacts.
 

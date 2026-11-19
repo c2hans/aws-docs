@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/RESTAuthe
 ---
 
 # Signing and authenticating REST requests (AWS signature version 2)
-<a name="RESTAuthentication"></a>
 
 **Topics**
 + [Using temporary security credentials](#UsingTemporarySecurityCredentials)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_CustomA
 ---
 
 # CustomActionLambdaConfiguration
-<a name="API_CustomActionLambdaConfiguration"></a>
 
 Configuration for AWS Lambda functions that perform custom actions during a Region switch.
 

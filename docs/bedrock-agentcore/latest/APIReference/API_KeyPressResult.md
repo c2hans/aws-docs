@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # KeyPressResult
-<a name="API_KeyPressResult"></a>
 
 The result of a key press action.
 

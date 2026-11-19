@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # EventIncludedData
-<a name="API_connect-cases_EventIncludedData"></a>
 
 Details of what case and related item data is published through the case event stream.
 

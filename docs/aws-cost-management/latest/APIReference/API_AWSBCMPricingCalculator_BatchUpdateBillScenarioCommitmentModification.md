@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchUpdateBillScenarioCommitmentModification
-<a name="API_AWSBCMPricingCalculator_BatchUpdateBillScenarioCommitmentModification"></a>
 
  Update a newly added or existing commitment. You can update the commitment group based on a commitment ID and a Bill scenario ID.
 

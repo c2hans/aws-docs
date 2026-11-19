@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_SSES3.html
 ---
 
 # SSES3
-<a name="API_SSES3"></a>
 
 Specifies the use of SSE-S3 to encrypt delivered inventory reports.
 

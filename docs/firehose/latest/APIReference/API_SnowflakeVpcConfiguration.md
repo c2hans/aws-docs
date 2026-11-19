@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Snowfla
 ---
 
 # SnowflakeVpcConfiguration
-<a name="API_SnowflakeVpcConfiguration"></a>
 
 Configure a Snowflake VPC
 

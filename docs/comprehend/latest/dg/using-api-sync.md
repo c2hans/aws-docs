@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/using-api-sync.html
 ---
 
 # Real-time analysis using the API
-<a name="using-api-sync"></a>
 
 The following examples demonstrate how to use Amazon Comprehend API for real-time analysis, using the AWS CLI, and the AWS SDK for .NET, AWS SDK for Java, and AWS SDK for Python (Boto3). Use the examples to learn about the Amazon Comprehend synchronous operations and as building blocks for your own applications.
 

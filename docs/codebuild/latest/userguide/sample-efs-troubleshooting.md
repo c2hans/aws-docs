@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-efs-tr
 ---
 
 # Troubleshoot the Amazon EFS integration
-<a name="sample-efs-troubleshooting"></a>
 
 The following are errors you might encounter when setting up Amazon EFS with CodeBuild.
 

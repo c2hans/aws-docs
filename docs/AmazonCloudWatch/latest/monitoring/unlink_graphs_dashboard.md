@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/unlin
 ---
 
 # Unlinking graphs on a CloudWatch dashboard
-<a name="unlink_graphs_dashboard"></a>
 
 **To unlink the graphs on a dashboard**
 

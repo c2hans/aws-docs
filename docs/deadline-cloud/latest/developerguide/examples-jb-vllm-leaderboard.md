@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Benchmark LLMs with vLLM and lm-evaluation-harness on Deadline Cloud
-<a name="examples-jb-vllm-leaderboard"></a>
 
 The [vllm\_lm\_eval\_leaderboard](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/vllm_lm_eval_leaderboard) job bundle on the GitHub website evaluates multiple LLMs against multiple benchmarks in a single Deadline Cloud job. Each model becomes one task in a parameter sweep, and tasks run in parallel across workers. A final step aggregates per-model results into a ranked leaderboard (CSV and Markdown).
 

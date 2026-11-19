@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/troubleshooting-lo
 ---
 
 # Using the Log Files
-<a name="troubleshooting-logs"></a>
 
 The Amazon DCV log files can be used to identify and troubleshoot problems with your Amazon DCV server. The Amazon DCV log files can be found in the following location on your Amazon DCV server:
 + Windows server

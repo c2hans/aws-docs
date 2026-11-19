@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API
 ---
 
 # CreateTemplateGroupAccessControlEntry
-<a name="API_CreateTemplateGroupAccessControlEntry"></a>
 
 Create a group access control entry. Allow or deny Active Directory groups from enrolling and/or autoenrolling with the template based on the group security identifiers (SIDs).
 

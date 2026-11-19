@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListInterfaceRelationships
-<a name="API_ListInterfaceRelationships"></a>
 
 Retrieves a paginated list of asset models that have a specific interface asset model applied to them.
 

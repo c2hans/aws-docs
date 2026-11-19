@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetQueryR
 ---
 
 # GetQueryResults
-<a name="API_GetQueryResults"></a>
 
 Streams the results of a single query execution specified by `QueryExecutionId` from the Athena query results location in Amazon S3. For more information, see [Working with query results, recent queries, and output files](https://docs.aws.amazon.com/athena/latest/ug/querying.html) in the *Amazon Athena User Guide*. This request does not execute the query but returns results. Use [StartQueryExecution](API_StartQueryExecution.md) to run a query.
 

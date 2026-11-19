@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/mi
 ---
 
 # Migrate
-<a name="migrate-sus"></a>
 
  In the migrate phase, we ensure the migration proceeds as planned, monitor the migration process, and have a plan in place to rollback in case any issue encountered during the migration. During migration, you can scale your resources corresponding to the volume of data to be migrated. Furthermore, you can adopt best practices that can reduce interim resource consumption during your migration.
 

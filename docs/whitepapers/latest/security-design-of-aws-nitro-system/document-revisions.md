@@ -3,11 +3,10 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aw
 ---
 
 # Document revisions
-<a name="document-revisions"></a>
 
 To be notified about updates to this whitepaper, subscribe to the RSS feed.
 
 | Change | Description | Date |
 | --- |--- |--- |
-| [Minor update](#document-revisions) | Guidance updated. | February 15, 2024 |
-| [Initial publication](#document-revisions) | Whitepaper published. | November 18, 2022 |
+| [Minor update](document-revisions.md) | Guidance updated. | February 15, 2024 |
+| [Initial publication](document-revisions.md) | Whitepaper published. | November 18, 2022 |

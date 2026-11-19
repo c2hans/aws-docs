@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Crea
 ---
 
 # CreateAgentSpace
-<a name="API_CreateAgentSpace"></a>
 
 Creates a new AgentSpace with the specified name and description. Duplicate space names are allowed.
 

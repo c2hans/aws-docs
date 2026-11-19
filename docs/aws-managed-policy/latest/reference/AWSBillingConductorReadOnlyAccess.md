@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBillingConductorReadOnlyAccess
-<a name="AWSBillingConductorReadOnlyAccess"></a>
 
 **Description**: Use the AWSBillingConductorReadOnlyAccess managed policy to allow read only access to AWS Billing Conductor (ABC) console and APIs. This policy grants permission to view and list all ABC resources. It does not include the ability to create or delete resources.
 

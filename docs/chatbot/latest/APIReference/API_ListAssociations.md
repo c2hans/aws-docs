@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_ListAsso
 ---
 
 # ListAssociations
-<a name="API_ListAssociations"></a>
 
 Lists resources associated with a channel configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # ListTagsForDomain
-<a name="API_domains_ListTagsForDomain"></a>
 
 This operation returns all of the tags that are associated with the specified domain.
 

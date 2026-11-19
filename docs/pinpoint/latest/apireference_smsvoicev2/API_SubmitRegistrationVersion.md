@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SubmitRegistrationVersion
-<a name="API_SubmitRegistrationVersion"></a>
 
 Submit the specified registration for review and approval.
 

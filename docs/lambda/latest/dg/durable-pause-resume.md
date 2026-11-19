@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/durable-pause-resume.ht
 ---
 
 # Pausing and resuming durable executions
-<a name="durable-pause-resume"></a>
 
 You can pause a running durable execution and resume it later without losing its progress. While an execution is paused, none of its code runs until you resume it. When you resume the execution, it continues from its last checkpoint on the same function version.
 

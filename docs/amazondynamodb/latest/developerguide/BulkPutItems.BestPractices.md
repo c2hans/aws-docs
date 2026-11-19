@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Bul
 ---
 
 # Best practices for bulk put items in DynamoDB
-<a name="BulkPutItems.BestPractices"></a>
 
 The following are the best practices for using bulk put items.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_scan_ScanS
 ---
 
 # ScanSbom
-<a name="API_scan_ScanSbom"></a>
 
  Scans a provided CycloneDX 1.5 SBOM and reports on any discovered vulnerabilities. You can generate compatible SBOMs for resources using the [Amazon Inspector SBOM generator](https://docs.aws.amazon.com/inspector/latest/user/sbom-generator.html).
 

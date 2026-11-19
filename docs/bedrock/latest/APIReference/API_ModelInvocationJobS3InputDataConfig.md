@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ModelInv
 ---
 
 # ModelInvocationJobS3InputDataConfig
-<a name="API_ModelInvocationJobS3InputDataConfig"></a>
 
 Contains the configuration of the S3 location of the input data.
 

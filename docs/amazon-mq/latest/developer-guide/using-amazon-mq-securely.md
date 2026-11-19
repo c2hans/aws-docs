@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/using-a
 ---
 
 # Security best practices for Amazon MQ
-<a name="using-amazon-mq-securely"></a>
 
 The following design patterns can improve the security of your Amazon MQ broker.
 

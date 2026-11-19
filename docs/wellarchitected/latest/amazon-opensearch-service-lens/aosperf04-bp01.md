@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSPERF04-BP01 Enable slow log functionality for search and indexing
-<a name="aosperf04-bp01"></a>
 
  Gain visibility into query latency by enabling slow logs for search and indexing. This visibility helps you optimize queries and troubleshoot issues.
 

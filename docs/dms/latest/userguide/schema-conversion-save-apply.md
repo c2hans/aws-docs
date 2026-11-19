@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/schema-conversion-s
 ---
 
 # Saving and applying your converted code in DMS Schema Conversion
-<a name="schema-conversion-save-apply"></a>
 
 After DMS Schema Conversion converts your source database objects, it doesn't immediately apply the converted code to your target database. Instead, DMS Schema Conversion stores the converted code in your project until you are ready to apply it to your target database.
 

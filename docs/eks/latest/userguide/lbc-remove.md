@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/lbc-remove.html
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Migrate apps from deprecated ALB Ingress Controller
-<a name="lbc-remove"></a>
 
 This topic describes how to migrate from deprecated controller versions. More specifically, it describes how to remove deprecated versions of the AWS Load Balancer Controller.
 + Deprecated versions cannot be upgraded. You must remove them first, and then install a current version.

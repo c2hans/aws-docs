@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceT
 ---
 
 # InstanceTypeSpecificationRequest
-<a name="API_InstanceTypeSpecificationRequest"></a>
 
 The instance type specification for an AMI, which contains lists of supported and unsupported instance types that define which instance types are compatible with the AMI.
 

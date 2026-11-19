@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # Setting up Change Calendar
-<a name="systems-manager-change-calendar-prereqs"></a>
 
 Complete the following before using Change Calendar.
 

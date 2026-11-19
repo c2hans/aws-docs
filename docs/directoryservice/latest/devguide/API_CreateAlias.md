@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Cre
 ---
 
 # CreateAlias
-<a name="API_CreateAlias"></a>
 
 Creates an alias for a directory and assigns the alias to the directory. The alias is used to construct the access URL for the directory, such as `http://<alias>.awsapps.com`.
 

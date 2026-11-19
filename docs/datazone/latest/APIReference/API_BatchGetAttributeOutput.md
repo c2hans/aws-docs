@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_BatchGe
 ---
 
 # BatchGetAttributeOutput
-<a name="API_BatchGetAttributeOutput"></a>
 
 The results of the BatchGetAttribute action.
 

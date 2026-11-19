@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/understand-cac
 ---
 
 # Understanding the information provided in S3 File Gateway cache reports
-<a name="understand-cache-reports"></a>
 
 Cache reports list files that are currently in the local cache for a specific file share, according to filters and criteria that you specify. Each cache report includes the following information:
 + **Bucket** — The Amazon S3 bucket or Access Point that is associated with the file share.

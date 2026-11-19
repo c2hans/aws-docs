@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/qualificationguide/afq-c
 ---
 
 # FreeRTOS manifest file instructions
-<a name="afq-checklist-manifest-instr"></a>
 
 A manifest file is required for AWS IoT Device Tester to identify versions and libraries being used. It helps customers delineate versions, libraries dependencies, and metadata.
 

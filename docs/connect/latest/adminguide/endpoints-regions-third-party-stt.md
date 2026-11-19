@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/endpoints-regi
 ---
 
 # Endpoints and Regions for third-party speech providers
-<a name="endpoints-regions-third-party-stt"></a>
 
 By default, Connect Customer communicates with the following endpoints:
 

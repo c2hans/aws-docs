@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_S
 ---
 
 # SavedAddress
-<a name="API_SavedAddress"></a>
 
 An address that is a member of an address list.
 

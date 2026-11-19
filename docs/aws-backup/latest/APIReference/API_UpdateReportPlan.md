@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Updat
 ---
 
 # UpdateReportPlan
-<a name="API_UpdateReportPlan"></a>
 
 Updates the specified report plan.
 

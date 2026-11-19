@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcoc
 ---
 
 # Data storage
-<a name="telcocost04"></a>
 
 |  TELCOCOST04: How are you optimizing the data storage costs for your network infrastructure?  |
 | --- |

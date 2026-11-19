@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DateT
 ---
 
 # DateTimeValueWhenUnsetConfiguration
-<a name="API_DateTimeValueWhenUnsetConfiguration"></a>
 
 The configuration that defines the default value of a `DateTime` parameter when a value has not been set.
 

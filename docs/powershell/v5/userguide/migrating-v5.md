@@ -9,7 +9,6 @@ For information about breaking changes and migrating your applications, see the 
  [![Orange button with text "Click here for details".](https://docs.aws.amazon.com/powershell/v5/userguide/images/BannerButton_less-round.png)](https://docs.aws.amazon.com/powershell/v5/userguide/migrating-v5.html)
 
 # Migrating from AWS Tools for PowerShell version 4 to version 5
-<a name="migrating-v5"></a>
 
 AWS Tools for PowerShell version 5 (V5) has breaking changes, which could cause your existing scripts to stop working. This topic describes the breaking changes in V5 and possible work that you might need to do to migrate your environment or code from V4.
 

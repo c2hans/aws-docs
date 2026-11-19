@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/test-suite-jso
 ---
 
 # Create configuration files
-<a name="test-suite-json"></a>
 
 Your test suite must contain the following required [configuration files](idt-json-config.md):
 

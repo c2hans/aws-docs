@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeDBCapacityReservations
-<a name="API_DescribeDBCapacityReservations"></a>
 
 Describes one or more DB capacity reservations. A DB capacity reservation reserves capacity for Amazon RDS DB instances in one or more Availability Zones.
 

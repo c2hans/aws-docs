@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/manage
 ---
 
 # Manage Policies and Policy Engines
-<a name="manage-policies-engines"></a>
 
 Use these operations to manage your Policy Engines and policies.
 

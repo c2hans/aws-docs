@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Instanc
 ---
 
 # InstanceRefresh
-<a name="API_InstanceRefresh"></a>
 
 Describes an instance refresh for an Auto Scaling group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # SummaryDimension
-<a name="API_automation_SummaryDimension"></a>
 
 A key-value pair used to categorize and group summary data for analysis and reporting.
 

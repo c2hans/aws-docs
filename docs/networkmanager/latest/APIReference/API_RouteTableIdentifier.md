@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_R
 ---
 
 # RouteTableIdentifier
-<a name="API_RouteTableIdentifier"></a>
 
 Describes a route table.
 

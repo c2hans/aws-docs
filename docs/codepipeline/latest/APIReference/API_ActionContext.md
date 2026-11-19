@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionContext
-<a name="API_ActionContext"></a>
 
 Represents the context of an action in the stage of a pipeline to a job worker.
 

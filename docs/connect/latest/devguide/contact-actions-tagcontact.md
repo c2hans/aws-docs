@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/contact-actions-
 ---
 
 # TagContact
-<a name="contact-actions-tagcontact"></a>
 
 Sets a collection of tag to the current contact. With this type of operation, either all tags are set or none are set.
 

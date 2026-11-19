@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIoTWirelessLogging
-<a name="AWSIoTWirelessLogging"></a>
 
 **Description**: Allows the associated identity to create Amazon CloudWatch Logs groups and stream logs to the groups.
 

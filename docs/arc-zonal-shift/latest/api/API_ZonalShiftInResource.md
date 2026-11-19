@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_ZonalShif
 ---
 
 # ZonalShiftInResource
-<a name="API_ZonalShiftInResource"></a>
 
 A complex structure that lists the zonal shifts for a managed resource and their statuses for the resource.
 

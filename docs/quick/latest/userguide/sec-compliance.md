@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/sec-compliance.ht
 ---
 
 # Compliance validation for AWS Quick
-<a name="sec-compliance"></a>
 
 Third-party auditors assess the security and compliance of AWS Quick as part of multiple AWS compliance programs. AWS Quick, across its web, desktop, and mobile clients, is in scope for the following programs:
 + Federal Risk and Authorization Management Program (FedRAMP)

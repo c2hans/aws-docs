@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/xero-support.html
 ---
 
 # AWS Glue support for Xero
-<a name="xero-support"></a>
 
 AWS Glue supports Xero as follows:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 ---
 
 # Setup guide (AWS CLI)
-<a name="container-insights-eks-classic-setup"></a>
 
 This guide walks you through installing Enhanced Container Insights (Classic) on an existing Amazon EKS cluster by using the AWS CLI. The add-on deploys a CloudWatch agent as a DaemonSet that collects infrastructure metrics, container logs, and performance data.
 

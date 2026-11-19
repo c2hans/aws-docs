@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guar
 ---
 
 # Adding Runtime Monitoring to existing Amazon ECS Fargate tasks
-<a name="ecs-guard-duty-configure-automatic-existing-tasks"></a>
 
 When you turn on Runtime Monitoring, all new standalone tasks, and new service deployments in the cluster are protected automatically. In order to preserve the immutability constraint, existing tasks are not affected.
 

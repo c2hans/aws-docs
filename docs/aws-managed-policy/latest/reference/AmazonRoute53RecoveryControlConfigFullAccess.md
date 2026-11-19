@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53RecoveryControlConfigFullAccess
-<a name="AmazonRoute53RecoveryControlConfigFullAccess"></a>
 
 **Description**: Provides full access to Amazon Route 53 Recovery Control Config
 

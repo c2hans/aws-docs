@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/defer-compo
 ---
 
 # Tutorial: Develop a Greengrass component that defers component updates
-<a name="defer-component-updates-tutorial"></a>
 
 You can complete this tutorial to develop a component that defers over-the-air deployment updates. When you deploy updates to your devices, you might want to delay updates based on conditions, such as the following:
 + The device has a low battery level.

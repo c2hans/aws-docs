@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/monitoring-clo
 ---
 
 # Logging AWS Account Management API calls using AWS CloudTrail
-<a name="monitoring-cloudtrail"></a>
 
 This includes AWS accounts you create using our new AWS experience and accounts you create using our advanced AWS experience. To compare sign-up options, see [Compare sign-up options](sign-up-for-aws.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/self-service-p
 ---
 
 # Download the AWS Client VPN from the self-service portal
-<a name="self-service-portal"></a>
 
 The self-service portal is a web page that enables you to download the latest version of the AWS provided client and the latest versions of Client VPN endpoint configuration files. If your Client VPN endpoint administrator has preconfigured one or more configuration files for the Client VPN client, you can download and install that Client VPN application along with those configuration files, from this portal.
 

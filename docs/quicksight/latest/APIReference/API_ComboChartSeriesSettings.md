@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Combo
 ---
 
 # ComboChartSeriesSettings
-<a name="API_ComboChartSeriesSettings"></a>
 
 Options that determine the presentation of a series in the visual.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_Manifes
 ---
 
 # ManifestConfig
-<a name="API_ManifestConfig"></a>
 
 Configures a manifest, which is a list of files or objects that you want AWS DataSync to transfer. For more information and configuration examples, see [Specifying what DataSync transfers by using a manifest](https://docs.aws.amazon.com/datasync/latest/userguide/transferring-with-manifest.html).
 

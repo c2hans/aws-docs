@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Dep
 ---
 
 # DeployTargetEvent
-<a name="API_DeployTargetEvent"></a>
 
 A lifecycle event for the deploy action.
 

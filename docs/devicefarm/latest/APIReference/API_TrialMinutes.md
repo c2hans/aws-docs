@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Trial
 ---
 
 # TrialMinutes
-<a name="API_TrialMinutes"></a>
 
 Represents information about free trial device minutes for an AWS account.
 

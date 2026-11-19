@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsLamb
 ---
 
 # AwsLambdaFunctionTracingConfig
-<a name="API_AwsLambdaFunctionTracingConfig"></a>
 
 The function's AWS X-Ray tracing configuration.
 

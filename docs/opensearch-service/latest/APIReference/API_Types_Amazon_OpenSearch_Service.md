@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # Amazon OpenSearch Service
-<a name="API_Types_Amazon_OpenSearch_Service"></a>
 
 The following data types are supported by Amazon OpenSearch Service:
 +  [AccessPoliciesStatus](API_AccessPoliciesStatus.md)

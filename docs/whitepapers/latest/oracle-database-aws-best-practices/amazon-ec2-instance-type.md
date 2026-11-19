@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-b
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Amazon EC2 instance type
-<a name="amazon-ec2-instance-type"></a>
 
  AWS has a large number of Amazon EC2 instance types available, so you can choose the instance type that best fits your workload. However, not all the available instance types are best suited for running Oracle Database.
 

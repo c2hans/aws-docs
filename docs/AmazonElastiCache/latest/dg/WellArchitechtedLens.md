@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WellArchitec
 ---
 
 # Using the Amazon ElastiCache Well-Architected Lens
-<a name="WellArchitechtedLens"></a>
 
 This section describes the Amazon ElastiCache Well-Architected Lens, a collection of design principles and guidance for designing well-architected ElastiCache workloads.
 + The ElastiCache Lens is additive to the [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).

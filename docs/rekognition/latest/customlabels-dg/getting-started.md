@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/getti
 ---
 
 # Getting started with Amazon Rekognition Custom Labels
-<a name="getting-started"></a>
 
 Before starting these *Getting started* instructions, we recommend that you read [Understanding Amazon Rekognition Custom Labels](understanding-custom-labels.md).
 

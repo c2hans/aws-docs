@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_IAMPo
 ---
 
 # IAMPolicyAssignment
-<a name="API_IAMPolicyAssignment"></a>
 
 An AWS Identity and Access Management (IAM) policy assignment.
 

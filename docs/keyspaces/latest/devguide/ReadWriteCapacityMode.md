@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/ReadWriteCapac
 ---
 
 # Configure read/write capacity modes in Amazon Keyspaces
-<a name="ReadWriteCapacityMode"></a>
 
 Amazon Keyspaces has two read/write capacity modes for processing reads and writes on your tables:
 +  On-demand (default)

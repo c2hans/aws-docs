@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/placing-your-moti
 ---
 
 # Specify motion graphic overlay start time and playback
-<a name="placing-your-motion-graphic-overlay"></a>
 
 You can specify motion graphic overlay **Start time** and **Playback** settings instead of using the default setting. The following information shows how to specify overlay start time for a video and to repeat it continuously (loop).
 

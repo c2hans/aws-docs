@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::OAuth2CredentialProvider
-<a name="aws-resource-bedrockagentcore-oauth2credentialprovider"></a>
 
 Specifies an OAuth2 credential provider for Amazon Bedrock AgentCore. An OAuth2 credential provider manages OAuth2 client credentials, authorization codes, or token exchange flows that agents use to authenticate with external services through AgentCore Gateway.
 

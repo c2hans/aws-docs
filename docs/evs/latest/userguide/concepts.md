@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/concepts.html
 ---
 
 # Concepts and components of Amazon EVS
-<a name="concepts"></a>
 
 Learn the Amazon Elastic VMware Service resources and VMware components before you plan an environment.
 

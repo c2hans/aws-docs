@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListD
 ---
 
 # ListDistributionsByVpcOriginId
-<a name="API_ListDistributionsByVpcOriginId"></a>
 
 List CloudFront distributions by their VPC origin ID.
 

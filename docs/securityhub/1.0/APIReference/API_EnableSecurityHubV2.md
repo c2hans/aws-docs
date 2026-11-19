@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableS
 ---
 
 # EnableSecurityHubV2
-<a name="API_EnableSecurityHubV2"></a>
 
 Enables the service in account for the current AWS Region or specified AWS Region.
 

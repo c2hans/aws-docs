@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Observ
 ---
 
 # ObservationRecord
-<a name="API_ObservationRecord"></a>
 
 Contains a fact that GuardDuty noted about your environment during an investigation, such as the affected resource, the activity on that resource, or your detection coverage. The record contains at most one of the payload members, the one that matches `ObservationType`. `Indicators` can accompany any observation type.
 

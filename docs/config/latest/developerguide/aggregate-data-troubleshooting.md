@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/aggregate-d
 ---
 
 # Troubleshooting for Multi-Account Multi-Region Data Aggregation for AWS Config
-<a name="aggregate-data-troubleshooting"></a>
 
 AWS Config might not aggregate data from source accounts for one of the following reasons:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/geospatial-encryptio
 ---
 
 # SageMaker geospatial capabilities
-<a name="geospatial-encryption-at-rest"></a>
 
 You can protect your data at rest using encryption for SageMaker geospatial.
 <a name="geospatial-encryption-at-rest-gmk"></a>

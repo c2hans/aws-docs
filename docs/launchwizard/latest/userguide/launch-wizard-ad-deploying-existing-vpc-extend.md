@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Extend on-premises Active Directory to an existing VPC
-<a name="launch-wizard-ad-deploying-existing-vpc-extend"></a>
 
 The following steps guide you through an Active Directory deployment with AWS Launch Wizard after you have launched it from the console for an existing VPC.
 

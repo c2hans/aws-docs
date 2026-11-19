@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-gl
 ---
 
 # Route 53 request routing
-<a name="route-53-request-routing"></a>
 
 Amazon Route 53 is a Domain Name Service (DNS) technology. With Route 53, the client requests its endpoint by looking up a well-known DNS domain name, and Route 53 returns the IP address that corresponds to the Regional endpoint(s) it determines most appropriate. This is illustrated in the following diagram. Route 53 has a long list of [routing policies](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html) it uses to determine the appropriate Region. It also can do [failover routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-failover.html) to route traffic away from Regions that fail health checks.
 

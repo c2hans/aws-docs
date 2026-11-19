@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Vocabula
 ---
 
 # VocabularySummary
-<a name="API_VocabularySummary"></a>
 
 Contains summary information about the custom vocabulary.
 

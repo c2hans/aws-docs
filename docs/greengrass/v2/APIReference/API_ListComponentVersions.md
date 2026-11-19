@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ListCompo
 ---
 
 # ListComponentVersions
-<a name="API_ListComponentVersions"></a>
 
 Retrieves a paginated list of all versions for a component. Greater versions are listed first.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/manage-fs-access-change-vp
 ---
 
 # Changing the mount target VPC
-<a name="manage-fs-access-change-vpc"></a>
 
 You can use an EFS file system in one VPC based on the Amazon VPC service at a time. That is, you create mount targets in a VPC for your file system, and use those mount targets to provide access to the file system.
 

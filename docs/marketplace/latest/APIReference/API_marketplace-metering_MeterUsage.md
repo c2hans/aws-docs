@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # MeterUsage
-<a name="API_marketplace-metering_MeterUsage"></a>
 
 As a seller, your software hosted in the buyer's AWS account uses this API action to emit metering records directly to AWS Marketplace. You must use the following buyer AWS account credentials to sign the API request.
 + For **Amazon EC2** deployments, your software must use the [IAM role for Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html) to sign the API call for `MeterUsage` API operation.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactA
 ---
 
 # ContactAnalysisReferenceState
-<a name="API_ContactAnalysisReferenceState"></a>
 
 The current processing state of conversational analytics for a contact, including the analysis status and, when applicable, the reason for that status.
 

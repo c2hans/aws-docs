@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/troubl
 ---
 
 # Troubleshooting
-<a name="troubleshooting-agent"></a>
 
 ## Agent fails to start
 <a name="agent-fails-to-start"></a>

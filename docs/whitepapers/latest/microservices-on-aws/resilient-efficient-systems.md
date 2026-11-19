@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 ---
 
 # Resilient and efficient systems
-<a name="resilient-efficient-systems"></a>
 
 ## Disaster recovery (DR)
 <a name="disaster-recovery"></a>

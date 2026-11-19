@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # EntitlementValue
-<a name="API_marketplace-entitlements_EntitlementValue"></a>
 
 The EntitlementValue represents the amount of capacity that the customer is entitled to for the product.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/iam-user-gr
 ---
 
 # iam-user-group-membership-check
-<a name="iam-user-group-membership-check"></a>
 
 Checks whether IAM users are members of at least one IAM group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_DeleteLink.htm
 ---
 
 # DeleteLink
-<a name="API_DeleteLink"></a>
 
 Deletes a link between gateways.
 

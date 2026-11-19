@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_PasswordFiel
 ---
 
 # PasswordField
-<a name="API_PasswordField"></a>
 
 The name of the field in the request payload that contains your customer's password.
 

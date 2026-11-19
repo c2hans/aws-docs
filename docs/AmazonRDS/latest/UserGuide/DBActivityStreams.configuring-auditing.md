@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/DBActivityStr
 ---
 
 # Configuring unified auditing for Oracle Database
-<a name="DBActivityStreams.configuring-auditing"></a>
 
 When you configure unified auditing for use with database activity streams, the following situations are possible:
 + Unified auditing isn't configured for your Oracle database.

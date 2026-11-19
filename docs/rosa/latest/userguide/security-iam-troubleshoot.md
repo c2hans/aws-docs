@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/security-iam-troub
 ---
 
 # Troubleshooting ROSA identity and access
-<a name="security-iam-troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with ROSA and IAM.
 

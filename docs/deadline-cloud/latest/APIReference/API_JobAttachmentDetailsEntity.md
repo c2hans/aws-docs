@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_J
 ---
 
 # JobAttachmentDetailsEntity
-<a name="API_JobAttachmentDetailsEntity"></a>
 
 The job attachments.
 

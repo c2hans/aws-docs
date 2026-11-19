@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec06-b
 ---
 
 # SEC06-BP02 Provision compute from hardened images
-<a name="sec06-bp02"></a>
 
  A hardened image is a base operating system, container, or dependency set stripped to only what the workload needs and configured to a known secure standard. Provisioning compute from hardened images reduces the available vectors for unauthorized use and limits the impact if unintended access occurs. Acquire runtime dependencies only from trusted sources, verify their signatures, and store approved versions where your build and deploy processes can reference them.
 

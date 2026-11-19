@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/crawler-maximum-number-of
 ---
 
 # Specifying the maximum number of tables the crawler is allowed to create
-<a name="crawler-maximum-number-of-tables"></a>
 
 You can optionally specify the maximum number of tables the crawler is allowed to create by specifying a `TableThreshold` via the AWS Glue console or AWS CLI. If the tables detected by the crawler during its crawl is greater that this input value, the crawl fails and no data is written to the Data Catalog.
 

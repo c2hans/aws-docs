@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_UpdateM
 ---
 
 # UpdateMultiRegionCluster
-<a name="API_UpdateMultiRegionCluster"></a>
 
 Updates the configuration of an existing multi-Region cluster.
 

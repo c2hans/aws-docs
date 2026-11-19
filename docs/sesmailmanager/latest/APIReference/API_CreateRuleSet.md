@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_C
 ---
 
 # CreateRuleSet
-<a name="API_CreateRuleSet"></a>
 
 Provision a new rule set.
 

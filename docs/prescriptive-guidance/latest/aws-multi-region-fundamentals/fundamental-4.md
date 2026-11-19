@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-multi-r
 ---
 
 # Multi-Region fundamental 4: Operational readiness
-<a name="fundamental-4"></a>
 
 Operating a multi-Region workload is a complex task that comes with operational challenges that are specific to a multi-Region architecture. These include AWS account management, retooled deployment processes, creating a multi-Region observability strategy, creating and testing recovery processes, and then managing the cost. An [Operational Readiness Review (ORR)](https://docs.aws.amazon.com/wellarchitected/latest/operational-readiness-reviews/the-orr-mechanism.html) can help teams prepare a workload for production, whether it's running in a single Region or across multiple Regions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/adobe-marketo-engage-read
 ---
 
 # Reading from Adobe Marketo Engage entities
-<a name="adobe-marketo-engage-reading-from-entities"></a>
 
 **Prerequisite**
 

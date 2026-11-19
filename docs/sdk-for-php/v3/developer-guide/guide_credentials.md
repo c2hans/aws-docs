@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_cre
 ---
 
 # Using AWS SDK for PHP Version 3 credential providers
-<a name="guide_credentials"></a>
 
 For reference information on available credentials mechanisms for the AWS SDKs, see [Credentials and access](https://docs.aws.amazon.com/sdkref/latest/guide/access.html) in the *AWS SDKs and Tools Reference Guide*.
 

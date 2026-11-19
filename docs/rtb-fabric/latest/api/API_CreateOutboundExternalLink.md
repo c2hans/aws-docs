@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_CreateOutbound
 ---
 
 # CreateOutboundExternalLink
-<a name="API_CreateOutboundExternalLink"></a>
 
 Creates an outbound external link.
 

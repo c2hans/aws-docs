@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Interactive Video Service
-<a name="amazoninteractivevideoservice"></a>
 
 Amazon Interactive Video Service provides the following APIs for data retrieval.
 

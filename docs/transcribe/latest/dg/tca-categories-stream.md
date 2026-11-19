@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/tca-categories-stre
 ---
 
 # Creating categories for real-time transcriptions
-<a name="tca-categories-stream"></a>
 
 Real-time Call Analytics supports the creation of custom categories, which you can use to tailor your transcript analyses to best suit your specific business needs.
 

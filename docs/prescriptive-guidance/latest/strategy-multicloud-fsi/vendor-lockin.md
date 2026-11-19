@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mu
 ---
 
 # Consider the advantages and disadvantages of vendor lock-in
-<a name="vendor-lockin"></a>
 
 FIs often ask us how to design solutions that prevent vendor lock-in, and how they can use multicloud strategies to avoid lock-in.
 

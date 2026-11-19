@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Choose a high availability and disaster recovery solution
-<a name="sql-server-hadr"></a>
 
 ## Overview
 <a name="sql-server-hadr-overview"></a>

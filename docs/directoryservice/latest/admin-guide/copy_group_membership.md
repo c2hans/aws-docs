@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/copy
 ---
 
 # Copying an AWS Managed Microsoft AD group memberships in the AWS Management Console
-<a name="copy_group_membership"></a>
 
  You can copy group memberships from one AWS Managed Microsoft AD user into another user in the AWS Management Console. Group memberships are the roles and permissions that a user inherits when you add them to a group.
 

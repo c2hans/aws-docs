@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cwl_intelli
 ---
 
 # Optimize storage costs with Amazon CloudWatch Logs Intelligent Tiering
-<a name="cwl_intelligent_tier"></a>
 
 Amazon CloudWatch Logs Intelligent Tiering automatically classifies your log data across three access tiers based on access patterns: Standard, Infrequent Access, and Archive Instant Access. With Intelligent Tiering, you can retain high-volume, long-retention logs at lower-cost tiers without any operational overhead. Instead of filtering logs or offloading them to separate storage solutions, you can keep them natively in CloudWatch Logs and benefit from the same query experience regardless of which tier your data resides in.
 

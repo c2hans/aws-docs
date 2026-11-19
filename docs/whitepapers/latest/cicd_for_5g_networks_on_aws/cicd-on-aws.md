@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 ---
 
 # CI/CD on AWS
-<a name="cicd-on-aws"></a>
 
 CI/CD can be pictured as a pipeline, where new code is submitted on one end, tested over a series of stages (source, build, test, staging, and production), and then published as production-ready code.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailTopic
-<a name="API_runtime_GuardrailTopic"></a>
 
 Information about a topic guardrail.
 

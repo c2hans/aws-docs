@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # Certificate
-<a name="API_Certificate"></a>
 
 Information about an SSL server certificate.
 

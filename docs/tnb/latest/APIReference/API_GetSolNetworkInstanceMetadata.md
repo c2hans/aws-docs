@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_GetSolNetwor
 ---
 
 # GetSolNetworkInstanceMetadata
-<a name="API_GetSolNetworkInstanceMetadata"></a>
 
 The metadata of a network instance.
 

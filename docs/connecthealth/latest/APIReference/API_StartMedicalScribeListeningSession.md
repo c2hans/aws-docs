@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_St
 ---
 
 # StartMedicalScribeListeningSession
-<a name="API_StartMedicalScribeListeningSession"></a>
 
 Starts a new Medical Scribe listening session for real-time audio transcription
 

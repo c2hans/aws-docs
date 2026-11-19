@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/creating-a-solutio
 ---
 
 # Manually creating a solution version
-<a name="creating-a-solution-version"></a>
 
 After you complete [Configuring a custom solution in Amazon Personalize](customizing-solution-config.md), you are ready to start training:
 +  If your solution uses automatic training, the solution creates solution versions for you at the training frequency you specify. By default, all new solutions use automatic training to create a new solution version every 7 days. You can still manually create solution versions. For more information, see [Configuring automatic training](solution-config-auto-training.md).

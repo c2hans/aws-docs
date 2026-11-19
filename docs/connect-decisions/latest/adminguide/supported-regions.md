@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/supp
 ---
 
 # Supported Regions
-<a name="supported-regions"></a>
 
 This page describes the AWS Regions where you can use Amazon Connect Decisions. For more information about AWS Regions, see [Specify which AWS Regions your account can use](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html) in the *AWS Account Management Reference Guide*.
 

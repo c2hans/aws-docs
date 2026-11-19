@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_O
 ---
 
 # Amazon DynamoDB Streams
-<a name="API_Operations_Amazon_DynamoDB_Streams"></a>
 
 The following actions are supported by Amazon DynamoDB Streams:
 +  [DescribeStream](API_streams_DescribeStream.md)

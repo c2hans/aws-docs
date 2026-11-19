@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/deal.html
 ---
 
 # .deal
-<a name="deal"></a>
 
 Used for websites offering deals, discounts, and special offers.
 

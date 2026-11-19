@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ResponderError
 ---
 
 # ResponderErrorMaskingForHttpCode
-<a name="API_ResponderErrorMaskingForHttpCode"></a>
 
 Describes the masking for HTTP error codes.
 

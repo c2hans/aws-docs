@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CrawlerNodeDetail
 ---
 
 # CrawlerNodeDetails
-<a name="API_CrawlerNodeDetails"></a>
 
 The details of a Crawler node present in the workflow.
 

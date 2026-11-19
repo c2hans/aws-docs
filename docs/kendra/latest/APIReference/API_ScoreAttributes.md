@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_ScoreAttr
 ---
 
 # ScoreAttributes
-<a name="API_ScoreAttributes"></a>
 
 Provides a relative ranking that indicates how confident Amazon Kendra is that the response is relevant to the query.
 

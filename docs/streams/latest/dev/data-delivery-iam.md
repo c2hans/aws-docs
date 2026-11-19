@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-iam.htm
 ---
 
 # IAM permissions for data delivery
-<a name="data-delivery-iam"></a>
 
  Use this topic to learn about the IAM permissions required to create and manage delivery resources in Amazon Kinesis Data Streams, as well as the service execution role that data delivery assumes to deliver data to your destination.
 

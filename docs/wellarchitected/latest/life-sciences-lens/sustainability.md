@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Sustainability
-<a name="sustainability"></a>
 
  Sustainability reporting is increasingly recognized as both important and strategically beneficial for life sciences companies. While it's not yet a global legal mandate, the [trend is moving toward mandatory Environmental, Social, and Governance (ESG) and sustainability disclosure, with voluntary reporting already strongly encouraged by investors and customers](https://www2.deloitte.com/us/en/pages/audit/articles/esg-survey/life-sciences-healthcare-companies-sustainability-reporting.html).
 

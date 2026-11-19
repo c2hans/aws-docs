@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/seam
 ---
 
 # Seamlessly joining an Amazon EC2 Linux instance to your AWS Managed Microsoft AD Active Directory
-<a name="seamlessly_join_linux_instance"></a>
 
 This procedure seamlessly joins an Amazon EC2 Linux instance to your AWS Managed Microsoft AD Active Directory. To complete this procedure, you will need to create an AWS Secrets Manager secret which can incur additional costs. For more information, see [AWS Secrets Manager Pricing](https://aws.amazon.com/secrets-manager/pricing/).
 

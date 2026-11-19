@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-conf
 ---
 
 # Configuring multi-year and granular data
-<a name="ce-configuring-data"></a>
 
 Using the management account, you can enable multi-year data and granular data in Cost Explorer. You do this in the Cost Management preferences in the console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Group
 ---
 
 # GroupMember
-<a name="API_GroupMember"></a>
 
 A member of an Quick Sight group. Currently, group members must be users. Groups can't be members of another group. .
 

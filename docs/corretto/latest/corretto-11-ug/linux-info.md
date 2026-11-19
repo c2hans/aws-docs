@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/linux-inf
 ---
 
 # Amazon Corretto 11 Guide for Linux
-<a name="linux-info"></a>
 
 The topics in this section describe installation instructions for Amazon Corretto 11 on Linux platforms.
 

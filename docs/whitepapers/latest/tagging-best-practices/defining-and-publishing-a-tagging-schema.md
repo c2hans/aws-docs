@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Defining and publishing a tagging schema
-<a name="defining-and-publishing-a-tagging-schema"></a>
 
  Employ a consistent approach in tagging your AWS resources, both for mandatory and optional tags. A comprehensive tagging schema helps you to achieve this consistency. The following examples can help get you started:
 +  Agree on the mandatory tag keys

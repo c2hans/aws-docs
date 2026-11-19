@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/GetMetricAutoSca
 ---
 
 # Aggregate statistics by Auto Scaling group
-<a name="GetMetricAutoScalingGroup"></a>
 
 You can aggregate statistics for the EC2 instances in an Auto Scaling group. Note that Amazon CloudWatch cannot aggregate data across AWS Regions. Metrics are completely separate between Regions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/security
 ---
 
 # Using current IAM user permissions
-<a name="security-iam-resilience-hub-current-user-permissions"></a>
 
 Use this method if you want to use your current IAM user permissions to create and run an assessment. You can attach the `AWSResilienceHubAsssessmentExecutionPolicy` managed policy to your IAM user or a Role associated with your user.
 

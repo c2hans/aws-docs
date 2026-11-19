@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 ---
 
 # Data retrieval APIs for AWS Storage Gateway
-<a name="awsstoragegateway"></a>
 
 AWS Storage Gateway provides the following APIs for data retrieval.
 

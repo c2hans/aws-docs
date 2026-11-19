@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetAsset.html
 ---
 
 # GetAsset
-<a name="API_GetAsset"></a>
 
 Retrieves the metadata for an asset in AWS Glue Data Catalog, including its forms, additional attachments, and associated glossary terms.
 

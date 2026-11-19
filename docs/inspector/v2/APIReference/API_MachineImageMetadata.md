@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_MachineIma
 ---
 
 # MachineImageMetadata
-<a name="API_MachineImageMetadata"></a>
 
 Contains metadata about a machine image associated with a covered resource.
 

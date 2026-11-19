@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/private-c
 ---
 
 # Workflow for IVS Private Channels
-<a name="private-channels-workflow"></a>
 
 This diagram illustrates the workflow for setting up IVS private channels:
 

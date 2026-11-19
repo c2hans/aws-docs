@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListDa
 ---
 
 # ListDaemonDeployments
-<a name="API_ListDaemonDeployments"></a>
 
 Returns a list of daemon deployments for a specified daemon. You can filter the results by status or creation time.
 

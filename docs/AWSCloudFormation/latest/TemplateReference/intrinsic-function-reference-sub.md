@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # `Fn::Sub`
-<a name="intrinsic-function-reference-sub"></a>
 
 The intrinsic function `Fn::Sub` substitutes variables in an input string with values that you specify. In your templates, you can use this function to construct commands or outputs that include values that aren't available until you create or update a stack.
 
@@ -284,5 +283,5 @@ For the `VarName` and `VarValue` parameters, you can use the following functions
 + [`Fn::ImportValue`](intrinsic-function-reference-importvalue.md)
 + [`Fn::Join`](intrinsic-function-reference-join.md)
 + [`Fn::Select`](intrinsic-function-reference-select.md)
-+ [`Fn::Sub`](#intrinsic-function-reference-sub)
++ [`Fn::Sub`](intrinsic-function-reference-sub.md)
 + [`Ref`](intrinsic-function-reference-ref.md)

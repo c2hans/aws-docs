@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListSequenceStores.
 ---
 
 # ListSequenceStores
-<a name="API_ListSequenceStores"></a>
 
 Retrieves a list of sequence stores and returns each sequence store's metadata.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/cross-account-permissio
 ---
 
 # Configure cross-account access in Athena to Amazon S3 buckets
-<a name="cross-account-permissions"></a>
 
 A common Amazon Athena scenario is granting access to users in an account different from the bucket owner so that they can perform queries. In this case, use a bucket policy to grant access.
 

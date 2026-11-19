@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/cloudfor
 ---
 
 # Create AWS Secrets Manager secrets in AWS CloudFormation
-<a name="cloudformation"></a>
 
 You can create secrets in a CloudFormation stack by using the `[ AWS::SecretsManager::Secret](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-secret.html)` resource in a CloudFormation template, as shown in [Create a secret](cfn-example_secret.md).
 

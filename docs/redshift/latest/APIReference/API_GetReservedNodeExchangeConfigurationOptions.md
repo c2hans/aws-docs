@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_GetRese
 ---
 
 # GetReservedNodeExchangeConfigurationOptions
-<a name="API_GetReservedNodeExchangeConfigurationOptions"></a>
 
 Gets the configuration options for the reserved-node exchange. These options include information about the source reserved node and target reserved node offering. Details include the node type, the price, the node count, and the offering type.
 

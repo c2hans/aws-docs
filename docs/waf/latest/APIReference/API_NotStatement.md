@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_NotStatement
 ---
 
 # NotStatement
-<a name="API_NotStatement"></a>
 
 A logical rule statement used to negate the results of another rule statement. You provide one [Statement](API_Statement.md) within the `NotStatement`.
 

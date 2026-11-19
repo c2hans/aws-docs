@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/sftp-connectiv
 ---
 
 # Troubleshoot SFTP connectivity and transfer issues
-<a name="sftp-connectivity-issues"></a>
 
 This section describes possible solutions for SFTP connectivity and file transfer issues.
 

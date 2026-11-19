@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/generative-ai-applicati
 ---
 
 # Features and benefits
-<a name="features-and-benefits"></a>
 
 The Generative AI Application Builder on AWS solution provides the following features:
 

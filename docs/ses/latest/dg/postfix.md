@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/postfix.html
 ---
 
 # Integrating Amazon SES with Postfix
-<a name="postfix"></a>
 
 Postfix is an alternative to the widely used Sendmail Message Transfer Agent (MTA). For information about Postfix, go to [http://www.postfix.org](http://www.postfix.org). The procedures in this topic will work with Linux, macOS, or Unix.
 

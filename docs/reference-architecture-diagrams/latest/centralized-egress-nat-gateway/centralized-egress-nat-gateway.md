@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Centralized Internet Egress with NAT Gateway
-<a name="centralized-egress-nat-gateway"></a>
 
 Publication date: **October 20, 2021 ([Diagram history](#diagram-history))**
 

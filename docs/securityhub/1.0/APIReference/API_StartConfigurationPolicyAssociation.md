@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_StartCo
 ---
 
 # StartConfigurationPolicyAssociation
-<a name="API_StartConfigurationPolicyAssociation"></a>
 
  Associates a target account, organizational unit, or the root with a specified configuration. The target can be associated with a configuration policy or self-managed behavior. Only the AWS Security Hub CSPM delegated administrator can invoke this operation from the home Region.
 

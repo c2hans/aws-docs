@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-widg
 ---
 
 # View properties for widgets
-<a name="lake-widget-properties"></a>
 
 This section describes the configurable view properties for the 4 view types: table, line chart, pie chart, and bar chart.
 

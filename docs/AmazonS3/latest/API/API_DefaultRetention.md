@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_DefaultRetention
 ---
 
 # DefaultRetention
-<a name="API_DefaultRetention"></a>
 
 The container element for optionally specifying the default Object Lock retention settings for new objects placed in the specified bucket.
 

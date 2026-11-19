@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Re
 ---
 
 # RedshiftProvisionedConfiguration
-<a name="API_agent_RedshiftProvisionedConfiguration"></a>
 
 Contains configurations for a provisioned Amazon Redshift query engine.
 

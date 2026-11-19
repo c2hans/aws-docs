@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # Limits
-<a name="API_Limits"></a>
 
 Limits for a given instance type and for each of its roles.
 

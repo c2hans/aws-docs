@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-example-code-endpoint-
 ---
 
 # Example code for an Amazon SNS endpoint Java servlet
-<a name="sns-example-code-endpoint-java-servlet"></a>
 
 **Important**
 The following code snippets help you understand a Java servlet that processes Amazon SNS HTTP POST requests. Make sure any portions of these snippets are suitable for your purposes before using them in production. For example, in a production environment, verify that the identity of the received Amazon SNS messages is from Amazon SNS. This helps prevent spoofing attacks. You can do this by checking that the DNS Name value (*DNS Name=sns.us-west-2.amazonaws.com* in us-west-2; this varies by Region) for the *Subject Alternative Name* field, as presented in the Amazon SNS Certificate, matches the received Amazon SNS messages. For more information about verifying server identity, see section [3.1. Server Identity](http://tools.ietf.org/search/rfc2818) in *RFC 2818*. Also see [Verifying the signatures of Amazon SNS messages](sns-verify-signature-of-message.md)

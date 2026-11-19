@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessLogDeliveryStatus
-<a name="API_VerifiedAccessLogDeliveryStatus"></a>
 
 Describes a log delivery status.
 

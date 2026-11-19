@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/fifo-topic-code-examples.h
 ---
 
 # Amazon SNS code examples for FIFO topics
-<a name="fifo-topic-code-examples"></a>
 
 Use the following code examples to integrate the [auto parts price management example use case](fifo-example-use-case.md) with an Amazon SNS FIFO topic and either an Amazon SQS FIFO queue or a standard queue.
 

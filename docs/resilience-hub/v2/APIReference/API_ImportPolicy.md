@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Impor
 ---
 
 # ImportPolicy
-<a name="API_ImportPolicy"></a>
 
 Imports a V1 policy into V2, mapping RTO/RPO values from V1 scenarios.
 

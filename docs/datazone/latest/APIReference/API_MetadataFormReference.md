@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Metadat
 ---
 
 # MetadataFormReference
-<a name="API_MetadataFormReference"></a>
 
 The reference of a metadata form.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/cloudwatch-wor
 ---
 
 # Monitor workflow execution
-<a name="cloudwatch-workflow"></a>
 
 Amazon CloudWatch monitors your AWS resources and the applications that you run in the AWS Cloud in real time. You can use Amazon CloudWatch to collect and track metrics, which are variables that you can measure for your workflows. You can view workflow metrics and consolidated logs by using Amazon CloudWatch.
 

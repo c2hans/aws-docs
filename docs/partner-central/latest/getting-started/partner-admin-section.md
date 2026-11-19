@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 ---
 
 # Partner admin
-<a name="partner-admin-section"></a>
 + **Program applications:** Redirects to legacy Partner Central experience. Apply for APN programs or manage active program applications.
 + **Business plan:** Redirects to legacy Partner Central experience. Create and share joint business plans with AWS.
 + **Profiles:** Native in the AWS Console. Create and manage your Partner and Seller profiles. For more information, see Creating and updating your profiles.

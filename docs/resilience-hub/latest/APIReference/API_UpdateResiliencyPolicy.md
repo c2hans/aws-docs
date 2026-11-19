@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_U
 ---
 
 # UpdateResiliencyPolicy
-<a name="API_UpdateResiliencyPolicy"></a>
 
 Updates a resiliency policy.
 

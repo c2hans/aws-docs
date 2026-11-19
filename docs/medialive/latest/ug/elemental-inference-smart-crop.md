@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/elemental-inference-
 ---
 
 # Smart cropping video using Elemental Inference
-<a name="elemental-inference-smart-crop"></a>
 
 In an AWS Elemental MediaLive channel, you can enable the smart crop feature in order to set up one or more outputs with an aspect ratio that is different from the source aspect ratio. A typical use case is to create vertical video from a landscape video.
 

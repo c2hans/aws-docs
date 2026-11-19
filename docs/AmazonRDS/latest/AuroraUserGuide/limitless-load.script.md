@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Setting up database authentication and resource access using a script
-<a name="limitless-load.script"></a>
 
 The setup script creates one customer-managed AWS KMS key, one AWS Identity and Access Management (IAM) role, and two AWS Secrets Manager secrets.
 

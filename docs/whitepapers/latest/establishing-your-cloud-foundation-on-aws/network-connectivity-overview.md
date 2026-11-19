@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/establishing-your-clo
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Overview
-<a name="network-connectivity-overview"></a>
 
 Connecting the underlying infrastructure is an essential piece of every workload running on your environment. This makes a redundant, highly available, and fault tolerant network architecture one of the top priorities for every organization. Every workload you run in the cloud or within an on-premises environment requires connectivity between different resources. For example, servers, firewalls, edge routers, gateways and more.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_Operat
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [DescribeEntitiesDetectionV2Job](API_DescribeEntitiesDetectionV2Job.md)

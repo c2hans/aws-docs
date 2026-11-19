@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-securit
 ---
 
 # Security APIs in AWS Glue
-<a name="aws-glue-api-jobs-security"></a>
 
 The Security API describes the security data types, and the API related to security in AWS Glue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmonitor/latest/APIReference/API_C
 ---
 
 # CreateMonitor
-<a name="API_CreateMonitor"></a>
 
 Creates a monitor between a source subnet and destination IP address. Within a monitor, you create one or more probes. The probes monitor network traffic between your source VPC subnets in AWS and your destination IP addresses. Each probe aggregates metrics, and then sends them to Network Synthetic Monitor.
 

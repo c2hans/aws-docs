@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Lo
 ---
 
 # Monitoring Amazon Aurora log files
-<a name="USER_LogAccess"></a>
 
 Every RDS database engine generates logs that you can access for auditing and troubleshooting. The type of logs depends on your database engine.
 

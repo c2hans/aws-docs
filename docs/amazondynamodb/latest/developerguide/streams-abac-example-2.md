@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/str
 ---
 
 # Example 2: Allow tagging a stream using aws:RequestTag
-<a name="streams-abac-example-2"></a>
 
 Using the `aws:RequestTag/tag-key` condition key, you can compare the tag key-value pair that's passed in your request with the tag pair specified in the IAM policy. For example, you can allow tagging a stream only if the request includes a specific tag.
 

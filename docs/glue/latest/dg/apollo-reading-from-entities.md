@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/apollo-reading-from-entit
 ---
 
 # Reading from Apollo entities
-<a name="apollo-reading-from-entities"></a>
 
 **Prerequisites**
 

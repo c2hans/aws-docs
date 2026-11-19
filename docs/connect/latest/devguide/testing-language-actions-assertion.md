@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/testing-language
 ---
 
 # Assertion
-<a name="testing-language-actions-assertion"></a>
 
 Validates that a specific attribute or value in the flow matches expected criteria.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_ChildW
 ---
 
 # ChildWorkflowExecutionStartedEventAttributes
-<a name="API_ChildWorkflowExecutionStartedEventAttributes"></a>
 
 Provides the details of the `ChildWorkflowExecutionStarted` event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-requests-sdk.htm
 ---
 
 # Request Inferences from a Deployed Service (Amazon SageMaker SDK)
-<a name="neo-requests-sdk"></a>
 
 Use the following the code examples to request inferences from your deployed service based on the framework you used to train your model. The code examples for the different frameworks are similar. The main difference is that TensorFlow requires `application/json` as the content type.
 

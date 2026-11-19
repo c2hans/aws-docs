@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Healthcare analytics reference architecture
-<a name="healthcare-analytics-reference-architecture"></a>
 
  This section covers a reference implementation of a healthcare analytics platform using native AWS services. Refer to the [Architecture Best Practices for Analytics and Big Data](https://aws.amazon.com/architecture/analytics-big-data) to browse best practices for data management and analytics. The components in this architecture are building blocks that can be used as-is or substituted with third party components to meet business requirements.
 

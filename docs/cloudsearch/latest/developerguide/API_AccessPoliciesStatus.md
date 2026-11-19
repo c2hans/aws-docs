@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Ac
 ---
 
 # AccessPoliciesStatus
-<a name="API_AccessPoliciesStatus"></a>
 
 ## Description
 <a name="API_AccessPoliciesStatus_Description"></a>

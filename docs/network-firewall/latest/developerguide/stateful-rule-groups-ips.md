@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/s
 ---
 
 # Working with stateful rule groups in AWS Network Firewall
-<a name="stateful-rule-groups-ips"></a>
 
 A stateful rule group is a rule group that uses Suricata compatible intrusion prevention system (IPS) specifications. Suricata is an open source network IPS that includes a standard rule-based language for stateful network traffic inspection.
 

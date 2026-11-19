@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-kafka-configure.ht
 ---
 
 # Configuring self-managed Apache Kafka event sources for Lambda
-<a name="with-kafka-configure"></a>
 
 To use a self-managed Apache Kafka cluster as an event source for your Lambda Event Function, you create an [event source mapping](invocation-eventsourcemapping.md) that connects the two resources. This page describes how to create an event source mapping for self-managed Apache Kafka.
 

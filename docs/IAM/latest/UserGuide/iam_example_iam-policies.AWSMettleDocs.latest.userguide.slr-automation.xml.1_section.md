@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam-pol
 ---
 
 # Policy to grants service-linked role permissions for Compute Optimization Automation
-<a name="iam_example_iam-policies.AWSMettleDocs.latest.userguide.slr-automation.xml.1_section"></a>
 
 The following code example shows how to This permission-based policy grants service-linked role permissions for Compute Optimization Automation
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfe
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # Running secondary analysis workflows using AWS Step Functions and AWS Batch
-<a name="running-secondary-analysis-workflows-using-aws-step-functions-and-aws-batch"></a>
 
  Running secondary analysis workflows to perform sequence alignment, variant calling, quality control (QC), annotation, and custom processing can be done in AWS using native AWS services. We’ll provide recommendations and a reference architecture for running secondary analysis workflows in AWS using AWS Step Functions and AWS Batch.
 

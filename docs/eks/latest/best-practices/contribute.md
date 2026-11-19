@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/contribute.htm
 ---
 
 # Contribute to this guide
-<a name="contribute"></a>
 
 Anyone can contribute to the best practices guide. The EKS Best Practices Guide is written in the AsciiDoc format on GitHub.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Ge
 ---
 
 # GetSyncJob
-<a name="API_GetSyncJob"></a>
 
 Gets the SyncJob.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-
 ---
 
 # Permissions required for viewing Amazon ECS service deployments
-<a name="service-deployment-permissions"></a>
 
  When you follow the best practice of granting least privilege, you need to add additional permissions in order to view service deployments in the console.
 

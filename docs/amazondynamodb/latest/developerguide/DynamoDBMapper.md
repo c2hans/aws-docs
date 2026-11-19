@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Dyn
 ---
 
 # Java 1.x: DynamoDBMapper
-<a name="DynamoDBMapper"></a>
 
 **Note**
 The SDK for Java has two versions: 1.x and 2.x. The end-of-support for 1.x was [announced](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-java-v1-x-on-december-31-2025/) on January 12, 2024. It will and its end-of-support is due on December 31, 2025. For new development, we highly recommend that you use 2.x.

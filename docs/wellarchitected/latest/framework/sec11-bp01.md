@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec11-b
 ---
 
 # SEC11-BP01 Embed security ownership in workload teams, and train for application security
-<a name="sec11-bp01"></a>
 
  Security decisions happen throughout development. When the teams that build software own its security, they catch risks during design. Give builders the authority and training to make well-informed, sound security decisions.
 

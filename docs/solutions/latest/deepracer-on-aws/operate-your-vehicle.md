@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/operat
 ---
 
 # Use the vehicle
-<a name="operate-your-vehicle"></a>
 
 After you finish training and evaluating an AWS DeepRacer model in the AWS DeepRacer simulator, you can deploy the model to your AWS DeepRacer vehicle. You can set the vehicle to drive on a track and evaluate the model’s performance in a physical environment. This mimics a real-world autonomous race.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/creating-feat
 ---
 
 # Creating feature flags and free form configuration data in AWS AppConfig
-<a name="creating-feature-flags-and-configuration-data"></a>
 
 The topics in this section help you complete the following tasks in AWS AppConfig. These tasks create important artifacts for deploying configuration data.
 

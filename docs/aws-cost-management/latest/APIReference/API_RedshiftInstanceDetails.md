@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RedshiftInstanceDetails
-<a name="API_RedshiftInstanceDetails"></a>
 
 Details about the Amazon Redshift reservations that AWS recommends that you purchase.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/hls-rendition-g
 ---
 
 # Setting up HLS rendition groups
-<a name="hls-rendition-groups"></a>
 
 In AWS Elemental Live, you can set up an HLS output group to support an audio rendition group.
 

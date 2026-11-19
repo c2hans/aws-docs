@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_RouteDa
 ---
 
 # RouteData
-<a name="API_RouteData"></a>
 
 An object that represents a route returned by a describe operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/naming-and-versioning.ht
 ---
 
 # Naming and versioning
-<a name="naming-and-versioning"></a>
 
 AL2023 provides a minor release every three months during the two years of standard support. Each release is identified by an increment from 0 to N. 0 refers to the original major release for that iteration. All releases will be called Amazon Linux 2023. When the next version of Amazon Linux is released, AL2023 will enter extended support and receive updates for security updates and critical bug fixes.
 

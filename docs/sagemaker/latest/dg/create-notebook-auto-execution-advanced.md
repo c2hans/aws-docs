@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/create-notebook-auto
 ---
 
 # Available options
-<a name="create-notebook-auto-execution-advanced"></a>
 
 The following table displays all available options you can use to customize your notebook job, whether you run your Notebook Job in Studio, a local Jupyter environment, or using the SageMaker Python SDK. The table includes the type of custom option, a description, additional guidelines about how to use the option, a field name for the option in Studio (if available) and the parameter name for the notebook job step in the SageMaker Python SDK (if available).
 

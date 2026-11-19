@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/dotnet-manife
 ---
 
 # Deployment manifest schema reference
-<a name="dotnet-manifest-schema"></a>
 
 The deployment manifest is a JSON file that defines how Elastic Beanstalk should deploy and configure your Windows applications. This section provides a comprehensive reference for all supported properties and configuration options in the manifest schema.
 

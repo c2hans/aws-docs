@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard
 ---
 
 # Designing cross-Region DR solutions for Amazon RDS standard editions
-<a name="design-cross-region-dr"></a>
 
 When it comes to disaster recovery capabilities, standard editions offer the following cross-Region options:
 + Automated snapshots using AWS Backup

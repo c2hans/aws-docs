@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-ga
 ---
 
 # Best Practices for Designing Amazon API Gateway Private APIs and Private Integration
-<a name="best-practices-api-gateway-private-apis-integration"></a>
 
 Publication date: **July 14, 2026** ([Document revisions](document-revisions.md))
 

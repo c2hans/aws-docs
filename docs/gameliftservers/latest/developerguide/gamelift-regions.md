@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Amazon GameLift Servers service locations
-<a name="gamelift-regions"></a>
 
 Amazon GameLift Servers features are available across multiple AWS Regions and Local Zones. You can design a hosting solution that puts your game servers right where your players are located.
 

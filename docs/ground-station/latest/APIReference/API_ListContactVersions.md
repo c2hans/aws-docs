@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_L
 ---
 
 # ListContactVersions
-<a name="API_ListContactVersions"></a>
 
 Returns a list of versions for a specified contact.
 

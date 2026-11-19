@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-suppor
 ---
 
 # AWS Support App in Slack events
-<a name="events-ref-supportapp"></a>
 
 AWS Support App sends service events to EventBridge via AWS CloudTrail.
 

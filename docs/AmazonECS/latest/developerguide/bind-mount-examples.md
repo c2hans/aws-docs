@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/bind-mou
 ---
 
 # Bind mount examples for Amazon ECS
-<a name="bind-mount-examples"></a>
 
 The following examples cover the common use cases for using a bind mount for your containers.
 

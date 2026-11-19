@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Activi
 ---
 
 # ActivityType
-<a name="API_ActivityType"></a>
 
 Represents an activity type.
 

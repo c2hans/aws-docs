@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/dev-tester-ui-
 ---
 
 # Set up the prerequisites to run the FreeRTOS qualification suite
-<a name="dev-tester-ui-prereqs"></a>
 
 This section describes the prerequisites for testing microcontrollers with AWS IoT Device Tester.
 

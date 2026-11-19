@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Partners
-<a name="partners"></a>
 
 Database migration can be a challenging project that requires expertise and tools. You can accelerate your migration and time to results through partnership. [AWS Database Migration Service partners](https://aws.amazon.com/dms/partners/) have the required expertise to help customers migrate to the cloud easily and securely. These partners have the expertise for both homogeneous migrations such as SQL Server to SQL Server, and heterogeneous migrations between different database platforms, such as SQL Server to Amazon Aurora or Amazon RDS for MySQL.
 

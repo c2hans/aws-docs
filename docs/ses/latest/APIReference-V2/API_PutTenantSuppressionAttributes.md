@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutTenant
 ---
 
 # PutTenantSuppressionAttributes
-<a name="API_PutTenantSuppressionAttributes"></a>
 
 Configure the suppression list preferences for a tenant. Use this operation to enable or disable tenant-level suppression, or to change the suppressed reasons for a tenant.
 

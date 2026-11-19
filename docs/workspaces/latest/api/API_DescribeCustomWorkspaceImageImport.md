@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeCustom
 ---
 
 # DescribeCustomWorkspaceImageImport
-<a name="API_DescribeCustomWorkspaceImageImport"></a>
 
 Retrieves information about a WorkSpace BYOL image being imported via ImportCustomWorkspaceImage.
 

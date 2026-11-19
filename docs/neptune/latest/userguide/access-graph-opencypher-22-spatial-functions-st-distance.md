@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # ST\_Distance
-<a name="access-graph-opencypher-22-spatial-functions-st-distance"></a>
 
 For input geometries, ST\_Distance returns the minimum Euclidean distance between the 2D projections of the two input geometry values.
 

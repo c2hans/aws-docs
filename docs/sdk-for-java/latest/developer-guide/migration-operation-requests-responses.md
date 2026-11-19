@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Operations, requests and responses changes
-<a name="migration-operation-requests-responses"></a>
 
 In version 2 of the SDK for Java, requests are passed to a client operation. For example `DynamoDbClient's` `PutItemRequest` is passed to `DynamoDbClient.putItem` operation. These operations return a response from the AWS service, such as a `PutItemResponse`.
 

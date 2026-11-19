@@ -5,12 +5,11 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WAFv2::IPSet
-<a name="aws-resource-wafv2-ipset"></a>
 
 **Note**
 This is the latest version of ** AWS WAF **, named AWS WAFV2, released in November, 2019. For information, including how to migrate your AWS WAF resources from the prior release, see the [AWS WAF developer guide](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html).
 
-Use an [AWS::WAFv2::IPSet](#aws-resource-wafv2-ipset) to identify web requests that originate from specific IP addresses or ranges of IP addresses. For example, if you're receiving a lot of requests from a ranges of IP addresses, you can configure AWS WAF to block them using an IP set that lists those IP addresses.
+Use an [AWS::WAFv2::IPSet](aws-resource-wafv2-ipset.md) to identify web requests that originate from specific IP addresses or ranges of IP addresses. For example, if you're receiving a lot of requests from a ranges of IP addresses, you can configure AWS WAF to block them using an IP set that lists those IP addresses.
 
 You use an IP set by providing its Amazon Resource Name (ARN) to the rule statement `IPSetReferenceStatement`, when you add a rule to a rule group or web ACL.
 

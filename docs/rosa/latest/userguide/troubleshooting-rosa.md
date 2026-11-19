@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/troubleshooting-ro
 ---
 
 # Troubleshooting
-<a name="troubleshooting-rosa"></a>
 
 The following page details some common issues encountered while creating or managing ROSA clusters.
 

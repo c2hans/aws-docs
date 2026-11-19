@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Next steps in using Amazon Q Developer
-<a name="next-steps"></a>
 
 With the knowledge gained from this guide, you can use Amazon Q Developer effectively in your coding workflow. Install the AWS Toolkit in your preferred IDE ([Visual Studio Code](https://docs.aws.amazon.com/toolkit-for-vscode) or [JetBrains](https://docs.aws.amazon.com/toolkit-for-jetbrains/)), and begin exploring the generative AI-powered code generation and recommendations from Amazon Q Developer.
 

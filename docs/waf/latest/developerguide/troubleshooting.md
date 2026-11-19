@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/troubleshootin
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Troubleshooting AWS Shield network security director
-<a name="troubleshooting"></a>
 
 ## Unsupported Cross-Account Shared Resources
 <a name="unsupported-shared-resources"></a>

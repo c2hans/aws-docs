@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # W3C\_LOG\_PARSE
-<a name="sql-reference-w3c-log-parse"></a>
 
 ```
  W3C_LOG_PARSE( <character-expression>, <format-string> )

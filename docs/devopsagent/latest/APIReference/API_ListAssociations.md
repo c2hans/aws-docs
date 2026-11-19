@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListAssociations
-<a name="API_ListAssociations"></a>
 
 List all associations for given AgentSpace
 

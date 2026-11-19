@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServerAgen
 ---
 
 # SQL Server Agent roles
-<a name="SQLServerAgent.AgentRoles"></a>
 
 RDS for SQL Server supports the following SQL Server Agent roles with different levels of permissions for managing jobs:
 + **SQLAgentUserRole**

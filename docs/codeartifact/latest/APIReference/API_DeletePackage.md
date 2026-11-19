@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Del
 ---
 
 # DeletePackage
-<a name="API_DeletePackage"></a>
 
 Deletes a package and all associated package versions. A deleted package cannot be restored. To delete one or more package versions, use the [DeletePackageVersions](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_DeletePackageVersions.html) API.
 

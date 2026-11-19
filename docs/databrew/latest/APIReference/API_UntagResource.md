@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_UntagRe
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes metadata tags from a DataBrew resource.
 

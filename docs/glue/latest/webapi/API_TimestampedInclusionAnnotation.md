@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TimestampedInclus
 ---
 
 # TimestampedInclusionAnnotation
-<a name="API_TimestampedInclusionAnnotation"></a>
 
 A timestamped inclusion annotation.
 

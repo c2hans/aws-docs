@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/un
 ---
 
 # Plugin for Unity: Deploy your game to a managed container fleet
-<a name="unity-plug-in-container"></a>
 
 Use this guided plugin workflow to create a container image for your game server and deploy it to a container-based hosting solution. When you’ve successfully completed this workflow, your containerized game server is running in the cloud, and you can use the plugin to start a game client, connect to a game session, and play the game.
 

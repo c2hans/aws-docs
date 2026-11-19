@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Operations
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported by Amazon Lex Model Building V2:
 +  [BatchCreateCustomVocabularyItem](API_BatchCreateCustomVocabularyItem.md)

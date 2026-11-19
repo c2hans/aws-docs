@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/edge-local
 ---
 
 # Edge-only APIs for use with AWS IoT SiteWise edge devices
-<a name="edge-local-apis"></a>
 
 In addition to the AWS IoT SiteWise APIs that are available on the edge, there are edge-specific ones. Those edge-specifc APIs are described below.
 

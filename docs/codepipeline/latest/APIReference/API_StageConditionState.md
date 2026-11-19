@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Sta
 ---
 
 # StageConditionState
-<a name="API_StageConditionState"></a>
 
 The state of a run of a condition for a stage.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CommunicationLimits
-<a name="API_connect-outbound-campaigns-v2_CommunicationLimits"></a>
 
 Contains information about communication limits.
 

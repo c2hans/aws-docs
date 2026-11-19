@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentTe
 ---
 
 # ExperimentTemplateTarget
-<a name="API_ExperimentTemplateTarget"></a>
 
 Describes a target for an experiment template.
 

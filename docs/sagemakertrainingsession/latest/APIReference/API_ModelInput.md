@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemakertrainingsession/latest/APIRefer
 ---
 
 # ModelInput
-<a name="API_ModelInput"></a>
 
 The tokenized model input composed of ordered encoded text chunks.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Relationships and ownership
-<a name="relationships-and-ownership"></a>
 
  Your operating model defines the relationships between teams and supports identifiable ownership and responsibility.
 

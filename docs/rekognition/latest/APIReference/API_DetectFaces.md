@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dete
 ---
 
 # DetectFaces
-<a name="API_DetectFaces"></a>
 
 Detects faces within an image that is provided as input.
 

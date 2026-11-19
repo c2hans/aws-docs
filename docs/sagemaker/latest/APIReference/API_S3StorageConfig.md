@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_S3Stor
 ---
 
 # S3StorageConfig
-<a name="API_S3StorageConfig"></a>
 
 The Amazon Simple Storage (Amazon S3) location and security configuration for `OfflineStore`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 ---
 
 # United States Short Code registration form
-<a name="registrations-short-code"></a>
 
 To create and use a short code for your SMS campaign, you need to complete the registration form and submit it for approval.
 

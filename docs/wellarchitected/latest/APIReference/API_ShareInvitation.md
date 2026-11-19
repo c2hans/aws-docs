@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ShareInvitation
-<a name="API_ShareInvitation"></a>
 
 The share invitation.
 

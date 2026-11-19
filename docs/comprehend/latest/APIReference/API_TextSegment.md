@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_TextS
 ---
 
 # TextSegment
-<a name="API_TextSegment"></a>
 
 One of the of text strings. Each string has a size limit of 1KB.
 

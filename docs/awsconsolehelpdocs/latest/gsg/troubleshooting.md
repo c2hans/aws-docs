@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/troublesho
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 Consult this section to find solutions to common problems with the AWS Management Console.
 

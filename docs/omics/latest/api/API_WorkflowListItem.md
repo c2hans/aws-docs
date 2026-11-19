@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_WorkflowListItem.ht
 ---
 
 # WorkflowListItem
-<a name="API_WorkflowListItem"></a>
 
 A workflow.
 

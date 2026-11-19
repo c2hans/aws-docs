@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/c
 ---
 
 # Create Function dialog box
-<a name="create-function-dialog"></a>
 
 The **Create Function** dialog box in the AWS Toolkit for JetBrains is displayed when you create a standalone AWS Lambda function.
 

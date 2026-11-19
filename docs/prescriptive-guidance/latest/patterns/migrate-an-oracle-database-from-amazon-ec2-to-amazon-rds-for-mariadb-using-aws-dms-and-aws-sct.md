@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an Oracle database from Amazon EC2 to Amazon RDS for MariaDB using AWS DMS and AWS SCT
-<a name="migrate-an-oracle-database-from-amazon-ec2-to-amazon-rds-for-mariadb-using-aws-dms-and-aws-sct"></a>
 
 *Veeranjaneyulu Grandhi and vinod kumar, Amazon Web Services*
 

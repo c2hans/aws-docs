@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_TargetS3Conf
 ---
 
 # TargetS3Configuration
-<a name="API_TargetS3Configuration"></a>
 
 S3 configuration for storing target network artifacts.
 

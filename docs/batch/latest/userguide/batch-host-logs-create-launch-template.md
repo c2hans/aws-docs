@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-host-logs-c
 ---
 
 # Step 3: Create a launch template and attach it to a compute environment
-<a name="batch-host-logs-create-launch-template"></a>
 
 When the instance starts, the user-data script automatically installs Fluent Bit, retrieves the instance ID from IMDSv2, syncs configuration from Amazon S3, and starts the Fluent Bit service. For more information about launch templates, see [Use Amazon EC2 launch templates with AWS Batch](launch-templates.md). For more information about IMDS configuration, see [Instance Metadata Service (IMDS) configuration](imds-compute-environments.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # Node
-<a name="API_Node"></a>
 
 Details about an individual managed node.
 

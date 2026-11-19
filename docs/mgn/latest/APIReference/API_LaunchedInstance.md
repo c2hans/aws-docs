@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_LaunchedInst
 ---
 
 # LaunchedInstance
-<a name="API_LaunchedInstance"></a>
 
 Launched instance.
 

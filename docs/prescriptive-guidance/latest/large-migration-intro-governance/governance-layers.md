@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Governance structure and cadence
-<a name="governance-layers"></a>
 
 Before the formal project kickoff, work with your project sponsor and stakeholders to establish mechanisms to communicate delivery progress for both the executive and non-executive stakeholders. Sharing the defined mechanism should be part of the project kickoff and should visually depict the communication cadence, objectives, and participants within each governance layer. The governance structure helps participants understand how the project will be managed, who the leaders are, how leaders will oversee the project, how decisions will be made, how and when issues will be escalated, and how progress will be measured.
 

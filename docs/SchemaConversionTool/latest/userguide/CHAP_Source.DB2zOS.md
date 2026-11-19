@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Connecting to IBM DB2 for z/OS Databases with the AWS Schema Conversion Tool
-<a name="CHAP_Source.DB2zOS"></a>
 
 You can use AWS SCT to convert schemas, code objects, and application code from IBM Db2 for z/OS to the following targets.
 + Amazon RDS for MySQL

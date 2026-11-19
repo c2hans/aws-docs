@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # DryRunResult
-<a name="API_DryRunResult"></a>
 
 Contains the estimated impact of creating, updating, or deleting an account-level retention policy. The analysis compares the effective retention period of each log group, which accounts for all account-level retention policies that apply to it, before and after the change. Log groups in the Delivery class are not included.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/estimate_consu
 ---
 
 # Estimate read and write capacity consumption with Amazon CloudWatch in Amazon Keyspaces
-<a name="estimate_consumption_cw"></a>
 
 To estimate and monitor read and write capacity consumption, you can use a CloudWatch dashboard. For more information about available metrics for Amazon Keyspaces, see [Amazon Keyspaces metrics and dimensions](metrics-dimensions.md).
 

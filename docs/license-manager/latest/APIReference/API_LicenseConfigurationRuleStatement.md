@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # LicenseConfigurationRuleStatement
-<a name="API_LicenseConfigurationRuleStatement"></a>
 
 License configuration rule statement.
 

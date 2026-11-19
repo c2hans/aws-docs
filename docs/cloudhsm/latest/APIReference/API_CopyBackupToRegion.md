@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_CopyBac
 ---
 
 # CopyBackupToRegion
-<a name="API_CopyBackupToRegion"></a>
 
 Copy an AWS CloudHSM cluster backup to a different region.
 

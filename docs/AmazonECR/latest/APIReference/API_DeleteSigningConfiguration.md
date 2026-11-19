@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Delete
 ---
 
 # DeleteSigningConfiguration
-<a name="API_DeleteSigningConfiguration"></a>
 
 Deletes the registry's signing configuration. Images pushed after deletion of the signing configuration will no longer be automatically signed.
 

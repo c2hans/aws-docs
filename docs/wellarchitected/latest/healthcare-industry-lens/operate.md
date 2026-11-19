@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 ---
 
 # Operate
-<a name="operate"></a>
 
 | HCL\_OPS5. How do you demonstrate continuous compliance? |
 | --- |

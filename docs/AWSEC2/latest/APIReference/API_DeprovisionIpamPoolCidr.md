@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Deprovisi
 ---
 
 # DeprovisionIpamPoolCidr
-<a name="API_DeprovisionIpamPoolCidr"></a>
 
 Deprovision a CIDR provisioned from an IPAM pool. If you deprovision a CIDR from a pool that has a source pool, the CIDR is recycled back into the source pool. For more information, see [Deprovision pool CIDRs](https://docs.aws.amazon.com/vpc/latest/ipam/depro-pool-cidr-ipam.html) in the *Amazon VPC IPAM User Guide*.
 

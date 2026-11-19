@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Inge
 ---
 
 # IngestConfigurationSummary
-<a name="API_IngestConfigurationSummary"></a>
 
 Summary information about an IngestConfiguration.
 

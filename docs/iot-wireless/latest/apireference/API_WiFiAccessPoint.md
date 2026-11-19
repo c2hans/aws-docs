@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_WiF
 ---
 
 # WiFiAccessPoint
-<a name="API_WiFiAccessPoint"></a>
 
 Wi-Fi access point.
 

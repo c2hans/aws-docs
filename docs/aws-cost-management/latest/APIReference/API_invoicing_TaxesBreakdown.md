@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TaxesBreakdown
-<a name="API_invoicing_TaxesBreakdown"></a>
 
  The details of the taxes.
 

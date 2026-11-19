@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/solutions-archi
 ---
 
 # Content Domain 4: Accelerate Workload Migration and Modernization
-<a name="solutions-architect-professional-02-domain4"></a>
 
 **Topics**
 + [Task 4.1: Select existing workloads and processes for potential migration.](#solutions-architect-professional-02-domain4-task1)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotLoc
 ---
 
 # ListBotLocales
-<a name="API_ListBotLocales"></a>
 
 Gets a list of locales for the specified bot.
 

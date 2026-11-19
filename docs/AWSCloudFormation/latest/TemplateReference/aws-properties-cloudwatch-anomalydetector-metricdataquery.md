@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::AnomalyDetector MetricDataQuery
-<a name="aws-properties-cloudwatch-anomalydetector-metricdataquery"></a>
 
 This structure is used in both `GetMetricData` and `PutMetricAlarm`. The supported use of this structure is different for those two operations.
 

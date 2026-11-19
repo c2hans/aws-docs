@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/apis.html
 ---
 
 # APIs supported by Amazon Bedrock
-<a name="apis"></a>
 
 **Inference APIs supported**
 

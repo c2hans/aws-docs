@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ManagedSearchConfiguration
-<a name="API_agent-runtime_ManagedSearchConfiguration"></a>
 
 Configuration for managed search in a knowledge base. Managed search automatically determines the best search strategy based on your data store configuration.
 

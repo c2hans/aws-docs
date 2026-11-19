@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoTTwinMaker::Entity DataValue
-<a name="aws-properties-iottwinmaker-entity-datavalue"></a>
 
 An object that specifies a value for a property.
 
@@ -85,7 +84,7 @@ An integer value.
 `ListValue`  <a name="cfn-iottwinmaker-entity-datavalue-listvalue"></a>
 A list of multiple values.
 *Required*: No
-*Type*: Array of [DataValue](#aws-properties-iottwinmaker-entity-datavalue)
+*Type*: Array of [DataValue](aws-properties-iottwinmaker-entity-datavalue.md)
 *Minimum*: `0`
 *Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -99,7 +98,7 @@ A long value.
 `MapValue`  <a name="cfn-iottwinmaker-entity-datavalue-mapvalue"></a>
 An object that maps strings to multiple DataValue objects.
 *Required*: No
-*Type*: Object of [DataValue](#aws-properties-iottwinmaker-entity-datavalue)
+*Type*: Object of [DataValue](aws-properties-iottwinmaker-entity-datavalue.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RelationshipValue`  <a name="cfn-iottwinmaker-entity-datavalue-relationshipvalue"></a>

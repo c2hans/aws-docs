@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # TagFilter
-<a name="API_TagFilter"></a>
 
 A tag filter that specifies a tag key and optional tag values for filtering log groups by tags.
 

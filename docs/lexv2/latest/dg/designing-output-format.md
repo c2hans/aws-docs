@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/designing-output-format.
 ---
 
 # Output transcript format
-<a name="designing-output-format"></a>
 
 The output transcript format is nearly the same as the input transcript format. However it also includes some customer metadata and a field listing segments that influenced the suggestion of intents and slot types. You can download the output transcript from the **Review** page in the console or using the Amazon Lex V2 API. For more information, see [Input transcript format](designing-input-format.md).
 

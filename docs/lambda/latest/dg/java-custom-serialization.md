@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/java-custom-serializati
 ---
 
 # Customize serialization for Lambda Java Event Functions
-<a name="java-custom-serialization"></a>
 
 The Lambda [Java managed runtimes](lambda-java.md#java-runtimes) support custom serialization for JSON events. Custom serialization can simplify your code and potentially improve performance.
 

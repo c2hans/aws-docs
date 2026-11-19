@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_De
 ---
 
 # DescribeResponsibilityTransfer
-<a name="API_DescribeResponsibilityTransfer"></a>
 
 Returns details for a transfer. A *transfer* is an arrangement between two management accounts where one account designates the other with specified responsibilities for their organization.
 

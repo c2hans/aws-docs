@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # KmsEncryptionSettings
-<a name="API_KmsEncryptionSettings"></a>
 
 A structure that contains the KMS encryption configuration for the policy store. The encryption settings determine what customer-managed KMS key will be used to encrypt all resources within the policy store, and any user-defined context key-value pairs to append during encryption processes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-priv
 ---
 
 # Modifying or unsubscribing from a private offer in AWS Marketplace
-<a name="buyer-private-offers-modifying"></a>
 
  You can update from standard subscriptions to private offers, and you can also modify certain existing private offers in AWS Marketplace. The process varies based on the agreement in place.
 

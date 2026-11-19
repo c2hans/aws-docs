@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops01-b
 ---
 
 # OPS01-BP03 Develop dependency telemetry
-<a name="ops01-bp03"></a>
 
  Every workload depends on components beyond your own code: other services of the workload, internal APIs, shared internal platforms, databases, third-party APIs, DNS, network paths, and managed cloud services. Dependency telemetry measures the health and performance of those components so you can attribute a problem to the right one, inside or outside your architecture. Without it, a failing dependency looks like a defect in whichever service alarmed first, cascading failures arrive as surprises, and you cannot predict what a change will affect.
 

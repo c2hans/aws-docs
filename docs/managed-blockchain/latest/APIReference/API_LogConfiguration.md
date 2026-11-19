@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # LogConfiguration
-<a name="API_LogConfiguration"></a>
 
 A configuration for logging events.
 

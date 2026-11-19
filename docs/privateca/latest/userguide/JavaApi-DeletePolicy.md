@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-Delet
 ---
 
 # DeletePolicy
-<a name="JavaApi-DeletePolicy"></a>
 
 The following Java sample shows how to use the [DeletePolicy](https://docs.aws.amazon.com/privateca/latest/APIReference/API_DeletePolicy.html) operation.
 

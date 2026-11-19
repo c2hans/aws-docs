@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS-
 ---
 
 # AWS-SSM-RemediationAutomation-ExecutionRolePolicy
-<a name="AWS-SSM-RemediationAutomation-ExecutionRolePolicy"></a>
 
 **Description**: Provides permissions for Remediating issues with SSM services by executing activities defined within Automation Documents, primarily used for running the Automation documents in a target account/region setup by remediating SSM services health across all nodes.
 

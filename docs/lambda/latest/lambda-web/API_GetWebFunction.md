@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_GetWebFunct
 ---
 
 # GetWebFunction
-<a name="API_GetWebFunction"></a>
 
 Retrieves details about a web function, including its current state and configuration.
 

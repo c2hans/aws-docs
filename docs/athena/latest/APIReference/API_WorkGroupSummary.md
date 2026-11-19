@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_WorkGroup
 ---
 
 # WorkGroupSummary
-<a name="API_WorkGroupSummary"></a>
 
 The summary information for the workgroup, which includes its name, state, description, and the date and time it was created.
 

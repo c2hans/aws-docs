@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/ven
 ---
 
 # Enabling logs
-<a name="vended-logs-enabling"></a>
 
 To enable logging, confirm the prerequisites, and then set up delivery in the console or with the CloudWatch Logs API.
 

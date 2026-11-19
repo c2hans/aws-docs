@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # PolandAdditionalInfo
-<a name="API_taxSettings_PolandAdditionalInfo"></a>
 
  Additional tax information associated with your TRN in Poland.
 

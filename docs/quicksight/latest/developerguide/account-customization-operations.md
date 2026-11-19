@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/account
 ---
 
 # Account customization operations
-<a name="account-customization-operations"></a>
 
 With account customization API operations, you can update and customize AWS Quick Sight account settings. For more information, see the following API operations.
 

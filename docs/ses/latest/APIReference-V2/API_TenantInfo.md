@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_TenantInf
 ---
 
 # TenantInfo
-<a name="API_TenantInfo"></a>
 
 A structure that contains basic information about a tenant.
 

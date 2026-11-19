@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/streams-using-a
 ---
 
 # Neptune Streams API Exceptions
-<a name="streams-using-api-exceptions"></a>
 
 The following table describes Neptune Streams exceptions.
 

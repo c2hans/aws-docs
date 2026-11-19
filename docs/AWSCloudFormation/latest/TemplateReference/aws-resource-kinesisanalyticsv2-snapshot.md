@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisAnalyticsV2::Snapshot
-<a name="aws-resource-kinesisanalyticsv2-snapshot"></a>
 
 Creates an enhanced snapshot of the state data of a running Managed Service for Apache Flink application. The application must be in the `RUNNING` status, use Apache Flink version 1.20 or later, and use the `ENHANCED_SNAPSHOTS` snapshot mode.
 

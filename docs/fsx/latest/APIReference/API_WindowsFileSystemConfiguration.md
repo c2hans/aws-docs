@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_WindowsFileS
 ---
 
 # WindowsFileSystemConfiguration
-<a name="API_WindowsFileSystemConfiguration"></a>
 
 The configuration for this Microsoft Windows file system.
 

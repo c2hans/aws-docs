@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/quickstart-rs.
 ---
 
 # Amazon DataZone quickstart with Amazon Redshift data
-<a name="quickstart-rs"></a>
 
 Complete the following quickstart steps to run through the complete data producer and data consumer workflows in Amazon DataZone with sample Amazon Redshift data.
 

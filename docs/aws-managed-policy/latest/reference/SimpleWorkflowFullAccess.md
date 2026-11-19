@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Simp
 ---
 
 # SimpleWorkflowFullAccess
-<a name="SimpleWorkflowFullAccess"></a>
 
 **Description**: Provides full access to the Simple Workflow configuration service.
 

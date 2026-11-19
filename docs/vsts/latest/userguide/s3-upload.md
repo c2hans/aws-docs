@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vsts/latest/userguide/s3-upload.html
 ---
 
 # Amazon S3 Upload task
-<a name="s3-upload"></a>
 
 ## Synopsis
 <a name="synopsis"></a>

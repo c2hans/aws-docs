@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # Receipt
-<a name="API_SSMContacts_Receipt"></a>
 
 Records events during an engagement.
 

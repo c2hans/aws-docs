@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AssignedP
 ---
 
 # AssignedPrivateIpAddress
-<a name="API_AssignedPrivateIpAddress"></a>
 
 Describes the private IP addresses assigned to a network interface.
 

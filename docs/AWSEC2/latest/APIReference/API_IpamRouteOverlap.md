@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamRoute
 ---
 
 # IpamRouteOverlap
-<a name="API_IpamRouteOverlap"></a>
 
 Contains information about an overlapping route detected for a BYOIP prefix.
 

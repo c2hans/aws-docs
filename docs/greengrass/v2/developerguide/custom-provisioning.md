@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/custom-prov
 ---
 
 # Install AWS IoT Greengrass Core software with custom resource provisioning
-<a name="custom-provisioning"></a>
 
 This feature is available for v2.4.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md).
 

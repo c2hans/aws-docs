@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Regis
 ---
 
 # RegisterApplicationRevision
-<a name="API_RegisterApplicationRevision"></a>
 
 Registers with AWS CodeDeploy a revision for the specified application.
 

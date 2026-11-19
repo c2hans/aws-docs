@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-d
 ---
 
 # s3-bucket-default-lock-enabled
-<a name="s3-bucket-default-lock-enabled"></a>
 
 Checks if the S3 bucket has lock enabled, by default. The rule is NON\_COMPLIANT if the lock is not enabled.
 

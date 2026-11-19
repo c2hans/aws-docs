@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport-prer
 ---
 
 # Prerequisites for exporting an instance from Amazon EC2
-<a name="vmexport-prerequisites"></a>
 
 To export a VM from Amazon EC2, first meet the following prerequisites:
 + Create an Amazon S3 bucket for storing the exported instances or choose an existing bucket. The bucket must be in the Region where you want export your VMs. Additionally, the bucket must belong to the AWS account where you are performing the export operation. For more information, see the [Amazon Simple Storage Service User Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/).

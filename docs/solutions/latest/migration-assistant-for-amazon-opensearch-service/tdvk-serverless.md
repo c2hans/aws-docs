@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Amazon OpenSearch Serverless NextGen considerations
-<a name="tdvk-serverless"></a>
 
 Amazon OpenSearch Serverless NextGen vector search collections (collection type `VECTORSEARCH`) accept vector fields, but they constrain how those fields can be defined. When the target is an Amazon OpenSearch Serverless NextGen collection, Migration Assistant applies additional vector compatibility transformations so the produced `knn_vector` mapping is valid for the collection:
 +  **Faiss HNSW for compatibility** — The `knn_vector` field is configured to use a Faiss HNSW method so the mapping aligns with what an Amazon OpenSearch Serverless NextGen vector search collection supports.

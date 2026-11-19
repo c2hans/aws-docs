@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Source-category filtering
-<a name="kg-source-category"></a>
 
 ## Why filtering matters
 <a name="kg-why-filtering"></a>

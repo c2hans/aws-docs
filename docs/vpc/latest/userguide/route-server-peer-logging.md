@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/route-server-peer-l
 ---
 
 # Route server peer logging
-<a name="route-server-peer-logging"></a>
 
 Use VPC Route Server peer logging when you need to:
 + Monitor BGP and BFD session health

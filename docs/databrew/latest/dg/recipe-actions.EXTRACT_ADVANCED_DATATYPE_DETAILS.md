@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.EXTRAC
 ---
 
 # EXTRACT\_ADVANCED\_DATATYPE\_DETAILS
-<a name="recipe-actions.EXTRACT_ADVANCED_DATATYPE_DETAILS"></a>
 
 Extracts details for the advanced data type. The details that you can extract depend on the pattern that is detected, as described in **Notes** below.
 

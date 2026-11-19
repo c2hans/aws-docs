@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/example_eve
 ---
 
 # Use `PutEvents` with an AWS SDK or CLI
-<a name="example_eventbridge_PutEvents_section"></a>
 
 The following code examples show how to use `PutEvents`.
 

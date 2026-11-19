@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-GrantPermissionsToIAMUser`
-<a name="automation-awssupport-grantpermissionstoiamuser"></a>
 
  **Description**
 

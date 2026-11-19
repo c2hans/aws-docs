@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/health/latest/APIReference/API_Lifecycle
 ---
 
 # LifecycleEvent
-<a name="API_LifecycleEvent"></a>
 
 A lifecycle event for an AWS service version, such as end-of-support or end-of-life.
 

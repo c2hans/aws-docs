@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Serve static content in an Amazon S3 bucket through a VPC by using Amazon CloudFront
-<a name="serve-static-content-in-an-amazon-s3-bucket-through-a-vpc-by-using-amazon-cloudfront"></a>
 
 *Angel Emmanuel Hernandez Cebrian, Amazon Web Services*
 

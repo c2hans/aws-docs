@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ListSub
 ---
 
 # ListSubscriptionTargets
-<a name="API_ListSubscriptionTargets"></a>
 
 Lists subscription targets in Amazon DataZone.
 

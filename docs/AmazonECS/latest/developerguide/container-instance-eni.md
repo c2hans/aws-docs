@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/containe
 ---
 
 # Increasing Amazon ECS Linux container instance network interfaces
-<a name="container-instance-eni"></a>
 
 **Note**
 This feature is not available on Fargate.

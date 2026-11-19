@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/tables-create.
 ---
 
 # Check table creation status in Amazon Keyspaces
-<a name="tables-create"></a>
 
 Amazon Keyspaces performs data definition language (DDL) operations, such as creating and deleting tables, asynchronously. You can monitor the creation status of new tables in the AWS Management Console, which indicates when a table is pending or active. You can also monitor the creation status of a new table programmatically by using the system schema table.
 

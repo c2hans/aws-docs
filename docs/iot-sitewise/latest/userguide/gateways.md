@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/gateways.h
 ---
 
 # Use AWS IoT SiteWise Edge gateways
-<a name="gateways"></a>
 
 AWS IoT SiteWise Edge extends cloud capabilities to industrial edge environments, enabling local data processing, analysis, and decision-making. SiteWise Edge integrates with AWS IoT SiteWise and other AWS services to provide comprehensive industrial IoT solutions. Gateways serve as the intermediary between your industrial equipment and AWS IoT SiteWise.
 

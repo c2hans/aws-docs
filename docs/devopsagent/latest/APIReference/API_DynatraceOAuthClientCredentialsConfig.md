@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Dyna
 ---
 
 # DynatraceOAuthClientCredentialsConfig
-<a name="API_DynatraceOAuthClientCredentialsConfig"></a>
 
 OAuth client credentials configuration for Dynatrace.
 

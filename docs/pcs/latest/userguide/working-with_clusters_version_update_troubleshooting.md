@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cluste
 ---
 
 # Troubleshooting AWS PCS cluster version updates
-<a name="working-with_clusters_version_update_troubleshooting"></a>
 
 This topic helps you identify and resolve common problems that can occur when updating the scheduler version on a cluster.
 + [Compute nodes fail to connect after update](#update-troubleshooting-nodes-fail)

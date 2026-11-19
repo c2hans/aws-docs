@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Core principles of serverless AI on AWS
-<a name="core-principles"></a>
 
 To fully leverage the power of AI in modern cloud-native systems, enterprises must adopt infrastructure that is scalable, modular, and event-driven by design. Serverless architecture on AWS aligns perfectly with the requirements of real-time AI systems. Serverless delivers compute on demand and serverless AI delivers intelligence on demand, with zero infrastructure management and maximum flexibility.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3D
 ---
 
 # Amazon S3 import formats for DynamoDB
-<a name="S3DataImport.Format"></a>
 
 DynamoDB can import data in three formats: CSV, DynamoDB JSON, and Amazon Ion.
 

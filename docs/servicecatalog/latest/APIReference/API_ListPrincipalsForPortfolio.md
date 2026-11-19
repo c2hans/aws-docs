@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # ListPrincipalsForPortfolio
-<a name="API_ListPrincipalsForPortfolio"></a>
 
 Lists all `PrincipalARN`s and corresponding `PrincipalType`s associated with the specified portfolio.
 

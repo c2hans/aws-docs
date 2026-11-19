@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_L
 ---
 
 # LoggingConfiguration
-<a name="API_LoggingConfiguration"></a>
 
 The `LoggingConfiguration` data type is used to set CloudWatch Logs options.
 

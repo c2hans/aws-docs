@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # IncidentRecord
-<a name="API_IncidentRecord"></a>
 
 The record of the incident that's created when an incident occurs.
 

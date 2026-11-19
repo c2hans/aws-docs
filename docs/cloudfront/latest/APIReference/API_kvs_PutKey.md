@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_P
 ---
 
 # PutKey
-<a name="API_kvs_PutKey"></a>
 
 Creates a new key-value pair or replaces the value of an existing key.
 

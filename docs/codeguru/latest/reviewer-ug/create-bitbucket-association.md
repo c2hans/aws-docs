@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/create-bitbu
 As of November 7, 2025, you can't create new repository associations in Amazon CodeGuru Reviewer. To learn about services with capabilities similar to CodeGuru Reviewer, see [Amazon CodeGuru Reviewer availability change](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/codeguru-reviewer-availability-change.html).
 
 # Create a Bitbucket repository association in Amazon CodeGuru Reviewer
-<a name="create-bitbucket-association"></a>
 
 You can create a Bitbucket repository association using the Amazon CodeGuru Reviewer console, the AWS CLI, or the CodeGuru Reviewer SDK. Before you create a Bitbucket repository association, you must have a Bitbucket repository and you must create a connection to it using the Developer Tools console. For more information, see [Create a connection](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-create.html) in the *Developer Tools User Guide*. For information about creating a Bitbucket repository, see [Create a Git repository](https://support.atlassian.com/bitbucket-cloud/docs/create-a-git-repository/) on the Bitbucket website.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_GetSink.html
 ---
 
 # GetSink
-<a name="API_GetSink"></a>
 
 Returns complete information about one monitoring account sink.
 

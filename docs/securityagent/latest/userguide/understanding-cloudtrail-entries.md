@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/understan
 ---
 
 # Example: AWS Security Agent log file entries
-<a name="understanding-cloudtrail-entries"></a>
 
 ## Understanding AWS Security Agent log file entries
 <a name="understanding_shared_aws_security_agent_log_file_entries"></a>

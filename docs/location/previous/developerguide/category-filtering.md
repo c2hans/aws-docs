@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/categor
 ---
 
 # Place categories and filtering results with Amazon Location
-<a name="category-filtering"></a>
 
 Places are categorized. If you search for a business, the business might be a `Restaurant`, for example. Even the results of a search for an address can be categorized by whether it was matched to an *address*, *street*, or *intersection*.
 

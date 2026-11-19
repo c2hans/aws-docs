@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-troublesho
 ---
 
 # OTA troubleshooting
-<a name="ota-troubleshooting"></a>
 
 The following sections contain information to help you troubleshoot issues with OTA updates.
 

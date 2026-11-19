@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/gsg/cancel_query.html
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # Cancel a query
-<a name="cancel_query"></a>
 
 If you run a query that is taking too long or is consuming excessive resources, cancel the query. For example, create a list of ticket sellers that includes the seller's name and quantity of tickets sold. The following query selects data from the `SALES` table and `USERS` table and joins the two tables by matching SELLERID and USERID in the WHERE clause.
 

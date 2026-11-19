@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Config Remove
-<a name="backend-appid-config-remove"></a>
 
 A configuration object that contains the authentication resources required for a user to access the Amplify Admin UI.
 

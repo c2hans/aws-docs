@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_JobDepende
 ---
 
 # JobDependency
-<a name="API_JobDependency"></a>
 
 An object that represents an AWS Batch job dependency.
 

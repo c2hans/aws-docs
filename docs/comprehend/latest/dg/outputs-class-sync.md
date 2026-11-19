@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/outputs-class-sync.
 ---
 
 # Outputs for real-time analysis
-<a name="outputs-class-sync"></a>
 
 ## Outputs for text inputs
 <a name="outputs-class-sync-text"></a>

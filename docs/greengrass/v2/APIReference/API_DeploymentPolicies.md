@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Deploymen
 ---
 
 # DeploymentPolicies
-<a name="API_DeploymentPolicies"></a>
 
 Contains information about policies that define how a deployment updates components and handles failure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Isoline
 ---
 
 # IsolineConnectionGeometry
-<a name="API_IsolineConnectionGeometry"></a>
 
 Represents the geometry of connections between non-contiguous parts of an isoline. These connections can be provided in either coordinate pairs (LineString) or encoded (Polyline) format, matching the format specified in the request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GetGroups.html
 ---
 
 # GetGroups
-<a name="API_GetGroups"></a>
 
 Retrieves all active group details.
 

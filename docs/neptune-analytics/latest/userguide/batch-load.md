@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/batch
 ---
 
 # Batch load
-<a name="batch-load"></a>
 
  Neptune Analytics supports a `CALL` procedure `neptune.load` to load data from Amazon S3, to insert new vertices, edges, and properties, or to update single cardinality vertex property values. It executes as a mutation query and does atomic writes. It uses the IAM credentials of the caller to access the data in Amazon S3. See [Create your IAM role for Amazon S3 access](bulk-import-create-from-s3.md#create-iam-role-for-s3-access) to set up the permissions.
 

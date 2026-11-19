@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/bandwidth-r
 ---
 
 # Bandwidth Recommendations
-<a name="bandwidth-recommendations-user-connections"></a>
 
 To optimize the performance of WorkSpaces Pools, make sure that your network bandwidth and latency can sustain your users' needs.
 

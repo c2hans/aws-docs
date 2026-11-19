@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Delet
 ---
 
 # DeleteProject
-<a name="API_DeleteProject"></a>
 
 Deletes an AWS Device Farm project, given the project ARN. You cannot delete a project if it has an active run or session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/c-cplusplus.html
 ---
 
 # C, C\+\+, and Fortran in AL2023
-<a name="c-cplusplus"></a>
 
 AL2023 includes both the GNU Compiler Collection (GCC) and the Clang frontend for LLVM (Low Level Virtual Machine).
 

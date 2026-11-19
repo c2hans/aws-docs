@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/working-with-visu
 ---
 
 # Analyses and reports: Visualizing data in AWS Quick Sight
-<a name="working-with-visuals"></a>
 
 Following, you can find descriptions of how to create and customize AWS Quick Sight charts, arrange charts in a dashboard, and more.
 

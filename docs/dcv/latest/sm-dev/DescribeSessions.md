@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-dev/DescribeSessions.html
 ---
 
 # DescribeSessions
-<a name="DescribeSessions"></a>
 
 Describes one or more Amazon DCV sessions.
 

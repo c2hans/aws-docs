@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_Types_
 ---
 
 # AWS Snowball Edge Device Management
-<a name="API_Types_AWS_Snow_Device_Management"></a>
 
 The following data types are supported by AWS Snowball Edge Device Management:
 +  [Capacity](API_devicemanagement_Capacity.md)

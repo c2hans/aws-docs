@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Traffic
 ---
 
 # TrafficSourceState
-<a name="API_TrafficSourceState"></a>
 
 Describes the state of a traffic source.
 

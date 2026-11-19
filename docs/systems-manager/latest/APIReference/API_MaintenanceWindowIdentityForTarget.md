@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # MaintenanceWindowIdentityForTarget
-<a name="API_MaintenanceWindowIdentityForTarget"></a>
 
 The maintenance window to which the specified target belongs.
 

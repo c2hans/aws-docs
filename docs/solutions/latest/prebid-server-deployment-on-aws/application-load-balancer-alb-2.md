@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Application Load Balancer (ALB)
-<a name="application-load-balancer-alb-2"></a>
 
 These alarms monitor the internet-facing ALB.
 

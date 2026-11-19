@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awss
 ---
 
 # Data retrieval APIs for AWS Service Catalog
-<a name="awsservicecatalog"></a>
 
 AWS Service Catalog provides the following APIs for data retrieval.
 

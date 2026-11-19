@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Suppresse
 ---
 
 # SuppressedDestination
-<a name="API_SuppressedDestination"></a>
 
 An object that contains information about an email address that is on the suppression list for your account or for a specific tenant.
 

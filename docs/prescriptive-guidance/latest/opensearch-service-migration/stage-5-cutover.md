@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Stage 5 - Cutover
-<a name="stage-5-cutover"></a>
 
 This stage discusses various approaches that you can employ to cut over from your current Elasticsearch or OpenSearch environment to the target Amazon OpenSearch Service domain. Cutover can be done in two steps:
 + Establish a data synchronization mechanism to keep target environment synchronized with the source.

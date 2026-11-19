@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Infrastructure Security
-<a name="infrastructure-security"></a>
 
 The solution implements multiple layers of infrastructure security controls.
 

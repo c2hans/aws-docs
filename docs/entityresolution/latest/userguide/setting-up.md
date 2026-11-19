@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/settin
 ---
 
 # Set up AWS Entity Resolution
-<a name="setting-up"></a>
 
 Before you use AWS Entity Resolution for the first time, sign up for AWS and create an administrator user to create roles.
 

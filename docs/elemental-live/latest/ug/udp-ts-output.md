@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/udp-ts-output.h
 ---
 
 # UDP/TS output
-<a name="udp-ts-output"></a>
 
 UDP/TS output supports passthrough of the SCTE-35 messages, but it does not support creation of a manifest. Therefore, workable options are:
 

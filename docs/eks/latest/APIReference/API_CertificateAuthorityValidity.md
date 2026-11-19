@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_CertificateA
 ---
 
 # CertificateAuthorityValidity
-<a name="API_CertificateAuthorityValidity"></a>
 
 The validity period of a certificate authority's certificate.
 

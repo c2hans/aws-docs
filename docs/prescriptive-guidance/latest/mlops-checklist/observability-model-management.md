@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mlops-check
 ---
 
 # 3. Observability and model management
-<a name="observability-model-management"></a>
 
 The observability and model management section of the checklist encompasses model version control and linage tracking across the entire ML system. Model versioning helps to track and control all changes applied to a model so that you can recover a previous version when needed. Lineage tracking provides a view into model inflows and outflows. Another key benefit of lineage tracking is point-in-time recovery (PITR), which automates deployment and system recovery.
 

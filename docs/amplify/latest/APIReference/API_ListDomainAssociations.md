@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_ListDoma
 ---
 
 # ListDomainAssociations
-<a name="API_ListDomainAssociations"></a>
 
 Returns the domain associations for an Amplify app.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListT
 ---
 
 # ListTestRuns
-<a name="API_ListTestRuns"></a>
 
 Lists the runs of a test, or all test runs for a service.
 

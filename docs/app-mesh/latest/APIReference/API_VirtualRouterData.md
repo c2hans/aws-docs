@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualRouterData
-<a name="API_VirtualRouterData"></a>
 
 An object that represents a virtual router returned by a describe operation.
 

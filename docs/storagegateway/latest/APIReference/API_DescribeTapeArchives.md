@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DescribeTapeArchives
-<a name="API_DescribeTapeArchives"></a>
 
 Returns a description of specified virtual tapes in the virtual tape shelf (VTS). This operation is only supported in the tape gateway type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/im-xref.ht
 ---
 
 # .im
-<a name="im-xref"></a>
 
 See [.im (Isle of Man)](im.md).
 

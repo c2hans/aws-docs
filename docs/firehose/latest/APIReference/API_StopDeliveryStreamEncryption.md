@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_StopDel
 ---
 
 # StopDeliveryStreamEncryption
-<a name="API_StopDeliveryStreamEncryption"></a>
 
 Disables server-side encryption (SSE) for the Firehose stream.
 

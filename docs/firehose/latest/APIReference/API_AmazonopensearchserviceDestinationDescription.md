@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Amazono
 ---
 
 # AmazonopensearchserviceDestinationDescription
-<a name="API_AmazonopensearchserviceDestinationDescription"></a>
 
 The destination description in Amazon OpenSearch Service.
 

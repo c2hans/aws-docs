@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create an approval process for firewall requests during a rehost migration to AWS
-<a name="create-an-approval-process-for-firewall-requests-during-a-rehost-migration-to-aws"></a>
 
 *Srikanth Rangavajhala, Amazon Web Services*
 

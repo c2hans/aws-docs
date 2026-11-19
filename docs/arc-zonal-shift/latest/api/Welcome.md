@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Welcome to the API Reference Guide for zonal shift and zonal autoshift in Amazon Application Recovery Controller (ARC).
 
@@ -13,4 +12,4 @@ You can also configure zonal autoshift for supported load balancer resources. Zo
 
 For more information about using zonal shift and zonal autoshift, see the [Amazon Application Recovery Controller Developer Guide](https://docs.aws.amazon.com/r53recovery/latest/dg/what-is-route53-recovery.html).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/event-api-monito
 ---
 
 # Using CloudWatch to monitor and log Event API data
-<a name="event-api-monitoring"></a>
 
 You can log and debug your Event API using CloudWatch metrics and CloudWatch logs. These tools enable developers to monitor performance, troubleshoot issues, and optimize their AWS AppSync API operations effectively.
 

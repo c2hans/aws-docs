@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Snowf
 ---
 
 # SnowflakeParameters
-<a name="API_SnowflakeParameters"></a>
 
 The parameters for Snowflake.
 

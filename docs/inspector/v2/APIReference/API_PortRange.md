@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_PortRange.
 ---
 
 # PortRange
-<a name="API_PortRange"></a>
 
 Details about the port range associated with a finding.
 

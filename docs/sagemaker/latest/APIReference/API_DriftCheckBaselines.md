@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DriftC
 ---
 
 # DriftCheckBaselines
-<a name="API_DriftCheckBaselines"></a>
 
 Represents the drift check baselines that can be used when the model monitor is set using the model package.
 

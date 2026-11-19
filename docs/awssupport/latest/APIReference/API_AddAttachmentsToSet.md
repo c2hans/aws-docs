@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_AddAt
 ---
 
 # AddAttachmentsToSet
-<a name="API_AddAttachmentsToSet"></a>
 
 Adds one or more attachments to an attachment set.
 

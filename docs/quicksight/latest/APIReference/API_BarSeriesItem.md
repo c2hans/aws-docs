@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BarSe
 ---
 
 # BarSeriesItem
-<a name="API_BarSeriesItem"></a>
 
 The series item configuration of a `BarChartVisual`.
 

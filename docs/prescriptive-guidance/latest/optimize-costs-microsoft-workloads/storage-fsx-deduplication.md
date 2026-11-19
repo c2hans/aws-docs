@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Enable data deduplication in Amazon FSx
-<a name="storage-fsx-deduplication"></a>
 
 ## Overview
 <a name="storage-fsx-deduplication-overview"></a>

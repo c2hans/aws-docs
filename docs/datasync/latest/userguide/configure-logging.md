@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/configure-logg
 ---
 
 # Monitoring data transfers with Amazon CloudWatch Logs
-<a name="configure-logging"></a>
 
 You can monitor your AWS DataSync transfer by using CloudWatch Logs. We recommend that you configure your task to at least log basic information (such as transfer errors).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # CloudWatchOutputConfig
-<a name="API_CloudWatchOutputConfig"></a>
 
 Configuration options for sending command output to Amazon CloudWatch Logs.
 

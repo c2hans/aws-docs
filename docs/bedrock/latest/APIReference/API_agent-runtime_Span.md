@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # Span
-<a name="API_agent-runtime_Span"></a>
 
 Contains information about where the text with a citation begins and ends in the generated output.
 

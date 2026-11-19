@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # 02-write-data.py
-<a name="DAX.client.run-application-python.02-write-data"></a>
 
 The `02-write-data.py` program writes test data to `TryDaxTable`.
 

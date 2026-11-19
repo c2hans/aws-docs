@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ListConfi
 ---
 
 # ListConfigurationRecorders
-<a name="API_ListConfigurationRecorders"></a>
 
 Returns a list of configuration recorders depending on the filters you specify.
 

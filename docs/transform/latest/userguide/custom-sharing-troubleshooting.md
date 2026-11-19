@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-sharin
 ---
 
 # Troubleshooting shared transformation definitions
-<a name="custom-sharing-troubleshooting"></a>
 
 The following table lists messages that you might see, what causes them, and what to do.
 

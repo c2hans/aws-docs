@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::GameLift::ContainerGroupDefinition SupportContainerDefinition
-<a name="aws-properties-gamelift-containergroupdefinition-supportcontainerdefinition"></a>
 
 Describes a support container in a container group. A support container might be in a game server container group or a per-instance container group. Support containers don't run game server processes.
 

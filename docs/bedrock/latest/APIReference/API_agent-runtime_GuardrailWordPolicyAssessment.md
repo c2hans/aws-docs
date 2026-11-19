@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # GuardrailWordPolicyAssessment
-<a name="API_agent-runtime_GuardrailWordPolicyAssessment"></a>
 
 The assessment details for words defined in the Guardrail filter.
 

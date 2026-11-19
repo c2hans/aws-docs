@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/ntier
 ---
 
 # N-Tier Visibility dashboard
-<a name="ntier_overview"></a>
 
 You can user the n-tier dashboard to navigate through partner onboarding and collaboration. The N-Tier Visibility dashboard displays the following tabs:
 + **Partner Network** – Displays the summary and onboarding status of your partners. You can also invite partners to onboard to N-Tier Visibility.

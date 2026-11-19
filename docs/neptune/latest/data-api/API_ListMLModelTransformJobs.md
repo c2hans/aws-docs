@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_ListMLModelT
 ---
 
 # ListMLModelTransformJobs
-<a name="API_ListMLModelTransformJobs"></a>
 
 Returns a list of model transform job IDs. See [Use a trained model to generate new model artifacts](https://docs.aws.amazon.com/neptune/latest/userguide/machine-learning-model-transform.html).
 

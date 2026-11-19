@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # NotifyRecommendationsReceivedError
-<a name="API_amazon-q-connect_NotifyRecommendationsReceivedError"></a>
 
 An error occurred when creating a recommendation.
 

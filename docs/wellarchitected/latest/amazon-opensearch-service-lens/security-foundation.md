@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # Security foundation
-<a name="security-foundation"></a>
 
 | AOSSEC01: How do you implement robust security measures to protect your OpenSearch Service domain? |
 | --- |

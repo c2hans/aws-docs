@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/rho-configuring.html
 ---
 
 # Configuring Rho
-<a name="rho-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Rho, you must meet the following requirements:
 

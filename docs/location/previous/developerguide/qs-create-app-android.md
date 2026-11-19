@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-crea
 ---
 
 # Create the base Android application to use Amazon Location
-<a name="qs-create-app-android"></a>
 
 In this tutorial, you will create an Android application that embeds a map and allows the user to find what's at a location on the map.
 

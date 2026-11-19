@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/faqs.html
 ---
 
 # FAQs
-<a name="faqs"></a>
 
  Use these common questions and answers to assist in the custom integration.
 

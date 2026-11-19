@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/bargains.h
 ---
 
 # .bargains
-<a name="bargains"></a>
 
 Used for information about sales and promotions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_a
 ---
 
 # Troubleshooting AWS Managed Microsoft AD
-<a name="ms_ad_troubleshooting"></a>
 
 The following can help you troubleshoot some common problems you might encounter when creating or using your AWS Managed Microsoft AD Active Directory.
 

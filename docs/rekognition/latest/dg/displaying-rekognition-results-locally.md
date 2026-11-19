@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/displaying-rekogni
 ---
 
 # Displaying Rekognition results with Kinesis Video Streams locally
-<a name="displaying-rekognition-results-locally"></a>
 
 **Note**
 Streaming Video and Bulk Image Analysis is no longer available to new customers. For more information, see [Amazon Rekognition feature availability changes](rekognition-availability-changes.md).

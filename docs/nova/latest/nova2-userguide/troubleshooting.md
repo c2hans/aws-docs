@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/troubleshoot
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 This section provides solutions to common issues when working with Amazon Nova models.
 

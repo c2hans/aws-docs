@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_Cre
 ---
 
 # Use `CreatePolicyVersion` with an AWS SDK or CLI
-<a name="iam_example_iam_CreatePolicyVersion_section"></a>
 
 The following code examples show how to use `CreatePolicyVersion`.
 

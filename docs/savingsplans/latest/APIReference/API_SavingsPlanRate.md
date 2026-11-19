@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_Sav
 ---
 
 # SavingsPlanRate
-<a name="API_SavingsPlanRate"></a>
 
 Information about a Savings Plan rate.
 

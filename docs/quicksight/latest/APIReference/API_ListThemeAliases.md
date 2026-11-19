@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListT
 ---
 
 # ListThemeAliases
-<a name="API_ListThemeAliases"></a>
 
 Lists all the aliases of a theme.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Associat
 ---
 
 # AssociateQueueEmailAddresses
-<a name="API_AssociateQueueEmailAddresses"></a>
 
 Associates a set of email addresses with a queue to enable agents to select different "From" (system) email addresses when replying to inbound email contacts or initiating outbound email contacts. This allows agents to handle email contacts across different brands and business units within the same queue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_GetSamplingStatistic
 ---
 
 # GetSamplingStatisticSummaries
-<a name="API_GetSamplingStatisticSummaries"></a>
 
 Retrieves information about recent sampling results for all sampling rules.
 

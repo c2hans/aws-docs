@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/apireference/tags-re
 ---
 
 # Tags resource-arn
-<a name="tags-resource-arn"></a>
 
 Manage tags for AWS Elemental MediaPackage channels and endpoints. Tags are key-value pairs that you can associate with Amazon resources. MediaPackage offers tagging support for channel and endpoint resources. For information about tagging, see [Tagging Resources in AWS Elemental MediaPackage](https://docs.aws.amazon.com/mediapackage/latest/ug/tagging.html).
 

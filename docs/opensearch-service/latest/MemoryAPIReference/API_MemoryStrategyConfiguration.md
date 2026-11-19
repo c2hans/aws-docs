@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # MemoryStrategyConfiguration
-<a name="API_MemoryStrategyConfiguration"></a>
 
 Settings for a memory strategy. The defaults described here apply when you create a strategy. In `UpdateSpace`, a member you omit for a kept strategy keeps its current value.
 

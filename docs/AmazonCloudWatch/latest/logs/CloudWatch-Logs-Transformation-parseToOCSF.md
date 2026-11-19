@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-
 ---
 
 # parseToOCSF
-<a name="CloudWatch-Logs-Transformation-parseToOCSF"></a>
 
 The `parseToOCSF` processor converts logs into Open Cybersecurity Schema Framework (OCSF) events. OCSF is an open standard that provides a common schema for security data, enabling better interoperability and analysis across different security tools and platforms.
 

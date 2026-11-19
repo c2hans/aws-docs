@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/userguide/multi-account.html
 ---
 
 # Working with multi-account experiments for AWS FIS
-<a name="multi-account"></a>
 
 You can create and manage multi-account experiment templates using the AWS FIS console or the command line. You create a multi-account experiment by specifying the account targeting experiment option as `"multi-account"`, and adding target account configurations. After you create a multi-account experiment template, you can use it to run an experiment.
 

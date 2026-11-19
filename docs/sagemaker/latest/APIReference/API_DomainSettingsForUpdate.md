@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Domain
 ---
 
 # DomainSettingsForUpdate
-<a name="API_DomainSettingsForUpdate"></a>
 
 A collection of `Domain` configuration settings to update.
 

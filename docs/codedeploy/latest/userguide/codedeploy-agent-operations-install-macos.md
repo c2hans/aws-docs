@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 ---
 
 # Install the CodeDeploy agent for macOS
-<a name="codedeploy-agent-operations-install-macos"></a>
 
 Sign in to the instance, and run the following commands, one at a time.
 

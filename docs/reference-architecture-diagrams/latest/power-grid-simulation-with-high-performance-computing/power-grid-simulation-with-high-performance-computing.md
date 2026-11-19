@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/p
 ---
 
 # Power Grid Simulation with High Performance Computing on AWS
-<a name="power-grid-simulation-with-high-performance-computing"></a>
 
 Publication date: **August 10, 2023 ([Diagram history](#diagram-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_Subnet.html
 ---
 
 # Subnet
-<a name="API_Subnet"></a>
 
 Specifies a subnet.
 

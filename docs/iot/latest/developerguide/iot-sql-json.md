@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-json.h
 ---
 
 # JSON extensions
-<a name="iot-sql-json"></a>
 
 You can use the following extensions to ANSI SQL syntax to facilitate work with nested JSON objects.
 

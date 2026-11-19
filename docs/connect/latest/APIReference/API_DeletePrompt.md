@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeletePr
 ---
 
 # DeletePrompt
-<a name="API_DeletePrompt"></a>
 
 Deletes a prompt.
 

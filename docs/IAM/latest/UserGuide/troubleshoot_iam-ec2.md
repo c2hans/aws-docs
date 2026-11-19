@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_iam-ec
 ---
 
 # Troubleshoot IAM and Amazon EC2
-<a name="troubleshoot_iam-ec2"></a>
 
 The following information can help you troubleshoot IAM issues with Amazon EC2.
 

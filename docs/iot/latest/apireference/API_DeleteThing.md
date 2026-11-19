@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteThing.
 ---
 
 # DeleteThing
-<a name="API_DeleteThing"></a>
 
 Deletes the specified thing. Returns successfully with no error if the deletion is successful or you specify a thing that doesn't exist.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/functional-di
 ---
 
 # Functional differences: Amazon DocumentDB and MongoDB
-<a name="functional-differences"></a>
 
 The following are the functional differences between Amazon DocumentDB (with MongoDB compatibility) and MongoDB.
 

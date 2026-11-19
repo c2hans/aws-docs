@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ClonedBlueGreenScheduledAction
-<a name="API_ClonedBlueGreenScheduledAction"></a>
 
 An action that the service takes automatically at a scheduled time during a cloned blue/green upgrade.
 

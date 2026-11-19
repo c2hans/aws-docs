@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingS
 ---
 
 # Creating and connecting to a MySQL DB instance
-<a name="CHAP_GettingStarted.CreatingConnecting.MySQL"></a>
 
 This tutorial creates an EC2 instance and an RDS for MySQL DB instance. The tutorial shows you how to access the DB instance from the EC2 instance using a standard MySQL client. As a best practice, this tutorial creates a private DB instance in a virtual private cloud (VPC). In most cases, other resources in the same VPC, such as EC2 instances, can access the DB instance, but resources outside of the VPC can't access it.
 

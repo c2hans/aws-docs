@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/using-variables-i
 ---
 
 # Using variables in your job settings
-<a name="using-variables-in-your-job-settings"></a>
 
 You can use variables, also called *format identifiers*, in your job settings. Format identifiers are values that you can put in your job settings that resolve differently in your outputs depending on the characteristics of the input files or the job. They are particularly useful in output presets, job templates, and jobs that you intend to duplicate and re-use. Note that variables are case sensitive.
 

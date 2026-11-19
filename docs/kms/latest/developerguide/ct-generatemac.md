@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/ct-generatemac
 ---
 
 # GenerateMac
-<a name="ct-generatemac"></a>
 
 The following example shows an AWS CloudTrail log entry for the [GenerateMac](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateMac.html) operation.
 

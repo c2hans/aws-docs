@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/dyn
 ---
 
 # Amazon DynamoDB controls
-<a name="dynamodb-rules"></a>
 
 **Topics**
 + [[CT.DYNAMODB.PR.1] Require that point-in-time recovery for an Amazon DynamoDB table is activated](#ct-dynamodb-pr-1-description)

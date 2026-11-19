@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/get-secrets-manager-value.h
 ---
 
 # Get a value from AWS Secrets Manager
-<a name="get-secrets-manager-value"></a>
 
 To use values from AWS Secrets Manager in your AWS CDK app, use the [`fromSecretAttributes()`](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_secretsmanager.Secret.html#static-fromwbrsecretwbrattributesscope-id-attrs) method. It represents a value that is retrieved from Secrets Manager and used at AWS CloudFormation deployment time. The following is an example:
 

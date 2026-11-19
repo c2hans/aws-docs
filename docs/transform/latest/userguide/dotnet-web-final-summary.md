@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-web-fi
 ---
 
 # Final summary
-<a name="dotnet-web-final-summary"></a>
 
 When transformation completes, the *Final summary* phase shows a summary of transformation. Artifacts are available for download and you can transform further, hand off transformed repositories to developers, or complete the job.
 

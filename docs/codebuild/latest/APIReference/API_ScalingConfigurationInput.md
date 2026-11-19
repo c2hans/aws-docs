@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Scalin
 ---
 
 # ScalingConfigurationInput
-<a name="API_ScalingConfigurationInput"></a>
 
 The scaling configuration input of a compute fleet.
 

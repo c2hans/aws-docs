@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/repo-metadata-signing.ht
 ---
 
 # Repository metadata signing in AL2023
-<a name="repo-metadata-signing"></a>
 
 Starting with release `2023.11.20260406`, AL2023 repositories include cryptographic signatures for repository metadata. Each repository's `repomd.xml` file is accompanied by a detached GPG signature file (`repomd.xml.asc`) that you can use to verify the authenticity and integrity of the repository metadata before packages are downloaded.
 

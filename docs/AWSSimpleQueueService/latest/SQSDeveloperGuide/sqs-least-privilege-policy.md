@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Access management for encrypted Amazon SQS queues with least privilege policies
-<a name="sqs-least-privilege-policy"></a>
 
 You can use Amazon SQS to exchange sensitive data between applications by using server-side encryption (SSE) integrated with [AWS Key Management Service (KMS)](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html). With the integration of Amazon SQS and AWS KMS, you can centrally manage the keys that protect Amazon SQS, as well as the keys that protect your other AWS resources.
 

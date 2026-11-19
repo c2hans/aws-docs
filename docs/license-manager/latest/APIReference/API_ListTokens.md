@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ListTokens
-<a name="API_ListTokens"></a>
 
 Lists your tokens.
 

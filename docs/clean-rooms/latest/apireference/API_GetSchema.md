@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetS
 ---
 
 # GetSchema
-<a name="API_GetSchema"></a>
 
 Retrieves the schema for a relation within a collaboration.
 

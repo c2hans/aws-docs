@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Post-deployment configuration tasks
-<a name="post-deployment-configuration-tasks"></a>
 
 After you successfully deployed the stacks, complete the following tasks.
 +  [Configure the IAM Identity Center](idc-config.md)

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-static-capacit
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Static Capacity Node Pools in EKS Auto Mode
-<a name="auto-static-capacity"></a>
 
 Amazon EKS Auto Mode supports static capacity node pools that maintain a fixed number of nodes regardless of pod demand. Static capacity node pools are useful for workloads that require predictable capacity, reserved instances, or specific compliance requirements where you need to maintain a consistent infrastructure footprint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/identit
 ---
 
 # Identity and access management for License Manager
-<a name="identity-access-management"></a>
 
 AWS Identity and Access Management (IAM) is an AWS service that helps an administrator securely control access to AWS resources. IAM administrators control who can be authenticated (signed in) and authorized (have permissions) to use AWS resources. With IAM you can create users and groups under your AWS account. You control the permissions that users have to perform tasks using AWS resources. You can use IAM for no additional charge.
 

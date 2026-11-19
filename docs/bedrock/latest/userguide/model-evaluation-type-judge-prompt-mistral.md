@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Mistral Large
-<a name="model-evaluation-type-judge-prompt-mistral"></a>
 
 Prompts used with Mistral Large.
 

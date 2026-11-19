@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/reference.html
 ---
 
 # Amazon SageMaker AI Reference
-<a name="reference"></a>
 
 This chapter provides reference material for Amazon SageMaker AI. This includes references for interacting with SageMaker AI programmatically, SageMaker images, and AWS SDK for Python (Boto3) troubleshooting.
 

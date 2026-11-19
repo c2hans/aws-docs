@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/auto-scaling_exam
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Learn the basics of Auto Scaling with an AWS SDK
-<a name="auto-scaling_example_auto-scaling_Scenario_GroupsAndInstances_section"></a>
 
 The following code examples show how to:
 + Create an Amazon EC2 Auto Scaling group with a launch template and Availability Zones, and get information about running instances.

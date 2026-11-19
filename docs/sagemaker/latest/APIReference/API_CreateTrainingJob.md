@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateTrainingJob
-<a name="API_CreateTrainingJob"></a>
 
 Starts a model training job. After training completes, SageMaker saves the resulting model artifacts to an Amazon S3 location that you specify.
 

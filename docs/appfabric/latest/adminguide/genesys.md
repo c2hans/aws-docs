@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/genesys.html
 ---
 
 # Configure Genesys Cloud for AppFabric
-<a name="genesys"></a>
 
 Genesys Cloud creates fluid conversations across digital and voice channels in an easy, all-in-one interface. This positions companies to provide exceptional experiences for employees and customers and reap the benefits of speedy deployments, reduced complexity and simple administration.
 

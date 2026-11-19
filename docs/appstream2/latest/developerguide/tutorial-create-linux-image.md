@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/tutoria
 ---
 
 # Tutorial: Create a Custom Linux-Based WorkSpaces Applications Image
-<a name="tutorial-create-linux-image"></a>
 
 This tutorial describes how to create a custom Linux-based Amazon WorkSpaces Applications image that contains applications which you can stream to your users.
 

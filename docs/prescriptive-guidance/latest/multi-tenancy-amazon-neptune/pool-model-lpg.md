@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/multi-tenan
 ---
 
 # Pool model for labeled property graphs
-<a name="pool-model-lpg"></a>
 
 There are three different approaches to the pool model for LPGs on Amazon Neptune:
 + **Property strategy** ‒ Choose the property strategy when you need to prioritize use of established library constructs such as the Apache TinkerPop Gremlin language's [PartitionStrategy](https://tinkerpop.apache.org/docs/current/reference/#partitionstrategy) over performance.

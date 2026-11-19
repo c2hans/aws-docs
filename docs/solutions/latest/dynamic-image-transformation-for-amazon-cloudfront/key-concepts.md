@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Key concepts
-<a name="key-concepts"></a>
 
 ## Origins
 <a name="origins"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam_vpc_e
 ---
 
 # Create a VPC endpoint for IAM
-<a name="reference_iam_vpc_endpoint_create"></a>
 
 To start using IAM with your VPC, create an interface VPC endpoint for IAM. For more information, see [Access an AWS service using an interface VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) in the *Amazon VPC User Guide*.
 

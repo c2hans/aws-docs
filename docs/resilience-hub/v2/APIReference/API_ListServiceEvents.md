@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListS
 ---
 
 # ListServiceEvents
-<a name="API_ListServiceEvents"></a>
 
 Lists events for a service.
 

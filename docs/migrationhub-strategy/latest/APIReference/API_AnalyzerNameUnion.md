@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # AnalyzerNameUnion
-<a name="API_AnalyzerNameUnion"></a>
 
 The combination of the existing analyzers.
 

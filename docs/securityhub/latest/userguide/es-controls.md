@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/es-controls
 ---
 
 # Security Hub CSPM for Elasticsearch
-<a name="es-controls"></a>
 
 These AWS Security Hub CSPM controls evaluate the Elasticsearch service and resources.
 

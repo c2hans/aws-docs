@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ListCapabili
 ---
 
 # ListCapabilities
-<a name="API_ListCapabilities"></a>
 
 Lists all managed capabilities in your Amazon EKS cluster. You can use this operation to get an overview of all capabilities and their current status.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/adminguide/custom-kms-key.h
 This guide documents the new AWS Wickr administration console, released on March 13, 2025. For documentation on the classic version of the AWS Wickr administration console, see [Classic Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide-classic/what-is-wickr.html).
 
 # Custom KMS key setup for data retention service
-<a name="custom-kms-key"></a>
 
 To use your own KMS keys with the data retention service, create keys with the following configurations before launching the product:
 

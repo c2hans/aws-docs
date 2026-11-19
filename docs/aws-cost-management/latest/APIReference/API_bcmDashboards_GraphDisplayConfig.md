@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GraphDisplayConfig
-<a name="API_bcmDashboards_GraphDisplayConfig"></a>
 
 Defines the visual representation settings for widget data, including the visualization type, styling options, and display preferences for different metric types.
 

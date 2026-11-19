@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # Tag
-<a name="API_media-pipelines-chime_Tag"></a>
 
 A key/value pair that grants users access to meeting resources.
 

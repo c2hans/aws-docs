@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_B
 ---
 
 # BillingDetails
-<a name="API_BillingDetails"></a>
 
 An object that describes workflow billing details.
 

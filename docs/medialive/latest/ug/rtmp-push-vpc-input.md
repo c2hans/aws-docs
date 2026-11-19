@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/rtmp-push-vpc-input.
 ---
 
 # Setting up an RTMP VPC input
-<a name="rtmp-push-vpc-input"></a>
 
 This section describes how to set up content that uses the RTMP Push protocol to deliver source content from an upstream system that is in your VPC from Amazon Virtual Private Cloud (Amazon VPC). This section describes how to set up the source content on the upstream system, and how to create an input that connects the upstream system to MediaLive.
 

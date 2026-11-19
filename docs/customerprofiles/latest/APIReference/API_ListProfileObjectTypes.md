@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListProfileObjectTypes
-<a name="API_connect-customer-profiles_ListProfileObjectTypes"></a>
 
 Lists all of the templates available within the service.
 

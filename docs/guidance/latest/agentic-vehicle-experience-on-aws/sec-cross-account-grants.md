@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Cross-account grant model
-<a name="sec-cross-account-grants"></a>
 
 When AVX and ADP are deployed in separate AWS accounts — the production topology — data access from AVX to ADP crosses an account boundary. The agent layer holds no long-lived credentials into the ADP account; access is governed by two grant mechanisms and is fully auditable via CloudTrail data events.
 

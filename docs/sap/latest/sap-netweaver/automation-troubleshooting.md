@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/automation-trou
 ---
 
 # Automation troubleshooting
-<a name="automation-troubleshooting"></a>
 
 If you encounter errors related to SAP automation, refer to the [Troubleshooting Systems Manager Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-troubleshooting.html) documentation in the * AWS Systems Manager User Guide*. There, you will find an action-specific failures reference as well as information about common errors such as access denied errors and errors related to timed out or failed statuses after the execution started.
 

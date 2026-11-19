@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/npm-commands.html
 ---
 
 # npm command support
-<a name="npm-commands"></a>
 
 The following sections summarize the npm commands that are supported, by CodeArtifact repositories, in addition to specific commands that are not supported.
 

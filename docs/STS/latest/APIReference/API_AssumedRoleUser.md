@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumedRoleU
 ---
 
 # AssumedRoleUser
-<a name="API_AssumedRoleUser"></a>
 
 The identifiers for the temporary security credentials that the operation returns.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2C
 ---
 
 # AwsEc2ClientVpnEndpointAuthenticationOptionsDetails
-<a name="API_AwsEc2ClientVpnEndpointAuthenticationOptionsDetails"></a>
 
  Information about the authentication method used by the Client VPN endpoint.
 

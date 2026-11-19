@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/fsx-aws-managed-
 ---
 
 # Using Amazon FSx with AWS Directory Service for Microsoft Active Directory
-<a name="fsx-aws-managed-ad"></a>
 
 AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD) provides fully managed, highly available, actual Active Directory directories in the cloud. You can use these Active Directory directories in your workload deployment.
 

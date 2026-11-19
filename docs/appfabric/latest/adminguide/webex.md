@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/webex.html
 ---
 
 # Configure Webex by Cisco for AppFabric
-<a name="webex"></a>
 
 Cisco is a worldwide leader in technology that powers the Internet. Cisco inspires new possibilities by reimagining your applications, securing your data, transforming your infrastructure, and empowering your teams for a global and inclusive future.
 

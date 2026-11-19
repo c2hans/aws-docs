@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/developing-blueprints-ove
 ---
 
 # Overview of developing blueprints
-<a name="developing-blueprints-overview"></a>
 
 The first step in your development process is to identify a common use case that would benefit from a blueprint. A typical use case involves a recurring ETL problem that you believe should be solved in a general manner. Next, design a blueprint that implements the generalized use case, and define the blueprint input parameters that together can define a specific use case from the generalized use case.
 

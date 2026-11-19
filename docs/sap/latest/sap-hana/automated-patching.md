@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/automated-patching.h
 ---
 
 # Automated patching for SAP HANA
-<a name="automated-patching"></a>
 
 Maintaining the SAP HANA database software version keeps the database on with supported software versions, and enables you to stay updated with security fixes and software improvements.
 

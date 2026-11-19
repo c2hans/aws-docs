@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_UpdateR
 ---
 
 # UpdateRecipe
-<a name="API_UpdateRecipe"></a>
 
 Modifies the definition of the `LATEST_WORKING` version of a DataBrew recipe.
 

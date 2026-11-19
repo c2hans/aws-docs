@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/text-detecting-tex
 ---
 
 # Detecting text in an image
-<a name="text-detecting-text-procedure"></a>
 
 You can provide an input image as an image byte array (base64-encoded image bytes), or as an Amazon S3 object. In this procedure, you upload a JPEG or PNG image to your S3 bucket and specify the file name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # outlier
-<a name="CWL_QuerySyntax-Outlier"></a>
 
 Use the `outlier` command to detect statistical outliers in numeric fields based on the interquartile range (IQR). You can remove or clamp outlier rows.
 

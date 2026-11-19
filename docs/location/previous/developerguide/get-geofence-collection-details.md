@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/get-geo
 ---
 
 # Tutorial: Get geofence collection details
-<a name="get-geofence-collection-details"></a>
 
 You can get details about any geofence collection resource in your AWS account using the Amazon Location console, the AWS CLI, or the Amazon Location APIs:
 

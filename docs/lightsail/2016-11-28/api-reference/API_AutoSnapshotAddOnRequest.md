@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_A
 ---
 
 # AutoSnapshotAddOnRequest
-<a name="API_AutoSnapshotAddOnRequest"></a>
 
 Describes a request to enable or modify the automatic snapshot add-on for an Amazon Lightsail instance or disk.
 

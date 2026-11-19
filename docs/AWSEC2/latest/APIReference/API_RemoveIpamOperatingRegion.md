@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RemoveIpa
 ---
 
 # RemoveIpamOperatingRegion
-<a name="API_RemoveIpamOperatingRegion"></a>
 
 Remove an operating Region from an IPAM. Operating Regions are AWS Regions where the IPAM is allowed to manage IP address CIDRs. IPAM only discovers and monitors resources in the AWS Regions you select as operating Regions.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/dg/ds-schemas.html
 Amazon Kendra is no longer open to new customers. For capabilities similar to Amazon Kendra, explore Amazon Bedrock Knowledge Bases. [Learn more](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
 # Data source template schemas
-<a name="ds-schemas"></a>
 
 The following are template schemas for data sources where templates are supported.
 

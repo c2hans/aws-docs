@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/proactive-r
 ---
 
 # Proactive response and alert triaging
-<a name="proactive-response-alert-triaging"></a>
 
 AWS Security Incident Response monitors and investigates threat alerts generated from Amazon GuardDuty and third-party threat detection tools using Security Hub CSPM integrations. AWS Security Incident Response automatically triages all supported alerts so your team can focus on the most critical issues.
 

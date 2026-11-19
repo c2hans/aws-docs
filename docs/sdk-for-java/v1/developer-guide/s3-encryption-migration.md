@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/s3-encry
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Amazon S3 Encryption Client Migration
-<a name="s3-encryption-migration"></a>
 
 This topic shows you how to migrate your applications from Version 1 (V1) of the Amazon Simple Storage Service (Amazon S3) encryption client to Version 2 (V2) and ensure application availability throughout the migration process.
 

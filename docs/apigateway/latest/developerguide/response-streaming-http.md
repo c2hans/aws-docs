@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/respons
 ---
 
 # Set up an HTTP proxy integration with payload response streaming in API Gateway
-<a name="response-streaming-http"></a>
 
 When you set up response payload streaming, you specify the response transfer mode in the integration request of your method. You configure these settings in the integration request to control how API Gateway behaves before and during the integration response. When you use response streaming, you can configure the integration timeout up to 15 minutes.
 

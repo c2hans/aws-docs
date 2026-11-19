@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-a
 ---
 
 # Amazon EventBridge
-<a name="amazon-eventbridge"></a>
 
 **Note**
  Amazon CloudWatch Events and EventBridge are the same underlying service and API, however, EventBridge provides more features.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UkraineAdditionalInfo
-<a name="API_taxSettings_UkraineAdditionalInfo"></a>
 
  Additional tax information associated with your TRN in Ukraine.
 

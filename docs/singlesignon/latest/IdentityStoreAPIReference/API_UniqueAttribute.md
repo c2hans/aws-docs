@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # UniqueAttribute
-<a name="API_UniqueAttribute"></a>
 
 An entity attribute that's unique to a specific entity.
 

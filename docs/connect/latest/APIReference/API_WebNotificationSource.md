@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_WebNotif
 ---
 
 # WebNotificationSource
-<a name="API_WebNotificationSource"></a>
 
 The source of an outbound web notification. Identifies the campaign and outbound request that triggered the notification.
 

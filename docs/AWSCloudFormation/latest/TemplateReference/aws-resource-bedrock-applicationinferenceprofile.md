@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::ApplicationInferenceProfile
-<a name="aws-resource-bedrock-applicationinferenceprofile"></a>
 
 Specifies an inference profile as a resource in a top-level template. Use the `ModelSource` field to specify the inference profile to copy into the resource. For more information about using inference profiles in Amazon Bedrock, see [Improve resilience with cross-region inference ](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html).
 

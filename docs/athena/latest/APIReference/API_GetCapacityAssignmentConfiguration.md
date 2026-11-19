@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_GetCapaci
 ---
 
 # GetCapacityAssignmentConfiguration
-<a name="API_GetCapacityAssignmentConfiguration"></a>
 
 Gets the capacity assignment configuration for a capacity reservation, if one exists.
 

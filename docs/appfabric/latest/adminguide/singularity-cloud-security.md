@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/singularity-
 ---
 
 # Singularity Cloud
-<a name="singularity-cloud-security"></a>
 
 The Singularity Cloud platform protects your enterprise from threats of all categories, at all stages. Its patented AI (Artificial Intelligence) extends security from known signatures and patterns to the most sophisticated attacks, such as zero-day and ransomware.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/iot-data-plane_co
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Code examples for AWS IoT data using AWS SDKs
-<a name="iot-data-plane_code_examples"></a>
 
 The following code examples show you how to use AWS IoT data with an AWS software development kit (SDK).
 

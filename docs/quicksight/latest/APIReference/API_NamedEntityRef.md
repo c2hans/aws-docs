@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Named
 ---
 
 # NamedEntityRef
-<a name="API_NamedEntityRef"></a>
 
 The definition for a `NamedEntityRef`.
 

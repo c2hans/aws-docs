@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-de
 ---
 
 # Decoupling table relationships during database decomposition
-<a name="joins"></a>
 
 This section provides guidance on breaking down complex table relationships and JOIN operations during monolithic database decomposition. A table *join* combines rows from two or more tables based on a related column between them. The goal of separating these relationships is to reduce high coupling between tables while maintaining data integrity across microservices.
 

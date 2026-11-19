@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # CloudFormation resources generated when you specify AWS::Serverless::Connector
-<a name="sam-specification-generated-resources-connector"></a>
 
 **Note**
 When you define connectors through the embedded `Connectors` property, it is first transformed into an `AWS::Serverless::Connector` resource before generating these resources.

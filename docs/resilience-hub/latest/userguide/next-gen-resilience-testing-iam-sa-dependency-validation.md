@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Dependency validation
-<a name="next-gen-resilience-testing-iam-sa-dependency-validation"></a>
 
 The **Dependency validation** template runs AWS FIS actions that block in-Region dependency traffic from Amazon EC2, Amazon ECS, and Amazon EKS workloads. Attach the following permissions policy to the execution role.
 

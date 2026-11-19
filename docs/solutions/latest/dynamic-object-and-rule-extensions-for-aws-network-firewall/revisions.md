@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 ---
 
 # Revisions
-<a name="revisions"></a>
 
 |  Date  |  Change  |
 | --- | --- |

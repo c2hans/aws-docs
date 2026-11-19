@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Send
 ---
 
 # SendMessageResponseCompletedEvent
-<a name="API_SendMessageResponseCompletedEvent"></a>
 
 Event emitted when the response completes successfully
 

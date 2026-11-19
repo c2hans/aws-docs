@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/partnerguide/guidelin
 ---
 
 # Guidelines for mapping findings into the AWS Security Finding Format (ASFF)
-<a name="guidelines-asff-mapping"></a>
 
 Use the following guidelines to map your findings to the ASFF. For detailed descriptions of each ASFF field and object, see [AWS Security Finding Format (ASFF)](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-format.html) in the *AWS Security Hub User Guide*.
 

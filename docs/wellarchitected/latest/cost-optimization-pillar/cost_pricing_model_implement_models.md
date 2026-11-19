@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST07-BP04 Implement pricing models for all components of this workload
-<a name="cost_pricing_model_implement_models"></a>
 
  Permanently running resources should utilize reserved capacity such as Savings Plans or Reserved Instances. Short-term capacity is configured to use Spot Instances, or Spot Fleet. On-Demand Instances are only used for short-term workloads that cannot be interrupted and do not run long enough for reserved capacity, between 25% to 75% of the period, depending on the resource type.
 

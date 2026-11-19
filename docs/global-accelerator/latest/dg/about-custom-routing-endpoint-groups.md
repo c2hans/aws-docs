@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/about-custo
 ---
 
 # Endpoint groups for custom routing accelerators in Global Accelerator
-<a name="about-custom-routing-endpoint-groups"></a>
 
 With a custom routing accelerator in AWS Global Accelerator, an endpoint group defines the ports and protocols that destination Amazon EC2 instances in your virtual private cloud (VPC) subnets accept traffic on.
 

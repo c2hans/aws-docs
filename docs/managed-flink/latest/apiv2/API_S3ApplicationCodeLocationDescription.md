@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_S3Applica
 ---
 
 # S3ApplicationCodeLocationDescription
-<a name="API_S3ApplicationCodeLocationDescription"></a>
 
 Describes the location of an application's code stored in an S3 bucket.
 

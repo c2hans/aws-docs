@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # MLPERF04-BP02 Explore alternatives for performance improvement
-<a name="mlperf04-bp02"></a>
 
  Benchmarking your machine learning models allows you to systematically improve performance by evaluating and comparing different algorithms, features, and architectural resources. Use this practice to identify the optimal combination and achieve your desired performance metrics.
 

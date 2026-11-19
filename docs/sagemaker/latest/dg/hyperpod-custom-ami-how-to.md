@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/hyperpod-custom-ami-
 ---
 
 # Build a custom AMI
-<a name="hyperpod-custom-ami-how-to"></a>
 
 The following page explains how to build a custom Amazon Machine Image (AMI) using Amazon SageMaker HyperPod base AMIs. You begin by selecting a base AMI, and then you create your own customized AMI using any of the common methods for creating new images, such as the AWS CLI.
 

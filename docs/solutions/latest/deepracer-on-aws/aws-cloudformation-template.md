@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/aws-cl
 ---
 
 # AWS CloudFormation template
-<a name="aws-cloudformation-template"></a>
 
 This solution includes an AWS CloudFormation template that you can download before deploying the solution.
 

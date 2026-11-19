@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/scheduler/latest/APIReference/API_DeadLe
 ---
 
 # DeadLetterConfig
-<a name="API_DeadLetterConfig"></a>
 
 An object that contains information about an Amazon SQS queue that EventBridge Scheduler uses as a dead-letter queue for your schedule. If specified, EventBridge Scheduler delivers failed events that could not be successfully delivered to a target to the queue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-ebcdic.ht
 ---
 
 # EBCDIC collation for Db2 databases on Amazon RDS
-<a name="db2-ebcdic"></a>
 
 Amazon RDS for Db2 supports EBCDIC collation for Db2 databases. You can only specify an EBCDIC collation sequence for a database when you create the database by using the Amazon RDS [rdsadmin.create\_database](db2-sp-managing-databases.md#db2-sp-create-database) stored procedure.
 

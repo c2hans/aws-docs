@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-base.html
 ---
 
 # Using the Deep Learning Base AMI
-<a name="tutorial-base"></a>
 
 ## Using the Deep Learning Base AMI
 <a name="tutorial-base-overview"></a>

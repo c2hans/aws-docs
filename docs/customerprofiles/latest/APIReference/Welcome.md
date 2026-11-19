@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/Wel
 ---
 
 # Welcome
-<a name="Welcome"></a>
 +  [Customer Profiles actions](https://docs.aws.amazon.com/connect/latest/APIReference/API_Operations_Amazon_Connect_Customer_Profiles.html)
 +  [Customer Profiles data types](https://docs.aws.amazon.com/connect/latest/APIReference/API_Types_Amazon_Connect_Customer_Profiles.html)
 
@@ -11,4 +10,4 @@ Connect Customer Customer Profiles is a unified customer profile for your contac
 
 For more information about the Connect Customer Customer Profiles feature, see [Use Customer Profiles](https://docs.aws.amazon.com/connect/latest/adminguide/customer-profiles.html) in the *Connect Customer Administrator's Guide*.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_CatalogCo
 ---
 
 # CatalogConfigurationUpdate
-<a name="API_CatalogConfigurationUpdate"></a>
 
 Updates to the configuration parameters for the default Amazon Glue database. You use this database for SQL queries that you write in a Managed Service for Apache Flink Studio notebook.
 

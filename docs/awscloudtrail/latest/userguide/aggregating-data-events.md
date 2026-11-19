@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/aggregati
 ---
 
 # Aggregating data events
-<a name="aggregating-data-events"></a>
 
 Data events provide information about the resource operations performed on or in a resource. These are also known as data plane operations. Data events are often high-volume activities.
 

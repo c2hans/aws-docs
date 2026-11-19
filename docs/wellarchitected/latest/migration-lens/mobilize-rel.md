@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/mo
 ---
 
 # Mobilize
-<a name="mobilize-rel"></a>
 
  The mobilize phase involves setting up the resources and tools needed for the migration. During this phase, the team impacted by the migration are trained to handle the migration. Have a backup plan ready in case anything unexpected happens.
 

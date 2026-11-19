@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/create-sftp-co
 ---
 
 # Create an SFTP connector with service-managed egress
-<a name="create-sftp-connector-procedure"></a>
 
 This procedure explains how to create SFTP connectors by using the AWS Transfer Family console or AWS CLI.
 

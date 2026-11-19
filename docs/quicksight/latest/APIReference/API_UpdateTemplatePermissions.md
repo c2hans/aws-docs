@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateTemplatePermissions
-<a name="API_UpdateTemplatePermissions"></a>
 
 Updates the resource permissions for a template.
 

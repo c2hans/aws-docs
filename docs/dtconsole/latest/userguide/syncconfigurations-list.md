@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/syncconfigura
 ---
 
 # List sync configurations
-<a name="syncconfigurations-list"></a>
 
 You can use the **list-sync-configurations** command in the AWS Command Line Interface (AWS CLI) to list repository links for your account.
 

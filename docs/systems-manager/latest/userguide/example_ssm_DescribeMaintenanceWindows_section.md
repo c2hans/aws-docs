@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `DescribeMaintenanceWindows` with a CLI
-<a name="example_ssm_DescribeMaintenanceWindows_section"></a>
 
 The following code examples show how to use `DescribeMaintenanceWindows`.
 

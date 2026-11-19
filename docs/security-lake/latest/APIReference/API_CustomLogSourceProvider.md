@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Cu
 ---
 
 # CustomLogSourceProvider
-<a name="API_CustomLogSourceProvider"></a>
 
 The details of the log provider for a third-party custom source.
 

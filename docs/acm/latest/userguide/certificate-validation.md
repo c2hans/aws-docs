@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/certificate-validat
 ---
 
 # Troubleshoot certificate validation
-<a name="certificate-validation"></a>
 
 If the ACM certificate request status is **Pending validation**, the request is waiting for action from you. If you chose email validation when you made the request, you or an authorized representative must respond to the validation email messages. These messages were sent to the common email addresses for the requested domain. For more information, see [AWS Certificate Manager email validation](email-validation.md). If you chose DNS validation, you must write the CNAME record that ACM created for you to your DNS database. For more information, see [AWS Certificate Manager DNS validation](dns-validation.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_BlackFrames.
 ---
 
 # BlackFrames
-<a name="API_BlackFrames"></a>
 
  Configures settings for the `BlackFrames` metric.
 

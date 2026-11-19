@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-repl
 ---
 
 # Setting up S3 Tables replication
-<a name="s3-tables-replication-setting-up"></a>
 
 You can set up replication to automatically create table replicas from a source table to up to five destination table buckets. Replication can be configured at the bucket level (applying to all tables in the bucket) or at the table level (for specific tables). This topic explains how to configure replication using the Amazon S3 console or the AWS Command Line Interface (AWS CLI).
 

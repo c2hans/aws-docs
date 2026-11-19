@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/using-l
 ---
 
 # Working with License Manager
-<a name="using-license-manager"></a>
 
 License Manager can be applied to standard scenarios for enterprises with a mixed infrastructure of AWS resources and on-premises resources. You can create self-managed licenses, take inventory of your license-consuming resources, associate self-managed licenses with resources, and track inventory and compliance.
 

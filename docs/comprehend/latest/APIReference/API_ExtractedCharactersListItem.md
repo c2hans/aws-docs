@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Extra
 ---
 
 # ExtractedCharactersListItem
-<a name="API_ExtractedCharactersListItem"></a>
 
 Array of the number of characters extracted from each page.
 

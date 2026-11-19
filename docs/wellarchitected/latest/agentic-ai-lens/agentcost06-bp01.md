@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTCOST06-BP01 Implement lightweight discovery and registry for cost-effective collaboration
-<a name="agentcost06-bp01"></a>
 
  Deploying service-mesh infrastructure for agent discovery carries a fixed cost that doesn't scale down when traffic does. You can keep registry cost proportional to fleet size through managed discovery through tool exposure, consumption-based registries, and aggressive metadata caching.
 

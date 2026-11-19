@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inference-router-mon
 ---
 
 # Monitor inference routers with Amazon CloudWatch and AWS CloudTrail
-<a name="inference-router-monitor"></a>
 
 Use Amazon CloudWatch metrics to track inference router traffic and destination health, and AWS CloudTrail to audit API calls. Your destination endpoints keep publishing their usual SageMaker AI metrics in their own account and AWS Region.
 

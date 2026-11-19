@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Ran
 ---
 
 # Range Queries
-<a name="RangeQueriesSelect"></a>
 
 Amazon SimpleDB enables you to execute more than one comparison against attribute values within the same predicate. This is most commonly used to specify a range of values.
 

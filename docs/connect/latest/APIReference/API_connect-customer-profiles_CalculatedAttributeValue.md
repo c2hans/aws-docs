@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CalculatedAttributeValue
-<a name="API_connect-customer-profiles_CalculatedAttributeValue"></a>
 
 The object containing the values of a single calculated attribute value.
 

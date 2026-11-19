@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/configure-stor
 ---
 
 # Configure storage to use with AWS Transfer Family servers
-<a name="configure-storage"></a>
 
 This topic describes the storage options that you can use with AWS Transfer Family. You can use either Amazon S3 or Amazon EFS as storage for your Transfer Family servers.
 

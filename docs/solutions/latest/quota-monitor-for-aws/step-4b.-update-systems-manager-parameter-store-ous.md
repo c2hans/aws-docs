@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 ---
 
 # Step 4b. Update Systems Manager Parameter Store (OUs)
-<a name="step-4b.-update-systems-manager-parameter-store-ous"></a>
 
 Follow these steps to update the Systems Manager Parameter Store for the AWS accounts (**Account-Ids**) and OUs (**OU-ids**) you want to monitor.
 

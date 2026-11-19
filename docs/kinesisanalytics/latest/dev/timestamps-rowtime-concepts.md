@@ -11,7 +11,6 @@ After careful consideration, we have decided to discontinue Amazon Kinesis Data 
 3. We will delete your applications starting **January 27, 2026**. You will not be able to start or operate your Amazon Kinesis Data Analytics for SQL applications. Support will no longer be available for Amazon Kinesis Data Analytics for SQL from that time. For more information, see [Amazon Kinesis Data Analytics for SQL Applications discontinuation](discontinuation.md).
 
 # Timestamps and the ROWTIME Column
-<a name="timestamps-rowtime-concepts"></a>
 
 In-application streams include a special column called `ROWTIME`. It stores a timestamp when Amazon Kinesis Data Analytics inserts a row in the first in-application stream. `ROWTIME` reflects the timestamp at which Amazon Kinesis Data Analytics inserted a record into the first in-application stream after reading from the streaming source. This `ROWTIME` value is then maintained throughout your application.
 

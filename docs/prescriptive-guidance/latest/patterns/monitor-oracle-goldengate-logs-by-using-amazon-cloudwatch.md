@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mo
 ---
 
 # Monitor Oracle GoldenGate logs by using Amazon CloudWatch
-<a name="monitor-oracle-goldengate-logs-by-using-amazon-cloudwatch"></a>
 
 *Chithra Krishnamurthy, Amazon Web Services*
 

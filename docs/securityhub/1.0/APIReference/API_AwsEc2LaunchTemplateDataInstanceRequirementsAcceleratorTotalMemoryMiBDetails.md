@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorTotalMemoryMiBDetails
-<a name="API_AwsEc2LaunchTemplateDataInstanceRequirementsAcceleratorTotalMemoryMiBDetails"></a>
 
  The minimum and maximum amount of memory, in MiB, for the accelerators on an Amazon EC2 instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableIp
 ---
 
 # DisableIpamOrganizationAdminAccount
-<a name="API_DisableIpamOrganizationAdminAccount"></a>
 
 Disable the IPAM account. For more information, see [Enable integration with AWS Organizations](https://docs.aws.amazon.com/vpc/latest/ipam/enable-integ-ipam.html) in the *Amazon VPC IPAM User Guide*.
 

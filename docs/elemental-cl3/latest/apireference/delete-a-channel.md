@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/delete
 ---
 
 # DELETE: Delete a Channel
-<a name="delete-a-channel"></a>
 
 Delete the channel that has the specified ID. To get the ID of a specific channel, see [GET List: Get List of Channels](get-list-of-channels.md).
 

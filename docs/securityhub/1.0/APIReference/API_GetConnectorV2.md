@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetConn
 ---
 
 # GetConnectorV2
-<a name="API_GetConnectorV2"></a>
 
 Grants permission to retrieve details for a connectorV2 based on connector id.
 

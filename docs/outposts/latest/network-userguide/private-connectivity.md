@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/network-userguide/privat
 ---
 
 # Service link private connectivity options
-<a name="private-connectivity"></a>
 
 You can configure the service link with a private connection for the traffic between the Outposts and home AWS Region. You can choose to use Direct Connect private or transit VIFs.
 

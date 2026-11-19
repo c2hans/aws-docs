@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListF
 ---
 
 # ListFHIRDatastores
-<a name="API_ListFHIRDatastores"></a>
 
 List all FHIR-enabled data stores in a user’s account, regardless of data store status.
 

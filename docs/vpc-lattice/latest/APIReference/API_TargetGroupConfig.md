@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Targ
 ---
 
 # TargetGroupConfig
-<a name="API_TargetGroupConfig"></a>
 
 Describes the configuration of a target group.
 

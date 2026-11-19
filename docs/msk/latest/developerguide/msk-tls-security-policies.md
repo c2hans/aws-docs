@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-tls-securi
 ---
 
 # TLS security policies for Amazon MSK
-<a name="msk-tls-security-policies"></a>
 
 Amazon MSK encrypts data in transit using TLS. By default, Amazon MSK clusters use TLS 1.2. To use TLS 1.3, you select a TLS security policy. The policy determines the following for your cluster:
 + The TLS protocol versions that Amazon MSK accepts.

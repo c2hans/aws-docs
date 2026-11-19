@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ContentSource
-<a name="API_ContentSource"></a>
 
 The source of the content to ingest. Only inline content is supported.
 

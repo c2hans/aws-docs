@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-conditional-ro
 ---
 
 # Creating a Conditional Router transformation
-<a name="transforms-conditional-router"></a>
 
  The Conditional Router transform allows you to apply multiple conditions to incoming data. Each row of the incoming data is evaluated by a group filter condition and processed into its corresponding group. If a row meets more than one group filter condition, the transform passes the row to multiple groups. If a row does not meet any condition, it can either be dropped or routed to a default output group.
 

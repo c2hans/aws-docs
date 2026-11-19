@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_MqttHeaders.
 ---
 
 # MqttHeaders
-<a name="API_MqttHeaders"></a>
 
 Specifies MQTT Version 5.0 headers information. For more information, see [ MQTT](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html) from AWS IoT Core Developer Guide.
 

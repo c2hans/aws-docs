@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/config-
 ---
 
 # Role policies for PAM authentication
-<a name="config-rpolicies"></a>
 
 If you configure the cluster to use PAM authentication, then when you create a user on the LDAP server, you assign a role policy. The role policies exist in Conductor Live, not on your LDAP server.
 

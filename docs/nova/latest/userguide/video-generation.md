@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/video-generation.h
 ---
 
 # Generating videos with Amazon Nova Reel
-<a name="video-generation"></a>
 
 With Amazon Nova Reel, you can generate realistic, studio-quality videos by using text- and image-based prompts. The model supports text-to-video generation and text-and-image to-video generation. Videos up to two minutes long are generated in six second increments at 1280x720 resolution and 24 frames per second.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # Best practices
-<a name="nx-sms-scale-best-practices"></a>
 
 For the best results when creating and sending messages, we recommend that you follow the best practices in this topic. Mobile phone carriers continuously audit bulk SMS and MMS senders and throttle or block messages from originators that they determine to be sending unsolicited messages. Sending unsolicited content is also a violation of the [acceptable use policy](https://aws.amazon.com/aup/#No_E-Mail_or_Other_Message_Abuse), and the AWS End User Messaging team routinely audits SMS and MMS messages.
 

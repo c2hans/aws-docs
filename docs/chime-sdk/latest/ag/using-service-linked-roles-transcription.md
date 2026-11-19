@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/using-service-linked
 ---
 
 # Using roles with live transcription
-<a name="using-service-linked-roles-transcription"></a>
 
 The information in the following sections explains how to create and manage a service-linked role for the Amazon Chime SDK live transcription. For more information about the live transcription service, see [Using Amazon Chime SDK live transcription](https://docs.aws.amazon.com/chime/latest/dg/meeting-transcription.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANDeviceMetadata
-<a name="API_LoRaWANDeviceMetadata"></a>
 
 LoRaWAN device metatdata.
 

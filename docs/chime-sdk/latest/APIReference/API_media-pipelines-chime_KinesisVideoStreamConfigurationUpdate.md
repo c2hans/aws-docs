@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # KinesisVideoStreamConfigurationUpdate
-<a name="API_media-pipelines-chime_KinesisVideoStreamConfigurationUpdate"></a>
 
 The updated Kinesis video stream configuration object.
 

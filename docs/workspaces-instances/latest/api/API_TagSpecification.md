@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_TagS
 ---
 
 # TagSpecification
-<a name="API_TagSpecification"></a>
 
 Defines tagging configuration for a resource.
 

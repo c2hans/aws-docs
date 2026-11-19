@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/github-quic
 ---
 
 # Quickstart: Installing, using features in GitHub, and increasing usage limits
-<a name="github-quickstart"></a>
 
 **Amazon Q Developer for GitHub: end of support**
 On January 30, 2027, AWS will discontinue support for the Amazon Q Developer for GitHub App. New app installations will no longer be available starting November 18, 2026.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-root-v
 ---
 
 # Keep an Amazon EBS root volume after an Amazon EC2 instance terminates
-<a name="configure-root-volume-delete-on-termination"></a>
 
 By default, the Amazon EBS root volume for an instance is deleted when the instance terminates. You can change the default behavior to ensure that an Amazon EBS root volume persists after the instance terminates. To change the default behavior, set the `DeleteOnTermination` attribute to `false`. You can do so either at instance launch or later on.
 

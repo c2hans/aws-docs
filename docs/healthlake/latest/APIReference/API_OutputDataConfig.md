@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_Outpu
 ---
 
 # OutputDataConfig
-<a name="API_OutputDataConfig"></a>
 
 The output data configuration supplied when the export job was created.
 

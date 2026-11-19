@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_SpotResizing
 ---
 
 # SpotResizingSpecification
-<a name="API_SpotResizingSpecification"></a>
 
 The resize specification for Spot Instances in the instance fleet, which contains the resize timeout period.
 

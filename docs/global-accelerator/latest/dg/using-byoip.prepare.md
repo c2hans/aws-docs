@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/using-byoip
 ---
 
 # Prepare to bring your IP address range to your AWS account: Authorization
-<a name="using-byoip.prepare"></a>
 
 To ensure that only you can bring your IP address space to Amazon, we require two authorizations:
 + You must authorize Amazon to advertise the IP address range.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Basic
 ---
 
 # BasicAuthConnectionMetadata
-<a name="API_BasicAuthConnectionMetadata"></a>
 
 Metadata for basic authentication using username and password.
 

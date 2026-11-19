@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 ---
 
 # Acronyms
-<a name="acronyms"></a>
 +  **AMF** — Access & Mobility Management Function
 +  **API** — Application Programming Interface
 +  **AUSF** — Authentication Server Function

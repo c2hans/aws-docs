@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kiro-cli-automa
 ---
 
 # Use Kiro CLI with an Automated Reasoning policy
-<a name="kiro-cli-automated-reasoning-policy"></a>
 
 You can use Kiro CLI to ask questions about your Automated Reasoning policies, understand the behavior of the various rules, and request changes that address failing tests or ambiguities in the policy itself. Kiro CLI is particularly useful for the iterative refinement workflow described in [Troubleshoot and refine your Automated Reasoning policy](address-failed-automated-reasoning-tests.md) because it can load your policy definition, analyze test results, and apply annotations through natural language conversation.
 

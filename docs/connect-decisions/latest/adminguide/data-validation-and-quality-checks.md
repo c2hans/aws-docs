@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/data
 ---
 
 # Data Validation and Quality Checks
-<a name="data-validation-and-quality-checks"></a>
 
 ## Overview
 <a name="data-validation-overview"></a>

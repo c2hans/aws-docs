@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Dele
 ---
 
 # DeleteArchive
-<a name="API_DeleteArchive"></a>
 
 Deletes the specified archive.
 

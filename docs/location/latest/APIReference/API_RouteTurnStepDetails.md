@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTu
 ---
 
 # RouteTurnStepDetails
-<a name="API_RouteTurnStepDetails"></a>
 
 Details related to the turn step.
 

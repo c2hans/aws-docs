@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-pro
 ---
 
 # Using RDS Proxy with AWS CloudFormation
-<a name="rds-proxy-cfn"></a>
 
  You can use RDS Proxy with AWS CloudFormation. This helps you to create groups of related resources. Such a group can include a proxy that can connect to a newly created Aurora DB cluster. RDS Proxy support in CloudFormation involves two new registry types: `DBProxy` and `DBProxyTargetGroup`.
 

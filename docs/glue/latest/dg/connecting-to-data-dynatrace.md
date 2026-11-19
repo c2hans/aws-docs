@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-dynatr
 ---
 
 # Connecting to Dynatrace
-<a name="connecting-to-data-dynatrace"></a>
 
 Dynatrace is a platform that offers analytics and automation for comprehensive observability and security. It specializes in monitoring and optimizing application performance, infrastructure, and user experience.
 

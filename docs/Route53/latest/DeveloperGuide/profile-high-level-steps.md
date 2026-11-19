@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profile-hi
 ---
 
 # High-level steps for using Route 53 Profiles
-<a name="profile-high-level-steps"></a>
 
 To implement Amazon Route 53 Profiles in your Amazon Virtual Private Cloud VPCs, you perform the following high-level steps.
 

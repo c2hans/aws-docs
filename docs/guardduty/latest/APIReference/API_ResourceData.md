@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Resour
 ---
 
 # ResourceData
-<a name="API_ResourceData"></a>
 
 Contains information about the AWS resource that is associated with the activity that prompted GuardDuty to generate a finding.
 

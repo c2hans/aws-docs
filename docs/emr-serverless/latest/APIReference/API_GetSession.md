@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_G
 ---
 
 # GetSession
-<a name="API_GetSession"></a>
 
 Displays detailed information about a session.
 

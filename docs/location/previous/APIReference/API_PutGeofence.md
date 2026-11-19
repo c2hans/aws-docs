@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_PutGe
 ---
 
 # PutGeofence
-<a name="API_PutGeofence"></a>
 
 Stores a geofence geometry in a given geofence collection, or updates the geometry of an existing geofence if a geofence ID is included in the request.
 

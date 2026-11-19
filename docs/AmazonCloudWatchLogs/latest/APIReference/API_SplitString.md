@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # SplitString
-<a name="API_SplitString"></a>
 
 Use this processor to split a field into an array of strings using a delimiting character.
 

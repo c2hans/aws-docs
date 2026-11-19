@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd05-b
 ---
 
 # FND05-BP02 Establish emergency access mechanisms
-<a name="fnd05-bp02"></a>
 
  Establish processes that provide emergency access to your workloads when your centralized identity provider is unavailable or misconfigured. When federation fails, authorized administrators need an alternate path to cloud resources to resolve critical issues. Design emergency access processes for specific failure modes so administrators have the right tools without creating shortcuts around normal controls.
 

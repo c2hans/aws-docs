@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/r
 ---
 
 # Run/Debug Configurations dialog box (remote function settings)
-<a name="run-debug-configurations-dialog-remote"></a>
 
 This dialog box displays whenever you update settings for the *remote* version of an AWS Lambda function (the function's source code is in Lambda in your AWS account).
 

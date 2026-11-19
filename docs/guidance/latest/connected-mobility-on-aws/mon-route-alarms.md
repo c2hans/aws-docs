@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Route the alarms to a person
-<a name="mon-route-alarms"></a>
 
 The stream processing stack accepts an email address and subscribes it for you. Set it before deploying:
 

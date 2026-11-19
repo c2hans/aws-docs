@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/onboard
 ---
 
 # Application onboarding guidelines
-<a name="onboarding-applications"></a>
 
 Before you make an application available to end users through WorkSpaces Applications, validate that the application works correctly in the WorkSpaces Applications cloud environment, verify that the application can be streamed without rendering artifacts, and size your fleet appropriately for the application's resource profile. This page provides a structured onboarding checklist that you can follow for each application you plan to stream. If you plan to use multi-session, you need to pay specific attention to the ability to run multiple versions of the application on the same host. If you plan to use [native application mode](https://docs.aws.amazon.com/appstream2/latest/developerguide/feature-support-native-application-mode.html), you need to verify that the application does not present any compatibility problems with this mode.
 

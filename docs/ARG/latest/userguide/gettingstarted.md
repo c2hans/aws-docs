@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted.html
 ---
 
 # Getting started with AWS Resource Groups
-<a name="gettingstarted"></a>
 
 In AWS, a *resource* is an entity that you can work with. Examples include an Amazon EC2 instance, an Amazon S3 bucket, or an Amazon Route 53 hosted zone. If you work with multiple resources, you might find it useful to manage them as a group rather than move from one AWS service to another for each task.
 

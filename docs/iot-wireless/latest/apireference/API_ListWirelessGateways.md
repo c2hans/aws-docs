@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListWirelessGateways
-<a name="API_ListWirelessGateways"></a>
 
 Lists the wireless gateways registered to your AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ApplicationConfig
-<a name="API_connect-app-integrations_ApplicationConfig"></a>
 
 The configuration settings for the application.
 

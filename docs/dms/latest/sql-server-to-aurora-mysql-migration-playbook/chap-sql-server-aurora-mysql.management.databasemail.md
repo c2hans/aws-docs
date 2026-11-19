@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # Database mail features
-<a name="chap-sql-server-aurora-mysql.management.databasemail"></a>
 
 This topic provides reference information about migrating the Database Mail feature from Microsoft SQL Server 2019 to Amazon Aurora MySQL. You can understand the key differences in email functionality between these two database systems and learn about alternative approaches for sending emails from Aurora MySQL.
 

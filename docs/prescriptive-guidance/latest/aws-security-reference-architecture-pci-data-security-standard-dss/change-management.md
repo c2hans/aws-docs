@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-securit
 ---
 
 # Change Management
-<a name="change-management"></a>
 
 Change management is a foundational security and governance process that ensures all changes to systems, applications, infrastructure, and configurations are formally reviewed, tested, approved, implemented, and documented in a controlled manner. The objective of change management within PCI DSS is to prevent unauthorized or poorly managed changes from introducing security vulnerabilities, disrupting services, or compromising the confidentiality and integrity of the cardholder data environment (CDE). Effective change management provides traceability and accountability by requiring organizations to assess security impacts, obtain approvals, perform testing, maintain rollback procedures, and document implementation activities to ensure compliance and operational stability.
 

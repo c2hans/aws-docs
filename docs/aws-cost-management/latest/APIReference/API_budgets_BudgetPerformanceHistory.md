@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BudgetPerformanceHistory
-<a name="API_budgets_BudgetPerformanceHistory"></a>
 
 A history of the state of a budget at the end of the budget's specified time period.
 

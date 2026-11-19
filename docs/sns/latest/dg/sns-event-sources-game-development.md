@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources-game-dev
 ---
 
 # Game development services
-<a name="sns-event-sources-game-development"></a>
 
 The following table describes how Amazon SNS integrates with Amazon GameLift Servers to provide notifications for matchmaking and queue events in session-based multiplayer game servers.
 

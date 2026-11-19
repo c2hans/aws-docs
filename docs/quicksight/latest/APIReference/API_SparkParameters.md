@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Spark
 ---
 
 # SparkParameters
-<a name="API_SparkParameters"></a>
 
 The parameters for Spark.
 

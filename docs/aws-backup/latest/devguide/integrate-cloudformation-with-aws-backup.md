@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/integrate-clo
 ---
 
 # AWS Backup and CloudFormation
-<a name="integrate-cloudformation-with-aws-backup"></a>
 
 ## In general
 <a name="aws-backup-cf-integration-general"></a>

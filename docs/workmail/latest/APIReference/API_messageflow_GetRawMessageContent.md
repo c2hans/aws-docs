@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workmail/latest/APIReference/API_message
 ---
 
 # GetRawMessageContent
-<a name="API_messageflow_GetRawMessageContent"></a>
 
 Retrieves the raw content of an in-transit email message, in MIME format.
 

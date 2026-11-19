@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_GetEnvironme
 ---
 
 # GetEnvironment
-<a name="API_GetEnvironment"></a>
 
 Describes a specific [Environment](API_Environment.md)
 

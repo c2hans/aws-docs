@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/authorizat
 ---
 
 # Set up authorization rules for AWS IoT SiteWise Edge in EMQX
-<a name="authorization-rules-emqx-broker"></a>
 
 EMQX supports adding authorization rules based on identifiers such as username, IP address or client ID. This is useful if you want to limit the number of external applications connecting to various operations or topics.
 

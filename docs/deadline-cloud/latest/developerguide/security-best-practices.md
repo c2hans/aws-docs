@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/sec
 ---
 
 # Security best practices for Deadline Cloud
-<a name="security-best-practices"></a>
 
 Each of the following topics covers securing one part of your AWS Deadline Cloud (Deadline Cloud) farm. For a map of all the security controls in Deadline Cloud and where to configure them, see [Security controls in Deadline Cloud](security-controls.md).
 

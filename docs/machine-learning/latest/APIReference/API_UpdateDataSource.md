@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # UpdateDataSource
-<a name="API_UpdateDataSource"></a>
 
 Updates the `DataSourceName` of a `DataSource`.
 

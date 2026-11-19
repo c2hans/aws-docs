@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_elastic_load
 ---
 
 # Getting started with load balancing
-<a name="example_elastic_load_balancing_v2_GettingStarted_058_section"></a>
 
 The following code example shows how to:
 + Create an Application Load Balancer

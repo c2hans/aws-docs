@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Sbom.html
 ---
 
 # Sbom
-<a name="API_Sbom"></a>
 
 A specific software bill of matrerials associated with a software package version.
 

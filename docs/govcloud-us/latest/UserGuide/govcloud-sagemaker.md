@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-sa
 ---
 
 # Amazon SageMaker AI in AWS GovCloud (US)
-<a name="govcloud-sagemaker"></a>
 
 {smlong} is a fully managed machine learning service. With {smlong}, data scientists and developers can quickly and easily build and train machine learning models, and then directly deploy them into a production-ready hosted environment. It provides an integrated Jupyter authoring notebook instance for easy access to your data sources for exploration and analysis, so you don’t have to manage servers. It also provides common machine learning algorithms that are optimized to run efficiently against extremely large data in a distributed environment. With native support for bring-your-own-algorithms and frameworks, {smlong} provides flexible distributed training options that adjust to your specific workflows.
 

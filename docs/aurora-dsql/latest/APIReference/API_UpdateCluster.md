@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Upda
 ---
 
 # UpdateCluster
-<a name="API_UpdateCluster"></a>
 
 The *UpdateCluster* API allows you to modify both single-Region and multi-Region cluster configurations. With the *multiRegionProperties* parameter, you can set the witness Region and peer clusters of a multi-Region cluster.
 

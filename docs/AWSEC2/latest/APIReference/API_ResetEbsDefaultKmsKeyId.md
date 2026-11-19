@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ResetEbsD
 ---
 
 # ResetEbsDefaultKmsKeyId
-<a name="API_ResetEbsDefaultKmsKeyId"></a>
 
 Resets the default AWS KMS key for EBS encryption for your account in this Region to the AWS managed KMS key for EBS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamDi
 ---
 
 # GetIpamDiscoveredPublicAddresses
-<a name="API_GetIpamDiscoveredPublicAddresses"></a>
 
 Gets the public IP addresses that have been discovered by IPAM.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-an
 ---
 
 # Next steps and resources
-<a name="next-steps"></a>
 
 After reviewing this guide, consider the following actions to move from understanding to implementation:
 

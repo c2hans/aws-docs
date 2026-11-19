@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/writesnapshots.html
 ---
 
 # Write Amazon EBS snapshots with EBS direct APIs
-<a name="writesnapshots"></a>
 
 The following steps describe how to use the EBS direct APIs to write incremental snapshots:
 

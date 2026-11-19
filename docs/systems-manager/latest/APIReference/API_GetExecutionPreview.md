@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetExecutionPreview
-<a name="API_GetExecutionPreview"></a>
 
 Initiates the process of retrieving an existing preview that shows the effects that running a specified Automation runbook would have on the targeted resources.
 

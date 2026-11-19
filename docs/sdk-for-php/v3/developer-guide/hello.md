@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/hello.htm
 ---
 
 # Creating a simple application using the AWS SDK for PHP Version 3
-<a name="hello"></a>
 
 Say hello to Amazon S3 using the AWS SDK for PHP. The following example displays a list of your Amazon S3 buckets.
 

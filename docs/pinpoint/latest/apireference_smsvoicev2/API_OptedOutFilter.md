@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # OptedOutFilter
-<a name="API_OptedOutFilter"></a>
 
 The information for opted out numbers that meet a specified criteria.
 

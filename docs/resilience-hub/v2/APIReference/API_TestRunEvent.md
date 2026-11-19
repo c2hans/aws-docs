@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestR
 ---
 
 # TestRunEvent
-<a name="API_TestRunEvent"></a>
 
 A single event in a test run's timeline.
 

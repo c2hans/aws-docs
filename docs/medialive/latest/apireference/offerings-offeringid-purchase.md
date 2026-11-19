@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/apireference/offerings-
 ---
 
 # Offerings: purchase offering
-<a name="offerings-offeringid-purchase"></a>
 
 ## URI
 <a name="offerings-offeringid-purchase-url"></a>

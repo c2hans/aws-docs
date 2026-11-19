@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dateFromStrin
 ---
 
 # $dateFromString
-<a name="dateFromString"></a>
 
 The `$dateFromString` aggregation operator in Amazon DocumentDB allows you to convert a date-time string into a date object. This is useful when your data is stored as strings but you need to perform date-based operations on the data.
 

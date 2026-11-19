@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # GetIdentityCenterAuthToken
-<a name="API_GetIdentityCenterAuthToken"></a>
 
 Returns an Identity Center authentication token for accessing Amazon Redshift Serverless workgroups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Specificat
 ---
 
 # Specifications
-<a name="API_Specifications"></a>
 
 Subslot specifications.
 

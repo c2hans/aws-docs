@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/webauthn_lin
 ---
 
 # Configure WebAuthn on Linux WorkSpaces
-<a name="webauthn_linux"></a>
 
 Linux WorkSpaces currently support Standard WebAuthn, which requires a browser extension to facilitate the redirection of WebAuthn prompts onto the client.
 

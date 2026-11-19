@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-
 ---
 
 # Basic Principles
-<a name="swf-dev-iam.basic"></a>
 
 Amazon SWF access control is based primarily on two types of permissions:
 + Resource permissions: Which Amazon SWF resources a user can access.

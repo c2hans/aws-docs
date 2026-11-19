@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_S3
 ---
 
 # S3VectorsConfiguration
-<a name="API_agent_S3VectorsConfiguration"></a>
 
 Contains the storage configuration of the knowledge base for S3 vectors.
 

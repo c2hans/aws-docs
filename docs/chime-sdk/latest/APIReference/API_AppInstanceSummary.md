@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_AppIns
 ---
 
 # AppInstanceSummary
-<a name="API_AppInstanceSummary"></a>
 
 Summary of the data for an `AppInstance`.
 

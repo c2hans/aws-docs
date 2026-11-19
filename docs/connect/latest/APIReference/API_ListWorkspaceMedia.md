@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListWork
 ---
 
 # ListWorkspaceMedia
-<a name="API_ListWorkspaceMedia"></a>
 
 Lists media assets (such as logos) associated with a workspace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Setting up notification rules
-<a name="notification-center-setup"></a>
 
 ## Prerequisites
 <a name="_prerequisites"></a>

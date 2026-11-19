@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/channel-security-gro
 ---
 
 # How channel security groups work
-<a name="channel-security-groups-how-it-works"></a>
 
 When you attach a channel security group to a channel, MediaLive performs the following actions:
 

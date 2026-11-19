@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/releasenotes/rn-2-
 ---
 
 # Essential notes for version 2.25 and 3.25
-<a name="rn-2-25-essential"></a>
 
 Read these essential notes before you upgrade. Except where noted, each note applies to both Conductor Live and the worker nodes (Elemental Live and Statmux).
 

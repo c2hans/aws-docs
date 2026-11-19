@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_Filter.html
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 This type is not currently supported.
 

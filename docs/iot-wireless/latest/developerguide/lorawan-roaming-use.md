@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # How to use AWS IoT Core for LoRaWAN public network support
-<a name="lorawan-roaming-use"></a>
 
 To use Everynet's public network support, you enable certain roaming parameters when creating the service profile. In this beta release, these parameters are available when you use the AWS IoT Wireless API, or the AWS CLI. The following sections show the parameters you must enable, and how to enable public network using the AWS CLI.
 

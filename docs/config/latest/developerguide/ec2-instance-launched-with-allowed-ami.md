@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ec2-instanc
 ---
 
 # ec2-instance-launched-with-allowed-ami
-<a name="ec2-instance-launched-with-allowed-ami"></a>
 
 Checks if running or stopped EC2 instances were launched with Amazon Machine Images (AMIs) that meet your Allowed AMIs criteria. The rule is NON\_COMPLIANT if an AMI doesn't meet the Allowed AMIs criteria and the Allowed AMIs settings isn't disabled.
 

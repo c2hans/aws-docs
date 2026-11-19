@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Cr
 ---
 
 # CreateMembership
-<a name="API_CreateMembership"></a>
 
 Creates a new membership, granting a user access to an agent space within an application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Configurations for Elastic Container Service (ECS) Auto Scaling
-<a name="configurations-for-elastic"></a>
 
 The recommended configurations for the deployed solution’s automatic scaling are dependent on the approximate maximum requests per second (RPS) and maximum number of users the solution is expected to support.
 

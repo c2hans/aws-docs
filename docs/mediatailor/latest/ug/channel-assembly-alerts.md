@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/channel-assembly-a
 ---
 
 # Receiving AWS Elemental MediaTailor channel assembly alerts
-<a name="channel-assembly-alerts"></a>
 
 MediaTailor creates alerts for issues or potential issues that occur with your channel assembly resources. The alert describes the issue, when the issue occurred, and the affected resources.
 

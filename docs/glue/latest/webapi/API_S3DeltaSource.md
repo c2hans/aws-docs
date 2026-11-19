@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_S3DeltaSource.htm
 ---
 
 # S3DeltaSource
-<a name="API_S3DeltaSource"></a>
 
 Specifies a Delta Lake data source stored in Amazon S3.
 

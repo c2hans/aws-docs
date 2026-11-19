@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/limitations.html
 ---
 
 # Limitations
-<a name="limitations"></a>
 
 ## Partitioning limitations
 <a name="partitioning-limitations"></a>

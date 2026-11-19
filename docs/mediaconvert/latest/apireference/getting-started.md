@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/getting
 ---
 
 # Getting Started with MediaConvert Using the API
-<a name="getting-started"></a>
 
 This section shows you how to get started with the MediaConvert API to transcode media files using API calls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # RecurrenceRule
-<a name="API_RecurrenceRule"></a>
 
 The recurrence rule for the SLO time window exclusion .
 

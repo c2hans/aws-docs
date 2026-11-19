@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Storag
 ---
 
 # StorageClassConfiguration
-<a name="API_s3Buckets_StorageClassConfiguration"></a>
 
 The configuration details for the storage class of tables or table buckets. This allows you to optimize storage costs by selecting the appropriate storage class based on your access patterns and performance requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/c
 ---
 
 # Architecture for Airline Crew Management Systems
-<a name="crew-management-systems"></a>
 
 Publication date: **June 11, 2021 ([Diagram history](#crew-systems-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # diff
-<a name="CWL_QuerySyntax-Diff"></a>
 
 Compares the log events found in your requested time period with the log events from a previous time period of equal length. This way, you can look for trends and find whether specific log events are new.
 

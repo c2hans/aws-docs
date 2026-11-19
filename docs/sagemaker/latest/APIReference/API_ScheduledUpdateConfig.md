@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Schedu
 ---
 
 # ScheduledUpdateConfig
-<a name="API_ScheduledUpdateConfig"></a>
 
 The configuration object of the schedule that SageMaker follows when updating the AMI.
 

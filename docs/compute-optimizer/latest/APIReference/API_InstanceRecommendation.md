@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # InstanceRecommendation
-<a name="API_InstanceRecommendation"></a>
 
 Describes an Amazon EC2 instance recommendation.
 

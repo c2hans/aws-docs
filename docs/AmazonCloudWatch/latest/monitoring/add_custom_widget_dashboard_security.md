@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/add_c
 ---
 
 # Security and JavaScript for custom CloudWatch widgets
-<a name="add_custom_widget_dashboard_security"></a>
 
 For security reasons, JavaScript is not allowed in the returned HTML. Removing the JavaScript prevents permission escalation issues, where the writer of the Lambda function injects code that could run with higher permissions than the user viewing the widget on the dashboard.
 

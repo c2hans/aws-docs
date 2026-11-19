@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/ivs-channel
 ---
 
 # ivs-channel-playback-authorization-enabled
-<a name="ivs-channel-playback-authorization-enabled"></a>
 
 Checks if Amazon IVS channels have playback authorization enabled. The rule is NON\_COMPLIANT if configuration.Authorized is false.
 

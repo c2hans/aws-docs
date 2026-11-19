@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CustomMo
 ---
 
 # CustomModelDataSource
-<a name="API_CustomModelDataSource"></a>
 
 The data source for a custom model. This is a union type that supports the following member:
 +  `modelPackageArnDataSource` — Specifies a SageMaker AI model package as the data source.

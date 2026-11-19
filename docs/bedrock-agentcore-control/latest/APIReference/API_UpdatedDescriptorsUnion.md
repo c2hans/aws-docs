@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdatedDescriptorsUnion
-<a name="API_UpdatedDescriptorsUnion"></a>
 
 Contains per-descriptor-type wrappers for updating descriptors. Each descriptor type can be updated independently.
 

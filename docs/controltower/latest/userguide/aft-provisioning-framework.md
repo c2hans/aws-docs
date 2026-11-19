@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/aft-provis
 ---
 
 # AFT account provisioning pipeline
-<a name="aft-provisioning-framework"></a>
 
 After the account provisioning stage of the pipeline is complete, the AFT framework continues. It automatically runs a series of steps to ensure that the newly provisioned accounts have details in place, before the [Account customizations](aft-account-customization-options.md) stage begins.
 

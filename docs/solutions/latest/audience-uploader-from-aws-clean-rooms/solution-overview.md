@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/audience-uploader-from-
 ---
 
 # Upload outputs more easily from AWS Clean Rooms into third-party advertising platforms
-<a name="solution-overview"></a>
 
  This AWS Solution is no longer available.
 

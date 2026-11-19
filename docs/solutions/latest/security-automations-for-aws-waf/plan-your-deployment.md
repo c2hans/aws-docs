@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/security-automations-fo
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes the [cost](cost.md), [security](security.md), [Quotas](quotas.md), and other considerations prior to deploying the solution.
 

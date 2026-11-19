@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Database mail features
-<a name="chap-sql-server-aurora-pg.management.databasemail"></a>
 
 This topic provides reference information about email capabilities in Microsoft SQL Server and their counterparts in Amazon Aurora PostgreSQL. You can understand the differences in email functionality between these two database systems and learn about alternative solutions for sending emails from Aurora PostgreSQL.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps
 ---
 
 # GetSprites
-<a name="API_geomaps_GetSprites"></a>
 
  `GetSprites` returns the map's sprites.
 

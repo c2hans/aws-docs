@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/constantcontact-connectio
 ---
 
 # Constant Contact connection options
-<a name="constantcontact-connection-options"></a>
 
 The following are connection options for Constant Contact:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Constant Contact object to read.

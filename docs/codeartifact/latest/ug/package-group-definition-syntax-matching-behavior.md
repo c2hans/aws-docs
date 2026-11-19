@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/package-group-def
 ---
 
 # Package group definition syntax and matching behavior
-<a name="package-group-definition-syntax-matching-behavior"></a>
 
 This topic contains information about defining package groups, pattern matching behavior, package association strength, and package group hierarchy.
 

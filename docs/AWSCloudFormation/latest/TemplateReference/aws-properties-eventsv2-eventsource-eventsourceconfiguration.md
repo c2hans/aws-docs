@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EventsV2::EventSource EventSourceConfiguration
-<a name="aws-properties-eventsv2-eventsource-eventsourceconfiguration"></a>
 
 Event source configuration. Exactly one of the two variants must be set.
 

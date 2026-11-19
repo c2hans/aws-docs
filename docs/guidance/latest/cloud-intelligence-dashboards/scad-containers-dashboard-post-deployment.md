@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Post Deployment
-<a name="scad-containers-dashboard-post-deployment"></a>
 
 Now that you deployed the dashboard, you may proceed to the following optional post-deployment options, if they’re relevant to your use-case:
 +  [Adding K8s Pods Labels or Amazon ECS Tasks Tags to the Dashboard](scad-containers-dashboard-add-labels-tags.md)

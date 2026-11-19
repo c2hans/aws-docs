@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/proof
 ---
 
 # CloudWatch pipelines configuration for Proofpoint TAP
-<a name="proofpoint-tap-pipeline-setup"></a>
 
 Collects email security event data from Proofpoint TAP using HTTP Basic authentication.
 

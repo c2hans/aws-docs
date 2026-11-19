@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/DocHi
 AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
 
 # Document History
-<a name="DocHistory"></a>
 
 This documentation is associated with the 2012-10-29 version of AWS Data Pipeline.
 

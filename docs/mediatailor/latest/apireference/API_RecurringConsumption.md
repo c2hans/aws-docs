@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Recu
 ---
 
 # RecurringConsumption
-<a name="API_RecurringConsumption"></a>
 
 The settings that determine how and when MediaTailor places prefetched ads into upcoming ad breaks for recurring prefetch scedules.
 

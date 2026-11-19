@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-3lo-
 ---
 
 # IAM permissions for user-managed setup (3LO)
-<a name="kb-managed-3lo-setup"></a>
 
 With user-managed setup (3LO), you sign in to a third-party data source (such as SharePoint, OneDrive, or Confluence) directly from the Amazon Bedrock Knowledge Bases console, and Amazon Bedrock Managed Knowledge Base handles authentication. To complete this flow, the IAM principal that starts the sign-in must be able to request the authorization URL and exchange the resulting code for a token. The principal must also be able to create the AWS Secrets Manager secret that stores the token. This page describes the IAM permissions you must grant to that principal.
 

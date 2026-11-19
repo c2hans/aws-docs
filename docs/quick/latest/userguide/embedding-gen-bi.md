@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/embedding-gen-bi.
 ---
 
 # Embedding the Amazon Q in AWS Quick Sight Generative Q&A experience
-<a name="embedding-gen-bi"></a>
 
 |  |
 | --- |

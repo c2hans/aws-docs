@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # Agent goal alignment and manipulation prevention
-<a name="agentsec04"></a>
 
  Agents can be directed to pursue unintended objectives or exhibit behaviors outside their defined scope. Without goal alignment mechanisms, agents might take actions that conflict with organizational policies or user intent. Implementing guardrails, layered validation controls, and human-in-the-loop approvals helps verify that agents operate within intended boundaries.
 

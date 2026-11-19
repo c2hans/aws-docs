@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## More information about DynamoDB
 <a name="more-information-about-9999999999999999ddb-.53d69803-9a23-5acc-a41f-2036cb02200b"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Remove
 ---
 
 # RemoveKubernetesClusterRole
-<a name="API_RemoveKubernetesClusterRole"></a>
 
 The remove Kubernetes Cluster Role.
 

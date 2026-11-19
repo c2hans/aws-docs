@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/best-practices-security.htm
 ---
 
 # AWS CDK security best practices
-<a name="best-practices-security"></a>
 
 The AWS Cloud Development Kit (AWS CDK) is a powerful tool that developers can use to configure AWS services and provision infrastructure on AWS. With any tool that provides such control and capabilities, organizations will need to establish policies and practices to ensure that the tool is being used in safe and secure ways. For example, organizations may want to restrict developer access to specific services to ensure that they can’t tamper with compliance or cost control measures that are configured in the account.
 

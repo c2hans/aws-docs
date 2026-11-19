@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_Bandwidths.h
 ---
 
 # Bandwidths
-<a name="API_Bandwidths"></a>
 
 Contains the details about the available and supported bandwidths.
 

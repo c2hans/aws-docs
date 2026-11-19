@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-ap
 ---
 
 # AppSpec File example
-<a name="reference-appspec-file-example"></a>
 
 This topic provides example AppSpec files for an AWS Lambda and an EC2/On-Premises deployment.
 

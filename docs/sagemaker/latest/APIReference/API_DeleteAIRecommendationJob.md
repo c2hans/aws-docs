@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteAIRecommendationJob
-<a name="API_DeleteAIRecommendationJob"></a>
 
 Deletes the specified AI recommendation job.
 

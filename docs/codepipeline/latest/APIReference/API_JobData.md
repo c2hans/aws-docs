@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Job
 ---
 
 # JobData
-<a name="API_JobData"></a>
 
 Represents other information about a job required for a job worker to complete the job.
 

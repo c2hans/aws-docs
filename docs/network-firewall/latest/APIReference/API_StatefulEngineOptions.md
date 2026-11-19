@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # StatefulEngineOptions
-<a name="API_StatefulEngineOptions"></a>
 
 Configuration settings for the handling of the stateful rule groups in a firewall policy.
 

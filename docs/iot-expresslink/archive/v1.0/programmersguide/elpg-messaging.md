@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmers
 ---
 
 # 4 Messaging
-<a name="elpg-messaging"></a>
 
 ## 4.1 Messaging topic model
 <a name="elpg-messaging-topic"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/expendi
 ---
 
 # Expenditure awareness
-<a name="expenditure-awareness"></a>
 
 | SaaS COST 1: How do you measure the resource consumption of individual tenants? |
 | --- |

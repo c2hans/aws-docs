@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL04-BP02 Implement loosely coupled dependencies
-<a name="rel_prevent_interaction_failure_loosely_coupled_system"></a>
 
 |  |
 | --- |

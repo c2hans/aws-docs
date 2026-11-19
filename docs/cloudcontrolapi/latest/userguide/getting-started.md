@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudcontrolapi/latest/userguide/getting
 ---
 
 # Getting started with Cloud Control API
-<a name="getting-started"></a>
 
 Use this short tutorial to get started performing resource operations with AWS Cloud Control API. You'll learn the basics of using Cloud Control API to create, read, update, delete, and list resources.
 

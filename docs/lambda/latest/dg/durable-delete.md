@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/durable-delete.html
 ---
 
 # Deleting durable executions
-<a name="durable-delete"></a>
 
 You can delete a durable execution after it reaches a terminal state: `SUCCEEDED`, `FAILED`, `STOPPED`, or `TIMED_OUT`. When you delete an execution, Lambda removes all of its data, including its history, checkpoint data, and input and output payloads.
 

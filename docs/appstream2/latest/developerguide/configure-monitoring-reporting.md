@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/configu
 ---
 
 # Monitoring and Reporting
-<a name="configure-monitoring-reporting"></a>
 
 Monitoring and reporting are an important part of maintaining the reliability, availability, and performance of your Amazon WorkSpaces Applications streaming instances and providing your users with a responsive streaming experience.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # InternalAccessDetails
-<a name="API_InternalAccessDetails"></a>
 
 Contains information about an internal access finding. This includes details about the access that was identified within your AWS organization or account.
 

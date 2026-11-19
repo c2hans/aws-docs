@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateCo
 ---
 
 # UpdateContactFlowModuleAlias
-<a name="API_UpdateContactFlowModuleAlias"></a>
 
 Updates a specific Aliases metadata, including the version it’s tied to, it’s name, and description.
 

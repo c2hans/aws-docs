@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Branc
 ---
 
 # BranchInfo
-<a name="API_BranchInfo"></a>
 
 Returns information about a branch.
 

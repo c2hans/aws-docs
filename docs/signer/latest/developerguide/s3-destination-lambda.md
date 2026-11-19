@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/developerguide/s3-destinat
 ---
 
 # Create an Amazon S3 destination bucket for your signed object files
-<a name="s3-destination-lambda"></a>
 
 This topic discusses how to prepare an Amazon S3 destination bucket where AWS Signer can deposit your signed object files.
 

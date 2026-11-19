@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/video.html
 ---
 
 # .video
-<a name="video"></a>
 
 Used by media and video industries.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Manual and automatic snapshots
-<a name="amazon-lightsail-faq-snapshots"></a>
 
 ## What are snapshots?
 <a name="what-are-snapshots"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/resource-contr
 ---
 
 # Resource control policies in AWS KMS
-<a name="resource-control-policies"></a>
 
 Resource control policies (RCPs) are a type of organization policy that you can use to enforce preventive controls on AWS resources in your organization. RCPs help you to centrally restrict external access to your AWS resources at scale. RCPs complement service control policies (SCPs). While, SCPs can be used to centrally set the maximum permissions on the IAM roles and users in your organization, RCPs can be used to centrally set the maximum permissions on AWS resources in your organization.
 

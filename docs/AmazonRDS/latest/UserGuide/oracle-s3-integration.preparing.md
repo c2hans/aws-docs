@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-s3-int
 ---
 
 # Configuring IAM permissions for RDS for Oracle integration with Amazon S3
-<a name="oracle-s3-integration.preparing"></a>
 
 For RDS for Oracle to integrate with Amazon S3, your DB instance must have access to an Amazon S3 bucket. The Amazon VPC used by your DB instance doesn't need to provide access to the Amazon S3 endpoints.
 

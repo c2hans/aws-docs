@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_InstanceRe
 ---
 
 # InstanceRequirementsRequest
-<a name="API_InstanceRequirementsRequest"></a>
 
 The instance type requirements for the Amazon ECS Managed Instances capacity provider. Use this to specify which Amazon EC2 instance types or instance families Amazon ECS can launch.
 

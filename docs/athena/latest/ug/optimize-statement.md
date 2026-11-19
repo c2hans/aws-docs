@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/optimize-statement.html
 ---
 
 # OPTIMIZE
-<a name="optimize-statement"></a>
 
 Optimizes rows in an Apache Iceberg table by rewriting data files into a more optimized layout based on their size and number of associated delete files.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-ddb.htm
 ---
 
 # Perform DynamoDB CRUD operations with Step Functions
-<a name="connect-ddb"></a>
 
 You can integrate Step Functions with DynamoDB to perform CRUD operations on a DynamoDB table. This page lists the supported DynamoDB APIs and provides an example `Task` state to retrieve an item from DynamoDB.
 

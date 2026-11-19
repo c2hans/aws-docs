@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/color-space-input-se
 ---
 
 # Set up inputs to correct metadata
-<a name="color-space-input-setup"></a>
 
 In the previous step, you identified how to correct color space metadata in each MediaLive input. This section describes how to set up each input for the required correction.
 

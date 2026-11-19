@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Glue::Integration
-<a name="aws-resource-glue-integration"></a>
 
 The `AWS::Glue::Integration` resource specifies an AWS Glue zero-ETL integration from a data source to a target. For more information, see [ zero-ETL integration supported by AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/zero-etl-using.html) and [ integration structure](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-integrations.html) in the AWS Glue developer guide.
 

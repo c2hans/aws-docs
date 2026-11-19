@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteUT
 ---
 
 # RouteUTurnStepDetails
-<a name="API_RouteUTurnStepDetails"></a>
 
 Details related to the U-turn step.
 

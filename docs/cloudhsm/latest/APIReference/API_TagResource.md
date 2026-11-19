@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_TagReso
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds or overwrites one or more tags for the specified AWS CloudHSM cluster.
 

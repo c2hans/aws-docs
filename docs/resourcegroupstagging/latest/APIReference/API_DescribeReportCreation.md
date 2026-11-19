@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReferenc
 ---
 
 # DescribeReportCreation
-<a name="API_DescribeReportCreation"></a>
 
 Describes the status of the `StartReportCreation` operation.
 

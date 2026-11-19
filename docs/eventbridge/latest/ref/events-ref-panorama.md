@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-panora
 ---
 
 # AWS Panorama events
-<a name="events-ref-panorama"></a>
 
 AWS Panorama sends service events to EventBridge via AWS CloudTrail.
 

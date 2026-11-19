@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The AWS Amplify UI Builder API contains several data types that various actions use. This section describes each data type in detail.
 

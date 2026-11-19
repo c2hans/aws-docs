@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Delet
 ---
 
 # DeleteCallAnalyticsJob
-<a name="API_DeleteCallAnalyticsJob"></a>
 
 Deletes a Call Analytics job. To use this operation, specify the name of the job you want to delete using `CallAnalyticsJobName`. Job names are case sensitive.
 

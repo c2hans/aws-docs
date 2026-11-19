@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/architecture-op
 ---
 
 # Architecture Options
-<a name="architecture-options"></a>
 
 SAP NetWeaver applications based on SQL Server can be installed in three different ways:
 +  **Standard system or single host installation**: ABAP System Central Services (ASCS)/System Central Services (SCS), Database, and Primary Application Server (PAS) of SAP NetWeaver run in single Amazon EC2 instance. This option is suited for non-critical and non-production workloads.

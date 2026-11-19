@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Oozie-release-hi
 ---
 
 # Oozie release notes by version
-<a name="Oozie-release-history-versions"></a>
 
 **Topics**
 + [Amazon EMR 7.10.0 - Oozie release notes](Oozie-release-history-changes-7100.md)

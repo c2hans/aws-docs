@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/styling-d
 ---
 
 # Style dynamic maps
-<a name="styling-dynamic-maps"></a>
 
 Amazon Location Service provides two options for styling your dynamic maps: using predesigned AWS Map Styles or customizing the map style using style descriptors.
 

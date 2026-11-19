@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-default-wh
 ---
 
 # Set the default whisper flow in Connect Customer for a chat conversation
-<a name="set-default-whisper-flow-for-chat"></a>
 
 For chat conversations, you need to include a **Set whisper flow** block for default agent or customer whispers to play.
 

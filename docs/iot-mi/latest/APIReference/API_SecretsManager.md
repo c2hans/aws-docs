@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_SecretsMa
 ---
 
 # SecretsManager
-<a name="API_SecretsManager"></a>
 
 Configuration for AWS Secrets Manager, used to securely store and manage sensitive information for connector destinations.
 

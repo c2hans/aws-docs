@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_De
 ---
 
 # DeleteArtifact
-<a name="API_DeleteArtifact"></a>
 
 Deletes an artifact from an agent space.
 

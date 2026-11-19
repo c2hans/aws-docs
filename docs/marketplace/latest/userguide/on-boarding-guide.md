@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/on-boarding
 ---
 
 # Onboarding to AWS Marketplace Commerce Analytics Service
-<a name="on-boarding-guide"></a>
 
 With the AWS Marketplace Commerce Analytics Service, you can programmatically access product and customer data through AWS Marketplace. To get started with the AWS Marketplace Commerce Analytics Service, you must configure your AWS account and AWS services to use the AWS Marketplace Commerce Analytics Service. These sections show you how to configure your AWS account and AWS services to use the AWS Marketplace Commerce Analytics Service.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 ---
 
 # Working with trace and dump files for Amazon RDS for SQL Server
-<a name="Appendix.SQLServer.CommonDBATasks.TraceFiles"></a>
 
 This section describes working with trace files and dump files for your Amazon RDS DB instances running Microsoft SQL Server.
 

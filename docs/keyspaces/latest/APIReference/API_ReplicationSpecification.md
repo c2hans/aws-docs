@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_Replic
 ---
 
 # ReplicationSpecification
-<a name="API_ReplicationSpecification"></a>
 
  The replication specification of the keyspace includes:
 +  `regionList` - the AWS Regions where the keyspace is replicated in.

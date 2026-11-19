@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSetupSSMManageResourcesExecutionPolicy
-<a name="AWSQuickSetupSSMManageResourcesExecutionPolicy"></a>
 
 **Description**: This policy grants permissions that allow Systems Manager to create prerequisites such as IAM roles required for Systems Manager onboarding.
 

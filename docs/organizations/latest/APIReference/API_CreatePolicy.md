@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Cr
 ---
 
 # CreatePolicy
-<a name="API_CreatePolicy"></a>
 
 Creates a policy of a specified type that you can attach to a root, an organizational unit (OU), or an individual AWS account.
 

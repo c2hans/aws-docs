@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Count expression operators in DynamoDB with an AWS SDK
-<a name="example_dynamodb_Scenario_ExpressionOperatorCounting_section"></a>
 
 The following code examples show how to count expression operators in DynamoDB.
 + Understand DynamoDB's 300 operator limit.

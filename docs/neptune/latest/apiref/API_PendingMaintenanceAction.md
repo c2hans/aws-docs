@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_PendingMainten
 ---
 
 # PendingMaintenanceAction
-<a name="API_PendingMaintenanceAction"></a>
 
 Provides information about a pending maintenance action for a resource.
 

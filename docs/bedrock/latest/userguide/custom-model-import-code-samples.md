@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/custom-model-im
 ---
 
 # Code samples for custom model import
-<a name="custom-model-import-code-samples"></a>
 
 The following code samples show how to set up permissions, create a custom model import job, view the details of your import jobs and imported models, and delete imported model. These code samples apply to Mistral AI, Llama, Qwen, Flan, GPTBigCode, and Mixtral architectures.
 

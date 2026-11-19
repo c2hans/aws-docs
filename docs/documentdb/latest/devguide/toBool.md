@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/toBool.html
 ---
 
 # $toBool
-<a name="toBool"></a>
 
 The `$toBool` operator in Amazon DocumentDB converts an expression to a boolean value.
 

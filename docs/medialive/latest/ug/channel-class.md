@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/channel-class.html
 ---
 
 # Channel class
-<a name="channel-class"></a>
 
 When you [planned the workflow](plan-redundancy-mode.md), you decided whether to set up the MediaLive channel as a standard channel (with two pipelines) or a single-pipeline channel. You must now specify the class in the channel configuration.
 

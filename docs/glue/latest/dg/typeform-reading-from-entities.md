@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/typeform-reading-from-ent
 ---
 
 # Reading from Typeform entities
-<a name="typeform-reading-from-entities"></a>
 
 **Prerequisites**
 

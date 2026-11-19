@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-trouble
 ---
 
 # Troubleshooting data delivery
-<a name="data-delivery-troubleshooting"></a>
 
  Use this section to resolve common issues with data delivery.
 

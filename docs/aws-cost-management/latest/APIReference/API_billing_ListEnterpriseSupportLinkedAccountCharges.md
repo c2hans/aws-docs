@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ListEnterpriseSupportLinkedAccountCharges
-<a name="API_billing_ListEnterpriseSupportLinkedAccountCharges"></a>
 
 Returns Support-eligible spend broken down at linked account level.
 

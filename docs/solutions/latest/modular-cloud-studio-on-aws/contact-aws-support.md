@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Contact AWS Support
-<a name="contact-aws-support"></a>
 
 If you have [AWS Developer Support](https://aws.amazon.com/premiumsupport/plans/developers/), [AWS Business Support](https://aws.amazon.com/premiumsupport/plans/business/), or [AWS Enterprise Support](https://aws.amazon.com/premiumsupport/plans/enterprise/), you can use the Support Center to get expert assistance with this solution. The following sections provide instructions.
 

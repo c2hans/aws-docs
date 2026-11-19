@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/hex-reading-from-entities
 ---
 
 # Reading from Hex entities
-<a name="hex-reading-from-entities"></a>
 
 **Prerequisites**
 

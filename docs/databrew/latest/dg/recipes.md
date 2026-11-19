@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipes.html
 ---
 
 # Creating and using AWS Glue DataBrew recipes
-<a name="recipes"></a>
 
 In DataBrew, a *recipe* is a set of data transformation steps. You can apply these steps to a sample of your data, or apply that same recipe to a dataset.
 

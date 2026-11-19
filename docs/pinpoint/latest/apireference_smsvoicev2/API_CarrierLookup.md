@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # CarrierLookup
-<a name="API_CarrierLookup"></a>
 
 Returns information about a destination phone number, including whether the number type and whether it is valid, the carrier, and more.
 

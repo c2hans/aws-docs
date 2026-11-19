@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # ListIntegrations
-<a name="API_connect-customer-profiles_ListIntegrations"></a>
 
 Lists all of the integrations in your domain.
 

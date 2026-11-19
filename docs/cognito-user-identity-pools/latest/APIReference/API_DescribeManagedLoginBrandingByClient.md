@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # DescribeManagedLoginBrandingByClient
-<a name="API_DescribeManagedLoginBrandingByClient"></a>
 
 Given the ID of a user pool app client, returns detailed information about the style assigned to the app client.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # OAuthCredentialProvider
-<a name="API_OAuthCredentialProvider"></a>
 
 Configuration for an OAuth 2.0 credential provider used to authenticate tool calls.
 

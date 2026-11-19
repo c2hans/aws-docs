@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-release-7x.h
 ---
 
 # Amazon EMR 7.x release versions
-<a name="emr-release-7x"></a>
 
 This section contains application versions, release notes, component versions, and configuration classifications available in each Amazon EMR 7.x release version.
 

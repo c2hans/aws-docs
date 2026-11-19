@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/adminguide/connect-bedroc
 AWS Chatbot is now Amazon Q Developer. [Learn more](service-rename.md)
 
 # Invoking Amazon Bedrock Agents from chat channels using Amazon Q Developer in chat applications
-<a name="connect-bedrock-agents"></a>
 
 You can invoke Amazon Bedrock Agents directly from your chat channels using Amazon Q Developer in chat applications. Amazon Bedrock Agents are fully managed capabilities that make it easier for you to create generative AI-based applications that can complete complex tasks for a wide range of use cases and deliver up-to-date answers based on proprietary knowledge sources. You can use agents to increase productivity, improve your customer experience, and automate workflows. For more information, see [Automate tasks in your application using conversational agents](https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html) in the *Amazon Bedrock User Guide*.
 

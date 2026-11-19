@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/githu
 ---
 
 # Source configuration for GitHub Audit Log
-<a name="github-audit-log-source-setup"></a>
 
 **Note**
  Important: GitHub Enterprise accounts are required to use this connector. GitHub Personal or Organization accounts are not supported.

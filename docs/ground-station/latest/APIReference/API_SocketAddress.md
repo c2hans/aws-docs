@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_S
 ---
 
 # SocketAddress
-<a name="API_SocketAddress"></a>
 
 Information about the socket address.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_Volume.htm
 ---
 
 # Volume
-<a name="API_Volume"></a>
 
 A data volume that's used in a job's container properties.
 

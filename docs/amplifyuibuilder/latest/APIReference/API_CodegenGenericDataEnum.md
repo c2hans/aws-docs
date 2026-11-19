@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # CodegenGenericDataEnum
-<a name="API_CodegenGenericDataEnum"></a>
 
 Describes the enums in a generic data schema.
 

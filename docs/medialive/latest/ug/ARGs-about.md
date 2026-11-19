@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/ARGs-about.html
 ---
 
 # About audio rendition groups
-<a name="ARGs-about"></a>
 
 ## Standards compliance
 <a name="ARG-compliance"></a>

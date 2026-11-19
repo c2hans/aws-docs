@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Pro
 ---
 
 # ProximityEventConfiguration
-<a name="API_ProximityEventConfiguration"></a>
 
 Proximity event configuration object for enabling and disabling relevant topics.
 

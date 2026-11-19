@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/create-cel
 ---
 
 # Create a cell
-<a name="create-cell"></a>
 
 The following is an example of a request to create a cell, and the response.
 

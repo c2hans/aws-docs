@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_KerberosAuth
 ---
 
 # KerberosAuthenticationSettings
-<a name="API_KerberosAuthenticationSettings"></a>
 
 Specifies the settings required for kerberos authentication when creating the replication instance.
 

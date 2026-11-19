@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 ---
 
 # Appendix 2: Key aspects of CPG 234
-<a name="appendix-2-key-aspects-of-cpg-234"></a>
 
  CPG 234 Information Security (CPG 234) provides APRA's guidance on particular areas to assist ARIs in the management of information security. CPG 234 doesn't create enforceable requirements on an ARI but addresses areas where APRA identifies weaknesses as part of its ongoing supervisory activities.
 

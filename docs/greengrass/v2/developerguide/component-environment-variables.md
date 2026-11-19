@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/component-e
 ---
 
 # Component environment variable reference
-<a name="component-environment-variables"></a>
 
 The AWS IoT Greengrass Core software sets environment variables when it runs lifecycle scripts for components. You can get these environment variables in your components to get the thing name, AWS Region, and Greengrass nucleus version. The software also sets environment variables that your component requires to use [the interprocess communication SDK](interprocess-communication.md) and to [interact with AWS services](interact-with-aws-services.md).
 

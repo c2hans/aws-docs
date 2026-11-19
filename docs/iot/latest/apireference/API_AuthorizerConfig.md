@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AuthorizerCo
 ---
 
 # AuthorizerConfig
-<a name="API_AuthorizerConfig"></a>
 
 An object that specifies the authorization service for a domain.
 

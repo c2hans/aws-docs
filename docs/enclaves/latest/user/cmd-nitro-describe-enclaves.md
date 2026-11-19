@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/cmd-nitro-describe-
 ---
 
 # nitro-cli describe-enclaves
-<a name="cmd-nitro-describe-enclaves"></a>
 
 Describes an enclave.
 

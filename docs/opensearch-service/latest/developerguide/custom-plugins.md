@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Managing custom plugins in Amazon OpenSearch Service
-<a name="custom-plugins"></a>
 
 Using custom plugins for OpenSearch Service, you can extend OpenSearch functionality in areas like language analysis, custom filtering, ranking and more, making it possible for you to craft personalized search experiences. Custom plugins for OpenSearch can be developed by extending the `org.opensearch.plugins.Plugin` class and then packaging it in a `.zip` file.
 

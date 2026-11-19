@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/STS/latest/APIReference/API_PolicyDescri
 ---
 
 # PolicyDescriptorType
-<a name="API_PolicyDescriptorType"></a>
 
 A reference to the IAM managed policy that is passed as a session policy for a role session or a federated user session.
 

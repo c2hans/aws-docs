@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.REPLAC
 ---
 
 # REPLACE\_BETWEEN\_DELIMITERS
-<a name="recipe-actions.REPLACE_BETWEEN_DELIMITERS"></a>
 
 Replaces the characters between two delimiters with user-specified text.
 

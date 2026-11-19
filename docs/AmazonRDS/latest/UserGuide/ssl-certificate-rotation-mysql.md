@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/ssl-certifica
 ---
 
 # Updating applications to connect to MySQL DB instances using new SSL/TLS certificates
-<a name="ssl-certificate-rotation-mysql"></a>
 
 As of January 13, 2023, Amazon RDS has published new Certificate Authority (CA) certificates for connecting to your RDS DB instances using Secure Socket Layer or Transport Layer Security (SSL/TLS). Following, you can find information about updating your applications to use the new certificates.
 

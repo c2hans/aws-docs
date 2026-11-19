@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/using-maven-packa
 ---
 
 # Using Maven packages in CodeBuild
-<a name="using-maven-packages-in-codebuild"></a>
 
 ## Set up permissions with IAM roles
 <a name="maven-packages-in-codebuild-iam"></a>

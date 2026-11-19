@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_AuditEvent
 ---
 
 # AuditEventField
-<a name="API_connect-cases_AuditEventField"></a>
 
 Fields for audit event.
 

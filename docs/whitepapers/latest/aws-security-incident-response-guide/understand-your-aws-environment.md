@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Understand your AWS environment
-<a name="understand-your-aws-environment"></a>
 
  In addition to understanding AWS services, their use cases, and how they integrate with each other, it’s equally important to understand how your organization’s AWS environment is actually architected and what operational processes are in place. Often, internal knowledge such as this is not documented and is understood by only a few domain experts, which can create dependencies, hinder innovation, and slow response time.
 

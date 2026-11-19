@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_C
 ---
 
 # ConfigListItem
-<a name="API_ConfigListItem"></a>
 
 An item in a list of `Config` objects.
 

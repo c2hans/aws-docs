@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CapacityR
 ---
 
 # CapacityReservationBillingRequest
-<a name="API_CapacityReservationBillingRequest"></a>
 
 Information about a request to assign billing of the unused capacity of a Capacity Reservation.
 

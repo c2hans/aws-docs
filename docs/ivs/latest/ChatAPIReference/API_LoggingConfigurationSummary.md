@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_LoggingC
 ---
 
 # LoggingConfigurationSummary
-<a name="API_LoggingConfigurationSummary"></a>
 
 Summary information about a logging configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/prepar
 ---
 
 # Preparing first-party input data
-<a name="prepare-input-data"></a>
 
 The following steps describe how to prepare first-party data to use in a [rule-based matching workflow](creating-matching-workflow-rule-based.md), [machine learning-based matching workflow](create-matching-workflow-ml.md), or an [ID mapping workflow](create-id-mapping-workflow.md).
 

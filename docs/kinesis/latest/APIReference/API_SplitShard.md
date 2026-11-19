@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_SplitSha
 ---
 
 # SplitShard
-<a name="API_SplitShard"></a>
 
 Splits a shard into two new shards in the Kinesis data stream, to increase the stream's capacity to ingest and transport data. `SplitShard` is called when there is a need to increase the overall capacity of a stream because of an expected increase in the volume of data records being ingested. This API is only supported for the data streams with the provisioned capacity mode.
 
@@ -24,7 +23,7 @@ If the specified stream does not exist, [DescribeStreamSummary](API_DescribeStre
 
 For the default shard limit for an AWS account, see [Kinesis Data Streams Limits](https://docs.aws.amazon.com/kinesis/latest/dev/service-sizes-and-limits.html) in the *Amazon Kinesis Data Streams Developer Guide*. To increase this limit, [contact AWS Support](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html).
 
-If you try to operate on too many streams simultaneously using [CreateStream](API_CreateStream.md), [DeleteStream](API_DeleteStream.md), [MergeShards](API_MergeShards.md), and/or [SplitShard](#API_SplitShard), you receive a `LimitExceededException`.
+If you try to operate on too many streams simultaneously using [CreateStream](API_CreateStream.md), [DeleteStream](API_DeleteStream.md), [MergeShards](API_MergeShards.md), and/or [SplitShard](API_SplitShard.md), you receive a `LimitExceededException`.
 
  `SplitShard` has a limit of five transactions per second per account.
 

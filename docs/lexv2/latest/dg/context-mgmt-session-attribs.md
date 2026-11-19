@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/context-mgmt-session-att
 ---
 
 # Setting session attributes for your Lex V2 bot
-<a name="context-mgmt-session-attribs"></a>
 
 *Session attributes* contain application-specific information that is passed between a bot and a client application during a session. Amazon Lex V2 passes session attributes to all Lambda functions configured for a bot. If a Lambda function adds or updates session attributes, Amazon Lex V2 passes the new information back to the client application.
 

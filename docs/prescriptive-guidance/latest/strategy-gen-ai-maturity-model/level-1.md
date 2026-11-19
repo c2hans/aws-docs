@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ge
 ---
 
 # Generative AI maturity model level 1: Envision
-<a name="level-1"></a>
 
 This foundational level serves as a critical starting point where organizations explore generative AI concepts, build organizational awareness, and identify potential use cases that align with their business objectives. By establishing this essential groundwork, companies can develop a clear vision for their AI journey while addressing key considerations across business, people, governance, platform, security, and operational dimensions.
 

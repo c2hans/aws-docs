@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 3: Submit and monitor the workflow
-<a name="pb-solr-step3"></a>
 
 Run a pilot first. Narrow the configuration to a small subset of collections or a single representative collection, then submit and watch the run:
 

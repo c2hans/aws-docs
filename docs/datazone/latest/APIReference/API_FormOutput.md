@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_FormOut
 ---
 
 # FormOutput
-<a name="API_FormOutput"></a>
 
 The details of a metadata form.
 

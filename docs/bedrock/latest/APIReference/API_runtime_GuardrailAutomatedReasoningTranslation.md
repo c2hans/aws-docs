@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailAutomatedReasoningTranslation
-<a name="API_runtime_GuardrailAutomatedReasoningTranslation"></a>
 
 Contains the logical translation of natural language input into formal logical statements, including premises, claims, and confidence scores.
 

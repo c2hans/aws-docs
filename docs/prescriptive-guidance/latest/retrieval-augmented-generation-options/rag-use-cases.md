@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/retrieval-a
 ---
 
 # Use cases for Retrieval Augmented Generation
-<a name="rag-use-cases"></a>
 
 The following are common use cases for using a RAG approach:
 + **Search engines** – RAG-enabled search engines can provide more accurate and up-to-date featured snippets in their search results.

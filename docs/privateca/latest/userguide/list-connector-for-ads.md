@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/list-connecto
 ---
 
 # List connectors for Active Directory
-<a name="list-connector-for-ads"></a>
 
 You can use the AWS Private CA Connector for Active Directory console or AWS CLI to list the connectors that you own.
 

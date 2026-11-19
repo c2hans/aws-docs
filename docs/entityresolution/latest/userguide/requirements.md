@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/requir
 ---
 
 # Requirements
-<a name="requirements"></a>
 
 Before integrating as a provider service with AWS Entity Resolution, complete the following requirements.
 

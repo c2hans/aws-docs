@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/ipc-compone
 ---
 
 # Interact with component lifecycle
-<a name="ipc-component-lifecycle"></a>
 
 Use the component lifecycle IPC service to:
 + Update the component state on the core device.

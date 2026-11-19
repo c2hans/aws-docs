@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Tutorial: Using Amazon Logging Frameworks with AWS Lambda to Create Application Logs
-<a name="cw-log-frameworks"></a>
 
 You can use Amazon CloudWatch Logs to monitor, store, and access your application’s logs. To get log data into CloudWatch Logs, use an AWS SDK or install the CloudWatch Logs agent to monitor certain log folders. CloudWatch Logs is integrated with several popular .NET logging frameworks, simplifying work flows.
 

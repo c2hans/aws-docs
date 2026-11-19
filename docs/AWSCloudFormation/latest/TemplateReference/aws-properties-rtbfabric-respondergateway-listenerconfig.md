@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::RTBFabric::ResponderGateway ListenerConfig
-<a name="aws-properties-rtbfabric-respondergateway-listenerconfig"></a>
 
 <a name="aws-properties-rtbfabric-respondergateway-listenerconfig-description"></a>The `ListenerConfig` property type specifies Property description not available. for an [AWS::RTBFabric::ResponderGateway](aws-resource-rtbfabric-respondergateway.md).
 

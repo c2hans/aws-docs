@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # PushNotificationPreferences
-<a name="API_messaging-chime_PushNotificationPreferences"></a>
 
 The channel membership preferences for push notification.
 

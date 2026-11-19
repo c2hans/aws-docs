@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # MetricTransformation
-<a name="API_MetricTransformation"></a>
 
 Indicates how to transform ingested log events to metric data in a CloudWatch metric.
 

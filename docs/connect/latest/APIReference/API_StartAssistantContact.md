@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StartAss
 ---
 
 # StartAssistantContact
-<a name="API_StartAssistantContact"></a>
 
 Starts a chat contact with an AI agent.
 

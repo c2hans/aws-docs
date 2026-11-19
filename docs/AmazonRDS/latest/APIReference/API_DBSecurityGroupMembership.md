@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBSecu
 ---
 
 # DBSecurityGroupMembership
-<a name="API_DBSecurityGroupMembership"></a>
 
 This data type is used as a response element in the following actions:
 +  `ModifyDBInstance`

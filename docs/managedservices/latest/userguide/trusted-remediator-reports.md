@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/userguide/trusted
 End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
 
 # Trusted Remediator reports
-<a name="trusted-remediator-reports"></a>
 
 **Topics**
 + [Trusted Remediator Remediation Summary report](#trusted-remediator-summary)

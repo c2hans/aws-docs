@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RuleNumberExpression
-<a name="API_RuleNumberExpression"></a>
 
 A number expression to match numeric conditions with integers from the incoming email.
 

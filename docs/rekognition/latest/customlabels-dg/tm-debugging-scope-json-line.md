@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/tm-de
 ---
 
 # Understanding training and testing validation result manifests
-<a name="tm-debugging-scope-json-line"></a>
 
 During training, Amazon Rekognition Custom Labels creates validation result manifests to hold non-terminal JSON Line errors. The validation results manifests are copies of the training and testing datasets with error information added. You can access the validation manifests after training completes. For more information, see [Getting the validation results](tm-debugging-getting-validation-data.md). Amazon Rekognition Custom Labels also creates a manifest summary that includes overview information for JSON Line errors, such as error locations and JSON Line error counts. For more information, see [Understanding the manifest summary](tm-debugging-summary.md).
 

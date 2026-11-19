@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VerifiedA
 ---
 
 # VerifiedAccessInstanceCustomSubDomain
-<a name="API_VerifiedAccessInstanceCustomSubDomain"></a>
 
 Describes a custom subdomain for a network CIDR endpoint for Verified Access.
 

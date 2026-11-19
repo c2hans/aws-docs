@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_GraderCo
 ---
 
 # GraderConfig
-<a name="API_GraderConfig"></a>
 
  Configuration for the grader used in reinforcement fine-tuning to evaluate model responses and provide reward signals.
 

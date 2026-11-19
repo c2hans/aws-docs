@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/bgp-speci
 ---
 
 # BGP-specific settings
-<a name="bgp-specific-settings"></a>
 
 The following Border Gateway Protocol (BGP) settings are used by Direct Connect:
 

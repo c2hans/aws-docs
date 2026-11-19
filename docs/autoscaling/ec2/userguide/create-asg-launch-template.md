@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-asg-lau
 ---
 
 # Create an Auto Scaling group using a launch template
-<a name="create-asg-launch-template"></a>
 
 When you create an Auto Scaling group, you must specify the necessary information to configure the Amazon EC2 instances, the Availability Zones and VPC subnets for the instances, the desired capacity, and the minimum and maximum capacity limits.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # UpdateSipRule
-<a name="API_voice-chime_UpdateSipRule"></a>
 
 Updates the details of the specified SIP rule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/resource-matc
 ---
 
 # Supported resource types and identifiers
-<a name="resource-matching-supported-types"></a>
 
 Resource matching supports seven FHIR R4 resource types. For each type, it matches on the following identifiers. Identifiers not listed here are not used for matching.
 

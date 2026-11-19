@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_L
 ---
 
 # ListCommonControls
-<a name="API_ListCommonControls"></a>
 
 Returns a paginated list of common controls from the AWS Control Catalog.
 

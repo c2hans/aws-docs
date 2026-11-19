@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # WaypointOptimizationTrafficOptions
-<a name="API_WaypointOptimizationTrafficOptions"></a>
 
 Options related to traffic.
 

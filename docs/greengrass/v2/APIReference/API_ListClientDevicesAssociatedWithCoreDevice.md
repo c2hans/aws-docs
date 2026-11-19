@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ListClien
 ---
 
 # ListClientDevicesAssociatedWithCoreDevice
-<a name="API_ListClientDevicesAssociatedWithCoreDevice"></a>
 
 Retrieves a paginated list of client devices that are associated with a core device.
 

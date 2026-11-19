@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-arch
 ---
 
 # SCCA components and requirements
-<a name="scca-components-and-requirements"></a>
 
 The Defense Information Systems Agency (DISA) Secure Cloud Computing Architecture (SCCA), adopted by the US Department of Defense (DoD), is intended to be a scalable, cost-effective approach for securing cloud-based applications under a common security architecture. It provides a standard approach for securing IL4 and IL5 data in cloud environments. As described in the [DISA SCCA fact sheet](https://www.disa.mil/~/media/files/disa/fact-sheets/secure-cloud-computing.pdf), the overarching components of the SCCA include:
 + **Cloud Access Point (CAP)** –** **Provides access to the cloud, and protects DoD networks from the cloud. Streamlined protections focused on protecting the network boundary.

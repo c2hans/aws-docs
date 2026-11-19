@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migr
 ---
 
 # Migrate pre-signed URL downloads from AWS SDK for Java v1 to v2
-<a name="migration-s3-presign-download"></a>
 
 Migrate your pre-signed URL download code to use asynchronous processing and access expanded download options in version 2. This topic shows how to migrate from version 1.x (v1) to version 2.x (v2) of the AWS SDK for Java. For information about v2 pre-signed URL download capabilities, see [Work with Amazon S3 pre-signed URLs](examples-s3-presign.md).
 

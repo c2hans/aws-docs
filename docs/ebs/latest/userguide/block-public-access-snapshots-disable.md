@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/block-public-access
 ---
 
 # Disable block public access for Amazon EBS snapshots
-<a name="block-public-access-snapshots-disable"></a>
 
 Disable block public access for snapshots to allow public sharing of snapshots in the Region. After this feature is disabled, users can publicly share snapshots in the Region.
 

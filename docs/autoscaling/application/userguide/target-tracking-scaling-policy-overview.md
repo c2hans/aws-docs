@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/target
 ---
 
 # How target tracking scaling for Application Auto Scaling works
-<a name="target-tracking-scaling-policy-overview"></a>
 
 This topic describes how target tracking scaling works and introduces the key elements of a target tracking scaling policy.
 

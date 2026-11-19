@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DisassociateStreamForSegments
-<a name="API_connect-customer-profiles_DisassociateStreamForSegments"></a>
 
 Disassociates the Amazon Kinesis data stream configured for segment membership events. All active segment subscriptions delivering events to this stream are eventually stopped.
 

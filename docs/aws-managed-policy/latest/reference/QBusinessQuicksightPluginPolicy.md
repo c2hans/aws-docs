@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/QBus
 ---
 
 # QBusinessQuicksightPluginPolicy
-<a name="QBusinessQuicksightPluginPolicy"></a>
 
 **Description**: Grants permissions to QBusiness to call QuickSight APIs for the QuickSight plugin
 

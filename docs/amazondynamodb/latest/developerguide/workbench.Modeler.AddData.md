@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/wor
 ---
 
 # Adding sample data to a data model
-<a name="workbench.Modeler.AddData"></a>
 
 **To auto-generate sample data**
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QBusiness::Index DocumentAttributeConfiguration
-<a name="aws-properties-qbusiness-index-documentattributeconfiguration"></a>
 
 Configuration information for document attributes. Document attributes are metadata or fields associated with your documents. For example, the company department name associated with each document.
 

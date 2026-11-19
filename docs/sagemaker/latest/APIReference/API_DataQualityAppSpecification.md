@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DataQu
 ---
 
 # DataQualityAppSpecification
-<a name="API_DataQualityAppSpecification"></a>
 
 Information about the container that a data quality monitoring job runs.
 

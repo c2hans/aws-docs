@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Aurora MySQL wait events
-<a name="AuroraMySQL.Reference.Waitevents"></a>
 
 The following are some common wait events for Aurora MySQL.
 

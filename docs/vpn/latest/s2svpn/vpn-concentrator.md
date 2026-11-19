@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/vpn-concentrator.html
 ---
 
 # AWS Site-to-Site VPN Concentrators
-<a name="vpn-concentrator"></a>
 
 AWS Site-to-Site VPN Concentrator is a new feature that simplifies multi-site connectivity for distributed enterprises. VPN Concentrator is suitable for customers who need to connect 25\+ remote sites to AWS, with each site needing low bandwidth (under 100 Mbps).
 

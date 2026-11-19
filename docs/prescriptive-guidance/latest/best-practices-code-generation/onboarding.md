@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Best practices for onboarding Amazon Q Developer
-<a name="onboarding"></a>
 
 Amazon Q Developer is a generative AI coding assistant that you can use in integrated development environments (IDEs) such as Visual Studio Code, JetBrains, Visual Studio, and Eclipse. This section describes recommended practices for accessing Amazon Q Developer and onboarding it to your development environment.
 

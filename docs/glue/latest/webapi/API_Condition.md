@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Condition.html
 ---
 
 # Condition
-<a name="API_Condition"></a>
 
 Defines a condition under which a trigger fires.
 

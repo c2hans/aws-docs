@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-
 ---
 
 # Create the CodePipeline service role
-<a name="pipelines-create-service-role"></a>
 
 When you create a pipeline, you create a service role or use an existing service role.
 

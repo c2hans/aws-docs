@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventfilteri
 ---
 
 # Control which events Lambda sends to your Event Function
-<a name="invocation-eventfiltering"></a>
 
 You can use event filtering to control which records from a stream or queue Lambda sends to your function. For example, you can add a filter so that your function only processes Amazon SQS messages containing certain data parameters. Event filtering works only with certain event source mappings. You can add filters to event source mappings for the following AWS services:
 + Amazon DynamoDB

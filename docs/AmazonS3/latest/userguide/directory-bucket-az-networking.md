@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # Networking for directory buckets in an Availability Zone
-<a name="directory-bucket-az-networking"></a>
 
 To reduce the amount of time your packets spend on the network, configure your virtual private cloud (VPC) with a gateway endpoint to access directory buckets in Availability Zones while keeping traffic within the AWS network, and at no additional cost.
 

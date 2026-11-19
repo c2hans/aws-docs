@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/images-information
 ---
 
 # Image specifications
-<a name="images-information"></a>
 
 Amazon Rekognition Image operations can analyze images in .jpg or .png format.
 

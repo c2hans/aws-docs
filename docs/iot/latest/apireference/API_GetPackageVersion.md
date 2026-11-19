@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetPackageVe
 ---
 
 # GetPackageVersion
-<a name="API_GetPackageVersion"></a>
 
 Gets information about the specified package version.
 

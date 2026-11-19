@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvidia-GRID-driv
 ---
 
 # Install NVIDIA GRID drivers (G instance family)
-<a name="nvidia-GRID-driver"></a>
 
 These downloads are available to AWS customers only. By downloading, to adhere to requirements of the AWS solution referred to in the NVIDIA GRID Cloud End User License Agreement (EULA), you agree to use the downloaded software only to develop AMIs for use with the NVIDIA RTX PRO 4500 Blackwell, NVIDIA RTX PRO 6000 Blackwell, NVIDIA L4, NVIDIA L40S, NVIDIA A10G, or NVIDIA Tesla T4 hardware. You can use the GRID drivers to both create and use AMIs within the AWS environment. Upon installation of the software, you are bound by the terms of the [NVIDIA GRID Cloud End User License Agreement](https://aws-nvidia-license-agreement.s3.amazonaws.com/NvidiaGridAWSUserLicenseAgreement.DOCX). For more information about the current driver releases from NVIDIA, see [NVIDIA Virtual GPU (vGPU) Software](https://docs.nvidia.com/vgpu/index.html) on the NVIDIA website.
 

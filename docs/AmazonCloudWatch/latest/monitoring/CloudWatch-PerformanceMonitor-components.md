@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Components and features of Performance Monitor
-<a name="CloudWatch-PerformanceMonitor-components"></a>
 
 Performance Monitor uses or references the following concepts.
 

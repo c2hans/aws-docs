@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_RatingSc
 ---
 
 # RatingScaleItemValue
-<a name="API_RatingScaleItemValue"></a>
 
 Defines the value for one rating in a custom metric rating scale.
 

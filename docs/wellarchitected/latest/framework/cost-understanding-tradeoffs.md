@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost-un
 ---
 
 # Understanding trade-offs
-<a name="cost-understanding-tradeoffs"></a>
 
  Every architectural decision involves trade-offs. When you optimize for cost, you are usually balancing against security, reliability, performance, and operational effort. Sustainability is the exception, as both cost and sustainability come down to using resources efficiently, so optimizing for one usually improves the other. Cost optimization in the cloud is about finding the optimal balance between efficiency (minimizing resource costs) and effectiveness (delivering business value). A solution can be efficient but fail to meet business needs, or it can meet those needs at an unnecessarily high price. True cost optimization achieves both: maximum business value at the lowest appropriate price point. Making informed decisions about these trade-offs requires understanding their business impact and establishing clear processes for evaluation and ongoing optimization.
 

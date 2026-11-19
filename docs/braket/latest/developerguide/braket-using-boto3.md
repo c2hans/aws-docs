@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-usin
 ---
 
 # Working with AWS Boto3
-<a name="braket-using-boto3"></a>
 
 Boto3 is the AWS SDK for Python. With Boto3, Python developers can create, configure, and manage AWS services, such as Amazon Braket. Boto3 provides an object-oriented API, as well as low-level access to Amazon Braket.
 

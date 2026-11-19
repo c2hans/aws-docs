@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Task 4: Improving your migration runbooks
-<a name="task-four-migration-runbooks"></a>
 
 In this task, you improve the runbooks by repeating the POC multiple times. With each wave, the POC test and *retrospective*, a meeting in which the team reviews the completed wave, provide opportunity to improve the runbooks. You also improve your runbooks by automating repetitive tasks, which increases the velocity of the migration and reduces the risk of manual configuration errors.
 

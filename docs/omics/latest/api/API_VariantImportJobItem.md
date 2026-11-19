@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_VariantImportJobIte
 ---
 
 # VariantImportJobItem
-<a name="API_VariantImportJobItem"></a>
 
 A variant import job.
 

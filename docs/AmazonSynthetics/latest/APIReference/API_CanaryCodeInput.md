@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # CanaryCodeInput
-<a name="API_CanaryCodeInput"></a>
 
 Use this structure to input your script code for the canary. This structure contains the Lambda handler with the location where the canary should start running the script. If the script is stored in an Amazon S3 bucket, the bucket name, key, and version are also included. If the script was passed into the canary directly, the script code is contained in the value of `Zipfile`.
 

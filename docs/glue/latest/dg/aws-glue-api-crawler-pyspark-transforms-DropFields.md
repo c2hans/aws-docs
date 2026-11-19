@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # DropFields class
-<a name="aws-glue-api-crawler-pyspark-transforms-DropFields"></a>
 
 Drops fields within a `DynamicFrame`.
 

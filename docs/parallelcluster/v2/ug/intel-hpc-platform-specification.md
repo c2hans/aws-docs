@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/intel-hpc-platform
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Intel HPC Platform Specification
-<a name="intel-hpc-platform-specification"></a>
 
 AWS ParallelCluster is compliant with the Intel HPC Platform Specification. The Intel HPC Platform Specification provides a set of compute, fabric, memory, storage, and software requirements to help achieve a high standard of quality and compatibility with HPC workloads. For more information, see [Intel HPC Platform Specification](https://www.intel.com/content/www/us/en/high-performance-computing/hpc-platform-specification.html) and [Applications Verified Compatible with the Intel HPC Platform Specification](https://www.intel.com/content/www/us/en/high-performance-computing/hpc-application-catalog.html).
 

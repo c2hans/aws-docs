@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/mobile-join-dial-in.html
 ---
 
 # Dialing in to a meeting
-<a name="mobile-join-dial-in"></a>
 
 If the meeting organizer includes dial-in information in a meeting invitation, you can dial in to the meeting using your phone.
 

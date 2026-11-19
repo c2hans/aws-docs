@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/expiration.html
 ---
 
 # Using ExpirationSettings in Amazon Chime SDK messaging
-<a name="expiration"></a>
 
 When you create an `AppInstanceUser` or a `Channel`, you can use `ExpirationSettings` to configure those resources for automatic deletion. `ExpirationSettings` helps reduce storage costs and prevent resource-limit-exceeded issues. For example, you can delete unused channels after 7 days, or delete an `AppInstanceUser` that was only invoked for testing purposes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # KeyspacesMetadata
-<a name="API_KeyspacesMetadata"></a>
 
 Contains metadata information associated with Amazon Keyspaces cells and rows.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_SplunkR
 ---
 
 # SplunkRetryOptions
-<a name="API_SplunkRetryOptions"></a>
 
 Configures retry behavior in case Firehose is unable to deliver documents to Splunk, or if it doesn't receive an acknowledgment from Splunk.
 

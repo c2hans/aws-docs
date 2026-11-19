@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-task-bl
 ---
 
 # Flow block in Connect Customer: Create task
-<a name="create-task-block"></a>
 
 This topic defines the flow block for creating a new task manually or based on an existing task template.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Data, operations, and testing
-<a name="data-operations-and-testing"></a>
 
 ## Agents and data ownership
 <a name="agents-and-data-ownership.a8701958-20ad-5c0b-ba0d-bc3e3528f9db"></a>

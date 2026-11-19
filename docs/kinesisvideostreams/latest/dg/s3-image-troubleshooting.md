@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/s3-image-t
 ---
 
 # Troubleshooting
-<a name="s3-image-troubleshooting"></a>
 
 ## Images not delivered to the Amazon S3 bucket
 <a name="s3-images-not-delivered"></a>

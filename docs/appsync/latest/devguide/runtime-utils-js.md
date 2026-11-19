@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/runtime-utils-js
 ---
 
 # Runtime utilities
-<a name="runtime-utils-js"></a>
 
 The `runtime` library provides utilities to control or modify the runtime properties of your resolvers and functions.
 

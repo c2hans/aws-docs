@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_
 ---
 
 # ListApplications
-<a name="API_ListApplications"></a>
 
 Retrieves a list of all Amazon GameLift Streams applications that are associated with the AWS account in use. This operation returns applications in all statuses, in no particular order. You can paginate the results as needed.
 

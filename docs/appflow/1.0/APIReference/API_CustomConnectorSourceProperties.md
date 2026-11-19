@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_CustomConne
 ---
 
 # CustomConnectorSourceProperties
-<a name="API_CustomConnectorSourceProperties"></a>
 
 The properties that are applied when the custom connector is being used as a source.
 

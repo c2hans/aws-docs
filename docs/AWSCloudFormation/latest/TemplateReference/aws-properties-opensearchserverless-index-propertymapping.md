@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::OpenSearchServerless::Index PropertyMapping
-<a name="aws-properties-opensearchserverless-index-propertymapping"></a>
 
 Property mappings for the OpenSearch Serverless index.
 
@@ -94,7 +93,7 @@ Configuration for k-NN search method.
 `Properties`  <a name="cfn-opensearchserverless-index-propertymapping-properties"></a>
 Defines the fields within the mapping, including their types and configurations.
 *Required*: No
-*Type*: Object of [PropertyMapping](#aws-properties-opensearchserverless-index-propertymapping)
+*Type*: Object of [PropertyMapping](aws-properties-opensearchserverless-index-propertymapping.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SpaceType`  <a name="cfn-opensearchserverless-index-propertymapping-spacetype"></a>

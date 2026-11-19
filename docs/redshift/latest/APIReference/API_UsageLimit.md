@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_UsageLi
 ---
 
 # UsageLimit
-<a name="API_UsageLimit"></a>
 
 Describes a usage limit object for a cluster.
 

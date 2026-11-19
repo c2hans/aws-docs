@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/qu
 ---
 
 # Set up event notification for game session placement
-<a name="queue-notification"></a>
 
 You can use event notifications to monitor the status of individual placement requests. We recommend setting up event notifications for all games with high-volume placement activity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListFunc
 ---
 
 # ListFunctions
-<a name="API_ListFunctions"></a>
 
 List multiple functions.
 

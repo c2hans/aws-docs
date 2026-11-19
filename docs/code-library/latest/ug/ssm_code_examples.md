@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ssm_code_examples
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Code examples for Systems Manager using AWS SDKs
-<a name="ssm_code_examples"></a>
 
 The following code examples show you how to use AWS Systems Manager with an AWS software development kit (SDK).
 

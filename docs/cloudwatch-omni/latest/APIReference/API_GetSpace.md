@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # GetSpace
-<a name="API_GetSpace"></a>
 
 Retrieves the details of a space by ID.
 

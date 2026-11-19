@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceDeployment
-<a name="API_ServiceDeployment"></a>
 
 Information about the service deployment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegratio
 ---
 
 # Port the End device SDK to your device
-<a name="managedintegrations-device-porting-guide"></a>
 
 Port the End device SDK to your device platform. Follow these steps to connect your devices with AWS IoT Device Management.
 

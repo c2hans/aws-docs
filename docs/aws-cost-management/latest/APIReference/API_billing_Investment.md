@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Investment
-<a name="API_billing_Investment"></a>
 
 An investment within an investment summary. This is a union in which exactly one member is set. The `milestoneBasedInvestment` member represents a fixed, scheduled investment. The `outcomeBasedInvestment` member represents an attestable investment awarded upon completion of a defined outcome. Check which member is present to determine the investment type.
 

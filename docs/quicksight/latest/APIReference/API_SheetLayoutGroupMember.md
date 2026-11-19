@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Sheet
 ---
 
 # SheetLayoutGroupMember
-<a name="API_SheetLayoutGroupMember"></a>
 
 A member of a sheet layout group.
 

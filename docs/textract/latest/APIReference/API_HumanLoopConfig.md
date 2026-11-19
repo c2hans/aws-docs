@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_HumanLo
 ---
 
 # HumanLoopConfig
-<a name="API_HumanLoopConfig"></a>
 
 Sets up the human review workflow the document will be sent to if one of the conditions is met. You can also set certain attributes of the image before review.
 

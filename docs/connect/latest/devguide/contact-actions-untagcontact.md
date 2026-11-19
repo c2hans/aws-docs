@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/contact-actions-
 ---
 
 # UnTagContact
-<a name="contact-actions-untagcontact"></a>
 
 Removes a collection of tags on the current contact. With this type of operation, either all tags are set or none are set.
 

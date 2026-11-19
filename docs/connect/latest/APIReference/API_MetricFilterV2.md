@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MetricFi
 ---
 
 # MetricFilterV2
-<a name="API_MetricFilterV2"></a>
 
 Contains information about the filter used when retrieving metrics. `MetricFiltersV2` can be used on the following metrics: `AVG_AGENT_CONNECTING_TIME`, `CONTACTS_CREATED`, `CONTACTS_HANDLED`, `SUM_CONTACTS_DISCONNECTED`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/delete-resource-ga
 ---
 
 # Delete a resource gateway in VPC Lattice
-<a name="delete-resource-gateway"></a>
 
 Use the console to delete a resource gateway.
 

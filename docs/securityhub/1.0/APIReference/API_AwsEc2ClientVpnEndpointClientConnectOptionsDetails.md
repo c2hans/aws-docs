@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2C
 ---
 
 # AwsEc2ClientVpnEndpointClientConnectOptionsDetails
-<a name="API_AwsEc2ClientVpnEndpointClientConnectOptionsDetails"></a>
 
  The options for managing connection authorization for new client connections.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Da
 ---
 
 # DataGrantSummaryEntry
-<a name="API_DataGrantSummaryEntry"></a>
 
 Information about a data grant.
 

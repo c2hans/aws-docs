@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Cost
-<a name="cost"></a>
 
  You are responsible for the cost of the AWS services used while running this Guidance. As of this revision, the cost for running this Guidance with the default settings in the US East (Ohio) Region is approximately **$153.57** for 100,000 Amazon Glacier vault archives (1GB each) and **$1,229.21** for 10,000,000 Amazon Glacier vault archives (10MB each). These costs assume that the destination bucket is also in US East (Ohio) Region. Refer to Sample cost tables for more details.
 

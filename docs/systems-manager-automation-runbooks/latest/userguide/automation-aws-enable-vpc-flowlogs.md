@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-EnableVPCFlowLogs`
-<a name="automation-aws-enable-vpc-flowlogs"></a>
 
  **Description**
 

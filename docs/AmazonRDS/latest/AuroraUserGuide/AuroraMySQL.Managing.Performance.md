@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Managing performance and scaling for Amazon Aurora MySQL
-<a name="AuroraMySQL.Managing.Performance"></a>
 
 ## Scaling Aurora MySQL DB instances
 <a name="AuroraMySQL.Managing.Performance.InstanceScaling"></a>

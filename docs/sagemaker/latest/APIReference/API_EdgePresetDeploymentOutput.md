@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EdgePr
 ---
 
 # EdgePresetDeploymentOutput
-<a name="API_EdgePresetDeploymentOutput"></a>
 
 The output of a SageMaker Edge Manager deployable resource.
 

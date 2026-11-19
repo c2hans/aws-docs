@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateAuthoriz
 ---
 
 # UpdateAuthorizer
-<a name="API_UpdateAuthorizer"></a>
 
 Updates an existing Authorizer resource.
 

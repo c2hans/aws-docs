@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/redis-memory
 ---
 
 # Managing reserved memory for Valkey and Redis OSS
-<a name="redis-memory-management"></a>
 
 Each host type has an amount of memory dedicated for Valkey and Redis OSS. This is the advertised memory. The `reserved-memory-percent` parameter sets aside part of this memory for nondata uses:
 + Client output buffers on replicas

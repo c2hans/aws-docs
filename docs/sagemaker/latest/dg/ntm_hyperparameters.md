@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/ntm_hyperparameters.
 ---
 
 # NTM Hyperparameters
-<a name="ntm_hyperparameters"></a>
 
 The following table lists the hyperparameters that you can set for the Amazon SageMaker AI Neural Topic Model (NTM) algorithm.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListBotVer
 ---
 
 # ListBotVersionReplicas
-<a name="API_ListBotVersionReplicas"></a>
 
 Contains information about all the versions replication statuses applicable for Global Resiliency.
 

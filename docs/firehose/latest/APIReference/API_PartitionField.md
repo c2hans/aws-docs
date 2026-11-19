@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Partiti
 ---
 
 # PartitionField
-<a name="API_PartitionField"></a>
 
 Represents a single field in a `PartitionSpec`.
 

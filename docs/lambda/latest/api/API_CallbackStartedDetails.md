@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CallbackStartedDet
 ---
 
 # CallbackStartedDetails
-<a name="API_CallbackStartedDetails"></a>
 
 Contains details about a callback operation that has started, including timing information and callback metadata.
 

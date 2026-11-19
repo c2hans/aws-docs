@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # S3OutputConfigurations
-<a name="API_DataExports_S3OutputConfigurations"></a>
 
 The compression type, file format, and overwrite preference for the data export.
 

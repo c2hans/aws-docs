@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_C
 ---
 
 # CreateSnapshotFromVolumeRecoveryPoint
-<a name="API_CreateSnapshotFromVolumeRecoveryPoint"></a>
 
 Initiates a snapshot of a gateway from a volume recovery point. This operation is only supported in the cached volume gateway type.
 

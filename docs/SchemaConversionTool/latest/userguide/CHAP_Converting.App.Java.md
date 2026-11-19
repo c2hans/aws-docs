@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Converting SQL code in Java applications with AWS Schema Conversion Tool
-<a name="CHAP_Converting.App.Java"></a>
 
 For an Oracle to PostgreSQL conversion, you can use AWS Schema Conversion Tool to convert SQL code embedded into your Java applications. This specific Java application converter understands the application logic. It collects statements that are located in different application objects, such as functions, parameters, local variables, and so on.
 

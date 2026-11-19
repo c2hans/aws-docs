@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # CoreNetworkEndpointsItem
-<a name="API_route53globalresolver_CoreNetworkEndpointsItem"></a>
 
 Summary information about a core network endpoint. Route 53 Global Resolver returns one of these items for each endpoint in the response to a `ListCoreNetworkEndpoints` request. Each item describes the endpoint's identifiers, the Global Resolver and Cloud WAN core network that it connects, its DNS IP addresses, and its current status.
 

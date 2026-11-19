@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/launch
 ---
 
 # Launch the stack
-<a name="launch-the-stack"></a>
 
 This automated AWS CloudFormation template deploys DeepRacer on AWS.
 

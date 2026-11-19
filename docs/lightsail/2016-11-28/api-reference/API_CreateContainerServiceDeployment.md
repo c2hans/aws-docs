@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CreateContainerServiceDeployment
-<a name="API_CreateContainerServiceDeployment"></a>
 
 Creates a deployment for your Amazon Lightsail container service.
 

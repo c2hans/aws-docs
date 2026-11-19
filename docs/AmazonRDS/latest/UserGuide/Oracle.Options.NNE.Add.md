@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Option
 ---
 
 # Adding the NATIVE\_NETWORK\_ENCRYPTION option
-<a name="Oracle.Options.NNE.Add"></a>
 
 The general process for adding the `NATIVE_NETWORK_ENCRYPTION` option to a DB instance is the following:
 

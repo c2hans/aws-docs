@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpRange.h
 ---
 
 # IpRange
-<a name="API_IpRange"></a>
 
 Describes an IPv4 address range.
 

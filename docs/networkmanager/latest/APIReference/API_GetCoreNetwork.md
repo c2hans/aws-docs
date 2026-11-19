@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetCoreNetwork
-<a name="API_GetCoreNetwork"></a>
 
 Returns information about the LIVE policy for a core network.
 

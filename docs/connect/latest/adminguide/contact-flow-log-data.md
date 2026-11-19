@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-flow-l
 ---
 
 # Data in flow logs stored in an Amazon CloudWatch log group
-<a name="contact-flow-log-data"></a>
 
 Log entries for flows include details about the block associated with the log entry, the contact ID, and the action taken after the steps in the block were completed. Any contact interaction that occurs outside of the flow is not logged, such as time spent in a queue or interactions with an agent.
 

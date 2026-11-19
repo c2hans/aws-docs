@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/th
 ---
 
 # Three AWS Glue ETL job types for converting data to Apache Parquet
-<a name="three-aws-glue-etl-job-types-for-converting-data-to-apache-parquet"></a>
 
 *Adnan Alvee, Nith Govindasivan, and Karthikeyan Ramachandran, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/upgradeguide/downg
 ---
 
 # Step C: Downgrade the node
-<a name="downgrades-lv-upg-dg-node"></a>
 
 When you downgrade AWS Elemental Live , run the installer with the `--downgrade` switch for each node.
 

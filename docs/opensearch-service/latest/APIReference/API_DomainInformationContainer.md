@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DomainInformationContainer
-<a name="API_DomainInformationContainer"></a>
 
 Container for information about an OpenSearch Service domain.
 

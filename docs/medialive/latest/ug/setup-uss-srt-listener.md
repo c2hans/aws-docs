@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-uss-srt-listen
 ---
 
 # Provide connection information to the upstream system
-<a name="setup-uss-srt-listener"></a>
 
 After you create the SRT Listener input, you must provide connection information to the operator at the upstream system so they can configure their SRT caller to connect to MediaLive.
 

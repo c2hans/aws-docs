@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-actio
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Using rule actions in AWS WAF
-<a name="waf-rule-action"></a>
 
 This section explains how rule actions work.
 

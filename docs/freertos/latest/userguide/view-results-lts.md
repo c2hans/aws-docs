@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/view-results-l
 ---
 
 # View the IDT for FreeRTOSresults
-<a name="view-results-lts"></a>
 
 While running, IDT writes errors to the console, log files, and test reports. After IDT completes the qualification test suite, it writes a test run summary to the console and generates two test reports. These reports can be found in `{{devicetester-extract-location}}/results/{{execution-id}}/`. Both reports capture the results from the qualification test suite execution.
 

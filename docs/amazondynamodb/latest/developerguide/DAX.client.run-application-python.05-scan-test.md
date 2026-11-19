@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # 05-scan-test.py
-<a name="DAX.client.run-application-python.05-scan-test"></a>
 
 The `05-scan-test.py` program performs `Scan` operations on `TryDaxTable`.
 

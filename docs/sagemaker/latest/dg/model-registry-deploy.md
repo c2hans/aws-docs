@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-registry-deplo
 ---
 
 # Deploy a Model from the Registry with Python
-<a name="model-registry-deploy"></a>
 
 After you register a model version and approve it for deployment, deploy it to a SageMaker AI endpoint for real-time inference. You can deploy your model by using the SageMaker AI SDK or the AWS SDK for Python (Boto3).
 

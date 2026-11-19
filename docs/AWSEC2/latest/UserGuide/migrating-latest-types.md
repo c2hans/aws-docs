@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/migrating-latest
 ---
 
 # Migrate an EC2 Windows instance to a Nitro-based instance type
-<a name="migrating-latest-types"></a>
 
 The AWS Windows AMIs are configured with the default settings used by the Microsoft installation media, with some customizations. The customizations include drivers and configurations that support [Nitro-based instances](instance-types.md#instance-hypervisor-type), such as M5 and C5.
 

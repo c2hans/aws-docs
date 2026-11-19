@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver-d
 ---
 
 # Resolved IP validation with Network Firewall
-<a name="resolver-dns-firewall-resolved-ip-validation"></a>
 
 With [AWS Network Firewall](https://docs.aws.amazon.com/network-firewall/latest/developerguide/what-is-aws-network-firewall.html) resolved IP validation, you can detect and block connections that try to bypass domain-based filtering by connecting directly to an IP address. A standard Network Firewall domain rule matches the host name that a client asserts. Examples include the TLS Server Name Indication (SNI) and the HTTP `Host` header. If a client sets a `Host` header for an allowed domain but connects to an unrelated IP address, resolved IP validation detects the mismatch.
 

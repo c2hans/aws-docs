@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # SnsTopicSinkConfiguration
-<a name="API_media-pipelines-chime_SnsTopicSinkConfiguration"></a>
 
 The configuration settings for the SNS topic sink.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # GAIA Chatbot Starter Package
-<a name="gaia-chatbot-starter-package"></a>
 
 The GAIA Chatbot Starter Package deploys a production-ready GenAI chatbot backend using Amazon Bedrock Knowledge Bases, Guardrails, and serverless APIs. You provide the frontend application and documents for the knowledge base; the starter kit deploys the full backend.
 

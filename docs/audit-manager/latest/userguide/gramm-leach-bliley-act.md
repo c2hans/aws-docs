@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/gramm-lea
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Gramm-Leach-Bliley Act
-<a name="gramm-leach-bliley-act"></a>
 
 AWS Audit Manager provides a prebuilt framework that supports the Gramm-Leach-Bliley Act (GLBA).
 

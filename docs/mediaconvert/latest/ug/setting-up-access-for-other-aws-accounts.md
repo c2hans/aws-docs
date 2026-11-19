@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/setting-up-access
 ---
 
 # Setting up access for other AWS accounts to your AWS Elemental MediaConvert outputs
-<a name="setting-up-access-for-other-aws-accounts"></a>
 
 When you follow the usual setup for permissions as described in [Setting up IAM permissions](iam-role.md), only users that belong to your AWS account can access your output files.
 

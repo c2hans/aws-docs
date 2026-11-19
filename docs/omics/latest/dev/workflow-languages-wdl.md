@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflow-languages-wdl.
 ---
 
 # WDL workflow definition specifics
-<a name="workflow-languages-wdl"></a>
 
 The following topics provide details about types and directives available for WDL workflow definitions in HealthOmics.
 

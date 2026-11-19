@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_LaunchAction
 ---
 
 # LaunchActionsStatus
-<a name="API_LaunchActionsStatus"></a>
 
 Launch actions status.
 

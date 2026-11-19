@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Da
 ---
 
 # DataPartitionStorageOptions
-<a name="API_DataPartitionStorageOptions"></a>
 
 Size, time, and location options for the data partition.
 

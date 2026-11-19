@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Kubern
 ---
 
 # KubernetesPermissionCheckedDetails
-<a name="API_KubernetesPermissionCheckedDetails"></a>
 
 Information about the Kubernetes API for which you check if you have permission to call.
 

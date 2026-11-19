@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-quota-mana
 ---
 
 # Create quota management resources
-<a name="create-quota-management-resources"></a>
 
 Quota management requires specific settings when creating an associated scheduling policy, service environment, and job queue.
 

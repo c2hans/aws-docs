@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-au
 ---
 
 # Step 6: Clean up
-<a name="tutorials-auto-scaling-group-clean-up"></a>
 
 In this step, you'll delete the Auto Scaling group to avoid ongoing charges for resources you used during this tutorial. Optionally, you can delete the Auto Scaling configuration and CodeDeploy deployment component records.
 

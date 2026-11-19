@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_De
 ---
 
 # DeleteTrustAnchor
-<a name="API_DeleteTrustAnchor"></a>
 
 Deletes a trust anchor.
 

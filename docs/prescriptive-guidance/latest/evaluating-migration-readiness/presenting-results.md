@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluating-
 ---
 
 # Presenting the results
-<a name="presenting-results"></a>
 
 Generally, presenting the observations, actions, and next steps takes about an hour. This session should include the attendees of the MRA discussion session and additional stakeholders if needed.
 

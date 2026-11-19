@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchQu
 ---
 
 # SearchQueues
-<a name="API_SearchQueues"></a>
 
 Searches queues in an Connect Customer instance, with optional filtering.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec07-b
 ---
 
 # SEC07-BP01 Understand your data classification scheme
-<a name="sec07-bp01"></a>
 
  A data classification scheme names the sensitivity levels in your organization, the handling rules for each, and who owns the decision. To apply the right controls, know the classification, location, and legal and compliance obligations of the data your workload processes.
 

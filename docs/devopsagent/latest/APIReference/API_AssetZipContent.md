@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Asse
 ---
 
 # AssetZipContent
-<a name="API_AssetZipContent"></a>
 
 A zip file containing asset files
 

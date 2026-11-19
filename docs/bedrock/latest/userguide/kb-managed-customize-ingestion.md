@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-cust
 ---
 
 # Customize ingestion for a data source
-<a name="kb-managed-customize-ingestion"></a>
 
 You can customize vector ingestion when connecting a data source in the AWS Management Console or by modifying the value of the `vectorIngestionConfiguration` field when sending a [CreateDataSource](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateDataSource.html) request.
 

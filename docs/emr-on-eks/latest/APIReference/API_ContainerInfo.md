@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_Conta
 ---
 
 # ContainerInfo
-<a name="API_ContainerInfo"></a>
 
 The information about the container used for a job run or a managed endpoint.
 

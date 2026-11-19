@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/anomaly-detection
 ---
 
 # Adding an ML insight to detect outliers and key drivers
-<a name="anomaly-detection-adding-anomaly-insights"></a>
 
 You can add an ML insight that detects *anomalies*, which are outliers that seem significant. To get started, you create for your insight a widget, also known as an *autonarrative*. As you configure your options, you can view a limited screenshot of your insight in the **Preview** pane at screen right.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Create a prompt dataset for a model evaluation job that uses a model as judge
-<a name="model-evaluation-prompt-datasets-judge"></a>
 
 To create a model evaluation job that uses a model as judge you must specify a prompt dataset. This prompt dataset uses the same format as automatic model evaluation jobs and is used during inference with the models you select to evaluate.
 

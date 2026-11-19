@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/test.html
 ---
 
 # Testability and Dependency Injection
-<a name="test"></a>
 
 **Topics**
 + [Spring Integration](#test.spring)

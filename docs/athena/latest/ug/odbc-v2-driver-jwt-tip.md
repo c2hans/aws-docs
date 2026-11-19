@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-jwt-tip.
 ---
 
 # JWT Trusted identity propagation credentials provider
-<a name="odbc-v2-driver-jwt-tip"></a>
 
 This authentication type allows you to use a JSON web token (JWT) obtained from an external identity provider as a connection parameter to authenticate with Athena. You can use this plugin, to enable support for corporate identities via trusted identity propagation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/ope
 ---
 
 # Operations
-<a name="operations"></a>
 
 The AWS Amplify Admin UI REST API includes the following operations.
 + [CloneBackend](backend-appid-environments-backendenvironmentname-clone.md#CloneBackend)

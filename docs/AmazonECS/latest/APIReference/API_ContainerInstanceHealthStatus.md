@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Contai
 ---
 
 # ContainerInstanceHealthStatus
-<a name="API_ContainerInstanceHealthStatus"></a>
 
 An object representing the health status of the container instance.
 

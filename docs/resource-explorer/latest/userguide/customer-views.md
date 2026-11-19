@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/custo
 ---
 
 # User views
-<a name="customer-views"></a>
 
  User views are created and managed by users or administrators. When automatic setup occurs, Resource Explorer creates user-owned default views that include tags for comprehensive filtering capabilities.
 

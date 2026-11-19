@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/arch-guide-patterns.h
 ---
 
 # Patterns
-<a name="arch-guide-patterns"></a>
 
 In this section, we examine the architecture patterns available to handle the failure scenarios detailed above.
 

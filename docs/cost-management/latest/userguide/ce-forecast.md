@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-fore
 ---
 
 # Forecasting with Cost Explorer
-<a name="ce-forecast"></a>
 
 You create a forecast by selecting a future time range for your report. For more information, see [Choosing time ranges for the data that you want to view](ce-modify.md#ce-timerange). The following section discusses the accuracy of the forecasts created by Cost Explorer and how to read them.
 

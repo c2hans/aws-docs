@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListMulticastGroups
-<a name="API_ListMulticastGroups"></a>
 
 Lists the multicast groups registered to your AWS account.
 

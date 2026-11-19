@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_S
 ---
 
 # StepAmountCapability
-<a name="API_StepAmountCapability"></a>
 
 The details outlining the minimum and maximum capability of a step.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/network/netw
 ---
 
 # Network Load Balancers
-<a name="network-load-balancers"></a>
 
 A Network Load Balancer serves as the single point of contact for clients. Clients send requests to the Network Load Balancer, and the Network Load Balancer sends them to targets, such as EC2 instances, in one or more Availability Zones.
 

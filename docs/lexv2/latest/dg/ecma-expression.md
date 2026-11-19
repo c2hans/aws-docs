@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/ecma-expression.html
 ---
 
 # Expressions
-<a name="ecma-expression"></a>
 
 You can add expressions strings to perform functions in Amazon Lex V2. This table shows the syntax and examples that can be used in SRGS expressions.
 

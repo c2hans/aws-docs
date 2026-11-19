@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RegistryRecordCredentialProviderConfiguration
-<a name="API_RegistryRecordCredentialProviderConfiguration"></a>
 
 A pairing of a credential provider type with its corresponding provider details for authenticating with external sources.
 

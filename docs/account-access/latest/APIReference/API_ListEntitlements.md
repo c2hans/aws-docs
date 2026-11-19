@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_L
 ---
 
 # ListEntitlements
-<a name="API_ListEntitlements"></a>
 
 Lists the entitlements for a specified account access manager application. You can filter results by principal, IAM role, or account. Use pagination to ensure that the operation returns quickly and successfully.
 

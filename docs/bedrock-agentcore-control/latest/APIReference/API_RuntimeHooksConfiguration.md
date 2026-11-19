@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # RuntimeHooksConfiguration
-<a name="API_RuntimeHooksConfiguration"></a>
 
 The lifecycle hooks that AgentCore Runtime runs at fixed points in the runtime's lifecycle.
 

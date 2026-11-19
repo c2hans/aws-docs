@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/userguide/launch-p
 ---
 
 # Creating a launch plan
-<a name="launch-plan"></a>
 
 Before you provision a product, AWS Service Catalog enables you to create a launch plan. The plan is a list of resource changes AWS Service Catalog will apply to the provisioned product. You can view planned resource changes and execute them when the plan is complete. You can delete, modify, or execute a launch plan.
 

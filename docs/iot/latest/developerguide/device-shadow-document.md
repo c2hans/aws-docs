@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-
 ---
 
 # Device Shadow service documents
-<a name="device-shadow-document"></a>
 
 The Device Shadow service respects all rules of the JSON specification. Values, objects, and arrays are stored in the device's shadow document.
 

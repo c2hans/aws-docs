@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAppFabricServiceRolePolicy
-<a name="AWSAppFabricServiceRolePolicy"></a>
 
 **Description**: Provides AppFabric access to AWS resources on your behalf
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # ListDomainAccessGrantsForOrganization
-<a name="API_ListDomainAccessGrantsForOrganization"></a>
 
 Returns organization-level domain access grants, with optional filtering by domain, principal, or permission. A grant is returned only when it matches every filter supplied. With no filters, returns the grants for the caller's organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Por
 ---
 
 # PortalResource
-<a name="API_PortalResource"></a>
 
 Identifies an AWS IoT SiteWise Monitor portal.
 

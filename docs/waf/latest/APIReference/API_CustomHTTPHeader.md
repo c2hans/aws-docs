@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_CustomHTTPHe
 ---
 
 # CustomHTTPHeader
-<a name="API_CustomHTTPHeader"></a>
 
 A custom header for custom request and response handling. This is used in [CustomResponse](API_CustomResponse.md) and [CustomRequestHandling](API_CustomRequestHandling.md).
 

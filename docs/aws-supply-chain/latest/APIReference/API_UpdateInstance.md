@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # UpdateInstance
-<a name="API_UpdateInstance"></a>
 
 Enables you to programmatically update an AWS Supply Chain instance description by providing all the relevant information such as account ID, instance ID and so on without using the AWS console.
 

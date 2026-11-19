@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceB
 ---
 
 # InstanceBlockDeviceMappingSpecification
-<a name="API_InstanceBlockDeviceMappingSpecification"></a>
 
 Describes a block device mapping entry.
 

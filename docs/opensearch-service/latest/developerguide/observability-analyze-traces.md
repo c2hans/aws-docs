@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Discover Traces
-<a name="observability-analyze-traces"></a>
 
 The Discover Traces page provides a dedicated interface for exploring distributed trace data in your OpenSearch Service observability workspace. You can view RED metrics (rate, error rate, duration) for your services, browse trace spans with faceted filtering, and drill into individual spans and traces to diagnose performance issues. The page also supports correlating traces with related log data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DisassociateMemberFromQueue
-<a name="API_DisassociateMemberFromQueue"></a>
 
 Disassociates a member from a queue.
 

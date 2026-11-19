@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Workload example: COTS software on Amazon EC2
-<a name="cots-software"></a>
 
 This workload is an example of [Theme 3: Manage mutable infrastructure with automation](theme-3.md).
 

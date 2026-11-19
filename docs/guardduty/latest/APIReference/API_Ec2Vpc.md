@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Ec2Vpc
 ---
 
 # Ec2Vpc
-<a name="API_Ec2Vpc"></a>
 
 Contains information about the Amazon EC2 VPC involved in a GuardDuty finding, including unique identifiers of the Amazon EC2 instances.
 

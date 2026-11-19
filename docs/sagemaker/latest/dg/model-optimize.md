@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-optimize.html
 ---
 
 # Inference optimization for Amazon SageMaker AI models
-<a name="model-optimize"></a>
 
 Amazon SageMaker AI provides two approaches to optimize your generative AI model inference:
 + **Inference recommendations.** SageMaker AI automatically analyzes your model and workload, evaluates instance types, applies optimizations, and returns validated, deployment-ready configurations with real performance metrics. This is the recommended approach for most customers. To get started, see [Optimized generative AI inference recommendations](generative-ai-inference-recommendations.md).

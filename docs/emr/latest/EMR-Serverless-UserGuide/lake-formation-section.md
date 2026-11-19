@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/lake
 ---
 
 # Using Lake Formation with EMR Serverless
-<a name="lake-formation-section"></a>
 
 You can configure EMR Serverless applications to use Lake Formation with either full table access or fine-grained access control. For details on supported features in each access mode, review the following table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Reso
 ---
 
 # ResourceGroupsServiceRolePolicy
-<a name="ResourceGroupsServiceRolePolicy"></a>
 
 **Description**: Allows AWS Resource Groups to query the AWS services that own your resources to keep the group up-to-date
 

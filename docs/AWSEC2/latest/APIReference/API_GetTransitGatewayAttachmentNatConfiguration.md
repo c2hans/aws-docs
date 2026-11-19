@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransi
 ---
 
 # GetTransitGatewayAttachmentNatConfiguration
-<a name="API_GetTransitGatewayAttachmentNatConfiguration"></a>
 
 Describes the NAT configuration for the specified transit gateway attachment. Only the owner of the transit gateway can describe the NAT configuration.
 

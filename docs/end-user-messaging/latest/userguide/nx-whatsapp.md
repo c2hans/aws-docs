@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-w
 ---
 
 # Setup WhatsApp
-<a name="nx-whatsapp"></a>
 
 WhatsApp lets your business reach customers on WhatsApp with rich, interactive messaging and two-way conversations. You message customers from a WhatsApp Business Account using approved message templates to start conversations, and you can respond to inbound messages in a session window. Common use cases include order and shipping updates, appointment reminders, customer support conversations, and interactive flows that collect information without leaving WhatsApp.
 

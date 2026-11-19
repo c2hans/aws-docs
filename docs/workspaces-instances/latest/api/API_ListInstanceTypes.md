@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_List
 ---
 
 # ListInstanceTypes
-<a name="API_ListInstanceTypes"></a>
 
 Retrieves a list of instance types supported by Amazon WorkSpaces Instances, enabling precise workspace infrastructure configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/creating-and-managing-
 ---
 
 # Creating and managing clusters
-<a name="creating-and-managing-clusters"></a>
 
 This topic covers how to create and delete EKS clusters using Eksctl. You can create clusters with a CLI command, or by creating a cluster configuration YAML file.
 

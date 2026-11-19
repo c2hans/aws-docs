@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Unpiv
 ---
 
 # UnpivotOperation
-<a name="API_UnpivotOperation"></a>
 
 A transform operation that converts columns into rows, normalizing the data structure.
 

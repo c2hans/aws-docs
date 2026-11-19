@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/ce-sp-pr-m
 ---
 
 # Understanding utilization metrics and calculations
-<a name="ce-sp-pr-metrics"></a>
 
 You can find high-level metrics in the **Utilization report** section.
 + **Savings Plans spend** – Your Savings Plans commitment spend over the lookback period.

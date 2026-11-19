@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/just-in
 ---
 
 # Just-in-time node access frequently asked questions
-<a name="just-in-time-node-access-faq"></a>
 
 ## How do I move from Session Manager to just-in-time node access?
 <a name="migrating"></a>

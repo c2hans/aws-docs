@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Mess
 ---
 
 # Message
-<a name="API_Message"></a>
 
 A message in a conversation, either from the user or the assistant.
 

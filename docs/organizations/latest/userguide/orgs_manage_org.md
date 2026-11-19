@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_mana
 ---
 
 # Managing an organization with AWS Organizations
-<a name="orgs_manage_org"></a>
 
 An *organization* is a collection of AWS accounts that you can manage centrally and organize into a hierarchical, tree-like structure with a root at the top and organizational units (OUs) nested under the root. Each account can be directly in the root, or placed in one of the OUs in the hierarchy.
 

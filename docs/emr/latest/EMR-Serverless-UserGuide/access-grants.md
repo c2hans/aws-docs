@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/acce
 ---
 
 # Using Amazon S3 Access Grants with EMR Serverless
-<a name="access-grants"></a>
 
 ## S3 Access Grants overview for EMR Serverless
 <a name="access-grants-overview"></a>

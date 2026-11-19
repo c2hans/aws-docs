@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-init.html
 ---
 
 # `cdk init`
-<a name="ref-cli-cmd-init"></a>
 
 Create a new AWS CDK project from a template.
 

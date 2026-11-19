@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/example_iot_Sc
 ---
 
 # Learn the basics of AWS IoT with an AWS SDK
-<a name="example_iot_Scenario_section"></a>
 
 The following code examples show how to:
 + Create an AWS IoT Thing.

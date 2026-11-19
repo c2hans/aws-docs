@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-po
 ---
 
 # Multivalue answer routing
-<a name="routing-policy-multivalue"></a>
 
 With multivalue answer routing, you can set up Amazon Route 53 to return multiple values, such as IP addresses for your web servers, in response to DNS queries. You can specify multiple values for almost any record, but with multivalue answer routing, you can also check the health of each resource. Route 53 then returns only values for healthy resources. This isn't a substitute for a load balancer, but returning multiple health-checked IP addresses is a way to use DNS to improve uptime and load sharing.
 

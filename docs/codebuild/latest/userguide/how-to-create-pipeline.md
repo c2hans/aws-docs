@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/how-to-create
 ---
 
 # Use AWS CodeBuild with AWS CodePipeline to test code and run builds
-<a name="how-to-create-pipeline"></a>
 
 You can automate your release process by using AWS CodePipeline to test your code and run your builds with AWS CodeBuild.
 

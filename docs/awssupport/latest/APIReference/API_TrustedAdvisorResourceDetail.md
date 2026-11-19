@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Trust
 ---
 
 # TrustedAdvisorResourceDetail
-<a name="API_TrustedAdvisorResourceDetail"></a>
 
 Contains information about a resource identified by a Trusted Advisor check.
 

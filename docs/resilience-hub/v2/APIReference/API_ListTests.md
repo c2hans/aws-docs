@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListT
 ---
 
 # ListTests
-<a name="API_ListTests"></a>
 
 Lists the tests configured for a service.
 

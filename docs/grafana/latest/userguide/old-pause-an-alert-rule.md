@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/old-pause-an-al
 ---
 
 # Pausing an alert rule
-<a name="old-pause-an-alert-rule"></a>
 
 ****
 This documentation topic discusses legacy alerting in Grafana. Legacy alerting is removed in Amazon Managed Grafana version 12. You must migrate to Grafana alerting before upgrading to v12. For more information, see one of the following topics.

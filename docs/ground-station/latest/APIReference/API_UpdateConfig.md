@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_U
 ---
 
 # UpdateConfig
-<a name="API_UpdateConfig"></a>
 
 Updates the `Config` used when scheduling contacts.
 

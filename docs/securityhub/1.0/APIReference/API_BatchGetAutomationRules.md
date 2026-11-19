@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_BatchGe
 ---
 
 # BatchGetAutomationRules
-<a name="API_BatchGetAutomationRules"></a>
 
  Retrieves a list of details for automation rules based on rule Amazon Resource Names (ARNs).
 

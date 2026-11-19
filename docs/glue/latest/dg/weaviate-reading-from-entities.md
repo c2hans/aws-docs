@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/weaviate-reading-from-ent
 ---
 
 # Reading from Weaviate entities
-<a name="weaviate-reading-from-entities"></a>
 
 **Prerequisites**
 

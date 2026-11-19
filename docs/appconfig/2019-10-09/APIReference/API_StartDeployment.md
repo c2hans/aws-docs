@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_St
 ---
 
 # StartDeployment
-<a name="API_StartDeployment"></a>
 
 Starts a deployment.
 

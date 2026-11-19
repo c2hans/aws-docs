@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Incidents Prevented and Monitoring Top Talkers reports
-<a name="incidents-prevented-top-talkers"></a>
 
 **Topics**
 + [Incidents prevented report](#incidents-prevented)

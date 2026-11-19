@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Disassoci
 ---
 
 # DisassociateTrunkInterface
-<a name="API_DisassociateTrunkInterface"></a>
 
 Removes an association between a branch network interface with a trunk network interface.
 

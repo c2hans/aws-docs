@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ec2-examp
 ---
 
 # Managing Amazon EC2 instances using the AWS SDK for PHP Version 3
-<a name="ec2-examples-managing-instances"></a>
 
 The following examples show how to:
 + Describe Amazon EC2 instances using [DescribeInstances](https://docs.aws.amazon.com/aws-sdk-php/v3/api/api-ec2-2016-11-15.html#describeinstances).

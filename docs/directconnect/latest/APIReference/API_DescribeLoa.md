@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DescribeLoa
-<a name="API_DescribeLoa"></a>
 
 Gets the LOA-CFA for a connection, interconnect, or link aggregation group (LAG).
 

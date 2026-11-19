@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_DomainU
 ---
 
 # DomainUnitTarget
-<a name="API_DomainUnitTarget"></a>
 
 The target for the domain unit.
 

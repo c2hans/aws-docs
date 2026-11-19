@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-ad
 ---
 
 # Give your users access to spaces
-<a name="studio-updated-jl-admin-guide-permissions"></a>
 
 To give users access to private or shared spaces, you must attach a permissions policy to their IAM roles. You can also use the permissions policy to restrict private spaces and their associated applications to a specific user profile.
 

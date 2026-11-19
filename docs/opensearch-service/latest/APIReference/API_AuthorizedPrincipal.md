@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AuthorizedPrincipal
-<a name="API_AuthorizedPrincipal"></a>
 
 Information about an AWS account or service that has access to an Amazon OpenSearch Service domain through the use of an interface VPC endpoint.
 

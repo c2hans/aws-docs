@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/visual-job-api-chapter.ht
 ---
 
 # AWS Glue Visual Job API
-<a name="visual-job-api-chapter"></a>
 
  AWS Glue provides an API that allows customers to create data integration jobs using the AWS Glue API from a JSON object that represents a visual step workflow. Customers can then use the visual editor in AWS Glue Studio to work with these jobs.
 

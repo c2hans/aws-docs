@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/tutorial-launch-
 ---
 
 # Tutorial 2: Launch a test EC2 instance and connect to it
-<a name="tutorial-launch-a-test-ec2-instance"></a>
 
 | Attribute | Value |
 | --- | --- |

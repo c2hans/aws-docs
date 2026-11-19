@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ListRec
 ---
 
 # ListRecommendations
-<a name="API_ListRecommendations"></a>
 
 List the Amazon Redshift Advisor recommendations for one or multiple Amazon Redshift clusters in an AWS account.
 

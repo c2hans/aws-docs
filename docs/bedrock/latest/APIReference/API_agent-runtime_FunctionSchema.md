@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FunctionSchema
-<a name="API_agent-runtime_FunctionSchema"></a>
 
  Contains details about the function schema for the action group or the JSON or YAML-formatted payload defining the schema.
 

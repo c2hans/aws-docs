@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-mkt-create
 ---
 
 # Create an Algorithm Resource
-<a name="sagemaker-mkt-create-algo"></a>
 
 You can create an algorithm resource to use with training jobs in Amazon SageMaker AI, and you can publish it on AWS Marketplace. The following sections explain how to do that using the AWS Management Console and the SageMaker API.
 

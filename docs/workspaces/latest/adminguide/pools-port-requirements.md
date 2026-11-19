@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/pools-port-
 ---
 
 # Connections to Your VPC for WorkSpaces Pools
-<a name="pools-port-requirements"></a>
 
 To enable WorkSpaces Pools connectivity to network resources and the internet, configure your WorkSpaces as follows.
 

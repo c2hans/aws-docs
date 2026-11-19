@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/create-b
 ---
 
 # Create a budget for a Deadline Cloud queue
-<a name="create-budget"></a>
 
 To create a budget, use the following procedure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_UpdateFailba
 ---
 
 # UpdateFailbackReplicationConfiguration
-<a name="API_UpdateFailbackReplicationConfiguration"></a>
 
 Allows you to update the failback replication configuration of a Recovery Instance by ID.
 

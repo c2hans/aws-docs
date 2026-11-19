@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/workgroups-create-updat
 ---
 
 # Manage workgroups
-<a name="workgroups-create-update-delete"></a>
 
 In the Athena console at [https://console.aws.amazon.com/athena/](https://console.aws.amazon.com/athena/home), you can perform the following tasks:
 

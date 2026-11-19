@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/machine-learnin
 ---
 
 # Gremlin inference queries in Neptune ML
-<a name="machine-learning-gremlin-inference-queries"></a>
 
 As described in [Neptune ML capabilities](machine-learning.md#machine-learning-capabilities), Neptune ML supports training models that can do the following kinds of inference tasks:
 + **Node classification**   –   Predicts the categorical feature of a vertex property.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/windows-list-dis
 ---
 
 # Map non-NVMe disks on Amazon EC2 Windows instance to volumes
-<a name="windows-list-disks"></a>
 
 For instances launched from a Windows AMI that uses AWS PV or Citrix PV drivers, you can use the relationships described on this page to map your Windows disks to your instance store and EBS volumes. This topic explains how to view the **non-NVMe disks** that are available to the Windows operating system on your instance. It also shows how to map those non-NVMe disks to the underlying Amazon EBS volumes and the device names specified for the block device mappings used by Amazon EC2.
 

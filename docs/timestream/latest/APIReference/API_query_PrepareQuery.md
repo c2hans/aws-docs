@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # PrepareQuery
-<a name="API_query_PrepareQuery"></a>
 
 A synchronous operation that allows you to submit a query with parameters to be stored by Timestream for later running. Timestream only supports using this operation with `ValidateOnly` set to `true`.
 

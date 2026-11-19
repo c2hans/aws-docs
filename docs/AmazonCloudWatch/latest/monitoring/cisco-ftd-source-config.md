@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cisco
 ---
 
 # Source configuration for Cisco FTD
-<a name="cisco-ftd-source-config"></a>
 
 ## Integrating with Cisco FTD
 <a name="cisco-ftd-integration"></a>

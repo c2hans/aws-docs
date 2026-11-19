@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Using AgentCore Browser with Playwright
-<a name="browser-quickstart-playwright"></a>
 
 You can use the Playwright automation framework with the Browser Tool:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Configuring an assessment report in AWS Schema Conversion Tool
-<a name="CHAP_AssessmentReport.Configure"></a>
 
 You can configure the amount of details that AWS SCT includes into assessment reports.
 

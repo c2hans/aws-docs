@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Related resources
-<a name="related-resources"></a>
 +  [Automated Response and Remediation with AWS Security Hub](https://aws.amazon.com/blogs/security/automated-response-and-remediation-with-aws-security-hub/)
 +  [CIS Amazon Web Services Foundations benchmarks, version 1.2.0](https://www.cisecurity.org/cis-benchmarks/)
 +  [AWS Foundational Security Best Practices standard](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp.html)

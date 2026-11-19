@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/keywords-pool
 ---
 
 # Edit a keyword in a phone pool
-<a name="keywords-pool-edit"></a>
 
 Use the AWS End User Messaging SMS console or AWS CLI to edit keyword responses for your phone pool.
 

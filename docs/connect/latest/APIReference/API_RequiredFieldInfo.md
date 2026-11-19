@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Required
 ---
 
 # RequiredFieldInfo
-<a name="API_RequiredFieldInfo"></a>
 
 Information about a required field.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-ind
 ---
 
 # HealthLake for EHRs
-<a name="reference-industry-ehrs"></a>
 
  For EHR builders, AWS HealthLake provides a fully managed FHIR R4 data store that serves as the unified foundation for your transactional FHIR server, analytics, and AI workloads. Rather than building and operating a custom FHIR server — including the database, search index, bulk export pipeline, and compliance infrastructure — you delegate that layer to HealthLake and focus on clinical workflows, UI, and business logic.
 

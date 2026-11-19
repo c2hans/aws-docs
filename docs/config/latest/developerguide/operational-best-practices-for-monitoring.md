@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/operational
 ---
 
 # Operational Best Practices for Monitoring
-<a name="operational-best-practices-for-monitoring"></a>
 
  This conformance pack contains AWS Config rules based on monitoring within AWS. For a list of all managed rules supported by AWS Config, see [List of AWS Config Managed Rules](https://docs.aws.amazon.com/config/latest/developerguide/managed-rules-by-aws-config.html).
 

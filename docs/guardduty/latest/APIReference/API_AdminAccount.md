@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_AdminA
 ---
 
 # AdminAccount
-<a name="API_AdminAccount"></a>
 
 The account within the organization specified as the GuardDuty delegated administrator.
 

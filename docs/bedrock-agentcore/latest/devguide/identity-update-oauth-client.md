@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Update OAuth client
-<a name="identity-update-oauth-client"></a>
 
 You can modify the configuration settings for your existing OAuth client. For example, you can update your client credentials (Client ID and Client secret) when they’ve been rotated or changed by your identity provider.
 

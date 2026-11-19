@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesyste
 ---
 
 # Configuring Amazon EFS file system access
-<a name="configuration-filesystem-efs"></a>
 
 You can configure a function to mount an Amazon Elastic File System (Amazon EFS) file system to a local directory. Amazon EFS is a serverless file system that scales automatically with your workloads. With Amazon EFS, your function code can access and modify shared resources safely and at high concurrency.
 

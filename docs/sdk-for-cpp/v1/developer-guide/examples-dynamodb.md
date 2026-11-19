@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/examples-
 ---
 
 # Amazon DynamoDB examples using the AWS SDK for C\+\+
-<a name="examples-dynamodb"></a>
 
 Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. The following examples show how you can program [Amazon DynamoDB](https://aws.amazon.com/dynamodb) using the AWS SDK for C\+\+.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Migration with native database tools and AWS DMS
-<a name="dms"></a>
 
 Many DBAs are familiar with a wide range of tools that handle database migration and replication. These tools are typically offered by database engine vendors and third-party companies, and they work on the logical level of the specific database engine, unlike the fully application-agnostic, block-level replication approach offered by MGN.
 

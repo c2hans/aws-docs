@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_R
 ---
 
 # ResourceErrorsDetails
-<a name="API_ResourceErrorsDetails"></a>
 
  A list of errors retrieving an application's resources.
 

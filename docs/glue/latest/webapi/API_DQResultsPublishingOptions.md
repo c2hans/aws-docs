@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DQResultsPublishi
 ---
 
 # DQResultsPublishingOptions
-<a name="API_DQResultsPublishingOptions"></a>
 
 Options to configure how your data quality evaluation results are published.
 

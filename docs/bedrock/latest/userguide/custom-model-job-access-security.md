@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/custom-model-jo
 ---
 
 # Model customization access and security
-<a name="custom-model-job-access-security"></a>
 
 This page provides comprehensive security and permissions information for all Amazon Bedrock model customization types including fine-tuning, reinforcement fine-tuning, distillation, and model operations. Before you begin customizing a model, make sure that you understand what kind of access Amazon Bedrock needs and consider some options for securing your customization jobs and artifacts.
 

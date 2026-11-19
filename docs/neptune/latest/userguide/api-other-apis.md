@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/api-other-apis.
 ---
 
 # Other Neptune APIs
-<a name="api-other-apis"></a>
 
 **Actions:**
 + [AddTagsToResource (action)](#AddTagsToResource)

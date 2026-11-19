@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/layers-cfn.html
 ---
 
 # Using AWS CloudFormation with layers
-<a name="layers-cfn"></a>
 
 You can use CloudFormation to create a layer and associate the layer with your Lambda Event Function. The following example template creates a layer named `my-lambda-layer` and attaches the layer to the Event Function using the **Layers** property.
 

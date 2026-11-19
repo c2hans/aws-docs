@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreatePolicy
 ---
 
 # CreatePolicy
-<a name="API_CreatePolicy"></a>
 
 Creates a new managed policy for your AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/troubleshoot-deplo
 ---
 
 # Troubleshoot common CloudFormation deployment issues for CDN and MediaTailor integrations
-<a name="troubleshoot-deployment-issues"></a>
 
 AWS Elemental MediaTailor deployment issues can occur even with automation during deployment or playback. As a broadcast professional, understanding how to troubleshoot these issues will help you maintain a reliable streaming service with ad insertion.
 

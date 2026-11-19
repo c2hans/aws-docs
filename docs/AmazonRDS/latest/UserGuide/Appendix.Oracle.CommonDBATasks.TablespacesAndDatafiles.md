@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Working with tablespaces in RDS for Oracle
-<a name="Appendix.Oracle.CommonDBATasks.TablespacesAndDatafiles"></a>
 
 You can use tablespaces with RDS for Oracle, which is a logical storage unit that stores the database's data.
 

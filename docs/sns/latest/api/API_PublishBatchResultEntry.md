@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_PublishBatchResultEnt
 ---
 
 # PublishBatchResultEntry
-<a name="API_PublishBatchResultEntry"></a>
 
 Encloses data related to a successful message in a batch request for topic.
 

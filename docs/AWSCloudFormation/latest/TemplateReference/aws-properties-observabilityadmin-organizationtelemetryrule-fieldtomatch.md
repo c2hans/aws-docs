@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::OrganizationTelemetryRule FieldToMatch
-<a name="aws-properties-observabilityadmin-organizationtelemetryrule-fieldtomatch"></a>
 
  Specifies a field in the request to redact from WAF logs, such as headers, query parameters, or body content.
 

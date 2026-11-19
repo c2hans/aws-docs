@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/quota-monitor-for-aws/s
 ---
 
 # Step 5. Launch the spoke SNS stacks when not using AWS Organizations or hybrid environments
-<a name="step-5.-launch-the-spoke-sns-stacks-when-not-using-aws-organizations-or-hybrid-environments"></a>
 
 Follow these steps to launch the components necessary for adding decentralized notifications to secondary accounts. Launch this stack in a single Region in every account where you want a separate SNS topic. Ensure that you launch this stack before the **sq spoke stacks** in [Step 6](step-6.-launch-the-spoke-stacks-optional.md).
 

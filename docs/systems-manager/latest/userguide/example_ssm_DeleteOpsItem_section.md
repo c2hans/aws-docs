@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `DeleteOpsItem` with an AWS SDK
-<a name="example_ssm_DeleteOpsItem_section"></a>
 
 The following code examples show how to use `DeleteOpsItem`.
 

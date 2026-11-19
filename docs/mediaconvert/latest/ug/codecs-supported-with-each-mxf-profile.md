@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/codecs-supported-
 ---
 
 # List of codecs supported within each MXF profile
-<a name="codecs-supported-with-each-mxf-profile"></a>
 
 This table shows the codecs that AWS Elemental MediaConvert supports with each MXF profile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ModifyC
 ---
 
 # ModifyClusterSnapshot
-<a name="API_ModifyClusterSnapshot"></a>
 
 Modifies the settings for a snapshot.
 

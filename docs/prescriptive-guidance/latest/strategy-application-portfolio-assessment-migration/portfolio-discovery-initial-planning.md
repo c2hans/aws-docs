@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ap
 ---
 
 # Discovery acceleration and initial planning
-<a name="portfolio-discovery-initial-planning"></a>
 
 This stage of portfolio assessment occurs early in the cloud journey. It's typically performed close to an executive decision to move an existent portfolio of applications to the cloud or during exploratory phases. The discovery acceleration and initial planning stage focuses on the following:
 + Understanding business drivers

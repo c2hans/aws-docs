@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/token-excha
 ---
 
 # Token exchange service
-<a name="token-exchange-service-component"></a>
 
 The token exchange service component (`aws.greengrass.TokenExchangeService`) provides AWS credentials that you can use to interact with AWS services in your custom components.
 

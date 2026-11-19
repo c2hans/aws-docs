@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/lenses-
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Upgrading a lens in AWS WA Tool
-<a name="lenses-upgrading"></a>
 
 Lenses can be upgraded for workloads and review templates.
 

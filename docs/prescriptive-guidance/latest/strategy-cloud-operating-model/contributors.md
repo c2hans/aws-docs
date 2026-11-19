@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cl
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 Contributors to this document include:
 + David Stanley, Principal Operations Transformation Consultant, AWS Professional Services

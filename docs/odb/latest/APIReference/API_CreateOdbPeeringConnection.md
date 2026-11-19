@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_CreateOdbPee
 ---
 
 # CreateOdbPeeringConnection
-<a name="API_CreateOdbPeeringConnection"></a>
 
 Creates a peering connection between an ODB network and a VPC.
 

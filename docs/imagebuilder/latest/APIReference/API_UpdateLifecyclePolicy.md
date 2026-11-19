@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Upd
 ---
 
 # UpdateLifecyclePolicy
-<a name="API_UpdateLifecyclePolicy"></a>
 
 Updates the specified lifecycle policy. The request replaces the existing policy configuration rather than merging changes, so re-specify every setting that you want to keep. The `resourceType` must match the existing policy's value.
 

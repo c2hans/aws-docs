@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Appendix.PHP
 ---
 
 # Removing the PHP cluster client
-<a name="Appendix.PHPAutoDiscoverySetup.Removing"></a>
 
 **Topics**
 + [Removing an earlier version of PHP 7](#Appendix.PHPAutoDiscoverySetup.Removing.PHP7x)

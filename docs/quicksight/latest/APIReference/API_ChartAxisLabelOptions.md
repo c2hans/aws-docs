@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Chart
 ---
 
 # ChartAxisLabelOptions
-<a name="API_ChartAxisLabelOptions"></a>
 
 The label options for an axis on a chart.
 

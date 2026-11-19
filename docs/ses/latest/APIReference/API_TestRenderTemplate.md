@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_TestRenderTe
 ---
 
 # TestRenderTemplate
-<a name="API_TestRenderTemplate"></a>
 
 Creates a preview of the MIME content of an email when provided with a template and a set of replacement data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/apps-desktop.html
 ---
 
 # Apps in AWS Quick
-<a name="apps-desktop"></a>
 
 Apps in AWS Quick are interactive applications you build by describing what you want, and they are available directly in the desktop application. This section covers how to reach apps on desktop. For how to build, edit, publish, and share an app, see [Build web applications with apps in AWS Quick](using-amazon-quick-apps.md).
 

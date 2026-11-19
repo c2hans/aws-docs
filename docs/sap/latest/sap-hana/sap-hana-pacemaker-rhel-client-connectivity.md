@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-r
 ---
 
 # Client Connectivity
-<a name="sap-hana-pacemaker-rhel-client-connectivity"></a>
 
 For proper SAP HANA database connectivity:
 + Ensure that the Overlay IP can be correctly resolved in all application servers

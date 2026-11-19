@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Provide domain information when you register or transfer a domain in Lightsail
-<a name="amazon-lightsail-domain-register-values-specify"></a>
 
 When you use Amazon Lightsail to register a domain, you provide domain information such as the registration period (*term*) and domain contact information. You also configure automatic domain renewal and privacy protection.
 

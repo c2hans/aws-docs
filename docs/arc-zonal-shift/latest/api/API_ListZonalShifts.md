@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_ListZonal
 ---
 
 # ListZonalShifts
-<a name="API_ListZonalShifts"></a>
 
 By default, lists only active zonal shifts in Amazon Application Recovery Controller in your AWS account in this AWS Region. To list historical zonal shifts, specify `--status CANCELED` or `--status EXPIRED`. Most practice runs have a status of EXPIRED. `ListZonalShifts` returns customer-initiated zonal shifts, as well as practice run zonal shifts that ARC started on your behalf for zonal autoshift.
 

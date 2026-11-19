@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Migrate from third-party SDKs
-<a name="migrate-from-third-party-sdks"></a>
 
 ## Introduction
 <a name="introduction-7"></a>

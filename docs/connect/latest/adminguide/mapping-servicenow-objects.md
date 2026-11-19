@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/mapping-servic
 ---
 
 # Mapping ServiceNow objects to the standard profile object in Connect Customer Customer Profiles
-<a name="mapping-servicenow-objects"></a>
 
 This topic lists which fields in ServiceNow objects map to fields in the standard profile object in Connect Customer Customer Profiles.
 

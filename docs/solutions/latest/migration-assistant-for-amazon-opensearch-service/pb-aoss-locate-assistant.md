@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 3: Locate Migration Assistant and the migration role
-<a name="pb-aoss-locate-assistant"></a>
 
 Open a shell on the Migration Console pod, refreshing your kubeconfig first if you are on a new shell:
 

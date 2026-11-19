@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/multi-produ
 ---
 
 # Multi-product solutions FAQ
-<a name="multi-product-solutions-faq"></a>
 
 This FAQ addresses common questions about multi-product solutions, including solution listings and offer sets.
 

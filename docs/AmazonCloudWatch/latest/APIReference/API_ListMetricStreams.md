@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # ListMetricStreams
-<a name="API_ListMetricStreams"></a>
 
 Returns a list of metric streams in this account.
 

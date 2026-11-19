@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/provision-phone.html
 ---
 
 # Provisioning phone numbers
-<a name="provision-phone"></a>
 
 You use the Amazon Chime SDK console to provision phone numbers for your Amazon Chime SDK account. Choose from the following approaches:
 + Amazon Chime SDK Voice Connectors – Integrate with an existing phone system. For more information, see [Managing Amazon Chime SDK Voice Connectors](voice-connectors.md).

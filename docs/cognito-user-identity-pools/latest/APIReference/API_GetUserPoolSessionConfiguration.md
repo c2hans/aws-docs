@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # GetUserPoolSessionConfiguration
-<a name="API_GetUserPoolSessionConfiguration"></a>
 
 Retrieves the session tracking configuration for a user pool, including whether session tracking is enabled and the pool-wide maximum number of active token sessions for each user. If you have never called `SetUserPoolSessionConfiguration` for the user pool, this operation returns the default values: `UserSessionTracking` as `DISABLED` and a `MaxPerUser` value of `20`.
 

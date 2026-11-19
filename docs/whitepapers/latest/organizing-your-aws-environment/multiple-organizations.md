@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # Multiple organizations
-<a name="multiple-organizations"></a>
 
  Most customers are best served using a single production organization and a test organization. This allows you to ensure consistency across accounts in your environment because centrally-applied policies or service-level configurations are programmatically applied across accounts within your organization. Separating your workload accounts across organizations requires additional overhead or customization to ensure central standards are applied within each organization.
 

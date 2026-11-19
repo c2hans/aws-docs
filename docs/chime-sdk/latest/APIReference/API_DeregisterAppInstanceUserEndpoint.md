@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Deregi
 ---
 
 # DeregisterAppInstanceUserEndpoint
-<a name="API_DeregisterAppInstanceUserEndpoint"></a>
 
 Deregisters an `AppInstanceUserEndpoint`.
 

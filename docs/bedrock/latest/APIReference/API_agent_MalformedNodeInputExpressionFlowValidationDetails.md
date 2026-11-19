@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ma
 ---
 
 # MalformedNodeInputExpressionFlowValidationDetails
-<a name="API_agent_MalformedNodeInputExpressionFlowValidationDetails"></a>
 
 Details about a malformed input expression in a node.
 

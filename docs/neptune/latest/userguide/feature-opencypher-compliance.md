@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/feature-opencyp
 ---
 
 # openCypher specification compliance in Amazon Neptune
-<a name="feature-opencypher-compliance"></a>
 
 The Amazon Neptune release of openCypher generally supports the clauses, operators, expressions, functions, and syntax defined in the by the current openCypher specification, which is the [Cypher Query Language Reference Version 9](https://s3.amazonaws.com/artifacts.opencypher.org/openCypher9.pdf). Limitations and differences in Neptune support for openCypher are called out below.
 

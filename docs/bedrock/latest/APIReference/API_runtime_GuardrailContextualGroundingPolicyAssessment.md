@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailContextualGroundingPolicyAssessment
-<a name="API_runtime_GuardrailContextualGroundingPolicyAssessment"></a>
 
 The policy assessment details for the guardrails contextual grounding filter.
 

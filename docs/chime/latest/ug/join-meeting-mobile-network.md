@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/join-meeting-mobile-netw
 ---
 
 # Joining a meeting
-<a name="join-meeting-mobile-network"></a>
 
 While connected to either a cellular or WiFi network, the Amazon Chime mobile app automatically uses your device's network connection to receive calls.
 

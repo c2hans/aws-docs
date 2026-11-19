@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Protocol-based tools
-<a name="protocol-based-tools"></a>
 
 When considering protocol-based tools, the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) provides a comprehensive and flexible foundation for tool integration. As stated in the [AWS Open Source blog post on agent interoperability](https://aws.amazon.com/blogs/opensource/open-protocols-for-agent-interoperability-part-1-inter-agent-communication-on-mcp/), AWS has embraced MCP as a strategic protocol, actively contributing to its development.
 

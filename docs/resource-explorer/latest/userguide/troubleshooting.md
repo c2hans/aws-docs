@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/userguide/troub
 ---
 
 # Troubleshooting Resource Explorer
-<a name="troubleshooting"></a>
 
 If you encounter issues when working with Resource Explorer, consult the topics in this section. Also see [Troubleshooting AWS Resource Explorer permissions](security_iam_troubleshoot.md) in the **Security** section of this guide.
 

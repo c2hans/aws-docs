@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Cluster
 ---
 
 # ClusterParameterGroup
-<a name="API_ClusterParameterGroup"></a>
 
 Describes a parameter group.
 

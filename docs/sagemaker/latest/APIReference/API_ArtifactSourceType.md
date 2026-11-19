@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Artifa
 ---
 
 # ArtifactSourceType
-<a name="API_ArtifactSourceType"></a>
 
 The ID and ID type of an artifact source.
 

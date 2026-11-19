@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/bl
 ---
 
 # Block public access to Amazon RDS by using Cloud Custodian
-<a name="block-public-access-to-amazon-rds-by-using-cloud-custodian"></a>
 
 *abhay kumar and Dwarika Patra, Amazon Web Services*
 

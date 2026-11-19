@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Comman
 ---
 
 # CommandExecution
-<a name="API_CommandExecution"></a>
 
 Contains command execution information.
 

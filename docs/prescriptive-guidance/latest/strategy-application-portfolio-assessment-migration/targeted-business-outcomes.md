@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ap
 ---
 
 # Targeted business outcomes
-<a name="targeted-business-outcomes"></a>
 + Obtainment of a complete inventory of applications, infrastructure, and dependencies.
 + Early identification of pilot applications, or initial migration candidates, for detailed assessment. The detailed assessment includes initial target architecture design and migration strategy.
 + Portfolio rationalization for migration based on defined application prioritization criteria and 6 Rs strategy decision tree.

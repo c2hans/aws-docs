@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_StandardDest
 ---
 
 # StandardDestinationEndpointNetworkingConfiguration
-<a name="API_StandardDestinationEndpointNetworkingConfiguration"></a>
 
 The networking configuration for a standard destination endpoint. This is a union type, so exactly one of its members is set: `public` for a publicly accessible endpoint, or `vpc` for an endpoint in a virtual private cloud (VPC).
 

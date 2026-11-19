@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeConnec
 ---
 
 # DescribeConnectionAliasPermissions
-<a name="API_DescribeConnectionAliasPermissions"></a>
 
 Describes the permissions that the owner of a connection alias has granted to another AWS account for the specified connection alias. For more information, see [ Cross-Region Redirection for Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/cross-region-redirection.html).
 

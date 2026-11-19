@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMachineLearningRoleforRedshiftDataSourceV3
-<a name="AmazonMachineLearningRoleforRedshiftDataSourceV3"></a>
 
 **Description**: Allows Machine Learning to configure and use your Redshift Clusters and S3 Staging Locations for Redshift Data Source.
 

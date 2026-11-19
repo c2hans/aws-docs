@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVSUS02-BP01 Reject non-actionable bid requests before they draw compute energy
-<a name="advsus02-bp01"></a>
 
  Invalid or incompatible requests waste energy when they reach application compute. You can reduce that waste by rejecting them at the network layer, upstream of compute, which also improves response times.
 

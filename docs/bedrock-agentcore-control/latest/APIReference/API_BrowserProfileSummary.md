@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # BrowserProfileSummary
-<a name="API_BrowserProfileSummary"></a>
 
 Contains summary information about a browser profile. A browser profile stores persistent browser data that can be reused across browser sessions.
 

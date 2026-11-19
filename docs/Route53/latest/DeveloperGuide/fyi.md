@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/fyi.html
 ---
 
 # .fyi
-<a name="fyi"></a>
 
 Used as a general extension, but ideal for sharing information of all kinds. "FYI" is an acronym for "for your information."
 

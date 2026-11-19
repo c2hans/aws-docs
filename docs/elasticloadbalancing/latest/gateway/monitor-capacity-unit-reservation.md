@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/moni
 ---
 
 # Monitor Load balancer Capacity Unit reservation for your Gateway Load Balancer
-<a name="monitor-capacity-unit-reservation"></a>
 
 **Reservation Status**
 LCU reservation has four available status:

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-reboot.html
 ---
 
 # Rebooting compute nodes with Slurm in AWS PCS
-<a name="slurm-reboot"></a>
 
 AWS PCS supports Slurm's native `scontrol reboot` command. Use this command to reboot compute nodes without EC2 instance replacement. Other reboot methods (Amazon EC2 console, AWS CLI, automated patches, or system maintenance) cause AWS PCS to consider the EC2 instance unhealthy and replace it.
 

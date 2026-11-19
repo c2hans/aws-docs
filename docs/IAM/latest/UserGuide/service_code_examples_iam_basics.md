@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/service_code_exampl
 ---
 
 # Basic examples for IAM using AWS SDKs
-<a name="service_code_examples_iam_basics"></a>
 
 The following code examples show how to use the basics of AWS Identity and Access Management with AWS SDKs.
 

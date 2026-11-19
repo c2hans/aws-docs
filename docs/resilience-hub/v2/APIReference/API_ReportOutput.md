@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Repor
 ---
 
 # ReportOutput
-<a name="API_ReportOutput"></a>
 
 Union of possible report outputs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/ha-resilien
 ---
 
 # Conclusion
-<a name="conclusion"></a>
 
 When you design your architecture for high application availability and resiliency, consider the following components:
 + The microservices application (its pods and containers)

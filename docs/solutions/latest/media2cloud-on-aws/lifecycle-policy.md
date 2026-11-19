@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/life
 ---
 
 # Lifecycle policy
-<a name="lifecycle-policy"></a>
 
  The Media2Cloud on AWS solution turns on Amazon S3 Intelligent Tiering storage class for the Amazon S3 ingestion, proxy, and web buckets.
 

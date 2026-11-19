@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # GetDeliveryDestination
-<a name="API_GetDeliveryDestination"></a>
 
 Retrieves complete information about one delivery destination.
 

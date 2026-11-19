@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWS-DisableIncomingSSHOnPort22`
-<a name="disable-incoming-ssh"></a>
 
 **Description**
 

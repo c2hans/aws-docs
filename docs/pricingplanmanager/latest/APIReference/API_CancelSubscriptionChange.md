@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pricingplanmanager/latest/APIReference/A
 ---
 
 # CancelSubscriptionChange
-<a name="API_CancelSubscriptionChange"></a>
 
 Cancels a pending scheduled change on a subscription, such as a pending downgrade or cancellation. The subscription returns to its state before the change was scheduled.
 

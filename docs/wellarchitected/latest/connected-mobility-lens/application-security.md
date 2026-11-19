@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Application security
-<a name="application-security"></a>
 
 | CMSEC\_24: How do you make sure that only trusted software components are running on vehicle hardware? |
 | --- |

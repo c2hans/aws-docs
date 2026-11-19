@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags_roles.html
 ---
 
 # Tag IAM roles
-<a name="id_tags_roles"></a>
 
 You can use IAM tag key-value pairs to add custom attributes to an IAM role. For example, to add location information to a role, you can add the tag key **location** and the tag value **us\_wa\_seattle**. Or you could use three separate location tag key-value pairs: **loc-country = us**, **loc-state = wa**, and **loc-city = seattle**. You can use tags to control a role's access to resources or to control what tags can be attached to a role. To learn more about using tags to control access, see [Controlling access to and for IAM users and roles using tags](access_iam-tags.md).
 

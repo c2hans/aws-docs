@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/private-off
 ---
 
 # Private offer FAQ
-<a name="private-offer-faq"></a>
 
 This FAQ answers commonly asked questions about creating, managing, and troubleshooting private offers.
 
@@ -279,7 +278,7 @@ If you are new to the private offer process, use this [video library](https://yo
 ### Which currencies are supported for private offers?
 <a name="which-currencies-supported"></a>
 
-Private offers support USD, EUR, GBP, AUD, JPY, and INR (for sellers in India only). All pricing models (contract, contract with consumption, and pay-as-you-go) support these currencies.
+Private offers support USD, EUR, GBP, AUD, JPY, CAD, SGD, NZD, and INR (for sellers in India only). All pricing models (contract, contract with consumption, and pay-as-you-go) support these currencies.
 
 ### Can I create pay-as-you-go offers in non-USD currencies?
 <a name="payg-non-usd-currencies"></a>

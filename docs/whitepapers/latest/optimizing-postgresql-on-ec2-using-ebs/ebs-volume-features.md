@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql
 ---
 
 # Amazon EBS volume features
-<a name="ebs-volume-features"></a>
 
 ## Amazon EBS monitoring
 <a name="ebs-monitoring"></a>

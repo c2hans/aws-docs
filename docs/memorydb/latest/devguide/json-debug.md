@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-debug.html
 ---
 
 # JSON.DEBUG
-<a name="json-debug"></a>
 
 Report information. Supported subcommands are:
 + MEMORY <key> [path] – report memory usage in bytes of a JSON value. Path defaults to the root if not provided.

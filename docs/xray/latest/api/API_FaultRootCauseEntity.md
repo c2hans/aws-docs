@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_FaultRootCauseEntity
 ---
 
 # FaultRootCauseEntity
-<a name="API_FaultRootCauseEntity"></a>
 
 A collection of segments and corresponding subsegments associated to a trace summary fault error.
 

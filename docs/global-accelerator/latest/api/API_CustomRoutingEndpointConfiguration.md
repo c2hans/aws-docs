@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Custom
 ---
 
 # CustomRoutingEndpointConfiguration
-<a name="API_CustomRoutingEndpointConfiguration"></a>
 
 The list of endpoint objects. For custom routing, this is a list of virtual private cloud (VPC) subnet IDs.
 

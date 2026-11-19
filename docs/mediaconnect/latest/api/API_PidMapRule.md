@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_PidMapRule.h
 ---
 
 # PidMapRule
-<a name="API_PidMapRule"></a>
 
 A rule that selects elementary streams and specifies the action to apply to them. For more information, see [Rules](https://docs.aws.amazon.com/mediaconnect/latest/ug/pid-remapping-writing-rules.html) in the * AWS Elemental MediaConnect User Guide*.
 

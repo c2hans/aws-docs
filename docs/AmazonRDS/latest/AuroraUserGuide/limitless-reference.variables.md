@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitle
 ---
 
 # Variables in Aurora PostgreSQL Limitless Database
-<a name="limitless-reference.variables"></a>
 
 You can use the following variables to configure Aurora PostgreSQL Limitless Database.
 

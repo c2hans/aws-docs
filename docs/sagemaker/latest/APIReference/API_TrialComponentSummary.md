@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrialC
 ---
 
 # TrialComponentSummary
-<a name="API_TrialComponentSummary"></a>
 
 A summary of the properties of a trial component. To get all the properties, call the [DescribeTrialComponent](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeTrialComponent.html) API and provide the `TrialComponentName`.
 

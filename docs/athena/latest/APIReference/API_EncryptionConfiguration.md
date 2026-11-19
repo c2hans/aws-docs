@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_Encryptio
 ---
 
 # EncryptionConfiguration
-<a name="API_EncryptionConfiguration"></a>
 
 If query and calculation results are encrypted in Amazon S3, indicates the encryption option used (for example, `SSE_KMS` or `CSE_KMS`) and key information.
 

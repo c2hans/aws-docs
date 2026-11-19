@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/parameters.html
 ---
 
 # Amazon Neptune parameters
-<a name="parameters"></a>
 
 You manage your database configuration in Amazon Neptune by using parameters in [parameter groups](parameter-groups.md). The following parameters are available for configuring your Neptune database:
 

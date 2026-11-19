@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/dolby-metadata-
 ---
 
 # Output with the Dolby Digital codec
-<a name="dolby-metadata-output-dolby-digital-codec"></a>
 
 | Named metadata parameters | Category | Field | API tag (at stream\_assembly\\audio\_description\\ac3\_settings) | Default |
 | --- | --- | --- | --- | --- |

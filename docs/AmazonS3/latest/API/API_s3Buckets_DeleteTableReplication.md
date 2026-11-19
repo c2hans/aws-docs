@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Delete
 ---
 
 # DeleteTableReplication
-<a name="API_s3Buckets_DeleteTableReplication"></a>
 
 Deletes the replication configuration for a specific table. After deletion, new updates to this table will no longer be replicated to destination tables, though existing replicated copies will remain in destination buckets.
 

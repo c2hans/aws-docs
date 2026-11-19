@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MediaPla
 ---
 
 # MediaPlacement
-<a name="API_MediaPlacement"></a>
 
 A set of endpoints used by clients to connect to the media service group for an Amazon Chime SDK meeting.
 

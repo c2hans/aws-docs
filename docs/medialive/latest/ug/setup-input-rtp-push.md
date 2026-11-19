@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-input-rtp-push
 ---
 
 # Create an RTP input
-<a name="setup-input-rtp-push"></a>
 
 After you have created the input security group, you can create the RTP push input.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-how.html
 ---
 
 # How Amazon Bedrock Agents works
-<a name="agents-how"></a>
 
 **Amazon Bedrock Agents Classic availability**
 You can no longer sign up for Amazon Bedrock Agents (now Amazon Bedrock Agents Classic). If you already use Agents Classic, you can continue to use it.

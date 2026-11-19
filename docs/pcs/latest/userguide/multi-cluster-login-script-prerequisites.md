@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/multi-cluster-login
 ---
 
 # Prerequisites for the AWS PCS multi-cluster login node configuration script
-<a name="multi-cluster-login-script-prerequisites"></a>
 
 ## System requirements
 <a name="system-requirements"></a>

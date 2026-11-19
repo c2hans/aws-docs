@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/unders
 ---
 
 # What is pro forma billing data?
-<a name="understanding-proforma"></a>
 
 The pro forma billing data is an alternate version of the billing data. This version is the output of your configuration through Billing Conductor resources (pricing plans, pricing rules, and custom line items) applied to either a subset of accounts in the AWS Organizations (standard billing groups) or to an entire organization (billing transfer billing group) for customized showback or chargeback purposes.
 

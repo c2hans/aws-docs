@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DocDB::DBClusterParameterGroup
-<a name="aws-resource-docdb-dbclusterparametergroup"></a>
 
 The `AWS::DocDB::DBClusterParameterGroup`Amazon DocumentDB (with MongoDB compatibility) resource describes a DBClusterParameterGroup. For more information, see [DBClusterParameterGroup](https://docs.aws.amazon.com/documentdb/latest/developerguide/API_DBClusterParameterGroup.html) in the *Amazon DocumentDB Developer Guide*.
 

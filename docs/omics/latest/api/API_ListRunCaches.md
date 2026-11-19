@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListRunCaches.html
 ---
 
 # ListRunCaches
-<a name="API_ListRunCaches"></a>
 
 Retrieves a list of your run caches and the metadata for each cache.
 

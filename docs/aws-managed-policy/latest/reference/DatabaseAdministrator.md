@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Data
 ---
 
 # DatabaseAdministrator
-<a name="DatabaseAdministrator"></a>
 
 **Description**: Grants full access permissions to AWS services and actions required to set up and configure AWS database services.
 

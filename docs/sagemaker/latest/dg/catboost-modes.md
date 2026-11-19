@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/catboost-modes.html
 ---
 
 # How to use SageMaker AI CatBoost
-<a name="catboost-modes"></a>
 
 You can use CatBoost as an Amazon SageMaker AI built-in algorithm. The following section describes how to use CatBoost with the SageMaker Python SDK. For information on how to use CatBoost from the Amazon SageMaker Studio Classic UI, see [SageMaker JumpStart pretrained models](studio-jumpstart.md).
 + **Use CatBoost as a built-in algorithm**

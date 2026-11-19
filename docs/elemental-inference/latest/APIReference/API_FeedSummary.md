@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # FeedSummary
-<a name="API_FeedSummary"></a>
 
 Contains configuration information about a feed. It is used in the ListFeeds response.
 

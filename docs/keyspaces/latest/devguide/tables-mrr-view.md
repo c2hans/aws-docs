@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/tables-mrr-vie
 ---
 
 # View the provisioned capacity and auto scaling settings for a multi-Region table in Amazon Keyspaces
-<a name="tables-mrr-view"></a>
 
 You can view a multi-Region table's provisioned capacity and auto scaling settings on the Amazon Keyspaces console, using CQL, or the AWS CLI. This section provides examples of how to do this using CQL and the AWS CLI.
 

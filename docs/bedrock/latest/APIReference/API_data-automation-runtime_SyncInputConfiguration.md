@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # SyncInputConfiguration
-<a name="API_data-automation-runtime_SyncInputConfiguration"></a>
 
 Input configuration for a synchronous data automation invocation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Uns
 ---
 
 # UnshareDirectory
-<a name="API_UnshareDirectory"></a>
 
 Stops the directory sharing between the directory owner and consumer accounts.
 

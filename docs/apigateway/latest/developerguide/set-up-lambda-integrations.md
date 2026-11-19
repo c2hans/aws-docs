@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-
 ---
 
 # Lambda integrations for REST APIs in API Gateway
-<a name="set-up-lambda-integrations"></a>
 
  You can integrate an API method with a Lambda function using Lambda proxy integration or Lambda non-proxy (custom) integration.
 

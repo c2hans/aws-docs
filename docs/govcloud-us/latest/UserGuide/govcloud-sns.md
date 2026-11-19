@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-sn
 ---
 
 # Amazon SNS in AWS GovCloud (US)
-<a name="govcloud-sns"></a>
 
 Amazon Simple Notification Service (Amazon SNS) is a web service that enables applications, end-users, and devices to instantly send and receive notifications from the cloud.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-CustomSql
 ---
 
 # CustomSQL
-<a name="dqdl-rule-types-CustomSql"></a>
 
 This rule type has been extended to support two use cases:
 + Run a custom SQL statement against a dataset and checks the return value against a given expression.

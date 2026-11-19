@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/install-lustre-cl
 ---
 
 # Installing the Lustre client
-<a name="install-lustre-client"></a>
 
 To mount your Amazon FSx for Lustre file system from a Linux instance, first install the open-source Lustre client. Then, depending on your operating system version, use one of the following procedures. For kernel support information, see [Lustre file system and client kernel compatibility](lustre-client-matrix.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/copy-bu
 ---
 
 # Copying an AWS Budgets report
-<a name="copy-budget-report"></a>
 
 Use the following procedure to copy an AWS Budgets report.<a name="copy-budget-report-steps"></a>
 

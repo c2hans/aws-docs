@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_StepA
 ---
 
 # StepAliasMapping
-<a name="API_StepAliasMapping"></a>
 
 A mapping between a step identifier and its alias in a flow.
 

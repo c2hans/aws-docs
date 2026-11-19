@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 An attribute and value pair to use for narrowing search results.
 

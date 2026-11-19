@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/flow-logs-cwl.html
 ---
 
 # AWS Transit Gateway Flow Logs records in Amazon CloudWatch Logs
-<a name="flow-logs-cwl"></a>
 
 Flow logs can publish flow log data directly to Amazon CloudWatch.
 

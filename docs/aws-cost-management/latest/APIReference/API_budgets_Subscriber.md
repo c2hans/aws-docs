@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Subscriber
-<a name="API_budgets_Subscriber"></a>
 
 The subscriber to a budget notification. The subscriber consists of a subscription type and either an Amazon SNS topic or an email address.
 

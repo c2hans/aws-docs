@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cy
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 Technology and project management domains have adopted positive risks into their risk assessment processes, but the cybersecurity industry has historically excluded them. Positive risks can result in positive business outcomes, and the cybersecurity industry must transition to embrace positive risk and realize the benefits.
 

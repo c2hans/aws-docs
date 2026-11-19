@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/best-p
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 We recommend these best practices for using AgentCore Memory effectively in your AI agent applications.
 

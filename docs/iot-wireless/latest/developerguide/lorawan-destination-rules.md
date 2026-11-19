@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Create rules to process LoRaWAN device messages
-<a name="lorawan-destination-rules"></a>
 
 AWS IoT rules send device messages to other services. AWS IoT rules can also process the binary messages received from a LoRaWAN device to convert the messages to other formats that can make them easier for other services to use.
 

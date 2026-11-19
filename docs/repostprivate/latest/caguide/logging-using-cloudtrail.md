@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/repostprivate/latest/caguide/logging-usi
 End of support notice: On June 30, 2027, AWS will end support for AWS re:Post Private. After June 30, 2027, you will no longer be able to access the re:Post Private console or re:Post Private resources. For more information, see [AWS re:Post Private end of support](https://docs.aws.amazon.com/repostprivate/latest/userguide/repost-private-end-of-support.html).
 
 # Logging AWS re:Post Private API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 AWS re:Post Private is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in re:Post Private. CloudTrail captures all API calls for re:Post Private as events. The calls captured include calls from the re:Post Private console and code calls to the re:Post Private API operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for re:Post Private. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine the request that was made to re:Post Private, the IP address from which the request was made, who made the request, when it was made, and additional details.
 

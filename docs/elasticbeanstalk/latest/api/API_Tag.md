@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Tag.html
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Describes a tag applied to a resource in an environment.
 

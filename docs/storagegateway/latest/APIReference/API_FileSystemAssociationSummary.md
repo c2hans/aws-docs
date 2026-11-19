@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_F
 ---
 
 # FileSystemAssociationSummary
-<a name="API_FileSystemAssociationSummary"></a>
 
 Gets the summary returned by `ListFileSystemAssociation`, which is a summary of a created file system association.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/example
 ---
 
 # Use `GetCommandInvocation` with a CLI
-<a name="example_ssm_GetCommandInvocation_section"></a>
 
 The following code examples show how to use `GetCommandInvocation`.
 

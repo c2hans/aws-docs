@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_DeleteInstan
 ---
 
 # DeleteInstanceProfile
-<a name="API_DeleteInstanceProfile"></a>
 
 Deletes the specified instance profile.
 

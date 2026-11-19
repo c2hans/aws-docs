@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Ad
 ---
 
 # AdvancedFieldSelector
-<a name="API_AdvancedFieldSelector"></a>
 
 A single selector statement in an advanced event selector.
 

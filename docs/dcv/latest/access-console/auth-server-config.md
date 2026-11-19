@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/auth-server-co
 ---
 
 # Authentication Server configuration files
-<a name="auth-server-config"></a>
 
 The Authentication Server has two configuration files (`/etc/dcv-access-console-auth-server/access-console-auth-server.properties` and `/etc/dcv-access-console-auth-server/access-console-auth-server-secrets.properties`) that include parameters that can be configured to customize the Amazon DCV Access Console functionality connecting to different components.
 

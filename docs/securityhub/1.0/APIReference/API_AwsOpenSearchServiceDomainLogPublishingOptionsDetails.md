@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsOpen
 ---
 
 # AwsOpenSearchServiceDomainLogPublishingOptionsDetails
-<a name="API_AwsOpenSearchServiceDomainLogPublishingOptionsDetails"></a>
 
 Configures the CloudWatch Logs to publish for the OpenSearch domain.
 

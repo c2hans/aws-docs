@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Batch
 ---
 
 # BatchPutGeofenceError
-<a name="API_BatchPutGeofenceError"></a>
 
 Contains error details for each geofence that failed to be stored in a given geofence collection.
 

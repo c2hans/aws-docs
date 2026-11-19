@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeS3Ac
 ---
 
 # DescribeS3AccessPointAttachments
-<a name="API_DescribeS3AccessPointAttachments"></a>
 
 Describes one or more S3 access points attached to Amazon FSx volumes.
 

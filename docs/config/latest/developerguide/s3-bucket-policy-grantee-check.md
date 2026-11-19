@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-p
 ---
 
 # s3-bucket-policy-grantee-check
-<a name="s3-bucket-policy-grantee-check"></a>
 
 Checks that the access granted by the Amazon S3 bucket is restricted by any of the AWS principals, federated users, service principals, IP addresses, or VPCs that you provide. The rule is COMPLIANT if a bucket policy is not present.
 

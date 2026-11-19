@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/migrationguide/mig
 ---
 
 # Step H: Restore the database on a Elemental Live node
-<a name="migrate-worker-install-restore"></a>
 
 You restore data using the same lifeboat script that you used to create the backup.
 

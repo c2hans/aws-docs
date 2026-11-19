@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/VIDEO-ON-DEMAND-in
 ---
 
 # Item interactions dataset requirements (VIDEO\_ON\_DEMAND domain)
-<a name="VIDEO-ON-DEMAND-interactions-dataset"></a>
 
  An *Item interactions dataset* stores historical and real-time data from interactions between users and items in your VIDEO\_ON\_DEMAND catalog. For more information about the types of data you can store in an interactions dataset, see [Item interaction data](interactions-datasets.md).
 

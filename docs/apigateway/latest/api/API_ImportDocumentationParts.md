@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_ImportDocument
 ---
 
 # ImportDocumentationParts
-<a name="API_ImportDocumentationParts"></a>
 
 Imports documentation parts
 

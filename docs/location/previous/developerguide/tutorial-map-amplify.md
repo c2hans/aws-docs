@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/tutoria
 ---
 
 # Using the Amplify library with Amazon Location Service
-<a name="tutorial-map-amplify"></a>
 
 The following tutorial walks you through using AWS Amplify with Amazon Location. Amplify uses MapLibre GL JS to render maps in your JavaScript-based application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/integrat
 ---
 
 # AWS Systems Manager
-<a name="integrate-ssm"></a>
 
 AWS Resilience Hub works with Systems Manager to automate the steps of your SOPs by providing a number of SSM documents you can use as the basis for those SOPs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ActionE
 ---
 
 # ActionExecutionEvent
-<a name="API_ActionExecutionEvent"></a>
 
 A request from an end user signalling an intent to perform an Amazon Q Business plugin action during a streaming chat.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/data-collec
 ---
 
 # Data collection and usage
-<a name="data-collection-and-usage"></a>
 
  AWS Security Incident Response works with three distinct categories of data, each with different collection methods, storage patterns, and regional behavior. Understanding these categories is essential for evaluating how Security Incident Response fits within your compliance requirements.
 

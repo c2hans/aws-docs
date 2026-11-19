@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Batch
 ---
 
 # BatchGetApplications
-<a name="API_BatchGetApplications"></a>
 
 Gets information about one or more applications. The maximum number of applications that can be returned is 100.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ListExascale
 ---
 
 # ListExascaleDbStorageVaults
-<a name="API_ListExascaleDbStorageVaults"></a>
 
 Returns information about the Exascale storage vaults owned by your AWS account.
 

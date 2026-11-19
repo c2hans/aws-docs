@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ShareInvitationSummary
-<a name="API_ShareInvitationSummary"></a>
 
 A share invitation summary return object.
 

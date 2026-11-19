@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/machine-image-scan
 ---
 
 # Configuring machine image scanning
-<a name="machine-image-scan-configuration"></a>
 
  Your scan configuration determines which of the machine images that your account owns are in scope. It has three parts, which Amazon Inspector applies in this order:
 

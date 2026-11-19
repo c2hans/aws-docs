@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-cloudw
 ---
 
 # Starting a Step Functions workflow in response to events
-<a name="tutorial-cloudwatch-events-s3"></a>
 
 You can execute an AWS Step Functions state machine in response to an event routed by an Amazon EventBridge rule to Step Functions as a target.
 

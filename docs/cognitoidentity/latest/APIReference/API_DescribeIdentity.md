@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # DescribeIdentity
-<a name="API_DescribeIdentity"></a>
 
 Returns metadata related to the given identity, including when the identity was created and any associated linked logins.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/comp-env-b
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Adding environment components to a blueprint
-<a name="comp-env-bp"></a>
 
 The custom blueprint wizard is dynamically generated from the `Options` interface exposed through the wizard. Blueprints support generating user-interface (UI) components from exposed types.
 

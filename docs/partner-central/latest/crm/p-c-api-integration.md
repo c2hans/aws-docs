@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/p-c-api-integ
 ---
 
 # Configuring the connector for a Partner Central API integration
-<a name="p-c-api-integration"></a>
 
 The following sections explain how to configure the CRM connector for use with the AWS Partner Central APIs.
 

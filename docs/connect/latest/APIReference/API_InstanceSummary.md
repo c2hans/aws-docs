@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Instance
 ---
 
 # InstanceSummary
-<a name="API_InstanceSummary"></a>
 
 Information about the instance.
 

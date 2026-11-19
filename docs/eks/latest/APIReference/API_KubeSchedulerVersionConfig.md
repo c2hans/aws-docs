@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_KubeSchedule
 ---
 
 # KubeSchedulerVersionConfig
-<a name="API_KubeSchedulerVersionConfig"></a>
 
 The Kubernetes scheduler version-specific configuration defaults and constraints.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # TransitGatewayAttachmentSyncState
-<a name="API_TransitGatewayAttachmentSyncState"></a>
 
 Contains information about the synchronization state of a transit gateway attachment, including its current status and any error messages. Network Firewall uses this to track the state of your transit gateway configuration changes.
 

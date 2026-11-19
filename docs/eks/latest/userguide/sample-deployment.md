@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/sample-deployment.h
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Deploy a sample application on Linux
-<a name="sample-deployment"></a>
 
 In this topic, you deploy a sample application to your cluster on Linux nodes.
 

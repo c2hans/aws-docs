@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/qs-andr
 ---
 
 # Tutorial: Use the sample app
-<a name="qs-android-tracking-use"></a>
 
 This guide walks you through the process of setting up and using the sample Android tracking application. By following the step-by-step instructions outlined in this section, you'll learn how to configure the necessary AWS resources, integrate the tracking functionality into the sample app, and deploy it to your Android device.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Work with DynamoDB
-<a name="examples-dynamodb"></a>
 
 [DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. This section shows you how to work with DynamoDB using the AWS SDK for Java 2.x.
 

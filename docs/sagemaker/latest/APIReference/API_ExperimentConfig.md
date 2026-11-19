@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Experi
 ---
 
 # ExperimentConfig
-<a name="API_ExperimentConfig"></a>
 
 Associates a SageMaker job as a trial component with an experiment and trial. Specified when you call the following APIs:
 +  [CreateProcessingJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateProcessingJob.html)

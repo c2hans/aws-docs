@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Kendra::DataSource SalesforceStandardObjectAttachmentConfiguration
-<a name="aws-properties-kendra-datasource-salesforcestandardobjectattachmentconfiguration"></a>
 
 Provides the configuration information for processing attachments to Salesforce standard objects.
 

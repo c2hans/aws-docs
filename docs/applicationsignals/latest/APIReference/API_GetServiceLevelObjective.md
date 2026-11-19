@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/applicationsignals/latest/APIReference/A
 ---
 
 # GetServiceLevelObjective
-<a name="API_GetServiceLevelObjective"></a>
 
 Returns information about one SLO created in the account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CatalogProperties
 ---
 
 # CatalogProperties
-<a name="API_CatalogProperties"></a>
 
 A structure that specifies data lake access properties and other custom properties.
 

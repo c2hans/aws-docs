@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Add FlexMatch to an Amazon GameLift Servers-hosted game server
-<a name="match-server"></a>
 
 When Amazon GameLift Servers creates a match, it generates a set of match result data that describes key matchmaking details, including team assignments. A game server uses this data, as well as other game session information, when starting a new game session to host the match.
 

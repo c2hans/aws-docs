@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_GetAt
 ---
 
 # GetAttachmentDownloadLink
-<a name="API_GetAttachmentDownloadLink"></a>
 
 Returns a presigned download URL for an attachment that is associated with a case communication. The download link works for an attachment of any size, including attachments added through `AddAttachmentsToSet` and attachments uploaded through [GetAttachmentUploadLinks](API_GetAttachmentUploadLinks.md). The download URL is time-limited and expires at the date and time indicated in the `downloadUrl` response field. Download the attachment from the URL before it expires.
 

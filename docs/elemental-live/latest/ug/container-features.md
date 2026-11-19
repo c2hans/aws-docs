@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/container-featu
 ---
 
 # Elemental Live Features
-<a name="container-features"></a>
 
 This chapter describes the features you can implement in AWS Elemental Live.
 

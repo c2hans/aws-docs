@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Action.html
 ---
 
 # Action
-<a name="API_Action"></a>
 
 Describes the actions associated with a rule.
 

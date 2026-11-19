@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/dynamodb-la
 ---
 
 # dynamodb-last-backup-recovery-point-created
-<a name="dynamodb-last-backup-recovery-point-created"></a>
 
 Checks if a recovery point was created for Amazon DynamoDB Tables within the specified period. The rule is NON\_COMPLIANT if the DynamoDB Table does not have a corresponding recovery point created within the specified time period.
 

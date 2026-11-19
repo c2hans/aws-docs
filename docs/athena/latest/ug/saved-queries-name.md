@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/saved-queries-name.html
 ---
 
 # Save a query with a name
-<a name="saved-queries-name"></a>
 
 **To save a query and give it a name**
 

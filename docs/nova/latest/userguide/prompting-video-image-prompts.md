@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/prompting-video-im
 ---
 
 # Image-based video generation prompts
-<a name="prompting-video-image-prompts"></a>
 
 Image-based prompts are a great way to gain more control over your video output and to streamline your video generation workflow. By providing a starting frame that reflects the exact content, framing, and visual style you would like, you greatly improve the likelihood that your generated video will meet your needs. For best results, use the Amazon Nova Canvas model to create your input image. Amazon Nova Reel and Amazon Nova Canvas have been designed to work well together.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchAv
 ---
 
 # SearchAvailablePhoneNumbers
-<a name="API_SearchAvailablePhoneNumbers"></a>
 
 Searches for available phone numbers that you can claim to your Connect Customer instance or traffic distribution group. If the provided `TargetArn` is a traffic distribution group, you can call this API in both AWS Regions associated with the traffic distribution group.
 

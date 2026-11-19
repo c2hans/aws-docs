@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_meetin
 ---
 
 # NotificationsConfiguration
-<a name="API_meeting-chime_NotificationsConfiguration"></a>
 
 The configuration for resource targets to receive notifications when meeting and attendee events occur.
 

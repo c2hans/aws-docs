@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Updat
 ---
 
 # UpdateDefaultBranch
-<a name="API_UpdateDefaultBranch"></a>
 
 Sets or changes the default branch name for the specified repository.
 

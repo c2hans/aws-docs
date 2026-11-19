@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchCreateBillScenarioUsageModificationEntry
-<a name="API_AWSBCMPricingCalculator_BatchCreateBillScenarioUsageModificationEntry"></a>
 
  Represents an entry in a batch operation to create bill scenario usage modifications.
 

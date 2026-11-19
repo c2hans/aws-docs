@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetTransi
 ---
 
 # GetTransitGatewayPrefixListReferences
-<a name="API_GetTransitGatewayPrefixListReferences"></a>
 
 Gets information about the prefix list references in a specified transit gateway route table.
 

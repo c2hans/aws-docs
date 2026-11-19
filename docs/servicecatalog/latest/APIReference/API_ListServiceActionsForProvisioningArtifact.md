@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_L
 ---
 
 # ListServiceActionsForProvisioningArtifact
-<a name="API_ListServiceActionsForProvisioningArtifact"></a>
 
 Returns a paginated list of self-service actions associated with the specified Product ID and Provisioning Artifact ID.
 

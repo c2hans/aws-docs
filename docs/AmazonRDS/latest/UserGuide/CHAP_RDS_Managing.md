@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_RDS_Mana
 ---
 
 # Managing an Amazon RDS DB instance
-<a name="CHAP_RDS_Managing"></a>
 
  Following, you can find instructions for managing and maintaining your Amazon RDS DB instance.
 

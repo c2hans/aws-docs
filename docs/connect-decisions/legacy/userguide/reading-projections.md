@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/readi
 ---
 
 # Understanding inventory projections
-<a name="reading-projections"></a>
 
 This section explains how to read the inventory projections.
 

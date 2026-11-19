@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_In
 ---
 
 # IntegratedResourceInputItem
-<a name="API_IntegratedResourceInputItem"></a>
 
 Represents an input item for updating integrated resources, including the resource and its capabilities.
 

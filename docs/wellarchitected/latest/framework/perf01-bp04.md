@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf01-
 ---
 
 # PERF01-BP04 Establish criteria for performance degradation alerts and tolerances
-<a name="perf01-bp04"></a>
 
  Performance degradation alerts and tolerance thresholds give teams early warning of problems so they can respond before users are affected. Define what counts as degradation, set how much deviation you tolerate, and route alerts to the people who can act.
 

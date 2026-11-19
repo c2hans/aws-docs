@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Run a migration
-<a name="run-a-migration"></a>
 
 Use this section after you deploy Migration Assistant and want to configure, submit, monitor, or troubleshoot workflows manually. If you want guided assessment, deployment, workflow generation, migration execution, and troubleshooting, start with [AI-assisted migration](agent-assisted-migration.md).
 

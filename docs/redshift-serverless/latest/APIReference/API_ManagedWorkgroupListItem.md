@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ManagedWorkgroupListItem
-<a name="API_ManagedWorkgroupListItem"></a>
 
 A collection of Amazon Redshift compute resources managed by AWS Glue.
 

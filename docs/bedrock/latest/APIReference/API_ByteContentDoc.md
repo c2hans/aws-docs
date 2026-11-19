@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_ByteCont
 ---
 
 # ByteContentDoc
-<a name="API_ByteContentDoc"></a>
 
 Contains the document contained in the wrapper object, along with its attributes/fields.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MSTe
 ---
 
 # MSTeamsChannel
-<a name="API_MSTeamsChannel"></a>
 
 Represents a channel in a Microsoft Teams team that the DevOps Agent service can send notifications to.
 

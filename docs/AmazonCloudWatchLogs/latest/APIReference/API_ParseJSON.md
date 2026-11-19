@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # ParseJSON
-<a name="API_ParseJSON"></a>
 
 This processor parses log events that are in JSON format. It can extract JSON key-value pairs and place them under a destination that you specify.
 

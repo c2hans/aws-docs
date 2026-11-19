@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-forma
 ---
 
 # Next steps
-<a name="next-steps"></a>
 
 This guide described how commit ID-based tagging provides version control for CloudFormation deployments by using CodePipeline and CodeBuild. To build upon this foundation focus on these key areas:
 

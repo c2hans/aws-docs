@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Jo
 ---
 
 # JobError
-<a name="API_JobError"></a>
 
 An error that occurred with the job request.
 

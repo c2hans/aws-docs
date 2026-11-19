@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/product
 ---
 
 # Creating Products
-<a name="productmgmt-cloudresource"></a>
 
  You create products from the **Products** page in the AWS Service Catalog administrator console.
 

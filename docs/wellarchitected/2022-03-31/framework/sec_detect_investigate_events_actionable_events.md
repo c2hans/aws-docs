@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC04-BP04 Implement actionable security events
-<a name="sec_detect_investigate_events_actionable_events"></a>
 
  Create alerts that are sent to and can be actioned by your team. Ensure that alerts include relevant information for the team to take action. For each detective mechanism you have, you should also have a process, in the form of a [runbook](https://wa.aws.amazon.com/wat.concept.runbook.en.html) or [playbook](https://wa.aws.amazon.com/wat.concept.playbook.en.html), to investigate. For example, when you enable [Amazon GuardDuty](http://aws.amazon.com/guardduty), it generates different [findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings.html). You should have a runbook entry for each finding type, for example, if a [trojan](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_trojan.html) is discovered, your runbook has simple instructions that instruct someone to investigate and remediate.
 

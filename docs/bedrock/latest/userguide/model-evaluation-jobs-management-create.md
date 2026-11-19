@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Starting an automatic model evaluation job in Amazon Bedrock
-<a name="model-evaluation-jobs-management-create"></a>
 
 You can create an automatic model evaluation job using the AWS Management Console, AWS CLI, or a supported AWS SDK. In an automatic model evaluation job, the model you select performs inference using either prompts from a supported built-in dataset or your own custom prompt dataset. Each job also requires you to select a task type. The task type provides you with some recommended metrics, and built-in prompt datasets. To learn more about available task types and metrics, see [Model evaluation task types in Amazon Bedrock](model-evaluation-tasks.md).
 

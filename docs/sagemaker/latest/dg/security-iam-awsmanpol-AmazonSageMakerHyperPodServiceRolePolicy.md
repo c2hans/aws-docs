@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam-awsmanp
 ---
 
 # AWS managed policy: AmazonSageMakerHyperPodServiceRolePolicy
-<a name="security-iam-awsmanpol-AmazonSageMakerHyperPodServiceRolePolicy"></a>
 
 SageMaker HyperPod creates and uses the service-linked role named `AWSServiceRoleForSageMakerHyperPod` with the `AmazonSageMakerHyperPodServiceRolePolicy` attached to the role. This policy grants Amazon SageMaker HyperPod permissions to related AWS services such as Amazon EKS and Amazon CloudWatch.
 

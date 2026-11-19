@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DataQualityGlueTa
 ---
 
 # DataQualityGlueTable
-<a name="API_DataQualityGlueTable"></a>
 
 The database and table in the AWS Glue Data Catalog that is used for input or output data for Data Quality Operations.
 

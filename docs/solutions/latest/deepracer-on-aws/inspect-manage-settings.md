@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/inspec
 ---
 
 # Inspect and manage vehicle settings
-<a name="inspect-manage-settings"></a>
 
 After the initial setup, you can use the AWS DeepRacer device control console to manage your vehicle’s settings. The tasks include the following:
 + choosing another Wi-Fi network,

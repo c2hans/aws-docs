@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_TargetObjectKeyF
 ---
 
 # TargetObjectKeyFormat
-<a name="API_TargetObjectKeyFormat"></a>
 
 Amazon S3 key format for log objects. Only one format, PartitionedPrefix or SimplePrefix, is allowed.
 

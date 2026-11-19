@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_DefaultSi
 ---
 
 # DefaultSigningScheme
-<a name="API_DefaultSigningScheme"></a>
 
 Specifies the default signing scheme, in which Amazon SES API v2 doesn't apply S/MIME signing to messages sent with the configuration set.
 

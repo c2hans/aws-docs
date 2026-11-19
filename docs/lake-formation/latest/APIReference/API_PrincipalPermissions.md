@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_P
 ---
 
 # PrincipalPermissions
-<a name="API_PrincipalPermissions"></a>
 
 Permissions granted to a principal.
 

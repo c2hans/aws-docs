@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # SelfServiceConversationHistory
-<a name="API_amazon-q-connect_SelfServiceConversationHistory"></a>
 
 The conversation history data to included in conversation context data before the Amazon Q in Connect session.
 

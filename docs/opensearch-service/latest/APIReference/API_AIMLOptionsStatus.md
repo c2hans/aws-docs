@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # AIMLOptionsStatus
-<a name="API_AIMLOptionsStatus"></a>
 
 The status of machine learning options on the specified domain.
 

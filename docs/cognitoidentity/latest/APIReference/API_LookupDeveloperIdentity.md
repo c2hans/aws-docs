@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # LookupDeveloperIdentity
-<a name="API_LookupDeveloperIdentity"></a>
 
 Retrieves the `IdentityID` associated with a `DeveloperUserIdentifier` or the list of `DeveloperUserIdentifier` values associated with an `IdentityId` for an existing identity. Either `IdentityID` or `DeveloperUserIdentifier` must not be null. If you supply only one of these values, the other value will be searched in the database and returned as a part of the response. If you supply both, `DeveloperUserIdentifier` will be matched against `IdentityID`. If the values are verified against the database, the response returns both values and is the same as the request. Otherwise, a `ResourceConflictException` is thrown.
 

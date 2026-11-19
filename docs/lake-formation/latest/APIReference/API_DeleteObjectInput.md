@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_D
 ---
 
 # DeleteObjectInput
-<a name="API_DeleteObjectInput"></a>
 
 An object to delete from the governed table.
 

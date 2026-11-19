@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/securit
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # How AWS Well-Architected works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AWS Well-Architected, learn what IAM features are available to use with AWS Well-Architected.
 

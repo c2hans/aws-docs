@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys
 ---
 
 # Step 4: Import the key material
-<a name="importing-keys-import-key-material"></a>
 
 After you [encrypt your key material](importing-keys-encrypt-key-material.md), you can import the key material to use with an AWS KMS key. To import key material, you upload the encrypted key material from [Step 3: Encrypt the key material](importing-keys-encrypt-key-material.md) and the import token that you downloaded at [Step 2: Download the wrapping public key and import token](importing-keys-get-public-key-and-token.md). You must import key material into the same KMS key that you specified when you [downloaded the public key and import token](importing-keys-get-public-key-and-token.md). When key material is successfully imported, the [key state](key-state.md) of the KMS key changes to `Enabled`, and you can use the KMS key in cryptographic operations.
 

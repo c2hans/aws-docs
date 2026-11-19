@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/user-guide-
 ---
 
 # Getting started as an AWS Marketplace seller
-<a name="user-guide-for-sellers"></a>
 
 If you are an independent software vendor (ISV), channel partner, managed services provider (MSP), or individual who has something to offer that works with AWS products and services, you can register as a seller on AWS Marketplace. Registering as a seller is a prerequisite for publishing products for sale on AWS Marketplace. Based on where you reside and what type of products you're selling, AWS Marketplace has different registration requirements. The following sections provide you with an overview of the seller registration process, requirements, and related tools.
 

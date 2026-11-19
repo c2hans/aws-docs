@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Field.html
 ---
 
 # Field
-<a name="API_Field"></a>
 
 Describes the name and data type at a field.
 

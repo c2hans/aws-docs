@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_Parall
 ---
 
 # ParallelDataProperties
-<a name="API_ParallelDataProperties"></a>
 
 The properties of a parallel data resource.
 

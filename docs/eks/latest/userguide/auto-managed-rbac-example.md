@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-managed-rbac-e
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Grant the EKS Auto Mode load balancer controller access to a specific Secret
-<a name="auto-managed-rbac-example"></a>
 
 In this tutorial, you grant the Amazon EKS Auto Mode load balancer controller read access to a specific Kubernetes `Secret`. This unblocks OpenID Connect (OIDC) authentication on an Application Load Balancer (ALB) `Ingress`. You use a namespace-scoped `Role` and `RoleBinding` targeted at the `eks:managed` group.
 

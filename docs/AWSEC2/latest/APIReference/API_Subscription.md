@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Subscript
 ---
 
 # Subscription
-<a name="API_Subscription"></a>
 
 Describes an Infrastructure Performance subscription.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Appendix: Amazon EBS SSD storage types
-<a name="appendix"></a>
 
 Amazon Elastic Block Store (Amazon EBS) provides the following solid state drive (SSD) backed volumes. For the most recent information, see [Amazon EBS volume types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html) in the AWS documentation.
 

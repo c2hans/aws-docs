@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_E
 ---
 
 # EnableAWSOrganizationsAccess
-<a name="API_EnableAWSOrganizationsAccess"></a>
 
 Enable portfolio sharing feature through AWS Organizations. This API will allow AWS Service Catalog to receive updates on your organization in order to sync your shares with the current structure. This API can only be called by the management account in the organization.
 

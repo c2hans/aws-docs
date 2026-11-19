@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quicksight-google
 ---
 
 # Creating a dataset using Google BigQuery
-<a name="quicksight-google-big-query"></a>
 
 **Note**
 When Quick Sight uses and transfers information that is received from Google APIs, it adheres to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy).

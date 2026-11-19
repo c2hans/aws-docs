@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/mq-cloudwat
 ---
 
 # mq-cloudwatch-audit-logging-enabled
-<a name="mq-cloudwatch-audit-logging-enabled"></a>
 
 Checks if Amazon MQ brokers have Amazon CloudWatch audit logging enabled. The rule is NON\_COMPLIANT if a broker does not have audit logging enabled.
 

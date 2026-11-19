@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/ipam/quotas-ipam.html
 ---
 
 # Quotas for your IPAM
-<a name="quotas-ipam"></a>
 
 This section lists the quotas related to IPAM. The Service Quotas console also provides information about IPAM quotas. You can use the Service Quotas console to view default quotas and [request quota increases](https://console.aws.amazon.com/servicequotas/home/services/ec2-ipam/quotas) for adjustable quotas. For more information, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
 

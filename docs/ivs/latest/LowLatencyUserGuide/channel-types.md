@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/channel-t
 ---
 
 # Channel Types
-<a name="channel-types"></a>
 
 There are four channel types: `STANDARD`, `ADVANCED_SD`, `ADVANCED_HD`, and `BASIC`. When you create a channel, the default type is `STANDARD`.
 

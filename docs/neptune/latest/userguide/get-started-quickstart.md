@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/get-started-qui
 ---
 
 # Quick start using AWS CloudShell
-<a name="get-started-quickstart"></a>
 
 This guide helps you get started quickly by using [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html) to connect to and query your Neptune cluster directly from the AWS Management Console.
 

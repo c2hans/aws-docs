@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Identity and Access Management
-<a name="identity-and-access-management"></a>
 
 The solution implements fine-grained access control using multiple AWS services.
 

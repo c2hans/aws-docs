@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Sharin
 ---
 
 # SharingSettings
-<a name="API_SharingSettings"></a>
 
 Specifies options for sharing Amazon SageMaker AI Studio notebooks. These settings are specified as part of `DefaultUserSettings` when the `CreateDomain` API is called, and as part of `UserSettings` when the `CreateUserProfile` API is called. When `SharingSettings` is not specified, notebook sharing isn't allowed.
 

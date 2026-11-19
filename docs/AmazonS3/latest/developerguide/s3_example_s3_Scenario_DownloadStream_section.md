@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Download a stream of unknown size from an Amazon S3 object using an AWS SDK
-<a name="s3_example_s3_Scenario_DownloadStream_section"></a>
 
 The following code example shows how to download a stream of unknown size from an Amazon S3 object.
 

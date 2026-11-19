@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Describ
 ---
 
 # DescribeRuleset
-<a name="API_DescribeRuleset"></a>
 
 Retrieves detailed information about the ruleset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Recov
 ---
 
 # RecoveryPointCreator
-<a name="API_RecoveryPointCreator"></a>
 
 Contains information about the backup plan and rule that AWS Backup used to initiate the recovery point backup.
 

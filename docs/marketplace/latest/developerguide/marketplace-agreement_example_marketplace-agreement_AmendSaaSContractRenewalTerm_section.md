@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/market
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Amend a SaaS contract agreement renewal term using an AWS SDK
-<a name="marketplace-agreement_example_marketplace-agreement_AmendSaaSContractRenewalTerm_section"></a>
 
 The following code examples show how to amend a SaaS contract agreement to add or update its renewal term.
 

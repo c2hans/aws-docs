@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # MarketplaceRevenueShareSummary
-<a name="API_prm_MarketplaceRevenueShareSummary"></a>
 
 Summary information about a marketplace revenue share.
 

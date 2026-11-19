@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_User
 ---
 
 # UserReference
-<a name="API_UserReference"></a>
 
 Reference to a user in the system
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/troubleshooting.html
 ---
 
 # Troubleshoot errors in Amazon Data Firehose
-<a name="troubleshooting"></a>
 
 If Firehose encounters errors while delivering or processing data, it retries until the configured retry duration expires. If the retry duration ends before the data is delivered successfully, Firehose backs up the data to the configured S3 backup bucket. If the destination is Amazon S3 and delivery fails or if delivery to the backup S3 bucket fails, Firehose keeps retrying until the retention period ends.
 

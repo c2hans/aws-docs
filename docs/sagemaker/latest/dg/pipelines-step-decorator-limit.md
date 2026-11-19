@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/pipelines-step-decor
 ---
 
 # Limitations
-<a name="pipelines-step-decorator-limit"></a>
 
 The following sections outline the limitations that you should be aware of when you use the `@step` decorator for your pipeline steps.
 

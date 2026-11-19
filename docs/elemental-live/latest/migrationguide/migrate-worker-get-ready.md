@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/migrationguide/mig
 ---
 
 # Step A: Get ready for Elemental Live migration
-<a name="migrate-worker-get-ready"></a>
 
 ## Read the essential notes
 <a name="migrate-worker-essential-notes"></a>

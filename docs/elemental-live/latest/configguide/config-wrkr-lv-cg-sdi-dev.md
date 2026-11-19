@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/config
 ---
 
 # Add SDI input devices
-<a name="config-wrkr-lv-cg-sdi-dev"></a>
 
 *Input devices* are cards that are installed in the hardware unit. The AWS Elemental Live node auto-detects the SDI card and creates an input in Elemental Live as follows:
 + One single-link input for each input on the card (so four inputs). Each input is given a unique numerical ID.

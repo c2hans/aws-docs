@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_
 ---
 
 # CreateWebACLMigrationStack
-<a name="API_wafRegional_CreateWebACLMigrationStack"></a>
 
 Creates an AWS CloudFormation AWS WAFV2 template for the specified web ACL in the specified Amazon S3 bucket. Then, in CloudFormation, you create a stack from the template, to create the web ACL and its resources in AWS WAFV2. Use this to migrate your AWS WAF Classic web ACL to the latest version of AWS WAF.
 

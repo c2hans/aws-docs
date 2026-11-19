@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # ListTagsForResource
-<a name="API_data-automation-runtime_ListTagsForResource"></a>
 
 Lists a resources tags.
 

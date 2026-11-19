@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticBeanstalkManagedUpdatesServiceRolePolicy
-<a name="AWSElasticBeanstalkManagedUpdatesServiceRolePolicy"></a>
 
 **Description**: AWS Elastic Beanstalk Service Role policy that grants limited permissions to managed updates.
 

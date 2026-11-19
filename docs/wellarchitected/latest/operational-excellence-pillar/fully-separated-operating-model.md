@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Fully separated operating model
-<a name="fully-separated-operating-model"></a>
 
  In the following diagram, on the vertical axis we have Applications and Platform. Applications refer to the workload serving a business outcome and can be custom developed or purchased software. Platform refers to the physical and virtual infrastructure and other software that supports that workload.
 

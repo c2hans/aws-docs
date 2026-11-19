@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Scope and architecture
-<a name="pb-solr-scope"></a>
 
 The migration moves your Apache Solr collections or cores into indexes on the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection by way of Reindex-from-Snapshot (RFS). Unlike an Elasticsearch or OpenSearch source — where RFS reads a native cluster snapshot — an Apache Solr source is migrated from a Solr **backup** in [Amazon Simple Storage Service](https://aws.amazon.com/s3) (Amazon S3). Migration Assistant then reads that backup, translates the Solr `schema.xml` into OpenSearch index mappings during metadata migration, and bulk-indexes the documents into the target.
 

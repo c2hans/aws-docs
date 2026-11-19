@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Rule.ht
 ---
 
 # Rule
-<a name="API_Rule"></a>
 
 Represents a single data quality requirement that should be validated in the scope of this dataset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Index
 ---
 
 # IndexAction
-<a name="API_IndexAction"></a>
 
 This is an optional array within a BackupRule.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-linter.html
 ---
 
 # Workflow linters in HealthOmics
-<a name="workflows-linter"></a>
 
 HealthOmics automatically lints WDL and Nextflow DSL2 workflows during creation. The built-in linters detect errors in your workflow definition files that can cause runs to fail. Lint findings appear in the `statusMessage` field of the **GetWorkflow** response.
 

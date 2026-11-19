@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Inf
 ---
 
 # InfrastructureConfigurationSummary
-<a name="API_InfrastructureConfigurationSummary"></a>
 
 Contains a high-level summary of an infrastructure configuration, including the environment settings that Image Builder uses to build and test images.
 

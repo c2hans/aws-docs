@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_Pe
 ---
 
 # Enabling and disabling detailed per-query and database counter metrics
-<a name="USER_PerfInsights.Enabling"></a>
 
 Detailed per-query and database counter metrics are enabled by default when you select Database Insights Advanced mode. If you select Database Insights Standard mode, you can enable them when you create your DB cluster, and turn them off later by modifying your DB cluster from the console. Enabling detailed per-query and database counter metrics doesn't cause downtime, a reboot, or a failover.
 

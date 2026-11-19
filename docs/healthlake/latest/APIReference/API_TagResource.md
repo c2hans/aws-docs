@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_TagRe
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Add a user-specifed key and value tag to a data store.
 

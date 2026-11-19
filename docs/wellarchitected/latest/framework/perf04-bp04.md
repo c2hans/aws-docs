@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf04-
 ---
 
 # PERF04-BP04 Use load balancing to distribute traffic across multiple resources
-<a name="perf04-bp04"></a>
 
  Distributing traffic across multiple resources lets a workload scale with demand and stay available when a single resource fails. A load balancer also offloads work such as encryption termination, which frees backend resources to serve requests.
 

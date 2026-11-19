@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Con
 ---
 
 # ControlOperation
-<a name="API_ControlOperation"></a>
 
 An operation performed by the control.
 

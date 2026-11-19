@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Import SQL data into Lightsail MySQL databases
-<a name="amazon-lightsail-importing-data-into-your-mysql-database"></a>
 
 You can import a SQL file (.SQL) into your MySQL managed database in Amazon Lightsail using MySQL Workbench.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/throttling.htm
 ---
 
 # Throttling AWS KMS requests
-<a name="throttling"></a>
 
 To ensure that AWS KMS can provide fast and reliable responses to API requests from all customers, it throttles API requests that exceed certain boundaries.
 

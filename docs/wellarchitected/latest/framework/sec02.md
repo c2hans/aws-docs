@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec02.h
 ---
 
 # Identity management
-<a name="sec02"></a>
 
  Identity management establishes who and what can authenticate to a workload, and how that authentication is proven and governed. Every workload serves a mix of principals: employees, external customers, partner systems, devices, and automated processes. Each carries a different trust model, a different lifecycle, and a different tolerance for authentication friction, and each must be identified before authentication methods are chosen.
 

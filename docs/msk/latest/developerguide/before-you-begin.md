@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/before-you-beg
 ---
 
 # Setting up Amazon MSK
-<a name="before-you-begin"></a>
 
 Before you use Amazon MSK for the first time, complete the following tasks.
 

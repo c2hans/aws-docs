@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/backup-and-reco
 ---
 
 # Backup and Recovery
-<a name="backup-and-recovery"></a>
 
 You need to regularly back up your operating system and database to recover them in case of any failure. AWS provides various services and tools that you can use to back up your SQL Server database of SAP applications.
 

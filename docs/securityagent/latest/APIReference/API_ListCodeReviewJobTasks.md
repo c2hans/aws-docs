@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListCodeReviewJobTasks
-<a name="API_ListCodeReviewJobTasks"></a>
 
 Returns a paginated list of task summaries for the specified code review job, optionally filtered by step name or category.
 

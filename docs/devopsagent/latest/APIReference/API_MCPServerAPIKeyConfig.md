@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerAPIKeyConfig
-<a name="API_MCPServerAPIKeyConfig"></a>
 
 API key configuration for MCP server.
 

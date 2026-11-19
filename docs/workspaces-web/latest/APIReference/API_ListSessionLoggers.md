@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_L
 ---
 
 # ListSessionLoggers
-<a name="API_ListSessionLoggers"></a>
 
 Lists all available session logger resources.
 

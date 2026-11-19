@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/materialize
 ---
 
 # Refreshing materialized views
-<a name="refreshing-materialized-views"></a>
 
 A materialized view contains a snapshot of the query result. Materialized views are not updated periodically, unless you configure Amazon Redshift to make periodic updates. To manually refresh and update the data in a materialized view, you can use the `REFRESH MATERIALIZED VIEW` statement at any time. This command identifies changes that take place in the base tables and applies those changes to the materialized view.
 

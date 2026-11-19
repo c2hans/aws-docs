@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/g
 ---
 
 # Gateway Load Balancer East/West Inspection
-<a name="gwlb-east-west-chapter"></a>
 
 Publication date: **April 8, 2021 ([Diagram history](#diagram-history))**
 

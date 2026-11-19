@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Ti
 ---
 
 # TipConfiguration
-<a name="API_TipConfiguration"></a>
 
 The trusted identity propagation (TIP) settings of a profile. When you enable TIP, sessions from the profile include the identity from the certificate in `aws:OriginIdentity` condition keys, which callers can't set.
 

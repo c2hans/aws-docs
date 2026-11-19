@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DescribeServiceAction
-<a name="API_DescribeServiceAction"></a>
 
 Describes a self-service action.
 

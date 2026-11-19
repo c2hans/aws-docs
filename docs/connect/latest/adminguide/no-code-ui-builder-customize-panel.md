@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/no-code-ui-bui
 ---
 
 # Configure column layouts, colors, and data definitions in a view
-<a name="no-code-ui-builder-customize-panel"></a>
 
 The **Customize** panel is on the right side of the UI builder.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_ControlCo
 ---
 
 # ControlCondition
-<a name="API_ControlCondition"></a>
 
 A control condition is an alarm that you specify for a practice run. When you configure practice runs with zonal autoshift for a resource, you specify Amazon CloudWatch alarms, which you create in CloudWatch to use with the practice run. The alarms that you specify are an *outcome alarm*, to monitor application health during practice runs and, optionally, a *blocking alarm*, to block practice runs from starting or to interrupt a practice run in progress.
 

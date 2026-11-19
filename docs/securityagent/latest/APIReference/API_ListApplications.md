@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListApplications
-<a name="API_ListApplications"></a>
 
 Returns a paginated list of application summaries in your account.
 

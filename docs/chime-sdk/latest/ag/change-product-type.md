@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/change-product-type.
 ---
 
 # Changing a phone number's product type
-<a name="change-product-type"></a>
 
 If you have unassigned Amazon Chime SDK Voice Connector phone numbers, you can switch them from one product type to another.
 

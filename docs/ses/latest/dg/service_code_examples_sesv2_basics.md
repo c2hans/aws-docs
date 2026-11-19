@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/service_code_examples_sesv
 ---
 
 # Basic examples for Amazon SES API v2 using AWS SDKs
-<a name="service_code_examples_sesv2_basics"></a>
 
 The following code examples show how to use the basics of Amazon Simple Email Service API v2 with AWS SDKs.
 

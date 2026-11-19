@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # GET List: Get a List of Router Inputs
-<a name="set-up-router-inputs-get-a-list"></a>
 
 Get the list of all the inputs for the specified router.
 

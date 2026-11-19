@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_DeleteCon
 ---
 
 # DeleteConnectorDestination
-<a name="API_DeleteConnectorDestination"></a>
 
 Delete a connector destination linked to a cloud-to-cloud (C2C) connector.
 

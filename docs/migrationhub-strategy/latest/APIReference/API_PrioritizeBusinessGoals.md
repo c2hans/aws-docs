@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # PrioritizeBusinessGoals
-<a name="API_PrioritizeBusinessGoals"></a>
 
  Rank of business goals based on priority.
 

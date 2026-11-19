@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/audi
 ---
 
 # Authenticated Cognito role overly permissive
-<a name="audit-chk-auth-cognito-role-permissive"></a>
 
 A policy attached to an authenticated Amazon Cognito identity pool role is considered too permissive because it grants permission to perform the following AWS IoT actions:
 + Manage or modify things.

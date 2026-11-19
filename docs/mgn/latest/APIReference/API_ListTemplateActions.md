@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ListTemplate
 ---
 
 # ListTemplateActions
-<a name="API_ListTemplateActions"></a>
 
 List template post migration custom actions.
 

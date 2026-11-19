@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Snowfla
 ---
 
 # SnowflakeDestinationDescription
-<a name="API_SnowflakeDestinationDescription"></a>
 
 Optional Snowflake destination description
 

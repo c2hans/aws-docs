@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_Applicati
 ---
 
 # ApplicationDetail
-<a name="API_ApplicationDetail"></a>
 
 Describes the application, including the application Amazon Resource Name (ARN), status, latest version, and input and output configurations.
 

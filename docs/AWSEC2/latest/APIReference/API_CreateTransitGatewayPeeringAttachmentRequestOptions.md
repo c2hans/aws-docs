@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateTra
 ---
 
 # CreateTransitGatewayPeeringAttachmentRequestOptions
-<a name="API_CreateTransitGatewayPeeringAttachmentRequestOptions"></a>
 
 Describes whether dynamic routing is enabled or disabled for the transit gateway peering request.
 

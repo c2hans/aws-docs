@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/account-alias-delet
 ---
 
 # Deleting an account alias
-<a name="account-alias-delete"></a>
 
 To perform the following steps, you must have at least the following IAM permissions:
 + `iam:ListAccountAliases`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/connecting-
 ---
 
 # Connecting Slack
-<a name="connecting-to-ticketing-and-chat-connecting-slack"></a>
 
 You can connect AWS DevOps Agent to Slack in two ways:
 + **One-way notifications** – AWS DevOps Agent posts incident response findings, root cause analyses, and mitigation plans to public or private Slack channels that you select.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stack
 ---
 
 # Create CloudFormation StackSets with service-managed permissions
-<a name="stacksets-orgs-associate-stackset-with-org"></a>
 
 With *service-managed* permissions, you can deploy stacks to accounts managed by AWS Organizations in specific Regions. With this model, you don't need to create IAM roles in each target account and AWS Region. CloudFormation creates the IAM roles on your behalf. For more information, see [Activate trusted access](stacksets-orgs-activate-trusted-access.md).
 

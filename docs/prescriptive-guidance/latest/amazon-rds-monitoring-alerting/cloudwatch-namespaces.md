@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Amazon CloudWatch namespaces
-<a name="cloudwatch-namespaces"></a>
 
 Amazon RDS integrates with [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html), which is a monitoring and alerting service for cloud resources and applications that run on AWS. Amazon RDS automatically collects metrics, log files, traces, and events about the operation, utilization, performance, and health of DB instances, and sends them to CloudWatch for long-term storage, analysis, and alerting.
 

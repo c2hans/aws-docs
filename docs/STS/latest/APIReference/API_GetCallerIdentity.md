@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/STS/latest/APIReference/API_GetCallerIde
 ---
 
 # GetCallerIdentity
-<a name="API_GetCallerIdentity"></a>
 
 Returns details about the IAM user or role whose credentials are used to call the operation.
 

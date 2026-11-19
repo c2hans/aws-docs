@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/da
 ---
 
 # Reference architecture
-<a name="data-mesh-reference-architecture"></a>
 
 ![Data mesh reference architecture](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/images/data-mesh-reference-architecture.png)
 

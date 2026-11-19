@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateLimitsProfile
-<a name="API_UpdateLimitsProfile"></a>
 
 Updates the properties of an existing limits profile.
 

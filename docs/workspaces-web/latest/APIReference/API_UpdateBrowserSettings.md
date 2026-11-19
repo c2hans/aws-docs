@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_U
 ---
 
 # UpdateBrowserSettings
-<a name="API_UpdateBrowserSettings"></a>
 
 Updates browser settings.
 

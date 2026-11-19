@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Returns a list of the tags associated with a notification rule.
 

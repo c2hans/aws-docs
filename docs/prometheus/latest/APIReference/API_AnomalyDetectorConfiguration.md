@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Anoma
 ---
 
 # AnomalyDetectorConfiguration
-<a name="API_AnomalyDetectorConfiguration"></a>
 
 The configuration for the anomaly detection algorithm.
 

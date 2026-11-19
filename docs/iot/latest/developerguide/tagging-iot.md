@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/tagging-iot.ht
 ---
 
 # Tagging your AWS IoT resources
-<a name="tagging-iot"></a>
 
 To help you manage and organize your thing groups, thing types, topic rules, jobs, scheduled audits and security profiles you can optionally assign your own metadata to each of these resources in the form of tags. This section describes tags and shows you how to create them.
 

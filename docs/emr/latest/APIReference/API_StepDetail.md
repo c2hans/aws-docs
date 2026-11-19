@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_StepDetail.h
 ---
 
 # StepDetail
-<a name="API_StepDetail"></a>
 
 Combines the execution state and configuration of a step.
 

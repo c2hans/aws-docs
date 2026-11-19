@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterNetworkInterfaceDetails
-<a name="API_ClusterNetworkInterfaceDetails"></a>
 
 The network interface configuration details for a Amazon SageMaker HyperPod cluster instance group.
 

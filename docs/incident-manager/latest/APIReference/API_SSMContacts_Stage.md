@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # Stage
-<a name="API_SSMContacts_Stage"></a>
 
 A set amount of time that an escalation plan or engagement plan engages the specified contacts or contact methods.
 

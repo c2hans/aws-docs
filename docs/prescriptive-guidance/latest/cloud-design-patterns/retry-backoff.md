@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-desig
 ---
 
 # Retry with backoff pattern
-<a name="retry-backoff"></a>
 
 ## Intent
 <a name="retry-backoff-intent"></a>

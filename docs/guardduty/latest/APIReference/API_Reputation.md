@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Reputa
 ---
 
 # Reputation
-<a name="API_Reputation"></a>
 
 Contains reputation information about a threat indicator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Enviro
 ---
 
 # EnvironmentSourceConfiguration
-<a name="API_EnvironmentSourceConfiguration"></a>
 
 GA source configuration for code and customer-authored context.
 

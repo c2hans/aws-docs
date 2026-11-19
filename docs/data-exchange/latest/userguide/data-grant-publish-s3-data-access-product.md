@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/data-gran
 ---
 
 # Creating a data grant on AWS Data Exchange containing Amazon S3 data access
-<a name="data-grant-publish-s3-data-access-product"></a>
 
 With AWS Data Exchange for Amazon S3, data owners can share direct access to Amazon S3 buckets or specific prefixes and Amazon S3 objects. Data owners also use AWS Data Exchange to automatically manage entitlements through data grants.
 

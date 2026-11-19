@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/enable-acc
 ---
 
 # Permit account instance creation in member accounts
-<a name="enable-account-instance-console"></a>
 
 If you enabled IAM Identity Center before November 15, 2023, you have an [organization instance](organization-instances-identity-center.md) of IAM Identity Center with the ability for member accounts to create account instances disabled by default. You can choose whether your member accounts can create account instances by enabling the account instance feature in the IAM Identity Center console.
 

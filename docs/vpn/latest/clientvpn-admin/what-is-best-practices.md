@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is-best-
 ---
 
 # Rules and best practices for using AWS Client VPN
-<a name="what-is-best-practices"></a>
 
 The following sections describe the rules and best practices for using AWS Client VPN:
 

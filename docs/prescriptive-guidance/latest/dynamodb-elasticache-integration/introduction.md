@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-el
 ---
 
 # Integrating Amazon DynamoDB and Amazon ElastiCache by using read-through caching
-<a name="introduction"></a>
 
 *Jason Hunter, Amazon Web Services*
 

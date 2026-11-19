@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # SearchExpression
-<a name="API_amazon-q-connect_SearchExpression"></a>
 
 The search expression.
 

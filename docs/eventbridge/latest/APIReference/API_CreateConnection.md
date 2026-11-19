@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Crea
 ---
 
 # CreateConnection
-<a name="API_CreateConnection"></a>
 
 Creates a connection. A connection defines the authorization type and credentials to use for authorization with an API destination HTTP endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/uifn-service.h
 ---
 
 # Connect Customer support of the inbound only UIFN service
-<a name="uifn-service"></a>
 
 A Universal International Freephone number (UIFN) is a unique **inbound only** freephone number that can be used throughout the world. It provides toll-free calling from international locations to your contact center. Connect Customer provides UIFN for businesses that are unable to get access to local toll free or DID numbers due to being unable to meet the documentation requirements.
 

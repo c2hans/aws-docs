@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_LogGroupConf
 ---
 
 # LogGroupConfiguration
-<a name="API_LogGroupConfiguration"></a>
 
 This structure contains the `Filter` parameter which you can use to specify which log groups are to share log events from this source account to the monitoring account.
 

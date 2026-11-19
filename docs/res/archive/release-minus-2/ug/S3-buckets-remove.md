@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/S3-bucket
 ---
 
 # Remove an Amazon S3 bucket
-<a name="S3-buckets-remove"></a>
 
 1. Select an S3 bucket in the S3 buckets list.
 

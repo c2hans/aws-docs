@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # Operational recovery and consumption monitoring
-<a name="agentops07"></a>
 
 Agentic systems must handle operational failures gracefully and help prevent runaway behavior that could affect business operations. Recovery mechanisms need to balance automation with appropriate escalation, and consumption monitoring must detect agents that exceed expected operational boundaries.
 

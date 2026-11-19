@@ -7,7 +7,6 @@ The AWS SDK for .NET V3 has reached end-of-support.
 We recommend that you migrate to [AWS SDK for .NET V4](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/welcome.html). For additional details and information on how to migrate, please refer to our [end-of-support announcement](https://aws.amazon.com/blogs/developer/aws-sdk-for-net-v3-end-of-support-announcement/).
 
 # Single sign-on with the AWS SDK for .NET
-<a name="sso"></a>
 
 AWS IAM Identity Center is a cloud-based single sign-on (SSO) service that makes it easy to centrally manage SSO access to all of your AWS accounts and cloud applications. For full details, see the [IAM Identity Center User Guide](https://docs.aws.amazon.com/singlesignon/latest/userguide/).
 

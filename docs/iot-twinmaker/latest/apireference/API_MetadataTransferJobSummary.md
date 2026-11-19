@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Me
 ---
 
 # MetadataTransferJobSummary
-<a name="API_MetadataTransferJobSummary"></a>
 
 The metadata transfer job summary.
 

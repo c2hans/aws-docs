@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GridL
 ---
 
 # GridLayoutElement
-<a name="API_GridLayoutElement"></a>
 
 An element within a grid layout.
 

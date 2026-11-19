@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/selinux-modes.html
 ---
 
 # Setting SELinux modes for AL2023
-<a name="selinux-modes"></a>
 
 By default, Security Enhanced Linux (SELinux) is `enabled` and set to `permissive` mode for AL2023. In permissive mode, permission denials are logged but not enforced. SELinux is a collection of kernel features and utilities to provide a strong, flexible, mandatory access control (MAC) architecture to the major subsystems of the kernel.
 

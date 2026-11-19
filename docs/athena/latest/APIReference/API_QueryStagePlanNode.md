@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_QueryStag
 ---
 
 # QueryStagePlanNode
-<a name="API_QueryStagePlanNode"></a>
 
 Stage plan information such as name, identifier, sub plans, and remote sources.
 
@@ -12,7 +11,7 @@ Stage plan information such as name, identifier, sub plans, and remote sources.
 
  ** Children **   <a name="athena-Type-QueryStagePlanNode-Children"></a>
 Stage plan information such as name, identifier, sub plans, and remote sources of child plan nodes/
-Type: Array of [QueryStagePlanNode](#API_QueryStagePlanNode) objects
+Type: Array of [QueryStagePlanNode](API_QueryStagePlanNode.md) objects
 Required: No
 
  ** Identifier **   <a name="athena-Type-QueryStagePlanNode-Identifier"></a>

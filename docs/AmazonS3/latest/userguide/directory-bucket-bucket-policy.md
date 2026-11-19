@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buck
 ---
 
 # Managing directory bucket policies
-<a name="directory-bucket-bucket-policy"></a>
 
 You can add, delete, update, and view bucket policies for Amazon S3 directory buckets by using the Amazon S3 console, the AWS SDKs and the AWS CLI. For more information, see the following topics. For more information about supported AWS Identity and Access Management (IAM) actions, see [Authorizing Regional endpoint API operations with IAM](s3-express-security-iam.md). For example bucket policies for directory buckets, see [Example bucket policies for directory buckets](s3-express-security-iam-example-bucket-policies.md).
 

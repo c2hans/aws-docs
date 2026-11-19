@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TableOptimizerCon
 ---
 
 # TableOptimizerConfiguration
-<a name="API_TableOptimizerConfiguration"></a>
 
 Contains details on the configuration of a table optimizer. You pass this configuration when creating or updating a table optimizer.
 

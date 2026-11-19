@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeI
 ---
 
 # DescribeInstanceStatus
-<a name="API_DescribeInstanceStatus"></a>
 
 Describes the status of the specified instances or all of your instances. By default, only running instances are described, unless you specifically indicate to return the status of all instances.
 

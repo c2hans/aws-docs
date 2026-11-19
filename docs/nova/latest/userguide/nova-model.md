@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/nova-model.html
 ---
 
 # Customizing Amazon Nova models on SageMaker AI
-<a name="nova-model"></a>
 
 **Note**
 This documentation is for Amazon Nova Version 1. Amazon Nova 2 is now available with new models and enhanced capabilities. For information on how to customize Amazon Nova 2, visit [Customizing Amazon Nova 2 models](https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-model.html).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_WarmPo
 ---
 
 # WarmPoolStatus
-<a name="API_WarmPoolStatus"></a>
 
 Status and billing information about the warm pool.
 

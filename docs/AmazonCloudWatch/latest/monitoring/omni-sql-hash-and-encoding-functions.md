@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Hash and encoding functions
-<a name="omni-sql-hash-and-encoding-functions"></a>
 
 Use these functions to hash a string, or to encode a string as text and decode it back. For information about other functions, see [Operators and functions](omni-sql-operators-and-functions.md).
 

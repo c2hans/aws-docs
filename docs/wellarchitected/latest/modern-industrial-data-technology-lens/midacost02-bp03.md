@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDACOST02-BP03 Automate production-aware resource decommissioning
-<a name="midacost02-bp03"></a>
 
  Implement automated identification and removal of unused resources synchronized with production schedules, product lifecycles, and manufacturing compliance requirements. This automation includes safety checks, rollback procedures, and consideration of maintenance windows to help prevent disruption to manufacturing operations.
 

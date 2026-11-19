@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-security-l
 ---
 
 # Regulatory and standards evolution
-<a name="regulatory-and-standards-evolution"></a>
 
  Global interest has increased among regulators given the potential ramifications of improper uses of generative AI. The EU AI Act is one of the better-known regulations, and it predominately takes a risk-based approach. High-risk applications, such as law enforcement, healthcare, and workloads impacting human rights are given a higher regulatory bar to meet. This can include clauses such as including human-in-the-loop or even an outright prohibition of a workload.
 

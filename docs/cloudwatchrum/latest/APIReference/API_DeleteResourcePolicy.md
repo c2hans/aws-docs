@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_De
 ---
 
 # DeleteResourcePolicy
-<a name="API_DeleteResourcePolicy"></a>
 
 Removes the association of a resource-based policy from an app monitor.
 

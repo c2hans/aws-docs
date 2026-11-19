@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_EventParameter
 ---
 
 # EventParameters
-<a name="API_EventParameters"></a>
 
 Describes the parameters of events, which are used in solution creation.
 

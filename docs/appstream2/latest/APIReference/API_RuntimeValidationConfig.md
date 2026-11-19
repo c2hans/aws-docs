@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Runti
 ---
 
 # RuntimeValidationConfig
-<a name="API_RuntimeValidationConfig"></a>
 
 Configuration for runtime validation of imported images. This structure specifies the instance type to use for testing the imported image's streaming capabilities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ManagedIns
 ---
 
 # ManagedInstancesNetworkConfiguration
-<a name="API_ManagedInstancesNetworkConfiguration"></a>
 
 The network configuration for Amazon ECS Managed Instances. Specifies the VPC subnets and security groups where instances are launched.
 

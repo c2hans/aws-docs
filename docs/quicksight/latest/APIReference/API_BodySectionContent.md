@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BodyS
 ---
 
 # BodySectionContent
-<a name="API_BodySectionContent"></a>
 
 The configuration of content in a body section.
 

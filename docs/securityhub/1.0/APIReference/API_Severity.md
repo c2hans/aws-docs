@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Severit
 ---
 
 # Severity
-<a name="API_Severity"></a>
 
 The severity of the finding.
 

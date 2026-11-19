@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/zscal
 ---
 
 # Zscaler Internet Access
-<a name="zscaler-zia-setup"></a>
 
 CloudWatch pipelines enables you to collect logs from Zscaler Internet Access (ZIA). ZIA is a cloud-based secure web gateway that protects users connecting to the internet.
 

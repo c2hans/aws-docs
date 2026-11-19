@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-onboard-
 ---
 
 # Query using Prometheus-compatible APIs
-<a name="AMP-onboard-query-APIs"></a>
 
 Although using a tool such as [Amazon Managed Grafana](AMP-amg.md) is the easiest way to view and query your metrics, Amazon Managed Service for Prometheus also supports several Prometheus-compatible APIs that you can use to query your metrics. For more information about all the available Prometheus-compatible APIs, see [Prometheus-compatible APIs](AMP-APIReference-Prometheus-Compatible-Apis.md).
 

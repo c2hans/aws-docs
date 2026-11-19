@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_Workflo
 ---
 
 # WorkflowRunSummary
-<a name="API_WorkflowRunSummary"></a>
 
 Summary information about a workflow run, including execution status and timing.
 

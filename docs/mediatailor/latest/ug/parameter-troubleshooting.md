@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/parameter-troubles
 ---
 
 # MediaTailor parameter troubleshooting guide
-<a name="parameter-troubleshooting"></a>
 
 AWS Elemental MediaTailor provides guidance for troubleshooting common parameter-related issues in MediaTailor, including character restrictions, URL encoding problems, and configuration alias errors.
 

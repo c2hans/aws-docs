@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/landing-zone-accelerato
 ---
 
 # Problem: Couldn’t find or create service linked role
-<a name="problem-could-not-find-or-create-service-linked-role"></a>
 
 We updated this solution to make service linked role creation idempotent. When you create a new resource, the solution checks for existing service linked role. If no service linked role exists, the solution creates one. During cleanup, the `AWS::IAM::ServiceLinkedRole` resource might have been removed successfully, which can cause issues.
 

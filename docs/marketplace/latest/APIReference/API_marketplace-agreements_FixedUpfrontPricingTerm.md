@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # FixedUpfrontPricingTerm
-<a name="API_marketplace-agreements_FixedUpfrontPricingTerm"></a>
 
 Defines a prepaid pricing model where the customers are charged a fixed upfront amount.
 

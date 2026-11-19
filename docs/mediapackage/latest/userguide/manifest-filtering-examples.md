@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/manifest-f
 ---
 
 # Manifest filtering examples in AWS Elemental MediaPackage
-<a name="manifest-filtering-examples"></a>
 
 These are MediaPackage manifest filtering examples.
 

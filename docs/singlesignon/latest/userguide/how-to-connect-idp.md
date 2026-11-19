@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/how-to-con
 ---
 
 # How to connect to an external identity provider
-<a name="how-to-connect-idp"></a>
 
 There are different prerequisites, considerations, and provisioning procedures for the supported external IdPs. There are step-by-step tutorials available for several IdPs:
 + [CyberArk](cyberark-idp.md)

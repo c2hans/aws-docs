@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ChatCont
 ---
 
 # ChatContactMetrics
-<a name="API_ChatContactMetrics"></a>
 
 Information about the overall participant interactions at the contact level.
 

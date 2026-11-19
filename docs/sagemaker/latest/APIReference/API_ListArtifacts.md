@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListAr
 ---
 
 # ListArtifacts
-<a name="API_ListArtifacts"></a>
 
 Lists the artifacts in your account and their properties.
 

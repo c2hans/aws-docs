@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/programmatic.c
 ---
 
 # Create service-specific credentials for programmatic access to Amazon Keyspaces
-<a name="programmatic.credentials.ssc"></a>
 
 Service-specific credentials are similar to the traditional username and password that Cassandra uses for authentication and access management. Service-specific credentials enable IAM users to access a specific AWS service. These long-term credentials can't be used to access other AWS services. They are associated with a specific IAM user and can't be used by other IAM users.
 

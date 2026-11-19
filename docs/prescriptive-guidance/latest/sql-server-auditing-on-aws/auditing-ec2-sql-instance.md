@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # Auditing SQL Server on Amazon EC2 or Amazon RDS Custom DB instances
-<a name="auditing-ec2-sql-instance"></a>
 
 This section provides information about auditing options for SQL Server on Amazon EC2 and Amazon RDS Custom, including creating server and database audits, viewing audit logs, and monitoring results.
 

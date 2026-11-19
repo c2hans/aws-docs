@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_DeleteQu
 ---
 
 # DeleteQueryLoggingConfig
-<a name="API_DeleteQueryLoggingConfig"></a>
 
 Deletes a configuration for DNS query logging. If you delete a configuration, Amazon Route 53 stops sending query logs to CloudWatch Logs. Route 53 doesn't delete any logs that are already in CloudWatch Logs.
 

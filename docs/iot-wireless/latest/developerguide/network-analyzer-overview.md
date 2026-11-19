@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/netwo
 ---
 
 # Monitoring of LoRaWAN resources using network analyzer
-<a name="network-analyzer-overview"></a>
 
 Network analyzer uses a default WebSocket connection to receive real-time trace message logs for your wireless connectivity resources. By using network analyzer, you can add the resources you want to monitor, activate a trace messaging session, and start receiving trace messages in real time.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBCapa
 ---
 
 # DBCapacityReservationCommitmentInfo
-<a name="API_DBCapacityReservationCommitmentInfo"></a>
 
 Contains the capacity commitment details of a DB capacity reservation, including the number of committed DB instances in each Availability Zone and the end date of the commitment period. Amazon RDS holds the committed capacity until the commitment ends. Amazon RDS rejects a request to cancel a reservation in the `active` state, and a request to reduce the reserved capacity below the commitment.
 

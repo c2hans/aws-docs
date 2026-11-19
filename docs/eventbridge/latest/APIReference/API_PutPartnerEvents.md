@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutP
 ---
 
 # PutPartnerEvents
-<a name="API_PutPartnerEvents"></a>
 
 This is used by SaaS partners to write events to a customer's partner event bus. AWS customers do not use this operation.
 

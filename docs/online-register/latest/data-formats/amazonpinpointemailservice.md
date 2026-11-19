@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Pinpoint Email Service
-<a name="amazonpinpointemailservice"></a>
 
 Amazon Pinpoint Email Service provides the following APIs for data retrieval.
 

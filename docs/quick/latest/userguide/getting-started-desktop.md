@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/getting-started-d
 ---
 
 # Getting started with the AWS Quick desktop application
-<a name="getting-started-desktop"></a>
 
 This section walks you through downloading, installing, and signing in to the AWS Quick desktop application for macOS and Windows.
 

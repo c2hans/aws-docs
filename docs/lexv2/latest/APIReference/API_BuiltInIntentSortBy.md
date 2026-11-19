@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BuiltInInt
 ---
 
 # BuiltInIntentSortBy
-<a name="API_BuiltInIntentSortBy"></a>
 
 Specifies attributes for sorting a list of built-in intents.
 

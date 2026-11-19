@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ins
 ---
 
 # InstanceBlockDeviceMapping
-<a name="API_InstanceBlockDeviceMapping"></a>
 
 Defines block device mappings for the instance used to configure your image.
 

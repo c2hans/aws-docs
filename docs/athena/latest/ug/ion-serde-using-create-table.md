@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ion-serde-using-create-
 ---
 
 # Create Amazon Ion tables
-<a name="ion-serde-using-create-table"></a>
 
 To create a table in Athena from data stored in Amazon Ion format, you can use one of the following techniques in a CREATE TABLE statement:
 + Specify `STORED AS ION`. In this usage, you do not have to specify the Amazon Ion Hive SerDe explicitly. This choice is the more straightforward option.

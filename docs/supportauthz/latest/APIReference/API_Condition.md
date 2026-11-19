@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Con
 ---
 
 # Condition
-<a name="API_Condition"></a>
 
 A time-window condition that constrains when a support permit is valid.
 

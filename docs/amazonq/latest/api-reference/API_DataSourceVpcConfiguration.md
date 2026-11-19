@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DataSou
 ---
 
 # DataSourceVpcConfiguration
-<a name="API_DataSourceVpcConfiguration"></a>
 
 Provides configuration information needed to connect to an Amazon VPC (Virtual Private Cloud).
 

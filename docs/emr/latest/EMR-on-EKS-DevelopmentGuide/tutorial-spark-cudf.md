@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/t
 ---
 
 # Using the cuDF Plugin for Apache Spark with Amazon EMR on EKS
-<a name="tutorial-spark-cudf"></a>
 
 With Amazon EMR on EKS, you can run jobs for the NVIDIA cuDF Plugin for Apache Spark. This tutorial covers how to run Spark jobs using cuDF on EC2 graphics processing unit (GPU) instance types. The tutorial uses the following versions:
 + Amazon EMR on EKS release version 6.9.0 and later

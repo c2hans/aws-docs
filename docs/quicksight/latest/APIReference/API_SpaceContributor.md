@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Space
 ---
 
 # SpaceContributor
-<a name="API_SpaceContributor"></a>
 
 A contributor to an Amazon QuickSight space.
 

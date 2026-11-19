@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-storage-ma
 ---
 
 # Storage management for Standard brokers
-<a name="msk-storage-management"></a>
 
 Amazon MSK provides features to help you with storage management on your MSK clusters.
 

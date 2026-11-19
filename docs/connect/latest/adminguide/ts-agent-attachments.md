@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/ts-agent-attac
 ---
 
 # Internal firewall or missing CORS policy prevents access to chat, email, task, or case attachments
-<a name="ts-agent-attachments"></a>
 
 This topic is for developers who need to investigate issues that might occur when using attachments with the chat, email, or task channels in Connect Customer, or when using attachments to upload files to cases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/build.html
 ---
 
 # .build
-<a name="build"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

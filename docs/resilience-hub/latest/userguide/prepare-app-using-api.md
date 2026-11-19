@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/prepare-
 ---
 
 # Preparing the application
-<a name="prepare-app-using-api"></a>
 
 For preparing an application, you must first create an application, assign a resiliency policy, and then import the application resources from your input sources. For more information about the AWS Resilience Hub APIs that are used to prepare an application, see the following topics:
 + [Creating an application](#create-app-using-api)

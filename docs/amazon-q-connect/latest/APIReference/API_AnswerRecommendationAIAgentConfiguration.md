@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # AnswerRecommendationAIAgentConfiguration
-<a name="API_amazon-q-connect_AnswerRecommendationAIAgentConfiguration"></a>
 
 The configuration for the `ANSWER_RECOMMENDATION` AI Agent type.
 

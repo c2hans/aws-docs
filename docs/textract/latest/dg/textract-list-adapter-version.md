@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-list-adapter
 ---
 
 # List adapter versions
-<a name="textract-list-adapter-version"></a>
 
 An Amazon Textract adapter can have a number of different versions associated with it. In order to see which adapter versions associated with a given adapter, you can call the [ListAdapterVersions](https://docs.aws.amazon.com/textract/latest/APIReference/API_ListAdapterVersions.html) operation. The operation will return all versions of an adapter unless provided with filtering criteria using of the optional arguments such as AdapterId, AfterCreationTime, BeforeCreationTIme, Statuses, or MaxResults.
 

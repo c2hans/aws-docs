@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ExamplePolici
 ---
 
 # Example policies based on managed policies
-<a name="ExamplePolicies_AEB"></a>
 
 This section demonstrates how to control user access to AWS Elastic Beanstalk and includes example policies that provide the required access for common scenarios. These policies are derived from the Elastic Beanstalk managed policies. For information about attaching managed policies to users and groups, see [Managing Elastic Beanstalk user policies](AWSHowTo.iam.managed-policies.md).
 

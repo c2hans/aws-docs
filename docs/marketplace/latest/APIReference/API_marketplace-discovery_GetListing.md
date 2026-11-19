@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # GetListing
-<a name="API_marketplace-discovery_GetListing"></a>
 
 Provides details about a listing, such as descriptions, badges, categories, pricing model summaries, reviews, and associated products and offers.
 

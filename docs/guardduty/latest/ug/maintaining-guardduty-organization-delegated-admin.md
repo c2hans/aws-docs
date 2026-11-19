@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/maintaining-guarddut
 ---
 
 # Continually managing your member accounts within GuardDuty
-<a name="maintaining-guardduty-organization-delegated-admin"></a>
 
 As a delegated GuardDuty administrator account, you are responsible for maintaining the configuration of GuardDuty and its optional protection plans for all the accounts in your organization in each supported AWS Region. The following sections provide the options about maintaining the configuration status of GuardDuty or any of its optional protection plans:
 

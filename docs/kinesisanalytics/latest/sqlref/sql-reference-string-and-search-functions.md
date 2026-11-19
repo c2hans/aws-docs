@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # String and Search Functions
-<a name="sql-reference-string-and-search-functions"></a>
 
 The topics in this section describe the string and search functions for Amazon Kinesis Data Analytics streaming SQL.
 

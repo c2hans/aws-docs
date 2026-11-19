@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/aggregated-
 ---
 
 # Registering a Delegated Administrator for AWS Config
-<a name="aggregated-register-delegated-administrator"></a>
 
 Delegated administrators are accounts within a given AWS Organization that are granted additional administrative privileges for a specified AWS service. For more information, see [Delegated administrator](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_concepts.html) in the *AWS Organizations User Guide*. You must use the AWS CLI to register a delegated administrator.
 

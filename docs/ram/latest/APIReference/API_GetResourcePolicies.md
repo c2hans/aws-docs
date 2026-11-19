@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_GetResourceP
 ---
 
 # GetResourcePolicies
-<a name="API_GetResourcePolicies"></a>
 
 Retrieves the resource policies for the specified resources that you own and have shared.
 

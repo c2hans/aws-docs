@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # FunctionDefinition
-<a name="API_agent-runtime_FunctionDefinition"></a>
 
  Defines parameters that the agent needs to invoke from the user to complete the function. Corresponds to an action in an action group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSG
 ---
 
 # AWSGrafanaWorkspacePermissionManagement
-<a name="AWSGrafanaWorkspacePermissionManagement"></a>
 
 **Description**: Provides only the ability to update user and group permissions for AWS Grafana workspaces.
 

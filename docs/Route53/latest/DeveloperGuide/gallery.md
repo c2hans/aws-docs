@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gallery.ht
 ---
 
 # .gallery
-<a name="gallery"></a>
 
 Used by owners of art galleries.
 

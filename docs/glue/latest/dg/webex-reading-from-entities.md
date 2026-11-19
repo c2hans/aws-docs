@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/webex-reading-from-entiti
 ---
 
 # Reading from Webex entities
-<a name="webex-reading-from-entities"></a>
 
 **Prerequisites**
 

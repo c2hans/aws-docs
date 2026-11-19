@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_U
 ---
 
 # UsageInstruction
-<a name="API_UsageInstruction"></a>
 
 Additional information provided by the administrator.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Extended metrics are missing in the Playground
-<a name="extended-metrics-missing"></a>
 
  **Symptoms:**
 + The Playground shows the transformed image but no extended metrics overlay (dimensions, compression ratio, processing-time breakdown, and so on).

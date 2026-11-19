@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Acces
 ---
 
 # AccessControlConfiguration
-<a name="API_AccessControlConfiguration"></a>
 
 The access control settings for a knowledge base. Use this structure to enable or disable document-level access control lists (ACLs) that filter query results based on the permissions from the source data connector.
 

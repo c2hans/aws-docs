@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/organ
 ---
 
 # geography
-<a name="organization-geography-entity"></a>
 
 **Primary key (PK)**
 

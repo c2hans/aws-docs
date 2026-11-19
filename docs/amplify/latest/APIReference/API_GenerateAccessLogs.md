@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_Generate
 ---
 
 # GenerateAccessLogs
-<a name="API_GenerateAccessLogs"></a>
 
 Returns the website access logs for a specific time range using a presigned URL.
 

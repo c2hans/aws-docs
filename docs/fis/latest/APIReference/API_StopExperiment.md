@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_StopExperime
 ---
 
 # StopExperiment
-<a name="API_StopExperiment"></a>
 
 Stops the specified experiment.
 

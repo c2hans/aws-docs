@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 8: Validate in three levels
-<a name="pb-aoss-validate"></a>
 
 Validate the collection in increasing depth before you trust it with production traffic.
 

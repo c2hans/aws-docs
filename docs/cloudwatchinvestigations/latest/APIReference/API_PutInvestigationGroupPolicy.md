@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchinvestigations/latest/APIRefer
 ---
 
 # PutInvestigationGroupPolicy
-<a name="API_PutInvestigationGroupPolicy"></a>
 
 Creates an IAM resource policy and assigns it to the specified investigation group.
 

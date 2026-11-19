@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PromptSe
 ---
 
 # PromptSearchFilter
-<a name="API_PromptSearchFilter"></a>
 
 Filters to be applied to search results.
 

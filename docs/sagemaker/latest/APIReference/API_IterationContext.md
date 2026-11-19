@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Iterat
 ---
 
 # IterationContext
-<a name="API_IterationContext"></a>
 
 The context for an iteration of a ForEach step.
 

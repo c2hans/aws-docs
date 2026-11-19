@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_
 ---
 
 # VectorData
-<a name="API_S3VectorBuckets_VectorData"></a>
 
 The vector data in different formats.
 

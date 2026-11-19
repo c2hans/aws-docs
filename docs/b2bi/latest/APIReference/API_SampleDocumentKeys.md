@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_SampleDocum
 ---
 
 # SampleDocumentKeys
-<a name="API_SampleDocumentKeys"></a>
 
 An array of the Amazon S3 keys used to identify the location for your sample documents.
 

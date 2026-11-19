@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/integrate
 ---
 
 # Retrieve available applications
-<a name="integrate-aws-managed-apps-catalog"></a>
 
 The `getAppCatalog` method retrieves applications available to the authenticated user. AppManager filters the list based on the user's Security Profile permissions. Use this method to verify if user has permission for the AWS managed application prior to launching.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/dev/ontologies
 ---
 
 # Ontology linking batch analysis
-<a name="ontologies-batchapi"></a>
 
 Use Amazon Comprehend Medical to detect entities in clinical text stored in an Amazon Simple Storage Service (Amazon S3) bucket and to link those entities to standardized ontologies. You can use ontology linking batch analysis to analyze either a collection of documents or a single document with up to 20,000 characters. By using either the console or the ontology linking batch API operations, you can perform operations to start, stop, list, and describe ongoing batch analysis jobs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-
 ---
 
 # Accessing the environment management console
-<a name="environments-dashboard"></a>
 
 The following procedure provides steps to launch the environment management console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/walkt
 ---
 
 # Walkthrough: Create a delay mechanism with a Lambda-backed custom resource
-<a name="walkthrough-lambda-backed-custom-resources"></a>
 
 This walkthrough shows you how to configure and launch a Lambda-backed custom resource using a sample CloudFormation template. This template creates a delay mechanism that pauses stack deployments for a specified time. This can be useful when you need to introduce deliberate delays during resource provisioning, such as when waiting for resources to stabilize before dependent resources are created.
 

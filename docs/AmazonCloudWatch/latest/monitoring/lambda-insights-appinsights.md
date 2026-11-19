@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/lambd
 ---
 
 # Integration with Application Insights
-<a name="lambda-insights-appinsights"></a>
 
 Amazon CloudWatch Application Insights helps you monitor your applications and identifies and sets up key metrics, logs, and alarms across your application resources and technology stack. For more information, see [Detect common application problems with CloudWatch Application Insights](cloudwatch-application-insights.md).
 

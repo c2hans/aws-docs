@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/ses_example_ses_V
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `VerifyEmailIdentity` with an AWS SDK or CLI
-<a name="ses_example_ses_VerifyEmailIdentity_section"></a>
 
 The following code examples show how to use `VerifyEmailIdentity`.
 

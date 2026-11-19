@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-
 ---
 
 # Manage Amazon EC2 Dedicated Host recovery
-<a name="dedicated-hosts-recovery-enable"></a>
 
 Dedicated Host auto recovery restarts your instances on to a new replacement host when certain problematic conditions are detected on your Dedicated Host. You can enable host recovery when you allocate the Dedicated Host or after allocation.
 

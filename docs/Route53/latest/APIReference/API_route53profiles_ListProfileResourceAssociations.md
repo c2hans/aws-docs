@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 ---
 
 # ListProfileResourceAssociations
-<a name="API_route53profiles_ListProfileResourceAssociations"></a>
 
  Lists all the resource associations for the specified Route 53 Profile.
 

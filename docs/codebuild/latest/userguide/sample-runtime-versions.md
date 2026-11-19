@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-runtim
 ---
 
 # Runtime versions in buildspec file sample for CodeBuild
-<a name="sample-runtime-versions"></a>
 
 If you use the Amazon Linux 2 (AL2) standard image version 1.0 or later, or the Ubuntu standard image version 2.0 or later, you can specify one or more runtimes in the `runtime-versions` section of your buildspec file. The following samples show how you can change your project runtime, specify more than one runtime, and specify a runtime that is dependent on another runtime. For information about supported runtimes, see [Docker images provided by CodeBuild](build-env-ref-available.md).
 

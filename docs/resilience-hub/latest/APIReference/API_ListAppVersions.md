@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_L
 ---
 
 # ListAppVersions
-<a name="API_ListAppVersions"></a>
 
 Lists the different versions for the AWS Resilience Hub applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UntagResource
-<a name="API_cur_UntagResource"></a>
 
 Disassociates a set of tags from a report definition.
 

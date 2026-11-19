@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Resources
-<a name="resources"></a>
 
 For more information, see the following resources on the Teradata website.
 + [Teradata VantageCloud Lake documentation](https://docs.teradata.com/p/VantageCloud/Lake)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_WebsiteConfigura
 ---
 
 # WebsiteConfiguration
-<a name="API_WebsiteConfiguration"></a>
 
 Specifies website configuration parameters for an Amazon S3 bucket.
 

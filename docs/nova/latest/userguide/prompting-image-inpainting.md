@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/prompting-image-in
 ---
 
 # Inpainting prompts
-<a name="prompting-image-inpainting"></a>
 
 Inpainting is an editing operation that can be used to add, remove, or replace elements within an image. Inpainting requires an input image and either a natural language mask prompt (`maskPrompt`) or a user-provided mask image (`maskImage`) to define which parts of an image to change.
 

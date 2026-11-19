@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StatementOutputDa
 ---
 
 # StatementOutputData
-<a name="API_StatementOutputData"></a>
 
 The code execution output in JSON format.
 

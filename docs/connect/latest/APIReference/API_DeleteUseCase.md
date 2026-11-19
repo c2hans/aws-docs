@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteUs
 ---
 
 # DeleteUseCase
-<a name="API_DeleteUseCase"></a>
 
 Deletes a use case from an integration association.
 

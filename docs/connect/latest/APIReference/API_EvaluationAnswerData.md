@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationAnswerData
-<a name="API_EvaluationAnswerData"></a>
 
 Information about answer data for a contact evaluation. Answer data must be either string, numeric, or not applicable.
 

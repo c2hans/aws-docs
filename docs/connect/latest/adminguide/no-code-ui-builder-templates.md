@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/no-code-ui-bui
 ---
 
 # Use templates in the UI builder
-<a name="no-code-ui-builder-templates"></a>
 
 The UI builder includes templates that fill the canvas with components.
 

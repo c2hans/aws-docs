@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/location-index
 ---
 
 # Indexing location data
-<a name="location-indexing-geoquery"></a>
 
 You can use [AWS IoT fleet indexing](https://docs.aws.amazon.com/iot/latest/developerguide/iot-indexing.html) to index your devices' last sent location data and search for devices using geoqueries. This feature resolves device monitoring and management use cases such as location tracking and proximity search. Location indexing works similarly to other fleet indexing features, and with additional configurations to specify in your [thing indexing](managing-fleet-index.md).
 

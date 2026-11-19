@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDASUS02-BP01 Actively manage workloads and resource allocation based on production demands
-<a name="midasus02-bp01."></a>
 
  Identify critical and non-critical manufacturing systems, then align computing resources with actual production schedules and operational requirements to reduce waste while providing reliability for the essential manufacturing systems.
 

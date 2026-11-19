@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_B
 ---
 
 # BulkOperationVectorBytes
-<a name="API_BulkOperationVectorBytes"></a>
 
 Contains the bulk put vector bytes used by a vector index during a bulk operation.
 

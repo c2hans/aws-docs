@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 ---
 
 # AWS service design for resilience
-<a name="aws-service-design-for-resilience"></a>
 
  This section describes two techniques we use when building AWS services to make them resilient to failure. They’re also patterns you can use in your own services.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/catboost.html
 ---
 
 # CatBoost
-<a name="catboost"></a>
 
 [CatBoost](https://catboost.ai/) is a popular and high-performance open-source implementation of the Gradient Boosting Decision Tree (GBDT) algorithm. GBDT is a supervised learning algorithm that attempts to accurately predict a target variable by combining an ensemble of estimates from a set of simpler and weaker models.
 

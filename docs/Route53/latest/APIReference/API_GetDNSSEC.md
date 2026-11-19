@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_GetDNSSE
 ---
 
 # GetDNSSEC
-<a name="API_GetDNSSEC"></a>
 
 Returns information about DNSSEC for a specific hosted zone, including the key-signing keys (KSKs) in the hosted zone.
 

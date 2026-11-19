@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_SNOMED
 ---
 
 # SNOMEDCTAttribute
-<a name="API_SNOMEDCTAttribute"></a>
 
  The extracted attributes that relate to an entity. An extracted segment of the text that is an attribute of an entity, or otherwise related to an entity, such as the dosage of a medication taken.
 

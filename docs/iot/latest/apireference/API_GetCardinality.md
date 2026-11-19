@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetCardinali
 ---
 
 # GetCardinality
-<a name="API_GetCardinality"></a>
 
 Returns the approximate count of unique values that match the query.
 

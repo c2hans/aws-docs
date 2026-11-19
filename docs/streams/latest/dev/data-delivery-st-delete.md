@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-st-dele
 ---
 
 # Delete a streaming table delivery
-<a name="data-delivery-st-delete"></a>
 
  Delete a streaming table delivery when you no longer need it. Deleting a delivery stops delivery from the source stream to the destination. Data already delivered to the Iceberg table is not removed.
 

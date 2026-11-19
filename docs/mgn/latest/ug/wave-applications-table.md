@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/wave-applications-table.ht
 ---
 
 # Review all applications associated with a wave
-<a name="wave-applications-table"></a>
 
 The **Applications** table lists all the applications that are associated with the wave.
 

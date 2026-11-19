@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/services-alb.html
 ---
 
 # Process Application Load Balancer requests with Lambda
-<a name="services-alb"></a>
 
 You can use a Lambda Event Function to process requests from an Application Load Balancer. Elastic Load Balancing supports Lambda Event Functions as a target for an Application Load Balancer. Use load balancer rules to route HTTP requests to a function, based on path or header values. Process the request and return an HTTP response from your Lambda Event Function.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Gat
 ---
 
 # GatewaySummary
-<a name="API_GatewaySummary"></a>
 
 Contains a summary of a gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribeOptionGroups
-<a name="API_DescribeOptionGroups"></a>
 
 Describes the available option groups.
 

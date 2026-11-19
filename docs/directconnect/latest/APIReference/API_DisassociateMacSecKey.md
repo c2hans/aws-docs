@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Di
 ---
 
 # DisassociateMacSecKey
-<a name="API_DisassociateMacSecKey"></a>
 
 Removes the association between a MAC Security (MACsec) security key and a Direct Connect connection.
 

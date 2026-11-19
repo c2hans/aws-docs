@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/upgrading-drsfa.htm
 ---
 
 # Upgrading the DRSFA Client
-<a name="upgrading-drsfa"></a>
 
 Most DRSFA components upgrade automatically on execution. If the client displays a message requiring a manual upgrade, complete these steps:
 

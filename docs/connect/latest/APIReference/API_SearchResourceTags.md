@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchRe
 ---
 
 # SearchResourceTags
-<a name="API_SearchResourceTags"></a>
 
 Searches tags used in an Connect Customer instance using optional search criteria.
 

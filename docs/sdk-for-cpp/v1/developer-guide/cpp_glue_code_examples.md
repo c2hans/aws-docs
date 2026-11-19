@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/cpp_glue_
 ---
 
 # AWS Glue examples using SDK for C\+\+
-<a name="cpp_glue_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for C\+\+ with AWS Glue.
 

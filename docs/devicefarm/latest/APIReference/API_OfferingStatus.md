@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Offer
 ---
 
 # OfferingStatus
-<a name="API_OfferingStatus"></a>
 
 The status of the offering.
 

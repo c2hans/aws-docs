@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/servic
 ---
 
 # ElastiCache and Application Auto Scaling
-<a name="services-that-can-integrate-elasticache"></a>
 
 You can horizontally scale Amazon ElastiCache replication groups (Redis OSS and Valkey) and Memcached self-designed clusters using target tracking scaling policies and scheduled scaling.
 

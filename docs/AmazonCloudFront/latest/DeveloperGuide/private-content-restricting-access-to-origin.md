@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/p
 ---
 
 # Restrict access to an AWS origin
-<a name="private-content-restricting-access-to-origin"></a>
 
 You can configure CloudFront and some AWS origins in a way that provides the following benefits:
 + Restricts access to the AWS origin so that it's not publicly accessible.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/using-the-messaging-
 ---
 
 # Using Amazon Chime SDK messaging
-<a name="using-the-messaging-sdk"></a>
 
 You use this section of the Amazon Chime SDK Developer Guide to help create messaging applications that run on the Amazon Chime SDK service. This SDK provides the conceptual and practical information needed to create a basic messaging app.
 

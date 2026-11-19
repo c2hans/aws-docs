@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/Performance.ht
 ---
 
 # Performance and optimization for Volume Gateway
-<a name="Performance"></a>
 
 This section describes Storage Gateway performance.
 

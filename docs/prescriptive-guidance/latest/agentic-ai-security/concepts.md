@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Key security concepts for agentic AI on AWS
-<a name="concepts"></a>
 
 By understanding the key functions within each agent, you can understand how to address the range of threats to it. An individual agent's function can be divided into three aspects: [perceive, reason, act](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-foundations/perceive-reason-act.html). This process is the cognitive cycle that is at the core of every agent's autonomous operation.
 

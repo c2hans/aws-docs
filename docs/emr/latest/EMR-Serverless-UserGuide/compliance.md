@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/comp
 ---
 
 # Compliance validation for Amazon EMR Serverless
-<a name="compliance"></a>
 
 The security and compliance of EMR Serverless is assessed by third-party auditors as part of multiple AWS compliance programs, including the following:
 + System and Organization Controls (SOC)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-p
 ---
 
 # Approach
-<a name="approach"></a>
 
 Using an agile approach with *epics *(large stories), you start small, iterate, measure, manage, and scale. You can use an agile methodology for the preparation and implementation stages of large migrations to the cloud. With this approach, you do the following:
 + Structure your work in the form of epics and stories to be able to respond to change

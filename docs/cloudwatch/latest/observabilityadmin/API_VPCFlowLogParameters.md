@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # VPCFlowLogParameters
-<a name="API_VPCFlowLogParameters"></a>
 
  Configuration parameters specific to VPC Flow Logs.
 

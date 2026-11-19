@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServe
 ---
 
 # Activating linked servers with Teradata
-<a name="USER_SQLServerTeradata.Activate"></a>
 
 Activate linked servers with Teradata by adding the `ODBC_TERADATA` option to your RDS for SQL Server DB instance. Use the following process:
 

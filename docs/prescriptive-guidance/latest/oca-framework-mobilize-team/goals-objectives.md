@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # 1.5 Program goals and objectives
-<a name="goals-objectives"></a>
 
 ## Overview
 <a name="goals-overview"></a>

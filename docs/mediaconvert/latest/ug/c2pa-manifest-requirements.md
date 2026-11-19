@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/c2pa-manifest-req
 ---
 
 # Requirements for C2PA manifests
-<a name="c2pa-manifest-requirements"></a>
 
 To include C2PA manifests in your MediaConvert outputs, you need the following:
 

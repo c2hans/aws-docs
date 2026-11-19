@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_lambda_GetFunct
 ---
 
 # Use `GetFunction` with an AWS SDK or CLI
-<a name="example_lambda_GetFunction_section"></a>
 
 The following code examples show how to use `GetFunction`.
 

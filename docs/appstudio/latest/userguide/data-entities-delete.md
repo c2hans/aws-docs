@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/data-entities
 ---
 
 # Deleting an entity
-<a name="data-entities-delete"></a>
 
 Use the following procedure to delete an entity from an App Studio application.
 

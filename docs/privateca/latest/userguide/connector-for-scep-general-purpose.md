@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/connector-for
 ---
 
 # Configure Jamf Pro for Connector for SCEP
-<a name="connector-for-scep-general-purpose"></a>
 
 You can use AWS Private CA as an external certificate authority (CA) with the Jamf Pro mobile device management (MDM) system. This guide provides instructions on how to configure Jamf Pro after you create a general-purpose connector.
 

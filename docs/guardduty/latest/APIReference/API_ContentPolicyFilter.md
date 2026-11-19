@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Conten
 ---
 
 # ContentPolicyFilter
-<a name="API_ContentPolicyFilter"></a>
 
 Contains information about a content policy filter that matched during a guardrail evaluation.
 

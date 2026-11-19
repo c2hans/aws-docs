@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Before you begin
-<a name="CloudWatch-NetworkFlowMonitor-agents-kubernetes-before-you-begin"></a>
 
 Before you start the installation process, follow the steps in this section to make sure that your environment is set up to successfully install agents on the right Kubernetes clusters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListPackages
 ---
 
 # ListPackages
-<a name="API_ListPackages"></a>
 
 Lists the software packages associated to the account.
 

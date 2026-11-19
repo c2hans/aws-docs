@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/maori-data-lens/o
 ---
 
 # Overview
-<a name="overview"></a>
 
 AWS has helped New Zealand organisations innovate, succeed, and grow globally since 2013. There are thousands of active customers using AWS every month. Some customers have asked us how to use AWS in support of indigenous data, and specifically Māori data. They have also asked what considerations they can make to support Māori digital aspirations and interests. These interests include protecting data that is considered taonga, or a treasured possession. In other cultures, this can mean sacred data. Other customer interests include how data is made available to Māori and how tools are developed, so that they can use their data to deliver better outcomes to themselves, their communities, and Aotearoa New Zealand.
 

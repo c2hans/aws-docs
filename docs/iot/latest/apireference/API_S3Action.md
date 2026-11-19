@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_S3Action.htm
 ---
 
 # S3Action
-<a name="API_S3Action"></a>
 
 Describes an action to write data to an Amazon S3 bucket.
 

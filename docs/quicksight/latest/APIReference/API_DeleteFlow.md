@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteFlow
-<a name="API_DeleteFlow"></a>
 
 Permanently deletes a flow from the specified AWS account. This operation cannot be undone.
 

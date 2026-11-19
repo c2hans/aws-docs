@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAISP01-BP01 Detail your core AI system design in a system registry
-<a name="raisp01-bp01"></a>
 
  Detail how your AI system works, including the components and the data flows between them. When issues come up, you need to know exactly where problems might creep in, which components could fail, and how problems in one part affect the whole system. Include details about component versions and dependencies so you can track which specific versions might be causing issues and understand how updates could affect your system behavior.
 

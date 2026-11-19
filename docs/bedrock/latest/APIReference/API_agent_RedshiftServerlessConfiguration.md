@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Re
 ---
 
 # RedshiftServerlessConfiguration
-<a name="API_agent_RedshiftServerlessConfiguration"></a>
 
 Contains configurations for authentication to Amazon Redshift Serverless.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-the-quicksi
 ---
 
 # Using the AWS Quick console
-<a name="using-the-quicksight-console"></a>
 
 In the following topic, you can find a brief introduction to using the AWS Quick user interface.
 

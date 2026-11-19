@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Tr
 ---
 
 # Transformer
-<a name="API_Transformer"></a>
 
 Transformer configuration for a subscriber.
 

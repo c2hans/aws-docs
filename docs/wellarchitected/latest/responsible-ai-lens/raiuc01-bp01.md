@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIUC01-BP01 Clarify the business problem
-<a name="raiuc01-bp01"></a>
 
  Describe the specific problem or business challenge. Assess how frequently the challenge occurs, where it occurs, and its concrete impacts. Describe the specific benefit of solving the challenge for the primary user for your use case.
 

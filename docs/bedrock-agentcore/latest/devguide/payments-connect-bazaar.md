@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/paymen
 ---
 
 # Coinbase Bazaar via AgentCore Gateway
-<a name="payments-connect-bazaar"></a>
 
 AgentCore Gateway lets you connect to paid MCP servers and API endpoints. You can add the Coinbase x402 Bazaar MCP server as a target in a Gateway to discover 10,000\+ existing paid MCP tools that support x402 microtransactions.
 + Server URL — `https://api.cdp.coinbase.com/platform/v2/x402/discovery/mcp`

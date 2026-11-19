@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Named
 ---
 
 # NamedEntityDefinitionMetric
-<a name="API_NamedEntityDefinitionMetric"></a>
 
 A structure that represents a metric.
 

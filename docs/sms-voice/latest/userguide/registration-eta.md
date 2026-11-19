@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registration-
 ---
 
 # Estimated registration times
-<a name="registration-eta"></a>
 
 Registration processing times vary depending on the type of registration and the country or region where you're registering. This topic provides estimated timeframes to help you plan your messaging campaigns.
 

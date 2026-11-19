@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_ListSessions
 ---
 
 # ListSessions
-<a name="API_ListSessions"></a>
 
 Lists the sessions on a cluster. You can filter the results by session state. Newer sessions are returned first.
 

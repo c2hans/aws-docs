@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/dev/gettingsta
 ---
 
 # Step 3: Getting started using the Amazon Comprehend Medical APIs
-<a name="gettingstarted-api"></a>
 
 The following examples demonstrate how to use Amazon Comprehend Medical operations using the AWS CLI, Java, and Python. Use them to learn about Amazon Comprehend Medical operations and as building blocks for your own applications.
 

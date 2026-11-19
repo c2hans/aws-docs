@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/devenviron
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Configuring a devfile for a Dev Environment
-<a name="devenvironment-devfile"></a>
 
 A *devfile* is an open standard that helps you to customize your development Dev Environments across your team. A devfile is a YAML file that codifies your required development tools. By configuring a devfile, you can pre-determine the project tools and application libraries you need and Amazon CodeCatalyst installs them to your Dev Environment for you. The devfile is specific to the repository for which it was created, and you can create a separate devfile for each repository. Your Dev Environment supports commands and events, and provides a default universal devfile image.
 

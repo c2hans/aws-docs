@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListUs
 ---
 
 # ListUserProfiles
-<a name="API_ListUserProfiles"></a>
 
 Lists user profiles.
 

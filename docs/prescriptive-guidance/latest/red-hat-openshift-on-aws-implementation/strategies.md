@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/red-hat-ope
 ---
 
 # Installation strategies
-<a name="strategies"></a>
 
 If you have specific customization requirements in networking, security, and other areas, see the following table for guidance. For more information, see [Installing on AWS](https://access.redhat.com/documentation/en-us/openshift_container_platform/4.7/html/installing/installing-on-aws) in the Red Hat OpenShift documentation.
 

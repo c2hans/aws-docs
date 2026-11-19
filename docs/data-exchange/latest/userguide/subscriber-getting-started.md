@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/subscribe
 ---
 
 # Getting started as a subscriber in AWS Data Exchange
-<a name="subscriber-getting-started"></a>
 
 The following topics describe the complete process of becoming a data product subscriber on AWS Data Exchange using the AWS Data Exchange console. The process has the following steps:
 

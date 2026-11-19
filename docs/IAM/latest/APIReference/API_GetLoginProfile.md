@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetLoginProf
 ---
 
 # GetLoginProfile
-<a name="API_GetLoginProfile"></a>
 
 Retrieves the user name for the specified IAM user. A login profile is created when you create a password for the user to access the AWS Management Console. If the user does not exist or does not have a password, the operation returns a 404 (`NoSuchEntity`) error.
 

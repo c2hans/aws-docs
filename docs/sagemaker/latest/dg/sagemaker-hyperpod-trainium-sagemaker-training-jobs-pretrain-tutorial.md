@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-t
 ---
 
 # Trainium SageMaker training jobs pre-training tutorial
-<a name="sagemaker-hyperpod-trainium-sagemaker-training-jobs-pretrain-tutorial"></a>
 
 This tutorial guides you through the process of setting up and running a pre-training job using SageMaker training jobs with AWS Trainium instances.
 + Set up your environment

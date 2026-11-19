@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_U
 ---
 
 # UpdateApplication
-<a name="API_UpdateApplication"></a>
 
 Updates a specified application. An application has to be in a stopped or created state in order to be updated.
 

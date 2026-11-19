@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/BroadcastSWIntegAPIReference/
 ---
 
 # GetClientConfiguration
-<a name="actions-GetClientConfiguration"></a>
 
 Returns video and audio configurations that optimize the viewing experience based on the client’s hardware and software configuration, user preferences, and limits of the video service.
 

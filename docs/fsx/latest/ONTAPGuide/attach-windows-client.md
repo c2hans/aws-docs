@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/attach-windows-cli
 ---
 
 # Mounting volumes on Microsoft Windows clients
-<a name="attach-windows-client"></a>
 
 This section describes how to access data in your FSx for ONTAP file system with clients running the Microsoft Windows operating system. Review the following requirements, regardless of the type of client you are using.
 

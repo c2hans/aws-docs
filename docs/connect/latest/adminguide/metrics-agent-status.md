@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/metrics-agent-
 ---
 
 # Agent status in the Contact Control Panel (CCP)
-<a name="metrics-agent-status"></a>
 
 Agents have a status. It's manually set in the Contact Control Panel (CCP).
 + When they're ready to handle contacts, they set their status in the CCP to **Available**. This means inbound contacts can be routed to them.

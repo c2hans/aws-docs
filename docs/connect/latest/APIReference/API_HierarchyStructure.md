@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Hierarch
 ---
 
 # HierarchyStructure
-<a name="API_HierarchyStructure"></a>
 
 Contains information about a hierarchy structure.
 

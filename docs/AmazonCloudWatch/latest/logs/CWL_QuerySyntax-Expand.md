@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 ---
 
 # expand
-<a name="CWL_QuerySyntax-Expand"></a>
 
 Use `expand` to take a field containing a JSON array and create a separate log event for each element in the array. All other fields from the original log event are duplicated in each new event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-walkth
 ---
 
 # Example 3: Bucket owner granting permissions to objects it does not own
-<a name="example-walkthroughs-managing-access-example3"></a>
 
 **Important**
 Granting permissions to IAM roles is a better practice than granting permissions to individual users. To learn how to do this, see [Understanding cross-account permissions and using IAM roles](example-walkthroughs-managing-access-example4.md#access-policies-walkthrough-example4-overview).

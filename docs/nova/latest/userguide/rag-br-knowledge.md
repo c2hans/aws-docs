@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/rag-br-knowledge.h
 ---
 
 # Using Amazon Bedrock Knowledge Bases
-<a name="rag-br-knowledge"></a>
 
 Amazon Nova Knowledge Bases is a fully managed capability that you can use to implement the entire RAG workflow from ingestion to retrieval and prompt augmentation—without building custom integrations to data sources and managing data flows.
 

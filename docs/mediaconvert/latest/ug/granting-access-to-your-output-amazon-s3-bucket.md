@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/granting-access-t
 ---
 
 # Granting access to your output Amazon S3 bucket
-<a name="granting-access-to-your-output-amazon-s3-bucket"></a>
 
 Suppose that you want the outputs of your MediaConvert jobs to reside in an Amazon S3 bucket that you own, but you want users that belong to another AWS account to have access to them. To grant access, you can add an Amazon S3 bucket policy to your output bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/interactive-sessions-magi
 ---
 
 # Configuring AWS Glue interactive sessions for Jupyter and AWS Glue Studio notebooks
-<a name="interactive-sessions-magics"></a>
 
 ## Introduction to Jupyter Magics
 <a name="w2aac29c20b3"></a>

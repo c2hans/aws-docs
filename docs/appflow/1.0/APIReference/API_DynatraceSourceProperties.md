@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DynatraceSo
 ---
 
 # DynatraceSourceProperties
-<a name="API_DynatraceSourceProperties"></a>
 
  The properties that are applied when Dynatrace is being used as a source.
 

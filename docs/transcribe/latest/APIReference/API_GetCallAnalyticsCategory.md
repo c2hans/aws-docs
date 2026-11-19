@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_GetCa
 ---
 
 # GetCallAnalyticsCategory
-<a name="API_GetCallAnalyticsCategory"></a>
 
 Provides information about the specified Call Analytics category.
 

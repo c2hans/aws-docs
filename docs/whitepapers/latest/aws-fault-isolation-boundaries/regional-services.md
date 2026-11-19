@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-b
 ---
 
 # Regional services
-<a name="regional-services"></a>
 
  Regional services are built on top of multiple Availability Zones, using their isolation and redundancy to transparently reduce infrastructure failures as a category of availability and durability risk for your workloads. For example, Amazon S3 spreads requests and data across multiple Availability Zones by default and is designed to automatically recover from the failure of a single Availability Zone. Regional services are also isolated from service disruptions in other Regions.
 

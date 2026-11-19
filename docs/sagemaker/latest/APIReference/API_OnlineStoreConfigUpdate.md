@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Online
 ---
 
 # OnlineStoreConfigUpdate
-<a name="API_OnlineStoreConfigUpdate"></a>
 
 Updates the feature group online store configuration.
 

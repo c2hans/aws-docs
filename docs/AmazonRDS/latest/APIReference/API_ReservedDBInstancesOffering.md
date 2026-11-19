@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Reserv
 ---
 
 # ReservedDBInstancesOffering
-<a name="API_ReservedDBInstancesOffering"></a>
 
 This data type is used as a response element in the `DescribeReservedDBInstancesOfferings` action.
 

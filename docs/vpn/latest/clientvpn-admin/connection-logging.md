@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/connection-lo
 ---
 
 # Connection logging for an AWS Client VPN endpoint
-<a name="connection-logging"></a>
 
 Connection logging is a feature of AWS Client VPN that enables you to capture *connection logs* for your Client VPN endpoint.
 

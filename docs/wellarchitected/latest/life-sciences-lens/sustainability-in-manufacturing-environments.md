@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # Sustainability in manufacturing environments
-<a name="sustainability-in-manufacturing-environments"></a>
 
 |  LSSUS04: How do you track resource usage in manufacturing environments?  |
 | --- |

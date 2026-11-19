@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/storage-classe
 ---
 
 # Using storage classes
-<a name="storage-classes"></a>
 
  Amazon S3 File Gateway supports the Amazon S3 Standard, Amazon S3 Standard-Infrequent Access, Amazon S3 One Zone-Infrequent Access, Amazon S3 Intelligent-Tiering, and Amazon Glacier storage classes. For more information about storage classes, see [Amazon S3 storage classes](https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html) in the *Amazon Simple Storage Service User Guide*.
 

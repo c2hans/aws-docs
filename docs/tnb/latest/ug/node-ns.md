@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/node-ns.html
 ---
 
 # AWS.NS
-<a name="node-ns"></a>
 
 Defines an AWS network service (NS) node.
 

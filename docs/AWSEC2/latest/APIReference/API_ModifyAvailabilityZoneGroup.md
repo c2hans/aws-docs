@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyAva
 ---
 
 # ModifyAvailabilityZoneGroup
-<a name="API_ModifyAvailabilityZoneGroup"></a>
 
 Changes the opt-in status of the specified zone group for your account.
 

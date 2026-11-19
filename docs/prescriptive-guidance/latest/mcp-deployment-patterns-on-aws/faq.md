@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # Local MCP Servers
-<a name="faq"></a>
 
 **Overview**
 

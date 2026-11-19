@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_NumberA
 ---
 
 # NumberAttributeBoostingConfiguration
-<a name="API_NumberAttributeBoostingConfiguration"></a>
 
 Provides information on boosting `NUMBER` type document attributes.
 

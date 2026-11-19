@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/secu
 ---
 
 # Policies for tag-based access control
-<a name="security-iam-TBAC"></a>
 
 You can use conditions in your identity-based policy to control access to applications and job runs based on tags.
 

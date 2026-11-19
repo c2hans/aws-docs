@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/setting
 ---
 
 # Setting up your anomaly detection
-<a name="settingup-ad"></a>
 
 The overviews in this section describe how to get started with AWS Cost Anomaly Detection in AWS Billing and Cost Management.
 

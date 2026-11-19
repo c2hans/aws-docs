@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-acces
 ---
 
 # Access management
-<a name="security-access-management"></a>
 
 Amazon S3 provides a variety of access management tools. The following is a list of these features and tools. You do not need all of these access management tools, but you must use one or more to grant access to your Amazon S3 buckets, objects, and other [S3 resources](access-management.md#access-management-resources). Proper application of these tools can help make sure that your resources are accessible only to the intended users.
 

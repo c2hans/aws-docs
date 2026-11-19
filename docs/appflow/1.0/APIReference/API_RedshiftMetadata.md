@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_RedshiftMet
 ---
 
 # RedshiftMetadata
-<a name="API_RedshiftMetadata"></a>
 
  The connector metadata specific to Amazon Redshift.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-aw
 ---
 
 # Aligning your data strategy to your business goals
-<a name="alignment"></a>
 
 AWS customers tell us that a lack of alignment between data projects and their company's goals usually lead to a misused, over-engineered data platform that delivers little value for the business. Low reusability of data assets, data inconsistency, poor data discovery, long wait times, and low data quality are typical complaints.
 

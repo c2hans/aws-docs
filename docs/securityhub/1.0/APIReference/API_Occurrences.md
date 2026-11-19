@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Occurre
 ---
 
 # Occurrences
-<a name="API_Occurrences"></a>
 
 The detected occurrences of sensitive data.
 

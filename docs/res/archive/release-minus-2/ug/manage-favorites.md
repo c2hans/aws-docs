@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-2/ug/manage-fa
 ---
 
 # Manage favorites
-<a name="manage-favorites"></a>
 
 To pin important files and folders, you can add them to Favorites.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/dev
 ---
 
 # Create a signaling channel
-<a name="create-channel"></a>
 
 A Kinesis Video Streams with WebRTC signaling channel facilitates the exchange of signaling messages required to establish and maintain peer-to-peer connections between WebRTC clients. It handles the negotiation of Session Description Protocol (SDP) offers and answers for session parameters, as well as the exchange of Interactive Connectivity Establishment (ICE) candidates for network information.
 

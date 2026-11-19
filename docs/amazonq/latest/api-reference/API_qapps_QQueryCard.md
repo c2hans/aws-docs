@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_Q
 ---
 
 # QQueryCard
-<a name="API_qapps_QQueryCard"></a>
 
 A card in a Amazon Q App that generates a response based on the Amazon Q Business service.
 

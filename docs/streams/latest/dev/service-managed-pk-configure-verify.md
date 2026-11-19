@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-co
 ---
 
 # Verify the current record distribution strategy
-<a name="service-managed-pk-configure-verify"></a>
 
 To check which record distribution strategy a stream is currently using, call the `DescribeStreamSummary` API. The response includes the `RecordDistributionStrategy` field.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_InternalServ
 ---
 
 # InternalServerException
-<a name="API_InternalServerException"></a>
 
 The service encountered an internal error. Try your request again. If the problem persists, contact AWS Support.
 

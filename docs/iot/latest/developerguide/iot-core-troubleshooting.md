@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-core-troub
 ---
 
 # AWS IoT Core troubleshooting guide
-<a name="iot-core-troubleshooting"></a>
 
 **Help us improve this topic**
  [Let us know what would help make it better](https://docs.aws.amazon.com/forms/aws-doc-feedback?hidden_service_name=IoT%20Docs&topic_url=http://docs.aws.amazon.com/en_us/iot/latest/developerguide/iot-core-troubleshoot.html)

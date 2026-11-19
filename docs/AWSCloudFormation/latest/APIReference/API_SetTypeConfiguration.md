@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # SetTypeConfiguration
-<a name="API_SetTypeConfiguration"></a>
 
 Specifies the configuration data for a CloudFormation extension, such as a resource or Hook, in the given account and Region.
 

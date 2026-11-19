@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # ServiceQuotaExceededException
-<a name="API_ServiceQuotaExceededException"></a>
 
 The service quota has been exceeded for this resource.
 

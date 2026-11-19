@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/benefits.
 ---
 
 # Key benefits of Amazon Location Service
-<a name="benefits"></a>
 
 ![An overview of Amazon Location Service benefits, including explore, build, and deploy and monitor.](https://docs.aws.amazon.com/location/latest/developerguide/images/benefits.png)
 

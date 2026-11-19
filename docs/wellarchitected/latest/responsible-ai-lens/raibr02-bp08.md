@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIBR02-BP08 Identify potential harmful events impacting transparency
-<a name="raibr02-bp08"></a>
 
  *Transparency* is the degree to which stakeholders can make informed choices in their engagement with an AI system. Consider situations in which users do not understand the probabilistic nature of an AI system, are unaware of AI system presence, or may not realize that an output is AI-generated.
 

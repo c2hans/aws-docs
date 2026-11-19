@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/taniu
 ---
 
 # Source configuration for Tanium
-<a name="tanium-source-setup"></a>
 
 ## Integrating with Tanium
 <a name="tanium-integration"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/example_route53-re
 ---
 
 # Use `GetRoutingControlState` with an AWS SDK
-<a name="example_route53-recovery-cluster_GetRoutingControlState_section"></a>
 
 The following code examples show how to use `GetRoutingControlState`.
 

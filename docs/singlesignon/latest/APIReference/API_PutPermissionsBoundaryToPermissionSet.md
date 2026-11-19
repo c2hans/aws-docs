@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Put
 ---
 
 # PutPermissionsBoundaryToPermissionSet
-<a name="API_PutPermissionsBoundaryToPermissionSet"></a>
 
 Attaches an AWS managed or customer managed policy to the specified [PermissionSet](API_PermissionSet.md) as a permissions boundary.
 

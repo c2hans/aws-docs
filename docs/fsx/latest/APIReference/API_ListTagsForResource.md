@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_ListTagsForR
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Lists tags for Amazon FSx resources.
 

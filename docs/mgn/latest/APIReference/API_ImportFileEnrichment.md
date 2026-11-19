@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_ImportFileEn
 ---
 
 # ImportFileEnrichment
-<a name="API_ImportFileEnrichment"></a>
 
 Details about an import file enrichment job.
 

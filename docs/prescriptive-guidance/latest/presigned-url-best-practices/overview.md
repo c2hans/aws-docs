@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/presigned-u
 ---
 
 # Overview of presigned URLs
-<a name="overview"></a>
 
 A presigned URL is a type of HTTP request that's recognized by the [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) service. What differentiates this type of request from all other AWS requests is the [X-Amz-Expires query parameter](https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-query-string-auth.html). As with other authenticated requests, presigned URL requests include a signature. For presigned URL requests, this signature is transmitted in `X-Amz-Signature`. The signature uses Signature Version 4 cryptographic operations to encode all other request parameters.
 

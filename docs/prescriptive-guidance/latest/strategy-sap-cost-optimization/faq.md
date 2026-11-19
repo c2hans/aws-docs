@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # FAQ
-<a name="faq"></a>
 
 This section provides answers to commonly raised questions about cost optimization, migrations, and automations for SAP workloads on AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Function error codes and other causes of missing metadata
-<a name="functions-troubleshooting-runtime"></a>
 
 A run that fails writes nothing, so every runtime problem looks the same from `GetMetadata`: no item for that window, an empty `items` array, `ResourceNotFoundException`, or `MetadataUnavailableException` while no later run has succeeded. The **Preview metadata** section on the console's **Feed outputs** tab shows nothing for the same windows.
 

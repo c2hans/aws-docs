@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/tasks-api.html
 ---
 
 # Task actions
-<a name="tasks-api"></a>
 
 The following API actions are available for tasks:
 + [CreateTaskTemplate](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateTaskTemplate.html)

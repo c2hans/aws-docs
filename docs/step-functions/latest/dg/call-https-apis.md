@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/call-https-apis
 ---
 
 # Call HTTPS APIs in Step Functions workflows
-<a name="call-https-apis"></a>
 
 An HTTP Task is a type of [Task workflow state](state-task.md) state that you can use to call HTTPS APIs in your workflows. The API can be public, such as third-party SaaS applications like Stripe or Salesforce. You can also call private API, such as HTTPS-based applications in an Amazon Virtual Private Cloud.
 

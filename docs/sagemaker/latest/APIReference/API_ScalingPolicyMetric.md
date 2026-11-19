@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Scalin
 ---
 
 # ScalingPolicyMetric
-<a name="API_ScalingPolicyMetric"></a>
 
 The metric for a scaling policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # GenerativeChunkDataDetails
-<a name="API_amazon-q-connect_GenerativeChunkDataDetails"></a>
 
 Details about the generative chunk data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_SortCriterion.htm
 ---
 
 # SortCriterion
-<a name="API_SortCriterion"></a>
 
 Specifies a field to sort by and a sort order.
 

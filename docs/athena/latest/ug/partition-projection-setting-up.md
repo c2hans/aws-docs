@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/partition-projection-se
 ---
 
 # Set up partition projection
-<a name="partition-projection-setting-up"></a>
 
 Setting up partition projection in a table's properties is a two-step process:
 

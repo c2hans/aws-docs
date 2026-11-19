@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Pendin
 ---
 
 # PendingModifiedValues
-<a name="API_PendingModifiedValues"></a>
 
 This data type is used as a response element in the `ModifyDBInstance` operation and contains changes that will be applied during the next maintenance window.
 

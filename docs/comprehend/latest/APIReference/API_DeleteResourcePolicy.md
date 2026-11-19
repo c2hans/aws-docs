@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Delet
 ---
 
 # DeleteResourcePolicy
-<a name="API_DeleteResourcePolicy"></a>
 
 Deletes a resource-based policy that is attached to a custom model.
 

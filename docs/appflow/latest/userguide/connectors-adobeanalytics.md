@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-adob
 ---
 
 # Adobe Analytics connector for Amazon AppFlow
-<a name="connectors-adobeanalytics"></a>
 
 Adobe Analytics is a business analysis software as a service (SaaS) solution. If you’re an Adobe Analytics user, your account contains business data, analytics, and more. You can use Amazon AppFlow to transfer data from Adobe Analytics to certain AWS services or other supported applications.
 

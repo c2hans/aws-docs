@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_CreateEnv
 ---
 
 # CreateEnvironmentEC2
-<a name="API_CreateEnvironmentEC2"></a>
 
 Creates an AWS Cloud9 development environment, launches an Amazon Elastic Compute Cloud (Amazon EC2) instance, and then connects from the instance to the environment.
 

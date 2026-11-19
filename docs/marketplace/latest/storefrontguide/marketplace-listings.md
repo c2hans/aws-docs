@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/storefrontguide/marke
 ---
 
 # Listings
-<a name="marketplace-listings"></a>
 
 Create and manage your AWS Marketplace product listings from the Storefront console.
 

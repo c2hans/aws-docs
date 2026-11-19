@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterInput RtmpPushRouterInputConfiguration
-<a name="aws-properties-mediaconnect-routerinput-rtmppushrouterinputconfiguration"></a>
 
 <a name="aws-properties-mediaconnect-routerinput-rtmppushrouterinputconfiguration-description"></a>The `RtmpPushRouterInputConfiguration` property type specifies Property description not available. for an [AWS::MediaConnect::RouterInput](aws-resource-mediaconnect-routerinput.md).
 

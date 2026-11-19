@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-reso
 ---
 
 # Resource-level data at daily granularity
-<a name="ce-resource-daily"></a>
 
 In Cost Explorer, you can enable resource-level data for your chosen AWS services at daily granularity for the past 14 days.
 

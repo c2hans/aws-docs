@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixTravelModeOptions
-<a name="API_RouteMatrixTravelModeOptions"></a>
 
 Travel mode related options for the provided travel mode.
 

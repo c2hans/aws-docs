@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCloudHSMRole
-<a name="AWSCloudHSMRole"></a>
 
 **Description**: Default policy for the AWS CloudHSM service role.
 

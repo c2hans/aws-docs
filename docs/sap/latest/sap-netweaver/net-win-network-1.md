@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-network
 ---
 
 # Network
-<a name="net-win-network-1"></a>
 
 Ensure that you have your network constructs set up to deploy resources related to SAP NetWeaver. If you haven’t already set up network components, such as Amazon VPC, subnets, and route tables, you can use the [AWS Quick Start for Modular and Scalable VPC Architecture](https://aws.amazon.com/quickstart/architecture/vpc/) to easily deploy scalable VPC architecture in minutes. See the deployment guide for more details, then set up your EC2 instances for the NetWeaver application server within this VPC.
 

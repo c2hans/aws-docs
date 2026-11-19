@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_RunSummary.html
 ---
 
 # RunSummary
-<a name="API_RunSummary"></a>
 
 A summary of the runs in a batch.
 

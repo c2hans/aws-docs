@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-manage-i
 ---
 
 # Managing access permissions to your Amazon EventBridge resources
-<a name="eb-manage-iam-access"></a>
 
 You manage access to EventBridge resources such as [rules](eb-rules.md) or [events](eb-events.md) by using [identity-based](eb-use-identity-based.md) or [resource-based](eb-use-resource-based.md) policies.
 
@@ -96,7 +95,7 @@ You can attach policies to IAM identities. For example, you can do the following
 
   For more information about using IAM to delegate permissions, see [Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access.html) in the *IAM User Guide*.
 
-You can create specific IAM policies to restrict the calls and resources that users in your account have access to and then attach those policies to users. For more information about how to create IAM roles and to explore example IAM policy statements for EventBridge, see [Managing access permissions to your Amazon EventBridge resources](#eb-manage-iam-access).
+You can create specific IAM policies to restrict the calls and resources that users in your account have access to and then attach those policies to users. For more information about how to create IAM roles and to explore example IAM policy statements for EventBridge, see [Managing access permissions to your Amazon EventBridge resources](eb-manage-iam-access.md).
 
 ### Resource-based policies (IAM policies)
 <a name="eb-resource-based-policies-overview"></a>

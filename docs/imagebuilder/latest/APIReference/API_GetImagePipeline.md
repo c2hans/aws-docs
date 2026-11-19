@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Get
 ---
 
 # GetImagePipeline
-<a name="API_GetImagePipeline"></a>
 
 Retrieves an image pipeline.
 

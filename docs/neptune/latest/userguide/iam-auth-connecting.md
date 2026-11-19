@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/iam-auth-connec
 ---
 
 # Connecting to your Amazon Neptune database using AWS Identity and Access Management authentication
-<a name="iam-auth-connecting"></a>
 
 Amazon Neptune resources that have IAM DB authentication enabled require all HTTP requests to be signed using AWS Signature Version 4. For general information about signing requests with AWS Signature Version 4, see [Signing AWS API requests](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-signing.html).
 

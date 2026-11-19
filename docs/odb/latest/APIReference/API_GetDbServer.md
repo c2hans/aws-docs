@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_GetDbServer.
 ---
 
 # GetDbServer
-<a name="API_GetDbServer"></a>
 
 Returns information about the specified database server.
 

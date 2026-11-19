@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-m
 ---
 
 # Logging management events
-<a name="logging-management-events-with-cloudtrail"></a>
 
 By default, trails and event data stores log management events and don't include data or Insights events.
 

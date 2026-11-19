@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-cdk-lay
 ---
 
 # Best practices
-<a name="best-practices"></a>
 
 ## L1 constructs
 <a name="l1-constructs.947fecc2-63e3-5bec-bb45-a729e95f2e2a"></a>

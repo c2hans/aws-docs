@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/dynatrace.html
 ---
 
 # Dynatrace
-<a name="dynatrace"></a>
 
 The following are the requirements and connection instructions for using Dynatrace with Amazon AppFlow.
 

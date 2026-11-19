@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/el-node-design.h
 ---
 
 # Number of primary Elemental Live nodes
-<a name="el-node-design"></a>
 
 Determine the number of *primary nodes *you need:
 + You need at least sufficient Elemental Live nodes to run the channels for all the encoding workflows and MPTS workflows.

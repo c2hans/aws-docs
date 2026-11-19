@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ArgoCdConfig
 ---
 
 # ArgoCdConfigResponse
-<a name="API_ArgoCdConfigResponse"></a>
 
 The response object containing Argo CD configuration details, including the server URL that you use to access the Argo CD web interface and API.
 

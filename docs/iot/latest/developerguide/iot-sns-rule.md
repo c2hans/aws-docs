@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-sns-rule.h
 ---
 
 # Tutorial: Sending an Amazon SNS notification
-<a name="iot-sns-rule"></a>
 
 This tutorial demonstrates how to create an AWS IoT rule that sends MQTT message data to an Amazon SNS topic so that it can be sent as an SMS text message.
 

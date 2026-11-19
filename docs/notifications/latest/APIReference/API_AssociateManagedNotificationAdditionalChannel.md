@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_As
 ---
 
 # AssociateManagedNotificationAdditionalChannel
-<a name="API_AssociateManagedNotificationAdditionalChannel"></a>
 
 Associates an additional Channel with a particular `ManagedNotificationConfiguration`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateRo
 ---
 
 # UpdateRoutingProfileAgentAvailabilityTimer
-<a name="API_UpdateRoutingProfileAgentAvailabilityTimer"></a>
 
 Whether agents with this routing profile will have their routing order calculated based on *time since their last inbound contact* or *longest idle time*.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Workflows concepts
-<a name="workflows-concepts"></a>
 
 Here are some concepts and terms to know when building, testing, or deploying your code with workflows in CodeCatalyst.
 

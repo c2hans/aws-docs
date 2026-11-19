@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/pipeline-redundancy-
 ---
 
 # Deciding whether to implement pipeline redundancy
-<a name="pipeline-redundancy-guidelines"></a>
 
 In MediaLive, pipeline redundancy is controlled by the class that you assign to the channel. To determine the channel class to assign, you must decide if you want to and are able to implement pipeline redundancy.
 

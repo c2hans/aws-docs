@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-clou
 ---
 
 # AWS Elemental MediaConnect metrics to monitor gateway health
-<a name="monitor-with-cloudwatch-metrics-gateway-health"></a>
 
 AWS Elemental MediaConnect sends metrics to CloudWatch. You can review specific metrics to evaluate the health of your gateways. If the flow in or out of the gateway is unhealthy, these metrics can help you determine where the issue originates from. For details about each metric, see the tables in this section.
 

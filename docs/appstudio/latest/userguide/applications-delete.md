@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/applications-
 ---
 
 # Deleting an application
-<a name="applications-delete"></a>
 
 Use the following procedure to delete an application in App Studio.
 

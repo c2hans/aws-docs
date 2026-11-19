@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeN
 ---
 
 # DescribeNetworkingFlexCostAllocationPolicyAssociations
-<a name="API_DescribeNetworkingFlexCostAllocationPolicyAssociations"></a>
 
 Describes the associations between your flex cost allocation policies and network resources. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

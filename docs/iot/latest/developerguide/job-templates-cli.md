@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/job-templates-
 ---
 
 # Create custom job templates by using the AWS CLI
-<a name="job-templates-cli"></a>
 
 This topic explains how to create, delete, and retrieve details about job templates by using the AWS CLI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/api-refer
 ---
 
 # Get the application configuration in Connect Customer agent workspace
-<a name="api-reference-3P-apps-app-controller-getappconfig"></a>
 
 Returns the application configuration for the given application ARN or name in the Connect Customer agent workspace.
 

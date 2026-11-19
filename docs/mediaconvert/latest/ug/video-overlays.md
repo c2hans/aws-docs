@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/video-overlays.ht
 ---
 
 # Using video overlays
-<a name="video-overlays"></a>
 
 With the **Video overlays** feature, you can layer video content from multiple videos simultaneously. You can also dynamically move or resize video content over time.
 

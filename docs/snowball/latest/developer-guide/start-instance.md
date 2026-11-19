@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/developer-guide/start-in
 AWS Snowball Edge is no longer available to new customers. New customers should explore [AWS DataSync](https://aws.amazon.com/datasync/) for online transfers, [AWS Data Transfer Terminal](https://aws.amazon.com/data-transfer-terminal/) for secure physical transfers, or AWS Partner solutions. For edge computing, explore [AWS Outposts](https://aws.amazon.com/outposts/).
 
 # Starting an Amazon EC2-compatible instance on an Snowball Edge with AWS OpsHub
-<a name="start-instance"></a>
 
 Use these steps to start an Amazon EC2-compatible instance using AWS OpsHub.
 

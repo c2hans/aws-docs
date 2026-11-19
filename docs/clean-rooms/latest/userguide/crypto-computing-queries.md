@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/crypto-comp
 ---
 
 # Queries with Cryptographic Computing for Clean Rooms
-<a name="crypto-computing-queries"></a>
 
 This topic provides information about writing queries that use data tables that have been encrypted using Cryptographic Computing for Clean Rooms.
 

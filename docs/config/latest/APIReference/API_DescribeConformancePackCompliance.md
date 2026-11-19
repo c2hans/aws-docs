@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeC
 ---
 
 # DescribeConformancePackCompliance
-<a name="API_DescribeConformancePackCompliance"></a>
 
 Returns compliance details for each rule in that conformance pack.
 

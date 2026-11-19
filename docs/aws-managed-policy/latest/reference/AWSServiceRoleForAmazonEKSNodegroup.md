@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSServiceRoleForAmazonEKSNodegroup
-<a name="AWSServiceRoleForAmazonEKSNodegroup"></a>
 
 **Description**: Permissions required for managing nodegroups in the customer's account. These policies related to management of the following resources: AutoscalingGroups, SecurityGroups, LaunchTemplates and InstanceProfiles.
 

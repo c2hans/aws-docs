@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/what-is-reco
 ---
 
 # What is recovery control configuration in Amazon Application Recovery Controller (ARC)?
-<a name="what-is-recovery-control"></a>
 
 Welcome to the Recovery Control Configuration API Reference Guide for Amazon Application Recovery Controller (ARC).
 

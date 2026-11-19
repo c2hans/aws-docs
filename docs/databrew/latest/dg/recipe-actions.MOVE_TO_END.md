@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.MOVE_T
 ---
 
 # MOVE\_TO\_END
-<a name="recipe-actions.MOVE_TO_END"></a>
 
 Moves a column to the end position (last column) in the dataset.
 

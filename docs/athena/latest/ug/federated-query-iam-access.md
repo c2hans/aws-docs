@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/federated-query-iam-acc
 ---
 
 # Allow access to Athena Federated Query: Example policies
-<a name="federated-query-iam-access"></a>
 
 The permission policy examples in this topic demonstrate required allowed actions and the resources for which they are allowed. Examine these policies carefully and modify them according to your requirements before attaching them to IAM identities.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 The following authors and co-authors contributed to this guide.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_U
 ---
 
 # UpdateGlobalTableSettings
-<a name="API_UpdateGlobalTableSettings"></a>
 
 Updates settings for a global table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # ListFirewallDomains
-<a name="API_route53globalresolver_ListFirewallDomains"></a>
 
 Lists all the domains in DNS Firewall domain list you have created.
 

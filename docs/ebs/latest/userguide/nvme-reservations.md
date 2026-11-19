@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/nvme-reservations.h
 ---
 
 # Use NVMe reservations with Multi-Attach enabled Amazon EBS volumes
-<a name="nvme-reservations"></a>
 
 Multi-Attach enabled `io1` and `io2` volumes support NVMe reservations, which is a set of industry-standard storage fencing protocols. These protocols enable you to create and manage reservations that control and coordinate access from multiple instances to a shared volume. Shared storage applications use reservations to make sure that data remains consistent.
 

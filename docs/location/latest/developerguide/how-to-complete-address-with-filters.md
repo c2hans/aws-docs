@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-co
 ---
 
 # How to complete an address with filters
-<a name="how-to-complete-address-with-filters"></a>
 
 The Autocomplete API enables you to complete partially typed addresses, facilitating quick and standardized address input for end users. By using the `AdditionalFeatures` parameter, you can customize the information provided in the response to meet specific requirements.
 

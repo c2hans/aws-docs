@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_ListT
 ---
 
 # ListTrackers
-<a name="API_ListTrackers"></a>
 
 Lists tracker resources in your AWS account.
 

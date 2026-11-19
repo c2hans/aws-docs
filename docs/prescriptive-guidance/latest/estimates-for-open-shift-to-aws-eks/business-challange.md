@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/estimates-f
 ---
 
 # Business challenge
-<a name="business-challange"></a>
 
 Platform teams frequently face pressure to provide migration estimates early in the planning process, often before completing a thorough technical assessment. These initial estimates can become fixed commitments, creating risk when unforeseen complexities emerge during execution.
 

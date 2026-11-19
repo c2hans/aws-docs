@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traffi
 ---
 
 # TrafficRoutingConfig
-<a name="API_TrafficRoutingConfig"></a>
 
 Defines the traffic routing strategy during an endpoint deployment to shift traffic from the old fleet to the new fleet.
 

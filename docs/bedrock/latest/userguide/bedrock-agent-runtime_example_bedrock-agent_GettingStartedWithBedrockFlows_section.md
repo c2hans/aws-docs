@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-agent-r
 ---
 
 # An end-to-end example showing how to create and invoke an Amazon Bedrock flow using an AWS SDK
-<a name="bedrock-agent-runtime_example_bedrock-agent_GettingStartedWithBedrockFlows_section"></a>
 
 The following code example shows how to:
 + Create an execution role for the flow.

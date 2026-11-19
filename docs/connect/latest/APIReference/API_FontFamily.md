@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_FontFami
 ---
 
 # FontFamily
-<a name="API_FontFamily"></a>
 
 Contains font family configuration for workspace themes.
 

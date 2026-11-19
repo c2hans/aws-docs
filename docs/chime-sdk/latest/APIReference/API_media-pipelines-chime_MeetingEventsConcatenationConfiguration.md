@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # MeetingEventsConcatenationConfiguration
-<a name="API_media-pipelines-chime_MeetingEventsConcatenationConfiguration"></a>
 
 The configuration object for an event concatenation pipeline.
 

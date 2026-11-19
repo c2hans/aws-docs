@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/f
 ---
 
 # Troubleshooting firewall endpoint failures in AWS Network Firewall
-<a name="firewall-troubleshooting-endpoint-failures"></a>
 
 If Network Firewall can't create or delete a firewall endpoint in a subnet because of an error, the service displays a *status message* describing how to resolve the issue. Use the status message in the console, API, or CLI to troubleshoot the issues causing the endpoint failure. Depending on the issue, it can take as many as 15 minutes for Network Firewall to display the status message.
 

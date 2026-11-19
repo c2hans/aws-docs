@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 ---
 
 # Additional resources
-<a name="additional-resources"></a>
 
  For additional information, see:
 +  [Financial Services Industry Lens – AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/financial-services-industry-lens/financial-services-industry-lens.html)

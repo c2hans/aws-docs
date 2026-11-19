@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrat
 ---
 
 # How Amazon Athena uses AWS Secrets Manager
-<a name="integrating_how-services-use-secrets_ATElong"></a>
 
 Amazon Athena is an interactive query service that makes it easy to analyze data directly in Amazon Simple Storage Service (Amazon S3) using standard SQL.
 

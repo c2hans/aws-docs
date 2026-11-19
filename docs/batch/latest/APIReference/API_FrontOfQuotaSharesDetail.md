@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_FrontOfQuo
 ---
 
 # FrontOfQuotaSharesDetail
-<a name="API_FrontOfQuotaSharesDetail"></a>
 
 An object that represents the details of the first `RUNNABLE` job in each named quota share associated with a single job queue.
 

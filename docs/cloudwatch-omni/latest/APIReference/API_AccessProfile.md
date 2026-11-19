@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # AccessProfile
-<a name="API_AccessProfile"></a>
 
 An Access Profile.
 

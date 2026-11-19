@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-ap
 ---
 
 # NCryptOpenKey with Key storage provider (KSP)
-<a name="ksp-library-apis-open-key"></a>
 
 The `NCryptOpenKey` function opens a key that exists in the Key Storage Provider (KSP).
 

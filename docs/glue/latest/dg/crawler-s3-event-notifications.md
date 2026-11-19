@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/crawler-s3-event-notifica
 ---
 
 # Accelerating crawls using Amazon S3 event notifications
-<a name="crawler-s3-event-notifications"></a>
 
 Instead of listing the objects from an Amazon S3 or Data Catalog target, you can configure the crawler to use Amazon S3 events to find any changes. This feature improves the recrawl time by using Amazon S3 events to identify the changes between two crawls by listing all the files from the subfolder which triggered the event instead of listing the full Amazon S3 or Data Catalog target.
 

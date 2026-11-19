@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ArgoCdRoleMa
 ---
 
 # ArgoCdRoleMapping
-<a name="API_ArgoCdRoleMapping"></a>
 
 A mapping between an Argo CD role and IAM Identity CenterIAM; Identity Center identities. This defines which users or groups have specific permissions in Argo CD.
 

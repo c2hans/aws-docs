@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # InvokeLambdaAction
-<a name="API_InvokeLambdaAction"></a>
 
 The action to invoke an AWS Lambda function for processing the email.
 

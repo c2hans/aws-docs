@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_StepExecutio
 ---
 
 # StepExecutionStatusDetail
-<a name="API_StepExecutionStatusDetail"></a>
 
 The execution state of a step.
 

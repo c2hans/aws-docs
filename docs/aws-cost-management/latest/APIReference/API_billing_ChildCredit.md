@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ChildCredit
-<a name="API_billing_ChildCredit"></a>
 
 A new credit that a split created.
 

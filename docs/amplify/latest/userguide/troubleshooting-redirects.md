@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/userguide/troubleshooting
 ---
 
 # Troubleshooting redirects and rewrites
-<a name="troubleshooting-redirects"></a>
 
 If you encounter issues when setting up redirects and rewrites for an Amplify application, consult the topics in this section for help.
 

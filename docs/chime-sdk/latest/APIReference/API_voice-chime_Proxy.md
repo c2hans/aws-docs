@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # Proxy
-<a name="API_voice-chime_Proxy"></a>
 
 The proxy configuration for an Amazon Chime SDK Voice Connector.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApiMDL-Is
 ---
 
 # Create a document signer certificate
-<a name="JavaApiMDL-IssueDS"></a>
 
 This Java sample shows how to use the [BlankEndEntityCertificate\_APIPassthrough/V1](template-definitions.md#BlankEndEntityCertificate_APIPassthrough) template to create a [ISO/IEC mDL standard](https://www.iso.org/standard/69084.html)-compliant document signer certificate. You must generate base64-encoded values for `KeyUsage`, `IssuerAlternativeName`, and `CRLDistributionPoint` and pass them through `CustomExtensions`.
 

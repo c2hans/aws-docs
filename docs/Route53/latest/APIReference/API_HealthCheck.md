@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_HealthCh
 ---
 
 # HealthCheck
-<a name="API_HealthCheck"></a>
 
 A complex type that contains information about one health check that is associated with the current AWS account.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/sample-typescri
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # TypeScript tutorial for AWS Cloud9
-<a name="sample-typescript"></a>
 
 This tutorial shows you how to work with TypeScript in an AWS Cloud9 development environment.
 

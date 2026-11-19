@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_PropagateTags.html
 ---
 
 # PropagateTags
-<a name="API_PropagateTags"></a>
 
 Configuration for tag propagation to managed resources launched by the capacity provider.
 

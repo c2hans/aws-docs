@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailChecksContentFilterConfig
-<a name="API_runtime_GuardrailChecksContentFilterConfig"></a>
 
 The configuration for the content filter check, specifying which categories to evaluate.
 

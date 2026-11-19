@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribeAssetModelInterfaceRelationship
-<a name="API_DescribeAssetModelInterfaceRelationship"></a>
 
 Retrieves information about an interface relationship between an asset model and an interface asset model.
 

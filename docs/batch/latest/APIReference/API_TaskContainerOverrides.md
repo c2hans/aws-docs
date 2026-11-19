@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_TaskContai
 ---
 
 # TaskContainerOverrides
-<a name="API_TaskContainerOverrides"></a>
 
 The overrides that should be sent to a container.
 

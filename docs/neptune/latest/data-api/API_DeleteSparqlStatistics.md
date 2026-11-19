@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_DeleteSparql
 ---
 
 # DeleteSparqlStatistics
-<a name="API_DeleteSparqlStatistics"></a>
 
 Deletes SPARQL statistics
 

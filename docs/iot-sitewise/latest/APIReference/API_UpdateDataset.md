@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Upd
 ---
 
 # UpdateDataset
-<a name="API_UpdateDataset"></a>
 
 Updates a dataset.
 

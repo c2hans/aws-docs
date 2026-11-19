@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDeviceFarmServiceRolePolicy
-<a name="AWSDeviceFarmServiceRolePolicy"></a>
 
 **Description**: Grant permissions to AWS Device Farm to call EC2 Network APIs on your behalf.
 

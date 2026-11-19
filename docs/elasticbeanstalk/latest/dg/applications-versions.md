@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-
 ---
 
 # Managing application versions
-<a name="applications-versions"></a>
 
 This topic explains application versions and how to create and manage them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # Walkthrough: Develop a resource type
-<a name="resource-type-walkthrough"></a>
 
 In this walkthrough, we'll use the CloudFormation CLI to create a sample resource type, `Example::Testing::WordPress`. This includes modeling the schema, developing the handlers to test those handlers, all the way to performing a dry run to get the resource type ready to submit to the CloudFormation registry. We'll be coding our new resource type in Java, and using the `us-west-2` Region.
 

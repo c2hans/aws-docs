@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Batch
 ---
 
 # BatchLoadProgressReport
-<a name="API_BatchLoadProgressReport"></a>
 
 Details about the progress of a batch load task.
 

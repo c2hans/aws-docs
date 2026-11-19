@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GetFl
 ---
 
 # GetFlowMetadata
-<a name="API_GetFlowMetadata"></a>
 
 Retrieves the metadata of a flow, not including its definition specifying the steps.
 

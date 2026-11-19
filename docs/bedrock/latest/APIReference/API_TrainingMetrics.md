@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Training
 ---
 
 # TrainingMetrics
-<a name="API_TrainingMetrics"></a>
 
 Metrics associated with the custom job.
 

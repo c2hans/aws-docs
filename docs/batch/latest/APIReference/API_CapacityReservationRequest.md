@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_CapacityRe
 ---
 
 # CapacityReservationRequest
-<a name="API_CapacityReservationRequest"></a>
 
 The capacity reservation configuration for Amazon ECS Managed Instances. Use this to target On-Demand Capacity Reservations or Reserved Instances.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/developerguide/market
 The AWS Marketplace API Reference was restructured. For more information about the supported API operations, see the [AWS Marketplace API Reference](https://docs.aws.amazon.com/marketplace/latest/APIReference/Welcome.html).
 
 # Replace a SaaS contract agreement with an agreement-based offer using an AWS SDK
-<a name="marketplace-agreement_example_marketplace-agreement_ReplaceSaaSContractWithAgreementBasedOffer_section"></a>
 
 The following code examples show how to replace a SaaS contract agreement with a new agreement-based offer.
 

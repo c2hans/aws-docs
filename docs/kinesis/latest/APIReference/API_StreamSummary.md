@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_StreamSu
 ---
 
 # StreamSummary
-<a name="API_StreamSummary"></a>
 
 The summary of a stream.
 

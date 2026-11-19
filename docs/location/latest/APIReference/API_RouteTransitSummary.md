@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTransitSummary
-<a name="API_RouteTransitSummary"></a>
 
 Summary of the transit leg.
 

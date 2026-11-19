@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_ModifyDBCluste
 ---
 
 # ModifyDBCluster
-<a name="API_ModifyDBCluster"></a>
 
 Modify a setting for a DB cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request.
 

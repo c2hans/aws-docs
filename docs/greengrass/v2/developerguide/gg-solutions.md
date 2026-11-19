@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/gg-solution
 ---
 
 # Greengrass based IoT solutions
-<a name="gg-solutions"></a>
 
 |  |
 | --- |

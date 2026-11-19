@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_ML
 ---
 
 # MLOutputConfiguration
-<a name="API_MLOutputConfiguration"></a>
 
 Configuration information about how the exported model artifacts are stored.
 

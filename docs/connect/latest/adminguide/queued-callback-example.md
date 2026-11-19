@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/queued-callbac
 ---
 
 # Connect Customer real-time metrics example for a queued callback flow
-<a name="queued-callback-example"></a>
 
 This topic shows an example queued callback flow and reviews how the contact records and times are set for it.
 

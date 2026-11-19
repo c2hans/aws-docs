@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Create a transit gateway route table attachment for an AWS Cloud WAN core network
-<a name="cloudwan-tgw-attachment-add"></a>
 
 Add a transit gateway route table attachment to your AWS Cloud WAN core network.
 

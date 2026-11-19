@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 ---
 
 # Develop AWS account structure
-<a name="develop-aws-account-structure"></a>
 
  [AWS Organizations](https://aws.amazon.com/organizations/) helps centrally manage and govern an AWS environment as you grow and scale AWS resources. An AWS organization consolidates your AWS accounts so that you can administer them as a single unit. You can use organizational units (OUs) to group accounts together to administer as a single unit.
 

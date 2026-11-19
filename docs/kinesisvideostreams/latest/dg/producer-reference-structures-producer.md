@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producer-r
 ---
 
 # Producer SDK structures
-<a name="producer-reference-structures-producer"></a>
 
 This section includes information about structures that you can use to provide data to the Kinesis Video Streams Producer object.
 

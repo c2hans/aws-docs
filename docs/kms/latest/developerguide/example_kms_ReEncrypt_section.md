@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/example_kms_Re
 ---
 
 # Use `ReEncrypt` with an AWS SDK or CLI
-<a name="example_kms_ReEncrypt_section"></a>
 
 The following code examples show how to use `ReEncrypt`.
 

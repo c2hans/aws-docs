@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/vmware-supported-configu
 ---
 
 # Requirements for running AL2027 on VMware
-<a name="vmware-supported-configurations"></a>
 
  This section describes the requirements for running AL2027 on VMware. The VMware images of AL2027 are available for only the `x86-64` architecture. VMware images for `aarch64` are not available or supported. These requirements are in addition to the base [AL2027 system requirements](system-requirements.md) for the VMware images.
 

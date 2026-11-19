@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_NetworkConfigur
 ---
 
 # NetworkConfiguration
-<a name="API_NetworkConfiguration"></a>
 
 Describes configuration settings related to network traffic of an AWS App Runner service. Consists of embedded objects for each configurable network feature.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/howtoviewa
 ---
 
 # View and change a permission set
-<a name="howtoviewandchangepermissionset"></a>
 
 You can use permission sets to grant users access to AWS accounts. You can view and change a permission set with the AWS IAM Identity Center console. You can search and sort permission sets by name in the IAM Identity Center console. For more information about permission sets and how they are used in IAM Identity Center, see [Manage AWS accounts with permission sets](permissionsetsconcept.md).
 

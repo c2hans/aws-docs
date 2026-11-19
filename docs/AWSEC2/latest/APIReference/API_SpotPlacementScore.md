@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_SpotPlace
 ---
 
 # SpotPlacementScore
-<a name="API_SpotPlacementScore"></a>
 
 The Spot placement score for this Region or Availability Zone. The score is calculated based on the assumption that the `capacity-optimized` allocation strategy is used and that all of the Availability Zones in the Region can be used.
 

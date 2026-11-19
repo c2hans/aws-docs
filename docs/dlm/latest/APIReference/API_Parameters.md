@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlm/latest/APIReference/API_Parameters.h
 ---
 
 # Parameters
-<a name="API_Parameters"></a>
 
  **[Custom snapshot and AMI policies only]** Specifies optional parameters for snapshot and AMI policies. The set of valid parameters depends on the combination of policy type and target resource type.
 

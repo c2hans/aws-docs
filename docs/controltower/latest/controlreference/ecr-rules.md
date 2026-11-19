@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/ecr
 ---
 
 # Amazon Elastic Container Registry controls
-<a name="ecr-rules"></a>
 
 **Topics**
 + [[CT.ECR.PR.1] Require Amazon ECR repositories to have a lifecycle policy configured](#ct-ecr-pr-1-description)

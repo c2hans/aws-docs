@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/perfor
 ---
 
 # Example
-<a name="performing-bulk-tasks-start-channels-example"></a>
 
 **Request**
 

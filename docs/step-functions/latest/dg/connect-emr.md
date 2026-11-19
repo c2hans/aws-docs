@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/connect-emr.htm
 ---
 
 # Create and manage Amazon EMR clusters with Step Functions
-<a name="connect-emr"></a>
 
 Learn how to integrate AWS Step Functions with Amazon EMR using the provided Amazon EMR service integration APIs. The service integration APIs are similar to the corresponding Amazon EMR APIs, with some differences in the fields that are passed and in the responses that are returned.
 

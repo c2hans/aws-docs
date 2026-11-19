@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_EncryptionConfig.htm
 ---
 
 # EncryptionConfig
-<a name="API_EncryptionConfig"></a>
 
 A configuration document that specifies encryption configuration settings.
 

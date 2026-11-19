@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # SnsDestination
-<a name="API_SnsDestination"></a>
 
 An object that defines an Amazon SNS destination for events. You can use Amazon SNS to send notification when certain events occur.
 

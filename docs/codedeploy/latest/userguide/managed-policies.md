@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/managed-poli
 ---
 
 # AWS managed (predefined) policies for CodeDeploy
-<a name="managed-policies"></a>
 
 AWS addresses many common use cases by providing standalone IAM policies that are created and administered by AWS. These AWS-managed policies grant permissions for common use cases so you can avoid having to investigate which permissions are required. For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) in the *IAM User Guide*.
 

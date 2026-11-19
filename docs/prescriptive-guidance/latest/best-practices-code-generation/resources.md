@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS blogs
 <a name="9999999999999999aws--blogs.92b3f6dc-9e1f-5db7-a7fb-f183a31af7c9"></a>

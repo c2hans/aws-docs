@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterOperationScalingDetails
-<a name="API_ClusterOperationScalingDetails"></a>
 
 The scaling details for a single instance group that is affected by a cluster operation.
 

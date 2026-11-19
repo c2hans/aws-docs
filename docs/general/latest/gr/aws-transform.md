@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/general/latest/gr/aws-transform.html
 ---
 
 # AWS Transform endpoints and quotas
-<a name="aws-transform"></a>
 
 Service quotas, also referred to as limits, are the maximum number of service resources or operations for your AWS account. The following are the service quotas for this service.
 

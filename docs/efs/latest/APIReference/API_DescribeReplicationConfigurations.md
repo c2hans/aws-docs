@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_DescribeRepl
 ---
 
 # DescribeReplicationConfigurations
-<a name="API_DescribeReplicationConfigurations"></a>
 
 Retrieves the replication configuration for a specific file system. If a file system is not specified, all of the replication configurations for the AWS account in an AWS Region are retrieved.
 

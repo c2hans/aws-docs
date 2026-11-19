@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/paramet
 ---
 
 # Using native parameter support in Parameter Store for Amazon Machine Image IDs
-<a name="parameter-store-ec2-aliases"></a>
 
 When you create a `String` parameter, you can specify the *data type* as `aws:ec2:image` to make sure that the parameter value you enter is a valid Amazon Machine Image (AMI) ID format.
 

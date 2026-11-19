@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonSageMakerEdgeDeviceFleetPolicy
-<a name="AmazonSageMakerEdgeDeviceFleetPolicy"></a>
 
 **Description**: Provides permissions necessary for SageMaker Edge to create and manage a device fleet for the customer using the default cloud connection.
 

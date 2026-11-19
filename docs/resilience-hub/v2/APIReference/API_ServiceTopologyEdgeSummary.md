@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Servi
 ---
 
 # ServiceTopologyEdgeSummary
-<a name="API_ServiceTopologyEdgeSummary"></a>
 
 Contains summary information about a service topology edge.
 

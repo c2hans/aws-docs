@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonRoute53RecoveryReadinessReadOnlyAccess
-<a name="AmazonRoute53RecoveryReadinessReadOnlyAccess"></a>
 
 **Description**: Provides read only access to Amazon Route 53 Recovery Readiness
 

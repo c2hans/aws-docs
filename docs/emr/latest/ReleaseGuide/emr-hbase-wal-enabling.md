@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hbase-wal-en
 ---
 
 # Enabling Amazon EMR WAL
-<a name="emr-hbase-wal-enabling"></a>
 
 Use the following steps to enable writing to the Amazon EMR WAL when you create a cluster with the AWS Command Line Interface.
 

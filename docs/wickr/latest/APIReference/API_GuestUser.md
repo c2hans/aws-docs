@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_GuestUser.
 ---
 
 # GuestUser
-<a name="API_GuestUser"></a>
 
 Represents a guest user who has accessed the network from a federated Wickr network.
 

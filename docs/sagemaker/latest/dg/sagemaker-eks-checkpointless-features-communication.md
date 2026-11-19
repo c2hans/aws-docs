@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-eks-checkp
 ---
 
 # Collective communication initialization improvements
-<a name="sagemaker-eks-checkpointless-features-communication"></a>
 
 NCCL and Gloo are fundamental communication libraries that enable collective operations (such as all-reduce and broadcast) across distributed training processes. However, traditional NCCL and Gloo initialization can create bottlenecks during fault recovery.
 

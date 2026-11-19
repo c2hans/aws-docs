@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/create-thing-t
 ---
 
 # Create a thing type
-<a name="create-thing-type"></a>
 
 You can use the **CreateThingType** command to create a thing type:
 

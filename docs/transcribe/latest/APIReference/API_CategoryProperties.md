@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Categ
 ---
 
 # CategoryProperties
-<a name="API_CategoryProperties"></a>
 
 Provides you with the properties of the Call Analytics category you specified in your request. This includes the list of rules that define the specified category.
 

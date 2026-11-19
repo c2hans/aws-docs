@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AutoScaling.
 ---
 
 # Auto Scaling Valkey and Redis OSS clusters
-<a name="AutoScaling"></a>
 
 ## Prerequisites
 <a name="AutoScaling-Prerequisites"></a>

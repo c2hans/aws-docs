@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/APIReference/API_CdcSpe
 ---
 
 # CdcSpecification
-<a name="API_CdcSpecification"></a>
 
 The settings for the CDC stream of a table. For more information about CDC streams, see [Working with change data capture (CDC) streams in Amazon Keyspaces](https://docs.aws.amazon.com/keyspaces/latest/devguide/cdc.html) in the *Amazon Keyspaces Developer Guide*.
 

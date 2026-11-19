@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-runt
 ---
 
 # Diagnose `InvocationLatency` increases using output tokens per second (OTPS)
-<a name="monitoring-runtime-otps"></a>
 
 The `InvocationLatency` metric reports the wall-clock time of an inference request, from when the request is received to when the last output token is produced. By itself, this metric cannot tell you *why* latency increased. The same elevated value can result from two different conditions:
 + The model is generating tokens more slowly — a service-side throughput change.

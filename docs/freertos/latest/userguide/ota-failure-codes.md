@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-failure-co
 ---
 
 # Get OTA failure codes with the AWS CLI
-<a name="ota-failure-codes"></a>
 
 1. Install and configure the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html).
 

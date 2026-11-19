@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/example_rds_C
 ---
 
 # Use `CreateDBParameterGroup` with an AWS SDK or CLI
-<a name="example_rds_CreateDBParameterGroup_section"></a>
 
 The following code examples show how to use `CreateDBParameterGroup`.
 

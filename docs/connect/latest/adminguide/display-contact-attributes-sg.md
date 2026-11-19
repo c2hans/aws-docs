@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/display-contac
 ---
 
 # Display contact information in the agent workspace when a contact begins
-<a name="display-contact-attributes-sg"></a>
 
 A step-by-step guide can show contact attributes to the agent when a contact starts. This gives agents the context they need before the conversation begins. This pattern is also called a screen pop.
 

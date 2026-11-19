@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RecipeReference.h
 ---
 
 # RecipeReference
-<a name="API_RecipeReference"></a>
 
 A reference to a AWS Glue DataBrew recipe.
 

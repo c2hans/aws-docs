@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Resources
-<a name="resources-sus"></a>
 +  [Sustainability Resources](https://aws.amazon.com/sustainability/resources/)
 +  [Amazon - Sustainability in the Cloud](https://sustainability.aboutamazon.com/products-services/the-cloud?energyType=true)
 +  [Amazon - Renewable Energy Methodology](https://sustainability.aboutamazon.com/renewable-energy-methodology.pdf)

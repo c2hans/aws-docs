@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-perm
 ---
 
 # Set up permissions to use Amazon Bedrock Guardrails
-<a name="guardrails-permissions"></a>
 
 To set up a role with permissions for guardrails, create an IAM role and attach the following permissions by following the steps at [Creating a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html).
 

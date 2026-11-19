@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/updates
 ---
 
 # Update license-included applications
-<a name="updates-image-builder"></a>
 
 Updates for license-included applications are disabled by default. You can enable and perform updates for these applications on an image builder that includes one or more of them or perform the updates using Managed Image Updates. Updates on fleet instances remain disabled to prevent installation during session setup.
 

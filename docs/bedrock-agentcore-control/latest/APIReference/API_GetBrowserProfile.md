@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetBrowserProfile
-<a name="API_GetBrowserProfile"></a>
 
 Gets information about a browser profile.
 

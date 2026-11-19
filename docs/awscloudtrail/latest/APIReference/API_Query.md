@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Qu
 ---
 
 # Query
-<a name="API_Query"></a>
 
 A SQL string of criteria about events that you want to collect in an event data store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/userguide/prompting-chain-of
 ---
 
 # Give Amazon Nova time to think (chain-of-thought)
-<a name="prompting-chain-of-thought"></a>
 
 You can improve the problem solving skills of Amazon Nova by breaking down complex issues into simpler, more manageable tasks or intermediate thoughts. Amazon Nova models work better in reasoning if they are given time to think through the problem and then arrive at the answer. This process of guiding the model to think step-by-step and make attempts at reasoning before arriving at an answer is called *chain-of-thought (CoT)* prompting.
 

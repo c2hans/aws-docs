@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_StaleIpPe
 ---
 
 # StaleIpPermission
-<a name="API_StaleIpPermission"></a>
 
 Describes a stale rule in a security group.
 

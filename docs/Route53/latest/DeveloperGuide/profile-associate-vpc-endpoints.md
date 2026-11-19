@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/profile-as
 ---
 
 # Associate interface VPC endpoints to a Route 53 Profile
-<a name="profile-associate-vpc-endpoints"></a>
 
 For instructions on how to create a interface VPC endpoint, see [Create a VPC endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html#create-interface-endpoint-aws) in the *VPC User Guide.* and then follow the steps in this procedure to associate a VPC endpoint to a Profile.<a name="profile-associate-vpc-endpoints-procedure"></a>
 

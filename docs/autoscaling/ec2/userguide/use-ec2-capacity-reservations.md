@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/use-ec2-capaci
 ---
 
 # Use Capacity Reservations in your Auto Scaling group
-<a name="use-ec2-capacity-reservations"></a>
 
 With Amazon EC2 Auto Scaling and Amazon EC2 Capacity Reservations, you can launch instances from your Auto Scaling group into reserved compute capacity. This page describes the Capacity Reservation types that Auto Scaling supports and helps you choose the approach that fits your workload.
 

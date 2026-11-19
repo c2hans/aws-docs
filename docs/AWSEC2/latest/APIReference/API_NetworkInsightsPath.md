@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_NetworkIn
 ---
 
 # NetworkInsightsPath
-<a name="API_NetworkInsightsPath"></a>
 
 Describes a path.
 

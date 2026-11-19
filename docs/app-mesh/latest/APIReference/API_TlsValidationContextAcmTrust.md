@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_TlsVali
 ---
 
 # TlsValidationContextAcmTrust
-<a name="API_TlsValidationContextAcmTrust"></a>
 
 An object that represents a Transport Layer Security (TLS) validation context trust for an AWS Certificate Manager certificate.
 

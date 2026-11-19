@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourceResult
-<a name="API_ResourceResult"></a>
 
 Provides comprehensive details about an AWS resource and its associated security findings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Signal
 ---
 
 # SignalAttackerGainsDimension
-<a name="API_SignalAttackerGainsDimension"></a>
 
 The assessed attacker-gains dimension with the basis behind it.
 

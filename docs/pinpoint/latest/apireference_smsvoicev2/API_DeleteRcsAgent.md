@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DeleteRcsAgent
-<a name="API_DeleteRcsAgent"></a>
 
 Deletes an existing RCS agent. If deletion protection is enabled, an error is returned.
 

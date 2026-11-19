@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_
 ---
 
 # FindingAggregationAccountDetails
-<a name="API_FindingAggregationAccountDetails"></a>
 
 Contains information about the findings for an AWS account in an organization unused access analyzer.
 

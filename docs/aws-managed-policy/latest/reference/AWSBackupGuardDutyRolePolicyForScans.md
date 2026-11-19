@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBackupGuardDutyRolePolicyForScans
-<a name="AWSBackupGuardDutyRolePolicyForScans"></a>
 
 **Description**: Provides GuardDuty permission to read your AWS Backup Recovery Points for malware scans
 

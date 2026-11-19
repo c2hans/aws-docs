@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/setting-maintenance.
 ---
 
 # Working with a maintenance event
-<a name="setting-maintenance"></a>
 
 You receive notification of upcoming maintenance for a channel at least 21 calendar days before the deadline for the maintenance. The notification specifies this deadline. You should decide how you want to handle the upcoming maintenance event.
 

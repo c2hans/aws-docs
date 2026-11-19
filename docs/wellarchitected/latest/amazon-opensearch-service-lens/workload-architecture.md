@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # Workload architecture
-<a name="workload-architecture"></a>
 
 | AOSREL02: How do you provide high availability for your OpenSearch Service domain? |
 | --- |

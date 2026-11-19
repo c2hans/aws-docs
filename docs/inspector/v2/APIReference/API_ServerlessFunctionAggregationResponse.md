@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Serverless
 ---
 
 # ServerlessFunctionAggregationResponse
-<a name="API_ServerlessFunctionAggregationResponse"></a>
 
 A response that contains the results of a serverless function aggregation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Describe
 ---
 
 # DescribeInstancesHealth
-<a name="API_DescribeInstancesHealth"></a>
 
 Retrieves detailed information about the health of instances in your AWS Elastic Beanstalk environments. This operation requires [enhanced health reporting](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/health-enhanced.html).
 

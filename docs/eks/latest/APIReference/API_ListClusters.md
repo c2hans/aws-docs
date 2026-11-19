@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ListClusters
 ---
 
 # ListClusters
-<a name="API_ListClusters"></a>
 
 Lists the Amazon EKS clusters in your AWS account in the specified AWS Region.
 

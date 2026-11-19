@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Launch the stack (ALB \+ ECS Fargate hosted web console)
-<a name="deploy-alb-ecs-fargate"></a>
 
 ## Prerequisites
 <a name="alb-ecs-prerequisites"></a>

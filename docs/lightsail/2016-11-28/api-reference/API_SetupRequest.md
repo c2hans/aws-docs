@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_S
 ---
 
 # SetupRequest
-<a name="API_SetupRequest"></a>
 
 Returns information that was submitted during the `SetupInstanceHttps` request. Email information is redacted for privacy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Crea
 ---
 
 # CreateIntermediateTableAnalysisRule
-<a name="API_CreateIntermediateTableAnalysisRule"></a>
 
 Creates an analysis rule for an intermediate table. Only the CUSTOM analysis rule type is supported. Only the intermediate table owner can call this operation.
 

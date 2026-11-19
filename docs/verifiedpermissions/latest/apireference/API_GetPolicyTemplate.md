@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # GetPolicyTemplate
-<a name="API_GetPolicyTemplate"></a>
 
 Retrieve the details for the specified policy template in the specified policy store.
 

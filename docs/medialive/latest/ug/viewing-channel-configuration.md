@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/viewing-channel-conf
 ---
 
 # Viewing a channel configuration
-<a name="viewing-channel-configuration"></a>
 
 You can view information about the configuration of a channel on the **Channel details** page on the AWS Elemental MediaLive console. This page is useful for viewing information when the channel is running. (When a channel is running, you can't view details by choosing **Edit**).
 

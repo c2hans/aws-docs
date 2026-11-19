@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Assessment for optimization and modernization
-<a name="assessment-for-optimization-and-modernization"></a>
 
 The assessment process for workload optimization and modernization already migrated into AWS is similar to the assessment of workloads to be migrated into AWS. What will change, primarily, is the sources of data to conduct the assessments. In AWS, there are several out-of-the-box tools and services that you can use to obtain more information about your applications running in AWS.
 

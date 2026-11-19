@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_ListRx
 ---
 
 # ListRxNormInferenceJobs
-<a name="API_ListRxNormInferenceJobs"></a>
 
 Gets a list of InferRxNorm jobs that you have submitted.
 

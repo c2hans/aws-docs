@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_AddPermission.html
 ---
 
 # AddPermission
-<a name="API_AddPermission"></a>
 
 Adds a statement to a topic's access control policy, granting access for the specified AWS accounts to the specified actions.
 

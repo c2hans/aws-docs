@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Lis
 ---
 
 # ListControlOperations
-<a name="API_ListControlOperations"></a>
 
 Provides a list of operations in progress or queued. For usage examples, see [ListControlOperation examples](https://docs.aws.amazon.com/controltower/latest/controlreference/control-api-examples-short.html#list-control-operations-api-examples).
 

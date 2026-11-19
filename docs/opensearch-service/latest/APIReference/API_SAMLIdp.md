@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # SAMLIdp
-<a name="API_SAMLIdp"></a>
 
 The SAML identity povider information.
 

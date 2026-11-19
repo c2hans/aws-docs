@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Deployment overview
-<a name="deployment-overview"></a>
 
 Use the following steps to deploy this Guidance on AWS. For detailed instructions, follow the links for each step,
 

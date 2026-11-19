@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_F
 ---
 
 # FixedBudgetSchedule
-<a name="API_FixedBudgetSchedule"></a>
 
 The details of a fixed budget schedule.
 

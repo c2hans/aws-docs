@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_StepStatus.h
 ---
 
 # StepStatus
-<a name="API_StepStatus"></a>
 
 The execution status details of the cluster step.
 

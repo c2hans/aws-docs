@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_GitHub
 ---
 
 # GitHubConfiguration
-<a name="API_GitHubConfiguration"></a>
 
 Configuration for a GitHub.com integration using the OAuth authorization code flow.
 

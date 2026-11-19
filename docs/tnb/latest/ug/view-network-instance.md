@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/view-network-instance.html
 ---
 
 # View a network instance in AWS TNB
-<a name="view-network-instance"></a>
 
 Learn how to view a network instance.
 

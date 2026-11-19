@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/idt-program
 ---
 
 # Download IDT for AWS IoT Greengrass V2
-<a name="idt-programmatic-download"></a>
 
 This topic describes the options to download AWS IoT Device Tester for AWS IoT Greengrass V2. You can either use one of the following software download links or you can follow instructions to programmatically download IDT.
 

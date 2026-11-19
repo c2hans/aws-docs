@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheMetrics
 ---
 
 # Host-Level Metrics
-<a name="CacheMetrics.HostLevel"></a>
 
 The `AWS/ElastiCache` namespace includes the following host-level metrics for individual cache nodes. These metrics are measured and published for each Cache node in 60-second intervals.
 

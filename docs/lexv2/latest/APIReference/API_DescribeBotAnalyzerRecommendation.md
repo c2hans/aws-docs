@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeBo
 ---
 
 # DescribeBotAnalyzerRecommendation
-<a name="API_DescribeBotAnalyzerRecommendation"></a>
 
 Retrieves the analysis results and recommendations for bot optimization. The analysis must be in `Available` status before recommendations can be retrieved.
 

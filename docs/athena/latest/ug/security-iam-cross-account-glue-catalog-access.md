@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/security-iam-cross-acco
 ---
 
 # Configure cross-account access to AWS Glue data catalogs
-<a name="security-iam-cross-account-glue-catalog-access"></a>
 
 You can use Athena's cross-account AWS Glue catalog feature to register an AWS Glue catalog from an account other than your own. After you configure the required IAM permissions for AWS Glue and register the catalog as an Athena [DataCatalog](https://docs.aws.amazon.com/athena/latest/APIReference/API_DataCatalog.html) resource, you can use Athena to run cross-account queries. For information about using the Athena console to register a catalog from another account, see [Register a Data Catalog from another account](data-sources-glue-cross-account.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Deploy
 ---
 
 # DeploymentCircuitBreaker
-<a name="API_DeploymentCircuitBreaker"></a>
 
 **Note**
 The deployment circuit breaker can only be used for services using the rolling update (`ECS`) deployment type.

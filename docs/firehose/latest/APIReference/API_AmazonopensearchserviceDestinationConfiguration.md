@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Amazono
 ---
 
 # AmazonopensearchserviceDestinationConfiguration
-<a name="API_AmazonopensearchserviceDestinationConfiguration"></a>
 
 Describes the configuration of a destination in Amazon OpenSearch Service
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/ssc-getting
 ---
 
 # Custom Participant Ordering
-<a name="ssc-getting-started-custom-participant-ordering"></a>
 
 Custom participant ordering allows you to control the positioning of participants in both grid and PiP layouts based on custom attribute values in participant tokens, including the positioning of the featured participants and selection of participants the PiP window. This provides deterministic participant positioning and enables role-based layouts.
 

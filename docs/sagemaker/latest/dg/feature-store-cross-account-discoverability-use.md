@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-cross-
 ---
 
 # Search discoverable resources
-<a name="feature-store-cross-account-discoverability-use"></a>
 
 The resource owner account must grant permissions to resource consumer accounts to allow for discoverability or access (read-only, read-write, or admin) privileges with a shared resource. In the following sections, we provide instructions on how to accept an invitation to shared resources and examples showing how to search for discoverable feature groups.
 

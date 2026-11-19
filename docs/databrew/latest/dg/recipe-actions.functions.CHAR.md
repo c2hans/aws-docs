@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functi
 ---
 
 # CHAR
-<a name="recipe-actions.functions.CHAR"></a>
 
 Returns in a new column the Unicode character for each integer in the source column, or for a custom integer value.
 

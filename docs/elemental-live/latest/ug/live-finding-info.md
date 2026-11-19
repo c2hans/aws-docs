@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/live-finding-in
 ---
 
 # Information about using Elemental Live
-<a name="live-finding-info"></a>
 
  Information about AWS Elemental Live is available in the following guides and resources.
 

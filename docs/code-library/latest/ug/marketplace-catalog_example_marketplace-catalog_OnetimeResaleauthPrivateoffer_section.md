@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catal
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Publish a one-time resale authorization with a private offer using an AWS SDK
-<a name="marketplace-catalog_example_marketplace-catalog_OnetimeResaleauthPrivateoffer_section"></a>
 
 The following code examples show how to publish a one-time resale authorization with a private offer so a Channel Partner can use it to create a Channel Partner Private Offer (CPPO).
 

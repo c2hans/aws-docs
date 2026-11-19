@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/remove-verified-domain.htm
 ---
 
 # Delete an identity using the SES console
-<a name="remove-verified-domain"></a>
 
 You can use the Amazon SES console to remove a domain or email address identity from your account in the selected AWS Region.
 

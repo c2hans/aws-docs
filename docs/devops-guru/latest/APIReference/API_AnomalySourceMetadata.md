@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Anom
 ---
 
 # AnomalySourceMetadata
-<a name="API_AnomalySourceMetadata"></a>
 
 Metadata about the detection source that generates proactive anomalies. The anomaly is detected using analysis of the metric data  over a period of time
 

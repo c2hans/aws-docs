@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyUpdateTypeAnnotation
-<a name="API_AutomatedReasoningPolicyUpdateTypeAnnotation"></a>
 
 An annotation for modifying an existing custom type in an Automated Reasoning policy.
 

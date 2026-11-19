@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Considerations
-<a name="account-pools-considerations"></a>
 
 The following considerations apply for account pools in Amazon SageMaker Unified Studio.
 + Account pools contain a list of accounts where each account has an associated region.

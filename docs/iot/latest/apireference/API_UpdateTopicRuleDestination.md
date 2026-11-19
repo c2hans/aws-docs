@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateTopicR
 ---
 
 # UpdateTopicRuleDestination
-<a name="API_UpdateTopicRuleDestination"></a>
 
 Updates a topic rule destination. You use this to change the status, endpoint URL, or confirmation URL of the destination.
 

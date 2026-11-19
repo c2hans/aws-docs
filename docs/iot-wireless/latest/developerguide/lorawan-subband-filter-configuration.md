@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/loraw
 ---
 
 # Configure subbands and filtering capabilities of your LoRaWAN gateways
-<a name="lorawan-subband-filter-configuration"></a>
 
 LoRaWAN gateways run a [LoRa Basics Station](https://doc.sm.tc/station/) software that enables the gateways to connect to AWS IoT Core for LoRaWAN. To connect to AWS IoT Core for LoRaWAN, your LoRa gateway first queries the CUPS server for the LNS endpoint, and then establishes a WebSockets data connection with that endpoint. After the connection is established, uplink and downlink frames can be exchanged through that connection.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/greengrassv2_exam
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Learn AWS IoT Greengrass V2 core operations using an AWS SDK
-<a name="greengrassv2_example_greengrassv2_Scenario_section"></a>
 
 The following code example shows how to learn core operations of AWS IoT Greengrass V2 using an AWS SDK.
 + List Greengrass core devices.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRout
 ---
 
 # AwsRoute53QueryLoggingConfigDetails
-<a name="API_AwsRoute53QueryLoggingConfigDetails"></a>
 
  Provides details about a specified Amazon Route 53 configuration for DNS query logging.
 

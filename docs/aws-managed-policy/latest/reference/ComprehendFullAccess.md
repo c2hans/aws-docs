@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Comp
 ---
 
 # ComprehendFullAccess
-<a name="ComprehendFullAccess"></a>
 
 **Description**: Provides full access to Amazon Comprehend.
 

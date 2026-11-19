@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # EphemeralEBSVolumeConfiguration
-<a name="API_EphemeralEBSVolumeConfiguration"></a>
 
 The shared Amazon EBS performance and encryption properties for a volume. These properties are common across the different volume configurations for a capacity provider.
 

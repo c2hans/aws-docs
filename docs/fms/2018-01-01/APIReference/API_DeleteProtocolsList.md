@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_DeletePr
 ---
 
 # DeleteProtocolsList
-<a name="API_DeleteProtocolsList"></a>
 
 Permanently deletes an AWS Firewall Manager protocols list.
 

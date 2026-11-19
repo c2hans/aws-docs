@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # ELBLoadBalancerLoggingParameters
-<a name="API_ELBLoadBalancerLoggingParameters"></a>
 
  Configuration parameters for ELB load balancer logging, including output format and field delimiter settings.
 

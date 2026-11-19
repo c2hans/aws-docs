@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # KnowledgeSource
-<a name="API_amazon-q-connect_KnowledgeSource"></a>
 
 A knowledge source that provides content for recommendations.
 

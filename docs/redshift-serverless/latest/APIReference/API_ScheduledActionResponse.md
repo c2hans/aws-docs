@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ScheduledActionResponse
-<a name="API_ScheduledActionResponse"></a>
 
 The returned scheduled action object.
 

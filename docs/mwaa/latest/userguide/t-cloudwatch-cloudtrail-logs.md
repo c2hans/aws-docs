@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/t-cloudwatch-cloud
 ---
 
 # Troubleshooting: CloudWatch Logs and CloudTrail errors
-<a name="t-cloudwatch-cloudtrail-logs"></a>
 
 The topics on this page contain resolutions to Amazon CloudWatch Logs and AWS CloudTrail errors you can encounter on an Amazon Managed Workflows for Apache Airflow environment.
 

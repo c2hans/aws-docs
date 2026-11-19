@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/insightly-configuring-iam
 ---
 
 # Policies containing the API operations for creating and using connections
-<a name="insightly-configuring-iam-permissions"></a>
 
 The following sample policy describes the required IAM permissions for creating, managing, and using Insightly connections within AWS Glue ETL jobs. If you are creating a new role, create a policy that contains the following:
 

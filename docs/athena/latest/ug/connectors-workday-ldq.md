@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/connectors-workday-ldq.
 ---
 
 # Amazon Athena Workday Live Data Query connector
-<a name="connectors-workday-ldq"></a>
 
 With the Amazon Athena connector for Workday Live Data Query, you can run SQL queries on the current data in your Workday tenant, without copying or moving that data. This connector can be registered with AWS Glue Data Catalog as a federated catalog. It supports data access controls defined in Lake Formation at the catalog, database, table, column, and row levels. This connector uses Glue connections to centralize configuration properties in AWS Glue. AWS manages the connector for you, so you don't need to deploy an AWS Lambda function in your account.
 

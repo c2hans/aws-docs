@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/queues-calleri
 ---
 
 # Set up outbound caller ID in Connect Customer
-<a name="queues-callerid"></a>
 
 This topic explains how to set up your outbound caller ID name and number.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Patroni and etcd
-<a name="ha-patroni-etcd-considerations"></a>
 
 We recommend [Patroni](https://github.com/zalando/patroni) as a solution for providing HA with automatic failover management. Patroni is an open-source automatic failover manager for PostgreSQL databases. You can use Patroni as a template to create your own customized HA solution by using Python and a distributed configuration store, such as [etcd](https://github.com/etcd-io/etcd), for maximum accessibility.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_InstanceGrou
 ---
 
 # InstanceGroup
-<a name="API_InstanceGroup"></a>
 
 This entity represents an instance group, which is a group of instances that have common purpose. For example, CORE instance group is used for HDFS.
 

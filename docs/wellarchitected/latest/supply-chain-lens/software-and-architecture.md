@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # Software and architecture
-<a name="software-and-architecture"></a>
 
 | SCSUS04: Can you optimize your compute workloads for your supply chain sustainability? |
 | --- |

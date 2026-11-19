@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-
 ---
 
 # SQL Server editions
-<a name="editions"></a>
 
 Most users are able to leverage SQL Server Standard edition to meet the business requirements of their production systems and SQL Server Developer edition for their non-production environments. SQL Server Enterprise edition tends to be infrequently used for EnterpriseOne because of its high costs and because Microsoft moves features from Enterprise edition to Standard edition with each release. Many of the features that EnterpriseOne typically uses have been moved to SQL Server Standard edition, including the following:
 + Maximum memory was increased to 128 GB in SQL Server 2012.

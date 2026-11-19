@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Step 2: Add a test device
-<a name="nx-rcs-gsu-test-device"></a>
 
 After your testing registration is approved, add your phone as a test device so you can receive RCS messages from your testing agent.
 

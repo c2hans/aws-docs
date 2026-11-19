@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_UpdateCloudA
 ---
 
 # UpdateCloudAutonomousVmCluster
-<a name="API_UpdateCloudAutonomousVmCluster"></a>
 
 Updates the properties of the specified Autonomous VM cluster.
 

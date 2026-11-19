@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-age
 ---
 
 # Viewing SSM Agent logs
-<a name="ssm-agent-logs"></a>
 
 AWS Systems Manager Agent (SSM Agent) writes information about executions, commands, scheduled actions, errors, and health statuses to log files on each managed node. You can view log files by manually connecting to a managed node, or you can automatically send logs to Amazon CloudWatch Logs. For more information about sending logs to CloudWatch Logs, see [Logging and monitoring in AWS Systems Manager](monitoring.md).
 

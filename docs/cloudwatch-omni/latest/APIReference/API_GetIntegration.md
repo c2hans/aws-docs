@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # GetIntegration
-<a name="API_GetIntegration"></a>
 
 Returns the details of a single integration, identified by its identifier, Amazon Resource Name, or name.
 

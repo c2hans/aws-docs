@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Destina
 ---
 
 # DestinationBackup
-<a name="API_DestinationBackup"></a>
 
 Contains information about the backup that will be copied and created by the [CopyBackupToRegion](API_CopyBackupToRegion.md) operation.
 

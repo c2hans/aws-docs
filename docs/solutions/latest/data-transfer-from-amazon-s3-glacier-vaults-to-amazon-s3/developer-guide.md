@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-from-amaz
 ---
 
 # Developer guide
-<a name="developer-guide"></a>
 
  This section provides the source code for the Guidance.
 

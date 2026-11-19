@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Rep
 ---
 
 # RepositorySummary
-<a name="API_RepositorySummary"></a>
 
  Details about a repository, including its Amazon Resource Name (ARN), description, and domain information. The [ListRepositories](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_ListRepositories.html) operation returns a list of `RepositorySummary` objects.
 

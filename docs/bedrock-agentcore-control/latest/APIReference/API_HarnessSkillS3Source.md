@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # HarnessSkillS3Source
-<a name="API_HarnessSkillS3Source"></a>
 
 An S3 source for a skill.
 

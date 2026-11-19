@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_Scali
 ---
 
 # ScalingInstruction
-<a name="API_ScalingInstruction"></a>
 
 Describes a scaling instruction for a scalable resource in a scaling plan. Each scaling instruction applies to one resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetFa
 ---
 
 # GetFailureModeFinding
-<a name="API_GetFailureModeFinding"></a>
 
 Retrieves a finding by findingId.
 

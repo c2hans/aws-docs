@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_DeletePl
 ---
 
 # DeletePlatformVersion
-<a name="API_DeletePlatformVersion"></a>
 
 Deletes the specified version of a custom platform.
 

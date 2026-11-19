@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/cloudwatch-
 ---
 
 # Monitor your WorkSpaces using Amazon EventBridge
-<a name="cloudwatch-events"></a>
 
 You can use events from Amazon WorkSpaces to view, search, download, archive, analyze, and respond to successful logins to your WorkSpaces. For example, you can use events for the following purposes:
 + Store or archive WorkSpaces login events as logs for future reference, analyze the logs to look for patterns, and take action based on those patterns.

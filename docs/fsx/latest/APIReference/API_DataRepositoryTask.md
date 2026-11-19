@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DataReposito
 ---
 
 # DataRepositoryTask
-<a name="API_DataRepositoryTask"></a>
 
 A description of the data repository task.
 + You use import and export data repository tasks to perform bulk transfer operations between an Amazon FSx for Lustre file system and a linked data repository.

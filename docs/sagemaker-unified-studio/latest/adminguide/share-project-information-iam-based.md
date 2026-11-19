@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Share Project Information
-<a name="share-project-information-iam-based"></a>
 
 This feature simplifies user onboarding by providing all necessary access information in a formatted message that can be copied and shared via email or other communication channels.
 

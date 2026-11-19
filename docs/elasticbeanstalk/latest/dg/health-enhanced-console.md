@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/health-enhanc
 ---
 
 # Enhanced health monitoring with the environment management console
-<a name="health-enhanced-console"></a>
 
 When you enable enhanced health reporting in AWS Elastic Beanstalk, you can monitor environment health in the [environment management console](environments-console.md).
 

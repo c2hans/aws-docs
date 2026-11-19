@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk introduces authorization for enhanced health information on September 10, 2020
-<a name="release-2020-09-10-healthd-authz"></a>
 
 AWS Elastic Beanstalk added an option to require authorization of enhanced health information traffic from environment instances to the Elastic Beanstalk service.
 

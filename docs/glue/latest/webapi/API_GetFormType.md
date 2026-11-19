@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetFormType.html
 ---
 
 # GetFormType
-<a name="API_GetFormType"></a>
 
 Retrieves a form type in AWS Glue Data Catalog by its identifier.
 

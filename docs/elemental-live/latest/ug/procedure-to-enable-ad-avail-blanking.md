@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/procedure-to-en
 ---
 
 # Procedure to enable ad avail blanking
-<a name="procedure-to-enable-ad-avail-blanking"></a>
 
 **To enable ad avail blanking**
 

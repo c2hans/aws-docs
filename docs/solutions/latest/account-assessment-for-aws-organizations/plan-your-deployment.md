@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
 This section describes the cost, security, Region, and quota considerations for planning your deployment.
 

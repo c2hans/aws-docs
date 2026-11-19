@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/grafana-support.html
 ---
 
 # AWS Glue support for Grafana
-<a name="grafana-support"></a>
 
 AWS Glue supports Grafana as follows:
 

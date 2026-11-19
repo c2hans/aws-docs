@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Updat
 ---
 
 # UpdateIdentityPropagationConfig
-<a name="API_UpdateIdentityPropagationConfig"></a>
 
 Adds or updates services and authorized targets to configure what the Quick Sight IAM Identity Center application can access.
 

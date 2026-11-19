@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-or
 ---
 
 # Resources
-<a name="resources"></a>
 
 Amazon RDS for Oracle:
 + [Amazon RDS for Oracle documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Oracle.html)

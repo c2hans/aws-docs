@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/robust-netw
 ---
 
 # Robust network configuration
-<a name="set-up-of-robust-network-configuration"></a>
 
 The following diagram shows how an ideal network should be built to protect the network by filtering malicious traffic that comes into an organization and blocking traffic that is not supposed to reach the internet or specific sites on the internet. The network can also control traffic within the organization based on your organization's security requirements.
 

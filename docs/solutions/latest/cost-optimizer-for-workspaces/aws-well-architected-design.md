@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cost-optimizer-for-work
 ---
 
 # AWS Well-Architected design framework
-<a name="aws-well-architected-design"></a>
 
 We designed this solution with best practices from the AWS Well-Architected Framework, which helps customers design and operate reliable, secure, efficient, and cost-effective workloads in the cloud.
 

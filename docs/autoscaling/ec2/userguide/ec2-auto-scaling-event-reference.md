@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scali
 ---
 
 # Amazon EC2 Auto Scaling event reference
-<a name="ec2-auto-scaling-event-reference"></a>
 
 Using Amazon EventBridge, you can create *rules* that match incoming *events* and route them to *targets* for processing.
 

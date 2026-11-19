@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # OpenSearch index
-<a name="opensearch-index"></a>
 
 An index in OpenSearch is a logical namespace that organizes and stores documents. An OpenSearch index consists of two main sections: settings and mappings.
 

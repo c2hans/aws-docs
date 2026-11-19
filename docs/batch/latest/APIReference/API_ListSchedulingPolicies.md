@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ListSchedu
 ---
 
 # ListSchedulingPolicies
-<a name="API_ListSchedulingPolicies"></a>
 
 Returns a list of AWS Batch scheduling policies.
 

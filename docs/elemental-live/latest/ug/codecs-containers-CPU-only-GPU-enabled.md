@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/codecs-containe
 ---
 
 # Codec support for CPU-only and GPU-enabled deployments
-<a name="codecs-containers-CPU-only-GPU-enabled"></a>
 
 The codecs listed in the table below are supported with equivalent video quality at equivalent operating points on both CPU-only and GPU-enabled appliances.
 

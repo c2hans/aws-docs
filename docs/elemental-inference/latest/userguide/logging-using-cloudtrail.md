@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/log
 ---
 
 # Logging Elemental Inference API calls with AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 AWS Elemental Inference is integrated with AWS CloudTrail. *AWS CloudTrail* captures API calls and related events made by or on behalf of your AWS account and delivers the log files to an Amazon S3 bucket that you specify. You can identify which users and accounts called AWS, the source IP address from which the calls were made, and when the calls occurred.
 

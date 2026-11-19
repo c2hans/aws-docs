@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_LineC
 ---
 
 # LineChartSortConfiguration
-<a name="API_LineChartSortConfiguration"></a>
 
 The sort configuration of a line chart.
 

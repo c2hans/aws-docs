@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/create
 ---
 
 # Creating an IAM role for a console user
-<a name="create-iam-role"></a>
 
 Complete the following procedure if you are using the AWS Entity Resolution console.
 

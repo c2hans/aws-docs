@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_LineIte
 ---
 
 # LineItemAssetInformation
-<a name="API_LineItemAssetInformation"></a>
 
  Information about a line item asset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-arch
 ---
 
 # Conclusion and resources
-<a name="conclusion"></a>
 
 For the US Department of Defense (DoD), this guide explains what the Defense Information Systems Agency (DISA) requirements are for deploying a Secure Cloud Computing Architecture (SCCA). By using the Landing Zone Accelerator (LZA) on AWS, you can implement AWS offerings and eliminate the undifferentiated, heavy lifting. This helps you to focus on your mission to build an IL4-compliant or IL5-compliant cloud infrastructure.
 

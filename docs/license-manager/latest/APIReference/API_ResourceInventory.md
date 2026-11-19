@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ResourceInventory
-<a name="API_ResourceInventory"></a>
 
 Details about a resource.
 

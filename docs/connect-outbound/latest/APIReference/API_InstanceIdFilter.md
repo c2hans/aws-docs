@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API
 ---
 
 # InstanceIdFilter
-<a name="API_connect-outbound-campaigns_InstanceIdFilter"></a>
 
 Contains the filter to apply when retrieving outbound campaigns.
 

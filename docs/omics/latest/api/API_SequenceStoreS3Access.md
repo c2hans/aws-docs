@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_SequenceStoreS3Acce
 ---
 
 # SequenceStoreS3Access
-<a name="API_SequenceStoreS3Access"></a>
 
 The S3 access metadata of the sequence store.
 

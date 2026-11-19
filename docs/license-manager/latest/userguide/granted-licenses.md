@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/granted
 ---
 
 # Granted licenses in License Manager
-<a name="granted-licenses"></a>
 
 Granted licenses are licenses for products that your organization purchased from [AWS Marketplace](https://docs.aws.amazon.com/marketplace/latest/buyerguide/what-is-marketplace.html), [AWS Data Exchange](https://docs.aws.amazon.com/data-exchange/latest/userguide/what-is.html), or directly from a seller who integrated their software with managed entitlements. License administrators can use AWS License Manager to govern the use of these licenses and to distribute rights of use, known as entitlements, to specific AWS accounts.
 

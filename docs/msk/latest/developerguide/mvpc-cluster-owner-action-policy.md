@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/mvpc-cluster-o
 ---
 
 # Step 2: Attach a cluster policy to the MSK cluster
-<a name="mvpc-cluster-owner-action-policy"></a>
 
 The cluster owner can attach a cluster policy (also known as a [resource-based policy](https://docs.aws.amazon.com/msk/latest/developerguide/security_iam_service-with-iam.html#security_iam_service-with-iam-resource-based-policies)) to the MSK cluster where you will turn on multi-VPC private connectivity. The cluster policy gives the clients permission to access the cluster from another account. Before you can edit the cluster policy, you need the account ID(s) for the accounts that should have permission to access the MSK cluster. See [How Amazon MSK works with IAM](https://docs.aws.amazon.com/msk/latest/developerguide/security_iam_service-with-iam.html).
 

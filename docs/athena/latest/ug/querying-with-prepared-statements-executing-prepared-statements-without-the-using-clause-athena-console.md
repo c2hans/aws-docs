@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-with-prepared-
 ---
 
 # Run interactive prepared statements in the Athena console
-<a name="querying-with-prepared-statements-executing-prepared-statements-without-the-using-clause-athena-console"></a>
 
 If you run an existing prepared statement with the syntax `EXECUTE` {{prepared\_statement}} in the query editor, Athena opens the **Enter parameters** dialog box so that you can enter the values that would normally go in the `USING` clause of the `EXECUTE ... USING` statement.
 

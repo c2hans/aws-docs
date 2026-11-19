@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_U
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Deletes the specified set of tag keys and their values from the specified Amazon Lightsail resource.
 

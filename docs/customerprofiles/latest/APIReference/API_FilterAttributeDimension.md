@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # FilterAttributeDimension
-<a name="API_connect-customer-profiles_FilterAttributeDimension"></a>
 
 Object that defines how to filter the incoming objects for the calculated attribute.
 

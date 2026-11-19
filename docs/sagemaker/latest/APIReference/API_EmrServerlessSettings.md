@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EmrSer
 ---
 
 # EmrServerlessSettings
-<a name="API_EmrServerlessSettings"></a>
 
 The settings for running Amazon EMR Serverless jobs in SageMaker Canvas.
 

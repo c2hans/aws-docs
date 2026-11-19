@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchCreateWorkloadEstimateUsage
-<a name="API_AWSBCMPricingCalculator_BatchCreateWorkloadEstimateUsage"></a>
 
  Create AWS service usage that you want to model in a Workload Estimate.
 

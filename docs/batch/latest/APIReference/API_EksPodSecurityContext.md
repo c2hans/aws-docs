@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EksPodSecu
 ---
 
 # EksPodSecurityContext
-<a name="API_EksPodSecurityContext"></a>
 
 The security context for the pod. The settings apply to all containers in the pod when the container does not specify an overriding value. For more information, see [Set the security context for a Pod](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-for-a-pod) in the *Kubernetes documentation*.
 

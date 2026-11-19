@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/configure-
 ---
 
 # Configure the AWS access portal
-<a name="configure-the-access-portal"></a>
 
 As an administrator, you can customize the AWS access portal to meet your organization's needs and ensure users can easily access their authorized resources.
 

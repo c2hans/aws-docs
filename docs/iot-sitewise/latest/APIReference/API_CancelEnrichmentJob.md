@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Can
 ---
 
 # CancelEnrichmentJob
-<a name="API_CancelEnrichmentJob"></a>
 
 Cancels a running or pending enrichment job. This is an idempotent operation—calling it multiple times with the same jobId is safe and returns the current status.
 

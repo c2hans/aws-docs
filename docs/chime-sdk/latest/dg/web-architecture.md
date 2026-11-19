@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/web-architecture.htm
 ---
 
 # Understanding web application architecture for the Amazon Chime SDK
-<a name="web-architecture"></a>
 
 You can serve your web application from a content delivery network, and load it when the user navigates to a URL in a browser. You can also wrap it in a platform-native Electron application that the user installs on their machine.
 

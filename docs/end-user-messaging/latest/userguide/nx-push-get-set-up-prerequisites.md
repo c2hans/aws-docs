@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-p
 ---
 
 # Prerequisites
-<a name="nx-push-get-set-up-prerequisites"></a>
 
 Before you begin, complete the following:
 

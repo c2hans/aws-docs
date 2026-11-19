@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ImageI
 ---
 
 # ImageIdentifier
-<a name="API_ImageIdentifier"></a>
 
 An object with identifying information for an image in an Amazon ECR repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreatePresignedMlflowTrackingServerUrl
-<a name="API_CreatePresignedMlflowTrackingServerUrl"></a>
 
 Returns a presigned URL that you can use to connect to the MLflow UI attached to your tracking server. For more information, see [Launch the MLflow UI using a presigned URL](https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-launch-ui.html).
 

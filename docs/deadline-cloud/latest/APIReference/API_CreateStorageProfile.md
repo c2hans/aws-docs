@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_C
 ---
 
 # CreateStorageProfile
-<a name="API_CreateStorageProfile"></a>
 
 Creates a storage profile that specifies the operating system, file type, and file location of resources used on a farm.
 

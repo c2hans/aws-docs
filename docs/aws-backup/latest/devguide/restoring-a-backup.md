@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-a-b
 ---
 
 # Restore a backup by resource type
-<a name="restoring-a-backup"></a>
 
 ## How to restore
 <a name="how-to-restore"></a>

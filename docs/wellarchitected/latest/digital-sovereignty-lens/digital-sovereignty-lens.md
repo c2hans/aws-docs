@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Digital Sovereignty Lens - AWS Well-Architected Framework
-<a name="digital-sovereignty-lens"></a>
 
 Last updated: **September 15, 2026** ([Release notes](release-notes.md))
 

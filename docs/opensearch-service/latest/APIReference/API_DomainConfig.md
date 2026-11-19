@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DomainConfig
-<a name="API_DomainConfig"></a>
 
 Container for the configuration of an OpenSearch Service domain.
 

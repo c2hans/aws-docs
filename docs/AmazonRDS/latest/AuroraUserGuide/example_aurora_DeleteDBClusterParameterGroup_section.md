@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/example
 ---
 
 # Use `DeleteDBClusterParameterGroup` with an AWS SDK
-<a name="example_aurora_DeleteDBClusterParameterGroup_section"></a>
 
 The following code examples show how to use `DeleteDBClusterParameterGroup`.
 

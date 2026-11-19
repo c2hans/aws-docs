@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Res
 ---
 
 # ResourcePolicy
-<a name="API_ResourcePolicy"></a>
 
  An AWS CodeArtifact resource policy that contains a resource ARN, document details, and a revision.
 

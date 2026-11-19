@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MediaDevi
 ---
 
 # MediaDeviceInfo
-<a name="API_MediaDeviceInfo"></a>
 
 Describes the media accelerators for the instance type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/install-server/authorize
 ---
 
 # Create a serial connection to the Outposts server
-<a name="authorize-2"></a>
 
 The following are instructions to create a serial connection from your laptop to the Outposts server. They use popular serial terminal programs. You are not required to use these programs. You can use the serial terminal program that you prefer, if it supports a connection speed of `115200` baud.
 

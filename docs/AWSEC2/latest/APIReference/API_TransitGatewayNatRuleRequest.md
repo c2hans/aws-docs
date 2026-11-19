@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayNatRuleRequest
-<a name="API_TransitGatewayNatRuleRequest"></a>
 
 Describes a NAT gateway rule to apply to a transit gateway attachment. A NAT gateway rule translates source addresses in the `MatchSourceCidr` range to the corresponding addresses in the `NatCidr` range.
 

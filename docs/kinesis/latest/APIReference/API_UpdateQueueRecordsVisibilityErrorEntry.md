@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_UpdateQu
 ---
 
 # UpdateQueueRecordsVisibilityErrorEntry
-<a name="API_UpdateQueueRecordsVisibilityErrorEntry"></a>
 
 A record whose visibility timeout was not changed, and why.
 

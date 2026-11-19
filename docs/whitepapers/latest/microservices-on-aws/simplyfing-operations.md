@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 ---
 
 # Simplifying operations
-<a name="simplyfing-operations"></a>
 
  To further simplify the operational efforts needed to run, maintain, and monitor microservices, we can use a fully serverless architecture.
 

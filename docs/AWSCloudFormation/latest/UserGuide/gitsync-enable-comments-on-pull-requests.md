@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gitsy
 ---
 
 # Enable CloudFormation to post a summary of stack changes in pull requests
-<a name="gitsync-enable-comments-on-pull-requests"></a>
 
 This topic shows you how to enable CloudFormation to post a summary of stack changes in pull requests in your Git repository.
 

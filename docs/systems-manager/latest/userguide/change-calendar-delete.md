@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/change-
 ---
 
 # Deleting a change calendar
-<a name="change-calendar-delete"></a>
 
 You can delete a calendar in Change Calendar by using either the Systems Manager console or the AWS Command Line Interface (AWS CLI). Deleting a change calendar deletes all associated events.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_UpdatePre
 ---
 
 # UpdatePreparedStatement
-<a name="API_UpdatePreparedStatement"></a>
 
 Updates a prepared statement.
 

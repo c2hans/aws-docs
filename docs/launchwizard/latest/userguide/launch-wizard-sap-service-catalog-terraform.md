@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Launch AWS Service Catalog products with Terraform
-<a name="launch-wizard-sap-service-catalog-terraform"></a>
 
 The official HashiCorp AWS provider supports AWS Service Catalog resources. You can launch products created with Launch Wizard and saved to AWS Service Catalog using Terraform. Or, you can integrate the products with their existing Terraform workflows. Administrators can create AWS Service Catalog portfolios and add Launch Wizard products to them using Terraform.
 

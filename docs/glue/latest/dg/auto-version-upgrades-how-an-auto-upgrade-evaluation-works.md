@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/auto-version-upgrades-how
 ---
 
 # How an auto upgrade evaluation works
-<a name="auto-version-upgrades-how-an-auto-upgrade-evaluation-works"></a>
 
 This section describes each phase of an auto upgrade.
 

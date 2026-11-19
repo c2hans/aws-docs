@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch_job_events.
 ---
 
 # Job state change events
-<a name="batch_job_events"></a>
 
 Anytime that an existing (previously submitted) job changes states, an event is created. For more information about AWS Batch job states, see [Job states](job_states.md).
 

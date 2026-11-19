@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::B2BI::Transformer Mapping
-<a name="aws-properties-b2bi-transformer-mapping"></a>
 
 Specifies the mapping template for the transformer. This template is used to map the parsed EDI file using JSONata or XSLT.
 

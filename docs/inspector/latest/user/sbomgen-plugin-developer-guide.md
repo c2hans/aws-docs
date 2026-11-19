@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbomgen-plugin-dev
 ---
 
 # Plugin developer guide
-<a name="sbomgen-plugin-developer-guide"></a>
 
  This guide explains how to extend Amazon Inspector SBOM Generator (inspector-sbomgen) with custom Lua plugins. Plugins let you add support for new package ecosystems without modifying sbomgen's source code or having to re-compile.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec03-b
 ---
 
 # SEC03-BP05 Share resources securely with a third party
-<a name="sec03-bp05"></a>
 
  A workload often depends on third-party tools that need access to your account, such as a monitoring or analytics service. Grant third parties least privilege access through temporary credentials, and work with the provider to keep the scope of impact small.
 

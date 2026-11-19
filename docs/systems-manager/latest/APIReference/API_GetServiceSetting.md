@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # GetServiceSetting
-<a name="API_GetServiceSetting"></a>
 
  `ServiceSetting` is an account-level setting for an AWS service. This setting defines how a user interacts with or uses a service or a feature of a service. For example, if an AWS service charges money to the account based on feature or service usage, then the AWS service team might create a default setting of `false`. This means the user can't use this feature unless they change the setting to `true` and intentionally opt in for a paid feature.
 

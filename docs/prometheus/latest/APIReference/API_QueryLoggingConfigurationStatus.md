@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Query
 ---
 
 # QueryLoggingConfigurationStatus
-<a name="API_QueryLoggingConfigurationStatus"></a>
 
 The status information for a query logging configuration.
 

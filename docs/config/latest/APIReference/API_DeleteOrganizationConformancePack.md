@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeleteOrg
 ---
 
 # DeleteOrganizationConformancePack
-<a name="API_DeleteOrganizationConformancePack"></a>
 
 Deletes the specified organization conformance pack and all of the AWS Config rules and remediation actions from all member accounts in that organization.
 

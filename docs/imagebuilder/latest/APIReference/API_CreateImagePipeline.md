@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Cre
 ---
 
 # CreateImagePipeline
-<a name="API_CreateImagePipeline"></a>
 
 Creates a new image pipeline. Use image pipelines to automate the creation and distribution of images. You must specify exactly one recipe for the pipeline, using either a `containerRecipeArn` or an `imageRecipeArn`.
 

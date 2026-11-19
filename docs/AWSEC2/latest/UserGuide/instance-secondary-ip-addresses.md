@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-seconda
 ---
 
 # Secondary IP addresses for your EC2 instances
-<a name="instance-secondary-ip-addresses"></a>
 
 The first IPv4 address assigned to a network interface is known as the primary IP address. Secondary IP addresses are additional IPv4 address assigned to a network interface. For more information, see [Multiple IP addresses](using-instance-addressing.md#multiple-ip-addresses).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-segmentModifier-
 ---
 
 # Designing the segmentModifier
-<a name="hls-segmentModifier-design-emp"></a>
 
 Design the segmentModifiers portion of the destination path. The segmentModifier is optional, and if you include it, only the media file names include it.
 

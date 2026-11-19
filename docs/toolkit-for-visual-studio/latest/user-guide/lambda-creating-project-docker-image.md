@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Basic AWS Lambda Project Creating Docker Image
-<a name="lambda-creating-project-docker-image"></a>
 
 You can use the Toolkit for Visual Studio to deploy your AWS Lambda function as a Docker image. Using Docker, you have more control over your runtime. For example, you can choose custom runtimes like .NET 8.0. You deploy your Docker image in the same way as any other container image. This tutorial closely mimics [Tutorial: Basic Lambda Project](lambda-creating-project-in-visual-studio.md), with two differences:
 + A Dockerfile is included in the project.

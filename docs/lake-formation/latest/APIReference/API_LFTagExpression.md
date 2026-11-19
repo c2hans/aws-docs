@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_L
 ---
 
 # LFTagExpression
-<a name="API_LFTagExpression"></a>
 
 A structure consists LF-Tag expression name and catalog ID.
 

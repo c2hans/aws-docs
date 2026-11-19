@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StatementPro
 ---
 
 # StatementProperties
-<a name="API_StatementProperties"></a>
 
 The properties of the SQL statement.
 

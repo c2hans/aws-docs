@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/odbc-v2-driver-main-con
 ---
 
 # Main ODBC 2.x connection parameters
-<a name="odbc-v2-driver-main-connection-parameters"></a>
 
 The following sections describe each of the main connection parameters.
 

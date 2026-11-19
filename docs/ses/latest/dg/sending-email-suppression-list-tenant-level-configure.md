@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/sending-email-suppression-
 ---
 
 # Configuring tenant-level suppression
-<a name="sending-email-suppression-list-tenant-level-configure"></a>
 
 Configure tenant-level suppression settings to control how Amazon Simple Email Service (Amazon SES) handles bounces and complaints for individual tenants. By default, tenants use your account-level suppression list. When you enable tenant-level suppression, SES maintains a separate suppression list for each tenant. This gives you granular control over email deliverability.
 

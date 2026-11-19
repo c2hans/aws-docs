@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteDomain
 ---
 
 # DeleteDomainConfiguration
-<a name="API_DeleteDomainConfiguration"></a>
 
 Deletes the specified domain configuration.
 

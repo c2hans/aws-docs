@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Tun
 ---
 
 # Tuning Queries
-<a name="TuningQueries"></a>
 
 **Topics**
 + [Tuning Your Queries Using Composite Attributes](BoxUsageTuning.md)

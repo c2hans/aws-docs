@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_B
 ---
 
 # BatchGetTaskIdentifier
-<a name="API_BatchGetTaskIdentifier"></a>
 
 The identifiers for a task.
 

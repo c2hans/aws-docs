@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # CreateTask
-<a name="API_devicemanagement_CreateTask"></a>
 
 Instructs one or more devices to start a task, such as unlocking or rebooting.
 

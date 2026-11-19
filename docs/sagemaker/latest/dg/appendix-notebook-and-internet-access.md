@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/appendix-notebook-an
 ---
 
 # Connect a Notebook Instance in a VPC to External Resources
-<a name="appendix-notebook-and-internet-access"></a>
 
 The following topic gives information on how to connect your notebook instance in a VPC to external resources.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/logging-usin
 As of November 7, 2025, you can't create new repository associations in Amazon CodeGuru Reviewer. To learn about services with capabilities similar to CodeGuru Reviewer, see [Amazon CodeGuru Reviewer availability change](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/codeguru-reviewer-availability-change.html).
 
 # Logging CodeGuru Reviewer API calls with AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Amazon CodeGuru Reviewer is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in CodeGuru Reviewer. CloudTrail captures API calls for CodeGuru Reviewer as events. The calls captured include calls from the CodeGuru Reviewer console, the CodeGuru Reviewer AWS CLI, and code calls to the CodeGuru Reviewer API operations.
 

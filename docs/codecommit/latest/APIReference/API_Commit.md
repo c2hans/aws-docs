@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Commi
 ---
 
 # Commit
-<a name="API_Commit"></a>
 
 Returns information about a specific commit.
 

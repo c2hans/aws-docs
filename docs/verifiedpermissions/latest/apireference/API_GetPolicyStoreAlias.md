@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # GetPolicyStoreAlias
-<a name="API_GetPolicyStoreAlias"></a>
 
 Retrieves details about the specified policy store alias.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/working-with-site-site
 ---
 
 # Work with AWS Site-to-Site VPN
-<a name="working-with-site-site"></a>
 
 You can work with Site-to-Site VPN resources using the Amazon VPC console or the AWS CLI.
 

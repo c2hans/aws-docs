@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVOPS07-BP01 Implement ongoing yield optimization feedback loops
-<a name="advops07-bp01"></a>
 
  Publisher yield optimization requires feedback loops that help you inform your improvement initiatives through your operational data. Without them, publishers respond only after revenue drops occur. You can build automated yield reporting pipelines on AWS analytics services to reveal optimization opportunities early.
 

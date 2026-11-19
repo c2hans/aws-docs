@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 ---
 
 # Security
-<a name="security"></a>
 
  This section explains how to secure data by using encryption when using Amazon WorkSpaces services. It describes encryption in transit and at rest, and the use of security groups to protect network access to the WorkSpaces. This section also provides information on how to control end device access to WorkSpaces by using Trusted Devices, and IP Access Control Groups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Di
 ---
 
 # DisableNotificationsAccessForOrganization
-<a name="API_DisableNotificationsAccessForOrganization"></a>
 
 Disables service trust between AWS User Notifications and AWS Organizations.
 

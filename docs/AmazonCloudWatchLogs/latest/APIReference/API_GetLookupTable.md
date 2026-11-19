@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # GetLookupTable
-<a name="API_GetLookupTable"></a>
 
 Retrieves the full content of a lookup table, including the CSV data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_InputConfigu
 ---
 
 # InputConfigurationRequest
-<a name="API_InputConfigurationRequest"></a>
 
  The transport parameters that you want to associate with an incoming media stream.
 

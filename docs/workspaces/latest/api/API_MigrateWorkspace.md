@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_MigrateWorkspa
 ---
 
 # MigrateWorkspace
-<a name="API_MigrateWorkspace"></a>
 
 Migrates a WorkSpace from one operating system or bundle type to another, while retaining the data on the user volume.
 

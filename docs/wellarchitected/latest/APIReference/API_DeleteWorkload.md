@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # DeleteWorkload
-<a name="API_DeleteWorkload"></a>
 
 Delete an existing workload.
 

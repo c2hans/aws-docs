@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_GetM
 ---
 
 # GetMembershipAccountDetailError
-<a name="API_GetMembershipAccountDetailError"></a>
 
 ## Contents
 <a name="API_GetMembershipAccountDetailError_Contents"></a>

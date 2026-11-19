@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-feature
 ---
 
 # Elastic Beanstalk environment notifications with Amazon SNS
-<a name="using-features.managing.sns"></a>
 
 You can configure your AWS Elastic Beanstalk environment to use Amazon Simple Notification Service (Amazon SNS) to notify you of important events that affect your application. To receive emails from AWS whenever an error occurs or the health of your environment changes, specify an email address when you create an environment or later on.
 

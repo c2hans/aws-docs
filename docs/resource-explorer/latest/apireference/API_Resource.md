@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # Resource
-<a name="API_Resource"></a>
 
 A resource in AWS that AWS Resource Explorer has discovered, and for which it has stored information in the index of the AWS Region that contains the resource.
 

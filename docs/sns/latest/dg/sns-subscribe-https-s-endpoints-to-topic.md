@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-subscribe-https-s-endp
 ---
 
 # Subscribing an HTTPS endpoint to an Amazon SNS topic
-<a name="sns-subscribe-https-s-endpoints-to-topic"></a>
 
 This topic explains how to subscribe HTTP/S endpoints to Amazon SNS topics.
 

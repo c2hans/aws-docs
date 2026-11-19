@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/mkc-iam-policy
 ---
 
 # Example of IAM policy for MSK Connect
-<a name="mkc-iam-policy-examples"></a>
 
 To give a non-admin user full access to all MSK Connect functionality, attach a policy like the following one to the user's IAM role.
 

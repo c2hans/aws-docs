@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateSnapsh
 ---
 
 # CreateSnapshot
-<a name="API_CreateSnapshot"></a>
 
 Creates a snapshot of an existing Amazon FSx for OpenZFS volume. With snapshots, you can easily undo file changes and compare file versions by restoring the volume to a previous version.
 

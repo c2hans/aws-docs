@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Scalin
 ---
 
 # ScalingConfigurationOutput
-<a name="API_ScalingConfigurationOutput"></a>
 
 The scaling configuration output of a compute fleet.
 

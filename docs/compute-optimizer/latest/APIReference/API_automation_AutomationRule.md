@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # AutomationRule
-<a name="API_automation_AutomationRule"></a>
 
 Represents a complete automation rule configuration including criteria, schedule, and execution settings.
 

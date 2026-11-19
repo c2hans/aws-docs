@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/cus
 ---
 
 # Deleting question set versions and question sets
-<a name="custom-questions-delete"></a>
 
 You can't delete a version or a question set while a feed uses it. This includes archived feeds. A feed keeps its references until you delete the feed. Before you delete, update the feeds to use another version, or delete the feeds. To find the feeds that use a version, check the `references` field in the `get-question-set` response for that version.
 

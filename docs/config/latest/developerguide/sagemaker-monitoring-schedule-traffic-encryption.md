@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sagemaker-m
 ---
 
 # sagemaker-monitoring-schedule-traffic-encryption
-<a name="sagemaker-monitoring-schedule-traffic-encryption"></a>
 
 Checks if SageMaker monitoring schedules have inter-container traffic encryption enabled. The rule is NON\_COMPLIANT if MonitoringJobDefinition exists and does not have NetworkConfig defined, or EnableInterContainerTrafficEncryption is not set to true.
 

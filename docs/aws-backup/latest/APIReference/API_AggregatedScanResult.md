@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Aggre
 ---
 
 # AggregatedScanResult
-<a name="API_AggregatedScanResult"></a>
 
 Contains aggregated scan results across multiple scan operations, providing a summary of scan status and findings.
 

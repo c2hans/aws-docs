@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeDefaultQBusinessApplication
-<a name="API_DescribeDefaultQBusinessApplication"></a>
 
 Describes a Amazon Q Business application that is linked to an Quick Sight account.
 

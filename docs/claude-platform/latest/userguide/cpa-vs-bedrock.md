@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/claude-platform/latest/userguide/cpa-vs-
 ---
 
 # Claude Platform on AWS vs Amazon Bedrock
-<a name="cpa-vs-bedrock"></a>
 
 Both offerings let you use Claude through AWS, but they differ significantly in architecture, API surface, and feature availability.
 

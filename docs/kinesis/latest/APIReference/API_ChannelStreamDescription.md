@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ChannelS
 ---
 
 # ChannelStreamDescription
-<a name="API_ChannelStreamDescription"></a>
 
 Describes the source stream of a channel.
 

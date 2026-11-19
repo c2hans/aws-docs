@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_RoleTemplate
 ---
 
 # RoleTemplateVersion
-<a name="API_RoleTemplateVersion"></a>
 
 Contains information about a version of an IAM role template, including the configuration that is used to create roles with [AcquireRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_AcquireRole.html). This structure is returned as a response element by the [GetRoleTemplateVersion](https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRoleTemplateVersion.html) operation.
 

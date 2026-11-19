@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Artifa
 ---
 
 # ArtifactSource
-<a name="API_ArtifactSource"></a>
 
 A structure describing the source of an artifact.
 

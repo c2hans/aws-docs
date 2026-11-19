@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/launch
 ---
 
 # Launch device console
-<a name="launch-device-console"></a>
 
 After you set up the vehicle’s Wi-Fi connection and install required software updates, you should open the device console to verify if the vehicle’s network connection is working. Subsequently, you can launch the device console to inspect, calibrate and manage the vehicle’s other settings. The process involves signing into your vehicle’s device console using the IP address of your vehicle.
 

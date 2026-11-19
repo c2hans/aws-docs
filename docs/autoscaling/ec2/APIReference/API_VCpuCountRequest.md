@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_VCpuCou
 ---
 
 # VCpuCountRequest
-<a name="API_VCpuCountRequest"></a>
 
 Specifies the minimum and maximum for the `VCpuCount` object when you specify [InstanceRequirements](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_InstanceRequirements.html) for an Auto Scaling group.
 

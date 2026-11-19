@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/system-req
 ---
 
 # Amazon Kinesis Video Streams system requirements
-<a name="system-requirements"></a>
 
 The following sections contain hardware, software, and storage requirements for Amazon Kinesis Video Streams.
 

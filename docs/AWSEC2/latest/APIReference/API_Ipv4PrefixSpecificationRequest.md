@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Ipv4Prefi
 ---
 
 # Ipv4PrefixSpecificationRequest
-<a name="API_Ipv4PrefixSpecificationRequest"></a>
 
 Describes the IPv4 prefix option for a network interface.
 

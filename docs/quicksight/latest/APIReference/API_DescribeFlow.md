@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeFlow
-<a name="API_DescribeFlow"></a>
 
 Returns the full details of a flow for the latest version of the requested publish state.
 

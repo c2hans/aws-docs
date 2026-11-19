@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # RDSStorageEstimatedMonthlySavings
-<a name="API_RDSStorageEstimatedMonthlySavings"></a>
 
  Describes the estimated monthly savings possible for DB instance storage by adopting Compute Optimizer recommendations. This is based on DB instance pricing after applying Savings Plans discounts.
 

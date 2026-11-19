@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/view-import-hi
 ---
 
 # View the import history for your Connect Customer quick responses
-<a name="view-import-history"></a>
 
 Connect Customer retains import history for the lifetime of your knowledge base. To delete that history, you must use the [DeleteKnowledgeBase](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_DeleteKnowledgeBase.html) action to delete the knowledge base.
 

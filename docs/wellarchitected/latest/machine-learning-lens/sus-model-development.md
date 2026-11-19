@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Model development
-<a name="sus-model-development"></a>
 
 **Topics**
 + [MLSUS04-BP01 Define sustainable performance criteria](mlsus04-bp01.md)

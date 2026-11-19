@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platfo
 ---
 
 # Legacy platforms
-<a name="platform-history-legacy"></a>
 
 **Topics**
 + [Multicontainer Docker platform history](platform-history-docker-multi.md)

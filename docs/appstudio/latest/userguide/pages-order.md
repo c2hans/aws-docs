@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/pages-order.h
 ---
 
 # Ordering and organizing pages in the app navigation
-<a name="pages-order"></a>
 
 This topic includes information about reordering and organizing pages in App Studio applications. There are two areas of the product where app pages are seen: in the left-hand **Pages** menu while editing the app in the application studio, and the left-hand navigation of a preview of published app.
 

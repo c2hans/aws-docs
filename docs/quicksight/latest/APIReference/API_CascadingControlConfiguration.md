@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Casca
 ---
 
 # CascadingControlConfiguration
-<a name="API_CascadingControlConfiguration"></a>
 
 The values that are displayed in a control can be configured to only show values that are valid based on what's selected in other controls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ImportCertif
 ---
 
 # ImportCertificate
-<a name="API_ImportCertificate"></a>
 
 Uploads the specified certificate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.htm
 ---
 
 # Pass session tags in AWS STS
-<a name="id_session-tags"></a>
 
 Session tags are key-value pair attributes that you pass when you assume an IAM role or federate a user in AWS STS. You do this by making an AWS CLI or AWS API request through AWS STS or through your identity provider (IdP). When you use AWS STS to request temporary security credentials, you generate a session. Sessions expire and have [credentials](https://docs.aws.amazon.com/STS/latest/APIReference/API_Credentials.html), such as an access key pair and a session token. When you use the session credentials to make a subsequent request, the [request context](reference_policies_elements_condition.md#AccessPolicyLanguage_RequestContext) includes the `aws:PrincipalTag` context key. You can use the `aws:PrincipalTag` key in the `Condition` element of your policies to allow or deny access based on those tags.
 

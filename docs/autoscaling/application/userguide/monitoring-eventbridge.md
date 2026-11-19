@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/monito
 ---
 
 # Monitor Application Auto Scaling events using Amazon EventBridge
-<a name="monitoring-eventbridge"></a>
 
 Amazon EventBridge, formerly called CloudWatch Events, helps you monitor events that are specific to Application Auto Scaling and initiate target actions that use other AWS services. Events from AWS services are delivered to EventBridge in near real time.
 

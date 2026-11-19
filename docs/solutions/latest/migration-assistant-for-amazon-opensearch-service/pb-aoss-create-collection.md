@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 2: Create the collection
-<a name="pb-aoss-create-collection"></a>
 
 With the policies in place, create the vector-search collection:
 

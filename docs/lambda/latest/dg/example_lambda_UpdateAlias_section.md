@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_lambda_UpdateAl
 ---
 
 # Use `UpdateAlias` with a CLI
-<a name="example_lambda_UpdateAlias_section"></a>
 
 The following code examples show how to use `UpdateAlias`.
 

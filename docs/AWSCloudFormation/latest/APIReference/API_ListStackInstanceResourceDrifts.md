@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ListStackInstanceResourceDrifts
-<a name="API_ListStackInstanceResourceDrifts"></a>
 
 Returns drift information for resources in a stack instance.
 

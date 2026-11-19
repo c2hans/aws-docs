@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # UpdateProtectConfiguration
-<a name="API_UpdateProtectConfiguration"></a>
 
 Update the setting for an existing protect configuration.
 

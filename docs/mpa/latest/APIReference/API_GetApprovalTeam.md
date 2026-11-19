@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_GetApprovalT
 ---
 
 # GetApprovalTeam
-<a name="API_GetApprovalTeam"></a>
 
 Returns details for an approval team.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Using ANTLR parse cache in Babelfish
-<a name="babelfish-procedure-parse-cache"></a>
 
 Starting with Babelfish versions 5.7.0 and 6.2.0, you can use a persistent ANTLR parse result cache for T-SQL stored routines (procedures and functions) to reduce first-execution latency.
 

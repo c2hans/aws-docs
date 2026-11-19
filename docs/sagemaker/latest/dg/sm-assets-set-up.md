@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sm-assets-set-up.htm
 ---
 
 # Set up SageMaker Assets (administrator guide)
-<a name="sm-assets-set-up"></a>
 
 **Important**
 SageMaker Assets is only available in Amazon SageMaker Studio. If you're using Amazon SageMaker Studio Classic, you must migrate to Studio. For more information about Studio and Studio Classic, see [Machine learning environments offered by Amazon SageMaker AI](machine-learning-environments.md). For information about migrating, see [Migration from Amazon SageMaker Studio Classic](studio-updated-migrate.md).

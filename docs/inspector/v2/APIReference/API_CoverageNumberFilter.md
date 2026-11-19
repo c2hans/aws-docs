@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CoverageNu
 ---
 
 # CoverageNumberFilter
-<a name="API_CoverageNumberFilter"></a>
 
 The coverage number to be used in the filter.
 

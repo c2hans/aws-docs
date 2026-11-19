@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cloudtrail-
 ---
 
 # cloudtrail-enabled
-<a name="cloudtrail-enabled"></a>
 
 **Important**
 For this rule, the rule identifier (CLOUD\_TRAIL\_ENABLED) and rule name (cloudtrail-enabled) are different.

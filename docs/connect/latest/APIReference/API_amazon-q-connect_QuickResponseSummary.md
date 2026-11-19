@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # QuickResponseSummary
-<a name="API_amazon-q-connect_QuickResponseSummary"></a>
 
 The summary information about the quick response.
 

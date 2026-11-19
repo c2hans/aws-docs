@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ContentConfiguration
-<a name="API_ContentConfiguration"></a>
 
 Defines what content to stream and at what level of detail.
 

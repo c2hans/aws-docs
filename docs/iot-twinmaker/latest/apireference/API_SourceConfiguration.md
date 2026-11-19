@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_So
 ---
 
 # SourceConfiguration
-<a name="API_SourceConfiguration"></a>
 
 The source configuration.
 

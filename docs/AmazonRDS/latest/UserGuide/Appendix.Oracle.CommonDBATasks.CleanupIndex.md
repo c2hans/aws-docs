@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Cleaning up interrupted online index builds
-<a name="Appendix.Oracle.CommonDBATasks.CleanupIndex"></a>
 
 To clean up failed online index builds, use the Amazon RDS procedure `rdsadmin.rdsadmin_dbms_repair.online_index_clean`.
 

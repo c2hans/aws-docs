@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/testgrid/security.html
 ---
 
 # Security in Device Farm desktop browser testing
-<a name="security"></a>
 
 This section describes data collection and how to control access to resources when you use browser testing in AWS Device Farm.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Enti
 ---
 
 # Entity
-<a name="API_Entity"></a>
 
 An entity contains data that describes your product, its supported features, and how it can be used or launched by your customer.
 

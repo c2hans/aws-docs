@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CheckpointUpdatedE
 ---
 
 # CheckpointUpdatedExecutionState
-<a name="API_CheckpointUpdatedExecutionState"></a>
 
 Contains operations that have been updated since the last checkpoint, such as completed asynchronous work like timers or callbacks.
 

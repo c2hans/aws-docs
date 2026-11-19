@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_ListEnvironm
 ---
 
 # ListEnvironmentHosts
-<a name="API_ListEnvironmentHosts"></a>
 
 List the hosts within an environment.
 

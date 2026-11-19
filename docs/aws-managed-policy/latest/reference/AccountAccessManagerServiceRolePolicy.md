@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Acco
 ---
 
 # AccountAccessManagerServiceRolePolicy
-<a name="AccountAccessManagerServiceRolePolicy"></a>
 
 **Description**: Grants account access manager permissions to manage AWS account access
 

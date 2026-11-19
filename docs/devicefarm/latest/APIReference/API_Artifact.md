@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Artif
 ---
 
 # Artifact
-<a name="API_Artifact"></a>
 
 Represents the output of a test. Examples of artifacts include logs and screenshots.
 

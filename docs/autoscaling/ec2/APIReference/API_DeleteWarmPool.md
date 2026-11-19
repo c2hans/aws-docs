@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DeleteW
 ---
 
 # DeleteWarmPool
-<a name="API_DeleteWarmPool"></a>
 
 Deletes the warm pool for the specified Auto Scaling group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListPartnerAccounts
-<a name="API_ListPartnerAccounts"></a>
 
 Lists the partner accounts associated with your AWS account.
 

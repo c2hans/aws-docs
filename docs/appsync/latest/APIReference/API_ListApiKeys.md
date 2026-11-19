@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_ListApiK
 ---
 
 # ListApiKeys
-<a name="API_ListApiKeys"></a>
 
 Lists the API keys for a given API.
 

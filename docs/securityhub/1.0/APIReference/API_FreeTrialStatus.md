@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_FreeTri
 ---
 
 # FreeTrialStatus
-<a name="API_FreeTrialStatus"></a>
 
 The free trial period for a Security Hub feature, and whether the trial is currently active.
 

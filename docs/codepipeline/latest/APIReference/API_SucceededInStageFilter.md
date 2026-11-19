@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Suc
 ---
 
 # SucceededInStageFilter
-<a name="API_SucceededInStageFilter"></a>
 
 Filter for pipeline executions that have successfully completed the stage in the current pipeline version.
 

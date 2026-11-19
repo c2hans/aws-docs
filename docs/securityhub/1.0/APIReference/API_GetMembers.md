@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetMemb
 ---
 
 # GetMembers
-<a name="API_GetMembers"></a>
 
 Returns the details for the Security Hub CSPM member accounts for the specified account IDs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateMo
 ---
 
 # CreateModelCustomizationJob
-<a name="API_CreateModelCustomizationJob"></a>
 
 Creates a fine-tuning job to customize a base model.
 

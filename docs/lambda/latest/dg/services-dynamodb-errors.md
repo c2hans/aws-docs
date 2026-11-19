@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/services-dynamodb-error
 ---
 
 # Retain discarded records for a DynamoDB event source in Lambda
-<a name="services-dynamodb-errors"></a>
 
 Error handling for DynamoDB event source mappings depends on whether the error occurs before the Event Function is invoked or during function invocation:
 + **Before invocation:** If a Lambda event source mapping is unable to invoke the function due to throttling or other issues, it retries until the records expire or exceed the maximum age configured on the event source mapping ([MaximumRecordAgeInSeconds](https://docs.aws.amazon.com/lambda/latest/api/API_CreateEventSourceMapping.html#lambda-CreateEventSourceMapping-request-MaximumRecordAgeInSeconds)).

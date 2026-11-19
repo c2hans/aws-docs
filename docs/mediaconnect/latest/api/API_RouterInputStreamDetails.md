@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterInputS
 ---
 
 # RouterInputStreamDetails
-<a name="API_RouterInputStreamDetails"></a>
 
 Configuration details for the router input stream.
 

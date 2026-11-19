@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/multiaz-ec2-r
 ---
 
 # Automatically connecting an EC2 instance and a Multi-AZ DB cluster
-<a name="multiaz-ec2-rds-connect"></a>
 
 You can use the Amazon RDS console to simplify setting up a connection between an Amazon Elastic Compute Cloud (Amazon EC2) instance and a Multi-AZ DB cluster. Often, your Multi-AZ DB cluster is in a private subnet and your EC2 instance is in a public subnet within a VPC. You can use a SQL client on your EC2 instance to connect to your Multi-AZ DB cluster. The EC2 instance can also run web servers or applications that access your private Multi-AZ DB cluster.
 

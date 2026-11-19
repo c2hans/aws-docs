@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys
 ---
 
 # Step 1: Create an AWS KMS key without key material
-<a name="importing-keys-create-cmk"></a>
 
 By default, AWS KMS creates key material for you when you create a KMS key. To import your own key material instead, start by creating a KMS key with no key material. Then import the key material. To create a KMS key with no key material, use AWS KMS console or the [CreateKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html) operation.
 

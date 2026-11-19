@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-u
 ---
 
 # Replicate a user with CloudHSM CLI
-<a name="cloudhsm_cli-user-replicate"></a>
 
 Use the **user replicate** command in CloudHSM CLI to replicate a user from a source AWS CloudHSM cluster to a destination AWS CloudHSM cluster.
 

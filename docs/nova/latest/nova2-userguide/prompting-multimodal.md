@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/prompting-mu
 ---
 
 # Prompting multimodal inputs
-<a name="prompting-multimodal"></a>
 
 The following sections provide guidance for image and video understanding. For audio-related prompting, refer to the [Voice conversation prompts](sonic-system-prompts.md) section.
 

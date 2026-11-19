@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Updat
 ---
 
 # UpdateRestoreTestingSelection
-<a name="API_UpdateRestoreTestingSelection"></a>
 
 Updates the specified restore testing selection.
 

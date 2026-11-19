@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_OpenIDCo
 ---
 
 # OpenIDConnectConfig
-<a name="API_OpenIDConnectConfig"></a>
 
 Describes an OpenID Connect (OIDC) configuration.
 

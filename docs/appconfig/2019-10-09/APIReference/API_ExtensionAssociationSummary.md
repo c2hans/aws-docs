@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_Ex
 ---
 
 # ExtensionAssociationSummary
-<a name="API_ExtensionAssociationSummary"></a>
 
 Information about an association between an extension and an AWS AppConfig resource such as an application, environment, or configuration profile. Call `GetExtensionAssociation` to get more information about an association.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Step 3. Identify your data access patterns
-<a name="step3"></a>
 
 ## Objective
 <a name="obj3"></a>

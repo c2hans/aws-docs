@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateDataRe
 ---
 
 # CreateDataRepositoryTask
-<a name="API_CreateDataRepositoryTask"></a>
 
 Creates an Amazon FSx for Lustre data repository task. A `CreateDataRepositoryTask` operation will fail if a data repository is not linked to the FSx file system.
 

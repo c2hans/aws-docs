@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # VersionDifferences
-<a name="API_VersionDifferences"></a>
 
 The differences between the base and latest versions of the lens.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/accessingmetrics.html
 ---
 
 # Accessing CloudWatch metrics for Amazon EFS
-<a name="accessingmetrics"></a>
 
 You can view Amazon EFS metrics for CloudWatch in several ways:
 + In the Amazon EFS console

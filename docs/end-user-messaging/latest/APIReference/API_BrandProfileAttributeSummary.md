@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/APIReference/A
 ---
 
 # BrandProfileAttributeSummary
-<a name="API_BrandProfileAttributeSummary"></a>
 
 Contains summary information about a brand profile attribute in a list response.
 

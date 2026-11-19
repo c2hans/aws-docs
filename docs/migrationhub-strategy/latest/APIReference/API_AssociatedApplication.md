@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # AssociatedApplication
-<a name="API_AssociatedApplication"></a>
 
  Object containing details about applications as defined in Application Discovery Service.
 

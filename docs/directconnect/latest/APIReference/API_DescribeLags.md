@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DescribeLags
-<a name="API_DescribeLags"></a>
 
 Describes all your link aggregation groups (LAG) or the specified LAG.
 

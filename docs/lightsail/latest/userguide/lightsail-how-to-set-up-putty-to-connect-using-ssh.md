@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-how
 ---
 
 # Connect to your Lightsail Linux instance with PuTTY
-<a name="lightsail-how-to-set-up-putty-to-connect-using-ssh"></a>
 
 You can use an SSH client like PuTTY to connect to your Amazon Lightsail instance. PuTTY requires a copy of your private SSH key. You might already have a key, or you might want to use the key pair that Lightsail creates. Either way, we've got you covered. For more information about SSH, see [SSH key pairs](understanding-ssh-in-amazon-lightsail.md). This topic walks you through the steps to download a key pair and set up PuTTY to connect to your instance.
 

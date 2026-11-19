@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-walkth
 ---
 
 # Example 1: Bucket owner granting its users bucket permissions
-<a name="example-walkthroughs-managing-access-example1"></a>
 
 **Important**
 Granting permissions to IAM roles is a better practice than granting permissions to individual users.For more information about how to grant permissions to IAM roles, see [Understanding cross-account permissions and using IAM roles](example-walkthroughs-managing-access-example4.md#access-policies-walkthrough-example4-overview).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-fi
 ---
 
 # Remediating exposure findings
-<a name="exposure-findings-remediate"></a>
 
  The topics in this section describe remediation steps for exposure findings across different AWS services.
 

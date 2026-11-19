@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Comp
 ---
 
 # ComputeConfiguration
-<a name="API_ComputeConfiguration"></a>
 
  The configuration of the compute resources for an analysis with the Spark analytics engine.
 

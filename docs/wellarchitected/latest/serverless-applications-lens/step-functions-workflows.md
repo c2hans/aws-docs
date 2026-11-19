@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 ---
 
 # AWS Step Functions Express Workflows
-<a name="step-functions-workflows"></a>
 
 When you are creating a workflow with AWS Step Functions you will be given two options for the type of workflow that you want to create: Standard or Express.
 

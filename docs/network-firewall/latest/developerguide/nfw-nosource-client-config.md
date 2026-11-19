@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/n
 ---
 
 # Configuring workloads for the proxy
-<a name="nfw-nosource-client-config"></a>
 
 You can direct HTTP and HTTPS traffic from your workloads to the firewall's proxy listener. The firewall receives HTTP CONNECT requests, evaluates the requested domain against your security rules, and establishes connections to allowed destinations on behalf of the client.
 

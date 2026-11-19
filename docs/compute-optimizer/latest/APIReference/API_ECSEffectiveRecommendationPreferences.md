@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ECSEffectiveRecommendationPreferences
-<a name="API_ECSEffectiveRecommendationPreferences"></a>
 
  Describes the effective recommendation preferences for Amazon ECS services.
 

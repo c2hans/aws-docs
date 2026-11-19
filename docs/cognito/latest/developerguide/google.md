@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/google.htm
 ---
 
 # Setting up Google as an identity pool IdP
-<a name="google"></a>
 
 Amazon Cognito identity pools work with Google to provide federated authentication for your mobile application users. This section explains how to register and set up your application with Google as an IdP.
 

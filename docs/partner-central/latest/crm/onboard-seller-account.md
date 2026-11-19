@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/onboard-selle
 ---
 
 # Onboarding an AWS Seller account
-<a name="onboard-seller-account"></a>
 
 The following steps explain how to onboard AWS Seller accounts to the CRM connector.
 

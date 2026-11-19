@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UsageR
 ---
 
 # UsageResourceResult
-<a name="API_UsageResourceResult"></a>
 
 Contains information on the sum of usage based on an AWS resource.
 

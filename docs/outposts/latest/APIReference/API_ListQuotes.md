@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_ListQuo
 ---
 
 # ListQuotes
-<a name="API_ListQuotes"></a>
 
 Lists the quotes for your AWS account.
 

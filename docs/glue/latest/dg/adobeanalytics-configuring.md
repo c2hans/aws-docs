@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/adobeanalytics-configurin
 ---
 
 # Configuring Adobe Analytics
-<a name="adobeanalytics-configuring"></a>
 
 Before you can use AWS Glue to transfer from Adobe Analytics, you must meet the following requirements:
 

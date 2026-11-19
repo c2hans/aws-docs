@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_SplitOperati
 ---
 
 # SplitOperation
-<a name="API_SplitOperation"></a>
 
 An operation that splits a construct into multiple constructs with different CIDR blocks.
 

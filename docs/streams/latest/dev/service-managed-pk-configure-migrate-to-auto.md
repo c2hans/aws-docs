@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/service-managed-pk-co
 ---
 
 # Migrate from user-managed to service-managed (USER\_PARTITION\_KEY → AUTO)
-<a name="service-managed-pk-configure-migrate-to-auto"></a>
 
 Follow these steps to safely enable service-managed record distribution on a production stream:
 

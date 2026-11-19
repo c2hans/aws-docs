@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SEC 9. How do you protect your data in transit?
-<a name="sec-09"></a>
 
 Protect your data in transit by implementing multiple controls to reduce the risk of unauthorized access or loss.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DayOfWeek.ht
 ---
 
 # DayOfWeek
-<a name="API_DayOfWeek"></a>
 
 An enumeration of days of the week used for scheduling maintenance windows.
 

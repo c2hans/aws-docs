@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/getting-started-step
 ---
 
 # Step 2: Set up the downstream system
-<a name="getting-started-step2"></a>
 
 In this tutorial, the downstream system (the destination for the output from MediaLive) is AWS Elemental MediaPackage.
 

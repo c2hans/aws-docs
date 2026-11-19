@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Overlay an image
-<a name="overlay-an-image"></a>
 
 This solution can overlay images on top of others, for cases like watermarking a copyrighted image. To overlay an image, add the **overlayWith** property to the **edits** property in the [image request](use-the-solution-with-a-frontend-application.md).
 

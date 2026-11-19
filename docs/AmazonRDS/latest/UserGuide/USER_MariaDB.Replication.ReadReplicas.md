@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_MariaDB.
 ---
 
 # Working with MariaDB read replicas
-<a name="USER_MariaDB.Replication.ReadReplicas"></a>
 
 Following, you can find specific information about working with read replicas on Amazon RDS for MariaDB. For general information about read replicas and instructions for using them, see [Working with DB instance read replicas](USER_ReadRepl.md).
 + [Configuring replication filters with MariaDB](USER_MariaDB.Replication.ReadReplicas.ReplicationFilters.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_AvailabilityZoneDeta
 ---
 
 # AvailabilityZoneDetail
-<a name="API_AvailabilityZoneDetail"></a>
 
 A list of Availability Zones corresponding to the segments in a trace.
 

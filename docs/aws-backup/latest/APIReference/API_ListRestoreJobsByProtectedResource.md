@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListR
 ---
 
 # ListRestoreJobsByProtectedResource
-<a name="API_ListRestoreJobsByProtectedResource"></a>
 
 This returns restore jobs that contain the specified protected resource.
 

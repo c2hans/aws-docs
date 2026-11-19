@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_E
 ---
 
 # Ec2EbsVolume
-<a name="API_Ec2EbsVolume"></a>
 
 Specifies the EBS volume.
 

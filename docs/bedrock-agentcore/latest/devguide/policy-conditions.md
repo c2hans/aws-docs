@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 ---
 
 # Policy conditions
-<a name="policy-conditions"></a>
 
 Conditions add fine-grained logic to policies using `when` and `unless` clauses:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Post
 ---
 
 # Managing spatial data with the PostGIS extension
-<a name="Appendix.PostgreSQL.CommonDBATasks.PostGIS"></a>
 
 PostGIS is an extension to PostgreSQL for storing and managing spatial information. To learn more about PostGIS, see [PostGIS.net](https://postgis.net/).
 

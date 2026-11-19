@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMechanicalTurkFullAccess
-<a name="AmazonMechanicalTurkFullAccess"></a>
 
 **Description**: Provides full access to all APIs in Amazon Mechanical Turk.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_EmailInsi
 ---
 
 # EmailInsights
-<a name="API_EmailInsights"></a>
 
 An email's insights contain metadata and delivery information about a specific email.
 

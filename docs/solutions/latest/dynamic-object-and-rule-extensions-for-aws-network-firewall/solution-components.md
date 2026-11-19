@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 ---
 
 # Solution components
-<a name="solution-components"></a>
 
 ## Amazon DynamoDB
 <a name="amazon-dynamodb"></a>

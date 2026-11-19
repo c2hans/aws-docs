@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/net.html
 ---
 
 # .net
-<a name="net"></a>
 
 Used for all types of websites. The .net extension is an abbreviation of network.
 

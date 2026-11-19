@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # TelemetryRule
-<a name="API_TelemetryRule"></a>
 
  Defines how telemetry should be configured for specific AWS resources.
 

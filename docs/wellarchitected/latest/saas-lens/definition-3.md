@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/definit
 ---
 
 # Definition
-<a name="definition-3"></a>
 
  There are four best practice areas for performance efficiency in the cloud:
 +  Selection (compute, storage, database, network)

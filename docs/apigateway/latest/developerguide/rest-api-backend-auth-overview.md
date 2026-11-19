@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # How backend client certificate authentication works
-<a name="rest-api-backend-auth-overview"></a>
 
 With outbound mutual TLS (mTLS), API Gateway acts as a TLS client. It presents a client certificate to your backend server when it connects. Your backend checks this certificate to confirm that requests come from API Gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/migr
 ---
 
 # Step E: Upgrade nodes
-<a name="migrate-std-upgrade-nodes"></a>
 
 ## Upgrade the worker nodes
 <a name="migrate-std-upgrade-workers"></a>

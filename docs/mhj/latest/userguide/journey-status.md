@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mhj/latest/userguide/journey-status.html
 AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
 
 # Journey status
-<a name="journey-status"></a>
 
 A migration journey can have any of the status values that appear in the following table. For information about how to change the status of a journey, see [Updating a journey](journey-updates.md).
 

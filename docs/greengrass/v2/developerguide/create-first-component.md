@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/create-firs
 ---
 
 # Step 4: Develop and test a component on your device
-<a name="create-first-component"></a>
 
 A component is a software module that runs on AWS IoT Greengrass core devices. Components enable you to create and manage complex applications as discrete building blocks that you can reuse from one Greengrass core device to another. Every component is composed of a *recipe* and *artifacts*.
 + <a name="component-recipe-definition"></a>**Recipes**

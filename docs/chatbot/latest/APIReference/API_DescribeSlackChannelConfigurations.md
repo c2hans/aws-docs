@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_Describe
 ---
 
 # DescribeSlackChannelConfigurations
-<a name="API_DescribeSlackChannelConfigurations"></a>
 
 Lists Slack channel configurations optionally filtered by ChatConfigurationArn
 

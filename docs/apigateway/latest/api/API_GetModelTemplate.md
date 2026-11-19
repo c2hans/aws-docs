@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetModelTempla
 ---
 
 # GetModelTemplate
-<a name="API_GetModelTemplate"></a>
 
 Generates a sample mapping template that can be used to transform a payload into the structure of a model.
 

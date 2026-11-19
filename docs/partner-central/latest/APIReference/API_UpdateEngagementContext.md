@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # UpdateEngagementContext
-<a name="API_UpdateEngagementContext"></a>
 
 Updates the context information for an existing engagement with new or modified data.
 

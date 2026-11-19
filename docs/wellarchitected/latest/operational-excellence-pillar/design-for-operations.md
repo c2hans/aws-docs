@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Design for operations
-<a name="design-for-operations"></a>
 
 Adopt approaches that improve the flow of changes into production and that help refactoring, fast feedback on quality, and bug fixing. These accelerate beneficial changes entering production, limit issues deployed, and provide rapid identification and remediation of issues introduced through deployment activities.
 

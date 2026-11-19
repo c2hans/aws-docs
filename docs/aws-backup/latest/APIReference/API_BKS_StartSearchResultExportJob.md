@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_S
 ---
 
 # StartSearchResultExportJob
-<a name="API_BKS_StartSearchResultExportJob"></a>
 
 This operations starts a job to export the results of search job to a designated S3 bucket.
 

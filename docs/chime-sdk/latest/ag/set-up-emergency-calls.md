@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/set-up-emergency-cal
 ---
 
 # Setting up emergency calling
-<a name="set-up-emergency-calls"></a>
 
 The Amazon Chime SDK provides two ways to set up emergency calls. Both methods only apply to calls made in or to the U.S.
 + **Validated addresses** – Enter and validate the physical address that calls may come from. If you choose this option, the validated address becomes available for all Amazon Chime SDK Voice Connectors and must be added to the SIP INVITE for emergency calls by following the instructions in [Using PIDF-LO in emergency calls](use-pidf-lo.md). The Amazon Chime SDK then routes calls to the nearest Public Safety Answering Point.

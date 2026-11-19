@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_X12Acknowle
 ---
 
 # X12AcknowledgmentOptions
-<a name="API_X12AcknowledgmentOptions"></a>
 
 Contains options for configuring X12 acknowledgments. These options control how functional and technical acknowledgments are handled.
 

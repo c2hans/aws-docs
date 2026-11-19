@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/sy
 ---
 
 # Synchronize data between Amazon EFS file systems in different AWS Regions by using AWS DataSync
-<a name="synchronize-data-between-amazon-efs-file-systems-in-different-aws-regions-by-using-aws-datasync"></a>
 
 *Sarat Chandra Pothula and Aditya Ambati, Amazon Web Services*
 

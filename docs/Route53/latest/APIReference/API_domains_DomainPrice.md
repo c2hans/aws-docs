@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # DomainPrice
-<a name="API_domains_DomainPrice"></a>
 
 Information about the prices associated with a TLD or a domain name.
 

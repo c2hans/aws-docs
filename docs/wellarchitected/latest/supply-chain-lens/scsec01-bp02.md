@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCSEC01-BP02 Use cloud services to maintain security controls while scaling your supply chain environment
-<a name="scsec01-bp02"></a>
 
  Using cloud security services enables organizations to implement consistent, automated security controls that scale seamlessly with dynamic supply chain environments. These services provide built-in capabilities for threat detection, data protection, identity management, and compliance monitoring across your entire supply chain environment.
 

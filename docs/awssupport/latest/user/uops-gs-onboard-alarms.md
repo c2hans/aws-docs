@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/uops-gs-onboard-a
 ---
 
 # Unified Operations Getting started: Onboard critical alarms to rapid incident management
-<a name="uops-gs-onboard-alarms"></a>
 
 To help quickly notify you of critical incidents, complete the following steps to onboard your alarms to AWS Incident Detection and Response
 

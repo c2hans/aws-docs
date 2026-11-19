@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Devic
 ---
 
 # DevicePositionUpdate
-<a name="API_DevicePositionUpdate"></a>
 
 Contains the position update details for a device.
 

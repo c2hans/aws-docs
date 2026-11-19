@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/how-tnb-works.html
 ---
 
 # How AWS TNB works
-<a name="how-tnb-works"></a>
 
 AWS TNB integrates with standardized end-to-end orchestrators and AWS resources to operate full 5G networks.
 

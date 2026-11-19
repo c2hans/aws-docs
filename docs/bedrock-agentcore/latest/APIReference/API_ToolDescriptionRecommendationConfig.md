@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ToolDescriptionRecommendationConfig
-<a name="API_ToolDescriptionRecommendationConfig"></a>
 
 Configuration for generating tool description optimization recommendations.
 

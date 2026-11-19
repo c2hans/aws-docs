@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-remote-decorat
 ---
 
 # Run your local code as a SageMaker training job
-<a name="train-remote-decorator"></a>
 
 You can run your local machine learning (ML) Python code as a large single-node Amazon SageMaker training job or as multiple parallel jobs. You can do this by annotating your code with an @remote decorator, as shown in the following code example. [Distributed training](https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-training.html) (across multiple instances) are not supported with remote functions.
 

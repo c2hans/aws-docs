@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/box-s
 ---
 
 # Source configuration for Box
-<a name="box-source-config"></a>
 
 ## Prerequisites
 <a name="box-prerequisites"></a>

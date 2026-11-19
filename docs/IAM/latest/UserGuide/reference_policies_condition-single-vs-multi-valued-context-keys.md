@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_
 ---
 
 # Single-valued vs. multivalued context keys
-<a name="reference_policies_condition-single-vs-multi-valued-context-keys"></a>
 
 The difference between single-valued and multivalued context keys lies in the number of values in the [request context](intro-structure.md#intro-structure-request), not the number of values in the policy condition.
 + *Single-valued* condition context keys have at most one value in the request context. For example, when you tag resources in AWS, each resource tag is stored as a key-value pair. Since a resource tag key can have only a single tag value, [aws:ResourceTag/*tag-key*](reference_policies_condition-keys.md#condition-keys-resourcetag) is a single-valued context key. Do not use a condition set operator with a single-valued context key.

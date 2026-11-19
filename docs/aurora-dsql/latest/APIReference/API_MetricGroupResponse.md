@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/APIReference/API_Metr
 ---
 
 # MetricGroupResponse
-<a name="API_MetricGroupResponse"></a>
 
 A metric group that you enabled for advanced monitoring on a cluster.
 

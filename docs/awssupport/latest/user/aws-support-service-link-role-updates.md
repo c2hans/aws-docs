@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/aws-support-servi
 ---
 
 # Permission changes for AWSSupportServiceRolePolicy
-<a name="aws-support-service-link-role-updates"></a>
 
 Most permissions added to `AWSSupportServiceRolePolicy` allow AWS Support to call an API operation with the same name. However, some API operations require permissions that have a different name.
 

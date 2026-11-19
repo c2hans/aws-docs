@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Promot
 ---
 
 # PromoteReadReplicaDBCluster
-<a name="API_PromoteReadReplicaDBCluster"></a>
 
 Promotes a read replica DB cluster to a standalone DB cluster.
 

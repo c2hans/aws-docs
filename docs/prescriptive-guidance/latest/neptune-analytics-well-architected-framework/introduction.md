@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/neptune-ana
 ---
 
 # Applying the AWS Well-Architected Framework for Amazon Neptune Analytics
-<a name="introduction"></a>
 
 *Michael Havey and Renuka Uttarala, Amazon Web Services*
 

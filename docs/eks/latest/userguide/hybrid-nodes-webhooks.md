@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-webhoo
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Configure webhooks for hybrid nodes
-<a name="hybrid-nodes-webhooks"></a>
 
 This page details considerations for running webhooks with hybrid nodes. Webhooks are used in Kubernetes applications and open source projects, such as the AWS Load Balancer Controller and CloudWatch Observability Agent, to perform mutating and validation capabilities at runtime.
 

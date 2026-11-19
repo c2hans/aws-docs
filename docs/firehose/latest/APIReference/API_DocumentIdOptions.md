@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Documen
 ---
 
 # DocumentIdOptions
-<a name="API_DocumentIdOptions"></a>
 
 Indicates the method for setting up document ID. The supported methods are Firehose generated document ID and OpenSearch Service generated document ID.
 

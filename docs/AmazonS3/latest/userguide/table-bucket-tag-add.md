@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/table-bucket-t
 ---
 
 # Adding a tag to a table bucket
-<a name="table-bucket-tag-add"></a>
 
 You can add tags to Amazon S3 table buckets and modify these tags. For more information about tagging table buckets, see [Using tags with S3 table buckets](table-bucket-tagging.md).
 

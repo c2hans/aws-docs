@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_V
 ---
 
 # Value
-<a name="API_Value"></a>
 
 Contains the value of a column.
 
@@ -18,7 +17,7 @@ This data type is a UNION, so only one of the following members can be specified
 
  ** arrayValues **   <a name="rdsdtataservice-Type-Value-arrayValues"></a>
 An array of column values.
-Type: Array of [Value](#API_Value) objects
+Type: Array of [Value](API_Value.md) objects
 Required: No
 
  ** bigIntValue **   <a name="rdsdtataservice-Type-Value-bigIntValue"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ListTagsForR
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 List the tags for an Amazon EKS resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Labeli
 ---
 
 # LabelingJobForWorkteamSummary
-<a name="API_LabelingJobForWorkteamSummary"></a>
 
 Provides summary information for a work team.
 

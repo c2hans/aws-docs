@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # SystemPromptConfig
-<a name="API_SystemPromptConfig"></a>
 
 The system prompt input, either as inline text or from a configuration bundle.
 

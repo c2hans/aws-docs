@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/develop-local-docker-imag
 ---
 
 # Develop and test AWS Glue jobs locally using a Docker image
-<a name="develop-local-docker-image"></a>
 
  For a production-ready data platform, the development process and CI/CD pipeline for AWS Glue jobs is a key topic. You can flexibly develop and test AWS Glue jobs in a Docker container. AWS Glue hosts Docker images on Amazon ECR Public Gallery and Docker Hub to set up your development environment with additional utilities. You can use your preferred IDE, notebook, or REPL using AWS Glue ETL library. This topic describes how to develop and test AWS Glue version 6.0 jobs in a Docker container using a Docker image.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Configure mutual TLS authentication for applications running on Amazon EKS
-<a name="configure-mutual-tls-authentication-for-applications-running-on-amazon-eks"></a>
 
 *Mahendra Revanasiddappa, Amazon Web Services*
 

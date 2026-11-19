@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_P
 ---
 
 # ParameterFilterExpression
-<a name="API_ParameterFilterExpression"></a>
 
 The details of a filtered search for parameters.
 

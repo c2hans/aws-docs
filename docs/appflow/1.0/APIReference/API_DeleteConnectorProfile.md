@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_DeleteConne
 ---
 
 # DeleteConnectorProfile
-<a name="API_DeleteConnectorProfile"></a>
 
  Enables you to delete an existing connector profile.
 

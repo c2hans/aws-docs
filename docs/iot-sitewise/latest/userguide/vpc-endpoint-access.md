@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/vpc-endpoi
 ---
 
 # Access AWS IoT SiteWise through an interface VPC endpoint
-<a name="vpc-endpoint-access"></a>
 
 When you create an interface endpoint, we generate endpoint-specific DNS hostnames that you can use to communicate with AWS IoT SiteWise. The private DNS option is enabled by default. For more information, see [Using private hosted zones](https://docs.aws.amazon.com/vpc/latest/userguide/AmazonDNS-concepts.html#vpc-private-hosted-zones) in the *Amazon VPC User Guide*.
 

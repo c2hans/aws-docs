@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ExternalMetricsPreference
-<a name="API_ExternalMetricsPreference"></a>
 
  Describes the external metrics preferences for EC2 rightsizing recommendations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/plan-network-sizing
 ---
 
 # Plan your VPC and VLAN subnets
-<a name="plan-network-sizing"></a>
 
 Your Amazon Elastic VMware Service environment uses address space from one VPC CIDR block for the service access subnet and the 10 VLAN subnets that Amazon EVS creates. Size this space for the hosts and VMware Cloud Foundation (VCF) management appliances that you plan to run over the lifetime of the environment, because you can’t add space later.
 

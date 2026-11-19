@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsr
 ---
 
 # Data retrieval APIs for AWS RoboMaker
-<a name="awsrobomaker"></a>
 
 AWS RoboMaker provides the following APIs for data retrieval.
 

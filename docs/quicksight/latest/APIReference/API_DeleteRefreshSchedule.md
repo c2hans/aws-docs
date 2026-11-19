@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteRefreshSchedule
-<a name="API_DeleteRefreshSchedule"></a>
 
 Deletes a refresh schedule from a dataset.
 

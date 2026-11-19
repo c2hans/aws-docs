@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_RecoveryPlan
 ---
 
 # RecoveryPlanExecution
-<a name="API_RecoveryPlanExecution"></a>
 
 A Recovery Plan execution.
 

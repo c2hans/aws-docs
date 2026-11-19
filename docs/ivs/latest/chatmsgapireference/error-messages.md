@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/error-mes
 ---
 
 # Error Messages
-<a name="error-messages"></a>
 
 ## WebSocket Errors
 <a name="websocket-errors"></a>

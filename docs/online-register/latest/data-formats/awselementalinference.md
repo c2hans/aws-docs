@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awse
 ---
 
 # Data retrieval APIs for AWS Elemental Inference
-<a name="awselementalinference"></a>
 
 AWS Elemental Inference provides the following APIs for data retrieval.
 

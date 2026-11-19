@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 13: Clean up
-<a name="pb-es68-cleanup"></a>
 
 Only after the rollback window has passed should you remove the Migration Assistant infrastructure. Remove the workload, its storage, and the AWS CloudFormation stack.
 

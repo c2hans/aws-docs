@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/A
 ---
 
 # Node
-<a name="API_Node"></a>
 
 Configuration properties of a node.
 

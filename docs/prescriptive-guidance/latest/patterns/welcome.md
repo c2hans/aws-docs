@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/we
 ---
 
 # AWS Prescriptive Guidance Patterns
-<a name="welcome"></a>
 
 Amazon Web Services (AWS) Prescriptive Guidance patterns provide step-by-step instructions, architecture, tools, and code for implementing specific cloud migration, modernization, and deployment scenarios. These patterns, which are vetted by subject matter experts at AWS, are meant for builders and hands-on users who are planning to, or are in the process of, migrating to AWS. They also support users who are already on AWS and are looking for ways to optimize or modernize their cloud operations.
 

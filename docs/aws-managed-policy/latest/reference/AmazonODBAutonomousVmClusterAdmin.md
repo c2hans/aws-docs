@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonODBAutonomousVmClusterAdmin
-<a name="AmazonODBAutonomousVmClusterAdmin"></a>
 
 **Description**: Provides administrative access to manage Autonomous VM cluster resources in Oracle Database@AWS
 

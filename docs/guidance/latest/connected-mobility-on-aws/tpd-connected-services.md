@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # The Connected Services subscription plane: a concrete implementation
-<a name="tpd-connected-services"></a>
 
 The Connected Services subscription plane in this guidance is a concrete implementation of the pattern above, shipped as three opt-in stacks: `SubscriptionsStack`, `ConnectedServicesUiStack`, and `ConnectedServicesConsumerStack`. It is a mediated delivery — subscribers pull records over REST — that composes with the underlying Kafka topic model for delivery to more capable consumers.
 

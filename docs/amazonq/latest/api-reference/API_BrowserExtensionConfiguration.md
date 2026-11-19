@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Browser
 ---
 
 # BrowserExtensionConfiguration
-<a name="API_BrowserExtensionConfiguration"></a>
 
 The container for browser extension configuration for an Amazon Q Business web experience.
 

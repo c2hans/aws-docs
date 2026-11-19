@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Lineage
 ---
 
 # LineageSyncSchedule
-<a name="API_LineageSyncSchedule"></a>
 
 The lineage sync schedule.
 

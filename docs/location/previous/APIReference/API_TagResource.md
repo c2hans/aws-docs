@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_TagRe
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Assigns one or more tags (key-value pairs) to the specified Amazon Location Service resource.
 

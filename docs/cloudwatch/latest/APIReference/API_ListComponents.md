@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_ListC
 ---
 
 # ListComponents
-<a name="API_ListComponents"></a>
 
 Lists the auto-grouped, standalone, and custom components of the application.
 

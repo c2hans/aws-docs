@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # GetHookResult
-<a name="API_GetHookResult"></a>
 
 Retrieves detailed information and remediation guidance for a Hook invocation result.
 

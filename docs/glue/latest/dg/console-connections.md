@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/console-connections.html
 ---
 
 # Adding an AWS Glue connection
-<a name="console-connections"></a>
 
  You can connect to data sources in AWS Glue for Spark programmatically. For more information, see [Connection types and options for ETL in AWS Glue for Spark](aws-glue-programming-etl-connect.md)
 

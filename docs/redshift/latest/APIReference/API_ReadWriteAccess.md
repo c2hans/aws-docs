@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_ReadWri
 ---
 
 # ReadWriteAccess
-<a name="API_ReadWriteAccess"></a>
 
 The S3 Access Grants scope.
 

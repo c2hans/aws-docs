@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/creat
 ---
 
 # Create an alarm from a metric on a graph
-<a name="create_alarm_metric_graph"></a>
 
 You can graph a metric and then create an alarm from the metric on the graph, which has the benefit of populating many of the alarm fields for you.
 

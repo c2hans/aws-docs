@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Updat
 ---
 
 # UpdateTieringConfiguration
-<a name="API_UpdateTieringConfiguration"></a>
 
 This request will send changes to your specified tiering configuration. `TieringConfigurationName` cannot be updated after it is created.
 

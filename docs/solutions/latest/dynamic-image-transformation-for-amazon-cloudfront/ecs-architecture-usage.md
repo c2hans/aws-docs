@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # ECS architecture
-<a name="ecs-architecture-usage"></a>
 
 This section covers how to use the solution when deployed with the ECS architecture. In this architecture, you manage image processing through the Admin UI, a web console where you define where your source images live (origins), how images are transformed (transformation policies), and which requests use which configuration (mappings).
 

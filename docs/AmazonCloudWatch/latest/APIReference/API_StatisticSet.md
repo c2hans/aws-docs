@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # StatisticSet
-<a name="API_StatisticSet"></a>
 
 Represents a set of statistics that describes a specific metric.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Core Concepts
-<a name="core-concepts"></a>
 
 This section introduces the fundamental concepts of the Spatial Data Management on AWS solution, explaining what the solution does and how resources are organized.
 

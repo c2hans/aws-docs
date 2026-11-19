@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisRuleIdMappingTable
-<a name="API_AnalysisRuleIdMappingTable"></a>
 
 Defines details for the analysis rule ID mapping table.
 

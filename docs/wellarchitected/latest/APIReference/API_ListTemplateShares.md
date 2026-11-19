@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListTemplateShares
-<a name="API_ListTemplateShares"></a>
 
 List review template shares.
 

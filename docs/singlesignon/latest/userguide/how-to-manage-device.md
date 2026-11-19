@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/how-to-man
 ---
 
 # Renaming and deleting MFA devices in IAM Identity Center
-<a name="how-to-manage-device"></a>
 
 IAM Identity Center administrators can use the following procedures to rename or delete a user's MFA device.
 

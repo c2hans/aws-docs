@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # DynamoDB overview
-<a name="overview"></a>
 
 Amazon DynamoDB is a NoSQL key-value and document database that provides fast and predictable performance with seamless scalability. It's a fully managed, multi-Region,  multi-active, and durable database. (The global table feature in DynamoDB synchronizes modifications made in one AWS Region to all other selected Regions automatically, to provide multi-active support.) DynamoDB has built-in security capabilities, backup and restore options, and in-memory caching for internet-scale applications.
 

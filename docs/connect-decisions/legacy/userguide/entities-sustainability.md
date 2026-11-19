@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/entit
 ---
 
 # Sustainability
-<a name="entities-sustainability"></a>
 
 The table below list the data entities and columns used by Sustainability for partner invitations and onboarding.
 

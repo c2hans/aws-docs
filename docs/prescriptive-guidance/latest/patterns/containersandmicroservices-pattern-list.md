@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 ---
 
 # Containers & microservices
-<a name="containersandmicroservices-pattern-list"></a>
 
 **Topics**
 + [Access container applications privately on Amazon ECS by using AWS PrivateLink and a Network Load Balancer](access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.md)

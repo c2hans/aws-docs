@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-caller-srt.htm
 ---
 
 # Setting up an SRT Caller input
-<a name="input-caller-srt"></a>
 
 This section describes how to set up to ingest transport stream (TS) content that is sent from an upstream system that is set up as an SRT listener. This section describes how to set up the source content on the upstream system, and how to create an input that connects the upstream system to MediaLive.
 

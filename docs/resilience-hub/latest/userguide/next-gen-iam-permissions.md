@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Required IAM permissions and roles
-<a name="next-gen-iam-permissions"></a>
 
 **AWS managed policy**
 

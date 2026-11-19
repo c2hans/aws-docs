@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cluste
 ---
 
 # ClusterOnDemandOptions
-<a name="API_ClusterOnDemandOptions"></a>
 
 Configuration options specific to On-Demand instances.
 

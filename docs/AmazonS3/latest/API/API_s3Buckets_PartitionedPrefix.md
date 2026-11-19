@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Partit
 ---
 
 # PartitionedPrefix
-<a name="API_s3Buckets_PartitionedPrefix"></a>
 
 Amazon S3 keys for log objects are partitioned in the following format: `[targetPrefix][SourceAccountId]/[SourceRegion]/[SourceTableBucket]/[YYYY]/[MM]/[DD]/[YYYY]-[MM]-[DD]-[hh]-[mm]-[ss]-[UniqueString]`
 

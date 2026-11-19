@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/ne.html
 ---
 
 # $ne
-<a name="ne"></a>
 
 The `$ne` operator is used to match documents where the value of a field is not equal to the specified value. It is a comparison operator that can be used in query predicates to filter documents.
 

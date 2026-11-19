@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/translate_example
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `StartTextTranslationJob` with an AWS SDK
-<a name="translate_example_translate_StartTextTranslationJob_section"></a>
 
 The following code examples show how to use `StartTextTranslationJob`.
 

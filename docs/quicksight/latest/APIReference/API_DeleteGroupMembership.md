@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteGroupMembership
-<a name="API_DeleteGroupMembership"></a>
 
 Removes a user from a group so that the user is no longer a member of the group.
 

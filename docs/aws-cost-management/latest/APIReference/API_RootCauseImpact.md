@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # RootCauseImpact
-<a name="API_RootCauseImpact"></a>
 
 The dollar value of the root cause.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/network-policy-disa
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Disable Kubernetes network policies for Amazon EKS Pod network traffic
-<a name="network-policy-disable"></a>
 
 Disable Kubernetes network policies to stop restricting Amazon EKS Pod network traffic.
 

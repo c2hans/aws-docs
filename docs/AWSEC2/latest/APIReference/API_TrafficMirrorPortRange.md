@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TrafficMi
 ---
 
 # TrafficMirrorPortRange
-<a name="API_TrafficMirrorPortRange"></a>
 
 Describes the Traffic Mirror port range.
 

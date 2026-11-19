@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # DeleteDataSource
-<a name="API_DeleteDataSource"></a>
 
 Assigns the DELETED status to a `DataSource`, rendering it unusable.
 

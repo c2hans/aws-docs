@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/SYS_MV_REFRESH_HISTOR
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # SYS\_MV\_REFRESH\_HISTORY
-<a name="SYS_MV_REFRESH_HISTORY"></a>
 
 The results include information about the refresh history of all materialized views, including Iceberg materialized views created with USING ICEBERG. The results include the refresh type, such as manual or auto, and the status of the most recent refresh.
 

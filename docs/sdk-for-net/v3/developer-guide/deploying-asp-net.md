@@ -7,7 +7,6 @@ The AWS SDK for .NET V3 has reached end-of-support.
 We recommend that you migrate to [AWS SDK for .NET V4](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/welcome.html). For additional details and information on how to migrate, please refer to our [end-of-support announcement](https://aws.amazon.com/blogs/developer/aws-sdk-for-net-v3-end-of-support-announcement/).
 
 # ASP.NET Core apps
-<a name="deploying-asp-net"></a>
 
 The [AWS Deploy Tool](https://aws.github.io/aws-dotnet-deploy/) for the .NET CLI helps you deploy your ASP.NET applications and guides you through a deployment process. It's an interactive tooling for the .NET CLI that helps deploy .NET applications with minimum AWS knowledge.
 

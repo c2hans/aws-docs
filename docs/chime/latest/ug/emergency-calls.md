@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/emergency-calls.html
 ---
 
 # Making emergency calls with Amazon Chime
-<a name="emergency-calls"></a>
 
 If you have an Amazon Chime Business Calling phone number and have outbound calling enabled, you can make emergency calls in the United States.
 

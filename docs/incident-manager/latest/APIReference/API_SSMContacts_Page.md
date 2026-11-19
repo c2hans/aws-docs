@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # Page
-<a name="API_SSMContacts_Page"></a>
 
 Incident Manager engaging a contact's contact channel.
 

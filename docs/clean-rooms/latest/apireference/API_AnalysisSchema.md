@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisSchema
-<a name="API_AnalysisSchema"></a>
 
 A relation within an analysis.
 

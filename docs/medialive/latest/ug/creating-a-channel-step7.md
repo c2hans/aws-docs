@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/creating-a-channel-s
 ---
 
 # Set up the audio encodes
-<a name="creating-a-channel-step7"></a>
 
 In [Configure outputs](creating-a-channel-step4.md), you created the output groups and outputs that you identified when you planned the channel. Each output section contains a **Stream settings** section. You must now create the audio encodes for the outputs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-mysql-mi
 ---
 
 # AWS SCT action code index
-<a name="chap-sql-server-aurora-mysql.tools.actioncode"></a>
 
 This topic provides reference information for the automation levels and action codes used by AWS Schema Conversion Tool (AWS SCT) when migrating from Microsoft SQL Server 2019 to Amazon Aurora MySQL. You can use this information to understand the degree of automation available for various database objects and features during the migration process.
 

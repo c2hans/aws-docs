@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCloud9User
-<a name="AWSCloud9User"></a>
 
 **Description**: Provides permission to create AWS Cloud9 development environments and to manage owned environments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListAsso
 ---
 
 # ListAssociatedContacts
-<a name="API_ListAssociatedContacts"></a>
 
 Provides information about contact tree, a list of associated contacts with a unique identifier.
 

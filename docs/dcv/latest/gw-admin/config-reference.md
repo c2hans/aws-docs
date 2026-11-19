@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/gw-admin/config-reference.htm
 ---
 
 # Configuration File Reference
-<a name="config-reference"></a>
 
 This section provides a reference for all the parameters that can be specified in the Connection Gateway configuration file. For an introduction to the configuration of Amazon DCV Connection Gateway, see [Configuring the Amazon DCV Connection Gateway](setting-up-configuring.md).
 

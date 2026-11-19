@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_Vlan.html
 ---
 
 # Vlan
-<a name="API_Vlan"></a>
 
 The VLANs that Amazon EVS creates during environment creation.
 

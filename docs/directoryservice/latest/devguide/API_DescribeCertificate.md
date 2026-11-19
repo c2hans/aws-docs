@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Des
 ---
 
 # DescribeCertificate
-<a name="API_DescribeCertificate"></a>
 
 Displays information about the certificate registered for secure LDAP or client certificate authentication.
 

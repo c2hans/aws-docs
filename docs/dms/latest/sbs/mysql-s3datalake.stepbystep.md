@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/mysql-s3datalake.stepbyst
 ---
 
 # Step-By-Step Migration
-<a name="mysql-s3datalake.stepbystep"></a>
 
 The following steps provide instructions for migrating Amazon RDS for MySQL databases to an Amazon S3 data lake.
 

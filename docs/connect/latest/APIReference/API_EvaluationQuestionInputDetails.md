@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationQuestionInputDetails
-<a name="API_EvaluationQuestionInputDetails"></a>
 
 Details of the input data used for automated question processing.
 

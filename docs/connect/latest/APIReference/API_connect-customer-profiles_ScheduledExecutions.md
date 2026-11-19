@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ScheduledExecutions
-<a name="API_connect-customer-profiles_ScheduledExecutions"></a>
 
 Information about scheduled execution timestamps.
 

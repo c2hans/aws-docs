@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/eb-rules-monitoring.html
 ---
 
 # Monitor and troubleshoot rule sets
-<a name="eb-rules-monitoring"></a>
 
 Use Amazon CloudWatch metrics and Mail Manager rule-set logs to monitor rule-set processing and investigate email that did not follow the expected path. Metrics show successful rule-set executions and actions over time. Logs provide per-message details, including the rule, selected recipients, action order, action status, and failure details.
 

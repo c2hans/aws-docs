@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Blac
 ---
 
 # BlackFrame
-<a name="API_BlackFrame"></a>
 
  A filter that allows you to control the black frame detection by specifying the black levels and pixel coverage of black pixels in a frame. As videos can come from multiple sources, formats, and time periods, they may contain different standards and varying noise levels for black frames that need to be accounted for. For more information, see [StartSegmentDetection](API_StartSegmentDetection.md).
 

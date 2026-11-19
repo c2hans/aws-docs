@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/marketplace-license
 ---
 
 # Supporting marketplace licenses
-<a name="marketplace-license-requirements"></a>
 
 Installing the AWS replication agent on an EC2 instance on AWS that has one or more active subscriptions to a marketplace license requires taking the following points into consideration:
 +  Some marketplace products do not function with certain instance types or in certain regions. DRS does not verify if the marketplace license applies to the instance type and region defined. To see if the marketplace product applies to the current settings, visit the marketplace product page. It is also highly recommended to do periodic drills as some of these incompatibilities are only identified upon launch.

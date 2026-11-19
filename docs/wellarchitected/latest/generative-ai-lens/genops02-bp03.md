@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENOPS02-BP03 Implement solutions to mitigate the risk of system overload
-<a name="genops02-bp03"></a>
 
  There are two primary ways to mitigate the risk of system overload for generative AI workloads. The first is to scale the inference serving architecture using advanced auto-scaling technologies. This is possible using Amazon SageMaker AI Inference Components, which you can use to host and scale model independent of the underlying infrastructure. For self-hosted language models, this is the ideal approach.
 

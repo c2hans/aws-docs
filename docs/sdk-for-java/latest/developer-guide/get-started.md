@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/get-
 ---
 
 # Getting started with the AWS SDK for Java 2.x
-<a name="get-started"></a>
 
 The sections in this topic walk you through the essential steps to begin building Java applications that connect to AWS service. The sections cover setting up your development environment with Java and build tools like Maven or Gradle, configuring secure authentication to AWS, and creating your first working application through a hands-on tutorial. This beginner-friendly topic serves as your entry point to AWS development with Java, providing the foundation you'll need before exploring more advanced features.
 

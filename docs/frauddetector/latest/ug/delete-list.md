@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/delete-list.html
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Delete a list
-<a name="delete-list"></a>
 
 You can delete a list that isn't used in any rule. When you delete a list, Amazon Fraud Detector permanently deletes that list and all entries in the list.
 

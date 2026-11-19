@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Destinati
 ---
 
 # Destination
-<a name="API_Destination"></a>
 
 An object that describes the recipients for an email.
 

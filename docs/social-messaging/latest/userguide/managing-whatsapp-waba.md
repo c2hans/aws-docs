@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/social-messaging/latest/userguide/managi
 ---
 
 # WhatsApp Business Account (WABA) in AWS End User Messaging Social
-<a name="managing-whatsapp-waba"></a>
 
 With a WhatsApp Business Account (WABA), you can use the WhatsApp Business Platform to send messages directly to your customers. All of your WABAs are part of your [Meta Business Portfolio](https://business.facebook.com/). A WABA contains your customer facing assets like phone number, templates, and business contact information. A WABA can only exist in one AWS Region. For more information on WABAs, see [WhatsApp Business Accounts](https://developers.facebook.com/docs/whatsapp/overview/business-accounts/) in the *WhatsApp Business Platform Cloud API Reference*.
 

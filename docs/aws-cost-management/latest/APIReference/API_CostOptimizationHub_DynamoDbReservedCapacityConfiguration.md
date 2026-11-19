@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DynamoDbReservedCapacityConfiguration
-<a name="API_CostOptimizationHub_DynamoDbReservedCapacityConfiguration"></a>
 
 The DynamoDB reserved capacity configuration used for recommendations.
 

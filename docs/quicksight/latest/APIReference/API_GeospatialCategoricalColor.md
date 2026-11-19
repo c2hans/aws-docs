@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialCategoricalColor
-<a name="API_GeospatialCategoricalColor"></a>
 
 The definition for a categorical color.
 

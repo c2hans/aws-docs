@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/raid
 ---
 
 # Implementing PRM with a Revenue Attribution ID
-<a name="raid-implementing-prm"></a>
 
 **Important**
 No implementation rework is required for existing PRM-enabled products. If you already implemented PRM using an AWS Marketplace listing's product code as the tag value or in the user agent string, you do not need to change that implementation to use a Revenue Attribution ID.

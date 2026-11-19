@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Up
 ---
 
 # UpdateRumMetricDefinition
-<a name="API_UpdateRumMetricDefinition"></a>
 
 Modifies one existing metric definition for CloudWatch RUM extended metrics. For more information about extended metrics, see [BatchCreateRumMetricsDefinitions](https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_BatchCreateRumMetricsDefinitions.html).
 

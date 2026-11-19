@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Data
 ---
 
 # DataProductLastModifiedDateFilter
-<a name="API_DataProductLastModifiedDateFilter"></a>
 
 Object that allows filtering based on the last modified date of data products.
 

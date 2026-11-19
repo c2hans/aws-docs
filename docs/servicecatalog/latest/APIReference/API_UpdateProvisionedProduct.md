@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_U
 ---
 
 # UpdateProvisionedProduct
-<a name="API_UpdateProvisionedProduct"></a>
 
 Requests updates to the configuration of the specified provisioned product.
 

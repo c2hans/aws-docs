@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-u
 ---
 
 # Update a pending connection
-<a name="connections-update"></a>
 
 A connection created through the AWS Command Line Interface (AWS CLI) or AWS CloudFormation is in `PENDING` status by default. After you create a connection with the AWS CLI or CloudFormation, use the console to update the connection to make its status `AVAILABLE`.
 

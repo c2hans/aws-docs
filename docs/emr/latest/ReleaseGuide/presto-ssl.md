@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/presto-ssl.html
 ---
 
 # Using SSL/TLS and configuring LDAPS with Presto on Amazon EMR
-<a name="presto-ssl"></a>
 
 With Amazon EMR release version 5.6.0 and later, you can enable SSL/TLS to help [secure internal communication](https://prestodb.io/docs/current/security/internal-communication.html) between Presto nodes. You do this by setting up a security configuration for in-transit encryption. For more information, see [Encryption options](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-data-encryption-options.html) and [Use security configurations to set up cluster security](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-security-configurations.html) in the *Amazon EMR Management Guide*.
 

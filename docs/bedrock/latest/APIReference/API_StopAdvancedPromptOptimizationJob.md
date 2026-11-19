@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_StopAdva
 ---
 
 # StopAdvancedPromptOptimizationJob
-<a name="API_StopAdvancedPromptOptimizationJob"></a>
 
 Stops an advanced prompt optimization job that is in progress.
 

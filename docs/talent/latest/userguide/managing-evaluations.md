@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/userguide/managing-evaluat
 ---
 
 # Managing evaluations
-<a name="managing-evaluations"></a>
 
 This page covers how to create, edit, and publish evaluations in Amazon Connect Talent.
 

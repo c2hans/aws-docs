@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-search
 ---
 
 # Backup search
-<a name="backup-search"></a>
 
 ## Overview
 <a name="backup-search-overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetDomainNames
 ---
 
 # GetDomainNames
-<a name="API_GetDomainNames"></a>
 
 Represents a collection of DomainName resources.
 

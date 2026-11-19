@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/multi-agents-su
 ---
 
 # Supported Regions, models, and Amazon Bedrock Agents features for multi-agent collaboration
-<a name="multi-agents-supported"></a>
 
 **Supported models**
 

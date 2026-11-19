@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # RetrievalConfiguration
-<a name="API_amazon-q-connect_RetrievalConfiguration"></a>
 
 Configuration for content retrieval operations.
 

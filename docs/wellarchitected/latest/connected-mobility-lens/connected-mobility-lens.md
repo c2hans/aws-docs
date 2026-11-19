@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Connected Mobility Lens
-<a name="connected-mobility-lens"></a>
 
 Publication date: **January 3, 2024** ([Document revisions](document-revisions.md))
 

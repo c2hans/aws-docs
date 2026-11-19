@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/medialive-metadata.h
 ---
 
 # Working with metadata
-<a name="medialive-metadata"></a>
 
 MediaLive supports several types of metadata:
 + [ID3 metadata](id3-metadata.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/xray-opentelemetry-
 ---
 
 # Setting up bearer token authentication for traces
-<a name="xray-opentelemetry-bearer-token"></a>
 
 You can send traces to the X-Ray OpenTelemetry Protocol (OTLP) traces endpoint (`https://xray.{{region}}.amazonaws.com/v1/traces`) with an X-Ray API key (bearer token) instead of AWS Signature Version 4 (SigV4). Use bearer token authentication for workloads where you can't use the AWS SDK or short-term credentials, such as applications running on premises or in another cloud, CI/CD pipelines, or third-party tools that only support a static `Authorization` header.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/contact-actions-
 ---
 
 # UpdateContactTargetQueue
-<a name="contact-actions-updatecontacttargetqueue"></a>
 
 Sets the contact's TargetQueue. This is the queue is used by all other instructions that check a queue implicitly, and for TransferContactToQueue.
 

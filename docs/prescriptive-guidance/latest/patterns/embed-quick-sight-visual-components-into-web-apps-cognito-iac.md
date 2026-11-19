@@ -2,15 +2,14 @@
 source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/embed-quick-sight-visual-components-into-web-apps-cognito-iac.html
 ---
 
-# Embed Amazon Quick Sight visual components into web applications by using Amazon Cognito and IaC automation
-<a name="embed-quick-sight-visual-components-into-web-apps-cognito-iac"></a>
+# Embed AWS Quick Sight visual components into web applications by using Amazon Cognito and IaC automation
 
 *Ishita Gupta, Saurabh Singh, and Srishti Wadhwa, Amazon Web Services*
 
 ## Summary
 <a name="embed-quick-sight-visual-components-into-web-apps-cognito-iac-summary"></a>
 
-This pattern delivers a specialized approach for embedding Amazon Quick Sight visual components into React applications by using registered user embedding with streamlined Amazon Cognito authentication. These resources are then deployed through an infrastructure as code (IaC) template. Unlike traditional dashboard embedding, this solution isolates specific charts and graphs for direct integration into React applications, which dramatically improves both performance and the user experience.
+This pattern delivers a specialized approach for embedding AWS Quick Sight visual components into React applications by using registered user embedding with streamlined Amazon Cognito authentication. These resources are then deployed through an infrastructure as code (IaC) template. Unlike traditional dashboard embedding, this solution isolates specific charts and graphs for direct integration into React applications, which dramatically improves both performance and the user experience.
 
 The architecture establishes an efficient authentication flow between Amazon Cognito user management and Quick Sight permissions: Users authenticate through Amazon Cognito and access their authorized visualizations based on the dashboard sharing rules in Quick Sight. This streamlined approach eliminates the need for direct Quick Sight console access while maintaining robust security controls.
 
@@ -37,7 +36,7 @@ Target audience and use cases:
 
 To successfully implement this pattern, make sure that the following are in place:
 + **Active AWS account** – An AWS account with permissions to deploy CloudFormation stacks and create Lambda, API Gateway, Amazon Cognito, CloudFront, and Amazon S3 resources.
-+ **Amazon Quick Sight account** – An active Quick Sight account with at least one dashboard that contains visuals. For setup instructions, see [Tutorial: Create an Amazon Quick Sight dashboard using sample data](https://docs.aws.amazon.com/quicksuite/latest/userguide/example-analysis.html) in the Amazon Quick documentation.
++ **AWS Quick Sight account** – An active Quick Sight account with at least one dashboard that contains visuals. For setup instructions, see [Tutorial: Create an AWS Quick Sight dashboard using sample data](https://docs.aws.amazon.com/quicksuite/latest/userguide/example-analysis.html) in the AWS Quick documentation.
 + **A development environment** that consists of:
   + Node.js (version 16 or later)
   + npm or yarn installed
@@ -98,7 +97,7 @@ This automation ensures consistent and repeatable infrastructure across all envi
 <a name="embed-quick-sight-visual-components-into-web-apps-cognito-iac-tools"></a>
 
 **AWS services**
-+ [Amazon Quick Sight](https://aws.amazon.com/quicksuite/quicksight/) is a cloud-native business intelligence service that helps you create, manage, and embed interactive dashboards and visuals.
++ [AWS Quick Sight](https://aws.amazon.com/quicksuite/quicksight/) is a cloud-native business intelligence service that helps you create, manage, and embed interactive dashboards and visuals.
 + [Amazon API Gateway](https://aws.amazon.com/api-gateway/) manages APIs that act as the bridge between the React application and backend services.
 + [AWS Lambda](https://aws.amazon.com/lambda/)is a serverless compute service that this pattern uses to generate secure Quick Sight embed URLs dynamically, and scales automatically based on requests.
 + [Amazon Cognito](https://aws.amazon.com/cognito/)provides authentication and authorization for users, and issues secure tokens for API access.
@@ -115,7 +114,7 @@ This automation ensures consistent and repeatable infrastructure across all envi
 
 **Code repository**
 
-The code for this pattern is available in the GitHub [Amazon Quick Sight Visual Embedding in React](https://github.com/aws-samples/sample-quicksight-visual-embedding) repository.
+The code for this pattern is available in the GitHub [AWS Quick Sight Visual Embedding in React](https://github.com/aws-samples/sample-quicksight-visual-embedding) repository.
 
 ## Best practices
 <a name="embed-quick-sight-visual-components-into-web-apps-cognito-iac-best-practices"></a>
@@ -181,7 +180,7 @@ In addition, we recommend the following:
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Create or Manage Users in Cognito | To enable authenticated user access to embedded Quick Sight visuals, you first create users in Amazon Cognito:1. On the [Amazon Cognito console](https://console.aws.amazon.com/cognito/home), choose **User pools**, and then choose the pool that matches `UserPoolId` (from CloudFormation outputs).<br />2. Add users to the pool. You can choose from two options:In Amazon Cognito, create users manually with email addresses and temporary passwords (for more information, see the Amazon Cognito[ documentation](https://docs.aws.amazon.com/cognito/latest/developerguide/how-to-create-user-accounts.html#creating-a-new-user-using-the-console))<br />—or—Enable self-signup in the UI by setting `hideSignUp={false}` in the `my-app/src/auth/AuthWrapper.jsx` file. | AWS administrator |
-| Provide Quick Sight dashboard access | To provide access to Quick Sight visuals, provide Viewer permission access to authenticated users:1. On the [Quick Sight console](https://quicksight.aws.amazon.com/), choose **Dashboards**.<br />2. Select the dashboard you want to share by choosing its name.<br />3. In the upper-right corner of the dashboard page, choose **Share**.<br />4. In the sharing panel, choose **Share with specific users**.<br />5. To add new users, choose **Invite users** or the plus (\+) icon.<br />6. In the email field, enter the recipient's complete email address. (This email must match the user’s Amazon Cognito login exactly)<br />7. From the **Permission** menu next to the email field, choose **Viewer**.<br />8. To send the invitation and grant access, choose **Share**.<br />Each user will receive an email with a link to the dashboard. You can modify permissions at any time through the **Share** menu.<br />For more information, see [Granting individual Amazon Quick Sight users and groups access to a dashboard in Amazon Quick Sight](https://docs.aws.amazon.com/quicksuite/latest/userguide/share-a-dashboard-grant-access-users.html) in the Amazon Quick documentation. | Quick Sight administrator |
+| Provide Quick Sight dashboard access | To provide access to Quick Sight visuals, provide Viewer permission access to authenticated users:1. On the [Quick Sight console](https://quicksight.aws.amazon.com/), choose **Dashboards**.<br />2. Select the dashboard you want to share by choosing its name.<br />3. In the upper-right corner of the dashboard page, choose **Share**.<br />4. In the sharing panel, choose **Share with specific users**.<br />5. To add new users, choose **Invite users** or the plus (\+) icon.<br />6. In the email field, enter the recipient's complete email address. (This email must match the user’s Amazon Cognito login exactly)<br />7. From the **Permission** menu next to the email field, choose **Viewer**.<br />8. To send the invitation and grant access, choose **Share**.<br />Each user will receive an email with a link to the dashboard. You can modify permissions at any time through the **Share** menu.<br />For more information, see [Granting individual AWS Quick Sight users and groups access to a dashboard in AWS Quick Sight](https://docs.aws.amazon.com/quicksuite/latest/userguide/share-a-dashboard-grant-access-users.html) in the AWS Quick documentation. | Quick Sight administrator |
 
 ### Build and deploy the React frontend
 <a name="build-and-deploy-the-react-frontend"></a>
@@ -232,8 +231,8 @@ In addition, we recommend the following:
 <a name="embed-quick-sight-visual-components-into-web-apps-cognito-iac-resources"></a>
 
 ** AWS documentation**
-+ [Signing up for an Amazon Quick subscription](https://docs.aws.amazon.com/quicksight/latest/user/signing-up.html)
-+ [Embedded analytics for Amazon Quick Sight](https://docs.aws.amazon.com/quicksuite/latest/userguide/embedded-analytics.html)
++ [Signing up for an AWS Quick subscription](https://docs.aws.amazon.com/quicksight/latest/user/signing-up.html)
++ [Embedded analytics for AWS Quick Sight](https://docs.aws.amazon.com/quicksuite/latest/userguide/embedded-analytics.html)
 + [Quick Sight API reference – GenerateEmbedUrlForRegisteredUser](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html)
 + [Amazon Cognito user pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools.html)
 + [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
@@ -244,5 +243,5 @@ In addition, we recommend the following:
 + [AWS WAF Developer Guide](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html)
 
 **Tutorials and videos**
-+ [Embedded analytics for Amazon Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics.html)
-+ [Amazon Quick Sight YouTube tutorials](https://www.youtube.com/results?search_query=amazon+quicksight+embedding)
++ [Embedded analytics for AWS Quick Sight](https://docs.aws.amazon.com/quicksight/latest/user/embedded-analytics.html)
++ [AWS Quick Sight YouTube tutorials](https://www.youtube.com/results?search_query=amazon+quicksight+embedding)

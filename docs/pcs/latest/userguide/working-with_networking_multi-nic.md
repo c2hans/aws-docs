@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_networ
 ---
 
 # Multiple network interfaces in AWS PCS
-<a name="working-with_networking_multi-nic"></a>
 
 Some EC2 instances have multiple network cards. This allows them to provide higher network performance, including bandwidth capabilities above 100 Gbps and improved packet handling. For more information about instances with multiple network cards, see [Elastic network interfaces](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html#network-cards) in the *Amazon Elastic Compute Cloud User Guide*.
 

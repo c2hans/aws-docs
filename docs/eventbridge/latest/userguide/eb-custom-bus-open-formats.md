@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Supported content types: JSON, Avro, Protobuf, and raw bytes
-<a name="eb-custom-bus-open-formats"></a>
 
 `PutRawEvents` accepts any bytes. Each entry's `SystemMetadata.ContentType` tells EventBridge what the bytes are. That value decides whether EventBridge deserializes the payload before it filters and delivers the event. For Avro and Protobuf, EventBridge deserializes the payload against a schema registry that you name on the request. Subscribers then filter, transform, and receive the event as JSON. For opaque bytes, EventBridge delivers the payload untouched.
 

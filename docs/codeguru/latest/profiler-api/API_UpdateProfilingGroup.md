@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-api/API_UpdateP
 ---
 
 # UpdateProfilingGroup
-<a name="API_UpdateProfilingGroup"></a>
 
 Updates a profiling group.
 

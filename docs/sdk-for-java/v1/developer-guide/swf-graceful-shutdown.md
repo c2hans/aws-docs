@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/swf-grac
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Shutting Down Activity and Workflow Workers Gracefully
-<a name="swf-graceful-shutdown"></a>
 
 The [Building a Simple Amazon SWF Application](swf-hello.md) topic provided a complete implementation of a simple workflow application consisting of a registration application, an activity and workflow worker, and a workflow starter.
 

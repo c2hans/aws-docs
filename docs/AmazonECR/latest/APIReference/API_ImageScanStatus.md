@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_ImageS
 ---
 
 # ImageScanStatus
-<a name="API_ImageScanStatus"></a>
 
 The current status of an image scan.
 

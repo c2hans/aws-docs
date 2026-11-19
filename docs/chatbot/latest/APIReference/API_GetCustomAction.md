@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chatbot/latest/APIReference/API_GetCusto
 ---
 
 # GetCustomAction
-<a name="API_GetCustomAction"></a>
 
 Returns a custom action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_ListBucketMetric
 ---
 
 # ListBucketMetricsConfigurations
-<a name="API_ListBucketMetricsConfigurations"></a>
 
 Lists the metrics configurations for the bucket. The metrics configurations are only for the request metrics of the bucket and do not provide information on daily storage metrics. You can have up to 1,000 configurations per bucket.
 

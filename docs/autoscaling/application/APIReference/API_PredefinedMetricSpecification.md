@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/API
 ---
 
 # PredefinedMetricSpecification
-<a name="API_PredefinedMetricSpecification"></a>
 
 Represents a predefined metric for a target tracking scaling policy to use with Application Auto Scaling.
 

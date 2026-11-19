@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/subnetgroups.Vi
 ---
 
 # Viewing subnet group details
-<a name="subnetgroups.Viewing"></a>
 
 The following procedures show you how to view details a subnet group.
 

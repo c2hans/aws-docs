@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Anthropic Claude Messages API
-<a name="model-parameters-anthropic-claude-messages"></a>
 
 This section provides inference parameters and code examples for using the Anthropic Claude Messages API.
 

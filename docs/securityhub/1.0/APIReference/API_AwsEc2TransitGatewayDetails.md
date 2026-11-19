@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2T
 ---
 
 # AwsEc2TransitGatewayDetails
-<a name="API_AwsEc2TransitGatewayDetails"></a>
 
 Information about an AWS Amazon EC2 Transit Gateway that interconnects virtual private clouds (VPCs) and on-premises networks.
 

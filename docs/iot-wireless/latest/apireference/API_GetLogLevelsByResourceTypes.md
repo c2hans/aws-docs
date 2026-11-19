@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetLogLevelsByResourceTypes
-<a name="API_GetLogLevelsByResourceTypes"></a>
 
 Returns current default log levels or log levels by resource types. Based on the resource type, log levels can be returned for wireless device, wireless gateway, or FUOTA task log options.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/batch-inference
 ---
 
 # Format and upload your batch inference data
-<a name="batch-inference-data"></a>
 
 You must add your batch inference data to an S3 location that you'll choose or specify when submitting a model invocation job. The S3 location must contain the following items:
 + At least one JSONL file that defines the model inputs. A JSONL contains rows of JSON objects. Your JSONL file must end in the extension .jsonl and be in the following format:

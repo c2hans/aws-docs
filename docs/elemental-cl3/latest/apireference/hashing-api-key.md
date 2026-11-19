@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/hashin
 ---
 
 # Hashing the API Key
-<a name="hashing-api-key"></a>
 
 Construct the X-Auth-Key header as follows:
 

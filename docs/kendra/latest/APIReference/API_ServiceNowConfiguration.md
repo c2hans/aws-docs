@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_ServiceNo
 ---
 
 # ServiceNowConfiguration
-<a name="API_ServiceNowConfiguration"></a>
 
 Provides the configuration information to connect to ServiceNow as your data source.
 

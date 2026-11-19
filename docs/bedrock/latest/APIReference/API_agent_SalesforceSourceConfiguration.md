@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Sa
 ---
 
 # SalesforceSourceConfiguration
-<a name="API_agent_SalesforceSourceConfiguration"></a>
 
 The endpoint information to connect to your Salesforce data source.
 

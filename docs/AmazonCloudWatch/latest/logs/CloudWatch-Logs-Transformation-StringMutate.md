@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-
 ---
 
 # String mutate processors
-<a name="CloudWatch-Logs-Transformation-StringMutate"></a>
 
 This section contains information about the string mutate processors that you can use with a log event transformer.
 

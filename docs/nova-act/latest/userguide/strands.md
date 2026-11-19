@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/strands.html
 ---
 
 # Strands Agents Integrations
-<a name="strands"></a>
 
  [Strands Agents](https://strandsagents.com/) is an open source framework for building AI agents with a broad set of tool support. Strands makes it simple to equip an agent with tools it can use. For example, you can equip an agent with a tool that enables it to search the web. In the example below, we configure Nova Act for a Strands agent to use it as a tool.
 

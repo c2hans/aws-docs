@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # Teradata Vantage connections
-<a name="aws-glue-programming-etl-connect-teradata-home"></a>
 
 You can use AWS Glue for Spark to read from and write to existing tables in Teradata Vantage in AWS Glue 4.0 and later versions. You can define what to read from Teradata with a SQL query. You can connect to Teradata using username and password credentials stored in AWS Secrets Manager through a AWS Glue connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Consent portal prerequisites
-<a name="identity-consent-portal-prerequisites"></a>
 
 Before you create a consent portal, create the OAuth2 credential provider whose ARN you supply in `idpConfig.credentialProviderArn`, configure the gateway that the portal serves, and create the execution role that the portal assumes. This topic describes each prerequisite.
 

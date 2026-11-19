@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_TurnSpecif
 ---
 
 # TurnSpecification
-<a name="API_TurnSpecification"></a>
 
 Contains information about the messages in the turn.
 

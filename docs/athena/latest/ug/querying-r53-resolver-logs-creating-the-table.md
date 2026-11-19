@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/querying-r53-resolver-l
 ---
 
 # Create the table for resolver query logs
-<a name="querying-r53-resolver-logs-creating-the-table"></a>
 
 You can use the Query Editor in the Athena console to create and query a table for your Route 53 Resolver query logs.
 

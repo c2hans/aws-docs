@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # API reference
-<a name="api-reference"></a>
 
 This section provides an API reference for the MCS solution.
 

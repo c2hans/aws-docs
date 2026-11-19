@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutor
 ---
 
 # Load format for openCypher data
-<a name="bulk-load-tutorial-format-opencypher"></a>
 
 To load openCypher data using the openCypher CSV format, you must specify nodes and relationships in separate files. The loader can load from multiple of these node files and relationship files in a single load job.
 

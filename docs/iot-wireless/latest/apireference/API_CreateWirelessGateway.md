@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Cre
 ---
 
 # CreateWirelessGateway
-<a name="API_CreateWirelessGateway"></a>
 
 Provisions a wireless gateway.
 

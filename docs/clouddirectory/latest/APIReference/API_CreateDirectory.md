@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/clouddirectory/latest/APIReference/API_C
 Amazon Cloud Directory is no longer open to new customers, and will reach end of support on July 24, 2027. For alternatives to Cloud Directory, explore [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) and [Amazon Neptune](https://aws.amazon.com/neptune/). If you need help choosing the right alternative for your use case, or for any other questions, contact [AWS Support](https://aws.amazon.com/support/).
 
 # CreateDirectory
-<a name="API_CreateDirectory"></a>
 
 Creates a [Directory](API_Directory.md) by copying the published schema into the directory. A directory cannot be created without a schema.
 

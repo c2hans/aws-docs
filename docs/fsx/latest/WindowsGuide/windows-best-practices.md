@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/windows-best-pra
 ---
 
 # Best practices for FSx for Windows File Server
-<a name="windows-best-practices"></a>
 
  We recommend that you follow these best practices when working with Amazon FSx for Windows File Server.
 

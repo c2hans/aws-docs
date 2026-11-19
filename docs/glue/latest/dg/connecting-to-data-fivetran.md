@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-fivetr
 ---
 
 # Connecting to Fivetran in AWS Glue Studio
-<a name="connecting-to-data-fivetran"></a>
 
 Fivetran is managed data movement. Because you are a Fivetran user, you can connect AWS Glue to your Fivetran account. You can then use Fivetran as a data source in your AWS Glue ETL jobs to transfer data between Fivetran and AWS services or other supported applications.
 

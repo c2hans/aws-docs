@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_mgmt_
 ---
 
 # Set the attributes of AWS CloudHSM keys using CMU
-<a name="cloudhsm_mgmt_util-setAttribute"></a>
 
 Use the **setAttribute** command in the AWS CloudHSM cloudhsm\_mgmt\_util to change the value of the label, encrypt, decrypt, wrap, and unwrap attributes of a key in the HSMs. You can also use the [setAttribute](key_mgmt_util-setAttribute.md) command in key\_mgmt\_util to convert a session key to a persistent key. You can only change the attributes of keys that you own.
 

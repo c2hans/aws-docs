@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/troubleshooting.html
 ---
 
 # Troubleshooting common AWS CDK issues
-<a name="troubleshooting"></a>
 
 This topic describes how to troubleshoot the following issues with the AWS CDK.
 +  [After updating the AWS CDK the AWS CDK Toolkit (CLI) reports a mismatch with the AWS Construct Library](#troubleshooting-toolkit)

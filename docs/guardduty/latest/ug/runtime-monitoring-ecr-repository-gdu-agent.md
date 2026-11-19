@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/runtime-monitoring-e
 ---
 
 # Amazon ECR repository hosting GuardDuty agent
-<a name="runtime-monitoring-ecr-repository-gdu-agent"></a>
 
 The following sections list the Amazon Elastic Container Registry (Amazon ECR) repositories where GuardDuty hosts the security agent that gets deployed on your Amazon EKS, Amazon ECS, and Amazon ECS-Amazon EC2 Bottlerocket resources.
 

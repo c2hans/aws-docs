@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCloudWatchOmniServiceRolePolicy
-<a name="AWSCloudWatchOmniServiceRolePolicy"></a>
 
 **Description**: Provides CloudWatch Omni access to manage AWS Config recorder resources, telemetry configurations, and supporting IAM roles for organization enablement.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-a-multi
 ---
 
 # Visual Journey Builder
-<a name="create-a-multi-step-and-multi-channel-journey"></a>
 
 **Using Spark SQL segments in Journeys**
 By default, Spark SQL segments aren't available for use in Journeys. To enable them, contact AWS Support to request access.

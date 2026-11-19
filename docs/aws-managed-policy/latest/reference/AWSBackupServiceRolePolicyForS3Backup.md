@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSB
 ---
 
 # AWSBackupServiceRolePolicyForS3Backup
-<a name="AWSBackupServiceRolePolicyForS3Backup"></a>
 
 **Description**: Policy containing permissions necessary for AWS Backup to backup data in any S3 bucket. This includes read access to all S3 objects and any decrypt access for all KMS keys.
 

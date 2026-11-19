@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/writing-with-cloudwa
 ---
 
 # Send CloudWatch Events to Firehose
-<a name="writing-with-cloudwatch-events"></a>
 
 You can configure Amazon CloudWatch to send events to a Firehose stream by adding a target to a CloudWatch Events rule.
 

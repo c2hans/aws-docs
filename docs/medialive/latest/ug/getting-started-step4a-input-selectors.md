@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/getting-started-step
 ---
 
 # Step 6: Set up input video, audio, captions
-<a name="getting-started-step4a-input-selectors"></a>
 
 You can create "selectors" to identify the specific video, audio, and captions that you want to extract from the input.
 

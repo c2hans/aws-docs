@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/configuration
 ---
 
 # IAM policy for Amazon CloudWatch
-<a name="configuration-sets-cloud-watch-creating-role"></a>
 
 Use the following example to create a policy for sending events to a CloudWatch group.
 

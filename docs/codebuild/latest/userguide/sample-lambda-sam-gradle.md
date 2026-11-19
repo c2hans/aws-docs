@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-lambda
 ---
 
 # Deploy a Lambda function using AWS SAM with CodeBuild Lambda Java
-<a name="sample-lambda-sam-gradle"></a>
 
 The AWS Serverless Application Model (AWS SAM) is an open-source framework for building serverless applications. For more information, see the [AWS Serverless Application Model repository](https://github.com/aws/serverless-application-model) on GitHub. The following Java sample uses Gradle to build and test a AWS Lambda function. After which, the AWS SAM CLI is used to deploy the CloudFormation template and deployment bundle. By using CodeBuild Lambda, the build, test, and deployment steps are all handled automatically, allowing for infrastructure to be quickly updated without manual intervention in a single build.
 

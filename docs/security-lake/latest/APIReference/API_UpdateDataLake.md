@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Up
 ---
 
 # UpdateDataLake
-<a name="API_UpdateDataLake"></a>
 
 You can use `UpdateDataLake` to specify where to store your security data, how it should be encrypted at rest and for how long. You can add a [Rollup Region](https://docs.aws.amazon.com/security-lake/latest/userguide/manage-regions.html#add-rollup-region) to consolidate data from multiple AWS Regions, replace default encryption (SSE-S3) with [Customer Manged Key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk), or specify transition and expiration actions through storage [Lifecycle management](https://docs.aws.amazon.com/security-lake/latest/userguide/lifecycle-management.html). The `UpdateDataLake` API works as an "upsert" operation that performs an insert if the specified item or record does not exist, or an update if it already exists. Security Lake securely stores your data at rest using AWS encryption solutions. For more details, see [Data protection in Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/data-protection.html).
 

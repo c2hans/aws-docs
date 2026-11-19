@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DBMajo
 ---
 
 # DBMajorEngineVersion
-<a name="API_DBMajorEngineVersion"></a>
 
 This data type is used as a response element in the operation `DescribeDBMajorEngineVersions`.
 

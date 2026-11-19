@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Delete
 ---
 
 # DeleteAccelerator
-<a name="API_DeleteAccelerator"></a>
 
 Delete an accelerator. Before you can delete an accelerator, you must disable it and remove all dependent resources (listeners and endpoint groups). To disable the accelerator, update the accelerator to set `Enabled` to false.
 

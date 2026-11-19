@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-datasource-
 ---
 
 # Connect to a Splunk Infrastructure Monitoring data source
-<a name="AMG-datasource-splunkinfra"></a>
 
 Provides support for Splunk Infrastructure Monitoring (formerly SignalFx).
 

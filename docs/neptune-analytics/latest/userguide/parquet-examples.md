@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/parqu
 ---
 
 # Query examples using Parquet
-<a name="parquet-examples"></a>
 
  The following example query returns the number of rows in a given Parquet file:
 

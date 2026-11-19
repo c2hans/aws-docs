@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Managing Amazon OpenSearch Ingestion pipeline costs
-<a name="pipeline--stop-start"></a>
 
 You can start and stop ingestion pipelines in Amazon OpenSearch Ingestion to control data flow based on your needs. Stopping a pipeline halts data processing while preserving configurations, so you can restart it without reconfiguring it. This can help optimize costs, manage resource usage, or troubleshoot issues. When you stop a pipeline, OpenSearch Ingestion doesn't process incoming data, but previously ingested data remains available in OpenSearch.
 

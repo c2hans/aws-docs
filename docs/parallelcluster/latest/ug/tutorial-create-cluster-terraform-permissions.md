@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/tutorial-creat
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Required permissions
-<a name="tutorial-create-cluster-terraform-permissions"></a>
 
 You need the following permissions to deploy a cluster with Terraform:
 + assume the ParallelCluster API role, which is in charge of interacting with the ParallelCluster API

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/userguide/scte.html
 ---
 
 # SCTE-35 message options in AWS Elemental MediaPackage
-<a name="scte"></a>
 
 This section describes the options that AWS Elemental MediaPackage offers for configuring how SCTE-35 messages are handled in live TS and CMAF outputs.
 

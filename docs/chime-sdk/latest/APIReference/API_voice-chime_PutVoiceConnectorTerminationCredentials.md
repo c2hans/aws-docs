@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # PutVoiceConnectorTerminationCredentials
-<a name="API_voice-chime_PutVoiceConnectorTerminationCredentials"></a>
 
 Updates a Voice Connector's termination credentials.
 

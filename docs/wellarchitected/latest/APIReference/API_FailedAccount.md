@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # FailedAccount
-<a name="API_FailedAccount"></a>
 
 An account that was in scope for an Organizational Report but could not be processed, along with the reason for the failure.
 

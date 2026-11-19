@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/supportauthz/latest/APIReference/API_Lis
 ---
 
 # ListSupportPermitRequests
-<a name="API_ListSupportPermitRequests"></a>
 
 Lists permit requests from AWS support operators. Use pagination to ensure that the operation returns quickly and successfully.
 

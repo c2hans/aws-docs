@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS blog posts
 <a name="9999999999999999aws--blog-posts.49599cfe-5f66-500e-bb7d-9949f9237290"></a>

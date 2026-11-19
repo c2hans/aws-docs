@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Associ
 ---
 
 # AssociationDetail
-<a name="API_AssociationDetail"></a>
 
 Contains the full details of a custom detection rule association.
 

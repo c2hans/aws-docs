@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick-setup/latest/APIReference/API_Crea
 ---
 
 # CreateConfigurationManager
-<a name="API_CreateConfigurationManager"></a>
 
 Creates a Quick Setup configuration manager resource. This object is a collection of desired state configurations for multiple configuration definitions and summaries describing the deployments of those definitions.
 

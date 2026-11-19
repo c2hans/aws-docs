@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/ml-based-analytics.h
 ---
 
 # Understanding workflows for machine-learning based analytics for the Amazon Chime SDK
-<a name="ml-based-analytics"></a>
 
 The following sections describe how to use the machine-learning analytics features provide by Amazon Chime SDK call analytics.
 

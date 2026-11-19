@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 ---
 
 # Migration summary
-<a name="summary"></a>
 
 The following provides a summary of the MongoDB Atlas on AWS migration environment, including assumptions, tools, and compliance certifications.
 

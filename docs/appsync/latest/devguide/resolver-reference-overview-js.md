@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/resolver-referen
 ---
 
 # AWS AppSync JavaScript resolvers overview
-<a name="resolver-reference-overview-js"></a>
 
 AWS AppSync lets you respond to GraphQL requests by performing operations on your data sources. For each GraphQL field you wish to run a query, mutation, or subscription on, a resolver must be attached.
 

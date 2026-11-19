@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_In
 ---
 
 # IntegratedResourceSummary
-<a name="API_IntegratedResourceSummary"></a>
 
 Contains summary information about an integrated resource.
 

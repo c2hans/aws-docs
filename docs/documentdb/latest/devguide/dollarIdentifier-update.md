@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/dollarIdentif
 ---
 
 # $[<identifier>]
-<a name="dollarIdentifier-update"></a>
 
 The `$[<identifier>]` filtered positional operator updates all array elements that match the specified filter conditions. It is used with the `arrayFilters` option to selectively update array elements.
 

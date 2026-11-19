@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_TestG
 ---
 
 # TestGridSession
-<a name="API_TestGridSession"></a>
 
-A [TestGridSession](#API_TestGridSession) is a single instance of a browser launched from the URL provided by a call to [CreateTestGridUrl](API_CreateTestGridUrl.md).
+A [TestGridSession](API_TestGridSession.md) is a single instance of a browser launched from the URL provided by a call to [CreateTestGridUrl](API_CreateTestGridUrl.md).
 
 ## Contents
 <a name="API_TestGridSession_Contents"></a>

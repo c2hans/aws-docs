@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsCert
 ---
 
 # AwsCertificateManagerCertificateDomainValidationOption
-<a name="API_AwsCertificateManagerCertificateDomainValidationOption"></a>
 
 Contains information about one of the following:
 + The initial validation of each domain name that occurs as a result of the `RequestCertificate` request

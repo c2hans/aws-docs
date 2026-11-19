@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_LineIte
 ---
 
 # LineItemRequest
-<a name="API_LineItemRequest"></a>
 
 Information about a line item request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # UpdateAgentRecommendationStatus
-<a name="API_UpdateAgentRecommendationStatus"></a>
 
 Updates the status of a recommendation to track its progress through the implementation lifecycle.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_IdentityProv
 ---
 
 # IdentityProviderConfig
-<a name="API_IdentityProviderConfig"></a>
 
 An object representing an identity provider configuration.
 

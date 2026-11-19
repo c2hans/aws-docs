@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # CreateAssociationBatch
-<a name="API_CreateAssociationBatch"></a>
 
 Associates the specified AWS Systems Manager document (SSM document) with the specified managed nodes or targets.
 

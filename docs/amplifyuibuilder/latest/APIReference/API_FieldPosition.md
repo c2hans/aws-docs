@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # FieldPosition
-<a name="API_FieldPosition"></a>
 
 Describes the field position.
 

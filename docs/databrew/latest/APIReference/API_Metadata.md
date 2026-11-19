@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Metadat
 ---
 
 # Metadata
-<a name="API_Metadata"></a>
 
 Contains additional resource information needed for specific datasets.
 

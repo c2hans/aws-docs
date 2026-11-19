@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::LakeFormation::PrincipalPermissions TableResource
-<a name="aws-properties-lakeformation-principalpermissions-tableresource"></a>
 
 A structure for the table object. A table is a metadata definition that represents your data. You can Grant and Revoke table privileges to a principal.
 

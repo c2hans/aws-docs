@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeVPCConnection
-<a name="API_DescribeVPCConnection"></a>
 
 Describes a VPC connection.
 

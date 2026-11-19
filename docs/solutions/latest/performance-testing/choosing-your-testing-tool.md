@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/performance-testing/cho
 ---
 
 # Choosing Your Testing Tool
-<a name="choosing-your-testing-tool"></a>
 
 Performance testing tools fall into two categories: scripting frameworks (how you define test scenarios) and runtime infrastructure (how you execute them at scale). Most teams start with an open-source scripting framework like K6, Locust, or JMeter. The challenge is not writing the script. It is operating the infrastructure to run that script at production-scale concurrency: provisioning load generators, distributing traffic across regions, collecting results, and tearing everything down afterward. That infrastructure management becomes a project in itself.
 

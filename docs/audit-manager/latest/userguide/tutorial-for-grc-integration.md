@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/tutorial-
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Integrating Audit Manager evidence into your GRC system
-<a name="tutorial-for-grc-integration"></a>
 
 As an enterprise customer, you likely have resources across multiple data centers, including other cloud vendors and on-premises environments. To collect evidence from these environments, you might use third-party GRC (Governance, Risk, and Compliance) solutions such as MetricStream CyberGRC or RSA Archer. Or, you might use a proprietary GRC system that you developed in-house.
 

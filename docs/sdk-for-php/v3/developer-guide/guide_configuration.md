@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_con
 ---
 
 # Client constructor options for the AWS SDK for PHP Version 3
-<a name="guide_configuration"></a>
 
 Client constructor options can be provided in a client constructor or provided to the [`Aws\Sdk`](https://docs.aws.amazon.com/aws-sdk-php/latest/class-Aws.Sdk.html) class. The array of options provided to a specific type of client can vary, based on which client you are creating. These custom client configuration options are described in the [API documentation](https://docs.aws.amazon.com/aws-sdk-php/latest/) of each client.
 

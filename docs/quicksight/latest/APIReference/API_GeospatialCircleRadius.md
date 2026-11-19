@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialCircleRadius
-<a name="API_GeospatialCircleRadius"></a>
 
 The geospatial radius for a circle.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_EcsCapa
 ---
 
 # EcsCapacityIncreaseConfiguration
-<a name="API_EcsCapacityIncreaseConfiguration"></a>
 
 The configuration for an AWS ECS capacity increase.
 

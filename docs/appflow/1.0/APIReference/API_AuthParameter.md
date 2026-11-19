@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_AuthParamet
 ---
 
 # AuthParameter
-<a name="API_AuthParameter"></a>
 
 Information about required authentication parameters.
 

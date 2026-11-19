@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd-context.html
 ---
 
 # `cdk context`
-<a name="ref-cli-cmd-context"></a>
 
 Manage cached context values for your AWS CDK application.
 

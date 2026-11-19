@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # AuditMergeMetadata
-<a name="API_connect-cases_AuditMergeMetadata"></a>
 
 Information about the merge that produced an audit event.
 

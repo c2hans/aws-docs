@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_EmailTemp
 ---
 
 # EmailTemplateContent
-<a name="API_EmailTemplateContent"></a>
 
 The content of the email, composed of a subject line, an HTML part, and a text-only part.
 

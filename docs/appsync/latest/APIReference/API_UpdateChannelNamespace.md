@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_UpdateCh
 ---
 
 # UpdateChannelNamespace
-<a name="API_UpdateChannelNamespace"></a>
 
 Updates a `ChannelNamespace` associated with an `Api`.
 

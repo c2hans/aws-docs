@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ProcurementPortalPreferenceSummary
-<a name="API_invoicing_ProcurementPortalPreferenceSummary"></a>
 
 Provides a summary of a procurement portal preference, including key identifiers and status information.
 

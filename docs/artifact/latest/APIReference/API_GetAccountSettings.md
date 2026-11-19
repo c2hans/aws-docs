@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_GetAcco
 ---
 
 # GetAccountSettings
-<a name="API_GetAccountSettings"></a>
 
 Get the account settings for Artifact.
 

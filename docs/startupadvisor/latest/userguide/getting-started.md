@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/startupadvisor/latest/userguide/getting-
 ---
 
 # Getting started with AWS Startup Advisor
-<a name="getting-started"></a>
 
 You can get started with AWS Startup Advisor on the web, in a supported integrated development environment (IDE), or in Claude Code and other coding agents. Choose the entry point that fits your workflow. The same curated skills are available across all access methods, so you get the same guidance no matter which one you choose.
 

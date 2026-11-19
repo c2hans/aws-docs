@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/api-reference/welcome.h
 ---
 
 # Welcome
-<a name="welcome"></a>
 
 Welcome to the Amazon MQ REST API reference. In this guide, you can find descriptions of REST resources, example requests, HTTP methods, schemas, parameters, and the errors that the service returns.
 

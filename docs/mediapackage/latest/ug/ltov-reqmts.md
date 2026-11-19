@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/ltov-reqmts.html
 ---
 
 # Live-to-VOD requirements
-<a name="ltov-reqmts"></a>
 
 Keep in mind these requirements when you're creating live-to-VOD assets in AWS Elemental MediaPackage.
 

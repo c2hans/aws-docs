@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v1/developerguide/comms-test.
 End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
 
 # Test communications
-<a name="comms-test"></a>
 
 1. On your computer, open two [command-line](https://en.wikipedia.org/wiki/Command-line_interface) windows. Just as in [Module 5](module5.md), one window is for the GG\_Switch client device and the other is for the GG\_TrafficLight client device. You use them to run the same commands that you ran in Module 5.
 

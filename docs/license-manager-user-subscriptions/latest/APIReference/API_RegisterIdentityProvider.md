@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager-user-subscriptions/lates
 ---
 
 # RegisterIdentityProvider
-<a name="API_RegisterIdentityProvider"></a>
 
 Registers an identity provider for user-based subscriptions.
 

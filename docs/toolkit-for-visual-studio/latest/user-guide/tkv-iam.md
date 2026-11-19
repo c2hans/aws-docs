@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # Identity and Access Management
-<a name="tkv-iam"></a>
 
 AWS Identity and Access Management (IAM) enables you to more securely manage access to your AWS accounts and resources. With IAM, you can create multiple users in your primary (*root*) AWS account. These users can have their own credentials: password, access key ID, and secret key, but all IAM users share a single account number.
 

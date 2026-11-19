@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_A
 ---
 
 # ActivityListItem
-<a name="API_ActivityListItem"></a>
 
 Contains details about an activity.
 

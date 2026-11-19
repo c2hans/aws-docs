@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_Encryption.html
 ---
 
 # Encryption
-<a name="API_Encryption"></a>
 
 Contains the type of server-side encryption used.
 

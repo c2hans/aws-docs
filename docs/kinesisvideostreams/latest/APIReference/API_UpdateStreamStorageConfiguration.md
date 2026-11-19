@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # UpdateStreamStorageConfiguration
-<a name="API_UpdateStreamStorageConfiguration"></a>
 
 Updates the storage configuration for an existing Kinesis video stream.
 

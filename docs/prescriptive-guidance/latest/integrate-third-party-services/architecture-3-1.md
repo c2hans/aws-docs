@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/integrate-t
 ---
 
 # Architecture 3.1: Transit Gateway with AWS RAM
-<a name="architecture-3-1"></a>
 
 [AWS Resource Access Manager (AWS RAM)](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html) helps you share specified AWS resources you own with other AWS accounts. It's a centralized service that provides a consistent experience for sharing different types of AWS resources across multiple accounts. A transit gateway can be shared across accounts with AWS RAM, even if the accounts are in different organizations in AWS Organizations.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-
 ---
 
 # S3 Access Grants integrations
-<a name="access-grants-integrations"></a>
 
 S3 Access Grants can be used with the following AWS services and features. This page will be updated as new integrations become available.
 

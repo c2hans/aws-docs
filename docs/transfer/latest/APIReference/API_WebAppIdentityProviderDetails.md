@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_WebAppI
 ---
 
 # WebAppIdentityProviderDetails
-<a name="API_WebAppIdentityProviderDetails"></a>
 
 A union that contains the `IdentityCenterConfig` object.
 

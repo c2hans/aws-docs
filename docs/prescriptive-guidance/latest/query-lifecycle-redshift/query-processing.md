@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/query-lifec
 ---
 
 # SQL query processing in Amazon Redshift
-<a name="query-processing"></a>
 
 Amazon Redshift routes a submitted SQL query through the parser and optimizer to develop a query plan. The execution engine then translates the query plan into code and sends that code to the compute nodes for execution. Before you design a query plan, it's critical to understand how query processing works.
 

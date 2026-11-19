@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/getting-started
 ---
 
 # Learn how to get started with Step Functions
-<a name="getting-started"></a>
 
 With the Step Functions service, you can orchestrate complex application workflows. To get started, you'll use Workflow Studio to create and run a built-in **Hello World** workflow. You'll review the auto-generated [Amazon States Language](concepts-amazon-states-language.md) (ASL) definition in code. Finally, you'll drag-and-drop a service integration to do sentiment analysis.
 

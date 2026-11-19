@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_C
 ---
 
 # Condition
-<a name="API_Condition"></a>
 
 Indicates the condition based on which you want to filter the metrics.
 

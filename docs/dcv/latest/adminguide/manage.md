@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/manage.html
 ---
 
 # Managing the Amazon DCV Server
-<a name="manage"></a>
 
 Amazon DCV runs on a dedicated server that creates user sessions for clients to access their remote desktops. As an administrator, you can manage and control the Amazon DCV servers, and the sessions hosted it, registered to you.
 

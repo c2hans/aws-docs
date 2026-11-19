@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Resourc
 ---
 
 # ResourcesMapFilter
-<a name="API_ResourcesMapFilter"></a>
 
 Enables filtering of AWS resources based on key-value map attributes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/add-wave.html
 ---
 
 # Add wave
-<a name="add-wave"></a>
 
 To add a wave, choose the **Add wave** button. You will then see the **Add wave** prompt that includes the following parameters:
 + **Wave name** – Select a wave name. The name must be unique per account per region. Note that uniqueness verification for wave name in Migration Application Service is case-insensitive.

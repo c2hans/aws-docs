@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_RolloutRa
 ---
 
 # RolloutRateIncreaseCriteria
-<a name="API_RolloutRateIncreaseCriteria"></a>
 
 Structure representing rollout config criteria.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-us
 ---
 
 # Signing out SAML users with single sign-out
-<a name="cognito-user-pools-saml-idp-sign-out"></a>
 
 Amazon Cognito supports SAML 2.0 [single logout](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0-cd-02.html#5.3.Single%20Logout%20Profile|outline) (SLO. With SLO, your application can sign out users from their SAML identity providers (IdPs) when they sign out from your user pool. This way, when users want to sign in to your application again, they must authenticate with their SAML IdP. Otherwise, they might have IdP or user pool browser cookies in place that pass them through to your application without the requirement that they provide credentials.
 

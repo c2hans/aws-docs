@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/ssl-
 ---
 
 # Update the SSL negotiation configuration of your Classic Load Balancer
-<a name="ssl-config-update"></a>
 
 Elastic Load Balancing provides security policies that have predefined SSL negotiation configurations to use to negotiate SSL connections between clients and your load balancer. If you are using the HTTPS/SSL protocol for your listener, you can use one of the predefined security policies, or use your own custom security policy.
 

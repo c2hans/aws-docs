@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergSortOrder.
 ---
 
 # IcebergSortOrder
-<a name="API_IcebergSortOrder"></a>
 
 Defines the sort order specification for an Iceberg table, determining how data should be ordered within partitions to optimize query performance.
 

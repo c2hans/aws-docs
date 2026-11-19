@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeAssociationExecutions
-<a name="API_DescribeAssociationExecutions"></a>
 
 Views all executions for a specific association ID.
 

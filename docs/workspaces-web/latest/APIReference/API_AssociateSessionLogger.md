@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_A
 ---
 
 # AssociateSessionLogger
-<a name="API_AssociateSessionLogger"></a>
 
 Associates a session logger with a portal.
 

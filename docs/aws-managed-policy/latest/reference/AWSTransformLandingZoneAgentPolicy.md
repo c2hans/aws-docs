@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWST
 ---
 
 # AWSTransformLandingZoneAgentPolicy
-<a name="AWSTransformLandingZoneAgentPolicy"></a>
 
 **Description**: Grants permissions for AWS Transform to set up AWS landing zones including account provisioning, organizational governance, and Control Tower configuration
 

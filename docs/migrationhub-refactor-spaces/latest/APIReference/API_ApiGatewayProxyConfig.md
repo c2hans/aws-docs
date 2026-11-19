@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # ApiGatewayProxyConfig
-<a name="API_ApiGatewayProxyConfig"></a>
 
 A wrapper object holding the Amazon API Gateway proxy configuration.
 

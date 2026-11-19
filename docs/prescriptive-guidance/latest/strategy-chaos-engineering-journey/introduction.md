@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ch
 ---
 
 # Investing in chaos engineering as a strategic necessity
-<a name="introduction"></a>
 
 *Adrian Hornsby and Laura Thomson, Amazon Web Services*
 

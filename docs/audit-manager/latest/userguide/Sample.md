@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/Sample.ht
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # AWS Audit Manager Sample Framework
-<a name="Sample"></a>
 
 If you’re new to Audit Manager, you can use the AWS Audit Manager Sample Framework to get to know how Audit Manager works. It provides a simple environment where you can explore Audit Manager functionality without getting overwhelmed by excessive evidence or exceeding your AWS Free Tier limits. After you've tried out the sample framework, you'll be ready to start using the rest of the frameworks that Audit Manager provides.
 

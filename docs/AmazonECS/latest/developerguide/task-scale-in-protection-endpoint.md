@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-sca
 ---
 
 # Amazon ECS task scale-in protection endpoint
-<a name="task-scale-in-protection-endpoint"></a>
 
 The Amazon ECS container agent automatically injects the `ECS_AGENT_URI` environment variable into the containers of Amazon ECS tasks to provide a method to interact with the container agent API endpoint.
 

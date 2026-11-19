@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/amazon-polly/overview.
 ---
 
 # Amazon Polly
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/amazon-polly/images/card-background.jpg)
 

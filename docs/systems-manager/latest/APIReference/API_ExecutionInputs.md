@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ExecutionInputs
-<a name="API_ExecutionInputs"></a>
 
 Information about the inputs for an execution preview.
 

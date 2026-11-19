@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Diff
 ---
 
 # DifferentialPrivacyPrivacyBudgetAggregation
-<a name="API_DifferentialPrivacyPrivacyBudgetAggregation"></a>
 
 Information about the total number of aggregations, as well as the remaining aggregations.
 

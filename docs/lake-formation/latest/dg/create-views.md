@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/create-views.ht
 ---
 
 # Creating Data Catalog views using DDL statements
-<a name="create-views"></a>
 
 You can create AWS Glue Data Catalog views using SQL editors for Athena, Amazon Redshift, and using the AWS Glue APIs/AWS CLI.
 

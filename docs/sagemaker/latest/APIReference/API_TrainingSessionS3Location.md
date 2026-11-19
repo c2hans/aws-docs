@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Traini
 ---
 
 # TrainingSessionS3Location
-<a name="API_TrainingSessionS3Location"></a>
 
 Specifies the Amazon S3 path and optional encryption settings for training session output data, including checkpoints, model artifacts, and invocation results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/docker-appl
 ---
 
 # Docker application manager
-<a name="docker-application-manager-component"></a>
 
 The Docker application manager component (`aws.greengrass.DockerApplicationManager`) enables AWS IoT Greengrass to download Docker images from public image registries and private registries hosted on Amazon Elastic Container Registry (Amazon ECR). It also enables AWS IoT Greengrass to manage credentials automatically to securely download images from private repositories in Amazon ECR.
 

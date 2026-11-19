@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/exam
 ---
 
 # Manage IAM access keys
-<a name="examples-iam-access-keys"></a>
 
 ## Create an access key
 <a name="create-an-access-key"></a>

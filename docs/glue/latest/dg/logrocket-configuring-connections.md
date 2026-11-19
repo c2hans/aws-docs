@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/logrocket-configuring-con
 ---
 
 # Configuring LogRocket connections
-<a name="logrocket-configuring-connections"></a>
 
 LogRocket connections authenticate with an API key (or token). You store the key in Secrets Manager and reference that secret when you create the connection in AWS Glue Studio.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/notebooks-import-files-
 ---
 
 # Import files and Python libraries to Athena for Spark
-<a name="notebooks-import-files-libraries"></a>
 
 This document provides examples of how to import files and Python libraries to Amazon Athena for Apache Spark.
 

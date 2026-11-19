@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Upda
 ---
 
 # UpdateChat
-<a name="API_UpdateChat"></a>
 
 Updates a chat execution. You can use this operation to change the chat execution's summary or to archive or unarchive it.
 

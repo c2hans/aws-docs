@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Rea
 ---
 
 # Synchronizing database users and objects with a SQL Server read replica
-<a name="SQLServer.ReadReplicas.ObjectSynchronization"></a>
 
 Any logins, custom server roles, SQL agent jobs, or other server-level objects that exist in the primary DB instance at the time of creating a read replica are expected to be present in the newly created read replica. However, any server-level objects that are created in the primary DB instance after the creation of the read replica will not be automatically replicated, and you must create them manually in the read replica.
 

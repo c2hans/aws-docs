@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-agent_e
 ---
 
 # Use `UpdateFlow` with an AWS SDK
-<a name="bedrock-agent_example_bedrock-agent_UpdateFlow_section"></a>
 
 The following code example shows how to use `UpdateFlow`.
 

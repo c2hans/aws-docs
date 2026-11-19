@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListApplicationAuthenticationMethods
-<a name="API_ListApplicationAuthenticationMethods"></a>
 
 Lists all of the authentication methods supported by the specified application.
 

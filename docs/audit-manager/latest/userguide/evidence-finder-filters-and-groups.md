@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/evidence-
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Filter and grouping options for evidence finder
-<a name="evidence-finder-filters-and-groups"></a>
 
 On this page, you can see a list of the filter and grouping options that are available for you to use in evidence finder.
 

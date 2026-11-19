@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/resources-a
 ---
 
 # Resources in Security Hub
-<a name="resources-adv"></a>
 
 Security Hub provides an inventory of the resources in your cloud environment. The **Resources** page lists each resource with its type, account, Region, tags, current configuration, findings, and criticality. The inventory covers your AWS resources and the resources in other cloud providers that you connect to Security Hub. You can filter, sort, and group the inventory, and open a resource to view its details and the findings that affect it. A delegated administrator account can view the resources of all member accounts in its organization. Security Hub records your AWS resources through service-linked configuration recorders and keeps the inventory current as resources are created, changed, and deleted.
 

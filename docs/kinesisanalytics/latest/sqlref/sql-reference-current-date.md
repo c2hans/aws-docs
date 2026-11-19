@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # CURRENT\_DATE
-<a name="sql-reference-current-date"></a>
 
 Returns the current Amazon Kinesis Data Analytics system date when the query executes as YYYY-MM-DD when the query executes.
 

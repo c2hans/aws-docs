@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # What are tags?
-<a name="what-are-tags"></a>
 
 A tag is a [*key-value pair*](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html) applied to a resource to hold metadata about that resource. Each tag is a label consisting of a key and an optional value. Not all services and resource types currently support tags (see [Services that support the Resource Groups Tagging API](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/supported-services.html)). Other services may support tags via their own APIs. It should be noted that tags are not encrypted and should not be used to store sensitive data, such as personally identifiable information (PII).
 

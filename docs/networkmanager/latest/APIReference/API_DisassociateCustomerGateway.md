@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DisassociateCustomerGateway
-<a name="API_DisassociateCustomerGateway"></a>
 
 Disassociates a customer gateway from a device and a link.
 

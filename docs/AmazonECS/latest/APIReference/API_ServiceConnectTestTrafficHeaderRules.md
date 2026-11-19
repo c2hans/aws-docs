@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Servic
 ---
 
 # ServiceConnectTestTrafficHeaderRules
-<a name="API_ServiceConnectTestTrafficHeaderRules"></a>
 
 The HTTP header rules used to identify and route test traffic during Amazon ECS blue/green deployments. These rules specify which HTTP headers to examine and what values to match for routing decisions.
 

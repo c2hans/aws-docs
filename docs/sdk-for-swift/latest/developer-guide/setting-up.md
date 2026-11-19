@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/set
 ---
 
 # Setting up the AWS SDK for Swift
-<a name="setting-up"></a>
 
 The AWS SDK for Swift is a cross-platform, open source [Swift](https://swift.org/) package that lets applications and tools built using Swift make full use of the services offered by AWS. Using the SDK, you can build Swift applications that work with Amazon S3, Amazon EC2, DynamoDB, and more.
 

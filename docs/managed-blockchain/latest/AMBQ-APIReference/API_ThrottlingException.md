@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # ThrottlingException
-<a name="API_ThrottlingException"></a>
 
 The request or operation couldn't be performed because a service is throttling requests. The most common source of throttling errors is when you create resources that exceed your service limit for this resource type. Request a limit increase or delete unused resources, if possible.
 

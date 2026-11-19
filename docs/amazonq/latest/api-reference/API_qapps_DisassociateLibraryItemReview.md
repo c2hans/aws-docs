@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_D
 ---
 
 # DisassociateLibraryItemReview
-<a name="API_qapps_DisassociateLibraryItemReview"></a>
 
 Removes a rating or review previously submitted by the user for a library item.
 

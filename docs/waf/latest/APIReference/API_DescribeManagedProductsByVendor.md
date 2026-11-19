@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DescribeMana
 ---
 
 # DescribeManagedProductsByVendor
-<a name="API_DescribeManagedProductsByVendor"></a>
 
 Provides high-level information for the managed rule groups owned by a specific vendor.
 

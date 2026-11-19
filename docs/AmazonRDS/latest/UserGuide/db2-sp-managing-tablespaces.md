@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/db2-sp-managi
 ---
 
 # Stored procedures for tablespaces for RDS for Db2
-<a name="db2-sp-managing-tablespaces"></a>
 
 The built-in stored procedures described in this topic manage tablespaces for Amazon RDS for Db2 databases. To run these procedures, the master user must first connect to the `rdsadmin` database.
 

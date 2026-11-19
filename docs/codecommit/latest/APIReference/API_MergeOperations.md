@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Merge
 ---
 
 # MergeOperations
-<a name="API_MergeOperations"></a>
 
 Information about the file operation conflicts in a merge operation.
 

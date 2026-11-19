@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Create
 ---
 
 # CreateInferenceRouter
-<a name="API_CreateInferenceRouter"></a>
 
 Creates an inference router. An inference router is a Regional SageMaker AI resource that sends each inference request to one of the endpoints or inference components that you list for a routing target. These destinations can be in any AWS account, and in any AWS Region in the same partition as the router.
 

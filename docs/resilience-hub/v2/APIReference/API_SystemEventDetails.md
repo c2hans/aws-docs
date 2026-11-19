@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Syste
 ---
 
 # SystemEventDetails
-<a name="API_SystemEventDetails"></a>
 
 Contains the details of a system event.
 

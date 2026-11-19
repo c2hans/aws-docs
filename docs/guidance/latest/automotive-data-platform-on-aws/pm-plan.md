@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/automotive-data-platform
 ---
 
 # Plan your deployment
-<a name="pm-plan"></a>
 
 This section provides deployment options, cost estimates, and resource requirements for implementing Predictive Maintenance in your AWS environment.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/howitworks-predictor.
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # Training Predictors
-<a name="howitworks-predictor"></a>
 
 A predictor is an Amazon Forecast model that is trained using your target time series, related time series, item metadata, and any additional datasets you include. You can use predictors to generate forecasts based on your time-series data.
 

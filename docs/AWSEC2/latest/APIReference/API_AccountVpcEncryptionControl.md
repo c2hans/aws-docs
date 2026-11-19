@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AccountVp
 ---
 
 # AccountVpcEncryptionControl
-<a name="API_AccountVpcEncryptionControl"></a>
 
 Describes the account-level VPC Encryption Control configuration, including its mode, state, and exclusions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_GetSite
 ---
 
 # GetSite
-<a name="API_GetSite"></a>
 
 Gets information about the specified Outpost site.
 

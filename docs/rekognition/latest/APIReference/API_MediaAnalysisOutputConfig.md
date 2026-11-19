@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Medi
 ---
 
 # MediaAnalysisOutputConfig
-<a name="API_MediaAnalysisOutputConfig"></a>
 
 Output configuration provided in the job creation request.
 

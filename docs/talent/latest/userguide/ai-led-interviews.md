@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/talent/latest/userguide/ai-led-interview
 ---
 
 # How AI-led interviews work
-<a name="ai-led-interviews"></a>
 
 An AI-led interview is a set of behavioral questions that Amazon Connect Talent generates for each competency a job requires. Amazon Connect Talent runs the interview with the candidate, asks follow-up questions when useful, and captures the conversation for you to review.
 

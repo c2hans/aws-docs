@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DetachL
 ---
 
 # DetachLoadBalancerTargetGroups
-<a name="API_DetachLoadBalancerTargetGroups"></a>
 
 **Note**
 This API operation is superseded by [DetachTrafficSources](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_DetachTrafficSources.html), which can detach multiple traffic sources types. We recommend using `DetachTrafficSources` to simplify how you manage traffic sources. However, we continue to support `DetachLoadBalancerTargetGroups`. You can use both the original `DetachLoadBalancerTargetGroups` API operation and `DetachTrafficSources` on the same Auto Scaling group.

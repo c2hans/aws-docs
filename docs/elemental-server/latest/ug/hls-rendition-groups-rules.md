@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-server/latest/ug/hls-rendition
 This is version 2.18 of the AWS Elemental Server documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server/).
 
 # Rules for Rendition Groups
-<a name="hls-rendition-groups-rules"></a>
 
 Rules exist for associating both audio and video streams in their respective rendition groups. These are described following.
 + A given audio stream can belong to only one audio rendition group.

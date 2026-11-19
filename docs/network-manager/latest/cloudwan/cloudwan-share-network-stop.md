@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Stop sharing an AWS Cloud WAN core network
-<a name="cloudwan-share-network-stop"></a>
 
 The following steps guide you through stopping sharing of your core network with other AWS accounts or across your organizations.
 

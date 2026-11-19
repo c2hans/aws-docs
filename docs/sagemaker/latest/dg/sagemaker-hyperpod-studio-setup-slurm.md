@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-s
 ---
 
 # Setting up a Slurm cluster in Studio
-<a name="sagemaker-hyperpod-studio-setup-slurm"></a>
 
 The following instructions describe how to set up a HyperPod Slurm cluster in Studio.
 

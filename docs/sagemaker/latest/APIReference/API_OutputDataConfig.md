@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Output
 ---
 
 # OutputDataConfig
-<a name="API_OutputDataConfig"></a>
 
 Provides information about how to store model training results (model artifacts).
 

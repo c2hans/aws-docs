@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSOPS02-BP01 Establish a manual snapshot repository
-<a name="aosops02-bp01"></a>
 
  Maintain control over your OpenSearch Service data by creating a centralized manual snapshot repository.
 

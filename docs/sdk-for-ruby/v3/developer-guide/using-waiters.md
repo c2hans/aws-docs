@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-ruby/v3/developer-guide/using-wa
 ---
 
 # Using waiters in the AWS SDK for Ruby
-<a name="using-waiters"></a>
 
 Waiters are utility methods that poll for a particular state to occur on a client. Waiters can fail after a number of attempts at a polling interval defined for the service client. For an example of how a waiter is used, see the [create\_table](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/ruby/example_code/dynamodb/scaffold.rb#L63) method of the Amazon DynamoDB Encryption Client in the AWS Code Examples Repository.
 

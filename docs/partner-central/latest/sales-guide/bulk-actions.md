@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/sales-guide/bulk-
 ---
 
 # Bulk actions
-<a name="bulk-actions"></a>
 
 ## Import opportunities
 <a name="bulk-import"></a>

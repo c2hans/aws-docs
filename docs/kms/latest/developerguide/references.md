@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/references.htm
 ---
 
 # AWS KMS Reference
-<a name="references"></a>
 
 The following reference material provide useful information about using and managing KMS keys.
 + [**Key type reference**](symm-asymm-compare.md). Lists the type of KMS key that supports each AWS KMS API operation.

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::APS::Workspace LimitsPerLabelSet
-<a name="aws-properties-aps-workspace-limitsperlabelset"></a>
 
 This defines a label set for the workspace, and defines the ingestion limit for active time series that match that label set. Each label name in a label set must be unique.
 

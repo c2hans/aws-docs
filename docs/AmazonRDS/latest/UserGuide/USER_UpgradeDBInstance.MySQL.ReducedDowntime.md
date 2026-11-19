@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # Using a read replica to reduce downtime when upgrading an RDS for MySQL database
-<a name="USER_UpgradeDBInstance.MySQL.ReducedDowntime"></a>
 
 In most cases, a blue/green deployment is the best option to reduce downtime when upgrading a MySQL DB instance. For more information, see [Using Amazon RDS Blue/Green Deployments for database updates](blue-green-deployments.md).
 

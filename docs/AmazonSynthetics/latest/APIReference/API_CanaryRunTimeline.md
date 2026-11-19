@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # CanaryRunTimeline
-<a name="API_CanaryRunTimeline"></a>
 
 This structure contains the start and end times of a single canary run.
 

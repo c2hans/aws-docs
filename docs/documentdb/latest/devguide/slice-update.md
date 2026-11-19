@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/slice-update.
 ---
 
 # $slice
-<a name="slice-update"></a>
 
 The `$slice` update operator modifies an array by limiting its size. When used with the `$push` operator, it restricts the number of elements in an array, keeping only the specified number of most recent or oldest elements.
 

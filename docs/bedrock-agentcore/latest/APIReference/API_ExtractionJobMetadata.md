@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ExtractionJobMetadata
-<a name="API_ExtractionJobMetadata"></a>
 
 Metadata information associated with this extraction job.
 

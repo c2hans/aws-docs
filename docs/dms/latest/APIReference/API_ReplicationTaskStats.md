@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_ReplicationT
 ---
 
 # ReplicationTaskStats
-<a name="API_ReplicationTaskStats"></a>
 
 In response to a request by the `DescribeReplicationTasks` operation, this object provides a collection of statistics about a replication task.
 

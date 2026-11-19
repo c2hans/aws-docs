@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/attribute
 ---
 
 # Attribute mapping and trust policy
-<a name="attribute-mapping-and-trust-policy"></a>
 
  It is recommended to have condition statements in the Assume Role Policy Document to restrict authorization based on attributes that are extracted from an end-entity X.509 certificate. For more information about the role trust policy, see [Trust policy](trust-model.md#trust-policy).
 

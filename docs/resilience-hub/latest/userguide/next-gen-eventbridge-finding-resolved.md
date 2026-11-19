@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Failure mode finding resolved event
-<a name="next-gen-eventbridge-finding-resolved"></a>
 
 The following is an example event emitted when a failure mode finding is marked as Resolved or Irrelevant.
 

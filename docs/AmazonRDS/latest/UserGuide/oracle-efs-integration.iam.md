@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-efs-in
 ---
 
 # Configuring IAM permissions for RDS for Oracle integration with Amazon EFS
-<a name="oracle-efs-integration.iam"></a>
 
 By default, Amazon EFS integration feature doesn't use an IAM role: the `USE_IAM_ROLE` option setting is `FALSE`. To integrate RDS for Oracle with Amazon EFS and an IAM role, your DB instance must have IAM permissions to access an Amazon EFS file system.
 

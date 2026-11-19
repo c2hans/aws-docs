@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/gs-publish
 ---
 
 # Install the AWS IoT Greengrass log manager component on the device
-<a name="gs-publish-edge"></a>
 
 **Note**
 Be aware of the [CloudWatch quotas](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch_limits_cwl.html).

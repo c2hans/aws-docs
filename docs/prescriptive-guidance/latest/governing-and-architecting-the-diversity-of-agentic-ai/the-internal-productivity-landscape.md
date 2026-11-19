@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/governing-a
 ---
 
 # Internal productivity applications
-<a name="the-internal-productivity-landscape"></a>
 
 These applications operate with a mix of internal data and web sources, creating a need to establish a secure environment for innovation while respecting the boundaries of corporate information security. They represent the foundation upon which many organizations build their AI capabilities, and can be categorized as:
 + Simple chatbots, which answer questions based on internal and public knowledge

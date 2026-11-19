@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/access-tokens
 ---
 
 # Access your source provider in CodeBuild
-<a name="access-tokens"></a>
 
 For GitHub or GitHub Enterprise Server, you use a personal access token, a Secrets Manager secret, a connection, or an OAuth app to access the source provider. For Bitbucket, you use either an access token, an app password, an API token, a Secrets Manager secret, a connection, or an OAuth app to access the source provider.
 

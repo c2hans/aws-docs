@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/ROSA
 ---
 
 # ROSASharedVPCRoute53Policy
-<a name="ROSASharedVPCRoute53Policy"></a>
 
 **Description**: Allows the Red Hat OpenShift Service on AWS (ROSA) installer to configure Route53 records. Intended to be used on a shared VPC.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Tr
 ---
 
 # TrainedModelsConfigurationPolicy
-<a name="API_TrainedModelsConfigurationPolicy"></a>
 
 The configuration policy for the trained models.
 

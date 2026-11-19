@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AutoScaling-
 ---
 
 # Deleting a scaling policy
-<a name="AutoScaling-Deleting-Policy"></a>
 
 You can delete a scaling policy using the AWS Management Console, the AWS CLI or the Application Auto Scaling API
 

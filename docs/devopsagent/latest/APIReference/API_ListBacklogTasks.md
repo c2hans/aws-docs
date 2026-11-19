@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_List
 ---
 
 # ListBacklogTasks
-<a name="API_ListBacklogTasks"></a>
 
 Lists backlog tasks in the specified agent space with optional filtering and sorting
 

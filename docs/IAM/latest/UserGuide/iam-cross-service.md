@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam-cross-service.h
 ---
 
 # How IAM works with other AWS services
-<a name="iam-cross-service"></a>
 
 While IAM is the primary AWS service you will use to manage IAM resources, all other AWS services work with IAM to control access to the resources in your account.
 + CloudFormation

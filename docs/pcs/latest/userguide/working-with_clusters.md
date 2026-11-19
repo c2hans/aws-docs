@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cluste
 ---
 
 # AWS PCS clusters
-<a name="working-with_clusters"></a>
 
 An AWS PCS cluster consists of the following components:
 + Managed instances of the HPC system scheduler software, such as the Slurm control daemon (`slurmctld`).

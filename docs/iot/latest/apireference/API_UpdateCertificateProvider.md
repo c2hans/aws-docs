@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateCertif
 ---
 
 # UpdateCertificateProvider
-<a name="API_UpdateCertificateProvider"></a>
 
 Updates a certificate provider.
 

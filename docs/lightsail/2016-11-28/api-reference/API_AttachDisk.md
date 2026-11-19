@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_A
 ---
 
 # AttachDisk
-<a name="API_AttachDisk"></a>
 
 Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name.
 

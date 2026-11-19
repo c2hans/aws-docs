@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/cognito-ide
 ---
 
 # cognito-identity-pool-unauthenticated-logins
-<a name="cognito-identity-pool-unauthenticated-logins"></a>
 
 Checks if Amazon Cognito identity pools disallow unauthenticated logins. The rule is NON\_COMPLIANT if configuration.AllowUnauthenticatedIdentities is true.
 

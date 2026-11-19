@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Alte
 ---
 
 # AlternateMedia
-<a name="API_AlternateMedia"></a>
 
 A playlist of media (VOD and/or live) to be played instead of the default media on a particular program.
 

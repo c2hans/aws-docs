@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # ForecastGeofenceEvents
-<a name="API_WaypointGeofencing_ForecastGeofenceEvents"></a>
 
 This action forecasts future geofence events that are likely to occur within a specified time horizon if a device continues moving at its current speed. Each forecasted event is associated with a geofence from a provided geofence collection. A forecast event can have one of the following states:
 

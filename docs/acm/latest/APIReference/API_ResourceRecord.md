@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_ResourceReco
 ---
 
 # ResourceRecord
-<a name="API_ResourceRecord"></a>
 
 Contains a DNS record value that you can use to validate ownership or control of a domain. This is used by the [DescribeCertificate](API_DescribeCertificate.md) action.
 

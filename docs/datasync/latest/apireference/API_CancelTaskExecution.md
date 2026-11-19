@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_CancelT
 ---
 
 # CancelTaskExecution
-<a name="API_CancelTaskExecution"></a>
 
 Stops an AWS DataSync task execution that's in progress. The transfer of some files are abruptly interrupted. File contents that're transferred to the destination might be incomplete or inconsistent with the source files.
 

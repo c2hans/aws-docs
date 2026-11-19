@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DeletePeering
-<a name="API_DeletePeering"></a>
 
 Deletes an existing peering connection.
 

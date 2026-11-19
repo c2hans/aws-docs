@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # AWS Lambda and Serverless Compute (BP6)
-<a name="aws-lambda-and-serverless-compute-bp6"></a>
 
  AWS Lambda automatically scales by running additional instances of your functions in response to incoming requests. Each function instance handles one request at a time, and Lambda can scale to thousands of concurrent executions within seconds.
 

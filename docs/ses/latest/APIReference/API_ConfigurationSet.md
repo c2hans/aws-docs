@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_Configuratio
 ---
 
 # ConfigurationSet
-<a name="API_ConfigurationSet"></a>
 
 The name of the configuration set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/omni-
 ---
 
 # Send AI agent telemetry
-<a name="omni-send-ai-agent-telemetry"></a>
 
 Add OpenTelemetry tracing to an AI agent written in Python or Node.js with LangGraph, LangChain, Strands Agents, CrewAI, OpenAI Agents, or the Vercel AI SDK, then run it on Amazon Bedrock AgentCore, AWS Lambda, or on your own compute (Amazon EC2, Amazon ECS, or Amazon EKS) so that its traces reach CloudWatch. CloudWatch Omni reads the model calls, tool calls, and orchestration steps from those traces to analyze and evaluate the agent. On AgentCore, the runtime exports the traces for you; on other compute, the agent exports them directly, as shown in Step 2.
 

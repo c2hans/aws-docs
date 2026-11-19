@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/using-streaming-api.html
 ---
 
 # Using the API to start a streaming conversation
-<a name="using-streaming-api"></a>
 
 When you start a stream to an Amazon Lex V2 bot, you accomplish the following tasks:
 

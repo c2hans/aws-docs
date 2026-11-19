@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_PermissionsB
 ---
 
 # PermissionsBoundaryDecisionDetail
-<a name="API_PermissionsBoundaryDecisionDetail"></a>
 
 Contains information about the effect that a permissions boundary has on a policy simulation when the boundary is applied to an IAM entity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-device-fleet-ch
 ---
 
 # Check Status
-<a name="edge-device-fleet-check-status"></a>
 
 Check that your device or fleet is connected and sampling data. Making periodic checks, manually or automatically, allows you to check that your device or fleet is working properly.
 

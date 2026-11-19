@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Redshif
 ---
 
 # RedshiftRunConfigurationInput
-<a name="API_RedshiftRunConfigurationInput"></a>
 
 The configuration details of the Amazon Redshift data source.
 

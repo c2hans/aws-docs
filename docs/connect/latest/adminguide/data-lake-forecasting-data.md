@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/data-lake-fore
 ---
 
 # Forecasting data in the Connect Customer analytics data lake
-<a name="data-lake-forecasting-data"></a>
 
 This topic details the content in the Connect Customer data lake forecasting tables. Each table lists the column, type, and description of the content in the table.
 

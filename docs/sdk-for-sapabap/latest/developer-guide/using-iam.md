@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/u
 ---
 
 # Using certificates with IAM Roles Anywhere
-<a name="using-iam"></a>
 
 SAP system can be authenticated on AWS by using certificated-based authentication with AWS Identity and Access Management Roles Anywhere. You must setup the certificate in `STRUST`, and configure the SDK profile in `/AWS1/IMG`.
 

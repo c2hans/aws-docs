@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_ListD
 ---
 
 # ListDocumentClassificationJobs
-<a name="API_ListDocumentClassificationJobs"></a>
 
 Gets a list of the documentation classification jobs that you have submitted.
 

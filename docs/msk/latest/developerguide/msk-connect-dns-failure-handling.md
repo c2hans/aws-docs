@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-connect-dn
 ---
 
 # Handle connector creation failures
-<a name="msk-connect-dns-failure-handling"></a>
 
 This section describes possible connector creation failures associated with DNS resolution and suggested actions to resolve the issues.
 

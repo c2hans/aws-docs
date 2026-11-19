@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf02-
 ---
 
 # PERF02-BP02 Collect compute-related metrics
-<a name="perf02-bp02"></a>
 
  Compute metrics show how hard your resources work and where they stall. Collect them continuously to spot bottlenecks and idle capacity before they affect users or budgets. Right-sizing and scaling decisions depend on these metrics.
 

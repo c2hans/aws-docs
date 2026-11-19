@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/verify-keys.html
 ---
 
 # Verify the fingerprint of your key pair
-<a name="verify-keys"></a>
 
 To verify the fingerprint of your key pair, compare the fingerprint displayed on the **Key pairs** page in the Amazon EC2 console, or returned by the [describe-key-pairs](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-key-pairs.html) command, with the fingerprint that you generate using the private key on your local computer. These fingerprints should match.
 

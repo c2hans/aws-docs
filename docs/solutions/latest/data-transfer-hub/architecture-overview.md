@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/archi
 ---
 
 # Architecture overview
-<a name="architecture-overview"></a>
 
  This section provides reference implementation architecture diagrams for the components deployed with this Guidance.
 

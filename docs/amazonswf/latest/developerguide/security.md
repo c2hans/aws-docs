@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/security
 ---
 
 # Security in Amazon Simple Workflow Service
-<a name="security"></a>
 
 This section provides information about Amazon Simple Workflow Service security and authentication.
 

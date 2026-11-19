@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Application control
-<a name="application-control"></a>
 
 |
 |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/emla-deploy-users-ec
 ---
 
 # Create special FAS policies
-<a name="emla-deploy-users-ecs-permissions"></a>
 
 After you have assigned permissions to MediaLive Anywhere users, you must create two extra policies:
 + A Create Cluster policy that you must attach to the roles of users who can create a cluster. This policy lets MediaLive send a request to Amazon Elastic Container Service to create an Amazon ECS cluster.

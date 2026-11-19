@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SourceField
 ---
 
 # SourceFieldProperties
-<a name="API_SourceFieldProperties"></a>
 
  The properties that can be applied to a field when the connector is being used as a source.
 

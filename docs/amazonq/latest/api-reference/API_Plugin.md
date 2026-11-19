@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Plugin.
 ---
 
 # Plugin
-<a name="API_Plugin"></a>
 
 Information about an Amazon Q Business plugin and its configuration.
 

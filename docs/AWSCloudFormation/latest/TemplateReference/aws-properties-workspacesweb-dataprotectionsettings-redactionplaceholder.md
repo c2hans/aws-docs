@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::WorkSpacesWeb::DataProtectionSettings RedactionPlaceHolder
-<a name="aws-properties-workspacesweb-dataprotectionsettings-redactionplaceholder"></a>
 
 The redaction placeholder that will replace the redacted text in session.
 

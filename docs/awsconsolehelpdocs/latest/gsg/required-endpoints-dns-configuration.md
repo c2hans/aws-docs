@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/required-e
 ---
 
 # Configuring VPC endpoints for accessing AWS Management Console
-<a name="required-endpoints-dns-configuration"></a>
 
 AWS Management Console Private Access supports operating in networks without access to the public internet. When you configure VPC endpoints for AWS Sign-In, AWS Management Console, and console static content, all browser traffic is routed through AWS PrivateLink. Internet connectivity is not required for the AWS Management Console itself.
 

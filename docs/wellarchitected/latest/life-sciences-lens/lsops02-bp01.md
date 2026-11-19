@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSOPS02-BP01 Establish a central control framework
-<a name="lsops02-bp01"></a>
 
  Establishing a central control framework and mapping to applicable frameworks can simplify processes, avoid duplicate effort, and reduce operational overheads. The IT quality team can define the required control objectives, while IT process and tooling experts can determine the best way to implement the controls.
 

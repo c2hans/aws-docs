@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_U
 ---
 
 # UpdatedSessionActionInfo
-<a name="API_UpdatedSessionActionInfo"></a>
 
 The updated session action information as it relates to completion and progress of the session.
 

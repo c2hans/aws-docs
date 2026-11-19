@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_B
 ---
 
 # Bundle
-<a name="API_Bundle"></a>
 
 Describes a bundle, which is a set of specs describing your virtual private server (or *instance*).
 

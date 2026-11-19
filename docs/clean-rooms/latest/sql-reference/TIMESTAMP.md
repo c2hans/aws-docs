@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/TIMESTA
 ---
 
 # TIMESTAMP function
-<a name="TIMESTAMP"></a>
 
 The TIMESTAMP function takes a value (typically a number) and converts it to a timestamp data type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/config-fsx-nvme-dat
 ---
 
 # Configure FSx for ONTAP as an NVMe/TCP datastore
-<a name="config-fsx-nvme-datastore"></a>
 
 You can present Amazon FSx for NetApp ONTAP block storage to the ESX hosts in your Amazon Elastic VMware Service environment over NVMe/TCP, and use it as a VMFS datastore. You use the Amazon FSx console, the NetApp ONTAP CLI, and the vSphere Client. To use iSCSI instead, see [Configure FSx for ONTAP as an iSCSI datastore](config-fsx-iscsi-datastore.md).
 

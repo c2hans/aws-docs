@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-additional-in
 ---
 
 # Additional options for forecasting insights
-<a name="canvas-additional-insights"></a>
 
 In Amazon SageMaker Canvas, you can use the following optional methods to get more insights from your forecast:
 + Group column

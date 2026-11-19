@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/external-slurm
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Creating a cluster with an external Slurmdbd accounting
-<a name="external-slurmdb-accounting"></a>
 
 Learn how to conﬁgure and create a cluster with external Slurmdbd accounting. For more information, see [Slurm accounting with AWS ParallelCluster](slurm-accounting-v3.md).
 

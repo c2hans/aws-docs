@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Query a DynamoDB table with a complex filter expression with an AWS SDK
-<a name="example_dynamodb_Scenarios_QueryWithComplexFilter_section"></a>
 
 The following code examples show how to query a table with a complex filter expression.
 + Apply complex filter expressions to query results.

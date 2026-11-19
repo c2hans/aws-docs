@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/http-input-requir
 ---
 
 # HTTP input requirements
-<a name="http-input-requirements"></a>
 
 When your input file source is HTTP(S), you specify the URL rather than an Amazon S3 path. Requirements for using HTTP(S) for input are as follows:
 + All input files must be publicly readable.

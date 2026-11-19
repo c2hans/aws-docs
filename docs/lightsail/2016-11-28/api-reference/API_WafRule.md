@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_W
 ---
 
 # WafRule
-<a name="API_WafRule"></a>
 
 Describes a Web Application Firewall (WAF) rule group for a Lightsail distribution. A WAF rule group is a set of rules managed by AWS. The rules inspect viewer requests and block requests that match them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/color-space-output-c
 ---
 
 # Decide about enhanced VQ mode
-<a name="color-space-output-config-vq"></a>
 
 You must decide if you should enable enhanced VQ mode in each MediaLive output. This mode applies only to outputs that use H.264.
 

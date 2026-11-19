@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ec2-ib-comp
 ---
 
 # EC2 Image Builder component-based products in AWS Marketplace
-<a name="ec2-ib-component-products"></a>
 
 As an AWS Marketplace seller, you can deliver your products to buyers with [Image Builder components](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html#image-builder). An Image Builder component is a fundamental building block used in the Image Builder service to create and maintain customized EC2 Image Builder components. Components are reusable, modular pieces of configuration that define a specific set of tasks to be performed during the image creation process.
 

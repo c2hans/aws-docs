@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # DeleteScheduledAction
-<a name="API_DeleteScheduledAction"></a>
 
 Deletes a scheduled action.
 

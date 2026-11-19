@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_P
 ---
 
 # PortfolioShareDetail
-<a name="API_PortfolioShareDetail"></a>
 
 Information about the portfolio share.
 

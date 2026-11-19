@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_WarmThro
 ---
 
 # WarmThroughputObject
-<a name="API_WarmThroughputObject"></a>
 
 Represents the warm throughput configuration on the stream. This is only present for On-Demand Kinesis Data Streams in accounts that have `MinimumThroughputBillingCommitment` enabled.
 

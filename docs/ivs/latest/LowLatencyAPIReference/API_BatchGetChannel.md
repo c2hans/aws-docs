@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Ba
 ---
 
 # BatchGetChannel
-<a name="API_BatchGetChannel"></a>
 
 Performs [GetChannel](API_GetChannel.md) on multiple ARNs simultaneously.
 

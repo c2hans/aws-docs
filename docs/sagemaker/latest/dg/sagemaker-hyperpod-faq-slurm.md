@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-f
 ---
 
 # SageMaker HyperPod FAQs
-<a name="sagemaker-hyperpod-faq-slurm"></a>
 
 Use the following frequently asked questions to troubleshoot problems with using SageMaker HyperPod.
 

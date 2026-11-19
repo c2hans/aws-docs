@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/create
 ---
 
 # Custom line items
-<a name="create-cli"></a>
 
 Use AWS Billing Conductor to create personalized line items and apply them to designated AWS accounts within a billing group.
 

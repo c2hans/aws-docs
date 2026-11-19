@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Task
 ---
 
 # TaskFilter
-<a name="API_TaskFilter"></a>
 
 Filter criteria for listing backlog tasks, supporting time range, priority, status, and type filters.
 

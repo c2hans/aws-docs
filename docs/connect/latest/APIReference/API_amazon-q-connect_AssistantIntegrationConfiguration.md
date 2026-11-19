@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # AssistantIntegrationConfiguration
-<a name="API_amazon-q-connect_AssistantIntegrationConfiguration"></a>
 
 The configuration information for the Amazon Q in Connect assistant integration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # CreateFirewallDomainList
-<a name="API_route53resolver_CreateFirewallDomainList"></a>
 
 Creates an empty firewall domain list for use in DNS Firewall rules. You can populate the domains for the new list with a file, using [ImportFirewallDomains](API_route53resolver_ImportFirewallDomains.md), or with domain strings, using [UpdateFirewallDomains](API_route53resolver_UpdateFirewallDomains.md).
 

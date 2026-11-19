@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/deploy
 ---
 
 # Deploy the solution
-<a name="deploy-the-solution"></a>
 
  [AWS Launch Wizard](deploy-using-aws-launch-wizard.md) is the recommended deployment method for this solution. It provides:
 + A guided configuration experience with detailed help panels at each step

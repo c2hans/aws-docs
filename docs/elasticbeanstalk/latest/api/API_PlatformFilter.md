@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Platform
 ---
 
 # PlatformFilter
-<a name="API_PlatformFilter"></a>
 
 Describes criteria to restrict the results when listing platform versions.
 

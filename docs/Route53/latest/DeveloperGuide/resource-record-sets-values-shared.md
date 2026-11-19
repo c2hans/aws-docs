@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-r
 ---
 
 # Values that are common for all routing policies
-<a name="resource-record-sets-values-shared"></a>
 
 These are the common values that you can specify when you create or edit Amazon Route 53 records. These values are used by all routing policies.
 

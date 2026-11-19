@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-infe
 ---
 
 # Example Neuron task definitions
-<a name="ecs-inference-task-def"></a>
 
 ## Managed device allocation example
 <a name="ecs-inference-task-def-managed"></a>

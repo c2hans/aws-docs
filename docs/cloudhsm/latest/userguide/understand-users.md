@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/understand-use
 ---
 
 # Prerequisites for user management in AWS CloudHSM Management Utility
-<a name="understand-users"></a>
 
 Before you use AWS CloudHSM Management Utility (CMU) to manage hardware security module (HSM) users in AWS CloudHSM, you must complete these prerequisites. The following topics describe getting started with the CMU.
 

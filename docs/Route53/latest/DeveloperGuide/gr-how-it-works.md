@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-how-it-
 ---
 
 # How Route 53 Global Resolver works
-<a name="gr-how-it-works"></a>
 
 Route 53 Global Resolver enables split-traffic DNS resolution between public and private domains, provides high availability through through the two or more AWS Regions you choose, and secures DNS queries by intercepting requests and applying DNS filtering policies. Understanding this process helps you troubleshoot issues and optimize your deployment for performance, availability, and security.
 

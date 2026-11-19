@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/designing-c
 ---
 
 # Configuring acount structure and OUs
-<a name="account-structure"></a>
 
 You can achieve both speed and security in the cloud by using AWS accounts. AWS accounts are resource containers that assist users in managing AWS resources. As needs and demands grow, environments scale through the addition of new accounts. The use of multiple accounts is a best practice because it enables rapid innovation across distributed teams and individuals, reduces the scope of impact through isolation, and can be adjusted to meet new business processes based on operational, regulatory, and budgetary requirements. Lastly, costs are incurred at the account level, so activity and costs can be identified with each account.
 

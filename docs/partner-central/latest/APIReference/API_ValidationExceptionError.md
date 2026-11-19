@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ValidationExceptionError
-<a name="API_ValidationExceptionError"></a>
 
 Indicates an invalid value for a field.
 +  *REQUIRED\_FIELD\_MISSING:* The request is missing a required field.

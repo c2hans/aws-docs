@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_T
 ---
 
 # TrustStoreSummary
-<a name="API_TrustStoreSummary"></a>
 
 The summary of the trust store.
 

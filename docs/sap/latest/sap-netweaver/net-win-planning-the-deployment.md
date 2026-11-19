@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-plannin
 ---
 
 # Planning the Deployment
-<a name="net-win-planning-the-deployment"></a>
 
 Plan your SAP system landscape according to the SAP Master Guide for your version of SAP NetWeaver and your combination of operating system and database.
 

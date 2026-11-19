@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-todois
 ---
 
 # Connecting to Todoist in AWS Glue Studio
-<a name="connecting-to-data-todoist"></a>
 
 Todoist is a task-management product for individuals and teams. Because you are a Todoist user, you can connect AWS Glue to your Todoist account. You can then use Todoist as a data source in your AWS Glue ETL jobs to transfer data between Todoist and AWS services or other supported applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # DeletePerformanceAnalysisReport
-<a name="API_DeletePerformanceAnalysisReport"></a>
 
 Deletes a performance analysis report.
 

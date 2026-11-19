@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Modeling custom CloudFormation Hooks
-<a name="hooks-model"></a>
 
 Modeling custom CloudFormation Hooks involves creating a schema that defines the Hook, its properties, and their attributes. When you create your custom Hook project using the `cfn init` command, an example Hook schema is created as a JSON-formatted text file, `{{hook-name}}.json`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameter
 ---
 
 # Writer Palmyra X5
-<a name="model-parameters-palmyra-x5"></a>
 
 Writer Palmyra X5 includes a suite of enterprise-ready capabilities, including advanced reasoning, tool-calling, LLM delegation, built-in RAG, code generation, structured outputs, multi-modality, and multi-lingual support.
 

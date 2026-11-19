@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/standalone-plans.
 ---
 
 # AWS Quick plans and pricing
-<a name="standalone-plans"></a>
 
 AWS Quick accounts created at [aws.com/quick](https://aws.com/quick) are available in three plans: **Free**, **Plus**, and **Max**. New accounts receive 30 days of Plus at no cost. For current pricing details, plan limits, and feature comparisons, see [AWS Quick pricing](https://aws.amazon.com/quick/pricing/).
 

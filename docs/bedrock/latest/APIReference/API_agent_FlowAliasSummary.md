@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowAliasSummary
-<a name="API_agent_FlowAliasSummary"></a>
 
 Contains information about an alias of a flow.
 

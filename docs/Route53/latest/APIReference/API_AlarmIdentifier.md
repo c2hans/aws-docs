@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_AlarmIde
 ---
 
 # AlarmIdentifier
-<a name="API_AlarmIdentifier"></a>
 
 A complex type that identifies the CloudWatch alarm that you want Amazon Route 53 health checkers to use to determine whether the specified health check is healthy.
 

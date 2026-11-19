@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Storage Gateway
-<a name="list_storagegateway"></a>
 
 AWS Storage Gateway (service prefix: `storagegateway`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

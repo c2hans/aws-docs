@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_OwnerUs
 ---
 
 # OwnerUserPropertiesOutput
-<a name="API_OwnerUserPropertiesOutput"></a>
 
 The properties of the owner user.
 

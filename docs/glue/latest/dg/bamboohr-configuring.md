@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/bamboohr-configuring.html
 ---
 
 # Configuring BambooHR
-<a name="bamboohr-configuring"></a>
 
 Before you can use AWS Glue to transfer data from BambooHR, you must meet the following requirements:
 

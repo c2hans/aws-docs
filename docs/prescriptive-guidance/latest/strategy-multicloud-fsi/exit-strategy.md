@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mu
 ---
 
 # Evaluate exit strategy requirements
-<a name="exit-strategy"></a>
 
 You might need a cloud provider exit strategy to comply with regulatory requirements, cloud concentration concerns, or your own corporate policies pertaining to the use of critical third-party service providers. An exit strategy outlines an organization's approach to move one or more workloads from a CSP to another environment.
 

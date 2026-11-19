@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/getting-start
 ---
 
 # AWS HealthLake tutorial
-<a name="getting-started-tutorial"></a>
 
 **Objective**
 

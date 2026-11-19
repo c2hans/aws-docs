@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/preparing-environme
 ---
 
 # Elastic Disaster Recovery replication network requirements
-<a name="preparing-environments"></a>
 
 Before activating AWS Elastic Disaster Recovery, ensure that your environments are prepared and set accordingly. These preparations include setting the correct network settings, defining network requirements, and opening the correct ports. This documentation guides you through preparing network settings in the AWS Elastic Disaster Recovery Service Manager and user console, opening TCP Port 443 and TCP Port 1500 connections, setting firewall rules, using a proxy, and solving common networking issues.
 

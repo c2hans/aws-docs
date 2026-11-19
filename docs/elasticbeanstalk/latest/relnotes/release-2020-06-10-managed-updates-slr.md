@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk introduces a managed-updates service-linked role on June 10, 2020
-<a name="release-2020-06-10-managed-updates-slr"></a>
 
 AWS Elastic Beanstalk added a new service-linked role for performing managed updates.
 

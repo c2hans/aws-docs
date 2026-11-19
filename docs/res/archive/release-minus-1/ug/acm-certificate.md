@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/acm-certi
 ---
 
 # Create an ACM certificate
-<a name="acm-certificate"></a>
 
 By default, RES hosts the web portal under an application load balancer using the domain amazonaws.com. To use your own domain, you will need to configure a public SSL/TLS certificate provided by you or requested from AWS Certificate Manager (ACM). If you use ACM, you will receive an AWS resource name you will need to provide as a parameter to encrypt the SSL/TLS channel between the client and web services host.
 

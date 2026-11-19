@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_TitleAggre
 ---
 
 # TitleAggregation
-<a name="API_TitleAggregation"></a>
 
 The details that define an aggregation based on finding title.
 

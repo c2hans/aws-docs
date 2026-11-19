@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/performance-tuning-data
 ---
 
 # Optimize data
-<a name="performance-tuning-data-optimization-techniques"></a>
 
 Performance depends not only on queries, but also importantly on how your dataset is organized and on the file format and compression that it uses.
 

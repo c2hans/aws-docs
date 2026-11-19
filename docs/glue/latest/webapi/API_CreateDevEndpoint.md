@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateDevEndpoint
 ---
 
 # CreateDevEndpoint
-<a name="API_CreateDevEndpoint"></a>
 
 Creates a new development endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate from Oracle WebLogic to Apache Tomcat (TomEE) on Amazon ECS
-<a name="migrate-from-oracle-weblogic-to-apache-tomcat-tomee-on-amazon-ecs"></a>
 
 *Anya Epishcheva and Harshad Gohil, Amazon Web Services*
 

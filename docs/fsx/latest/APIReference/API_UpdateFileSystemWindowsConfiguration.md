@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_UpdateFileSy
 ---
 
 # UpdateFileSystemWindowsConfiguration
-<a name="API_UpdateFileSystemWindowsConfiguration"></a>
 
 Updates the configuration for an existing Amazon FSx for Windows File Server file system. Amazon FSx only overwrites existing properties with non-null values provided in the request.
 

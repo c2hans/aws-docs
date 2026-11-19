@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-d
 ---
 
 # Learned Skills
-<a name="about-aws-devops-agent-learned-skills"></a>
 
 Learned skills are the knowledge that AWS DevOps Agent builds about your environment as it works—your topology, code dependencies, pipeline structure, and tool-use patterns. Four learned skills are available: Agent Space Understanding, Understanding Code Dependencies, Understanding Pipeline Topology, and Tool Use Best Practices.
 

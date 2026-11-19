@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle and MySQL user-defined functions
-<a name="chap-oracle-aurora-mysql.sql.udfs"></a>
 
 The following sections will provide details on assessing, preparing, and running the migration of user-defined functions (UDFs) using AWS DMS.
 

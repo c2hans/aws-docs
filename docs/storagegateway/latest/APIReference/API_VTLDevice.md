@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_V
 ---
 
 # VTLDevice
-<a name="API_VTLDevice"></a>
 
 Represents a device object associated with a tape gateway.
 

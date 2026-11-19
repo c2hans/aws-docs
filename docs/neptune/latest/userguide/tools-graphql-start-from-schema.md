@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/tools-graphql-s
 ---
 
 # Starting from a GraphQL schema with no directives
-<a name="tools-graphql-start-from-schema"></a>
 
 You can start from an empty Neptune database and use a GraphQL schema with no directives to create the data and query it. The command below automatically creates AWS resources to do this:
 

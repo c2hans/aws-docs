@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-sql-extens
 ---
 
 # SQL execution features of the JupyterLab SQL extension
-<a name="sagemaker-sql-extension-features-sql-execution"></a>
 
 You can execute SQL queries against your connected data sources in the SQL extension of JupyterLab. The following sections explain the most common parameters for running SQL queries inside JupyterLab notebooks:
 + Create a simple connection in [Create a simple magic command connection string](sagemaker-sql-extension-features-sql-execution-create-connection.md).

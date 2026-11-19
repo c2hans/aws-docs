@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/creating-arrays-from-su
 ---
 
 # Create arrays from subqueries
-<a name="creating-arrays-from-subqueries"></a>
 
 Create an array from a collection of rows.
 

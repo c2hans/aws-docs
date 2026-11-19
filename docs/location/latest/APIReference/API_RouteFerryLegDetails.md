@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteFe
 ---
 
 # RouteFerryLegDetails
-<a name="API_RouteFerryLegDetails"></a>
 
  FerryLegDetails is populated when the Leg type is Ferry, and provides additional information that is specific to ferry travel.
 

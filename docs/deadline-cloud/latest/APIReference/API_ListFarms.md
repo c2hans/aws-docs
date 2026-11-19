@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_L
 ---
 
 # ListFarms
-<a name="API_ListFarms"></a>
 
 Lists farms.
 

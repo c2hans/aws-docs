@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_SecurityConf
 ---
 
 # SecurityConfigurationSummary
-<a name="API_SecurityConfigurationSummary"></a>
 
 The creation date and time, and name, of a security configuration.
 

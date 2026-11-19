@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_BuildCon
 ---
 
 # BuildConfiguration
-<a name="API_BuildConfiguration"></a>
 
 Settings for an AWS CodeBuild build.
 

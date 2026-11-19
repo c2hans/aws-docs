@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CancelDec
 ---
 
 # CancelDeclarativePoliciesReport
-<a name="API_CancelDeclarativePoliciesReport"></a>
 
 Cancels the generation of an account status report.
 

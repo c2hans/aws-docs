@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # AssociateDelegationSignerToDomain
-<a name="API_domains_AssociateDelegationSignerToDomain"></a>
 
  Creates a delegation signer (DS) record in the registry zone for this domain name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Cognito User Pools
-<a name="amazoncognitouserpools"></a>
 
 Amazon Cognito User Pools provides the following APIs for data retrieval.
 

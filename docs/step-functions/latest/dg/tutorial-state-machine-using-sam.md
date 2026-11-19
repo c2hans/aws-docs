@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-state-
 ---
 
 # Create a Step Functions state machine using AWS SAM
-<a name="tutorial-state-machine-using-sam"></a>
 
 In this guide, you download, build, and deploy a sample AWS SAM application that contains an AWS Step Functions state machine. This application creates a mock stock trading workflow which runs on a pre-defined schedule (note that the schedule is disabled by default to avoid incurring charges).
 

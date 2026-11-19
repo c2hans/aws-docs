@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # DescribeDomainReplication
-<a name="API_DescribeDomainReplication"></a>
 
 Describes the replication arrangement that a domain participates in, including the domain's role and the state of its relationship with each peer.
 

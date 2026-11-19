@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/how-it-works-lines-wo
 ---
 
 # Lines and Words of Text
-<a name="how-it-works-lines-words"></a>
 
 Detected text that's returned by Amazon Textract operations is returned in a list of [Block](https://docs.aws.amazon.com/textract/latest/APIReference/API_Block.html) objects. These objects represent lines of text or textual words that are detected on a document page. The following text shows two lines of text that are made from multiple words.
 

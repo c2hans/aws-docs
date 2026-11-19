@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Create
 ---
 
 # CreatePublishingDestination
-<a name="API_CreatePublishingDestination"></a>
 
 Creates a publishing destination where you can export your GuardDuty findings. Before you start exporting the findings, the destination resource must exist.
 

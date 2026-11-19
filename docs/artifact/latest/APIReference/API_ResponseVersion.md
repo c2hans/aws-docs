@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/artifact/latest/APIReference/API_Respons
 ---
 
 # ResponseVersion
-<a name="API_ResponseVersion"></a>
 
 A versioned snapshot of a response edit.
 

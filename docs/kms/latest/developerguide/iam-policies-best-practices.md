@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/iam-policies-b
 ---
 
 # Best practices for IAM policies
-<a name="iam-policies-best-practices"></a>
 
 Securing access to AWS KMS keys is critical to the security of all of your AWS resources. KMS keys are used to protect many of the most sensitive resources in your AWS account. Take the time to design the [key policies](key-policies.md), IAM policies, [grants](grants.md), and VPC endpoint policies that control access to your KMS keys.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/g
 ---
 
 # Gateway Load Balancer Centralized Egress Inspection
-<a name="gwlb-centralized-egress-inspection"></a>
 
 Publication date: **February 15, 2022 ([Diagram history](#diagram-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-o
 ---
 
 # Target architecture
-<a name="target-architecture"></a>
 
 The target architecture, migration strategy, and technical steps depend on the source architecture, connectivity constraints, security requirements, and other policies. They also depend on your organization's individual policies or requirements. The following diagram shows a sample architecture on the AWS Cloud that could host your OpenText platform.
 

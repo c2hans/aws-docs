@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_Operations_Ama
 ---
 
 # Amazon Personalize Events
-<a name="API_Operations_Amazon_Personalize_Events"></a>
 
 The following actions are supported by Amazon Personalize Events:
 +  [PutActionInteractions](API_UBS_PutActionInteractions.md)

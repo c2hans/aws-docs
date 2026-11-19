@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Fram
 ---
 
 # FrameworkSummary
-<a name="API_FrameworkSummary"></a>
 
 The framework-specific details of the assessed resource. Exactly one member is set, corresponding to the framework that was assessed.
 

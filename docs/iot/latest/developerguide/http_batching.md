@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/http_batching.
 ---
 
 # Batching HTTP action messages
-<a name="http_batching"></a>
 
 You can use batching to send multiple HTTP action messages in a single request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Tag.html
 ---
 
 # Tag
-<a name="API_Tag"></a>
 
 Definition of the key/value pair for a tag.
 

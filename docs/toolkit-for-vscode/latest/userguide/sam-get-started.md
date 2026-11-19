@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/sam-
 ---
 
 # Getting Started with serverless applications
-<a name="sam-get-started"></a>
 
 The following sections describe how to get started creating an AWS Serverless Application from the AWS Toolkit for Visual Studio Code, using AWS Serverless Application Model (AWS SAM) and CloudFormation stacks.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Manually quarantine, replace, or reboot a node
-<a name="sagemaker-hyperpod-eks-resiliency-manual"></a>
 
 Learn how to manually quarantine, replace, and reboot a faulty node in SageMaker HyperPod clusters orchestrated with Amazon EKS.
 

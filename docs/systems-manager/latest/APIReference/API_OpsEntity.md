@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # OpsEntity
-<a name="API_OpsEntity"></a>
 
 The result of the query.
 

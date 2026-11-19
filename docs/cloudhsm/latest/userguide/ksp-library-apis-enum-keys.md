@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-ap
 ---
 
 # NCryptEnumKeys with Key storage provider (KSP)
-<a name="ksp-library-apis-enum-keys"></a>
 
 NCryptEnumKeys function lists the keys stored in the Key Storage Provider (KSP).
 

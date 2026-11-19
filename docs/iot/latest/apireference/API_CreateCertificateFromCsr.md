@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCertif
 ---
 
 # CreateCertificateFromCsr
-<a name="API_CreateCertificateFromCsr"></a>
 
 Creates an X.509 certificate using the specified certificate signing request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/cloudfron
 ---
 
 # Managing Amazon CloudFront distributions using the CloudFront API and the AWS SDK for PHP Version 3
-<a name="cloudfront-example-distribution"></a>
 
 Amazon CloudFront caches content in worldwide edge locations to speed up distribution of static and dynamic files that you store on your own server, or on an Amazon service like Amazon S3 and Amazon EC2. When users request content from your website, CloudFront serves it from the closest edge location, if the file is cached there. Otherwise CloudFront retrieves a copy of the file, serves it, and then caches it for the next request. Caching content at an edge location reduces the latency of similar user requests in that area.
 

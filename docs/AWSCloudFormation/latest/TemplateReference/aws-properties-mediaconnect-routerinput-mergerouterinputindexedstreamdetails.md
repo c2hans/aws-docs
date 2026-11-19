@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaConnect::RouterInput MergeRouterInputIndexedStreamDetails
-<a name="aws-properties-mediaconnect-routerinput-mergerouterinputindexedstreamdetails"></a>
 
 <a name="aws-properties-mediaconnect-routerinput-mergerouterinputindexedstreamdetails-description"></a>The `MergeRouterInputIndexedStreamDetails` property type specifies Property description not available. for an [AWS::MediaConnect::RouterInput](aws-resource-mediaconnect-routerinput.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Serv
 ---
 
 # ServiceResourceCost
-<a name="API_ServiceResourceCost"></a>
 
 An object that contains information about the estimated monthly cost to analyze an AWS resource. For more information, see [Estimate your Amazon DevOps Guru costs](https://docs.aws.amazon.com/devops-guru/latest/userguide/cost-estimate.html) and [Amazon DevOps Guru pricing](http://aws.amazon.com/devops-guru/pricing/).
 

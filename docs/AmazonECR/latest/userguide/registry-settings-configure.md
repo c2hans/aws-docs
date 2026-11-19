@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry-sett
 ---
 
 # Configuring private image replication in Amazon ECR
-<a name="registry-settings-configure"></a>
 
 Configure replication per Region for your private registry. You can configure cross-Region replication or cross-account replication.
 

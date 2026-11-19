@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_D
 ---
 
 # DomainResourceFilter
-<a name="API_DomainResourceFilter"></a>
 
 The domain resource that's being used as a filter.
 

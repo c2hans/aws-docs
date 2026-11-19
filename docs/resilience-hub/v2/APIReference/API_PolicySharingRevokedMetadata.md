@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Polic
 ---
 
 # PolicySharingRevokedMetadata
-<a name="API_PolicySharingRevokedMetadata"></a>
 
 Contains details about a policy for which organization sharing was revoked, including the number of services that were affected.
 

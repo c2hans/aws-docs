@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/training.h
 ---
 
 # .training
-<a name="training"></a>
 
 Used by trainers, coaches, and educators.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Act
 ---
 
 # ActionTypeSettings
-<a name="API_ActionTypeSettings"></a>
 
 Returns information about the settings for an action type.
 

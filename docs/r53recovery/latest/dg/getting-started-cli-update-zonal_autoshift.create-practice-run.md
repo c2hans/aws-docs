@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/getting-started-cl
 ---
 
 # Create a practice run configuration
-<a name="getting-started-cli-update-zonal_autoshift.create-practice-run"></a>
 
 Before you can enable zonal autoshift for a resource, you must create a practice run configuration for the resource, to choose options for the required practice runs. You create a practice run configuration for a resource with the CLI by using the `create-practice-run-configuration` command.
 

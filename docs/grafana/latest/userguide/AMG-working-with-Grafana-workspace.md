@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-working-wit
 ---
 
 # Use your Grafana workspace
-<a name="AMG-working-with-Grafana-workspace"></a>
 
 Your Grafana workspace is where you work on projects to create visualizations and explore your metrics. Set up and query data sources for your metrics. Create panels inside dashboards to view your metrics. Explore your data. Create alarms on your metrics.
 

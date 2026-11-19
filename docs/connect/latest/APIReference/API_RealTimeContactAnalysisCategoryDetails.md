@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisCategoryDetails
-<a name="API_RealTimeContactAnalysisCategoryDetails"></a>
 
 Provides information about the category rule that was matched.
 

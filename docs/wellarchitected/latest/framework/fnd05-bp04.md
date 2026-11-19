@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd05-b
 ---
 
 # FND05-BP04 Configure standardized locations for logs, traces, and metrics
-<a name="fnd05-bp04"></a>
 
  Security teams use logs and findings to analyze events that might indicate unauthorized activity or unintentional changes. Operations teams use logs, distributed traces, and metrics to understand system behavior and detect and mitigate issues early. Capture logs, traces, and metrics in standardized locations to correlate data points across all three signal types and simplify tool integrations.
 

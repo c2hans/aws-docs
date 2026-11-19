@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/query-ODBC
 ---
 
 # Connection string syntax and options for the ODBC driver
-<a name="query-ODBC-connecting"></a>
 
 The syntax for specifying connection-string options for the ODBC driver is as follows:
 

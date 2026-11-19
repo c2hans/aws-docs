@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/opl-step-get-re
 ---
 
 # Design the outputs
-<a name="opl-step-get-ready-outputs"></a>
 
 When you design a workflow that implements Elemental Live output locking, you must decide which output group types you will produce, design the outputs in the output groups, and decide on the video encoding characteristics of the output type or types.
 

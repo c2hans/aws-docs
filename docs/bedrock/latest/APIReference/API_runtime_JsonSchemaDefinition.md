@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # JsonSchemaDefinition
-<a name="API_runtime_JsonSchemaDefinition"></a>
 
  JSON schema structured output format options.
 

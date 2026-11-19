@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ServiceVpcEndpoint
-<a name="API_osis_ServiceVpcEndpoint"></a>
 
 A container for information about VPC endpoints that were created to other services
 

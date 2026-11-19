@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/closing-sessio
 ---
 
 # Closing a session
-<a name="closing-session"></a>
 
 After you’re completely done with your work, you can **Close** a session and release the underlying resource back to the host server.
 

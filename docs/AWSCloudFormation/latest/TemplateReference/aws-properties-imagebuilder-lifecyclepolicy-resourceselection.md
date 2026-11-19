@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ImageBuilder::LifecyclePolicy ResourceSelection
-<a name="aws-properties-imagebuilder-lifecyclepolicy-resourceselection"></a>
 
 Resource selection criteria for the lifecycle policy. You must provide exactly one selection criteria: either recipes or a tag map, not both.
 

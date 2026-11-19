@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/beaconing-configur
 ---
 
 # Beaconing configuration
-<a name="beaconing-configuration"></a>
 
 In client-side reporting, your player sends ad tracking beacons directly to your ad server and to your ad-verification providers. MediaTailor doesn't see those requests, so the ad tracking metrics and logs that you get with server-side reporting have no client-side equivalent. This makes it hard to compare ad delivery across the two reporting modes, or to tell whether a drop in reported impressions is an ad problem or a player problem.
 

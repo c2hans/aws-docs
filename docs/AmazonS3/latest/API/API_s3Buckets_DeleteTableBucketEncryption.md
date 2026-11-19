@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Delete
 ---
 
 # DeleteTableBucketEncryption
-<a name="API_s3Buckets_DeleteTableBucketEncryption"></a>
 
 Deletes the encryption configuration for a table bucket.
 

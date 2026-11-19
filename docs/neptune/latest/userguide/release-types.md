@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/release-types.h
 ---
 
 # Different types of engine release in Amazon Neptune
-<a name="release-types"></a>
 
 The four types of engine release that correspond to the four parts of an engine version number are as follows:
 + **Product version**   –   This only changes if the product undergoes sweeping, fundamental changes in functionality or interface. The current Neptune product version is 1.

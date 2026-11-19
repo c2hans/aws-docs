@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/smartlook-reading-from-en
 ---
 
 # Reading from Smartlook entities
-<a name="smartlook-reading-from-entities"></a>
 
 **Prerequisites**
 

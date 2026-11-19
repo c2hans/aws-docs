@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PhoneNum
 ---
 
 # PhoneNumberQuickConnectConfig
-<a name="API_PhoneNumberQuickConnectConfig"></a>
 
 Contains information about a phone number for a quick connect.
 

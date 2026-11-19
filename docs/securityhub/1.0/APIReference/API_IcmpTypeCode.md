@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_IcmpTyp
 ---
 
 # IcmpTypeCode
-<a name="API_IcmpTypeCode"></a>
 
 An Internet Control Message Protocol (ICMP) type and code.
 

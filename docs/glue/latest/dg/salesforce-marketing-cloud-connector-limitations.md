@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-marketing-clou
 ---
 
 # Limitations and notes for Salesforce Marketing Cloud connector
-<a name="salesforce-marketing-cloud-connector-limitations"></a>
 
 The following are limitations or notes for the Salesforce Marketing Cloud connector:
 + When using filter on DateTime datatype field, you need to pass the value in the format "yyyy-mm-ddThh:MM:ssZ".

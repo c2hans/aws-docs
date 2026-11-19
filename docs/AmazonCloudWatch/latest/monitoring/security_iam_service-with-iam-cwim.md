@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/secur
 ---
 
 # How Internet Monitor works with IAM
-<a name="security_iam_service-with-iam-cwim"></a>
 
 Before you use IAM to manage access to Internet Monitor, learn what IAM features are available to use with Internet Monitor.
 

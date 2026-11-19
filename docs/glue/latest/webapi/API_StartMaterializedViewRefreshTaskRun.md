@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StartMaterialized
 ---
 
 # StartMaterializedViewRefreshTaskRun
-<a name="API_StartMaterializedViewRefreshTaskRun"></a>
 
 Starts a materialized view refresh task run for a specified materialized view.
 

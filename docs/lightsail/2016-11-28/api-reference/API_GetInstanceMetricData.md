@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetInstanceMetricData
-<a name="API_GetInstanceMetricData"></a>
 
 Returns the data points for the specified Amazon Lightsail instance metric, given an instance name.
 

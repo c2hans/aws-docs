@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Defau
 ---
 
 # DefaultHierarchyFilterDropDownControlOptions
-<a name="API_DefaultHierarchyFilterDropDownControlOptions"></a>
 
 The default options that correspond to the `HierarchyDropdown` filter control type.
 

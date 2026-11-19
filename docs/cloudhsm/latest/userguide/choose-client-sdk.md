@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/choose-client-
 ---
 
 # Using previous SDK version to work with AWS CloudHSM
-<a name="choose-client-sdk"></a>
 
 ****
  SDK versions 5.8.0 and earlier have reached their end of support. After March 31, 2025 documentation for SDK versions 3.4.4 and earlier will no longer be available.

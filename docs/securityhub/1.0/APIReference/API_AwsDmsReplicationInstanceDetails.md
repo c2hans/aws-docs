@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDmsR
 ---
 
 # AwsDmsReplicationInstanceDetails
-<a name="API_AwsDmsReplicationInstanceDetails"></a>
 
  Provides details about an AWS Database Migration Service (AWS DMS) replication instance. DMS uses a replication instance to connect to your source data store, read the source data, and format the data for consumption by the target data store.
 

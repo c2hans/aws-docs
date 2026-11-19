@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Creating and managing patch groups
-<a name="patch-manager-tag-a-patch-group"></a>
 
 If you are *not* using patch policies, you can organize patching by adding managed nodes to patch groups using tags.
 

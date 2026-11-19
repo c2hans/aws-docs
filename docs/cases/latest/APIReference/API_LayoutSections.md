@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_LayoutSect
 ---
 
 # LayoutSections
-<a name="API_connect-cases_LayoutSections"></a>
 
 Ordered list containing different kinds of sections that can be added. A LayoutSections object can only contain one section.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Cr
 ---
 
 # CreatePublicVirtualInterface
-<a name="API_CreatePublicVirtualInterface"></a>
 
 Creates a public virtual interface. A virtual interface is the VLAN that transports Direct Connect traffic. A public virtual interface supports sending traffic to public services of AWS such as Amazon S3.
 

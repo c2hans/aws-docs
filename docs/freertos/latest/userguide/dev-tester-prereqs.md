@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/dev-tester-pre
 ---
 
 # Setup the 1.0 qualification prerequisites
-<a name="dev-tester-prereqs"></a>
 
 This section describes the prerequisites for testing microcontrollers with AWS IoT Device Tester.
 

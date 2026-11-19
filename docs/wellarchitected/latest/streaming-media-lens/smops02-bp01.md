@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMOPS02-BP01 Establish performance metrics by defining key performance indicators (KPIs) and service-level objectives (SLOs)
-<a name="smops02-bp01"></a>
 
 Establishing a full set of operational performance metrics is critical in streaming video workloads. It helps organizations to measure, monitor, and validate the performance of streaming operations across different scenarios.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/newrelic-reading-from-ent
 ---
 
 # Reading from New Relic entities
-<a name="newrelic-reading-from-entities"></a>
 
 **Prerequisites**
 

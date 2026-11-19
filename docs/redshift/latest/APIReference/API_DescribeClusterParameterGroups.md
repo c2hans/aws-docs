@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Describ
 ---
 
 # DescribeClusterParameterGroups
-<a name="API_DescribeClusterParameterGroups"></a>
 
 Returns a list of Amazon Redshift parameter groups, including parameter groups you created and the default parameter group. For each parameter group, the response includes the parameter group name, description, and parameter group family name. You can optionally specify a name to retrieve the description of a specific parameter group.
 
@@ -19,7 +18,7 @@ If both tag keys and values are omitted from the request, parameter groups are r
  For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
 
  ** Marker **
-An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeClusterParameterGroups](#API_DescribeClusterParameterGroups) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
+An optional parameter that specifies the starting point to return a set of response records. When the results of a [DescribeClusterParameterGroups](API_DescribeClusterParameterGroups.md) request exceed the value specified in `MaxRecords`, AWS returns a value in the `Marker` field of the response. You can retrieve the next set of response records by providing the returned marker value in the `Marker` parameter and retrying the request.
 Type: String
 Length Constraints: Maximum length of 2147483647.
 Required: No

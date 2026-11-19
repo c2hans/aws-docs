@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # CreateRecommender
-<a name="API_connect-customer-profiles_CreateRecommender"></a>
 
 Creates a recommender
 

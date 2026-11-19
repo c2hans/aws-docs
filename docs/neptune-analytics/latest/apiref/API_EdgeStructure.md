@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Edge
 ---
 
 # EdgeStructure
-<a name="API_EdgeStructure"></a>
 
 Contains information about an edge in a Neptune Analytics graph.
 

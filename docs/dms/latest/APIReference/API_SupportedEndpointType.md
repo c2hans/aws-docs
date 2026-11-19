@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_SupportedEnd
 ---
 
 # SupportedEndpointType
-<a name="API_SupportedEndpointType"></a>
 
 Provides information about types of supported endpoints in response to a request by the `DescribeEndpointTypes` operation. This information includes the type of endpoint, the database engine name, and whether change data capture (CDC) is supported.
 

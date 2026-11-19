@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Snippet
 ---
 
 # SnippetExcerpt
-<a name="API_SnippetExcerpt"></a>
 
 Contains the relevant text excerpt from a source that was used to generate a citation text segment in an Amazon Q Business chat response.
 

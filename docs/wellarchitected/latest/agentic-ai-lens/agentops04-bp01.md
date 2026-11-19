@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTOPS04-BP01 Implement tool registry and catalog management
-<a name="agentops04-bp01"></a>
 
  Agents that can't discover tools end up with hardcoded integrations, inconsistent documentation, and a maintenance tax that grows with every new capability. A centralized registry makes the tool catalog queryable, versioned, and governable.
 

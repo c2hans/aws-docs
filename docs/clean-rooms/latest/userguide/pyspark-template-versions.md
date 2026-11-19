@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/pyspark-tem
 ---
 
 # Differences between PySpark 1.0 and PySpark 2.0 analysis templates
-<a name="pyspark-template-versions"></a>
 
 PySpark analysis templates that use the `PYSPARK_2_0` format (PySpark 2.0) let you choose CSV or Parquet results and run multiple jobs at the same time in a collaboration. They also differ from PySpark 1.0 analysis templates in supported column types and CSV output. Existing PySpark 1.0 analysis templates aren't affected.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_TestR
 ---
 
 # TestRunPolicySnapshot
-<a name="API_TestRunPolicySnapshot"></a>
 
 A snapshot of the resilience policy captured onto a test run from the service when the run was started.
 

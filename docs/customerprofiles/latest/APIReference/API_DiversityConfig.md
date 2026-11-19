@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # DiversityConfig
-<a name="API_connect-customer-profiles_DiversityConfig"></a>
 
 Configuration that controls diversity of recommendation results by capping the representation of specified item columns.
 

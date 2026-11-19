@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_R
 ---
 
 # RegisterContainerImage
-<a name="API_RegisterContainerImage"></a>
 
 Registers a container image to your Amazon Lightsail container service.
 

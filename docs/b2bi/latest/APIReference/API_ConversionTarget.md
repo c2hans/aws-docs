@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_ConversionT
 ---
 
 # ConversionTarget
-<a name="API_ConversionTarget"></a>
 
 Provide a sample of what the output of the transformation should look like.
 

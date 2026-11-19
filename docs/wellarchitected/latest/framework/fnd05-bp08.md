@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd05-b
 ---
 
 # FND05-BP08 Employ vulnerability and patch management controls
-<a name="fnd05-bp08"></a>
 
  Establish centralized vulnerability and patch management so your organization can identify, assess, and remediate security weaknesses consistently across workloads. A shared foundation reduces duplicated effort and creates clear accountability.
 

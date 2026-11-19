@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/monitor-sending-activity-u
 ---
 
 # Receiving Amazon SES notifications through email
-<a name="monitor-sending-activity-using-notifications-email"></a>
 
 Amazon SES can send you email when you receive bounces and complaints by using a process called *email feedback forwarding*.
 

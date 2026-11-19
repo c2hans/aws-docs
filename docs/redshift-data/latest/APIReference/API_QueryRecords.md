@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-data/latest/APIReference/API_Qu
 ---
 
 # QueryRecords
-<a name="API_QueryRecords"></a>
 
 The results of the SQL statement.
 

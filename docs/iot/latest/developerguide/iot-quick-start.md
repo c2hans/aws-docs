@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-quick-star
 ---
 
 # Try the AWS IoT Core quick connect tutorial
-<a name="iot-quick-start"></a>
 
 In this tutorial, you'll create your first thing object, connect a device to it, and watch it send MQTT messages.
 

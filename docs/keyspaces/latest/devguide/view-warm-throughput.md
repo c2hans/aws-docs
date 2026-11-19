@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/view-warm-thro
 ---
 
 # View warm throughput of an Amazon Keyspaces table
-<a name="view-warm-throughput"></a>
 
 You can view your Amazon Keyspaces table's current warm throughput values using the console, CQL, or the AWS CLI.
 

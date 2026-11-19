@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Disassoci
 ---
 
 # DisassociateRouteServer
-<a name="API_DisassociateRouteServer"></a>
 
 Disassociates a route server from a VPC.
 

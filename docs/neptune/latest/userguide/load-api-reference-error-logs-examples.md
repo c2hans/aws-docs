@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/load-api-refere
 ---
 
 # Neptune Loader Get-Status `errorLogs` examples
-<a name="load-api-reference-error-logs-examples"></a>
 
  The following examples showcase the detailed status response from the Neptune loader when errors have occurred during the data loading process. The examples illustrate the structure of the response, including information about failed feeds, overall status, and detailed error logs.
 

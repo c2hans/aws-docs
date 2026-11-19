@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/golang-logging.html
 ---
 
 # Log and monitor Go Lambda Event Functions
-<a name="golang-logging"></a>
 
 AWS Lambda automatically monitors Lambda Event Functions on your behalf and sends logs to Amazon CloudWatch. Your function comes with a CloudWatch Logs log group and a log stream for each instance of your function. The Lambda runtime environment sends details about each invocation to the log stream, and relays logs and other output from your function's code. For more information, see [Sending Lambda Event Function logs to CloudWatch Logs](monitoring-cloudwatchlogs.md).
 

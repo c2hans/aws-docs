@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Cross-Region log ingestion
-<a name="cross-region-log-ingestion"></a>
 
 When you deploy Centralized Logging with OpenSearch in one Region, the solution allows you to ingest service logs from another Region.
 

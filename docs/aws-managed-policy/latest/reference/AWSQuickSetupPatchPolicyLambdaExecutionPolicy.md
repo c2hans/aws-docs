@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSetupPatchPolicyLambdaExecutionPolicy
-<a name="AWSQuickSetupPatchPolicyLambdaExecutionPolicy"></a>
 
 **Description**: Grants permissions to manage State Manager associations for automated cleanup operations when Quick Setup configurations are deleted.
 

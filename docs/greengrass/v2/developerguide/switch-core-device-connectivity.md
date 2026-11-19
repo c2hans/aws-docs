@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/switch-core
 ---
 
 # Switch a Greengrass core device to a different AWS account or Region
-<a name="switch-core-device-connectivity"></a>
 
 You can deploy a nucleus configuration update to switch a core device's IoT connectivity from one AWS account or Region to another. This is useful in the following scenarios:
 + **Manufacturing to production transition** – You provision devices in a staging account during manufacturing and move them to the destination account during field installation.

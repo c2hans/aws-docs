@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Respo
 ---
 
 # ResponseHeadersPolicyRemoveHeadersConfig
-<a name="API_ResponseHeadersPolicyRemoveHeadersConfig"></a>
 
 A list of HTTP header names that CloudFront removes from HTTP responses to requests that match the cache behavior that this response headers policy is attached to.
 

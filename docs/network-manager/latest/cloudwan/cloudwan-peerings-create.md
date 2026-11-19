@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Create a peering in an AWS Cloud WAN core network
-<a name="cloudwan-peerings-create"></a>
 
 Create a transit gateway peering.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/startup-res
 ---
 
 # Contributors
-<a name="contributors"></a>
 
 The following individuals contributed to this guide.
 

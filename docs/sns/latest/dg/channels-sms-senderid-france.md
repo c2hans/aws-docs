@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/channels-sms-senderid-fran
 ---
 
 # Amazon SNS Sender ID requirements for France
-<a name="channels-sms-senderid-france"></a>
 
 This guide provides the steps and guidelines to create a dedicated Sender ID. French mobile carriers require this for sending SMS text messages to France.
 

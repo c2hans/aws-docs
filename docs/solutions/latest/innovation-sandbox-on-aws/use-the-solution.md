@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Using the web UI
-<a name="use-the-solution"></a>
 
 This section provides detailed instructions on how to log into the web UI, and use the web UI as an administrator, manager, or a user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # IDE and notebooks with Ray
-<a name="sagemaker-hyperpod-ray-ide-notebooks"></a>
 
 Interactive development connects an IDE or notebook session to a running Ray cluster, so you write and run distributed Python against live compute. You develop in a *space*, and you manage clusters and spaces in Studio.
 

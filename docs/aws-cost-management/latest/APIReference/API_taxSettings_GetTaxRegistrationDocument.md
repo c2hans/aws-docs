@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetTaxRegistrationDocument
-<a name="API_taxSettings_GetTaxRegistrationDocument"></a>
 
 Downloads your tax documents to the Amazon S3 bucket that you specify in your request.
 

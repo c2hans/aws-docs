@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EMR::InstanceGroupConfig AppConfiguration
-<a name="aws-properties-emr-instancegroupconfig-appconfiguration"></a>
 
 <a name="aws-properties-emr-instancegroupconfig-appconfiguration-description"></a>The `AppConfiguration` property type specifies Property description not available. for an [AWS::EMR::InstanceGroupConfig](aws-resource-emr-instancegroupconfig.md).
 
@@ -55,5 +54,5 @@ Property description not available.
 `Configurations`  <a name="cfn-emr-instancegroupconfig-appconfiguration-configurations"></a>
 Property description not available.
 *Required*: No
-*Type*: Array of [AppConfiguration](#aws-properties-emr-instancegroupconfig-appconfiguration)
+*Type*: Array of [AppConfiguration](aws-properties-emr-instancegroupconfig-appconfiguration.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

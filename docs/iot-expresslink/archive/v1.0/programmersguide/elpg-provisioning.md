@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.0/programmers
 ---
 
 # 10 Provisioning
-<a name="elpg-provisioning"></a>
 
 All ExpressLink modules will be equipped with a pre-provisioned hardware root of trust (on chip or external secure element, secure enclave, TPM, iSIM). This will provide the necessary unique identifier (UID) of the module, a key pair (public, private) and will hold a certificate that is signed by a CA shared with AWS as part of ExpressLink program. This certificate will be used to transfer the module public key to the AWS endpoint upon activation.
 

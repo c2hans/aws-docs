@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Transformation policy schema reference
-<a name="transformation-policy-schema"></a>
 
 **Note**
  **Supported in:** ECS architecture only.

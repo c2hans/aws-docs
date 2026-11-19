@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTruckOptions
-<a name="API_RouteTruckOptions"></a>
 
  Travel mode options when the provided travel mode is `Truck`. Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
 

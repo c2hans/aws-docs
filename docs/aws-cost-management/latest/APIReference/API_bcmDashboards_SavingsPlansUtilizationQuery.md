@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # SavingsPlansUtilizationQuery
-<a name="API_bcmDashboards_SavingsPlansUtilizationQuery"></a>
 
 Defines the parameters for querying Savings Plans utilization data, including time granularity and sorting preferences.
 

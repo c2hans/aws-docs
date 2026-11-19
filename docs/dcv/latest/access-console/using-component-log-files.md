@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/access-console/using-componen
 ---
 
 # Using the component log files
-<a name="using-component-log-files"></a>
 
 You can use the Amazon DCV Access Console component log files to identify and troubleshoot problems with the different Amazon DCV Access Console components. The component logs contain information about requests, responses, and errors regarding the component. The component access log files contain information about access, throttling, authentication, and authorization.
 

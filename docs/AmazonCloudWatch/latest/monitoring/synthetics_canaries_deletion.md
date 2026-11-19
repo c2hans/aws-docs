@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/synth
 ---
 
 # Edit or delete a canary
-<a name="synthetics_canaries_deletion"></a>
 
 You can edit or delete an existing canary.
 

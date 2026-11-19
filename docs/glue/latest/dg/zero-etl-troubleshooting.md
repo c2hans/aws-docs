@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zero-etl-troubleshooting.
 ---
 
 # Troubleshooting zero-ETL integrations
-<a name="zero-etl-troubleshooting"></a>
 
 Use the following sections to help troubleshoot problems that you have with AWS Glue zero-ETL integrations.
 

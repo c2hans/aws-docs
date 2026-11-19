@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-in
 ---
 
 # AWS PrivateLink for Amazon S3
-<a name="privatelink-interface-endpoints"></a>
 
 With AWS PrivateLink for Amazon S3, you can provision *interface VPC endpoints* (interface endpoints) in your virtual private cloud (VPC). These endpoints are directly accessible from applications that are on premises over VPN and Direct Connect, or in a different AWS Region over VPC peering.
 

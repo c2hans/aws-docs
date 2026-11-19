@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/md-de
 ---
 
 # Describing a dataset (SDK)
-<a name="md-describing-dataset-sdk"></a>
 
 You can use the `DescribeDataset` API to get information about a dataset.
 

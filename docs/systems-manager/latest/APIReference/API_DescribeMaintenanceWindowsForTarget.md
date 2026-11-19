@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # DescribeMaintenanceWindowsForTarget
-<a name="API_DescribeMaintenanceWindowsForTarget"></a>
 
 Retrieves information about the maintenance window targets or tasks that a managed node is associated with.
 

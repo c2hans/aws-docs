@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/specify-actions.html
 ---
 
 # Supported actions for the Amazon Chime SDK PSTN audio service
-<a name="specify-actions"></a>
 
 You can specify different types of signaling and media actions in a response from an AWS Lambda function. Each action has different properties. The following topics provide example code and explain how to use the actions.
 

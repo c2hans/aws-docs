@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/components-key-concepts.h
 ---
 
 # AWS Glue concepts
-<a name="components-key-concepts"></a>
 
  AWS Glue is a fully managed ETL (extract, transform, load) service that allows you to easily move data between different data sources and targets. The key components are:
 +  **Data Catalog**: A metadata store containing table definitions, job definitions, and other control information for your ETL workflows.

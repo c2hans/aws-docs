@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/vpc-endpoints-
 ---
 
 # Step 7: (Optional) Clean up
-<a name="vpc-endpoints-tutorial.clean-up"></a>
 
 If you want to delete the resources that you have created in this tutorial, follow these procedures.
 

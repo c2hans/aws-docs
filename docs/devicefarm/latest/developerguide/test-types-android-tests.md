@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-ty
 ---
 
 # Android tests in AWS Device Farm
-<a name="test-types-android-tests"></a>
 
 Device Farm provides support for several automation test types for Android devices, and two built-in tests.
 

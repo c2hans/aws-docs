@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListNoti
 ---
 
 # ListNotifications
-<a name="API_ListNotifications"></a>
 
 Retrieves a paginated list of all notifications in the Amazon Connect instance.
 

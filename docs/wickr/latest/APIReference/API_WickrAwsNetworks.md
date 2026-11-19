@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_WickrAwsNe
 ---
 
 # WickrAwsNetworks
-<a name="API_WickrAwsNetworks"></a>
 
 Identifies a AWS Wickr network by region and network ID, used for configuring permitted networks for global federation.
 

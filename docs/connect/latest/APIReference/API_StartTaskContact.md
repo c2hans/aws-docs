@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StartTas
 ---
 
 # StartTaskContact
-<a name="API_StartTaskContact"></a>
 
 Initiates a flow to start a new task contact. For more information about task contacts, see [Concepts: Tasks in Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/tasks.html) in the *Connect Customer Administrator Guide*.
 

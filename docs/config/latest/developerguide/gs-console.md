@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/gs-console.
 ---
 
 # Setting Up AWS Config with the Console
-<a name="gs-console"></a>
 
 The AWS Management Console provides a quick and streamlined process for setting up AWS Config.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Lates
 ---
 
 # LatestMpaApprovalTeamUpdate
-<a name="API_LatestMpaApprovalTeamUpdate"></a>
 
 Contains information about the latest update to an MPA approval team association.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Rul
 ---
 
 # RuleExecutionDetail
-<a name="API_RuleExecutionDetail"></a>
 
 The details of the runs for a rule and the results produced on an artifact as it passes through stages in the pipeline.
 

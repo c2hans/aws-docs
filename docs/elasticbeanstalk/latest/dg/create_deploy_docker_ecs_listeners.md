@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy
 ---
 
 # Using multiple Elastic Load Balancing listeners
-<a name="create_deploy_docker_ecs_listeners"></a>
 
 You can configure multiple Elastic Load Balancing listeners on a ECS managed Docker environment in order to support inbound traffic for proxies or other services that don't run on the default HTTP port.
 

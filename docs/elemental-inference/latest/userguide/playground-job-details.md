@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/pla
 ---
 
 # Viewing job results
-<a name="playground-job-details"></a>
 
 Every job appears in the **Playground Jobs** table. The **Feature** column shows whether a job is **Smart Cropping** or **All features**. A job's status is one of the following:
 + **Queued** – The job is waiting in the playground queue.

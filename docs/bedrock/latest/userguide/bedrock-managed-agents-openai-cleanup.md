@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/bedrock-managed
 ---
 
 # Clean up example resources
-<a name="bedrock-managed-agents-openai-cleanup"></a>
 
 Clean up sessions before deleting the resources they use. Retain any generated files that you need before removing storage.
 

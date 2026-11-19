@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Bedrock::FlowAlias FlowAliasConcurrencyConfiguration
-<a name="aws-properties-bedrock-flowalias-flowaliasconcurrencyconfiguration"></a>
 
 Determines how multiple nodes in a flow can run in parallel. Running nodes concurrently can improve your flow's performance.
 

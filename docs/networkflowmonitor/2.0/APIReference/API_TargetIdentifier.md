@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_
 ---
 
 # TargetIdentifier
-<a name="API_TargetIdentifier"></a>
 
 A target identifier is a pair of identifying information for a scope that is included in a target. A target identifier is made up of a target ID and a target type. Currently the target ID is always an account ID and the target type is always ACCOUNT.
 

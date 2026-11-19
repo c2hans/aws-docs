@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/pkg-cfig-view.htm
 ---
 
 # Viewing packaging configuration details
-<a name="pkg-cfig-view"></a>
 
 To ensure that the content is available in all necessary stream formats, view all packaging configurations that are associated with a specific packaging group or with an asset.
 

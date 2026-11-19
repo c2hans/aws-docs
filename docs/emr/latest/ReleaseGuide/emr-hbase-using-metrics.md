@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hbase-using-
 ---
 
 # Using the Metrics Destination
-<a name="emr-hbase-using-metrics"></a>
 
 With EMR 7.1, you have the option to send your metrics data to Amazon CloudWatch or Amazon Managed Service for Prometheus. This choice allows you to integrate seamlessly with different monitoring tools, based on your needs.
 

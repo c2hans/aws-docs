@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Dedicated
 ---
 
 # DedicatedIp
-<a name="API_DedicatedIp"></a>
 
 Contains information about a dedicated IP address that is associated with your Amazon SES account.
 

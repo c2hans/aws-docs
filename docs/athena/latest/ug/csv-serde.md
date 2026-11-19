@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/csv-serde.html
 ---
 
 # Open CSV SerDe for processing CSV
-<a name="csv-serde"></a>
 
 Use the Open CSV SerDe to create Athena tables from comma-separated data (CSV) data.
 

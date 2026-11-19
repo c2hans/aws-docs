@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/mgi-insert-overlay.h
 ---
 
 # Step 3: Insert the overlay
-<a name="mgi-insert-overlay"></a>
 
 When you are ready, you can create an action in the MediaLive channel schedule to activate (insert) the overlay. You can create the action at any time – before the channel has started or while it is already running.
 

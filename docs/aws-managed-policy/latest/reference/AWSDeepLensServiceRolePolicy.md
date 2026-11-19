@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDeepLensServiceRolePolicy
-<a name="AWSDeepLensServiceRolePolicy"></a>
 
 **Description**: Grants AWS DeepLens access to AWS services, resources and roles needed by DeepLens and its dependencies including IoT, S3, GreenGrass and AWS Lambda.
 

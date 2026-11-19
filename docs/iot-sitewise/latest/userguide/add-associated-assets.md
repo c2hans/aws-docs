@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/add-associ
 ---
 
 # Associate and disassociate assets
-<a name="add-associated-assets"></a>
 
 If your asset's model defines any child asset model hierarchies, you can associate child assets to your asset. Parent assets can access and aggregate data from associated assets. For more information about hierarchical asset models, see [Define asset model hierarchies](define-asset-hierarchies.md). If you're using interfaces, hierarchies defined in the interface are enforced on the asset models that implement the interface. For more information about interfaces, see [Asset model interfaces](model-interfaces.md).
 

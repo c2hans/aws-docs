@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Wor
 ---
 
 # Item collections - how to model one-to-many relationships in DynamoDB
-<a name="WorkingWithItemCollections"></a>
 
 In DynamoDB, an *item collection* is a group of items that share the same partition key value, which means the items are related. Item collections are the primary mechanism to model one-to-many relationships in DynamoDB. Item collections can only exist on tables or indexes configured to use a [composite primary key](HowItWorks.CoreComponents.md#HowItWorks.CoreComponents.PrimaryKey).
 

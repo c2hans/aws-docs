@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Collection endpoints for Amazon OpenSearch Serverless
-<a name="serverless-collection-endpoints"></a>
 
 Amazon OpenSearch Serverless NextGen provides resource-based endpoints on the `on.aws` domain. You can use a per-collection endpoint to access a single collection, or a per-account endpoint to access every collection in your AWS account in a Region through one hostname. Both endpoints work over standard AWS PrivateLink – create VPC endpoints from the Amazon VPC console or with the `CreateVpcEndpoint` Amazon EC2 API.
 

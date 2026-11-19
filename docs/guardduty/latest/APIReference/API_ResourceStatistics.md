@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Resour
 ---
 
 # ResourceStatistics
-<a name="API_ResourceStatistics"></a>
 
 Information about each resource type associated with the `groupedByResource` statistics.
 

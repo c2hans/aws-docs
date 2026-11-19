@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/provision-m
 ---
 
 # Minimal IAM policy for installer to provision resources
-<a name="provision-minimal-iam-policy"></a>
 
 When you install the AWS IoT Greengrass Core software, you can provision required AWS resources, such as an AWS IoT thing and an IAM role for your device. You can also deploy local development tools to the device. The installer requires AWS credentials so that it can perform these actions in your AWS account. For more information, see [Install the AWS IoT Greengrass Core software](install-greengrass-core-v2.md).
 

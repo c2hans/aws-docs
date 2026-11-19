@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Template
 ---
 
 # TemplatedMessageConfig
-<a name="API_TemplatedMessageConfig"></a>
 
 Information about template message configuration.
 

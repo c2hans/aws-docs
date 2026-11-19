@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_IbmDb2LuwDat
 ---
 
 # IbmDb2LuwDataProviderSettings
-<a name="API_IbmDb2LuwDataProviderSettings"></a>
 
 Provides information about an IBM DB2 LUW data provider.
 

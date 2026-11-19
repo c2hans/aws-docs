@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/securi
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html).
 
 # Security
-<a name="security"></a>
 
 The **Security** section has the following available options for administration:
 + **Always Re-authenticate:** Forces mobile users to enter their password or biometric auth when bringing the app to focus. Disabled by default.

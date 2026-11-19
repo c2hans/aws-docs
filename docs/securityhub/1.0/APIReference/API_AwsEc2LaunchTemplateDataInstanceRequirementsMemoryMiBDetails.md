@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataInstanceRequirementsMemoryMiBDetails
-<a name="API_AwsEc2LaunchTemplateDataInstanceRequirementsMemoryMiBDetails"></a>
 
  The minimum and maximum amount of memory, in MiB, for an Amazon EC2 instance.
 

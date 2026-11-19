@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_StandbyWorkspa
 ---
 
 # StandbyWorkspace
-<a name="API_StandbyWorkspace"></a>
 
 Describes a standby WorkSpace.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ge
 ---
 
 # GetAgentVersion
-<a name="API_agent_GetAgentVersion"></a>
 
 Gets details about a version of an agent.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Upda
 ---
 
 # UpdateResourceConfiguration
-<a name="API_UpdateResourceConfiguration"></a>
 
 Updates the specified resource configuration.
 

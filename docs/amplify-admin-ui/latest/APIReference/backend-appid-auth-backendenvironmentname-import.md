@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify-admin-ui/latest/APIReference/bac
 ---
 
 # Backend appId Auth backendEnvironmentName Import
-<a name="backend-appid-auth-backendenvironmentname-import"></a>
 
 Imports an existing backend authentication resource.
 

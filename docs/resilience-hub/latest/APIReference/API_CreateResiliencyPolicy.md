@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_C
 ---
 
 # CreateResiliencyPolicy
-<a name="API_CreateResiliencyPolicy"></a>
 
 Creates a resiliency policy for an application.
 

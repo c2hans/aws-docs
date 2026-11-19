@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/view-fsr-enabled-sn
 ---
 
 # Check the fast snapshot restore state for an Amazon EBS snapshot
-<a name="view-fsr-enabled-snapshots"></a>
 
 Fast snapshot restore for a snapshot can be in one of the following states.
 + `enabling` — A request was made to enable fast snapshot restore.

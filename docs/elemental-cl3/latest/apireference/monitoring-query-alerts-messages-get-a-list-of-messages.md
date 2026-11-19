@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/monito
 ---
 
 # GET Messages: Get a List of Messages
-<a name="monitoring-query-alerts-messages-get-a-list-of-messages"></a>
 
 Get a list of messages on one or more nodes in the cluster.
 

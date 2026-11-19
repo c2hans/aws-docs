@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/ms-smooth-outpu
 ---
 
 # MS Smooth output
-<a name="ms-smooth-output"></a>
 
 MSS output does not support passthrough of the SCTE-35 messages but does support instructions in the sparse track. Therefore, the workable options are:
 

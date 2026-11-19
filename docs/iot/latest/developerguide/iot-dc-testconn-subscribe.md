@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-dc-testcon
 ---
 
 # Demonstrate subscribing to messages with the AWS IoT Device Client
-<a name="iot-dc-testconn-subscribe"></a>
 
 In this section, you'll demonstrate two types of message subscriptions:
 + Single topic subscription

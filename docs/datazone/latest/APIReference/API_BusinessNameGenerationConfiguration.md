@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Busines
 ---
 
 # BusinessNameGenerationConfiguration
-<a name="API_BusinessNameGenerationConfiguration"></a>
 
 The configuration of the business name generation.
 

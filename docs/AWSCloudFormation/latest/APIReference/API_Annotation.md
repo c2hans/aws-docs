@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # Annotation
-<a name="API_Annotation"></a>
 
 The `Annotation` data type.
 

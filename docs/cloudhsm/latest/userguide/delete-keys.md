@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/delete-keys.ht
 ---
 
 # Delete keys with KMU and CMU
-<a name="delete-keys"></a>
 
 Use the [deleteKey](key_mgmt_util-deleteKey.md) command to delete a key, as in the following example. Only the key owner can delete a key.
 

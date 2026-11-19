@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElbL
 ---
 
 # AwsElbLoadBalancerCrossZoneLoadBalancing
-<a name="API_AwsElbLoadBalancerCrossZoneLoadBalancing"></a>
 
 Contains cross-zone load balancing settings for the load balancer.
 

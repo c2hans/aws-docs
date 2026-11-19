@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/titan-image-generator/
 ---
 
 # Amazon Titan Image Generator
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/titan-image-generator/images/card-background.jpg)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Specialized data protection
-<a name="dssec08"></a>
 
  Some sovereign workloads require protections that go beyond standard encryption at rest and in transit. Data that must stay protected during active computation needs confidential computing. Keys that must stay within a specific jurisdiction need a key management architecture that separates management roles from usage roles and constrains where key material can be stored.
 

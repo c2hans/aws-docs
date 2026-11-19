@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/network-create-vpc.
 ---
 
 # Create a VPC with subnets and route tables
-<a name="network-create-vpc"></a>
 
 Create the VPC that Amazon Elastic VMware Service deploys your environment into, with a private subnet for service access and route tables with the gateway routes that deployment needs. You can use the Amazon VPC console or the AWS CLI.
 

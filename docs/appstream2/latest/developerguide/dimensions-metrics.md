@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/dimensi
 ---
 
 # Dimensions for Amazon WorkSpaces Applications Metrics
-<a name="dimensions-metrics"></a>
 
 The `AWS/AppStream` namespace includes the following dimensions and dimension groups.
 

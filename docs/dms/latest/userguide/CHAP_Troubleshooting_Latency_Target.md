@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Troubleshootin
 ---
 
 # Troubleshooting target latency issues
-<a name="CHAP_Troubleshooting_Latency_Target"></a>
 
 This section contains scenarios that can contribute to target latency.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetFi
 ---
 
 # GetFile
-<a name="API_GetFile"></a>
 
 Returns the base-64 encoded contents of a specified file and its metadata.
 

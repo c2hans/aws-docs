@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_ResourceShar
 ---
 
 # ResourceShareInvitation
-<a name="API_ResourceShareInvitation"></a>
 
 Describes an invitation for an AWS account to join a resource share.
 

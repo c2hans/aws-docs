@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Managing Ray workloads with kubectl
-<a name="sagemaker-hyperpod-ray-manage-kubectl"></a>
 
 Ray on HyperPod uses the upstream KubeRay custom resources without modification. If you already run Ray on Kubernetes, your existing manifests apply unchanged, and the Ray documentation is the reference for every field. This page covers what is specific to HyperPod.
 

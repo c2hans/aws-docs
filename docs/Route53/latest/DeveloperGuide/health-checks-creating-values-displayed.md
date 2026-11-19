@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/health-che
 ---
 
 # Values that Amazon Route 53 displays when you create a health check
-<a name="health-checks-creating-values-displayed"></a>
 
 The **Create Health Check** page displays the following values based on the values that you typed:
 

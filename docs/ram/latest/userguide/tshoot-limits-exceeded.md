@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/tshoot-limits-excee
 ---
 
 # Error: Limit exceeded
-<a name="tshoot-limits-exceeded"></a>
 
 ## Scenario
 <a name="tshoot-limits-exceeded-scenario"></a>

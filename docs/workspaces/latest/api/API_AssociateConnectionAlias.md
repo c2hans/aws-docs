@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_AssociateConne
 ---
 
 # AssociateConnectionAlias
-<a name="API_AssociateConnectionAlias"></a>
 
 Associates the specified connection alias with the specified directory to enable cross-Region redirection. For more information, see [ Cross-Region Redirection for Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/cross-region-redirection.html).
 

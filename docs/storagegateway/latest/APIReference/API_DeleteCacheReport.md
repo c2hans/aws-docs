@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_D
 ---
 
 # DeleteCacheReport
-<a name="API_DeleteCacheReport"></a>
 
 Deletes the specified cache report and any associated tags from the AWS Storage Gateway database. You can only delete completed reports. If the status of the report you attempt to delete still IN-PROGRESS, the delete operation returns an error. You can use `CancelCacheReport` to cancel an IN-PROGRESS report.
 

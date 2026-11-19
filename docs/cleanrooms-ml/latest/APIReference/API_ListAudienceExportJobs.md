@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Li
 ---
 
 # ListAudienceExportJobs
-<a name="API_ListAudienceExportJobs"></a>
 
 Returns a list of the audience export jobs.
 

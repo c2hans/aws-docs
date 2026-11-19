@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudSearchFullAccess
-<a name="CloudSearchFullAccess"></a>
 
 **Description**: Provides full access to the Amazon CloudSearch configuration service.
 

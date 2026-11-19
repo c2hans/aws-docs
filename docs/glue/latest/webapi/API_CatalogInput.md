@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CatalogInput.html
 ---
 
 # CatalogInput
-<a name="API_CatalogInput"></a>
 
 A structure that describes catalog properties.
 

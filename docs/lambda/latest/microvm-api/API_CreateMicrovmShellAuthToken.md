@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_CreateMicr
 ---
 
 # CreateMicrovmShellAuthToken
-<a name="API_CreateMicrovmShellAuthToken"></a>
 
 Creates a shell authentication token for interactive shell access to a running MicroVM. The MicroVM must have been run with the SHELL\_INGRESS network connector attached.
 

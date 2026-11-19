@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsOpen
 ---
 
 # AwsOpenSearchServiceDomainAdvancedSecurityOptionsDetails
-<a name="API_AwsOpenSearchServiceDomainAdvancedSecurityOptionsDetails"></a>
 
 Provides information about domain access control options.
 

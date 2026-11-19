@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/api/API_UpdateDetec
 Amazon Fraud Detector is no longer be open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker AI, AutoGluon, and AWS WAF.
 
 # UpdateDetectorVersionMetadata
-<a name="API_UpdateDetectorVersionMetadata"></a>
 
 Updates the detector version's description. You can update the metadata for any detector version (`DRAFT, ACTIVE,` or `INACTIVE`).
 

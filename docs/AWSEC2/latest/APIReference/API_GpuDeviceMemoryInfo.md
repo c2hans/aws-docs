@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GpuDevice
 ---
 
 # GpuDeviceMemoryInfo
-<a name="API_GpuDeviceMemoryInfo"></a>
 
 Describes the memory available to the GPU accelerator.
 

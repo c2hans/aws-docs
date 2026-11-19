@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/connections-g
 ---
 
 # GitHub App connections for GitHub and GitHub Enterprise Server
-<a name="connections-github-app"></a>
 
 You can use GitHub App to connect with CodeBuild. GitHub App connections are supported through [AWS CodeConnections](https://docs.aws.amazon.com/dtconsole/latest/userguide/welcome-connections.html).
 

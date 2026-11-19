@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_DeleteConfig
 ---
 
 # DeleteConfigurationSetTrackingOptions
-<a name="API_DeleteConfigurationSetTrackingOptions"></a>
 
 Deletes an association between a configuration set and a custom domain for open and click event tracking.
 

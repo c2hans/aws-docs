@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/event-get-tracker.
 ---
 
 # Creating an item interaction event tracker
-<a name="event-get-tracker"></a>
 
 Before you can record item interaction events, you must create an item interaction event tracker. An *event tracker* directs new event data to the *Item interactions dataset* in your dataset group.
 

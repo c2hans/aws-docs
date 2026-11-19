@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/catalog-level-optimizers.
 ---
 
 # Catalog-level table optimizers
-<a name="catalog-level-optimizers"></a>
 
 With a one-time catalog configuration, you can set up automatic optimizers such as compaction, snapshot retention, and orphan file deletion for all new and updated Apache Iceberg tables in the AWS Glue Data Catalog. Catalog-level optimizer configurations allow you to apply consistent optimizer settings across all tables within a catalog, eliminating the need to configure optimizers individually for each table.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # REL08-BP03 Integrate resiliency testing as part of your deployment
-<a name="rel_tracking_change_management_resiliency_testing"></a>
 
  Resiliency tests (using the [principles of chaos engineering](https://principlesofchaos.org/)) are run as part of the automated deployment pipeline in a pre-production environment.
 

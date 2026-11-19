@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/security_i
 ---
 
 # How AWS User Experience Customization works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 AWS User Experience Customization (UXC) works with IAM policies to manage access to UXC API Operations.
 

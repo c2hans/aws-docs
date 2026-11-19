@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Des
 ---
 
 # DescribeRepository
-<a name="API_DescribeRepository"></a>
 
  Returns a `RepositoryDescription` object that contains detailed information about the requested repository.
 

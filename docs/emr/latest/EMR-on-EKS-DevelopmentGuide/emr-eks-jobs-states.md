@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/e
 ---
 
 # Job run states
-<a name="emr-eks-jobs-states"></a>
 
 When you submit a job run to an Amazon EMR on EKS job queue, the job run enters the `PENDING` state. It then passes through the following states until it succeeds (exits with code `0`) or fails (exits with a non-zero code).
 

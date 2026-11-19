@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Strea
 ---
 
 # StreamingDistributionConfigWithTags
-<a name="API_StreamingDistributionConfigWithTags"></a>
 
 A streaming distribution Configuration and a list of tags to be associated with the streaming distribution.
 

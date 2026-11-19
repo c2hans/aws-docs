@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/Network-Requirement
 ---
 
 # Elastic Disaster Recovery network requirements
-<a name="Network-Requirements"></a>
 
 To prepare your network for running Elastic Disaster Recovery, set these connectivity settings:
 

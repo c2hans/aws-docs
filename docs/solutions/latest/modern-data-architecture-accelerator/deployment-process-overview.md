@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Deployment using installer CloudFormation template
-<a name="deployment-process-overview"></a>
 
 This solution uses AWS CloudFormation templates and stacks to automate its deployment. The CloudFormation template specifies the AWS resources included in this solution and their properties. The CloudFormation stack provisions the resources described in the template.
 

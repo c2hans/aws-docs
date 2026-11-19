@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/capacity-tags-acc
 ---
 
 # Control access to capacity tags with `batch:SetCapacityTags`
-<a name="capacity-tags-access-policy"></a>
 
 When you create or update an Amazon ECS Managed Instances compute environment, you can specify `computeResources.capacityTags` to apply tags to the Amazon ECS capacity provider and the Amazon EC2 instances that the compute environment manages. To set this field, your IAM principal must have permission for the `batch:SetCapacityTags` action on the compute environment resource. For more information about the field, see [Compute environments on Amazon ECS Managed Instances](ecs-managed-instances-compute-environments.md).
 

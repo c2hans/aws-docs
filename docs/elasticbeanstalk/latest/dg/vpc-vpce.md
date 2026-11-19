@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/vpc-vpce.html
 ---
 
 # Using Elastic Beanstalk with VPC endpoints
-<a name="vpc-vpce"></a>
 
 This topic explains the benefits that a VPC endpoint can offer your Elastic Beanstalk application. It also provides instructions to create an interface VPC endpoint to an Elastic Beanstalk service.
 

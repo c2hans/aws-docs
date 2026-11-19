@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_GetAcco
 ---
 
 # GetAccountInformation
-<a name="API_GetAccountInformation"></a>
 
 Retrieves information about the specified account including its account name, account ID, account creation date and time, and account state. To use this API, an IAM user or role must have the `account:GetAccountInformation` IAM permission.
 

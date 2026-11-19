@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/ldap-examples
 ---
 
 # Examples using LDAP with Amazon EMR
-<a name="ldap-examples"></a>
 
 Once you [provision an EMR cluster that uses LDAP](ldap-setup-launch.md) integration, you can provide your LDAP credentials to any [supported application](ldap-considerations.md#ldap-considerations-apps) through its built-in username and password authentication mechanism. This page shows some examples.
 

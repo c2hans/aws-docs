@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Upd
 ---
 
 # UpdateGateway
-<a name="API_UpdateGateway"></a>
 
 Updates a gateway's name.
 

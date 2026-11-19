@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_Describ
 ---
 
 # DescribeServer
-<a name="API_DescribeServer"></a>
 
 Describes a file transfer protocol-enabled server that you specify by passing the `ServerId` parameter.
 

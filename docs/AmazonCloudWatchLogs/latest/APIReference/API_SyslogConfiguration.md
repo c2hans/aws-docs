@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # SyslogConfiguration
-<a name="API_SyslogConfiguration"></a>
 
 Contains information about a syslog configuration associated with a log group.
 

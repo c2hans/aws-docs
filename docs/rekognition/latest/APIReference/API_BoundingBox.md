@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Boun
 ---
 
 # BoundingBox
-<a name="API_BoundingBox"></a>
 
 Identifies the bounding box around the label, face, text, object of interest, or personal protective equipment. The `left` (x-coordinate) and `top` (y-coordinate) are coordinates representing the top and left sides of the bounding box. Note that the upper-left corner of the image is the origin (0,0).
 

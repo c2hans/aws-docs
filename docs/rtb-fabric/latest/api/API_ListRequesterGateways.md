@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_ListRequesterG
 ---
 
 # ListRequesterGateways
-<a name="API_ListRequesterGateways"></a>
 
 Lists requester gateways.
 

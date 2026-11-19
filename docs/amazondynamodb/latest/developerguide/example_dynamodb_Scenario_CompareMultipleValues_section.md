@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Compare multiple values with a single attribute in DynamoDB with an AWS SDK
-<a name="example_dynamodb_Scenario_CompareMultipleValues_section"></a>
 
 The following code examples show how to compare multiple values with a single attribute in DynamoDB.
 + Use the IN operator to compare multiple values with a single attribute.

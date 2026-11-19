@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.TI.6] Prioritize customer needs to deliver optimal business outcomes
-<a name="oa.ti.6-prioritize-customer-needs-to-deliver-optimal-business-outcomes"></a>
 
  **Category:** RECOMMENDED
 

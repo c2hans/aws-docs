@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/auto-dow
 ---
 
 # View output download status in Deadline Cloud
-<a name="auto-downloads-status"></a>
 
 The **Download status** column in the AWS Deadline Cloud monitor shows, for each job and each task, whether automatic downloads copied the output files to the download location. A job's render status and its download status answer different questions. A status of `SUCCEEDED` means the tasks rendered. The **Download status** column tells you whether the resulting files are on your file system yet.
 

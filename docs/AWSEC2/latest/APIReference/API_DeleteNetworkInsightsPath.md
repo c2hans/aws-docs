@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNet
 ---
 
 # DeleteNetworkInsightsPath
-<a name="API_DeleteNetworkInsightsPath"></a>
 
 Deletes the specified path.
 

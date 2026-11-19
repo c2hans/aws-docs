@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-crea
 ---
 
 # How to create a reservation
-<a name="braket-create-a-reservation"></a>
 
 To create a reservation, contact the Braket team by following these steps:
 

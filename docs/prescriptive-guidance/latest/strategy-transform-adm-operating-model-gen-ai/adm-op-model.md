@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ---
 
 # Overview of an ADM operating model
-<a name="adm-op-model"></a>
 
 Transitioning from typical IT operating model concepts to the specific context of ADM requires understanding how these principles apply to software development and maintenance processes. The ADM operating model provides a comprehensive framework to manage the entire application lifecycle from planning to development to maintenance. It helps achieve successful alignment between business goals and IT execution.
 

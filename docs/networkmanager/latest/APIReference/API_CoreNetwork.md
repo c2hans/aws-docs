@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CoreNetwork
-<a name="API_CoreNetwork"></a>
 
 Describes a core network.
 

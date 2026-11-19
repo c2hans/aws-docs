@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CreateParticipantConnection
-<a name="API_connect-participant_CreateParticipantConnection"></a>
 
 Creates the participant's connection.
 

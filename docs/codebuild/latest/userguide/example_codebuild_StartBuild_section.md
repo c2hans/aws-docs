@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/example_codeb
 ---
 
 # Use `StartBuild` with an AWS SDK or CLI
-<a name="example_codebuild_StartBuild_section"></a>
 
 The following code examples show how to use `StartBuild`.
 

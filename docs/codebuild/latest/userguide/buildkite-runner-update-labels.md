@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/buildkite-run
 ---
 
 # Label overrides supported with the CodeBuild-hosted Buildkite runner
-<a name="buildkite-runner-update-labels"></a>
 
 In your Buildkite pipeline steps agent tag labels, you can provide a variety of label overrides that modify your self-hosted runner build. Any builds not recognized by CodeBuild will be ignored but will not fail your webhook request. For example, the following workflow YAML includes overrides for image, instance size, fleet, and the buildspec:
 

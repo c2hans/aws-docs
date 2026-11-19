@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/sftp-for-trans
 ---
 
 # Configuring an SFTP, FTPS, or FTP server endpoint
-<a name="sftp-for-transfer-family"></a>
 
 This topic provides details for creating and using AWS Transfer Family server endpoints that use one or more of the SFTP, FTPS, and FTP protocols.
 

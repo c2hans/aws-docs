@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_cross_CognitoCu
 ---
 
 # Write custom activity data with a Lambda function after Amazon Cognito user authentication using an AWS SDK
-<a name="example_cross_CognitoCustomActivityLog_section"></a>
 
 The following code example shows how to write custom activity data with a Lambda function after Amazon Cognito user authentication.
 + Use administrator functions to add a user to a user pool.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Threat
 ---
 
 # Threat
-<a name="API_Threat"></a>
 
 Information about the detected threats associated with the generated finding.
 

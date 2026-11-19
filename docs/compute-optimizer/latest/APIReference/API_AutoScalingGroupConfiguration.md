@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # AutoScalingGroupConfiguration
-<a name="API_AutoScalingGroupConfiguration"></a>
 
 Describes the configuration of an EC2 Auto Scaling group.
 

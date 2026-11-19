@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPubli
 ---
 
 # IpamPublicAddressSecurityGroup
-<a name="API_IpamPublicAddressSecurityGroup"></a>
 
 The security group that the resource with the public IP address is in.
 

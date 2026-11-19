@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # UnlinkDeveloperIdentity
-<a name="API_UnlinkDeveloperIdentity"></a>
 
 Unlinks a `DeveloperUserIdentifier` from an existing identity. Unlinked developer users will be considered new identities next time they are seen. If, for a given Cognito identity, you remove all federated identities as well as the developer user identifier, the Cognito identity becomes inaccessible.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/server-si
 ---
 
 # Server-side sanitization and using custom tags and attributes in responses
-<a name="server-side-html-sanitization"></a>
 
 Server-side sanitization is applied to the `alt.html` and `alt.markdown` Q&A response fields to prevent stored cross-site scripting (XSS) attacks. QnABot on AWS uses the [sanitize-html](https://www.npmjs.com/package/sanitize-html) library for this purpose, which allows a subset of HTML tags and attributes by default.
 

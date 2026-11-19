@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElasticDisasterRecoveryFailbackPolicy
-<a name="AWSElasticDisasterRecoveryFailbackPolicy"></a>
 
 **Description**: This policy allows using the Elastic Disaster Recovery Failback Client, which is used to failback Recovery Instances back to your original source infrastructure. We do not recommend that you attach this policy to your IAM users or roles.
 

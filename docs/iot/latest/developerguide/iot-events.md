@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-events.htm
 ---
 
 # Event messages
-<a name="iot-events"></a>
 
 This section contains information about messages published by AWS IoT when things or jobs are updated or changed.
 

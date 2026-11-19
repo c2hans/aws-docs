@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/bio.html
 ---
 
 # .bio
-<a name="bio"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSI
 ---
 
 # AWSIPAMOutboundServiceRolePolicy
-<a name="AWSIPAMOutboundServiceRolePolicy"></a>
 
 **Description**: Grants permissions to request web identity tokens for outbound federation
 

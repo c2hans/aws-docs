@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-fleet-metr
 ---
 
 # Fleet metrics
-<a name="iot-fleet-metrics"></a>
 
 Fleet metrics is a feature of [fleet indexing](iot-indexing.md), a managed service that allows you to index, search, and aggregate your devices' data in AWS IoT. You can use fleet metrics, to monitor your fleet devices' aggregate state in [CloudWatch](https://console.aws.amazon.com/cloudwatch/) over time, including reviewing your fleet devices' disconnection rate or average battery level changes of a specified period.
 

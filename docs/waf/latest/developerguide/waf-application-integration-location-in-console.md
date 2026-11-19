@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/waf-applicatio
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Accessing the AWS WAF client application integration APIs
-<a name="waf-application-integration-location-in-console"></a>
 
 This section explains where to find the application integration APIs in the AWS WAF console.
 

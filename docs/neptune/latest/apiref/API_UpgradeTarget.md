@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_UpgradeTarget.
 ---
 
 # UpgradeTarget
-<a name="API_UpgradeTarget"></a>
 
 The version of the database engine that a DB instance can be upgraded to.
 

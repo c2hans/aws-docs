@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Simulator numbers
-<a name="nx-features-simulator-numbers"></a>
 
 You can use the SMS simulator that is included with AWS End User Messaging to send text messages and receive realistic event records. The SMS simulator is also useful for:
 + Viewing actual SMS event records.

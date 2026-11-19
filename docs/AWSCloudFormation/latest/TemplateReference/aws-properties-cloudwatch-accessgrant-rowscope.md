@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::AccessGrant RowScope
-<a name="aws-properties-cloudwatch-accessgrant-rowscope"></a>
 
 A single additive row-level filter on an access grant. A row is visible when its value for the given field matches the filter's values.
 

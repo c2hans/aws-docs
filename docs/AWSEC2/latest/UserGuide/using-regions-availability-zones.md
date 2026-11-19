@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-av
 ---
 
 # Regions and Zones
-<a name="using-regions-availability-zones"></a>
 
 Amazon EC2 is hosted in multiple locations world-wide. These locations are composed of AWS Regions, Availability Zones, Local Zones, AWS Outposts, and Wavelength Zones.
 + **Regions** are separate geographic areas.

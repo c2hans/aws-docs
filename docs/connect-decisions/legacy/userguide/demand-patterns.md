@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/deman
 ---
 
 # Demand Pattern and Recommendation
-<a name="demand-patterns"></a>
 
 Demand Pattern and Recommendation examines the transformed historical demand input at each configured forecast granularity level (for example, product, location, or channel) to uncover underlying patterns and characteristics in your demand data. Its primary purpose is to identify key demand pattern distribution, such as smooth, intermittent, erratic, and lumpy. It also provides statistical insights about length of history and trailing 12-month demand.
 

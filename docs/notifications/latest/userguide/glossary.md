@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/userguide/glossary.
 ---
 
 # Glossary for AWS User Notifications
-<a name="glossary"></a>
 
 | Term | Definition |
 | --- | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/getting-start
 ---
 
 # Getting started with notifications
-<a name="getting-started"></a>
 
 The easiest way to get started with notifications is to set up a notification rule on one of your build projects, deployment applications, pipelines, or repositories.
 

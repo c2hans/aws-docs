@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ResourceSet
-<a name="API_ResourceSet"></a>
 
 A set of resources defined by explicit ARNs, a logical expression, or both.
 

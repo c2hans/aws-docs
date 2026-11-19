@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_ListL
 ---
 
 # ListLegalHolds
-<a name="API_ListLegalHolds"></a>
 
 This action returns metadata about active and previous legal holds.
 

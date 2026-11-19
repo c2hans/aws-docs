@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/claude-platform/latest/userguide/monitor
 ---
 
 # Monitoring and logging
-<a name="monitoring"></a>
 
 AWS CloudTrail can capture all requests to Claude Platform on AWS. Workspace and vault operations are logged as Management events by default. All other operations (inference, batch, file, skill, model, user profile, and Claude Managed Agents except vaults) are Data events. Logging them requires explicit configuration and incurs additional CloudTrail charges. See [IAM actions](iam-actions.md) for the full event type classification and the [AWS CloudTrail documentation](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/) for configuration details.
 

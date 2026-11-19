@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::DomainConfiguration AuthorizerConfig
-<a name="aws-properties-iot-domainconfiguration-authorizerconfig"></a>
 
 An object that specifies the authorization service for a domain.
 

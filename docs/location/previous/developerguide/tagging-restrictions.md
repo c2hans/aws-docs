@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/tagging
 ---
 
 # Amazon Location tagging restrictions
-<a name="tagging-restrictions"></a>
 
 Tagging allows you to organize and manage your resources more effectively. This page outlines the specific rules and constraints that govern the use of tags within Amazon Location Service. By understanding these tagging restrictions, you can ensure compliance with best practices and avoid potential issues when implementing tagging strategies for your location-based resources and applications.
 

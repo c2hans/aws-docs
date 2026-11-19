@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # Predictable agent behavior
-<a name="agentrel01"></a>
 
  Agents combine compute, memory, cognition, and orchestration components, and each component is a point where a workflow can fail. Organizations that run agents on resilient messaging, modular fault isolation, and adaptive provisioning spend less time repairing infrastructure and more time improving agent capabilities.
 

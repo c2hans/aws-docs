@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedAgent
-<a name="API_ManagedAgent"></a>
 
 Details about the managed agent status for the container.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_Disassoc
 ---
 
 # DisassociateEnvironmentOperationsRole
-<a name="API_DisassociateEnvironmentOperationsRole"></a>
 
 **Important**
 The operations role feature of AWS Elastic Beanstalk is in beta release and is subject to change.

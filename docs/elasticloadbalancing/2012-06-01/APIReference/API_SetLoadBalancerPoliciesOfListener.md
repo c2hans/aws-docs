@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIRefer
 ---
 
 # SetLoadBalancerPoliciesOfListener
-<a name="API_SetLoadBalancerPoliciesOfListener"></a>
 
 Replaces the current set of policies for the specified load balancer port with the specified set of policies.
 

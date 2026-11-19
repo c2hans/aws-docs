@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/influxd
 For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Use custom plugins with the processing engine
-<a name="influxdb3-custom-plugins"></a>
 
  Amazon Timestream for InfluxDB 3 lets you run your own Python plugins on the managed [processing engine](processing-engine.md). With custom plugins, you host your plugin code in one or more plugin repositories that you control – public or private – and the engine fetches and runs it in response to triggers (data writes, schedules, or HTTP requests). Use custom plugins to implement logic that is specific to your workload: custom data transformations, alerting, aggregation, and integrations with your own services.
 

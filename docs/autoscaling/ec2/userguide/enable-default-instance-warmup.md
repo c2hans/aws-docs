@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/enable-default
 ---
 
 # Enable the default instance warmup for a group
-<a name="enable-default-instance-warmup"></a>
 
 You can enable the default instance warmup when you create an Auto Scaling group. You can also enable it for existing groups.
 

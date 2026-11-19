@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # Reliability
-<a name="reliability"></a>
 
 The reliability pillar provides guidance to help customers apply best practices in the design, delivery, and maintenance of AWS environments. The reliability pillar provides best practices on how a system can recover from infrastructure or service disruptions, dynamically acquire computing resources to scale demand, and mitigate disruptions caused by events such as misconfigurations or transient network issues.
 

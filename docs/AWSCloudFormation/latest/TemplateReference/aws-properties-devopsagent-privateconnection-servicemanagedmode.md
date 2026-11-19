@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::PrivateConnection ServiceManagedMode
-<a name="aws-properties-devopsagent-privateconnection-servicemanagedmode"></a>
 
 Configuration for a private connection in which AWS DevOps Agent creates and manages the resource gateway in your VPC.
 

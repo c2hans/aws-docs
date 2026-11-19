@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Param
 ---
 
 # ParameterSliderControl
-<a name="API_ParameterSliderControl"></a>
 
 A control to display a horizontal toggle bar. This is used to change a value by sliding the toggle.
 

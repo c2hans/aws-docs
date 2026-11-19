@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Databa
 ---
 
 # DatabaseConfigurationMetadata
-<a name="API_DatabaseConfigurationMetadata"></a>
 
 Metadata information about a change to the external Slurm accounting database of a HyperPod cluster.
 

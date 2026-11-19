@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iam-toolbox/latest/APIReference/API_Matc
 ---
 
 # MatchedPolicy
-<a name="API_MatchedPolicy"></a>
 
 A policy that matched during evaluation, referenced by URI. The URI corresponds to a policy in the top-level policies list.
 

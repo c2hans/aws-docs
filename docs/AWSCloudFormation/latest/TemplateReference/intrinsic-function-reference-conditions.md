@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # Condition functions
-<a name="intrinsic-function-reference-conditions"></a>
 
 You can use intrinsic functions, such as `Fn::If` or `Fn::Equals`, to create and configure stack resources based on conditional logic. These conditions evaluate during stack creation or updates. After you define all your conditions, you can associate them with resources or resource properties in the `Resources` and `Outputs` sections of a template.
 

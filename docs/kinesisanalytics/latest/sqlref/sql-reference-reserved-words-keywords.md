@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Reserved Words and Keywords
-<a name="sql-reference-reserved-words-keywords"></a>
 
 **Reserved Words**
 The following is a list of reserved words in Amazon Kinesis Data Analytics applications as of version 5.0.1.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_MapCo
 ---
 
 # MapConfiguration
-<a name="API_MapConfiguration"></a>
 
 Specifies the map tile style selected from an available provider.
 

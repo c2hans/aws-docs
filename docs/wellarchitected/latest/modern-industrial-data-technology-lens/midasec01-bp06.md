@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDASEC01-BP06 Establish a communication protocol between IT and OT systems
-<a name="midasec01-bp06"></a>
 
  Define secure communication and data exchange methods between IT and OT environments. Use edge services to control and monitor flows across the boundary and verify that only authorized systems interact.
 

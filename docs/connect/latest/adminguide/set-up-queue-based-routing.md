@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/set-up-queue-b
 ---
 
 # Set up queue-based, or skills-based, routing in Connect Customer
-<a name="set-up-queue-based-routing"></a>
 
 Here's an overview of the steps to set up queue-based routing:
 

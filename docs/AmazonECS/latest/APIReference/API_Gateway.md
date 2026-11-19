@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # Gateway
-<a name="API_Gateway"></a>
 
 The details of a gateway, including its configuration, status, and the infrastructure settings for its type.
 

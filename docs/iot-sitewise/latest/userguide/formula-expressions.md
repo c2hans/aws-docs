@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/formula-ex
 ---
 
 # Use formula expressions
-<a name="formula-expressions"></a>
 
 With formula expressions, you can define the mathematical functions to transform and aggregate your raw industrial data to gain insights about your operation. Formula expressions combine literals, operators, functions, and variables to process data. For more information about how to define asset properties that use formula expressions, see [Transform data (transforms)](transforms.md) and [Aggregate data from properties and other assets (metrics)](metrics.md). Transforms and metrics are formula properties.
 

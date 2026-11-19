@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # CreateAccessGrant
-<a name="API_CreateAccessGrant"></a>
 
 Creates an AccessGrant that authorizes a principal to perform a set of actions on resources in a space.
 

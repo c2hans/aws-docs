@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/awssdk-release-
 ---
 
 # Service integrations release history
-<a name="awssdk-release-history"></a>
 
 The following table lists the AWS SDK service integrations added to Step Functions by release date. New integrations are available immediately in the US East (N. Virginia) Region and roll out to other AWS Regions over time.
 

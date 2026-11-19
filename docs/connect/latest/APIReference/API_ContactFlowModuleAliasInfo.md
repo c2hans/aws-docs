@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactF
 ---
 
 # ContactFlowModuleAliasInfo
-<a name="API_ContactFlowModuleAliasInfo"></a>
 
 Contains information about an alias.
 

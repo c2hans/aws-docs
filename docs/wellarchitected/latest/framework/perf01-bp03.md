@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf01-
 ---
 
 # PERF01-BP03 Derive and establish KPIs that validate adherence to your performance requirements
-<a name="perf01-bp03"></a>
 
  Key performance indicators turn raw operational metrics into business-relevant signals that show whether a workload meets its goals.
 

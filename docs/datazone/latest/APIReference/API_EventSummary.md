@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_EventSu
 ---
 
 # EventSummary
-<a name="API_EventSummary"></a>
 
 The event summary.
 

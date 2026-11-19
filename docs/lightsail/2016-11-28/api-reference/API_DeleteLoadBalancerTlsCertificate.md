@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DeleteLoadBalancerTlsCertificate
-<a name="API_DeleteLoadBalancerTlsCertificate"></a>
 
 Deletes an SSL/TLS certificate associated with a Lightsail load balancer.
 

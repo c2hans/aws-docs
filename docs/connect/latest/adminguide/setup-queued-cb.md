@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/setup-queued-c
 ---
 
 # Set up queued callback by creating flows, queues, and routing profiles in Connect Customer
-<a name="setup-queued-cb"></a>
 
 You can allow your customers to maintain their position in queue without requiring them to stay on the call during high wait times, and get a callback from an available agent when it's their turn.
 

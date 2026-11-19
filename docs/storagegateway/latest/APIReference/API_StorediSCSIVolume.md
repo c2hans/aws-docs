@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_S
 ---
 
 # StorediSCSIVolume
-<a name="API_StorediSCSIVolume"></a>
 
 Describes an iSCSI stored volume.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/wave-details.html
 ---
 
 # Review migration wave details
-<a name="wave-details"></a>
 
 There are several ways you can access the **Wave details** view.
 

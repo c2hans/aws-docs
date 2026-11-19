@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCPERF01-BP01 Understand your data residency requirements when selecting the platform for your workload
-<a name="drhcperf01-bp01"></a>
 
  Assess your data residency requirements first to guide your workload deployment location.
 

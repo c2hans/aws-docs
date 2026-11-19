@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/consulting
 ---
 
 # .consulting
-<a name="consulting"></a>
 
 Used by consultants and others who are affiliated with the consulting industry.
 

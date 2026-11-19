@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create Infoblox objects using AWS CloudFormation custom resources and Amazon SNS
-<a name="create-infoblox-objects-using-aws-cloudformation-custom-resources-and-amazon-sns"></a>
 
 *Tim Sutton, Amazon Web Services*
 

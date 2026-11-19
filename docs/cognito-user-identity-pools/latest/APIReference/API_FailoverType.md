@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # FailoverType
-<a name="API_FailoverType"></a>
 
 Specifies failover configuration for multi-region user pool domains. Contains settings for the secondary region and health check configuration.
 

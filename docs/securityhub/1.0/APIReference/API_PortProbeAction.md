@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_PortPro
 ---
 
 # PortProbeAction
-<a name="API_PortProbeAction"></a>
 
 Provided if `ActionType` is `PORT_PROBE`. It provides details about the attempted port probe that was detected.
 

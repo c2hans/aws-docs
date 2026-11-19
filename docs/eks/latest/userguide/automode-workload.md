@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/automode-workload.h
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Deploy a sample inflate workload to an Amazon EKS Auto Mode cluster
-<a name="automode-workload"></a>
 
 In this tutorial, you’ll learn how to deploy a sample workload to an EKS Auto Mode cluster and observe how it automatically provisions the required compute resources. You’ll use `kubectl` commands to watch the cluster’s behavior and see firsthand how Auto Mode simplifies Kubernetes operations on AWS. By the end of this tutorial, you’ll understand how EKS Auto Mode responds to workload deployments by automatically managing the underlying compute resources, without requiring manual node group configuration.
 

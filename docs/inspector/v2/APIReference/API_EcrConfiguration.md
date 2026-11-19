@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_EcrConfigu
 ---
 
 # EcrConfiguration
-<a name="API_EcrConfiguration"></a>
 
 Details about the ECR automated re-scan duration setting for your environment.
 

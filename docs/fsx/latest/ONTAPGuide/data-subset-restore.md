@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/data-subset-restor
 ---
 
 # Restoring a subset of data
-<a name="data-subset-restore"></a>
 
 You can restore a subset of data from a backup while it is being restored to a new volume on second-generation file systems without having to wait until the entire backup data set has been fully restored.
 

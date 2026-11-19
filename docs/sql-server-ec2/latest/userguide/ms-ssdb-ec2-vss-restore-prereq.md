@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/ms-ssdb-
 ---
 
 # VSS snapshot restore prerequisites
-<a name="ms-ssdb-ec2-vss-restore-prereq"></a>
 
 To restore your SQL Server databases from AWS VSS solution based EBS snapshots, you must meet the following prerequisites.
 

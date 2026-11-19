@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Catego
 ---
 
 # CategoricalParameterRange
-<a name="API_CategoricalParameterRange"></a>
 
 A list of categorical hyperparameters to tune.
 

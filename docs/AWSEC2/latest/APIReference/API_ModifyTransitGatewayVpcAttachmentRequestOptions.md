@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyTra
 ---
 
 # ModifyTransitGatewayVpcAttachmentRequestOptions
-<a name="API_ModifyTransitGatewayVpcAttachmentRequestOptions"></a>
 
 Describes the options for a VPC attachment.
 

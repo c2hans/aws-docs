@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Source
 ---
 
 # SourceConfiguration
-<a name="API_s3Buckets_SourceConfiguration"></a>
 
 The source to migrate from. Set exactly one member, and set `sourceType` to match it.
 

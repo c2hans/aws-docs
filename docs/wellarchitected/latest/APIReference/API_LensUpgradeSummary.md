@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # LensUpgradeSummary
-<a name="API_LensUpgradeSummary"></a>
 
 Lens upgrade summary return object.
 

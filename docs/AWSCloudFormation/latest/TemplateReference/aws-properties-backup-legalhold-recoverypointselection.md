@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Backup::LegalHold RecoveryPointSelection
-<a name="aws-properties-backup-legalhold-recoverypointselection"></a>
 
 This specifies criteria to assign a set of resources, such as resource types or backup vaults.
 

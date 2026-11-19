@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Fl
 ---
 
 # FlowSummary
-<a name="API_agent_FlowSummary"></a>
 
 Contains the definition of a flow.
 

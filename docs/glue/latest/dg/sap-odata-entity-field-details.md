@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sap-odata-entity-field-de
 ---
 
 # SAP OData entity and field details
-<a name="sap-odata-entity-field-details"></a>
 
 - **Tables (dynamic entities)**
   - **Data type:** String / **Supported operators:**  =, \!=, >, >=, <, <=, BETWEEN, LIKE

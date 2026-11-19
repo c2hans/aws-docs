@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-rust/latest/dg/testing.html
 ---
 
 # Adding unit testing to your AWS SDK for Rust application
-<a name="testing"></a>
 
 While there are many ways you can implement unit testing in your AWS SDK for Rust project, there are a few that we recommend:
 + [Unit testing using `mockall`](testing-automock.md) – Use `automock` from the `mockall` crate to automatically generate and execute your tests.

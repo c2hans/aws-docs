@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/integra
 ---
 
 # Run Ansible Playbooks from GitHub
-<a name="integration-github-ansible"></a>
 
 This section includes procedures to help you run Ansible Playbooks from GitHub by using either the console or the AWS Command Line Interface (AWS CLI).
 

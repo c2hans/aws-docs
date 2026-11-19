@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/best-pract
 ---
 
 # CodePipeline use cases
-<a name="best-practices"></a>
 
 The following sections describe use cases for CodePipeline.
 

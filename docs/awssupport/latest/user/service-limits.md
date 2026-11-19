@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/service-limits.ht
 ---
 
 # Service limits
-<a name="service-limits"></a>
 
 See the following checks for the service limits (also known as quotas) category.
 

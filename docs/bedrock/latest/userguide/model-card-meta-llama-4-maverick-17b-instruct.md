@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta
 ---
 
 # Llama 4 Maverick 17B Instruct
-<a name="model-card-meta-llama-4-maverick-17b-instruct"></a>
 
 ## ![Meta logo.](https://docs.aws.amazon.com/bedrock/latest/userguide/images/models/meta.png) Meta — Llama 4 Maverick 17B Instruct
 <a name="model-card-meta-llama-4-maverick-17b-instruct-header"></a>

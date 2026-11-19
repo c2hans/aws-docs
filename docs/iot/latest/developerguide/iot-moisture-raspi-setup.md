@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-moisture-r
 ---
 
 # Setting up your Raspberry Pi and moisture sensor
-<a name="iot-moisture-raspi-setup"></a>
 
 Insert your microSD card into the Raspberry Pi, connect your monitor, keyboard, mouse, and, if you're not using Wi-Fi, Ethernet cable. Do not connect the power cable yet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Remedia
 ---
 
 # RemediationGuidance
-<a name="API_RemediationGuidance"></a>
 
 A remediation guidebook outlining guidance in resolving the remediation target.
 

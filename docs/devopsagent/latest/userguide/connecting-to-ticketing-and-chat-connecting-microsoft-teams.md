@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/connecting-
 ---
 
 # Connecting Microsoft Teams
-<a name="connecting-to-ticketing-and-chat-connecting-microsoft-teams"></a>
 
 You can connect AWS DevOps Agent to Microsoft Teams in two ways:
 + **One-way notifications**: AWS DevOps Agent posts incident response findings, root cause analyses, and mitigation plans to the Teams channel that you select.

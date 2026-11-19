@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/eml-metrics-output-m
 ---
 
 # Output metrics
-<a name="eml-metrics-output-metrics"></a>
 
 Output metrics relate to the video and audio assets that have been processed by MediaLive as an output.
 

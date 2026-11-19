@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Writing a Node.js canary script using the Puppeteer runtime
-<a name="CloudWatch_Synthetics_Canaries_WritingCanary_Nodejs_Pup"></a>
 
 **Topics**
 + [Creating a CloudWatch Synthetics canary from scratch](#CloudWatch_Synthetics_Canaries_write_from_scratch)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Modify
 ---
 
 # ModifyOptionGroup
-<a name="API_ModifyOptionGroup"></a>
 
 Modifies an existing option group.
 

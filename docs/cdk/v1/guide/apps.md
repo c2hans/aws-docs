@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cdk/v1/guide/apps.html
 This is the AWS CDK v1 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and will now only receive critical bug fixes and security patches. New features will be developed for CDK v2 exclusively. Support for CDK v1 will end entirely on June 1, 2023. [Migrate to CDK v2](work-with-cdk-v2.md) to have access to the latest features and fixes.
 
 # Apps
-<a name="apps"></a>
 
 As described in [Constructs](constructs.md), to provision infrastructure resources, all constructs that represent AWS resources must be defined, directly or indirectly, within the scope of a [Stack](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Stack.html) construct. An [App](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.App.html) is a container for one or more stacks: it serves as each stack's scope. Stacks within a single `App` can easily refer to each others' resources (and attributes of those resources). The AWS CDK infers dependencies between stacks so that they can be deployed in the correct order. You can deploy any or all of the stacks defined within an app at with a single `cdk deploy` command.
 

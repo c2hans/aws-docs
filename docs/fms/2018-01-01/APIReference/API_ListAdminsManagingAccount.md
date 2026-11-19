@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_ListAdmi
 ---
 
 # ListAdminsManagingAccount
-<a name="API_ListAdminsManagingAccount"></a>
 
 Lists the accounts that are managing the specified AWS Organizations member account. This is useful for any member account so that they can view the accounts who are managing their account. This operation only returns the managing administrators that have the requested account within their [AdminScope](API_AdminScope.md).
 

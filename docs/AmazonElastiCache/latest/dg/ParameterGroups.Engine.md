@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ParameterGro
 ---
 
 # Engine specific parameters
-<a name="ParameterGroups.Engine"></a>
 
 **Valkey and Redis OSS**
 

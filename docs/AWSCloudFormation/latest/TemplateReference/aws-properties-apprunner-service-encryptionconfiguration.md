@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::AppRunner::Service EncryptionConfiguration
-<a name="aws-properties-apprunner-service-encryptionconfiguration"></a>
 
 Describes a custom encryption key that AWS App Runner uses to encrypt copies of the source repository and service logs.
 

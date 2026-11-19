@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_LambdaCon
 ---
 
 # LambdaContainerParams
-<a name="API_LambdaContainerParams"></a>
 
 Contains information about a container in which AWS Lambda functions run on Greengrass core devices.
 

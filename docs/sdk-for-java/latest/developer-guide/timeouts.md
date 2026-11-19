@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/time
 ---
 
 # Configure timeouts in AWS SDK for Java 2.x
-<a name="timeouts"></a>
 
 The AWS SDK for Java 2.x provides multiple layers of timeout configuration to help you build resilient applications. The SDK offers different types of timeouts that work together to optimize your application's performance and reliability.
 

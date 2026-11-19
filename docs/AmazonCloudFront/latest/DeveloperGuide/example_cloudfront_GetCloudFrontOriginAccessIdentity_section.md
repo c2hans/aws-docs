@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Use `GetCloudFrontOriginAccessIdentity` with a CLI
-<a name="example_cloudfront_GetCloudFrontOriginAccessIdentity_section"></a>
 
 The following code examples show how to use `GetCloudFrontOriginAccessIdentity`.
 

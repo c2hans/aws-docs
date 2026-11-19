@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Images aren’t optimized on Safari or Firefox
-<a name="optimization-by-browser"></a>
 
  **Symptoms:**
 + Image size or quality optimization works in Chrome or Edge but appears less precise on Safari or Firefox.

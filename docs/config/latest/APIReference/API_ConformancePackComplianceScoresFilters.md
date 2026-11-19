@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Conforman
 ---
 
 # ConformancePackComplianceScoresFilters
-<a name="API_ConformancePackComplianceScoresFilters"></a>
 
 A list of filters to apply to the conformance pack compliance score result set.
 

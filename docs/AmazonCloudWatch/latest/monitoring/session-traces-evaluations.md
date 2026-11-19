@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/sessi
 ---
 
 # Agent details - Evaluations
-<a name="session-traces-evaluations"></a>
 
 Evaluations provides continuous quality monitoring metrics for your AI agents. You can use the information provided by the dashboard to assess the performance, quality, and reliability of your AI agents.
 

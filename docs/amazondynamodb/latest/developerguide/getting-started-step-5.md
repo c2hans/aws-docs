@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/get
 ---
 
 # Step 5: Query data in a DynamoDB table
-<a name="getting-started-step-5"></a>
 
 In this step, you query the data that you wrote to the `Music` table in [Step 2: Write data to a DynamoDB table](getting-started-step-2.md) by specifying `Artist`. This will display all songs that are associated with the partition key: `Artist`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # DeleteAccessToken
-<a name="API_route53globalresolver_DeleteAccessToken"></a>
 
 Deletes an access token. This operation cannot be undone.
 

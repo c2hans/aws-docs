@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_LexBotCo
 ---
 
 # LexBotConfig
-<a name="API_LexBotConfig"></a>
 
 Configuration information of an Amazon Lex or Amazon Lex V2 bot.
 

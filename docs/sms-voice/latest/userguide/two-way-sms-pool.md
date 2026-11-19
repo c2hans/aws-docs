@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/two-way-sms-p
 ---
 
 # Set up two-way SMS messaging for a phone pool in AWS End User Messaging SMS
-<a name="two-way-sms-pool"></a>
 
 Use the AWS End User Messaging SMS console or AWS CLI to enable two way SMS for your phone pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # ListLicenseManagerReportGenerators
-<a name="API_ListLicenseManagerReportGenerators"></a>
 
 Lists the report generators for your account.
 

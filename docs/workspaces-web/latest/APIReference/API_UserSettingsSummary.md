@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_U
 ---
 
 # UserSettingsSummary
-<a name="API_UserSettingsSummary"></a>
 
 The summary of user settings.
 

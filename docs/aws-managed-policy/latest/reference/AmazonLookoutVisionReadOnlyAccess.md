@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonLookoutVisionReadOnlyAccess
-<a name="AmazonLookoutVisionReadOnlyAccess"></a>
 
 **Description**: Provides read only access to Amazon Lookout for Vision and scoped access to required dependencies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Invest
 ---
 
 # InvestigationSummary
-<a name="API_InvestigationSummary"></a>
 
 Contains summary information about a GuardDuty investigation.
 

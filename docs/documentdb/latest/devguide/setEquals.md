@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/setEquals.htm
 ---
 
 # $setEquals
-<a name="setEquals"></a>
 
 The `$setEquals` operator in Amazon DocumentDB is used to determine if two sets are equal. It compares two arrays and returns `true` if they contain the same distinct elements, regardless of their order.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DeletePu
 ---
 
 # DeletePushNotificationRegistration
-<a name="API_DeletePushNotificationRegistration"></a>
 
 Deletes registration for a device token and a chat contact.
 

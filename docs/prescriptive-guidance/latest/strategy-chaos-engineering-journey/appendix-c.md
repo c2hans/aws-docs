@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ch
 ---
 
 # Appendix C ‒ Incident classification
-<a name="appendix-c"></a>
 
 Tracking incidents within a classification framework is crucial because the framework provides a holistic view of failure types and issues that impact the system. If your organization tracks incidents only within a single class, such as infrastructure faults, you might miss insights and opportunities for improvement in other areas. By tracking incidents across multiple classes, you gain a better understanding of the diverse range of chaos experiments to conduct. This perspective helps identify potential blind spots and supports expansion of the engineering scope, which leads to a more resilient and fault-tolerant system.
 

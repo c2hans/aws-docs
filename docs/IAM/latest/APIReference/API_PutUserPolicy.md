@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_PutUserPolic
 ---
 
 # PutUserPolicy
-<a name="API_PutUserPolicy"></a>
 
 Adds or updates an inline policy document that is embedded in the specified IAM user.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_List
 ---
 
 # ListIdNamespaceAssociations
-<a name="API_ListIdNamespaceAssociations"></a>
 
 Returns a list of ID namespace associations.
 

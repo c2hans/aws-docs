@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateServ
 ---
 
 # UpdateServiceEnvironment
-<a name="API_UpdateServiceEnvironment"></a>
 
 Updates a service environment. You can update the state of a service environment from `ENABLED` to `DISABLED` to prevent new service jobs from being placed in the service environment.
 

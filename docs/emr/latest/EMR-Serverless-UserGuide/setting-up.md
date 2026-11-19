@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/sett
 ---
 
 # Prerequisites for getting started with EMR Serverless
-<a name="setting-up"></a>
 
 This section describes the administrative prerequisites for running EMR Serverless. These include account configuration and permissions management.
 

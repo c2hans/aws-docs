@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/using-postgresq
 ---
 
 # Connect to a PostgreSQL data source
-<a name="using-postgresql-in-AMG"></a>
 
  You can use the PostgreSQL data source to query and visualize data from your Amazon Aurora PostgreSQL databases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-
 ---
 
 # Working with gateways
-<a name="working-with-gateways"></a>
 
 To back up and restore your virtual machines (VMs) using AWS Backup, you must first install a Backup gateway. A gateway is software in the form of an OVF (Open Virtualization Format) template that connects Amazon Web Services Backup to your hypervisor, allowing it to automatically detect your virtual machines, and enables you to back up and restore them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # IdMappingWorkflowSummary
-<a name="API_IdMappingWorkflowSummary"></a>
 
 A list of `IdMappingWorkflowSummary` objects, each of which contain the fields `WorkflowName`, `WorkflowArn`, `CreatedAt`, and `UpdatedAt`.
 

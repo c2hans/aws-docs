@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteSub
 ---
 
 # DeleteSubnetCidrReservation
-<a name="API_DeleteSubnetCidrReservation"></a>
 
 Deletes a subnet CIDR reservation.
 

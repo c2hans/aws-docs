@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/example
 ---
 
 # Example: Draw markers
-<a name="example-draw-markers"></a>
 
 ![Map of Vancouver showing multiple location markers distributed across the city.](https://docs.aws.amazon.com/location/previous/developerguide/images/samples/markers_small.png)
 

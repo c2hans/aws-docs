@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/action-connector-
 ---
 
 # Supported connector types and available actions
-<a name="action-connector-apis-supported-types"></a>
 
 AWS Quick supports multiple connector types, each with specific actions available:
 

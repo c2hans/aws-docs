@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/automation-r
 ---
 
 # Viewing recommended actions
-<a name="automation-rec-view"></a>
 
 The Recommended actions page displays a summary of your recommended actions and a table with details for individual actions. Recommended actions help you optimize your resources for performance and cost savings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RuleAttr
 ---
 
 # RuleAttributeFilter
-<a name="API_RuleAttributeFilter"></a>
 
 An object that can be used to specify tag conditions inside the `SearchFilter`. This accepts an `OR` of `AND` (List of List) input where:
 + The top level list specifies conditions that need to be applied with `OR` operator.

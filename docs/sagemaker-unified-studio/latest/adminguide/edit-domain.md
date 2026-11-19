@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Edit domains
-<a name="edit-domain"></a>
 
 After you create a domain, you can edit its description or further customize your domain settings, including [SSO](user-management.md), [project profiles](project-profiles.md), [blueprints](blueprints.md), [account associations](associated-accounts.md), [Amazon Bedrock models](amazon-bedrock.md), [connections](git-connections.md), and [AmazonQ](amazonq.md).
 

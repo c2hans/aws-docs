@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledBaselineSourceDrift
-<a name="API_EnabledBaselineSourceDrift"></a>
 
 The source drift summary for the enabled baseline. Source drift occurs when an enabled baseline no longer matches the landing zone's configuration.
 

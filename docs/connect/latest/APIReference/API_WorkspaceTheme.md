@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Workspac
 ---
 
 # WorkspaceTheme
-<a name="API_WorkspaceTheme"></a>
 
 Contains theme configuration for a workspace, supporting both light and dark modes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/deterministic-upgrades-u
 ---
 
 # Using Deterministic upgrades through versioned repositories
-<a name="deterministic-upgrades-usage"></a>
 
 **Topics**
 + [Using a deterministic upgraded system](#using-a-deterministic-upgraded-system)

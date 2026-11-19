@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # ServerError
-<a name="API_ServerError"></a>
 
 The error in server analysis.
 

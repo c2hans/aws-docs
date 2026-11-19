@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeliveryC
 ---
 
 # DeliveryChannel
-<a name="API_DeliveryChannel"></a>
 
 The channel through which AWS Config delivers notifications and updated configuration states.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdkref/latest/guide/feature-imds-client.
 ---
 
 # IMDS client
-<a name="feature-imds-client"></a>
 
 **Note**
 For help in understanding the layout of settings pages, or in interpreting the **Support by AWS SDKs and tools** table that follows, see [Understanding the settings pages of this guide](settings-reference.md#settingsPages).

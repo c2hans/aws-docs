@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Rule
 ---
 
 # RuleUpdate
-<a name="API_RuleUpdate"></a>
 
 Describes a rule update.
 

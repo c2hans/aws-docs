@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Crea
 ---
 
 # CreateCollection
-<a name="API_CreateCollection"></a>
 
 Creates a collection in an AWS Region. You can add faces to the collection using the [IndexFaces](API_IndexFaces.md) operation.
 

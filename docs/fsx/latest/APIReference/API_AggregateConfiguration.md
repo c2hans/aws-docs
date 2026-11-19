@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_AggregateCon
 ---
 
 # AggregateConfiguration
-<a name="API_AggregateConfiguration"></a>
 
 Used to specify configuration options for a volume’s storage aggregate or aggregates.
 

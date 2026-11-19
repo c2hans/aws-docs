@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 ---
 
 # Monitoring
-<a name="ops-monitoring"></a>
 
 **Topics**
 + [MLOPS06-BP01 Synchronize architecture and configuration, and check for skew across environments](mlops06-bp01.md)

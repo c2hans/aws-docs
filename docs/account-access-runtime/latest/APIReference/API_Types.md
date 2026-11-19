@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access-runtime/latest/APIReferen
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The Account Access Runtime API contains several data types that various actions use. This section describes each data type in detail.
 

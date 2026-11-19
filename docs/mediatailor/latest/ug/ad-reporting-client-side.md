@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ad-reporting-clien
 ---
 
 # Client-side ad tracking
-<a name="ad-reporting-client-side"></a>
 
 Using the AWS Elemental MediaTailor client-side tracking API, you can incorporate player controls during ad breaks in streaming workflows. In client-side tracking, the player or client emits tracking events, such as impression and quartile ad beaconing, to the Ad Decision Server (ADS) and other ad-verification entities. These events track both the overall ad break status and the individual ad avails within each break. For more information about impression and quartile (ADS) and other ad-verification entities. For more information about impression and quartile ad beaconing, see [Client-side beaconing](ad-reporting-client-side-beaconing.md). For more information about ADS and other ad-verification entities, see [Client-side ad-tracking integrations](ad-reporting-client-side-ad-tracking-integrations.md).
 

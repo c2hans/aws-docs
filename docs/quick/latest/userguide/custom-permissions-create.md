@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/custom-permission
 ---
 
 # Creating custom permissions profiles
-<a name="custom-permissions-create"></a>
 
 Custom permissions profiles can be created for AWS Quick accounts that are integrated with IAM Identity Center, Active Directory, or for Quick accounts that have Quick managed users. The identity type that an Quick account uses determines the way an Quick admin configures a custom permissions profile.
 

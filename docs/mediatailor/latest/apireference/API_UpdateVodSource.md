@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Upda
 ---
 
 # UpdateVodSource
-<a name="API_UpdateVodSource"></a>
 
 Updates a VOD source's configuration.
 

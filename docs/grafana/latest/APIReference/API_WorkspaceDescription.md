@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_Workspac
 ---
 
 # WorkspaceDescription
-<a name="API_WorkspaceDescription"></a>
 
 A structure containing information about an Amazon Managed Grafana workspace in your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Untags a resource with a specified Amazon Resource Name (ARN).
 

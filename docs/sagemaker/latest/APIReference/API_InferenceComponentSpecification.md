@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Infere
 ---
 
 # InferenceComponentSpecification
-<a name="API_InferenceComponentSpecification"></a>
 
 Details about the resources to deploy with this inference component, including the model, container, and compute resources.
 

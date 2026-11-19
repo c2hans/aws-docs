@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListCo
 ---
 
 # ListComputeQuotas
-<a name="API_ListComputeQuotas"></a>
 
 List the resource allocation definitions.
 

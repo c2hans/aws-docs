@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AnalyticsI
 ---
 
 # AnalyticsIntentFilter
-<a name="API_AnalyticsIntentFilter"></a>
 
 Contains fields describing a condition by which to filter the intents. The expression may be understood as `name` `operator` `values`. For example:
 +  `IntentName CO Book` – The intent name contains the string "Book."

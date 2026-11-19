@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Permissions by scenario
-<a name="eb-custom-bus-permissions"></a>
 
 Each role in a Custom Event Bus deployment needs a small, specific set of grants. This page lists them by scenario so that you can copy the set for the role you are creating. For example, a producer's role needs `events:PutEvents` or `events:PutRawEvents` on the bus ARN. If the bus uses a customer managed key, the key's policy must also allow the `events.amazonaws.com` principal.
 

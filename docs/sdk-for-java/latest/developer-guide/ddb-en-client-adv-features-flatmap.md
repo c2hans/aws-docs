@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Flatten attributes from other classes
-<a name="ddb-en-client-adv-features-flatmap"></a>
 
 If the attributes for your table are spread across several different Java classes, either through inheritance or composition, the DynamoDB Enhanced Client API provides support to flatten the attributes into one class.
 

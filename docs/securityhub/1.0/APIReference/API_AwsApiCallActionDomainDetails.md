@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsApiC
 ---
 
 # AwsApiCallActionDomainDetails
-<a name="API_AwsApiCallActionDomainDetails"></a>
 
 Provided if `CallerType` is `domain`. It provides information about the DNS domain that issued the API call.
 

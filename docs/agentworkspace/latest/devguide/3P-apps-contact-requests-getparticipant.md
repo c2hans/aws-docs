@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Get specific participant information in Connect Customer agent workspace
-<a name="3P-apps-contact-requests-getparticipant"></a>
 
 Retrieves information for a specific participant.
 

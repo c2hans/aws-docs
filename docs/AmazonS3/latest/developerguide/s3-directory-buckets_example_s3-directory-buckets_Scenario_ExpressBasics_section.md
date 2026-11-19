@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3-direct
 ---
 
 # Learn the basics of S3 Directory Buckets with an AWS SDK
-<a name="s3-directory-buckets_example_s3-directory-buckets_Scenario_ExpressBasics_section"></a>
 
 The following code examples show how to:
 + Set up a VPC and VPC Endpoint.

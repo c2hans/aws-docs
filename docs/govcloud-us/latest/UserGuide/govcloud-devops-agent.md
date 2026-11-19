@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-de
 ---
 
 # AWS DevOps Agent in AWS GovCloud (US)
-<a name="govcloud-devops-agent"></a>
 
  AWS DevOps Agent is an AI-powered, always-available agent that spans release management and production operations, from reviewing release readiness and release testing to investigating and preventing operational issues across AWS, multicloud, and on-premises environments.
 

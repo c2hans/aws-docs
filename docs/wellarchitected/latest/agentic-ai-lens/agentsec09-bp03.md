@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSEC09-BP03 Implement continuous security validation with automated remediation
-<a name="agentsec09-bp03"></a>
 
  Periodic assessments leave newly deployed agent capabilities exposed for weeks or months. On-demand validation integrated into the development pipeline, paired with automated fix suggestions, compresses the discovery-to-resolution loop from weeks to hours.
 

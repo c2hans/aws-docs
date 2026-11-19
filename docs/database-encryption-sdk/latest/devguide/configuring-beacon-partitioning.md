@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Configuring Beacon Partitioning
-<a name="configuring-beacon-partitioning"></a>
 
 This section describes how beacon partitioning is configured and how it affects beacon derivation, query behavior, and security guarantees. Partitioning applies to all beacons and provides a consistent model for distributing values, limiting frequency leakage, and controlling query fan-out. Understanding how partition counts and partition assignment work together helps you choose configurations that balance privacy, performance, and operational safety.
 

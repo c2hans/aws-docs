@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-watermark.ht
 ---
 
 # Use AMI watermarks to track and identify AMIs
-<a name="ami-watermark"></a>
 
 An AMI watermark is an identifier that you attach to your private AMIs to track provenance and enforce governance policies. Watermarks persist across the full AMI lifecycle:
 + If you create a new AMI from a running instance that was launched from a watermarked AMI, the new AMI inherits the watermark.

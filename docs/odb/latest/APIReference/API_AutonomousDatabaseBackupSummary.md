@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_AutonomousDa
 ---
 
 # AutonomousDatabaseBackupSummary
-<a name="API_AutonomousDatabaseBackupSummary"></a>
 
 A summary of an Autonomous Database backup.
 

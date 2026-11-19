@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-ami-boot-mod
 ---
 
 # Set the boot mode of an Amazon EC2 AMI
-<a name="set-ami-boot-mode"></a>
 
 By default, an AMI inherits the boot mode of the EC2 instance used to create the AMI. For example, if you create an AMI from an EC2 instance running on Legacy BIOS, the boot mode of the new AMI is `legacy-bios`. If you create an AMI from an EC2 instance with a boot mode of `uefi-preferred`, the boot mode of the new AMI is `uefi-preferred`. To override the default boot mode to `uefi` when creating an AMI, you can specify a boot mode override. The only supported override value is `uefi`, and the current instance boot mode must be `uefi`. You can use this option to override the boot mode of an AMI from `uefi-preferred` to `uefi`. This prevents instances launched from the AMI from falling back to Legacy BIOS and losing access to UEFI-dependent features. If the instance's boot mode is already `uefi`, specifying an override of `uefi` has no effect. You cannot specify any other overrides (for example, you cannot override `legacy-bios` to `uefi` or `uefi` to `uefi-preferred`).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetHarnessEndpoint
-<a name="API_GetHarnessEndpoint"></a>
 
 Operation to get a single harness endpoint.
 

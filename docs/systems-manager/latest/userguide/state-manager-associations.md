@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/state-m
 ---
 
 # Working with associations in Systems Manager
-<a name="state-manager-associations"></a>
 
 This section describes how to create and manage State Manager associations by using the AWS Systems Manager console, the AWS Command Line Interface (AWS CLI), and AWS Tools for PowerShell.
 

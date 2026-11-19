@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # AmountBreakdown
-<a name="API_invoicing_AmountBreakdown"></a>
 
 Details about how the total amount was calculated and categorized.
 

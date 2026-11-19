@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Collec
 ---
 
 # CollectorSummary
-<a name="API_CollectorSummary"></a>
 
 The collector Summary.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Disconne
 ---
 
 # DisconnectReason
-<a name="API_DisconnectReason"></a>
 
 Contains details about why a contact was disconnected. Only Connect Customer outbound campaigns can provide this field.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_At
 ---
 
 # Attribute
-<a name="API_Attribute"></a>
 
 A signal that represents static information about the vehicle, such as engine type or manufacturing date.
 

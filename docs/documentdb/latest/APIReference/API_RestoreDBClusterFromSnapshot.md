@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Resto
 ---
 
 # RestoreDBClusterFromSnapshot
-<a name="API_RestoreDBClusterFromSnapshot"></a>
 
 Creates a new cluster from a snapshot or cluster snapshot.
 

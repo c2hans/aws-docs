@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/connector-for
 ---
 
 # Configure Microsoft Intune for Connector for SCEP
-<a name="connector-for-scep-intune"></a>
 
 You can use AWS Private CA as an external certificate authority (CA) with the Microsoft Intune mobile device management (MDM) system. This guide provides instructions on how to configure Microsoft Intune after you create a Connector for SCEP for Microsoft Intune.
 

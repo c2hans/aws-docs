@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/Explore
 ---
 
 # Deleting a Systems Manager Explorer resource data sync
-<a name="Explorer-using-resource-data-sync-delete"></a>
 
 In AWS Systems Manager Explorer, you can aggregate OpsData and OpsItems from other accounts and Regions by creating a resource data sync.
 

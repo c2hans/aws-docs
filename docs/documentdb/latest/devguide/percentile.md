@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/percentile.ht
 ---
 
 # $percentile
-<a name="percentile"></a>
 
 New from version 8.0.1.
 

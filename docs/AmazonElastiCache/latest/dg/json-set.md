@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-set.htm
 ---
 
 # JSON.SET
-<a name="json-set"></a>
 
 Sets JSON values at the path.
 

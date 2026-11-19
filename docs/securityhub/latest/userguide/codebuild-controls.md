@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/codebuild-c
 ---
 
 # Security Hub CSPM controls for CodeBuild
-<a name="codebuild-controls"></a>
 
 These Security Hub CSPM controls evaluate the AWS CodeBuild service and resources.
 

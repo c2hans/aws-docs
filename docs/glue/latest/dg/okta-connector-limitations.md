@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/okta-connector-limitation
 ---
 
 # Limitations
-<a name="okta-connector-limitations"></a>
 
 The following are limitations for the Okta connector:
 +  For ‘Applications’ entity only one filter can be applied. If more than 1 filter is applied then 400 Bad Request is return with error summary –‘Invalid Search criteria’.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ai/responsible-ai/rekognition-face-liven
 ---
 
 # Amazon Rekognition Face Liveness
-<a name="overview"></a>
 
 ![Banner background image](https://docs.aws.amazon.com/ai/responsible-ai/rekognition-face-liveness/images/card-background.jpg)
 

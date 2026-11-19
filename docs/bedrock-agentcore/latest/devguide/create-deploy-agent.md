@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/create
 ---
 
 # Create and deploy your agent
-<a name="create-deploy-agent"></a>
 
 If you have an agent already up and running in AgentCore Runtime, you can skip the following steps
 

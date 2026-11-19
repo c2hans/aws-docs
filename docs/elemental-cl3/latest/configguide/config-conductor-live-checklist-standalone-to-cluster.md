@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/config-
 ---
 
 # Upgrading standalone nodes into a cluster
-<a name="config-conductor-live-checklist-standalone-to-cluster"></a>
 
 Read this section if your organization has already deployed one or more AWS Elemental Live nodes, and you now want to set them up in a AWS Elemental Conductor Live cluster.
 

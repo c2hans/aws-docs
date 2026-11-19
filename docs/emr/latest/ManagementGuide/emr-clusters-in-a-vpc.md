@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-clusters-
 ---
 
 # Amazon VPC options when you launch a cluster
-<a name="emr-clusters-in-a-vpc"></a>
 
 When you launch an Amazon EMR cluster within a VPC, you can launch it within either a public, private, or shared subnet. There are slight but notable differences in configuration, depending on the subnet type you choose for a cluster.
 

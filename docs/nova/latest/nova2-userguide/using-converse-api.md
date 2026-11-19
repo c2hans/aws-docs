@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/using-conver
 ---
 
 # Using the Converse API
-<a name="using-converse-api"></a>
 
 The Converse API provides a unified interface for interacting with Amazon Nova models. It abstracts away model-specific details and provides a consistent way to handle multi-turn conversations, system prompts and streaming responses across all Amazon Nova models.
 

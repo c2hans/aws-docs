@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Delet
 ---
 
 # DeleteBranch
-<a name="API_DeleteBranch"></a>
 
 Deletes a branch from a repository, unless that branch is the default branch for the repository.
 

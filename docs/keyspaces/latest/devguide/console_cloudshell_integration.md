@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/console_clouds
 ---
 
 # Connect to Amazon Keyspaces using AWS CloudShell from the console
-<a name="console_cloudshell_integration"></a>
 
 AWS CloudShell provides a streamlined way to connect to Amazon Keyspaces directly from the console. The AWS CloudShell integration automatically initializes the `cqlsh-expansion` for you and establishes a connection to a specific keyspace.
 

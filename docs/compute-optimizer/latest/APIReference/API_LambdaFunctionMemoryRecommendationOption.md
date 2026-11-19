@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # LambdaFunctionMemoryRecommendationOption
-<a name="API_LambdaFunctionMemoryRecommendationOption"></a>
 
 Describes a recommendation option for an AWS Lambda function.
 

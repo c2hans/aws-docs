@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # Sustainability
-<a name="sustainability"></a>
 
  The sustainability pillar helps you reduce your workload's environmental impact while optimizing costs. By improving energy efficiency and resource utilization across your architecture components, you can decrease both carbon emissions and operational expenses.
 

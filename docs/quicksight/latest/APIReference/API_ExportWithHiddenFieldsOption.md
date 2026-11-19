@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Expor
 ---
 
 # ExportWithHiddenFieldsOption
-<a name="API_ExportWithHiddenFieldsOption"></a>
 
 Determines whether or not hidden fields are visible on exported dashbaords.
 

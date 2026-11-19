@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/cfct-delet
 ---
 
 # Delete a stack set
-<a name="cfct-delete-stack"></a>
 
 You can delete a stack set if you've enabled stack set deletion in the manifest file. By default, the `enable_stack_set_deletion` parameter is set to `false`. In this configuration, no action is taken to delete the associated stack set when a resource is removed from the CfCT manifest file.
 

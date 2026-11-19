@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ResourceFi
 ---
 
 # ResourceFilterCriteria
-<a name="API_ResourceFilterCriteria"></a>
 
 The resource filter criteria for a Software bill of materials (SBOM) report.
 

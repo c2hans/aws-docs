@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/oauth-app-bit
 ---
 
 # Bitbucket OAuth app
-<a name="oauth-app-bitbucket"></a>
 
 **Required action for Bitbucket OAuth token rotation**
 Atlassian now enforces single-use rotating refresh tokens for Bitbucket OAuth. We recommend migrating to [Bitbucket App connections](connections-bitbucket-app.md), which eliminates token management entirely. For instructions on migrating, see [Migrate to AWS CodeConnections (recommended)](connections-bitbucket-app.md#connections-bitbucket-migrate-to-codeconnections).

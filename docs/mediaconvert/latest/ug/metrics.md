@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/metrics.html
 ---
 
 # List of MediaConvert CloudWatch metrics
-<a name="metrics"></a>
 
 AWS Elemental MediaConvert sends the following metrics to CloudWatch at the end of every job.
 

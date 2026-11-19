@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-search
 ---
 
 # Find feature groups in your Feature Store
-<a name="feature-store-search-feature-group-metadata"></a>
 
 With Amazon SageMaker Feature Store, you can search for the feature groups using either the console or the [Search](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) operation. You can use the search functionality to find features and feature groups that are relevant to the models that you're creating. You can use the search functionality to quickly find the feature groups that are relevant to your use case.
 

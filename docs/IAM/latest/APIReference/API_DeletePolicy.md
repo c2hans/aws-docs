@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeletePolicy
 ---
 
 # DeletePolicy
-<a name="API_DeletePolicy"></a>
 
 Deletes the specified managed policy.
 

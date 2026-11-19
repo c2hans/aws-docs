@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Mult
 ---
 
 # MultiPartyApprovalReadOnlyAccess
-<a name="MultiPartyApprovalReadOnlyAccess"></a>
 
 **Description**: Provides read-only access to Multi-party approval. This policy also includes related read permission to AWS Organizations and AWS IAM Identity for approval teams and identity sources.
 

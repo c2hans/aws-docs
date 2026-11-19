@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Sta
 ---
 
 # StartImagePipelineExecution
-<a name="API_StartImagePipelineExecution"></a>
 
 Manually triggers a pipeline to create an image. You can start a build this way whether the pipeline is enabled or disabled. The response returns as soon as Image Builder creates the new image resource and queues the build. Use the returned `imageBuildVersionArn` with [GetImage](API_GetImage.md) to track build progress.
 

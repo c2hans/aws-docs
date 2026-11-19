@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-au
 ---
 
 # Step 3: Check your results
-<a name="tutorials-auto-scaling-group-verify"></a>
 
 In this step, you'll check to see that CodeDeploy installed the **SimpleDemoApp** revision on the single Amazon EC2 instance in the Auto Scaling group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixBoundaryGeometry
-<a name="API_RouteMatrixBoundaryGeometry"></a>
 
 Geometry of the routing boundary.
 

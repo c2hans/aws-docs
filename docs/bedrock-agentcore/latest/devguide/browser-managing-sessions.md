@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browse
 ---
 
 # Managing Browser Sessions
-<a name="browser-managing-sessions"></a>
 
 ## Starting a browser session
 <a name="browser-start-session"></a>

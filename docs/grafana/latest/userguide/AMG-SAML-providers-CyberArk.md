@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/AMG-SAML-provid
 ---
 
 # Configure Amazon Managed Grafana to use CyberArk
-<a name="AMG-SAML-providers-CyberArk"></a>
 
 Use the following steps to configure Amazon Managed Grafana to use CyberArk as an identity provider. These steps assume that you have already created your Amazon Managed Grafana workspace and you have made a note of the workspace's ID, URLs, and Region.
 

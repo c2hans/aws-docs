@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Po
 ---
 
 # PointInTimeConfiguration
-<a name="API_PointInTimeConfiguration"></a>
 
 Point-in-time configuration for a subscriber. Only applicable when StartingPosition is POINT\_IN\_TIME.
 

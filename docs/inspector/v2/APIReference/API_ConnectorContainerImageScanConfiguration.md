@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ConnectorC
 ---
 
 # ConnectorContainerImageScanConfiguration
-<a name="API_ConnectorContainerImageScanConfiguration"></a>
 
 The container image scanning settings for a connector, including how long pushed and pulled images continue to be rescanned for vulnerabilities.
 

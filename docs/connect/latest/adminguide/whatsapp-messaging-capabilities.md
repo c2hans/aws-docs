@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/whatsapp-messa
 ---
 
 # WhatsApp Business messaging capabilities and limitations with Connect Customer
-<a name="whatsapp-messaging-capabilities"></a>
 
 The WhatsApp Business messaging integration provides the following capabilities:
 + Text messages

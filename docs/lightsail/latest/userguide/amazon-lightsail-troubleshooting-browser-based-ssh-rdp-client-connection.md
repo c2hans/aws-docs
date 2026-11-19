@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Resolve connection errors with Lightsail browser-based SSH and RDP clients
-<a name="amazon-lightsail-troubleshooting-browser-based-ssh-rdp-client-connection"></a>
 
 You might get an error message when trying to connect to an instance using the browser-based SSH or RDP clients available in the Amazon Lightsail console. The possible reasons for this error are discussed in the following sections.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/cql.dml.insert
 ---
 
 # INSERT
-<a name="cql.dml.insert"></a>
 
 Use the `INSERT` statement to add a row to a table.
 

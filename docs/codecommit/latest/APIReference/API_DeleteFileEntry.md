@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Delet
 ---
 
 # DeleteFileEntry
-<a name="API_DeleteFileEntry"></a>
 
 A file that is deleted as part of a commit.
 

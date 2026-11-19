@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Offe
 ---
 
 # OfferCreatedBySourceFilter
-<a name="API_OfferCreatedBySourceFilter"></a>
 
 Allows filtering on the `CreatedBySource` of an offer.
 

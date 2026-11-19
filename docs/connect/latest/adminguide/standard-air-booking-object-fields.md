@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-air-b
 ---
 
 # Customer Profiles standard air booking object fields
-<a name="standard-air-booking-object-fields"></a>
 
 The following table lists all the fields in the Customer Profiles standard air booking object.
 

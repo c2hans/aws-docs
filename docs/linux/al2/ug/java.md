@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/java.html
 ---
 
 # Java in AL2
-<a name="java"></a>
 
  AL2 provides several versions of [Amazon Corretto](https://aws.amazon.com/corretto/) to support Java based workloads, as well as some OpenJDK versions. We recommend that you migrate to [Amazon Corretto](https://aws.amazon.com/corretto/) in preparation for migrating to AL2023.
 

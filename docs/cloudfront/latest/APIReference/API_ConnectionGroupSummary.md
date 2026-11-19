@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Conne
 ---
 
 # ConnectionGroupSummary
-<a name="API_ConnectionGroupSummary"></a>
 
 A summary that contains details about your connection groups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/n
 ---
 
 # Navigating the AWS Toolkit for JetBrains
-<a name="navigation"></a>
 
 The following topics describe the basic locations and components of the AWS Toolkit for JetBrains.
 

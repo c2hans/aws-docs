@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/integrat
 ---
 
 # Use AWS Secrets and Configuration Provider CSI with IAM Roles for Service Accounts (IRSA)
-<a name="integrating_ascp_irsa"></a>
 
 **Topics**
 + [Prerequisites](#prerequisites)

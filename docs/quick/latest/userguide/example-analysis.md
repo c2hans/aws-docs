@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/example-analysis.
 ---
 
 # Tutorial: Create an AWS Quick Sight dashboard using sample data
-<a name="example-analysis"></a>
 
 Use the procedures in the following sections to complete these tasks:
 + Create and prepare a Marketing dataset using the Web and Social Media Analytics sample data.

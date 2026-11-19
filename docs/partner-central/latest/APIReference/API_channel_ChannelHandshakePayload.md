@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ChannelHandshakePayload
-<a name="API_channel_ChannelHandshakePayload"></a>
 
 Contains the payload data for different types of channel handshakes.
 

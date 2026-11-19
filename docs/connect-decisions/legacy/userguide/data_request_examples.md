@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data_
 ---
 
 # Data requests examples
-<a name="data_request_examples"></a>
 
 Here are some examples on how you can structure the Simple Reporting data form to meet your needs.
 

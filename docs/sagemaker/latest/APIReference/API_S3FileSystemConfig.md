@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_S3File
 ---
 
 # S3FileSystemConfig
-<a name="API_S3FileSystemConfig"></a>
 
 Configuration for the custom Amazon S3 file system.
 

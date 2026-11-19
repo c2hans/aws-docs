@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/GettingStarted
 ---
 
 # Testing your gateway
-<a name="GettingStartedTestGatewayMain"></a>
 
 You test your Volume Gateway setup by performing the following tasks:
 

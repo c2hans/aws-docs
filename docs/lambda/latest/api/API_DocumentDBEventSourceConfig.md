@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_DocumentDBEventSou
 ---
 
 # DocumentDBEventSourceConfig
-<a name="API_DocumentDBEventSourceConfig"></a>
 
  Specific configuration settings for a DocumentDB event source.
 

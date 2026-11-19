@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an Oracle partitioned table to PostgreSQL by using AWS DMS
-<a name="migrate-an-oracle-partitioned-table-to-postgresql-by-using-aws-dms"></a>
 
 *Saurav Mishra and Eduardo Valentim, Amazon Web Services*
 

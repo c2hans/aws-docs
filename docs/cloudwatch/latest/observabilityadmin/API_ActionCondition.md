@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # ActionCondition
-<a name="API_ActionCondition"></a>
 
  Condition that matches based on the specific WAF action taken on the request.
 

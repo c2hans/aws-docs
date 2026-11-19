@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/viewing-reco
 ---
 
 # Compute Optimizer recommendation preferences
-<a name="viewing-recommendation-preferences"></a>
 
 Recommendation preferences are features that you can activate in AWS Compute Optimizer to get resource recommendations that align more closely with your workload requirements. You can activate the following recommendation preferences in Compute Optimizer.
 

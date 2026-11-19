@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Reroute client traffic to the capture proxy
-<a name="reroute-to-proxy"></a>
 
 This phase applies only to zero-downtime migrations (Scenario 3) and to capture-and-replay migrations (Scenario 2). If you are running a backfill-only migration, skip it. See [Migration scenarios](use-the-solution.md#migration-scenarios).
 

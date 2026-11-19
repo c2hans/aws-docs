@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Bul
 ---
 
 # Bulk put items considerations, quotas, and permissions
-<a name="BulkPutItems.Considerations"></a>
 
 This topic covers the quotas, IAM permissions, and feature interactions that apply to Amazon DynamoDB bulk put items operations. Review these constraints before you start a bulk put items operation.
 

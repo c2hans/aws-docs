@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # Address
-<a name="API_connect-customer-profiles_Address"></a>
 
 A generic address associated with the customer that is not mailing, shipping, or billing.
 

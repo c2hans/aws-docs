@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/mov-set-up-even
 ---
 
 # Fields for a MOV asset
-<a name="mov-set-up-event-fields"></a>
 
 | Field on web interface | Tag in the XML | Type | Description |
 | --- | --- | --- | --- |

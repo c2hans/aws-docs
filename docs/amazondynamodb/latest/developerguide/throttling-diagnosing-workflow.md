@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/thr
 ---
 
 # Diagnosing throttling
-<a name="throttling-diagnosing-workflow"></a>
 
 When your application experiences throttling, DynamoDB provides detailed exception information and targeted CloudWatch metrics to help you diagnose these events.
 

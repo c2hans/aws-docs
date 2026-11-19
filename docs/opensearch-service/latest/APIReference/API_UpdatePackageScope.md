@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # UpdatePackageScope
-<a name="API_UpdatePackageScope"></a>
 
 Updates the scope of a package. Scope of the package defines users who can view and associate a package.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_GetObjectAttribu
 ---
 
 # GetObjectAttributes
-<a name="API_GetObjectAttributes"></a>
 
 Retrieves all of the metadata from an object without returning the object itself. This operation is useful if you're interested only in an object's metadata.
 

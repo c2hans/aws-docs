@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Sandbo
 ---
 
 # SandboxSession
-<a name="API_SandboxSession"></a>
 
 Contains information about the sandbox session.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/manage-settings-
 ---
 
 # Manage the settings for Allowed AMIs
-<a name="manage-settings-allowed-amis"></a>
 
 You can manage the settings for Allowed AMIs. These settings are per Region per account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/expert.htm
 ---
 
 # .expert
-<a name="expert"></a>
 
 Used by those who have specialized knowledge in a variety of fields.
 

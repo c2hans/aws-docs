@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/quick
 ---
 
 # AWS Billing Console template snippets
-<a name="quickref-billingconductor"></a>
 
 This example creates one pricing plan with a 10% global markup pricing rule. This pricing plan is attached to the billing group. The billing group also has two custom line items which applies a $10 charge and a 10% charge on top of the billing group total cost.
 

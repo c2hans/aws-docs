@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_EdiConfigur
 ---
 
 # EdiConfiguration
-<a name="API_EdiConfiguration"></a>
 
 Specifies the details for the EDI (electronic data interchange) transformation.
 

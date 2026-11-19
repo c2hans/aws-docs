@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/userguide/setup-pre
 AWS Audit Manager is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS Audit Manager availability change](https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html).
 
 # Prerequisites for setting up AWS Audit Manager
-<a name="setup-prerequisites"></a>
 
 Before you can use AWS Audit Manager, you must make sure that you have properly set up your AWS account and user permissions.
 

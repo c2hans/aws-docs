@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ma
 ---
 
 # Adopting the Matter standard for IoT device makers
-<a name="introduction"></a>
 
 *Tushar Patel, Vijay Ujjain, and David Walters, Amazon Web Services*
 

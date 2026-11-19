@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_TagResou
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Tags the resource with a tag key and value.
 

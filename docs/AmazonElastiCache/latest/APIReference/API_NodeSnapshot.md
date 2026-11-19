@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # NodeSnapshot
-<a name="API_NodeSnapshot"></a>
 
 Represents an individual cache node in a snapshot of a cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-clear.h
 ---
 
 # JSON.CLEAR
-<a name="json-clear"></a>
 
 Clears the arrays or an object at the path.
 

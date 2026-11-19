@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # GET: Get the Attributes of an MPTS Output
-<a name="working-with-mpts-get-attributes-of-mpts-output"></a>
 
 Get the attributes and SPTS programs of one MPTS output.
 

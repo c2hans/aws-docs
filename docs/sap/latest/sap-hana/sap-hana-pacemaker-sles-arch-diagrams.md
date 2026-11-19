@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-s
 ---
 
 # Architecture Diagrams
-<a name="sap-hana-pacemaker-sles-arch-diagrams"></a>
 
 ## Pacemaker - Scale-Up Architecture
 <a name="_pacemaker_scale_up_architecture"></a>

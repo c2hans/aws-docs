@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_ResponseTimeRootCaus
 ---
 
 # ResponseTimeRootCauseEntity
-<a name="API_ResponseTimeRootCauseEntity"></a>
 
 A collection of segments and corresponding subsegments associated to a response time warning.
 

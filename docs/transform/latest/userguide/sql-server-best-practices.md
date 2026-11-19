@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/sql-server-be
 ---
 
 # Best practices and troubleshooting
-<a name="sql-server-best-practices"></a>
 
 Best practices, and common issues and their resolutions during the modernization process.
 

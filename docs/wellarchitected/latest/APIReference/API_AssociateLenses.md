@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # AssociateLenses
-<a name="API_AssociateLenses"></a>
 
 Associate a lens to a workload.
 

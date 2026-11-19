@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # PutRepositoryCatalogData
-<a name="API_PutRepositoryCatalogData"></a>
 
 Creates or updates the catalog data for a repository in a public registry.
 

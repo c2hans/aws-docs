@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Domain
 ---
 
 # DomainInfo
-<a name="API_DomainInfo"></a>
 
 Contains general information about a domain.
 

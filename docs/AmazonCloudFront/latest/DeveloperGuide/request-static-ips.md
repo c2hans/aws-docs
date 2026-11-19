@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/r
 ---
 
 # Request Anycast static IPs to use for allowlisting
-<a name="request-static-ips"></a>
 
 You can also bring your own IP address range to use with CloudFront instead of CloudFront-provided Anycast static IPs. For more information, see [Bring your own IP to CloudFront using IPAM](bring-your-own-ip-address-using-ipam.md).
 

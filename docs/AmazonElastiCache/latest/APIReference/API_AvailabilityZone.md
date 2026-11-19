@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # AvailabilityZone
-<a name="API_AvailabilityZone"></a>
 
 Describes an Availability Zone in which the cluster is launched.
 

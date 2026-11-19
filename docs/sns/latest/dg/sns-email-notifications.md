@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-email-notifications.ht
 ---
 
 # Amazon SNS email subscription setup and management
-<a name="sns-email-notifications"></a>
 
-You can subscribe an [email address](#sns-email-notifications) to an Amazon SNS topic using the AWS Management Console, AWS SDK for Java, or AWS SDK for .NET.
+You can subscribe an [email address](sns-email-notifications.md) to an Amazon SNS topic using the AWS Management Console, AWS SDK for Java, or AWS SDK for .NET.
 
 **Notes**
 Customization of the email message body is not supported. The email delivery feature is intended to provide internal system alerts, not marketing messages.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_ListIdentity
 ---
 
 # ListIdentityPolicies
-<a name="API_ListIdentityPolicies"></a>
 
 Returns a list of sending authorization policies that are attached to the given identity (an email address or a domain). This operation returns only a list. To get the actual policy content, use `GetIdentityPolicies`.
 

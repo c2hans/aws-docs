@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Put
 ---
 
 # PutLoggingOptions
-<a name="API_PutLoggingOptions"></a>
 
 Sets logging options for AWS IoT SiteWise.
 

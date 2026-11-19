@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Tutorial: WebRTC with TURN relaying using Amazon Kinesis Video Streams
-<a name="runtime-webrtc-get-started-kvs"></a>
 
 In this tutorial, you build a WebRTC voice connection between a browser client and an agent running on AgentCore Runtime, using Amazon Kinesis Video Streams (KVS) managed TURN for media relaying. The agent processes audio in real-time using an Amazon Bedrock foundation model for speech-to-speech conversation.
 

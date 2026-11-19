@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_Detect
 ---
 
 # DetectEntities
-<a name="API_DetectEntities"></a>
 
 The `DetectEntities` operation is deprecated. You should use the [DetectEntitiesV2](API_DetectEntitiesV2.md) operation instead.
 

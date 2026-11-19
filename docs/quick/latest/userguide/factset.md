@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/factset.html
 ---
 
 # Using third party data in Quick Research (FactSet)
-<a name="factset"></a>
 
 Access FactSet's trusted equity prices, fundamentals, events, news, transcripts, pricing and consensus estimates - delivered seamlessly for AI-driven insights. With comprehensive coverage and reliable data, FactSet empowers smarter financial analysis, decision-making, and innovation.
 + **Global Prices** - End-of-day pricing data, returns, corporate actions, dividends, and shares outstanding for global equities

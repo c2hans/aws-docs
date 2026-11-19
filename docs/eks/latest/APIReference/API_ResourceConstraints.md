@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ResourceCons
 ---
 
 # ResourceConstraints
-<a name="API_ResourceConstraints"></a>
 
 Constraints for resource weight entries.
 

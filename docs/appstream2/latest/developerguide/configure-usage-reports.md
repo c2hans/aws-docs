@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/configu
 ---
 
 # WorkSpaces Applications Usage Reports
-<a name="configure-usage-reports"></a>
 
 You can subscribe to Amazon WorkSpaces Applications usage reports to receive detailed reports about how your users are using the service. Two .csv files are exported to an Amazon Simple Storage Service (Amazon S3) bucket in your account every day.
 

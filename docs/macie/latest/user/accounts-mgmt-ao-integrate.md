@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/accounts-mgmt-ao-integ
 ---
 
 # Integrating and configuring an organization in Macie
-<a name="accounts-mgmt-ao-integrate"></a>
 
 To start using Amazon Macie with AWS Organizations, the AWS Organizations management account for the organization designates an account as the delegated Macie administrator account for the organization. This enables Macie as a trusted service in AWS Organizations. It also enables Macie in the current AWS Region for the designated administrator account, and it allows the designated administrator account to enable and manage Macie for other accounts in the organization in that Region. For information about how these permissions are granted, see [Using AWS Organizations with other AWS services](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html) in the *AWS Organizations User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_Creation
 ---
 
 # CreationPermissions
-<a name="API_S3Files_CreationPermissions"></a>
 
 Specifies the permissions to set on newly created directories within the file system.
 

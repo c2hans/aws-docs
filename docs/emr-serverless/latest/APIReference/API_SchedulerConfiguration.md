@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_S
 ---
 
 # SchedulerConfiguration
-<a name="API_SchedulerConfiguration"></a>
 
 The scheduler configuration for batch and streaming jobs running on this application. Supported with release labels emr-7.0.0 and above.
 

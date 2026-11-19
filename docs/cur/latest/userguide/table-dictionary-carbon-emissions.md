@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-ca
 ---
 
 # Carbon emissions
-<a name="table-dictionary-carbon-emissions"></a>
 
 The carbon emissions table contains your estimated carbon emissions. It provides detailed account-level and regional granularity of your carbon emissions data. You can configure automated monthly deliveries to Amazon S3 in either CSV or Parquet format, making it simple to integrate with your existing business intelligence tools and reporting systems. For detailed information about the methodology, see [Calculation Methodology](https://docs.aws.amazon.com/sustainability/latest/userguide/methodology.html) in the *AWS Sustainability User Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/integra
 ---
 
 # Run Python scripts from GitHub
-<a name="integration-github-python"></a>
 
 This section includes procedures to help you run Python scripts from GitHub by using either the AWS Systems Manager console or the AWS Command Line Interface (AWS CLI).
 

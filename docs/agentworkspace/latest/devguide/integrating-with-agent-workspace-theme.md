@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/integrati
 ---
 
 # Apply a theme to your application in Connect Customer agent workspace
-<a name="integrating-with-agent-workspace-theme"></a>
 
 The theme package defines and applies the Connect Customer theme when developing with [Cloudscape](https://cloudscape.design) for the Connect Customer agent workspace.
 

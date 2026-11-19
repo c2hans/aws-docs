@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # LinkedAccountOAuth2
-<a name="API_LinkedAccountOAuth2"></a>
 
 Authentication method using OAuth2 providers. Supports Google, Apple, X, Telegram, and GitHub providers.
 

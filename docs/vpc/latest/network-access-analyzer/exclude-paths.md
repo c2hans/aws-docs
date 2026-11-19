@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/exclu
 ---
 
 # Exclusion conditions in Network Access Analyzer
-<a name="exclude-paths"></a>
 
 A Network Access Scope produces findings only for paths that match at least one match condition, but do not match any exclusion conditions.
 

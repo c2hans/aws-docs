@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Describe
 ---
 
 # DescribeChannel
-<a name="API_DescribeChannel"></a>
 
 Describes the specified channel, including its configuration and current status.
 

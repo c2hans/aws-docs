@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/productivity
 ---
 
 # Manage access to AppFabric for productivity (preview) features for IT and security administrators
-<a name="productivity-end-users-managing-access"></a>
 
 |  |
 | --- |

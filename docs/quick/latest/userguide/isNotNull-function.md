@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/isNotNull-functio
 ---
 
 # isNotNull
-<a name="isNotNull-function"></a>
 
 `isNotNull` evaluates an expression to see if it is not null. If the expression is not null, `isNotNull` returns true, and otherwise it returns false.
 

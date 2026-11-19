@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/userguide/sns-kms-per
 End of support notice: Amazon DevOps Guru will stop accepting new customers on October 29, 2026. Current customers will not be impacted and can continue using Amazon DevOps Guru until September 30, 2027. After September 30, 2027 you will no longer be able to access Amazon DevOps Guru. For more information, see [Amazon DevOps Guru end of support](devops-guru-end-of-support.md).
 
 # Permissions for AWS KMS–encrypted Amazon SNS topics
-<a name="sns-kms-permissions"></a>
 
  The Amazon SNS topic you specify might be encrypted by AWS Key Management Service. To allow DevOps Guru to work with encrypted topics, you must first create a AWS KMS key and then add the following statement to the policy of the KMS key. For more information, see [Encrypting messages published to Amazon SNS with AWS KMS](https://aws.amazon.com/blogs/compute/encrypting-messages-published-to-amazon-sns-with-aws-kms/), [Key identifiers (KeyId)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#key-id) in the *AWS KMS User Guide*, and [Data encryption](https://docs.aws.amazon.com/sns/latest/dg/sns-data-encryption.html) in the *Amazon Simple Notification Service Developer Guide*.
 

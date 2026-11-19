@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint-email/latest/APIReference/API_G
 ---
 
 # GetEmailIdentity
-<a name="API_GetEmailIdentity"></a>
 
 Provides information about a specific identity associated with your Amazon Pinpoint account, including the identity's verification status, its DKIM authentication status, and its custom Mail-From settings.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/async.html
 ---
 
 # Processing Documents Asynchronously
-<a name="async"></a>
 
 You can use Amazon Textract to detect and analyze text in multipage documents in PDF or TIFF format, including invoices and receipts. Multipage document processing is an asynchronous operation, and it is useful for processing large, multipage documents. For example, a PDF file with over 1,000 pages takes a long time to process, but processing the PDF file asynchronously allows your application to complete other tasks while the operation completes.
 

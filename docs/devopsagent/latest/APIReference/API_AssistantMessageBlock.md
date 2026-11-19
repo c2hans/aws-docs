@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Assi
 ---
 
 # AssistantMessageBlock
-<a name="API_AssistantMessageBlock"></a>
 
 A block of content in an assistant message.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-crea
 ---
 
 # Adding historical usage to my workload estimate
-<a name="pc-create-workload-historical-usage"></a>
 
 This section outlines how to add historical usage to a workload estimate.
 

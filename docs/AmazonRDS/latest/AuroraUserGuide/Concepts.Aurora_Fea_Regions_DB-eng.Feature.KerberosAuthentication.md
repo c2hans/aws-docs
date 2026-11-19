@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concept
 ---
 
 # Supported Regions and Aurora DB engines for Kerberos authentication
-<a name="Concepts.Aurora_Fea_Regions_DB-eng.Feature.KerberosAuthentication"></a>
 
 By using Kerberos authentication with Aurora, you can support external authentication of database users using Kerberos and Microsoft Active Directory. Using Kerberos and Active Directory provides the benefits of single sign-on and centralized authentication of database users. Kerberos and Active Directory are available with AWS Directory Service for Microsoft Active Directory, a feature of Directory Service. For more information, see [Kerberos authentication](database-authentication.md#kerberos-authentication).
 

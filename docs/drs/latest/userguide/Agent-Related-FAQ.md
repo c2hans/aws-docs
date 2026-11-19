@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/Agent-Related-FAQ.h
 ---
 
 # Agent related
-<a name="Agent-Related-FAQ"></a>
 
 ## What does the AWS Replication Agent do?
 <a name="What-Agent-Do"></a>

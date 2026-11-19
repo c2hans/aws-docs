@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ListResourceAssociations
-<a name="API_ListResourceAssociations"></a>
 
 Lists the resources associated with the specified resource.
 

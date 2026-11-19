@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/container-u
 ---
 
 # Updating your end-user license agreement (EULA) for container products on AWS Marketplace
-<a name="container-update-eula"></a>
 
 As an AWS Marketplace seller, you can update the end-user license agreement (EULA) to use either the [Standard Contract for AWS Marketplace](standardized-license-terms.md#standard-contracts) or a custom EULA. Updates made to the EULA take effect for new users subscribing to your product and product renewals. To update your EULA, use the following procedure.
 

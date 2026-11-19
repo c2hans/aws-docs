@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteUsagePla
 ---
 
 # DeleteUsagePlanKey
-<a name="API_DeleteUsagePlanKey"></a>
 
 Deletes a usage plan key and remove the underlying API key from the associated usage plan.
 

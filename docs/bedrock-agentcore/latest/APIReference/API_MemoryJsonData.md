@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # MemoryJsonData
-<a name="API_MemoryJsonData"></a>
 
 Contains non-conversational, JSON-formatted content for an event payload. JSON payloads are extracted into long-term memory.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # RestrictedExecutionTime
-<a name="API_RestrictedExecutionTime"></a>
 
 The time ranges during which change execution is restricted.
 

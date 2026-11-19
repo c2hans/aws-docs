@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/calibr
 ---
 
 # Calibrate your vehicle
-<a name="calibrate-your-vehicle"></a>
 
 To achieve the best performance, it’s essential that you calibrate some physical parts of your AWS DeepRacer vehicle. If you use an uncalibrated vehicle, it can add uncertainty when testing your model. If the vehicle’s performance is not optimal, you might be tempted to only adjust the deep learning model code. However, you won’t be able to improve the vehicle performance if the root cause is mechanical. Adjust the mechanics by calibration.
 

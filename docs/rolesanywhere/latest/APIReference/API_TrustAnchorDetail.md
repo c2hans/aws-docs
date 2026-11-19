@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Tr
 ---
 
 # TrustAnchorDetail
-<a name="API_TrustAnchorDetail"></a>
 
 The state of the trust anchor after a read or write operation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-make-predicti
 ---
 
 # Edit your automatic batch prediction configuration
-<a name="canvas-make-predictions-batch-auto-edit"></a>
 
 You might want to make changes to your auto update configuration for a dataset, such as changing the frequency of the updates. You might also want to turn off your automatic update configuration to pause the updates to your dataset.
 

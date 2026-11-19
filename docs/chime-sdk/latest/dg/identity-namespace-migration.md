@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/identity-namespace-m
 ---
 
 # Migrating to the Amazon Chime SDK identity namespace
-<a name="identity-namespace-migration"></a>
 
 The [Amazon Chime SDK Identity](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Identity.html) namespace is a dedicated place for the APIs used to create and manage Amazon Chime SDK identity resources, including AppInstances and AppInstanceUsers. You use the namespace to address Amazon Chime SDK identity API endpoints in any AWS Region in which they're available. Use this namespace if you're just starting to use the Amazon Chime SDK. For more information about Regions, refer to [Available AWS Regions for the Amazon Chime SDK](sdk-available-regions.md) in this guide.
 

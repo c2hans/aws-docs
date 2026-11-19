@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/ams-sta
 ---
 
 # creating sort index
-<a name="ams-states.sort-index"></a>
 
 The `creating sort index` thread state indicates that a thread is processing a `SELECT` statement that requires the use of an internal temporary table to sort the data.
 

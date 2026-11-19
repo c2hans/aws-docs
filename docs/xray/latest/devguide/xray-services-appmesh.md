@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/xray-services-appme
 ---
 
 # Amazon EC2 and AWS App Mesh
-<a name="xray-services-appmesh"></a>
 
 AWS X-Ray integrates with [AWS App Mesh](https://docs.aws.amazon.com/app-mesh/latest/userguide/what-is-app-mesh.html) to manage Envoy proxies for microservices. App Mesh provides a version of Envoy that you can configure to send trace data to the X-Ray daemon running in a container of the same task or pod. X-Ray supports tracing with the following App Mesh compatible services:
 + Amazon Elastic Container Service (Amazon ECS)

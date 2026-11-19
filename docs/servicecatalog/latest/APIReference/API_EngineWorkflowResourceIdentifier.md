@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_E
 ---
 
 # EngineWorkflowResourceIdentifier
-<a name="API_EngineWorkflowResourceIdentifier"></a>
 
  The ID for the provisioned product resources that are part of a resource group.
 

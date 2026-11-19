@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateAccoun
 ---
 
 # UpdateAccountPasswordPolicy
-<a name="API_UpdateAccountPasswordPolicy"></a>
 
 Updates the password policy settings for the AWS account.
 

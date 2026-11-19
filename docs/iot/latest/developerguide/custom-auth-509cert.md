@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/custom-auth-50
 ---
 
 # Custom authentication with X.509 client certificates
-<a name="custom-auth-509cert"></a>
 
 When connecting devices to AWS IoT Core, you have multiple [authentication types](protocols.md#connection-protocol-auth-mode) available. You can use [X.509 client certificates](https://docs.aws.amazon.com/iot/latest/developerguide/x509-client-certs.html) that can be used to authenticate client and device connections, or define [custom authorizers](https://docs.aws.amazon.com/iot/latest/developerguide/custom-authentication.html) to manage your own client authentication and authorization logic. This topic covers how to use custom authentication with X.509 client certificates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # UpdateRegistry
-<a name="API_UpdateRegistry"></a>
 
 Updates an existing registry. This operation uses PATCH semantics, so you only need to specify the fields you want to change.
 

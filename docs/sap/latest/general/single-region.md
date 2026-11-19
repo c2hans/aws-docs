@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/single-region.html
 ---
 
 # Single Region architecture patterns for Microsoft SQL server
-<a name="single-region"></a>
 
 Single Region architecture patterns help you avoid network latency as your SAP workload components are located in a close proximity within the same Region. Every AWS Region generally has three Availability Zones. For more information, see [AWS Global Infrastructure Map](https://aws.amazon.com/about-aws/global-infrastructure/).
 

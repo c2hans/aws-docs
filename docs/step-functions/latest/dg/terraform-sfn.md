@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/terraform-sfn.h
 ---
 
 # Using Terraform to deploy state machines in Step Functions
-<a name="terraform-sfn"></a>
 
 [Terraform](https://www.terraform.io/intro/) by HashiCorp is a framework for building applications using infrastructure as code (IaC). With Terraform, you can create state machines and use features, such as previewing infrastructure deployments and creating reusable templates. Terraform templates help you maintain and reuse the code by breaking it down into smaller chunks.
 

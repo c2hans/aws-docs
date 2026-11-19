@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Cost optimization
-<a name="cost-optimization"></a>
 
  The digital sovereignty lens doesn't add any new best practices to the cost optimization pillar. Best practices already defined under the [cost optimization pillar](https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/cost-optimization-pillar.html) provide adequate advice.
 

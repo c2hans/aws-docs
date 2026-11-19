@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/asff-resour
 ---
 
 # CodeRepository object in ASFF
-<a name="asff-resourcedetails-coderepository"></a>
 
 The `CodeRepository` object provides information about an external code repository that you connected to AWS resources and configured Amazon Inspector to scan for vulnerabilities.
 

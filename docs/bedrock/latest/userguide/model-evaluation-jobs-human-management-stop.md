@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Stop a model evaluation job in Amazon Bedrock
-<a name="model-evaluation-jobs-human-management-stop"></a>
 
 You can stop a model evaluation job that is currently processing using the AWS Management Console, AWS CLI, or a supported AWS SDK.
 

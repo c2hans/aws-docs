@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Member
 ---
 
 # Member
-<a name="API_Member"></a>
 
 Contains information about the member account.
 

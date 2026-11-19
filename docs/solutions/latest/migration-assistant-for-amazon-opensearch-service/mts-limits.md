@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Limits and considerations
-<a name="mts-limits"></a>
 
 The serverless model removes infrastructure management but also removes several cluster-level capabilities that exist on an Amazon OpenSearch Service domain. Plan for the following before you migrate to an Amazon OpenSearch Serverless NextGen collection.
 

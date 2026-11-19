@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_RegisterOi
 ---
 
 # RegisterOidcConfig
-<a name="API_RegisterOidcConfig"></a>
 
 Registers and saves an OpenID Connect (OIDC) configuration for a Wickr network, enabling Single Sign-On (SSO) authentication through an identity provider.
 

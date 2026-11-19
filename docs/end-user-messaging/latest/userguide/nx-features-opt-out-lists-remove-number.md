@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Remove a destination phone number from an opt-out list in AWS End User Messaging
-<a name="nx-features-opt-out-lists-remove-number"></a>
 
 Use the AWS End User Messaging console or AWS CLI to remove destination phone numbers from an opt-out list. When you remove a phone number that phone number will receive messages sent from an origination identity that is linked to the opt-out list.
 

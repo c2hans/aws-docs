@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetEventStream
-<a name="API_connect-customer-profiles_GetEventStream"></a>
 
 Returns information about the specified event stream in a specific domain.
 

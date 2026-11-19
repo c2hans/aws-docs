@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/tutor
 ---
 
 # Classifying images
-<a name="tutorial-classification"></a>
 
 This tutorial shows you how to create the project and datasets for a model that classifies objects, scenes, and concepts found in an image. The model classifies the entire image. For example, by following this tutorial, you can train a model to recognize household locations such as a living room or kitchen. The tutorial also shows you how to use the model to analyze images.
 

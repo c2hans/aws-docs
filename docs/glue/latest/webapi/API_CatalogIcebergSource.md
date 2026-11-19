@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CatalogIcebergSou
 ---
 
 # CatalogIcebergSource
-<a name="API_CatalogIcebergSource"></a>
 
 Specifies an Apache Iceberg data source that is registered in the AWS Glue Data Catalog.
 

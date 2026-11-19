@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/configure-thir
 ---
 
 # Configure third-party speech-to-text (STT) providers
-<a name="configure-third-party-stt"></a>
 
 Use the following instructions to configure a third-party speech-to-text (STT) provider.
 

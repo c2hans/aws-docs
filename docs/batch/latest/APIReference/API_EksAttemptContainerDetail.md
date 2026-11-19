@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_EksAttempt
 ---
 
 # EksAttemptContainerDetail
-<a name="API_EksAttemptContainerDetail"></a>
 
 An object that represents the details for an attempt for a job attempt that an Amazon EKS container runs.
 

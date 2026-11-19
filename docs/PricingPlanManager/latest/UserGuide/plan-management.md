@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PricingPlanManager/latest/UserGuide/plan
 ---
 
 # Plan Management
-<a name="plan-management"></a>
 
 Flat-rate plans can be managed in the console or programmatically using the AWS CLI, AWS SDKs, or the PricingPlanManager API. For programmatic management, see Getting started with the PricingPlanManager API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/prepare-for-al2023.html
 ---
 
 # Prepare your migration to AL2023
-<a name="prepare-for-al2023"></a>
 
  You can prepare your move to AL2023 while you continue to use AL2.
 

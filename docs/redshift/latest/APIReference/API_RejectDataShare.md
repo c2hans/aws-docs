@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_RejectD
 ---
 
 # RejectDataShare
-<a name="API_RejectDataShare"></a>
 
 From a datashare consumer account, rejects the specified datashare.
 

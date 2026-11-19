@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-scannin
 ---
 
 # Configuring enhanced scanning for images in Amazon ECR
-<a name="image-scanning-enhanced-enabling"></a>
 
 Configure enhanced scanning per Region for your private registry.
 

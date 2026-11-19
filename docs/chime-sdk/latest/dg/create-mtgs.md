@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-mtgs.html
 ---
 
 # Creating meetings using the Amazon Chime SDK
-<a name="create-mtgs"></a>
 
 The following procedure demonstrates how to create a meeting with audio and video for your server and client applications. Before you begin, you must integrate your client application with an Amazon Chime SDK client library. For more information, refer to [Learn about the Amazon Chime SDK client libraries](mtgs-sdk-client-lib.md).
 

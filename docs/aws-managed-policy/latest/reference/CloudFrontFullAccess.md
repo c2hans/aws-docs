@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudFrontFullAccess
-<a name="CloudFrontFullAccess"></a>
 
 **Description**: Provides full access to the CloudFront console plus the ability to list Amazon S3 buckets via the AWS Management Console.
 

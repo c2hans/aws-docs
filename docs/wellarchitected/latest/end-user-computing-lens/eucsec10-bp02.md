@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCSEC10-BP02 Restrict access to open ports on instances to reduce risks
-<a name="eucsec10-bp02"></a>
 
  Restrict use of network ports on end user systems to reduce the potential exposure surface of these systems. Block network ports that aren't required for the operation and support of end user systems using host-based or network firewalls.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/loggin
 ---
 
 # Logging Amazon CloudSearch Configuration API Calls with AWS CloudTrail
-<a name="logging-config-api-calls"></a>
 
 Amazon CloudSearch integrates with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Amazon CloudSearch. CloudTrail captures all configuration API calls for Amazon CloudSearch as events.
 

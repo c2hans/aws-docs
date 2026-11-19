@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # CreateLogGroup
-<a name="API_CreateLogGroup"></a>
 
 Creates a log group with the specified name. You can create up to 1,000,000 log groups per Region per account.
 

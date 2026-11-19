@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/signing-in-multip
 ---
 
 # Signing in with multiple accounts
-<a name="signing-in-multiple-accounts"></a>
 
 You can sign in to AWS Quick with multiple accounts at the same time and switch between them as necessary.
 

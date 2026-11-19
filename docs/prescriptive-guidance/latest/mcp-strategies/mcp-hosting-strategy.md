@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-strateg
 ---
 
 # MCP hosting strategy
-<a name="mcp-hosting-strategy"></a>
 
 Abstracting the available tools into MCP servers decouples your agent development from the available tools. This introduces the challenges of where you host your MCP server and how tools are organized inside those servers.
 

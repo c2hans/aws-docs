@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RuleOptio
 ---
 
 # RuleOption
-<a name="API_RuleOption"></a>
 
 Describes additional settings for a stateful rule.
 

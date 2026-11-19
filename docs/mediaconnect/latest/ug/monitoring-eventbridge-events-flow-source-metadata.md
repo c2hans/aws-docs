@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/monitoring-eventb
 ---
 
 # MediaConnect flow source metadata changed event
-<a name="monitoring-eventbridge-events-flow-source-metadata"></a>
 
 AWS Elemental MediaConnect publishes this event when the metadata for a flow's source changes. The event detail contains the `metadataChangeTime` field, which is the time of the most recent change to the source metadata.
 

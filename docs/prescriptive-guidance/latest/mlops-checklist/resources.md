@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mlops-check
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references.ef76638d-3a01-5aec-882f-bcc01cd8a39d"></a>

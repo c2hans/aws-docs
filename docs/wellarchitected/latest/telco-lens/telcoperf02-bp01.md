@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/telcop
 ---
 
 # TELCOPERF02-BP01 Deploy containerized network functions on EKS with performance-optimized node configurations
-<a name="telcoperf02-bp01"></a>
 
  Telco cloud-based network functions (CNFs) need direct hardware access, such as CPU pinning, NUMA-aware scheduling, SR-IOV, and DPDK, that serverless container platforms can't provide. Running them on Amazon EKS worker nodes tuned for packet processing delivers deterministic, wire-speed performance while retaining Kubernetes lifecycle management. This best practice configures EKS nodes for the performance isolation CNFs require.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListTestEx
 ---
 
 # ListTestExecutionResultItems
-<a name="API_ListTestExecutionResultItems"></a>
 
 Gets a list of test execution result items.
 

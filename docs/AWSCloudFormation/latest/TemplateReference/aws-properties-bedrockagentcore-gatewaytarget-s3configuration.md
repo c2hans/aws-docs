@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BedrockAgentCore::GatewayTarget S3Configuration
-<a name="aws-properties-bedrockagentcore-gatewaytarget-s3configuration"></a>
 
 The Amazon S3 configuration for a gateway. This structure defines how the gateway accesses files in Amazon S3.
 

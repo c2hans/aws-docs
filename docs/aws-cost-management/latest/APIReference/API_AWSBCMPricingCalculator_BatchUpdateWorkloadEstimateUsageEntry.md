@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchUpdateWorkloadEstimateUsageEntry
-<a name="API_AWSBCMPricingCalculator_BatchUpdateWorkloadEstimateUsageEntry"></a>
 
  Represents an entry in a batch operation to update workload estimate usage.
 

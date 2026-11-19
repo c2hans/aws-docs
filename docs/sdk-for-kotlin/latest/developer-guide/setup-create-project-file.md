@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/se
 ---
 
 # Create project build files
-<a name="setup-create-project-file"></a>
 
 After you configure single sign-on access and your development environment, create a Kotlin project using your preferred build tool. In the build file, specify the dependencies for the AWS services that your application needs to access.
 

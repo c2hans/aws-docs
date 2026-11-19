@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudFront::ContinuousDeploymentPolicy
-<a name="aws-resource-cloudfront-continuousdeploymentpolicy"></a>
 
 Creates a continuous deployment policy that routes a subset of production traffic from a primary distribution to a staging distribution.
 

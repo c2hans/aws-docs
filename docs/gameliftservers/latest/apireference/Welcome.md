@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/Welc
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Amazon GameLift Servers provides solutions for hosting session-based multiplayer game servers in the cloud, including tools for deploying, operating, and scaling game servers. Built on AWS global computing infrastructure, GameLift helps you deliver high-performance, high-reliability, low-cost game servers while dynamically scaling your resource usage to meet player demand.
 
@@ -21,4 +20,4 @@ This reference guide describes the low-level service API for Amazon GameLift Ser
 +  [Amazon GameLift Servers API operations listed by tasks](https://docs.aws.amazon.com/gamelift/latest/developerguide/reference-awssdk.html)
 +  [ Amazon GameLift Servers tools and resources](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-components.html)
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

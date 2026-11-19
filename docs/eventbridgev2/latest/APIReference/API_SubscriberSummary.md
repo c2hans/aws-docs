@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Su
 ---
 
 # SubscriberSummary
-<a name="API_SubscriberSummary"></a>
 
 Summary of a subscriber, as returned by ListSubscribers.
 

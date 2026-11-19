@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 ---
 
 # .NET runtime for Lambda Managed Instances
-<a name="lambda-managed-instances-dotnet-runtime"></a>
 
 For .NET runtimes, Lambda Managed Instances use a single .NET process per execution environment. Multiple concurrent requests are processed using .NET Tasks.
 

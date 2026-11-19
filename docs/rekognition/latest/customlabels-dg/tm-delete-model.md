@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/tm-de
 ---
 
 # Deleting an Amazon Rekognition Custom Labels model
-<a name="tm-delete-model"></a>
 
 You can delete a model by using the Amazon Rekognition Custom Labels console or by using the [DeleteProjectVersion](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DeleteProjectVersion) API. You can't delete a model if it is running or if it is training. To stop a running model, use the [StopProjectVersion](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_StopProjectVersion) API. For more information, see [Stopping an Amazon Rekognition Custom Labels model (SDK)](rm-stop.md#rm-stop-sdk). If a model is training, wait until it finishes before you delete the model.
 

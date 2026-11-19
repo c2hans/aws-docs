@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/vwo-reading-from-entities
 ---
 
 # Reading from VWO entities
-<a name="vwo-reading-from-entities"></a>
 
 **Prerequisites**
 

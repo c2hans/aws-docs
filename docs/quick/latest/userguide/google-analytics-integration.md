@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/google-analytics-
 ---
 
 # Google Analytics integration
-<a name="google-analytics-integration"></a>
 
 With the Google Analytics connector, you can access Google Analytics directly in AWS Quick through natural language. You can run reports, retrieve audience data, monitor key events, and access real-time metrics without leaving AWS Quick.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/example_kms_Si
 ---
 
 # Use `Sign` with an AWS SDK or CLI
-<a name="example_kms_Sign_section"></a>
 
 The following code examples show how to use `Sign`.
 

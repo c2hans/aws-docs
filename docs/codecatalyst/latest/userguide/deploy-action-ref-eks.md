@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/deploy-act
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # 'Deploy to Kubernetes cluster' action YAML
-<a name="deploy-action-ref-eks"></a>
 
 The following is the YAML definition of the **Deploy to Kubernetes cluster** action. To learn how to use this action, see [Deploying to Amazon EKS with a workflow](deploy-action-eks.md).
 

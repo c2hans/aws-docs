@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ViewDefinitionInp
 ---
 
 # ViewDefinitionInput
-<a name="API_ViewDefinitionInput"></a>
 
 A structure containing details for creating or updating an AWS Glue view.
 

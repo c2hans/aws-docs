@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/agent-diagnostics.h
 ---
 
 # Agent logs and diagnostics
-<a name="agent-diagnostics"></a>
 
 When troubleshooting Elastic Disaster Recovery agent issues, start by checking the service status and reviewing recent log entries. This page provides commands for checking agent health and gathering diagnostic information for support cases.
 

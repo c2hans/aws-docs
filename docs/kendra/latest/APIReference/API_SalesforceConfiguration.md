@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Salesforc
 ---
 
 # SalesforceConfiguration
-<a name="API_SalesforceConfiguration"></a>
 
 Provides the configuration information to connect to Salesforce as your data source.
 

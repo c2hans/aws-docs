@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/cni-network-policy.
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Limit Pod traffic with Kubernetes network policies
-<a name="cni-network-policy"></a>
 
 ## Overview
 <a name="_overview"></a>

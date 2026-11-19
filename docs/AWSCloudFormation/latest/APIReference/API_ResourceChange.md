@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ResourceChange
-<a name="API_ResourceChange"></a>
 
 The `ResourceChange` structure describes the resource and the action that CloudFormation will perform on it if you execute this change set.
 

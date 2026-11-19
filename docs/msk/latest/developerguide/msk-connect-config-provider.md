@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-connect-co
 ---
 
 # Tutorial: Externalizing sensitive information using config providers
-<a name="msk-connect-config-provider"></a>
 
 This example shows how to externalize sensitive information for Amazon MSK Connect using an open source configuration provider. A configuration providers lets you specify variables instead of plaintext in a connector or worker configuration, and workers running in your connector resolve these variables at runtime. This prevents credentials and other secrets from being stored in plaintext. The configuration provider in the example supports retrieving configuration parameters from AWS Secrets Manager, Amazon S3 and Systems Manager (SSM). In [Step 2](#msk-connect-config-providers), you can see how to set up storage and retrieval of sensitive information for the service that you want to configure.
 

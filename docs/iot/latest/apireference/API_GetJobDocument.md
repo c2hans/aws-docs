@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GetJobDocume
 ---
 
 # GetJobDocument
-<a name="API_GetJobDocument"></a>
 
 Gets a job document.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetResourcePolicy
-<a name="API_bcmDashboards_GetResourcePolicy"></a>
 
 Retrieves the resource-based policy attached to a dashboard, showing sharing configurations and permissions.
 

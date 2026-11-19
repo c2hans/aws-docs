@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::BCMDataExports::Export S3Destination
-<a name="aws-properties-bcmdataexports-export-s3destination"></a>
 
 Describes the destination Amazon Simple Storage Service (Amazon S3) bucket name and object keys of a data exports file.
 

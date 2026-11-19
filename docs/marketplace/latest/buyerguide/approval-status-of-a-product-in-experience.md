@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/approval-s
 ---
 
 # Approval status of a product in experiences
-<a name="approval-status-of-a-product-in-experience"></a>
 
 The links in **Product** column of all tables in Private Marketplace opens a page with a brief description of the product and a link to view additional details in AWS Marketplace product page. It allows you to view and manage the product approval status in your active experiences.
 

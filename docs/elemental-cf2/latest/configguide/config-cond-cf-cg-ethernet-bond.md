@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/elemental-cf2/latest/configguide/config-
 This is version 2.18 of the AWS Elemental Conductor File documentation. This is the latest version. For prior versions, see the *Archive* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server).
 
 # Bond Ethernet Devices
-<a name="config-cond-cf-cg-ethernet-bond"></a>
 
 You can bond Ethernet devices to suit your networking requirements. For example, you might set up two Ethernet devices as an active/redundant pair. Or, if you have two Conductor nodes, you might bond the management interfaces on the two nodes.
 

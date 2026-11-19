@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/workspace-c
 ---
 
 # Adding workspace context to Amazon Q Developer chat in the IDE
-<a name="workspace-context"></a>
 
 **Important**
 The **@workspace** feature is deprecated. You can still add context by using **@file**, **@folder**, or **@code**.

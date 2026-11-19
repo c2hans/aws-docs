@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDASEC02-BP01 Enforce least privilege and security policies to control system access
-<a name="midasec02-bp01"></a>
 
  Minimize access rights for users and systems by enforcing least privilege principles. This reduces the risk of lateral movement and privilege escalation in manufacturing environments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/ipv4-ipv6-compariso
 ---
 
 # Compare IPv4 and IPv6
-<a name="ipv4-ipv6-comparison"></a>
 
 The following table summarizes the differences between IPv4 and IPv6 in Amazon EC2 and Amazon VPC.
 

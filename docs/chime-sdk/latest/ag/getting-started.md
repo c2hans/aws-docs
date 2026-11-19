@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/getting-started.html
 ---
 
 # Getting started
-<a name="getting-started"></a>
 
 The information in the following topics explains how to get started with the administrative tasks provided by the Amazon Chime SDK.
 

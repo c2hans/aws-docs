@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_A
 ---
 
 # ArchivalSummary
-<a name="API_ArchivalSummary"></a>
 
 Contains details of a table archival operation.
 

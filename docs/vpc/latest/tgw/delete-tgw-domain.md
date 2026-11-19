@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/delete-tgw-domain.html
 ---
 
 # Delete a multicast domain in AWS Transit Gateway
-<a name="delete-tgw-domain"></a>
 
 Use the following procedure to delete a multicast domain.
 

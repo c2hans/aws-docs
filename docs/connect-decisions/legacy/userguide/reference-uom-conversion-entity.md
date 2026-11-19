@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/refer
 ---
 
 # uom\_conversion
-<a name="reference-uom-conversion-entity"></a>
 
 **Primary key (PK)**
 

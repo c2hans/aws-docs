@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # AudioBlock
-<a name="API_runtime_AudioBlock"></a>
 
 An audio content block that contains audio data in various supported formats.
 

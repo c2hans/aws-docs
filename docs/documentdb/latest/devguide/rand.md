@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/rand.html
 ---
 
 # $rand
-<a name="rand"></a>
 
 New from version 8.0
 

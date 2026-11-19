@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_Upda
 ---
 
 # UpdateServiceIntegrationConfig
-<a name="API_UpdateServiceIntegrationConfig"></a>
 
  Information about updating the integration status of an AWS service, such as AWS Systems Manager, with DevOps Guru.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateLoginP
 ---
 
 # CreateLoginProfile
-<a name="API_CreateLoginProfile"></a>
 
 Creates a password for the specified IAM user. A password allows an IAM user to access AWS services through the AWS Management Console.
 

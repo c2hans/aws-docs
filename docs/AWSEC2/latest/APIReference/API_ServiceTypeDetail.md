@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ServiceTy
 ---
 
 # ServiceTypeDetail
-<a name="API_ServiceTypeDetail"></a>
 
 Describes the type of service for a VPC endpoint.
 

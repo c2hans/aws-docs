@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetBlueprint.html
 ---
 
 # GetBlueprint
-<a name="API_GetBlueprint"></a>
 
 Retrieves the details of a blueprint.
 

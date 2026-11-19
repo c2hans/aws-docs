@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/CostOptimizati
 ---
 
 # Identify your unused resources to optimize costs in Amazon Keyspaces
-<a name="CostOptimization_UnusedResources"></a>
 
 This section provides an overview of how to evaluate your unused resources regularly. As your application requirements evolve, you should ensure no resources are unused and contributing to unnecessary Amazon Keyspaces costs. The procedures described below use Amazon CloudWatch metrics to identify unused resources and take action to reduce costs.
 

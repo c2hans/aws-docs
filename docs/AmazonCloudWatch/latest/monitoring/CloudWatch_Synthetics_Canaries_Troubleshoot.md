@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Troubleshooting a failed canary
-<a name="CloudWatch_Synthetics_Canaries_Troubleshoot"></a>
 
 If your canary fails, check the following for troubleshooting.
 

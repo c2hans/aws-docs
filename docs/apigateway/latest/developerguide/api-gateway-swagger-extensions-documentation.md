@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gat
 ---
 
 # x-amazon-apigateway-documentation object
-<a name="api-gateway-swagger-extensions-documentation"></a>
 
 Defines the documentation parts to be imported into API Gateway. This object is a JSON object containing an array of the `DocumentationPart` instances.
 

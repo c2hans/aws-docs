@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/asana-create-account.html
 ---
 
 # Creating an Asana account
-<a name="asana-create-account"></a>
 
 1. Sign up for an [Asana Account](https://asana.com/create-account) and choose **Sign Up**.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_FormTypeItem.html
 ---
 
 # FormTypeItem
-<a name="API_FormTypeItem"></a>
 
 A summary of a form type.
 

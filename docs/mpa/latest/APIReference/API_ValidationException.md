@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mpa/latest/APIReference/API_ValidationEx
 ---
 
 # ValidationException
-<a name="API_ValidationException"></a>
 
 The input fails to satisfy the constraints specified by an AWS service.
 

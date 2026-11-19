@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-collec
 ---
 
 # Collection types
-<a name="feature-store-collection-types"></a>
 
 Collection types provide a way to organize and structure data for efficient retrieval and analysis. They are used in ML databases to define the schema of a dataset and its elements. In Amazon SageMaker Feature Store, the supported collection types include list, set, and vector.
 

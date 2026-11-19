@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ServiceCatalog::Portfolio Tag
-<a name="aws-properties-servicecatalog-portfolio-tag"></a>
 
 Information about a tag. A tag is a key-value pair. Tags are propagated to the resources created when provisioning a product.
 

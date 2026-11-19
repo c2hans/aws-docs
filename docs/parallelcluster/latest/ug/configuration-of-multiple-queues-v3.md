@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/configuration-
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # Configuration of multiple queues
-<a name="configuration-of-multiple-queues-v3"></a>
 
 With AWS ParallelCluster version 3, you can configure multiple queues by setting the [`Scheduler`](Scheduling-v3.md#yaml-Scheduling-Scheduler) to `slurm` and specifying more than one queue for [`SlurmQueues`](Scheduling-v3.md#Scheduling-v3-SlurmQueues) in the configuration file. In this mode, different instance types coexist in the compute nodes that are specified in the [`ComputeResources`](Scheduling-v3.md#Scheduling-v3-SlurmQueues-ComputeResources) section of the configuration file. [`ComputeResources`](Scheduling-v3.md#Scheduling-v3-SlurmQueues-ComputeResources) with different instance types are scaled up or down as needed for the [`SlurmQueues`](Scheduling-v3.md#Scheduling-v3-SlurmQueues).
 

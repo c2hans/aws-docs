@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AgentQua
 ---
 
 # AgentQualityMetrics
-<a name="API_AgentQualityMetrics"></a>
 
 Information about the quality of the Agent's media connection
 

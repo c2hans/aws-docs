@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateColumnStati
 ---
 
 # UpdateColumnStatisticsForTable
-<a name="API_UpdateColumnStatisticsForTable"></a>
 
 Creates or updates table statistics of columns.
 

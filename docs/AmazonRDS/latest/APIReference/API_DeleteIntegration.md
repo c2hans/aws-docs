@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Delete
 ---
 
 # DeleteIntegration
-<a name="API_DeleteIntegration"></a>
 
 Deletes a zero-ETL integration with Amazon Redshift.
 

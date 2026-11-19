@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # Deploying an SAP application (Console)
-<a name="launch-wizard-sap-deploying-console"></a>
 
 You can deploy an SAP application using the AWS Launch Wizard console.
 

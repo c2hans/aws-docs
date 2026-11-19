@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/partner-apps-kms.htm
 ---
 
 # Use AWS KMS Permissions for Amazon SageMaker Partner AI Apps
-<a name="partner-apps-kms"></a>
 
 You can protect your data at rest using encryption for Amazon SageMaker Partner AI Apps. By default, it uses server-side encryption with a SageMaker owned key. SageMaker also supports an option for server-side encryption with a customer managed KMS key.
 

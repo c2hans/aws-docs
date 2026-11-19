@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/t
 ---
 
 # Troubleshooting Amazon EMR on EKS vertical autoscaling
-<a name="troubleshooting-vas"></a>
 
 Refer to the following sections if you encounter problems when you set up the Amazon EMR on EKS vertical autoscaling operator on an Amazon EKS cluster with Operator Lifecycle Manager. For more information including steps to complete the installation, see [Using vertical autoscaling with Amazon EMR Spark jobs](jobruns-vas.md).
 

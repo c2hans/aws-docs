@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomPromptProfile
-<a name="API_CustomPromptProfile"></a>
 
 A reference to an existing custom prompt profile.
 

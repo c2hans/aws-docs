@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # DescribePhoneNumbers
-<a name="API_DescribePhoneNumbers"></a>
 
 Describes the specified origination phone number, or all the phone numbers in your account.
 

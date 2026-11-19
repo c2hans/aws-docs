@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/best-practices/hybrid-nodes-a
 ---
 
 # Application network traffic through network disconnections
-<a name="hybrid-nodes-app-network-traffic"></a>
 
 The topics on this page are related to Kubernetes cluster networking and the application traffic during network disconnections between nodes and the Kubernetes control plane.
 

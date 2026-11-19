@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableFieldCollapseStateOption
-<a name="API_PivotTableFieldCollapseStateOption"></a>
 
 The collapse state options for the pivot table field options.
 

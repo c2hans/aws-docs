@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/connectors-aw
 ---
 
 # Connect to AWS services using the Other AWS services connector
-<a name="connectors-aws"></a>
 
 While App Studio offers some connectors that are specific to certain AWS services, you can also connect to other AWS services using the **Other AWS services** connector.
 

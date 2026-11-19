@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/v9-panels-xform
 ---
 
 # Transform data
-<a name="v9-panels-xform"></a>
 
 ****
 This documentation topic is designed for Grafana workspaces that support **Grafana version 9.x**.

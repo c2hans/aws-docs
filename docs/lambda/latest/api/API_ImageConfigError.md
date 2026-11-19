@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_ImageConfigError.h
 ---
 
 # ImageConfigError
-<a name="API_ImageConfigError"></a>
 
 Error response to `GetFunctionConfiguration`.
 

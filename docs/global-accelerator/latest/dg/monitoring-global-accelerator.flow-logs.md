@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/dg/monitoring-
 ---
 
 # Configuring and using flow logs in AWS Global Accelerator
-<a name="monitoring-global-accelerator.flow-logs"></a>
 
 Flow logs enable you to capture information about the IP address traffic going to and from network interfaces in your accelerator in AWS Global Accelerator. Flow log data is published to Amazon S3, where you can retrieve and view your data after you've created a flow log.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # UpdateTagsForDomain
-<a name="API_domains_UpdateTagsForDomain"></a>
 
 This operation adds or updates tags for a specified domain.
 

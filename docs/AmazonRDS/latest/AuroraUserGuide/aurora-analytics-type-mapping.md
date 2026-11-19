@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 ---
 
 # Data formats and type mapping
-<a name="aurora-analytics-type-mapping"></a>
 
 When you create a foreign table, the extension maps data types from Parquet or Iceberg to PostgreSQL data types. This section describes how Aurora PostgreSQL performs type mapping and which PostgreSQL data types are supported.
 

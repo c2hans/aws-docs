@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/end-user
 ---
 
 # ![AWS End User Computing category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/end-user-computing-icon.jpg)End user computing
-<a name="end-user-computing"></a>
 
 ------
 #### [ Amazon WorkSpaces Applications ]

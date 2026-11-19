@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Aggregate
 ---
 
 # AggregateConformancePackCompliance
-<a name="API_AggregateConformancePackCompliance"></a>
 
 Provides the number of compliant and noncompliant rules within a conformance pack. Also provides the compliance status of the conformance pack and the total rule count which includes compliant rules, noncompliant rules, and rules that cannot be evaluated due to insufficient data.
 

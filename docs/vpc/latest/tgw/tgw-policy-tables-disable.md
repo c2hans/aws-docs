@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/tgw/tgw-policy-tables-disable
 ---
 
 # Delete a transit gateway policy table in AWS Transit Gateway
-<a name="tgw-policy-tables-disable"></a>
 
 Delete a transit gateway policy table. When a table is deleted, all policy rules within that table are deleted.
 

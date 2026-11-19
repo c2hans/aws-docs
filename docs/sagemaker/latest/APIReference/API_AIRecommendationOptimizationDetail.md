@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIReco
 ---
 
 # AIRecommendationOptimizationDetail
-<a name="API_AIRecommendationOptimizationDetail"></a>
 
 Details about an optimization technique applied in a recommendation.
 

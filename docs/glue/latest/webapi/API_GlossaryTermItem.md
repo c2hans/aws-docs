@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GlossaryTermItem.
 ---
 
 # GlossaryTermItem
-<a name="API_GlossaryTermItem"></a>
 
 A summary of a glossary term.
 

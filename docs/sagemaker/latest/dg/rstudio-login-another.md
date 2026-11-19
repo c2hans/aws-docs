@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-login-anothe
 ---
 
 # Log in to RStudio as another user
-<a name="rstudio-login-another"></a>
 
 The following topic demonstrates how to log in to RStudio on Amazon SageMaker AI as another user.
 

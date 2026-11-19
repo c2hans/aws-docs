@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/prefix-al
 ---
 
 # Managing prefix allocations for Direct Connect virtual interfaces
-<a name="prefix-allocations"></a>
 
 You can manage the number of inbound route prefixes allocated to each virtual interface on your Direct Connect connection. Use the AWS Management Console, AWS CLI, or AWS SDKs to view your connection's prefix pool, allocate prefixes to virtual interfaces, and adjust allocations as your routing needs change.
 

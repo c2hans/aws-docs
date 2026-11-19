@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchDel
 ---
 
 # BatchDeleteDataTableValue
-<a name="API_BatchDeleteDataTableValue"></a>
 
 Deletes multiple values from a data table. API users may delete values at any time. When deletion is requested from the admin website, a warning is shown alerting the user of the most recent time the attribute and its values were accessed. System managed values are not deletable by customers.
 

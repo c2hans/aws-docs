@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Descri
 ---
 
 # DescribeEndpointGroup
-<a name="API_DescribeEndpointGroup"></a>
 
 Describe an endpoint group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/image-signing
 ---
 
 # Signature verification
-<a name="image-signing-verification"></a>
 
 After you sign your container images, you can verify the signatures to ensure that images have not been tampered with and come from a trusted source. Amazon ECR supports several methods for verifying signatures:
 

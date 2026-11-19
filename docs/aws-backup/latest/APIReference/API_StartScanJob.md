@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Start
 ---
 
 # StartScanJob
-<a name="API_StartScanJob"></a>
 
 Starts scanning jobs for specific resources.
 

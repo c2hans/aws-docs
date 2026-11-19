@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/interactions.htm
 ---
 
 # Interactions in the Connect Customer Flow language
-<a name="interactions"></a>
 
 Interactions actions have side effects, but they don't require a contact or a participant. They include actions such as invoking an AWS Lambda function. They generally work in every circumstance.
 

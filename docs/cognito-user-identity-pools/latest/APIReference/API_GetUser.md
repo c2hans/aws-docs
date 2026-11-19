@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # GetUser
-<a name="API_GetUser"></a>
 
 Gets user attributes and and MFA settings for the currently signed-in user.
 

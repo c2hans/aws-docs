@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Joining data from multiple tables to ingest into one document
-<a name="aurora-denormalized-joins"></a>
 
 The `joins` configuration in the RDS source plugin enables automatic denormalization of normalized relational tables into single OpenSearch documents. When configured, the pipeline reads change data capture (CDC) events from multiple related tables and merges them into a parent document using Painless script-based upserts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_Suppressi
 ---
 
 # SuppressionValidationOptions
-<a name="API_SuppressionValidationOptions"></a>
 
 Contains validation options for email address suppression.
 

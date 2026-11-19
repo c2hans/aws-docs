@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_PutAssetProp
 ---
 
 # PutAssetPropertyValueEntry
-<a name="API_PutAssetPropertyValueEntry"></a>
 
 An asset property value entry containing the following information.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_PullRe
 ---
 
 # PullRequestBuildPolicy
-<a name="API_PullRequestBuildPolicy"></a>
 
 A PullRequestBuildPolicy object that defines comment-based approval requirements for triggering builds on pull requests. This policy helps control when automated builds are executed based on contributor permissions and approval workflows.
 

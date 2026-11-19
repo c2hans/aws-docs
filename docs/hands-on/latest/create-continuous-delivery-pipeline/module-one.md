@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/create-continuous-delive
 ---
 
 # Module 1: Set Up Git Repo
-<a name="module-one"></a>
 
 |  |  |
 | --- |--- |

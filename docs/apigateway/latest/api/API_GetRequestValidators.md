@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_GetRequestVali
 ---
 
 # GetRequestValidators
-<a name="API_GetRequestValidators"></a>
 
 Gets the RequestValidators collection of a given RestApi.
 

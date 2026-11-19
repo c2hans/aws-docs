@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/stage-requ
 ---
 
 # Stage declaration
-<a name="stage-requirements"></a>
 
 The stage level of a pipeline has a basic structure that includes the following parameters and syntax. For more information, see the [StageDeclaration](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_StageDeclaration.html) object in the * CodePipeline API Guide*.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/tca-start-stream.ht
 ---
 
 # Starting a real-time Call Analytics transcription
-<a name="tca-start-stream"></a>
 
 Before starting a real-time Call Analytics transcription, you must create all the [categories](tca-categories-stream.md) you want Amazon Transcribe to match in your call.
 

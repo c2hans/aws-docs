@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/kms_example_kms_L
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `ListGrants` with an AWS SDK or CLI
-<a name="kms_example_kms_ListGrants_section"></a>
 
 The following code examples show how to use `ListGrants`.
 

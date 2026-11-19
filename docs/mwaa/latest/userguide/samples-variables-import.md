@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/userguide/samples-variables-
 ---
 
 # Using a DAG to import variables in the CLI
-<a name="samples-variables-import"></a>
 
 The following sample code imports variables using the CLI on Amazon Managed Workflows for Apache Airflow.
 

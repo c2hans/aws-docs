@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisTranscriptItemWithCharacterOffsets
-<a name="API_RealTimeContactAnalysisTranscriptItemWithCharacterOffsets"></a>
 
 Transcript representation containing Id and list of character intervals that are associated with analysis data. For example, this object within a `RealTimeContactAnalysisPointOfInterest` in `Category.MatchedDetails` would have character interval describing part of the text that matched category.
 

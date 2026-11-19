@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # RejectDomainTransferFromAnotherAwsAccount
-<a name="API_domains_RejectDomainTransferFromAnotherAwsAccount"></a>
 
 Rejects the transfer of a domain from another AWS account to the current AWS account. You initiate a transfer betweenAWS accounts using [TransferDomainToAnotherAwsAccount](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_TransferDomainToAnotherAwsAccount.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # Prerequisites for developing custom CloudFormation Hooks
-<a name="hooks-prerequisites"></a>
 
 You can develop a custom Hook with Java or Python. The following are the prerequisites for developing custom Hooks:
 

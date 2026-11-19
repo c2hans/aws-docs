@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Face
 ---
 
 # FaceSearchSettings
-<a name="API_FaceSearchSettings"></a>
 
 Input face recognition parameters for an Amazon Rekognition stream processor. Includes the collection to use for face recognition and the face attributes to detect. Defining the settings is required in the request parameter for [CreateStreamProcessor](API_CreateStreamProcessor.md).
 

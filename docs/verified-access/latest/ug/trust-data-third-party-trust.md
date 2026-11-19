@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/trust-data-thi
 ---
 
 # Third-party trust provider context for Verified Access trust data
-<a name="trust-data-third-party-trust"></a>
 
 This section describes the trust data provided to AWS Verified Access by third-party trust providers.
 

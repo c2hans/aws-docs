@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/se.html
 ---
 
 # .se (Sweden)
-<a name="se"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

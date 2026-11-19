@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCOPS15-BP01 Update your solution design documentation over time, and use version control to track changes
-<a name="eucops15-bp01"></a>
 
  Keep key architectural designs, operations handbooks, and support guides up to date, maintaining a library of reference material that can be used by new personnel, partners, or other support teams.
 

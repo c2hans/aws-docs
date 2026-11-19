@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/crossaccou
 ---
 
 # DeleteCrossAccountAuthorization
-<a name="crossaccountauthorizations-crossaccountauthorization"></a>
 
 ## URI
 <a name="crossaccountauthorizations-crossaccountauthorization-url"></a>

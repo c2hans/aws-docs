@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Unsuccess
 ---
 
 # UnsuccessfulItemError
-<a name="API_UnsuccessfulItemError"></a>
 
 Information about the error that occurred. For more information about errors, see [Error codes](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/errors-overview.html).
 

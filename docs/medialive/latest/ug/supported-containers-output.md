@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/supported-containers
 ---
 
 # Output types supported in MediaLive
-<a name="supported-containers-output"></a>
 
 This section provides information about the output content types and output video and codecs that MediaLive can produce.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # EnterpriseSupportTimePeriod
-<a name="API_billing_EnterpriseSupportTimePeriod"></a>
 
 A time period for Enterprise Support billing.
 

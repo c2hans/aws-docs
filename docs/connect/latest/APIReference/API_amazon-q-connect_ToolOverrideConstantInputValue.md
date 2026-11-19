@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # ToolOverrideConstantInputValue
-<a name="API_amazon-q-connect_ToolOverrideConstantInputValue"></a>
 
 A constant input value for tool override.
 

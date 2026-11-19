@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/APIReference/Wel
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 This is the *Application Auto Scaling API Reference*. With Application Auto Scaling, you can configure automatic scaling for the following resources:
 + Amazon AppStream 2.0 fleets
@@ -39,4 +38,4 @@ The documentation for each action shows the request syntax, the request paramete
 
 Application Auto Scaling uses the token bucket algorithm to implement API throttling. With this algorithm, your account has a bucket that holds a specific number of tokens. The number of tokens in the bucket represents your throttling limit at any given second. Application Auto Scaling throttles API requests based on a shared API bucket. For example, calls to the [DescribeScalableTargets](API_DescribeScalableTargets.md) and [DescribeScheduledActions](API_DescribeScheduledActions.md) API operations use tokens from the same bucket. Throttling means that Application Auto Scaling rejects a request because the request exceeds the service's limit for the number of requests per second. When a request is throttled, Application Auto Scaling returns a `RateExceeded` error. For more information, see [My Auto Scaling API calls are getting throttled. What can I do to avoid this?](http://aws.amazon.com/premiumsupport/knowledge-center/autoscaling-api-calls-throttled) in the AWS Knowledge Center.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

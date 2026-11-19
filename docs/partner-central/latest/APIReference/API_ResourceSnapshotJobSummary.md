@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ResourceSnapshotJobSummary
-<a name="API_ResourceSnapshotJobSummary"></a>
 
  An object that contains a `Resource Snapshot Job`'s subset of fields.
 

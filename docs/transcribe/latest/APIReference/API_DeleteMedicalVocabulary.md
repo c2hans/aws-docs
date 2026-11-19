@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_Delet
 ---
 
 # DeleteMedicalVocabulary
-<a name="API_DeleteMedicalVocabulary"></a>
 
 Deletes a custom medical vocabulary. To use this operation, specify the name of the custom vocabulary you want to delete using `VocabularyName`. Custom vocabulary names are case sensitive.
 

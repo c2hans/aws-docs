@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Ta
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Attaches tags to a resource.
 

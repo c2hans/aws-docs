@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/required-se
 ---
 
 # Required configuration and service components for WorkSpaces Personal
-<a name="required-service-components"></a>
 
 As a WorkSpace administrator, you must understand the following about required configuration and service components.
 + [Required routing table configuration](#routing-table-configuration)

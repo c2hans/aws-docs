@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 ---
 
 # Stage 1: Define your North Star
-<a name="define-north-star"></a>
 
 A successful implementation of observability is not just about operations and tools—it is about fostering a culture of ownership, continuous improvement, and proactive problem-solving. As with any successful strategy, your strategy for observability requires a holistic consideration of three pillars: people, process, and technology.
 

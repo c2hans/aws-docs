@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Content ingest protection
-<a name="smsec04"></a>
 
 Ingest endpoints accept content from providers and encoding devices. They need to be restricted to trusted sources and protected in transit to reduce the risk of injection, interception, or degradation.
 

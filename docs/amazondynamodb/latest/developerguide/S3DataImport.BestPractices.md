@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3D
 ---
 
 # Best practices for importing from Amazon S3 into DynamoDB
-<a name="S3DataImport.BestPractices"></a>
 
 The following are the best practices for importing data from Amazon S3 into DynamoDB.
 

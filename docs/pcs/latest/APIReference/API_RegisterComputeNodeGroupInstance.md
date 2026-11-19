@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_RegisterComp
 ---
 
 # RegisterComputeNodeGroupInstance
-<a name="API_RegisterComputeNodeGroupInstance"></a>
 
 **Important**
 This API action isn't intended for you to use.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-appsyn
 ---
 
 # AWS AppSync events
-<a name="events-ref-appsync"></a>
 
 AWS AppSync sends service events to EventBridge via AWS CloudTrail.
 

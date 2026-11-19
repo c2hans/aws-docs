@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_AddCo
 ---
 
 # AddCommunicationToCase
-<a name="API_AddCommunicationToCase"></a>
 
 Adds additional customer communication to a Support case. Use the `caseId` parameter to identify the case to which to add communication. To list a set of email addresses to copy on the communication, use the `ccEmailAddresses` parameter. The `communicationBody` value contains the text of the communication.
 
@@ -86,7 +85,7 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [result](#API_AddCommunicationToCase_ResponseSyntax) **   <a name="AWSSupport-AddCommunicationToCase-response-result"></a>
-True if [AddCommunicationToCase](#API_AddCommunicationToCase) succeeds. Otherwise, returns an error.
+True if [AddCommunicationToCase](API_AddCommunicationToCase.md) succeeds. Otherwise, returns an error.
 Type: Boolean
 
 ## Errors

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutStored
 ---
 
 # PutStoredQuery
-<a name="API_PutStoredQuery"></a>
 
 Saves a new query or updates an existing saved query. The `QueryName` must be unique for a single AWS account and a single AWS Region. You can create upto 300 queries in a single AWS account and a single AWS Region.
 

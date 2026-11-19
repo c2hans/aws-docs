@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-policy-examples.html
 ---
 
 # AWS Glue access control policy examples
-<a name="glue-policy-examples"></a>
 
 This section contains examples of both identity-based (IAM) access control policies and AWS Glue resource policies.
 

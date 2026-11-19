@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Plugi
 ---
 
 # PluginVisualFieldWell
-<a name="API_PluginVisualFieldWell"></a>
 
 A collection of field wells for a plugin visual.
 

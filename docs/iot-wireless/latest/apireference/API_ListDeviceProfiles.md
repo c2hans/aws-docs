@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Lis
 ---
 
 # ListDeviceProfiles
-<a name="API_ListDeviceProfiles"></a>
 
 Lists the device profiles registered to your AWS account.
 

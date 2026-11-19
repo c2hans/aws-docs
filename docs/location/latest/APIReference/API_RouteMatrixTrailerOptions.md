@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixTrailerOptions
-<a name="API_RouteMatrixTrailerOptions"></a>
 
 Trailer options corresponding to the vehicle.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-mixed-i
 ---
 
 # Create mixed instances group using attribute-based instance type selection
-<a name="create-mixed-instances-group-attribute-based-instance-type-selection"></a>
 
 Instead of manually choosing instance types for your mixed instances group, you can specify a set of instance attributes that describe your compute requirements. As Amazon EC2 Auto Scaling launches instances, any instance types used by the Auto Scaling group must match your required instance attributes. This is known as *attribute-based instance type selection*.
 

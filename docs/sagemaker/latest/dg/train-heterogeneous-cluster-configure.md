@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/train-heterogeneous-
 ---
 
 # Configure a training job with a heterogeneous cluster in Amazon SageMaker AI
-<a name="train-heterogeneous-cluster-configure"></a>
 
 This section provides instructions on how to run a training job using a heterogeneous cluster that consists of multiple instance types.
 

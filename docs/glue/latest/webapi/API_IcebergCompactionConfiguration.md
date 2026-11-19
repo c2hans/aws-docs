@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_IcebergCompaction
 ---
 
 # IcebergCompactionConfiguration
-<a name="API_IcebergCompactionConfiguration"></a>
 
 The configuration for an Iceberg compaction optimizer. This configuration defines parameters for optimizing the layout of data files in Iceberg tables.
 

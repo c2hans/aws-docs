@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/deploying.html
 ---
 
 # Deploying bots from Lex V2 for your production environment
-<a name="deploying"></a>
 
 After creating and testing your bot, it is ready for deployment to interact with your customers. In this section, learn to create *versions* of your bot when you have made an update. Use *aliases* to point to different versions of your bot when they are ready for deployment. Learn how to integrate your bots with messaging platforms, mobile applications, and websites.
 

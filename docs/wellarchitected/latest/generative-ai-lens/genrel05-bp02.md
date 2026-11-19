@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENREL05-BP02 Replicate embedding data across all regions of availability
-<a name="genrel05-bp02"></a>
 
  Inference to a foundation model may be available over a local availability region, or could be a large region of availability. Make sure your data is available across all regions of availability to adequately service inference requests.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Configure Microsoft Office macro settings
-<a name="microsoft-office-macro-settings"></a>
 
 |
 |

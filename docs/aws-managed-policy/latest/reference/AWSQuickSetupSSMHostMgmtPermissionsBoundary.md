@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQ
 ---
 
 # AWSQuickSetupSSMHostMgmtPermissionsBoundary
-<a name="AWSQuickSetupSSMHostMgmtPermissionsBoundary"></a>
 
 **Description**: Quick Setup creates IAM roles which enable it to configure the Host Manager Quick Setup type on your behalf, and uses this policy when creating such roles to define the boundary of their permissions.
 

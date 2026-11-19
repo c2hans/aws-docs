@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-managed-compon
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Access AWS-Managed Component Logs For EKS Auto
-<a name="auto-managed-component-logs"></a>
 
 You can access AWS-managed component logs from EKS Auto Mode to gain deeper observability into your cluster operations. EKS Auto Mode supports logs for the following sources:
 + Compute autoscaling - Karpenter

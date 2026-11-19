@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/extsdkguide/permissions.html
 ---
 
 # Permissions
-<a name="permissions"></a>
 
 Amazon DCV has two new permissions to enable the execution of the extensions:
 + `extensions-server`: Allows to start the installed extensions on the server machine.

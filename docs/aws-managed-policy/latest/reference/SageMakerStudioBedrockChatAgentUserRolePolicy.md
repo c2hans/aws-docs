@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioBedrockChatAgentUserRolePolicy
-<a name="SageMakerStudioBedrockChatAgentUserRolePolicy"></a>
 
 **Description**: Provides access to an Amazon Bedrock chat agent app's configuration and Amazon Bedrock agent in SageMaker Studio.
 

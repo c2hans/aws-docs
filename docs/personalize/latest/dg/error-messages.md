@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/error-messages.htm
 ---
 
 # Common error messages in Amazon Personalize
-<a name="error-messages"></a>
 
  The following sections list and explain some of the messages that you might encounter when using Amazon Personalize.
 

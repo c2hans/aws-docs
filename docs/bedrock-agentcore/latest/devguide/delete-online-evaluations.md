@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/delete
 ---
 
 # Delete online evaluation
-<a name="delete-online-evaluations"></a>
 
 The `DeleteOnlineEvaluationConfig` API permanently removes an online evaluation configuration and stops all associated evaluation processing. This asynchronous operation disables the evaluation service and cleans up all related resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/delete-fi
 ---
 
 # Delete files
-<a name="delete-file"></a>
 
 1. Select the files you want to delete.
 ![File browser](https://docs.aws.amazon.com/res/archive/release-minus-1/ug/images/res-filebrowser.jpg)

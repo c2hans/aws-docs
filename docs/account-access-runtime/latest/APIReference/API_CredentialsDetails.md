@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access-runtime/latest/APIReferen
 ---
 
 # CredentialsDetails
-<a name="API_CredentialsDetails"></a>
 
 The temporary credentials returned for a role. Only one member is set, depending on the type of access that you requested.
 

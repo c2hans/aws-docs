@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/ios-getti
 ---
 
 # Getting Started with the IVS iOS Player SDK
-<a name="ios-getting-started"></a>
 
 This document takes you through the steps involved in getting started with the Amazon IVS iOS player SDK.
 

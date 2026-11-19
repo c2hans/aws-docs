@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_InboxPlac
 ---
 
 # InboxPlacementTrackingOption
-<a name="API_InboxPlacementTrackingOption"></a>
 
 An object that contains information about the inbox placement data settings for a verified domain that’s associated with your AWS account. This data is available only if you enabled the Deliverability dashboard for the domain.
 

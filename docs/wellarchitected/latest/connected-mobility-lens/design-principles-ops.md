@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Design principles
-<a name="design-principles-ops"></a>
 
  The following are design principles for operational excellence in the cloud:
 +  Based on the workload and your business objectives, identify connected mobility key performance indicators (KPIs). The connected mobility KPIs should be linked to metrics from all layers: business, application, data, security, and infrastructure. Once identified, use the connected mobility KPIs to work backwards and identify operational KPIs.

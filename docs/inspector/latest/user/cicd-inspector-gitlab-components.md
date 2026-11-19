@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/cicd-inspector-git
 ---
 
 # Using Amazon Inspector with GitLab components
-<a name="cicd-inspector-gitlab-components"></a>
 
 **Note**
  The Amazon Inspector GitLab component is not officially supported by Amazon. It is maintained and provided as open-source by GitLab.

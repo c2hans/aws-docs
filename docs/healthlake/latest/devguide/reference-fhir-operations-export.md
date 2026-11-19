@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhi
 ---
 
 # Exporting HealthLake data with FHIR `$export`
-<a name="reference-fhir-operations-export"></a>
 
 You can export data in bulk from your HealthLake data store using the FHIR $export operation. HealthLake supports FHIR `$export` using `POST` and `GET` requests. To make an export request with `POST`, you must have an IAM user, group, or role with the required permissions, specify `$export` as part of the request, and include desired parameters in the request body.
 

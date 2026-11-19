@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_
 ---
 
 # GuardrailTopicPolicyAssessment
-<a name="API_runtime_GuardrailTopicPolicyAssessment"></a>
 
 A behavior assessment of a topic policy.
 

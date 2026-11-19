@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeC
 ---
 
 # DescribeComplianceByConfigRule
-<a name="API_DescribeComplianceByConfigRule"></a>
 
 Indicates whether the specified AWS Config rules are compliant. If a rule is noncompliant, this operation returns the number of AWS resources that do not comply with the rule.
 

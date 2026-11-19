@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring
 ---
 
 # Connecting telemetry sources
-<a name="configuring-integrations-and-knowledge-connecting-telemetry-sources-index"></a>
 
 AWS DevOps Agent provides three ways to connect to your telemetry sources.
 

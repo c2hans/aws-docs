@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ConnectionPasswor
 ---
 
 # ConnectionPasswordEncryption
-<a name="API_ConnectionPasswordEncryption"></a>
 
 The data structure used by the Data Catalog to encrypt the password as part of `CreateConnection` or `UpdateConnection` and store it in the `ENCRYPTED_PASSWORD` field in the connection properties. You can enable catalog encryption or only password encryption.
 

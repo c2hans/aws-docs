@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ---
 
 # HNOPS05-BP01 Measure and track the KPIs
-<a name="hnops05-bp01"></a>
 
  Measuring and tracking KPI in hybrid networking environments involves identifying, monitoring, and analyzing critical metrics that reflect the health, performance, and efficiency of your network infrastructure across both on-premises and cloud environments.
 

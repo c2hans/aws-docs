@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/indexOfCP.htm
 ---
 
 # $indexOfCP
-<a name="indexOfCP"></a>
 
 The `$indexOfCP` operator in Amazon DocumentDB is used to find the index, in code points (CP), of the first occurrence of a specified substring within a string expression. This can be useful when parsing and extracting content from string fields.
 

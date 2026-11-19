@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Add
 ---
 
 # Amazon DynamoDB learning resources and tools
-<a name="AdditionalResources"></a>
 
 You can use the following additional resources to understand and work with DynamoDB.
 

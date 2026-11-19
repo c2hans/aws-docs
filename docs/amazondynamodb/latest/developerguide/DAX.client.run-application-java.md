@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # Java and DAX
-<a name="DAX.client.run-application-java"></a>
 
 DAX SDK for Java 2.x is compatible with [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/). It's built on top of Java 8\+ and includes support for non-blocking I/O. For information about using DAX with AWS SDK for Java 1.x, see [Using DAX with AWS SDK for Java 1.x](DAX.client.java-sdk-v1.md).
 

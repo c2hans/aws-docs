@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DropFields.html
 ---
 
 # DropFields
-<a name="API_DropFields"></a>
 
 Specifies a transform that chooses the data property keys that you want to drop.
 

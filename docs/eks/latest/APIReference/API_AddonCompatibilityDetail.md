@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_AddonCompati
 ---
 
 # AddonCompatibilityDetail
-<a name="API_AddonCompatibilityDetail"></a>
 
 The summary information about the Amazon EKS add-on compatibility for the next Kubernetes version for an insight check in the `UPGRADE_READINESS` category.
 

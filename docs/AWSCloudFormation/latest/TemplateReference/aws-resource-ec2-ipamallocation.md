@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::EC2::IPAMAllocation
-<a name="aws-resource-ec2-ipamallocation"></a>
 
 In IPAM, an allocation is a CIDR assignment from an IPAM pool to another IPAM pool or to a resource.
 

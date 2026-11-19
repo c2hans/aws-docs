@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/qualificationguide/afr-q
 ---
 
 # Qualification FAQs
-<a name="afr-qualification-faqs"></a>
 
 Q: *Can I qualify a board that contains a microcontroller (MCU) without built-in cloud connectivity?*
 Yes. However, the board that uses the MCU should have direct or indirect cloud connectivity (for example - using a separate communications module).

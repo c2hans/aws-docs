@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # ClipTimestampRange
-<a name="API_reader_ClipTimestampRange"></a>
 
 The range of timestamps for which to return fragments.
 

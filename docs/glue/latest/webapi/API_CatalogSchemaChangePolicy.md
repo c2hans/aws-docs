@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CatalogSchemaChan
 ---
 
 # CatalogSchemaChangePolicy
-<a name="API_CatalogSchemaChangePolicy"></a>
 
 A policy that specifies update behavior for the crawler.
 

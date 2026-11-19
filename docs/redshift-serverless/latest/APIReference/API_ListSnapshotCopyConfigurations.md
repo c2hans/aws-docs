@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # ListSnapshotCopyConfigurations
-<a name="API_ListSnapshotCopyConfigurations"></a>
 
 Returns a list of snapshot copy configurations.
 

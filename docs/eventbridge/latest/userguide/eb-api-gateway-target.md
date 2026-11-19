@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-api-gate
 ---
 
 # Amazon API Gateway targets for rules in Amazon EventBridge
-<a name="eb-api-gateway-target"></a>
 
 You can use Amazon API Gateway to create, publish, maintain, and monitor APIs. Amazon EventBridge supports sending events to an API Gateway endpoint. When you specify an API Gateway endpoint as a [target](eb-targets.md), each [event](eb-events.md) sent to the target maps to a request sent to the endpoint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # TokenBalance
-<a name="API_TokenBalance"></a>
 
 A single token balance entry.
 

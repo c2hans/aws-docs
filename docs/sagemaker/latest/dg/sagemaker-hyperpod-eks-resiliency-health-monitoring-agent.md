@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Health Monitoring System
-<a name="sagemaker-hyperpod-eks-resiliency-health-monitoring-agent"></a>
 
 SageMaker HyperPod health monitoring system includes two components
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/rls-policies-ma
 ---
 
 # Managing RLS policies
-<a name="rls-policies-managing"></a>
 
 This section covers how to create, update, delete, list, and manage row-level security (RLS) policies and their attachments.
 

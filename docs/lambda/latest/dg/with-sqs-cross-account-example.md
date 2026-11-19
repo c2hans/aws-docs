@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/with-sqs-cross-account-
 ---
 
 # Tutorial: Using a cross-account Amazon SQS queue as an event source
-<a name="with-sqs-cross-account-example"></a>
 
 In this tutorial, you create a Lambda Event Function that consumes messages from an Amazon Simple Queue Service (Amazon SQS) queue in a different AWS account. This tutorial involves two AWS accounts: **Account A** refers to the account that contains your Lambda Event Function, and **Account B** refers to the account that contains the Amazon SQS queue.
 

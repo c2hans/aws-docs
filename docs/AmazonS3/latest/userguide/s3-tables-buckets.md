@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-buck
 ---
 
 # Table buckets
-<a name="s3-tables-buckets"></a>
 
 Amazon S3 table buckets are an S3 bucket type that you can use to create and store tables as S3 resources. Table buckets are used to store tabular data and metadata as objects for use in analytics workloads. S3 performs maintenance in your table buckets automatically to help reduce your table storage costs. For more information, see [S3 Tables maintenance](s3-tables-maintenance-overview.md).
 

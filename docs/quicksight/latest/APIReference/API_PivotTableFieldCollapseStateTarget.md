@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Pivot
 ---
 
 # PivotTableFieldCollapseStateTarget
-<a name="API_PivotTableFieldCollapseStateTarget"></a>
 
 The target of a pivot table field collapse state.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/de
 ---
 
 # 9 – Choose the best-performing storage solution
-<a name="design-principle-9"></a>
 
  **How do you select the best-performing storage options for your workload?**
 

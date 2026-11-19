@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/ts-as-instance
 ---
 
 # Troubleshoot Amazon EC2 Auto Scaling: EC2 instance launch failures
-<a name="ts-as-instancelaunchfailure"></a>
 
 This page provides information about your EC2 instances that fail to launch, potential causes, and the steps you can take to resolve the issues.
 

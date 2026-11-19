@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ConnectCaseInputContent
-<a name="API_connect-cases_ConnectCaseInputContent"></a>
 
 Represents the content of a `ConnectCase` related item.
 

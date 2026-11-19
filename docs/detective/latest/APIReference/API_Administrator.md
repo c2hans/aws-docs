@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_Admini
 ---
 
 # Administrator
-<a name="API_Administrator"></a>
 
 Information about the Detective administrator account for an organization.
 

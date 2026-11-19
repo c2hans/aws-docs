@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_CachingC
 ---
 
 # CachingConfig
-<a name="API_CachingConfig"></a>
 
 The caching configuration for a resolver that has caching activated.
 

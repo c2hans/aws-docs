@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/developer-guide/aws-sdm.
 AWS Snowball Edge is no longer available to new customers. New customers should explore [AWS DataSync](https://aws.amazon.com/datasync/) for online transfers, [AWS Data Transfer Terminal](https://aws.amazon.com/data-transfer-terminal/) for secure physical transfers, or AWS Partner solutions. For edge computing, explore [AWS Outposts](https://aws.amazon.com/outposts/).
 
 # Using AWS Snowball Edge Device Management to manage Snowball Edge
-<a name="aws-sdm"></a>
 
 AWS Snowball Edge Device Management allows you to manage your Snowball Edge and local AWS services remotely. All Snowball Edge support Snowball Edge Device Management, and it comes installed on new devices in most AWS Regions where Snowball Edge are available.
 

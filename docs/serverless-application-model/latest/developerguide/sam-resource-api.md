@@ -3,13 +3,12 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # AWS::Serverless::Api
-<a name="sam-resource-api"></a>
 
 Creates a collection of Amazon API Gateway resources and methods that can be invoked through HTTPS endpoints.
 
-An [AWS::Serverless::Api](#sam-resource-api) resource need not be explicitly added to a AWS Serverless Application Definition template. A resource of this type is implicitly created from the union of Api events defined on [AWS::Serverless::Function](sam-resource-function.md) resources defined in the template that do not refer to an [AWS::Serverless::Api](#sam-resource-api) resource.
+An [AWS::Serverless::Api](sam-resource-api.md) resource need not be explicitly added to a AWS Serverless Application Definition template. A resource of this type is implicitly created from the union of Api events defined on [AWS::Serverless::Function](sam-resource-function.md) resources defined in the template that do not refer to an [AWS::Serverless::Api](sam-resource-api.md) resource.
 
-An [AWS::Serverless::Api](#sam-resource-api) resource should be used to define and document the API using OpenApi, which provides more ability to configure the underlying Amazon API Gateway resources.
+An [AWS::Serverless::Api](sam-resource-api.md) resource should be used to define and document the API using OpenApi, which provides more ability to configure the underlying Amazon API Gateway resources.
 
 We recommend that you use CloudFormation hooks or IAM policies to verify that API Gateway resources have authorizers attached to them to control access to them.
 
@@ -252,7 +251,7 @@ The TLS version plus cipher suite for the REST API. When using enhanced security
 
  `StageName`   <a name="sam-api-stagename"></a>
 The name of the stage, which API Gateway uses as the first path segment in the invoke Uniform Resource Identifier (URI).
-To reference the stage resource, use `{{<api-logical-id>}}.Stage`. For more information about referencing resources generated when an [AWS::Serverless::Api](#sam-resource-api) resource is specified, see [CloudFormation resources generated when AWS::Serverless::Api is specified](sam-specification-generated-resources-api.md). For general information about generated CloudFormation resources, see [Generated CloudFormation resources for AWS SAM](sam-specification-generated-resources.md).
+To reference the stage resource, use `{{<api-logical-id>}}.Stage`. For more information about referencing resources generated when an [AWS::Serverless::Api](sam-resource-api.md) resource is specified, see [CloudFormation resources generated when AWS::Serverless::Api is specified](sam-specification-generated-resources-api.md). For general information about generated CloudFormation resources, see [Generated CloudFormation resources for AWS SAM](sam-specification-generated-resources.md).
 *Type*: String
 *Required*: Yes
 *CloudFormation compatibility*: This property is similar to the `[StageName](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-stage.html#cfn-apigateway-stage-stagename)` property of an `AWS::ApiGateway::Stage` resource. It is required in SAM, but not required in API Gateway
@@ -337,7 +336,7 @@ Resources:
 ### ApiCorsExample
 <a name="sam-resource-api--examples--apicorsexample"></a>
 
-An AWS SAM template snippet with an API defined in an external Swagger file along with Lambda integrations and CORS configurations. This is just a portion of an AWS SAM template file showing an [AWS::Serverless::Api](#sam-resource-api) definition.
+An AWS SAM template snippet with an API defined in an external Swagger file along with Lambda integrations and CORS configurations. This is just a portion of an AWS SAM template file showing an [AWS::Serverless::Api](sam-resource-api.md) definition.
 
 #### YAML
 <a name="sam-resource-api--examples--apicorsexample--yaml"></a>
@@ -362,7 +361,7 @@ Resources:
 ### ApiCognitoAuthExample
 <a name="sam-resource-api--examples--apicognitoauthexample"></a>
 
-An AWS SAM template snippet with an API that uses Amazon Cognito to authorize requests against the API. This is just a portion of an AWS SAM template file showing an [AWS::Serverless::Api](#sam-resource-api) definition.
+An AWS SAM template snippet with an API that uses Amazon Cognito to authorize requests against the API. This is just a portion of an AWS SAM template file showing an [AWS::Serverless::Api](sam-resource-api.md) definition.
 
 #### YAML
 <a name="sam-resource-api--examples--apicognitoauthexample--yaml"></a>
@@ -385,7 +384,7 @@ Resources:
 ### ApiModelsExample
 <a name="sam-resource-api--examples--apimodelsexample"></a>
 
-An AWS SAM template snippet with an API that includes a Models schema. This is just a portion of an AWS SAM template file, showing an [AWS::Serverless::Api](#sam-resource-api) definition with two model schemas.
+An AWS SAM template snippet with an API that includes a Models schema. This is just a portion of an AWS SAM template file, showing an [AWS::Serverless::Api](sam-resource-api.md) definition with two model schemas.
 
 #### YAML
 <a name="sam-resource-api--examples--apimodelsexample--yaml"></a>

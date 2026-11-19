@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerCustomHeadersConfig
-<a name="API_MCPServerCustomHeadersConfig"></a>
 
 Configuration for authenticating to an MCP server with custom HTTP headers.
 

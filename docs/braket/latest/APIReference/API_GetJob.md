@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_GetJob.ht
 ---
 
 # GetJob
-<a name="API_GetJob"></a>
 
 Retrieves the specified Amazon Braket hybrid job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-n
 ---
 
 # Validate OTP code
-<a name="nx-notify-send-validate"></a>
 
 **Note**
 Validation is available only when AWS End User Messaging generates the code. If you generate the passcode yourself and send it with `SendNotifyTextMessage` or `SendNotifyVoiceMessage`, you validate it in your own application – there is no validate API call for that path.

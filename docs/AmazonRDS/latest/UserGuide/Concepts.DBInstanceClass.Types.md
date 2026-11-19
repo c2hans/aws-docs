@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBIn
 ---
 
 # DB instance class types
-<a name="Concepts.DBInstanceClass.Types"></a>
 
 Amazon RDS supports DB instance classes for the following use cases:
 + [General-purpose](#Concepts.DBInstanceClass.Types.general-purpose)

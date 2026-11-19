@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-funct
 ---
 
 # Example 1: Data enrichment
-<a name="monetization-functions-examples-enrichment"></a>
 
 ## Scenario
 <a name="monetization-functions-examples-enrichment-scenario"></a>

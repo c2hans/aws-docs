@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Manage demand and supply resources
-<a name="cost-mandem"></a>
 
  When you move to the cloud, you pay only for what you need. You can supply resources to match the workload demand at the time they’re needed, this decreases the need for costly and wasteful over provisioning. You can also modify the demand, using a throttle, buﬀer, or queue to smooth the demand and serve it with less resources resulting in a lower cost, or process it at a later time with a batch service.
 

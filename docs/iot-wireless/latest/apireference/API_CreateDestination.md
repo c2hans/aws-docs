@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Cre
 ---
 
 # CreateDestination
-<a name="API_CreateDestination"></a>
 
 Creates a new destination that maps a device message to an AWS IoT rule.
 

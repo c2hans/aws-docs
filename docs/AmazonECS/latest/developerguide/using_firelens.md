@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_fi
 ---
 
 # Send Amazon ECS logs to an AWS service or AWS Partner
-<a name="using_firelens"></a>
 
 You can use FireLens for Amazon ECS to use task definition parameters to route logs to an AWS service or AWS Partner Network (APN) destination for log storage and analytics. The AWS Partner Network is a global community of partners that leverages programs, expertise, and resources to build, market, and sell customer offerings. For more information see [AWS Partner](https://aws.amazon.com/partners/work-with-partners/). FireLens works with [Fluentd](https://www.fluentd.org/) and [Fluent Bit](https://fluentbit.io/). We provide the AWS for Fluent Bit image or you can use your own Fluentd or Fluent Bit image.
 

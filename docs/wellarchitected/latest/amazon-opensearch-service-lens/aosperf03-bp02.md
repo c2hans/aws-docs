@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSPERF03-BP02 Evenly distribute data across data nodes in your OpenSearch Service domain
-<a name="aosperf03-bp02"></a>
 
  Maintain efficient resource utilization and optimal query performance by distributing data evenly across data nodes.
 

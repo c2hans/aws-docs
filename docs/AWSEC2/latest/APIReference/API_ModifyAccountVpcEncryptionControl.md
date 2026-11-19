@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyAcc
 ---
 
 # ModifyAccountVpcEncryptionControl
-<a name="API_ModifyAccountVpcEncryptionControl"></a>
 
 Modifies the account-level VPC Encryption Control configuration. This sets the encryption control mode and resource exclusions that apply to the VPCs in your account. VPC Encryption Control enables you to enforce encryption for all data in transit within and between VPCs to meet compliance requirements.
 

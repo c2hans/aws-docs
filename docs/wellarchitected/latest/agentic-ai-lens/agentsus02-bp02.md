@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSUS02-BP02 Establish efficient agent caching strategies
-<a name="agentsus02-bp02"></a>
 
  Every duplicate model call, tool invocation, and memory lookup is work the agent fleet has already done once. Caching at each integration point turns repeated work into a one-time cost amortized across every caller, so resource efficiency improves as usage patterns stabilize rather than scaling linearly with traffic.
 

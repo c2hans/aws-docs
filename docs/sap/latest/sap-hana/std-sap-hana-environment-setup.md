@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/std-sap-hana-environ
 ---
 
 # SAP HANA Environment Setup on AWS
-<a name="std-sap-hana-environment-setup"></a>
 
  *Last updated: December 2022*
 

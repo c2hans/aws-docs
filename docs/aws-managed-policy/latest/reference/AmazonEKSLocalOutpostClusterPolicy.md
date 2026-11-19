@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEKSLocalOutpostClusterPolicy
-<a name="AmazonEKSLocalOutpostClusterPolicy"></a>
 
 **Description**: This policy provides permissions to EKS local cluster's control-plane instances running in your account to manage resources on your behalf.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_GetC
 ---
 
 # GetCaseAttachmentDownloadUrl
-<a name="API_GetCaseAttachmentDownloadUrl"></a>
 
 Returns a Pre-Signed URL for uploading attachments into a case.
 

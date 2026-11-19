@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Elemental Support Content
-<a name="list_elemental-support-content"></a>
 
 AWS Elemental Support Content (service prefix: `elemental-support-content`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

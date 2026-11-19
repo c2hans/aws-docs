@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/active-
 ---
 
 # More Info
-<a name="active-directory-more-info"></a>
 
 For more information related to this topic, see the following resources:
 + [Troubleshooting Notification Codes](troubleshooting-notification-codes.md)—Resolutions to notification code errors.

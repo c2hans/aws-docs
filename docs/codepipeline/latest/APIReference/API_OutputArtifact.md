@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Out
 ---
 
 # OutputArtifact
-<a name="API_OutputArtifact"></a>
 
 Represents information about the output of an action.
 

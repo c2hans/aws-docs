@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-d
 ---
 
 # Delete a connection
-<a name="connections-delete"></a>
 
 You can use the Developer Tools console or the **delete-connection** command in the AWS Command Line Interface (AWS CLI) to delete a connection.
 

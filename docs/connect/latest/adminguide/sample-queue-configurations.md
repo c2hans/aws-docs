@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/sample-queue-c
 ---
 
 # Sample queue configurations flow in Connect Customer
-<a name="sample-queue-configurations"></a>
 
 **Note**
 This topic explains a sample flow that is included with Connect Customer. For information about locating the sample flows in your instance, see [Sample flows in Connect Customer](contact-flow-samples.md).

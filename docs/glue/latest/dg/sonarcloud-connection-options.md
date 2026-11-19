@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/sonarcloud-connection-opt
 ---
 
 # SonarCloud connection options
-<a name="sonarcloud-connection-options"></a>
 
 The following are connection options for SonarCloud:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the SonarCloud object to read.

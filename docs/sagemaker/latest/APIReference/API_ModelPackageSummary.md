@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelP
 ---
 
 # ModelPackageSummary
-<a name="API_ModelPackageSummary"></a>
 
 Provides summary information about a model package.
 

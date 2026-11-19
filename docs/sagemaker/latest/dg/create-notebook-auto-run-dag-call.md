@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/create-notebook-auto
 ---
 
 # Invoke another notebook in your notebook job
-<a name="create-notebook-auto-run-dag-call"></a>
 
 You can set up a pipeline in which one notebook job calls another notebook. The following sets up an example of a pipeline with a Notebook Job step in which the notebook calls two other notebooks. The input notebook contains the following lines:
 

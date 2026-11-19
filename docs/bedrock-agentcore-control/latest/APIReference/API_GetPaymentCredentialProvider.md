@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # GetPaymentCredentialProvider
-<a name="API_GetPaymentCredentialProvider"></a>
 
 Retrieves information about a specific payment credential provider.
 

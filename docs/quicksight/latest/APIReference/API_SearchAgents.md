@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Searc
 ---
 
 # SearchAgents
-<a name="API_SearchAgents"></a>
 
 Searches for agents based on specified filters.
 

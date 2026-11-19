@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # Entity
-<a name="API_Entity"></a>
 
 The entity associated with the log events in a `PutLogEvents` call.
 

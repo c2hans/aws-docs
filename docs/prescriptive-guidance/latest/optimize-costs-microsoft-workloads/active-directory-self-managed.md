@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Self-managed Active Directory on Amazon EC2
-<a name="active-directory-self-managed"></a>
 
 ## Overview
 <a name="active-directory-self-managed-overview"></a>

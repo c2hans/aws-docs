@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/ts-long-a
 ---
 
 # Troubleshoot long ASN issues
-<a name="ts-long-asn"></a>
 
 If you are experiencing issues with long ASN configurations, use the following steps to troubleshoot:
 

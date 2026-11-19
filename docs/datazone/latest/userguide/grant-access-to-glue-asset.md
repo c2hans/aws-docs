@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/grant-access-t
 ---
 
 # Grant access to managed AWS Glue Data Catalog assets in Amazon DataZone
-<a name="grant-access-to-glue-asset"></a>
 
 In Amazon DataZone, subscription requests and approved or granted subscriptions for **read** access to the assets are managed by asset owners.
 

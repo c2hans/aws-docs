@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-encrypti
 ---
 
 # Encrypting EventBridge event buses with AWS KMS keys
-<a name="eb-encryption-event-bus-cmkey"></a>
 
 You can specify that EventBridge use an AWS KMS to encrypt your data stored on an event bus, rather than use an AWS owned key as is the default. You can specify a customer managed key when you create or update an event bus. You can also update the default event bus to use a customer managed key for encryption as well. For more information, see [KMS key options](eb-encryption-at-rest-key-options.md).
 

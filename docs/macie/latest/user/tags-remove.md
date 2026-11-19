@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/tags-remove.html
 ---
 
 # Removing tags from Macie resources
-<a name="tags-remove"></a>
 
 If you add tags to an Amazon Macie resource, you can subsequently remove one or more of them. A *tag* is a label that you define and assign to AWS resources, including certain types of Macie resources. You can add, edit, and remove tags from the following types of Macie resources: allow lists, custom data identifiers, filter rules and suppression rules for findings, member accounts in an organization, and sensitive data discovery jobs.
 

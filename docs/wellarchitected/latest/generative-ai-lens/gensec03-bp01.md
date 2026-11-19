@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # GENSEC03-BP01 Implement control plane and data access monitoring to generative AI services and foundation models
-<a name="gensec03-bp01"></a>
 
  Implement comprehensive monitoring across both control and data planes to enhance the protection of generative AI workloads against service-level misconfigurations. This monitoring and auditing approach enables tracking of key aspects such as application performance, workload quality, and security.
 

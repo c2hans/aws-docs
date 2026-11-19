@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/detect-
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/workspacesthinclient-end-of-support.html).
 
 # Detecting network latency
-<a name="detect-network-latency"></a>
 
 If your WorkSpaces Thin Client device is lagging in either performance or display, it may be experiencing network latency. Network latency is measured in milliseconds (ms). If a WorkSpaces Thin Client device has a network latency over 150 ms, a notification will appear.
 

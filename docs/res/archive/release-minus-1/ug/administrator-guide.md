@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/administr
 ---
 
 # Administrator guide
-<a name="administrator-guide"></a>
 
 This administrator guide provides additional instructions for a technical audience on how to further customize and integrate with the Research and Engineering Studio on AWS product.
 

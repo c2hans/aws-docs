@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateSource
 ---
 
 # UpdateSourceServerReplicationType
-<a name="API_UpdateSourceServerReplicationType"></a>
 
 Allows you to change between the AGENT\_BASED replication type and the SNAPSHOT\_SHIPPING replication type.
 

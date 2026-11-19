@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Resour
 ---
 
 # ResourcePendingMaintenanceActions
-<a name="API_ResourcePendingMaintenanceActions"></a>
 
 Describes the pending maintenance actions for a resource.
 

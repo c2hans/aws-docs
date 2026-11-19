@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/town.html
 ---
 
 # .town
-<a name="town"></a>
 
 Used to promote a city's locale, culture, and community.
 

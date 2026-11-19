@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # SessionFilterConfig
-<a name="API_SessionFilterConfig"></a>
 
 A time range filter for selecting sessions. Specifies the start and end times to narrow down which sessions are included.
 

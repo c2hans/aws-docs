@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # CreateGlobalResolver
-<a name="API_route53globalresolver_CreateGlobalResolver"></a>
 
 Creates a new Route 53 Global Resolver instance. A Route 53 Global Resolver is a global, internet-accessible DNS resolver that provides secure DNS resolution for both public and private domains through global anycast IP addresses. When you create a resolver, use the `publicIpStatus` parameter to control public IP connectivity, which determines whether DNS clients can send queries to the resolver over the internet.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/gt-aggregatio
 ---
 
 # $gt
-<a name="gt-aggregation"></a>
 
 The `$gt` aggregation operator compares two values and returns `true` if the first value is greater than the second, otherwise returns `false`.
 

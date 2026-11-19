@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/top-movers-functi
 ---
 
 # Top movers computation
-<a name="top-movers-function"></a>
 
 The top movers computation counts the requested number of categories by date that rank in the top of the autonarrative's dataset. For example, you can create a computation to find the top products by sales revenue for a time period.
 

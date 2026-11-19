@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsD
 ---
 
 # AwsRdsDbClusterSnapshotDbClusterSnapshotAttribute
-<a name="API_AwsRdsDbClusterSnapshotDbClusterSnapshotAttribute"></a>
 
  Contains the name and values of a manual Amazon Relational Database Service (RDS) DB cluster snapshot attribute.
 

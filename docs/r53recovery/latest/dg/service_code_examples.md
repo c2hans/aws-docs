@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/service_code_examp
 ---
 
 # Code examples for Application Recovery Controller using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use Application Recovery Controller with an AWS software development kit (SDK).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTSEC06-BP02 Implement workflow orchestration security controls
-<a name="agentsec06-bp02"></a>
 
  The orchestration layer is where a single weak check cascades into a system-wide failure. Access controls on state machines, input validation on transitions, and circuit breakers on agent tasks keep multi-agent workflows on approved execution paths instead of unexpected ones.
 

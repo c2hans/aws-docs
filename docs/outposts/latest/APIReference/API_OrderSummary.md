@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/outposts/latest/APIReference/API_OrderSu
 ---
 
 # OrderSummary
-<a name="API_OrderSummary"></a>
 
  A summary of line items in your order.
 

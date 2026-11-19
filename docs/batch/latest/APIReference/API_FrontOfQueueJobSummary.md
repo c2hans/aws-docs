@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_FrontOfQue
 ---
 
 # FrontOfQueueJobSummary
-<a name="API_FrontOfQueueJobSummary"></a>
 
 An object that represents summary details for the first 100 `RUNNABLE` jobs in a job queue.
 

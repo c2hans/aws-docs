@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewayRef
-<a name="API_VirtualGatewayRef"></a>
 
 An object that represents a virtual gateway returned by a list operation.
 

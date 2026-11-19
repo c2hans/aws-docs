@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetMas
 ---
 
 # GetMasterAccount
-<a name="API_GetMasterAccount"></a>
 
  *This action has been deprecated.*
 

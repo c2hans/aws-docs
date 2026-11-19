@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_RdsSwit
 ---
 
 # RdsSwitchoverReadReplicaConfiguration
-<a name="API_RdsSwitchoverReadReplicaConfiguration"></a>
 
 Configuration for switching over an Amazon RDS read replica to become the new primary database instance during a Region switch.
 

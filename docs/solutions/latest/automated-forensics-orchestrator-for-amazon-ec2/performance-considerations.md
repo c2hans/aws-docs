@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-forensics-orc
 ---
 
 # Performance considerations
-<a name="performance-considerations"></a>
 
  **SSM command timeout**
 

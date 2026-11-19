@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/functions-states.html
 ---
 
 # Lambda Event Function states
-<a name="functions-states"></a>
 
 Lambda includes a [State](https://docs.aws.amazon.com/lambda/latest/api/API_GetFunctionConfiguration.html#lambda-GetFunctionConfiguration-response-State) field in the function configuration for all Event Functions to indicate when your function is ready to invoke. `State` provides information about the current status of the function, including whether you can successfully invoke the function. Event Function states do not change the behavior of function invocations or how your function runs the code.
 

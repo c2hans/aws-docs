@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_De
 ---
 
 # DeregistrationPolicy
-<a name="API_DeregistrationPolicy"></a>
 
 The deregistration policy for the data that's stored in AWS Audit Manager. You can use this attribute to determine how your data is handled when you [deregister Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_DeregisterAccount.html).
 

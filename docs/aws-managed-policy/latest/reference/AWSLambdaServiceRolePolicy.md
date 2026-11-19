@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLambdaServiceRolePolicy
-<a name="AWSLambdaServiceRolePolicy"></a>
 
 **Description**: Allows Lambda to describe and terminate managed instances from EC2 on your behalf.
 

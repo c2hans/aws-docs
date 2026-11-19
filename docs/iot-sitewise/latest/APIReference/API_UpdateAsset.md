@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Upd
 ---
 
 # UpdateAsset
-<a name="API_UpdateAsset"></a>
 
 Updates an asset's name. For more information, see [Updating assets and models](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-assets-and-models.html) in the * AWS IoT SiteWise User Guide*.
 

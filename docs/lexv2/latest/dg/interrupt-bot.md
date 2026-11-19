@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/interrupt-bot.html
 ---
 
 # Enabling your Amazon Lex V2 bot to be interrupted by the user
-<a name="interrupt-bot"></a>
 
 When you start a bidirectional audio stream between an Amazon Lex V2 bot and your application, you can configure the bot to listen for user input while it is sending back a prompt. This input can be set as an interrupt. With this, the user can interrupt the prompt before the bot has finished playing it back. You can use this configuration for situations where the user might already know the answer to a question, such as when they're being prompted to provide a CVV code.
 

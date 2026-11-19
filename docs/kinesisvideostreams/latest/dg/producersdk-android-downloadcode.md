@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producersd
 ---
 
 # Download and configure the Android producer library code
-<a name="producersdk-android-downloadcode"></a>
 
 In this section of the Android producer library procedure, you download the Android example code and open the project in Android Studio.
 

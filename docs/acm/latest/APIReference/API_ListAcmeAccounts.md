@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_ListAcmeAcco
 ---
 
 # ListAcmeAccounts
-<a name="API_ListAcmeAccounts"></a>
 
 Retrieves a list of ACME accounts registered with the specified ACME endpoint. ACME accounts are created when clients use external account binding credentials to register.
 

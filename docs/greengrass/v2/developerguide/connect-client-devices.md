@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/connect-cli
 ---
 
 # Connect client devices to core devices
-<a name="connect-client-devices"></a>
 
 You can configure *cloud discovery* to connect client devices to core devices. When you configure cloud discovery, client devices can connect to the AWS IoT Greengrass cloud service to retrieve information about core devices to which they can connect. Then, the client devices can attempt to connect to each core device until they successfully connect.
 

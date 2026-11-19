@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Configure public access for your Lightsail database
-<a name="amazon-lightsail-configuring-database-public-mode"></a>
 
 Your managed database in Amazon Lightsail is accessible only by your Lightsail resources (instances, load balancers, etc.) that are in the same Lightsail account. One common scenario is to create both a Lightsail instance with a public-facing web application and a Lightsail database that is not publicly accessible, and then connect the two.
 

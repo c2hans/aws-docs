@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Hello Amazon SQS
-<a name="example_sqs_Hello_section"></a>
 
 The following code examples show how to get started using Amazon SQS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-hell
 ---
 
 # Working with Hello Pulse
-<a name="braket-hello-pulse"></a>
 
 In this section, you will learn how to characterize and construct a single qubit gate directly using pulse on a Rigetti device. Applying an electromagnetic field to a qubit leads to Rabi oscillation, switching qubits between its 0 state and 1 state. With calibrated length and phase of the pulse, the Rabi oscillation can calculate a single qubit gates. Here, we will determine the optimal pulse length to measure a pi/2 pulse, an elementary block used to build more complex pulse sequences.
 

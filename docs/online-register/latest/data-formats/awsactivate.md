@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 ---
 
 # Data retrieval APIs for AWS Activate
-<a name="awsactivate"></a>
 
 AWS Activate provides the following APIs for data retrieval.
 

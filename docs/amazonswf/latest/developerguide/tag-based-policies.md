@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/tag-base
 ---
 
 # Tag-based Policies
-<a name="tag-based-policies"></a>
 
 Amazon SWF supports policies based on tags. For instance, you could restrict Amazon SWF domains that include a tag with the key `environment` and the value `production` with the following condition:
 

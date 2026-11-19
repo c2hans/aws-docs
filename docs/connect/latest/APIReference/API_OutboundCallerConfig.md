@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Outbound
 ---
 
 # OutboundCallerConfig
-<a name="API_OutboundCallerConfig"></a>
 
 The outbound caller ID name, number, and outbound whisper flow.
 

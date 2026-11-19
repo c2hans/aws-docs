@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/dev-tester-ui-
 ---
 
 # Get started with the IDT-FreeRTOS UI
-<a name="dev-tester-ui-getting-started"></a>
 
 This section shows you how to use the IDT-FreeRTOS UI to create or modify your configuration, and then shows you how to run tests.
 

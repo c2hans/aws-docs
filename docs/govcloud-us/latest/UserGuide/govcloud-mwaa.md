@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-mw
 ---
 
 # Amazon Managed Workflows for Apache Airflow (Amazon MWAA) in AWS GovCloud (US)
-<a name="govcloud-mwaa"></a>
 
  Amazon Managed Workflows for Apache Airflow (Amazon MWAA) is a managed service for Apache Airflow that you can use to build and manage your workflows in the cloud.
 

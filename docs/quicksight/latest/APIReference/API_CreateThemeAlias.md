@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateThemeAlias
-<a name="API_CreateThemeAlias"></a>
 
 Creates a theme alias for a theme.
 

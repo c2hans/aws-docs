@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel07-b
 ---
 
 # REL07-BP01 Use automation when obtaining or scaling resources
-<a name="rel07-bp01"></a>
 
  Manual provisioning produces environments that drift apart and fail in non-reproducible ways. When you define resources as code and automate provisioning and scaling, every environment is built the same way and every change is reviewable. This turns capacity into a property of your architecture.
 

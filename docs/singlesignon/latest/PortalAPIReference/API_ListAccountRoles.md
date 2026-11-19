@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/PortalAPIReference/A
 ---
 
 # ListAccountRoles
-<a name="API_ListAccountRoles"></a>
 
 Lists all roles that are assigned to the user for a given AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoapik
 ---
 
 # AppleApp
-<a name="API_geoapikeys_AppleApp"></a>
 
 Unique identifying information for an Apple app (iOS, macOS, tvOS and watchOS). Consists of an Apple Bundle ID.
 

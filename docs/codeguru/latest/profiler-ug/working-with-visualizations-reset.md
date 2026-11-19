@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/working-with
 ---
 
 # Resetting zoom in a visualization
-<a name="working-with-visualizations-reset"></a>
 
 You can zoom in to stack frames to view details. To return to the top-most view, you can reset the zoom.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/update-opport
 ---
 
 # Updating an opportunity's stage
-<a name="update-opportunity-stage"></a>
 
 The following steps explain how to update an opportunity's stage.
 

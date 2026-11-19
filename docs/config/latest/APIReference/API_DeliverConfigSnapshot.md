@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DeliverCo
 ---
 
 # DeliverConfigSnapshot
-<a name="API_DeliverConfigSnapshot"></a>
 
 Schedules delivery of a configuration snapshot to the Amazon S3 bucket in the specified delivery channel. After the delivery has started, AWS Config sends the following notifications using an Amazon SNS topic that you have specified.
 + Notification of the start of the delivery.

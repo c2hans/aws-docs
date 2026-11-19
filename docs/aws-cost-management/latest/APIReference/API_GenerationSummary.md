@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GenerationSummary
-<a name="API_GenerationSummary"></a>
 
 The summary of the Savings Plans recommendation generation.
 

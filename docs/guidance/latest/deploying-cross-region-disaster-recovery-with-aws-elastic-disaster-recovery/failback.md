@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/deploying-cross-region-d
 ---
 
 # Failback with AWS Elastic Disaster Recovery
-<a name="failback"></a>
 
 ## Prerequisites
 <a name="prerequisites"></a>

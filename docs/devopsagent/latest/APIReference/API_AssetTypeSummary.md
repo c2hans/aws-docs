@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Asse
 ---
 
 # AssetTypeSummary
-<a name="API_AssetTypeSummary"></a>
 
 Summary of an asset type, including its identifier and description.
 

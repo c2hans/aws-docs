@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonECSInfrastructureRoleForGatewayHostSharedALB
-<a name="AmazonECSInfrastructureRoleForGatewayHostSharedALB"></a>
 
 **Description**: Default policy for the Amazon ECS Infrastructure Role for Amazon ECS Service Gateway Services.
 

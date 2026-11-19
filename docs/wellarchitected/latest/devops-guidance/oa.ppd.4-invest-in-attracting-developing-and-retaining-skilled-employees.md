@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.PPD.4] Invest in attracting, developing, and retaining skilled employees
-<a name="oa.ppd.4-invest-in-attracting-developing-and-retaining-skilled-employees"></a>
 
  **Category:** FOUNDATIONAL
 

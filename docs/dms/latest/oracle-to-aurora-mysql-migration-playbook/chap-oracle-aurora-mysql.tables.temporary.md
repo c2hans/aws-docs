@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migrat
 ---
 
 # Oracle and MySQL temporary tables
-<a name="chap-oracle-aurora-mysql.tables.temporary"></a>
 
 Temporary tables are useful for storing intermediate results, handling large data sets, and improving query performance. The following sections will provide detailed instructions on migrating Oracle and MySQL temporary tables using AWS DMS, ensuring a smooth transition to AWS while preserving data and application behavior.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-logs.h
 ---
 
 # Amazon CloudWatch Logs events
-<a name="events-ref-logs"></a>
 
 CloudWatch Logs sends service events to EventBridge via AWS CloudTrail.
 

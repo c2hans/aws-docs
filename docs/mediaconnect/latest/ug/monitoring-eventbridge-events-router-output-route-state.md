@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/monitoring-eventb
 ---
 
 # MediaConnect router output route state event
-<a name="monitoring-eventbridge-events-router-output-route-state"></a>
 
 AWS Elemental MediaConnect publishes this event when the router input that is routed to a router output changes. This includes when a router input is first routed to the output, replaced with a different router input, or unrouted.
 

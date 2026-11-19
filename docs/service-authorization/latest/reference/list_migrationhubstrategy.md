@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Migration Hub Strategy Recommendations
-<a name="list_migrationhubstrategy"></a>
 
 AWS Migration Hub Strategy Recommendations (service prefix: `migrationhub-strategy`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

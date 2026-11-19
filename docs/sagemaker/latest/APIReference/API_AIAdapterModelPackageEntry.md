@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIAdap
 ---
 
 # AIAdapterModelPackageEntry
-<a name="API_AIAdapterModelPackageEntry"></a>
 
 A LoRA adapter entry identified by a model package ARN.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/wait-event.io
 ---
 
 # IO:WALWrite
-<a name="wait-event.iowalwrite"></a>
 
 **Topics**
 + [Supported engine versions](#wait-event.iowalwrite.context.supported)

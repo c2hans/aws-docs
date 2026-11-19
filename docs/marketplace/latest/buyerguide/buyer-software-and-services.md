@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-soft
 ---
 
 # Software and services on AWS Marketplace
-<a name="buyer-software-and-services"></a>
 
 AWS Marketplace features many software categories including databases, application servers, testing tools, monitoring tools, content management, and business intelligence. You can select commercial software from well-known sellers, as well as many widely used open source offerings. When you find products you want, you can buy and deploy that software to your own Amazon EC2 instance with 1-Click. You can also use AWS CloudFormation to deploy a topology of the product.
 

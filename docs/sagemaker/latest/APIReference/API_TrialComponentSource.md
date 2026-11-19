@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrialC
 ---
 
 # TrialComponentSource
-<a name="API_TrialComponentSource"></a>
 
 The Amazon Resource Name (ARN) and job type of the source of a trial component.
 

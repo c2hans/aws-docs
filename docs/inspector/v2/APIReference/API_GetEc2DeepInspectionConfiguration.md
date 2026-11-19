@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetEc2Deep
 ---
 
 # GetEc2DeepInspectionConfiguration
-<a name="API_GetEc2DeepInspectionConfiguration"></a>
 
 Retrieves the activation status of Amazon Inspector deep inspection and custom paths associated with your account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAcces
 ---
 
 # GetAccessPointScope
-<a name="API_control_GetAccessPointScope"></a>
 
  Returns the access point scope for a directory bucket.
 

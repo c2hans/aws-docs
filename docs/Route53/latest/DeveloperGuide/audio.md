@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/audio.html
 ---
 
 # .audio
-<a name="audio"></a>
 
 **Important**
 You can no longer use Route 53 to register new .audio domains or transfer .audio domains to Route 53. We'll continue to support .audio domains that are already registered with Route 53.

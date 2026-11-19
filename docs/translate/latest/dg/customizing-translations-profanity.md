@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/customizing-translat
 ---
 
 # Masking profane words and phrases in Amazon Translate
-<a name="customizing-translations-profanity"></a>
 
 When you run translations with Amazon Translate, you can enable the *profanity* setting to mask profane words and phrases in your translation output.
 

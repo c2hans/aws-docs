@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/monitoring-per
 ---
 
 # Health Dashboard notifications for Amazon EC2 Auto Scaling
-<a name="monitoring-personal-health-dashboard"></a>
 
 Your Health Dashboard provides support for notifications that come from Amazon EC2 Auto Scaling. These notifications provide awareness and remediation guidance for resource performance or availability issues that may affect your applications. Only events that are specific to missing security groups and launch templates are currently available.
 

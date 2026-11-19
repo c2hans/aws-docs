@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Durability.G
 ---
 
 # Getting started with durability
-<a name="Durability.GettingStarted"></a>
 
 You can create a durable ElastiCache cluster using the AWS Management Console or the AWS CLI.
 

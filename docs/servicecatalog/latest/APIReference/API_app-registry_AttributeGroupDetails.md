@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_a
 ---
 
 # AttributeGroupDetails
-<a name="API_app-registry_AttributeGroupDetails"></a>
 
  The details related to a specific AttributeGroup.
 

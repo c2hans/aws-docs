@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UntagResou
 ---
 
 # UntagResource
-<a name="API_UntagResource"></a>
 
 Removes tags from a bot, bot alias, or bot channel.
 

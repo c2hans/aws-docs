@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # PUT: Change Role of a Member of a Redundancy Group
-<a name="set-up-members-redundancy-group-change-role-of-member"></a>
 
 Modify the role of the specified node in the specified redundancy group.
 

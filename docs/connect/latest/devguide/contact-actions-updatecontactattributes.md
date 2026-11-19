@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/contact-actions-
 ---
 
 # UpdateContactAttributes
-<a name="contact-actions-updatecontactattributes"></a>
 
 Sets a collection of contact attributes on either the current contact or the related contact. With this type of operation, either all attributes are set or none are set.
 

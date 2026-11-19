@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # AwsManagedResources
-<a name="API_AwsManagedResources"></a>
 
  Object containing the choice of application destination that you specify.
 

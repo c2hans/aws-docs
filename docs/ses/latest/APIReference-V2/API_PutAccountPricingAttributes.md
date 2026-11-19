@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutAccoun
 ---
 
 # PutAccountPricingAttributes
-<a name="API_PutAccountPricingAttributes"></a>
 
 Set the pricing plan for your Amazon SES account.
 

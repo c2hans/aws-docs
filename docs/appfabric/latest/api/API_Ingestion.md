@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_Ingestion.html
 ---
 
 # Ingestion
-<a name="API_Ingestion"></a>
 
 Contains information about an ingestion.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTr
 ---
 
 # RouteTransitSpan
-<a name="API_RouteTransitSpan"></a>
 
 Span computed for the requested SpanAdditionalFeatures.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/alter-table-change-colu
 ---
 
 # ALTER TABLE CHANGE COLUMN
-<a name="alter-table-change-column"></a>
 
 Changes the name, type, order, or comment for a column in a table.
 

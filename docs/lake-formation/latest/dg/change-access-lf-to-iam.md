@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/change-access-l
 ---
 
 # Change access control from AWS Lake Formation to IAM
-<a name="change-access-lf-to-iam"></a>
 
 This section describes the workflow to change access control from AWS Lake Formation grants to IAM privileges for Amazon S3 Tables integrated with the AWS Glue Data Catalog.
 

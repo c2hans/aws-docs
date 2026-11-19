@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # MetricStreamFilter
-<a name="API_MetricStreamFilter"></a>
 
 This structure contains a metric namespace and optionally, a list of metric names, to either include in a metric stream or exclude from a metric stream.
 

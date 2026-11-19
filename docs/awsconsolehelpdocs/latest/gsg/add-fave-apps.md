@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/add-fave-a
 ---
 
 # Adding applications to your favorites in the AWS Management Console
-<a name="add-fave-apps"></a>
 
 You can add applications to your favorites from the **Services** menu.
 

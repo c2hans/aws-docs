@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 ---
 
 # Handling DDL Statement behavior based on default or explicit schema
-<a name="babelfish-kerberos-securityad-ddl"></a>
 
  When using an AD authenticated session, the default schema for the current session is determined by the following conditions:
 + If an individual database user exists, the user's default schema is considered as current session’s default schema.

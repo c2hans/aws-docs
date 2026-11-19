@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Create and manage relational databases in Lightsail
-<a name="amazon-lightsail-databases"></a>
 
 You can create a MySQL or PostgreSQL managed database in Amazon Lightsail with a few steps. Lightsail makes database administration more efficient by managing your common maintenance and security tasks. Using the Lightsail console, you can:
 + Back up your database to a snapshot.

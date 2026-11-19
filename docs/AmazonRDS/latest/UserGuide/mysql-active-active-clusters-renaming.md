@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-active-
 ---
 
 # Renaming a DB instance in an active-active cluster
-<a name="mysql-active-active-clusters-renaming"></a>
 
 You can change the name of a DB instance in an active-active cluster. To rename more than one DB instance in an active-active cluster, do so one DB instance at a time. So, rename one DB instance and rejoin it to the cluster before you rename the next DB instance.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DescribeCacheParameters
-<a name="API_DescribeCacheParameters"></a>
 
 Returns the detailed parameter list for a particular cache parameter group.
 

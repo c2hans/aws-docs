@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/logging
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkSpaces Thin Client. After March 31, 2027, you will no longer be able to access the WorkSpaces Thin Client console or WorkSpaces Thin Client resources. For more information, see [Amazon WorkSpaces Thin Client end of support](https://docs.aws.amazon.com/workspaces-thin-client/latest/ag/workspacesthinclient-end-of-support.html).
 
 # Logging Amazon WorkSpaces Thin Client API calls using AWS CloudTrail
-<a name="logging-using-cloudtrail"></a>
 
 Amazon WorkSpaces Thin Client is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html), a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all API calls for WorkSpaces Thin Client as events. The calls captured include calls from the WorkSpaces Thin Client console and code calls to the WorkSpaces Thin Client API operations. Using the information collected by CloudTrail, you can determine the request that was made to WorkSpaces Thin Client, the IP address from which the request was made, when it was made, and additional details.
 

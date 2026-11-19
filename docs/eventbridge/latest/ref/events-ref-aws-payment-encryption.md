@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-aws-pa
 ---
 
 # AWS Payment Encryption Service events
-<a name="events-ref-aws-payment-encryption"></a>
 
 AWS Payment Encryption Service sends service events to EventBridge via AWS CloudTrail.
 

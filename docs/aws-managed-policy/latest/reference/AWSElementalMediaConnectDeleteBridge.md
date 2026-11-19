@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSElementalMediaConnectDeleteBridge
-<a name="AWSElementalMediaConnectDeleteBridge"></a>
 
 **Description**: Provides full access to delete MediaConnect Gateway Bridges and all its associated sub-resources.
 

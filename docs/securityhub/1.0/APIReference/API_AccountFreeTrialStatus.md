@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Account
 ---
 
 # AccountFreeTrialStatus
-<a name="API_AccountFreeTrialStatus"></a>
 
 The free trial status of each Security Hub feature for an account.
 

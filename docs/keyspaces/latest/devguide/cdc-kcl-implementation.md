@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/cdc-kcl-implem
 ---
 
 # Implement a KCL consumer application for Amazon Keyspaces CDC streams
-<a name="cdc-kcl-implementation"></a>
 
 This topic provides a step-by-step guide to implementing a KCL consumer application to process Amazon Keyspaces CDC streams.
 

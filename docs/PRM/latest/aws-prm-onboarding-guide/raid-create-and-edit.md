@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/raid
 ---
 
 # Create and Edit Revenue Attribution IDs
-<a name="raid-create-and-edit"></a>
 
 This section covers how to create a Revenue Attribution ID, add and edit monthly cost allocation percentages, and implement PRM using the Revenue Attribution ID as the unique identifier.
 

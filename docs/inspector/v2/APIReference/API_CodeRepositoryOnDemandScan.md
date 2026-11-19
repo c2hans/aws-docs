@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CodeReposi
 ---
 
 # CodeRepositoryOnDemandScan
-<a name="API_CodeRepositoryOnDemandScan"></a>
 
 Contains information about on-demand scans performed on a code repository.
 

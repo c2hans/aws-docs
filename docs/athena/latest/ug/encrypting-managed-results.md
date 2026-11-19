@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/encrypting-managed-resu
 ---
 
 # Encrypt managed query results
-<a name="encrypting-managed-results"></a>
 
 Athena offers the following options for encrypting [Managed query results](managed-results.md).
 

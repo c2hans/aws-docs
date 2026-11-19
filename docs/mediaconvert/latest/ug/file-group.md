@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/file-group.html
 ---
 
 # File group
-<a name="file-group"></a>
 
 The following is an Amazon EventBridge sample event for a job with a `COMPLETE` status. The example includes output file path information for a file group.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/create-mfa-use
 ---
 
 # Create users with MFA enabled for CloudHSM CLI
-<a name="create-mfa-users-cloudhsm-cli"></a>
 
 Follow these steps to create AWS CloudHSM users with multi-factor authentication (MFA) enabled.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fedramp/latest/userguide/top-level-admin
 ---
 
 # Top Level Admin Guidance
-<a name="top-level-admin-guidance"></a>
 
 This topic discusses top level admin guidance.
 

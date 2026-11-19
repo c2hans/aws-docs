@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/ug/outside-ec2-supported-co
 ---
 
 # Supported configurations of Amazon Linux 2027 for use in virtualized environments outside of Amazon EC2
-<a name="outside-ec2-supported-configurations"></a>
 
  This section covers the requirements for running Amazon Linux 2027 in virtualized environments outside of Amazon EC2 such as on KVM, VMware, and Hyper-V.
 

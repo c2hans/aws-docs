@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/aws-
 ---
 
 # Working with AWS Services in the AWS Explorer
-<a name="aws-explorer"></a>
 
 The **AWS Explorer** gives you a view of some of the AWS services that you can work with when using the AWS Toolkit for Visual Studio Code.
 

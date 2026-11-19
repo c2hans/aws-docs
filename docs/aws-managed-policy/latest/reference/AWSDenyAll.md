@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDenyAll
-<a name="AWSDenyAll"></a>
 
 **Description**: Deny all access.
 

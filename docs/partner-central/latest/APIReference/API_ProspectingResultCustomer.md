@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # ProspectingResultCustomer
-<a name="API_ProspectingResultCustomer"></a>
 
 Contains detailed information about the prospected customer account, including company identifiers, geographic classification, industry segmentation, and program eligibility.
 

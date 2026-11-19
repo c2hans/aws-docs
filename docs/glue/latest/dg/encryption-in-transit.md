@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/encryption-in-transit.htm
 ---
 
 # Encrypting data in transit
-<a name="encryption-in-transit"></a>
 
 AWS provides Transport Layer Security (TLS) encryption for data in motion. You can configure encryption settings for crawlers, ETL jobs, and development endpoints using [security configurations](https://docs.aws.amazon.com/glue/latest/dg/console-security-configurations.html) in AWS Glue. You can turn on AWS Glue Data Catalog encryption via the settings for the Data Catalog.
 

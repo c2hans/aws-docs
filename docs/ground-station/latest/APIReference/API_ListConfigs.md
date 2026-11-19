@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_L
 ---
 
 # ListConfigs
-<a name="API_ListConfigs"></a>
 
 Returns a list of `Config` objects.
 

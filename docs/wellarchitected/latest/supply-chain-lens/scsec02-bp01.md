@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCSEC02-BP01 Track cloud resources and enforce compliance with automation
-<a name="scsec02-bp01"></a>
 
  Implement automated monitoring systems to continuously track and inventory all cloud resources throughout your supply chain environment. Establish compliance guardrails with automated enforcement mechanisms that validate configurations against security and regulatory requirements before deployment.
 

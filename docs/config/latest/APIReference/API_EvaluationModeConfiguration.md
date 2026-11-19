@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Evaluatio
 ---
 
 # EvaluationModeConfiguration
-<a name="API_EvaluationModeConfiguration"></a>
 
 The configuration object for AWS Config rule evaluation mode. The supported valid values are Detective or Proactive.
 

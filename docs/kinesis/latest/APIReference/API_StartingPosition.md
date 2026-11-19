@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_Starting
 ---
 
 # StartingPosition
-<a name="API_StartingPosition"></a>
 
 The starting position in the data stream from which to start streaming.
 

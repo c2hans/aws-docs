@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_ListPlat
 ---
 
 # ListPlatformVersions
-<a name="API_ListPlatformVersions"></a>
 
 Lists the platform versions available for your account in an AWS Region. Provides summary information about each platform version. Compare to [DescribePlatformVersion](API_DescribePlatformVersion.md), which provides full details about a single platform version.
 

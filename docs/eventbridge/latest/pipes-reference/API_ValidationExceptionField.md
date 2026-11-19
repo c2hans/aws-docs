@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_V
 ---
 
 # ValidationExceptionField
-<a name="API_ValidationExceptionField"></a>
 
 Indicates that an error has occurred while performing a validate operation.
 

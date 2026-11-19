@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ClientLog
 ---
 
 # ClientLoginBannerOptions
-<a name="API_ClientLoginBannerOptions"></a>
 
 Options for enabling a customizable text banner that will be displayed on AWS provided clients when a VPN session is established.
 

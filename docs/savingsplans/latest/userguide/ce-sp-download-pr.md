@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/savingsplans/latest/userguide/ce-sp-down
 ---
 
 # Downloading your Savings Plans rates
-<a name="ce-sp-download-pr"></a>
 
 You can download a CSV file with detailed information for each Savings Plan you own. The file might take longer to download for Compute Savings Plans.<a name="ce-sp-downloadpr-howto"></a>
 

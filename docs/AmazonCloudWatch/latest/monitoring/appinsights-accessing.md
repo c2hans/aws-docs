@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Prerequisites, IAM policies, and permissions needed to access CloudWatch Application Insights
-<a name="appinsights-accessing"></a>
 
 To get started with CloudWatch Application Insights, verify that you have met the following prerequisites, have created an IAM policy, and have attached permissions if needed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # IncrementalPullConfig
-<a name="API_connect-customer-profiles_IncrementalPullConfig"></a>
 
 Specifies the configuration used when importing incremental records from the source.
 

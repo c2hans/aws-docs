@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/best-pr
 ---
 
 # Best practices
-<a name="best-practices-3"></a>
 
 **Topics**
 + [Selection](pe-selection.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/getting-started.ht
 ---
 
 # Getting started with Amazon Rekognition
-<a name="getting-started"></a>
 
 This section provides topics to get you started using Amazon Rekognition. If you're new to Amazon Rekognition, we recommend that you first review the concepts and terminology presented in [How Amazon Rekognition works](how-it-works.md).
 

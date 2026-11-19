@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-3/ug/retrieve-
 ---
 
 # Retrieve session information
-<a name="retrieve-session-information"></a>
 
 1. Choose **Actions**.
 ![Virtual desktops](https://docs.aws.amazon.com/res/archive/release-minus-3/ug/images/res-virtualdesktops.png)

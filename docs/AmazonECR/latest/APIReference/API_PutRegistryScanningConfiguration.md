@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_PutReg
 ---
 
 # PutRegistryScanningConfiguration
-<a name="API_PutRegistryScanningConfiguration"></a>
 
 Creates or updates the scanning configuration for your private registry.
 

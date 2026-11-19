@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/opensearch-funct
 ---
 
 # AWS AppSync JavaScript function reference for Amazon OpenSearch Service
-<a name="opensearch-function-reference"></a>
 
 The AWS AppSync integration for Amazon OpenSearch Service enables you to store and retrieve data in existing OpenSearch Service domains in your account. This handler works by allowing you to create OpenSearch Service requests, and then map the OpenSearch Service response back to your application. This section describes the function request and response handlers for the supported OpenSearch Service operations.
 

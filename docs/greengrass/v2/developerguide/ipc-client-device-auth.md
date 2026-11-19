@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/ipc-client-
 ---
 
 # Authenticate and authorize client devices
-<a name="ipc-client-device-auth"></a>
 
 **Note**
 This feature is available for v2.6.0 and later of the [Greengrass nucleus component](greengrass-nucleus-component.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-ingest-m
 ---
 
 # Ingest metrics to your Amazon Managed Service for Prometheus workspace
-<a name="AMP-ingest-methods"></a>
 
 Metrics must be ingested into your Amazon Managed Service for Prometheus workspace before you can query or alert on those metrics. This section explains how to set up the ingestion of metrics into your workspace.
 

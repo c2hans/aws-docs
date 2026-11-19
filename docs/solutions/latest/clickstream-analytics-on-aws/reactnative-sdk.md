@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # ReactNative SDK
-<a name="reactnative-sdk"></a>
 
  Clickstream React NativeSDK can help you easily collect in-app click stream data from mobile devices to your AWS environments through the data pipeline provisioned by this guidance.
 

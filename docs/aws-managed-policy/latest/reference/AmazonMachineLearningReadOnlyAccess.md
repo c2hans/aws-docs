@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMachineLearningReadOnlyAccess
-<a name="AmazonMachineLearningReadOnlyAccess"></a>
 
 **Description**: Provides read only access to Amazon Machine Learning resources.
 

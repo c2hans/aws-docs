@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/introduc
 ---
 
 # Overview of Amazon Web Services
-<a name="introduction"></a>
 
 Publication date: **June 02, 2026** ([Document history](document-details.md))
 

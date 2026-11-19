@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-serverl
 ---
 
 # Requirements and limitations for DocumentDB serverless
-<a name="docdb-serverless-limitations"></a>
 
 ## Feature requirements
 <a name="w2aac51c15b3"></a>

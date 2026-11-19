@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Li
 ---
 
 # ListTrainedModels
-<a name="API_ListTrainedModels"></a>
 
 Returns a list of trained models.
 

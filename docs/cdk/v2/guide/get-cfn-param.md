@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/get-cfn-param.html
 ---
 
 # Use CloudFormation parameters to get a CloudFormation value
-<a name="get-cfn-param"></a>
 
 Use AWS CloudFormation parameters within AWS Cloud Development Kit (AWS CDK) applications to input custom values into your synthesized CloudFormation templates at deployment.
 

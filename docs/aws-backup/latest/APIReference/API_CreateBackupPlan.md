@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Creat
 ---
 
 # CreateBackupPlan
-<a name="API_CreateBackupPlan"></a>
 
 Creates a backup plan using a backup plan name and backup rules. A backup plan is a document that contains information that AWS Backup uses to schedule tasks that create recovery points for resources.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/create-videofxconfig
 ---
 
 # Creating a VideoFxConfig object for the Amazon Chime SDK
-<a name="create-videofxconfig"></a>
 
 You can define configurations for `backgroundBlur` and `backgroundReplacement` in the same object. However, you can't set `isEnabled` to `true` for both filters at the same time. That's an invalid configuration.
 

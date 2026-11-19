@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/multiskill-ove
 ---
 
 # Overtime for multi-skill forecast groups
-<a name="multiskill-overtime"></a>
 
 Supervisors and Managers can restrict over time slots to specific demand groups.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/requesting-ebs-volu
 ---
 
 # Request Amazon EBS volume modifications
-<a name="requesting-ebs-volume-modifications"></a>
 
 With Elastic Volumes, you can dynamically increase the size, increase or decrease the performance, and change the volume type of your Amazon EBS volumes without detaching them.
 

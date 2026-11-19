@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Tr
 ---
 
 # TriggerFilter
-<a name="API_TriggerFilter"></a>
 
 A condition on a pull request value.
 

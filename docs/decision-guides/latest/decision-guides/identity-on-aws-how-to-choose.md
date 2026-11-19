@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/decision-guides/i
 ---
 
 # Choosing an AWS identity service
-<a name="identity-on-aws-how-to-choose"></a>
 
 **Taking the first step**
 

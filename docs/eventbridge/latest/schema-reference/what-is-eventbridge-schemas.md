@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/schema-reference/what
 ---
 
 # Welcome
-<a name="what-is-eventbridge-schemas"></a>
 
 Welcome to the *Amazon EventBridge Schema Registry API Reference*.
 

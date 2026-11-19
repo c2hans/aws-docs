@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/how-it
 ---
 
 # How DeepRacer works
-<a name="how-it-works"></a>
 
 The AWS DeepRacer vehicle is a 1/18th scale vehicle that can autonomously drive along a track by itself or race against another vehicle. The vehicle can be equipped with various sensors that include a front-facing camera, stereo cameras, radar, or LiDAR. The sensors collect data about the environment the vehicle operates in. Different sensors provide the view at different scales.
 

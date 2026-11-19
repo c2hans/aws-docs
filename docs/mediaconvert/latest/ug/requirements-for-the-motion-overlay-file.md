@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/requirements-for-
 ---
 
 # Requirements to set up motion graphic overlay files
-<a name="requirements-for-the-motion-overlay-file"></a>
 
 The following table describes how to set up motion graphic overlay files.
 

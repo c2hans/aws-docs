@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Post-upgrade cleanup for Aurora MySQL version 3
-<a name="AuroraMySQL.mysql80-post-upgrade"></a>
 
 After you finish upgrading any Aurora MySQL version 2 clusters to Aurora MySQL version 3, you can perform these other cleanup actions:
 + Create new MySQL 8.0–compatible versions of any custom parameter groups. Apply any necessary custom parameter values to the new parameter groups.

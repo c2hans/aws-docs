@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/reachability/multi-account-tr
 ---
 
 # Troubleshoot cross-account analyses in Reachability Analyzer
-<a name="multi-account-troubleshooting"></a>
 
 The following information can help you troubleshoot common issues with running cross-account analyses in Reachability Analyzer.
 

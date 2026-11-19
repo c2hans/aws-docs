@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Dependency fault action fails with setup error
-<a name="next-gen-troubleshoot-test-dep-setup"></a>
 
 **Symptom:** A dependency fault action fails because the required agent or sidecar is not configured.
 

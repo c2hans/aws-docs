@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPartnerProServeToolsIndividualContributor
-<a name="AWSPartnerProServeToolsIndividualContributor"></a>
 
 **Description**: Provides access to create and manage own assessments in ProServe tools.
 

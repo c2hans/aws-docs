@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsRdsP
 ---
 
 # AwsRdsPendingCloudWatchLogsExports
-<a name="API_AwsRdsPendingCloudWatchLogsExports"></a>
 
 Identifies the log types to enable and disable.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/security-iam-a
 ---
 
 # AWS managed policy: AmazonDataZoneSageMakerManageAccessRolePolicy
-<a name="security-iam-awsmanpol-AmazonDataZoneSageMakerManageAccessRolePolicy"></a>
 
 This policy gives Amazon DataZone permissions to publish Amazon SageMaker assets to the catalog. It also gives Amazon DataZone permissions to grant access or revoke access to the Amazon SageMaker published assets in the catalog.
 

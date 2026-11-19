@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteSnapsh
 ---
 
 # DeleteSnapshot
-<a name="API_DeleteSnapshot"></a>
 
 Deletes an Amazon FSx for OpenZFS snapshot. After deletion, the snapshot no longer exists, and its data is gone. Deleting a snapshot doesn't affect snapshots stored in a file system backup.
 

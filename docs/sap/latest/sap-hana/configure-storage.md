@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/configure-storage.ht
 ---
 
 # Configure storage
-<a name="configure-storage"></a>
 
 This section includes instructions for configuring your storage for SAP HANA.
 

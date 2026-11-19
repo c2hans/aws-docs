@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.PPD.5] Recognize and reward continuous learning
-<a name="oa.ppd.5-recognize-and-reward-continuous-learning"></a>
 
  **Category:** RECOMMENDED
 

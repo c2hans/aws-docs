@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53r
 ---
 
 # ListFirewallRuleDomains
-<a name="API_route53resolver_ListFirewallRuleDomains"></a>
 
 Retrieves the domains of an AutoAllowlist firewall rule. Only the owner of the rule group can call this operation. Results are paginated. Use `MaxResults` and `NextToken` to retrieve additional domains.
 

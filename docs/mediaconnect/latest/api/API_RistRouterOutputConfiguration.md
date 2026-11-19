@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RistRouterOu
 ---
 
 # RistRouterOutputConfiguration
-<a name="API_RistRouterOutputConfiguration"></a>
 
 The configuration settings for a router output using the RIST (Reliable Internet Stream Transport) protocol, including the destination address and port.
 

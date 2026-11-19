@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIRefe
 ---
 
 # PlatformScriptKey
-<a name="API_PlatformScriptKey"></a>
 
 The script location for a particular operating system.
 

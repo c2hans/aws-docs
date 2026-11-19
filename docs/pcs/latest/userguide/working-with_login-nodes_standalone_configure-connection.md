@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_login-
 ---
 
 # Step 5 – Configure the connection to the AWS PCS cluster
-<a name="working-with_login-nodes_standalone_configure-connection"></a>
 
 To establish a connection to the AWS PCS cluster, launch `sackd` as a system service by following these steps.
 

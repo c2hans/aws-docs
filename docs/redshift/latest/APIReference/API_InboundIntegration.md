@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Inbound
 ---
 
 # InboundIntegration
-<a name="API_InboundIntegration"></a>
 
 The content of an inbound integration.
 

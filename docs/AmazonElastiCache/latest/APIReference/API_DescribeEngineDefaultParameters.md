@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # DescribeEngineDefaultParameters
-<a name="API_DescribeEngineDefaultParameters"></a>
 
 Returns the default engine and system parameter information for the specified cache engine.
 

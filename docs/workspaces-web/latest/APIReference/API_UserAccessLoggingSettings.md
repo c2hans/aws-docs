@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_U
 ---
 
 # UserAccessLoggingSettings
-<a name="API_UserAccessLoggingSettings"></a>
 
 A user access logging settings resource that can be associated with a web portal.
 

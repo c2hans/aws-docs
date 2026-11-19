@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/contentful-configuring.ht
 ---
 
 # Configuring Contentful
-<a name="contentful-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Contentful, you must meet the following requirements:
 

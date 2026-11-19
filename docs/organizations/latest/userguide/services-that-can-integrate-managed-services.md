@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Managed Services (AMS) Self-Service Reporting (SSR) and AWS Organizations
-<a name="services-that-can-integrate-managed-services"></a>
 
 [AWS Managed Services (AMS) Self-Service Reporting (SSR)](https://aws.amazon.com/managed-services) collects data from various native AWS services and provides access to reports on major AMS offerings. SSR provides the information that you can use to support operations, configuration management, asset management, security management, and compliance.
 

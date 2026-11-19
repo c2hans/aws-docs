@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # LifeCycleSummary
-<a name="API_LifeCycleSummary"></a>
 
 An object that contains a `LifeCycle` object's subset of fields.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # LambdaFunction
-<a name="API_CostOptimizationHub_LambdaFunction"></a>
 
 The Lambda function recommendation details.
 

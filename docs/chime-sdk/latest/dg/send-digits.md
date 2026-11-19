@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/send-digits.html
 ---
 
 # SendDigits
-<a name="send-digits"></a>
 
 Send up to 50 dual tone multi-frequency (DTMF) digits on any leg of a call. The signals can include the following:
 + Numbers 0 thru 9

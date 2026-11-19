@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/appguide/customize-v
 The SiteWise Monitor feature is not available to new customers. Existing customers can continue to use the service as normal. For more information, see [SiteWise Monitor availability change](https://docs.aws.amazon.com/iot-sitewise/latest/appguide/iotsitewise-monitor-availability-change.html)
 
 # Customize visualizations
-<a name="customize-visualizations"></a>
 
 As a project owner, you can choose how to best view the asset properties and alarms that you add to your dashboard. You can control the visualization type and customize the visualization.
 

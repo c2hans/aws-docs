@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Amazon Nova Micro
-<a name="model-evaluation-type-kb-prompt-nova-micro"></a>
 
 Prompts used with Amazon Nova Micro.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/best-pract
 ---
 
 # Best practices for Amazon Route 53
-<a name="best-practices"></a>
 
 This section provides best practices for various components of Amazon Route 53, including:
 

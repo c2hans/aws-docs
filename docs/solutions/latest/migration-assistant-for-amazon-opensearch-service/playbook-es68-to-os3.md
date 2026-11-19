@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Playbook: Elasticsearch 6.8 to OpenSearch 3.x on Amazon OpenSearch Service
-<a name="playbook-es68-to-os3"></a>
 
 This playbook is an end-to-end runbook for migrating a self-managed Elasticsearch 6.8 cluster to an Amazon OpenSearch Service domain running OpenSearch 3.x, using the Migration Assistant for Amazon OpenSearch Service solution deployed on [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks) (Amazon EKS) inside an **existing** virtual private cloud (VPC). It walks through prerequisites, source preparation, deployment into your VPC, a small pilot, the full backfill, cutover, and an optional zero-downtime capture-and-replay phase.
 

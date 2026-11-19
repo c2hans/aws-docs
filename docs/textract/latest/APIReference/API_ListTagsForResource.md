@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_ListTag
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Lists all tags for an Amazon Textract resource.
 

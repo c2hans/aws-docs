@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/mcp-deploym
 ---
 
 # Deployment Pattern 4 - Amazon Elastic Kubernetes Service
-<a name="deployment-pattern-4-amazon-elastic-kubernetes-service"></a>
 
 Amazon Elastic Kubernetes Service (EKS) provides managed Kubernetes control planes for running containerized MCP servers with advanced orchestration capabilities. EKS enables advanced traffic management, multi-tenant isolation through namespaces, and integration with Kubernetes tools and add-ons. Organizations with existing Kubernetes expertise can benefit from this pattern despite its higher complexity and cost. The proposed architecture uses API Gateway with IAM (SigV4) authorization as the public entry point and integrates privately with an internal Application Load Balancer (ALB) through VPC Link v2. This pattern uses SigV4 for AWS-native service-to-service access, but EKS doesn't require it. You can use OAuth when you need broader client compatibility. Run the MCP streamable HTTP endpoint on EKS behind the internal ALB. This pattern keeps the MCP server private, uses AWS-native authorization, and is designed for AWS-controlled clients.
 

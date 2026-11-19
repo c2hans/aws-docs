@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_TableS
 ---
 
 # TableSummary
-<a name="API_s3Buckets_TableSummary"></a>
 
 Contains details about a table.
 

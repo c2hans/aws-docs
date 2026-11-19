@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/p
 ---
 
 # Predictive Maintenance for Fleets
-<a name="predictive-maintenance-for-fleets"></a>
 
 Publication date: **October 21, 2020 ([Diagram history](#fleet-history))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserInfo
 ---
 
 # UserInfo
-<a name="API_UserInfo"></a>
 
 The user details for the contact.
 

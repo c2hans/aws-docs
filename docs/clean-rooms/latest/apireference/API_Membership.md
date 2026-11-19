@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Memb
 ---
 
 # Membership
-<a name="API_Membership"></a>
 
 The membership object.
 

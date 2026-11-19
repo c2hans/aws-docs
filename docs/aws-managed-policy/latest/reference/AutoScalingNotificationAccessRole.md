@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Auto
 ---
 
 # AutoScalingNotificationAccessRole
-<a name="AutoScalingNotificationAccessRole"></a>
 
 **Description**: Default policy for the AutoScaling Notification Access service role.
 

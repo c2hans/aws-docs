@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelQ
 ---
 
 # ModelQualityAppSpecification
-<a name="API_ModelQualityAppSpecification"></a>
 
 Container image configuration object for the monitoring job.
 

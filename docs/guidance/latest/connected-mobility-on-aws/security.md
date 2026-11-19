@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Security
-<a name="security"></a>
 
 ## Shared responsibility model
 <a name="shared-responsibility"></a>

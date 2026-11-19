@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/http-ap
 ---
 
 # Create AWS Lambda proxy integrations for HTTP APIs in API Gateway
-<a name="http-api-develop-integrations-lambda"></a>
 
 A Lambda proxy integration enables you to integrate an API route with a Lambda function. When a client calls your API, API Gateway sends the request to the Lambda function and returns the function's response to the client. For examples of creating an HTTP API, see [Create an HTTP API](http-api-develop.md#http-api-examples).
 

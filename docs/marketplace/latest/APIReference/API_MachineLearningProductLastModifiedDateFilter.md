@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Mach
 ---
 
 # MachineLearningProductLastModifiedDateFilter
-<a name="API_MachineLearningProductLastModifiedDateFilter"></a>
 
 The filter for machine learning product last modified date.
 

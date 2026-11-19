@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # PhoneNumber
-<a name="API_voice-chime_PhoneNumber"></a>
 
 A phone number used to call an Amazon Chime SDK Voice Connector.
 

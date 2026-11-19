@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/export-client
 ---
 
 # Export the AWS Client VPN client configuration file
-<a name="export-client-config-file"></a>
 
 You can export the Client VPN client configuration by using the console or the AWS CLI.
 

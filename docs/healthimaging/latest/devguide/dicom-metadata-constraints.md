@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/dicom-meta
 ---
 
 # DICOM metadata constraints
-<a name="dicom-metadata-constraints"></a>
 
 When you use `UpdateImageSetMetadata` to update HealthImaging [metadata](getting-started-concepts.md#concept-metadata) attributes, the following DICOM constraints are applied.
 +  Cannot update or remove private attributes on Patient/Study/Series/Instance level attributes unless the update constraint applies to both `updatableAttributes` and `removableAttributes`

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Re
 ---
 
 # RetrievalInstructionSummary
-<a name="API_agent_RetrievalInstructionSummary"></a>
 
 A summary of a retrieval instruction, without the content.
 

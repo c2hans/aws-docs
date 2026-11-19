@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/wickrenterpriseinstall/kube
 This guide provides documentation for Wickr Enterprise. If you're using AWS Wickr, see [AWS Wickr Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide/what-is-wickr.html) or [AWS Wickr User Guide](https://docs.aws.amazon.com/wickr/latest/userguide/what-is-wickr.html).
 
 # Kubernetes cluster autoscaler (optional)
-<a name="kubernetes-cluster-autoscaler"></a>
 
 Kubernetes Cluster Autoscaler is an optional configuration value for the Wickr Enterprise installation. It will aid in scaling your Kubernetes node groups in the event of increased traffic or other resource restrictions that could lead to poor performance.
 

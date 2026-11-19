@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/troubleshooti
 ---
 
 # Troubleshooting AI builder assistant and chat
-<a name="troubleshooting-ai-builder-assistant"></a>
 
 This topic contains troubleshooting guidance for common issues when using the AI builder assistant.
 

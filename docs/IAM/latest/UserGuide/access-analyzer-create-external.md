@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-cre
 ---
 
 # Create an IAM Access Analyzer external access analyzer
-<a name="access-analyzer-create-external"></a>
 
 To enable an external access analyzer in a Region, you must create an analyzer in that Region. You must create an external access analyzer in each Region in which you want to monitor access to your resources.
 

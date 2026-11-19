@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_UpdateS
 ---
 
 # UpdateStandardsControl
-<a name="API_UpdateStandardsControl"></a>
 
 Used to control whether an individual security standard control is enabled or disabled.
 

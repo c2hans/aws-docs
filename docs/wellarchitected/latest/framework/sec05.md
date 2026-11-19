@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec05.h
 ---
 
 # Protecting networks
-<a name="sec05"></a>
 
  Network protection is how a workload controls which components can reach each other and what traffic is allowed to cross between them. It complements identity and access controls as part of a defense-in-depth strategy: identity decides who can call an action, and the network decides which components can communicate at all. A flat network where every resource can reach every other resource offers no containment, so a single point of unauthorized access exposes everything behind it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 ---
 
 # LSOPS05-BP01 Enable a configuration management framework
-<a name="lsops05-bp01"></a>
 
  Use a management framework to record resource configurations, track changes, identify gaps (like defects and issues) and track resolution of changes.
 

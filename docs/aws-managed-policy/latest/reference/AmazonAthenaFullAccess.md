@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonAthenaFullAccess
-<a name="AmazonAthenaFullAccess"></a>
 
 **Description**: Provide full access to Amazon Athena and scoped access to the dependencies needed to enable querying, writing results, and data management.
 

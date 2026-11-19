@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/win-fast-launch-
 ---
 
 # Monitor EC2 Fast Launch
-<a name="win-fast-launch-monitor"></a>
 
 This section covers how to monitor the Amazon EC2 Windows Server AMIs in your account that have EC2 Fast Launch enabled.
 

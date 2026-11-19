@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/LambdaMemoryDB.
 ---
 
 # Tutorial: Configuring a Lambda function to access MemoryDB in an Amazon VPC
-<a name="LambdaMemoryDB"></a>
 
 In this tutorial you can learn how to:
 + Create a MemoryDB cluster in your default Amazon Virtual Private Cloud (Amazon VPC) in the us-east-1 region.

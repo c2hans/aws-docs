@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_DeleteRe
 ---
 
 # DeleteResolver
-<a name="API_DeleteResolver"></a>
 
 Deletes a `Resolver` object.
 

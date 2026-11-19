@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/migration-to
 ---
 
 # Source authentication for online migration to ElastiCache Serverless
-<a name="migration-to-serverless-auth"></a>
 
 If your source cache requires authentication, ElastiCache needs credentials to connect to it. You store the credentials in AWS Secrets Manager and give ElastiCache the secret's ARN when you prepare the migration. ElastiCache does not accept credentials directly.
 

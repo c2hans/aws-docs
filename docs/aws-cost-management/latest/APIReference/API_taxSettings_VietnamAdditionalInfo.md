@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # VietnamAdditionalInfo
-<a name="API_taxSettings_VietnamAdditionalInfo"></a>
 
 Additional tax information to specify for a TRN in Vietnam.
 

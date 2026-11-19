@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::QBusiness::Application QuickSightConfiguration
-<a name="aws-properties-qbusiness-application-quicksightconfiguration"></a>
 
 The AWS Quick configuration for an Amazon Q Business application that uses Quick as the identity provider. For more information, see [Creating an AWS Quick integrated application](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-quicksight-integrated-application.html).
 

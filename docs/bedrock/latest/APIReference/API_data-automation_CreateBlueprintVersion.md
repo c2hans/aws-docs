@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # CreateBlueprintVersion
-<a name="API_data-automation_CreateBlueprintVersion"></a>
 
 Creates an immutable snapshot of a blueprint.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Re
 ---
 
 # RedshiftDataShareDetails
-<a name="API_RedshiftDataShareDetails"></a>
 
 Extra details specific to the affected scope in this Redshift data set.
 

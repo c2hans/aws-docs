@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Cloud
 ---
 
 # CloudFrontOriginAccessIdentity
-<a name="API_CloudFrontOriginAccessIdentity"></a>
 
 CloudFront origin access identity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # CommunicationTimeConfig
-<a name="API_connect-outbound-campaigns-v2_CommunicationTimeConfig"></a>
 
 Contains communication time configuration for an outbound campaign.
 

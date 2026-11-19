@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.
 ---
 
 # Amazon ECS task definitions for GPU workloads
-<a name="ecs-gpu"></a>
 
 Amazon ECS supports workloads that use GPUs, when you create clusters with container instances that support GPUs. Amazon EC2 GPU-based container instances that use the p2, p3, p4d, p5, g3, g4, g5, g6, g6e, and g6f instance types provide access to NVIDIA GPUs. For more information, see [Linux Accelerated Computing Instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html) in the *Amazon EC2 Instance Types guide*.
 

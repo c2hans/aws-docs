@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/parallelcluster/v2/ug/pcluster.configure
 This documentation references AWS ParallelCluster. For running HPC and AI workloads, we recommend [AWS Parallel Computing Service (AWS PCS)](https://aws.amazon.com/pcs/), our managed Slurm service that lets you focus on running your workloads rather than managing infrastructure.
 
 # `pcluster configure`
-<a name="pcluster.configure"></a>
 
 Begins an AWS ParallelCluster configuration. For more information, see [Configuring AWS ParallelCluster](getting-started-configuring-parallelcluster.md).
 
@@ -44,7 +43,7 @@ $ aws --region {{us-east-1}} cloudformation delete-stack \
    --stack-name {{parallelclusternetworking-pubpriv-20191029205804}}
 ```
 
-The VPC that [`pcluster configure`](#pcluster.configure) creates for you is not created in the CloudFormation networking stack. You can delete that VPC manually in the console or by using the AWS CLI.
+The VPC that [`pcluster configure`](pcluster.configure.md) creates for you is not created in the CloudFormation networking stack. You can delete that VPC manually in the console or by using the AWS CLI.
 
 ```
 $ aws --region {{us-east-1}} ec2 delete-vpc --vpc-id {{vpc-0b4ad9c4678d3c7ad}}

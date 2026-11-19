@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/receive-notification
 ---
 
 # Receiving push notifications in Amazon Chime SDK messaging
-<a name="receive-notifications"></a>
 
 Along with the channel message push notification title and body, the Amazon Chime SDK also includes the channel message ID and channel ARN in the data payload. You use that information to load the full channel message.
 

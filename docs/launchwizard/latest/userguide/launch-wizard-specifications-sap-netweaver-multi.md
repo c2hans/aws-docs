@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wiz
 ---
 
 # SapNWOnHanaMulti
-<a name="launch-wizard-specifications-sap-netweaver-multi"></a>
 
 The following are examples of the specifications required to create multi-node deployments.
 

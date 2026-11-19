@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Du
 ---
 
 # DuplicateConditionExpressionFlowValidationDetails
-<a name="API_agent_DuplicateConditionExpressionFlowValidationDetails"></a>
 
 Details about duplicate condition expressions found in a condition node.
 

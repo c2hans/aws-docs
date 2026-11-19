@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP_quotas.h
 ---
 
 # Amazon Managed Service for Prometheus service quotas
-<a name="AMP_quotas"></a>
 
 The following two sections describe the quotas and limits associated with Amazon Managed Service for Prometheus.
 

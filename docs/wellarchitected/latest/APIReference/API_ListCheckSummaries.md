@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ListCheckSummaries
-<a name="API_ListCheckSummaries"></a>
 
 List of Trusted Advisor checks summarized for all accounts related to the workload.
 

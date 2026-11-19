@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cy
 ---
 
 # Increasing adoption in related fields
-<a name="increasing-adoption-in-related-fields"></a>
 
 There is growing interest in many fields for including positive risk because it recognizes the contributions the domain makes to business outcomes. The concept of positive risk has been recently adopted into common project management processes and definitions.
 

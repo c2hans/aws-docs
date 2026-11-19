@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Step 5: Create the module manifest
-<a name="step-5-create-the-module-manifest"></a>
 
 To track MCS module updates, you must list module revisions in an external [module manifest](module-manifest-schema.md) file. The module manifest must be accessible so that MCS can read it. There is only a single manifest file per module. When you publish a new revision of a module, update the manifest to reflect that a new revision is available.
 

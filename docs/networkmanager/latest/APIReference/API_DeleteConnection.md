@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DeleteConnection
-<a name="API_DeleteConnection"></a>
 
 Deletes the specified connection in your global network.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEC2SpotFleetTaggingRole
-<a name="AmazonEC2SpotFleetTaggingRole"></a>
 
 **Description**: Allows EC2 Spot Fleet to request, terminate and tag Spot Instances on your behalf.
 

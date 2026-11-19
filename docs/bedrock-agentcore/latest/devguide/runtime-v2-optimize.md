@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Optimize your agent for Amazon Bedrock AgentCore Runtime V2
-<a name="runtime-v2-optimize"></a>
 
 Amazon Bedrock AgentCore Runtime V2 starts your agent by restoring a snapshot. This changes how you structure your agent code. Work that your agent does at startup is captured in the snapshot and shared by every restored instance. Produce any value that must differ between requests, or that can expire, in your request handler instead. This topic describes how to structure your agent around startup work and per-request work so that it stays correct after each restore. For an overview of platform version V2, see [Platform versions](runtime-how-it-works.md#runtime-platform-versions).
 

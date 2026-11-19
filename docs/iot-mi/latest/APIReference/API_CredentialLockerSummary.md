@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_Credentia
 ---
 
 # CredentialLockerSummary
-<a name="API_CredentialLockerSummary"></a>
 
 Structure describing one Credential Locker.
 

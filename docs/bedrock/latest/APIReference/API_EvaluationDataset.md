@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationDataset
-<a name="API_EvaluationDataset"></a>
 
 Used to specify the name of a built-in prompt dataset and optionally, the Amazon S3 bucket where a custom prompt dataset is saved.
 

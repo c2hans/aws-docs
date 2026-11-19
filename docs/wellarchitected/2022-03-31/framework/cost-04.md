@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # COST 4  How do you decommission resources?
-<a name="cost-04"></a>
 
 Implement change control and resource management from project inception to end-of-life. This ensures you shut down or terminate unused resources to reduce waste.
 

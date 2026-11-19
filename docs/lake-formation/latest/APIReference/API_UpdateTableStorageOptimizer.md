@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_U
 ---
 
 # UpdateTableStorageOptimizer
-<a name="API_UpdateTableStorageOptimizer"></a>
 
 Updates the configuration of the storage optimizers for a table.
 

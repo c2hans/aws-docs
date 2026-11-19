@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Lis
 ---
 
 # ListAssetRelationships
-<a name="API_ListAssetRelationships"></a>
 
 Retrieves a paginated list of asset relationships for an asset. You can use this operation to identify an asset's root asset and all associated assets between that asset and its root.
 

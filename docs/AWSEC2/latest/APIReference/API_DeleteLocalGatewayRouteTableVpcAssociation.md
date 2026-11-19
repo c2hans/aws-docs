@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLoc
 ---
 
 # DeleteLocalGatewayRouteTableVpcAssociation
-<a name="API_DeleteLocalGatewayRouteTableVpcAssociation"></a>
 
 Deletes the specified association between a VPC and local gateway route table.
 

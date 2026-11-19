@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-create-exp
 ---
 
 # Create an AutoML job for text classification using the API
-<a name="autopilot-create-experiment-text-classification"></a>
 
 The following instructions show how to create an Amazon SageMaker Autopilot job as a pilot experiment for text classification problem types using SageMaker [API Reference](https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-reference.html).
 

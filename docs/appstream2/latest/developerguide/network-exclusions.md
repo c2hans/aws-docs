@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/network
 ---
 
 # Network Exclusions
-<a name="network-exclusions"></a>
 
  The WorkSpaces Applications management network range (`198.19.0.0/16`) and following ports and addresses should not be blocked by any security / firewall or antivirus solutions within WorkSpaces Applications instances.
 

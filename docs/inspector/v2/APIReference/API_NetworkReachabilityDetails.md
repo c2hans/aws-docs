@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_NetworkRea
 ---
 
 # NetworkReachabilityDetails
-<a name="API_NetworkReachabilityDetails"></a>
 
 Contains the details of a network reachability finding.
 

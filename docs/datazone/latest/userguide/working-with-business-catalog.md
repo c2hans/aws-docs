@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/userguide/working-with-b
 ---
 
 # Amazon DataZone data catalog
-<a name="working-with-business-catalog"></a>
 
 You can use the Amazon DataZone business data catalog to catalog data across your organization with business context and thus enable everyone in your organization to ﬁnd and understand data quickly.
 

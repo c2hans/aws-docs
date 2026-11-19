@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixAllowOptions
-<a name="API_RouteMatrixAllowOptions"></a>
 
 Allow Options related to the route matrix.
 

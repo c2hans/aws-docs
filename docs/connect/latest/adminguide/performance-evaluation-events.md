@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/performance-ev
 ---
 
 # Monitor performance evaluation failure events
-<a name="performance-evaluation-events"></a>
 
 You can monitor failures of automated evaluations as well as S3 exports of contact evaluations using EventBridge and CloudWatch. You can use these events to investigate and fix failures. The following guide is a walk through of the process of creating custom EventBridge rules to monitor performance evaluation failure events.
 

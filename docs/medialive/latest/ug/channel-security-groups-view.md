@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/channel-security-gro
 ---
 
 # Viewing channel security group details
-<a name="channel-security-groups-view"></a>
 
 **To view the channel security group for a channel**
 

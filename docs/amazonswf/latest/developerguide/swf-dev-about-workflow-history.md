@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-
 ---
 
 # Workflow history in Amazon SWF
-<a name="swf-dev-about-workflow-history"></a>
 
 Amazon SWF records the progress of every workflow execution in the *workflow history* - a detailed, complete, and consistent record of every event that occurred since the workflow execution started.
 

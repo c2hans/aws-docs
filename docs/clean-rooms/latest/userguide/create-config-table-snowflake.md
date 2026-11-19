@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/create-conf
 ---
 
 # Creating a configured table – Snowflake data source
-<a name="create-config-table-snowflake"></a>
 
 In this procedure, the [member](glossary.md#glossary-member) does the following tasks:
 + Configures an existing Snowflake table for use in AWS Clean Rooms. (This step can be done before or after joining a collaboration, unless using Cryptographic Computing for Clean Rooms.)

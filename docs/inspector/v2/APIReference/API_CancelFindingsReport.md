@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CancelFind
 ---
 
 # CancelFindingsReport
-<a name="API_CancelFindingsReport"></a>
 
 Cancels the given findings report.
 

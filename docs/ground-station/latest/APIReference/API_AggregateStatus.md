@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_A
 ---
 
 # AggregateStatus
-<a name="API_AggregateStatus"></a>
 
 Aggregate status of Agent components.
 

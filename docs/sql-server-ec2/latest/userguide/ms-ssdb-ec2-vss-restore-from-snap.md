@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sql-server-ec2/latest/userguide/ms-ssdb-
 ---
 
 # Restore your SQL Server database from VSS snapshots
-<a name="ms-ssdb-ec2-vss-restore-from-snap"></a>
 
 The `AWSEC2-RestoreSqlServerDatabaseWithVss` automation runbook provides a streamlined process to restore your SQL Server databases. This guide outlines the automation runbook functionality and explains the parameters that you can customize to suit your specific restoration needs.
 

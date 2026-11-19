@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ac-xref.ht
 ---
 
 # .ac
-<a name="ac-xref"></a>
 
 See [.ac (Ascension Island)](ac.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # SMSMessageTemplateContent
-<a name="API_amazon-q-connect_SMSMessageTemplateContent"></a>
 
 The content of the message template that applies to the SMS channel subtype.
 

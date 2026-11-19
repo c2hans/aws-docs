@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/flow-language-ac
 ---
 
 # InvokeFlowModule
-<a name="flow-language-actions-invoke-flow-module"></a>
 
 Invokes a flow module. *Flow modules* are reusable sections of a flow. You use them to extract repeatable logic across your flows, and create common functions. For more information about flow modules, see [Flow modules for reusable functions](https://docs.aws.amazon.com/connect/latest/adminguide/contact-flow-modules.html), in the *Connect Customer Administrator Guide*.
 

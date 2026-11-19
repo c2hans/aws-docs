@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/config-comp
 ---
 
 # Compliance Validation for AWS Config
-<a name="config-compliance"></a>
 
 Third-party auditors assess the security and compliance of AWS Config as part of multiple AWS compliance programs. These include SOC, PCI, FedRAMP, HIPAA, and others.
 

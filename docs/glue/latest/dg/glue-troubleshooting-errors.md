@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-troubleshooting-erro
 ---
 
 # Troubleshooting Glue common setup errors
-<a name="glue-troubleshooting-errors"></a>
 
 If you encounter errors in AWS Glue, use the following information to help you find the source of the problems and fix them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/working-wit
 ---
 
 # Accessing DevOps Agent
-<a name="working-with-devops-agent-accessing-devops-agent-index"></a>
 
 AWS DevOps Agent supports several access methods: the web app console, Model Context Protocol (MCP) integration, Agent-to-Agent (A2A) integration, Agent Client Protocol (ACP) integration, webhooks for event-driven automation, and direct API access. Choose the method that best fits your workflow and technical requirements.
 

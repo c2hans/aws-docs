@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-
 ---
 
 # View details for your access points for directory buckets
-<a name="access-points-directory-buckets-details"></a>
 
 This section explains how to view details for your access point for directory buckets using the AWS Management Console, AWS CLI, AWS SDKs, or REST API.
 

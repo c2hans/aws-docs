@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 ---
 
 # Failure management
-<a name="failure-management"></a>
 
 ****
  "Everything fails, all the time"

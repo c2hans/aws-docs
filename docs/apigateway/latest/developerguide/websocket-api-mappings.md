@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/websock
 ---
 
 # Map API stages to a custom domain name for WebSocket APIs
-<a name="websocket-api-mappings"></a>
 
 You use API mappings to connect API stages to a custom domain name. After you create a domain name and configure DNS records, you use API mappings to send traffic to your APIs through your custom domain name.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Execut
 ---
 
 # ExecuteCommand
-<a name="API_ExecuteCommand"></a>
 
 Runs a command remotely on a container within a task.
 

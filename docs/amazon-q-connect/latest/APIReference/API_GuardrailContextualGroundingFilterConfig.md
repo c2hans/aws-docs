@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # GuardrailContextualGroundingFilterConfig
-<a name="API_amazon-q-connect_GuardrailContextualGroundingFilterConfig"></a>
 
 The filter configuration details for the AI Guardrail's contextual grounding filter.
 

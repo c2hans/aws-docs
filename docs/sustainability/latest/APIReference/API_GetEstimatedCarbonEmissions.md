@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sustainability/latest/APIReference/API_G
 ---
 
 # GetEstimatedCarbonEmissions
-<a name="API_GetEstimatedCarbonEmissions"></a>
 
 Returns estimated carbon emission values based on customer grouping and filtering parameters. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

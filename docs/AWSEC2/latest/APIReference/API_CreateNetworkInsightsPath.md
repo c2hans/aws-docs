@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateNet
 ---
 
 # CreateNetworkInsightsPath
-<a name="API_CreateNetworkInsightsPath"></a>
 
 Creates a path to analyze for reachability.
 

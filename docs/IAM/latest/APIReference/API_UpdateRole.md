@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateRole.h
 ---
 
 # UpdateRole
-<a name="API_UpdateRole"></a>
 
 Updates the description or maximum session duration setting of a role.
 

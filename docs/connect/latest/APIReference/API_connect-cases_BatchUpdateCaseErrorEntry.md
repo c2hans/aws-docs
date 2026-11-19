@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # BatchUpdateCaseErrorEntry
-<a name="API_connect-cases_BatchUpdateCaseErrorEntry"></a>
 
 Information about a case that wasn't updated.
 

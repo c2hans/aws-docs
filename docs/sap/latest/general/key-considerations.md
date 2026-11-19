@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/key-considerations.ht
 ---
 
 # Network, storage, and compute
-<a name="key-considerations"></a>
 
 This section provides information about configuring network, storage, and compute for staging and target environments to achieve disaster recovery goals for your SAP workloads on AWS with Elastic Disaster Recovery.
 

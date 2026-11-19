@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/condi
 ---
 
 # Condition keys for CloudWatch Observability Admin
-<a name="condition-keys-observabilityadmin"></a>
 
 You can use IAM policies to control access to Amazon CloudWatch Observability Admin resources and actions by using condition keys.
 

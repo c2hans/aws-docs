@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # Getting started with FlexMatch
-<a name="match-getting-started"></a>
 
 Use the resources in this section to help you get started with building a matchmaking system with FlexMatch.
 

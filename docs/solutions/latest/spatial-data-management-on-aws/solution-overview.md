@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Spatial Data Management on AWS
-<a name="solution-overview"></a>
 
 Spatial Data Management on AWS simplifies the complexity of managing spatial, 2D, and 3D data by providing a comprehensive solution to store, manage, and connect your spatial data with applications.
 

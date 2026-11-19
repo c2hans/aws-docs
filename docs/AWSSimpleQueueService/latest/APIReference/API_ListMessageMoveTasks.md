@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReferenc
 ---
 
 # ListMessageMoveTasks
-<a name="API_ListMessageMoveTasks"></a>
 
 Gets the most recent message movement tasks (up to 10) under a specific source queue.
 

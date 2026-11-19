@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/processor_state_control.htm
 ---
 
 # Processor state control for your Amazon EC2 AL2 instance
-<a name="processor_state_control"></a>
 
 C-states control the sleep levels that a core can enter when it is idle. C-states are numbered starting with C0 (the shallowest state where the core is totally awake and executing instructions) and go to C6 (the deepest idle state where a core is powered off).
 

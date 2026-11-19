@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-create-rol
 ---
 
 # Access control
-<a name="iot-create-role"></a>
 
 ## Granting an AWS IoT rule the access it requires
 <a name="iot-create-role-iam"></a>

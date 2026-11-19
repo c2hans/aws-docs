@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/datasync-large
 ---
 
 # Stage 1: Planning your large data migration
-<a name="datasync-large-migraton-stage-1"></a>
 
 Planning is essential when migrating a large dataset. You must understand the data you're migrating, your motivations for the migration, and how AWS DataSync can help you get your data where you want it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/add_c
 ---
 
 # Details about custom widgets in CloudWatch
-<a name="add_custom_widget_dashboard_about"></a>
 
 Custom widgets work as follows:
 

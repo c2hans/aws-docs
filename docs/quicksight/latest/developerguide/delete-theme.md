@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/delete-
 ---
 
 # DeleteTheme
-<a name="delete-theme"></a>
 
 Use the `DeleteTheme` operation to delete a theme. To use this operation, you need the ID of the theme that you want to delete. You can use the `ListThemes` operation to list all themes and their corresponding theme IDs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SAPODataPag
 ---
 
 # SAPODataPaginationConfig
-<a name="API_SAPODataPaginationConfig"></a>
 
 Sets the page size for each *concurrent process* that transfers OData records from your SAP instance. A concurrent process is query that retrieves a batch of records as part of a flow run. Amazon AppFlow can run multiple concurrent processes in parallel to transfer data faster.
 

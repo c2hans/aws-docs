@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-product-
 ---
 
 # Machine learning product lifecycle
-<a name="ml-product-lifecycle"></a>
 
 A machine learning product in AWS Marketplace consists of one or more software versions and associated metadata. Product configuration includes essential properties such as name, description, usage instructions, pricing, categorization, and search keywords.
 

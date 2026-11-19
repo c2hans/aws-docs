@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/tagging-bes
 ---
 
 # Objectives
-<a name="objectives"></a>
 
 Use tagging to realize the following business outcomes.
 

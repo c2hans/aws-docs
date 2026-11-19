@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Scalable maintenance and user support for generative AI applications
-<a name="prod-monitoring-maintenance"></a>
 
 Successful production deployment of generative AI applications requires robust maintenance processes and support structures that can scale with increasing usage. This section outlines frameworks for implementing automated maintenance pipelines and establishing comprehensive support systems for both end users and operations teams. It examines strategies for automating routine operational tasks, managing infrastructure at scale, and creating effective support structures through monitoring, ticketing systems, and standardized runbooks. These components form the foundation for maintaining reliable generative AI applications while efficiently supporting a growing user base and increasing system complexity.
 

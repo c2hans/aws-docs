@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-d
 ---
 
 # Streaming replication
-<a name="streaming-replication-consideration"></a>
 
 You can use streaming replication to keep WAL data or XLOG records current by continuously shipping and applying the WAL data or XLOG records to standby servers. If your business application can't experience any downtime, then streaming replication is a migration option to consider.
 

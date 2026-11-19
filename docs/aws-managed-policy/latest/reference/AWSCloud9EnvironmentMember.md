@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCloud9EnvironmentMember
-<a name="AWSCloud9EnvironmentMember"></a>
 
 **Description**: Provides the ability to be invited into AWS Cloud9 shared development environments.
 

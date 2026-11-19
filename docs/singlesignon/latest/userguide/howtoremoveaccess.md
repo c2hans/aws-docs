@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/howtoremov
 ---
 
 # Remove user and group access to an AWS account
-<a name="howtoremoveaccess"></a>
 
 Use this procedure to remove single sign-on access to an AWS account for one or more users and groups in your connected directory. Alternatively, you can use the [delete-account-assignment](https://docs.aws.amazon.com/cli/latest/reference/sso-admin/delete-account-assignment.html) AWS CLI.
 

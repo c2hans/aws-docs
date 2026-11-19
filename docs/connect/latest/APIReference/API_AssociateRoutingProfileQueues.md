@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Associat
 ---
 
 # AssociateRoutingProfileQueues
-<a name="API_AssociateRoutingProfileQueues"></a>
 
 Associates a set of queues with a routing profile.
 

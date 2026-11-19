@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/crea
 ---
 
 # Creating directory assessments
-<a name="create_directory_assessment"></a>
 
 You can create a directory assessment as part of creating a hybrid directory, or you can create one manually. To create an assessment manually, open the Directory Service console at [https://console.aws.amazon.com/directoryservicev2/](https://console.aws.amazon.com/directoryservicev2/). On the **Directories** page, under the **Directory assessments** section, choose **Create assessment**.
 

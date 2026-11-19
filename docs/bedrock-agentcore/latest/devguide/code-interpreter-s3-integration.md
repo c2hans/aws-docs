@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Using Terminal Commands with an execution role
-<a name="code-interpreter-s3-integration"></a>
 
 You can create a custom Code Interpreter tool with an execution role to upload/download files from Amazon S3. This allows your code to interact with S3 buckets for storing and retrieving data.
 

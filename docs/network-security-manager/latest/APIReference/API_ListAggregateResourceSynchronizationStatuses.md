@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ListAggregateResourceSynchronizationStatuses
-<a name="API_ListAggregateResourceSynchronizationStatuses"></a>
 
 Lists the aggregated synchronization statuses of resources across the deployments in your administrator account. You can filter the results by synchronization status and page through them.
 

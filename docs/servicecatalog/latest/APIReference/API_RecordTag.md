@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_R
 ---
 
 # RecordTag
-<a name="API_RecordTag"></a>
 
 Information about a tag, which is a key-value pair.
 

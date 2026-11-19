@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamInter
 ---
 
 # IpamInternetRegistryAssociation
-<a name="API_IpamInternetRegistryAssociation"></a>
 
 Contains information about an association between an IPAM and a Regional Internet Registry (RIR) for delegated RPKI management.
 

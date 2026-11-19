@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-ui-cu
 ---
 
 # Hide machine learning tools and applications on a user level
-<a name="studio-updated-ui-customize-tools-apps-user"></a>
 
 The following shows how to customize the applications and ML tools displayed in Studio on a user level. For more information, see [Hide machine learning tools and applications in the Amazon SageMaker Studio UI](studio-updated-ui-customize-tools-apps.md).
 

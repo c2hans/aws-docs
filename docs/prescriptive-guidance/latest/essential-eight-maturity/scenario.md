@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/essential-e
 ---
 
 # Scenario and architecture overview
-<a name="scenario"></a>
 
 The government agency has three workloads in the AWS Cloud:
 + A [serverless data lake](serverless-data-lake.md) that uses Amazon Simple Storage Service (Amazon S3) for storage and AWS Lambda for extract, transform, and load (ETL) operations

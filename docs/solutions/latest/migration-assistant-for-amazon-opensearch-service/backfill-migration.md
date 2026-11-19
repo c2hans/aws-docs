@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Backfill migration
-<a name="backfill-migration"></a>
 
 Backfill is accomplished with Reindex-from-Snapshot (RFS) by moving existing documents from your source cluster to the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection. RFS takes a one-time snapshot of the source cluster (the only time the source is touched), reads the raw Lucene segment files directly from the snapshot in Amazon S3, extracts documents, applies transformations, and bulk-indexes them on the target. The format of Elasticsearch and OpenSearch indices is such that each shard of each index can be parsed, extracted, and reindexed independently, which means the work can be fanned out at the shard level on Amazon EKS.
 

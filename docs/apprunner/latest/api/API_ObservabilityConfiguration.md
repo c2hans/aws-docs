@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_ObservabilityCo
 ---
 
 # ObservabilityConfiguration
-<a name="API_ObservabilityConfiguration"></a>
 
 Describes an AWS App Runner observability configuration resource. Multiple revisions of a configuration have the same `ObservabilityConfigurationName` and different `ObservabilityConfigurationRevision` values.
 

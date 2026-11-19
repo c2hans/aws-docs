@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws
 ---
 
 # AWS Regions
-<a name="aws-regions"></a>
 
 When you are preparing to deploy a workload, consider which Region or Regions best meet your needs. For example, select a Region that has the AWS services and features that you need. Also, you can lower network latency when you select a Region that is close to the majority of your users.
 

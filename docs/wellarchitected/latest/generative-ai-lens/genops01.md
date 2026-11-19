@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 ---
 
 # Model performance evaluation
-<a name="genops01"></a>
 
 | GENOPS01: How do you achieve and verify consistent model output quality? |
 | --- |

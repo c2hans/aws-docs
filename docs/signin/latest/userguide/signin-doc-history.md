@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signin/latest/userguide/signin-doc-histo
 ---
 
 # Document history
-<a name="signin-doc-history"></a>
 
 The following table describes important additions to the AWS Sign-In documentation. We also update the documentation frequently to address the feedback that you send us.
 + **Latest major documentation update: **November 10, 2026

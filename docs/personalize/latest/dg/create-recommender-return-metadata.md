@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/create-recommender
 ---
 
 # Enabling metadata in recommendations for a domain recommender in Amazon Personalize
-<a name="create-recommender-return-metadata"></a>
 
 **Important**
 When you enable metadata in recommendations, you incur additional costs. For more information, see [Amazon Personalize pricing](https://aws.amazon.com/personalize/pricing/).

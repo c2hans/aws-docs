@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/data-e
 ---
 
 # Data encryption
-<a name="data-encryption"></a>
 
 ## Encryption at rest
 <a name="encryption-rest"></a>

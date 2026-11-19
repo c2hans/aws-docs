@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ServiceSpeci
 ---
 
 # ServiceSpecificCredentialMetadata
-<a name="API_ServiceSpecificCredentialMetadata"></a>
 
 Contains additional details about a service-specific credential.
 

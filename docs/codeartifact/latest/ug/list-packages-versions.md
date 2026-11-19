@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/list-packages-ver
 ---
 
 # List package versions
-<a name="list-packages-versions"></a>
 
 Use the `list-package-versions` command in AWS CodeArtifact to get a list of all of the versions of a package name in a repository.
 

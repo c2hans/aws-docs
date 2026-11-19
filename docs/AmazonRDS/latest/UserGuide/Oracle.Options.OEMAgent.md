@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Oracle.Option
 ---
 
 # Oracle Management Agent for Enterprise Manager Cloud Control
-<a name="Oracle.Options.OEMAgent"></a>
 
 Oracle Enterprise Manager (OEM) Management Agent is a software component that monitors targets running on hosts and communicates that information to the middle-tier Oracle Management Service (OMS). Amazon RDS supports Management Agent through the use of the `OEM_AGENT` option.
 

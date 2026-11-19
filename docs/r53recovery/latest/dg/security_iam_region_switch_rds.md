@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_regio
 ---
 
 # Amazon RDS execution block sample policy
-<a name="security_iam_region_switch_rds"></a>
 
  The following is a sample policy to attach if you add execution blocks to a Region switch plan for Amazon RDS read replica promotion or cross-Region replica creation.
 

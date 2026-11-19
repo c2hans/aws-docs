@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/route-53-d
 ---
 
 # Hello Route 53 domain registration
-<a name="route-53-domains_example_route-53-domains_Hello_section"></a>
 
 The following code examples show how to get started using Route 53 domain registration.
 

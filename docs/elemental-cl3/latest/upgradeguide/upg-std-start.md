@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-st
 ---
 
 # Step K: Start channels
-<a name="upg-std-start"></a>
 
 When all nodes have been upgrade, you can start the channels that were previously running.
 

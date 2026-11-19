@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_ReplaceI
 ---
 
 # Use `ReplaceIamInstanceProfileAssociation` with an AWS SDK or CLI
-<a name="example_ec2_ReplaceIamInstanceProfileAssociation_section"></a>
 
 The following code examples show how to use `ReplaceIamInstanceProfileAssociation`.
 

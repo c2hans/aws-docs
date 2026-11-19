@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Internet Monitor example use cases
-<a name="CloudWatch-IM-use-cases"></a>
 
 This section describes several specific examples of use cases for Internet Monitor, with links to blog posts with more details. These examples illustrate how you can use the capabilities of Internet Monitor to monitor your application health and improve latency to enhance your users' experience.
 

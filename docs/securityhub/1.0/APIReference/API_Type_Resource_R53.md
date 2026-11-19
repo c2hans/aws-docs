@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Re
 ---
 
 # Amazon Route 53
-<a name="API_Type_Resource_R53"></a>
 
 ****Amazon Route 53 objects****
 + [AwsRoute53HostedZoneConfigDetails](API_AwsRoute53HostedZoneConfigDetails.md)

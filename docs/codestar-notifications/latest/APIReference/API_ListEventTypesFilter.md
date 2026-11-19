@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # ListEventTypesFilter
-<a name="API_ListEventTypesFilter"></a>
 
 Information about a filter to apply to the list of returned event types. You can filter by resource type or service name.
 

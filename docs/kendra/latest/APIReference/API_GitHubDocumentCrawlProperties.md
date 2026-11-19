@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_GitHubDoc
 ---
 
 # GitHubDocumentCrawlProperties
-<a name="API_GitHubDocumentCrawlProperties"></a>
 
 Provides the configuration information to include certain types of GitHub content. You can configure to index repository files only, or also include issues and pull requests, comments, and comment attachments.
 

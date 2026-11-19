@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEventBridgePipesFullAccess
-<a name="AmazonEventBridgePipesFullAccess"></a>
 
 **Description**: Provides full access to Amazon EventBridge Pipes.
 

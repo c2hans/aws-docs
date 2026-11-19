@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_C
 ---
 
 # CreateDomain
-<a name="API_CreateDomain"></a>
 
 Creates a domain resource for the specified domain (example.com).
 

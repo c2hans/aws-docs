@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_Vi
 ---
 
 # VirtualInterfaceTestHistory
-<a name="API_VirtualInterfaceTestHistory"></a>
 
 Information about the virtual interface failover test.
 

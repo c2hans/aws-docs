@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Geometr
 ---
 
 # Geometry
-<a name="API_Geometry"></a>
 
 Information about where the following items are located on a document page: detected page, text, key-value pairs, tables, table cells, and selection elements.
 

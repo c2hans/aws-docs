@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DeleteInterconnect
-<a name="API_DeleteInterconnect"></a>
 
 Deletes the specified interconnect.
 

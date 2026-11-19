@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # Email
-<a name="API_Email"></a>
 
 The notification email structure.
 

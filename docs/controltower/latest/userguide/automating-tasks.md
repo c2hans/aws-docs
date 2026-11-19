@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/automating
 ---
 
 # Automate tasks in AWS Control Tower
-<a name="automating-tasks"></a>
 
 Many customers prefer to automate tasks in AWS Control Tower, such as account provisioning, control assignment, and auditing. You can set up these automated actions with calls to:
 + [AWS Service Catalog APIs](https://docs.aws.amazon.com/servicecatalog/latest/dg/service-catalog-api-overview.html)

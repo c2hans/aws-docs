@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Co
 ---
 
 # CollaborationTrainedModelExportJobSummary
-<a name="API_CollaborationTrainedModelExportJobSummary"></a>
 
 Provides summary information about a trained model export job in a collaboration.
 

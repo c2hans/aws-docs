@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 ---
 
 # CreateAccountSubscription
-<a name="API_CreateAccountSubscription"></a>
 
 Creates an Amazon Quick Sight account, or subscribes to Amazon Quick Sight Q.
 

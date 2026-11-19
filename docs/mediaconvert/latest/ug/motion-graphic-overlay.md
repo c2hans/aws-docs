@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/motion-graphic-ov
 ---
 
 # Motion image insertion (overlays)
-<a name="motion-graphic-overlay"></a>
 
 In this guide, you'll learn how to set up motion graphic overlays with AWS Elemental MediaConvert. Motion graphic overlays appear in all outputs.
 

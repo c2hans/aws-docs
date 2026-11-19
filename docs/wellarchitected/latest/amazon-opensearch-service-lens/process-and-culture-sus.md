@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # Process and culture
-<a name="process-and-culture-sus"></a>
 
 | AOSSUS04: How do you optimize your development and test environment footprint? |
 | --- |

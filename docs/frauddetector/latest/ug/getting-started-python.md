@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/getting-started-
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Tutorial: Get started using the AWS SDK for Python (Boto3)
-<a name="getting-started-python"></a>
 
 This tutorial describes how to build and train an Amazon Fraud Detector model and then using this model to generate real-time fraud predictions using the AWS SDK for Python (Boto3). The model is trained using the account registration example data file that you upload to Amazon S3 bucket.
 

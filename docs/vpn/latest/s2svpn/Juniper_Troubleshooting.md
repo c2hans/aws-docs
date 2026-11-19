@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/Juniper_Troubleshootin
 ---
 
 # Troubleshoot AWS Site-to-Site VPN connectivity with a Juniper JunOS customer gateway device
-<a name="Juniper_Troubleshooting"></a>
 
 When you troubleshoot the connectivity of a Juniper customer gateway device, consider four things: IKE, IPsec, tunnel, and BGP. You can troubleshoot these areas in any order, but we recommend that you start with IKE (at the bottom of the network stack) and move up.
 

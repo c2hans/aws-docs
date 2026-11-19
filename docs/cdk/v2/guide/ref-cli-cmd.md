@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/ref-cli-cmd.html
 ---
 
 # AWS CDK CLI command reference
-<a name="ref-cli-cmd"></a>
 
 This section contains command reference information for the AWS Cloud Development Kit (AWS CDK) Command Line Interface (CLI). The CDK CLI is also referred to as the CDK Toolkit.
 

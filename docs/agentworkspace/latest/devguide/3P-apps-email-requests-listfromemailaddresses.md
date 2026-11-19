@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-e
 ---
 
 # List the from email addresses available for an email contact in Connect Customer agent workspace
-<a name="3P-apps-email-requests-listfromemailaddresses"></a>
 
 Lists the email addresses that the agent can use as the from address of an email contact. The email addresses are the ones associated with the queue of the contact that you pass in `contactId`. If that contact does not have a queue, the agent's default outbound queue is used. Returns an object that includes:
 + `emailAddresses: FromEmailAddress[]`: An array of FromEmailAddress objects, each an email address that the email contact can be sent from

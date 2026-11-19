@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 ---
 
 # Using Webhooks and other APIs after your tests run in Device Farm
-<a name="custom-test-environments-extending-webhooks"></a>
 
 You can have Device Farm call a webhook after every test suite finishes using **curl**. The process to do this varies with the destination and formatting. For your specific webhook, see the documentation for that webhook. The following example posts a message each time a test suite has finished to a Slack webhook:
 

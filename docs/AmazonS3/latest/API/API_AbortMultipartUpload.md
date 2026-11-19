@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_AbortMultipartUp
 ---
 
 # AbortMultipartUpload
-<a name="API_AbortMultipartUpload"></a>
 
 This operation aborts a multipart upload. After a multipart upload is aborted, no additional parts can be uploaded using that upload ID. The storage consumed by any previously uploaded parts will be freed. However, if any part uploads are currently in progress, those part uploads might or might not succeed. As a result, it might be necessary to abort a given multipart upload multiple times in order to completely free all storage consumed by all parts.
 
@@ -86,6 +85,7 @@ The request does not have a request body.
 ```
 HTTP/1.1 204
 x-amz-request-charged: {{RequestCharged}}
+x-amz-version-id: {{VersionId}}
 ```
 
 ## Response Elements
@@ -99,6 +99,11 @@ The response returns the following HTTP headers.
 If present, indicates that the requester was successfully charged for the request. For more information, see [Using Requester Pays buckets for storage transfers and usage](https://docs.aws.amazon.com/AmazonS3/latest/userguide/RequesterPaysBuckets.html) in the *Amazon Simple Storage Service user guide*.
 This functionality is not supported for directory buckets.
 Valid Values: `requester`
+
+ ** [x-amz-version-id](#API_AbortMultipartUpload_ResponseSyntax) **   <a name="AmazonS3-AbortMultipartUpload-response-header-VersionId"></a>
+Version ID of the object.
+Returns the Version ID of the object for the aborted multipart upload, if bucket versioning is enabled.
+This functionality is not supported for directory buckets.
 
 ## Errors
 <a name="API_AbortMultipartUpload_Errors"></a>
@@ -131,6 +136,22 @@ This example illustrates one usage of AbortMultipartUpload.
                HTTP/1.1 204 OK
                x-amz-id-2: Weag1LuByRx9e6j5Onimru9pO4ZVKnJ2Qz7/C1NPcfTWAtRPfTaOFg==
                x-amz-request-id: 996c76696e6727732072657175657374
+               Date:  Mon, 1 Nov 2010 20:34:56 GMT
+               Content-Length: 0
+               Connection: keep-alive
+               Server: AmazonS3
+```
+
+### Sample Response for general purpose buckets when the object is versioned
+<a name="API_AbortMultipartUpload_Example_3"></a>
+
+This example illustrates one usage of AbortMultipartUpload.
+
+```
+               HTTP/1.1 204 OK
+               x-amz-id-2: Weag1LuByRx9e6j5Onimru9pO4ZVKnJ2Qz7/C1NPcfTWAtRPfTaOFg==
+               x-amz-request-id: 318BC8BC148832E5
+               x-amz-version-id: 3/L4kqtJlcpXroDTDmJ+rmSpXd3QBpUMLUo
                Date:  Mon, 1 Nov 2010 20:34:56 GMT
                Content-Length: 0
                Connection: keep-alive

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/sc-data-providers-p
 ---
 
 # Using a PostgreSQL database as a source in DMS Schema Conversion
-<a name="sc-data-providers-postgresql"></a>
 
 You can use PostgreSQL databases as a migration source in DMS Schema Conversion.
 

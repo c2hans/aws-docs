@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/multi-prod
 ---
 
 # Frequently Asked Questions
-<a name="multi-product-solutions-buyer-faq"></a>
 
 **Topics**
 + [How is purchasing a Multi-Product Solution different from buying products individually?](#purchasing-difference)

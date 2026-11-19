@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/auto-ro-workloads.h
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # How resource optimization works with autoscalers and workload types
-<a name="auto-ro-workloads"></a>
 
 EKS Auto Mode resource optimization recommends CPU and memory requests for your workloads based on the usage it observes for each container, and in `Apply` mode resizes Pods to match. If you already run autoscalers, Java services, or Pods with sidecars, use this topic to learn what resource optimization changes for those workloads and what it leaves alone.
 

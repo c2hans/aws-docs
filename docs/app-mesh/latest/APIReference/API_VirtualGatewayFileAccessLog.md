@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_Virtual
 ---
 
 # VirtualGatewayFileAccessLog
-<a name="API_VirtualGatewayFileAccessLog"></a>
 
 An object that represents an access log file.
 

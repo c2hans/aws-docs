@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_AudioAndDT
 ---
 
 # AudioAndDTMFInputSpecification
-<a name="API_AudioAndDTMFInputSpecification"></a>
 
 Specifies the audio and DTMF input specification.
 

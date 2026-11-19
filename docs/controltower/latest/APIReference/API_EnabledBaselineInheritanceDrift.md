@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/APIReference/API_Ena
 ---
 
 # EnabledBaselineInheritanceDrift
-<a name="API_EnabledBaselineInheritanceDrift"></a>
 
 The inheritance drift summary for the enabled baseline. Inheritance drift occurs when any accounts in the target OU do not match the baseline configuration defined on that OU.
 

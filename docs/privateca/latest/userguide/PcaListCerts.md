@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaListCerts.
 ---
 
 # List private certificates
-<a name="PcaListCerts"></a>
 
 To list your private certificates, generate an audit report, retrieve it from its S3 bucket, and parse the report contents as needed. For information about creating AWS Private CA audit reports, see [Use audit reports with your private CA](PcaAuditReport.md). For information about retrieving an object from an S3 bucket, see [Downloading an object](https://docs.aws.amazon.com/AmazonS3/latest/userguide/download-objects.html) in the *Amazon Simple Storage Service User Guide*.
 

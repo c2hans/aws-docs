@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Li
 ---
 
 # ListSecurityRequirementPacks
-<a name="API_ListSecurityRequirementPacks"></a>
 
 Lists all security requirement packs in the caller's account.
 

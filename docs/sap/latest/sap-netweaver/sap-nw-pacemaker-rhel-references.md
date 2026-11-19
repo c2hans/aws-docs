@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemake
 ---
 
 # Vendor Support
-<a name="sap-nw-pacemaker-rhel-references"></a>
 
 The following section details the documentation and deployment guidance from Red Hat.
 

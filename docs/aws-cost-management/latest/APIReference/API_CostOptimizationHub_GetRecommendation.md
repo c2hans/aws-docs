@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetRecommendation
-<a name="API_CostOptimizationHub_GetRecommendation"></a>
 
 Returns both the current and recommended resource configuration and the estimated cost impact for a recommendation.
 

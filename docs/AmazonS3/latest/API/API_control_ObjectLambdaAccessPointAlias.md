@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ObjectLa
 ---
 
 # ObjectLambdaAccessPointAlias
-<a name="API_control_ObjectLambdaAccessPointAlias"></a>
 
 The alias of an Object Lambda Access Point. For more information, see [How to use a bucket-style alias for your S3 bucket Object Lambda Access Point](https://docs.aws.amazon.com/AmazonS3/latest/userguide/olap-use.html#ol-access-points-alias).
 

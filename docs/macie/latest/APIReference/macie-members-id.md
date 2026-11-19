@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/macie-members-
 ---
 
 # Member Status
-<a name="macie-members-id"></a>
 
 The Member Status resource provides access to the status of Amazon Macie for a member account in an organization. If you're the delegated Macie administrator for an organization in AWS Organizations, you can use this resource to manage the status of Macie for a member account in your organization. For more information, see [Managing multiple accounts with AWS Organizations](https://docs.aws.amazon.com/macie/latest/user/accounts-mgmt-ao.html) in the *Amazon Macie User Guide*.
 

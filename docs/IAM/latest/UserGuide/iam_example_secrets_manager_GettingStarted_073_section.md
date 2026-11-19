@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_secrets
 ---
 
 # Moving hardcoded secrets to secure secret storage
-<a name="iam_example_secrets_manager_GettingStarted_073_section"></a>
 
 The following code example shows how to:
 + Create IAM roles

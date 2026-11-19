@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Operational metrics Lambda function
-<a name="operational-metrics-lambda-alarms"></a>
 
 ## Errors and throttles
 <a name="operational-metrics-lambda-errors"></a>

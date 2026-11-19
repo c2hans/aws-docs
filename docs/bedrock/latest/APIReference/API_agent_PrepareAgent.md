@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Pr
 ---
 
 # PrepareAgent
-<a name="API_agent_PrepareAgent"></a>
 
 Creates a `DRAFT` version of the agent that can be used for internal testing.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cre-ipv6-trou
 ---
 
 # Troubleshoot IPv6 Client Route Enforcement
-<a name="cre-ipv6-troubleshooting"></a>
 
 If you encounter issues with IPv6 Client Route Enforcement, consider the following troubleshooting steps:
 

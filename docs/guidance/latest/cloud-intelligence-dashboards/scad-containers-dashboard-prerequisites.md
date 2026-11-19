@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 ---
 
 # Prerequisites
-<a name="scad-containers-dashboard-prerequisites"></a>
 
 ## Prerequisites
 <a name="prerequisites"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_ListTagsF
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Lists the tags applied to the resource identified by its Amazon Resource Name (ARN).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AwsJobExecut
 ---
 
 # AwsJobExecutionsRolloutConfig
-<a name="API_AwsJobExecutionsRolloutConfig"></a>
 
 Configuration for the rollout of OTA updates.
 

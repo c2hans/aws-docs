@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_D
 ---
 
 # DeleteCoreNetworkPrefixListAssociation
-<a name="API_DeleteCoreNetworkPrefixListAssociation"></a>
 
 Deletes an association between a core network and a prefix list.
 

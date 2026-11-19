@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 ---
 
 # Services supported for scheduling
-<a name="services-supported-for-scheduling"></a>
 
 Instance Scheduler on AWS currently supports scheduling of the following services:
 + Amazon EC2

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/memorydbsns.htm
 ---
 
 # Event Notifications and Amazon SNS
-<a name="memorydbsns"></a>
 
 MemoryDB can publish messages using Amazon Simple Notification Service (SNS) when significant events happen on a cluster. This feature can be used to refresh the server-lists on client machines connected to individual node endpoints of a cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/password-reset
 ---
 
 # Reset a user's password for Connect Customer
-<a name="password-reset"></a>
 
 **To reset a user's Connect Customer password**
 

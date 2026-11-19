@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cdk/v1/guide/home.html
 This is the AWS CDK v1 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and will now only receive critical bug fixes and security patches. New features will be developed for CDK v2 exclusively. Support for CDK v1 will end entirely on June 1, 2023. [Migrate to CDK v2](work-with-cdk-v2.md) to have access to the latest features and fixes.
 
 # What is the AWS CDK?
-<a name="home"></a>
 
 Welcome to the *AWS Cloud Development Kit (AWS CDK) Developer Guide*. This document provides information about the AWS CDK, a framework for defining cloud infrastructure in code and provisioning it through CloudFormation.
 

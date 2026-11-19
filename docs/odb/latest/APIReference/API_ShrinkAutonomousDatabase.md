@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_ShrinkAutono
 ---
 
 # ShrinkAutonomousDatabase
-<a name="API_ShrinkAutonomousDatabase"></a>
 
 Shrinks the storage of the specified Autonomous Database to reclaim unused space.
 

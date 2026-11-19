@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/uops-gs-prerequis
 ---
 
 # Unified Operations Getting started: Prerequisites
-<a name="uops-gs-prerequisites"></a>
 
 The following items are required to onboard to AWS Unified Operations
 

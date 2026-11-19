@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_
 ---
 
 # DeleteIdentityPool
-<a name="API_DeleteIdentityPool"></a>
 
 Deletes an identity pool. Once a pool is deleted, users will not be able to authenticate with the pool.
 

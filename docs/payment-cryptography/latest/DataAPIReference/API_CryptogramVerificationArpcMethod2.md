@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # CryptogramVerificationArpcMethod2
-<a name="API_CryptogramVerificationArpcMethod2"></a>
 
 Parameters that are required for ARPC response generation using method2 after ARQC verification is successful.
 

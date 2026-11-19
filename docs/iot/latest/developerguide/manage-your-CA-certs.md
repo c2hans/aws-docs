@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/manage-your-CA
 ---
 
 # Manage your CA certificates
-<a name="manage-your-CA-certs"></a>
 
 This section describes common tasks for managing your own certificate authority (CA) certificates.
 

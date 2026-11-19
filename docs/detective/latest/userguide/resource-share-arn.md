@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/resource-shar
 ---
 
 # Step 3: Accepting the Resource Share ARN invitation
-<a name="resource-share-arn"></a>
 
 This topic explains the steps to accept the Resource Share ARN invitation using a AWS CloudFormation template, which is a required step before you enable Detective integration with Security Lake.
 

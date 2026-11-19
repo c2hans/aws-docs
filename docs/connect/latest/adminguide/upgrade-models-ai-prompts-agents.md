@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/upgrade-models
 ---
 
 # Upgrade models for AI prompts and AI agents
-<a name="upgrade-models-ai-prompts-agents"></a>
 
 When you customize AI prompts or AI agents in Amazon Connect, the model associated with each AI prompt determines which large language model (LLM) processes the instructions. Over time, newer and more capable models become available. This topic describes how to upgrade models across a few common scenarios.
 + You have a custom AI agent with one or more custom AI prompts using a deprecated model

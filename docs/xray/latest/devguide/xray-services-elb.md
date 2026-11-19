@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/devguide/xray-services-elb.h
 ---
 
 # Elastic Load Balancing and AWS X-Ray
-<a name="xray-services-elb"></a>
 
 Elastic Load Balancing application load balancers add a trace ID to incoming HTTP requests in a header named `X-Amzn-Trace-Id`.
 

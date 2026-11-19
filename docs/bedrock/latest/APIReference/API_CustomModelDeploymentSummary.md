@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CustomMo
 ---
 
 # CustomModelDeploymentSummary
-<a name="API_CustomModelDeploymentSummary"></a>
 
 Contains summary information about a custom model deployment, including its ARN, name, status, and associated custom model.
 

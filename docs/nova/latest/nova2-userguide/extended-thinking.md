@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/extended-thi
 ---
 
 # Extended thinking in Amazon Nova 2
-<a name="extended-thinking"></a>
 
 Amazon Nova 2 Lite introduces **extended thinking** capabilities that enable the model to engage in deeper reasoning for complex problems. This optional feature gives you control over when and how the model allocates additional computational resources to think through challenging tasks.
 

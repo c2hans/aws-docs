@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/unpublish
 ---
 
 # Unpublish a product in AWS Data Exchange
-<a name="unpublish-product"></a>
 
 After your product is published in AWS Data Exchange, it's available for all to find and subscribe to, based on the product's visibility settings. You can unpublish a product if you want to achieve any of the following results:
 + Clean up your resources.

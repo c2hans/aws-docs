@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to get results for a PlaceId
-<a name="how-to-get-place-by-id"></a>
 
 The GetPlace API retrieves detailed information about a place using its unique PlaceId, allowing applications to access comprehensive details about specified locations.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only and will be deprecated in the f
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # Distributed DevOps
-<a name="distributed-devops"></a>
 
  The distributed DevOps model separates (or distributes) the application engineering operations and infrastructure engineering operations responsibilities across the engineering teams, following the [COPE methodology](cloud-operations-and-platform-enablement.md).
 

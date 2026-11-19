@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
 ---
 
 # AWS Step Functions
-<a name="aws-step-functions-2"></a>
 
 AWS Step Functions monitor the Amazon CloudWatch metric [ExecutionThrottled](https://docs.aws.amazon.com/step-functions/latest/dg/procedure-cw-metrics.html#cloudwatch-step-functions-execution-metrics) which reports throttling on state transition, the number of `StateEntered` events, and retries that have been throttled. Use this metric to determine if a quota increase for a Standard Workflow is required.
 

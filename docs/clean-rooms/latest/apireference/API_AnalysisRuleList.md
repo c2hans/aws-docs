@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Anal
 ---
 
 # AnalysisRuleList
-<a name="API_AnalysisRuleList"></a>
 
 A type of analysis rule that enables row-level analysis.
 

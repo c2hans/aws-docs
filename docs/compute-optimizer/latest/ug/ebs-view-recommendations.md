@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/ebs-view-rec
 ---
 
 # Accessing EBS volumes recommendations and details
-<a name="ebs-view-recommendations"></a>
 
 You can use one of the following procedures to access either the **EBS volumes recommendations** or the **EBS volume details** pages in the AWS Console.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ViolationEve
 ---
 
 # ViolationEventOccurrenceRange
-<a name="API_ViolationEventOccurrenceRange"></a>
 
  Specifies the time period of which violation events occurred between.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Migrat
 ---
 
 # MigrationFailureReason
-<a name="API_s3Buckets_MigrationFailureReason"></a>
 
 The reason that a migration failed: a code and, when there is one, the resource or reason it applies to. This value is returned only when the migration is in the `failed` state.
 

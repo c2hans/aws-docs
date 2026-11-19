@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Wcd
 ---
 
 # WcdmaObj
-<a name="API_WcdmaObj"></a>
 
 WCDMA.
 

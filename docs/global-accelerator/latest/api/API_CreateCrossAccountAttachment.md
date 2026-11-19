@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Create
 ---
 
 # CreateCrossAccountAttachment
-<a name="API_CreateCrossAccountAttachment"></a>
 
 Create a cross-account attachment in AWS Global Accelerator. You create a cross-account attachment to specify the *principals* who have permission to work with *resources* in accelerators in their own account. You specify, in the same attachment, the resources that are shared.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-ide-to
 ---
 
 # Configure AWS Toolkit for Visual Studio
-<a name="dotnet-ide-toolkit"></a>
 
 ## Step 1: Install AWS Toolkit
 <a name="transform-dotnet-prerequisites"></a>

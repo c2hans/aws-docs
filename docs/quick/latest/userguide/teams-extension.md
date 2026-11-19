@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/teams-extension.h
 ---
 
 # AWS Quick Microsoft Teams extension
-<a name="teams-extension"></a>
 
 The Quick extension for Microsoft Teams integrates AI-powered assistance directly into your team communication workflows. Users can mention @AWS Quick in conversations to access company knowledge, use configured action connectors, and get contextual assistance without leaving their Teams environment.
 

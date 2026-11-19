@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # UpdateServiceSettings
-<a name="API_UpdateServiceSettings"></a>
 
 Updates License Manager settings for the current Region.
 

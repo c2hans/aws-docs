@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/start-connecting.html
 ---
 
 # Setting up network access to data stores
-<a name="start-connecting"></a>
 
 To run your extract, transform, and load (ETL) jobs, AWS Glue must be able to access your data stores. If a job doesn't need to run in your virtual private cloud (VPC) subnet—for example, transforming data from Amazon S3 to Amazon S3—no additional configuration is needed.
 

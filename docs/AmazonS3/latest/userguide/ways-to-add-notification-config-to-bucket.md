@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/ways-to-add-no
 ---
 
 # Walkthrough: Configuring a bucket for notifications (SNS topic or SQS queue)
-<a name="ways-to-add-notification-config-to-bucket"></a>
 
 You can receive Amazon S3 notifications using Amazon Simple Notification Service (Amazon SNS) or Amazon Simple Queue Service (Amazon SQS). In this walkthrough, you add a notification configuration to your bucket using an Amazon SNS topic and an Amazon SQS queue.
 

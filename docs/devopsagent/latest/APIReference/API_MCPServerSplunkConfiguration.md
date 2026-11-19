@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPS
 ---
 
 # MCPServerSplunkConfiguration
-<a name="API_MCPServerSplunkConfiguration"></a>
 
 Mixin for webhook update support.
 

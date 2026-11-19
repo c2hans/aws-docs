@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/p
 ---
 
 # Tracking Partner Path and Tier Progression with the Partner Scorecard
-<a name="partner-scorecard"></a>
 
 AWS Partner Paths provide a tailored progression based on how a partner goes to market to AWS Customers. Enrolling in paths enables visibility into the [AWS Partner Programs](https://aws.amazon.com/partners/programs/) and benefits available based on your path(s) as you progress through the APN. Path selection is the first step in telling us what you do so we can provide your path to validation and specialization.
 

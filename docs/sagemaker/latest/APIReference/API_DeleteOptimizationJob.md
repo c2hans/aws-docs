@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Delete
 ---
 
 # DeleteOptimizationJob
-<a name="API_DeleteOptimizationJob"></a>
 
 Deletes an optimization job.
 

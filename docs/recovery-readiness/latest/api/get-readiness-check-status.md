@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/get-readin
 ---
 
 # Check the status of an entire readiness check
-<a name="get-readiness-check-status"></a>
 
 The following is an example of a request to list the roll-up status for an entire readiness check, and the response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGa
 ---
 
 # TransitGatewayPeeringAttachment
-<a name="API_TransitGatewayPeeringAttachment"></a>
 
 Describes the transit gateway peering attachment.
 

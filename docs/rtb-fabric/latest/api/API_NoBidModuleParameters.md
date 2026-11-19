@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_NoBidModulePar
 ---
 
 # NoBidModuleParameters
-<a name="API_NoBidModuleParameters"></a>
 
 Describes the parameters of a no bid module.
 

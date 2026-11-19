@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/api/API_ListSMSSandboxPhoneNu
 ---
 
 # ListSMSSandboxPhoneNumbers
-<a name="API_ListSMSSandboxPhoneNumbers"></a>
 
 Lists the calling AWS account's current verified and pending destination phone numbers in the SMS sandbox.
 

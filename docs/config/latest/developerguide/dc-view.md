@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/dc-view.htm
 ---
 
 # Viewing the Delivery Channel
-<a name="dc-view"></a>
 
 You must use the AWS CLI to view details about the delivery channel.
 

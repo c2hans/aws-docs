@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_CORSRule.html
 ---
 
 # CORSRule
-<a name="API_CORSRule"></a>
 
 Specifies a cross-origin access rule for an Amazon S3 bucket.
 

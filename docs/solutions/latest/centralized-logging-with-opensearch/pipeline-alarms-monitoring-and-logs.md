@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Pipeline alarms, monitoring, and logs
-<a name="pipeline-alarms-monitoring-and-logs"></a>
 
 ## Pipeline alarms
 <a name="pipeline-alarms"></a>

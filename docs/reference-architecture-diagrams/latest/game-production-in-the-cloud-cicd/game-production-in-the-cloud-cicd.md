@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/g
 ---
 
 # Game Production in the Cloud: CI/CD
-<a name="game-production-in-the-cloud-cicd"></a>
 
 Publication date: **November 10, 2021 ([Diagram history](#cicd-history))**
 

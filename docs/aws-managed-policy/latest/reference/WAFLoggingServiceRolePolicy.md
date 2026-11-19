@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/WAFL
 ---
 
 # WAFLoggingServiceRolePolicy
-<a name="WAFLoggingServiceRolePolicy"></a>
 
 **Description**: Creating SLR to write customer's logs to a firehose stream
 

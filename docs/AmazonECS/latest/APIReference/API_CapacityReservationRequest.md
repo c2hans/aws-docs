@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Capaci
 ---
 
 # CapacityReservationRequest
-<a name="API_CapacityReservationRequest"></a>
 
 The Capacity Reservation configurations to be used when using the `RESERVED` capacity option type.
 

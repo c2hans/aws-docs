@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSD
 ---
 
 # AWSDeepRacerRoboMakerAccessPolicy
-<a name="AWSDeepRacerRoboMakerAccessPolicy"></a>
 
 **Description**: Allows RoboMaker to create required resources and call AWS services on your behalf.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Connect to a local DynamoDB instance using an AWS SDK
-<a name="example_dynamodb_local_section"></a>
 
 The following code example shows how to override an endpoint URL to connect to a local development deployment of DynamoDB and an AWS SDK.
 

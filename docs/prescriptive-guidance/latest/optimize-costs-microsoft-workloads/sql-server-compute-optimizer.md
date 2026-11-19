@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Optimize SQL Server licensing by using Compute Optimizer
-<a name="sql-server-compute-optimizer"></a>
 
 Guidance on how to optimize licenses for Microsoft SQL Server by using AWS Compute Optimizer.
 

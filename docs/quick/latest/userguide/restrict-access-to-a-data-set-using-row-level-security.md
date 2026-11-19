@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/restrict-access-t
 ---
 
 # Using row-level security with user-based rules to restrict access to a dataset
-<a name="restrict-access-to-a-data-set-using-row-level-security"></a>
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/requests-per-s
 ---
 
 # Request quotas
-<a name="requests-per-second"></a>
 
 AWS KMS establishes quotas for the number of API operations requested in each second. The request quotas differ with the API operation, the AWS Region, and other factors, such as the KMS key type. When you exceed an API request quota, AWS KMS [throttles the request](throttling.md).
 

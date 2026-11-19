@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RouteServ
 ---
 
 # RouteServerPeer
-<a name="API_RouteServerPeer"></a>
 
 Describes a BGP peer configuration for a route server endpoint.
 

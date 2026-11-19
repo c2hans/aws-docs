@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEven
 ---
 
 # AwsEventsEndpointReplicationConfigDetails
-<a name="API_AwsEventsEndpointReplicationConfigDetails"></a>
 
  Indicates whether replication is enabled or disabled for the endpoint. If enabled, the endpoint can replicate all events to a secondary AWS Region.
 

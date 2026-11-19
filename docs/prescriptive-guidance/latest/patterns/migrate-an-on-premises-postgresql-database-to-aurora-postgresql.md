@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate an on-premises PostgreSQL database to Aurora PostgreSQL
-<a name="migrate-an-on-premises-postgresql-database-to-aurora-postgresql"></a>
 
 *Baji Shaik and Jitender Kumar, Amazon Web Services*
 

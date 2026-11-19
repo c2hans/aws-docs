@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_FieldIdent
 ---
 
 # FieldIdentifier
-<a name="API_connect-cases_FieldIdentifier"></a>
 
 Object for unique identifier of a field.
 

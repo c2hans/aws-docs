@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/shadow-tests-view-mo
 ---
 
 # View shadow tests
-<a name="shadow-tests-view-monitor-edit-list"></a>
 
  You can view the statuses of all of your shadow tests on the **Shadow tests** page on the SageMaker AI console.
 

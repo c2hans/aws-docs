@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ODB::CloudAutonomousVmCluster
-<a name="aws-resource-odb-cloudautonomousvmcluster"></a>
 
 The `AWS::ODB::CloudAutonomousVmCluster` resource creates an Autonomous VM cluster. An Autonomous VM cluster provides the infrastructure for running Autonomous Databases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVol
 ---
 
 # CreateVolumePermission
-<a name="API_CreateVolumePermission"></a>
 
 Describes the user or group to be added or removed from the list of create volume permissions for a volume.
 

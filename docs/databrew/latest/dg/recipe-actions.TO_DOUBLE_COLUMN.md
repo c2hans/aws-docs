@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.TO_DOU
 ---
 
 # TO\_DOUBLE\_COLUMN
-<a name="recipe-actions.TO_DOUBLE_COLUMN"></a>
 
 Changes the data type of an existing column to DOUBLE.
 

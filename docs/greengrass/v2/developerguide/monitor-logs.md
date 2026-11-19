@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/monitor-log
 ---
 
 # Monitor AWS IoT Greengrass logs
-<a name="monitor-logs"></a>
 
 AWS IoT Greengrass consists of the cloud service and the AWS IoT Greengrass Core software. The AWS IoT Greengrass Core software can write logs to Amazon CloudWatch Logs and to the core device's local file system. Greengrass components that run on the core device can also write logs to CloudWatch Logs and the local file system. You can use logs to monitor events and troubleshoot issues. All AWS IoT Greengrass log entries include a timestamp, log level, and information about the event.
 

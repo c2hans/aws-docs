@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/adminguide/logz-io.html
 ---
 
 # Logz.io
-<a name="logz-io"></a>
 
 Logz.io helps cloud native businesses monitor and secure their environments via the [Logz.io](http://logz.io/) Open 360 Platform – transforming observability and security from a high-cost, low-value burden into a high-value, cost-efficient enabler of better business outcomes.
 

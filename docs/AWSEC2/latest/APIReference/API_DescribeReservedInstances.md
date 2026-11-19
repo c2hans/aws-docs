@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeR
 ---
 
 # DescribeReservedInstances
-<a name="API_DescribeReservedInstances"></a>
 
 Describes one or more of the Reserved Instances that you purchased.
 

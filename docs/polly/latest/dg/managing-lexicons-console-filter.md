@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/managing-lexicons-consol
 ---
 
 # Filtering the lexicon list on the console
-<a name="managing-lexicons-console-filter"></a>
 
 The following procedure describes how to filter the lexicons list so that only lexicons of a chosen language are displayed.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/native-recipe-hrnn
 ---
 
 # HRNN-Coldstart recipe (legacy)
-<a name="native-recipe-hrnn-coldstart"></a>
 
 **Note**
 Legacy HRNN recipes are no longer available. This documentation is for reference purposes.

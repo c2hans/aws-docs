@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # Intersection
-<a name="API_geoplaces_Intersection"></a>
 
 All Intersections that are near the provided address.
 

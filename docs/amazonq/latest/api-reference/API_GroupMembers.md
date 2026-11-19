@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GroupMe
 ---
 
 # GroupMembers
-<a name="API_GroupMembers"></a>
 
 A list of users or sub groups that belong to a group. This is for generating Amazon Q Business chat results only from document a user has access to.
 

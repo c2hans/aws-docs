@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geotags
 ---
 
 # ListTagsForResource
-<a name="API_geotags_ListTagsForResource"></a>
 
 Returns a list of tags that are applied to the specified Amazon Location resource.
 

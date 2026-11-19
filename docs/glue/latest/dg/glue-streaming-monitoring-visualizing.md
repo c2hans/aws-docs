@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-streaming-monitoring
 ---
 
 # Visualizing AWS Glue streaming metrics
-<a name="glue-streaming-monitoring-visualizing"></a>
 
 To plot visual metrics:
 

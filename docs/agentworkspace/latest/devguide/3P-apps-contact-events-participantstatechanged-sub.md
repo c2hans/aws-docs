@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-c
 ---
 
 # Subscribe to participant state change events in Connect Customer agent workspace
-<a name="3P-apps-contact-events-participantstatechanged-sub"></a>
 
 Subscribes to participant state change events. This event fires when a participant's state changes (e.g., from connecting to connected, or to hold).
 

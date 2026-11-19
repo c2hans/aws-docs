@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # Clusters clusterArn Client-vpc-connections
-<a name="clusters-clusterarn-client-vpc-connections"></a>
 
 ## URI
 <a name="clusters-clusterarn-client-vpc-connections-url"></a>

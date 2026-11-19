@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Use `DeleteBucketTagging` with a CLI
-<a name="s3_example_s3_DeleteBucketTagging_section"></a>
 
 The following code examples show how to use `DeleteBucketTagging`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguid
 ---
 
 # View invocation results for CloudFormation Hooks
-<a name="hooks-view-invocations"></a>
 
 This topic describes how to view invocation results for CloudFormation Hooks. Viewing invocation results can help you understand how Hooks are evaluating your resources and resolve any issues that are detected when Hooks verify a resource.
 

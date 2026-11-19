@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/repos.html
 ---
 
 # Working with repositories in CodeArtifact
-<a name="repos"></a>
 
 These topics show you how to use the CodeArtifact console, AWS CLI, and CodeArtifact APIs to create, list, update, and delete repositories.
 

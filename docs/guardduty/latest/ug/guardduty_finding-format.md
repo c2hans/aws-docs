@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-fo
 ---
 
 # GuardDuty finding format
-<a name="guardduty_finding-format"></a>
 
 When GuardDuty detects suspicious or unexpected behavior in your AWS environment, it generates a finding. A finding is a notification that contains the details about a potential security issue that GuardDuty discovers. The [Viewing generated findings in GuardDuty console](guardduty_working-with-findings.md) include information about what happened, which AWS resources were involved in the suspicious activity, when this activity took place, and related information that may help you understand the root cause.
 

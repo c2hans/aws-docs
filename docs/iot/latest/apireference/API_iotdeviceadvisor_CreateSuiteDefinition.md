@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # CreateSuiteDefinition
-<a name="API_iotdeviceadvisor_CreateSuiteDefinition"></a>
 
 Creates a Device Advisor test suite.
 

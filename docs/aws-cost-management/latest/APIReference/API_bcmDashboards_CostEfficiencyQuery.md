@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostEfficiencyQuery
-<a name="API_bcmDashboards_CostEfficiencyQuery"></a>
 
 Contains the time period, granularity, grouping dimensions, and filtering conditions for an AWS cost efficiency data query.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/service-networks.h
 ---
 
 # Service networks in VPC Lattice
-<a name="service-networks"></a>
 
 A *service network* is a logical boundary for a collection of services and resource configurations. Services and resource configurations associated with the network can be authorized for discovery, connectivity, accessibility, and observability. To make requests to services and resource configurations in the network, your service or client must be in a VPC that is connected to the service network either through an association or through a VPC endpoint.
 

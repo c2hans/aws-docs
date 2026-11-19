@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_CrossCha
 ---
 
 # CrossChannelBehavior
-<a name="API_CrossChannelBehavior"></a>
 
 Defines the cross-channel routing behavior that allows an agent working on a contact in one channel to be offered a contact from a different channel.
 

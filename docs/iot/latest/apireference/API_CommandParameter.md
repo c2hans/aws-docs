@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CommandParam
 ---
 
 # CommandParameter
-<a name="API_CommandParameter"></a>
 
 A map of key-value pairs that describe the command.
 

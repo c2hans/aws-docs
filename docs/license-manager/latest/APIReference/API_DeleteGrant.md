@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # DeleteGrant
-<a name="API_DeleteGrant"></a>
 
 Deletes the specified grant.
 

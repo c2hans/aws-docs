@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_ContainerS
 ---
 
 # ContainerSummary
-<a name="API_ContainerSummary"></a>
 
 An object that represents summary details of a container within a job.
 

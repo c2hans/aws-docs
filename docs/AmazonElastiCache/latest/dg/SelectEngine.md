@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/SelectEngine
 ---
 
 # Comparing node-based Valkey, Memcached, and Redis OSS clusters
-<a name="SelectEngine"></a>
 
 Amazon ElastiCache supports the Valkey, Memcached, and Redis OSS cache engines. Each engine provides some advantages. Use the information in this topic to help you choose the engine and version that best meets your requirements.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Da
 ---
 
 # DatasetArtifacts
-<a name="API_DatasetArtifacts"></a>
 
 The results of building a Dataset, by dataset type.
 

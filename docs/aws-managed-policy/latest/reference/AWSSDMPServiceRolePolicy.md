@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSDMPServiceRolePolicy
-<a name="AWSSDMPServiceRolePolicy"></a>
 
 **Description**: Allow SDMP to create and manage resources on behalf of the customer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # SQL Server database migration strategies
-<a name="strategies"></a>
 
 At a high level, there are two options for migrating a SQL Server database from on premises to the AWS Cloud: either stay on SQL Server ([homogeneous migration](homogeneous-migration.md)) or move off SQL Server ([heterogeneous migration](heterogeneous-migration.md)). In a homogeneous migration, you don't change the database engine. That is, your target database is also a SQL Server database. In a heterogeneous migration, you switch your SQL Server databases either to an open-source database engine such as MySQL, PostgreSQL, or MariaDB, or to an AWS cloud-native database, such as Amazon Aurora, Amazon DynamoDB, or Amazon Redshift.
 

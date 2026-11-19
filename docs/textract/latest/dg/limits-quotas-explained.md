@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/limits-quotas-explain
 ---
 
 # Modifying Default Quotas in Amazon Textract
-<a name="limits-quotas-explained"></a>
 
 Your console account has default quotas for Amazon Textract operations. These are a set of Region-specific quotas that you can modify. Default quotas can be viewed or changed via the Service Quotas console. You can also view the current Amazon Textract default quotas on the [Amazon Textract endpoints and service quotas](https://docs.aws.amazon.com/general/latest/gr/textract.html).
 

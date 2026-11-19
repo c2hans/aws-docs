@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/odb-manpol-updates.
 ---
 
 # Oracle Database@AWS updates to AWS managed policies
-<a name="odb-manpol-updates"></a>
 
 View details about updates to AWS managed policies for Oracle Database@AWS since Oracle Database@AWS began tracking these changes. For automatic alerts about changes to this page, subscribe to the RSS feed on the Oracle Database@AWS Document history page.
 

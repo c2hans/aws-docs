@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # AgreementInvoiceLineItemGroupSummary
-<a name="API_marketplace-agreements_AgreementInvoiceLineItemGroupSummary"></a>
 
 A summary of grouped billing data for an agreement invoice line item.
 

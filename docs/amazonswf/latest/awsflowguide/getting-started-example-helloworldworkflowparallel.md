@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/getting-st
 ---
 
 # HelloWorldWorkflowParallel Application
-<a name="getting-started-example-helloworldworkflowparallel"></a>
 
 The preceding versions of Hello World\! all use a linear workflow topology. However, Amazon SWF isn't limited to linear topologies. The HelloWorldWorkflowParallel application is a modified version of HelloWorldWorkflow that uses a parallel topology, as shown in the following figure.
 

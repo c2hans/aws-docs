@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_Delet
 ---
 
 # DeleteDatabase
-<a name="API_DeleteDatabase"></a>
 
 Deletes a given Timestream database. *This is an irreversible operation. After a database is deleted, the time-series data from its tables cannot be recovered.*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMigrationHubRefactorSpaces-EnvironmentsWithoutBridgesFullAccess
-<a name="AWSMigrationHubRefactorSpaces-EnvironmentsWithoutBridgesFullAccess"></a>
 
 **Description**: Grants full access to AWS Migration Hub Refactor Spaces and other AWS related services except AWS Transit Gateway and EC2 security groups not required when using environments without a network bridge. This policy also excludes permissions required for AWS Lambda and AWS Resource Access Manager as they can be scoped down based on tags.
 

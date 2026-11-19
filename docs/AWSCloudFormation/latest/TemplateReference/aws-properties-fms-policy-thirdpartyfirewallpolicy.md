@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::FMS::Policy ThirdPartyFirewallPolicy
-<a name="aws-properties-fms-policy-thirdpartyfirewallpolicy"></a>
 
 Configures the deployment model for the third-party firewall.
 

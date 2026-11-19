@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_VmwareToA
 ---
 
 # VmwareToAwsTagMapping
-<a name="API_VmwareToAwsTagMapping"></a>
 
 This displays the mapping of VMware tags to the corresponding AWS tags.
 

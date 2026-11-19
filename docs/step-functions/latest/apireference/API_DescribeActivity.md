@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/apireference/API_D
 ---
 
 # DescribeActivity
-<a name="API_DescribeActivity"></a>
 
 Describes an activity.
 

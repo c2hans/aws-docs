@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Monito
 ---
 
 # MonitoringInput
-<a name="API_MonitoringInput"></a>
 
 The inputs for a monitoring job.
 

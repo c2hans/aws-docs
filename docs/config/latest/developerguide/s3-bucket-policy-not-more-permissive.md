@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-p
 ---
 
 # s3-bucket-policy-not-more-permissive
-<a name="s3-bucket-policy-not-more-permissive"></a>
 
 Checks if your Amazon Simple Storage Service bucket policies do not allow other inter-account permissions than the control Amazon S3 bucket policy that you provide.
 

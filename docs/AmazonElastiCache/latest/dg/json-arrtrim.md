@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/json-arrtrim
 ---
 
 # JSON.ARRTRIM
-<a name="json-arrtrim"></a>
 
 Trims an arrays at the path so that it becomes a subarray [start, end], both inclusive.
 + If the array is empty, do nothing, return 0.

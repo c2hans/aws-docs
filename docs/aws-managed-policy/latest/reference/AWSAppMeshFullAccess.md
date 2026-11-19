@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAppMeshFullAccess
-<a name="AWSAppMeshFullAccess"></a>
 
 **Description**: Provides full access to the AWS App Mesh APIs and Management Console.
 

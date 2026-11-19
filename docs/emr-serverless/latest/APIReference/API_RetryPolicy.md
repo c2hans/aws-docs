@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_R
 ---
 
 # RetryPolicy
-<a name="API_RetryPolicy"></a>
 
 The retry policy to use for a job run.
 

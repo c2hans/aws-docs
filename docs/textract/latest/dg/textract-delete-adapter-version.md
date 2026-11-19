@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/textract-delete-adapt
 ---
 
 # Delete adapter version
-<a name="textract-delete-adapter-version"></a>
 
 You can delete an adapter version you’re no longer using by calling [DeleteAdapterVersion](https://docs.aws.amazon.com/textract/latest/APIReference/API_DeleteAdapterVersion.html). To delete an adapter version you provide the DeleteAdapterVersion operation with both the adapter’s AdapterId and the specific AdapterVersion that you want to delete. Note that you cannot delete adapter versions with an "IN\_PROGRESS" status.
 

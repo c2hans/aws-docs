@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.h
 ---
 
 # Access control list (ACL) overview
-<a name="acl-overview"></a>
 
 Amazon S3 access control lists (ACLs) enable you to manage access to buckets and objects. Each bucket and object has an ACL attached to it as a subresource. It defines which AWS accounts or groups are granted access and the type of access. When a request is received against a resource, Amazon S3 checks the corresponding ACL to verify that the requester has the necessary access permissions.
 
@@ -109,7 +108,7 @@ For more information about ACL permissions in the Amazon S3 console, see [Config
 | FULL\_CONTROL | Allows grantee the READ, WRITE, READ\_ACP, and WRITE\_ACP permissions on the bucket | Allows grantee the READ, READ\_ACP, and WRITE\_ACP permissions on the object |
 
 **Warning**
-Use caution when granting access permissions to your S3 buckets and objects. For example, granting `WRITE` access to a bucket allows the grantee to create objects in the bucket. We highly recommend that you read through the entire [Access control list (ACL) overview](#acl-overview) section before granting permissions.
+Use caution when granting access permissions to your S3 buckets and objects. For example, granting `WRITE` access to a bucket allows the grantee to create objects in the bucket. We highly recommend that you read through the entire [Access control list (ACL) overview](acl-overview.md) section before granting permissions.
 
 ### Mapping of ACL permissions and access policy permissions
 <a name="acl-access-policy-permission-mapping"></a>

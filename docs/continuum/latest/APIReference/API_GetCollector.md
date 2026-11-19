@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_GetCol
 ---
 
 # GetCollector
-<a name="API_GetCollector"></a>
 
 Retrieves the current state of the Collector for the caller's account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/add-tags-on-creat
 ---
 
 # Adding tags when you create an AWS Elemental MediaConvert resource
-<a name="add-tags-on-create"></a>
 
 The following procedures show you how to add tags to your MediaConvert queues, job templates, and output presets when you create them.
 

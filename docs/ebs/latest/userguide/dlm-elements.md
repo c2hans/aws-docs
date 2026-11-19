@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/dlm-elements.html
 ---
 
 # How Amazon Data Lifecycle Manager works
-<a name="dlm-elements"></a>
 
 The following are the key elements of Amazon Data Lifecycle Manager.
 

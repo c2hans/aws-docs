@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/API_GetSinkPolic
 ---
 
 # GetSinkPolicy
-<a name="API_GetSinkPolicy"></a>
 
 Returns the current sink policy attached to this sink. The sink policy specifies what accounts can attach to this sink as source accounts, and what types of data they can share.
 

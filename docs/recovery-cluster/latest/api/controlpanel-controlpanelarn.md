@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/controlpanel
 ---
 
 # DescribeControlPanel, DeleteControlPanel
-<a name="controlpanel-controlpanelarn"></a>
 
 ## URI
 <a name="controlpanel-controlpanelarn-url"></a>

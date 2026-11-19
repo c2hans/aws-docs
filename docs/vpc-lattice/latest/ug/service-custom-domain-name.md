@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/ug/service-custom-dom
 ---
 
 # Configure a custom domain name for your VPC Lattice service
-<a name="service-custom-domain-name"></a>
 
 When you create a new service, VPC Lattice generates a unique Fully Qualified Domain Name (FQDN) for the service with the following syntax.
 

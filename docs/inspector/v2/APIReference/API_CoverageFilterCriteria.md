@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CoverageFi
 ---
 
 # CoverageFilterCriteria
-<a name="API_CoverageFilterCriteria"></a>
 
 A structure that identifies filter criteria for `GetCoverageStatistics`.
 

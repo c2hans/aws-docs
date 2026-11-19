@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Cognit
 ---
 
 # CognitoMemberDefinition
-<a name="API_CognitoMemberDefinition"></a>
 
 Identifies a Amazon Cognito user group. A user group can be used in on or more work teams.
 

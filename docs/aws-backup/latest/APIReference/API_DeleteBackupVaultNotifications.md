@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Delet
 ---
 
 # DeleteBackupVaultNotifications
-<a name="API_DeleteBackupVaultNotifications"></a>
 
 Deletes event notifications for the specified backup vault.
 

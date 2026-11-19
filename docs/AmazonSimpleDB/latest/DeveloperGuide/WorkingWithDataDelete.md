@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Wor
 ---
 
 # Deleting Data from a Domain
-<a name="WorkingWithDataDelete"></a>
 
 The following is an example of deleting data from an item using REST.
 

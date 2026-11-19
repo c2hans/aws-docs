@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/firewall-p
 ---
 
 # Best practices for Infoblox partner managed rules
-<a name="firewall-partner-infoblox-best-practices"></a>
 
 We recommend the following best practices when using Infoblox partner managed DNS threat protection:
 + **Testing before production:** Before deploying to production, use `ALERT` mode to perform a dry run. Review alert logs, then switch to `BLOCK` after it is validated. This matters most for the lower threat levels, which can match more legitimate domains.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-clou
 ---
 
 # Creating Amazon ECS resources using the CloudFormation console
-<a name="ecs-cloudformation-console"></a>
 
 One way to use Amazon ECS with CloudFormation is through the AWS Management Console. Here you can create your CloudFormation stacks for Amazon ECS components like task definitions, clusters, and services and deploy them directly from the console. The following tutorial shows how you can use the CloudFormation console to create Amazon ECS resources using a template.
 

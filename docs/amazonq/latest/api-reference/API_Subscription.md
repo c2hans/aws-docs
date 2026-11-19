@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_Subscri
 ---
 
 # Subscription
-<a name="API_Subscription"></a>
 
 Information about an Amazon Q Business subscription.
 

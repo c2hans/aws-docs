@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/gitlab-conc
 ---
 
 # GitLab Duo concepts
-<a name="gitlab-concepts"></a>
 
 Here are some concepts and terms to know when using [GitLab Duo with Amazon Q](https://docs.gitlab.com/ee/user/duo_amazon_q/).
 

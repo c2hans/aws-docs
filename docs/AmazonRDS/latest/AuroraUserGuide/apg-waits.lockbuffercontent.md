@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/apg-wai
 ---
 
 # LWLock:buffer\_content (BufferContent)
-<a name="apg-waits.lockbuffercontent"></a>
 
 The `LWLock:buffer_content` event occurs when a session is waiting to read or write a data page in memory while another session has that page locked for writing. In Aurora PostgreSQL 13 and higher, this wait event is called `BufferContent`.
 

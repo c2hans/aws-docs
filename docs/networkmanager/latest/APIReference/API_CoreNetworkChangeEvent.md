@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # CoreNetworkChangeEvent
-<a name="API_CoreNetworkChangeEvent"></a>
 
 Describes a core network change event. This can be a change to a segment, attachment, route, etc.
 

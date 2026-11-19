@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_SQLServe
 ---
 
 # Joining your DB instance to self-managed Active Directory
-<a name="USER_SQLServer_SelfManagedActiveDirectory.Joining"></a>
 
 To join your RDS for SQL Server DB instance to your self-managed AD, follow these steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RateLimitIP.
 ---
 
 # RateLimitIP
-<a name="API_RateLimitIP"></a>
 
 Specifies the IP address in the web request as an aggregate key for a rate-based rule. Each distinct IP address contributes to the aggregation instance.
 

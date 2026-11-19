@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/image-life
 ---
 
 # Lifecycle management prerequisites for Image Builder images
-<a name="image-lifecycle-prerequisites"></a>
 
 Complete these steps before you create lifecycle policies.
 + Create an IAM role that grants Image Builder permission to run lifecycle policies. You have three options:

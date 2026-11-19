@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/APIReference/API_DeleteEnv
 ---
 
 # DeleteEnvironment
-<a name="API_DeleteEnvironment"></a>
 
 Deletes an AWS Cloud9 development environment. If an Amazon EC2 instance is connected to the environment, also terminates the instance.
 

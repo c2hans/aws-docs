@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/configure-utilit
 ---
 
 # Configuring utilities for the `APPSYNC_JS` runtime
-<a name="configure-utilities"></a>
 
 AWS AppSync provides the following two libraries that help you develop event handlers with the `APPSYNC_JS` runtime:
 + `@aws-appsync/eslint-plugin` - Catches and fixes problems quickly during development.

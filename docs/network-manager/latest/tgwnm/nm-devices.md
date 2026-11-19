@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-devices.
 ---
 
 # Devices in AWS Global Networks for Transit Gateways
-<a name="nm-devices"></a>
 
 Devices represent a physical or virtual appliance in AWS Global Networks for Transit Gateways. When you add a device to your core network using AWS Network Manager, you can include optional information such as vendor, model and serial number to help you more easily identify the device.
 

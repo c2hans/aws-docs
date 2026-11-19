@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeSchema
 ---
 
 # DescribeSchema
-<a name="API_DescribeSchema"></a>
 
 Describes a schema. For more information on schemas, see [CreateSchema](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateSchema.html).
 

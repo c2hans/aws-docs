@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow-create-tracki
 ---
 
 # Set up IAM permissions for MLflow
-<a name="mlflow-create-tracking-server-iam"></a>
 
 You must configure the necessary IAM service roles to get started with MLflow in Amazon SageMaker AI.
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # SUS05-BP04 Optimize your use of GPUs
-<a name="sus_sus_hardware_a5"></a>
 
  Graphics Processing Units (GPUs) can be a source of high-power consumption, and many GPU workloads are highly variable, such as rendering, transcoding, and machine learning training and modeling. Only run GPU instances for the time needed, and decommission them with automation when not required to minimize resources consumed.
 

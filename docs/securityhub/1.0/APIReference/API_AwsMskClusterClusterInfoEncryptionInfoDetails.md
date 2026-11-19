@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsMskC
 ---
 
 # AwsMskClusterClusterInfoEncryptionInfoDetails
-<a name="API_AwsMskClusterClusterInfoEncryptionInfoDetails"></a>
 
  Includes encryption-related information, such as the AWS KMS key used for encrypting data at rest and whether you want MSK to encrypt your data in transit.
 

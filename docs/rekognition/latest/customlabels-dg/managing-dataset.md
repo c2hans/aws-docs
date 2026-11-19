@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/manag
 ---
 
 # Managing datasets
-<a name="managing-dataset"></a>
 
 A dataset contains the images and assigned labels that you use to train or test a model. The topics in this section show you how to manage a dataset with the Amazon Rekognition Custom Labels console and the AWS SDK.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_UpdateAcmeEn
 ---
 
 # UpdateAcmeEndpoint
-<a name="API_UpdateAcmeEndpoint"></a>
 
 Updates the configuration of an existing ACME endpoint. You can change the authorization behavior, contact requirement, or certificate authority settings.
 

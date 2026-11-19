@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/redshift-serv
 ---
 
 # Amazon Redshift Serverless backups
-<a name="redshift-serverless-backups"></a>
 
 ## Overview
 <a name="redshift-serverless-backups-overview"></a>

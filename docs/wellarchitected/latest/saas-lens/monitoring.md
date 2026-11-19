@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/monitor
 ---
 
 # Monitoring
-<a name="monitoring"></a>
 
 | SaaS PERF 3: How do you enable varying levels of performance for different tenant tiers and plans? |
 | --- |

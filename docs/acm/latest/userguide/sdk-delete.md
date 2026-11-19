@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/sdk-delete.html
 ---
 
 # Deleting a certificate
-<a name="sdk-delete"></a>
 
 The following example shows how to use the [DeleteCertificate](https://docs.aws.amazon.com/acm/latest/APIReference/API_DeleteCertificate.html) function. If successful, the function returns an empty set `{}`.
 

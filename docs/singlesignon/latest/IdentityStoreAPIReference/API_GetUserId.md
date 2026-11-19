@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # GetUserId
-<a name="API_GetUserId"></a>
 
 Retrieves the `UserId` in an identity store.
 

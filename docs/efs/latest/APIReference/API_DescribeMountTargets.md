@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_DescribeMoun
 ---
 
 # DescribeMountTargets
-<a name="API_DescribeMountTargets"></a>
 
 Returns the descriptions of all the current mount targets, or a specific mount target, for a file system. When requesting all of the current mount targets, the order of mount targets returned in the response is unspecified.
 

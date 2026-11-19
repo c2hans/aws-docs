@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Set up disaster recovery for SAP on IBM Db2 on AWS
-<a name="set-up-disaster-recovery-for-sap-on-ibm-db2-on-aws"></a>
 
 *Ambarish Satarkar and Debasis Sahoo, Amazon Web Services*
 

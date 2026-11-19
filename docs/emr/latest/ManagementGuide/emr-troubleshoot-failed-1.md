@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-troublesh
 ---
 
 # Step 1: Gather data about the issue with the Amazon EMR cluster
-<a name="emr-troubleshoot-failed-1"></a>
 
  The first step in troubleshooting a cluster is to gather information about what went wrong and the current status and configuration of the cluster. This information will be used in the following steps to confirm or rule out possible causes of the issue.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/automat
 ---
 
 # Run the EC2Rescue tool on unreachable instances
-<a name="automation-ec2rescue"></a>
 
 EC2Rescue can help you diagnose and troubleshoot problems on Amazon Elastic Compute Cloud (Amazon EC2) instances for Linux and Windows Server. You can run the tool manually, as described in [Using EC2Rescue for Linux Server](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Linux-Server-EC2Rescue.html) and [Using EC2Rescue for Windows Server](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/Windows-Server-EC2Rescue.html). Or, you can run the tool automatically by using Systems Manager Automation and the **`AWSSupport-ExecuteEC2Rescue`** runbook. Automation is a tool in AWS Systems Manager. The **`AWSSupport-ExecuteEC2Rescue`** runbook is designed to perform a combination of Systems Manager actions and CloudFormation actions that automate the steps normally required to use EC2Rescue.
 

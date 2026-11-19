@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/hybrid-ma
 ---
 
 # Hybrid map style
-<a name="hybrid-map-style"></a>
 
 The Hybrid map style combines global satellite imagery with the same clear labels and configurable points of interest (POI) categories found in the Standard map style. This combination provides rich geographic detail while ensuring readability and usability for your application.
 

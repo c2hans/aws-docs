@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_AzureProvi
 ---
 
 # AzureProviderDetailUpdate
-<a name="API_AzureProviderDetailUpdate"></a>
 
 The Azure-specific configuration details for updating a connector, including the scan scope and regions to scan.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetTab
 ---
 
 # GetTableRecordExpirationJobStatus
-<a name="API_s3Buckets_GetTableRecordExpirationJobStatus"></a>
 
 Retrieves the status, metrics, and details of the latest record expiration job for a table. This includes when the job ran, and whether it succeeded or failed. If the job ran successfully, this also includes statistics about the records that were removed.
 

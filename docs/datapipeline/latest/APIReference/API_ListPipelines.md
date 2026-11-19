@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/APIReference/API_Lis
 ---
 
 # ListPipelines
-<a name="API_ListPipelines"></a>
 
 Lists the pipeline identifiers for all active pipelines that you have permission to access.
 

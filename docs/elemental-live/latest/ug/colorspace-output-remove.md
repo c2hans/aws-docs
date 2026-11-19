@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/colorspace-outp
 ---
 
 # Removing color space metadata
-<a name="colorspace-output-remove"></a>
 
 Follow this procedure in each output where you want to remove the color space metadata.
 

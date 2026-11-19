@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DeleteSignin
 ---
 
 # DeleteSigningCertificate
-<a name="API_DeleteSigningCertificate"></a>
 
 Deletes a signing certificate associated with the specified IAM user.
 

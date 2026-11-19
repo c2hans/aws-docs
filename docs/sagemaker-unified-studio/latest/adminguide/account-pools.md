@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Account pools in Amazon SageMaker Unified Studio
-<a name="account-pools"></a>
 
 In Amazon SageMaker Unified Studio, you can configure your domain to create project profiles where an account pool provides AWS account and AWS Region information. An account pool is a list of authorized associated accounts and regions. This allows you to create project profiles that can be used to create projects across multiple accounts and regions, while controlling which accounts and regions are available for use.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_UpdateAddon.
 ---
 
 # UpdateAddon
-<a name="API_UpdateAddon"></a>
 
 Updates an Amazon EKS add-on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Pip
 ---
 
 # PipelineSummary
-<a name="API_PipelineSummary"></a>
 
 Contains summary information about a pipeline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/clearing-the-p
 ---
 
 # Clear the previously set instance warmup for a scaling policy
-<a name="clearing-the-previously-set-instance-warmup"></a>
 
 After enabling the default instance warmup, update any scaling policies that have still their own warmup time to clear the previously set value. Otherwise, it will override the default instance warmup.
 

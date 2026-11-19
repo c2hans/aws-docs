@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/what-is.html
 ---
 
 # What is AWS Resource Access Manager?
-<a name="what-is"></a>
 
 AWS Resource Access Manager (AWS RAM) helps you securely share your resources across AWS accounts, within your organization or organizational units (OUs), and with AWS Identity and Access Management (IAM) roles and users for supported resource types. If you have multiple AWS accounts, you can create a resource once and use AWS RAM to make that resource usable by those other accounts. If your account is managed by AWS Organizations, you can share resources with all the other accounts in the organization or only those accounts contained by one or more specified organizational units (OUs). You can also share with specific AWS accounts by account ID, regardless of whether the account is part of an organization. [Some supported resource types](shareable.md) also let you share them with specified IAM roles and users.
 

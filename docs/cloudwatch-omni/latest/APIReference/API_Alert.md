@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # Alert
-<a name="API_Alert"></a>
 
 Full alert entity, returned by both CreateAlert and GetAlert. A create and a read of the same alert describe it identically except for `state`, which only the read paths populate. UpdateAlert returns an empty response.
 

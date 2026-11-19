@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreditSpe
 ---
 
 # CreditSpecificationRequest
-<a name="API_CreditSpecificationRequest"></a>
 
 The credit option for CPU usage of a T instance.
 

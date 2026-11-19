@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/share
 ---
 
 # Stopping sharing one or more CloudWatch dashboards
-<a name="share-cloudwatch-dashboard-stop"></a>
 
 You can stop sharing a single shared dashboard, or stop sharing all shared dashboards at once.
 

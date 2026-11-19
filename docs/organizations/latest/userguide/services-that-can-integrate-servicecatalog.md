@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Service Catalog and AWS Organizations
-<a name="services-that-can-integrate-servicecatalog"></a>
 
 Service Catalog enables you to create and manage catalogs of IT services that are approved for use on AWS.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/rrset-prot
 ---
 
 # Protecting records from changes
-<a name="rrset-protection"></a>
 
 To prevent a critical record from being changed or deleted by mistake, add a record set protection for its name and type. While the protection exists, Route 53 rejects any `ChangeResourceRecordSets` request that would create, update, or delete those records. The protection applies to every user and role, including users with full Route 53 permissions. To change a protected record, you first delete its protection.
 

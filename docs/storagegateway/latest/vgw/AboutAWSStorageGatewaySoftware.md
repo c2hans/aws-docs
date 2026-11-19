@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/AboutAWSStorag
 ---
 
 # Working with open-source components for Storage Gateway
-<a name="AboutAWSStorageGatewaySoftware"></a>
 
 This section describes third party tools and licenses that we depend on to deliver Storage Gateway functionality.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsBack
 ---
 
 # AwsBackupBackupPlanBackupPlanDetails
-<a name="API_AwsBackupBackupPlanBackupPlanDetails"></a>
 
 Provides details about an AWS Backup backup plan and an array of `BackupRule` objects, each of which specifies a backup rule.
 

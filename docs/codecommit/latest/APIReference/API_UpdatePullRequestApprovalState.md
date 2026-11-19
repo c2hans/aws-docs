@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Updat
 ---
 
 # UpdatePullRequestApprovalState
-<a name="API_UpdatePullRequestApprovalState"></a>
 
 Updates the state of a user's approval on a pull request. The user is derived from the signed-in account when the request is made.
 

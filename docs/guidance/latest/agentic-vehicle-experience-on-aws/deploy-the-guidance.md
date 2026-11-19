@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Deploy the Guidance
-<a name="deploy-the-guidance"></a>
 
 Deploying AVX builds on top of existing CMS and ADP foundations using CDK stacks for infrastructure and AgentCore for the agentic runtime, with tenant configuration driving the per-tenant customization after the foundation is in place.
 

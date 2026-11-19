@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Database.html
 ---
 
 # Database
-<a name="API_Database"></a>
 
 The `Database` object represents a logical grouping of tables that might reside in a Hive metastore or an RDBMS.
 

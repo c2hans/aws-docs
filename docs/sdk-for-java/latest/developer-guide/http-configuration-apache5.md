@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http
 ---
 
 # Configure the Apache 5.x based HTTP client
-<a name="http-configuration-apache5"></a>
 
 The SDK's `Apache5HttpClient` is based on the Apache [HttpClient 5.x](https://hc.apache.org/httpcomponents-client-5.6.x/index.html).
 

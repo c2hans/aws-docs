@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSE
 ---
 
 # AWSEC2CapacityManagerServiceRolePolicy
-<a name="AWSEC2CapacityManagerServiceRolePolicy"></a>
 
 **Description**: Allows EC2 Capacity Manager to manage capacity resources and integrate with AWS Organizations on your behalf.
 

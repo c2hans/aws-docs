@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_EventBrid
 ---
 
 # EventBridgeDestination
-<a name="API_EventBridgeDestination"></a>
 
 An object that defines an Amazon EventBridge destination for email events. You can use Amazon EventBridge to send notifications when certain email events occur.
 

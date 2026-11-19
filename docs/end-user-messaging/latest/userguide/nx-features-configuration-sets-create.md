@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Create a configuration set in AWS End User Messaging
-<a name="nx-features-configuration-sets-create"></a>
 
 Use the AWS End User Messaging console or AWS CLI to create a configuration set. After you have created a configuration set you should add an [Event destinations in AWS End User Messaging](nx-features-configuration-sets-event-destinations.md) and protect configuration.
 

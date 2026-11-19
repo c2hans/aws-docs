@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_C
 ---
 
 # CustomPattern
-<a name="API_CustomPattern"></a>
 
 The pattern configuration for redacting custom data types in session.
 

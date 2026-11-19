@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-wor
 ---
 
 # Further reading
-<a name="further-reading"></a>
 
  For additional information, see:
 +  [AWS Architecture Center](https://aws.amazon.com/architecture/)

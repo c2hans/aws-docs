@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Connecting Greenplum Database with AWS Schema Conversion Tool
-<a name="CHAP_Source.Greenplum"></a>
 
 You can use AWS SCT to convert schemas, code objects, and application code from Greenplum Database to Amazon Redshift.
 

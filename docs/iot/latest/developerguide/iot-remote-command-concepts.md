@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-remote-com
 ---
 
 # Commands concepts and status
-<a name="iot-remote-command-concepts"></a>
 
 Use AWS IoT Commands to send instructions from the cloud to connected devices. To use this feature:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Upd
 ---
 
 # UpdatePackageGroup
-<a name="API_UpdatePackageGroup"></a>
 
 Updates a package group. This API cannot be used to update a package group's origin configuration or pattern. To update a package group's origin configuration, use [UpdatePackageGroupOriginConfiguration](https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_UpdatePackageGroupOriginConfiguration.html).
 

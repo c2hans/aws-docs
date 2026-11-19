@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Create a Direct Connect gateway attachment for an AWS Cloud WAN core network
-<a name="cloudwan-dxattachment-add"></a>
 
 You can add a Direct Connect gateway attachment using either the Network Manager console or using the AWS CLI. The Direct Connect gateway must first be created using the Direct Connect console before it can be added as an attachment in Cloud WAN. For more information about Direct Connect gateway attachments and Cloud WAN, see [Direct Connect gateway attachments](cloudwan-dxattach-about.md).
 

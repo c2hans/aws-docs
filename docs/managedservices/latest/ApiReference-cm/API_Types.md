@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/A
 ---
 
 # Data Types
-<a name="API_Types"></a>
 
 The AWS Managed Services Change Management API contains several data types that various actions use. This section describes each data type in detail.
 

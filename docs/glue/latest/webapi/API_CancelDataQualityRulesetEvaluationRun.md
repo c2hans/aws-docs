@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CancelDataQuality
 ---
 
 # CancelDataQualityRulesetEvaluationRun
-<a name="API_CancelDataQualityRulesetEvaluationRun"></a>
 
 Cancels a run where a ruleset is being evaluated against a data source.
 

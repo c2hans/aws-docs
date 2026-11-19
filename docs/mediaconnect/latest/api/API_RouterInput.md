@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterInput.
 ---
 
 # RouterInput
-<a name="API_RouterInput"></a>
 
 A router input in AWS Elemental MediaConnect. A router input is a source of media content that can be routed to one or more router outputs.
 

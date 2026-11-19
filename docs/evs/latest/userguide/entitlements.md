@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/entitlements.html
 ---
 
 # Windows Server entitlements
-<a name="entitlements"></a>
 
 A Windows Server entitlement gives a virtual machine (VM) in your Amazon Elastic VMware Service environment Windows Server licensing coverage through AWS. You pay only for what you use, per vCPU-hour.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # Compute and hardware
-<a name="compute-and-hardware"></a>
 
 |  EUCPERF04: How do you select the most appropriate AWS compute solution?  |
 | --- |

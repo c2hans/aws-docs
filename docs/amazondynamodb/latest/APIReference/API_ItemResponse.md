@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_I
 ---
 
 # ItemResponse
-<a name="API_ItemResponse"></a>
 
 Details for the requested item.
 

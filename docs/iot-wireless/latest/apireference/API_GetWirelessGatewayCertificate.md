@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Get
 ---
 
 # GetWirelessGatewayCertificate
-<a name="API_GetWirelessGatewayCertificate"></a>
 
 Gets the ID of the certificate that is currently associated with a wireless gateway.
 

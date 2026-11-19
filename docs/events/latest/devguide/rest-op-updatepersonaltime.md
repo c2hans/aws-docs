@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/events/latest/devguide/rest-op-updateper
 ---
 
 # UpdatePersonalTime
-<a name="rest-op-updatepersonaltime"></a>
 
 Replaces a personal time entry that you already created. You must sign in.
 

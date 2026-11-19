@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_LakehouseSet
 ---
 
 # LakehouseSettings
-<a name="API_LakehouseSettings"></a>
 
 Provides information that defines a Lakehouse endpoint. This endpoint type is used for zero-ETL integrations with Lakehouse data warehouses.
 

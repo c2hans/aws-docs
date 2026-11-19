@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/application/userguide/servic
 ---
 
 # Amazon Neptune and Application Auto Scaling
-<a name="services-that-can-integrate-neptune"></a>
 
 You can scale Neptune clusters using target tracking scaling policies and scheduled scaling.
 

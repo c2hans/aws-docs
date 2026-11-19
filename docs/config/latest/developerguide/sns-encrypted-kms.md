@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/sns-encrypt
 ---
 
 # sns-encrypted-kms
-<a name="sns-encrypted-kms"></a>
 
 Checks if SNS topics are encrypted with AWS Key Management Service (AWS KMS). The rule is NON\_COMPLIANT if an SNS topic is not encrypted with AWS KMS. Optionally, specify the key ARNs, the alias ARNs, the alias name, or the key IDs for the rule to check.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeM
 ---
 
 # DescribeMacHosts
-<a name="API_DescribeMacHosts"></a>
 
 Describes the specified EC2 Mac Dedicated Host or all of your EC2 Mac Dedicated Hosts.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedAgentStateChange
-<a name="API_ManagedAgentStateChange"></a>
 
 An object representing a change in state for a managed agent.
 

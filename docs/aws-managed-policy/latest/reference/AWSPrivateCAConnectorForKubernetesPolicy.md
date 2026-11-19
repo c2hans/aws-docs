@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSP
 ---
 
 # AWSPrivateCAConnectorForKubernetesPolicy
-<a name="AWSPrivateCAConnectorForKubernetesPolicy"></a>
 
 **Description**: Grants essential permissions for the AWS Private CA Connector for Kubernetes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Inp
 ---
 
 # InputArtifact
-<a name="API_InputArtifact"></a>
 
 Represents information about an artifact to be worked on, such as a test or build artifact.
 

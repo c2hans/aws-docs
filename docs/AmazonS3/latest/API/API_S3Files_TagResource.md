@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3Files_TagResou
 ---
 
 # TagResource
-<a name="API_S3Files_TagResource"></a>
 
 Creates tags for S3 Files resources using standard AWS tagging APIs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # AWS Artifact and AWS Organizations
-<a name="services-that-can-integrate-artifact"></a>
 
 AWS Artifact is a service that allows you to download AWS security compliance reports such as ISO and PCI reports. Using AWS Artifact, a user in the organization's management account can automatically accept agreements on behalf of all member accounts in an organization, even as new reports and accounts are added. Member account users can view and download agreements. For more information, see [Managing an agreement for multiple accounts in AWS Artifact](https://docs.aws.amazon.com/artifact/latest/ug/manage-org-agreement.html) in the *AWS Artifact User Guide*.
 

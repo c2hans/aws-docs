@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonS3OutpostsReadOnlyAccess
-<a name="AmazonS3OutpostsReadOnlyAccess"></a>
 
 **Description**: Provides read only access to Amazon S3 on Outposts via the AWS Management Console.
 

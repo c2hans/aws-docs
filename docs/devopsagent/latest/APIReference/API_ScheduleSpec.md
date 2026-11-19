@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Sche
 ---
 
 # ScheduleSpec
-<a name="API_ScheduleSpec"></a>
 
 Structured schedule specification. Select exactly one schedule form.
 

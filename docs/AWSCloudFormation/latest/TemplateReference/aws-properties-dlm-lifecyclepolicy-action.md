@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DLM::LifecyclePolicy Action
-<a name="aws-properties-dlm-lifecyclepolicy-action"></a>
 
 **[Event-based policies only]** Specifies an action for an event-based policy.
 

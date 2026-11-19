@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Deploy the solution
-<a name="deploy-the-solution"></a>
 
 This solution uses [AWS CDK and stacks](https://docs.aws.amazon.com/cdk/v2/guide/home.html) to automate its deployment. The CDK code specifies the AWS resources included in this solution and their properties. The CDK stack provisions the resources that are described in the template.
 

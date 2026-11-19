@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::MediaLive::Channel MediaPackageV2GroupSettings
-<a name="aws-properties-medialive-channel-mediapackagev2groupsettings"></a>
 
 Parameters that apply only if the destination parameter (for the output group) specifies a channel group and channel name. Use of these two parameters indicates that the output group is for MediaPackage V2 (CMAF Ingest).
 

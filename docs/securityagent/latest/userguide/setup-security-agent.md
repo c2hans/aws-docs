@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/setup-sec
 ---
 
 # Set up AWS Security Agent
-<a name="setup-security-agent"></a>
 
 Configure AWS Security Agent for your organization by creating your first Agent Space and establishing how users will access the web application.
 

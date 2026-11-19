@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_GetCompli
 ---
 
 # GetComplianceDetailsByResource
-<a name="API_GetComplianceDetailsByResource"></a>
 
 Returns the evaluation results for the specified AWS resource. The results indicate which AWS Config rules were used to evaluate the resource, when each rule was last invoked, and whether the resource complies with each rule.
 

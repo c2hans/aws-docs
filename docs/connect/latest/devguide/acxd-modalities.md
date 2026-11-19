@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-modalities.
 ---
 
 # Modalities
-<a name="acxd-modalities"></a>
 
 Define input/output schemas for different interaction channels. Modalities describe the structured data shapes your application can send and receive.
 

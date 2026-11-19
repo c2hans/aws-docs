@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListTask
 ---
 
 # ListTaskTemplates
-<a name="API_ListTaskTemplates"></a>
 
 Lists task templates for the specified Connect Customer instance.
 

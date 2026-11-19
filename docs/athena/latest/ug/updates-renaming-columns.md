@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/updates-renaming-column
 ---
 
 # Rename columns
-<a name="updates-renaming-columns"></a>
 
 You may want to rename columns in your tables to correct spelling, make column names more descriptive, or to reuse an existing column to avoid column reordering.
 

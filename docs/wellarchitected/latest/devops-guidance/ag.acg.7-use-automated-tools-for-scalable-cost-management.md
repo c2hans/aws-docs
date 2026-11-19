@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/a
 ---
 
 # [AG.ACG.7] Use automated tools for scalable cost management
-<a name="ag.acg.7-use-automated-tools-for-scalable-cost-management"></a>
 
  **Category:** RECOMMENDED
 

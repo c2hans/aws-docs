@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_DisassociateWo
 ---
 
 # DisassociateWorkspaceApplication
-<a name="API_DisassociateWorkspaceApplication"></a>
 
 Disassociates the specified application from a WorkSpace.
 

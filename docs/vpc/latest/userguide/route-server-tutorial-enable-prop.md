@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/route-server-tutori
 ---
 
 # Step 5: Enable route server propagation
-<a name="route-server-tutorial-enable-prop"></a>
 
 Complete this step to enable route server propagation.
 

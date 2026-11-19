@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSConfigRemediation-EnableCloudTrailEncryptionWithKMS`
-<a name="automation-aws-ctrail-kms"></a>
 
  **Description**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # InstanceBlockDeviceMapping
-<a name="API_devicemanagement_InstanceBlockDeviceMapping"></a>
 
 The description of a block device mapping.
 

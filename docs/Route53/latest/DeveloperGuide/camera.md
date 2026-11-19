@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/camera.htm
 ---
 
 # .camera
-<a name="camera"></a>
 
 Used by photography enthusiasts and anyone who wants to share photos.
 

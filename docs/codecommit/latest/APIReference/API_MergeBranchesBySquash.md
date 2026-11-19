@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Merge
 ---
 
 # MergeBranchesBySquash
-<a name="API_MergeBranchesBySquash"></a>
 
 Merges two branches using the squash merge strategy.
 

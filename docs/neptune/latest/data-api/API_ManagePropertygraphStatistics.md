@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_ManageProper
 ---
 
 # ManagePropertygraphStatistics
-<a name="API_ManagePropertygraphStatistics"></a>
 
 Manages the generation and use of property graph statistics.
 

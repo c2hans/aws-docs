@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_wafRegional_
 ---
 
 # GetXssMatchSet
-<a name="API_wafRegional_GetXssMatchSet"></a>
 
 **Note**
  AWS WAF Classic support will end on September 30, 2025.

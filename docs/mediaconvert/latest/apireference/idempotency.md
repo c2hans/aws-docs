@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/idempot
 ---
 
 # Preventing duplicate jobs
-<a name="idempotency"></a>
 
 You can use *client request tokens* to ensure that a `create-job` API request completes only once. With these requests, if the original request completes successfully, subsequent requests have no additional effect. This is useful to prevent duplicate jobs from being created when you interact with the AWS Elemental MediaConvert API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/slow-query-logs
 ---
 
 # Using Amazon Neptune slow-query logging
-<a name="slow-query-logs"></a>
 
 Identifying, debugging and optimizing a slow-running query can be difficult. When Neptune's slow-query logging is enabled, attributes of all long-running queries are automatically logged to make this process easier.
 

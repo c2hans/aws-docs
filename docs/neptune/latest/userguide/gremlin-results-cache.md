@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-results
 ---
 
 # Caching query results in Amazon Neptune Gremlin
-<a name="gremlin-results-cache"></a>
 
 Amazon Neptune supports a results cache for Gremlin queries.
 

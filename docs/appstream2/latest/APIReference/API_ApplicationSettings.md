@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Appli
 ---
 
 # ApplicationSettings
-<a name="API_ApplicationSettings"></a>
 
 The persistent application settings for users of a stack.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/guidance-index-fac
 ---
 
 # Guidance for indexing faces in common scenarios
-<a name="guidance-index-faces"></a>
 
 The following is guidance for using `IndexFaces` in common scenarios.
 

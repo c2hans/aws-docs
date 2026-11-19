@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_CancelM
 ---
 
 # CancelMetadataGenerationRun
-<a name="API_CancelMetadataGenerationRun"></a>
 
 Cancels the metadata generation run.
 

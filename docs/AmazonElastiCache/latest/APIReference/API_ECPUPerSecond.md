@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ECPUPerSecond
-<a name="API_ECPUPerSecond"></a>
 
 The configuration for the number of ElastiCache Processing Units (ECPU) the cache can consume per second.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/oca-framewo
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## References
 <a name="references.f3515f2b-ed91-502e-84ae-2e040b37027e"></a>

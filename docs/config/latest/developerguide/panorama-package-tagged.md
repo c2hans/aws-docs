@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/panorama-pa
 ---
 
 # panorama-package-tagged
-<a name="panorama-package-tagged"></a>
 
 Checks if AWS Panorama package resources have tags. Optionally, required tag keys can be specified. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not check for tags starting with 'aws:'.
 

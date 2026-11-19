@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/aws-dev
 ---
 
 # Integrating Device Farm with a Gradle build system
-<a name="aws-device-farm-android-gradle-plugin"></a>
 
 The Device Farm Gradle plugin provides AWS Device Farm integration with the Gradle build system in Android Studio. For more information, see [Gradle](https://gradle.org).
 

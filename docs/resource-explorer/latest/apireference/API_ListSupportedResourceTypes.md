@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resource-explorer/latest/apireference/AP
 ---
 
 # ListSupportedResourceTypes
-<a name="API_ListSupportedResourceTypes"></a>
 
 Retrieves a list of all resource types currently supported by AWS Resource Explorer.
 

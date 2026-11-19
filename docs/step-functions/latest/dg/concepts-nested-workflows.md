@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/concepts-nested
 ---
 
 # Start workflow executions from a task state in Step Functions
-<a name="concepts-nested-workflows"></a>
 
 AWS Step Functions can start workflow executions directly from a `Task` state of a state machine. This allows you to break your workflows into smaller state machines, and to start executions of these other state machines. By starting these new workflow executions you can:
 + Separate higher level workflow from lower level, task-specific workflows.

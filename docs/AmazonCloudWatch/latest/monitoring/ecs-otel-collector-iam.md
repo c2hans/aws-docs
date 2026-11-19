@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ecs-o
 ---
 
 # Step 1: Grant the task role permission to publish metrics
-<a name="ecs-otel-collector-iam"></a>
 
 The collector signs requests to CloudWatch with the credentials of the task's IAM role (`taskRoleArn`), not the task execution role. Add the following policy to the task role.
 

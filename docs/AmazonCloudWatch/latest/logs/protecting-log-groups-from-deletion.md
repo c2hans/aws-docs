@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/protecting-
 ---
 
 # Protecting log groups from deletion
-<a name="protecting-log-groups-from-deletion"></a>
 
 ## Enabling deletion protection
 <a name="enabling-deletion-protection"></a>

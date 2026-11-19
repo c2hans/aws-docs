@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/run-inst
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # Run an Amazon EC2 Instance
-<a name="run-instance"></a>
 
 Use the following procedure to launch one or more identically configured EC2 instances from the same Amazon Machine Image (AMI). After you create your EC2 instances, you can check their status. After your EC2 instances are running, you can connect to them.
 

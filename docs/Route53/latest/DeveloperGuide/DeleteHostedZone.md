@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/DeleteHost
 ---
 
 # Deleting a public hosted zone
-<a name="DeleteHostedZone"></a>
 
 This section explains how to delete a public hosted zone using the Amazon Route 53 console.
 

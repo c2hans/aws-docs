@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/data-types-timestamps.h
 ---
 
 # Work with timestamp data
-<a name="data-types-timestamps"></a>
 
 This section describes some considerations for working with timestamp data in Athena.
 

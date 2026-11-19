@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # How to perform a major version upgrade for RDS for PostgreSQL
-<a name="USER_UpgradeDBInstance.PostgreSQL.MajorVersion.Process"></a>
 
 We recommend the following process when performing a major version upgrade on an Amazon RDS for PostgreSQL database:
 

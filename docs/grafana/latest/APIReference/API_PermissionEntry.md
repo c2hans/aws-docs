@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_Permissi
 ---
 
 # PermissionEntry
-<a name="API_PermissionEntry"></a>
 
 A structure containing the identity of one user or group and the `Admin`, `Editor`, or `Viewer` role that they have.
 

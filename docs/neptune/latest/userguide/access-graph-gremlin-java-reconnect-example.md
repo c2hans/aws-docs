@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-gr
 ---
 
 # Java example of connecting to a Neptune DB instance with re-connect logic
-<a name="access-graph-gremlin-java-reconnect-example"></a>
 
 The following Java example demonstrates how to connect to the Gremlin client with reconnect logic to recover from an unexpected disconnect.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/reference-
 ---
 
 # Variables reference
-<a name="reference-variables"></a>
 
 This section is a reference only. For information about creating variables, see [Working with variables](actions-variables.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # CreditDetails
-<a name="API_benefits_CreditDetails"></a>
 
 Contains information about credit-based benefit fulfillment, including AWS promotional credits.
 

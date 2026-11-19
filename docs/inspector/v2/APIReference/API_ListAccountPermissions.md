@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ListAccoun
 ---
 
 # ListAccountPermissions
-<a name="API_ListAccountPermissions"></a>
 
  Lists the permissions an account has to configure Amazon Inspector. If the account is a member account or standalone account with resources managed by an AWS Organizations policy, the operation returns fewer permissions.
 

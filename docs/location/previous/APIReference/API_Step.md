@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_Step.
 ---
 
 # Step
-<a name="API_Step"></a>
 
  Represents an element of a leg within a route. A step contains instructions for how to move to the next step in the leg.
 

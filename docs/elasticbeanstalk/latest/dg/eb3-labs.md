@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-labs.html
 ---
 
 # **eb labs**
-<a name="eb3-labs"></a>
 
 ## Description
 <a name="eb3-labsdescription"></a>

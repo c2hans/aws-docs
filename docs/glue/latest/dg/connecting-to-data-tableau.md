@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-tablea
 ---
 
 # Connecting to Tableau in AWS Glue Studio
-<a name="connecting-to-data-tableau"></a>
 
 Tableau Cloud (and Tableau Server) is a business-intelligence / analytics content platform. Because you are a Tableau user, you can connect AWS Glue to your Tableau account. You can then use Tableau as a data source in your AWS Glue ETL jobs to transfer data between Tableau and AWS services or other supported applications.
 

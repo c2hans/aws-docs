@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Upd
 ---
 
 # UpdateSpace
-<a name="API_UpdateSpace"></a>
 
 Changes one or more values for a space.
 

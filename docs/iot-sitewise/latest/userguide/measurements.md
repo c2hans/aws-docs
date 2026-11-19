@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/measuremen
 ---
 
 # Define data streams from equipment (measurements)
-<a name="measurements"></a>
 
 A *measurement* represents a device's raw sensor data stream, such as timestamped temperature values or timestamped rotations per minute (RPM) values.
 

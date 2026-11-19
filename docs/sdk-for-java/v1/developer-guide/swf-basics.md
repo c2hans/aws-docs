@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/swf-basi
 The AWS SDK for Java 1.x reached end-of-support on December 31, 2025. We recommend that you migrate to the [AWS SDK for Java 2.x](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html) to continue receiving new features, availability improvements, and security updates.
 
 # SWF basics
-<a name="swf-basics"></a>
 
 These are general patterns for working with Amazon SWF using the AWS SDK for Java. It is meant primarily for reference. For a more complete introductory tutorial, see [Building a Simple Amazon SWF Application](swf-hello.md).
 

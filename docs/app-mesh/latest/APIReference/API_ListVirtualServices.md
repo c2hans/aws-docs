@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVir
 ---
 
 # ListVirtualServices
-<a name="API_ListVirtualServices"></a>
 
 Returns a list of existing virtual services in a service mesh.
 

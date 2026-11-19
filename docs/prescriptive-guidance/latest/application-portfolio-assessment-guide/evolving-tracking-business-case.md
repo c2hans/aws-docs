@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Evolving and tracking the business case
-<a name="evolving-tracking-business-case"></a>
 
 As the migration proceeds, especially for long-running programs, it is inevitable that business pressures will cause migration and modernization priorities to be regularly re-examined.
 

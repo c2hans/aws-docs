@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # .NET
-<a name="net-main"></a>
 
 Developing and deploying .NET applications is key to helping you achieve the scale and agility of cloud computing. For many legacy .NET applications, the most suitable compute choice for running applications in AWS is using virtual machines, either through AWS Elastic Beanstalk or Amazon Elastic Compute Cloud (Amazon EC2). You can also run .NET applications in Windows and Linux containers.
 

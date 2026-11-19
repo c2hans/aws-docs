@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/multi-az.html
 ---
 
 # Use zonal shift and zonal autoshift to recover applications in ARC
-<a name="multi-az"></a>
 
 This section explains how to use capabilities in Amazon Application Recovery Controller (ARC) to reliably recover your AWS resource from an issue in an impaired Availability Zone (AZ). Zonal shift and zonal autoshift temporarily shift the traffic for a supported resource away from an impaired AZ, which reduces time to recovery for your applications.
 

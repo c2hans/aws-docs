@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListImpor
 ---
 
 # ListImportJobs
-<a name="API_ListImportJobs"></a>
 
 Lists all of the import jobs.
 

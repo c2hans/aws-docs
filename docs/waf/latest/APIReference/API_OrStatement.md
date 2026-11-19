@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_OrStatement.
 ---
 
 # OrStatement
-<a name="API_OrStatement"></a>
 
 A logical rule statement used to combine other rule statements with OR logic. You provide more than one [Statement](API_Statement.md) within the `OrStatement`.
 

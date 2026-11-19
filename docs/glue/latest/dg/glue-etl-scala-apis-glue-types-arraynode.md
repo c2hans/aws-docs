@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-etl-scala-apis-glue-
 ---
 
 # AWS Glue Scala ArrayNode APIs
-<a name="glue-etl-scala-apis-glue-types-arraynode"></a>
 
 **Package: com.amazonaws.services.glue.types**
 

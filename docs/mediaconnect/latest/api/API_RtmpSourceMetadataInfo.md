@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RtmpSourceMe
 ---
 
 # RtmpSourceMetadataInfo
-<a name="API_RtmpSourceMetadataInfo"></a>
 
 Information about the RTMP (Real-Time Messaging Protocol) source. This includes the application name, the stream name, and metadata about the audio and video streams.
 

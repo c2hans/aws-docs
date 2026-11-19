@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_I
 ---
 
 # IngressIsInAddressList
-<a name="API_IngressIsInAddressList"></a>
 
 The address lists and the address list attribute value that is evaluated in a policy statement's conditional expression to either deny or block the incoming email.
 

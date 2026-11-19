@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_EbsVol
 ---
 
 # EbsVolumeDetails
-<a name="API_EbsVolumeDetails"></a>
 
 Contains list of scanned and skipped EBS volumes with details.
 

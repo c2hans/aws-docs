@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RetentionConfigur
 ---
 
 # RetentionConfiguration
-<a name="API_RetentionConfiguration"></a>
 
 The configuration for a snapshot retention optimizer.
 

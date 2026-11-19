@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-free-tier-us
 ---
 
 # Track your Free Tier usage for Amazon EC2
-<a name="ec2-free-tier-usage"></a>
 
 When you create your AWS account, you can get started with Amazon EC2 for free using the [AWS Free Tier](https://aws.amazon.com/free). Your Free Tier benefits are different depending on whether you created your account before July 15, 2025, or on or after July 15, 2025. For more information, see [Explore AWS services with AWS Free Tier](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html) in the *AWS Billing User Guide*.
 

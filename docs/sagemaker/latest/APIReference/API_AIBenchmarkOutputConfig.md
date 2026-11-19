@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIBenc
 ---
 
 # AIBenchmarkOutputConfig
-<a name="API_AIBenchmarkOutputConfig"></a>
 
 The output configuration for an AI benchmark job.
 

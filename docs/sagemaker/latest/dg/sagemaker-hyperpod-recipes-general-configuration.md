@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # General configuration
-<a name="sagemaker-hyperpod-recipes-general-configuration"></a>
 
 The config.yaml file specifies the training recipe and the cluster. It also includes runtime configurations such as environment variables for the training job.
 

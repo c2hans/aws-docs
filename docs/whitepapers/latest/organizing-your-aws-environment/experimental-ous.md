@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-e
 ---
 
 # Experimental OUs
-<a name="experimental-ous"></a>
 
 ## Sandbox OU
 <a name="sandbox-ou"></a>

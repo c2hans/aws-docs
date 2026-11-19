@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/examples.html
 ---
 
 # Examples of implementing use cases
-<a name="examples"></a>
 
 The following examples describe how to implement the use cases from [Typical scenarios](typical-scenarios.md).
 

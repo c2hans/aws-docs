@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # GetMediaPipeline
-<a name="API_media-pipelines-chime_GetMediaPipeline"></a>
 
 Gets an existing media pipeline.
 

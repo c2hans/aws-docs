@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/benchmark_procedure
 ---
 
 # Benchmark Amazon EBS volumes
-<a name="benchmark_procedures"></a>
 
 You can test the performance of Amazon EBS volumes by simulating I/O workloads. The process is as follows:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/setup-awscli-sdk.h
 ---
 
 # Step 2: Set up the AWS CLI and AWS SDKs
-<a name="setup-awscli-sdk"></a>
 
 **Topics**
 + [Grant programmatic access](sdk-programmatic-access.md)

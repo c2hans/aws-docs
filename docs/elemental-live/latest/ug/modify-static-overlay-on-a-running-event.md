@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/modify-static-o
 ---
 
 # Modify static overlay on a running event
-<a name="modify-static-overlay-on-a-running-event"></a>
 
 In a running event, you can use the REST API to add more static overlays, modify the behavior of an existing static overlay, or delete an existing static overlay.
 

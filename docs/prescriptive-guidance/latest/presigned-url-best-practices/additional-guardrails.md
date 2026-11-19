@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/presigned-u
 ---
 
 # Additional guardrails
-<a name="additional-guardrails"></a>
 
 When solution builders and users follow best practices for presigned requests, the requests provide a mechanism for giving users access to data. In addition, the ability to generate presigned requests doesn't give principals access that they didn't already have.
 

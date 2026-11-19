@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/application-auto-
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Use `RegisterScalableTarget` with an AWS SDK or CLI
-<a name="application-auto-scaling_example_application-auto-scaling_RegisterScalableTarget_section"></a>
 
 The following code examples show how to use `RegisterScalableTarget`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Insight
 ---
 
 # InsightResultValue
-<a name="API_InsightResultValue"></a>
 
 The insight result values returned by the `GetInsightResults` operation.
 

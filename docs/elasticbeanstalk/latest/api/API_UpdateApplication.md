@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_UpdateAp
 ---
 
 # UpdateApplication
-<a name="API_UpdateApplication"></a>
 
 Updates the specified application to have the specified properties.
 

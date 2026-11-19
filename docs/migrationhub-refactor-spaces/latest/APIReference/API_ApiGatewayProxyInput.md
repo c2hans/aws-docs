@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # ApiGatewayProxyInput
-<a name="API_ApiGatewayProxyInput"></a>
 
 A wrapper object holding the Amazon API Gateway endpoint input.
 

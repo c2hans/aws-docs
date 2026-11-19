@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments-
 ---
 
 # Specify information about a revision stored in a GitHub repository
-<a name="deployments-create-console-github"></a>
 
 If you are following the steps in [Create an EC2/On-Premises Compute Platform deployment (console)](deployments-create-console.md), follow these steps to add details about an application revision stored in a GitHub repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/backup-
 ---
 
 # Batch Upload Files to Amazon S3 Using the AWS CLI
-<a name="backup-to-s3-cli"></a>
 
 |  |  |
 | --- |--- |

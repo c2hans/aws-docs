@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/Wel
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Amazon CloudWatch enables you to publish, monitor, and manage various metrics, as well as configure alarm actions based on data from metrics. This guide provides detailed information about CloudWatch actions, data types, parameters, and errors. For more information about CloudWatch features, see [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) and the *Amazon CloudWatch User Guide*.
 
@@ -39,4 +38,4 @@ Developers in the Amazon Web Services developer community also provide their own
 
  [Windows and .NET Developer Center](http://aws.amazon.com/net/)
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

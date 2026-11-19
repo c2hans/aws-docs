@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/creating-data-rep
 ---
 
 # Creating a data repository task
-<a name="creating-data-repo-task"></a>
 
 You can create a data repository task by using the Amazon FSx console, CLI, or API. After you create a task, you can view the task's progress and status by using the console, CLI, or API.
 

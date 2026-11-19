@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_D
 ---
 
 # DescribeAppVersionResource
-<a name="API_DescribeAppVersionResource"></a>
 
 Describes a resource of the AWS Resilience Hub application.
 

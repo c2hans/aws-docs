@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cr
 ---
 
 # Create a RACI or RASCI matrix for a cloud operating model
-<a name="create-a-raci-or-rasci-matrix-for-a-cloud-operating-model"></a>
 
 *Teddy Germade, Jerome Descreux, Florian Leroux, and Josselin LE MINEUR, Amazon Web Services*
 

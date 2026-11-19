@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Identifying the execution that created patch compliance data
-<a name="patch-manager-compliance-data-overwrites"></a>
 
 Patch compliance data represents a point-in-time snapshot from the latest successful patching operation. Each compliance report includes both an execution ID and a capture time that help you identify which operation created the compliance data and when it was generated.
 

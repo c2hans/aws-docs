@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/expression
 ---
 
 # Use functions in formula expressions
-<a name="expression-functions"></a>
 
 You can use the following functions to operate on data in your formula expressions.
 

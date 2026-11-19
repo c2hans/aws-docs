@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::ResourceMetricsConfiguration
-<a name="aws-resource-cloudwatch-resourcemetricsconfiguration"></a>
 
 Turns on CloudWatch detailed monitoring for an individual AWS resource. Also defines which detailed metrics CloudWatch collects for it. Detailed monitoring provides higher-resolution OpenTelemetry metrics for supported resources.
 

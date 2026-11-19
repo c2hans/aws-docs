@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/supported-formats-hl
 ---
 
 # Captions formats supported in HLS or MediaPackage outputs
-<a name="supported-formats-hls-output"></a>
 
 In this table, look up your input container and captions type. Then read across to find the caption formats that are supported in MediaLive when you have this input container and captions type, and produce these outputs:
 + HLS output

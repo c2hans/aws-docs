@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_Route53
 ---
 
 # Route53ResourceRecordSet
-<a name="API_Route53ResourceRecordSet"></a>
 
 The Amazon Route 53 record set.
 

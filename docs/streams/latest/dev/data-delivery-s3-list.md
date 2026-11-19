@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/streams/latest/dev/data-delivery-s3-list
 ---
 
 # List Amazon S3 deliveries
-<a name="data-delivery-s3-list"></a>
 
  List the deliveries in your account, optionally filtered to the deliveries attached to a specific stream. Use this to find deliveries before deleting a stream, or to audit the deliveries configured in a AWS Region.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/vpc-add-on-create.h
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Create the Amazon VPC CNI (Amazon EKS add-on)
-<a name="vpc-add-on-create"></a>
 
 Use the following steps to create the Amazon VPC CNI plugin for Kubernetes Amazon EKS add-on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/linux-agent.html
 ---
 
 # Installing the AWS Replication Agent on Linux servers
-<a name="linux-agent"></a>
 
 Complete these steps to install the AWS Replication Agent on Linux source servers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_GetReferenceImportJ
 ---
 
 # GetReferenceImportJob
-<a name="API_GetReferenceImportJob"></a>
 
 Monitors the status of a reference import job. This operation can be called after calling the `StartReferenceImportJob` operation.
 

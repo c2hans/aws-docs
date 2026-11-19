@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Subscri
 ---
 
 # SubscribedUserInput
-<a name="API_SubscribedUserInput"></a>
 
 The subscribed user.
 

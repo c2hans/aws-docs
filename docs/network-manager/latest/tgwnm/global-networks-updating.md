@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/global-netw
 ---
 
 # Update a global network using AWS Network Manager
-<a name="global-networks-updating"></a>
 
 Update a global network by modifying the description or tags.
 

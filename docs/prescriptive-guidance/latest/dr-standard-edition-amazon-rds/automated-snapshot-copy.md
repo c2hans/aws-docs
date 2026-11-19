@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard
 ---
 
 # Automated snapshots using AWS Backup
-<a name="automated-snapshot-copy"></a>
 
 [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html) centralizes and automates data protection across AWS services. AWS Backup is a fully managed, policy-based service for data protection at scale. The service is ideal for use cases such as regulatory compliance obligations, business policies for data protection, and business continuity goals.
 

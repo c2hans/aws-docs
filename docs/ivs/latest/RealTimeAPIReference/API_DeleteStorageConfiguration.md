@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Dele
 ---
 
 # DeleteStorageConfiguration
-<a name="API_DeleteStorageConfiguration"></a>
 
 Deletes the storage configuration for the specified ARN.
 

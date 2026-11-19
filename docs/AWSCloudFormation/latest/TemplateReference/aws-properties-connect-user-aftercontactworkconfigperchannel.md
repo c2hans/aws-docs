@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Connect::User AfterContactWorkConfigPerChannel
-<a name="aws-properties-connect-user-aftercontactworkconfigperchannel"></a>
 
 Configuration settings for after contact work (ACW) timeout for a specific channel.
 

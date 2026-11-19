@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # EvaluatorSummary
-<a name="API_EvaluatorSummary"></a>
 
  The summary information about an evaluator, including basic metadata and status information.
 

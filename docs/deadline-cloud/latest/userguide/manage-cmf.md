@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/manage-c
 ---
 
 # Customer-managed fleets
-<a name="manage-cmf"></a>
 
 When you want to use a fleet of workers that you manage, you can create a customer-managed fleet (CMF) that Deadline Cloud uses to process your jobs. Use a CMF when:
 + You have existing on-premises workers to integrate with Deadline Cloud.

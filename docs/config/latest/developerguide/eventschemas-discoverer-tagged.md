@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/eventschema
 ---
 
 # eventschemas-discoverer-tagged
-<a name="eventschemas-discoverer-tagged"></a>
 
 Checks if AWS EventSchemas discoverer resources have tags. Optionally, required tag keys can be specified. The rule is NON\_COMPLIANT if there are no tags or if the specified tag keys are not present. The rule does not consider tags starting with `aws:`.
 

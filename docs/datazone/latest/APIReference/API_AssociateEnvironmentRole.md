@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Associa
 ---
 
 # AssociateEnvironmentRole
-<a name="API_AssociateEnvironmentRole"></a>
 
 Associates the environment role in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheMetrics
 ---
 
 # Metrics for Valkey and Redis OSS
-<a name="CacheMetrics.Redis"></a>
 
 The `AWS/ElastiCache` namespace includes the following Valkey and Redis OSS metrics. These metrics are the same when using the Valkey engine.
 

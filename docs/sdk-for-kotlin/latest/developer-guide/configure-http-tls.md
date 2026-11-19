@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/co
 ---
 
 # Enforce a minimum TLS version
-<a name="configure-http-tls"></a>
 
 With the AWS SDK for Kotlin, you can configure the minimum TLS version when you connect to service endpoints. The SDK offers different configuration options. In order of highest to lowest precedence, the options are:
 + Explicitly configure the HTTP engine

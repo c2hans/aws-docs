@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Wor
 ---
 
 # Verifying the Domain
-<a name="WorkingWithDomainsList"></a>
 
 The following is an example of listing domains using REST.
 

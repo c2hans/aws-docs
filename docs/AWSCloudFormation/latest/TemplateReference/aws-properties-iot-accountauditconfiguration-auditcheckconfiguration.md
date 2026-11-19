@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::AccountAuditConfiguration AuditCheckConfiguration
-<a name="aws-properties-iot-accountauditconfiguration-auditcheckconfiguration"></a>
 
 Which audit checks are enabled and disabled for this account.
 

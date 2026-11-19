@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/opensearch-manual-
 ---
 
 # Manually installing the Amazon Personalize Search Ranking plugin on an existing OpenSearch cluster
-<a name="opensearch-manual-install"></a>
 
 If you already have an OpenSearch cluster, you can manually install the plugin on your cluster directly from the OpenSearch GitHub repository.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-ap
 ---
 
 # Enabling the Amazon RDS Data API
-<a name="data-api.enabling"></a>
 
 To use the Amazon RDS Data API (Data API), enable it for your Aurora DB cluster. You can enable Data API when you create or modify the DB cluster.
 

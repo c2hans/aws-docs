@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_T
 ---
 
 # Tape
-<a name="API_Tape"></a>
 
 Describes a virtual tape object.
 

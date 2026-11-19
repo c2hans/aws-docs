@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Dyna
 ---
 
 # DynamoDBReplicationServiceRolePolicy
-<a name="DynamoDBReplicationServiceRolePolicy"></a>
 
 **Description**: Permissions required by DynamoDB for cross-region data replication
 

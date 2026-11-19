@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/developerguide/swf-dev-
 ---
 
 # Workflow execution closure in Amazon SWF
-<a name="swf-dev-workflow-exec-closure"></a>
 
 Once you start a workflow execution, it is *open*. An open workflow execution could be closed as completed, canceled, failed, or timed out. It could also be continued as a new execution, or it could be terminated. A workflow execution could be closed by the decider, by the person administering the workflow, or by Amazon SWF.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Con
 ---
 
 # ConfigurationErrorDetails
-<a name="API_ConfigurationErrorDetails"></a>
 
 Contains the details of an AWS IoT SiteWise configuration error.
 

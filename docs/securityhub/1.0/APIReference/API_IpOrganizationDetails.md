@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_IpOrgan
 ---
 
 # IpOrganizationDetails
-<a name="API_IpOrganizationDetails"></a>
 
 Provides information about an internet provider.
 

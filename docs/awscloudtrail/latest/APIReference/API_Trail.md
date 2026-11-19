@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_Tr
 ---
 
 # Trail
-<a name="API_Trail"></a>
 
 The settings for a trail.
 

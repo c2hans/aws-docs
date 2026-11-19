@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/docdb-lts-rel
 ---
 
 # Using a long-term support (LTS) release
-<a name="docdb-lts-release"></a>
 
 Amazon DocumentDB designates certain versions as Long-Term Support (LTS) releases. Database clusters that use LTS can stay on the same version longer and undergo fewer upgrade cycles than clusters that use non-LTS releases. LTS versions will be patched only in the event of critical stability and security patches without introducing new features. Additional optional patches may be released such as metrics to debug critical failures. These will be cumulatively applied with required patches.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BatchModi
 ---
 
 # BatchModifyIpamRoutingPolicyRegistrations
-<a name="API_BatchModifyIpamRoutingPolicyRegistrations"></a>
 
 Modifies multiple routing policy registrations in a single operation. You can create, update, or delete Route Origin Authorizations (ROAs) in batch.
 

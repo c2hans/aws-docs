@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/fine-tuning-ope
 ---
 
 # Create and manage fine-tuning jobs for open-weight models using OpenAI APIs
-<a name="fine-tuning-openai-job-create"></a>
 
 The OpenAI-compatible fine-tuning job APIs allow you to create, monitor, and manage fine-tuning jobs. This page highlights using these APIs for reinforcement fine-tuning. For complete API details, see the [OpenAI Fine-tuning documentation](https://platform.openai.com/docs/api-reference/fine-tuning).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2N
 ---
 
 # AwsEc2NetworkInterfaceIpV6AddressDetail
-<a name="API_AwsEc2NetworkInterfaceIpV6AddressDetail"></a>
 
 Provides information about an IPV6 address that is associated with the network interface.
 

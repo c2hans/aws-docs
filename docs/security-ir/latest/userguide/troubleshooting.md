@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/troubleshoo
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
  When you experience issues related to performing an action specific to AWS Security Incident Response, consult the topics in this section.
 

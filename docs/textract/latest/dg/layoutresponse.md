@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/layoutresponse.html
 ---
 
 # Layout Response Objects
-<a name="layoutresponse"></a>
 
 When using Layout on a document with Amazon Textract, the different layout elements are returned as a BlockType in the Block object. These elements correspond to the different portions of the layout, and are:
 + Title — The main title of the document. Returned as `LAYOUT_TITLE`.

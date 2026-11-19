@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Referenc
 ---
 
 # ReferenceSummary
-<a name="API_ReferenceSummary"></a>
 
 Contains summary information about a reference. `ReferenceSummary` contains only one non null field between the URL and attachment based on the reference type.
 

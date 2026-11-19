@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/userguide/device-management-n
 To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
 
 # Manage Neuron devices on Amazon EKS
-<a name="device-management-neuron"></a>
 
  AWS Trainium and AWS Inferentia are purpose-built machine learning chips designed by AWS. Amazon EKS supports two mechanisms for managing Neuron devices in EKS clusters: the *Neuron DRA driver* and the *Neuron Kubernetes device plugin*.
 

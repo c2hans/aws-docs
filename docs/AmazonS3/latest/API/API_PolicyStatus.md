@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_PolicyStatus.htm
 ---
 
 # PolicyStatus
-<a name="API_PolicyStatus"></a>
 
 The container element for a bucket's policy status.
 

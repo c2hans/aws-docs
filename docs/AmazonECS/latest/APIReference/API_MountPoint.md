@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_MountP
 ---
 
 # MountPoint
-<a name="API_MountPoint"></a>
 
 The details for a volume mount point that's used in a container definition.
 

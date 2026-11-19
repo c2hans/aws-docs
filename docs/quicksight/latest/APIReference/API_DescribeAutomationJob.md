@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Descr
 ---
 
 # DescribeAutomationJob
-<a name="API_DescribeAutomationJob"></a>
 
 Retrieves the status and details of a specified automation job, including its status and outputs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANDeviceProfile
-<a name="API_LoRaWANDeviceProfile"></a>
 
 LoRaWANDeviceProfile object.
 

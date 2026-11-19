@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/ug/network-packages.html
 ---
 
 # Network packages for AWS TNB
-<a name="network-packages"></a>
 
 A network package is a .zip file in CSAR (Cloud Service Archive) format. It defines the function packages you want to deploy and the AWS infrastructure you want to deploy them on.​
 

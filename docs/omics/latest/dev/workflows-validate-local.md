@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-validate-loca
 ---
 
 # Validating workflow definitions locally
-<a name="workflows-validate-local"></a>
 
 You can validate a workflow definition with the workflow language's own tooling before you call `CreateWorkflow` or `CreateWorkflowVersion`. It catches problems such as syntax errors and references that don't resolve.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Electric Vehicle Charging Station Management System
-<a name="electric-vehicle-charging-station-management-software"></a>
 
 Publication date: **June 4, 2024 ([Diagram history](diagram-history.md))**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSH
 ---
 
 # AWSHealthFullAccess
-<a name="AWSHealthFullAccess"></a>
 
 **Description**: Allows full access to the AWS Health Apis and Notifications and the Personal Health Dashboard
 

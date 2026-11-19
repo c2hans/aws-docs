@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_RowLe
 ---
 
 # RowLevelPermissionConfiguration
-<a name="API_RowLevelPermissionConfiguration"></a>
 
 Configuration for row level security.
 

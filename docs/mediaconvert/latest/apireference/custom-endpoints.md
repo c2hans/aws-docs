@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/apireference/custom-
 ---
 
 # Getting Started with AWS Elemental MediaConvert Using the AWS SDKs or the AWS CLI
-<a name="custom-endpoints"></a>
 
 To get started with AWS Elemental MediaConvert using one of the AWS SDKS or the AWS Command Line Interface (AWS CLI), follow this general procedure.
 

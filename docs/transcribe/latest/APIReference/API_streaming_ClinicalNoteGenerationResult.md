@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/APIReference/API_strea
 ---
 
 # ClinicalNoteGenerationResult
-<a name="API_streaming_ClinicalNoteGenerationResult"></a>
 
 The details for clinical note generation, including status, and output locations for clinical note and aggregated transcript if the analytics completed, or failure reason if the analytics failed.
 

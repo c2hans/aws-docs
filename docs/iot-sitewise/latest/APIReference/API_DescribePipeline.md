@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribePipeline
-<a name="API_DescribePipeline"></a>
 
 Retrieves detailed information about a specific pipeline in a workspace.
 

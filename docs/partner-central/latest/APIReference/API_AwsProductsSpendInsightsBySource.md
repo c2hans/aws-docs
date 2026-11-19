@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AwsProductsSpendInsightsBySource
-<a name="API_AwsProductsSpendInsightsBySource"></a>
 
 Source-separated spend insights that provide independent analysis for AWS recommendations and partner estimates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/integrate
 ---
 
 # Integrate application with Connect Customer agent workspace agent data
-<a name="integrate-with-agent-data"></a>
 
 To integrate your application with agent data from the Connect Customer agent workspace, instantiate the agent client as follows:
 

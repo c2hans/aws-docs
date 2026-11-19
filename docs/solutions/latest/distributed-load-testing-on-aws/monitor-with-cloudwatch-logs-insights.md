@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # Monitor with CloudWatch Logs Insights
-<a name="monitor-with-cloudwatch-logs-insights"></a>
 
 This solution deploys four CloudWatch Logs Insights saved queries that appear in the [CloudWatch Logs Insights console](https://console.aws.amazon.com/cloudwatch/home#logsV2:logs-insights) under **Saved queries**. These queries provide visibility into test orchestration, errors, task failures, and orphan cleanup without requiring you to write custom queries.
 

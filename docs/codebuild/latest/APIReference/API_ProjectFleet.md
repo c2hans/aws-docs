@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Projec
 ---
 
 # ProjectFleet
-<a name="API_ProjectFleet"></a>
 
 Information about the compute fleet of the build project. For more information, see [Working with reserved capacity in AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/fleets.html).
 

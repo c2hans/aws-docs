@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # CacheParameterGroup
-<a name="API_CacheParameterGroup"></a>
 
 Represents the output of a `CreateCacheParameterGroup` operation.
 

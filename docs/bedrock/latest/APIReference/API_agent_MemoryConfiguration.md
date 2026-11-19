@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Me
 ---
 
 # MemoryConfiguration
-<a name="API_agent_MemoryConfiguration"></a>
 
 Details of the memory configuration.
 

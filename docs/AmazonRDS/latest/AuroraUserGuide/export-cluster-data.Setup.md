@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/export-
 ---
 
 # Setting up access to an Amazon S3 bucket
-<a name="export-cluster-data.Setup"></a>
 
 You identify the Amazon S3 bucket, then you give the DB cluster export task permission to access it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_WorkspaceConne
 ---
 
 # WorkspaceConnectionStatus
-<a name="API_WorkspaceConnectionStatus"></a>
 
 Describes the connection status of a WorkSpace.
 

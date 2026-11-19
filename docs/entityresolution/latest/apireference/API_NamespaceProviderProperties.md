@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # NamespaceProviderProperties
-<a name="API_NamespaceProviderProperties"></a>
 
 An object containing `providerConfiguration` and `providerServiceArn`.
 

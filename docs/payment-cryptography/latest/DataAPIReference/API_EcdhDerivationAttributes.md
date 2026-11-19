@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # EcdhDerivationAttributes
-<a name="API_EcdhDerivationAttributes"></a>
 
 Parameters required to establish ECDH based key exchange.
 

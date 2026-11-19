@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_Serverless
 ---
 
 # ServerlessFunctionMetadata
-<a name="API_ServerlessFunctionMetadata"></a>
 
 Contains metadata about a serverless function associated with a covered resource.
 

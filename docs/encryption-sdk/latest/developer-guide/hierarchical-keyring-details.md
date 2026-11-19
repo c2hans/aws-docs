@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/hi
 ---
 
 # AWS KMS Hierarchical keyring technical details
-<a name="hierarchical-keyring-details"></a>
 
 The [AWS KMS Hierarchical keyring](use-hierarchical-keyring.md) uses a unqiue data key to encrypt each message and encrypts each data key with a unique wrapping key derived from an active branch key. It uses a [key derivation](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-108r1.pdf) in counter mode with a pseudorandom function with HMAC SHA-256 to derive the 32 byte wrapping key with the following inputs.
 + A 16 byte random salt

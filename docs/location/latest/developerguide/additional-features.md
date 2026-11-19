@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/additiona
 ---
 
 # Additional features
-<a name="additional-features"></a>
 
 This section provides an overview of additional features supported by the Place APIs. These features provide additional location information by including requested details such as contact information, accessibility, and phonemes. You need to request additional feature by adding `AdditionalFeatures: [ <Value1>, <Value 2>, ..]` in your request payload.
 

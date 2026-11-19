@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_IntentClas
 ---
 
 # IntentClassificationTestResults
-<a name="API_IntentClassificationTestResults"></a>
 
 Information for the results of the intent classification test.
 

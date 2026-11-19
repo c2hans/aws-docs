@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/reso
 ---
 
 # Global parameters
-<a name="resource-type-cli-global-parameters"></a>
 
 The following parameters can be used with any CloudFormation CLI command.
 

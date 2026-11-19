@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Migrate phase
-<a name="migrate"></a>
 
 ![https://1a9zxhkqsj.execute-api.us-west-2.amazonaws.com/v1/contents/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/a5d99701-2f4f-41e5-878f-3c0a1fc8c12d.png](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-migration/images/guide-img/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/edbcb404-53d9-4165-89b2-318d883f3e3d.png)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-Creat
 ---
 
 # CreateCertificateAuthority
-<a name="JavaApi-CreatePrivateCertificateAuthority"></a>
 
 The following Java sample shows how to use the [CreateCerticateAuthority](https://docs.aws.amazon.com/privateca/latest/APIReference/API_CreateCertificateAuthority.html) operation.
 

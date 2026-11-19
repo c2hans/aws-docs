@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/third-ca-tople
 ---
 
 # Configure Windows Server as a certificate authority (CA) with AWS CloudHSM
-<a name="third-ca-toplevel"></a>
 
 AWS CloudHSM offers support to configure Windows Server as a certificate authority (CA) through Client SDK 3 and Client SDK 5. The steps to use these tools will vary depending on the version of the client SDK in which you currently have downloaded. The following sections provide information to each SDK.
 

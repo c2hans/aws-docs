@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedQuerySummary
-<a name="API_ProtectedQuerySummary"></a>
 
 The protected query summary for the objects listed by the request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/example_iot_De
 ---
 
 # Use `DeleteThing` with an AWS SDK or CLI
-<a name="example_iot_DeleteThing_section"></a>
 
 The following code examples show how to use `DeleteThing`.
 

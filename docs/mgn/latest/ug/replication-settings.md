@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/replication-settings.html
 ---
 
 # Edit replication settings for a source server
-<a name="replication-settings"></a>
 
 The **Replication settings** tab allows you to edit the replication settings for an individual source server.
 

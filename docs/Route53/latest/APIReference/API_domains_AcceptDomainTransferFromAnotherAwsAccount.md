@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # AcceptDomainTransferFromAnotherAwsAccount
-<a name="API_domains_AcceptDomainTransferFromAnotherAwsAccount"></a>
 
 Accepts the transfer of a domain from another AWS account to the currentAWS account. You initiate a transfer between AWS accounts using [TransferDomainToAnotherAwsAccount](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_TransferDomainToAnotherAwsAccount.html).
 

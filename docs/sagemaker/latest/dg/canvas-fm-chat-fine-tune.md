@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-fm-chat-fine-
 ---
 
 # Fine-tune foundation models
-<a name="canvas-fm-chat-fine-tune"></a>
 
 The foundation models that you can access through Amazon SageMaker Canvas can help you with a range of general purpose tasks. However, if you have a specific use case and would like to customized responses based on your own data, you can *fine-tune* a foundation model.
 

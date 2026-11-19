@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # How dependency discovery differs from observability tools
-<a name="next-gen-discovery-vs-observability"></a>
 
 Dependency discovery focuses on **resilience validation** rather than operational observability:
 

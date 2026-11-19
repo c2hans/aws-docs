@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Fail
 ---
 
 # FailoverConfig
-<a name="API_FailoverConfig"></a>
 
 The failover configuration for an endpoint. This includes what triggers failover and what happens when it's triggered.
 

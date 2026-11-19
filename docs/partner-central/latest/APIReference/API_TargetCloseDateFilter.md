@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # TargetCloseDateFilter
-<a name="API_TargetCloseDateFilter"></a>
 
 Filters opportunities based on their target close date.
 

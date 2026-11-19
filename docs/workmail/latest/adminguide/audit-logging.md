@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/workmail/latest/adminguide/audit-logging
 End of support notice: On March 31, 2027, AWS will end support for Amazon WorkMail. After March 31, 2027, you will no longer be able to access the Amazon WorkMail console or Amazon WorkMail resources. For more information, see [Amazon WorkMail end of support](https://docs.aws.amazon.com/workmail/latest/adminguide/workmail-end-of-support.html).
 
 # Enabling audit logging
-<a name="audit-logging"></a>
 
 You can use audit logs to capture detailed information about your Amazon WorkMail organization usage. The audit logs can be used to monitor user’s access to mailboxes, audit for suspicious activity, and debug access control and availability provider configurations.
 

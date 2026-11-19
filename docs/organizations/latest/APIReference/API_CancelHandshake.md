@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_Ca
 ---
 
 # CancelHandshake
-<a name="API_CancelHandshake"></a>
 
 Cancels a [Handshake](API_Handshake.md).
 

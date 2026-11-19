@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_E
 ---
 
 # ExportQAppSessionData
-<a name="API_qapps_ExportQAppSessionData"></a>
 
 Exports the collected data of a Q App data collection session.
 

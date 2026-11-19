@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteIntegrat
 ---
 
 # DeleteIntegrationResponse
-<a name="API_DeleteIntegrationResponse"></a>
 
 Represents a delete integration response.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PhoneNum
 ---
 
 # PhoneNumberConfig
-<a name="API_PhoneNumberConfig"></a>
 
 Configuration settings for phone type and phone number.
 

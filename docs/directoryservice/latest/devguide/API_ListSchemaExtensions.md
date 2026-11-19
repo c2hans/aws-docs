@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Lis
 ---
 
 # ListSchemaExtensions
-<a name="API_ListSchemaExtensions"></a>
 
 Lists all schema extensions applied to a Microsoft AD Directory.
 

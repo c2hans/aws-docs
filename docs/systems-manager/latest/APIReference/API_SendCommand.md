@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # SendCommand
-<a name="API_SendCommand"></a>
 
 Runs commands on one or more managed nodes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-accuracy-eva
 ---
 
 # Accuracy
-<a name="clarify-accuracy-evaluation"></a>
 
  This evaluation measures how accurately a model performs in a task by comparing the model output to the ground truth answer included in the dataset.
 

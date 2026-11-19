@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-sensitive-da
 ---
 
 # Sensitive data detection API
-<a name="aws-glue-api-sensitive-data-api"></a>
 
 The Sensitive data detection API describes the APIs used to detect sensitive data across the columns and rows of your structured data.
 

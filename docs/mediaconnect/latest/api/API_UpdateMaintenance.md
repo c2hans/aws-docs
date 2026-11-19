@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateMainte
 ---
 
 # UpdateMaintenance
-<a name="API_UpdateMaintenance"></a>
 
  Update maintenance setting for a flow.
 

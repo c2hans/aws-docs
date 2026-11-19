@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Descri
 ---
 
 # DescribeClusters
-<a name="API_DescribeClusters"></a>
 
 Describes one or more of your clusters.
 

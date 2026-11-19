@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/domain-user-profile-
 ---
 
 # Remove user profiles
-<a name="domain-user-profile-remove"></a>
 
 All apps launched by a user profile and all spaces owned by the user profile must be deleted to delete the user profile. The following section shows how to remove user profiles from a domain using the SageMaker AI console or AWS CLI.
 

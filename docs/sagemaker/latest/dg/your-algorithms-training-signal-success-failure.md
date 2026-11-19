@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms-trai
 ---
 
 # How Amazon SageMaker AI Signals Algorithm Success and Failure
-<a name="your-algorithms-training-signal-success-failure"></a>
 
 A training algorithm indicates whether it succeeded or failed using the exit code of its process.
 

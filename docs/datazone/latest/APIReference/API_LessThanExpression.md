@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_LessTha
 ---
 
 # LessThanExpression
-<a name="API_LessThanExpression"></a>
 
 Specifies that a value is less than an expression.
 

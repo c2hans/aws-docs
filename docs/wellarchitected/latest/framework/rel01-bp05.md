@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel01-b
 ---
 
 # REL01-BP05 Automate quota management
-<a name="rel01-bp05"></a>
 
  Manual quota tracking drifts out of date as a workload grows and spreads across accounts and Regions. Automate the monitoring of usage against quotas, and consider automating the increase requests. Automation keeps quota values aligned with real demand and removes the human delay between noticing a quota and acting on it.
 

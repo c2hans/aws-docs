@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/predictive-sca
 ---
 
 # How predictive scaling works
-<a name="predictive-scaling-policy-overview"></a>
 
 This topic explains how predictive scaling works and describes what to consider when you create a predictive scaling policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 ---
 
 # Best practice 12.3 – Restrict and record resource allocation permissions using AWS Identity and Access Management (IAM)
-<a name="best-practice-12.3---restrict-and-record-resource-allocation-permissions-using-aws-identity-and-access-management-iam."></a>
 
  To better control costs, create distinct IAM roles that authorize users to provision certain resources. This ensures that only permitted individuals can provision the resources they are allowed to, preventing unauthorized and unnecessary spending.
 

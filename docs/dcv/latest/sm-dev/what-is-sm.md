@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/sm-dev/what-is-sm.html
 ---
 
 # What is Amazon DCV Session Manager?
-<a name="what-is-sm"></a>
 
 **Note**
 Amazon DCV was previously known as NICE DCV.

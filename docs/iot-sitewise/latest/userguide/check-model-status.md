@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/check-mode
 ---
 
 # Check the status of an asset or component model
-<a name="check-model-status"></a>
 
 You can use the AWS IoT SiteWise console or API to check the status of an asset model or component model.
 

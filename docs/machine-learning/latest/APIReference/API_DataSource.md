@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/machine-learning/latest/APIReference/API
 ---
 
 # DataSource
-<a name="API_DataSource"></a>
 
  Represents the output of the `GetDataSource` operation.
 

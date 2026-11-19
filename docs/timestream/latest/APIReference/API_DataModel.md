@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_DataM
 ---
 
 # DataModel
-<a name="API_DataModel"></a>
 
 Data model for a batch load task.
 

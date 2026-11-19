@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeF
 ---
 
 # DescribeFleetError
-<a name="API_DescribeFleetError"></a>
 
 Describes the instances that could not be launched by the fleet.
 

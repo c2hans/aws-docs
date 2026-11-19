@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/scena
 ---
 
 # Amazon SQS template snippets
-<a name="scenario-sqs-queue"></a>
 
 This example shows an Amazon SQS queue.
 

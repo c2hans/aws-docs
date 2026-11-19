@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Get
 ---
 
 # GetRepositoryEndpoint
-<a name="API_GetRepositoryEndpoint"></a>
 
  Returns the endpoint of a repository for a specific package format. A repository has one endpoint for each package format:
 +  `cargo`

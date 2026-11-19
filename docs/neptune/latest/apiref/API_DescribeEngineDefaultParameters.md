@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DescribeEngine
 ---
 
 # DescribeEngineDefaultParameters
-<a name="API_DescribeEngineDefaultParameters"></a>
 
 Returns the default engine and system parameter information for the specified database engine.
 
@@ -40,7 +39,7 @@ Required: No
 The following element is returned by the service.
 
  ** EngineDefaults **
- Contains the result of a successful invocation of the [DescribeEngineDefaultParameters](#API_DescribeEngineDefaultParameters) action.
+ Contains the result of a successful invocation of the [DescribeEngineDefaultParameters](API_DescribeEngineDefaultParameters.md) action.
 Type: [EngineDefaults](API_EngineDefaults.md) object
 
 ## Errors

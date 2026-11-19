@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCPERF04-BP01 Use performance requirements to drive the selection of network components and architecture
-<a name="scperf04-bp01"></a>
 
  Bring the hosted solution closer to your users' Region to provide a better user experience and make the data safer while hosted or in transit.
 

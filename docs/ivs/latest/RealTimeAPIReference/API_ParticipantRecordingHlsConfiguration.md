@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Part
 ---
 
 # ParticipantRecordingHlsConfiguration
-<a name="API_ParticipantRecordingHlsConfiguration"></a>
 
 An object representing a configuration of participant HLS recordings for individual participant recording.
 

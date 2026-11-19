@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up
 ---
 
 # DELETE: Remove a Node from the Cluster
-<a name="set-up-nodes-remove-node"></a>
 
 Remove the specified node from the Conductor Live cluster. The node cannot be associated with any channels, so follow this procedure.
 

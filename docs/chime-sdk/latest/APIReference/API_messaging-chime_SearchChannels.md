@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # SearchChannels
-<a name="API_messaging-chime_SearchChannels"></a>
 
 Allows the `ChimeBearer` to search channels by channel members. Users or bots can search across the channels that they belong to. Users in the `AppInstanceAdmin` role can search across all channels.
 

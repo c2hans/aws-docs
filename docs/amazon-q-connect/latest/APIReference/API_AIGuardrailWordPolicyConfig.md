@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # AIGuardrailWordPolicyConfig
-<a name="API_amazon-q-connect_AIGuardrailWordPolicyConfig"></a>
 
 Contains details about the word policy to configured for the AI Guardrail.
 

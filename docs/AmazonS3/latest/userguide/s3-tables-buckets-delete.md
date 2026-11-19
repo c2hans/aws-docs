@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-buck
 ---
 
 # Deleting a table bucket
-<a name="s3-tables-buckets-delete"></a>
 
 You can use the Amazon S3 APIs, AWS Command Line Interface, or AWS SDKs to delete a table bucket. Before you delete a table bucket, you must first delete all namespaces and tables within the bucket.
 

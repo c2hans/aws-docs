@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Workspac
 ---
 
 # WorkspaceAssociationSearchSummary
-<a name="API_WorkspaceAssociationSearchSummary"></a>
 
 Contains summary information about a workspace association with a user or routing profile.
 

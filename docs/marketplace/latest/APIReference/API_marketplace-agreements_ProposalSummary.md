@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # ProposalSummary
-<a name="API_marketplace-agreements_ProposalSummary"></a>
 
 A summary of the proposal received from the proposer.
 

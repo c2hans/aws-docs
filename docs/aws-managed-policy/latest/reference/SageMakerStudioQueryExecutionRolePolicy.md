@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Sage
 ---
 
 # SageMakerStudioQueryExecutionRolePolicy
-<a name="SageMakerStudioQueryExecutionRolePolicy"></a>
 
 **Description**: Amazon SageMaker Studio uses this policy when running query executions on federated connections.
 

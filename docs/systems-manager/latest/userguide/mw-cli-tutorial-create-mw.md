@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/mw-cli-
 ---
 
 # Step 1: Create the maintenance window using the AWS CLI
-<a name="mw-cli-tutorial-create-mw"></a>
 
 In this step, you create a maintenance window and specify its basic options, such as name, schedule, and duration. In later steps, you choose the instance it updates and the task it runs.
 

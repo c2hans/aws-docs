@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CloudWatch::Alarm EvaluationWindow
-<a name="aws-properties-cloudwatch-alarm-evaluationwindow"></a>
 
 The evaluation window that an alarm uses to select the range of metric data that it evaluates each time it runs. This is a union type. Set exactly one of its members, `SlidingWindow` or `WallClockWindow`. If you don't set `EvaluationWindow`, the alarm uses a `SlidingWindow` by default.
 

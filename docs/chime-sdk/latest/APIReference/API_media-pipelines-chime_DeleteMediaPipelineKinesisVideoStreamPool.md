@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # DeleteMediaPipelineKinesisVideoStreamPool
-<a name="API_media-pipelines-chime_DeleteMediaPipelineKinesisVideoStreamPool"></a>
 
 Deletes an Amazon Kinesis Video Stream pool.
 

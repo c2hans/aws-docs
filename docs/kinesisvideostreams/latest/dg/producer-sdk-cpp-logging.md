@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/producer-s
 ---
 
 # Use logging with the C\+\+ producer SDK
-<a name="producer-sdk-cpp-logging"></a>
 
 You configure logging for C\+\+ producer SDK applications in the `kvs_log_configuration` file in the `kinesis-video-native-build` folder.
 

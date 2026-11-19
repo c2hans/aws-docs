@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Perform batch operations
-<a name="ddb-en-client-use-multiop-batch"></a>
 
 The DynamoDB Enhanced Client API offers two batch methods, [`batchGetItem`()](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/DynamoDbEnhancedClient.html#batchGetItem(java.util.function.Consumer)) and [`batchWriteItem`()](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/enhanced/dynamodb/DynamoDbEnhancedClient.html#batchWriteItem(java.util.function.Consumer)).
 

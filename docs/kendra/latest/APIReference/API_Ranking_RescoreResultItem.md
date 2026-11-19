@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_Ranking_R
 ---
 
 # RescoreResultItem
-<a name="API_Ranking_RescoreResultItem"></a>
 
 A result item for a document with a new relevancy score.
 

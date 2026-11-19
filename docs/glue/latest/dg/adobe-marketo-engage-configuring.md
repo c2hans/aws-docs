@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/adobe-marketo-engage-conf
 ---
 
 # Configuring Adobe Marketo Engage
-<a name="adobe-marketo-engage-configuring"></a>
 
 Before you can use AWS Glue to transfer data from Adobe Marketo Engage, you must meet these requirements:
 

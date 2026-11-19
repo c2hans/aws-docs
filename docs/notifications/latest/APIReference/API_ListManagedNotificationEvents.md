@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_Li
 ---
 
 # ListManagedNotificationEvents
-<a name="API_ListManagedNotificationEvents"></a>
 
 Returns a list of Managed Notification Events according to specified filters, ordered by creation time in reverse chronological order (newest first).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RtmpPushStre
 ---
 
 # RtmpPushStreamDetails
-<a name="API_RtmpPushStreamDetails"></a>
 
 Configuration details for an RTMP (Real-Time Messaging Protocol) router input stream, including the application and stream names.
 

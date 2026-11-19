@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/userguide/tshoot-sharing-outs
 ---
 
 # Errors when trying to share with accounts outside of my organization
-<a name="tshoot-sharing-outside-org"></a>
 
 ## Scenario
 <a name="tshoot-sharing-outside-org-scenario"></a>

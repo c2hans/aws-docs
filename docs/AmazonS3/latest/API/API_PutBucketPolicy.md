@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_PutBucketPolicy.
 ---
 
 # PutBucketPolicy
-<a name="API_PutBucketPolicy"></a>
 
 Applies an Amazon S3 bucket policy to an Amazon S3 bucket.
 

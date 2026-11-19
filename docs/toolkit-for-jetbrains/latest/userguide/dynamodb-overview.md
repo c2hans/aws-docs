@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/d
 ---
 
 # Working with Amazon DynamoDB from the AWS Toolkit for JetBrains
-<a name="dynamodb-overview"></a>
 
 The AWS Toolkit for JetBrains allows you to view, copy Amazon Resource Names (ARNs), and delete your Amazon DynamoDB resources, directly from your JetBrains IDE.
 

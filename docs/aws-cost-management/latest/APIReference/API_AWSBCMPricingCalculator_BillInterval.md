@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BillInterval
-<a name="API_AWSBCMPricingCalculator_BillInterval"></a>
 
  Represents a time interval for a bill or estimate.
 

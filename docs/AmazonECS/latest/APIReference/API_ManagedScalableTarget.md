@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Manage
 ---
 
 # ManagedScalableTarget
-<a name="API_ManagedScalableTarget"></a>
 
 Represents a scalable target.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zohodesk-connection-optio
 ---
 
 # Zoho Desk connection options
-<a name="zohodesk-connection-options"></a>
 
 The following are connection options for Zoho Desk:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the Zoho Desk object to read.

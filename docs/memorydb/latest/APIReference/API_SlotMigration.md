@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_SlotMig
 ---
 
 # SlotMigration
-<a name="API_SlotMigration"></a>
 
 Represents the progress of an online resharding operation.
 

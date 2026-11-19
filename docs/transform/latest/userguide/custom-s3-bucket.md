@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/custom-s3-buc
 ---
 
 # Using your own Amazon S3 bucket
-<a name="custom-s3-bucket"></a>
 
 By default, AWS Transform uses a service-managed Amazon S3 bucket to store transformation artifacts. You can choose to use your own Amazon S3 bucket instead for greater control over data storage, encryption, and access policies.
 

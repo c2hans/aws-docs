@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_Destination
 ---
 
 # DestinationFieldProperties
-<a name="API_DestinationFieldProperties"></a>
 
  The properties that can be applied to a field when connector is being used as a destination.
 

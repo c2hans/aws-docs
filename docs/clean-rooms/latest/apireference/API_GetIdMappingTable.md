@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetI
 ---
 
 # GetIdMappingTable
-<a name="API_GetIdMappingTable"></a>
 
 Retrieves an ID mapping table.
 

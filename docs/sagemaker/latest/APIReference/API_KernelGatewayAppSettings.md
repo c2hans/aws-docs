@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Kernel
 ---
 
 # KernelGatewayAppSettings
-<a name="API_KernelGatewayAppSettings"></a>
 
 The KernelGateway app settings.
 

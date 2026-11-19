@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/lambda-web/API_LoggingConf
 ---
 
 # LoggingConfig
-<a name="API_LoggingConfig"></a>
 
 The logging configuration for a web function revision.
 

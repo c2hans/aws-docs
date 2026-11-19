@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_ListTags
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 Lists the tags for a resource. Tags are supported only for monitors in Internet Monitor.
 

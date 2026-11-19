@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/aws-forecast-iam-role
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # Set Up Permissions for Amazon Forecast
-<a name="aws-forecast-iam-roles"></a>
 
 Amazon Forecast uses Amazon Simple Storage Service (Amazon S3) to store the target time-series data that are used to train predictors that can generate forecasts. To access Amazon S3 on your behalf, Amazon Forecast needs your permission.
 

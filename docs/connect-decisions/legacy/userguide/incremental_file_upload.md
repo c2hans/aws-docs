@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/incre
 ---
 
 # Uploading subsequent files to an existing source
-<a name="incremental_file_upload"></a>
 
 There are two ways to upload subsequent datasets to an existing source. You can either upload the dataset on the Amazon S3 path displayed under the **Source Flows** tab, or choose **Upload files** under the **Actions** tab.
 

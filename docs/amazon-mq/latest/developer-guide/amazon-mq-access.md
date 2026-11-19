@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-
 ---
 
 # Authentication and authorization for Amazon MQ brokers
-<a name="amazon-mq-access"></a>
 
  Amazon MQ offers multiple authentication and authorization methods to secure your messaging infrastructure according to your organization's requirements.
 

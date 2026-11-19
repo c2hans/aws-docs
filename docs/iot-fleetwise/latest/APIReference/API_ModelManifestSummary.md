@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Mo
 ---
 
 # ModelManifestSummary
-<a name="API_ModelManifestSummary"></a>
 
 Information about a vehicle model (model manifest). You can use the [ListModelManifests](API_ListModelManifests.md) API operation to return this information about multiple vehicle models.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/crm/picklist-mapp
 ---
 
 # Picklist mapping
-<a name="picklist-mapping"></a>
 
 The picklist dialog box allows limited and extended mappings between the partner’s picklist field and APN. The **ACE Mappings** page also has an Auto Map function if using the provided **custom ACE opportunity object **. For more information about the object, refer to [Using a standard Salesforce object or custom object](crm-connector-mapping.md#custom-ace-opportunity-object) later in this guide.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateTrial
-<a name="API_UpdateTrial"></a>
 
 Updates the display name of a trial.
 

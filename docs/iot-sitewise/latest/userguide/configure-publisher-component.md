@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/configure-
 ---
 
 # Configure the AWS IoT SiteWise publisher component
-<a name="configure-publisher-component"></a>
 
 After you create an AWS IoT SiteWise Edge gateway and install the software, you can set up the publisher component so your SiteWise Edge gateway can export data to the AWS Cloud. Use the publisher component to enable additional features or configure default settings. For more information, see [AWS IoT SiteWise publisher](https://docs.aws.amazon.com/greengrass/v2/developerguide/iotsitewise-publisher-component.html) in the *AWS IoT Greengrass Version 2 Developer Guide*.
 

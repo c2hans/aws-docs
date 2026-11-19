@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/labels-detecting-l
 ---
 
 # Detecting labels in a video
-<a name="labels-detecting-labels-video"></a>
 
 Amazon Rekognition Video can detect labels (objects and concepts), and the time a label is detected, in a video. For an SDK code example, see [Analyzing a video stored in an Amazon S3 bucket with Java or Python (SDK)](video-analyzing-with-sqs.md). For an AWS CLI example, see [Analyzing a video with the AWS Command Line Interface](video-cli-commands.md).
 

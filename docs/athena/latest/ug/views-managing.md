@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/views-managing.html
 ---
 
 # Manage Athena views
-<a name="views-managing"></a>
 
 In the Athena console, you can:
 + Locate all views in the left pane, where tables are listed.

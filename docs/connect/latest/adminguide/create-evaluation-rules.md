@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-evaluat
 ---
 
 # Notify supervisors and agents about performance evaluations
-<a name="create-evaluation-rules"></a>
 
 You can create rules that automatically send emails or tasks to supervisors and agents based on evaluation results.
 + Supervisor notifications can drive timely coaching based on performance evaluations. For example, you can notify supervisors if an agent receives an evaluation score below a certain threshold.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-eval
 ---
 
 # Evaluation Metrics Formats
-<a name="model-customize-evaluation-metrics-formats"></a>
 
 Evaluating the quality of your model across these metric formats:
 + Model Evaluation Summary

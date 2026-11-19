@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_NdiDiscovery
 ---
 
 # NdiDiscoveryServerConfig
-<a name="API_NdiDiscoveryServerConfig"></a>
 
 Specifies the configuration settings for individual NDI® discovery servers. A maximum of 3 servers is allowed.
 

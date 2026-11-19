@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # CustomOauth2ProviderConfigOutput
-<a name="API_CustomOauth2ProviderConfigOutput"></a>
 
 Output configuration for a custom OAuth2 provider.
 

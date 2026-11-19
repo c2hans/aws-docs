@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/agentic-memo
 ---
 
 # Best practices
-<a name="agentic-memory-best-practices"></a>
 
 ## Memory lifecycle management
 <a name="agentic-memory-bp-lifecycle"></a>

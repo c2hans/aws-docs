@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # 05-scan-test.js
-<a name="DAX.client.run-application-nodejs.05-scan-test"></a>
 
 The `05-scan-test.js` program performs `Scan` operations on `TryDaxTable`.
 

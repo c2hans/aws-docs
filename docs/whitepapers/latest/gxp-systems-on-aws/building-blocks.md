@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/bu
 ---
 
 # Qualifying building blocks
-<a name="building-blocks"></a>
 
 Customers frequently want to know how AWS gives developers freedom to use any AWS service while still maintaining regulatory compliance and fast development. To address this problem, you can use technology, but this also involves changes in process design to move away from blocking steps and towards guardrails. The changes required to your processes and IT operating model are beyond the scope of this whitepaper. However, we cover the core steps of a supporting process to qualify building blocks which is one tactic for maintaining regulatory compliance more efficiently.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/nodes.supported
 ---
 
 # Supported node types
-<a name="nodes.supportedtypes"></a>
 
 MemoryDB supports the following node types.
 

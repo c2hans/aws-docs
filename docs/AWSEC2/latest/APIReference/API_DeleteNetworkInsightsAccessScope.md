@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteNet
 ---
 
 # DeleteNetworkInsightsAccessScope
-<a name="API_DeleteNetworkInsightsAccessScope"></a>
 
 Deletes the specified Network Access Scope.
 

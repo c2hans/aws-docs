@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DeleteIn
 ---
 
 # Deleting a DB instance
-<a name="USER_DeleteInstance"></a>
 
 **Warning**
 Deleting a database instance removes all its data and can affect related resources. Ensure that you have backed up any important data before proceeding.

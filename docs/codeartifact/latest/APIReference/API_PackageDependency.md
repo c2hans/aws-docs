@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Pac
 ---
 
 # PackageDependency
-<a name="API_PackageDependency"></a>
 
  Details about a package dependency.
 

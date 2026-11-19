@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/PcaUpdateStat
 ---
 
 # Understand AWS Private CA CA status
-<a name="PcaUpdateStatus"></a>
 
 The status of a CA that is managed by AWS Private CA results from a user action or, in some cases, from a service action. For example, a CA status changes when it expires. The status options available to CA administrators vary depending on the current status of the CA.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/web-publish
 ---
 
 # Publishing & Subscribing with the IVS Web Broadcast SDK \| Real-Time Streaming
-<a name="web-publish-subscribe"></a>
 
 This document takes you through the steps involved in publishing and subscribing to a stage using the IVS real-time streaming Web broadcast SDK.
 

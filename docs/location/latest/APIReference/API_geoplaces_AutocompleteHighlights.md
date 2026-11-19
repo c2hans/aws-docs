@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # AutocompleteHighlights
-<a name="API_geoplaces_AutocompleteHighlights"></a>
 
 Describes how the parts of the response element matched the input query by returning the sections of the response which matched to input query terms.
 

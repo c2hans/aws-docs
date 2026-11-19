@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/send-sms-voic
 ---
 
 # Example of sending an SMS or voice message using AWS End User Messaging SMS
-<a name="send-sms-voice-message"></a>
 
 You can use the AWS End User Messaging SMS API to send messages directly from your apps. Transactional messages are messages that you send to specific recipients.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSShieldServiceRolePolicy
-<a name="AWSShieldServiceRolePolicy"></a>
 
 **Description**: Allows AWS Shield to access AWS resources on your behalf to provide DDoS protection.
 

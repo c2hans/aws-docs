@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_featur
 ---
 
 # DeleteRecord
-<a name="API_feature_store_DeleteRecord"></a>
 
 Deletes a `Record` from a `FeatureGroup` in the `OnlineStore`. Feature Store supports both `SoftDelete` and `HardDelete`. For `SoftDelete` (default), feature columns are set to `null` and the record is no longer retrievable by `GetRecord` or `BatchGetRecord`. For `HardDelete`, the complete `Record` is removed from the `OnlineStore`. In both cases, Feature Store appends the deleted record marker to the `OfflineStore`. The deleted record marker is a record with the same `RecordIdentifer` as the original, but with `is_deleted` value set to `True`, `EventTime` set to the delete input `EventTime`, and other feature values set to `null`.
 

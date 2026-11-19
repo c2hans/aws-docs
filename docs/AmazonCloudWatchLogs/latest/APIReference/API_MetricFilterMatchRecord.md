@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # MetricFilterMatchRecord
-<a name="API_MetricFilterMatchRecord"></a>
 
 Represents a matched event.
 

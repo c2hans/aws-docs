@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Delete
 ---
 
 # DeleteCustomRoutingListener
-<a name="API_DeleteCustomRoutingListener"></a>
 
 Delete a listener for a custom routing accelerator.
 

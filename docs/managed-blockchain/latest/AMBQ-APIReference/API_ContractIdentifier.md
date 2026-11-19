@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # ContractIdentifier
-<a name="API_ContractIdentifier"></a>
 
 Container for the blockchain address and network information about a contract.
 

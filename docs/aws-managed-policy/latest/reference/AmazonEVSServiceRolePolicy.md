@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonEVSServiceRolePolicy
-<a name="AmazonEVSServiceRolePolicy"></a>
 
 **Description**: Grants permissions to EVS to manage resources on your behalf
 

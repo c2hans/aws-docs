@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ad
 ---
 
 # Add HA to Oracle PeopleSoft on Amazon RDS Custom by using a read replica
-<a name="add-ha-to-oracle-peoplesoft-on-amazon-rds-custom-by-using-a-read-replica"></a>
 
 *sampath kathirvel, Amazon Web Services*
 

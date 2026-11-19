@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Expres
 ---
 
 # ExpressGatewayContainer
-<a name="API_ExpressGatewayContainer"></a>
 
 Defines the configuration for the primary container in an Express service. This container receives traffic from the Application Load Balancer and runs your application code.
 

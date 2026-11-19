@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage-vod/latest/apireference/pac
 ---
 
 # Packaging\_groups
-<a name="packaging_groups"></a>
 
 ## URI
 <a name="packaging_groups-url"></a>

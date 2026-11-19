@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteQue
 ---
 
 # DeleteQueuedReservedInstancesError
-<a name="API_DeleteQueuedReservedInstancesError"></a>
 
 Describes the error for a Reserved Instance whose queued purchase could not be deleted.
 

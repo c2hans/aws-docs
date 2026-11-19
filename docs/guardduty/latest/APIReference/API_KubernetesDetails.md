@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Kubern
 ---
 
 # KubernetesDetails
-<a name="API_KubernetesDetails"></a>
 
 Details about Kubernetes resources such as a Kubernetes user or workload resource involved in a Kubernetes finding.
 

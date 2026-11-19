@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/automations-c
 ---
 
 # Creating, editing, and deleting automations
-<a name="automations-create-edit-delete"></a>
 
 **Contents**
 + [Creating an automation](#automations-create)

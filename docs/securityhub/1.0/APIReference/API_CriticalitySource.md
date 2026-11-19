@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Critica
 ---
 
 # CriticalitySource
-<a name="API_CriticalitySource"></a>
 
 Details the source and reason of a criticality.
 

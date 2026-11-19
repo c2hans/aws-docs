@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_M
 ---
 
 # ManagedPersistenceMonitoringConfiguration
-<a name="API_ManagedPersistenceMonitoringConfiguration"></a>
 
 The managed log persistence configuration for a job run.
 

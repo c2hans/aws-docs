@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2N
 ---
 
 # AwsEc2NetworkInterfaceAttachment
-<a name="API_AwsEc2NetworkInterfaceAttachment"></a>
 
 Information about the network interface attachment.
 

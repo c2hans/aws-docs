@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_AwsVPCSe
 ---
 
 # AwsVPCSecurityGroupViolation
-<a name="API_AwsVPCSecurityGroupViolation"></a>
 
 Violation detail for the rule violation in a security group when compared to the primary security group of the AWS Firewall Manager policy.
 

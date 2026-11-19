@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/install
 ---
 
 # Install the Session Manager plugin on Windows
-<a name="install-plugin-windows"></a>
 
 You can install the Session Manager plugin on 64-bit Windows 10 or later, or Windows Server 2016 or later, using the standalone installer.
 

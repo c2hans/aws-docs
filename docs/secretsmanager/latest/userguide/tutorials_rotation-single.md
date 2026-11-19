@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/tutorial
 ---
 
 # Set up single user rotation for AWS Secrets Manager
-<a name="tutorials_rotation-single"></a>
 
 In this tutorial, you learn how to set up single user rotation for a secret that contains database credentials. *Single user rotation* is a rotation strategy where Secrets Manager updates a user's credentials in both the secret and the database. For more information, see [Rotation strategy: single user](rotation-strategy.md#rotating-secrets-one-user-one-password).
 

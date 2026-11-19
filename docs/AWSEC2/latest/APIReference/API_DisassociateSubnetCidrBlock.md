@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Disassoci
 ---
 
 # DisassociateSubnetCidrBlock
-<a name="API_DisassociateSubnetCidrBlock"></a>
 
 Disassociates a CIDR block from a subnet. Currently, you can disassociate an IPv6 CIDR block only. You must detach or delete all gateways and resources that are associated with the CIDR block before you can disassociate it.
 

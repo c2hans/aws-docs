@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-cli-g
 ---
 
 # Generate asymmetric keys using CloudHSM CLI
-<a name="cloudhsm-cli-generate-asymmetric-keys"></a>
 
 Use the commands listed in **[The generate-asymmetric-pair category in CloudHSM CLI](cloudhsm_cli-key-generate-asymmetric-pair.md)** to generate asymmetric key pairs for AWS CloudHSM clusters.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ToolDescriptionInput
-<a name="API_ToolDescriptionInput"></a>
 
 A tool description input containing the tool name and its current description.
 

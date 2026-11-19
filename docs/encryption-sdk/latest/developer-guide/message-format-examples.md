@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/me
 ---
 
 # AWS Encryption SDK message format examples
-<a name="message-format-examples"></a>
 
 |  |
 | --- |

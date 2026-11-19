@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVSUS01-BP06 Keep yield analytics off the auction path so its compute scales with events, not traffic
-<a name="advsus01-bp06"></a>
 
  Decouple yield analytics from the auction hot path so that analytics compute does not run synchronously in the bid evaluation path. A dedicated streaming pipeline makes bid-level yield data available within a minute of auction completion.
 

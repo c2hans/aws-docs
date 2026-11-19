@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetConnectionsFil
 ---
 
 # GetConnectionsFilter
-<a name="API_GetConnectionsFilter"></a>
 
 Filters the connection definitions that are returned by the `GetConnections` API operation.
 

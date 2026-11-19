@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/containe
 ---
 
 # ![AWS Containers category icon](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/images/containers-icon.jpg)Containers
-<a name="containers"></a>
 
 AWS offers services that give you a secure place to store and manage your container images, orchestration that manages when and where your containers run, and flexible compute engines to power your containers. AWS can help manage your containers and their deployments for you, so you don't have to worry about the underlying infrastructure.
 

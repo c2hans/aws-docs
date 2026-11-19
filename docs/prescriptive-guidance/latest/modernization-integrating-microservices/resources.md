@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Resources
-<a name="resources"></a>
 
 ## AWS service documentation
 <a name="resources-services"></a>

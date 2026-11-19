@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/view-share
 ---
 
 # Viewing your licenses
-<a name="view-share-licenses"></a>
 
 AWS Marketplace automatically creates licenses for AMI, container, machine learning, software as a service (SaaS), and data products that you purchase. You can share those licenses with other accounts in your organization.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsi
 ---
 
 # Configuring access policies for Database Insights
-<a name="USER_PerfInsights.access-control"></a>
 
 To access Database Insights, a principal must have the appropriate permissions from AWS Identity and Access Management (IAM).
 

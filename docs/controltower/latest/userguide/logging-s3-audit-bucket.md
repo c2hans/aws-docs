@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/logging-s3
 ---
 
 # Amazon S3 bucket policy for logging
-<a name="logging-s3-audit-bucket"></a>
 
 In AWS Control Tower, AWS services have access to your resources only when the request originates from your organization or organizational unit (OU). An `aws:SourceOrgID` condition must be met for any write permissions.
 

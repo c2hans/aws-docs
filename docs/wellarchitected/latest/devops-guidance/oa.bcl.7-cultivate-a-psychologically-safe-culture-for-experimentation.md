@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [OA.BCL.7] Cultivate a psychologically-safe culture for experimentation
-<a name="oa.bcl.7-cultivate-a-psychologically-safe-culture-for-experimentation"></a>
 
  **Category:** FOUNDATIONAL
 

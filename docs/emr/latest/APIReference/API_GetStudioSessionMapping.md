@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_GetStudioSes
 ---
 
 # GetStudioSessionMapping
-<a name="API_GetStudioSessionMapping"></a>
 
 Fetches mapping details for the specified Amazon EMR Studio and identity (user or group).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/iam-user-mf
 ---
 
 # iam-user-mfa-enabled
-<a name="iam-user-mfa-enabled"></a>
 
 Checks if the AWS Identity and Access Management (IAM) users have multi-factor authentication (MFA) enabled. The rule is NON\_COMPLIANT if MFA is not enabled for at least one IAM user.
 

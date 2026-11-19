@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/capacity-blocks-faq
 ---
 
 # Frequently asked questions about using Capacity Blocks with AWS PCS
-<a name="capacity-blocks-faq"></a>
 
 **I just paid for a Capacity Block and immediately attempted to use it with AWS PCS but compute node group creation failed. What happened?**
 Your Capacity Block might not be in a `scheduled` or `active` state. Try again after the Capacity Block is `scheduled` or `active`.

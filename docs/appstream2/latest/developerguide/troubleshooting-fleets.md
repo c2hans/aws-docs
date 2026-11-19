@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/trouble
 ---
 
 # Troubleshooting Fleets
-<a name="troubleshooting-fleets"></a>
 
 The following are issues that might occur when users connect to Amazon WorkSpaces Applications streaming sessions launched from fleet instances.
 

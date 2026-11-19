@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # VideoConcatenationConfiguration
-<a name="API_media-pipelines-chime_VideoConcatenationConfiguration"></a>
 
 The configuration object of a video concatenation pipeline.
 

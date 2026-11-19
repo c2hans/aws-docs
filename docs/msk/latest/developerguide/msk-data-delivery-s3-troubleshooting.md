@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Troubleshooting
-<a name="msk-data-delivery-s3-troubleshooting"></a>
 
 **Topics**
 + [Channel stuck in CREATING state](msk-data-delivery-s3-ts-creating.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Custo
 ---
 
 # CustomColor
-<a name="API_CustomColor"></a>
 
 Determines the color that's applied to a particular data value in a column.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSISUS06: How do you monitor and minimize resource usage for financial services workloads?
-<a name="fsisus06"></a>
 
  Monitor and analyze your financial services' usage patterns to minimize resource usage. Identify services that are not required to be operational at all times or that can be scaled up and down based on user access patterns.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/share-a-dashboard
 ---
 
 # Granting everyone in your AWS Quick account access to a dashboard with the Quick Sight API
-<a name="share-a-dashboard-grant-access-everyone-api"></a>
 
 |  |
 | --- |

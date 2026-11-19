@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/additional-reso
 ---
 
 # Additional Lake Formation resources
-<a name="additional-resources"></a>
 
  For more information about AWS Lake Formation, we recommend that you continue to learn more about the concepts introduced in this guide by using the following resources:
 

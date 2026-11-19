@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/integrati
 ---
 
 # Best practices
-<a name="integration-best-practice"></a>
 
 The following are a few best practices for integrating with Amazon Location Service.
 

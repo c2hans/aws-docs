@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/StreamsAPIReference/API
 ---
 
 # ShardFilter
-<a name="API_ShardFilter"></a>
 
 A filter used to limit the shards returned by a `GetStream` operation.
 

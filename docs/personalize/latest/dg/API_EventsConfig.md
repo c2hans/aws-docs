@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_EventsConfig.h
 ---
 
 # EventsConfig
-<a name="API_EventsConfig"></a>
 
 Describes the configuration of events, which are used in solution creation.
 

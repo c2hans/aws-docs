@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_AddApplic
 ---
 
 # AddApplicationInput
-<a name="API_AddApplicationInput"></a>
 
  Adds a streaming source to your SQL-based Kinesis Data Analytics application.
 

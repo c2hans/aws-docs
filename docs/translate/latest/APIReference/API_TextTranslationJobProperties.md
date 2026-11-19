@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/APIReference/API_TextTr
 ---
 
 # TextTranslationJobProperties
-<a name="API_TextTranslationJobProperties"></a>
 
 Provides information about a translation job.
 

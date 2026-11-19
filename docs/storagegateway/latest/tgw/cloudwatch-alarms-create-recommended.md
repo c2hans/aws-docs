@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/cloudwatch-ala
 ---
 
 # Creating recommended CloudWatch alarms for your gateway
-<a name="cloudwatch-alarms-create-recommended"></a>
 
 When you create a new gateway using the Storage Gateway console, you can choose to create all recommended CloudWatch alarms automatically as part of the initial setup process. For more information, see [Configure your Tape Gateway](https://docs.aws.amazon.com/storagegateway/latest/tgw/create-gateway-vtl.html#configure-gateway-tape). If you want to add or update recommended CloudWatch alarms for an existing gateway, use the following procedure.
 

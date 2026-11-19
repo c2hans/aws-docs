@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 ---
 
 # AGENTREL06-BP04 Implement idempotent task execution patterns
-<a name="agentrel06-bp04"></a>
 
  Retry is the most common recovery mechanism, and without idempotency it can produce duplicate side effects. Deterministic idempotency keys and conditional writes let operations be retried safely without producing duplicate side effects.
 

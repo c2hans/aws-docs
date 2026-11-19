@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/access-graph-op
 ---
 
 # Using the Bolt protocol to make openCypher queries to Neptune
-<a name="access-graph-opencypher-bolt"></a>
 
 [Bolt](https://boltprotocol.org/) is a statement-oriented client/server protocol initially developed by Neo4j and licensed under the Creative Commons 3.0 [Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/3.0/) license. It is client-driven, meaning that the client always initiates message exchanges.
 

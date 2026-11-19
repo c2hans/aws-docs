@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/network-access-analyzer/netwo
 ---
 
 # Quotas and considerations for Network Access Analyzer
-<a name="network-access-analyzer-limits"></a>
 
 Your AWS account has default quotas, formerly referred to as limits, for each AWS service. You can request increases for some quotas, but not for all quotas.
 

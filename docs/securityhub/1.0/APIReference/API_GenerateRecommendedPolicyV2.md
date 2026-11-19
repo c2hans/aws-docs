@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Generat
 ---
 
 # GenerateRecommendedPolicyV2
-<a name="API_GenerateRecommendedPolicyV2"></a>
 
 Begins the recommended policy generation to remediate a Security Hub finding. `GenerateRecommendedPolicyV2` only supports findings for unused permissions.
 

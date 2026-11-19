@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation
 ---
 
 # Fine-tune publicly available foundation models with the `ModelTrainer` class
-<a name="jumpstart-foundation-models-use-python-sdk-estimator-class"></a>
 
 **Note**
 For instructions on fine-tuning foundation models in a private curated hub, see [Fine-tune curated hub models](jumpstart-curated-hubs-fine-tune.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/IMSC-in-MXF.html
 ---
 
 # IMSC input captions (as part of an IMF source)
-<a name="IMSC-in-MXF"></a>
 
 AWS Elemental MediaConvert supports IMSC as an input captions format either as a sidecar file or as part of an IMF source. If your input IMSC captions are in a sidecar file, see [IMSC, SCC, SMPTE-TT, SRT, STL, TTML (sidecar) input captions](sidecar-input.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_PublicTlsEnc
 ---
 
 # PublicTlsEncryptionConfiguration
-<a name="API_PublicTlsEncryptionConfiguration"></a>
 
 The TLS encryption configuration for destinations that present a certificate from a publicly trusted certificate authority. This type does not require any additional settings.
 

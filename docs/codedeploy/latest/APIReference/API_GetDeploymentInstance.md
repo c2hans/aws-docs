@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_GetDe
 ---
 
 # GetDeploymentInstance
-<a name="API_GetDeploymentInstance"></a>
 
 Gets information about an instance as part of a deployment.
 

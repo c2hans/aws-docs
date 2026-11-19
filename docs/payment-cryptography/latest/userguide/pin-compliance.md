@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/pi
 ---
 
 # PIN Compliance Planning
-<a name="pin-compliance"></a>
 
 This guide describes the documentation and evidence that you will need to prepare for a PCI PIN assessment of your PIN processing application that uses AWS Payment Cryptography.
 

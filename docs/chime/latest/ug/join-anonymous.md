@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/join-anonymous.html
 ---
 
 # Joining meetings without an Amazon Chime user account
-<a name="join-anonymous"></a>
 
 **Note**
 You must have a meeting ID to join without an account. You can copy the ID from the meeting invite. For information about other ways to find meeting IDs, see [Finding meeting IDs](find-meeting-id.md).

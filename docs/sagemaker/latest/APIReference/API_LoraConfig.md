@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_LoraCo
 ---
 
 # LoraConfig
-<a name="API_LoraConfig"></a>
 
 The Low-Rank Adaptation (LoRA) configuration for a training session, including the rank and alpha parameters.
 

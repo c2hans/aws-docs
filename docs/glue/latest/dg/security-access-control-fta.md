@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/security-access-control-f
 ---
 
 # Using AWS Glue with AWS Lake Formation for Full Table Access
-<a name="security-access-control-fta"></a>
 
 ## Introduction to Full Table Access
 <a name="security-access-control-fta-intro"></a>

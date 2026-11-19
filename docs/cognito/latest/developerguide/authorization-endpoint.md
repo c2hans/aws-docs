@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito/latest/developerguide/authorizat
 ---
 
 # The redirect and authorization endpoint
-<a name="authorization-endpoint"></a>
 
 The `/oauth2/authorize` endpoint is a redirection endpoint that supports two redirect destinations. If you include an `identity_provider` or `idp_identifier` parameter in the URL, it silently redirects your user to the sign-in page for that identity provider (IdP). Otherwise, it redirects to the [Login endpoint](login-endpoint.md) with the same URL parameters that you included in your request.
 
@@ -347,7 +346,7 @@ Amazon Cognito might deny your request. Negative requests come with an HTTP erro
 **Note**
 Authentication levels with ACR and AMR claims is rolling out gradually. This feature might not yet be available to your user pool. If the behavior described here isn't available, check back later as the rollout continues.
 
-Amazon Cognito supports step-up authentication with managed login. It isn't supported in the hosted UI. If your application relies on ACR and AMR, use managed login.
+Amazon Cognito supports step-up authentication with managed login. It isn't supported in the hosted UI (classic). With the hosted UI (classic), Amazon Cognito silently ignores `acr_values` and `max_age`, and tokens contain default `acr` and `amr` values. For example, local users receive level 1 even if they completed MFA. If your application relies on ACR and AMR, use managed login. For more information, see [Hosted UI (classic) behavior](cognito-user-pools-step-up-authentication.md#cognito-user-pools-step-up-hosted-ui-classic).
 
 For more information about ACR levels and AMR values, see [Authentication levels with ACR and AMR claims](cognito-user-pools-step-up-authentication.md).
 

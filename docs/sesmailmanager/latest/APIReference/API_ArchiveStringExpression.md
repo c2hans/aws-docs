@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_A
 ---
 
 # ArchiveStringExpression
-<a name="API_ArchiveStringExpression"></a>
 
 A string expression to evaluate an email attribute value against one or more string values.
 

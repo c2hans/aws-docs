@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: AWS Elastic Beanstalk console support for Network Load Balancer on October 10, 2018
-<a name="release-2018-10-10-nlb-console"></a>
 
 Elastic Beanstalk added support for configuring a Network Load Balancer and made Application Load Balancer the default Elastic Load Balancing load balancer type when you enable load balancing with the Elastic Beanstalk console.
 

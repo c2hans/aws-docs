@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/j
 ---
 
 # Getting started with Flink native Kubernetes for Amazon EMR on EKS
-<a name="jobruns-flink-native-kubernetes-getting-started"></a>
 
 These steps show you how to configure, set up a service account for, and run a Flink application. Flink Native Kubernetes is used to deploy Flink on a running Kubernetes cluster.
 

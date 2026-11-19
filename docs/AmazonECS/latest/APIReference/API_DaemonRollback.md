@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Daemon
 ---
 
 # DaemonRollback
-<a name="API_DaemonRollback"></a>
 
 Information about a daemon deployment rollback.
 

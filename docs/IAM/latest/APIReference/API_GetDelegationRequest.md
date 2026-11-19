@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_GetDelegatio
 ---
 
 # GetDelegationRequest
-<a name="API_GetDelegationRequest"></a>
 
 Retrieves information about a specific delegation request.
 

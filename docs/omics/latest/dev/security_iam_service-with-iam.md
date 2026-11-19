@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/security_iam_service-wi
 ---
 
 # How AWS HealthOmics works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to AWS HealthOmics, learn what IAM features are available to use with AWS HealthOmics.
 

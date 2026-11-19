@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/reachability/getting-started-
 ---
 
 # Getting started with Reachability Analyzer using the AWS CLI
-<a name="getting-started-cli"></a>
 
 You can use Reachability Analyzer to determine whether a destination resource in your virtual private cloud (VPC) is reachable from a source resource. To get started, you specify a source and a destination. For example, you can run a reachability analysis between two network interfaces or between a network interface and a gateway. If there is a reachable path between the source and destination, Reachability Analyzer displays the details. Otherwise, Reachability Analyzer identifies the blocking component.
 

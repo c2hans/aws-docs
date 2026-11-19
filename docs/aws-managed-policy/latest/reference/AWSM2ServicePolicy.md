@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSM2ServicePolicy
-<a name="AWSM2ServicePolicy"></a>
 
 **Description**: Allows AWS M2 to manage AWS resources on your behalf.
 

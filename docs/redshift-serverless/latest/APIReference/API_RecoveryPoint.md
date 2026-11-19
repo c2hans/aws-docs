@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # RecoveryPoint
-<a name="API_RecoveryPoint"></a>
 
 The automatically created recovery point of a namespace. Recovery points are created every 30 minutes and kept for 24 hours.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # UpdateDomainForOrganization
-<a name="API_UpdateDomainForOrganization"></a>
 
 Updates an organization domain's name or identity provider configuration. Call this operation in the Region where the domain was created.
 

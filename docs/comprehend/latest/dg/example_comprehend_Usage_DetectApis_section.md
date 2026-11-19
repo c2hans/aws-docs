@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/example_comprehend_
 ---
 
 # Detect document elements with Amazon Comprehend and an AWS SDK
-<a name="example_comprehend_Usage_DetectApis_section"></a>
 
 The following code example shows how to:
 + Detect languages, entities, and key phrases in a document.

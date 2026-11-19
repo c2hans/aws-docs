@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Step 2. Build the servers
-<a name="step2"></a>
 
 After you import the application and server metadata, you verify the source machines and install the replication agent to start data replication.
 

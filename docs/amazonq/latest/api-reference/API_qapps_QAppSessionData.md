@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_Q
 ---
 
 # QAppSessionData
-<a name="API_qapps_QAppSessionData"></a>
 
 The response collected for a Amazon Q App session. This container represents a single response to a Q App session.
 

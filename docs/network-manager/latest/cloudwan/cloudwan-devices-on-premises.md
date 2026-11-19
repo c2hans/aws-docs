@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # Associate or disassociate an on-premises link in an AWS Cloud WAN global network
-<a name="cloudwan-devices-on-premises"></a>
 
 Associate or disassociate an on-premises device link association in your Cloud WAN global network.
 

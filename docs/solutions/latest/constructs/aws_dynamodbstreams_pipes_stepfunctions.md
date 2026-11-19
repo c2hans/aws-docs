@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_dynamodb
 ---
 
 # aws-dynamodbstreams-pipes-stepfunctions
-<a name="aws_dynamodbstreams_pipes_stepfunctions"></a>
 
 ![Stability:Experimental](https://img.shields.io/badge/stability-Experimental-important.svg?style=for-the-badge)
 

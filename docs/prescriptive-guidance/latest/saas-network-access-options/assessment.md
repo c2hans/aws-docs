@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 ---
 
 # Assessing network access decisions for SaaS offerings
-<a name="assessment"></a>
 
 ## Understanding your market
 <a name="assessment-market"></a>

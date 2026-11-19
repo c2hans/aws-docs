@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DisableVg
 ---
 
 # DisableVgwRoutePropagation
-<a name="API_DisableVgwRoutePropagation"></a>
 
 Disables a virtual private gateway (VGW) from propagating routes to a specified route table of a VPC.
 

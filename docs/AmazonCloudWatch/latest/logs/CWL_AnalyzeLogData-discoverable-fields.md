@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Analyze
 ---
 
 # Supported logs and discovered fields
-<a name="CWL_AnalyzeLogData-discoverable-fields"></a>
 
 CloudWatch Logs Insights supports different log types. For every log that's sent to a Standard class log group in Amazon CloudWatch Logs, CloudWatch Logs Insights automatically generates five system fields:
 + `@message` contains the raw unparsed log event. This is the equivalent to the `message` field in [InputLogevent](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_InputLogEvent.html).

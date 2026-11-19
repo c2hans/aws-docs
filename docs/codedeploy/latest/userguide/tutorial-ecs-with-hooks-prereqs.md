@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-ecs
 ---
 
 # Prerequisites
-<a name="tutorial-ecs-with-hooks-prereqs"></a>
 
 To successfully complete this tutorial, you must first:
 +  Complete the prerequisites in [Prerequisites](tutorial-ecs-prereqs.md) for [Tutorial: Deploy an application into Amazon ECS](tutorial-ecs-deployment.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/APIReference/API_DeleteData
 ---
 
 # DeleteDataRetentionBot
-<a name="API_DeleteDataRetentionBot"></a>
 
 Deletes the data retention bot from a Wickr network. This operation permanently removes the bot and all its associated data from the database.
 

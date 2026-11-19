@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/categories-captions.
 ---
 
 # Captions categories
-<a name="categories-captions"></a>
 
 Captions are grouped into five categories, based on how the captions are included in the output.
 

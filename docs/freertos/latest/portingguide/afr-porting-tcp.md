@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/afr-porting
 ---
 
 # Porting a TCP/IP stack
-<a name="afr-porting-tcp"></a>
 
 This section provides instruction for porting and testing on-board TCP/IP stacks. If your platform offloads TCP/IP and TLS functionality to a separate network processor or module, you can skip this porting section and visit [Porting the Network Transport Interface](afr-porting-network-transport-interface.md).
 

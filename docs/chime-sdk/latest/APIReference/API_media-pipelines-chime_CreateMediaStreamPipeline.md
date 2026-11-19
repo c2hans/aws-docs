@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-
 ---
 
 # CreateMediaStreamPipeline
-<a name="API_media-pipelines-chime_CreateMediaStreamPipeline"></a>
 
 Creates a streaming media pipeline.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Inpu
 ---
 
 # InputTransformer
-<a name="API_InputTransformer"></a>
 
 Contains the parameters needed for you to provide custom input to a target based on one or more pieces of data extracted from the event.
 

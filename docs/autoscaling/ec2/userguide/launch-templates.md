@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/launch-templat
 ---
 
 # Auto Scaling launch templates
-<a name="launch-templates"></a>
 
 A launch template is similar to a [launch configuration](launch-configurations.md), in that it specifies instance configuration information. It includes the ID of the Amazon Machine Image (AMI), the instance type, a key pair, security groups, and other parameters used to launch EC2 instances. However, defining a launch template instead of a launch configuration allows you to have multiple versions of a launch template.
 

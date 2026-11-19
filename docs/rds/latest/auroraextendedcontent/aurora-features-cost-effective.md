@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rds/latest/auroraextendedcontent/aurora-
 ---
 
 # Cost-effective
-<a name="aurora-features-cost-effective"></a>
 
 **Topics**
 + [Pay only for what you use](#aurora-features-pay-for-use)

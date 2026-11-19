@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/tr
 ---
 
 # Troubleshooting FAQs
-<a name="troubleshooting-faqs"></a>
 
 As you use the AWS SDK for Kotlin in your applications, you might encounter some of the issues listed in this topic. Use the following suggestions to help uncover the root cause and resolve the error.
 

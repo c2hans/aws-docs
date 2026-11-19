@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Desti
 ---
 
 # DestinationParameterValueConfiguration
-<a name="API_DestinationParameterValueConfiguration"></a>
 
 The configuration of destination parameter values.
 

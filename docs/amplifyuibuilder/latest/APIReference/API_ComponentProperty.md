@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # ComponentProperty
-<a name="API_ComponentProperty"></a>
 
 Describes the configuration for all of a component's properties. Use `ComponentProperty` to specify the values to render or bind by default.
 
@@ -32,7 +31,7 @@ Required: No
 
  ** concat **   <a name="amplifyuibuilder-Type-ComponentProperty-concat"></a>
 A list of component properties to concatenate to create the value to assign to this component property.
-Type: Array of [ComponentProperty](#API_ComponentProperty) objects
+Type: Array of [ComponentProperty](API_ComponentProperty.md) objects
 Required: No
 
  ** condition **   <a name="amplifyuibuilder-Type-ComponentProperty-condition"></a>

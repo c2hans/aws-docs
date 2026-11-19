@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-marketing-clou
 ---
 
 # Writing to Salesforce Marketing Cloud entities
-<a name="salesforce-marketing-cloud-writing-to-entities"></a>
 
 **Prerequisites**
 + A Salesforce Marketing object you wish to write to. You will need to specify the object’s name such as `List` or `Campaigns` or any of the other entities outlined in the table below.

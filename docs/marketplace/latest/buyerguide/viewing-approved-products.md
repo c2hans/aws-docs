@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/viewing-ap
 ---
 
 # Viewing approved products
-<a name="viewing-approved-products"></a>
 
 If you are being governed by a Private Marketplace experience, you will be limited to purchasing products approved in your experience.
 

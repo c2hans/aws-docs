@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wickr/latest/userguide/updates.html
 This guide provides documentation for AWS Wickr. For Wickr Enterprise, which is the on-premises version of Wickr, see [Enterprise Administration Guide](https://docs.aws.amazon.com/wickr/latest/enterpriseadminguide/what-is-wickr.html).
 
 # Check for updates in the Wickr client
-<a name="updates"></a>
 
 You can check for updates to the Wickr client.
 

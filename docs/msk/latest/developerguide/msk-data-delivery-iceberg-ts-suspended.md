@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 ---
 
 # Channel is suspended
-<a name="msk-data-delivery-iceberg-ts-suspended"></a>
 
 ## Suspension on a previously working Channel
 <a name="msk-data-delivery-iceberg-ts-suspended-working"></a>

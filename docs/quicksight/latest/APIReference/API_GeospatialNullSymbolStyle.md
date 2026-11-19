@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Geosp
 ---
 
 # GeospatialNullSymbolStyle
-<a name="API_GeospatialNullSymbolStyle"></a>
 
 The symbol style for null data.
 

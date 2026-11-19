@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/sns-
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Send Messages to HTTP/HTTPS Endpoints
-<a name="sns-send-http"></a>
 
 You can use Amazon SNS to send notification messages to one or more HTTP or HTTPS endpoints. The process is as follows:
 

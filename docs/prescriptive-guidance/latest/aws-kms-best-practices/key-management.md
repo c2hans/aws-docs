@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-kms-bes
 ---
 
 # Key management best practices for AWS KMS
-<a name="key-management"></a>
 
 When you use AWS Key Management Service (AWS KMS), you must make fundamental design decisions. These include whether to use a centralized or decentralized model for key management and access, the type of keys to use, and the type of key store to use. The following sections help you make decisions that fit your organization and use cases. This section concludes with considerations for disabling and deleting KMS keys, including actions that you can take to help protect your data and keys.
 

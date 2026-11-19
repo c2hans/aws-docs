@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Schedu
 ---
 
 # ScheduleLambdaFunctionDecisionAttributes
-<a name="API_ScheduleLambdaFunctionDecisionAttributes"></a>
 
 Decision attributes specified in `scheduleLambdaFunctionDecisionAttributes` within the list of decisions `decisions` passed to [RespondDecisionTaskCompleted](API_RespondDecisionTaskCompleted.md).
 

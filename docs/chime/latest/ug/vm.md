@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/vm.html
 ---
 
 # Accessing voicemail
-<a name="vm"></a>
 
 If your administrator enables inbound calling, unanswered and declined calls from public switched telephone network (PSTN) phone numbers are redirected to your voicemail.
 

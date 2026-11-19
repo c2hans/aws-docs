@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Do
 ---
 
 # DocumentIdentifier
-<a name="API_agent_DocumentIdentifier"></a>
 
 Contains information that identifies the document.
 

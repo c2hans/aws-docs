@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/start-call-recording
 ---
 
 # StartCallRecording
-<a name="start-call-recording"></a>
 
 The `StartCallRecording` action starts the recording of a call leg. You start call recording in your SIP media applications, either on-demand or in response to a SIP event.
 + To start on-demand recording of a call, you use the `UpdateSipMediaApplication` API to invoke your application and return the `StartCallRecording` action.

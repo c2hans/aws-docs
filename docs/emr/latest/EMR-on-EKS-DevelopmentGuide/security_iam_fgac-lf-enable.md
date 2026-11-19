@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/s
 ---
 
 # Enable Lake Formation with Amazon EMR on EKS
-<a name="security_iam_fgac-lf-enable"></a>
 
 With Amazon EMR release 7.7 and higher, you can leverage AWS Lake Formation to apply fine-grained access controls on Data Catalog tables that are backed by Amazon S3. This capability lets you configure table, row, column, and cell level access controls for read and write queries within your Amazon EMR on EKS Spark Jobs.
 

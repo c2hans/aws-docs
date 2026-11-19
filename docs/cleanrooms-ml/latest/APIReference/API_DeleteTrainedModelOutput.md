@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_De
 ---
 
 # DeleteTrainedModelOutput
-<a name="API_DeleteTrainedModelOutput"></a>
 
 Deletes the model artifacts stored by the service.
 

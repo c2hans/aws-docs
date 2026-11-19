@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_SkipW
 ---
 
 # SkipWaitTimeForInstanceTermination
-<a name="API_SkipWaitTimeForInstanceTermination"></a>
 
 In a blue/green deployment, overrides any specified wait time and starts terminating instances immediately after the traffic routing is complete.
 

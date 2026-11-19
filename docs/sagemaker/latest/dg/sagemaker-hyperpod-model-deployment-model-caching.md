@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Model weights caching and image caching
-<a name="sagemaker-hyperpod-model-deployment-model-caching"></a>
 
 When you scale out an inference deployment, each new pod must pull the inference server container image from a registry. It must also download model weights from remote storage (Amazon S3 or Amazon FSx) before it can serve traffic. For large language models, downloading model weights and pulling container images contribute most to cold start latency.
 

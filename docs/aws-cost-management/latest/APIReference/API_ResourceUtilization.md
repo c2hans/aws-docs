@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ResourceUtilization
-<a name="API_ResourceUtilization"></a>
 
 Resource utilization of current resource.
 

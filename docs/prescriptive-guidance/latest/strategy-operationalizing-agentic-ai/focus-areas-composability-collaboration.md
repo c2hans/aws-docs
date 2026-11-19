@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-op
 ---
 
 # Focus area 2: Design for composability and collaboration
-<a name="focus-areas-composability-collaboration"></a>
 
 *Job to be done: "Let me build agents like I build services – modular and testable, so that they can be composed and orchestrated as needed."*
 

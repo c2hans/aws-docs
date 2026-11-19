@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/live-r
 ---
 
 # Live races
-<a name="live-races"></a>
 
 ![Live races](https://docs.aws.amazon.com/solutions/latest/deepracer-on-aws/images/deepracer_live_race_overview.png)
 

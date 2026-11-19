@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Capaci
 ---
 
 # CapacityReservation
-<a name="API_CapacityReservation"></a>
 
 Information about the Capacity Reservation used by an instance or instance group.
 

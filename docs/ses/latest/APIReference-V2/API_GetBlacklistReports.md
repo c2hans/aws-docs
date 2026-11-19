@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_GetBlackl
 ---
 
 # GetBlacklistReports
-<a name="API_GetBlacklistReports"></a>
 
 Retrieve a list of the blacklists that your dedicated IP addresses appear on.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CopyDB
 ---
 
 # CopyDBParameterGroup
-<a name="API_CopyDBParameterGroup"></a>
 
 Copies the specified DB parameter group.
 

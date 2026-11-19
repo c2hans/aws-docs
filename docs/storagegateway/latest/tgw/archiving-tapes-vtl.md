@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/tgw/archiving-tape
 ---
 
 # Archiving Virtual Tapes
-<a name="archiving-tapes-vtl"></a>
 
 You can archive your tapes to S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive. When you create a tape, you choose the archive pool that you want to use to archive your tape.
 

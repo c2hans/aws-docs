@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/code-i
 ---
 
 # Troubleshoot AgentCore Code Interpreter
-<a name="code-interpreter-troubleshooting"></a>
 
 This section provides solutions to common issues you might encounter when using the Amazon Bedrock AgentCore Code Interpreter.
 

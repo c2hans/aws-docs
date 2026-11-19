@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ExtractionJobMessages
-<a name="API_ExtractionJobMessages"></a>
 
 The list of messages that compose this extraction job.
 

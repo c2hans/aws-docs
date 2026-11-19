@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/alb-waf-ena
 ---
 
 # alb-waf-enabled
-<a name="alb-waf-enabled"></a>
 
 Checks if Web Application Firewall (WAF) is enabled on Application Load Balancers (ALBs). This rule is NON\_COMPLIANT if key: waf.enabled is set to false.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeTransformJob
-<a name="API_DescribeTransformJob"></a>
 
 Returns information about a transform job.
 

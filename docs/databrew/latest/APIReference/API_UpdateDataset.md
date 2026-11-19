@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_UpdateD
 ---
 
 # UpdateDataset
-<a name="API_UpdateDataset"></a>
 
 Modifies the definition of an existing DataBrew dataset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/dy
 ---
 
 # Dynamically generate an IAM policy with IAM Access Analyzer by using Step Functions
-<a name="dynamically-generate-an-iam-policy-with-iam-access-analyzer-by-using-step-functions"></a>
 
 *Thomas Scott, Koen van Blijderveen, Adil El Kanabi, and Rafal Pawlaszek, Amazon Web Services*
 

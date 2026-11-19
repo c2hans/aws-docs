@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/re
 ---
 
 # Required ports
-<a name="required-ports"></a>
 
  To integrate Amazon GameLift Streams, ensure that your network infrastructure has the necessary ports open and accessible. The following is a list of the ports you should plan to have open on your network to communicate with Amazon GameLift Streams.
 

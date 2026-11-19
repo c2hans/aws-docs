@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/working-wit
 ---
 
 # Create AWS Clean Rooms ML models as a training data provider
-<a name="working-with-machine-learning-tdp"></a>
 
 A *lookalike model* is a model of a training data provider's data that allows a seed data provider to create a lookalike segment of training data provider's data that most closely resembles their seed data. To create a lookalike model that can be used in a collaboration, you must import your training data, create a lookalike model, configure that lookalike model, and then associate it to a collaboration.
 

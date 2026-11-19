@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_F
 ---
 
 # FleetMember
-<a name="API_FleetMember"></a>
 
 The fleet member.
 

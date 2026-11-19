@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf05.
 ---
 
 # Monitor, test, and improve workload performance
-<a name="perf05"></a>
 
  Meeting a workload's performance requirements once is not the same as meeting them over time. Traffic grows, dependencies change, and the infrastructure underneath the workload evolves. This capability covers the performance lifecycle from build through operation and optimization: instrumenting the paths that matter, testing the complete workload under representative conditions, investigating selected incidents, automating guarded remediation, keeping components current, and reviewing metrics and alarms.
 

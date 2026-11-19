@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Mat
 ---
 
 # MatchedDataBinding
-<a name="API_MatchedDataBinding"></a>
 
 Represents a data binding that matches the specified filter criteria.
 

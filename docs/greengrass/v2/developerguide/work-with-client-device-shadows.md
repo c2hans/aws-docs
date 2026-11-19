@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/work-with-c
 ---
 
 # Interact with and sync client device shadows
-<a name="work-with-client-device-shadows"></a>
 
 You can use the [shadow manager component](shadow-manager-component.md) to manage local shadows, including client device shadows. You can use shadow manager to do the following:
 + Interact with client device shadows in Greengrass components.

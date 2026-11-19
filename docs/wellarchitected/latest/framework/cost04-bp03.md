@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/cost04-
 ---
 
 # COST04-BP03 Optimize services to reduce data transfer costs
-<a name="cost04-bp03"></a>
 
  Pricing, service capabilities, and your usage patterns change over time. Optimize data transfer continuously to keep cost proportional to value while preserving performance, reliability, and security.
 

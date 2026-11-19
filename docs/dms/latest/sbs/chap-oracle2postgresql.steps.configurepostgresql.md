@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-oracle2postgresql.st
 ---
 
 # Step 3: Configure Your PostgreSQL Target Database
-<a name="chap-oracle2postgresql.steps.configurepostgresql"></a>
 
 1. If the schemas you are migrating do not exist on the PostgreSQL database, then create the schemas.
 

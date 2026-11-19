@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/troubles
 ---
 
 # Troubleshooting
-<a name="troubleshooting"></a>
 
 The following procedures and tips can help you troubleshoot issues with your AWS Deadline Cloud farms and resources.
 

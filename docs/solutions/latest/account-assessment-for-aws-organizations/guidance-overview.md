@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # Guidance overview
-<a name="guidance-overview"></a>
 
 **Note**
 Publication date: *November 2022 (last update: September 2026)*. Check the [CHANGELOG.md](https://github.com/aws-solutions-library-samples/account-assessment-for-aws-organizations/blob/main/CHANGELOG.md) file in the GitHub repository to see all notable changes and updates to the software.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-ami-referenc
 ---
 
 # Identify your resources referencing specified AMIs
-<a name="ec2-ami-references"></a>
 
 You can identify your AWS resources that reference specified Amazon Machine Images (AMIs), regardless of whether the AMIs are public or private, or who owns them. This visibility helps you ensure your resources use the latest compliant AMIs.
 

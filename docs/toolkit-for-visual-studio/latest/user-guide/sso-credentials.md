@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-gu
 ---
 
 # AWS IAM Identity Center credentials in AWS Toolkit for Visual Studio
-<a name="sso-credentials"></a>
 
 AWS IAM Identity Center is the recommended best practice for managing your AWS account authentication.
 

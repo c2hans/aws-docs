@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/open-dea
 ---
 
 # Open the Deadline Cloud monitor
-<a name="open-deadline-cloud-monitor"></a>
 
 You can open the Deadline Cloud monitor by any of the following ways:
 + **Console** – Sign in to the AWS Management Console and open the Deadline Cloud console.

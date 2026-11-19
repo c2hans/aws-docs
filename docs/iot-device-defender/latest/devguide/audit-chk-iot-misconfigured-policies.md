@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-device-defender/latest/devguide/audi
 ---
 
 # AWS IoT policy potentially misconfigured
-<a name="audit-chk-iot-misconfigured-policies"></a>
 
 An AWS IoT policy was identified as potentially misconfigured. Misconfigured policies, including overly permissive policies, can cause security incidents like allowing devices access to unintended resources.
 

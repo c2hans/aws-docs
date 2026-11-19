@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53g
 ---
 
 # DeleteFirewallRule
-<a name="API_route53globalresolver_DeleteFirewallRule"></a>
 
 Deletes a DNS firewall rule. This operation cannot be undone.
 

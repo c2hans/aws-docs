@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs
 ---
 
 # Using the API with Hybrid Jobs
-<a name="braket-jobs-api"></a>
 
 You can access and interact with Amazon Braket Hybrid Jobs directly using the API. However, defaults and convenience methods are not available when using the API directly.
 

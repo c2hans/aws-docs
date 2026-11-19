@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Render
 ---
 
 # RenderableTask
-<a name="API_RenderableTask"></a>
 
 Contains input values for a task.
 

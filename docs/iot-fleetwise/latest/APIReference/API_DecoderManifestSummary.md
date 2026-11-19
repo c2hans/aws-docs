@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_De
 ---
 
 # DecoderManifestSummary
-<a name="API_DecoderManifestSummary"></a>
 
 Information about a created decoder manifest. You can use the [ListDecoderManifests](API_ListDecoderManifests.md) API operation to return this information about multiple decoder manifests.
 

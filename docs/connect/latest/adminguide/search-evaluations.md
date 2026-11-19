@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/search-evaluat
 ---
 
 # Search for and view evaluations in Connect Customer
-<a name="search-evaluations"></a>
 
 Users can search for evaluated contacts and view evaluations side-by-side alongside audio or screen recordings, conversation transcripts, summaries and insights.
 

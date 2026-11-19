@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Elasticsearch::Domain EncryptionAtRestOptions
-<a name="aws-properties-elasticsearch-domain-encryptionatrestoptions"></a>
 
 Whether the domain should encrypt data at rest, and if so, the AWS Key Management Service key to use.
 

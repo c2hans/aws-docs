@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/durable-getting-started
 ---
 
 # Deploy and invoke Lambda durable functions with the AWS CLI
-<a name="durable-getting-started-cli"></a>
 
 Use the AWS CLI to create and deploy Lambda durable functions with imperative commands. This approach gives you direct control over each step of the deployment process.
 

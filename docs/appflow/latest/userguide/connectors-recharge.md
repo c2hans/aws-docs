@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/latest/userguide/connectors-rech
 ---
 
 # Recharge connector for Amazon AppFlow
-<a name="connectors-recharge"></a>
 
 Recharge is a subscription payment solution designed for merchants to set up and manage dynamic, recurring billing across web and mobile applications. If you're a Recharge user, your account contains data about your customers, transactions, subscriptions, and more. You can use Amazon AppFlow to transfer data from Recharge to certain AWS services or other supported applications.
 

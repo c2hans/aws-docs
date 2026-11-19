@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/linux-troubles
 ---
 
 # Troubleshooting AWS Client VPN connections with Linux-based clients
-<a name="linux-troubleshooting"></a>
 
 The following sections contain information about logging, and about problems that you might have when using Linux-based clients. Please ensure that you are running the latest version of these clients.
 

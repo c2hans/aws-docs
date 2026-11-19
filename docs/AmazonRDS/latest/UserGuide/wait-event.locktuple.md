@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/wait-event.lo
 ---
 
 # Lock:tuple
-<a name="wait-event.locktuple"></a>
 
 The `Lock:tuple` event occurs when a backend process is waiting to acquire a lock on a tuple.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/interconnect/latest/api/API_ListTagsForR
 ---
 
 # ListTagsForResource
-<a name="API_ListTagsForResource"></a>
 
 List all current tags on the specified resource.
 

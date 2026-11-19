@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetVpcRes
 ---
 
 # GetVpcResourcesBlockingEncryptionEnforcement
-<a name="API_GetVpcResourcesBlockingEncryptionEnforcement"></a>
 
 Gets information about resources in a VPC that are blocking encryption enforcement.
 

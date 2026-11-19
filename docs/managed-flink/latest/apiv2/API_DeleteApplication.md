@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_DeleteApp
 ---
 
 # DeleteApplication
-<a name="API_DeleteApplication"></a>
 
 Deletes the specified application. Managed Service for Apache Flink halts application execution and deletes the application.
 

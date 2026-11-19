@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # LicenseConfiguration
-<a name="API_LicenseConfiguration"></a>
 
  Describes the configuration of a license for an Amazon EC2 instance.
 

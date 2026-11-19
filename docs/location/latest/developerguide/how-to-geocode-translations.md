@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-ge
 ---
 
 # How to get address translations
-<a name="how-to-geocode-translations"></a>
 
 `AddressTranslations` allows you to retrieve all name translations and alternative names for address components in all available languages. You specify which address components to translate using the `AddressTranslations` request parameter.
 

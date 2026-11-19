@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Addi
 ---
 
 # AdditionalServiceRegistrationStep
-<a name="API_AdditionalServiceRegistrationStep"></a>
 
 Additional steps required to complete service registration.
 

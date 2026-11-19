@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-forge-s
 ---
 
 # Customizing with SageMaker Python SDK
-<a name="nova-forge-sdk"></a>
 
 The SageMaker Python SDK v3 introduces a modern, modular API for training, fine-tuning, deploying, and managing models on SageMaker. The SDK supports multiple training methods including continued pre-training (CPT), supervised fine-tuning (SFT), reinforcement fine-tuning (RFT), and multi-turn reinforcement learning (MTRL). You can run training jobs on SageMaker Training Jobs and SageMaker HyperPod.
 

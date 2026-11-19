@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/maven-mvn.html
 ---
 
 # Use CodeArtifact with mvn
-<a name="maven-mvn"></a>
 
 You use the `mvn` command to execute Maven builds. This section shows how to configure `mvn` to use a CodeArtifact repository.
 

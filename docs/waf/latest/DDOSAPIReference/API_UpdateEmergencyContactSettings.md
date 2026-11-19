@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_UpdateEm
 ---
 
 # UpdateEmergencyContactSettings
-<a name="API_UpdateEmergencyContactSettings"></a>
 
 Updates the details of the list of email addresses and phone numbers that the Shield Response Team (SRT) can use to contact you if you have proactive engagement enabled, for escalations to the SRT and to initiate proactive customer support.
 

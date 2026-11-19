@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/opensearch_code_e
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Code examples for OpenSearch Service using AWS SDKs
-<a name="opensearch_code_examples"></a>
 
 The following code examples show you how to use Amazon OpenSearch Service with an AWS software development kit (SDK).
 

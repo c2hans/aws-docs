@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/trackers-
 ---
 
 # Trackers pricing
-<a name="trackers-pricing"></a>
 
 For pricing information for tracking and geofencing APIs, see the [Amazon Location Service pricing page](https://aws.amazon.com/location/pricing/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AuthConfiguration
 ---
 
 # AuthConfiguration
-<a name="API_AuthConfiguration"></a>
 
 The authentication configuration for a connection returned by the `DescribeConnectionType` API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # RegisterTargetWithMaintenanceWindow
-<a name="API_RegisterTargetWithMaintenanceWindow"></a>
 
 Registers a target with a maintenance window.
 

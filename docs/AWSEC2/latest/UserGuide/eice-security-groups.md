@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/eice-security-gr
 ---
 
 # Security groups for EC2 Instance Connect Endpoint
-<a name="eice-security-groups"></a>
 
 A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, we deny traffic to and from an Amazon EC2 instance unless it is specifically allowed by the security groups associated with the instance.
 

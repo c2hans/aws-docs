@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTime
 ---
 
 # RealTimeContactAnalysisSegmentTranscript
-<a name="API_RealTimeContactAnalysisSegmentTranscript"></a>
 
 The analyzed transcript segment.
 

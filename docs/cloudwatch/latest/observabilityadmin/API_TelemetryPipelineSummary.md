@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # TelemetryPipelineSummary
-<a name="API_TelemetryPipelineSummary"></a>
 
 Contains summary information about a telemetry pipeline for listing operations.
 

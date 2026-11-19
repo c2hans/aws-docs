@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/co.html
 ---
 
 # .co (Colombia)
-<a name="co"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # GetTaxExemptionTypes
-<a name="API_taxSettings_GetTaxExemptionTypes"></a>
 
 Get supported tax exemption types. The IAM action is `tax:GetExemptions`.
 

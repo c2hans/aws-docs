@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-
 ---
 
 # GetVoiceProfileDomain
-<a name="API_voice-chime_GetVoiceProfileDomain"></a>
 
 Retrieves the details of the specified voice profile domain.
 

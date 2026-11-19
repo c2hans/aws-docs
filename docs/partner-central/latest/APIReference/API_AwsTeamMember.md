@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # AwsTeamMember
-<a name="API_AwsTeamMember"></a>
 
 Represents an AWS team member for the engagement. This structure includes details such as name, email, and business title.
 

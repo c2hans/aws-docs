@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Expres
 ---
 
 # ExpressGatewayServiceConfiguration
-<a name="API_ExpressGatewayServiceConfiguration"></a>
 
 Represents a specific configuration revision of an Express service, containing all the settings and parameters for that revision.
 

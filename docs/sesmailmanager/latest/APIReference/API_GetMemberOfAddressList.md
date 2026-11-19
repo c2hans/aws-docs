@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_G
 ---
 
 # GetMemberOfAddressList
-<a name="API_GetMemberOfAddressList"></a>
 
 Fetch attributes of a member in an address list.
 

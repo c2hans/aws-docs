@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/sd
 ---
 
 # Locale preference
-<a name="sdk-locale-support"></a>
 
  In Amazon GameLift Streams, you can set the locale preference per stream. This is useful if your application retrieves location-specific information from the end user's operating system, such as time or currency.
 

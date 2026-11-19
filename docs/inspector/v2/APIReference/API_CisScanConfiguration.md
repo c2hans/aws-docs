@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CisScanCon
 ---
 
 # CisScanConfiguration
-<a name="API_CisScanConfiguration"></a>
 
 The CIS scan configuration.
 

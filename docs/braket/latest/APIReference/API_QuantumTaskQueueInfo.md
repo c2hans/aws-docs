@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/braket/latest/APIReference/API_QuantumTa
 ---
 
 # QuantumTaskQueueInfo
-<a name="API_QuantumTaskQueueInfo"></a>
 
 The queue information for the specified quantum task.
 

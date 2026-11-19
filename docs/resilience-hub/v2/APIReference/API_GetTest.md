@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_GetTe
 ---
 
 # GetTest
-<a name="API_GetTest"></a>
 
 Retrieves a test by ID.
 

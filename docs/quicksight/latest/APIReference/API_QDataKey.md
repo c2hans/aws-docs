@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_QData
 ---
 
 # QDataKey
-<a name="API_QDataKey"></a>
 
 A structure that contains information about the `QDataKey`.
 

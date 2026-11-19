@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # DeleteCollectionDetail
-<a name="API_DeleteCollectionDetail"></a>
 
 Details about a deleted OpenSearch Serverless collection.
 

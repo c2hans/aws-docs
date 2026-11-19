@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/APIReference/API_Update
 ---
 
 # UpdateProject
-<a name="API_UpdateProject"></a>
 
 Changes the settings of a build project.
 

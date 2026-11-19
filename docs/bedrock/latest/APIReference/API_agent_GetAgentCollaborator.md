@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Ge
 ---
 
 # GetAgentCollaborator
-<a name="API_agent_GetAgentCollaborator"></a>
 
 Retrieves information about an agent's collaborator.
 

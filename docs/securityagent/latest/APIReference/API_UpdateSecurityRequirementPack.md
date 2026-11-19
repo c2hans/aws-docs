@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Up
 ---
 
 # UpdateSecurityRequirementPack
-<a name="API_UpdateSecurityRequirementPack"></a>
 
 Updates a security requirement pack. For customer managed packs, both metadata and status can be updated. For AWS managed packs, only status can be updated.
 

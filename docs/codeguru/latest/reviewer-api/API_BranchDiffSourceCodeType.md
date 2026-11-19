@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_BranchD
 ---
 
 # BranchDiffSourceCodeType
-<a name="API_BranchDiffSourceCodeType"></a>
 
 A type of [SourceCodeType](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_SourceCodeType) that specifies a code diff between a source and destination branch in an associated repository.
 

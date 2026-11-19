@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/dotnet-web-se
 ---
 
 # Transformation settings
-<a name="dotnet-web-settings"></a>
 
 ## Transformation mode
 <a name="transformation-mode"></a>

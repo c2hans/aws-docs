@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/agentic-vehicle-experien
 ---
 
 # Stage 4 — Service
-<a name="service-stage"></a>
 
 The Service stage is the prescriptive heart of AVX. When a customer calls because their check-engine light is on, the agent must determine urgency, diagnose the likely cause, quote the repair, identify a service center, book the appointment, and verify warranty coverage — all in a single conversational turn, grounded in real vehicle data.
 

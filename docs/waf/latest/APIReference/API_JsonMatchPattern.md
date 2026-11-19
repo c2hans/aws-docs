@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_JsonMatchPat
 ---
 
 # JsonMatchPattern
-<a name="API_JsonMatchPattern"></a>
 
 The patterns to look for in the JSON body. AWS WAF inspects the results of these pattern matches against the rule inspection criteria. This is used with the [FieldToMatch](API_FieldToMatch.md) option `JsonBody`.
 

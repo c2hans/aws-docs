@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 ---
 
 # Configure DynamoDB Mapper
-<a name="ddb-mapper-configuration"></a>
 
 You configure a [`DynamoDbMapper`](/sdk-for-kotlin/api/latest/dynamodb-mapper/aws.sdk.kotlin.hll.dynamodbmapper/-dynamo-db-mapper/index.html) by passing a configuration block when you create it. The primary configuration mechanism is **interceptors**, which are objects that hook into the mapper’s request pipeline to observe or modify operations as they run.
 

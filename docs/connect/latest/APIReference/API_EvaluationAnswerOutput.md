@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Evaluati
 ---
 
 # EvaluationAnswerOutput
-<a name="API_EvaluationAnswerOutput"></a>
 
 Information about output answers for a contact evaluation.
 

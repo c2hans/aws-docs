@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Replace filters- with filters:
-<a name="example-1-replace-filters"></a>
 
 If you put `/(filters-)/gm in REWRITE_MATCH_PATTERN` and `filters:` in **REWRITE\_SUBSTITUTION**, you can call
 

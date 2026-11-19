@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-4/ug/S3-bucket
 ---
 
 # Add an Amazon S3 bucket
-<a name="S3-buckets-add"></a>
 
 **To add an S3 bucket to your RES environment:**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-a
 ---
 
 # Adapting to change
-<a name="adapt-to-change"></a>
 
 Software systems tend to get complicated. One reason for this could be frequent changes to the business requirements and little time to adapt the software architecture accordingly. Another reason could be insufficient investment for setting up the software architecture at the beginning of the project to adapt to frequent changes. Whatever the reason, a software system could get complicated to the point where it is almost impossible to make a change. Therefore, it is important to build maintainable software architecture from the beginning of the project. Good software architecture can adapt to changes easily.
 

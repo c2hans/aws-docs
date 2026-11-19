@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_DatabaseConn
 ---
 
 # DatabaseConnectionStringProfile
-<a name="API_DatabaseConnectionStringProfile"></a>
 
 A connection string profile for an Autonomous Database.
 

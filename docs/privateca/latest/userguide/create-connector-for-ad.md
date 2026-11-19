@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/create-connec
 ---
 
 # Creating a connector for Active Directory
-<a name="create-connector-for-ad"></a>
 
 Use the following procedures to create a connector using the console, command line, or API for AWS Private CA Connector for Active Directory.
 

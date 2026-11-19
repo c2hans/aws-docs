@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/database-migratio
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Code examples for AWS DMS using AWS SDKs
-<a name="database-migration-service_code_examples"></a>
 
 The following code examples show you how to use AWS Database Migration Service with an AWS software development kit (SDK).
 

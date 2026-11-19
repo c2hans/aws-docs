@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Orac
 ---
 
 # Oracle Statspack
-<a name="Appendix.Oracle.Options.Statspack"></a>
 
 The Oracle Statspack option installs and enables the Oracle Statspack performance statistics feature. Oracle Statspack is a collection of SQL, PL/SQL, and SQL\*Plus scripts that collect, store, and display performance data. The Statspack scripts and their documentation are installed with the database under `$ORACLE_HOME/rdbms/admin` (for example, `spdoc.txt`).
 

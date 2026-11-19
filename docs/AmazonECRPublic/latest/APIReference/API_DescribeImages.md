@@ -3,12 +3,11 @@ source_url: https://docs.aws.amazon.com/AmazonECRPublic/latest/APIReference/API_
 ---
 
 # DescribeImages
-<a name="API_DescribeImages"></a>
 
 Returns metadata that's related to the images in a repository in a public registry.
 
 **Note**
-Beginning with Docker version 1.9, the Docker client compresses image layers before pushing them to a V2 Docker registry. The output of the `docker images` command shows the uncompressed image size. Therefore, it might return a larger image size than the image sizes that are returned by [DescribeImages](#API_DescribeImages).
+Beginning with Docker version 1.9, the Docker client compresses image layers before pushing them to a V2 Docker registry. The output of the `docker images` command shows the uncompressed image size. Therefore, it might return a larger image size than the image sizes that are returned by [DescribeImages](API_DescribeImages.md).
 
 ## Request Syntax
 <a name="API_DescribeImages_RequestSyntax"></a>

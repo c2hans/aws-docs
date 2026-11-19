@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_ListD
 ---
 
 # ListDistributionsByRealtimeLogConfig
-<a name="API_ListDistributionsByRealtimeLogConfig"></a>
 
 Gets a list of distributions that have a cache behavior that's associated with the specified real-time log configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 ---
 
 # Scenarios
-<a name="scenarios"></a>
 
  This section includes a set of customer use cases, applications for AWS features and services, reporting requirements, data structures, testing protocols, and workloads.
 

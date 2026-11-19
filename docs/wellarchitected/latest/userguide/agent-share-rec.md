@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent-s
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Sharing recommendations in AWS Well-Architected Agent
-<a name="agent-share-rec"></a>
 
 Share a single recommendation with other AWS accounts, an organization, or an organizational unit (OU) so that the teams that own the affected resources can review and act on it. To share a recommendation, you attach a resource-based policy to it in the AWS WA Agent console, with the API, or with the AWS CLI. The profile owner can share a recommendation, and so can any account that the profile policy allows to do so. To share every recommendation in a profile, share the profile instead. For more information, see [Sharing agent profiles in AWS Well-Architected Agent](agent-share-profile.md).
 

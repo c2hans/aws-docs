@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/admingui
 ---
 
 # Designation permissions
-<a name="designation-permissions"></a>
 
 Amazon SageMaker Unified Studio provides managed designations, and domain administrators can create custom designations. The following sections describe the permissions available for custom designations, including the underlying APIs that each permission grants, and the Cedar policies that define the managed designations.
 

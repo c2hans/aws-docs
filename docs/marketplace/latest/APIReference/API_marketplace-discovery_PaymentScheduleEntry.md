@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # PaymentScheduleEntry
-<a name="API_marketplace-discovery_PaymentScheduleEntry"></a>
 
 A single installment entry in the renewal payment schedule.
 

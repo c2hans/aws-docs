@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-security-manager/latest/APIRefer
 ---
 
 # ScopeConfiguration
-<a name="API_ScopeConfiguration"></a>
 
 Defines which accounts and resources are in scope.
 

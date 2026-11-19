@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_TaskProce
 ---
 
 # TaskProcessingDetails
-<a name="API_TaskProcessingDetails"></a>
 
 Details about the over-the-air (OTA) task process.
 

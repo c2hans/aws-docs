@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_D
 ---
 
 # DeleteQApp
-<a name="API_qapps_DeleteQApp"></a>
 
 Deletes an Amazon Q App owned by the user. If the Q App was previously published to the library, it is also removed from the library.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_D
 ---
 
 # DeleteAppVersionResource
-<a name="API_DeleteAppVersionResource"></a>
 
 Deletes a resource from the AWS Resilience Hub application.
 

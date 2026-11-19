@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 ---
 
 # Using Amazon Route 53
-<a name="using-amazon-route-53"></a>
 
  [Amazon Route 53](https://aws.amazon.com/route53/) is a highly available and scalable Domain Name System (DNS) web service. You can use Route 53 to perform the functions of cell router in your architecture, doing DNS routing, and health checking. Route 53 is a service that offers a SLA of 100% for the data plane and can be used to redirect the traffic to correct cell, or even failover in case of an impairment at an Availability Zone or Region. Give each tenant a custom DNS record they use to reach your service, then configure the DNS record to point at a specific cell to which the tenant has been assigned.
 

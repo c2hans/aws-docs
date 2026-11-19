@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-networking.
 ---
 
 # Networking
-<a name="hana-ops-networking"></a>
 
 SAP HANA components communicate over the following logical network zones:
 + Client zone – to communicate with different clients such as SQL clients, SAP Application Server, SAP HANA Extended Application Services (XS), and SAP HANA Studio

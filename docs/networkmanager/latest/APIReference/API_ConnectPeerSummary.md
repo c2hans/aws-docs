@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_C
 ---
 
 # ConnectPeerSummary
-<a name="API_ConnectPeerSummary"></a>
 
 Summary description of a Connect peer.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::IoT::JobTemplate JobExecutionsRetryConfig
-<a name="aws-properties-iot-jobtemplate-jobexecutionsretryconfig"></a>
 
 The configuration that determines how many retries are allowed for each failure type for a job.
 

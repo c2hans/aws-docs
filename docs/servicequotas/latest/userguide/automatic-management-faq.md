@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/latest/userguide/automatic
 ---
 
 # Service Quotas Automatic Management frequently asked questions
-<a name="automatic-management-faq"></a>
 
 ## Notifications and monitoring
 <a name="faq-notifications-monitoring"></a>

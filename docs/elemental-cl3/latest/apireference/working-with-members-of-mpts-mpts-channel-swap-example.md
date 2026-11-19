@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # Example
-<a name="working-with-members-of-mpts-mpts-channel-swap-example"></a>
 
 This request swaps channel 3 for channel 4 and uses default PID value (so does not specify any PIDs).
 

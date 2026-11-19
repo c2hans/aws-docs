@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Upd
 ---
 
 # UpdateDevEnvironment
-<a name="API_UpdateDevEnvironment"></a>
 
 Changes one or more values for a Dev Environment. Updating certain values of the Dev Environment will cause a restart.
 

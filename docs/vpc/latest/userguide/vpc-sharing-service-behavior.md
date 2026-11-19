@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing-service
 ---
 
 # AWS resources and shared VPC subnets
-<a name="vpc-sharing-service-behavior"></a>
 
 The following AWS services support resources in shared VPC subnets. For more information, follow the links to the corresponding service documentation.
 + [Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_VPC.WorkingWithRDSInstanceinaVPC.html#USER_VPC.Shared_subnets)

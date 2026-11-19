@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/share-model-sha
 ---
 
 # Share a model with another account
-<a name="share-model-share"></a>
 
 After you [fulfill the prerequisites](share-model-prereq.md), you can share a model. Choose the tab for your preferred method, and then follow the steps:
 

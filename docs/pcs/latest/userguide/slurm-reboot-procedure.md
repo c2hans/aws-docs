@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/slurm-reboot-proced
 ---
 
 # Reboot a compute node using Slurm in AWS PCS
-<a name="slurm-reboot-procedure"></a>
 
 Use Slurm's native reboot command to resolve performance issues, clear resource problems, or recover from degraded states without loss of EC2 instance capacity.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 ---
 
 # Data protection
-<a name="data-protection"></a>
 
 | HPCSEC02: How do you manage data encryption in your HPC cluster? |
 | --- |

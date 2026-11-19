@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/fnd02-b
 ---
 
 # FND02-BP02 Use strong sign-in mechanisms
-<a name="fnd02-bp02"></a>
 
  Sign-in credentials are a critical security boundary in any cloud environment. When authentication is weak (missing multi-factor verification, using guessable passwords, or failing to detect suspicious activity), organizations face higher risk of unauthorized access. Strong sign-in mechanisms reduce this risk by requiring multiple forms of verification and enforcing credential quality.
 

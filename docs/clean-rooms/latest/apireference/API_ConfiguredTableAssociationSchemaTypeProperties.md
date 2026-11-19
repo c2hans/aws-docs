@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Conf
 ---
 
 # ConfiguredTableAssociationSchemaTypeProperties
-<a name="API_ConfiguredTableAssociationSchemaTypeProperties"></a>
 
 Contains the schema type properties for a configured table association.
 

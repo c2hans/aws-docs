@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/jit-email-syncing
 ---
 
 # Configuring email syncing for federated users in Quick
-<a name="jit-email-syncing"></a>
 
 |  |
 | --- |

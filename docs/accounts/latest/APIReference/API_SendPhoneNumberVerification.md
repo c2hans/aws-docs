@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/APIReference/API_SendPho
 ---
 
 # SendPhoneNumberVerification
-<a name="API_SendPhoneNumberVerification"></a>
 
 Sends a one-time passcode (OTP) by SMS to the primary contact phone number that is currently associated with the specified AWS account, to begin verifying that phone number. You do not supply a phone number in the request; the operation uses the number currently on file for the account. To use this operation, you must have the `account:SendPhoneNumberVerification` IAM permission. After the code is delivered, call [VerifyPhoneNumber](API_VerifyPhoneNumber.md) with that code to complete verification.
 

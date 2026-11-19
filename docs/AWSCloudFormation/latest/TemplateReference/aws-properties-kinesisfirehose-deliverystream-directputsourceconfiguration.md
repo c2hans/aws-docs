@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::KinesisFirehose::DeliveryStream DirectPutSourceConfiguration
-<a name="aws-properties-kinesisfirehose-deliverystream-directputsourceconfiguration"></a>
 
 The structure that configures parameters such as `ThroughputHintInMBs` for a stream configured with Direct PUT as a source.
 

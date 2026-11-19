@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/userguide/view-flow-log-recor
 ---
 
 # View flow log records with Amazon S3
-<a name="view-flow-log-records-s3"></a>
 
 You can view your flow log records using the Amazon S3 console. After you create your flow log, it might take a few minutes for it to be visible in the console.
 

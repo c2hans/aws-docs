@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_cre
 ---
 
 # Use temporary credentials from AWS STS in the SDK for PHP
-<a name="guide_credentials_temporary"></a>
 
  AWS Security Token Service (AWS STS) enables you to request limited privilege, **temporary credentials** for IAM users, or for users that you authenticate via identity federation. For deeper understanding, see [Temporary Security Credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html) in the *IAM User Guide*. You can use temporary security credentials to access most AWS services. For a list of the services that accept temporary security credentials, see [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html) in the *IAM User Guide*.
 

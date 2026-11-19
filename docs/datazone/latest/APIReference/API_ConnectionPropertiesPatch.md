@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Connect
 ---
 
 # ConnectionPropertiesPatch
-<a name="API_ConnectionPropertiesPatch"></a>
 
 The connection properties patch.
 

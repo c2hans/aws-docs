@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_Subs
 ---
 
 # SubsidiaryAuthorizationCreatedDateFilterDateRange
-<a name="API_SubsidiaryAuthorizationCreatedDateFilterDateRange"></a>
 
 A date range for filtering subsidiary authorizations by creation date.
 

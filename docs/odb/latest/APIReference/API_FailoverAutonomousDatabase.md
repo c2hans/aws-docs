@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_FailoverAuto
 ---
 
 # FailoverAutonomousDatabase
-<a name="API_FailoverAutonomousDatabase"></a>
 
 Initiates a failover of the specified Autonomous Database to a standby peer database.
 

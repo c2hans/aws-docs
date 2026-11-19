@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/APIReference/API_Di
 ---
 
 # DicomMetadataMapping
-<a name="API_DicomMetadataMapping"></a>
 
 Maps DCM files to their metadata.
 

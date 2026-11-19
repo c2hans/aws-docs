@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/console-vs
 ---
 
 # Variation in operations between the AWS Control Tower console and APIs for baselines
-<a name="console-vs-api-baseline"></a>
 
 When you change the governance status of an OU, the AWS Control Tower console performs more operations for you automatically, compared to changing governance by means of the APIs for baselines.
 

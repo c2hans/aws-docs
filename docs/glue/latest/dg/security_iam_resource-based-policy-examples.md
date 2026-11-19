@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/security_iam_resource-bas
 ---
 
 # Resource-based policy examples for AWS Glue
-<a name="security_iam_resource-based-policy-examples"></a>
 
 This section contains example resource-based policies, including policies that grant cross-account access.
 

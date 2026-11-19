@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteI
 ---
 
 # DeleteInsight
-<a name="API_DeleteInsight"></a>
 
 Deletes the insight specified by the `InsightArn`.
 

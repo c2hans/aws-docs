@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_KeyValuesP
 ---
 
 # KeyValuesPair
-<a name="API_KeyValuesPair"></a>
 
 A filter name and value pair that's used to return a more specific list of results from a `ListJobs` or `ListJobsByConsumableResource` API operation.
 

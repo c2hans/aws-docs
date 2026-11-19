@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_RejectAccountL
 ---
 
 # RejectAccountLinkInvitation
-<a name="API_RejectAccountLinkInvitation"></a>
 
 Rejects the account link invitation.
 

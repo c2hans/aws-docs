@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentTe
 ---
 
 # ExperimentTemplateReportConfigurationCloudWatchDashboard
-<a name="API_ExperimentTemplateReportConfigurationCloudWatchDashboard"></a>
 
 The CloudWatch dashboards to include as data sources in the experiment report.
 

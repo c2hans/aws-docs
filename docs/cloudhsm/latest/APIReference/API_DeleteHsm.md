@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_DeleteH
 ---
 
 # DeleteHsm
-<a name="API_DeleteHsm"></a>
 
 Deletes the specified HSM. To specify an HSM, you can use its identifier (ID), the IP address of the HSM's elastic network interface (ENI), or the ID of the HSM's ENI. You need to specify only one of these values. To find these values, use [DescribeClusters](API_DescribeClusters.md).
 

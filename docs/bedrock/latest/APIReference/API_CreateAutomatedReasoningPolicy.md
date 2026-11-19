@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateAu
 ---
 
 # CreateAutomatedReasoningPolicy
-<a name="API_CreateAutomatedReasoningPolicy"></a>
 
 Creates an Automated Reasoning policy for Amazon Bedrock Guardrails. Automated Reasoning policies use mathematical techniques to detect hallucinations, suggest corrections, and highlight unstated assumptions in the responses of your GenAI application.
 

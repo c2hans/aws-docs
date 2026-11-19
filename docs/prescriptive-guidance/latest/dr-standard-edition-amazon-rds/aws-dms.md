@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dr-standard
 ---
 
 # AWS DMS
-<a name="aws-dms"></a>
 
 [AWS Database Migration Service (AWS DMS)](https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html) provides ongoing replication of data, keeping the source and target databases in sync. By using AWS DMS as a DR option, you can establish synchronous replication with minimal recovery point objective (RPO). The RPO depends on redo or transaction log generation and network transfer time.
 

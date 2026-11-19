@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UserProf
 ---
 
 # UserProficiencyDisassociate
-<a name="API_UserProficiencyDisassociate"></a>
 
 Information about proficiency to be disassociated from the user.
 

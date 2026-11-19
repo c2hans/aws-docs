@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # DescribeTLSInspectionConfiguration
-<a name="API_DescribeTLSInspectionConfiguration"></a>
 
 Returns the data objects for the specified TLS inspection configuration.
 
@@ -139,13 +138,13 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [TLSInspectionConfiguration](#API_DescribeTLSInspectionConfiguration_ResponseSyntax) **   <a name="networkfirewall-DescribeTLSInspectionConfiguration-response-TLSInspectionConfiguration"></a>
-The object that defines a TLS inspection configuration. This, along with [TLSInspectionConfigurationResponse](API_TLSInspectionConfigurationResponse.md), define the TLS inspection configuration. You can retrieve all objects for a TLS inspection configuration by calling [DescribeTLSInspectionConfiguration](#API_DescribeTLSInspectionConfiguration).
+The object that defines a TLS inspection configuration. This, along with [TLSInspectionConfigurationResponse](API_TLSInspectionConfigurationResponse.md), define the TLS inspection configuration. You can retrieve all objects for a TLS inspection configuration by calling [DescribeTLSInspectionConfiguration](API_DescribeTLSInspectionConfiguration.md).
  AWS Network Firewall uses a TLS inspection configuration to decrypt traffic. Network Firewall re-encrypts the traffic before sending it to its destination.
 To use a TLS inspection configuration, you add it to a new Network Firewall firewall policy, then you apply the firewall policy to a firewall. Network Firewall acts as a proxy service to decrypt and inspect the traffic traveling through your firewalls. You can reference a TLS inspection configuration from more than one firewall policy, and you can use a firewall policy in more than one firewall. For more information about using TLS inspection configurations, see [Inspecting SSL/TLS traffic with TLS inspection configurations](https://docs.aws.amazon.com/network-firewall/latest/developerguide/tls-inspection.html) in the * AWS Network Firewall Developer Guide*.
 Type: [TLSInspectionConfiguration](API_TLSInspectionConfiguration.md) object
 
  ** [TLSInspectionConfigurationResponse](#API_DescribeTLSInspectionConfiguration_ResponseSyntax) **   <a name="networkfirewall-DescribeTLSInspectionConfiguration-response-TLSInspectionConfigurationResponse"></a>
-The high-level properties of a TLS inspection configuration. This, along with the [TLSInspectionConfiguration](API_TLSInspectionConfiguration.md), define the TLS inspection configuration. You can retrieve all objects for a TLS inspection configuration by calling [DescribeTLSInspectionConfiguration](#API_DescribeTLSInspectionConfiguration).
+The high-level properties of a TLS inspection configuration. This, along with the [TLSInspectionConfiguration](API_TLSInspectionConfiguration.md), define the TLS inspection configuration. You can retrieve all objects for a TLS inspection configuration by calling [DescribeTLSInspectionConfiguration](API_DescribeTLSInspectionConfiguration.md).
 Type: [TLSInspectionConfigurationResponse](API_TLSInspectionConfigurationResponse.md) object
 
  ** [UpdateToken](#API_DescribeTLSInspectionConfiguration_ResponseSyntax) **   <a name="networkfirewall-DescribeTLSInspectionConfiguration-response-UpdateToken"></a>

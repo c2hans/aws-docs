@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteIma
 ---
 
 # DeleteImageUsageReport
-<a name="API_DeleteImageUsageReport"></a>
 
 Deletes the specified image usage report.
 

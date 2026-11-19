@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsTextMessage
-<a name="API_RcsTextMessage"></a>
 
 A plain text RCS message body.
 

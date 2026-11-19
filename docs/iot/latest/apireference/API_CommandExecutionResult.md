@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_CommandExecu
 ---
 
 # CommandExecutionResult
-<a name="API_CommandExecutionResult"></a>
 
 The result value of the command execution. The device can use the result field to share additional details about the execution such as a return value of a remote function call.
 

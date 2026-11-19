@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Disass
 ---
 
 # DisassociateGatewayFromCluster
-<a name="API_DisassociateGatewayFromCluster"></a>
 
 Removes the association between a gateway and an Amazon ECS cluster. The association remains in the `DISASSOCIATING` state until you remove all of the gateway routes for the cluster by updating the associated services. You can use `ListGatewayRoutes` with a cluster filter to determine which routes are preventing disassociation. No infrastructure changes are made until the affected services are updated.
 

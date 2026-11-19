@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cu
 ---
 
 # Line item columns
-<a name="table-dictionary-cur2-line-item"></a>
 
 Line item columns contain data about cost, usage, type of usage, pricing rates, product name, and more.
 

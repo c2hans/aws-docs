@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_PutEmailI
 ---
 
 # PutEmailIdentityMailFromAttributes
-<a name="API_PutEmailIdentityMailFromAttributes"></a>
 
 Used to enable or disable the custom Mail-From domain configuration for an email identity.
 

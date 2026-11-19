@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_device
 ---
 
 # ListDeviceResources
-<a name="API_devicemanagement_ListDeviceResources"></a>
 
 Returns a list of the AWS resources available for a device. Currently, Amazon EC2 instances are the only supported resource type.
 

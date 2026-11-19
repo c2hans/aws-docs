@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_ListSer
 ---
 
 # ListServers
-<a name="API_ListServers"></a>
 
 Lists the file transfer protocol-enabled servers that are associated with your AWS account.
 

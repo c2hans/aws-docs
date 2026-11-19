@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # StructuredDataPayload
-<a name="API_StructuredDataPayload"></a>
 
 Structured content, as a JSON object.
 

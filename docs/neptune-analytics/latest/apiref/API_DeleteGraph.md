@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_Dele
 ---
 
 # DeleteGraph
-<a name="API_DeleteGraph"></a>
 
 Deletes the specified graph. Graphs cannot be deleted if delete-protection is enabled.
 

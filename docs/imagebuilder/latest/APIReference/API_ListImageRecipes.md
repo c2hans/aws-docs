@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Lis
 ---
 
 # ListImageRecipes
-<a name="API_ListImageRecipes"></a>
 
 Returns a list of image recipes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Hierarch
 ---
 
 # HierarchyPathReference
-<a name="API_HierarchyPathReference"></a>
 
 Information about the levels in the hierarchy group.
 

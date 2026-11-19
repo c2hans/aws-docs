@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amaz
 ---
 
 # Data retrieval APIs for Amazon Lookout for Metrics
-<a name="amazonlookoutformetrics"></a>
 
 Amazon Lookout for Metrics provides the following APIs for data retrieval.
 

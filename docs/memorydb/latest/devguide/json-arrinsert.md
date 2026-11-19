@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/json-arrinsert.
 ---
 
 # JSON.ARRINSERT
-<a name="json-arrinsert"></a>
 
 Insert one or more values into the array values at path before the index.
 

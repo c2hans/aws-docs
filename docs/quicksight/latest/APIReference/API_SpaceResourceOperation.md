@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Space
 ---
 
 # SpaceResourceOperation
-<a name="API_SpaceResourceOperation"></a>
 
 An operation to perform on a resource in a space.
 

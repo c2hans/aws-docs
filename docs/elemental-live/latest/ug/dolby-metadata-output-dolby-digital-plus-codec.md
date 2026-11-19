@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/dolby-metadata-
 ---
 
 # Output with Dolby Digital Plus (EC2, EAC3) codec
-<a name="dolby-metadata-output-dolby-digital-plus-codec"></a>
 
 | Named metadata parameters | Category | Field | API tag (stream\_assembly\\ audio\_description\\ac3\_settings) | Default |
 | --- | --- | --- | --- | --- |

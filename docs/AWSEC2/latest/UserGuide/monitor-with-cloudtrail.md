@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitor-with-clo
 ---
 
 # Log Amazon EC2 API calls using AWS CloudTrail
-<a name="monitor-with-cloudtrail"></a>
 
 The Amazon EC2 API is integrated with [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/), a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures all Amazon EC2 API calls as events. The calls captured include calls made by the console. Using the information collected by CloudTrail, you can determine the request that was made to the Amazon EC2 API, the IP address from which the request was made, and when it was made.
 

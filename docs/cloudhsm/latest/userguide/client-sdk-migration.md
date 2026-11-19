@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/client-sdk-mig
 ---
 
 # Migrating from AWS CloudHSM Client SDK 3 to Client SDK 5
-<a name="client-sdk-migration"></a>
 
 In AWS CloudHSM, customer applications perform cryptographic operations using the AWS CloudHSM Client Software Development Kit (SDK). Client SDK 5 is the primary SDK that continues to have new features and platform support added to it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-evaluatio
 ---
 
 # Create a human-based model evaluation job
-<a name="model-evaluation-jobs-management-create-human"></a>
 
 The following examples show how to create a model evaluation job that uses human workers.
 

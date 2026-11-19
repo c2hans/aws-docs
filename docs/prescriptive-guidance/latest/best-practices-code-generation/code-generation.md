@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practi
 ---
 
 # Best practices for code generation with Amazon Q Developer
-<a name="code-generation"></a>
 
 Amazon Q Developer provides automatic code generation, auto-completion, and natural language code suggestions. The following are best practices for using Amazon Q Developer inline coding assistance:
 + **Provide context to help improve accuracy of responses**

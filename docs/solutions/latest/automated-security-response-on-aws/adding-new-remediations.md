@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 ---
 
 # Adding new remediations
-<a name="adding-new-remediations"></a>
 
 Remediations can be added manually by updating the appropriate playbook files, or programmatically by extending the solution through CDK constructs, depending on your preferred workflow.
 

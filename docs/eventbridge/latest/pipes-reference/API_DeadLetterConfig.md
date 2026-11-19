@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_D
 ---
 
 # DeadLetterConfig
-<a name="API_DeadLetterConfig"></a>
 
 A `DeadLetterConfig` object that contains information about a dead-letter queue configuration.
 

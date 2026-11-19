@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # DeleteEvent
-<a name="API_DeleteEvent"></a>
 
 Deletes an event from an AgentCore Memory resource. When you delete an event, it is permanently removed.
 

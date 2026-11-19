@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/getting-started_exp
 ---
 
 # Explore the cluster environment in AWS PCS
-<a name="getting-started_explore"></a>
 
  After you have logged into the cluster, you can run shell commands. For instance, you can change users, work with data on shared filesystems, and interact with Slurm.
 

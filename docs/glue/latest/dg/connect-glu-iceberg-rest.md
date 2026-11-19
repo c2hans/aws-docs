@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connect-glu-iceberg-rest.
 ---
 
 # Connecting to the Data Catalog using AWS Glue Iceberg REST endpoint
-<a name="connect-glu-iceberg-rest"></a>
 
  AWS Glue's Iceberg REST endpoint supports API operations specified in the Apache Iceberg REST specification. Using an Iceberg REST client, you can connect your application running on an analytics engine to the REST catalog hosted in the Data Catalog.
 

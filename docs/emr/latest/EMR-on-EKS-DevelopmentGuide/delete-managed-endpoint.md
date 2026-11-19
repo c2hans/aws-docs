@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/d
 ---
 
 # Delete an interactive endpoint
-<a name="delete-managed-endpoint"></a>
 
 To delete an interactive endpoint associated with an Amazon EMR on EKS virtual cluster, use the `delete-managed-endpoint` AWS CLI command. When you delete an interactive endpoint, Amazon EMR on EKS removes the default security groups that were created for that endpoint.
 

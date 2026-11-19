@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/lam
 ---
 
 # AWS Lambda controls
-<a name="lambda-rules"></a>
 
 **Topics**
 + [[CT.LAMBDA.PR.2] Require AWS Lambda function policies to prohibit public access](#ct-lambda-pr-2-description)

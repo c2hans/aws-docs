@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/user/logging-using-clo
 ---
 
 # Logging AWS Support Plans API calls with AWS CloudTrail
-<a name="logging-using-cloudtrail-support-plans"></a>
 
 AWS Support Plans is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service. CloudTrail captures API calls for AWS Support Plans as events. The calls captured include calls from the AWS Support Plans console and code calls to the AWS Support Plans API operations.
 

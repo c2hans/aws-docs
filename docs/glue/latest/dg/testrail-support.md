@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/testrail-support.html
 ---
 
 # AWS Glue support for TestRail
-<a name="testrail-support"></a>
 
 AWS Glue supports TestRail as follows:
 

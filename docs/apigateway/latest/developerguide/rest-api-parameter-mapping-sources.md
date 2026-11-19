@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Parameter mapping source reference for REST APIs in API Gateway
-<a name="rest-api-parameter-mapping-sources"></a>
 
 When you create a parameter mapping, you specify the method request or integration response parameters to modify and you specify how to modify those parameters.
 

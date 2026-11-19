@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMSKConnectReadOnlyAccess
-<a name="AmazonMSKConnectReadOnlyAccess"></a>
 
 **Description**: Provide readonly access to Amazon MSK Connect
 

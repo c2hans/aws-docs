@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_
 ---
 
 # OperationSummary
-<a name="API_domains_OperationSummary"></a>
 
 OperationSummary includes the following elements.
 

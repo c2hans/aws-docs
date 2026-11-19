@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Permiss
 ---
 
 # Permissions
-<a name="API_Permissions"></a>
 
 The asset permissions.
 

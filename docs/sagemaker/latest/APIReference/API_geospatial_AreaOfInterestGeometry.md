@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospa
 ---
 
 # AreaOfInterestGeometry
-<a name="API_geospatial_AreaOfInterestGeometry"></a>
 
 A GeoJSON object representing the geographic extent in the coordinate space.
 

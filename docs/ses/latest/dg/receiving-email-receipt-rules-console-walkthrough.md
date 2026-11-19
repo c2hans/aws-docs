@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/receiving-email-receipt-ru
 ---
 
 # Creating receipt rules console walkthrough
-<a name="receiving-email-receipt-rules-console-walkthrough"></a>
 
 This section will walk you through creating and defining receipt rules using the Amazon SES console. The key points to understanding how receipt rules work are:
 + *Rule sets* contain an ordered set of receipt rules; *Receipt rules* contain an ordered set of actions.

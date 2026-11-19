@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/cw-exampl
 ---
 
 # Getting metrics from Amazon CloudWatch with AWS SDK for PHP Version 3
-<a name="cw-examples-getting-metrics"></a>
 
 Metrics are data about the performance of your systems. You can enable detailed monitoring of some resources, such as your Amazon EC2 instances, or of your own application metrics.
 

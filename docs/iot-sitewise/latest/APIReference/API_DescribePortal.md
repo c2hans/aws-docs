@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Des
 ---
 
 # DescribePortal
-<a name="API_DescribePortal"></a>
 
 Retrieves information about a portal.
 

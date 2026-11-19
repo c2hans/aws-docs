@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-supp
 ---
 
 # Viewing support dates for engine versions in Amazon RDS Extended Support
-<a name="extended-support-viewing-support-dates"></a>
 
 You can view information about support dates for engine versions for your DB instances or Multi-AZ DB clusters in Amazon RDS Extended Support by using the AWS CLI or the RDS API. This information can help you plan for upgrades.
 

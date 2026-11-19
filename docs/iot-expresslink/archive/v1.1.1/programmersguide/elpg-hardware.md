@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.1.1/programme
 ---
 
 # 1 Hardware
-<a name="elpg-hardware"></a>
 
 ## 1.1 Block diagram
 <a name="elpg-hardware-block-diagrams"></a>

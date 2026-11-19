@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel10.h
 ---
 
 # Use fault isolation to protect your workload
-<a name="rel10"></a>
 
  Everything fails eventually, from a single disk to the power and network feeding an entire site. A failure that reaches every part of a workload takes the whole workload down with it. Fault isolation limits the impact of a component or system failure to a defined boundary, so components outside that boundary keep working. Running a workload across several isolation boundaries turns a single point of failure into a contained event that most requests never notice.
 

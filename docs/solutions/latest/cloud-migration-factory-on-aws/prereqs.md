@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Prerequisites
-<a name="prereqs"></a>
 
 ## Source server permissions
 <a name="prereqs-domain"></a>

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/iam_example_ec2_G
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Getting started with managed streaming
-<a name="iam_example_ec2_GettingStarted_057_section"></a>
 
 The following code example shows how to:
 + Create an MSK cluster

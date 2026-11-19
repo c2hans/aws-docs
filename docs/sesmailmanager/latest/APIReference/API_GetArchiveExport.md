@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_G
 ---
 
 # GetArchiveExport
-<a name="API_GetArchiveExport"></a>
 
 Retrieves the details and current status of a specific email archive export job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/use-customerpr
 ---
 
 # Use the Connect Customer Customer Profiles API
-<a name="use-customerprofiles-api"></a>
 
 For information about how to programmatically manage domains and profiles, see the [Connect Customer Customer Profiles API Reference](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/Welcome.html).
 

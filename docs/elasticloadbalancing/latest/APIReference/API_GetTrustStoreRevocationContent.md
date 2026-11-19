@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # GetTrustStoreRevocationContent
-<a name="API_GetTrustStoreRevocationContent"></a>
 
 Retrieves the specified revocation file.
 

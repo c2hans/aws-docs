@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_S
 ---
 
 # ShareError
-<a name="API_ShareError"></a>
 
 Errors that occurred during the portfolio share operation.
 

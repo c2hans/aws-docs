@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/quorum-authent
 ---
 
 # Change the quorum minimum value with AWS CloudHSM Management Utility
-<a name="quorum-authentication-crypto-officers-change-minimum-value"></a>
 
 After you [set the quorum minimum value](quorum-authentication-crypto-officers-first-time-setup.md#quorum-crypto-officers-set-quorum-minimum-value) so that AWS CloudHSM [crypto officers (COs)](understanding-users-cmu.md#crypto-officer) can use quorum authentication, you might want to change the quorum minimum value. The HSM allows you to change the quorum minimum value only when the number of approvers is the same or higher than the current quorum minimum value. For example, if the quorum minimum value is two, at least two COs must approve to change the quorum minimum value.
 

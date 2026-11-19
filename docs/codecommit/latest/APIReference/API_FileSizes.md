@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_FileS
 ---
 
 # FileSizes
-<a name="API_FileSizes"></a>
 
 Information about the size of files in a merge or pull request.
 

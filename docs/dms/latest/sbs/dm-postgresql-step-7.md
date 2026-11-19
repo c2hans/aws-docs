@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/dm-postgresql-step-7.html
 ---
 
 # Step 7: Create a Migration Project
-<a name="dm-postgresql-step-7"></a>
 
 Now you can create a migration project. A migration project describes your instance profile, source and target data providers, and secrets from AWS Secrets Manager.
 

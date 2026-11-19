@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/user/monitoring-s3-dashboar
 ---
 
 # Assessing your Amazon S3 security posture with Macie
-<a name="monitoring-s3-dashboard"></a>
 
 To assess the overall security posture of your Amazon Simple Storage Service (Amazon S3) data and determine where to take action, you can use the **Summary** dashboard on the Amazon Macie console.
 

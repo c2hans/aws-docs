@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonZocaloFullAccess
-<a name="AmazonZocaloFullAccess"></a>
 
 **Description**: Provides full access to Amazon Zocalo.
 

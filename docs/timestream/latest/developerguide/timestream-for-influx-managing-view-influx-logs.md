@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/developerguide/timestr
 For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon Timestream for InfluxDB. It offers simplified data ingestion and single-digit millisecond query response times for real-time analytics. Learn more [here](https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html).
 
 # Setup to view InfluxDB logs on Timestream Influxdb Instances
-<a name="timestream-for-influx-managing-view-influx-logs"></a>
 
 By default InfluxDB generates logs that go to stdout. For more information, see [Manage InfluxDB logs](https://docs.influxdata.com/influxdb/v2/admin/logs)
 

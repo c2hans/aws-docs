@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/ts-e
 ---
 
 # Troubleshoot a Classic Load Balancer: Response code metrics
-<a name="ts-elb-http-errors"></a>
 
 Your load balancer sends metrics to Amazon CloudWatch for the HTTP response codes sent to clients, identifying the source of the errors as either the load balancer or the registered instances. You can use the metrics returned by CloudWatch for your load balancer to troubleshoot issues. For more information, see [CloudWatch metrics for your Classic Load Balancer](elb-cloudwatch-metrics.md).
 

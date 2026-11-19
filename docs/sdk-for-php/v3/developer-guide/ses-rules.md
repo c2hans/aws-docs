@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/ses-rules
 ---
 
 # Creating and managing email rules using the Amazon SES API and the AWS SDK for PHP Version 3
-<a name="ses-rules"></a>
 
 In addition to sending emails, you can also receive email with Amazon Simple Email Service (Amazon SES). Receipt rules enable you to specify what Amazon SES does with email it receives for the email addresses or domains you own. A rule can send email to other AWS services including but not limited to Amazon S3, Amazon SNS, or AWS Lambda.
 

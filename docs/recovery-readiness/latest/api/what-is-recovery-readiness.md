@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-readiness/latest/api/what-is-re
 ---
 
 # What is recovery readiness in Amazon Application Recovery Controller (ARC)?
-<a name="what-is-recovery-readiness"></a>
 
 Welcome to the Recovery Readiness API Reference Guide for Amazon Application Recovery Controller (ARC).
 

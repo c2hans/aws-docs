@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Setting up dependencies between actions
-<a name="workflows-depends-on-set-up"></a>
 
 Use the following instructions to set up dependencies between actions in a workflow.
 
@@ -69,7 +68,7 @@ When configuring dependencies, follow these guidelines:
        - action-1
    ```
 
-   For more examples, see [Examples of how to configure dependencies between actions](workflows-depends-on-examples.md). For general guidelines, see [Setting up dependencies between actions](#workflows-depends-on-set-up). For more information, see the description of the `DependsOn` property in the [Workflow YAML definition](workflow-reference.md) for your action.
+   For more examples, see [Examples of how to configure dependencies between actions](workflows-depends-on-examples.md). For general guidelines, see [Setting up dependencies between actions](workflows-depends-on-set-up.md). For more information, see the description of the `DependsOn` property in the [Workflow YAML definition](workflow-reference.md) for your action.
 
 1. (Optional) Choose **Validate** to validate the workflow's YAML code before committing.
 

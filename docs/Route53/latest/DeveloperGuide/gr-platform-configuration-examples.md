@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-platfor
 ---
 
 # Platform configuration examples
-<a name="gr-platform-configuration-examples"></a>
 
 Use these platform-specific examples to configure client devices with your Route 53 Global Resolver access tokens and connection details.
 

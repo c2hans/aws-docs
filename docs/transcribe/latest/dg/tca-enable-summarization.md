@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/tca-enable-summariz
 ---
 
 # Enabling generative call summarization
-<a name="tca-enable-summarization"></a>
 
 **Note**
  **Powered by Amazon Bedrock:** AWS implements [automated abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html). Because post-contact summarization powered by generative AI is built on Amazon Bedrock, users can take full advantage of the controls implemented in Amazon Bedrock to enforce safety, security, and the responsible use of artificial intelligence (AI).

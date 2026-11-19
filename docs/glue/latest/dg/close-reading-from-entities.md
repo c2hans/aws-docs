@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/close-reading-from-entiti
 ---
 
 # Reading from Close CRM entities
-<a name="close-reading-from-entities"></a>
 
 **Prerequisites**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_D
 ---
 
 # Duration
-<a name="API_Duration"></a>
 
 Duration for InfluxDB parameters in Timestream for InfluxDB.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # MigrationOptions
-<a name="API_MigrationOptions"></a>
 
 The configuration options for a saved objects migration job.
 

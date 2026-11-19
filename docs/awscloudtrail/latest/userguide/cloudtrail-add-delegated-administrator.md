@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrai
 ---
 
 # Add a CloudTrail delegated administrator
-<a name="cloudtrail-add-delegated-administrator"></a>
 
 You can add a delegated administrator to manage an organization's CloudTrail resources, such as trails and event data stores.
 

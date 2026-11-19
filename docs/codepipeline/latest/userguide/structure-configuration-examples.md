@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/structure-
 ---
 
 # Valid configuration parameters for each provider type
-<a name="structure-configuration-examples"></a>
 
 This section lists valid `configuration` parameters for each action provider.
 

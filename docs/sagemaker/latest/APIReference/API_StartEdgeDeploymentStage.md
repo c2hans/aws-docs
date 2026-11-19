@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StartE
 ---
 
 # StartEdgeDeploymentStage
-<a name="API_StartEdgeDeploymentStage"></a>
 
 Starts a stage in an edge deployment plan.
 

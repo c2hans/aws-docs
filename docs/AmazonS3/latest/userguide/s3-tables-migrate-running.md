@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-migr
 ---
 
 # Running a table migration
-<a name="s3-tables-migrate-running"></a>
 
 **To migrate a table by using the Amazon S3 console**
 

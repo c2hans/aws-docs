@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Amazon SNS topic target
-<a name="eb-custom-bus-target-sns"></a>
 
 To deliver to an Amazon SNS topic, set `TargetArn` to the topic ARN and add `SnsParameters`. For a FIFO topic, set `MessageGroupId`, usually `{% $events.SystemMetadata.EventGroupId %}`.
 

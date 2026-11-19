@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/templates-sens
 ---
 
 # Sensitivity Inspection Templates
-<a name="templates-sensitivity-inspections"></a>
 
 The Sensitivity Inspection Templates resource provides a subset of information about the sensitivity inspection template for your Amazon Macie account. This template stores the collection of settings that specify which allow lists, custom data identifiers, and managed data identifiers you want Macie to use when performing automated sensitive data discovery. The first time you or your Macie administrator enables automated sensitive data discovery for your account, Macie automatically creates the template for your account.
 

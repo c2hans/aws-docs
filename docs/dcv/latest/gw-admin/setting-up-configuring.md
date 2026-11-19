@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/gw-admin/setting-up-configuri
 ---
 
 # Configuring the Amazon DCV Connection Gateway
-<a name="setting-up-configuring"></a>
 
 This section describes how to configure the Amazon DCV Connection Gateway. It introduces the *configuration file* used by the Connection Gateway and describes the basic configuration required to run the Connection Gateway service. For more information about all the available configuration options, see the [Configuration File Reference](config-reference.md) section.
 

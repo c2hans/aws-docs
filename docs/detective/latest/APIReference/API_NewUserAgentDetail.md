@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/APIReference/API_NewUse
 ---
 
 # NewUserAgentDetail
-<a name="API_NewUserAgentDetail"></a>
 
 Details new user agents used either at the resource or account level.
 

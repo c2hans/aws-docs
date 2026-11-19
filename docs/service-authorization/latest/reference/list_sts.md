@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/service-authorization/latest/reference/l
 ---
 
 # Actions, resources, and condition keys for AWS Security Token Service
-<a name="list_sts"></a>
 
 AWS Security Token Service (service prefix: `sts`) provides the following service-specific operations, resources, actions, and condition keys for use in IAM permission policies.
 

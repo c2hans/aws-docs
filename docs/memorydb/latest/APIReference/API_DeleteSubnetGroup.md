@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/APIReference/API_DeleteS
 ---
 
 # DeleteSubnetGroup
-<a name="API_DeleteSubnetGroup"></a>
 
 Deletes a subnet group. You cannot delete a default subnet group or one that is associated with any clusters.
 

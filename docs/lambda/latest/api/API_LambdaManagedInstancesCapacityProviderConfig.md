@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_LambdaManagedInsta
 ---
 
 # LambdaManagedInstancesCapacityProviderConfig
-<a name="API_LambdaManagedInstancesCapacityProviderConfig"></a>
 
 Configuration for Lambda-managed instances used by the capacity provider.
 

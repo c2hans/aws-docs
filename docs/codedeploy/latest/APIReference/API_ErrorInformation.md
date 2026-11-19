@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Error
 ---
 
 # ErrorInformation
-<a name="API_ErrorInformation"></a>
 
 Information about a deployment error.
 

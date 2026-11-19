@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_troub
 ---
 
 # Troubleshooting Amazon Application Recovery Controller (ARC) identity and access
-<a name="security_iam_troubleshoot"></a>
 
 Use the following information to help you diagnose and fix common issues that you might encounter when working with Amazon Application Recovery Controller (ARC) and IAM.
 

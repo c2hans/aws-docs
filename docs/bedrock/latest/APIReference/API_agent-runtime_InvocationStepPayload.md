@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # InvocationStepPayload
-<a name="API_agent-runtime_InvocationStepPayload"></a>
 
 Payload content, such as text and images, for the invocation step.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/get-set-up-provis
 ---
 
 # Provision an IAM user
-<a name="get-set-up-provision-user"></a>
 
 Follow these instructions to prepare an IAM user to use CodeArtifact.
 

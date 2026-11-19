@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Reporting
-<a name="reporting"></a>
 
 Once the data are processed and modeled by the data pipeline, you can enable the Analytics Studio for the pipeline, which will allow the guidance create out-of-the-box dashboards in QuickSight, provide advanced analytics model for user to query their clickstream data, and data management functionalities.
 

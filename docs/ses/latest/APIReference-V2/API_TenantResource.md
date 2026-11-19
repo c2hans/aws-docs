@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_TenantRes
 ---
 
 # TenantResource
-<a name="API_TenantResource"></a>
 
 A structure that contains information about a resource associated with a tenant.
 

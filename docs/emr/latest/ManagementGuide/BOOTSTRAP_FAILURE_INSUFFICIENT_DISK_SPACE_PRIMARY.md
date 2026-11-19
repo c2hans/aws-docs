@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/BOOTSTRAP_FAI
 ---
 
 # BOOTSTRAP\_FAILURE\_INSUFFICIENT\_DISK\_SPACE\_PRIMARY
-<a name="BOOTSTRAP_FAILURE_INSUFFICIENT_DISK_SPACE_PRIMARY"></a>
 
 ## Overview
 <a name="BOOTSTRAP_FAILURE_INSUFFICIENT_DISK_SPACE_PRIMARY_overview"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # ABTestSummary
-<a name="API_ABTestSummary"></a>
 
 Summary information about an A/B test.
 

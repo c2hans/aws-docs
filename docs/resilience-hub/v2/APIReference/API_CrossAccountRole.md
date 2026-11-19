@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Cross
 ---
 
 # CrossAccountRole
-<a name="API_CrossAccountRole"></a>
 
 Specifies a cross-account IAM role ARN and optional external ID.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/cdk-dep-ac
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Example: Deploying an AWS CDK app
-<a name="cdk-dep-action-example-workflow"></a>
 
 The following example workflow includes the **AWS CDK deploy** action, along with the **AWS CDK bootstrap** action. The workflow consists of the following building blocks that run sequentially:
 + A **trigger** – This trigger starts the workflow run automatically when you push a change to your source repository. This repository contains your AWS CDK app. For more information about triggers, see [Starting a workflow run automatically using triggers](workflows-add-trigger.md).

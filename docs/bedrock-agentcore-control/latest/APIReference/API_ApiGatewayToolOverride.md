@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # ApiGatewayToolOverride
-<a name="API_ApiGatewayToolOverride"></a>
 
 Settings to override configurations for a tool.
 

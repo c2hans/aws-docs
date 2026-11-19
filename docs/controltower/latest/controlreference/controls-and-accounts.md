@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/con
 ---
 
 # Considerations for controls and accounts
-<a name="controls-and-accounts"></a>
 
 When working with controls and accounts, consider the following properties:
 

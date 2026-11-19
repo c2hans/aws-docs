@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/choosing-yo
 ---
 
 # Choosing your AWS IoT Greengrass nucleus runtime
-<a name="choosing-your-runtime"></a>
 
 As of version 2.14.0, AWS IoT Greengrass provides two alternative implementations of its device runtime, an executable known as the nucleus. Despite their implementation differences, both runtimes are compatible with the AWS IoT Greengrass service and APIs and allow you to deploy components provided by AWS or develop custom components using the Greengrass SDK. It is also possible to mix devices, using either type of nucleus within the same fleet as necessary.
 

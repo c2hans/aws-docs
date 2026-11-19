@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Configuring an external identity provider (Optional)
-<a name="configuring-external-idp"></a>
 
 ## Group Management
 <a name="group-management"></a>

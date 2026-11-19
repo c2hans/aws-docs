@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/difference-betwee
 ---
 
 # What's the difference between anomaly detection and forecasting?
-<a name="difference-between-anomaly-detection-and-forecasting"></a>
 
 Anomaly detection identifies outliers and their contributing drivers to answer the question "What happened that doesn't usually happen?" Forecasting answers the question "If everything continues to happen as expected, what happens in the future?" The math that allows forecasting also enables us to ask "If a few things change, what happens then?"
 

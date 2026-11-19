@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/rcf_hyperparameters.
 ---
 
 # RCF Hyperparameters
-<a name="rcf_hyperparameters"></a>
 
 In the [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) request, you specify the training algorithm. You can also specify algorithm-specific hyperparameters as string-to-string maps. The following table lists the hyperparameters for the Amazon SageMaker AI RCF algorithm. For more information, including recommendations on how to choose hyperparameters, see [How RCF Works](rcf_how-it-works.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Override
 ---
 
 # OverrideTimeSlice
-<a name="API_OverrideTimeSlice"></a>
 
 The start time or end time for an hours of operation override.
 

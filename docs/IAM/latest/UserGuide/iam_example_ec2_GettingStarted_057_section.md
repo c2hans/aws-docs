@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_ec2_Get
 ---
 
 # Getting started with managed streaming
-<a name="iam_example_ec2_GettingStarted_057_section"></a>
 
 The following code example shows how to:
 + Create an MSK cluster

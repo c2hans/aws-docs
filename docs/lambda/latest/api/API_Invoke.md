@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_Invoke.html
 ---
 
 # Invoke
-<a name="API_Invoke"></a>
 
 Invokes a Lambda Event Function. You can invoke a function synchronously (and wait for the response), or asynchronously. By default, Lambda invokes your function synchronously (i.e. the`InvocationType` is `RequestResponse`). To invoke a function asynchronously, set `InvocationType` to `Event`. Lambda passes the `ClientContext` object to your function for synchronous invocations only.
 
@@ -303,6 +302,18 @@ The exception message.
  ** Type **
 The exception type.
 HTTP Status Code: 502
+
+ ** RuntimeAliasDeletedException **
+The runtime alias for your function is no longer available. Update your function to use an available runtime alias.
+ ** Type **
+Indicates the exception type for a deleted runtime alias.
+HTTP Status Code: 409
+
+ ** RuntimeVersionDeletedException **
+The runtime version used by your function is no longer available. Update your function to use an available runtime version or runtime alias.
+ ** Type **
+Indicates the exception type for a deleted runtime version.
+HTTP Status Code: 409
 
  ** S3FilesMountConnectivityException **
 The Lambda function couldn't make a network connection to the configured S3 Files access point.

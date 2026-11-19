@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/conta
 ---
 
 # Collecting Knative Serving metrics with OTel Container Insights
-<a name="container-insights-eks-otel-knative"></a>
 
 Knative Serving is an open-source platform that runs request-driven services on Kubernetes and scales them with load, including to zero. KServe uses it in its default Serverless mode: each InferenceService becomes a Knative service. Container Insights collects two kinds of Knative metrics:
 + **Data plane** – Request metrics from the queue-proxy sidecar that Knative adds to every revision pod. Each request to the service passes through it.

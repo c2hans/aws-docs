@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/signer/latest/api/API_SigningPlatform.ht
 ---
 
 # SigningPlatform
-<a name="API_SigningPlatform"></a>
 
 Contains information about the signing configurations and parameters that are used to perform a code-signing job.
 

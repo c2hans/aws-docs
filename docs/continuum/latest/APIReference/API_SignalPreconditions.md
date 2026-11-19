@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_Signal
 ---
 
 # SignalPreconditions
-<a name="API_SignalPreconditions"></a>
 
 The four preconditions a likelihood signal assessed.
 

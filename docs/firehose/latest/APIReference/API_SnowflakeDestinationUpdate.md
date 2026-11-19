@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/firehose/latest/APIReference/API_Snowfla
 ---
 
 # SnowflakeDestinationUpdate
-<a name="API_SnowflakeDestinationUpdate"></a>
 
 Update to configuration settings
 

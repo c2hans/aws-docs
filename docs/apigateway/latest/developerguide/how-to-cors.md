@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-
 ---
 
 # CORS for REST APIs in API Gateway
-<a name="how-to-cors"></a>
 
 [Cross-origin resource sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) is a browser security feature that restricts cross-origin HTTP requests that are initiated from scripts running in the browser. For more information, see [What is CORS?](https://aws.amazon.com/what-is/cross-origin-resource-sharing/).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-azuresql-connect
 ---
 
 # Creating a Azure SQL connection
-<a name="creating-azuresql-connection"></a>
 
 To connect to Azure SQL from AWS Glue, you will need to create and store your Azure SQL credentials in a AWS Secrets Manager secret, then associate that secret with a Azure SQL AWS Glue connection.
 

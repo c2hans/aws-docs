@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataP
 ---
 
 # DataPathLabelType
-<a name="API_DataPathLabelType"></a>
 
 The option that specifies individual data values for labels.
 

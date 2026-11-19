@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Configuring storage for SageMaker HyperPod clusters orchestrated by Amazon EKS
-<a name="sagemaker-hyperpod-eks-setup-storage"></a>
 
 Cluster admin needs to configure storage for data scientist users to manage input and output data and storing checkpoints during training on SageMaker HyperPod clusters.
 

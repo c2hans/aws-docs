@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DeleteThingT
 ---
 
 # DeleteThingType
-<a name="API_DeleteThingType"></a>
 
-Deletes the specified thing type. You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling [DeprecateThingType](API_DeprecateThingType.md), then remove any associated things by calling [UpdateThing](API_UpdateThing.md) to change the thing type on any associated thing, and finally use [DeleteThingType](#API_DeleteThingType) to delete the thing type.
+Deletes the specified thing type. You cannot delete a thing type if it has things associated with it. To delete a thing type, first mark it as deprecated by calling [DeprecateThingType](API_DeprecateThingType.md), then remove any associated things by calling [UpdateThing](API_UpdateThing.md) to change the thing type on any associated thing, and finally use [DeleteThingType](API_DeleteThingType.md) to delete the thing type.
 
 Requires permission to access the [DeleteThingType](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html#awsiot-actions-as-permissions) action.
 

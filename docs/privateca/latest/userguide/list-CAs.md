@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/list-CAs.html
 ---
 
 # List private CAs
-<a name="list-CAs"></a>
 
 You can use the AWS Private CA console or AWS CLI to list private CAs that you own or have access to.
 

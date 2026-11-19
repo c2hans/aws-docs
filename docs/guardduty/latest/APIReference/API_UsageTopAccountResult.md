@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UsageT
 ---
 
 # UsageTopAccountResult
-<a name="API_UsageTopAccountResult"></a>
 
 Contains information on the total of usage based on the topmost 50 account IDs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_St
 ---
 
 # Stream
-<a name="API_Stream"></a>
 
 Specifies a live video stream that has been ingested and distributed.
 

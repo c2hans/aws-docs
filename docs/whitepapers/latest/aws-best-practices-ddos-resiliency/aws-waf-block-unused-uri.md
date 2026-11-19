@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 ---
 
 # AWS WAF – Block access to unused URI paths and file extensions
-<a name="aws-waf-block-unused-uri"></a>
 
  Block access to unused URI paths using AWS WAF. The most obvious example here would be the '/' URI path for an API endpoint, which would typically return an HTTP 404 (Not Found).
 

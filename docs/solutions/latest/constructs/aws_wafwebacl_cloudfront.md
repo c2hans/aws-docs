@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_wafwebac
 ---
 
 # aws-wafwebacl-cloudfront
-<a name="aws_wafwebacl_cloudfront"></a>
 
 ![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
 

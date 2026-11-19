@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/document-history.h
 ---
 
 # Document history for AWS Elemental MediaTailor
-<a name="document-history"></a>
 
 The following table describes important changes to this documentation.
 

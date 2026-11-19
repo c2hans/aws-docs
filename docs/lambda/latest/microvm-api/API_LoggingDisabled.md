@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_LoggingDis
 ---
 
 # LoggingDisabled
-<a name="API_LoggingDisabled"></a>
 
 Specifies that logging is disabled for the MicroVM.
 

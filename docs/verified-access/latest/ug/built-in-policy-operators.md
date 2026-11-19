@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verified-access/latest/ug/built-in-polic
 ---
 
 # Built-in operators for Verified Access policies
-<a name="built-in-policy-operators"></a>
 
 When creating the context of an AWS Verified Access policy using various conditions, as discussed in [Verified Access policy statement structure](auth-policies-policy-statement-struct.md), you can use the `&&` operator to add additional conditions. There are also many other built-in operators that you can use to add additional expressive power to your policy conditions. The following table contains all the built-in operators for reference.
 

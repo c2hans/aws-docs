@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateDynami
 ---
 
 # UpdateDynamicThingGroup
-<a name="API_UpdateDynamicThingGroup"></a>
 
 Updates a dynamic thing group.
 

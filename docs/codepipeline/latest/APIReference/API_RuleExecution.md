@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Rul
 ---
 
 # RuleExecution
-<a name="API_RuleExecution"></a>
 
 Represents information about each time a rule is run as part of the pipeline execution for a pipeline configured with conditions.
 

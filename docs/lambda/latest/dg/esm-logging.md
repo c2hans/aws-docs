@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/esm-logging.html
 ---
 
 # Kafka event source mapping logging
-<a name="esm-logging"></a>
 
 You can configure the system-level logging for your Kafka event source mappings to enable and filter the system logs that Lambda event pollers send to CloudWatch.
 

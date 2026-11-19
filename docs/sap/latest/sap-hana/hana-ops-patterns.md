@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-patterns.ht
 ---
 
 # Architecture patterns for SAP HANA on AWS
-<a name="hana-ops-patterns"></a>
 
 This section provides information on architecture patterns that can be used as guidelines for deploying SAP HANA systems on AWS. For more information on the architecture patterns for SAP NetWeaver-based applications on AWS, see [Architecture guidance for availability and reliability of SAP on AWS](https://docs.aws.amazon.com/sap/latest/general/architecture-guidance-of-sap-on-aws.html).
 

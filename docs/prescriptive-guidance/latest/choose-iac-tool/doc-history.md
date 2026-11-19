@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choose-iac-
 ---
 
 # Document history
-<a name="doc-history"></a>
 
 |
 |

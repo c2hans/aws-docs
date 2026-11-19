@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/metadata-table
 ---
 
 # Metadata table limitations and restrictions
-<a name="metadata-tables-restrictions"></a>
 
 Amazon S3 Metadata has the following limitations and restrictions:
 + S3 Metadata is currently available only in certain Regions. For more information, see [S3 Metadata AWS Regions](#metadata-tables-regions).

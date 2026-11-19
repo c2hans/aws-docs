@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/tutorial-use-la
 ---
 
 # Using a Lambda function to continue a new execution in Step Functions
-<a name="tutorial-use-lambda-cont-exec"></a>
 
 **Tip**
 The following approach uses a Lambda function to start a new workflow execution. We **recommend** using a Step Functions Task state to start new workflow executions. See how in the following tutorial: ** [Continue long-running workflows using Step Functions API (recommended)](tutorial-continue-new.md) **.

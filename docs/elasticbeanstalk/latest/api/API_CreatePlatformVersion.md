@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/api/API_CreatePl
 ---
 
 # CreatePlatformVersion
-<a name="API_CreatePlatformVersion"></a>
 
 Create a new version of your custom platform.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/global-cluste
 ---
 
 # Managing an Amazon DocumentDB global cluster
-<a name="global-clusters.manage"></a>
 
 You perform most management operations on the individual clusters that make up a global cluster. When you choose **Group related resources** on the **Clusters** page in the console, you see the primary cluster and secondary clusters grouped under the associated global cluster.
 

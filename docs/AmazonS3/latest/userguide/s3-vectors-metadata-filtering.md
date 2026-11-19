@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-met
 ---
 
 # Metadata filtering
-<a name="s3-vectors-metadata-filtering"></a>
 
 Metadata filtering allows you to filter query results based on specific attributes attached to your vectors. You can use metadata filters with query operations to find vectors that match both similarity criteria and specific metadata conditions.
 

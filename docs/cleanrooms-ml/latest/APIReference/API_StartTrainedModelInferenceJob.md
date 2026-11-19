@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_St
 ---
 
 # StartTrainedModelInferenceJob
-<a name="API_StartTrainedModelInferenceJob"></a>
 
 Defines the information necessary to begin a trained model inference job.
 

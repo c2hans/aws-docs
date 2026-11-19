@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/t
 ---
 
 # Transferring Organization ownership
-<a name="transferring-organization-ownership"></a>
 
 This migration path transfers root account ownership of an existing AWS Organization to your customer while maintaining billing responsibility through billing transfer.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Migrat
 ---
 
 # MigrationReportPrefixes
-<a name="API_s3Buckets_MigrationReportPrefixes"></a>
 
 The key prefix for each report. If you don't specify a prefix for a report, its keys start at the root of the bucket.
 

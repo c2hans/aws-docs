@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_cluste
 ---
 
 # Creating a cluster in AWS PCS
-<a name="working-with_clusters_create"></a>
 
 This topic provides an overview of available options and describes what to consider when you create a cluster in AWS Parallel Computing Service (AWS PCS). If this is your first time creating an AWS PCS cluster, we recommend you follow [Get started with AWS Parallel Computing Service](getting-started.md). The tutorial can help you create a working HPC system without expanding into all the available options and system architectures that are possible.
 

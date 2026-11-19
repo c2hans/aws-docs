@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_GetLif
 ---
 
 # GetLifecyclePolicy
-<a name="API_GetLifecyclePolicy"></a>
 
 Retrieves the lifecycle policy for the specified repository.
 

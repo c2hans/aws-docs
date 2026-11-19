@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/s2110-setup-bon
 ---
 
 # Setup: Remove bonded interfaces
-<a name="s2110-setup-bonded-if"></a>
 
 Read this section if you plan to implement redundant inputs and/or outputs with SMPTE 2110.
 

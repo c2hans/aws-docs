@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/PG_GET_GRANTEE_BY_IAM
  Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
 
 # PG\_GET\_GRANTEE\_BY\_IAM\_ROLE
-<a name="PG_GET_GRANTEE_BY_IAMROLE"></a>
 
 Returns all users and groups granted a specified IAM role.
 

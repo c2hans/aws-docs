@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Reco
 ---
 
 # RecognizeCelebrities
-<a name="API_RecognizeCelebrities"></a>
 
 Returns an array of celebrities recognized in the input image. For more information, see [Recognizing celebrities](https://docs.aws.amazon.com/rekognition/latest/dg/celebrities.html).
 

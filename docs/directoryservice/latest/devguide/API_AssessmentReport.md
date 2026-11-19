@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Ass
 ---
 
 # AssessmentReport
-<a name="API_AssessmentReport"></a>
 
 Contains the results of validation tests performed against a specific domain controller during a directory assessment.
 

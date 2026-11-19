@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchRu
 ---
 
 # SearchRules
-<a name="API_SearchRules"></a>
 
 Searches rules in an Connect Customer instance, with optional filtering.
 

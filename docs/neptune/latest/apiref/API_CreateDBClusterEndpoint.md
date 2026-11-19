@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_CreateDBCluste
 ---
 
 # CreateDBClusterEndpoint
-<a name="API_CreateDBClusterEndpoint"></a>
 
 Creates a new custom endpoint and associates it with an Amazon Neptune DB cluster.
 

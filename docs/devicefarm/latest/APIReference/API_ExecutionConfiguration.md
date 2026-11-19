@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Execu
 ---
 
 # ExecutionConfiguration
-<a name="API_ExecutionConfiguration"></a>
 
 Represents configuration information about a test run, such as the execution timeout (in minutes).
 

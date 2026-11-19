@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # Considerations for Oracle database upgrades
-<a name="USER_UpgradeDBInstance.Oracle.OGPG"></a>
 
 Before you upgrade your Oracle instance, review the following information.
 

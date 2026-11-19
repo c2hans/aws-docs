@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DatasetGroupSu
 ---
 
 # DatasetGroupSummary
-<a name="API_DatasetGroupSummary"></a>
 
 Provides a summary of the properties of a dataset group. For a complete listing, call the [DescribeDatasetGroup](https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeDatasetGroup.html) API.
 

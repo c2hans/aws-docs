@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/sdk5-hsm-types
 ---
 
 # HSM compatibility for AWS CloudHSM Client SDK 5
-<a name="sdk5-hsm-types"></a>
 
 The following table describes AWS CloudHSM Client SDK 5 compatibility for HSMs.
 

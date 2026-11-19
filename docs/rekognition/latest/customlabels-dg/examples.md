@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/customlabels-dg/examp
 ---
 
 # Custom Labels Examples
-<a name="examples"></a>
 
 This section contains examples that show you how you make use Amazon Rekognition Custom Labels's capabilities.
 

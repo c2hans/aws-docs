@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/tunneling-tuto
 ---
 
 # Open a tunnel and use browser-based SSH to access remote device
-<a name="tunneling-tutorial-quick-setup"></a>
 
 You can use the quick setup or the manual setup method for creating a tunnel. This tutorial shows how to open a tunnel using the quick setup method and use the browser-based SSH to connect to the remote device. For an example that shows how to open a tunnel using the manual setup method, see [Open a tunnel using manual setup and connect to remote device](tunneling-tutorial-manual-setup.md).
 

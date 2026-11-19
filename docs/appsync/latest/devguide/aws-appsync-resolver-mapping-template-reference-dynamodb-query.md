@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-reso
 ---
 
 # Query
-<a name="aws-appsync-resolver-mapping-template-reference-dynamodb-query"></a>
 
 The `Query` request mapping document lets you tell the AWS AppSync DynamoDB resolver to make a `Query` request to DynamoDB, and enables you to specify the following:
 + Key expression

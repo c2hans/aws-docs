@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Automati
 ---
 
 # AutomaticFailConfiguration
-<a name="API_AutomaticFailConfiguration"></a>
 
 Information about automatic fail configuration for an evaluation form.
 

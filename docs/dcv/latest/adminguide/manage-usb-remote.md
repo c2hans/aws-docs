@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/manage-usb-remote.
 ---
 
 # Enabling USB remotization
-<a name="manage-usb-remote"></a>
 
 With Amazon DCV, clients can use a variety of specialized USB devices, such as 3D pointing devices or authentication devices. The devices are physically connected to their computer to interact with an application that are running on a Amazon DCV server.
 

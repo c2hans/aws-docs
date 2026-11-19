@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Step 7: Verify connectivity
-<a name="pb-es68-connectivity"></a>
 
 Confirm the Migration Console can reach and authenticate to both clusters before you submit anything:
 

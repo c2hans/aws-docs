@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/best-practices-c
 ---
 
 # Best practices for using Connect Customer APIs
-<a name="best-practices-connect-apis"></a>
 
 This topic provides guidance for using Connect Customer Describe and List APIs so you don't get unexpected 4xx errors for the response. It also explains how to configure your client Read APIs.
 

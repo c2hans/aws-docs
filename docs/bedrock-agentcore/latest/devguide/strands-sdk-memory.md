@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/strand
 ---
 
 # Strands Agents SDK
-<a name="strands-sdk-memory"></a>
 
 Use the [Strands Agents](https://strandsagents.com/latest/) SDK integration to manage and retrieve AgentCore Memory automatically in conversational agents.
 

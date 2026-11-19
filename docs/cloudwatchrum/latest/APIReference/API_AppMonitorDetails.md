@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_Ap
 ---
 
 # AppMonitorDetails
-<a name="API_AppMonitorDetails"></a>
 
 A structure that contains information about the RUM app monitor.
 

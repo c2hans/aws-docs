@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/vpc-docdb.htm
 ---
 
 # Amazon VPC and Amazon DocumentDB
-<a name="vpc-docdb"></a>
 
 Amazon Virtual Private Cloud (Amazon VPC) makes it possible for you to launch AWS resources, such as Amazon DocumentDB instances, into a virtual private cloud (VPC).
 

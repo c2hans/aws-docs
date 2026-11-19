@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # AWS Lambda logs
-<a name="aws-lambda-logs"></a>
 
 AWS Lambda automatically monitors Lambda functions on your behalf and sends function metrics to Amazon CloudWatch.
 

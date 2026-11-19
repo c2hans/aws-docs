@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Pu
 ---
 
 # PutRawEvents
-<a name="API_PutRawEvents"></a>
 
 Publishes pre-shaped events to an event bus.
 

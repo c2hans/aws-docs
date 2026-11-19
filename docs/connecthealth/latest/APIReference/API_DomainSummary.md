@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Do
 ---
 
 # DomainSummary
-<a name="API_DomainSummary"></a>
 
 Summary information about a Domain.
 

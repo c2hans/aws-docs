@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_List
 ---
 
 # ListPublicKeys
-<a name="API_ListPublicKeys"></a>
 
 Gets summary information about all public keys in your account, in the AWS region where the API request is processed.
 

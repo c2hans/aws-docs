@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/APIReference/API_Host.html
 ---
 
 # Host
-<a name="API_Host"></a>
 
 An ESX host that runs on an Amazon EC2 bare metal instance.
 

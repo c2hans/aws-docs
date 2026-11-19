@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/buyerguide/deploying-
 ---
 
 # Deploying a machine learning product
-<a name="deploying-ml-products"></a>
 
 After you subscribe to either a model package product or algorithm product, it’s added to your product list in the SageMaker AI console. You can also use AWS SDKs, the AWS Command Line Interface (AWS CLI), or the SageMaker AI console to create a fully managed REST inference endpoint or perform inference on batches of data.
 

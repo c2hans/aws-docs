@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/share-a-dashboard
 ---
 
 # Updating a publicly shared dashboard
-<a name="share-a-dashboard-grant-access-anyone-update"></a>
 
 Use the following procedure to update a shared dashboard that can be accessed by anyone on the internet.
 

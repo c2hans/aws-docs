@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/elb-custom-
 ---
 
 # elb-custom-security-policy-ssl-check
-<a name="elb-custom-security-policy-ssl-check"></a>
 
 Checks whether your Classic Load Balancer SSL listeners are using a custom policy. The rule is only applicable if there are SSL listeners for the Classic Load Balancer.
 

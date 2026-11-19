@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-b
 ---
 
 # Create jobs and schedules in Control-M Planning
-<a name="jobs-schedules-control-m"></a>
 
 Now that you have the job type deployed and a connection profile for AWS connectivity, you can start creating and running jobs.
 

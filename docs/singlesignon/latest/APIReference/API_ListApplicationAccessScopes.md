@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListApplicationAccessScopes
-<a name="API_ListApplicationAccessScopes"></a>
 
 Lists the access scopes and authorized targets associated with an application.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ValidationFailure
-<a name="API_ValidationFailure"></a>
 
 A validation failure that occurred as the result of a pre-update validation check (verbose dry run) on a domain.
 

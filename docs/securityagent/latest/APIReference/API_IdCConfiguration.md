@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Id
 ---
 
 # IdCConfiguration
-<a name="API_IdCConfiguration"></a>
 
 The IAM Identity Center configuration for an application.
 

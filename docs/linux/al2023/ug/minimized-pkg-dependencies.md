@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/minimized-pkg-dependenci
 ---
 
 # Minimized package dependencies
-<a name="minimized-pkg-dependencies"></a>
 
  Amazon Linux 2023 minimizes the dependency graph of many packages to provide a smaller footprint for applications. Notable changes from AL2 include the `curl-minimal` and `gnupg-minimal` packages, which siginicantly reduce the number of required packages while retaining commonly used functionality.
 

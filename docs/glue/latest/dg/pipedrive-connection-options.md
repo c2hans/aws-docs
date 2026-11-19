@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pipedrive-connection-opti
 ---
 
 # Pipedrive connection option reference
-<a name="pipedrive-connection-options"></a>
 
 The following are connection options for Pipedrive:
 +  `ENTITY_NAME`(String) - (Required) Used for Read/Write. The name of your Object in Pipedrive.

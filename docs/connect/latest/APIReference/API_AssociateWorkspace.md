@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Associat
 ---
 
 # AssociateWorkspace
-<a name="API_AssociateWorkspace"></a>
 
 Associates a workspace with one or more users or routing profiles, allowing them to access the workspace's configured views and pages.
 

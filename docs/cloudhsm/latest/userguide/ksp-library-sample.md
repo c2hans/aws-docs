@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-sa
 ---
 
 # Code sample for CNG provider for AWS CloudHSM
-<a name="ksp-library-sample"></a>
 
 ****
 \*\* Example code only – Not for production use \*\*

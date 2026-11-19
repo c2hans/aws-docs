@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Image
 ---
 
 # ImageCustomActionOperation
-<a name="API_ImageCustomActionOperation"></a>
 
 The operation that is defined by the custom action.
 

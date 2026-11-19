@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Tr
 ---
 
 # TrainedModelInferenceJobSummary
-<a name="API_TrainedModelInferenceJobSummary"></a>
 
 Provides information about the trained model inference job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/teamwork-support.html
 ---
 
 # AWS Glue support for Teamwork
-<a name="teamwork-support"></a>
 
 AWS Glue supports Teamwork as follows:
 

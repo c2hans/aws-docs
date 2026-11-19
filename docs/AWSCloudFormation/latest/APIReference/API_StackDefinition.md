@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # StackDefinition
-<a name="API_StackDefinition"></a>
 
 Describes the stack and the template used by the stack.
 

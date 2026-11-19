@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Automate
 ---
 
 # AutomatedReasoningPolicyBuildStepContext
-<a name="API_AutomatedReasoningPolicyBuildStepContext"></a>
 
 Provides context about what type of operation was being performed during a build step.
 

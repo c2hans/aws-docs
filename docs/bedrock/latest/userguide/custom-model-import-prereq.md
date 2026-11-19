@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/custom-model-im
 ---
 
 # Prerequisites for importing custom model
-<a name="custom-model-import-prereq"></a>
 
 Before you can start a custom model import job, you need to fulfill the following prerequisites:
 

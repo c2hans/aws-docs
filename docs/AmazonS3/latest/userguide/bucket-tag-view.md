@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-tag-vie
 ---
 
 # Viewing bucket tags
-<a name="bucket-tag-view"></a>
 
 You can view or list tags applied to S3 buckets. For more information about tags, see [Using tags with S3 general purpose buckets](buckets-tagging.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_Pr
 ---
 
 # PrimitiveMessageDefinition
-<a name="API_PrimitiveMessageDefinition"></a>
 
 Represents a primitive type node of the complex data structure.
 

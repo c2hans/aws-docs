@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-manag
 ---
 
 # Amazon EC2 managed instances
-<a name="amazon-ec2-managed-instances"></a>
 
 An *Amazon EC2 managed instance* is an EC2 instance that is provisioned and managed by a designated service provider. Managed instances provide a simplified way for running compute workloads on Amazon EC2 by allowing you to delegate operational control of the instance to a service provider.
 

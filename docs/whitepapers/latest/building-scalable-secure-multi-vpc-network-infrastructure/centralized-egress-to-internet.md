@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ---
 
 # Centralized egress to internet
-<a name="centralized-egress-to-internet"></a>
 
 As you deploy applications in your multi-account environment, many apps will require outbound-only internet access (for example, downloading libraries, patches, or OS updates). This can be achieved for both IPv4 and IPv6 traffic. For IPv4, this can achieved through network address translation (NAT) in the form of a NAT gateway (recommended), or alternatively, a self-managed NAT instance running on an Amazon EC2 instance, as a means for all egress internet access. Internal applications reside in private subnets, while NAT Gateways and Amazon EC2 NAT instances reside in a public subnet.
 

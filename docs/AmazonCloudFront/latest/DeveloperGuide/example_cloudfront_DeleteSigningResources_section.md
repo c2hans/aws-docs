@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/e
 ---
 
 # Delete CloudFront signing resources using AWS SDK
-<a name="example_cloudfront_DeleteSigningResources_section"></a>
 
 The following code example shows how to delete resources that are used to gain access to restricted content in an Amazon Simple Storage Service (Amazon S3) bucket.
 

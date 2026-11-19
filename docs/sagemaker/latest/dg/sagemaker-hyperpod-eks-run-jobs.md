@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Running jobs on SageMaker HyperPod clusters orchestrated by Amazon EKS
-<a name="sagemaker-hyperpod-eks-run-jobs"></a>
 
 The following topics provide procedures and examples of accessing compute nodes and running ML workloads on provisioned SageMaker HyperPod clusters orchestrated with Amazon EKS. Depending on how you have set up the environment on your HyperPod cluster, there are many ways to run ML workloads on HyperPod clusters.
 

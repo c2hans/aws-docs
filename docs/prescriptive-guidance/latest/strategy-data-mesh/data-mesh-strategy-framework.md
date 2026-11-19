@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Data Mesh Strategy Framework
-<a name="data-mesh-strategy-framework"></a>
 
 The Data Mesh Strategy Framework is designed to help you formulate and implement a data mesh strategy for your organization. It outlines the typical phases observed during the implementation of the data mesh strategy. Consider the relevant phases for your organization based on where you are in your data strategy and cloud maturity journey. Sometimes, customers focus first on tools and technologies for their data mesh strategy. Instead, we recommend aligning your strategy with the business value delivered by your organization.
 

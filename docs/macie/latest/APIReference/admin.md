@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/admin.html
 ---
 
 # AWS Organizations - Macie Administrator
-<a name="admin"></a>
 
 The Macie Administrator resource for AWS Organizations provides settings for designating the delegated Amazon Macie administrator account for an organization in AWS Organizations. AWS Organizations is a global account management service that enables AWS administrators to consolidate and centrally manage multiple AWS accounts. For more information about this service, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html). For information about integrating Macie with AWS Organizations, see [Managing multiple accounts with AWS Organizations](https://docs.aws.amazon.com/macie/latest/user/accounts-mgmt-ao.html) in the *Amazon Macie User Guide*.
 

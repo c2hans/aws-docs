@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # TablePropertyDescription
-<a name="API_DataExports_TablePropertyDescription"></a>
 
 The properties for the data export table.
 

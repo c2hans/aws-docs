@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Dom
 ---
 
 # DomainController
-<a name="API_DomainController"></a>
 
 Contains information about the domain controllers for a specified directory.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/S3-bucket
 ---
 
 # Amazon S3 buckets
-<a name="S3-buckets"></a>
 
 Research and Engineering Studio (RES) supports mounting [Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) to Linux Virtual Desktop Infrastructure (VDI) instances. RES Administrators can onboard S3 buckets to RES, attach them to projects, edit their configuration, and remove buckets in the S3 buckets tab under **Environment Management**.
 

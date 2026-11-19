@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/manager-assist
 ---
 
 # Visualizations
-<a name="manager-assist-visualizations"></a>
 
 You can generate charts and tables to help you understand metric trends and patterns. When you ask a question about your contact center data, the response can be supplemented with an interactive chart or table that is rendered in the chat panel.
 

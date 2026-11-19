@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prev
 ---
 
 # PreviewPrivacyImpactParametersInput
-<a name="API_PreviewPrivacyImpactParametersInput"></a>
 
 Specifies the updated epsilon and noise parameters to preview. The preview allows you to see how the maximum number of each type of aggregation function would change with the new parameters.
 

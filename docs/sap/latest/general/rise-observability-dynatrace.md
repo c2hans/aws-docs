@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/rise-observability-dy
 ---
 
 # PowerConnect for SAP on Dynatrace
-<a name="rise-observability-dynatrace"></a>
 
 PowerConnect for SAP on Dynatrace is a comprehensive observability solution that combines Rhondos’s deep SAP expertise with Dynatrace’s AI-powered platform to deliver unified visibility across SAP landscapes. The solution enables organizations to monitor complex SAP environments spanning traditional on-premises infrastructure, SAP Cloud ERP, SAP Business Technology Platform (BTP), and various cloud solutions through a single pane of glass.
 

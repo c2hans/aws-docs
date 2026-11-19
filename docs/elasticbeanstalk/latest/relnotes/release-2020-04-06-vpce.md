@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release
 ---
 
 # Release: Elastic Beanstalk adds support for interface VPC endpoints on April 6, 2020
-<a name="release-2020-04-06-vpce"></a>
 
 AWS Elastic Beanstalk added support for interface VPC endpoints to allow all service traffic to stay within the Amazon network.
 

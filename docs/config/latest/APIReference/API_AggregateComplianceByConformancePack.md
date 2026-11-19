@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_Aggregate
 ---
 
 # AggregateComplianceByConformancePack
-<a name="API_AggregateComplianceByConformancePack"></a>
 
 Provides aggregate compliance of the conformance pack. Indicates whether a conformance pack is compliant based on the name of the conformance pack, account ID, and region.
 

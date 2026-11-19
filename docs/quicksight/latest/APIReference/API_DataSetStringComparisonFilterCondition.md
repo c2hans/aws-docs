@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetStringComparisonFilterCondition
-<a name="API_DataSetStringComparisonFilterCondition"></a>
 
 A filter condition that compares string values using operators like `EQUALS`, `CONTAINS`, or `STARTS_WITH`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/latest/userguide/sq_tags_m
 ---
 
 # Managing Service Quotas tags
-<a name="sq_tags_managing-console"></a>
 
 You can manage Service Quotas tags by using the AWS Management Console, the AWS CLI, or the AWS API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/detecting-cer-async
 ---
 
 # Starting a custom entity detection job (API)
-<a name="detecting-cer-async-api"></a>
 
 You can use the API to start and monitor an async analysis job for custom entity recognition.
 

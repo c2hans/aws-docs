@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/ct-working-wi
 ---
 
 # Working with continuous modernization
-<a name="ct-working-with"></a>
 
 ## Source management
 <a name="ct-source-management"></a>

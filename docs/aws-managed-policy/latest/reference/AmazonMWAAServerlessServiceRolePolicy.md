@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonMWAAServerlessServiceRolePolicy
-<a name="AmazonMWAAServerlessServiceRolePolicy"></a>
 
 **Description**: Provides access to Amazon Airflow Serverless Service to manage networking for your workflows and access other AWS services on your behalf
 

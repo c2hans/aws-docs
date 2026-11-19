@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # ExportKey
-<a name="API_ExportKey"></a>
 
 Exports a key from AWS Payment Cryptography.
 

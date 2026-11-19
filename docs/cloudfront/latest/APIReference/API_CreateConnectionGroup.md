@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Creat
 ---
 
 # CreateConnectionGroup
-<a name="API_CreateConnectionGroup"></a>
 
 Creates a connection group.
 

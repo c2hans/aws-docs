@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # ActorInfo
-<a name="API_connect-scheduling_ActorInfo"></a>
 
 Information about the identity that performed an action on a time off request: a Connect Customer user or an IAM or AWS STS identity. Exactly one member is set.
 

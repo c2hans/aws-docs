@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testin
 ---
 
 # MCP Server integration
-<a name="mcp-server-integration"></a>
 
 If you deployed the optional MCP Server component during solution deployment, you can integrate the Distributed Load Testing solution with AI development tools that support the Model Context Protocol. The MCP Server provides programmatic access to retrieve, manage, and analyze load tests through AI assistants.
 

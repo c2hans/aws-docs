@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/dg/send-email-authentication-
 ---
 
 # Authenticating Email with SPF in Amazon SES
-<a name="send-email-authentication-spf"></a>
 
 *Sender Policy Framework* (SPF) is an email validation standard that's designed to prevent email spoofing. Domain owners use SPF to tell email providers which servers are allowed to send email from their domains. SPF is defined in [RFC 7208](https://tools.ietf.org/html/rfc7208).
 

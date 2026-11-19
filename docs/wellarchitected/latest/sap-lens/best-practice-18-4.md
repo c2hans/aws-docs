@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 ---
 
 # Best Practice 18.4 – Evaluate the cost impact of storage options based on the required characteristics
-<a name="best-practice-18-4"></a>
 
 Select from object storage, file storage, and block storage services to host, archive, and secure your SAP system. Design your storage to reduce cost and increase agility.
 

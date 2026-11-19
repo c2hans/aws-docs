@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/APIReference/API_Kafka
 ---
 
 # KafkaExporterConfiguration
-<a name="API_KafkaExporterConfiguration"></a>
 
 The configuration for collecting broker, topic, and consumer-group metrics from an Amazon MSK cluster through a managed Kafka exporter. The cluster must be active, have IAM authentication enabled, and be in the same account and Region as the scraper. Provisioned clusters with Standard brokers are supported. MSK Serverless clusters are not supported.
 

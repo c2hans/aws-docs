@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Descr
 ---
 
 # DescribeOrderableDBInstanceOptions
-<a name="API_DescribeOrderableDBInstanceOptions"></a>
 
 Returns a list of orderable instance options for the specified engine.
 

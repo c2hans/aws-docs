@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteLau
 ---
 
 # DeleteLaunchTemplateVersionsResponseSuccessItem
-<a name="API_DeleteLaunchTemplateVersionsResponseSuccessItem"></a>
 
 Describes a launch template version that was successfully deleted.
 

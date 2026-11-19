@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-ssl-con
 ---
 
 # Requiring SSL/TLS for all connections to a MySQL DB instance on Amazon RDS
-<a name="mysql-ssl-connections.require-ssl"></a>
 
 Use the `require_secure_transport` parameter to require that all user connections to your MySQL DB instance use SSL/TLS. By default, the `require_secure_transport` parameter is set to `OFF`. You can set the `require_secure_transport` parameter to `ON` to require SSL/TLS for connections to your DB instance.
 

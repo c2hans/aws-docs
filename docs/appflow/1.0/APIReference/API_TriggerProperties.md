@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_TriggerProp
 ---
 
 # TriggerProperties
-<a name="API_TriggerProperties"></a>
 
  Specifies the configuration details that control the trigger for a flow. Currently, these settings only apply to the `Scheduled` trigger type.
 

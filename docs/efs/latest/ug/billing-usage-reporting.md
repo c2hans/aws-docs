@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/billing-usage-reporting.ht
 ---
 
 # Using AWS billing and usage reports
-<a name="billing-usage-reporting"></a>
 
 When using Amazon EFS, you pay only for the resources you use and there are no minimum fees or setup charges. Like other AWS services, while pricing is quoted on a monthly basis, your usage is prorated by the hour, and you are billed for your average usage over a month.
 

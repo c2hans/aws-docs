@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentRe
 ---
 
 # ExperimentReport
-<a name="API_ExperimentReport"></a>
 
 Describes the experiment report.
 

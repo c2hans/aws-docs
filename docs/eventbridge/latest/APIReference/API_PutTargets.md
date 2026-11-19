@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutT
 ---
 
 # PutTargets
-<a name="API_PutTargets"></a>
 
 Adds the specified targets to the specified rule, or updates the targets if they are already associated with the rule.
 

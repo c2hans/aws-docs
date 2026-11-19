@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Gain visibility into your Amazon EKS costs
-<a name="kubecost-main"></a>
 
 ## Overview
 <a name="kubecost-overview"></a>

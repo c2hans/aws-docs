@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/uninstall-
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Uninstalling an extension in a space
-<a name="uninstall-extension"></a>
 
 You can uninstall extensions that were previously installed in your CodeCatalyst space. Uninstalling an extension may remove resources related to that extension from your CodeCatalyst space or projects.
 

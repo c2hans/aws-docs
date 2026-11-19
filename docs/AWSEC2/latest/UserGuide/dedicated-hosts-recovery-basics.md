@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-
 ---
 
 # How Amazon EC2 Dedicated Host recovery works
-<a name="dedicated-hosts-recovery-basics"></a>
 
 Dedicated Hosts and the host resource groups recovery process use host-level health checks to assess Dedicated Host availability and to detect underlying system failures. The type of Dedicated Host failure determines if Dedicated Host auto recovery is possible. Examples of problems that can cause host-level health checks to fail include:
 + Loss of network connectivity

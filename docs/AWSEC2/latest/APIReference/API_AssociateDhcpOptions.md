@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Associate
 ---
 
 # AssociateDhcpOptions
-<a name="API_AssociateDhcpOptions"></a>
 
 Associates a set of DHCP options (that you've previously created) with the specified VPC, or associates no DHCP options with the VPC.
 

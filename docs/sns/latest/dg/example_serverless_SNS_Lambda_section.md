@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/example_serverless_SNS_Lam
 ---
 
 # Invoke a Lambda function from an Amazon SNS trigger
-<a name="example_serverless_SNS_Lambda_section"></a>
 
 The following code examples show how to implement a Lambda function that receives an event triggered by receiving messages from an SNS topic. The function retrieves the messages from the event parameter and logs the content of each message.
 

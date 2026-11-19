@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/short-
 ---
 
 # Create an event
-<a name="short-term-create-event"></a>
 
 Events are the fundamental units of short-term from which structured informations are extracted into long-term memory in AgentCore Memory. The [CreateEvent](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_CreateEvent.html) operation lets you store various types of data within AgentCore Memory, organized by an actor and session. Events are scoped within memory under:
 

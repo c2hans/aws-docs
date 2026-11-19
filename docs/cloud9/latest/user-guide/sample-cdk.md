@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/sample-cdk.html
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # AWS CDK tutorial for AWS Cloud9
-<a name="sample-cdk"></a>
 
 This tutorial shows you how to work with the AWS Cloud Development Kit (AWS CDK) in an AWS Cloud9 development environment. The AWS CDK is a set of software tools and libraries that developers can use to model AWS infrastructure components as code.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::ObservabilityAdmin::OrganizationCentralizationRule DestinationLogsConfiguration
-<a name="aws-properties-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration"></a>
 
 Configuration for centralization destination log groups, including encryption and backup settings.
 

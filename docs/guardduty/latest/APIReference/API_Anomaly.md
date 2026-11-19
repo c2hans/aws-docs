@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Anomal
 ---
 
 # Anomaly
-<a name="API_Anomaly"></a>
 
 Contains information about the anomalies.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cdk/v2/guide/pgp-keys.html
 ---
 
 # OpenPGP keys for the AWS CDK and jsii
-<a name="pgp-keys"></a>
 
 This topic contains current and historical OpenPGP keys for the AWS CDK and jsii.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DriftC
 ---
 
 # DriftCheckModelQuality
-<a name="API_DriftCheckModelQuality"></a>
 
 Represents the drift check model quality baselines that can be used when the model monitor is set using the model package.
 

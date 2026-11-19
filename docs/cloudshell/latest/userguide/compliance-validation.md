@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudshell/latest/userguide/compliance-v
 ---
 
 # Compliance validation for AWS CloudShell
-<a name="compliance-validation"></a>
 
 Third-party auditors assess the security and compliance of AWS services as part of multiple AWS compliance programs.
 

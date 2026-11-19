@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/documen
 ---
 
 # Working with documents
-<a name="documents-using"></a>
 
 This section includes information about how to use and work with SSM documents.
 

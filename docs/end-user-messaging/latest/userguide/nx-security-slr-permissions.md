@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-s
 ---
 
 # Service-linked role permissions for AWS End User Messaging
-<a name="nx-security-slr-permissions"></a>
 
 For the WhatsApp channel, AWS End User Messaging uses the service-linked role named `AWSServiceRoleForSocialMessaging` to publish metrics and provide insights for your social message sending. The `AWSServiceRoleForSocialMessaging` service-linked role trusts the `social-messaging.amazonaws.com` service to assume the role.
 

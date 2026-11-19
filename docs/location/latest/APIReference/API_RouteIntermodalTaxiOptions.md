@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteIn
 ---
 
 # RouteIntermodalTaxiOptions
-<a name="API_RouteIntermodalTaxiOptions"></a>
 
 Options for the taxi leg of the intermodal route.
 

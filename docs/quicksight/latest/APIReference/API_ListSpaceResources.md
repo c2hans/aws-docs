@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListS
 ---
 
 # ListSpaceResources
-<a name="API_ListSpaceResources"></a>
 
 Lists the resources in an Amazon QuickSight space.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Log management in AMS Accelerate
-<a name="acc-log-mgmt"></a>
 
 AMS Accelerate configures supported AWS services to collect logs. These logs are used by AMS Accelerate to ensure compliance and auditing of resources within your account.
 

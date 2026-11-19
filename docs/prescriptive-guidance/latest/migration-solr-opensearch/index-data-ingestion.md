@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Understanding data ingestion
-<a name="index-data-ingestion"></a>
 
 In Solr, you can implement extract, transform, load (ETL) workflows by using various approaches that are optimized for different use cases and data sources. These approaches provide proper data extraction, transformation to match your schema, and loading into the search index while maintaining data integrity and search optimization.
 

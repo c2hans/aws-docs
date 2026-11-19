@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # UpdateCostAllocationTagsStatusError
-<a name="API_UpdateCostAllocationTagsStatusError"></a>
 
 Gives a detailed description of the result of an action. It's on each cost allocation tag entry in the request.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_La
 ---
 
 # LakeFormationTagPolicyDetails
-<a name="API_LakeFormationTagPolicyDetails"></a>
 
 Extra details specific to the affected scope in this LF data set.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-da
 ---
 
 # Access-patterns template
-<a name="template-access-patterns"></a>
 
 Collect and document information about the access patterns for the use case by using the following fields:
 

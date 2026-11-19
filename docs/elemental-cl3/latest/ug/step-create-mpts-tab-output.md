@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/step-create-mpts
 ---
 
 # Output tab
-<a name="step-create-mpts-tab-output"></a>
 
 | Field | Description |
 | --- | --- |

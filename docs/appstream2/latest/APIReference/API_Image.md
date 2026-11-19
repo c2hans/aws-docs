@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_Image
 ---
 
 # Image
-<a name="API_Image"></a>
 
 Describes an image.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PurchaseC
 ---
 
 # PurchaseCapacityBlock
-<a name="API_PurchaseCapacityBlock"></a>
 
 Purchase the Capacity Block for use with your account. With Capacity Blocks you ensure GPU capacity is available for machine learning (ML) workloads. You must specify the ID of the Capacity Block offering you are purchasing.
 

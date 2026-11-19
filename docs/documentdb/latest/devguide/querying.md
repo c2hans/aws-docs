@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/querying.html
 ---
 
 # Querying in Amazon DocumentDB
-<a name="querying"></a>
 
 This section explains all aspects of querying with Amazon DocumentDB.
 

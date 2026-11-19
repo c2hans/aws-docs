@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-t
 ---
 
 # Tessell DBaaS
-<a name="data-mobility-tessell"></a>
 
 *Last update: November 15, 2024*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAccessKe
 ---
 
 # ListAccessKeys
-<a name="API_ListAccessKeys"></a>
 
 Returns information about the access key IDs associated with the specified IAM user. If there is none, the operation returns an empty list.
 

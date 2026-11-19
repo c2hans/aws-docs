@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/userguide/limits.ht
 ---
 
 # AWS Data Exchange quotas
-<a name="limits"></a>
 
 The following sections provide information about the service quotas, endpoints, guidelines for export and import jobs across AWS Regions, and constraints related to resource fields for AWS Data Exchange for an AWS account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Cr
 ---
 
 # CreateDelegationRequest
-<a name="API_CreateDelegationRequest"></a>
 
  A collection of attributes that's used to create a delegation for an assessment in AWS Audit Manager.
 

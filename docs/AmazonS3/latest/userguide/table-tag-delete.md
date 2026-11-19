@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/table-tag-dele
 ---
 
 # Deleting a tag from a table
-<a name="table-tag-delete"></a>
 
 You can remove tags from Amazon S3 tables. For more information about tagging tables, see [Using tags with S3 tables](table-tagging.md).
 

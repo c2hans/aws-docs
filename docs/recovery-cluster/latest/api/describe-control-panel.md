@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/recovery-cluster/latest/api/describe-con
 ---
 
 # Describe a control panel
-<a name="describe-control-panel"></a>
 
 The following is an example of a request to describe a control panel, and the response.
 

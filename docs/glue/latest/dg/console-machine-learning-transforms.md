@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/console-machine-learning-
 ---
 
 # Working with machine learning transforms
-<a name="console-machine-learning-transforms"></a>
 
 You can use AWS Glue to create custom machine learning transforms that can be used to cleanse your data. You can use these transforms when you create a job on the AWS Glue console.
 

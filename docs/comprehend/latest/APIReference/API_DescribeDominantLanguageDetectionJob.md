@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/APIReference/API_Descr
 ---
 
 # DescribeDominantLanguageDetectionJob
-<a name="API_DescribeDominantLanguageDetectionJob"></a>
 
 Gets the properties associated with a dominant language detection job. Use this operation to get the status of a detection job.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/services-
 ---
 
 # Amazon Elastic Compute Cloud and AWS Organizations
-<a name="services-that-can-integrate-ec2"></a>
 
 Amazon Elastic Compute Cloud provides on-demand, scalable computing capacity in the AWS Cloud. When you use Amazon EC2 with Organizations; you enable the Organizations admin to create a report of what the existing configuration is for accounts across their organization after using Amazon EC2's [Declarative Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_declarative.html) feature.
 

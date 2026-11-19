@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/RADIANS
 ---
 
 # RADIANS function
-<a name="RADIANS"></a>
 
 The RADIANS function converts an angle in degrees to its equivalent in radians.
 

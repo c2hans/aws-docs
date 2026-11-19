@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Va
 ---
 
 # ValidationExceptionField
-<a name="API_agent_ValidationExceptionField"></a>
 
 Stores information about a field passed inside a request that resulted in an validation error.
 

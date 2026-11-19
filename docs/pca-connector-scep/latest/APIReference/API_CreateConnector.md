@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pca-connector-scep/latest/APIReference/A
 ---
 
 # CreateConnector
-<a name="API_CreateConnector"></a>
 
 Creates a SCEP connector. A SCEP connector links AWS Private Certificate Authority to your SCEP-compatible devices and mobile device management (MDM) systems. Before you create a connector, you must complete a set of prerequisites, including creation of a private certificate authority (CA) to use with this connector. For more information, see [Connector for SCEP prerequisites](https://docs.aws.amazon.com/privateca/latest/userguide/scep-connector.htmlconnector-for-scep-prerequisites.html).
 

@@ -7,7 +7,6 @@ This whitepaper is for historical reference only.
 All updated guidance and best practices now live in the [Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) whitepaper.
 
 # PERF 2. How do you select your compute solution?
-<a name="perf-02"></a>
 
 The most effective compute solution for a workload varies based on application design, usage patterns, and configuration settings. Architectures can use different compute solutions for various components and activates different features to improve performance. Selecting the wrong compute solution for an architecture can lead to lower performance efficiency.
 

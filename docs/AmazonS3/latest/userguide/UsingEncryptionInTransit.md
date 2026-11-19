@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryptio
 ---
 
 # Protecting data in transit with encryption
-<a name="UsingEncryptionInTransit"></a>
 
 Amazon S3 supports both HTTP and HTTPS protocols for data transmission. HTTP transmits data in plain text, while HTTPS adds a security layer by encrypting data using Transport Layer Security (TLS). TLS protects against eavesdropping, data tampering, and man-in-the-middle attacks. While HTTP traffic is accepted, most implementations use encryption in transit with HTTPS and TLS to protect data as it travels between clients and Amazon S3.
 

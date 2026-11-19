@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/opensearch-
 ---
 
 # Stage 2 - Proof of concept
-<a name="stage-2-poc"></a>
 
 When performing a migration, it's critical to prove whether the target state solution will work as required. We strongly recommend running a proof-of-concept (PoC) exercise. This section focuses on the various aspects to factor in while running a PoC:
 + Defining entry and exit criteria

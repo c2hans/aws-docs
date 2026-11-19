@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/video-overlays-ad
 ---
 
 # How to overlay a full screen video
-<a name="video-overlays-add"></a>
 
 The following procedure describes how to display a full screen video overlay for a duration that you specify.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAccountSettingsManagementRole
-<a name="AWSAccountSettingsManagementRole"></a>
 
 **Description**: Provides required permissions to manage an account for AWS applications.
 

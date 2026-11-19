@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/manage-ta
 ---
 
 # Managed target domains used for penetration testing
-<a name="manage-target-domains"></a>
 
 In the AWS Management Console, you can add and manage target domains consumed by Agent Spaces for penetration testing. You must verify these target domains before you can use them in a penetration test. For more information about verifying target domains, see [Enable penetration test](enable-penetration-test.md).
 

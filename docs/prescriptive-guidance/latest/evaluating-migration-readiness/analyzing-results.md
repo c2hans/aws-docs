@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluating-
 ---
 
 # Analyzing the results and identifying actions
-<a name="analyzing-results"></a>
 
 At the conclusion of the MRA session, you will have collected data across the dimensions of the AWS CAF and you can present observations as an executive summary of the general conversation. It isn't necessary at this stage to provide deep technical solutions for each area.
 

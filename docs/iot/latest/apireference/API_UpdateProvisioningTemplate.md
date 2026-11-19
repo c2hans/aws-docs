@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateProvis
 ---
 
 # UpdateProvisioningTemplate
-<a name="API_UpdateProvisioningTemplate"></a>
 
 Updates a provisioning template.
 

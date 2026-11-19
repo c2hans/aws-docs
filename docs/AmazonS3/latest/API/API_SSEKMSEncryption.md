@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_SSEKMSEncryption
 ---
 
 # SSEKMSEncryption
-<a name="API_SSEKMSEncryption"></a>
 
  If `SSEKMS` is specified for `ObjectEncryption`, this data type specifies the AWS KMS key Amazon Resource Name (ARN) to use and whether to use an S3 Bucket Key for server-side encryption using AWS Key Management Service (AWS KMS) keys (SSE-KMS).
 

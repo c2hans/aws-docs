@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_DeleteFunctionConc
 ---
 
 # DeleteFunctionConcurrency
-<a name="API_DeleteFunctionConcurrency"></a>
 
 Removes a concurrent execution limit from a Lambda Event Function.
 

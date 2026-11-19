@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_Model.html
 ---
 
 # Model
-<a name="API_Model"></a>
 
 Represents the data structure of a method's request or response payload.
 

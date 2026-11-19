@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/metri
 ---
 
 # CloudWatch Metrics (Classic)
-<a name="metrics-classic"></a>
 
 CloudWatch Metrics (Classic) uses the `PutMetricData` API and embedded metric format (EMF) for ingestion, and provides CloudWatch Metrics Insights (SQL-based queries) for analysis. Classic metrics support up to 30 dimensions per metric with per-metric-per-month pricing.
 

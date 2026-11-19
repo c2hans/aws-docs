@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/as-run-log.html
 ---
 
 # "As Run" log for AWS Elemental MediaTailor Channel Assembly
-<a name="as-run-log"></a>
 
 The *As Run* log, in the CloudWatch `MediaTailor/Channel/AsRunLog` log group, shows information about programs and ad breaks as they play.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_TagResource.
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds one or more tags to an ACM resource. Tags are labels that you can use to identify and organize your AWS resources. Each tag consists of a `key` and an optional `value`.
 

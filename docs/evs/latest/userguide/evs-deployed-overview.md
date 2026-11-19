@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/evs/latest/userguide/evs-deployed-overvi
 ---
 
 # Deploy in EVS-deployed mode
-<a name="evs-deployed-overview"></a>
 
 This page applies to EVS-deployed environments (VCF 5.2.x). For Self-deployed environments that run VCF 9.x, see [Deploy in Self-deployed mode](getting-started-self-deployed.md).
 

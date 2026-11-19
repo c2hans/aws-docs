@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # Spend
-<a name="API_budgets_Spend"></a>
 
 The amount of cost or usage that's measured for a budget.
 

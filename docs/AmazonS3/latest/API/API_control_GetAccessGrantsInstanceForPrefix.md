@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAcces
 ---
 
 # GetAccessGrantsInstanceForPrefix
-<a name="API_control_GetAccessGrantsInstanceForPrefix"></a>
 
 Retrieve the S3 Access Grants instance that contains a particular prefix.
 

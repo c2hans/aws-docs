@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/permissions-ref
 ---
 
 # Lake Formation personas and IAM permissions reference
-<a name="permissions-reference"></a>
 
 This section lists some suggested Lake Formation personas and their suggested AWS Identity and Access Management (IAM) permissions. For information about Lake Formation permissions, see [Lake Formation permissions reference](lf-permissions-reference.md).
 

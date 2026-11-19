@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend-medical/latest/api/API_StartE
 ---
 
 # StartEntitiesDetectionV2Job
-<a name="API_StartEntitiesDetectionV2Job"></a>
 
 Starts an asynchronous medical entity detection job for a collection of documents. Use the `DescribeEntitiesDetectionV2Job` operation to track the status of a job.
 

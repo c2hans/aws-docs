@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/silk/latest/developerguide/what-is-silk.
 ---
 
 # What is Amazon Silk?
-<a name="what-is-silk"></a>
 
 Amazon Silk is a web browser available for customers to use on Fire Tablets, Fire TVs, and Echo Show devices. Silk is built on the Chromium Project, and is consistently updated to create a faster, secure and more responsive web browsing experience.
 

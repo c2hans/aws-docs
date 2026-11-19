@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Batch
 ---
 
 # BatchGetDeployments
-<a name="API_BatchGetDeployments"></a>
 
 Gets information about one or more deployments. The maximum number of deployments that can be returned is 25.
 

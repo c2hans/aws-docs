@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 ---
 
 # Testing to achieve confidence
-<a name="testing"></a>
 
 The best DR solution for databases is one that is tested frequently and passes the following checks:
 + Proper data recovery that meets the RPO expectations for each database

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/create-inf
 ---
 
 # Create an infrastructure configuration
-<a name="create-infra-config"></a>
 
 This section describes how to create an infrastructure configuration. You can use the Image Builder console, **imagebuilder** commands in the AWS CLI, or AWS Tools for PowerShell.
 

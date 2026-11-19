@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # Working with Channels
-<a name="working-with-channels"></a>
 
 **Topics**
 + [POST: Create a Channel](post-create-a-channel.md)

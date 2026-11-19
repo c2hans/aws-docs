@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/key_mgmt_util-
 ---
 
 # Export an AWS CloudHSM key using KMU
-<a name="key_mgmt_util-wrapKey"></a>
 
 Use the **wrapKey** command in the AWS CloudHSM key\_mgmt\_util to export an encrypted copy of a symmetric or private key from the hardware security module (HSM) to a file. When you run **wrapKey**, you specify the key to export, a key on the HSM to encrypt (wrap) the key that you want to export, and the output file.
 

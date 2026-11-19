@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/developerguide/offline-operat
 ---
 
 # Example offline operations
-<a name="offline-operations"></a>
 
 After [downloading the public key](download-public-key.md) of your asymmetric KMS key pair, you can share it with others and use it to perform offline operations.
 

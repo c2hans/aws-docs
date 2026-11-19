@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_Protecti
 ---
 
 # ProtectionGroup
-<a name="API_ProtectionGroup"></a>
 
 A grouping of protected resources that you and AWS Shield Advanced can monitor as a collective. This resource grouping improves the accuracy of detection and reduces false positives.
 

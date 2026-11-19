@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_ConfigRul
 ---
 
 # ConfigRuleEvaluationStatus
-<a name="API_ConfigRuleEvaluationStatus"></a>
 
 Status information for your AWS Config Managed rules and AWS Config Custom Policy rules. The status includes information such as the last time the rule ran, the last time it failed, and the related error for the last failure.
 

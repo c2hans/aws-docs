@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dlami/latest/devguide/setup-cleanup.html
 ---
 
 # Cleaning up a DLAMI instance
-<a name="setup-cleanup"></a>
 
 When you no longer need your DLAMI instance, you can stop it or terminate it on Amazon EC2 to avoid incurring unexpected charges.
 

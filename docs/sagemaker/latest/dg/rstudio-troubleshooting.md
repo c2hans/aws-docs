@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/rstudio-troubleshoot
 ---
 
 # Diagnose issues and get support
-<a name="rstudio-troubleshooting"></a>
 
  The following sections describe how to diagnose issues with RStudio on Amazon SageMaker AI. To get support for RStudio on Amazon SageMaker AI, contact Amazon SageMaker AI support. For help with purchasing an RStudio license or modifying the number of license seats, contact [sales@rstudio.com](mailto:sales@rstudio.com).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-jupyterhub-i
 ---
 
 # Installing additional kernels and libraries
-<a name="emr-jupyterhub-install-kernels-libs"></a>
 
 When you create a cluster with JupyterHub on Amazon EMR, the default Python 3 kernel for Jupyter along with the PySpark and Spark kernels for Sparkmagic are installed on the Docker container. You can install additional kernels. You can also install additional libraries and packages and then import them for the appropriate shell.
 

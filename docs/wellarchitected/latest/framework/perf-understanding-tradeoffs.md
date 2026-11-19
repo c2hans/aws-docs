@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf-un
 ---
 
 # Understanding trade-offs
-<a name="perf-understanding-tradeoffs"></a>
 
  Every architectural decision comes with trade-offs. When you optimize for performance in the cloud, you balance speed and responsiveness against cost, reliability, security, sustainability, and operational simplicity. The fastest option is rarely free, and it is not always the right one. Performance efficiency is about meeting the performance your workload actually requires at the lowest appropriate expense to the other pillars, not about maximizing speed for its own sake. Making informed decisions about these trade-offs requires understanding their business impact and establishing clear processes for evaluation and ongoing assessment.
 

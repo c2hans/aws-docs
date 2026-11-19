@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/default-agent-
 ---
 
 # Default agent transfer flow in Connect Customer: "Transferring now"
-<a name="default-agent-transfer"></a>
 
 This default transfer flow is what the "from" agent experiences when they transfer a contact to another agent by using [Create quick connects in Connect Customer](quick-connects.md). The "from" agent hears a **Play prompt** play the message "Transferring now." Then the **Transfer to agent** block is used to transfer the contact to the agent.
 

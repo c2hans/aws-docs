@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-listener-srt-p
 ---
 
 # Get ready
-<a name="input-listener-srt-prereqs"></a>
 
 1. Discuss the following information with the operator of the upstream system:
    + The IP address that the upstream system will push from. You need this address to create an input security group that allows traffic from this address. For more information about input security groups, see [Working with input security groups](working-with-input-security-groups.md).

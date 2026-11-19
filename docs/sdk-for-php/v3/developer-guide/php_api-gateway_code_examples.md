@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/php_api-g
 ---
 
 # API Gateway examples using SDK for PHP
-<a name="php_api-gateway_code_examples"></a>
 
 The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for PHP with API Gateway.
 

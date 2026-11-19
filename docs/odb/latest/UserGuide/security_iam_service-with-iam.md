@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/UserGuide/security_iam_servic
 ---
 
 # How Oracle Database@AWS works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Oracle Database@AWS, learn what IAM features are available to use with Oracle Database@AWS.
 

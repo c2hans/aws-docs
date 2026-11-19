@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-storage-v
 ---
 
 # CLI
-<a name="rds-storage-viewing.cli"></a>
 
 To view your storage volume configuration from the AWS CLI, use the `describe-db-instances` command.
 

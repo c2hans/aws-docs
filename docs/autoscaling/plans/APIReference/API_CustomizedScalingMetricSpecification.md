@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_Custo
 ---
 
 # CustomizedScalingMetricSpecification
-<a name="API_CustomizedScalingMetricSpecification"></a>
 
 Represents a CloudWatch metric of your choosing for a target tracking scaling policy to use with a scaling plan.
 

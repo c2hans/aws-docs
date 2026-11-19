@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/rel05-b
 ---
 
 # REL05-BP06 Make systems stateless where possible
-<a name="rel05-bp06"></a>
 
  A stateless component keeps no client-specific data on local disk or in memory between requests. Any compute node can serve any request, so you can replace or scale nodes without an availability impact. Offloading session and user data to a shared store makes horizontal scaling and node-level fault tolerance possible.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_B
 ---
 
 # BackupCreationTimeFilter
-<a name="API_BKS_BackupCreationTimeFilter"></a>
 
 This filters by recovery points within the CreatedAfter and CreatedBefore timestamps.
 

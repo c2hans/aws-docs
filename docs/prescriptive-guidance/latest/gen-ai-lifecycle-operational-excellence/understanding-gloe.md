@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Understanding the GLOE framework for generative AI
-<a name="understanding-gloe"></a>
 
 Generative AI Lifecycle Operational Excellence (GLOE) is a structured, iterative framework that manages the complete lifecycle of generative AI applications, from ideation to deployment and monitoring. Its core objectives are to standardize processes, enable team collaboration, and promote operational excellence throughout the generative AI application lifecycle. It is designed to help organizations deliver reliable, ethical, and adaptable AI solutions.
 

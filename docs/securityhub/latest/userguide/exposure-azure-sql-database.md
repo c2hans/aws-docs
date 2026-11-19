@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/exposure-az
 ---
 
 # Remediating exposures for Azure SQL databases
-<a name="exposure-azure-sql-database"></a>
 
 AWS Security Hub can generate exposure findings for Azure SQL databases.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/auth-issues.ht
 ---
 
 # Troubleshoot authentication issues
-<a name="auth-issues"></a>
 
 This section describes possible solutions for the following authentication issues.
 

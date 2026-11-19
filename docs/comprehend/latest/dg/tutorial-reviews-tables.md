@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/tutorial-reviews-ta
 ---
 
 # Step 4: Preparing the Amazon Comprehend output for data visualization
-<a name="tutorial-reviews-tables"></a>
 
 To prepare the results of the sentiment and entities analysis jobs for creating data visualizations, you use AWS Glue and Amazon Athena. In this step, you extract the Amazon Comprehend results files. Then, you create an AWS Glue *crawler* that explores your data and automatically catalogs it in tables in the AWS Glue Data Catalog. After that, you access and transform these tables using Amazon Athena, a serverless and interactive query service. When you have finished this step, your Amazon Comprehend results are clean and ready for visualization.
 

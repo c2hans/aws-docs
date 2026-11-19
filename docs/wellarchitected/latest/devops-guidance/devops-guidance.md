@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # DevOps Guidance
-<a name="devops-guidance"></a>
 
 Publication date: **September 20, 2023** ([Document history](document-revisions.md))
 

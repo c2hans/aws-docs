@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_S3Mode
 ---
 
 # S3ModelDataSource
-<a name="API_S3ModelDataSource"></a>
 
 Specifies the S3 location of ML model data to deploy.
 

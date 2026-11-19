@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PaletteN
 ---
 
 # PaletteNavigation
-<a name="API_PaletteNavigation"></a>
 
 Contains color configuration for navigation elements in a workspace theme.
 

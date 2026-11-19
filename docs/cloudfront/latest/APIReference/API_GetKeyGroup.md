@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_GetKe
 ---
 
 # GetKeyGroup
-<a name="API_GetKeyGroup"></a>
 
 Gets a key group, including the date and time when the key group was last modified.
 

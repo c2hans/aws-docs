@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/getting_starte
 ---
 
 # Getting started with the MW32x AWS IoT Starter Kit
-<a name="getting_started_mw32x"></a>
 
 **Important**  <a name="deprecation-message"></a>
 This reference integration is hosted on the Amazon-FreeRTOS repository which is deprecated. We recommend that you [start here](freertos-getting-started-modular.md) when you create a new project. If you already have an existing FreeRTOS project based on the now deprecated Amazon-FreeRTOS repository, see the [Amazon-FreeRTOS Github Repository Migration Guide](github-repo-migration.md).

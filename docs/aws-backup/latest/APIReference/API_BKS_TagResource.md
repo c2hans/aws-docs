@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_T
 ---
 
 # TagResource
-<a name="API_BKS_TagResource"></a>
 
 This operation puts tags on the resource you indicate.
 

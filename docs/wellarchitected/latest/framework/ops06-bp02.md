@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops06-b
 ---
 
 # OPS06-BP02 Automate responses to events
-<a name="ops06-bp02"></a>
 
  Manual handling of routine operational events is slow, inconsistent, and hard to scale. Automate the response to well-understood events to act immediately, apply the same remediation every time, and free operators for problems that need judgment.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Delete
 ---
 
 # DeleteRepositoryPolicy
-<a name="API_DeleteRepositoryPolicy"></a>
 
 Deletes the repository policy associated with the specified repository.
 

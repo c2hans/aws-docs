@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # RuleGroupMetadata
-<a name="API_RuleGroupMetadata"></a>
 
 High-level information about a rule group, returned by [ListRuleGroups](API_ListRuleGroups.md). You can use the information provided in the metadata to retrieve and manage a rule group.
 

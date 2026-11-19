@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Association AutomatedTestingCapabilityConfiguration
-<a name="aws-properties-devopsagent-association-automatedtestingcapabilityconfiguration"></a>
 
 The configuration for automated testing during code change risk analysis. This capability doesn't support trigger filter groups.
 

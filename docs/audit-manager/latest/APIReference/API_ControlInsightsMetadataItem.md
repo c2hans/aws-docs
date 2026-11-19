@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Co
 ---
 
 # ControlInsightsMetadataItem
-<a name="API_ControlInsightsMetadataItem"></a>
 
 A summary of the latest analytics data for a specific control.
 

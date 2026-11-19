@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_WiF
 ---
 
 # WiFiCellular
-<a name="API_WiFiCellular"></a>
 
 Configuration for WiFi and cellular location payloads. Contains the confidence level that determines the size of the uncertainty radius in the position estimate.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # ReleasePhoneNumber
-<a name="API_ReleasePhoneNumber"></a>
 
 Releases an existing origination phone number in your account. Once released, a phone number is no longer available for sending messages.
 

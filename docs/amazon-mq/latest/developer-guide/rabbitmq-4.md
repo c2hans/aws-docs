@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitm
 ---
 
 # RabbitMQ 4
-<a name="rabbitmq-4"></a>
 
 Amazon MQ supports RabbitMQ 4.3 and 4.2 in the RabbitMQ 4 release series only on the mq.m7g instance type across all supported instance sizes.
 

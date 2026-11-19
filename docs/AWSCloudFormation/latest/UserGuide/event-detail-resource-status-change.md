@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/event
 ---
 
 # Resource Status Change event detail
-<a name="event-detail-resource-status-change"></a>
 
 Below are the detail fields for Resource Status Change events.
 

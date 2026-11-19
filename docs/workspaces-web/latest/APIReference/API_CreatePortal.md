@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_C
 ---
 
 # CreatePortal
-<a name="API_CreatePortal"></a>
 
 Creates a web portal.
 

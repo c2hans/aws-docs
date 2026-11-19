@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/resolver-referen
 ---
 
 # AWS AppSync JavaScript resolver function reference for Lambda
-<a name="resolver-reference-lambda-js"></a>
 
 You can use AWS AppSync functions and resolvers to invoke Lambda functions located in your account. You can shape your request payloads and the response from your Lambda functions before returning them to your clients. You can also specify the type of operation to perform in your request object. This section describes the requests for the supported Lambda operations.
 

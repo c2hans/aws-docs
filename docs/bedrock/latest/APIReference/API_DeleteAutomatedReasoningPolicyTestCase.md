@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DeleteAu
 ---
 
 # DeleteAutomatedReasoningPolicyTestCase
-<a name="API_DeleteAutomatedReasoningPolicyTestCase"></a>
 
 Deletes an Automated Reasoning policy test. This operation is idempotent; if you delete a test more than once, each call succeeds.
 

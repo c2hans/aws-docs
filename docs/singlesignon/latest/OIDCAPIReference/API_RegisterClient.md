@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/API
 ---
 
 # RegisterClient
-<a name="API_RegisterClient"></a>
 
 Registers a public client with IAM Identity Center. This allows clients to perform authorization using the authorization code grant with Proof Key for Code Exchange (PKCE) or the device code grant.
 

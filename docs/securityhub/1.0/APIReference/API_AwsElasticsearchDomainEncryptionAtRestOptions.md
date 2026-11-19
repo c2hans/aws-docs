@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElas
 ---
 
 # AwsElasticsearchDomainEncryptionAtRestOptions
-<a name="API_AwsElasticsearchDomainEncryptionAtRestOptions"></a>
 
 Details about the configuration for encryption at rest.
 

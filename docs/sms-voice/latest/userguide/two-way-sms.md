@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/two-way-sms.h
 ---
 
 # Two-way SMS messaging in AWS End User Messaging SMS
-<a name="two-way-sms"></a>
 
 AWS End User Messaging SMS includes support for two-way SMS. When you set up two-way SMS, you can receive incoming messages from your customers. You can also use two-way messaging together with other AWS services, such as Lambda and Amazon Lex, to create interactive text messaging experiences.
 

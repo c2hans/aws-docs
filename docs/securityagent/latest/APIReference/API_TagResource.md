@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ta
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds tags to a resource.
 

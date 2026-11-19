@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/analyzi
 ---
 
 # Analyzing test results in AWS Device Farm
-<a name="analyzing-results"></a>
 
 With AWS Device Farm, you can choose from [two modes of execution](test-environments.md): standard and custom mode. Standard mode was designed to provide granular reporting as a replacement for any test report that you might generate. The report contains test artifacts, such as videos and logs, presented separately for each test. When you choose standard mode, Device Farm does not guarantee that the test execution sequence matches your local execution order. Because it involves post-processing for each test, standard mode typically takes longer to execute compared to your local execution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListPa
 ---
 
 # ListPartnerApps
-<a name="API_ListPartnerApps"></a>
 
 Lists all of the SageMaker Partner AI Apps in an account.
 

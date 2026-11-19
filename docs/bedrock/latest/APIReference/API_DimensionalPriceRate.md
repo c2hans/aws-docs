@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Dimensio
 ---
 
 # DimensionalPriceRate
-<a name="API_DimensionalPriceRate"></a>
 
 Dimensional price rate.
 

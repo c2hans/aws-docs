@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_EnvironmentRespons
 ---
 
 # EnvironmentResponse
-<a name="API_EnvironmentResponse"></a>
 
 The results of an operation to update or read environment variables. If the operation succeeds, the response contains the environment variables. If it fails, the response contains details about the error.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListSbomVali
 ---
 
 # ListSbomValidationResults
-<a name="API_ListSbomValidationResults"></a>
 
 The validation results for all software bill of materials (SBOM) attached to a specific software package version.
 

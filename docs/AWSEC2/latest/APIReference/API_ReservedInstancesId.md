@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ReservedI
 ---
 
 # ReservedInstancesId
-<a name="API_ReservedInstancesId"></a>
 
 Describes the ID of a Reserved Instance.
 

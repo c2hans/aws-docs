@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/create-subd
 ---
 
 # Create subdeployments
-<a name="create-subdeployments"></a>
 
 **Note**
 The subdeployment feature is available on Greengrass nucleus version 2.9.0 and later. It is not possible to deploy a configuration to a subdeployment with earlier component versions of Greengrass nucleus.

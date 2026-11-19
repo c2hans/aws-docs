@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_GetConn
 ---
 
 # GetConnector
-<a name="API_GetConnector"></a>
 
 Retrieves details for a CSPM connector based on the connector ID.
 

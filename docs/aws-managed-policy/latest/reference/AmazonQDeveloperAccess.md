@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonQDeveloperAccess
-<a name="AmazonQDeveloperAccess"></a>
 
 **Description**: Provides developer access to enable interactions with Amazon Q
 

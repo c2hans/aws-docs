@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-r
 ---
 
 # Amazon SageMaker HyperPod AMI
-<a name="sagemaker-hyperpod-release-ami"></a>
 
 Amazon SageMaker HyperPod Amazon Machine Images (AMIs) are specialized machine images for distributed machine learning workloads and high-performance computing. These AMIs enhance base images with essential components including GPU drivers and AWS Neuron accelerator support.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Descri
 ---
 
 # DescribeTrial
-<a name="API_DescribeTrial"></a>
 
 Provides a list of a trial's properties.
 

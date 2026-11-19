@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
 
 # You’re a service, not a product
-<a name="youre-a-service-not-a-product"></a>
 
  Adopting a “service” model is more than just marketing or terminology. In a service mindset, you will find yourself moving away from aspects of the traditional product-based approach to development. While features and functionality are certainly important to every product, SaaS places more emphasis on the experience customers will have with your service.
 

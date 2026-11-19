@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RulesSea
 ---
 
 # RulesSearchFilter
-<a name="API_RulesSearchFilter"></a>
 
 Filters to be applied to search results.
 

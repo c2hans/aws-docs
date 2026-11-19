@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/mobile/sdkforxamarin/developerguide/gett
 The AWS Mobile SDK for Xamarin is now included in the AWS SDK for .NET. This guide references the archived version of the Mobile SDK for Xamarin.
 
 # Sync User Data with Cognito Sync
-<a name="getting-started-sync-data"></a>
 
 Amazon Cognito Sync makes it easy to save mobile user data, such as app preferences or game state in the AWS Cloud without writing any backend code or managing any infrastructure. You can save data locally on users’ devices allowing your applications to work even when the devices are offline. You can also synchronize data across a user’s devices so that their app experience will be consistent regardless of the device they use.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # PointOfInterest
-<a name="API_connect-contact-lens_PointOfInterest"></a>
 
 The section of the contact audio where a match was detected.
 

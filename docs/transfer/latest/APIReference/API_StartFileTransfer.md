@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_StartFi
 ---
 
 # StartFileTransfer
-<a name="API_StartFileTransfer"></a>
 
 Begins a file transfer between local AWS storage and a remote AS2 or SFTP server.
 + For an AS2 connector, you specify the `ConnectorId` and one or more `SendFilePaths` to identify the files you want to transfer.

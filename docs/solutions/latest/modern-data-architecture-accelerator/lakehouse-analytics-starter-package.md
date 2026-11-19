@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modern-data-architectur
 ---
 
 # Lakehouse Analytics Starter Package
-<a name="lakehouse-analytics-starter-package"></a>
 
 The Lakehouse Analytics Starter Package deploys a complete analytics lakehouse: S3 data lake, Glue cataloging and ETL, data quality enforcement, Athena and Redshift querying, and QuickSight BI — end-to-end with a single deploy command.
 

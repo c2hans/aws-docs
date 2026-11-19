@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/ssai-ca-integratio
 ---
 
 # Integrate MediaTailor SSAI with channel assembly for monetized linear channels
-<a name="ssai-ca-integration"></a>
 
 This topic explains how to combine AWS Elemental MediaTailor server-side ad insertion with channel assembly and content delivery network (CDN) integration. This integration enables you to:
 + Create monetized linear channels with personalized advertising

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/launchwizard/latest/APIReference/API_Get
 ---
 
 # GetDeployment
-<a name="API_GetDeployment"></a>
 
 Returns information about the deployment.
 

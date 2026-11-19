@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_D
 ---
 
 # DeleteAddonInstance
-<a name="API_DeleteAddonInstance"></a>
 
 Deletes an Add On instance.
 

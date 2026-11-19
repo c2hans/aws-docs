@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-connect-tr
 ---
 
 # Troubleshoot issues in Amazon MSK Connect
-<a name="msk-connect-troubleshooting"></a>
 
 The following information can help you troubleshoot problems that you might have while using MSK Connect. You can also post your issue to the [AWS re:Post](https://repost.aws/).
 

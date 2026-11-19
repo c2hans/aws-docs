@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_Errors.
 ---
 
 # Service-specific Errors
-<a name="API_Errors"></a>
 
 The Nova Act Service API contains service-specific exceptions that various actions return. This section describes each exception in detail.
 

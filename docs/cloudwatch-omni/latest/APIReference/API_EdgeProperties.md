@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # EdgeProperties
-<a name="API_EdgeProperties"></a>
 
 Edge attributes promoted out of the flat attribute map onto typed members. Which members are present depends entirely on what produced the edge, so most edges carry only a few of them.
 

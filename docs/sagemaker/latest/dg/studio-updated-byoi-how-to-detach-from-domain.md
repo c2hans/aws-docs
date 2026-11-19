@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-byoi-
 ---
 
 # Detach and clean up custom image resources
-<a name="studio-updated-byoi-how-to-detach-from-domain"></a>
 
 The following page provides instructions on how to detach your custom images and clean up the related resources using the Amazon SageMaker AI console or the AWS Command Line Interface (AWS CLI).
 

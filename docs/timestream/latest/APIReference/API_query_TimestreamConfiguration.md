@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query
 ---
 
 # TimestreamConfiguration
-<a name="API_query_TimestreamConfiguration"></a>
 
  Configuration to write data into Timestream database and table. This configuration allows the user to map the query result select columns into the destination table columns.
 

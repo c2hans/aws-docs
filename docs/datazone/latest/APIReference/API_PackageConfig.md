@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Package
 ---
 
 # PackageConfig
-<a name="API_PackageConfig"></a>
 
 The package configuration for a notebook run environment in Amazon SageMaker Unified Studio.
 

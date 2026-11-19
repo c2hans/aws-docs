@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/monitoring-cloudwatc
 ---
 
 # Amazon SageMaker AI enhanced metrics for inference endpoints
-<a name="monitoring-cloudwatch-enhanced-metrics"></a>
 
 Enhanced metrics provide instance-level and container-level monitoring data for Amazon SageMaker AI real-time endpoints. When you enable enhanced metrics, Amazon CloudWatch metrics can include `InstanceId`, `ContainerId`, and `AcceleratorId` dimensions (availability varies by namespace) for granular per-instance, per-container, and per-GPU visibility. Enhanced metrics are available for single-model endpoints and inference components. Multi-Container Endpoints (MCE) support instance-level enhanced metrics but not container-level metrics.
 

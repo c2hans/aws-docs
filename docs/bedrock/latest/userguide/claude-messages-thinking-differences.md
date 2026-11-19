@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/claude-messages
 ---
 
 # Differences in thinking across model versions
-<a name="claude-messages-thinking-differences"></a>
 
 The Messages API handles thinking differently across Claude 3.7 Sonnet and Claude 4 models, primarily in redaction and summarization behavior. The following table summarizes those differences.
 

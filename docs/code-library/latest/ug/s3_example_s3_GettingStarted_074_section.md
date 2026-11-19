@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/s3_example_s3_Get
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Getting started with document text extraction
-<a name="s3_example_s3_GettingStarted_074_section"></a>
 
 The following code example shows how to:
 + Create an S3 bucket

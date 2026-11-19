@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-a
 ---
 
 # Integration
-<a name="apis-apiid-integrations-integrationid"></a>
 
 Represents an API integration.
 

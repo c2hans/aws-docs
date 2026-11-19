@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/security-priva
 ---
 
 # AWS PrivateLink for AWS Account Management
-<a name="security-privatelink"></a>
 
 The following information is relevant for all AWS accounts.
 

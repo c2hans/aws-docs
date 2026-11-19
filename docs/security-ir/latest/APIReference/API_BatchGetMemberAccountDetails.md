@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/APIReference/API_Batc
 ---
 
 # BatchGetMemberAccountDetails
-<a name="API_BatchGetMemberAccountDetails"></a>
 
 Provides information on whether the supplied account IDs are associated with a membership.
 

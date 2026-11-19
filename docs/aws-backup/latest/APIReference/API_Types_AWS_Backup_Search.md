@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Types
 ---
 
 # AWS Backup search
-<a name="API_Types_AWS_Backup_Search"></a>
 
 The following data types are supported by AWS Backup search:
 +  [BackupCreationTimeFilter](API_BKS_BackupCreationTimeFilter.md)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Connect
 ---
 
 # Connecting to RDS for MySQL with the AWS JDBC Driver, AWS Python Driver, and AWS ODBC Driver for MySQL
-<a name="MySQL.Connecting.Drivers"></a>
 
 Connect to RDS for MySQL DB instances with the AWS JDBC Driver, the AWS Python Driver, and the AWS ODBC Driver for MySQL. For more information, see the following topics.
 

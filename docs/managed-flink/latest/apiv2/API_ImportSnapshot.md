@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ImportSna
 ---
 
 # ImportSnapshot
-<a name="API_ImportSnapshot"></a>
 
 Imports an Apache Flink savepoint from an Amazon S3 location as an enhanced snapshot. Managed Service for Apache Flink assumes the IAM role that you specify in `ImportSourceConfiguration` to read the savepoint data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_DeleteRe
 ---
 
 # DeleteResourcePolicy
-<a name="API_DeleteResourcePolicy"></a>
 
 Delete a policy for the specified data stream, consumer, or queue. Request patterns can be one of the following:
 + Data stream pattern: `arn:aws.*:kinesis:.*:\d{12}:.*stream/\S+`

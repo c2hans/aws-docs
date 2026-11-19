@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DeleteDomainObjectType
-<a name="API_connect-customer-profiles_DeleteDomainObjectType"></a>
 
 Delete a DomainObjectType for the given Domain and ObjectType name.
 

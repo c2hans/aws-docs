@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Project
 ---
 
 # ProjectSummary
-<a name="API_ProjectSummary"></a>
 
 The details of a Amazon DataZone project.
 

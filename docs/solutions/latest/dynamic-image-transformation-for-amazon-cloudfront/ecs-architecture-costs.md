@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # ECS architecture costs
-<a name="ecs-architecture-costs"></a>
 
 The ECS architecture has higher baseline costs due to always-running infrastructure but provides better performance and advanced features. Costs scale with the selected t-shirt size and auto-scaling configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_LineC
 ---
 
 # LineChartVisual
-<a name="API_LineChartVisual"></a>
 
 A line chart.
 

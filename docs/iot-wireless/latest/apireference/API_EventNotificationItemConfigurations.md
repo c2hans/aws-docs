@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Eve
 ---
 
 # EventNotificationItemConfigurations
-<a name="API_EventNotificationItemConfigurations"></a>
 
 Object of all event configurations and the status of the event topics.
 

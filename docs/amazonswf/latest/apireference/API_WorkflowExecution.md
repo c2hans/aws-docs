@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Workfl
 ---
 
 # WorkflowExecution
-<a name="API_WorkflowExecution"></a>
 
 Represents a workflow execution.
 

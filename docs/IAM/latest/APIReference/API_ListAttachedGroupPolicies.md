@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_ListAttached
 ---
 
 # ListAttachedGroupPolicies
-<a name="API_ListAttachedGroupPolicies"></a>
 
 Lists all managed policies that are attached to the specified IAM group.
 

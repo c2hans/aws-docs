@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Smart Grocery with Scan-and-Go, Computer Vision, and IoT
-<a name="smart-grocery-scan-and-go"></a>
 
 Publication date: **May 18, 2022 ([Diagram history](#sg-history))**
 

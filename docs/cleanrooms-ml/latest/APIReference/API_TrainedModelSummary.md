@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_Tr
 ---
 
 # TrainedModelSummary
-<a name="API_TrainedModelSummary"></a>
 
 Summary information about the trained model.
 

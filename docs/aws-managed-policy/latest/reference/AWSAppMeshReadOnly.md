@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSA
 ---
 
 # AWSAppMeshReadOnly
-<a name="AWSAppMeshReadOnly"></a>
 
 **Description**: Provides read-only access to the AWS App Mesh APIs and Management Console.
 

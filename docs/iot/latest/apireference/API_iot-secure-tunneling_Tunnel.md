@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iot-secure-t
 ---
 
 # Tunnel
-<a name="API_iot-secure-tunneling_Tunnel"></a>
 
 A connection between a source computer and a destination device.
 

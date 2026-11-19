@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Seco
 ---
 
 # Secondary
-<a name="API_Secondary"></a>
 
 The secondary Region that processes events when failover is triggered or replication is enabled.
 

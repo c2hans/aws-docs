@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEcrR
 ---
 
 # AwsEcrRepositoryLifecyclePolicyDetails
-<a name="API_AwsEcrRepositoryLifecyclePolicyDetails"></a>
 
 Information about the lifecycle policy for the repository.
 

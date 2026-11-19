@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Ass
 ---
 
 # AssetModelHierarchy
-<a name="API_AssetModelHierarchy"></a>
 
 Describes an asset hierarchy that contains a hierarchy's name, ID, and child asset model ID that specifies the type of asset that can be in this hierarchy.
 

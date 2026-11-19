@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/i
 ---
 
 # Dual Stack Amazon Amazon VPC Internet Connectivity
-<a name="ipv6-dual-stack-internet"></a>
 
 Publication date: **June 23, 2022 ([Diagram history](#ipv6-1-diagram-history))**
 

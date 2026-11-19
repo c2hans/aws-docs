@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_reko
 ---
 
 # ClientSessionInformationEvent
-<a name="API_rekognitionstreaming_ClientSessionInformationEvent"></a>
 
 Any information that the client needs to send for the streaming session. For face movement challenge, it will contain information like initial face position and target face position.
 

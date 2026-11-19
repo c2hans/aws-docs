@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLCandidateGenerationConfig
-<a name="API_AutoMLCandidateGenerationConfig"></a>
 
 Stores the configuration information for how a candidate is generated (optional).
 

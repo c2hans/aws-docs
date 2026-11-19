@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIR
 ---
 
 # ListIngestionJobs
-<a name="API_ListIngestionJobs"></a>
 
 Returns a list of ingestion jobs in a collection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/video-ull.html
 ---
 
 # Setting up for ultra-low latency
-<a name="video-ull"></a>
 
 If you are sending output to an HTTP server or to AWS Elemental MediaStore, you can produce ultra-low latency outputs if you create a DASH output and enable chunked encoding and chunked transfer.
 

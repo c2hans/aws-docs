@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/toe-compon
 ---
 
 # How Image Builder uses the AWS Task Orchestrator and Executor application to manage components
-<a name="toe-component-manager"></a>
 
 EC2 Image Builder uses the AWS Task Orchestrator and Executor (AWSTOE) application to orchestrate complex workflows, modify system configurations, and test your images without the need for additional devops scripts or code. This application manages and runs components that implement its declarative document schema.
 

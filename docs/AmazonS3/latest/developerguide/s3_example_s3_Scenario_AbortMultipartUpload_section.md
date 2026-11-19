@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/developerguide/s3_exampl
 ---
 
 # Delete incomplete multipart uploads to Amazon S3 using an AWS SDK
-<a name="s3_example_s3_Scenario_AbortMultipartUpload_section"></a>
 
 The following code example shows how to how to delete or stop incomplete Amazon S3 multipart uploads.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # JobSchedule
-<a name="API_connect-customer-profiles_JobSchedule"></a>
 
 The day and time when do you want to start the Identity Resolution Job every week.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Permi
 ---
 
 # PermissionModel
-<a name="API_PermissionModel"></a>
 
 Defines the permission model for a service.
 

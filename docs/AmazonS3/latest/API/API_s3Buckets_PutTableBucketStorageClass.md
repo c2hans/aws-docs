@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_PutTab
 ---
 
 # PutTableBucketStorageClass
-<a name="API_s3Buckets_PutTableBucketStorageClass"></a>
 
 Sets or updates the storage class configuration for a table bucket. This configuration serves as the default storage class for all new tables created in the bucket, allowing you to optimize storage costs at the bucket level.
 

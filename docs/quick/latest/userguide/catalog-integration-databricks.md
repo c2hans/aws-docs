@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/catalog-integrati
 ---
 
 # Connecting to Databricks Unity Catalog
-<a name="catalog-integration-databricks"></a>
 
 **Note**
 Data catalog integration with Databricks Unity Catalog is in Preview for AWS Quick and is subject to change. Preview features are not typically recommended for critical or production workloads.

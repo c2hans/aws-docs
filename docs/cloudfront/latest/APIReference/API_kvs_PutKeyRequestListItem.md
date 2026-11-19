@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_P
 ---
 
 # PutKeyRequestListItem
-<a name="API_kvs_PutKeyRequestListItem"></a>
 
 List item for key-value pair to put.
 

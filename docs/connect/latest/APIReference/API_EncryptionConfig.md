@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Encrypti
 ---
 
 # EncryptionConfig
-<a name="API_EncryptionConfig"></a>
 
 The encryption configuration.
 

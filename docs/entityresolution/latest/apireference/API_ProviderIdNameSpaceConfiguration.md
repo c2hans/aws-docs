@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # ProviderIdNameSpaceConfiguration
-<a name="API_ProviderIdNameSpaceConfiguration"></a>
 
 The provider configuration required for different ID namespace types.
 

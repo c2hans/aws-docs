@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # CustomDescriptor
-<a name="API_CustomDescriptor"></a>
 
  A custom descriptor configuration for a registry record.
 

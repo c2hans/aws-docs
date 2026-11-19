@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RestoreVo
 ---
 
 # RestoreVolumeFromRecycleBin
-<a name="API_RestoreVolumeFromRecycleBin"></a>
 
 Restores a volume from the Recycle Bin. For more information, see [Restore volumes from the Recycle Bin](https://docs.aws.amazon.com/ebs/latest/userguide/recycle-bin-working-with-volumes.html#recycle-bin-restore-volumes) in the *Amazon EBS User Guide*.
 

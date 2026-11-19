@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_Component
 ---
 
 # Component
-<a name="API_Component"></a>
 
 The SAP component of your application.
 

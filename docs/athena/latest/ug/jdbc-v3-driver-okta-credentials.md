@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/jdbc-v3-driver-okta-cre
 ---
 
 # Okta credentials
-<a name="jdbc-v3-driver-okta-credentials"></a>
 
 A SAML-based authentication mechanism that enables authentication to Athena using the Okta identity provider. This method assumes that a federation has already been set up between Athena and Okta.
 

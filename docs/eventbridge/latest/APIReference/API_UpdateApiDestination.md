@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_Upda
 ---
 
 # UpdateApiDestination
-<a name="API_UpdateApiDestination"></a>
 
 Updates an API destination.
 

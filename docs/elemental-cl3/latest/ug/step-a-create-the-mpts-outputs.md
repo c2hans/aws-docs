@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/step-a-create-th
 ---
 
 # Step 1: Create the MPTS
-<a name="step-a-create-the-mpts-outputs"></a>
 
 **To create an MPTS**
 

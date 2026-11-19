@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/interact-light
 ---
 
 # Tutorial: Interacting with Device Shadow using the sample app and the MQTT test client
-<a name="interact-lights-device-shadows"></a>
 
 To interact with the `shadow.py` sample app, enter a value in the terminal for the `desired` value. For example, you can specify colors that resemble the traffic lights and AWS IoT responds to the request and updates the reported values.
 

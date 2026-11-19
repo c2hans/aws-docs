@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Edge.h
 ---
 
 # Edge
-<a name="API_Edge"></a>
 
 A directed edge connecting two lineage entities.
 

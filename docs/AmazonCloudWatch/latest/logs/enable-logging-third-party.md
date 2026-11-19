@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/enable-logg
 ---
 
 # Enable logging from third-party sources
-<a name="enable-logging-third-party"></a>
 
 CloudWatch Logs supports ingesting logs from third-party sources through direct API integrations and Amazon S3 bucket integrations. You can also receive additional third-party security findings through AWS Security Hub CSPM.
 

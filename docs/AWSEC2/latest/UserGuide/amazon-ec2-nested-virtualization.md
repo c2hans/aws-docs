@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-neste
 ---
 
 # Use nested virtualization to run hypervisors in Amazon EC2 instances
-<a name="amazon-ec2-nested-virtualization"></a>
 
 Nested virtualization allows you to run hypervisors such as Hyper-V and KVM inside virtual Amazon EC2 instances. Virtual EC2 instances are non-bare metal instances. This capability extends virtualization flexibility by adding processor-level virtualization support to virtual EC2 instances, enabling a hypervisor running in your instance to create and manage virtual machines.
 

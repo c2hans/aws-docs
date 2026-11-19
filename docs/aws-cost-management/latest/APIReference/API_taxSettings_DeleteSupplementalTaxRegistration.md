@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DeleteSupplementalTaxRegistration
-<a name="API_taxSettings_DeleteSupplementalTaxRegistration"></a>
 
  Deletes a supplemental tax registration for a single account.
 

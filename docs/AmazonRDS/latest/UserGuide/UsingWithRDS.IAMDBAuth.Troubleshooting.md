@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.
 ---
 
 # Troubleshooting for IAM DB authentication
-<a name="UsingWithRDS.IAMDBAuth.Troubleshooting"></a>
 
 Following, you can find troubleshooting ideas for some common IAM DB authentication issues and information on CloudWatch logs and metrics for IAM DB authentication.
 

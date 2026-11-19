@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_VpcOr
 ---
 
 # VpcOriginSummary
-<a name="API_VpcOriginSummary"></a>
 
 A summary of the CloudFront VPC origin.
 

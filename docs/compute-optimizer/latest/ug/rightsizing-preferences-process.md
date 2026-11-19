@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/rightsizing-
 ---
 
 # Setting your rightsizing recommendation preferences
-<a name="rightsizing-preferences-process"></a>
 
 Use rightsizing recommendation preferences to tailor AWS Compute Optimizer recommendations to your workloads. This section shows you how to set these preferences.
 

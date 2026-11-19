@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_D
 ---
 
 # DomainEntry
-<a name="API_DomainEntry"></a>
 
 Describes a domain recordset entry.
 

@@ -7,7 +7,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/developerguide/cloudfront-fea
 You can now use the updated experience to access AWS WAF functionality anywhere in the console. For more details, see [Working with the console](https://docs.aws.amazon.com/waf/latest/developerguide/working-with-console.html).
 
 # Using AWS WAF with Amazon CloudFront
-<a name="cloudfront-features"></a>
 
 Learn how to use AWS WAF with Amazon CloudFront features.
 

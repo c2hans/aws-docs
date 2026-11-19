@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_ExperimentTe
 ---
 
 # ExperimentTemplateTargetFilter
-<a name="API_ExperimentTemplateTargetFilter"></a>
 
 Describes a filter used for the target resources in an experiment template.
 

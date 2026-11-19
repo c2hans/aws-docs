@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-top
 ---
 
 # Examples for Amazon EC2 instance topology
-<a name="ec2-instance-topology-examples"></a>
 
 You can use the [describe-instance-topology](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-topology.html) command to describe the topology for your EC2 instances. And you can use the [describe-capacity-reservation-topology](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-topology.html) command to describe the topology of your Capacity Reservations.
 

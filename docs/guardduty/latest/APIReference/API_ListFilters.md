@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ListFi
 ---
 
 # ListFilters
-<a name="API_ListFilters"></a>
 
 Returns a paginated list of the current filters.
 

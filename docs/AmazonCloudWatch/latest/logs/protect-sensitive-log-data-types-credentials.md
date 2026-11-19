@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/protect-sen
 ---
 
 # Credentials
-<a name="protect-sensitive-log-data-types-credentials"></a>
 
 CloudWatch Logs data protection can find the following types of credentials.
 

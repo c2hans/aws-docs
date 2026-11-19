@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/intent-slots.html
 ---
 
 # Slots
-<a name="intent-slots"></a>
 
 Slots are values provided by the user to fulfill the intent. There are two types of slots:
 + **Built-in slot type** – You can use built-in slot types to capture standard values such as number, name, and city. For a list of supported built-in slot types, see [Built-in slot types](built-in-slots.md).

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_S3A
 ---
 
 # S3AccessPointSource
-<a name="API_S3AccessPointSource"></a>
 
 Configures a mount that reads from an Amazon S3 access point.
 

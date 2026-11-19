@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/vpclin
 ---
 
 # VPCLink
-<a name="vpclinks-vpclinkid"></a>
 
 Represents a VPC link. A VPC link enables you to create integrations with private resources in a VPC.
 

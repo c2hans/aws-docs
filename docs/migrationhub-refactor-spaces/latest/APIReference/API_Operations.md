@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/APIR
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [CreateApplication](API_CreateApplication.md)

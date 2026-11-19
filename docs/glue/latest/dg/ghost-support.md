@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/ghost-support.html
 ---
 
 # AWS Glue support for Ghost
-<a name="ghost-support"></a>
 
 AWS Glue supports Ghost as follows:
 

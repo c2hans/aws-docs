@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/internet-monitor/latest/api/API_FilterPa
 ---
 
 # FilterParameter
-<a name="API_FilterParameter"></a>
 
 A filter that you use with the results of a Internet Monitor query that you created and ran. The query sets up a repository of data that is a subset of your application's Internet Monitor data. `FilterParameter` is a string that defines how you want to filter the repository of data to return a set of results, based on your criteria.
 

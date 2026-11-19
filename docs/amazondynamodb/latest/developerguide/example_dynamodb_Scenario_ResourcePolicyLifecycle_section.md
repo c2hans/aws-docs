@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Manage DynamoDB resource-based policies using AWS Command Line Interface v2
-<a name="example_dynamodb_Scenario_ResourcePolicyLifecycle_section"></a>
 
 The following code example shows how to manage the complete lifecycle of resource-based policies for DynamoDB tables.
 + Create a table with a resource policy.

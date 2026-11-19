@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/susta
 ---
 
 # Sustainability
-<a name="sustainability"></a>
 
 Using Sustainability, you can request data from your partners who have accepted your invitation to join your network. You can use the *Simple reporting* feature to request different types of data from your partner network. You can enter detailed information on the type of data you are requesting from your partners. Responses to your data requests are downloaded to your Amazon S3 bucket everyday at 9 am.
 

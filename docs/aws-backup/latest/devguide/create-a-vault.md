@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/create-a-vaul
 ---
 
 # Backup vault creation and deletion
-<a name="create-a-vault"></a>
 
 You must create at least one vault before creating a backup plan or starting a backup job.
 

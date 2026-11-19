@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/filegateway/latest/files3/fgw-quotas.htm
 ---
 
 # Limits and quotas for Amazon S3 File Gateway
-<a name="fgw-quotas"></a>
 
 ## Quotas for file shares
 <a name="resource-file-limits"></a>

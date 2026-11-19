@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_As
 ---
 
 # AssessmentReportEvidenceError
-<a name="API_AssessmentReportEvidenceError"></a>
 
  An error entity for assessment report evidence errors. This is used to provide more meaningful errors than a simple string message.
 

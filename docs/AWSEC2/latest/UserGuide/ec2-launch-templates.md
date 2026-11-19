@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templ
 ---
 
 # Store instance launch parameters in Amazon EC2 launch templates
-<a name="ec2-launch-templates"></a>
 
 You can use an Amazon EC2 *launch template* to store instance launch parameters so that you don't have to specify them every time you launch an Amazon EC2 instance. For example, you can create a launch template that stores the AMI ID, instance type, and network settings that you typically use to launch instances. When you launch an instance using the Amazon EC2 console, an AWS SDK, or a command line tool, you can specify the launch template instead of entering the parameters again.
 

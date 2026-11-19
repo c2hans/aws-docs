@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engin
 ---
 
 # Implementing chaos engineering on AWS
-<a name="implementation"></a>
 
 Chaos engineering is part of the evaluate and test stage of the [AWS resilience lifecycle](https://docs.aws.amazon.com/prescriptive-guidance/latest/resilience-lifecycle-framework/introduction.html), as illustrated in the following diagram. Distributed applications do not operate in isolation from other applications or clients, so we recommend that you review the entire resilience lifecycle. Change is constant for distributed applications as the network evolves, upstream and downstream applications undergo shifts, and client usage changes over time.
 

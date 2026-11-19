@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AnalysisT
 ---
 
 # AnalysisTransitGatewayPolicyTableEntry
-<a name="API_AnalysisTransitGatewayPolicyTableEntry"></a>
 
 Describes an entry in a transit gateway policy table.
 

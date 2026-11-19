@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # RelatedItem
-<a name="API_RelatedItem"></a>
 
 Resources that responders use to triage and mitigate the incident.
 

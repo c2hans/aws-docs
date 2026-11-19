@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/trouble
 ---
 
 # Troubleshooting XCTest tests in AWS Device Farm
-<a name="troubleshooting-xctest"></a>
 
 The following topic lists error messages that occur during the upload of XCTest tests and recommends workarounds to resolve each error.
 

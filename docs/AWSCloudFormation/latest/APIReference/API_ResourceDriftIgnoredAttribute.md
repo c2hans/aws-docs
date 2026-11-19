@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # ResourceDriftIgnoredAttribute
-<a name="API_ResourceDriftIgnoredAttribute"></a>
 
 The `ResourceDriftIgnoredAttribute` data type.
 

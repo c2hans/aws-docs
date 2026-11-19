@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/label-marketing-tu
 ---
 
 # Using Amazon Rekognition (REK) to detect labels for marketing applications
-<a name="label-marketing-tutorial"></a>
 
 This tutorial guides you through building a sample Python application that could be used to send emails to people, based on on images uploaded to a website. The sample application is designed to engage users in a social media marketing campaign by sending them personalized emails about travel deals if landmarks are recognized in their photos.
 

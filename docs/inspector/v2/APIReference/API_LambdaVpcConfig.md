@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_LambdaVpcC
 ---
 
 # LambdaVpcConfig
-<a name="API_LambdaVpcConfig"></a>
 
 The VPC security groups and subnets that are attached to an AWS Lambda function. For more information, see [VPC Settings](https://docs.aws.amazon.com/lambda/latest/dg/configuration-vpc.html).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/creating-resour
 ---
 
 # Creating resource links
-<a name="creating-resource-links"></a>
 
 Resource links are Data Catalog objects that are links to metadata databases and tables—typically to shared databases and tables from other AWS accounts. They help to enable cross-account access to data in the data lake across all AWS Regions.
 

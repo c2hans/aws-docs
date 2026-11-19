@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # AgenticRetrieveMemoryMetadataFilter
-<a name="API_agent-runtime_AgenticRetrieveMemoryMetadataFilter"></a>
 
 A metadata filter expression, in the form accepted by the AgentCore Memory RetrieveMemoryRecords operation. The expression has a left operand that names the metadata key, an operator, and a right operand. For the EXISTS and NOT\_EXISTS operators, omit the right operand.
 

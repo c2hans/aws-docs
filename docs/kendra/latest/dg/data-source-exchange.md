@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/dg/data-source-exchange.ht
 Amazon Kendra is no longer open to new customers. For capabilities similar to Amazon Kendra, explore Amazon Bedrock Knowledge Bases. [Learn more](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
 # Microsoft Exchange
-<a name="data-source-exchange"></a>
 
 Microsoft Exchange is an enterprise collaboration tool for messaging, meetings and file sharing. If you are a Microsoft Exchange user, you can use Amazon Kendra to index your Microsoft Exchange data source.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Accele
 ---
 
 # AcceleratorAttributes
-<a name="API_AcceleratorAttributes"></a>
 
 Attributes of an accelerator.
 

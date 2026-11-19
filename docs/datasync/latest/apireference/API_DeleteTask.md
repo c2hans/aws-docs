@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_DeleteT
 ---
 
 # DeleteTask
-<a name="API_DeleteTask"></a>
 
 Deletes a transfer task resource from AWS DataSync.
 

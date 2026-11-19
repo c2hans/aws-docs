@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/example-selective-loggin
 ---
 
 # Example of selective conversation log capture
-<a name="example-selective-logging"></a>
 
 Here is an example of a business use case for selective conversation log capture.
 

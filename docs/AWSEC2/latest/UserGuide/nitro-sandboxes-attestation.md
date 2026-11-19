@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nitro-sandboxes-
 ---
 
 # Attest a Nitro Sandbox
-<a name="nitro-sandboxes-attestation"></a>
 
 A Nitro Sandbox in confidential mode can prove to an external service which code it runs and on which parent instance it runs. The Nitro System records measurements in the platform configuration registers (PCRs) of the Nitro Security Module (NSM) in the Nitro Sandbox. Your workload requests an attestation document from the NSM, and presents it to a service such as AWS Key Management Service (AWS KMS).
 

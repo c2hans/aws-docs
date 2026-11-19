@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Captur
 ---
 
 # CaptureOption
-<a name="API_CaptureOption"></a>
 
 Specifies data Model Monitor will capture.
 

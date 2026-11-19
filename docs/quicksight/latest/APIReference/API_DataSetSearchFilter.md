@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DataS
 ---
 
 # DataSetSearchFilter
-<a name="API_DataSetSearchFilter"></a>
 
 A filter that you apply when searching for datasets.
 

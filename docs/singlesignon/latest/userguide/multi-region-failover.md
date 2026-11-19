@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/multi-regi
 ---
 
 # Failover to an additional Region for AWS account access
-<a name="multi-region-failover"></a>
 
  The topic of AWS account access through IAM Identity Center is covered extensively in [Configure access to AWS accounts](manage-your-accounts.md). This section provides additional details relevant to maintaining AWS account access across multiple AWS Regions in the event of a service disruption in the primary Region.
 

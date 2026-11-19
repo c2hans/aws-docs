@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/wait-event.io
 ---
 
 # IO:DataFileRead
-<a name="wait-event.iodatafileread"></a>
 
 The `IO:DataFileRead` event occurs when a connection waits on a backend process to read a required page from storage because the page isn't available in shared memory.
 

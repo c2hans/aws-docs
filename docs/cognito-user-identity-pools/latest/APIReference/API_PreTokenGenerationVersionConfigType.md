@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # PreTokenGenerationVersionConfigType
-<a name="API_PreTokenGenerationVersionConfigType"></a>
 
 The properties of a pre token generation Lambda trigger.
 

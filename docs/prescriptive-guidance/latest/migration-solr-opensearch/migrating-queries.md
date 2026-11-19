@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Migrating search queries
-<a name="migrating-queries"></a>
 
 The previous sections discussed migrating the schema and other necessary configurations and historical data from Solr to OpenSearch. Now it's time to translate queries to OpenSearch and test them. This section discusses how to migrate search queries into OpenSearch and best practices for this migration.
 

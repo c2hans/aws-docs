@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Troubleshootin
 ---
 
 # Troubleshooting source latency issues
-<a name="CHAP_Troubleshooting_Latency_Source"></a>
 
 The following topics describe replication scenarios specific to source endpoint types.
 

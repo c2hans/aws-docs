@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Evaluating migration costs and skills PDF RSS
-<a name="assess-costs"></a>
 
 Before you decide to migrate your F5 BIG-IP security and traffic management solutions to the AWS Cloud, you need to assess the costs of the migration and evaluate what skills are required.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # ZoneAwarenessConfig
-<a name="API_ZoneAwarenessConfig"></a>
 
 The zone awareness configuration for an Amazon OpenSearch Service domain.
 

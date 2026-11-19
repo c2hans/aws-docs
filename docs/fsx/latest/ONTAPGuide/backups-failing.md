@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/backups-failing.ht
 ---
 
 # Your backups fail due to insufficient volume capacity
-<a name="backups-failing"></a>
 
 Automatic daily backups of your volume fails with the following message:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/apigate
 ---
 
 # Control access to WebSocket APIs with IAM authorization
-<a name="apigateway-websocket-control-access-iam"></a>
 
 IAM authorization in WebSocket APIs is similar to that for [REST APIs](api-gateway-control-access-using-iam-policies-to-invoke-api.md), with the following exceptions:
 + The `execute-api` action supports `ManageConnections` in addition to existing actions (`Invoke`, `InvalidateCache`). `ManageConnections` controls access to the @connections API.
@@ -19,7 +18,7 @@ IAM authorization in WebSocket APIs is similar to that for [REST APIs](api-gatew
   ```
 
 **Important**
-When you use [IAM authorization](#apigateway-websocket-control-access-iam), you must sign requests with [Signature Version 4 (SigV4)](https://docs.aws.amazon.com/IAM/latest/UserGuide/create-signed-request.html).
+When you use [IAM authorization](apigateway-websocket-control-access-iam.md), you must sign requests with [Signature Version 4 (SigV4)](https://docs.aws.amazon.com/IAM/latest/UserGuide/create-signed-request.html).
 
 For example, you could set up the following policy to the client. This example allows everyone to send a message (`Invoke`) for all routes except for a secret route in the `prod` stage and prevents everyone from sending a message back to connected clients (`ManageConnections`) for all stages.
 

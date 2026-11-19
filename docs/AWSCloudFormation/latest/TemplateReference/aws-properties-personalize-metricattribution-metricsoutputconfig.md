@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Personalize::MetricAttribution MetricsOutputConfig
-<a name="aws-properties-personalize-metricattribution-metricsoutputconfig"></a>
 
 <a name="aws-properties-personalize-metricattribution-metricsoutputconfig-description"></a>The `MetricsOutputConfig` property type specifies Property description not available. for an [AWS::Personalize::MetricAttribution](aws-resource-personalize-metricattribution.md).
 

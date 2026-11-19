@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSIPERF02: How do you select your compute architecture?
-<a name="fsiperf02"></a>
 
 ## FSIPERF02-BP01 Select your compute architecture based on workload requirements
 <a name="fsiperf02-bp01"></a>

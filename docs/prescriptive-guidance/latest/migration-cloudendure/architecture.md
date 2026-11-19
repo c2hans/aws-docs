@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-c
 ---
 
 # Architecture
-<a name="architecture"></a>
 
 CloudEndure Migration simplifies, expedites, and automates large-scale migrations to AWS. Continuous data replication takes place in the background, without application disruption or performance impact, which ensures that data is synchronized in real time and minimizes cutover windows. When you initiate migration cutover, CloudEndure runs a highly automated machine conversion and orchestration process, which reduces the potential for human error. After migration, even the most complex applications and databases run natively on AWS, without compatibility issues and with minimal IT skills necessary.  The following diagram illustrates the migration process.
 

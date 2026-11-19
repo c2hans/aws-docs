@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore-control/latest/APIRefe
 ---
 
 # BrowserSigningConfigOutput
-<a name="API_BrowserSigningConfigOutput"></a>
 
 The current browser signing configuration that shows whether cryptographic agent identification is enabled for web bot authentication.
 

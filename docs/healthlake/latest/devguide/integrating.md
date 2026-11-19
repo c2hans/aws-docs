@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/integrating.h
 ---
 
 # Integrating AWS HealthLake
-<a name="integrating"></a>
 
 The following AWS services integrate directly with AWS HealthLake to enable integrated natural language processing, SQL query, and data warehousing.
 + *Amazon Comprehend Medical* is a HIPAA eligible natural language processing service (NLP) that uses machine learning libraries to extract meaningful health data from unstructured medical text in HealthLake. For more information, see the [*Amazon Comprehend Medical Developer Guide*](https://docs.aws.amazon.com/comprehend-medical/latest/dev/comprehendmedical-welcome.html).

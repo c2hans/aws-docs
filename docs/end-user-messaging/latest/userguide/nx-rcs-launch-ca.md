@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-r
 ---
 
 # Launching RCS in Canada
-<a name="nx-rcs-launch-ca"></a>
 
 To launch your RCS agent in Canada, submit a country launch registration using the `CA_RCS_LAUNCH_REGISTRATION` registration type in the AWS End User Messaging console or API.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetMeta
 ---
 
 # GetMetadataGenerationRun
-<a name="API_GetMetadataGenerationRun"></a>
 
 Gets a metadata generation run in Amazon DataZone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/creating-a-reserv
 ---
 
 # Creating a reserved queue
-<a name="creating-a-reserved-queue"></a>
 
 If you decide to purchase additional capacity for your reserved queue, you can. For more information, see [Purchasing additional RTS](purchasing-additional-capacity-for-a-reserved-queue.md). The following tabs show different options for creating a reserved queue.
 

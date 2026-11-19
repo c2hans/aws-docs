@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 ---
 
 # Further reading
-<a name="further-reading"></a>
 
  For additional information, see:
 +  [*Practicing Continuous Integration and Continuous Delivery on AWS*](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/welcome.html) (whitepaper )

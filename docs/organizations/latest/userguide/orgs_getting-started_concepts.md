@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/userguide/orgs_gett
 ---
 
 # Terminology and concepts for AWS Organizations
-<a name="orgs_getting-started_concepts"></a>
 
 This topic explains some of the key concepts for AWS Organizations.
 

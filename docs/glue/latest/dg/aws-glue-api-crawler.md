@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler.html
 ---
 
 # Crawlers and classifiers API
-<a name="aws-glue-api-crawler"></a>
 
 The Crawler and classifiers API describes the AWS Glue crawler and classifier data types, and includes the API for creating, deleting, updating, and listing crawlers or classifiers.
 

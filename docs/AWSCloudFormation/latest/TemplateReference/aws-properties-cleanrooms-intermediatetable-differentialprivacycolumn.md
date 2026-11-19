@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::CleanRooms::IntermediateTable DifferentialPrivacyColumn
-<a name="aws-properties-cleanrooms-intermediatetable-differentialprivacycolumn"></a>
 
 Specifies the name of the column that contains the unique identifier of your users, whose privacy you want to protect.
 

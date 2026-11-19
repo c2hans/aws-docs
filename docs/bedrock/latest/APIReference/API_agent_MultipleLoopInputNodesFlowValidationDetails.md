@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_Mu
 ---
 
 # MultipleLoopInputNodesFlowValidationDetails
-<a name="API_agent_MultipleLoopInputNodesFlowValidationDetails"></a>
 
 Details about a flow that contains multiple `LoopInput` nodes in a DoWhile loop.
 

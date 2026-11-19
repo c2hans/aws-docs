@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/idr-gs-ingest-cw-al
 ---
 
 # Ingesting CloudWatch alarms
-<a name="idr-gs-ingest-cw-alarms"></a>
 
 AWS Incident Detection and Response can ingest Amazon CloudWatch alarms to provide proactive monitoring for your critical workloads. By ingesting your Amazon CloudWatch alarms for monitoring, AWS Incident Detection and Response can:
 + Automatically detect when your alarms enter the "Alarm" state.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/read-set-exports.html
 ---
 
 # Exporting HealthOmics read sets to an Amazon S3 bucket
-<a name="read-set-exports"></a>
 
 You can export read sets as a batch export job to an Amazon S3 bucket. To do so, first create an IAM policy that has write access to the bucket, similar to the following IAM policy example.
 

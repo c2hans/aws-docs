@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/S3ExportTas
 ---
 
 # Export log data to Amazon S3 using the AWS CLI
-<a name="S3ExportTasks"></a>
 
 In the following example, you use an export task to export all data from a CloudWatch Logs log group named `my-log-group` to an Amazon S3 bucket named `amzn-s3-demo-bucket`. This example assumes that you have already created a log group called `my-log-group`.
 

@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/se
 ---
 
 # Send telemetry data from AWS Lambda to OpenSearch for real-time analytics and visualization
-<a name="send-telemetry-data-from-lambda-to-opensearch-for-analytics-visualization"></a>
 
-*Tabby Ward, Guy Bachar, and David Kilzer, Amazon Web Services*
+*Tabby Ward and David Kilzer, Amazon Web Services*
 
 ## Summary
 <a name="send-telemetry-data-from-lambda-to-opensearch-for-analytics-visualization-summary"></a>
@@ -14,13 +13,13 @@ Modern applications are becoming increasingly distributed and event-driven, whic
 
 To address this challenge, AWS introduced the Lambda Telemetry API, which enables Lambda functions to send telemetry data directly to third-party monitoring and observability tools. This API supports real-time streaming of logs, metrics, and traces, and provides a comprehensive and timely view of the performance and health of your Lambda functions.
 
-This pattern explains how to integrate the Lambda Telemetry API with [OpenSearch](https://opensearch.org/docs/latest/), which is an open-source, distributed search and analytics engine. OpenSearch offers a powerful and scalable platform for ingesting, storing, and analyzing large volumes of data, which makes it an ideal choice for Lambda telemetry data. Specifically, this pattern demonstrates how to send logs from a Lambda function that's written in Python directly to an OpenSearch cluster by using a Lambda extension that's provided by AWS. This solution is flexible and customizable, so you can create your own Lambda extension or alter the sample source code to change the output format as desired.
+This pattern explains how to integrate the Lambda Telemetry API with [OpenSearch](https://opensearch.org/docs/latest/), which is an open-source, distributed search and analytics engine. OpenSearch offers a scalable solution for ingesting, storing, and analyzing large volumes of data, which makes it well suited for Lambda telemetry data. Specifically, this pattern demonstrates how to send logs from a Lambda function that's written in Python directly to an OpenSearch cluster by using a Lambda extension that AWS provides. This solution is flexible and customizable, so you can create your own Lambda extension or modify the sample source code to change the output format to meet your requirements.
 
 The pattern explains how to set up and configure the Lambda Telemetry API integration with OpenSearch, and includes best practices for security, cost optimization, and scalability. The objective is to help you gain deeper insights into your Lambda functions and enhance the overall observability of your serverless applications.
 
 |
 |
-| Note: This pattern focuses on integrating the Lambda Telemetry API with managed OpenSearch. However, the principles and techniques discussed are also applicable to self-managed OpenSearch and Elasticsearch. |
+| Note: This pattern focuses on integrating the Lambda Telemetry API with [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/). However, the principles and techniques discussed also apply to self-managed OpenSearch and Elasticsearch. |
 | --- |
 
 ## Prerequisites and limitations
@@ -28,7 +27,7 @@ The pattern explains how to set up and configure the Lambda Telemetry API integr
 
 Before you begin the integration process, make sure that you have the following prerequisites in place:
 
-**AWS account**: An active AWS account with appropriate permissions to create and manage the following AWS resources:
+**AWS account**: An active AWS account with permissions to create and manage the following AWS resources:
 + AWS Lambda
 + AWS Identity and Access Management (IAM)
 + Amazon OpenSearch Service (if you're using a managed OpenSearch cluster)
@@ -43,18 +42,18 @@ Before you begin the integration process, make sure that you have the following 
 + Ensure that your Lambda function has the necessary network connectivity to access the OpenSearch cluster. For guidance on how to configure virtual private cloud (VPC) settings, see [Launching your Amazon OpenSearch Service domains within a VPC](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/vpc.html) in the OpenSearch Service documentation.
 
 **IAM roles and policies**:
-+ Create an IAM role with the necessary permissions for your Lambda function to access the OpenSearch cluster and access your credentials stored in AWS Secrets Manager.
-+ Attach the appropriate IAM policies to the role, such as the `AWSLambdaBasicExecutionRole` policy and any additional permissions required to interact with OpenSearch.
++ Create an IAM role that grants your Lambda function permissions to access the OpenSearch cluster and your credentials stored in AWS Secrets Manager.
++ Attach IAM policies to the role, such as the `AWSLambdaBasicExecutionRole` policy and a policy that grants the permissions required to interact with OpenSearch.
 + Verify that the IAM permissions granted to your Lambda function allow it to write data to the OpenSearch cluster. For information about managing IAM permissions, see [Defining Lambda function permissions with an execution role](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) in the Lambda documentation.
 
 **Programming language knowledge**:
-+ You will need basic knowledge of Python (or the programming language of your choice) to understand and modify the sample code for the Lambda function and the Lambda extension.
++ Have basic knowledge of Python (or the programming language of your choice) to understand and modify the sample code for the Lambda function and the Lambda extension.
 
 **Development environment**:
 + Set up a local development environment with the necessary tools and dependencies for building and deploying Lambda functions and extensions.
 
 **AWS CLI or AWS Management Console**:
-+ Install and configure the [AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) or use the AWS Management Console with appropriate credentials to interact with the required AWS services.
++ Install and configure the [AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) or use the AWS Management Console with your IAM credentials to interact with the required AWS services.
 
 **Monitoring and logging**:
 + Become familiar with monitoring and logging best practices on AWS, including services such as Amazon CloudWatch and AWS CloudTrail for monitoring and auditing purposes.
@@ -63,7 +62,7 @@ Before you begin the integration process, make sure that you have the following 
 ## Architecture
 <a name="send-telemetry-data-from-lambda-to-opensearch-for-analytics-visualization-architecture"></a>
 
-This pattern uses OpenSearch Service to store logs and telemetry data that are generated by Lambda functions. This approach enables you to quickly stream logs directly to your OpenSearch cluster, which reduces the latency and costs associated with using CloudWatch Logs as an intermediary.
+This pattern uses [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/) to store logs and telemetry data that [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/) functions generate. This approach enables you to stream logs directly to your OpenSearch cluster, which reduces the latency and costs associated with using Amazon CloudWatch Logs as an intermediary.
 
 |
 |
@@ -82,17 +81,17 @@ The architecture includes these components:
 
 The workflow consists of these steps:
 
-1. The Lambda function is called, and generates logs and telemetry data during its execution.
+1. The Lambda function runs and generates logs and telemetry data during its execution.
 
 1. The Lambda extension runs alongside the function to capture the logs and telemetry data by using the Lambda Telemetry API.
 
 1. The Lambda extension establishes a secure connection with the OpenSearch Service cluster and streams the log data in real time.
 
-1. The OpenSearch Service cluster ingests, indexes, and stores the log data to make it available for search, analysis, and visualization through the use of tools such as Kibana or other compatible applications.
+1. The OpenSearch Service cluster ingests, indexes, and stores the log data to make it available for search, analysis, and visualization in tools such as OpenSearch Dashboards or other compatible applications.
 
-By circumventing CloudWatch Logs and sending log data directly to the OpenSearch cluster, this solution provides several benefits:
+Because this solution sends log data directly to the OpenSearch cluster instead of to CloudWatch Logs, it provides several benefits:
 + Real-time log streaming and analysis, enabling faster troubleshooting and improved observability.
-+ Reduced latency and potential retention limitations associated with CloudWatch Logs.
++ Reduced latency and fewer potential retention limitations compared with using CloudWatch Logs as an intermediary.
 + Flexibility to customize the Lambda extension or create your own extension for specific output formats or additional processing.
 + Integration with the search, analytics, and visualization capabilities of OpenSearch Service for log analysis and monitoring.
 
@@ -103,8 +102,8 @@ The [Epics](#send-telemetry-data-from-lambda-to-opensearch-for-analytics-visuali
 
 **AWS services**
 + [AWS Lambda](https://aws.amazon.com/lambda/) is a compute service that lets you run code without provisioning or managing servers. Lambda runs your code only when needed and scales automatically, from a few requests per day to thousands per second.
-+ [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/) is a fully managed service provided by AWS that makes it easy to deploy, operate, and scale OpenSearch clusters in the cloud.
-+ [Lambda extensions](https://docs.aws.amazon.com/lambda/latest/dg/lambda-extensions.html) extends the functionality of your Lambda functions by running custom code alongside them. You can use Lambda extensions to integrate Lambda with various monitoring, observability, security, and governance tools.
++ [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/) is a fully managed service that you can use to deploy, operate, and scale OpenSearch clusters in the AWS Cloud.
++ [Lambda extensions](https://docs.aws.amazon.com/lambda/latest/dg/lambda-extensions.html) extend the functionality of your Lambda functions by running custom code alongside them. You can use Lambda extensions to integrate Lambda with various monitoring, observability, security, and governance tools.
 + [AWS Lambda Telemetry API](https://docs.aws.amazon.com/lambda/latest/dg/telemetry-api.html) enables you to use extensions to capture enhanced monitoring and observability data directly from Lambda and send it to a destination of your choice.
 + [CloudFormation](https://aws.amazon.com/cloudformation/) helps you model and set up your AWS resources so that you can spend less time managing those resources and more time focusing on your applications.
 
@@ -113,13 +112,13 @@ The [Epics](#send-telemetry-data-from-lambda-to-opensearch-for-analytics-visuali
 + [Example Lambda Telemetry Integrations for OpenSearch](https://github.com/aws-samples/aws-lambda-extensions/tree/main/python-example-telemetry-opensearch-extension) provides a sample Lambda extension that demonstrates how to send logs from a Lambda function to an OpenSearch cluster.
 
 **Other tools**
-+ [OpenSearch](https://opensearch.org/faq/) is an open-source distributed search and analytics engine that provides a powerful platform for ingesting, storing, and analyzing large volumes of data.
++ [OpenSearch](https://opensearch.org/faq/) is an open-source distributed search and analytics engine that you can use to ingest, store, and analyze large volumes of data.
 + Kibana is an open-source data visualization and exploration tool that you can use with OpenSearch. Note that the implementation of visualization and analytics is beyond the scope of this pattern. For more information, see the [Kibana documentation](https://www.elastic.co/guide/en/kibana/current/index.html) and other resources.
 
 ## Best practices
 <a name="send-telemetry-data-from-lambda-to-opensearch-for-analytics-visualization-best-practices"></a>
 
-When you integrate the Lambda Telemetry API with OpenSearch, consider the following best practices.
+When you integrate the Lambda Telemetry API with [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/), consider the following best practices.
 
 **Security and access control**
 + **Secure communication**: Encrypt all communications between your Lambda functions and the OpenSearch cluster by using HTTPS. Configure the necessary SSL/TLS settings in your Lambda extension and OpenSearch configuration.
@@ -127,26 +126,26 @@ When you integrate the Lambda Telemetry API with OpenSearch, consider the follow
   + Extensions run in the same execution environment as the Lambda function, so they inherit the same level of access to resources such as the file system, networking, and environment variables.
   + Grant the minimum necessary IAM permissions to your Lambda functions to access the Lambda Telemetry API and write data to the OpenSearch cluster. Use the [principle of least privilege](https://docs.aws.amazon.com/lambda/latest/operatorguide/least-privilege.html) to limit the scope of permissions.
 + **OpenSearch access control**: Implement fine-grained access control in your OpenSearch cluster to restrict access to sensitive data. Use the built-in security features, such as user authentication, role-based access control, and index-level permissions, in OpenSearch.
-+ **Trusted extensions**: Always install extensions from a trusted source only. Use infrastructure as code (IaC) tools such as CloudFormation to simplify the process of attaching the same extension configuration, including IAM permissions, to multiple Lambda functions. IaC tools also provide an audit record of the extensions and versions used previously.
++ **Trusted extensions**: Install extensions only from trusted sources. Use infrastructure as code (IaC) tools such as CloudFormation to simplify the process of attaching the same extension configuration, including IAM permissions, to multiple Lambda functions. IaC tools also provide an audit record of the extensions and versions used previously.
 + **Sensitive data handling**: When building extensions, avoid logging sensitive data. Sanitize payloads and metadata before logging or persisting them for audit purposes.
 
 **Cost optimization**
 + **Monitoring and alerting**: Set up monitoring and alerting mechanisms to track the volume of data being sent to OpenSearch from your Lambda functions. This will help you identify and address any potential cost overruns.
-+ **Data retention**: Carefully consider the appropriate data retention period for your Lambda telemetry data in OpenSearch. Longer retention periods can increase storage costs, so balance your observability needs with cost optimization.
++ **Data retention**: Define a data retention period for your Lambda telemetry data in OpenSearch that meets your observability and compliance requirements. Longer retention periods can increase storage costs, so balance your observability needs with cost optimization.
 + **Compression and indexing**: Enable data compression and optimize your OpenSearch indexing strategy to reduce the storage footprint of your Lambda telemetry data.
-+ **Reduced reliance on CloudWatch**: By integrating the Lambda Telemetry API directly with OpenSearch, you can potentially reduce your reliance on CloudWatch Logs, which can result in cost savings. This is because the Lambda Telemetry API enables you to send logs directly to OpenSearch, which bypasses the need to store and process the data in CloudWatch.
++ **Reduced reliance on CloudWatch Logs**: By integrating the Lambda Telemetry API directly with OpenSearch, you can potentially reduce your reliance on CloudWatch Logs, which can result in cost savings. This is because the Lambda Telemetry API enables you to send logs directly to OpenSearch, which bypasses the need to store and process the data in CloudWatch Logs.
 
 **Scalability and reliability**
 + **Asynchronous processing**: Use asynchronous processing patterns, such as Amazon Simple Queue Service (Amazon SQS) or Amazon Kinesis, to decouple the Lambda function execution from the OpenSearch data ingestion. This helps maintain the responsiveness of your Lambda functions and improves the overall reliability of the system.
 + **OpenSearch cluster scaling**: Monitor the performance and resource utilization of your OpenSearch cluster, and scale it up or down as needed to handle the increasing volume of Lambda telemetry data.
-+ **Failover and disaster recovery**: Implement a robust disaster recovery strategy for your OpenSearch cluster, including regular backups and the ability to quickly restore data in the event of a failure.
++ **Failover and disaster recovery**: Implement a disaster recovery strategy for your OpenSearch cluster that includes regular backups and a tested process to restore data if a failure occurs.
 
 **Observability and monitoring**
-+ **Dashboards and visualizations**: Use Kibana or other dashboard tools to create custom dashboards and visualizations that provide insights into the performance and health of your Lambda functions based on the telemetry data in OpenSearch.
++ **Dashboards and visualizations**: Use OpenSearch Dashboards or other dashboard tools to create custom dashboards and visualizations that provide insights into the performance and health of your Lambda functions based on the telemetry data in OpenSearch.
 + **Alerting and notifications**: Set up alerts and notifications to proactively monitor for anomalies, errors, or performance issues in your Lambda functions. Integrate these alerts and notifications with your existing incident management processes.
 + **Tracing and correlation**: Ensure that your Lambda telemetry data includes relevant tracing information, such as request IDs or correlation IDs, to enable end-to-end observability and troubleshooting across your distributed serverless applications.
 
-By following these best practices, you can ensure that your integration of the Lambda Telemetry API with OpenSearch is secure, cost-effective, and scalable, and provides comprehensive observability for your serverless applications.
+By following these best practices, you can help improve the security, cost-effectiveness, and scalability of your integration of the Lambda Telemetry API with OpenSearch and gain greater observability into your serverless applications.
 
 ## Epics
 <a name="send-telemetry-data-from-lambda-to-opensearch-for-analytics-visualization-epics"></a>
@@ -156,8 +155,8 @@ By following these best practices, you can ensure that your integration of the L
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Download the source code. | Download the sample extensions from the [AWS Lambda Extensions](https://github.com/aws-samples/aws-lambda-extensions) repository. | App developer, Cloud architect |
-| Navigate to the `python-example-telemetry-opensearch-extension` folder. | The [AWS Lambda Extensions](https://github.com/aws-samples/aws-lambda-extensions) repository that you downloaded contains numerous examples for several use cases and language runtimes. Navigate to the [python-example-telemetry-opensearch-extension](https://github.com/aws-samples/aws-lambda-extensions/tree/main/python-example-telemetry-opensearch-extension) folder to use the Python OpenSearch extension, which sends logs to OpenSearch. | App developer, Cloud architect |
+| Download the source code. | Download the sample extensions from the AWS Lambda Extensions repository. | App developer, Cloud architect |
+| Navigate to the `python-example-telemetry-opensearch-extension` folder. | The AWS Lambda Extensions repository that you downloaded contains examples for several use cases and language runtimes. Navigate to the `python-example-telemetry-opensearch-extension` folder to use the Python OpenSearch extension, which sends logs to [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/). | App developer, Cloud architect |
 | Add permissions to execute the extension endpoint. | Run the following command to make the extension endpoint executable:<pre>chmod +x python-example-telemetry-opensearch-extension/extension.py</pre> | App developer, Cloud architect |
 | Install the extension dependencies locally. | Run the following command to install local dependencies for the Python code:<pre>pip3 install -r python-example-telemetry-opensearch-extension/requirements.txt -t ./python-example-telemetry-opensearch-extension/</pre><br />These dependencies will be mounted along with the extension code. | App developer, Cloud architect |
 | Create a .zip package for the extension to deploy it as a layer. | The extension .zip file should contain a root directory called `extensions/`, where the extension executable is located, and another root directory called `python-example-telemetry-opensearch-extension/`, where the core logic of the extension and its dependencies are located.<br />Create the .zip package for the extension:<pre>chmod +x extensions/python-example-telemetry-opensearch-extension<br />zip -r extension.zip extensions python-example-telemetry-opensearch-extension</pre> | App developer, Cloud architect |
@@ -196,7 +195,6 @@ By following these best practices, you can ensure that your integration of the L
 
 ## Related resources
 <a name="send-telemetry-data-from-lambda-to-opensearch-for-analytics-visualization-resources"></a>
-+ [Example Lambda Telemetry Integrations for OpenSearch](https://github.com/aws-samples/aws-lambda-extensions/tree/main/python-example-telemetry-opensearch-extension) (GitHub repository)
 + [Augment Lambda functions using Lambda extensions](https://docs.aws.amazon.com/lambda/latest/dg/lambda-extensions.html) (Lambda documentation)
 + [Lambda Telemetry API](https://docs.aws.amazon.com/lambda/latest/dg/telemetry-api.html) (Lambda documentation)
 + [Introducing the AWS Lambda Telemetry API](https://aws.amazon.com/blogs/compute/introducing-the-aws-lambda-telemetry-api/) (AWS blog post)
@@ -207,6 +205,6 @@ By following these best practices, you can ensure that your integration of the L
 
 **Altering the log structure**
 
-The extension sends logs as a nested document to OpenSearch by default. This allows you to perform nested queries to retrieve individual column values.
+By default, the extension sends logs as a nested document to [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html). This allows you to perform nested queries to retrieve individual column values.
 
-If the default log output doesn't meet your specific needs, you can customize it by modifying the source code of the Lambda extension that’s provided by AWS. AWS encourages customers to adapt the output to suit their business requirements. To change the log output, locate the `dispatch_to_opensearch` function in the `telemetry_dispatcher.py` file within the extension's source code and make the necessary alterations.
+If the default log output doesn't meet your needs, you can customize it by modifying the source code of the [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) extension that AWS provides. To change the log output, locate the `dispatch_to_opensearch` function in the `telemetry_dispatcher.py` file within the extension's source code and modify it to produce the output format that you need.

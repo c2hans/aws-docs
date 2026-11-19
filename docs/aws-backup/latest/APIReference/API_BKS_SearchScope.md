@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_S
 ---
 
 # SearchScope
-<a name="API_BKS_SearchScope"></a>
 
 The search scope is all backup properties input into a search.
 

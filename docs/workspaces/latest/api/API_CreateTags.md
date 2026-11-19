@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_CreateTags.htm
 ---
 
 # CreateTags
-<a name="API_CreateTags"></a>
 
 Creates the specified tags for the specified WorkSpaces resource.
 

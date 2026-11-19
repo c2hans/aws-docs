@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_StartWorkflowRun.
 ---
 
 # StartWorkflowRun
-<a name="API_StartWorkflowRun"></a>
 
 Starts a new run of the specified workflow.
 

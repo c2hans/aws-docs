@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/portal
 ---
 
 # Sharing policy
-<a name="portalproducts-portalproductid-sharingpolicy"></a>
 
 Represents the sharing policy for a portal product.
 

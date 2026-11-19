@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/transitioni
 ---
 
 # Implementing IT operations in the AWS Cloud
-<a name="implementing-cloud-operations"></a>
 
 AWS can help reduce the operational overhead that organizations incur from their infrastructure maintenance responsibilities. As a result, IT teams can redirect their focus from routine operational tasks to strategic business initiatives, improving overall organizational efficiency and innovation capacity.
 

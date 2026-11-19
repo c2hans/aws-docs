@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-parall
 ---
 
 # Configure parallel tests with Ruby (RSpec)
-<a name="sample-parallel-test-ruby"></a>
 
 The following is sample of a `buildspec.yml` that shows parallel test execution with RSpec on an Ubuntu platform:
 

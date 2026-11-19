@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Serv
 ---
 
 # ServiceNowServiceAuthorizationConfig
-<a name="API_ServiceNowServiceAuthorizationConfig"></a>
 
 Authorization configuration options for ServiceNow service.
 

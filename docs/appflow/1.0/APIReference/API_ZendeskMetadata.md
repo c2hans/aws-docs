@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_ZendeskMeta
 ---
 
 # ZendeskMetadata
-<a name="API_ZendeskMetadata"></a>
 
  The connector metadata specific to Zendesk.
 

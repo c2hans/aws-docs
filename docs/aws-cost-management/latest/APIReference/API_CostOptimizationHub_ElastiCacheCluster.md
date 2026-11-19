@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # ElastiCacheCluster
-<a name="API_CostOptimizationHub_ElastiCacheCluster"></a>
 
 The ElastiCache cluster recommendation details.
 

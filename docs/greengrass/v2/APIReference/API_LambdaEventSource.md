@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_LambdaEve
 ---
 
 # LambdaEventSource
-<a name="API_LambdaEventSource"></a>
 
 Contains information about an event source for an AWS Lambda function. The event source defines the topics on which this Lambda function subscribes to receive messages that run the function.
 

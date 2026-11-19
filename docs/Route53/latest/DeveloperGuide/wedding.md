@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/wedding.ht
 ---
 
 # .wedding
-<a name="wedding"></a>
 
 [Return to index](registrar-tld-list.md#index)
 

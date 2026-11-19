@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 ---
 
 # Pulumi
-<a name="pulumi"></a>
 
 Pulumi is an IaC platform that isn't exclusively designed for GitOps. However, it can be used effectively to implement GitOps principles, especially for cloud infrastructure and Kubernetes deployments.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_GetC
 ---
 
 # GetConfiguredTableAnalysisRule
-<a name="API_GetConfiguredTableAnalysisRule"></a>
 
 Retrieves a configured table analysis rule.
 

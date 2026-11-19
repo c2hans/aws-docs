@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/performance-insights/latest/APIReference
 ---
 
 # ListAvailableResourceMetrics
-<a name="API_ListAvailableResourceMetrics"></a>
 
 Retrieve metrics of the specified types that can be queried for a specified DB instance.
 

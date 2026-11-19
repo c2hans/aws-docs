@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplifyuibuilder/latest/APIReference/API
 ---
 
 # NoApiRenderConfig
-<a name="API_NoApiRenderConfig"></a>
 
 Describes the configuration for an application with no API being used.
 

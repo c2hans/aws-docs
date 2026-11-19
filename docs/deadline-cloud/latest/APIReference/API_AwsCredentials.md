@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_A
 ---
 
 # AwsCredentials
-<a name="API_AwsCredentials"></a>
 
 The AWS Identity and Access Management credentials.
 

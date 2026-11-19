@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_Re
 ---
 
 # RegisterDataLakeDelegatedAdministrator
-<a name="API_RegisterDataLakeDelegatedAdministrator"></a>
 
 Designates the Amazon Security Lake delegated administrator account for the organization. This API can only be called by the organization management account. The organization management account cannot be the delegated administrator account.
 

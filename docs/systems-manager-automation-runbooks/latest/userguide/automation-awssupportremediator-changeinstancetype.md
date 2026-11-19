@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupportRemediator-ChangeInstanceType`
-<a name="automation-awssupportremediator-changeinstancetype"></a>
 
 **Description**
 

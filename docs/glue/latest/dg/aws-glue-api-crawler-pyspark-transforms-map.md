@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # Map class
-<a name="aws-glue-api-crawler-pyspark-transforms-map"></a>
 
 Builds a new `DynamicFrame` by applying a function to all records in the input `DynamicFrame`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceI
 ---
 
 # InstanceImageMetadata
-<a name="API_InstanceImageMetadata"></a>
 
 Information about the instance and the AMI used to launch the instance.
 

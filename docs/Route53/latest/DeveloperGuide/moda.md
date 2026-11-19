@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/moda.html
 ---
 
 # .moda
-<a name="moda"></a>
 
 Used for information about fashion.
 

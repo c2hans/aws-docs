@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/impor
 ---
 
 # Import/export permissions
-<a name="import-export-permissions"></a>
 
  Neptune Analytics Export writes data into customer-owned Amazon S3 buckets. To do that, you to provide an IAM role and AWS KMS policy to securely and successfully export data to the desired Amazon S3 destination. These two arguments are passed in via the following parameters in the `StartExportTask` API.
 +  `--destination` - The target Amazon S3 destination that Neptune Analytics will export data into.

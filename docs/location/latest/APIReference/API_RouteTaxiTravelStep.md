@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTa
 ---
 
 # RouteTaxiTravelStep
-<a name="API_RouteTaxiTravelStep"></a>
 
 A step that must be performed during the travel portion of the leg.
 

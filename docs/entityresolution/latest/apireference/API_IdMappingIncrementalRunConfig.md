@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # IdMappingIncrementalRunConfig
-<a name="API_IdMappingIncrementalRunConfig"></a>
 
  Incremental run configuration for an ID mapping workflow.
 

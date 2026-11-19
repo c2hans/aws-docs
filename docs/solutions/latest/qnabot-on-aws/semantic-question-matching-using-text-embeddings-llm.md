@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/semantic-
 ---
 
 # Semantic question matching using text embeddings LLM
-<a name="semantic-question-matching-using-text-embeddings-llm"></a>
 
 **Note**
 This is an optional feature available as of v5.3.0. We encourage you to try it out on non-production instances initially to validate expected accuracy improvements and to test for any regression issues. See the [Cost](cost.md) section to see estimates of how this feature affects pricing.

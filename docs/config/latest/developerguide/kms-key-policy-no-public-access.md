@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/kms-key-pol
 ---
 
 # kms-key-policy-no-public-access
-<a name="kms-key-policy-no-public-access"></a>
 
 Checks if the AWS KMS key policy allows public access. The rule is NON\_COMPLIANT if the KMS key policy allows public access to the KMS key.
 

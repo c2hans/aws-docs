@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # Determine whether you need more than one partition
-<a name="choosing-beacon-partitions"></a>
 
 All beacons are derived using partitions by default. In the simplest configuration, a beacon uses a single partition. Using additional partitions is a tuning decision that helps address skew, hot values, and frequency leakage, but it can also increase query fan-out because queries must be issued once per partition. This section explains when a single partition is sufficient and when you should configure multiple partitions.
 

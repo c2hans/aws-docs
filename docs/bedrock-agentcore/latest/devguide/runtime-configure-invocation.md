@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Configure your agent’s serving port and invocation path
-<a name="runtime-configure-invocation"></a>
 
 Use `protocolConfiguration.port` and `protocolConfiguration.path` to customize your agent server’s serving port and invocation path. You continue to call `InvokeAgentRuntime` with the runtime ARN, session ID, and payload. AgentCore Runtime sends the POST request to the configured destination in your container.
 

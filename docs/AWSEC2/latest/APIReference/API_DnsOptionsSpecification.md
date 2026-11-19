@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DnsOption
 ---
 
 # DnsOptionsSpecification
-<a name="API_DnsOptionsSpecification"></a>
 
 Describes the DNS options for an endpoint.
 

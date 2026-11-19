@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/APIReference
 ---
 
 # DeleteKey
-<a name="API_DeleteKey"></a>
 
 Deletes the key material and metadata associated with AWS Payment Cryptography key.
 

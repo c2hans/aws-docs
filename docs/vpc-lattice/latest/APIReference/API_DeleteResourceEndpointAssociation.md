@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_Dele
 ---
 
 # DeleteResourceEndpointAssociation
-<a name="API_DeleteResourceEndpointAssociation"></a>
 
 Disassociates the resource configuration from the resource VPC endpoint.
 

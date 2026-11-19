@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 ---
 
 # Get secrets from AWS Secrets Manager
-<a name="retrieving-secrets"></a>
 
 Secrets Manager generates a CloudTrail log entry when you retrieve a secret. For more information, see [Log AWS Secrets Manager events with AWS CloudTrail](monitoring-cloudtrail.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/APIReference/API_SubmitServ
 ---
 
 # SubmitServiceJob
-<a name="API_SubmitServiceJob"></a>
 
 Submits a service job to a specified job queue to run on SageMaker AI. A service job is a unit of work that you submit to AWS Batch for execution on SageMaker AI.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Polic
 ---
 
 # PolicyEventMetadata
-<a name="API_PolicyEventMetadata"></a>
 
 Contains the event-specific metadata for a policy event. Exactly one member is populated, according to the event type.
 + policyAttachedToService — a service started using the policy.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_ManagedRuleS
 ---
 
 # ManagedRuleSet
-<a name="API_ManagedRuleSet"></a>
 
 A set of rules that is managed by AWS and AWS Marketplace sellers to provide versioned managed rule groups for customers of AWS WAF.
 

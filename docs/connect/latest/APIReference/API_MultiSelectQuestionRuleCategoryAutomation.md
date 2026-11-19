@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MultiSel
 ---
 
 # MultiSelectQuestionRuleCategoryAutomation
-<a name="API_MultiSelectQuestionRuleCategoryAutomation"></a>
 
 Automation rule for multi-select questions based on rule categories.
 

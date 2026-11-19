@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ve
 ---
 
 # VerificationScript
-<a name="API_VerificationScript"></a>
 
 Contains metadata for a verification script that can be used to reproduce a security finding.
 

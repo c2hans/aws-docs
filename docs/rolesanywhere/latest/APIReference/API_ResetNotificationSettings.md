@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_Re
 ---
 
 # ResetNotificationSettings
-<a name="API_ResetNotificationSettings"></a>
 
 Resets the *custom notification setting* to IAM Roles Anywhere default setting.
 

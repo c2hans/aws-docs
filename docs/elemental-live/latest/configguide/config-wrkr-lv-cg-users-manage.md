@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/config
 ---
 
 # Manage global access features
-<a name="config-wrkr-lv-cg-users-manage"></a>
 
 You can set some access features that apply globally to all users on the AWS Elemental Live node.
 

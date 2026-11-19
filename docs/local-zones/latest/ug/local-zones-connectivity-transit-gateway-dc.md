@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/local-zones/latest/ug/local-zones-connec
 ---
 
 # Transit gateway connection in Local Zones
-<a name="local-zones-connectivity-transit-gateway-dc"></a>
 
 A transit gateway connects your Amazon Virtual Private Cloud and on-premises networks through a central hub. Transit gateways live in AWS Regions. While you can use a transit gateway to connect data centers to a Local Zone, this is not a direct connection.
 

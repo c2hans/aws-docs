@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Comp
 ---
 
 # ComparisonControls
-<a name="API_ComparisonControls"></a>
 
 Specifies how a query can compare the columns in a table, including literal comparisons and column-to-column comparisons.
 

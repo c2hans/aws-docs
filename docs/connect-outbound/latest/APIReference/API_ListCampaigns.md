@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-outbound/latest/APIReference/API
 ---
 
 # ListCampaigns
-<a name="API_connect-outbound-campaigns_ListCampaigns"></a>
 
 Lists outbound campaigns.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/specif
 ---
 
 # Specify long-term memory organization with namespaces
-<a name="specify-long-term-memory-organization"></a>
 
 When you [create](memory-create-a-memory-store.md) an AgentCore Memory, use a namespace to specify where the [long-term memories](memory-types.md#memory-long-term-memory) for a [memory strategy](memory-strategies.md) are logically grouped. Every time a new long-term memory is extracted using the memory strategy, it is saved under the namespace you set. This means that all long-term memories are scoped to their specific namespace, keeping them organized and preventing any mix-ups with other users or sessions. You should use a hierarchical format separated by forward slashes `/`, starting and ending with a slash (for example, `/actors/alice/`). This helps keep memories organized clearly. As needed, you can choose to use the following pre-defined variables within braces in the namespace based on your application’s organization needs:
 +  **actorId** – Identifies who the long-term memory belongs to.

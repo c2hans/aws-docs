@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_RuleAction.h
 ---
 
 # RuleAction
-<a name="API_RuleAction"></a>
 
 The action that AWS WAF should take on a web request when it matches a rule's statement. Settings at the web ACL level can override the rule action setting.
 

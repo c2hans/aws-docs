@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/auto-scaling.html
 ---
 
 # Using auto scaling for AWS Glue
-<a name="auto-scaling"></a>
 
 Auto Scaling is available for your AWS Glue ETL, interactive sessions, and streaming jobs with AWS Glue version 3.0 or later.
 

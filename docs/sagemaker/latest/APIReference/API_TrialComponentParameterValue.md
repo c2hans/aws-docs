@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TrialC
 ---
 
 # TrialComponentParameterValue
-<a name="API_TrialComponentParameterValue"></a>
 
 The value of a hyperparameter. Only one of `NumberValue` or `StringValue` can be specified.
 

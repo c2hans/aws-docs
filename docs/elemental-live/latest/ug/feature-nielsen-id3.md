@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/feature-nielsen
 ---
 
 # Converting Nielsen watermarks to ID3
-<a name="feature-nielsen-id3"></a>
 
 If one or more inputs in an event includes Nielsen watermarks in the audio, you have the option to set up the event to convert those watermarks to ID3 metadata. These watermarks are part of the measurement and analytics capabilities supported by Nielsen.
 

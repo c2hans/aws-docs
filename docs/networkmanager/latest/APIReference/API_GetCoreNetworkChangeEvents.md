@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/networkmanager/latest/APIReference/API_G
 ---
 
 # GetCoreNetworkChangeEvents
-<a name="API_GetCoreNetworkChangeEvents"></a>
 
 Returns information about a core network change event.
 

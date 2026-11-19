@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/nova-forge-r
 ---
 
 # Nova Forge Region Availability
-<a name="nova-forge-region-availability"></a>
 
 Nova Forge is available in the following AWS Regions.
 

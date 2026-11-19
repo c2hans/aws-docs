@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/s3-pub-act
 Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
 
 # Example: Publish files to Amazon S3
-<a name="s3-pub-action-example-workflow"></a>
 
 The following example workflow includes the **Amazon S3 publish** action, along with a build action. The workflow builds a static documentation website and then publishes it to Amazon S3, where it is hosted. The workflow consists of the following building blocks that run sequentially:
 + A **trigger** – This trigger starts the workflow run automatically when you push a change to your source repository. For more information about triggers, see [Starting a workflow run automatically using triggers](workflows-add-trigger.md).

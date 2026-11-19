@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/using-the-
 ---
 
 # Setting up and using the AWS access portal
-<a name="using-the-portal"></a>
 
 The AWS access portal connects your workforce to AWS accounts and cloud applications through IAM Identity Center. Administrators configure the portal and manage user access, while end users sign in once to seamlessly access all their authorized resources.
 

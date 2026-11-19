@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_ContainerR
 ---
 
 # ContainerRepositoryMetadata
-<a name="API_ContainerRepositoryMetadata"></a>
 
 Contains metadata about a container repository associated with a covered resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/developing-blueprints-sam
 ---
 
 # Blueprint samples
-<a name="developing-blueprints-samples"></a>
 
 There are a number of sample blueprint projects available on the [AWS Glue blueprint Github repository](https://github.com/awslabs/aws-glue-blueprint-libs/tree/master/samples). These samples are for reference only and are not intended for production use.
 

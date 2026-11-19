@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Upd
 ---
 
 # UpdateValue
-<a name="API_UpdateValue"></a>
 
  The value for a given type of `UpdateSettings`.
 

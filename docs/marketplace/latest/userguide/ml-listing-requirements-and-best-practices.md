@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-listing-
 ---
 
 # Requirements and best practices for creating machine learning products
-<a name="ml-listing-requirements-and-best-practices"></a>
 
 It is important that your buyers find it easy to test your model package and algorithm products. The following sections describe best practices for ML products. For a complete summary of requirements and recommendations, see the [Summary of requirements and recommendations for ML product listings](#ml-summary-table-of-requirements-and-recommendations).
 

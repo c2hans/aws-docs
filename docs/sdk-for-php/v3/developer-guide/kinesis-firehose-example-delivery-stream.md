@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/kinesis-f
 ---
 
 # Creating delivery streams using the Firehose API and the AWS SDK for PHP Version 3
-<a name="kinesis-firehose-example-delivery-stream"></a>
 
 Amazon Data Firehose enables you to send real-time data to other AWS services including Amazon Kinesis Data Streams, Amazon S3, Amazon OpenSearch Service (OpenSearch Service), and Amazon Redshift, or to Splunk. Create a data producer with delivery streams to deliver data to the configured destination every time you add data.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rosa/latest/userguide/getting-started-cl
 ---
 
 # Create a ROSA classic cluster that uses AWS PrivateLink
-<a name="getting-started-classic-private-link"></a>
 
 ROSA classic clusters can be deployed in a few different ways: public, private, or private with AWS PrivateLink. For more information about ROSA classic, see [ROSA architecture](rosa-architecture-models.md). For both public and private cluster configurations, the OpenShift cluster has access to the internet, and privacy is set on the application workloads at the application layer.
 

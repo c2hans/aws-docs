@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ga
 ---
 
 # Manage game hosting resources with Amazon GameLift Servers
-<a name="gamelift-console-intro"></a>
 
 Manage Amazon GameLift Servers resources, including builds, fleets, game session queues, and matchmakers. You can use the Amazon GameLift Servers console to scan resource lists, or view resource details including metrics. You can also retrieve resource information using the AWS SDK or AWS CLI for Amazon GameLift Servers
 

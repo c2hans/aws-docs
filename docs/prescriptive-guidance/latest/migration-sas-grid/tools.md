@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-s
 ---
 
 # Automation and tooling
-<a name="tools"></a>
 
 Matching source and target topologies simplifies many variables that can affect migration efforts. In addition, matching topologies is a requirement for using the SAS Migration Utility. This tool assumes that every host machine, directory, and network component in the source environment will map one-to-one to its equivalent in the target environment.
 

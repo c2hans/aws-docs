@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Deplo
 ---
 
 # DeploymentStyle
-<a name="API_DeploymentStyle"></a>
 
 Information about the type of deployment, either in-place or blue/green, you want to run and whether to route deployment traffic behind a load balancer.
 

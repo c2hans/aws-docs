@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/filter-and-mo
 ---
 
 # View protect metrics in AWS End User Messaging SMS
-<a name="filter-and-monitor-messages-monitor"></a>
 
 The **Monitoring** tab on a protect configuration provides an overview of message delivery metrics for the protect configuration. To view all metrics for your account in the AWS End User Messaging SMS console choose **Dashboard** in the left hand navigation.
 

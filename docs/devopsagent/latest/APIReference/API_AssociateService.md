@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Asso
 ---
 
 # AssociateService
-<a name="API_AssociateService"></a>
 
 Adds a specific service association to an AgentSpace. It overwrites the existing association of the same service. Returns 201 Created on success.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/API/API_UpdateEnvironment.ht
 ---
 
 # UpdateEnvironment
-<a name="API_UpdateEnvironment"></a>
 
 Updates an Amazon Managed Workflows for Apache Airflow (MWAA) environment.
 

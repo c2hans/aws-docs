@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/deployment-guardrail
 ---
 
 # Auto-Rollback Configuration and Monitoring
-<a name="deployment-guardrails-configuration"></a>
 
 Amazon CloudWatch alarms are a prerequisite for using baking periods in deployment guardrails. You can only use the auto-rollback functionality in deployment guardrails if you set up CloudWatch alarms that can monitor an endpoint. If any of your alarms trip during the specified monitoring period, SageMaker AI initiates a complete rollback to the old endpoint to protect your application. If you do not have any CloudWatch alarms set up to monitor your endpoint, then the auto-rollback functionality does not work during your deployment.
 

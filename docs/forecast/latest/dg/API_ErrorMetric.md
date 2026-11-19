@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/forecast/latest/dg/API_ErrorMetric.html
  Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
 
 # ErrorMetric
-<a name="API_ErrorMetric"></a>
 
  Provides detailed error metrics to evaluate the performance of a predictor. This object is part of the [Metrics](API_Metrics.md) object.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_CreateIcebergTabl
 ---
 
 # CreateIcebergTableInput
-<a name="API_CreateIcebergTableInput"></a>
 
 The configuration parameters required to create a new Iceberg table in the AWS Glue Data Catalog, including table properties and metadata specifications.
 

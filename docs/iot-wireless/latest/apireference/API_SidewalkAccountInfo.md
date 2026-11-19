@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Sid
 ---
 
 # SidewalkAccountInfo
-<a name="API_SidewalkAccountInfo"></a>
 
 Information about a Sidewalk account.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Prot
 ---
 
 # ProtectedQueryS3Output
-<a name="API_ProtectedQueryS3Output"></a>
 
 Contains output information for protected queries with an S3 output type.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsc
 ---
 
 # Data retrieval APIs for AWS CodeStar Notifications
-<a name="awscodestarnotifications"></a>
 
 AWS CodeStar Notifications provides the following APIs for data retrieval.
 

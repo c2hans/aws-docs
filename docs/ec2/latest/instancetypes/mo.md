@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/instancetypes/mo.html
 ---
 
 # Specifications for Amazon EC2 memory optimized instances
-<a name="mo"></a>
 
 **End of sale notice**
 The **U-9tb1**, **U-12tb1**, **U-18tb1**, and **U-24tb1** instance types are no longer available for new instance launches. If your workload requires a high-memory instance, we recommend that you use a U7i instance type instead.

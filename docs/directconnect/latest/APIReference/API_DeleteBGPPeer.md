@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/APIReference/API_De
 ---
 
 # DeleteBGPPeer
-<a name="API_DeleteBGPPeer"></a>
 
 Deletes the specified BGP peer on the specified virtual interface with the specified customer address and ASN.
 

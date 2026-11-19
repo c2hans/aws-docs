@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-
 ---
 
 # Using gMSA for Linux containers on Fargate
-<a name="fargate-linux-gmsa"></a>
 
 Amazon ECS supports Active Directory authentication for Linux containers on Fargate through a special kind of service account called a *group Managed Service Account* (gMSA).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # SearchPrincipals
-<a name="API_SearchPrincipals"></a>
 
 Searches Identity Center for users and groups in a domain. The domain must be configured with Identity Center.
 

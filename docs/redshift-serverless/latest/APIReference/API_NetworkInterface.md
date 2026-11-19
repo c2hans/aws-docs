@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # NetworkInterface
-<a name="API_NetworkInterface"></a>
 
 Contains information about a network interface in an Amazon Redshift Serverless managed VPC endpoint.
 

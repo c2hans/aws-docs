@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-po
 ---
 
 # Choosing a routing policy
-<a name="routing-policy"></a>
 
 When you create a record, you choose a routing policy, which determines how Amazon Route 53 responds to queries:
 + **Simple routing policy** – Use for a single resource that performs a given function for your domain, for example, a web server that serves content for the example.com website. You can use simple routing to create records in a private hosted zone.

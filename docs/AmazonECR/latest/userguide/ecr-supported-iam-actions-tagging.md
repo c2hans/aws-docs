@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/ecr-supported
 ---
 
 # Using Tag-Based Access Control
-<a name="ecr-supported-iam-actions-tagging"></a>
 
 The Amazon ECR `CreateRepository` API action enables you to specify tags when you create the repository. For more information, see [Tagging a private repository in Amazon ECR](ecr-using-tags.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_R
 ---
 
 # RuleIpToEvaluate
-<a name="API_RuleIpToEvaluate"></a>
 
 The IP address to evaluate for this condition.
 

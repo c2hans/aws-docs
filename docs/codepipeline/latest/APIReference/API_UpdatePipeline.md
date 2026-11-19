@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Upd
 ---
 
 # UpdatePipeline
-<a name="API_UpdatePipeline"></a>
 
 Updates a specified pipeline with edits or changes to its structure. Use a JSON file with the pipeline structure and `UpdatePipeline` to provide the full structure of the pipeline. Updating the pipeline increases the version number of the pipeline by 1.
 

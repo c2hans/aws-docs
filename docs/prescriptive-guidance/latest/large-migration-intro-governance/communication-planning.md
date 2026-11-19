@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migra
 ---
 
 # Communication planning for a large migration
-<a name="communication-planning"></a>
 
 Be it a digital transformation to a cloud-first strategy or an organizational divestiture to exit data centers, there are many parallel business unit (BU)-specific or technology-driven activities that will be in process outside of the server migration project. It is extremely important to make sure that all BUs and technology teams work toward the same goal of migrating to the AWS Cloud. In addition, you'll need make sure that all dependent activities that impact the large migration project are aligned within these teams to meet deadlines.
 

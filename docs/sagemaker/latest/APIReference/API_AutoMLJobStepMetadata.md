@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AutoML
 ---
 
 # AutoMLJobStepMetadata
-<a name="API_AutoMLJobStepMetadata"></a>
 
 Metadata for an AutoML job step.
 

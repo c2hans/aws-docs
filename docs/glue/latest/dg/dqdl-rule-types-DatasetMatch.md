@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/dqdl-rule-types-DatasetMa
 ---
 
 # DatasetMatch
-<a name="dqdl-rule-types-DatasetMatch"></a>
 
  Checks if the data in the primary dataset matches the data in a reference dataset. The two datasets are joined using the provided key column mappings. Additional column mappings can be provided should you wish to check for the equality of the data in only those columns. Note that for **DataSetMatch** to work, your join keys should be unique and should not be NULL (must be a primary key). If you don’t satisfy these conditions, you will get the error message, “Provided key map not suitable for given data frames”. In cases where you can’t have joined keys that are unique, consider using other ruletypes such as **AggregateMatch** to match on summary data.
 

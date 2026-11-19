@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/cod
 ---
 
 # Implementing Amazon Verified Permissions in Rust with the AWS SDK
-<a name="code-samples-rust"></a>
 
 This topic provides a practical example of implementing Amazon Verified Permissions in Rust with the AWS SDK. This example shows how to develop an authorization model that can test whether a user is able to view a photo. The sample code uses the [aws-sdk-verifiedpermissions](https://docs.rs/aws-sdk-verifiedpermissions/latest/aws_sdk_verifiedpermissions/) crate from the [AWS SDK for Rust](https://github.com/awslabs/aws-sdk-rust), which offers a robust set of tools for interacting with AWS services.
 

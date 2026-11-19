@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_ConnectorOperationS
 ---
 
 # ConnectorOperationStep
-<a name="API_ConnectorOperationStep"></a>
 
 Details of a step that is involved in a connector's operation.
 

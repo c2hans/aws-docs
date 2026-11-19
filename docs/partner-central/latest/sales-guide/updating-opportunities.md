@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/sales-guide/updat
 ---
 
 # Updating next steps and opportunity stage
-<a name="updating-opportunities"></a>
 
 We recommend that AWS Partners update opportunities with AWS Sales visibility with next steps at each stage change.
 

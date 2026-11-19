@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/microvm-api/API_Resources.
 ---
 
 # Resources
-<a name="API_Resources"></a>
 
 Resource requirements for a MicroVM.
 

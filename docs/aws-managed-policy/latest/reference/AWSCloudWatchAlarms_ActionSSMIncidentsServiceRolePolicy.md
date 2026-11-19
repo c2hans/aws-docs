@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSC
 ---
 
 # AWSCloudWatchAlarms\_ActionSSMIncidentsServiceRolePolicy
-<a name="AWSCloudWatchAlarms_ActionSSMIncidentsServiceRolePolicy"></a>
 
 **Description**: This policy is used by the service-linked role named AWSServiceRoleForCloudWatchAlarms\_ActionSSMIncidents. CloudWatch uses this service-linked role to perform AWS System Manager Incident Manager actions when a CloudWatch alarm goes in to ALARM state. This policy grants permission to start incidents on your behalf.
 

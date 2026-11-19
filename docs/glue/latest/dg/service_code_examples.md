@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/service_code_examples.htm
 ---
 
 # AWS Glue API code examples using AWS SDKs
-<a name="service_code_examples"></a>
 
 The following code examples show how to use AWS Glue with an AWS software development kit (SDK).
 

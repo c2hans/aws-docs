@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/near.html
 ---
 
 # $near
-<a name="near"></a>
 
 The `$near` operator in Amazon DocumentDB is used to find documents that are geographically near a specified point. It returns documents ordered by distance, with the closest documents first. This operator requires a 2dsphere geospatial index and is useful for proximity queries on location data.
 

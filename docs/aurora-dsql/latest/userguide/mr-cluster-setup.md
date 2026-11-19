@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/mr-cluster-
 ---
 
 # Configuring Aurora DSQL clusters using AWS CloudFormation
-<a name="mr-cluster-setup"></a>
 
  You can use the same CloudFormation resource `AWS::DSQL::Cluster` to deploy and manage single-Region and multi-Region Aurora DSQL clusters.
 

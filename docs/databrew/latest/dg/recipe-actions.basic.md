@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.basic.
 ---
 
 # Basic column recipe steps
-<a name="recipe-actions.basic"></a>
 
 Use these basic column recipe actions to perform simple transformations on your data.
 

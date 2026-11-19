@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Signin
 ---
 
 # SigningRepositoryFilter
-<a name="API_SigningRepositoryFilter"></a>
 
 A repository filter used to determine which repositories have their images automatically signed on push. Each filter consists of a filter type and filter value.
 

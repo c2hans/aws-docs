@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/edit-da
 ---
 
 # Editing dashboards
-<a name="edit-dashboards"></a>
 
 You can modify existing dashboards to keep them relevant and useful as your needs change.
 

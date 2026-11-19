@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/
 ---
 
 # .NET examples
-<a name="ddb-net-examples"></a>
 
 The following examples show you how to use the .NET client-side encryption library for DynamoDB to protect the table items in your application. To find more examples (and contribute your own), see the [.NET examples](https://github.com/aws/aws-database-encryption-sdk-dynamodb//tree/main/Examples/runtimes/net/src) in the aws-database-encryption-sdk-dynamodb repository on GitHub.
 

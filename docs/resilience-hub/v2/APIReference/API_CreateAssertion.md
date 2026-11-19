@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Creat
 ---
 
 # CreateAssertion
-<a name="API_CreateAssertion"></a>
 
 Creates a resilience assertion for a service.
 

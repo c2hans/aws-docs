@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/translate/latest/dg/security_iam_service
 ---
 
 # How Amazon Translate works with IAM
-<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to Amazon Translate, learn what IAM features are available to use with Amazon Translate.
 

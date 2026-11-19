@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/attach-detach-
 ---
 
 # Moving Your Volumes to a Different Gateway
-<a name="attach-detach-volume"></a>
 
 As your data and performance needs grow, you might want to move your volumes to a different Volume Gateway. To do so, you can detach and attach a volume by using the Storage Gateway console or API.
 

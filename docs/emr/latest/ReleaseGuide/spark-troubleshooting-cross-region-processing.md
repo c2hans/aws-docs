@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/spark-troublesho
 ---
 
 # Cross-Region processing for the Apache Spark agents
-<a name="spark-troubleshooting-cross-region-processing"></a>
 
 The Apache Spark agents use cross-Region inference to process natural language requests and generate responses. With cross-Region inference, the agents automatically route your inference request to optimize performance, maximizing available compute resources and model availability, and providing the best customer experience. The type of cross-Region inference used depends on the Region where you run the Apache Spark agents. In most Regions, the agents select the optimal Region within your geography to process your inference requests. However, in some Regions an inference request made by the agents is securely routed to all available compute resources across all global commercial AWS Regions.
 

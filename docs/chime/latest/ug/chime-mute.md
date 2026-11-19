@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime/latest/ug/chime-mute.html
 ---
 
 # Muting and unmuting
-<a name="chime-mute"></a>
 
 The following sections explain how to mute and unmute audio during an Amazon Chime meeting. The steps apply to the desktop client and web app. For information about muting audio with the mobile app, see [Muting and unmuting your audio](mobile-meeting-mute-audio.md), later in this guide.
 

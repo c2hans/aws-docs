@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/scaling-ama
 ---
 
 # Network scaling
-<a name="network-scaling"></a>
 
 Network scaling in Kubernetes is critical for maintaining seamless communication between services and supporting efficient data flow in dynamic environments. Scaling the network infrastructure helps to make sure that the cluster can handle varying levels of traffic without experiencing bottlenecks or latency issues. Kubernetes provides tools and mechanisms to scale network resources, allowing organizations to maintain optimal performance as traffic patterns change.
 

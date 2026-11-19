@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/APIReference/API_Connectiv
 ---
 
 # ConnectivityInfo
-<a name="API_ConnectivityInfo"></a>
 
 Contains information about an endpoint and port where client devices can connect to an MQTT broker on a Greengrass core device.
 

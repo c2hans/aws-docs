@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVer
 ---
 
 # ModifyVerifiedAccessInstanceLoggingConfiguration
-<a name="API_ModifyVerifiedAccessInstanceLoggingConfiguration"></a>
 
 Modifies the logging configuration for the specified AWS Verified Access instance.
 

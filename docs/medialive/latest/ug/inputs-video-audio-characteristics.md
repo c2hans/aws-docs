@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/inputs-video-audio-c
 ---
 
 # Characteristics for video and audio sources
-<a name="inputs-video-audio-characteristics"></a>
 
 **Orientation**
 

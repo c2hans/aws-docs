@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-pyth
 ---
 
 # Calling AWS Glue APIs in Python
-<a name="aws-glue-programming-python-calling"></a>
 
 Note that Boto 3 resource APIs are not yet available for AWS Glue. Currently, only the Boto 3 client APIs can be used.
 

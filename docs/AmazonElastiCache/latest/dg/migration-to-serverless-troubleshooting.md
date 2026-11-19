@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/migration-to
 ---
 
 # Canceling and troubleshooting online migrations to ElastiCache Serverless
-<a name="migration-to-serverless-troubleshooting"></a>
 
 ## Stopping the data sync
 <a name="migration-to-serverless-stop"></a>

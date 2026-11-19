@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Update a DynamoDB table setting with warm throughput using an AWS SDK
-<a name="example_dynamodb_UpdateTableWarmThroughput_section"></a>
 
 The following code examples show how to update a table's warm throughput setting.
 

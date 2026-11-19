@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_OperatingSyste
 ---
 
 # OperatingSystem
-<a name="API_OperatingSystem"></a>
 
 The operating system that the image is running.
 

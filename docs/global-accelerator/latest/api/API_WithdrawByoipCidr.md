@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/global-accelerator/latest/api/API_Withdr
 ---
 
 # WithdrawByoipCidr
-<a name="API_WithdrawByoipCidr"></a>
 
 Stops advertising an address range that is provisioned as an address pool. You can perform this operation at most once every 10 seconds, even if you specify different address ranges each time.
 

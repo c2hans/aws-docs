@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TextC
 ---
 
 # TextControlPlaceholderOptions
-<a name="API_TextControlPlaceholderOptions"></a>
 
 The configuration of the placeholder options in a text control.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/create-auto
 ---
 
 # Creating automation rules
-<a name="create-automation-rules"></a>
 
 An automation rule can be used to automatically update findings in AWS Security Hub CSPM. You can create a custom automation rule from scratch or, on the Security Hub CSPM console, use a pre-populated rule template. For background information about how automation rules work, see [Understanding automation rules in Security Hub CSPM](automation-rules.md).
 

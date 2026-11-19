@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/parameter-group
 ---
 
 # Amazon Neptune parameter groups
-<a name="parameter-groups"></a>
 
 You manage your database configuration in Amazon Neptune by using [parameters](parameters.md) in a parameter group. Parameter groups act as a *container* for engine configuration values that are applied to one or more DB instances.
 

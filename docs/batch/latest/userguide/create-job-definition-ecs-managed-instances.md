@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/create-job-defini
 ---
 
 # Create a job definition on Amazon ECS Managed Instances
-<a name="create-job-definition-ecs-managed-instances"></a>
 
 Amazon ECS Managed Instances job definitions use `ecsProperties` with the `MANAGED_INSTANCES` platform capability. Unlike Fargate, there are no restrictions on vCPU and memory size combinations, and GPU resources are supported. For more information about supported parameters, see [Job definitions on Amazon ECS Managed Instances](ecs-managed-instances-job-definitions.md).
 

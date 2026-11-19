@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/msk/1.0/apireference/clusters-clusterarn
 ---
 
 # Reboot Broker
-<a name="clusters-clusterarn-reboot-broker"></a>
 
 ## URI
 <a name="clusters-clusterarn-reboot-broker-url"></a>

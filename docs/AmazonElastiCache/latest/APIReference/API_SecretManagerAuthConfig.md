@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # SecretManagerAuthConfig
-<a name="API_SecretManagerAuthConfig"></a>
 
 Configuration for authenticating with the source using Secrets Manager during migration.
 

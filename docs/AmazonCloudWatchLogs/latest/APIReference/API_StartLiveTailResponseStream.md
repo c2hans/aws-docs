@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # StartLiveTailResponseStream
-<a name="API_StartLiveTailResponseStream"></a>
 
 This object includes the stream returned by your [StartLiveTail](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_StartLiveTail.html) request.
 

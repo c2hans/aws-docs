@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AddPoli
 ---
 
 # AddPolicyGrant
-<a name="API_AddPolicyGrant"></a>
 
 Adds a policy grant (an authorization policy) to a specified entity, including domain units, environment blueprint configurations, or environment profiles.
 

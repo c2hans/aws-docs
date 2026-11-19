@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # OpeningHours
-<a name="API_geoplaces_OpeningHours"></a>
 
 List of opening hours objects.
 

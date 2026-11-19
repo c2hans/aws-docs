@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_TagResource.
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Creates a tag for an EFS resource. You can create tags for EFS file systems and access points using this API operation.
 

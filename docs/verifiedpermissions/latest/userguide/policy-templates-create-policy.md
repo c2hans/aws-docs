@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/pol
 ---
 
 # Creating Amazon Verified Permissions template-linked policies
-<a name="policy-templates-create-policy"></a>
 
 You can create template-linked policies, or policies that are based on a policy template, using the AWS Management Console, AWS CLI, or the AWS SDKs. Template-linked policies stay linked to their policy templates. If you change the policy statement in the policy template, any policies linked to that template automatically use the new statement for all authorization decisions made from that moment forward.
 

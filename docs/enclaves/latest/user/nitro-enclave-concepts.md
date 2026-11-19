@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave-conce
 ---
 
 # Nitro Enclaves concepts
-<a name="nitro-enclave-concepts"></a>
 
 The following concepts are important to your understanding and use of AWS Nitro Enclaves.
 

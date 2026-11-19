@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # AutocompleteResultItem
-<a name="API_geoplaces_AutocompleteResultItem"></a>
 
 A result matching the input query text.
 

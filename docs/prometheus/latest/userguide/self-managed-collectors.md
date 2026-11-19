@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/self-managed
 ---
 
 # Customer managed collectors
-<a name="self-managed-collectors"></a>
 
 This section contains information about ingesting data by setting up your own collectors that send metrics to Amazon Managed Service for Prometheus using Prometheus remote write.
 

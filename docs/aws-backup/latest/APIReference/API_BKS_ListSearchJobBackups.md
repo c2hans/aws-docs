@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_BKS_L
 ---
 
 # ListSearchJobBackups
-<a name="API_BKS_ListSearchJobBackups"></a>
 
 This operation returns a list of all backups (recovery points) in a paginated format that were included in the search job.
 

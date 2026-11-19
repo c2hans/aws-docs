@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/register-consol
 ---
 
 # Register an application
-<a name="register-console"></a>
 
 You can register SAP HANA and SAP ABAP applications using the AWS Console for SAP applications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Updat
 ---
 
 # UpdateConnectionFunction
-<a name="API_UpdateConnectionFunction"></a>
 
 Updates a connection function.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # PinData
-<a name="API_PinData"></a>
 
 Parameters that are required to generate, translate, or verify PIN data.
 

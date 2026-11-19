@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/detective/latest/userguide/detective-ter
 ---
 
 # Amazon Detective concepts and terminology
-<a name="detective-terms-concepts"></a>
 
 The following terms and concepts are important for understanding Amazon Detective and how it works.
 

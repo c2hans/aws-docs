@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-overview-ama
 ---
 
 # Abstract and introduction
-<a name="security-overview-amazon-eks-auto-mode"></a>
 
 **First published September 18, 2025**
 

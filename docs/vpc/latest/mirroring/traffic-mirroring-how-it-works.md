@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-h
 ---
 
 # How Traffic Mirroring works
-<a name="traffic-mirroring-how-it-works"></a>
 
 Traffic Mirroring copies inbound and outbound traffic from the network interfaces that are attached to your instances. You can send the mirrored traffic to the network interface of another instance, a Network Load Balancer that has a UDP listener, or a Gateway Load Balancer that has a UDP listener. The traffic mirror source and the traffic mirror target (monitoring appliance) can be in the same VPC. Or they can be in a different VPCs that are connected through intra-Region VPC peering, a transit gateway, or by a Gateway Load Balancer endpoint to connect to a Gateway Load Balancer in a different VPC.
 

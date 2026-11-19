@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/data-transfer-hub/plan-
 ---
 
 # Plan your deployment
-<a name="plan-your-deployment"></a>
 
  This section describes the Region, [Cost](cost.md), [Security](security-1.md), and [Quotas](quotas.md) considerations for planning your deployment.
 

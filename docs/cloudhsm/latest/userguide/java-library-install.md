@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/java-library-i
 ---
 
 # Install the JCE provider for AWS CloudHSM Client SDK 3
-<a name="java-library-install"></a>
 
 Before you can use the JCE provider, you need the AWS CloudHSM client.
 

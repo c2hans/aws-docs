@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_DescribeDatase
 ---
 
 # DescribeDatasetExportJob
-<a name="API_DescribeDatasetExportJob"></a>
 
 Describes the dataset export job created by [CreateDatasetExportJob](https://docs.aws.amazon.com/personalize/latest/dg/API_CreateDatasetExportJob.html), including the export job status.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Costs and throughput
-<a name="functions-costs"></a>
 
 A function that invokes a model calls Amazon Bedrock in your account, with your credentials. That means:
 + The model charges appear on your own Amazon Bedrock bill. AWS CloudTrail in your account records each call under the feed's access role, in a role session named `ei-function-{{feed-id}}`.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc-lattice/latest/APIReference/API_TxtM
 ---
 
 # TxtMethodConfig
-<a name="API_TxtMethodConfig"></a>
 
  Configuration for TXT record-based domain verification method.
 

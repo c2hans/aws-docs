@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 ---
 
 # MSFTREL05-BP03 Implement self-healing procedures
-<a name="msftrel05-bp03"></a>
 
  Establish automated remediation capabilities that can detect, diagnose, and resolve common issues in Microsoft workloads without human intervention. Self-healing procedures reduce mean time to recovery (MTTR) and minimize the impact of transient failures on business operations.
 

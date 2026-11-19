@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/maven-curl.html
 ---
 
 # Publishing with curl
-<a name="maven-curl"></a>
 
 This section shows how to use the HTTP client `curl` to publish Maven artifacts to a CodeArtifact repository. Publishing artifacts with `curl` can be useful if you do not have or want to install the Maven client in your environments.
 

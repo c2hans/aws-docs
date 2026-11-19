@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Propaga
 ---
 
 # PropagatingVgwSetDetails
-<a name="API_PropagatingVgwSetDetails"></a>
 
  Describes a virtual private gateway propagating route.
 

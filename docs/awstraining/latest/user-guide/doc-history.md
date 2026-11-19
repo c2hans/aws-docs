@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awstraining/latest/user-guide/doc-histor
 ---
 
 # AWS Training Document History
-<a name="doc-history"></a>
 
 | Change | Description | Date |
 | --- | --- | --- |

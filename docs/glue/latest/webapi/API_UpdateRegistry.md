@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateRegistry.ht
 ---
 
 # UpdateRegistry
-<a name="API_UpdateRegistry"></a>
 
 Updates an existing registry which is used to hold a collection of schemas. The updated properties relate to the registry, and do not modify any of the schemas within the registry.
 

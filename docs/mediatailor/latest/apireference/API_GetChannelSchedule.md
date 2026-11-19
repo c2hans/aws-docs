@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_GetC
 ---
 
 # GetChannelSchedule
-<a name="API_GetChannelSchedule"></a>
 
 Retrieves information about your channel's schedule.
 

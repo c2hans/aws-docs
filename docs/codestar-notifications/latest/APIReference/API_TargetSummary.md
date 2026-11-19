@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codestar-notifications/latest/APIReferen
 ---
 
 # TargetSummary
-<a name="API_TargetSummary"></a>
 
 Information about the targets specified for a notification rule.
 

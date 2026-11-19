@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # LegalTerm
-<a name="API_marketplace-discovery_LegalTerm"></a>
 
 Defines a legal term containing documents proposed to buyers, such as EULAs and data subscription agreements.
 

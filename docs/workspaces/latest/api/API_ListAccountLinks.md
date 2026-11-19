@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/api/API_ListAccountLin
 ---
 
 # ListAccountLinks
-<a name="API_ListAccountLinks"></a>
 
 Lists all account links.
 

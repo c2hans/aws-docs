@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_CancelExp
 ---
 
 # CancelExportJob
-<a name="API_CancelExportJob"></a>
 
 Cancels an export job.
 

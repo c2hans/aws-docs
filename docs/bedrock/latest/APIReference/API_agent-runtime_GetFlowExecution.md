@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # GetFlowExecution
-<a name="API_agent-runtime_GetFlowExecution"></a>
 
 Retrieves details about a specific flow execution, including its status, start and end times, and any errors that occurred during execution.
 

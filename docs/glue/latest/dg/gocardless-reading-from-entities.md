@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gocardless-reading-from-e
 ---
 
 # Reading from GoCardless entities
-<a name="gocardless-reading-from-entities"></a>
 
 **Prerequisites**
 

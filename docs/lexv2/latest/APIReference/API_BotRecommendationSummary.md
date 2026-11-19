@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_BotRecomme
 ---
 
 # BotRecommendationSummary
-<a name="API_BotRecommendationSummary"></a>
 
 A summary of the bot recommendation.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/terraform-d
 ---
 
 # Working around Terraform data source limitations on AWS
-<a name="introduction"></a>
 
 *Ram Kandaswamy, Amazon Web Services*
 

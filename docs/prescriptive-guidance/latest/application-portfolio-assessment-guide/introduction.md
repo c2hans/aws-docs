@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/application
 ---
 
 # Application portfolio assessment guide for AWS Cloud migration
-<a name="introduction"></a>
 
 *German Goncalves, Mark Berner, Tuhin Mukherjee, and Senay Swinney, Amazon Web Services*
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_DataSourc
 ---
 
 # DataSourceConfiguration
-<a name="API_DataSourceConfiguration"></a>
 
 Provides the configuration information for an Amazon Kendra data source.
 

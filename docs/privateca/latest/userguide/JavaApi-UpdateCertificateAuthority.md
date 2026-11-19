@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/privateca/latest/userguide/JavaApi-Updat
 ---
 
 # UpdateCertificateAuthority
-<a name="JavaApi-UpdateCertificateAuthority"></a>
 
 The following Java sample shows how to use the [UpdateCertificateAuthority](https://docs.aws.amazon.com/privateca/latest/APIReference/API_UpdateCertificateAuthority.html) operation.
 

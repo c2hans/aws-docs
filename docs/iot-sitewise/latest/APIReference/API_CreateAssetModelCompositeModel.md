@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Cre
 ---
 
 # CreateAssetModelCompositeModel
-<a name="API_CreateAssetModelCompositeModel"></a>
 
 Creates a custom composite model from specified property and hierarchy definitions. There are two types of custom composite models, `inline` and `component-model-based`.
 

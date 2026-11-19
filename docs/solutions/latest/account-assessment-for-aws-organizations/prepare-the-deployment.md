@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/account-assessment-for-
 ---
 
 # Prepare the deployment
-<a name="prepare-the-deployment"></a>
 
 1. Clone the repository and change to its root directory.
 

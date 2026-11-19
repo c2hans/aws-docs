@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/using-clou
 AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [AWS SDK for Go V2](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-go-v1-on-july-31-2025/).
 
 # Amazon CloudWatch Examples Using the AWS SDK for Go
-<a name="using-cloudwatch-with-go-sdk"></a>
 
 Amazon CloudWatch is a web service that monitors your AWS resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are variables you can measure for your resources and applications. CloudWatch alarms send notifications or automatically make changes to the resources you are monitoring based on rules that you define.
 

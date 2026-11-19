@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # DynamoDB mapping API differences between version 1 and version 2 of the AWS SDK for Java
-<a name="ddb-mapping"></a>
 
 The DynamoDB mapping APIs changed significantly between version 1 and version 2 of the AWS SDK for Java. In version 1, you use the `DynamoDBMapper` to work with Java POJOs. In version 2, you use the `DynamoDbEnhancedClient` with updated method names, enhanced schema definition options, and improved type safety.
 

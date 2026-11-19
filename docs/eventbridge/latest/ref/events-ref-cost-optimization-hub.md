@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-cost-o
 ---
 
 # AWS Cost Optimization Hub events
-<a name="events-ref-cost-optimization-hub"></a>
 
 Cost Optimization Hub sends service events to EventBridge via AWS CloudTrail.
 

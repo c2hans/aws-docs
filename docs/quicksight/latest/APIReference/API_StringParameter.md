@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Strin
 ---
 
 # StringParameter
-<a name="API_StringParameter"></a>
 
 A string parameter.
 

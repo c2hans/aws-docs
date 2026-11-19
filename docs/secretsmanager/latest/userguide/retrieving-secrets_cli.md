@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrievi
 ---
 
 # Get a secret value using the AWS CLI
-<a name="retrieving-secrets_cli"></a>
 
 **Required permissions: **`secretsmanager:GetSecretValue`
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/schedul
 ---
 
 # Schedule automations with maintenance windows
-<a name="scheduling-automations-maintenance-windows"></a>
 
 You can start an automation by configuring a runbook as a registered task for a maintenance window. By registering the runbook as a registered task, the maintenance window runs the automation during the scheduled maintenance period.
 

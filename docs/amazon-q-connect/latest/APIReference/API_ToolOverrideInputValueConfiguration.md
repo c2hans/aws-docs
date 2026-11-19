@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # ToolOverrideInputValueConfiguration
-<a name="API_amazon-q-connect_ToolOverrideInputValueConfiguration"></a>
 
 Configuration for overriding tool input values.
 

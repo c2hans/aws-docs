@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_ec2_Describe
 ---
 
 # Use `DescribeHosts` with a CLI
-<a name="example_ec2_DescribeHosts_section"></a>
 
 The following code examples show how to use `DescribeHosts`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-fsx
 ---
 
 # Restore an FSx file system
-<a name="restoring-fsx"></a>
 
 The restore options that are available when you use AWS Backup to restore Amazon FSx file systems are the same as using the native Amazon FSx backup. You can use a backup's recovery point to create a new file system and restore a point-in-time snapshot of another file system.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_SourceNetwor
 ---
 
 # SourceNetwork
-<a name="API_SourceNetwork"></a>
 
 The ARN of the Source Network.
 

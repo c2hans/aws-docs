@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/turn-by-turn-t
 ---
 
 # Navigate transcripts and audio in Connect Customer conversational analytics
-<a name="turn-by-turn-transcript"></a>
 
 Supervisors are often required to review the contacts for many agents, for quality assurance purposes. The turn-by-turn transcript and sentiment data helps you quickly identify and navigate to the portion of the recording that is of interest to you.
 

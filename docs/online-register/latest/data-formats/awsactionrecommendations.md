@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsa
 ---
 
 # Data retrieval APIs for AWS Action Recommendations
-<a name="awsactionrecommendations"></a>
 
 AWS Action Recommendations provides the following APIs for data retrieval.
 

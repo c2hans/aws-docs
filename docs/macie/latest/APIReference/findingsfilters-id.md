@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/macie/latest/APIReference/findingsfilter
 ---
 
 # Findings Filter
-<a name="findingsfilters-id"></a>
 
 The Findings Filter resource represents an individual filter that you created and saved to review, analyze, and manage findings. A *findings filter*, also referred to as a *filter*, is a set of criteria that specifies which findings to include in the results of a query for findings. A findings filter can also perform specific actions on findings that match the filter's criteria. For example, you can configure a filter to suppress (automatically archive) findings that match the filter's criteria. For more information about creating and using filters, see [Filtering findings](https://docs.aws.amazon.com/macie/latest/user/findings-filter-overview.html) in the *Amazon Macie User Guide*.
 

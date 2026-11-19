@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridgev2/latest/APIReference/API_Pu
 ---
 
 # PutRawEventsRequestEntry
-<a name="API_PutRawEventsRequestEntry"></a>
 
 A single event entry in a raw publish request.
 

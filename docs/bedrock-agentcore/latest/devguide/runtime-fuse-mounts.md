@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Mount your own file systems in your container
-<a name="runtime-fuse-mounts"></a>
 
 Amazon Bedrock AgentCore Runtime hosts your agent containers. The managed and bring-your-own configurations described earlier mount storage for you. If you’d rather run your own mount client, your container can mount file systems itself at runtime: run a FUSE client over the FUSE (Filesystem in Userspace) device (`/dev/fuse`), loop-mount a disk image over the loopback devices (`/dev/loop*`), or mount an NFS file system such as Amazon S3 Files or Amazon EFS.
 

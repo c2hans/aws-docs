@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/us
 The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
 
 # Using async/await
-<a name="using-async-await"></a>
 
 You can use the `async/await` pattern in your calls to the AWS SDK for JavaScript. Most functions that take a callback do not return a promise. Since you only use `await` functions that return a promise, to use the `async/await` pattern you need to chain the `.promise()` method to the end of your call, and remove the callback.
 

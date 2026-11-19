@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # ProgressCounters
-<a name="API_ProgressCounters"></a>
 
 An aggregate of step execution statuses displayed in the AWS Systems Manager console for a multi-Region and multi-account Automation execution.
 

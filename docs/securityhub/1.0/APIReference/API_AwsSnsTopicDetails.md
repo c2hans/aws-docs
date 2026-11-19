@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsSnsT
 ---
 
 # AwsSnsTopicDetails
-<a name="API_AwsSnsTopicDetails"></a>
 
 Provides information about an Amazon SNS topic to which notifications can be published.
 

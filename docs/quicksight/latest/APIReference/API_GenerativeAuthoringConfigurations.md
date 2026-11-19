@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Gener
 ---
 
 # GenerativeAuthoringConfigurations
-<a name="API_GenerativeAuthoringConfigurations"></a>
 
 The generative BI authoring settings of an embedded Quick Sight console.
 

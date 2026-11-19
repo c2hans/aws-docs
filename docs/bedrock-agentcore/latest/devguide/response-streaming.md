@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/respon
 ---
 
 # Stream agent responses
-<a name="response-streaming"></a>
 
 The following Strands Agents example shows how an AgentCore Runtime agent can stream a response back to a client.
 

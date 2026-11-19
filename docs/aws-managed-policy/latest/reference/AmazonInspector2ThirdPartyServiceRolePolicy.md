@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Amaz
 ---
 
 # AmazonInspector2ThirdPartyServiceRolePolicy
-<a name="AmazonInspector2ThirdPartyServiceRolePolicy"></a>
 
 **Description**: Grants permissions for Amazon Inspector to perform actions on your behalf for multi-cloud resource scanning.
 

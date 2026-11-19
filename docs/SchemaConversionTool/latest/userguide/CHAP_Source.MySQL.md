@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CH
 ---
 
 # Using MySQL as a source for AWS SCT
-<a name="CHAP_Source.MySQL"></a>
 
 You can use AWS SCT to convert schemas, database code objects, and application code from MySQL to the following targets:
 + Amazon RDS for PostgreSQL

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_AcceptVpc
 ---
 
 # AcceptVpcEndpointConnections
-<a name="API_AcceptVpcEndpointConnections"></a>
 
 Accepts connection requests to your VPC endpoint service.
 

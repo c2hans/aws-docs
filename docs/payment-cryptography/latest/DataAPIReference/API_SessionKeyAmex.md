@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/DataAPIRefer
 ---
 
 # SessionKeyAmex
-<a name="API_SessionKeyAmex"></a>
 
 Parameters to derive session key for an Amex payment card.
 

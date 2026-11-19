@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_GetApplic
 ---
 
 # GetApplication
-<a name="API_GetApplication"></a>
 
 Gets an application registered with AWS Systems Manager for SAP. It also returns the components of the application.
 

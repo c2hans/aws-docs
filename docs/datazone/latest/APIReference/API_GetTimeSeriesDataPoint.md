@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetTime
 ---
 
 # GetTimeSeriesDataPoint
-<a name="API_GetTimeSeriesDataPoint"></a>
 
 Gets the existing data point for the asset.
 

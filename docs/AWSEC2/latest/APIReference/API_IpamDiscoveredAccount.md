@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamDisco
 ---
 
 # IpamDiscoveredAccount
-<a name="API_IpamDiscoveredAccount"></a>
 
 An IPAM discovered account. A discovered account is an AWS account that is monitored under a resource discovery. If you have integrated IPAM with AWS Organizations, all accounts in the organization are discovered accounts.
 

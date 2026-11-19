@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/acxd-guardrails.
 ---
 
 # Guardrails
-<a name="acxd-guardrails"></a>
 
 Define safety rules that monitor conversation content and enforce behavior like masking, modifying, rerouting, or flagging when violations are detected.
 

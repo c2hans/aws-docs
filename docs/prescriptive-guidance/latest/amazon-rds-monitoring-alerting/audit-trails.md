@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-
 ---
 
 # Audit trails
-<a name="audit-trails"></a>
 
 The audit trail (or audit log) provides a security-relevant chronological record of events in your AWS account. It includes events for Amazon RDS, which provide documentary evidence of the sequence of activities that have affected your database or your cloud environment. In Amazon RDS for MySQL or MariaDB, using the audit trail involves:
 + Monitoring the DB instance audit log

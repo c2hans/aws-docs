@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_Filter.html
 ---
 
 # Filter
-<a name="API_Filter"></a>
 
 A single logging filter, used in [LoggingFilter](API_LoggingFilter.md).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Greater
 ---
 
 # GreaterThanOrEqualToExpression
-<a name="API_GreaterThanOrEqualToExpression"></a>
 
 Specifies whether the value is greater than or equal to an expression.
 

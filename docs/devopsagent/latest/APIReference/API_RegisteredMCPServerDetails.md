@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_Regi
 ---
 
 # RegisteredMCPServerDetails
-<a name="API_RegisteredMCPServerDetails"></a>
 
 Details specific to a registered MCP (Model Context Protocol) server.
 

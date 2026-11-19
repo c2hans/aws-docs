@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fis/latest/APIReference/API_CreateExperi
 ---
 
 # CreateExperimentTemplateExperimentOptionsInput
-<a name="API_CreateExperimentTemplateExperimentOptionsInput"></a>
 
 Specifies experiment options for an experiment template.
 

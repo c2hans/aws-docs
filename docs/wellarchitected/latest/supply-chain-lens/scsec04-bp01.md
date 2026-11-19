@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCSEC04-BP01 Implement least privilege access
-<a name="scsec04-bp01"></a>
 
  Least privilege access and separation of duties create critical security boundaries between different supply chain functions, helping to prevent a single individual from controlling an entire process that could compromise data integrity or operational security.
 

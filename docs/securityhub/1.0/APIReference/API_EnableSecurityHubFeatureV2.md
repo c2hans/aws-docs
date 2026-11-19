@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_EnableS
 ---
 
 # EnableSecurityHubFeatureV2
-<a name="API_EnableSecurityHubFeatureV2"></a>
 
 Enables an opt-in feature for the calling account in the current AWS Region. The service must be enabled before you can enable a feature. The operation is idempotent. If the feature is already enabled, no changes are made. You cannot enable a feature that is managed by an organization policy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/accessingmetrics.
 ---
 
 # Accessing CloudWatch metrics
-<a name="accessingmetrics"></a>
 
 You can access Amazon FSx for Lustre metrics for CloudWatch in the following ways:
 + The Amazon FSx for Lustre console.

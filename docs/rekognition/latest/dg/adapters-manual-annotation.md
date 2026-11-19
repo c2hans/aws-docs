@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/adapters-manual-an
 ---
 
 # Manual annotation
-<a name="adapters-manual-annotation"></a>
 
 With this approach, you create your training data by uploading and annotating images manually. You create your test data by either uploading and annotating test images or by auto-splitting to have Rekognition automatically use a portion of your training data as test images.
 

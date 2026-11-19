@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/color-space-cle
 ---
 
 # Step 2: Choose a clean-up scenario
-<a name="color-space-cleanup-scenarios"></a>
 
 Read the following scenarios to decide if you need to clean up the color space metadata in each input.
 

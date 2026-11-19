@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_Delet
 ---
 
 # DeleteBackupVaultLockConfiguration
-<a name="API_DeleteBackupVaultLockConfiguration"></a>
 
 Deletes AWS Backup Vault Lock from a backup vault specified by a backup vault name.
 

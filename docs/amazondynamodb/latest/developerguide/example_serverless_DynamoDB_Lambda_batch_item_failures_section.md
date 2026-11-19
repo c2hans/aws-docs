@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/exa
 ---
 
 # Reporting batch item failures for Lambda functions with a DynamoDB trigger
-<a name="example_serverless_DynamoDB_Lambda_batch_item_failures_section"></a>
 
 The following code examples show how to implement partial batch response for Lambda functions that receive events from a DynamoDB stream. The function reports the batch item failures in the response, signaling to Lambda to retry those messages later.
 

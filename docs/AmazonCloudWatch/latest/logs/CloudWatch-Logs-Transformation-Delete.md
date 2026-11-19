@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-
 ---
 
 # Delete a log-group-level transformer
-<a name="CloudWatch-Logs-Transformation-Delete"></a>
 
 Use these steps to delete a log transformer.
 

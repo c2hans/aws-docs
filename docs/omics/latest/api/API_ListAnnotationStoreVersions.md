@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListAnnotationStore
 ---
 
 # ListAnnotationStoreVersions
-<a name="API_ListAnnotationStoreVersions"></a>
 
  Lists the versions of an annotation store.
 

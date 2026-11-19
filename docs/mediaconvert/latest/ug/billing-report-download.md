@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/billing-report-do
 ---
 
 # Downloading the MediaConvert billing report
-<a name="billing-report-download"></a>
 
 You can download a billing report as a comma-separated values (CSV) file. In addition to costs, the report also shows the total number of Normalized Transcoding Minutes for your jobs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/step-functions/latest/dg/run-multiple-qu
 ---
 
 # Execute queries in sequence and parallel using Athena
-<a name="run-multiple-queries"></a>
 
 This sample project demonstrates how to run Athena queries in succession and then in parallel, handle errors and then send an Amazon SNS notification based on whether the queries succeed or fail.
 

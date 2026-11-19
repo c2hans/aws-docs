@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Runtime versions using Node.js
-<a name="CloudWatch_Synthetics_Library_Nodejs"></a>
 
 The following section contains information about the CloudWatch Synthetics runtime versions for Node.js. This runtime does not have any browser or framework included.
 

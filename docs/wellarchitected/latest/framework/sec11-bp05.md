@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec11-b
 ---
 
 # SEC11-BP05 Conduct code reviews
-<a name="sec11-bp05"></a>
 
  In a code review, a team member other than the author reads the code delta to find defects, vulnerabilities, and departures from your standards. Reviews spread knowledge across the team and help less experienced developers learn. Automated tools handle mechanical checks so reviewers concentrate on logic and design.
 

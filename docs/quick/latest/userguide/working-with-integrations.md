@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/working-with-inte
 ---
 
 # Work with integrations in AWS Quick
-<a name="working-with-integrations"></a>
 
 Integrations in AWS Quick connect you to external applications and services for AI-powered analysis and automation. With integrations, you can perform actions in external applications and bring data from external applications to enhance your AI agents and chat experiences.
 

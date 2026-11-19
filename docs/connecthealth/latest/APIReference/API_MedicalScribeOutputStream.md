@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalScribeOutputStream
-<a name="API_MedicalScribeOutputStream"></a>
 
 The output stream of a listening session. It carries transcript events, periodontal chart events, checklist events, and errors.
 

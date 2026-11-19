@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/associate
 ---
 
 # Associate or disassociate Direct Connect virtual private gateways
-<a name="associate-vgw-with-direct-connect-gateway"></a>
 
 You can associate or disassociate a virtual private gateway and Direct Connect gateway using either the Direct Connect console or using the command line or API. The account owner of the virtual private gateway performs these operations.
 

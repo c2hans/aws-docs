@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry-perm
 ---
 
 # Private registry policy examples for Amazon ECR
-<a name="registry-permissions-examples"></a>
 
 The following examples show registry permissions policy statements that you could use to control the permissions that users have to your Amazon ECR registry.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/prebid-server-deploymen
 ---
 
 # Accessing Prebid Server logs from EFS
-<a name="accessing-prebid-server-logs-from-efs"></a>
 
 The following procedure describes how to access Prebid Server logs from EFS.
 

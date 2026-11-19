@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_Descri
 ---
 
 # DescribePullThroughCacheRules
-<a name="API_DescribePullThroughCacheRules"></a>
 
 Returns the pull through cache rules for a registry.
 

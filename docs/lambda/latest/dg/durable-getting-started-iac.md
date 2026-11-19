@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/durable-getting-started
 ---
 
 # Deploy Lambda durable functions with Infrastructure as Code
-<a name="durable-getting-started-iac"></a>
 
 You can deploy Lambda durable functions using Infrastructure as Code (IaC) tools like AWS CloudFormation, AWS CDK, AWS Serverless Application Model, or Terraform. These tools let you define your function, execution role, and permissions in code, making deployments repeatable and version-controlled.
 

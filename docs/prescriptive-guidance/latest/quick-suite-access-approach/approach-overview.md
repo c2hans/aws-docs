@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/quick-suite
 ---
 
 # Overview of the approaches
-<a name="approach-overview"></a>
 
 While there are many different approaches that can be used to manage access to AWS Quick, the recommended approach is to use [AWS IAM Identity Center integration](https://aws.amazon.com/blogs/business-intelligence/simplify-business-intelligence-identity-management-with-amazon-quicksight-and-aws-iam-identity-center/). In some cases, a different approach may be considered if you have specific requirements that are discussed further in this guide.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteQue
 ---
 
 # DeleteQueuedReservedInstances
-<a name="API_DeleteQueuedReservedInstances"></a>
 
 Deletes the queued purchases for the specified Reserved Instances.
 

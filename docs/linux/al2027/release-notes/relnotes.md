@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2027/release-notes/relnotes.html
 ---
 
 # Amazon Linux 2027 release notes
-<a name="relnotes"></a>
 
 This section contains release notes for Amazon Linux 2027 (AL2027).
 

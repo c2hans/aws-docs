@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_DescribeA
 ---
 
 # DescribeAggregateComplianceByConfigRules
-<a name="API_DescribeAggregateComplianceByConfigRules"></a>
 
 Returns a list of compliant and noncompliant rules with the number of resources for compliant and noncompliant rules. Does not display rules that do not have compliance results.
 

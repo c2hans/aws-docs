@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Access
 ---
 
 # AccessKeyDetails
-<a name="API_AccessKeyDetails"></a>
 
 Contains information about the access keys.
 

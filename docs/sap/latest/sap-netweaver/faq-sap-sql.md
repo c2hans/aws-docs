@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/faq-sap-sql.htm
 ---
 
 # FAQ
-<a name="faq-sap-sql"></a>
 
  **Q.** Can I use [Amazon RDS for SQL Server](https://aws.amazon.com/rds/sqlserver/) as a database to deploy SAP NetWeaver based applications?
 

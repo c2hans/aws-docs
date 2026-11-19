@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # PutMetricStream
-<a name="API_PutMetricStream"></a>
 
 Creates or updates a metric stream. Metric streams can automatically stream CloudWatch metrics to AWS destinations, including Amazon S3, and to many third-party solutions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/getting-sta
 ---
 
 # Tutorial: Getting started with AWS IoT Greengrass V2
-<a name="getting-started"></a>
 
 You can complete this getting started tutorial to learn the basic features of AWS IoT Greengrass V2. In this tutorial, you do the following:
 

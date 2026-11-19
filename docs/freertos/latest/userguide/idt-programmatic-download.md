@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/idt-programmat
 ---
 
 # Download IDT for FreeRTOS
-<a name="idt-programmatic-download"></a>
 
 This topic describes the options to download IDT for FreeRTOS. You can either use one of the following software download links or you can follow instructions to programmatically download IDT.
 

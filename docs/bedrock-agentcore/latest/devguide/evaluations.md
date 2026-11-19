@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evalua
 ---
 
 # Evaluate agent performance with Amazon Bedrock AgentCore Evaluations
-<a name="evaluations"></a>
 
 Amazon Bedrock AgentCore Evaluations provides automated assessment tools to measure how well your agent or tools perform specific tasks, handle edge cases, and maintain consistency across different inputs and contexts. The service enables data-driven optimization and ensures your agents meet quality standards before and after deployment.
 

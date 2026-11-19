@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/using-adapters-bes
 ---
 
 # Best practices for training adapters
-<a name="using-adapters-best-practices"></a>
 
 It's suggested you abide by the dollowing best practices when creating, training, and using your adapters:
 

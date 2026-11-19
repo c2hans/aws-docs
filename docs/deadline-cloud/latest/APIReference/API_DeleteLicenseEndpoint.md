@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_D
 ---
 
 # DeleteLicenseEndpoint
-<a name="API_DeleteLicenseEndpoint"></a>
 
 Deletes a license endpoint.
 

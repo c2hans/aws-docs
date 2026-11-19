@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/organizations/latest/APIReference/API_De
 ---
 
 # DeleteOrganization
-<a name="API_DeleteOrganization"></a>
 
 Deletes the organization. You can delete an organization only by using credentials from the management account. The organization must be empty of member accounts.
 

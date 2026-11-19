@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf04-
 ---
 
 # PERF04-BP02 Evaluate available networking features
-<a name="perf04-bp02"></a>
 
  The cloud exposes network features that reduce latency, shorten the distance traffic travels, and raise throughput. Not every feature helps every workload, and each one adds configuration or cost. When you evaluate features against measured requirements and confirm their impact through testing, you improve performance without adding complexity that does not pay off.
 

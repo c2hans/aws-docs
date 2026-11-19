@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 ---
 
 # Step 5: Test
-<a name="transform-vmware-ms-testing"></a>
 
 After data replication is complete, you can launch test instances to validate your migrated servers before performing the final cutover. For more information, see [Launch test instances](https://docs.aws.amazon.com/mgn/latest/ug/launch-test-instances.html) in the *MGN User Guide*. AWS Transform supports two testing options:
 + **Full wave testing** – Launch test instances for all servers in the wave.

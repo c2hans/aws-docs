@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/sample-docker.h
  AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
 
 # Docker tutorial for AWS Cloud9
-<a name="sample-docker"></a>
 
 This tutorial shows you how to connect an AWS Cloud9 SSH development environment to a running Docker container inside of an Amazon Linux instance in Amazon EC2. This enables you to use the AWS Cloud9 IDE to work with code and files inside of a Docker container and to run commands on that container. For information about Docker, see [What is Docker](https://www.docker.com/what-docker) on the Docker website.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/
 ---
 
 # UpdateEndpointAccess
-<a name="API_UpdateEndpointAccess"></a>
 
 Updates an Amazon Redshift Serverless managed endpoint.
 

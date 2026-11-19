@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-uploadin
 ---
 
 # Uploading your images to Amazon Elastic Container Registry
-<a name="ml-uploading-your-images"></a>
 
 After you create your inference and training images you can upload them to Amazon Elastic Container Registry. [Amazon ECR](https://aws.amazon.com/ecr/) is a fully managed Docker registry. Amazon SageMaker AI pulls images from Amazon ECR to create a model package for inference or an algorithm for training jobs. AWS Marketplace also retrieves these images from Amazon ECR to publish your model package and algorithm products. This topic provides a walkthrough for uploading your inference and training images to Amazon ECR
 

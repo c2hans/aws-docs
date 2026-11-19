@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/rerank-pricing.
 ---
 
 # Pricing and search units
-<a name="rerank-pricing"></a>
 
 Reranking is priced per query. A query is a single call to the reranker model that can contain up to 100 document chunks. The `SearchUnits` metric in Amazon CloudWatch represents the number of queries processed by the reranker model.
 

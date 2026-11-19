@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/run-greengr
 ---
 
 # Run AWS IoT Greengrass in a Docker container with automatic resource provisioning
-<a name="run-greengrass-docker-automatic-provisioning"></a>
 
 This tutorial shows you how to install and run AWS IoT Greengrass Core software in a Docker container with automatically provisioned AWS resources and local development tools. You can use this development environment to explore AWS IoT Greengrass features in a Docker container. The software requires AWS credentials to provision these resources and deploy the local development tools.
 

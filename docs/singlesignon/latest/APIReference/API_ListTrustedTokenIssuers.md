@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Lis
 ---
 
 # ListTrustedTokenIssuers
-<a name="API_ListTrustedTokenIssuers"></a>
 
 Lists all the trusted token issuers configured in an instance of IAM Identity Center.
 

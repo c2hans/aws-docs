@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Input
 ---
 
 # InputColumn
-<a name="API_InputColumn"></a>
 
 Metadata for a column that is used as the input of a transform operation.
 

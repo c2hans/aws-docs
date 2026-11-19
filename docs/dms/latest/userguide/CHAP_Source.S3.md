@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.S3.html
 ---
 
 # Using Amazon S3 as a source for AWS DMS
-<a name="CHAP_Source.S3"></a>
 
 You can migrate data from an Amazon S3 bucket using AWS DMS. To do this, provide access to an Amazon S3 bucket containing one or more data files. In that S3 bucket, include a JSON file that describes the mapping between the data and the database tables of the data in those files.
 

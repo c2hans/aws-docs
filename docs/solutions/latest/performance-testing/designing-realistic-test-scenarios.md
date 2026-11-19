@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/performance-testing/des
 ---
 
 # Designing Realistic Test Scenarios
-<a name="designing-realistic-test-scenarios"></a>
 
 A load test is only as useful as the traffic pattern it simulates. Testing with uniform request patterns against a single endpoint produces misleading results. Real users navigate flows, carry sessions, generate varied payloads, and arrive in unpredictable patterns.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-certifi
 ---
 
 # Certificate storage audit logs
-<a name="pkcs11-certificate-storage-audit-logs"></a>
 
  AWS CloudHSM writes audit logs for certificate storage operations that modify data to a separate Amazon CloudWatch Events log stream within your cluster's CloudWatch log group. This log stream is named for the cluster, not for a specific HSM within the cluster.
 

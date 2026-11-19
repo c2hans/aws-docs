@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/create-solution.ht
 ---
 
 # Creating a solution
-<a name="create-solution"></a>
 
 You can create a custom solution with the Amazon Personalize console, AWS Command Line Interface (AWS CLI), or AWS SDKs. The following includes detailed steps to create a solution with the Amazon Personalize console and code examples that show how to create a solution with only the required fields.
 

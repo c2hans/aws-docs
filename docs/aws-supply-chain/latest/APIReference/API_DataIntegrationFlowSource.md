@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationFlowSource
-<a name="API_DataIntegrationFlowSource"></a>
 
 The DataIntegrationFlow source parameters.
 

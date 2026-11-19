@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_mark
 ---
 
 # NetPaymentTerm
-<a name="API_marketplace-agreements_NetPaymentTerm"></a>
 
 Defines the net payment due period for the agreement, specifying when payment is due after an invoice is issued.
 

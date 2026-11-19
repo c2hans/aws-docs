@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Update
 ---
 
 # UpdatedExpressGatewayService
-<a name="API_UpdatedExpressGatewayService"></a>
 
 An object that describes an Express service to be updated.
 

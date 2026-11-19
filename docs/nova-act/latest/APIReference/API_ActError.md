@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova-act/latest/APIReference/API_ActErro
 ---
 
 # ActError
-<a name="API_ActError"></a>
 
 Error information when an act fails to execute successfully.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/specify-wkgroup-to-athe
 ---
 
 # Specify a workgroup for queries
-<a name="specify-wkgroup-to-athena-in-which-to-run-queries"></a>
 
 To specify a workgroup to use, you must have permissions to the workgroup.
 

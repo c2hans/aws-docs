@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-fine-grai
 ---
 
 # IAM policies for tag-based access to clusters and EMR notebooks
-<a name="emr-fine-grained-cluster-access"></a>
 
 You can use conditions in your identity-based policy to control access to clusters and EMR notebooks based on tags.
 

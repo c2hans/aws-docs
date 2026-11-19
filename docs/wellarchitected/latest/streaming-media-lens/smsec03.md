@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # Forensics
-<a name="smsec03"></a>
 
 When content is distributed without consent, forensic controls help trace leaked material back to its source. This covers watermarking and session-level traceability.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-upgrad
 ---
 
 # Features and Capabilities
-<a name="emr-spark-upgrade-agent-features"></a>
 
 ## Supported Technologies
 <a name="emr-spark-upgrade-agent-supported-technologies"></a>

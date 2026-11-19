@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI
 ---
 
 # Working with Global Secondary Indexes: Java
-<a name="GSIJavaDocumentAPI"></a>
 
 You can use the AWS SDK for Java Document API to create an Amazon DynamoDB table with one or more global secondary indexes, describe the indexes on the table, and perform queries using the indexes.
 

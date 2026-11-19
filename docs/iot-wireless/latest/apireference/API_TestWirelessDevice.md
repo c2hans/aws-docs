@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Tes
 ---
 
 # TestWirelessDevice
-<a name="API_TestWirelessDevice"></a>
 
 Simulates a provisioned device by sending an uplink data payload of `Hello`.
 

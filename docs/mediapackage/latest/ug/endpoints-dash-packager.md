@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/endpoints-dash-pa
 ---
 
 # Packager settings fields
-<a name="endpoints-dash-packager"></a>
 
 1. For **Packaging type**, choose **DASH-ISO**.
 

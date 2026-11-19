@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/APIReference/API_Backup.
 ---
 
 # Backup
-<a name="API_Backup"></a>
 
 Contains information about a backup of an AWS CloudHSM cluster. All backup objects contain the `BackupId`, `BackupState`, `ClusterId`, and `CreateTimestamp` parameters. Backups that were copied into a destination region additionally contain the `CopyTimestamp`, `SourceBackup`, `SourceCluster`, and `SourceRegion` parameters. A backup that is pending deletion will include the `DeleteTimestamp` parameter.
 

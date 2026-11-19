@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # Refine your use case
-<a name="raiuc03"></a>
 
 | RAIUC03: How will you refine your use case understanding without detailing the technical solution? |
 | --- |

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Adds the specified tags to the specified resource. The following resources support tagging in License Manager:
 + Licenses

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Lambd
 ---
 
 # Enable Lambda Insights on a Lambda container image deployment
-<a name="Lambda-Insights-Getting-Started-docker"></a>
 
 To enable Lambda Insights on a Lambda function that is deployed as a container image, add lines in your Dockerfile. These lines install the Lambda Insights agent as an extension in your container image. The lines to add are different for x86-64 containers and ARM64 containers.
 

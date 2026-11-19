@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/portingguide/porting-dow
 ---
 
 # Downloading FreeRTOS for Porting
-<a name="porting-download"></a>
 
 Download the latest FreeRTOS or Long Term Support (LTS) version from [freertos.org](https://www.freertos.org/a00104.html) or clone from GitHub ( [FreeRTOS-LTS](https://github.com/FreeRTOS/FreeRTOS-LTS)) or ([FreeRTOS](https://github.com/FreeRTOS/FreeRTOS)).
 

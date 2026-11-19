@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/c2pa-manifest-str
 ---
 
 # C2PA manifest structure
-<a name="c2pa-manifest-structure"></a>
 
 When you embed a C2PA manifest in your MP4 output, MediaConvert generates a manifest with the following components:
 

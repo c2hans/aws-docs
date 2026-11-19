@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/add_c
 ---
 
 # Sample custom widgets for a CloudWatch dashboard
-<a name="add_custom_widget_samples"></a>
 
 AWS provides sample custom widgets in both JavaScript and Python. You can create these sample widgets by using the link for each widget in this list. Alternatively, you can create and customize a widget by using the CloudWatch console. The links in this list open an AWS CloudFormation console and use an CloudFormation quick-create link to create the custom widget.
 

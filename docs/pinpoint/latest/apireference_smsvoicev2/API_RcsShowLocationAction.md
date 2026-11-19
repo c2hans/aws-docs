@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # RcsShowLocationAction
-<a name="API_RcsShowLocationAction"></a>
 
 A suggested action that shows a location on a map when tapped by the recipient.
 

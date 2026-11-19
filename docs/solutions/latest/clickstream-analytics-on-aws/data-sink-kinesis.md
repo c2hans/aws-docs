@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Data sink – Kinesis
-<a name="data-sink-kinesis"></a>
 
  This data sink will stream the clickstream data collected by the ingestion endpoint into KDS. The guidance will create a KDS in your AWS account based on your specifications.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Instanc
 ---
 
 # InstanceReusePolicy
-<a name="API_InstanceReusePolicy"></a>
 
 Describes an instance reuse policy for a warm pool.
 

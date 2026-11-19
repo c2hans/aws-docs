@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/restoring-efs
 ---
 
 # Restore an Amazon EFS file system
-<a name="restoring-efs"></a>
 
 If you are restoring an Amazon Elastic File System (Amazon EFS) instance, you can perform a full restore or an item-level restore.
 

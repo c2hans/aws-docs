@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/tnb/latest/APIReference/API_ValidateSolN
 ---
 
 # ValidateSolNetworkPackageContentMetadata
-<a name="API_ValidateSolNetworkPackageContentMetadata"></a>
 
 Validates network package content metadata.
 

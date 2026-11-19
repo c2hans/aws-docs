@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/APIReference/API_CreateAggreg
 ---
 
 # CreateAggregateConfiguration
-<a name="API_CreateAggregateConfiguration"></a>
 
 Used to specify the configuration options for an FSx for ONTAP volume's storage aggregate or aggregates.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/data-api/API_GetPropertyg
 ---
 
 # GetPropertygraphStatistics
-<a name="API_GetPropertygraphStatistics"></a>
 
 Gets property graph statistics (Gremlin and openCypher).
 

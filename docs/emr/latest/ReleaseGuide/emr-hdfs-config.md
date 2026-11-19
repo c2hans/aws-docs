@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hdfs-config.
 ---
 
 # HDFS configuration
-<a name="emr-hdfs-config"></a>
 
 The following table describes the default Hadoop Distributed File System (HDFS) parameters and their settings. You can change these values using the `hdfs-site` configuration classification. For more information, see [Configure applications](emr-configure-apps.md).
 

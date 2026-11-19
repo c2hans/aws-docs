@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # AgentProfileSummary
-<a name="API_AgentProfileSummary"></a>
 
 Summary of an optimization profile, including its configuration, metadata, and audit information.
 

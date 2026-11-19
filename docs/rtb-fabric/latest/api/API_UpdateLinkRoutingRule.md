@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_UpdateLinkRout
 ---
 
 # UpdateLinkRoutingRule
-<a name="API_UpdateLinkRoutingRule"></a>
 
 Updates a routing rule for a link.
 

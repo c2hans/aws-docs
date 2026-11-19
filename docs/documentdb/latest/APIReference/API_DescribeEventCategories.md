@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Descr
 ---
 
 # DescribeEventCategories
-<a name="API_DescribeEventCategories"></a>
 
 Displays a list of categories for all event source types, or, if specified, for a specified source type.
 

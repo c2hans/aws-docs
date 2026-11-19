@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/neo-getting-started-
 ---
 
 # Compile the Model
-<a name="neo-getting-started-edge-step1"></a>
 
 Once you have satisfied the [Prerequisites](https://docs.aws.amazon.com/sagemaker/latest/dg/neo-getting-started-edge.html#neo-getting-started-edge-step0), you can compile your model with Amazon SageMaker AI Neo. You can compile your model using the AWS CLI, the console or the [Amazon Web Services SDK for Python (Boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html), see [Use Neo to Compile a Model](https://docs.aws.amazon.com/sagemaker/latest/dg/neo-job-compilation.html). In this example, you will compile your model with Boto3.
 

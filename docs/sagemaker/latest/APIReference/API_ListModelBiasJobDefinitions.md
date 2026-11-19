@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListMo
 ---
 
 # ListModelBiasJobDefinitions
-<a name="API_ListModelBiasJobDefinitions"></a>
 
 Lists model bias jobs definitions that satisfy various filters.
 

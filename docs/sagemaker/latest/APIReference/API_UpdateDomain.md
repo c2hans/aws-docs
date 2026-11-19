@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Update
 ---
 
 # UpdateDomain
-<a name="API_UpdateDomain"></a>
 
 Updates the default settings for new user profiles in the domain.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # AssociateProfiles
-<a name="API_AssociateProfiles"></a>
 
 Associate a profile with a workload.
 

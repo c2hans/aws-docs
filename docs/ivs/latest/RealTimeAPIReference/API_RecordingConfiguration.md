@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_Reco
 ---
 
 # RecordingConfiguration
-<a name="API_RecordingConfiguration"></a>
 
 An object representing a configuration to record a stage stream.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-dynamod
 ---
 
 # Performing DynamoDB transactions in AWS AppSync
-<a name="tutorial-dynamodb-transact-js"></a>
 
 AWS AppSync supports using Amazon DynamoDB transaction operations across one or more tables in a single Region. Supported operations are `TransactGetItems` and `TransactWriteItems`. By using these features in AWS AppSync, you can perform tasks such as:
 + Passing a list of keys in a single query and returning the results from a table

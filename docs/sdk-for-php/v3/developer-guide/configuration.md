@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/configura
 ---
 
 # Configuration
-<a name="configuration"></a>
 
 S3 Transfer Manager accepts configuration options to customize its behavior. Provide these options when you create an instance of the transfer manager. The configuration parameter can be either an array or an instance of `S3TransferManagerConfig` {{<add link>}}.
 

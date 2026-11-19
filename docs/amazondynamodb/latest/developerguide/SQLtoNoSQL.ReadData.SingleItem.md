@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQL
 ---
 
 # Differences in reading an item using its primary key
-<a name="SQLtoNoSQL.ReadData.SingleItem"></a>
 
 One common access pattern for databases is to read a single item from a table. You have to specify the primary key of the item you want.
 

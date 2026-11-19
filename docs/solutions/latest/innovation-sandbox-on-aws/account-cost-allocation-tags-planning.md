@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Account cost allocation tags
-<a name="account-cost-allocation-tags-planning"></a>
 
 Innovation Sandbox on AWS applies AWS Organizations account tags to sandbox accounts throughout the lease lifecycle. It then activates these tags as cost allocation tags in AWS Billing and Cost Management. With these tags, you can analyze sandbox costs by lease, user, cost report group, lease template, and account state in AWS Cost Explorer, AWS Budgets, and Cost and Usage Reports. For an architectural description of this feature, see the [Account cost allocation tagging](account-cost-allocation-tagging.md) section.
 

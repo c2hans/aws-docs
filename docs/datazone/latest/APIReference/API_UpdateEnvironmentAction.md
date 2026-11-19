@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_UpdateE
 ---
 
 # UpdateEnvironmentAction
-<a name="API_UpdateEnvironmentAction"></a>
 
 Updates an environment action.
 

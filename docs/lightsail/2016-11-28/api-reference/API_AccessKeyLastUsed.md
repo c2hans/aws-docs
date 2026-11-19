@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_A
 ---
 
 # AccessKeyLastUsed
-<a name="API_AccessKeyLastUsed"></a>
 
 Describes the last time an access key was used.
 

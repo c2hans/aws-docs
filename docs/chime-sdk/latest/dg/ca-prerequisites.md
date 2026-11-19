@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/ca-prerequisites.htm
 ---
 
 # Understanding the Amazon Chime SDK call analytics prerequisites
-<a name="ca-prerequisites"></a>
 
 Before you create a call analytics configuration, you must have the following items. You can use the AWS console to create them:
 + An Amazon Chime SDK Voice Connector. If not, refer to [Creating Amazon Chime SDK Voice Connectors](https://docs.aws.amazon.com/chime-sdk/latest/ag/ca-prerequisites.html). You must also:

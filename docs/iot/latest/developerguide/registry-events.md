@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/registry-event
 ---
 
 # Registry events
-<a name="registry-events"></a>
 
 The registry can publish event messages when things, thing types, and thing groups are created, updated, or deleted. These events, however, are not available by default. For information about how to turn on these events, see [Enable events for AWS IoT](iot-events.md#iot-events-enable).
 

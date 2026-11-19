@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraM
 ---
 
 # Monitoring backtracking for an Aurora MySQL DB cluster
-<a name="AuroraMySQL.Managing.Backtrack.Monitoring"></a>
 
 You can view backtracking information and monitor backtracking metrics for a DB cluster.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeD
 ---
 
 # Automatic minor version upgrades for RDS for MariaDB
-<a name="USER_UpgradeDBInstance.MariaDB.Minor"></a>
 
 If you specify the following settings when creating or modifying a DB instance, you can have your DB instance automatically upgraded.
 + The **Auto minor version upgrade** setting is enabled.

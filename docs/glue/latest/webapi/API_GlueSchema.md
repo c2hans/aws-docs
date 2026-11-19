@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GlueSchema.html
 ---
 
 # GlueSchema
-<a name="API_GlueSchema"></a>
 
 Specifies a user-defined schema when a schema cannot be determined by AWS Glue.
 

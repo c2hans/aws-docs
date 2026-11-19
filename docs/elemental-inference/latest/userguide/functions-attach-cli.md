@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Attaching a function using the CLI
-<a name="functions-attach-cli"></a>
 
 The `outputs` array that you send to `update-feed` replaces the feed's existing outputs. Call `get-feed` first, and resend every output that you want to keep.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/share
 ---
 
 # Reviewing shared CloudWatch dashboard permissions and changing permission scope
-<a name="share-cloudwatch-dashboard-review-permissions"></a>
 
 Use the steps in this section if you want to review the permissions of the users of your shared dashboards, or change the scope of shared dashboard permissions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-list.html
 ---
 
 # Search certificates managed by AWS Certificate Manager
-<a name="gs-acm-list"></a>
 
 With the ACM console or AWS CLI, you can search for certificates in your account. The [SearchCertificates](https://docs.aws.amazon.com/acm/latest/APIReference/API_SearchCertificates.html) operation provides advanced filtering capabilities. You can filter certificates by ARN, X.509 attributes, and ACM specific properties like certificate status, type and renewal eligibility. You can also combine filters with AND, OR, and NOT logical operators.
 

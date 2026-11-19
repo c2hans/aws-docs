@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX
 ---
 
 # Managing DAX clusters
-<a name="DAX.cluster-management"></a>
 
 This section addresses some of the common management tasks for Amazon DynamoDB Accelerator (DAX) clusters.
 

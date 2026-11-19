@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/APIReference/API_AppBl
 ---
 
 # AppBlock
-<a name="API_AppBlock"></a>
 
 Describes an app block.
 

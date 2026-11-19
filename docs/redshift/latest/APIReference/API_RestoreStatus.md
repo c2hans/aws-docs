@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Restore
 ---
 
 # RestoreStatus
-<a name="API_RestoreStatus"></a>
 
 Describes the status of a cluster restore action. Returns null if the cluster was not created by restoring a snapshot.
 

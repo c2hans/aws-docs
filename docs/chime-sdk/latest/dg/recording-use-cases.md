@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/recording-use-cases.
 ---
 
 # Sample use cases
-<a name="recording-use-cases"></a>
 
 SIP media applications provide call recording actions as building blocks. They give you the flexibility to build call-recording solutions for your business use cases. The following cases illustrate some common usage scenarios.
 

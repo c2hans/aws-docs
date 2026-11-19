@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/camp.html
 ---
 
 # .camp
-<a name="camp"></a>
 
 Used by parks and recreation departments, summer camps, writers' workshops, fitness camps, and camping enthusiasts.
 

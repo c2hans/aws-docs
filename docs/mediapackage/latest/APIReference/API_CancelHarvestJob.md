@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/APIReference/API_Can
 ---
 
 # CancelHarvestJob
-<a name="API_CancelHarvestJob"></a>
 
 Cancels an in-progress harvest job.
 

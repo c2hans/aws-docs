@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/media-stream-remo
 ---
 
 # Removing a media stream
-<a name="media-stream-remove"></a>
 
 You can remove a media stream from a flow if the flow is not active and if the media stream is not associated with a source or any outputs.
 

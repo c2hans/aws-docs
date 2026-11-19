@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # CostCategoryReference
-<a name="API_CostCategoryReference"></a>
 
 A reference to a cost category containing only enough information to identify the Cost Category.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/MemoryAPIRefer
 ---
 
 # SearchEvents
-<a name="API_SearchEvents"></a>
 
 Searches a space's events by relevance. It works like `SearchMemories` without the memory type and strategy selector. The query is a subset of the OpenSearch Query DSL. The service validates it, limits the search to the actor in `actorId` and the sessions in `sessionIds`, and returns ranked results. Each result is the matching chunk of an event, not the whole event. You can page through only a limited number of results. A request past that limit fails with `ValidationException` (reason `invalidNextToken`), and the message gives the limit.
 

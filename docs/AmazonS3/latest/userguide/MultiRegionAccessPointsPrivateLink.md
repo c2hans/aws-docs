@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/MultiRegionAcc
 ---
 
 # Configuring a Multi-Region Access Point for use with AWS PrivateLink
-<a name="MultiRegionAccessPointsPrivateLink"></a>
 
  AWS PrivateLink provides you with private connectivity to Amazon S3 using private IP addresses in your virtual private cloud (VPC). You can provision one or more interface endpoints inside your VPC to connect to Amazon S3 Multi-Region Access Points.
 

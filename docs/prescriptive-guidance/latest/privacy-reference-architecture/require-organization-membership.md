@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/privacy-ref
 ---
 
 # Require organization membership to access VPC resources
-<a name="require-organization-membership"></a>
 
 **Note**
 We would love to hear from you. Please provide feedback on the AWS PRA by taking a [short survey](https://amazonmr.au1.qualtrics.com/jfe/form/SV_cMxJ0MG3jU91Fk2).

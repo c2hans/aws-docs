@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2I
 ---
 
 # AwsEc2InstanceMonitoringDetails
-<a name="API_AwsEc2InstanceMonitoringDetails"></a>
 
  The type of monitoring that’s turned on for an Amazon EC2 instance.
 

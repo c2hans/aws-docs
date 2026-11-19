@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/getting-started-q
 ---
 
 # Getting started
-<a name="getting-started-quick-automate"></a>
 
 AWS Quick Automate is a browser-based solution that requires no installation, has minimal IT dependencies, and is always up to date. AWS Quick Automate is designed for **technical teams and power users** who build, test, and maintain intelligent automations across enterprise systems. These users typically have a strong understanding of business processes, system integrations, but may not necessarily be software developers. AWS Quick Automate equips advanced users and technical teams with the flexibility, control, and depth needed to design and scale enterprise-grade automations. To get started with AWS Quick Automate, simply access it through your AWS Quick and begin exploring the automation capabilities that best fit your needs.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/associate-faces.ht
 ---
 
 # Associating faces to a user
-<a name="associate-faces"></a>
 
 You can use the [AssociateFaces](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_AssociatingFaces.html) operation to associate multiple individual faces with a single user. In order to associate a face with a user, you must first create a collection and a user. Note that the face vectors must reside in the same collection where the user vector resides.
 

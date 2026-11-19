@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/network-orchestration-a
 ---
 
 # Update the Guidance
-<a name="update-the-guidance"></a>
 
 If you have previously deployed the Guidance, follow these procedures to update the stacks to get the latest version of the framework.
 

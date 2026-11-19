@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/inter-network-privac
 ---
 
 # Internetwork Traffic Privacy
-<a name="inter-network-privacy"></a>
 
 This topic describes how Amazon SageMaker AI secures connections from the service to other locations.
 

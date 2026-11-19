@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/WindowsGuide/fsrm-file-classi
 ---
 
 # File Classification
-<a name="fsrm-file-classification"></a>
 
 File classification automatically assigns metadata properties to files based on their content, location, or other attributes. Classification helps you organize files, enforce data management policies, and meet compliance requirements by identifying files that contain sensitive information, belong to specific business categories, or require retention periods.
 

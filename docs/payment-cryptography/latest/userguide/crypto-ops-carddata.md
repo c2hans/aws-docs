@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/cr
 ---
 
 # Generate and verify card data
-<a name="crypto-ops-carddata"></a>
 
 Generate and verify card data incorporates data derived from card data, for instance CVV, CVV2, CVC and DCVV.
 

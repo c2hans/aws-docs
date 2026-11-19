@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reserva
 ---
 
 # Capacity Reservations in Local Zones
-<a name="capacity-reservations-localzones"></a>
 
 A Local Zone is an extension of an AWS Region that is geographically close to your users. Resources created in a Local Zone can serve local users with very low-latency communications. For more information, see [AWS Local Zones](https://aws.amazon.com/about-aws/global-infrastructure/localzones/).
 

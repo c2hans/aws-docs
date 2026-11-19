@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/ri-inve
 ---
 
 # Viewing your Reserved Instances inventory
-<a name="ri-inventory"></a>
 
 The Reserved Instances **Inventory** page shows a detailed overview of the Reserved Instances that you own.
 

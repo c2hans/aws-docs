@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Warning
 ---
 
 # Warning
-<a name="API_Warning"></a>
 
 A warning about an issue that occurred during asynchronous text analysis ([StartDocumentAnalysis](API_StartDocumentAnalysis.md)) or asynchronous document text detection ([StartDocumentTextDetection](API_StartDocumentTextDetection.md)).
 

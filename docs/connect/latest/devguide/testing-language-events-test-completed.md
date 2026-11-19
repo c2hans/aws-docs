@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/testing-language
 ---
 
 # Test completed
-<a name="testing-language-events-test-completed"></a>
 
 Triggered when the test execution ends. This event is observed when the test is terminated.
 

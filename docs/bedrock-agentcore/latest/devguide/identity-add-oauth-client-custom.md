@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identi
 ---
 
 # Add OAuth client using custom provider
-<a name="identity-add-oauth-client-custom"></a>
 
 Custom providers enable you to connect to any OAuth2-compatible resource server beyond the built-in provider options. You can configure custom providers by having the system retrieve configuration details automatically, or by providing the server information manually.
 

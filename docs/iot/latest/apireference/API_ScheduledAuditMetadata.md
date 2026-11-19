@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ScheduledAud
 ---
 
 # ScheduledAuditMetadata
-<a name="API_ScheduledAuditMetadata"></a>
 
 Information about the scheduled audit.
 

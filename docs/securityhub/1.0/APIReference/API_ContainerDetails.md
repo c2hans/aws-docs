@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Contain
 ---
 
 # ContainerDetails
-<a name="API_ContainerDetails"></a>
 
 Container details related to a finding.
 

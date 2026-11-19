@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/tensorflow-
 ---
 
 # TensorFlow Lite object detection model store
-<a name="tensorflow-lite-object-detection-model-store-component"></a>
 
 The TensorFlow Lite object detection model store (`variant.TensorFlowLite.ObjectDetection.ModelStore`) is a machine learning model component that contains a pre-trained Single Shot Detection (SSD) MobileNet model as a Greengrass artifact. The sample model used in this component is fetched from the [TensorFlow Hub](https://tfhub.dev/) and implemented using [TensorFlow Lite](https://www.tensorflow.org/lite/guide/python).
 

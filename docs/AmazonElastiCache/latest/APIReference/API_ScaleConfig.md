@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # ScaleConfig
-<a name="API_ScaleConfig"></a>
 
 Configuration settings for horizontal or vertical scaling operations on Memcached clusters.
 

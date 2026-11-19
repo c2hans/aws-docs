@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-update-e
 ---
 
 # Updating your EULA
-<a name="ml-update-eula"></a>
 
 1.  Sign in to your seller account in the [AWS Partner Central](https://us-east-1.console.aws.amazon.com/partnercentral/home).
 

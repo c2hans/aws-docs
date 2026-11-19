@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/datap
 AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
 
 # Related services
-<a name="datapipeline-related-services"></a>
 
 AWS Data Pipeline works with the following services to store data.
 + Amazon DynamoDB — Provides a fully managed NoSQL database with fast performance at a low cost. For more information, see *[Amazon DynamoDB Developer Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/)*.

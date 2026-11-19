@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/user-ba
 ---
 
 # Troubleshoot user-based subscriptions in License Manager
-<a name="user-based-subscriptions-troubleshoot"></a>
 
 The following are troubleshooting tips to help solve issues that can occur with user-based subscriptions in AWS License Manager.
 

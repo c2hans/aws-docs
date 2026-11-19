@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/comprehend/latest/dg/concepts-processing
 ---
 
 # Document processing modes
-<a name="concepts-processing-modes"></a>
 
 Amazon Comprehend supports three document processing modes. Your choice of mode depends on the number documents you need to process and how immediately you need to view the results:
 + **Single-document synchronous** – You call Amazon Comprehend with a single document and receive a synchronous response, delivered to your application (or the console) right away.

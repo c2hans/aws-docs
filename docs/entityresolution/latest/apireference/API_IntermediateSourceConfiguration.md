@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # IntermediateSourceConfiguration
-<a name="API_IntermediateSourceConfiguration"></a>
 
 The Amazon S3 location that temporarily stores your data while it processes. Your information won't be saved permanently.
 

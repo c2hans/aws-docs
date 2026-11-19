@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_To
 ---
 
 # ToolSpecification
-<a name="API_agent_ToolSpecification"></a>
 
 Contains a specification for a tool. For more information, see [Use a tool to complete an Amazon Bedrock model response](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html).
 

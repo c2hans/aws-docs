@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/pipes-reference/API_P
 ---
 
 # PipeTargetTimestreamParameters
-<a name="API_PipeTargetTimestreamParameters"></a>
 
 The parameters for using a Timestream for LiveAnalytics table as a target.
 

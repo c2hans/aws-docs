@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteUsagePla
 ---
 
 # DeleteUsagePlan
-<a name="API_DeleteUsagePlan"></a>
 
 Deletes a usage plan of a given plan Id.
 

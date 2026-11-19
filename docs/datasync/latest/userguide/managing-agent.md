@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/managing-agent
 ---
 
 # Managing your AWS DataSync agent
-<a name="managing-agent"></a>
 
 Once you [activate an AWS DataSync agent](activate-agent.md), AWS manages the virtual machine (VM) appliance for you.
 

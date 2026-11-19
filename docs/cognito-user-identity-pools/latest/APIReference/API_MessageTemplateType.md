@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # MessageTemplateType
-<a name="API_MessageTemplateType"></a>
 
 The message template structure.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_Dele
 ---
 
 # DeleteConfiguredTable
-<a name="API_DeleteConfiguredTable"></a>
 
 Deletes a configured table.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/insta
 ---
 
 # Install the CloudWatch agent on Azure
-<a name="install-CloudWatch-Agent-on-Azure"></a>
 
 You can run the Amazon CloudWatch agent on Azure to collect metrics, logs, and traces. The agent sends this telemetry to Amazon CloudWatch in your AWS account. This page covers two environments:
 + Azure Virtual Machines – You install the agent package directly on the machine.

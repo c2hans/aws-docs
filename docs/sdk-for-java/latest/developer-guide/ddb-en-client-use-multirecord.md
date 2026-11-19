@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/ddb-
 ---
 
 # Work with paginated results: scans and queries
-<a name="ddb-en-client-use-multirecord"></a>
 
 The `scan`, `query` and `batch` methods of the DynamoDB Enhanced Client API return responses with one or more *pages*. A page contains one or more items. Your code can process the response on per-page basis or it can process individual items.
 

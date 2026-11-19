@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Agentic AI patterns and workflows on AWS
-<a name="introduction"></a>
 
 *Aaron Sempf and Andrew Hooker, Amazon Web Services*
 

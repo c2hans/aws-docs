@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/b2bi/latest/APIReference/API_UpdateCapab
 ---
 
 # UpdateCapability
-<a name="API_UpdateCapability"></a>
 
 Updates some of the parameters for a capability, based on the specified parameters. A trading capability contains the information required to transform incoming EDI documents into JSON or XML outputs.
 

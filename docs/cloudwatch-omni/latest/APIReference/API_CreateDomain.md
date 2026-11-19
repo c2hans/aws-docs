@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch-omni/latest/APIReference/API_
 ---
 
 # CreateDomain
-<a name="API_CreateDomain"></a>
 
 Creates a domain with identity provider configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_Po
 ---
 
 # PostRollConfiguration
-<a name="API_PostRollConfiguration"></a>
 
 Configuration for the post-roll ad break to use for this ad configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/edit-forecast.
 ---
 
 # Edit a forecast in Connect Customer
-<a name="edit-forecast"></a>
 
 In the Connect Customer admin website, there are two ways you can edit a forecast at the queue channel level: you can make your edits directly in the user interface, or you can upload a CSV file that contains your edits.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Transform data and requests
-<a name="data-transforms"></a>
 
 Migration Assistant can transform metadata, field mappings, and captured request traffic during migration to make source behavior compatible with the target. Use this section when an upgrade path, target type, or source platform requires compatibility changes.
 +  [Transform type mappings](transform-type-mappings.md) - handle multi-type indexes from Elasticsearch 6.x and earlier.

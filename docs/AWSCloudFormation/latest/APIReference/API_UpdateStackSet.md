@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/AP
 ---
 
 # UpdateStackSet
-<a name="API_UpdateStackSet"></a>
 
 Updates the StackSet and associated stack instances in the specified accounts and AWS Regions.
 

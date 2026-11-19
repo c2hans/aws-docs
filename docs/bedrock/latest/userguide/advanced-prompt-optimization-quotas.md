@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompt
 ---
 
 # Supported Regions, models, and quotas
-<a name="advanced-prompt-optimization-quotas"></a>
 
 ## Supported Regions
 <a name="advanced-prompt-optimization-quotas-regions"></a>

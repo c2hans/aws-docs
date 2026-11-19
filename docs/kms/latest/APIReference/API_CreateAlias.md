@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateAlias.
 ---
 
 # CreateAlias
-<a name="API_CreateAlias"></a>
 
 Creates a friendly name for a KMS key.
 

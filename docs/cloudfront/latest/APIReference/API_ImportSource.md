@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Impor
 ---
 
 # ImportSource
-<a name="API_ImportSource"></a>
 
 The import source for the key value store.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/inter-task-coo
 ---
 
 # Intertask coordination
-<a name="inter-task-coordination"></a>
 
 This section contains information about FreeRTOS primitives.
 

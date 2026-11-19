@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/key_mgmt_util-
 ---
 
 # Exit the AWS CloudHSM KMU
-<a name="key_mgmt_util-exit"></a>
 
 Use the **exit** command in the AWS CloudHSM key\_mgmt\_util to exit the key\_mgmt\_util. Upon successful exit, you will be returned to your standard command line.
 

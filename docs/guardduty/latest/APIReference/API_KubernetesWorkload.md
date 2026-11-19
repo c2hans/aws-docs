@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Kubern
 ---
 
 # KubernetesWorkload
-<a name="API_KubernetesWorkload"></a>
 
 Contains information about Kubernetes workloads involved in a GuardDuty finding, including pods, deployments, and other Kubernetes resources.
 

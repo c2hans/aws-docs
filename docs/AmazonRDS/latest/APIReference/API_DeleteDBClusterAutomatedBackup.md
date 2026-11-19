@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Delete
 ---
 
 # DeleteDBClusterAutomatedBackup
-<a name="API_DeleteDBClusterAutomatedBackup"></a>
 
 Deletes automated backups using the `DbClusterResourceId` value of the source DB cluster or the Amazon Resource Name (ARN) of the automated backups.
 

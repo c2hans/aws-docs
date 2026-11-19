@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # MIDASEC05-BP03 Implement data authorization models
-<a name="midasec05-bp03"></a>
 
  Design and implement scalable data authorization frameworks using attribute-based or role-based access control (ABAC or RBAC) models.
 

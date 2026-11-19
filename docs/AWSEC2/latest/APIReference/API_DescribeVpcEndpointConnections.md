@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeV
 ---
 
 # DescribeVpcEndpointConnections
-<a name="API_DescribeVpcEndpointConnections"></a>
 
 Describes the VPC endpoint connections to your VPC endpoint services, including any endpoints that are pending your acceptance.
 

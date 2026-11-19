@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/APIReference/API_SqlConfig
 ---
 
 # SqlConfiguration
-<a name="API_SqlConfiguration"></a>
 
 Provides the configuration information to use a SQL database.
 

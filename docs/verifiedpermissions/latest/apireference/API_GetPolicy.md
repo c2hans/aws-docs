@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # GetPolicy
-<a name="API_GetPolicy"></a>
 
 Retrieves information about the specified policy.
 

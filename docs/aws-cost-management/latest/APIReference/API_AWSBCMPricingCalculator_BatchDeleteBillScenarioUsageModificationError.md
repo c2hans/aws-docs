@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchDeleteBillScenarioUsageModificationError
-<a name="API_AWSBCMPricingCalculator_BatchDeleteBillScenarioUsageModificationError"></a>
 
  Represents an error that occurred when deleting usage in a Bill Scenario.
 

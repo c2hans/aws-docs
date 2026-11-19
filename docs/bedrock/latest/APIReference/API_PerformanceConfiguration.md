@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Performa
 ---
 
 # PerformanceConfiguration
-<a name="API_PerformanceConfiguration"></a>
 
 Contains performance settings for a model.
 

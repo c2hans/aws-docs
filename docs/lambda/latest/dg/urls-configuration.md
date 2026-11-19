@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/urls-configuration.html
 ---
 
 # Creating and managing Lambda function URLs
-<a name="urls-configuration"></a>
 
 A function URL is a dedicated HTTP(S) endpoint for your Lambda Event Function. You can create and configure a function URL through the Lambda console or the Lambda API.
 
@@ -37,7 +36,7 @@ The following section show how to create and manage a function URL using the Lam
 + [Cross-origin resource sharing (CORS)](#urls-cors)
 + [Throttling function URLs](#urls-throttling)
 + [Deactivating function URLs](#urls-deactivating)
-+ [Deleting function URLs](#w2aac15c47c77c53)
++ [Deleting function URLs](#w2aac15c51c77c53)
 + [Control access to Lambda function URLs](urls-auth.md)
 + [Invoking Lambda function URLs](urls-invocation.md)
 + [Monitoring Lambda function URLs](urls-monitoring.md)
@@ -241,7 +240,7 @@ Whenever your function concurrency exceeds the reserved concurrency, your functi
 In an emergency, you might want to reject all traffic to your function URL. To deactivate your function URL, set the reserved concurrency to zero. This throttles all requests to your function URL, resulting in HTTP `429` status responses. To reactivate your function URL, delete the reserved concurrency configuration, or set the configuration to an amount greater than zero.
 
 ## Deleting function URLs
-<a name="w2aac15c47c77c53"></a>
+<a name="w2aac15c51c77c53"></a>
 
 When you delete a function URL, you can't recover it. Creating a new function URL results in a different URL address.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/polly/latest/dg/emphasis-tag.html
 ---
 
 # Emphasizing words
-<a name="emphasis-tag"></a>
 
 *<emphasis>*
 

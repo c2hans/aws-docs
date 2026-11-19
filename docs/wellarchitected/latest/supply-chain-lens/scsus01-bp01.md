@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 ---
 
 # SCSUS01-BP01 Optimize your visibility over the entire supply chain network
-<a name="scsus01-bp01"></a>
 
  Verify consistent visibility of your supply chain workloads across the entire supply chain network. The goal is to collect information on where workloads are running and how much resources they require to fulfill business needs. Reaching this level of visibility enables organizations to look for optimal AWS Regions, from both business efficiency and sustainability needs standpoint, where workloads can or should run to match service levels and sustainability targets.
 

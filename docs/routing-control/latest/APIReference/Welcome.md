@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/routing-control/latest/APIReference/Welc
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Welcome to the Routing Control (Recovery Cluster) API Reference Guide for Amazon Route 53 Application Recovery Controller.
 
@@ -19,4 +18,4 @@ For more information about working with routing control in Route 53 ARC, see the
 + Route 53 ARC also provides readiness checks that continually audit resources to help make sure that your applications are scaled and ready to handle failover traffic. For more information about the related API operations, see the [Recovery Readiness API Reference Guide for Amazon Route 53 Application Recovery Controller](https://docs.aws.amazon.com/recovery-readiness/latest/api/).
 + For more information about creating resilient applications and preparing for recovery readiness with Route 53 ARC, see the [Amazon Route 53 Application Recovery Controller Developer Guide](https://docs.aws.amazon.com/r53recovery/latest/dg/).
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

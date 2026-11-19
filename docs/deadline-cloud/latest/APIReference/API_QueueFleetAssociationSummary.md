@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_Q
 ---
 
 # QueueFleetAssociationSummary
-<a name="API_QueueFleetAssociationSummary"></a>
 
 The details of a queue-fleet association.
 

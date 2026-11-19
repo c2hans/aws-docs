@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/sdk-from-
 ---
 
 # Getting the AWS SDK for C\+\+ from a package manager
-<a name="sdk-from-pm"></a>
 
 **Important**
 If you are using a package manager like homebrew or vcpkg:

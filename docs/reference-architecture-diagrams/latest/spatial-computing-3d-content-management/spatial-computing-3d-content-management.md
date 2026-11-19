@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/s
 ---
 
 # Spatial Computing 3D Content Management
-<a name="spatial-computing-3d-content-management"></a>
 
 Publication date: **August 27, 2021 ([Diagram history](#sc3d-history))**
 

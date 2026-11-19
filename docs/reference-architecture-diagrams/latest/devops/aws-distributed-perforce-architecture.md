@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/d
 ---
 
 # Distributed Perforce architecture on AWS
-<a name="aws-distributed-perforce-architecture"></a>
 
 Publication date: **November 23, 2021 ([Diagram history](diagram-history.md))**
 

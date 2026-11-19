@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appin
 ---
 
 # Elastic Block Store (EBS)
-<a name="appinsights-metrics-ebs"></a>
 
 CloudWatch Application Insights supports the following metrics:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSF
 ---
 
 # AWSForWordPressPluginPolicy
-<a name="AWSForWordPressPluginPolicy"></a>
 
 **Description**: Managed policy for AWS For Wordpress Plugin
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/rds-multi-a
 ---
 
 # rds-multi-az-support
-<a name="rds-multi-az-support"></a>
 
 Checks whether high availability is enabled for your RDS DB instances.
 

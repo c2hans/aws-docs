@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 ---
 
 # Forecast and optimize
-<a name="forecast-and-optimize"></a>
 
 | MIDACOST01: How do you forecast and optimize cloud costs for manufacturing data workloads? |
 | --- |

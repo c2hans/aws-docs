@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_JiraClo
 ---
 
 # JiraCloudProviderConfiguration
-<a name="API_JiraCloudProviderConfiguration"></a>
 
 The initial configuration settings required to establish an integration between Security Hub and Jira Cloud.
 

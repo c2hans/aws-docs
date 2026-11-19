@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53p
 ---
 
 # UntagResource
-<a name="API_route53profiles_UntagResource"></a>
 
  Removes one or more tags from a specified resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Co
 ---
 
 # ControlSet
-<a name="API_ControlSet"></a>
 
  A set of controls in AWS Audit Manager.
 

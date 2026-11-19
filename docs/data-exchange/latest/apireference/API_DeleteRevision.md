@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_De
 ---
 
 # DeleteRevision
-<a name="API_DeleteRevision"></a>
 
 This operation deletes a revision.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/fun
 ---
 
 # Updating a function
-<a name="functions-managing-update"></a>
 
 `update-function` changes only the fields that you send, so you don't have to resend the whole function. You can't remove a response expression after you set it; replace it with another expression, or create a new function without one. In the console, open the function and choose **Edit**. In the following command, replace `{{function-id}}` with the ID of the function.
 

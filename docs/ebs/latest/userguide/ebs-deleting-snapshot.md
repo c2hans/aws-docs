@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/ebs-deleting-snapsh
 ---
 
 # Delete an Amazon EBS snapshot
-<a name="ebs-deleting-snapshot"></a>
 
 After you no longer need an Amazon EBS snapshot of a volume, you can delete it. Deleting a snapshot has no effect on the volume. Deleting a volume has no effect on the snapshots made from it.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Permi
 ---
 
 # Permission
-<a name="API_Permission"></a>
 
 A structure that contains the permission information for one principal against one flow.
 

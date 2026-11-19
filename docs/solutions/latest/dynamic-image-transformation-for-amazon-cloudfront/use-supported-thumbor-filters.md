@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transform
 ---
 
 # Use supported Thumbor filters
-<a name="use-supported-thumbor-filters"></a>
 
 This solution supports the Thumbor filters listed in this section, using API calls. To retrieve your API endpoint for the solution, refer [Use the solution with a frontend application](use-the-solution-with-a-frontend-application.md) for instructions.
 

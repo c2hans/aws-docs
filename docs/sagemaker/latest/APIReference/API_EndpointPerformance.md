@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Endpoi
 ---
 
 # EndpointPerformance
-<a name="API_EndpointPerformance"></a>
 
 The performance results from running an Inference Recommender job on an existing endpoint.
 

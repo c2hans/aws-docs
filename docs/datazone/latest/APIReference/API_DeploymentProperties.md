@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Deploym
 ---
 
 # DeploymentProperties
-<a name="API_DeploymentProperties"></a>
 
 The deployment properties of the Amazon DataZone blueprint.
 

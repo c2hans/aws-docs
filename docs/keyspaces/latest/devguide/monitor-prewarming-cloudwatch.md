@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/monitor-prewar
 ---
 
 # Monitor the performance of a pre-warmed table using Amazon CloudWatch
-<a name="monitor-prewarming-cloudwatch"></a>
 
 Amazon Keyspaces pre-warming doesn't introduce new CloudWatch metrics, but you can monitor the performance of pre-warmed tables using existing Amazon Keyspaces metrics:
 

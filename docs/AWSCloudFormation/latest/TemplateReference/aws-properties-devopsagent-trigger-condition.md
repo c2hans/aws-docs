@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::DevOpsAgent::Trigger Condition
-<a name="aws-properties-devopsagent-trigger-condition"></a>
 
 <a name="aws-properties-devopsagent-trigger-condition-description"></a>The `Condition` property type specifies Property description not available. for an [AWS::DevOpsAgent::Trigger](aws-resource-devopsagent-trigger.md).
 

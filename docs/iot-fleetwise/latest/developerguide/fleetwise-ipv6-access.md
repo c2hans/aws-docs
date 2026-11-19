@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/flee
 AWS IoT FleetWise is no longer open to new customers. Existing AWS IoT FleetWise customers can continue using the service. The [Guidance for Connected Mobility on AWS](https://aws.amazon.com/solutions/guidance/connected-mobility-on-aws/) provides guidance on how to develop and deploy modular services for connected mobility solutions that can be used to achieve equivalent capabilities as AWS IoT FleetWise.
 
 # Making requests to AWS IoT FleetWise using IPv6
-<a name="fleetwise-ipv6-access"></a>
 
 You can communicate with AWS IoT FleetWise over Internet Protocol version 6 (IPv6) and IPv4 to manage your resources. Dual-stack endpoints support requests to AWS IoT FleetWise APIs over IPv6 and IPv4. There are no additional charges for communication over IPv6.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # CloudWatchLogDestination
-<a name="API_osis_CloudWatchLogDestination"></a>
 
 The destination for OpenSearch Ingestion logs sent to Amazon CloudWatch.
 

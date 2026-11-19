@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ba
 ---
 
 # BatchGetThreats
-<a name="API_BatchGetThreats"></a>
 
 Retrieves information about one or more threats.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_CreateWorkflow.html
 ---
 
 # CreateWorkflow
-<a name="API_CreateWorkflow"></a>
 
 Creates a private workflow. Before you create a private workflow, you must create and configure these required resources:
 +  *Workflow definition file:* A workflow definition file written in WDL, Nextflow, or CWL. The workflow definition specifies the inputs and outputs for runs that use the workflow. It also includes specifications for the runs and run tasks for your workflow, including compute and memory requirements. The workflow definition file must be in `.zip` format. For more information, see [Workflow definition files](https://docs.aws.amazon.com/omics/latest/dev/workflow-definition-files.html) in AWS HealthOmics.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_CustomerPro
 ---
 
 # CustomerProfilesMetadata
-<a name="API_CustomerProfilesMetadata"></a>
 
  The connector metadata specific to Connect Customer Customer Profiles.
 

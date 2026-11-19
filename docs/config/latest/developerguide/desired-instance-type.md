@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/desired-ins
 ---
 
 # desired-instance-type
-<a name="desired-instance-type"></a>
 
 Checks if your EC2 instances are of a specific instance type. The rule is NON\_COMPLIANT if an EC2 instance is not specified in the parameter list. For a list of supported EC2 instance types, see Instance types in the EC2 User Guide for Linux Instances.
 

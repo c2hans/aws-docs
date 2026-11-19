@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/ug/ion-serde-using-search-
 ---
 
 # Use search paths in path extractors
-<a name="ion-serde-using-search-paths-in-path-extractors"></a>
 
 The SerDe property syntax for path extractor contains a {{<path\_extractor\_expression>}}:
 

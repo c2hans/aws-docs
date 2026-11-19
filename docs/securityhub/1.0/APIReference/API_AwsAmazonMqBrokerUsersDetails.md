@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsAmaz
 ---
 
 # AwsAmazonMqBrokerUsersDetails
-<a name="API_AwsAmazonMqBrokerUsersDetails"></a>
 
  Provides details about the broker usernames for the specified broker. Doesn't apply to RabbitMQ brokers.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/We
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## AWS Compute Optimizer
 <a name="Welcome_AWS_Compute_Optimizer"></a>

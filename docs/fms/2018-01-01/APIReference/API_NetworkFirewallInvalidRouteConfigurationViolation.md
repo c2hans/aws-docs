@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_NetworkF
 ---
 
 # NetworkFirewallInvalidRouteConfigurationViolation
-<a name="API_NetworkFirewallInvalidRouteConfigurationViolation"></a>
 
 Violation detail for the improperly configured subnet route. It's possible there is a missing route table route, or a configuration that causes traffic to cross an Availability Zone boundary.
 

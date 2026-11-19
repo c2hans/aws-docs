@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/bitsAllSet.ht
 ---
 
 # $bitsAllSet
-<a name="bitsAllSet"></a>
 
 The `$bitsAllSet` operator in Amazon DocumentDB is used to query for documents where a specific set of bits are all set to 1 in a field. This operator allows you to perform bitwise operations on field values and can be useful when you need to check the state of individual bits within a numeric value.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/observabilityadmin/API
 ---
 
 # ListS3TableIntegrations
-<a name="API_ListS3TableIntegrations"></a>
 
 Lists all S3 Table integrations in your account. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

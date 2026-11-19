@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_MoveAddre
 ---
 
 # MoveAddressToVpc
-<a name="API_MoveAddressToVpc"></a>
 
 **Note**
 This action is deprecated.

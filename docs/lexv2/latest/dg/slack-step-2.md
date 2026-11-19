@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/slack-step-2.html
 ---
 
 # Step 2: Create a Slack application
-<a name="slack-step-2"></a>
 
 In this section, you do the following:
 

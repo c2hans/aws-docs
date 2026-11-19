@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-e
 ---
 
 # Browsing, viewing, and editing SageMaker HyperPod clusters
-<a name="sagemaker-hyperpod-eks-operate-console-ui-browse-view-edit"></a>
 
 Use the following instructions to browse, view, and edit SageMaker HyperPod clusters orchestrated by Amazon EKS in the SageMaker AI console.
 

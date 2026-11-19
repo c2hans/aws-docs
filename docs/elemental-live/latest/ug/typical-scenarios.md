@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/typical-scenari
 ---
 
 # Typical scenarios
-<a name="typical-scenarios"></a>
 
 **Topics**
 + [Use case: One input format to one output and not converted](#use-case-one-input-format-to-one-output-format-not-converted)

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Use Contributor Insights to identify top locations and ISPs
-<a name="CloudWatch-IM-view-cw-tools-contributor-insights"></a>
 
 CloudWatch Contributor Insights can help you identify top client locations and ASNs (typically, internet service providers or ISPs) for your AWS application. Use the following sample Contributor Insights rules to get started with rules that are useful with Internet Monitor. For more information, see [Create a Contributor Insights rule in CloudWatch](ContributorInsights-CreateRule.md).
 

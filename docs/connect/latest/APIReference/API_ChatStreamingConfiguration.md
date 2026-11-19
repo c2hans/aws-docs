@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ChatStre
 ---
 
 # ChatStreamingConfiguration
-<a name="API_ChatStreamingConfiguration"></a>
 
 The streaming configuration, such as the Amazon SNS streaming endpoint.
 

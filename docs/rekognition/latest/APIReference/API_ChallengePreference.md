@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Chal
 ---
 
 # ChallengePreference
-<a name="API_ChallengePreference"></a>
 
 An ordered list of preferred challenge type and versions.
 

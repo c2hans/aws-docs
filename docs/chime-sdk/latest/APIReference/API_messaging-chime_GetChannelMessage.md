@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # GetChannelMessage
-<a name="API_messaging-chime_GetChannelMessage"></a>
 
 Gets the full details of a channel message.
 

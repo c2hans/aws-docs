@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_ListPro
 ---
 
 # ListProjects
-<a name="API_ListProjects"></a>
 
 Lists all of the DataBrew projects that are defined.
 

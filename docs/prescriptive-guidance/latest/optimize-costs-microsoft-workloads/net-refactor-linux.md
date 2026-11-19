@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/optimize-co
 ---
 
 # Refactor to modern .NET and move to Linux
-<a name="net-refactor-linux"></a>
 
 ## Overview
 <a name="net-refactor-linux-overview"></a>

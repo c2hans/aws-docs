@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/userguide/troubleshooting-log
 ---
 
 # Using the Log Files
-<a name="troubleshooting-logs"></a>
 
 Use the Amazon DCV client log files to identify and troubleshoot problems with your Amazon DCV client. Logs are enabled by default on Windows (since 2024.0), Linux and macOS clients. When using older Windows clients a log file must be provided (see [Enabling debug in log files](#debugging-log-files)).
 

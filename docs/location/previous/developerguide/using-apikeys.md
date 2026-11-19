@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/using-a
 ---
 
 # Allow unauthenticated guest access to your application using API keys
-<a name="using-apikeys"></a>
 
 When you call Amazon Location Service APIs in your applications, you typically make this call as an *authenticated user* who is authorized to make the API calls. However, there are some cases where you do not want to authenticate every user of your application. For example, you might want a web application that shows your business location to be available to anyone using the website, whether they are logged in or not. In this case, one alternative is to use API keys to make the API calls.
 

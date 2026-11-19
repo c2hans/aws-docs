@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/chatmsgapireference/actions-m
 ---
 
 # Message (Subscribe)
-<a name="actions-message-subscribe"></a>
 
 Messages from other clients that are sent to the room.
 

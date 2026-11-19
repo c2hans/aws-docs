@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PrimaryV
 ---
 
 # PrimaryValue
-<a name="API_PrimaryValue"></a>
 
 Represents a primary key value used to identify a specific record in a data table. Primary values are used in combination to create unique record identifiers when a table has multiple primary attributes.
 

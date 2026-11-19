@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_iotdeviceadv
 ---
 
 # SuiteRunConfiguration
-<a name="API_iotdeviceadvisor_SuiteRunConfiguration"></a>
 
 Gets suite run configuration.
 

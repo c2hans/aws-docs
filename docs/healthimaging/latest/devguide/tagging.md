@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/tagging.ht
 ---
 
 # Tagging resources with AWS HealthImaging
-<a name="tagging"></a>
 
 You can assign metadata to HealthImaging resources ([data stores](getting-started-concepts.md#concept-data-store) and [image sets](getting-started-concepts.md#concept-image-set)) in the form of tags. Each tag is a label consisting of a user-defined key and value. Tags help you manage, identify, organize, search for, and filter resources.
 

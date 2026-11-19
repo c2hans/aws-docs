@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # TestMigration
-<a name="API_TestMigration"></a>
 
  Async API to test connection between source and target replication group.
 

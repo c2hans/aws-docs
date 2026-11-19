@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/source-server-repli
 ---
 
 # AWS DRS replication settings
-<a name="source-server-replication-settings"></a>
 
 The **Replication settings** tab allows you to edit the replication settings for an individual source server. After the source server is added to AWS Elastic Disaster Recovery, the replication settings that are defined in the Replication Settings template are automatically applied to the server. You can later edit them for a single source server or multiple source servers through the **Replication settings** tab.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_ResponseTimeRootCaus
 ---
 
 # ResponseTimeRootCauseService
-<a name="API_ResponseTimeRootCauseService"></a>
 
 A collection of fields identifying the service in a response time warning.
 

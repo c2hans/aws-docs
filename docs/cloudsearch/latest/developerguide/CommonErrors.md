@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/Common
 ---
 
 # Common Errors
-<a name="CommonErrors"></a>
 
 This section lists the common errors that all actions return. Any action-specific errors are listed in the topic for the action.
 

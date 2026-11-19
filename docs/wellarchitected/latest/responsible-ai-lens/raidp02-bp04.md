@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 ---
 
 # RAIDP02-BP04 Validate the quality and reliability of augmented or synthetic datasets
-<a name="raidp02-bp04"></a>
 
  Assess the quality of model-generated labels and synthetic examples against human evaluation standards. Identify potential sources of unwanted bias in synthetic data generation. Validate that synthetic data maintains the statistical properties needed for your specific datasets and doesn't exclude important edge cases. Document the limitations of synthetic approaches and verify that synthetic examples can effectively substitute for real data in representing the phenomena you care about.
 

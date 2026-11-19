@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/evaluate-co
 ---
 
 # Creating AWS Config Custom Policy Rules
-<a name="evaluate-config_develop-rules_cfn-guard"></a>
 
 You can create AWS Config Custom Policy rules from the AWS Management Console, AWS CLI, or AWS Config API.
 

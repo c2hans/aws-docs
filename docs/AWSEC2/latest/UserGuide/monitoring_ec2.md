@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring_ec2.h
 ---
 
 # Monitor Amazon EC2 resources
-<a name="monitoring_ec2"></a>
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of your Amazon EC2 instances and your AWS solutions. You should collect monitoring data from all of the parts in your AWS solutions so that you can more easily debug a multi-point failure if one occurs.
 

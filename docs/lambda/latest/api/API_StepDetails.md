@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_StepDetails.html
 ---
 
 # StepDetails
-<a name="API_StepDetails"></a>
 
 Details about a step operation.
 

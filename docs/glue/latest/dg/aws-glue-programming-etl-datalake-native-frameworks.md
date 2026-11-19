@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-
 ---
 
 # Using data lake frameworks with AWS Glue ETL jobs
-<a name="aws-glue-programming-etl-datalake-native-frameworks"></a>
 
 Open-source data lake frameworks simplify incremental data processing for files that you store in data lakes built on Amazon S3. AWS Glue 3.0 and later supports the following open-source data lake frameworks:
 + Apache Hudi

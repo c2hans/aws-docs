@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/flow-control-act
 ---
 
 # CheckOutboundCallStatus
-<a name="flow-control-actions-checkoutboundcallstatus"></a>
 
 Engages with the output provided by an answering machine, and provides branches to route the contact accordingly.
 

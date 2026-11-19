@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/agent-
 ---
 
 # Select Amazon EC2 instance and reserve CPU cores for your architecture
-<a name="agent-instance-selection"></a>
 
 ## Supported Amazon EC2 instance types
 <a name="supported-ec2-instance-types"></a>

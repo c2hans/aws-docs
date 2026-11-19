@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Gatewa
 ---
 
 # GatewayConnectorHealthCheckMatcher
-<a name="API_GatewayConnectorHealthCheckMatcher"></a>
 
 The codes that indicate a successful health check response from a target.
 

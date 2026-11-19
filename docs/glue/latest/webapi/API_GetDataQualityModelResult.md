@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_GetDataQualityMod
 ---
 
 # GetDataQualityModelResult
-<a name="API_GetDataQualityModelResult"></a>
 
 Retrieve a statistic's predictions for a given Profile ID.
 

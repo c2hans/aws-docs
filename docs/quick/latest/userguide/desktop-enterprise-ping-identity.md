@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/desktop-enterpris
 ---
 
 # Set up enterprise sign-in with Ping Identity for AWS Quick on desktop
-<a name="desktop-enterprise-ping-identity"></a>
 
 |  |
 | --- |

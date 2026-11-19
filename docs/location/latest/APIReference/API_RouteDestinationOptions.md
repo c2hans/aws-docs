@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteDe
 ---
 
 # RouteDestinationOptions
-<a name="API_RouteDestinationOptions"></a>
 
 Options related to the destination.
 

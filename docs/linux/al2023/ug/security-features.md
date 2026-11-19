@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/security-features.html
 ---
 
 # Security updates and features
-<a name="security-features"></a>
 
 AL2023 provides many security updates and solutions.
 

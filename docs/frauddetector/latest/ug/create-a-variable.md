@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/create-a-variabl
 Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
 
 # Create a variable
-<a name="create-a-variable"></a>
 
 You can create variables in the Amazon Fraud Detector console, using the [create-variable](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/frauddetector/create-variable.html) command, using the [CreateVariable](https://docs.aws.amazon.com/frauddetector/latest/api/API_CreateVariable.html), or using the AWS SDK for Python (Boto3)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_Waypoin
 ---
 
 # UpdateTracker
-<a name="API_WaypointTracking_UpdateTracker"></a>
 
 Updates the specified properties of a given tracker resource.
 

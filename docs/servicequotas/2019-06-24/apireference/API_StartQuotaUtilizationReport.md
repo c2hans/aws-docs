@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/AP
 ---
 
 # StartQuotaUtilizationReport
-<a name="API_StartQuotaUtilizationReport"></a>
 
 Initiates the generation of a quota utilization report for your AWS account. This asynchronous operation analyzes your quota usage across all AWS services and returns a unique report identifier that you can use to retrieve the results.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/delete-application.html
 ---
 
 # Delete application
-<a name="delete-application"></a>
 
 To delete an application, choose **Delete**. When the **Delete application** prompt opens, verify that you want to delete the selected application.
 

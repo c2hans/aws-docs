@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudwatch/latest/APIReference/API_Descr
 ---
 
 # DescribeComponent
-<a name="API_DescribeComponent"></a>
 
 Describes a component and lists the resources that are grouped together in a component.
 

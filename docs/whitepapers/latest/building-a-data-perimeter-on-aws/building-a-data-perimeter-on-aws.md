@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-a-data-perim
 ---
 
 # Building a Data Perimeter on AWS
-<a name="building-a-data-perimeter-on-aws"></a>
 
 Publication date: **June 13, 2023** ([Document history](document-revisions.md))
 

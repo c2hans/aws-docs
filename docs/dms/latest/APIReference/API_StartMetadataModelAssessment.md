@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_StartMetadat
 ---
 
 # StartMetadataModelAssessment
-<a name="API_StartMetadataModelAssessment"></a>
 
 Queues an assessment of the selected source metadata models (database objects such as tables, views, and procedures) to evaluate conversion complexity to the target database format. If other requests created by `Start*` operations are already in the migration project's queue, the assessment begins after they complete.
 

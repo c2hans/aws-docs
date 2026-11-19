@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/apireference/API_Upda
 ---
 
 # UpdateLiveSource
-<a name="API_UpdateLiveSource"></a>
 
 Updates a live source's configuration.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/search
 ---
 
 # Searching and Ranking Results by Geographic Location in Amazon CloudSearch
-<a name="searching-locations"></a>
 
 If you store locations in your document data using a `latlon` field, you can use the `haversin` function in an Amazon CloudSearch expression to compute the distance between two locations. Storing locations with your document data also enables you to easily search within particular areas.
 

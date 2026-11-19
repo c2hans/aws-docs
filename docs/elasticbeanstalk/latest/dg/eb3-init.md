@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-init.html
 ---
 
 # **eb init**
-<a name="eb3-init"></a>
 
 ## Description
 <a name="eb3-initdescription"></a>

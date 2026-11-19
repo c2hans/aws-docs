@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_traini
 ---
 
 # SamplingParams
-<a name="API_training_session_runtime_SamplingParams"></a>
 
 The parameters controlling the text generation sampling strategy.
 

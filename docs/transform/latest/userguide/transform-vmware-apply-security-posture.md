@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 ---
 
 # Apply security posture to existing VPCs
-<a name="transform-vmware-apply-security-posture"></a>
 
 If you have already provisioned your AWS network outside of AWS Transform, you can automatically recreate your security rules on it. AWS Transform generates security groups from your migration plan data or your source firewall rules and associates them with your existing VPCs, which saves you time and improves accuracy and consistency compared to recreating the rules manually.
 

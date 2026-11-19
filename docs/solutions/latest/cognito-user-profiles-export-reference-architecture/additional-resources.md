@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cognito-user-profiles-e
 ---
 
 # Additional resources
-<a name="additional-resources"></a>
 
  **AWS services**
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/e
 ---
 
 # Traffic Segmentation Options in AWS Direct Connect
-<a name="traffic-segmentation-aws-direct-connect"></a>
 
 Publication date: **November 9, 2023 ([Diagram history](diagram-history.md))**
 

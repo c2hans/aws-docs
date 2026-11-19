@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDevelope
 ---
 
 # Configuring an Amazon SQS queue to trigger an AWS Lambda function
-<a name="sqs-configure-lambda-function-trigger"></a>
 
 You can use a Lambda function to process messages from an Amazon SQS queue. Lambda polls the queue and invokes your function synchronously, passing a batch of messages as an event.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/developerguide/preparing-secu
 ---
 
 # Preparing security
-<a name="preparing-security"></a>
 
 This section discusses the main security requirements for AWS IoT Device Management Software Package Catalog.
 

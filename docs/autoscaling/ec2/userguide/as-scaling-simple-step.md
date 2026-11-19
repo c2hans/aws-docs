@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-sim
 ---
 
 # Step and simple scaling policies for Amazon EC2 Auto Scaling
-<a name="as-scaling-simple-step"></a>
 
 Step scaling and simple scaling policies scale the capacity of your Auto Scaling group in predefined increments based on CloudWatch alarms. You can define separate scaling policies to handle scaling out (increasing capacity) and scaling in (decreasing capacity) when an alarm threshold is breached.
 

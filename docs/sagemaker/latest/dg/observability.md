@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/observability.html
 ---
 
 # Observability
-<a name="observability"></a>
 
 ## Standard Kubernetes Monitoring
 <a name="observability-monitor"></a>

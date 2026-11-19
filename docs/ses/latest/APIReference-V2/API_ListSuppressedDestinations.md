@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListSuppr
 ---
 
 # ListSuppressedDestinations
-<a name="API_ListSuppressedDestinations"></a>
 
 Retrieves a list of email addresses that are on the suppression list for your account or for a specific tenant. To target a tenant's suppression list, specify the `TenantName` parameter. If you omit `TenantName`, the operation targets the account-level suppression list.
 

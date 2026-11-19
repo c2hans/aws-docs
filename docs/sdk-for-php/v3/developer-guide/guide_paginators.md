@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/guide_pag
 ---
 
 # Using paginated results in theAWS SDK for PHP Version 3
-<a name="guide_paginators"></a>
 
 Some AWS service operations are paginated and respond with truncated results. For example, the Amazon S3`ListObjects` operation only returns up to 1,000 objects at a time. Operations like these (typically prefixed with “list” or “describe”) require making subsequent requests with token (or marker) parameters to retrieve the entire set of results.
 

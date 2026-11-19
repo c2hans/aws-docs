@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/mapping-field-
 ---
 
 # Field definitions in Customer Profiles object type mappings
-<a name="mapping-field-definitions"></a>
 
 An object type mapping has two parts: field definitions and key definitions. This topic covers field definitions. For keys, see [Key definitions in Customer Profiles object type mappings](mapping-key-definitions.md).
 

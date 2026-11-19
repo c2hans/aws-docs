@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Ima
 ---
 
 # ImageLoggingConfiguration
-<a name="API_ImageLoggingConfiguration"></a>
 
 The logging configuration that's defined for the image. Image Builder uses the defined settings to direct execution log output during image creation.
 

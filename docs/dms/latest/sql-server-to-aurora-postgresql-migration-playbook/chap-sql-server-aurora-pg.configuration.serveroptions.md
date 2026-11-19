@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgres
 ---
 
 # Configuring server options
-<a name="chap-sql-server-aurora-pg.configuration.serveroptions"></a>
 
 This topic provides reference information about parameter configuration in SQL Server and PostgreSQL, specifically in the context of migrating from SQL Server 2019 to Amazon Aurora PostgreSQL. You can understand the differences in how server-level settings and parameters are managed between these two database systems.
 

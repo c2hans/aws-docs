@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/AP
 ---
 
 # ExportEC2InstanceRecommendations
-<a name="API_ExportEC2InstanceRecommendations"></a>
 
 Exports optimization recommendations for Amazon EC2 instances.
 

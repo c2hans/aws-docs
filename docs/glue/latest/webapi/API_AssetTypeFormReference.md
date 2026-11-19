@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_AssetTypeFormRefe
 ---
 
 # AssetTypeFormReference
-<a name="API_AssetTypeFormReference"></a>
 
 A reference to a form type that is included in an asset type.
 

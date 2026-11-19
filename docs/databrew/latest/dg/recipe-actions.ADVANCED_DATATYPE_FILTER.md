@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.ADVANC
 ---
 
 # ADVANCED\_DATATYPE\_FILTER
-<a name="recipe-actions.ADVANCED_DATATYPE_FILTER"></a>
 
 Filters the current source column based on advanced data type detection. For example, given a column that DataBrew has identified as containing zip codes, this transform can filter the column based on timezone. The details that you can extract depend on the pattern that is detected, as described in **Notes** below.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/su
 ---
 
 # Successfully import an S3 bucket as an AWS CloudFormation stack
-<a name="successfully-import-an-s3-bucket-as-an-aws-cloudformation-stack"></a>
 
 *Ram Kandaswamy, Amazon Web Services*
 

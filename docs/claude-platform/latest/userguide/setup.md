@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/claude-platform/latest/userguide/setup.h
 ---
 
 # Set up your account
-<a name="setup"></a>
 
 Setting up Claude Platform on AWS has four phases: sign up in the AWS Console, set up your Anthropic organization, note your workspace ID, and sign in to the Claude Console.
 

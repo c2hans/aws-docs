@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_Kubern
 ---
 
 # KubernetesWorkloadDetails
-<a name="API_KubernetesWorkloadDetails"></a>
 
 Details about the Kubernetes workload involved in a Kubernetes finding.
 

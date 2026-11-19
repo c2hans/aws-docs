@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthimaging/latest/devguide/dicomweb-r
 ---
 
 # Getting DICOM series metadata from HealthImaging
-<a name="dicomweb-retrieve-series-metadata"></a>
 
 Use the `GetDICOMSeriesMetadata` action to retrieve the metadata for a DICOM series (`.json` file) from a HealthImaging [data store](getting-started-concepts.md#concept-data-store). You can retrieve series metadata for any primary [ image set](getting-started-concepts.md#concept-image-set) in the HealthImaging data store by specifying the Study and Series UIDs associated with the resource. You can retrieve series metadata for non-Primary image sets by providing the image set ID as a query parameter. The series metadata is returned in `DICOM JSON` format.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_Iceber
 ---
 
 # IcebergSnapshotManagementSettings
-<a name="API_s3Buckets_IcebergSnapshotManagementSettings"></a>
 
 Contains details about the snapshot management settings for an Iceberg table. The oldest snapshot expires when its age exceeds the `maxSnapshotAgeHours` and the total number of snapshots exceeds the value for the minimum number of snapshots to keep `minSnapshotsToKeep`.
 

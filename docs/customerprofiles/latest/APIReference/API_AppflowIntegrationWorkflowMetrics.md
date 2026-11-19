@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # AppflowIntegrationWorkflowMetrics
-<a name="API_connect-customer-profiles_AppflowIntegrationWorkflowMetrics"></a>
 
 Workflow specific execution metrics for `APPFLOW_INTEGRATION` workflow.
 

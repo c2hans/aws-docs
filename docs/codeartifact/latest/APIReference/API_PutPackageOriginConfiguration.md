@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/APIReference/API_Put
 ---
 
 # PutPackageOriginConfiguration
-<a name="API_PutPackageOriginConfiguration"></a>
 
 Sets the package origin configuration for a package.
 

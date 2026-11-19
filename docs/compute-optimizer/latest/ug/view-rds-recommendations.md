@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/compute-optimizer/latest/ug/view-rds-rec
 ---
 
 # Viewing Aurora and RDS database recommendations
-<a name="view-rds-recommendations"></a>
 
 Compute Optimizer gives recommendations for DB instances, RDS DB instance storage, and Aurora DB cluster storage. It covers RDS for MySQL, RDS for PostgreSQL, and Amazon Aurora databases. You can see these recommendations on two pages in the Compute Optimizer console: the **Recommendations for Aurora and RDS databases** page and the **Aurora and RDS databases details** page. Each page has two tabs: **Instance** and **Storage**.
 
@@ -75,7 +74,7 @@ The following findings classifications apply to RDS DB storage.
 | Over-provisioned | When Compute Optimizer detects that there is excessive IOPS or EBS throughput, an RDS DB instance storage volume is considered over-provisioned. Compute Optimizer displays a finding reason of **EBS volume IOPS over-provisioned** or **EBS volume throughput over-provisioned**. An over-provisioned DB instance storage volume might result in additional infrastructure costs. |
 | Optimized | When the specifications of your RDS DB instance storage volume meet the performance requirements of your workload, the storage is considered optimized. For optimized DB instance storage, Compute Optimizer might recommend a new generation storage type. |
 
-For more information about under and over-provisioned RDS DB instances, see [Finding reasons](#rds-finding-reasons) in the [Viewing Aurora and RDS database recommendations](#view-rds-recommendations) topic.
+For more information about under and over-provisioned RDS DB instances, see [Finding reasons](#rds-finding-reasons) in the [Viewing Aurora and RDS database recommendations](view-rds-recommendations.md) topic.
 
 ------
 #### [ Aurora DB clusters ]

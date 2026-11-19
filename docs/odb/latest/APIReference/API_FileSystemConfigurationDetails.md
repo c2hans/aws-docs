@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/odb/latest/APIReference/API_FileSystemCo
 ---
 
 # FileSystemConfigurationDetails
-<a name="API_FileSystemConfigurationDetails"></a>
 
 The configuration of a file system on a VM cluster.
 

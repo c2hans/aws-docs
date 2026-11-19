@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListAp
 ---
 
 # ListAppImageConfigs
-<a name="API_ListAppImageConfigs"></a>
 
 Lists the AppImageConfigs in your account and their properties. The list can be filtered by creation time or modified time, and whether the AppImageConfig name contains a specified string.
 

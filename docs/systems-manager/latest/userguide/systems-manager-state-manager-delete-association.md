@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems
 ---
 
 # Deleting associations
-<a name="systems-manager-state-manager-delete-association"></a>
 
 Use the following procedure to delete an association by using the AWS Systems Manager console.
 

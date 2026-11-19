@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_data-aut
 ---
 
 # CustomOutputConfiguration
-<a name="API_data-automation_CustomOutputConfiguration"></a>
 
 Blueprints to apply to objects processed by the project.
 

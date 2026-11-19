@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/api/API_ImportReadSetSource
 ---
 
 # ImportReadSetSourceItem
-<a name="API_ImportReadSetSourceItem"></a>
 
 A source for an import read set job.
 

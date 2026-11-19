@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsx
 ---
 
 # Data retrieval APIs for AWS X-Ray
-<a name="awsx-ray"></a>
 
 AWS X-Ray provides the following APIs for data retrieval.
 

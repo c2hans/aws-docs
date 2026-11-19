@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bgw/v20210101/APIReference/API_PutMainte
 ---
 
 # PutMaintenanceStartTime
-<a name="API_PutMaintenanceStartTime"></a>
 
 Set the maintenance start time for a gateway.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guardduty/latest/ug/uninstalling-gdu-bot
 ---
 
 # Uninstalling security agent for ECS-EC2 Bottlerocket resources
-<a name="uninstalling-gdu-bottlerocket-agent-runtime-monitoring"></a>
 
 Perform the following steps to uninstall the GuardDuty security agent from your Bottlerocket ECS-EC2 instances.
 

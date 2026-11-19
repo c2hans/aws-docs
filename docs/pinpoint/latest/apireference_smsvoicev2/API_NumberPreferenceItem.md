@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/
 ---
 
 # NumberPreferenceItem
-<a name="API_NumberPreferenceItem"></a>
 
 A single number preference that specifies how to match available phone numbers. Each preference pairs a match type with one or more filter values.
 

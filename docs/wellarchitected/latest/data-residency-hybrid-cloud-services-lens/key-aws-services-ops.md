@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # Key AWS services
-<a name="key-aws-services-ops"></a>
 +  [AWS Outposts](https://aws.amazon.com/outposts/)
 +  [AWS Local Zones](https://aws.amazon.com/about-aws/global-infrastructure/localzones/)
 +  [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/)

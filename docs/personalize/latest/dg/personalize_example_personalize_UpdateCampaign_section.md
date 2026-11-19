@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/personalize_exampl
 ---
 
 # Use `UpdateCampaign` with an AWS SDK
-<a name="personalize_example_personalize_UpdateCampaign_section"></a>
 
 The following code example shows how to use `UpdateCampaign`.
 

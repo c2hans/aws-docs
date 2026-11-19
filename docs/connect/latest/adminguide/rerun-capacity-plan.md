@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/rerun-capacity
 ---
 
 # Re-run a capacity plan in Connect Customer
-<a name="rerun-capacity-plan"></a>
 
 You can re-run capacity plans when you make any changes on the plan start or end date, or the scenario. When there are no changes to plan inputs or the scenario, the **Re-run plan** option is not active, as shown in the following image.
 

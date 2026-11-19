@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/how-to-fi
 ---
 
 # How to filter POI on the map
-<a name="how-to-filter-poi-map"></a>
 
 With Amazon Location Service, you can control which points of interest (POIs) appear on your map and how many are shown. The recommended approach uses the `PoiCategories` and `PoiDensity` query parameters in the [GetStyleDescriptor](https://docs.aws.amazon.com/location/latest/APIReference/API_geomaps_GetStyleDescriptor.html) API. Filtering is configured server-side, so maps display correctly with no additional client-side code — on web, mobile, and headless renderers alike.
 

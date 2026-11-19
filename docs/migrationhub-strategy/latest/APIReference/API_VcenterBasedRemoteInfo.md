@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/APIReferenc
 ---
 
 # VcenterBasedRemoteInfo
-<a name="API_VcenterBasedRemoteInfo"></a>
 
 Details about the server in vCenter.
 

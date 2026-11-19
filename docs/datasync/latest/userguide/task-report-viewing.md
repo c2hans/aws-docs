@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datasync/latest/userguide/task-report-vi
 ---
 
 # Viewing your DataSync task reports
-<a name="task-report-viewing"></a>
 
 DataSync creates task reports for every task execution. When your execution completes, you can find the related task reports in your S3 bucket. Task reports are organized under prefixes that include the IDs of your tasks and their executions.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/emr/latest/APIReference/API_CreateStudio
 ---
 
 # CreateStudio
-<a name="API_CreateStudio"></a>
 
 Creates a new Amazon EMR Studio.
 

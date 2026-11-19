@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/example-esam-xml-
 ---
 
 # Example ESAM XML Manifest Confirm Condition Notification
-<a name="example-esam-xml-manifest-conditioning"></a>
 
 This ESAM manifest confirm condition (MCC) XML document generates HLS manifest cue tags for two 30-second ad breaks. The first begins at 10 seconds in; the second begins at 75 seconds in. These cue manifest tags also contain data that can be used by a downstream client for ad replacement and insertion. Outputs generated with this MCC document contain a SCTE-35 message embedded into the transport stream file at the first ad break, but not at the second one.
 

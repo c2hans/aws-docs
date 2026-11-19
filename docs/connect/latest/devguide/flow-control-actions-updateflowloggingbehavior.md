@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/devguide/flow-control-act
 ---
 
 # UpdateFlowLoggingBehavior
-<a name="flow-control-actions-updateflowloggingbehavior"></a>
 
 Enables or disables flow logging. If this is a flow, this same behavior remains unless it is overridden for the rest of the contact segment. It is also automatically inherited by new segments in the chain.
 

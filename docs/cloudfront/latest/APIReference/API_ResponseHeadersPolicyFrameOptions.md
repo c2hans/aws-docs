@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Respo
 ---
 
 # ResponseHeadersPolicyFrameOptions
-<a name="API_ResponseHeadersPolicyFrameOptions"></a>
 
 Determines whether CloudFront includes the `X-Frame-Options` HTTP response header and the header's value.
 

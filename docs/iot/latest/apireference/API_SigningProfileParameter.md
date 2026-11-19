@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_SigningProfi
 ---
 
 # SigningProfileParameter
-<a name="API_SigningProfileParameter"></a>
 
 Describes the code-signing profile.
 

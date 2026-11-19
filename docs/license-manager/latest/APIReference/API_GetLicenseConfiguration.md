@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_
 ---
 
 # GetLicenseConfiguration
-<a name="API_GetLicenseConfiguration"></a>
 
 Gets detailed information about the specified license configuration.
 

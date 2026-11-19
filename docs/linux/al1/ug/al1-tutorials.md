@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al1/ug/al1-tutorials.html
 ---
 
 # AL1 Tutorials
-<a name="al1-tutorials"></a>
 
 **Note**
 AL1 is no longer supported. This guide is available only for reference purposes.

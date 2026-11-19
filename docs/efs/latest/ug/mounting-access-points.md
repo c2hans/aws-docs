@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/ug/mounting-access-points.htm
 ---
 
 # Mounting with EFS access points
-<a name="mounting-access-points"></a>
 
 You can mount an EFS file system using an EFS access point only by using the EFS mount helper.
 

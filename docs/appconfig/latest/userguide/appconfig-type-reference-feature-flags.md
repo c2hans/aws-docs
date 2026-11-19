@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-typ
 ---
 
 # Understanding the type reference for AWS.AppConfig.FeatureFlags
-<a name="appconfig-type-reference-feature-flags"></a>
 
 Use the `AWS.AppConfig.FeatureFlags` JSON schema as a reference to create your feature flag configuration data.
 

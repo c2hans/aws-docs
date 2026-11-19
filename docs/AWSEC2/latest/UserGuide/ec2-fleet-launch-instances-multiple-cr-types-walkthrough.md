@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-launch
 ---
 
 # Tutorial: Configure your EC2 Fleet to launch instances into multiple Capacity Reservation types using a Capacity Reservation Resource Group
-<a name="ec2-fleet-launch-instances-multiple-cr-types-walkthrough"></a>
 
 This tutorial walks you through the steps to configure an EC2 Fleet that launches instances across multiple Capacity Reservation types – On-Demand Capacity Reservations (ODCRs), Capacity Blocks for ML, and interruptible Capacity Reservations – using a single Capacity Reservation Resource Group.
 

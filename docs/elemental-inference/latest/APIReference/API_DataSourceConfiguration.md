@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/APIReference/
 ---
 
 # DataSourceConfiguration
-<a name="API_DataSourceConfiguration"></a>
 
 Contains the data source configuration for a clipping output. It identifies the fixture whose event data Elemental Inference maps onto the clipping metadata. It is used in the dataSourceConfiguration property of a ClippingConfig.
 

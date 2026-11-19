@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/dg/sending-msgs.html
 ---
 
 # Sending messages in Amazon Chime SDK messaging
-<a name="sending-msgs"></a>
 
 You use the `SendChannelMessage` API to send messages to a channel. For a channel associated with a channel flow, the processor assigns one of the following status values.
 

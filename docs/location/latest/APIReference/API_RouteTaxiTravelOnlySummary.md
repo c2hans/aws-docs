@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTa
 ---
 
 # RouteTaxiTravelOnlySummary
-<a name="API_RouteTaxiTravelOnlySummary"></a>
 
 Summary including duration and distance for the travel portion of the leg only.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Failure mode findings not matching expected policy
-<a name="next-gen-troubleshoot-findings-mismatch"></a>
 
 **Symptom:** Assessment failure mode findings don't seem to relate to your applied policy.
 

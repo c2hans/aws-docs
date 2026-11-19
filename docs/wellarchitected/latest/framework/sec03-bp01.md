@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec03-b
 ---
 
 # SEC03-BP01 Grant least privilege access in workload components
-<a name="sec03-bp01"></a>
 
  Every component in a workload runs with some set of permissions. When those permissions exceed what a component needs, each component becomes a wider path for an unauthorized user to move through. Grant each component only the permissions its function requires, and remove access as functions change. This limits the impact of any single component under unauthorized control to what that component could already do.
 

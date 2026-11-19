@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Logs and tracing
-<a name="monitoring-logs-and-tracing"></a>
 
 Innovation Sandbox emits structured JSON logs from all Lambda functions into Amazon CloudWatch Logs. Each log entry includes a correlation ID, the originating Lambda function, and searchable properties such as account IDs, lease IDs, and user emails.
 

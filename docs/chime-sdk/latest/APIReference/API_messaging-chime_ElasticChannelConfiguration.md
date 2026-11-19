@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messag
 ---
 
 # ElasticChannelConfiguration
-<a name="API_messaging-chime_ElasticChannelConfiguration"></a>
 
 The attributes required to configure and create an elastic channel. An elastic channel can support a maximum of 1-million members.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Associate
 ---
 
 # AssociateIpamResourceDiscovery
-<a name="API_AssociateIpamResourceDiscovery"></a>
 
 Associates an IPAM resource discovery with an Amazon VPC IPAM. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
 

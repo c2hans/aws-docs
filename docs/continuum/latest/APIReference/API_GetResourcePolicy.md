@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/APIReference/API_GetRes
 ---
 
 # GetResourcePolicy
-<a name="API_GetResourcePolicy"></a>
 
 Retrieves the resource policy attached to a Continuum resource.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTa
 ---
 
 # RouteTaxiNotice
-<a name="API_RouteTaxiNotice"></a>
 
 A notice that indicates an issue that occurred during route calculation.
 

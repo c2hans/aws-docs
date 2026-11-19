@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/APIReference/API_Me
 ---
 
 # MedicalCodeGenerationSettings
-<a name="API_MedicalCodeGenerationSettings"></a>
 
 Settings for generating medical codes from the clinical note after the session ends. Medical code generation is in preview release and is subject to change. Medical code generation is available in the US East (N. Virginia) and US West (Oregon) AWS Regions.
 

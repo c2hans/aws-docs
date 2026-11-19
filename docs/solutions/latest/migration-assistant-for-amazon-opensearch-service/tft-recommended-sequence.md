@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/migration-assistant-for
 ---
 
 # Recommended sequence
-<a name="tft-recommended-sequence"></a>
 
 Introduce custom field-type transformation only after you have confirmed that the built-in transformations do not fully cover your source. Follow this sequence to keep custom logic minimal and verifiable:
 

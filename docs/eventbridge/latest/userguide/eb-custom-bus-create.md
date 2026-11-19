@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-custom-b
 ---
 
 # Creating a bus
-<a name="eb-custom-bus-create"></a>
 
 You create a bus with `CreateEventBus`, for example `aws eventsv2 create-event-bus --name orders`. The name is the only required parameter. At creation you can also set a description, the number of days the bus retains events, the AWS KMS key that encrypts them, and tags. The call returns at once with the bus in the `CREATING` state; publish to the bus or create a subscriber on it once `DescribeEventBus` reports `ACTIVE`.
 

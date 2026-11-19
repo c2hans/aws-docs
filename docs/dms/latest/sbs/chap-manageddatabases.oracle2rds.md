@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/chap-manageddatabases.ora
 ---
 
 # Migrating an Oracle Database to Amazon RDS for Oracle
-<a name="chap-manageddatabases.oracle2rds"></a>
 
 You can use these three main approaches to migrate self-managed Oracle databases to Amazon Relational Database Service (Amazon RDS) for Oracle.
 + Using a native database tool such as Oracle Data Pump.

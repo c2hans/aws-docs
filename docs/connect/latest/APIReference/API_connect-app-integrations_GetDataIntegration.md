@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetDataIntegration
-<a name="API_connect-app-integrations_GetDataIntegration"></a>
 
 Returns information about the DataIntegration.
 

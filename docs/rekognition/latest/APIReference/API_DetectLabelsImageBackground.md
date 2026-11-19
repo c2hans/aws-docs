@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Dete
 ---
 
 # DetectLabelsImageBackground
-<a name="API_DetectLabelsImageBackground"></a>
 
 The background of the image with regard to image quality and dominant colors.
 

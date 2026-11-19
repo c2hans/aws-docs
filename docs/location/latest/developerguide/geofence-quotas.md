@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/geofence-
 ---
 
 # Geofences quotas and usage
-<a name="geofence-quotas"></a>
 
 This topic provides a summary of rate limits and quotas for Amazon Location Service Geofences.
 

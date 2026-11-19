@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteMa
 ---
 
 # RouteMatrixOriginOptions
-<a name="API_RouteMatrixOriginOptions"></a>
 
 Origin related options.
 

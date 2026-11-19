@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/digital-sovereign
 ---
 
 # Workload interoperability and portability
-<a name="dsrel03"></a>
 
  A large-scale disruption can force an organization to move a workload to a different jurisdiction with little warning. Design decisions made during initial development determine whether that move is feasible within acceptable timelines or requires extensive rework. Jurisdictional portability depends on three things done in advance: abstracting Region-specific and service-specific dependencies, using open standards and portable data formats, and planning for data export and migration before conditions require it.
 

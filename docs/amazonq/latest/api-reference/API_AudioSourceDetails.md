@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_AudioSo
 ---
 
 # AudioSourceDetails
-<a name="API_AudioSourceDetails"></a>
 
 Details about an audio source, including its identifier, format, and time information.
 

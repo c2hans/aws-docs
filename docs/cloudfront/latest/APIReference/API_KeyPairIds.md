@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_KeyPa
 ---
 
 # KeyPairIds
-<a name="API_KeyPairIds"></a>
 
 A list of CloudFront key pair identifiers.
 

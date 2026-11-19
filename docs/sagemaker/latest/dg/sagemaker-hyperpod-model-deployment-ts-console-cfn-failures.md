@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 ---
 
 # Inference operator installation failures through SageMaker AI console
-<a name="sagemaker-hyperpod-model-deployment-ts-console-cfn-failures"></a>
 
 **Overview:** When installing the inference operator through the SageMaker AI console using Quick Install or Custom Install, the underlying CloudFormation stacks may fail due to various issues. This section covers common failure scenarios and their resolutions.
 

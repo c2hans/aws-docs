@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/enable-ARP.html
 ---
 
 # Enabling Autonomous Ransomware Protection
-<a name="enable-ARP"></a>
 
 The following procedures explain how to use the ONTAP CLI to enable Autonomous Ransomware Protection (ARP) active mode as well as how to verify that ARP is enabled. For more information about ARP, see [How ARP works](ARP.md#how-ARP-works).
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ResourceServerType
-<a name="API_ResourceServerType"></a>
 
 The details of a resource server configuration and associated custom scopes in a user pool.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/iam-example-job-d
 ---
 
 # Resource: Restrict to POSIX user, Docker image, privilege level, and role on job submission
-<a name="iam-example-job-def"></a>
 
 The following policy allows a POSIX user to manage their own set of restricted job definitions.
 

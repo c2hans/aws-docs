@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/azure-to-aw
 ---
 
 # Phase 2 - Automated Source Environment Discovery
-<a name="phase-2-automated-source-environment-discovery"></a>
 
 ## Building AI's Ground Truth Layer
 <a name="building-ai-s-ground-truth-layer.f8c3ed15-40a6-546d-9a9a-91573a603eb4"></a>

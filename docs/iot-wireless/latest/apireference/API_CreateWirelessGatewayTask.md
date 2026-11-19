@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Cre
 ---
 
 # CreateWirelessGatewayTask
-<a name="API_CreateWirelessGatewayTask"></a>
 
 Creates a task for a wireless gateway.
 

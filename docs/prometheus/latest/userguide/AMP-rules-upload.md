@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-rules-up
 ---
 
 # Upload a rules configuration file to Amazon Managed Service for Prometheus
-<a name="AMP-rules-upload"></a>
 
 Once you know what rules you want in your rules configuration file, you can either create and edit it within the console, or you can upload a file with the console or AWS CLI.
 

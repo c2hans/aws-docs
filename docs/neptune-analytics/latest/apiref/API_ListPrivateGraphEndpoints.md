@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_List
 ---
 
 # ListPrivateGraphEndpoints
-<a name="API_ListPrivateGraphEndpoints"></a>
 
 Lists private endpoints for a specified Neptune Analytics graph.
 

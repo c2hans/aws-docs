@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/serverless-application-model/latest/deve
 ---
 
 # AWS::Serverless::WebFunction
-<a name="sam-resource-webfunction"></a>
 
  Creates an AWS Lambda Web Function, which serves HTTP requests through a managed endpoint. Unlike a Lambda Event Function, which runs in response to invocations and events, a Web Function runs your web server and receives HTTP requests directly. From a single `AWS::Serverless::WebFunction`, AWS SAM generates the Web Function, an immutable revision that contains your code and configuration, and an endpoint that routes traffic to one or more revisions.
 

@@ -3,9 +3,8 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/Usin
 ---
 
 # Directory Service API permissions: Actions, resources, and conditions reference
-<a name="UsingWithDS_IAM_ResourcePermissions"></a>
 
-When you are setting up [Access control](iam_auth_access.md#access_control) and writing permissions policies that you can attach to an IAM identity (identity-based policies), you can use the [Directory Service API permissions: Actions, resources, and conditions reference](#UsingWithDS_IAM_ResourcePermissions) table as a reference. Each API entry in the table includes the following:
+When you are setting up [Access control](iam_auth_access.md#access_control) and writing permissions policies that you can attach to an IAM identity (identity-based policies), you can use the [Directory Service API permissions: Actions, resources, and conditions reference](UsingWithDS_IAM_ResourcePermissions.md) table as a reference. Each API entry in the table includes the following:
 + The name of each API operation
 + Each API operation's corresponding action or actions in which you can grant permissions to perform the action
 + The AWS resource in which you can grant the permissions

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Batch
 ---
 
 # BatchDeleteKnowledgeBase
-<a name="API_BatchDeleteKnowledgeBase"></a>
 
 Deletes one or more knowledge bases.
 

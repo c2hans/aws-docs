@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/devguide/security_iam_id-
 ---
 
 # Identity-based policies for AWS AppSync
-<a name="security_iam_id-based-policy-examples"></a>
 
 By default, users and roles don't have permission to create or modify AWS AppSync resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
 

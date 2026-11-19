@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API
 ---
 
 # ResourcePolicy
-<a name="API_ResourcePolicy"></a>
 
 The resource policy that allows Incident Manager to perform actions on resources on your behalf.
 

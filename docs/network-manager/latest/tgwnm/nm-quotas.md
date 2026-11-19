@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/tgwnm/nm-quotas.h
 ---
 
 # AWS Global Networks for Transit Gateways Quotas
-<a name="nm-quotas"></a>
 
 Your AWS account has the quotas shown in the following table for AWS Global Networks for Transit Gateways.
 

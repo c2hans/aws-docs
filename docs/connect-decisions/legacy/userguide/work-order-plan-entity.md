@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/work-
 ---
 
 # work\_order\_plan
-<a name="work-order-plan-entity"></a>
 
 **Primary key (PK)**
 

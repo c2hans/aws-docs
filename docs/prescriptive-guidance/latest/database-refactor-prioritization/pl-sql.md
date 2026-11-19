@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/database-re
 ---
 
 # Step 2. Collect PL/SQL objects and sizing
-<a name="pl-sql"></a>
 
 In this step, you collect another attribute that is critical to identifying good candidates for database migrations: the number of PL/SQL objects and sizing (per schema). This data attribute is important because PL/SQL objects typically require manual code conversion, thus increasing the time and complexity of migration. Start with the top 10% of databases from [step 1](cmdb.md) (adjust this percentage to suit your needs). Query this list for PL/SQL object counts as well as database versions, database editions, and ports to validate data. We recommend that you automate this step by using a script, because you will run this process multiple times as you iterate through the full database candidate list.
 

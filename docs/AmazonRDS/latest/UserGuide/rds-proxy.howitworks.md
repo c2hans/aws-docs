@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.how
 ---
 
 # RDS Proxy concepts and terminology
-<a name="rds-proxy.howitworks"></a>
 
  You can simplify connection management for your Amazon RDS DB instances by using RDS Proxy.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # GetIdentitySource
-<a name="API_GetIdentitySource"></a>
 
 Retrieves the details about the specified identity source.
 

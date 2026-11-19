@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 ---
 
 # [DL.EAC.4] Implement continuous configuration for enhanced application management
-<a name="dl.eac.4-implement-continuous-configuration-for-enhanced-application-management"></a>
 
  **Category:** RECOMMENDED
 

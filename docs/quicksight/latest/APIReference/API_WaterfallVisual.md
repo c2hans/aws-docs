@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Water
 ---
 
 # WaterfallVisual
-<a name="API_WaterfallVisual"></a>
 
 A waterfall chart.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on
 ---
 
 # Uninstall the solution
-<a name="uninstall-the-solution"></a>
 
 You can uninstall the MCS solution from the AWS Management Console or by using the AWS Command Line Interface (AWS CLI). You must manually delete the modules and some of the core resources created by this solution. AWS Solutions do not automatically delete dependents of modules and storage backup resources in case you have stored data to retain. As such, see the following information on how to delete S3 buckets, CloudWatch logs, EC2 AMIs (from Leostream Broker module) and SSM parameters (from Leostream Broker module).
 

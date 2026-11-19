@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_GetNote
 ---
 
 # GetNotebookExport
-<a name="API_GetNotebookExport"></a>
 
 Gets the details of a notebook export in Amazon SageMaker Unified Studio.
 

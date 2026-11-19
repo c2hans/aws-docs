@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_StartNo
 ---
 
 # StartNotebookSync
-<a name="API_StartNotebookSync"></a>
 
 Starts a notebook sync in Amazon SageMaker Unified Studio. This operation syncs a notebook from a Git repository into a project.
 

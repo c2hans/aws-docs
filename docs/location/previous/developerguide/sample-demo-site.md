@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/sample-
 ---
 
 # Amazon Location Demo site
-<a name="sample-demo-site"></a>
 
 ![Samples page showing feature checkboxes on left and world map display on right.](https://docs.aws.amazon.com/location/previous/developerguide/images/samples/location-demo-site-samples.png)
 

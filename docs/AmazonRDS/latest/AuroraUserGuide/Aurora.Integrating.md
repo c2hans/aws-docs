@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.
 ---
 
 # Integrating Aurora with other AWS services
-<a name="Aurora.Integrating"></a>
 
 Integrate Amazon Aurora with other AWS services so that you can extend your Aurora DB cluster to use additional capabilities in the AWS Cloud.
 

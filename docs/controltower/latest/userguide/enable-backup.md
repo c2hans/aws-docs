@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/enable-bac
 ---
 
 # Enable backups
-<a name="enable-backup"></a>
 
 You can enable backups for resources in your accounts that are enrolled in AWS Control Tower, either during landing zone setup, or when you update your landing zone.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/general/overview-revisions.ht
 ---
 
 # Document Revisions
-<a name="overview-revisions"></a>
 
 | Date | Change | Location |
 | --- | --- | --- |

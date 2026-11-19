@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # BatchPutTaxRegistrationError
-<a name="API_taxSettings_BatchPutTaxRegistrationError"></a>
 
  The error object for representing failures in the `BatchPutTaxRegistration` operation.
 

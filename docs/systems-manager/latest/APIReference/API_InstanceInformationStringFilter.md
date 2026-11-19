@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/APIReference/API_
 ---
 
 # InstanceInformationStringFilter
-<a name="API_InstanceInformationStringFilter"></a>
 
 The filters to describe or get information about your managed nodes.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/infrastructure-composer/latest/dg/using-
 ---
 
 # Examples for connecting cards in Infrastructure Composer
-<a name="using-composer-connecting-examples"></a>
 
 Use the examples in this section to understand how cards can be connected in Infrastructure Composer.
 

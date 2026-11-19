@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-
 ---
 
 # Building serverless architectures for agentic AI on AWS
-<a name="introduction"></a>
 
 *Aaron Sempf, Amazon Web Services*
 

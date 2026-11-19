@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-
 ---
 
 # What's new in AWS IoT Greengrass Version 2
-<a name="greengrass-v2-whats-new"></a>
 
 AWS IoT Greengrass Version 2 is a major version of AWS IoT Greengrass that introduces the following features:
 + **AWS IoT Greengrass nucleus lite** – AWS IoT Greengrass nucleus versions 2.14.0 and later offers AWS IoT Greengrass nucleus lite. Greengrass nucleus lite is a lightweight, open-source runtime that lets you run Greengrass on resource-constrained devices. This can be useful for low-cost, single-board computers with high-volume applications, such as smart home hubs, smart energy meters, smart vehicles, edge AI, and robotics. For more information, see [Greengrass nucleus lite](greengrass-nucleus-lite-component.md).

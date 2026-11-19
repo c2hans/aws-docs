@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/grafana/latest/APIReference/API_SamlAuth
 ---
 
 # SamlAuthentication
-<a name="API_SamlAuthentication"></a>
 
 A structure containing information about how this workspace works with SAML.
 

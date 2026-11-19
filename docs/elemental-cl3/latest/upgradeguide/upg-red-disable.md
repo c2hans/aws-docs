@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-re
 ---
 
 # Step L: Disable high availability
-<a name="upg-red-disable"></a>
 
 **To disable high availability**
 

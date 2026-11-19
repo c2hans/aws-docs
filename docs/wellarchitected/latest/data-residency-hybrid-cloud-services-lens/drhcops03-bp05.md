@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCOPS03-BP05 Keep your monitoring, alerting, and documentation up to date and in-line with your RTO and RPO targets
-<a name="drhcops03-bp05"></a>
 
  Implement monitoring and alerting in line with your failover strategy, security and operations strategy, and data residency requirements.
 

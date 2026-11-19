@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/enable-ad-avail-blan
 ---
 
 # Enabling ad avail blanking in the output
-<a name="enable-ad-avail-blanking"></a>
 
 In a MediaLive channel, you can enable ad avail blanking to blank out the content for an SCTE 35 message that is considered an ad avail (as defined by the ad avail mode in [Getting ready: Set the ad avail mode](getting-ready-set-the-ad-avail-mode.md)).
 

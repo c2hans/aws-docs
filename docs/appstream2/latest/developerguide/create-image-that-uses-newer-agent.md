@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/create-
 ---
 
 # Create an Image That Uses a Newer Version of the WorkSpaces Applications Agent
-<a name="create-image-that-uses-newer-agent"></a>
 
 If you pin your image to a specific WorkSpaces Applications agent version, you must update to a newer version by creating a new image. This approach lets you test each agent update for compatibility first, and then update your fleet incrementally.
 

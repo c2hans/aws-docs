@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pipedrive-support.html
 ---
 
 # AWS Glue support for Pipedrive
-<a name="pipedrive-support"></a>
 
 AWS Glue supports Pipedrive as follows:
 

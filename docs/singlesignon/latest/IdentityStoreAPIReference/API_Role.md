@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIRefe
 ---
 
 # Role
-<a name="API_Role"></a>
 
 The role associated with the user.
 

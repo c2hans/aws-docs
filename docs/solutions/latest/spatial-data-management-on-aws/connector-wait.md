@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/spatial-data-management
 ---
 
 # Working with wait steps
-<a name="connector-wait"></a>
 
 Many integrations take real time to respond. A point-cloud import can run for minutes, a render or an inference job might take an hour, a model training run can take several, and an external review might not come back until someone acts on it. A `wait` step lets a connector start that kind of work, pause until it finishes, and then act on the result — all without holding any running compute while the external work is in progress.
 

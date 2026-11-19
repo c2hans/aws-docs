@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSL
 ---
 
 # AWSLambdaNetworkConnectorOperatorPolicy
-<a name="AWSLambdaNetworkConnectorOperatorPolicy"></a>
 
 **Description**: This policy grants permissions to create and administer ENI resources managed by the Lambda Network Connector
 

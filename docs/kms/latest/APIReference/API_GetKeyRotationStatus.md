@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kms/latest/APIReference/API_GetKeyRotati
 ---
 
 # GetKeyRotationStatus
-<a name="API_GetKeyRotationStatus"></a>
 
 Provides detailed information about the rotation status for a KMS key, including whether [automatic rotation of the key material](https://docs.aws.amazon.com/kms/latest/developerguide/rotating-keys-enable-disable.html) is enabled for the specified KMS key, the [rotation period](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html#rotation-period), and the next scheduled rotation date.
 

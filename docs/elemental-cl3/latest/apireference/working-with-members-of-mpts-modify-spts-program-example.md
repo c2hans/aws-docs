@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/apireference/workin
 ---
 
 # Example
-<a name="working-with-members-of-mpts-modify-spts-program-example"></a>
 
 This example changes the MPTS member with the ID 6 in the MPTS that has the ID 2. The request changes one of the PID values.
 

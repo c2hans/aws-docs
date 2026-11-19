@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-
 ---
 
 # Configuration changes
-<a name="environments-updating"></a>
 
 When you modify configuration option settings in the **Configuration** section of the [environment management console](environments-console.md), AWS Elastic Beanstalk propagates the change to all affected resources. These resources include the load balancer that distributes traffic to the Amazon EC2 instances running your application, the Auto Scaling group that manages those instances, and the EC2 instances themselves.
 

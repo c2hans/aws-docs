@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_Pip
 ---
 
 # PipelineRollbackMetadata
-<a name="API_PipelineRollbackMetadata"></a>
 
 The metadata for the stage execution to be rolled back.
 

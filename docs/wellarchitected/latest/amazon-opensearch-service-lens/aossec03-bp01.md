@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 ---
 
 # AOSSEC03-BP01 Implement fine-grained access control to manage access to your data on Amazon OpenSearch Service
-<a name="aossec03-bp01"></a>
 
  Control user access to OpenSearch Service domains and dashboards using fine-grained access control, and only provide sensitive data access to authorized users.
 

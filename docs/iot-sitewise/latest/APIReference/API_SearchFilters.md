@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Sea
 ---
 
 # SearchFilters
-<a name="API_SearchFilters"></a>
 
 Optional filters that restrict a search to a subset of the workspace's data.
 

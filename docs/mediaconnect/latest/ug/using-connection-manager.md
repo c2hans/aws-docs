@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/using-connection-
 ---
 
 # Using the Connection manager in MediaConnect
-<a name="using-connection-manager"></a>
 
 The Connection manager gives you a visual map of your media workflow, from the sources that send content, through your router inputs and outputs, to the destinations that receive it. You can use it to connect endpoints, route content, and create router inputs and outputs, all from one place.
 

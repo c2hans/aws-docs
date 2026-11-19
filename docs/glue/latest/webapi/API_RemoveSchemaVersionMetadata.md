@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RemoveSchemaVersi
 ---
 
 # RemoveSchemaVersionMetadata
-<a name="API_RemoveSchemaVersionMetadata"></a>
 
 Removes a key value pair from the schema version metadata for the specified schema version ID.
 

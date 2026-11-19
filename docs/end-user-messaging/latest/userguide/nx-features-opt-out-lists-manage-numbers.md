@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/end-user-messaging/latest/userguide/nx-f
 ---
 
 # Managing opt-out list phone numbers
-<a name="nx-features-opt-out-lists-manage-numbers"></a>
 
 Use the AWS End User Messaging console or AWS CLI to add or remove destination phone numbers from your opt-out list or to view the origination identities associated with the opt-out list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 ---
 
 # MASEC 2: What security tools (AWS or third-party) do you use?
-<a name="masec-2"></a>
 
  Security is a shared responsibility. It is important to understand if the seller is using AWS services to find and remediate vulnerabilities, misconfigurations, and resources. Are they using third party tools to do this?
 

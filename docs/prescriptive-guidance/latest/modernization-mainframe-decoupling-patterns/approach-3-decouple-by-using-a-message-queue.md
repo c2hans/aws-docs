@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Approach 3: Decouple by using a message queue
-<a name="approach-3-decouple-by-using-a-message-queue"></a>
 
 In this approach, the shared program AB.1 is converted into a Java program and migrated to the cloud as part of application A. A message queue is used as an interface between the refactored application in the cloud and the legacy application on premises. By using this approach, you can break up tightly coupled mainframe applications into producers and consumers, and make them more modular so they can function independently. The additional advantage is that you can migrate the applications in different waves.
 

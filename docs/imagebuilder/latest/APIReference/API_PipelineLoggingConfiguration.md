@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_Pip
 ---
 
 # PipelineLoggingConfiguration
-<a name="API_PipelineLoggingConfiguration"></a>
 
 The logging configuration that's defined for pipeline execution.
 

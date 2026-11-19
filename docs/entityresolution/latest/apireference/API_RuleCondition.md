@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API
 ---
 
 # RuleCondition
-<a name="API_RuleCondition"></a>
 
 An object that defines the `ruleCondition` and the `ruleName` to use in a matching workflow.
 

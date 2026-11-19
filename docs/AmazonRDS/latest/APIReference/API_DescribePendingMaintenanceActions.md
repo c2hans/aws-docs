@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_Descri
 ---
 
 # DescribePendingMaintenanceActions
-<a name="API_DescribePendingMaintenanceActions"></a>
 
 Returns a list of resources (for example, DB instances) that have at least one pending maintenance action.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/late
 ---
 
 # `AWSSupport-TroubleshootLambdaVpcConnectivity`
-<a name="automation-awssupport-troubleshootlambdavpcconnectivity"></a>
 
 **Description**
 

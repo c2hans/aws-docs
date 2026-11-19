@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_qapps_U
 ---
 
 # UserAppItem
-<a name="API_qapps_UserAppItem"></a>
 
 An Amazon Q App associated with a user, either owned by the user or favorited.
 

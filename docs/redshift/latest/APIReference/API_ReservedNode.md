@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Reserve
 ---
 
 # ReservedNode
-<a name="API_ReservedNode"></a>
 
 Describes a reserved node. You can call the [DescribeReservedNodeOfferings](API_DescribeReservedNodeOfferings.md) API to obtain the available reserved node offerings.
 

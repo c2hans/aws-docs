@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_Processor
 ---
 
 # ProcessorInfo
-<a name="API_ProcessorInfo"></a>
 
 Describes the processor used by the instance type.
 

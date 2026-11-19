@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/supported.html
 ---
 
 # Supported operating systems and programming languages for Amazon Inspector
-<a name="supported"></a>
 
  Amazon Inspector can scan software applications that are installed on the following:
 +  Amazon Elastic Compute Cloud (Amazon EC2) instances

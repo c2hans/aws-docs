@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/example_serverless_S3_L
 ---
 
 # Invoke a Lambda function from an Amazon S3 trigger
-<a name="example_serverless_S3_Lambda_section"></a>
 
 The following code examples show how to implement a Lambda function that receives an event triggered by uploading an object to an S3 bucket. The function retrieves the S3 bucket name and object key from the event parameter and calls the Amazon S3 API to retrieve and log the content type of the object.
 

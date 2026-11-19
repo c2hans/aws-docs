@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonSynthetics/latest/APIReference/API
 ---
 
 # ListGroupResources
-<a name="API_ListGroupResources"></a>
 
 This operation returns a list of the ARNs of the canaries that are associated with the specified group.
 

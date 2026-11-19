@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ec2/latest/devguide/example_vpc_GettingS
 ---
 
 # Get started using IP address management using the CLI
-<a name="example_vpc_GettingStartedIpam_section"></a>
 
 The following code example shows how to:
 + Set up and configure Amazon VPC IP Address Manager (IPAM) using the CLI.

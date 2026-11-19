@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-administrat
 ---
 
 # Administration
-<a name="hana-ops-administration"></a>
 
 This section provides guidance on common administrative tasks required to operate an SAP HANA system, including information about starting, stopping, and cloning systems.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/tutorials.
 ---
 
 # AWS IoT SiteWise tutorials
-<a name="tutorials"></a>
 
 Welcome to the AWS IoT SiteWise tutorials page. This growing collection of tutorials empowers you with the knowledge and skills needed to navigate the intricacies of AWS IoT SiteWise. These tutorials offer a diverse range of basic topics to cater to your needs. As you delve into the tutorials, uncover invaluable insights into various aspects of AWS IoT SiteWise.
 

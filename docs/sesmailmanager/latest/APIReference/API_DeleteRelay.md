@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_D
 ---
 
 # DeleteRelay
-<a name="API_DeleteRelay"></a>
 
 Deletes an existing relay resource.
 

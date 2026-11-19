@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 ---
 
 # MigrationSource
-<a name="API_MigrationSource"></a>
 
 The source configuration for a migration, specifying the data source from which to export saved objects.
 

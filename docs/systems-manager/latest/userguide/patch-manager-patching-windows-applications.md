@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-m
 ---
 
 # Patching applications released by Microsoft on Windows Server
-<a name="patch-manager-patching-windows-applications"></a>
 
 Use the information in this topic to help you prepare to patch applications on Windows Server using Patch Manager.
 

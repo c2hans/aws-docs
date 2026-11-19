@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 ---
 
 # EUCOPS12-BP01 Deploy alerting mechanisms that quickly identify anomalous metrics
-<a name="eucops12-bp01"></a>
 
  AWS EUC services provide access to desktops and applications which can be highly variable in their resource requirements over time. Weekly, monthly, quarterly, and year-end activities can cause spikes in resource consumption that might result in unnecessary alerts and a degraded user experience.
 

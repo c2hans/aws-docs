@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Condi
 ---
 
 # ConditionalFormattingCustomIconOptions
-<a name="API_ConditionalFormattingCustomIconOptions"></a>
 
 Custom icon options for an icon set.
 

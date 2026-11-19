@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Bat
 ---
 
 # BatchDeleteDatasetDataSegments
-<a name="API_BatchDeleteDatasetDataSegments"></a>
 
 Deletes a batch of data segments from a session dataset. Deleting a data segment deletes the underlying time series data for the segment's time range.
 

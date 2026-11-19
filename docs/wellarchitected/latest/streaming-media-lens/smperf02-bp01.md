@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 ---
 
 # SMPERF02-BP01 Start with the highest quality source reasonably obtainable
-<a name="smperf02-bp01"></a>
 
 Acquire the highest quality media source available so downstream
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListD
 ---
 
 # ListDashboards
-<a name="API_ListDashboards"></a>
 
 Lists dashboards in an AWS account.
 

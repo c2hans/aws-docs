@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/ma
 ---
 
 # AcceptMatch
-<a name="match-events-acceptmatch"></a>
 
 Players have accepted a potential match. This event contains the current acceptance status of each player in the match. Missing data means that AcceptMatch hasn't been called for that player.
 

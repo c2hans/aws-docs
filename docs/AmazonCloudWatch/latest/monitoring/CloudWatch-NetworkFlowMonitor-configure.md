@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Cloud
 ---
 
 # Monitor and analyze network flows in Network Flow Monitor
-<a name="CloudWatch-NetworkFlowMonitor-configure"></a>
 
 With Network Flow Monitor, you can learn about network flows and performance for traffic that you're monitoring with your scope. Start by reviewing top contributors information, by each metric type, in the **Workload insights** tab. Then, create monitors so that you can explore network performance in detail, over different time frames, for network flows that you select in **Workload insights**.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/agents-action-v
 ---
 
 # View information about an action group
-<a name="agents-action-view"></a>
 
 To learn how to view information about an action group, choose the tab for your preferred method, and then follow the steps:
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIRefere
 ---
 
 # TokenFilter
-<a name="API_TokenFilter"></a>
 
 The container of the token filter like the contract address on a given blockchain network or a unique token identifier on a given blockchain network.
 

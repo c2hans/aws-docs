@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/k
 ---
 
 # Delete a key value store
-<a name="kvs-with-functions-delete"></a>
 
 You can delete your key value store by using the Amazon CloudFront console or API.
 

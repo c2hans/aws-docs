@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_MCPT
 ---
 
 # MCPToolDetail
-<a name="API_MCPToolDetail"></a>
 
 An MCP tool together with its access categorization.
 

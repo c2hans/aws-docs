@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_QuickCon
 ---
 
 # QuickConnectConfig
-<a name="API_QuickConnectConfig"></a>
 
 Contains configuration settings for a quick connect.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/IAM/latest/APIReference/API_DetachUserPo
 ---
 
 # DetachUserPolicy
-<a name="API_DetachUserPolicy"></a>
 
 Removes the specified managed policy from the specified user.
 

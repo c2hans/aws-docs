@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/proof
 ---
 
 # Source configuration for Proofpoint TAP
-<a name="proofpoint-tap-source-setup"></a>
 
 ## Integrating with Proofpoint TAP
 <a name="proofpoint-tap-integration"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Tds
 ---
 
 # TdscdmaNmrObj
-<a name="API_TdscdmaNmrObj"></a>
 
 TD-SCDMA object for network measurement reports.
 

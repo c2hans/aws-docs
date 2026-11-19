@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DeleteTra
 ---
 
 # DeleteTransitGatewayClientVpnAttachment
-<a name="API_DeleteTransitGatewayClientVpnAttachment"></a>
 
 Deletes a Transit Gateway attachment for a Client VPN endpoint. The Transit Gateway owner can delete the attachment to remove the association between the Client VPN endpoint and the Transit Gateway.
 

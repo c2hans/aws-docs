@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/APIReference/API_L
 ---
 
 # ListTrustStoreCertificates
-<a name="API_ListTrustStoreCertificates"></a>
 
 Retrieves a list of trust store certificates.
 

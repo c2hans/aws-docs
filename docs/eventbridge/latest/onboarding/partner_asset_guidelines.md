@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/onboarding/partner_as
 ---
 
 # Partner asset guidelines
-<a name="partner_asset_guidelines"></a>
 
 EventBridge partners need to adhere to the guidelines described in this topic when creating logo assets and diagrams.
 

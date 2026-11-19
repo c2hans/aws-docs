@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ---
 
 # Decompose by subdomain
-<a name="decompose-subdomain"></a>
 
 This pattern uses a [domain-driven design (DDD)](https://en.wikipedia.org/wiki/Domain-driven_design) subdomain to decompose monoliths. This approach breaks down the organization's domain model into separate subdomains that are labeled as ***core*** (a key differentiator for the business), ***supporting*** (possibly related to business but not a differentiator), or ***generic*** (not business-specific). This pattern is appropriate for existing monolithic systems that have well-defined boundaries between subdomain-related modules. This means that you can decompose the monolith by repackaging existing modules as microservices but without significantly rewriting existing code. Each subdomain has a model, and the scope of that model is called a *bounded context*. Microservices are developed around this bounded context. The following table explains the advantages and disadvantages of using this pattern.
 

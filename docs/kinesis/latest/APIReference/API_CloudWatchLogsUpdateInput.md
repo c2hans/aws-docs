@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_CloudWat
 ---
 
 # CloudWatchLogsUpdateInput
-<a name="API_CloudWatchLogsUpdateInput"></a>
 
 The updated Amazon CloudWatch Logs settings for a channel.
 

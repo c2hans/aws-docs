@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/
 ---
 
 # DeletePolicyStore
-<a name="API_DeletePolicyStore"></a>
 
 Deletes the specified policy store.
 

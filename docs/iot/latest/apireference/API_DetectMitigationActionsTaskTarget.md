@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DetectMitiga
 ---
 
 # DetectMitigationActionsTaskTarget
-<a name="API_DetectMitigationActionsTaskTarget"></a>
 
  The target of a mitigation action task.
 

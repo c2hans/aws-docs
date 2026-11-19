@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appsync/latest/APIReference/API_TagResou
 ---
 
 # TagResource
-<a name="API_TagResource"></a>
 
 Tags a resource with user-supplied tags.
 

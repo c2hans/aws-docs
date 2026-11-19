@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q
 ---
 
 # QueryInputData
-<a name="API_amazon-q-connect_QueryInputData"></a>
 
 Input information for the query.
 

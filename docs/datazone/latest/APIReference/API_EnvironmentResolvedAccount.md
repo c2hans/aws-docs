@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Environ
 ---
 
 # EnvironmentResolvedAccount
-<a name="API_EnvironmentResolvedAccount"></a>
 
 Specifies the account/Region that is to be used during project creation for a particular blueprint.
 

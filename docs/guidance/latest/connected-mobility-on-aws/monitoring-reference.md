@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/guidance/latest/connected-mobility-on-aw
 ---
 
 # Monitoring reference
-<a name="monitoring-reference"></a>
 
 ## CloudWatch alarms
 <a name="cloudwatch-alarms"></a>

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::Cloud9::EnvironmentEC2 Tag
-<a name="aws-properties-cloud9-environmentec2-tag"></a>
 
 Metadata that is associated with AWS resources. In particular, a name-value pair that can be associated with an AWS Cloud9 development environment. There are two types of tags: *user tags* and *system tags*. A user tag is created by the user. A system tag is automatically created by AWS services. A system tag is prefixed with `"aws:"` and cannot be modified by the user.
 

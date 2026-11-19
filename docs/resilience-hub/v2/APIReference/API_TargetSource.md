@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_Targe
 ---
 
 # TargetSource
-<a name="API_TargetSource"></a>
 
 Contains an effective RTO or RPO value and its source.
 

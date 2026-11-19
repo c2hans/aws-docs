@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/example_glue_Scenario_Get
 ---
 
 # Learn the basics of AWS Glue with an AWS SDK
-<a name="example_glue_Scenario_GetStartedCrawlersJobs_section"></a>
 
 The following code examples show how to:
 + Create a crawler that crawls a public Amazon S3 bucket and generates a database of CSV-formatted metadata.

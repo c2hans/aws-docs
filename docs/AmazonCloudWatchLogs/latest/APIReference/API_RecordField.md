@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 ---
 
 # RecordField
-<a name="API_RecordField"></a>
 
 A structure that represents a valid record field header and whether it is mandatory.
 

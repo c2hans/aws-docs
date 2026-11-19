@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/agent-registry-control/latest/APIReferen
 ---
 
 # GetRegistry
-<a name="API_GetRegistry"></a>
 
 Gets a registry by identifier (ARN or ID)
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediatailor/latest/ug/security_iam_resou
 ---
 
 # Resource-based policy examples for AWS Elemental MediaTailor
-<a name="security_iam_resource-based-policy-examples"></a>
 
 To learn how to attach a resource-based policy to a channel, see **[Create a channel using the MediaTailor console](channel-assembly-creating-channels.md)**.
 

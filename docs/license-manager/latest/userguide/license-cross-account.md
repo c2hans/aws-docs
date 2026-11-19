@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/license-manager/latest/userguide/license
 ---
 
 # Get Started with Cross-Account AWS License Manager using Shared AWS Managed Microsoft AD
-<a name="license-cross-account"></a>
 
 AWS License Manager supports cross-account functionality using a shared AWS Managed Microsoft AD, enabling organizations to centrally manage user subscriptions from a directory owner account while deploying instances across multiple accounts.
 

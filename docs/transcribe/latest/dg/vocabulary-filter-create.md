@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transcribe/latest/dg/vocabulary-filter-c
 ---
 
 # Creating a vocabulary filter
-<a name="vocabulary-filter-create"></a>
 
 There are two options for creating a custom vocabulary filter:
 

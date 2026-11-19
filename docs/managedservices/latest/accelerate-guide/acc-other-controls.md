@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # Other Security Hub controls in Accelerate
-<a name="acc-other-controls"></a>
 
 The following compensating controls are available in Accelerate.
 

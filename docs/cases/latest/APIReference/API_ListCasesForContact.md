@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_ListCasesF
 ---
 
 # ListCasesForContact
-<a name="API_connect-cases_ListCasesForContact"></a>
 
 Lists cases for a given contact.
 

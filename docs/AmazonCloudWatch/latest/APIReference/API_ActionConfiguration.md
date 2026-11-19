@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API
 ---
 
 # ActionConfiguration
-<a name="API_ActionConfiguration"></a>
 
 Settings that change the content of the notifications and events that an alarm sends when its state changes. These settings apply to the alarm's actions, whichever state triggers them.
 

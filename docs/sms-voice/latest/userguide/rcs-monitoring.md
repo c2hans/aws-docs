@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-monitorin
 ---
 
 # RCS CloudWatch metrics and monitoring
-<a name="rcs-monitoring"></a>
 
 AWS End User Messaging publishes RCS messaging metrics to CloudWatch in the `AWS/SMSVoice` namespace. You can use these metrics to monitor your RCS message delivery, track fallback behavior from RCS to SMS, and set alarms to alert you when delivery patterns change. RCS metrics are published alongside existing SMS and MMS metrics in the same namespace.
 

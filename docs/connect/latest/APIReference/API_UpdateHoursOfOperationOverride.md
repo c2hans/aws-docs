@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateHo
 ---
 
 # UpdateHoursOfOperationOverride
-<a name="API_UpdateHoursOfOperationOverride"></a>
 
 Update the hours of operation override.
 

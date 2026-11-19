@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/mobi.html
 ---
 
 # .mobi
-<a name="mobi"></a>
 
 Used by companies and individuals who want to have their websites accessible on mobile phones.
 

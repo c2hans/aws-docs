@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSS
 ---
 
 # AWSSSODirectoryReadOnly
-<a name="AWSSSODirectoryReadOnly"></a>
 
 **Description**: ReadOnly access for SSO Directory
 

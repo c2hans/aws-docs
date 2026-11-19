@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/replatform-
 ---
 
 # Mobilize phase comparison table
-<a name="mobilize-table"></a>
 
 Based on the thorough analysis, Amazon RDS for Oracle and Amazon RDS Custom for Oracle are similar in many ways but different in some areas.
 

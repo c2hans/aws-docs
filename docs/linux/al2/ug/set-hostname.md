@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/linux/al2/ug/set-hostname.html
 ---
 
 # Change the hostname of your AL2 instance
-<a name="set-hostname"></a>
 
 When you launch an instance into a private VPC, Amazon EC2 assigns a guest OS hostname. The type of hostname that Amazon EC2 assigns depends on your subnet settings. For more information about EC2 hostnames, see [Amazon EC2 instance hostname types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-naming.html) in the *Amazon EC2 User Guide*.
 

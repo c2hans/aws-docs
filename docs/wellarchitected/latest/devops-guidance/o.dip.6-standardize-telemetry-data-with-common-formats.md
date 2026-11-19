@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 ---
 
 # [O.DIP.6] Standardize telemetry data with common formats
-<a name="o.dip.6-standardize-telemetry-data-with-common-formats"></a>
 
  **Category:** RECOMMENDED
 

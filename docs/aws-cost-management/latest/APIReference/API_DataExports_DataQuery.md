@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/
 ---
 
 # DataQuery
-<a name="API_DataExports_DataQuery"></a>
 
 The SQL query of column selections and row filters from the data table you want.
 

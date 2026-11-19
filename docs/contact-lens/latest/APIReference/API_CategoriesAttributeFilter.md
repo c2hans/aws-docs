@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/contact-lens/latest/APIReference/API_Cat
 ---
 
 # CategoriesAttributeFilter
-<a name="API_connect-contact-lens_CategoriesAttributeFilter"></a>
 
 A filter that matches category segments based on the tags assigned to the rules that create the categories. Provide exactly one of `OrConditions`, `AndCondition`, or `TagCondition`.
 

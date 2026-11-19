@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Install custom fonts on Deadline Cloud Linux workers
-<a name="examples-host-config-fonts"></a>
 
 The [linux\_font\_installation](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/linux_font_installation) host configuration script on the GitHub website installs fonts from an Amazon S3 bucket on Deadline Cloud Linux service-managed fleet workers, which makes the fonts available to applications such as Nuke.
 

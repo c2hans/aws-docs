@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_De
 ---
 
 # DeleteMLInputChannelData
-<a name="API_DeleteMLInputChannelData"></a>
 
 Provides the information necessary to delete an ML input channel.
 

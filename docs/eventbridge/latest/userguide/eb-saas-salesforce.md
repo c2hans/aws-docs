@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-saas-sal
 ---
 
 # Receiving events from Salesforce in Amazon EventBridge
-<a name="eb-saas-salesforce"></a>
 
 You can use Amazon EventBridge to receive [events](eb-events.md) from Salesforce in following ways:
 + By using Salesforce's Event Bus Relay feature to receive events directly on an EventBridge partner event bus.

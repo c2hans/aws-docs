@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsEc2L
 ---
 
 # AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6PrefixesDetails
-<a name="API_AwsEc2LaunchTemplateDataNetworkInterfaceSetIpv6PrefixesDetails"></a>
 
  Provides details on one or more IPv6 prefixes to be assigned to the network interface.
 

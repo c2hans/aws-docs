@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/entityresolution/latest/userguide/create
 ---
 
 # Creating an ID namespace source (rule-based)
-<a name="create-id-namespace-source-rule-based"></a>
 
 This topic describes the process of creating an ID namespace source using the **rule-based** method. This method uses matching rules to translate first-party data from a source to a target in an ID mapping workflow.
 

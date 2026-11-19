@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/library-desktop.h
 ---
 
 # Library
-<a name="library-desktop"></a>
 
 Library is where you browse, search, and pick up where you left off on content and resources. You can search, filter it by content type, and switch between a table view and a thumbnail grid.
 

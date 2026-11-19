@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/a
 ---
 
 # Fleet Management Solution for Connected Farm
-<a name="fleet-management-for-connected-farm"></a>
 
 Publication date: **August 19, 2022 ([Diagram history](diagram-history.md))**
 

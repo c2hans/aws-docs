@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-
 ---
 
 # Updating provisioned product properties
-<a name="enduser-update-pp-properties"></a>
 
  You can change the owner of a provisioned product at any time. You need to know the user's ARN or the role you want to set as the new owner.
 

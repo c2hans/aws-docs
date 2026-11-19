@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_S
 ---
 
 # SearchProvisionedProducts
-<a name="API_SearchProvisionedProducts"></a>
 
 Gets information about the provisioned products that meet the specified criteria.
 

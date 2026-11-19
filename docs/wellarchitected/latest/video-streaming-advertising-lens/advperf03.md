@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # Data storage selection
-<a name="advperf03"></a>
 
  The advertising industry generates large volumes of data from user interactions, campaigns, and real-time bidding, and efficient storage is essential for handling that data. AWS offers many purpose-built storage services. When you understand what your advertising workload requires and choose the services that match, you improve bid latency, analytics freshness, and storage cost.
 

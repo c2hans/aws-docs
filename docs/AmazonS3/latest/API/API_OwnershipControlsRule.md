@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_OwnershipControl
 ---
 
 # OwnershipControlsRule
-<a name="API_OwnershipControlsRule"></a>
 
 The container element for an ownership control rule.
 

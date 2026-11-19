@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Clou
 ---
 
 # CloudwatchApplicationInsightsServiceLinkedRolePolicy
-<a name="CloudwatchApplicationInsightsServiceLinkedRolePolicy"></a>
 
 **Description**: Cloudwatch Application Insights Service Linked Role Policy
 

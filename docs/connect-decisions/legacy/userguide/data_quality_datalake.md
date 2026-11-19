@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/data_
 ---
 
 # Data quality
-<a name="data_quality_datalake"></a>
 
 Any identified data quality errors are displayed on the web application under Module errors. You can view the dataset that has errors and the impacted AWS Supply Chain module. Additionally, you can download the data quality report from your Amazon S3 bucket. The report provides detailed information on the dataset errors in the ingested data.
 

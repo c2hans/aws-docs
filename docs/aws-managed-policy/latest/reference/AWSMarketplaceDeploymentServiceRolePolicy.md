@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSM
 ---
 
 # AWSMarketplaceDeploymentServiceRolePolicy
-<a name="AWSMarketplaceDeploymentServiceRolePolicy"></a>
 
 **Description**: Allows AWS Marketplace to create and manage seller deployment parameters for the products that you subscribe to on AWS Marketplace.
 

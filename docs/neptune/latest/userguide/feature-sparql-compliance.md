@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/feature-sparql-
 ---
 
 # SPARQL standards compliance in Amazon Neptune
-<a name="feature-sparql-compliance"></a>
 
 After listing applicable SPARQL standards, the following sections provide specific details about how Neptune's SPARQL implementation extends or diverges from those standards.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 ---
 
 # Workload lifecycle
-<a name="workload-lifecycle"></a>
 
 **Review accuracy of supporting operational data.** Make sure that there are periodic reviews of the tags associated with your workload lifecycle, and that the appropriate stakeholders are involved in these reviews.
 

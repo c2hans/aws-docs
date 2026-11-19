@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANFuotaTask
-<a name="API_LoRaWANFuotaTask"></a>
 
 The LoRaWAN information used with a FUOTA task.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Confl
 ---
 
 # ConflictResolution
-<a name="API_ConflictResolution"></a>
 
 If AUTOMERGE is the conflict resolution strategy, a list of inputs to use when resolving conflicts during a merge.
 

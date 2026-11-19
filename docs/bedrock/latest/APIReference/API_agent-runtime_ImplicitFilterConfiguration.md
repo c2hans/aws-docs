@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-ru
 ---
 
 # ImplicitFilterConfiguration
-<a name="API_agent-runtime_ImplicitFilterConfiguration"></a>
 
 Settings for implicit filtering, where a model generates a metadata filter based on the prompt.
 

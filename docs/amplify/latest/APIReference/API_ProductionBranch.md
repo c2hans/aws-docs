@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_Producti
 ---
 
 # ProductionBranch
-<a name="API_ProductionBranch"></a>
 
 Describes the information about a production branch for an Amplify app.
 

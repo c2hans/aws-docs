@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/micro-front
 ---
 
 # API integration ‒ Backend for frontend
-<a name="api-integration-data-fetching"></a>
 
 The [Backends for Frontends (BFF) pattern](https://aws.amazon.com/blogs/mobile/backends-for-frontends-pattern/) is typically used in microservices environments. In the context of micro-frontends, a BFF is a server-side service that belongs to a micro-frontend. Not all micro-frontends need to have a BFF. However, if you're using a BFF, it must run inside the same bounded context and not be shared across other bounded contexts.
 

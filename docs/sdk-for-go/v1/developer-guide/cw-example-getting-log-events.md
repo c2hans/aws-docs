@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/cw-example
 AWS SDK for Go V1 has reached end-of-support. We recommend that you migrate to [AWS SDK for Go V2](https://docs.aws.amazon.com/sdk-for-go/v2/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-aws-sdk-for-go-v1-on-july-31-2025/).
 
 # Getting Log Events from CloudWatch
-<a name="cw-example-getting-log-events"></a>
 
 The following example lists up to 100 of the latest events for a log group’s log stream. Replace LOG-GROUP-NAME with the name of the CloudWatch log group and LOG-STREAM-NAME with the name of the log stream for the log group.
 

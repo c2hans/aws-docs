@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/conf
 ---
 
 # Configuring Connections to your ERP
-<a name="configuring-connections-to-your-erp"></a>
 
  To enable Amazon Connect Decisions to perform operations on your behalf in your Enterprise Resource Planning (ERP) system, you must configure a Connection that specifies the necessary connection parameters and the credentials Amazon Connect Decisions should use during the operation.
 

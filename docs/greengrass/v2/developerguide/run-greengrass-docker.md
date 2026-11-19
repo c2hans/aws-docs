@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/greengrass/v2/developerguide/run-greengr
 ---
 
 # Run AWS IoT Greengrass Core software in a Docker container
-<a name="run-greengrass-docker"></a>
 
 AWS IoT Greengrass can be configured to run in a Docker container. Docker is a platform that provides the tools for you to build, run, test, and deploy applications that are based on Linux containers. When you run an AWS IoT Greengrass Docker image, you can choose whether to provide your AWS credentials to the Docker container and allow the AWS IoT Greengrass Core software installer to automatically provision the AWS resources that a Greengrass core device requires to operate. If you don't want to provide AWS credentials, then you can manually provision AWS resources and run AWS IoT Greengrass Core software in the Docker container.
 

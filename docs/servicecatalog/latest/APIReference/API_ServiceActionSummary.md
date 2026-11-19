@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_S
 ---
 
 # ServiceActionSummary
-<a name="API_ServiceActionSummary"></a>
 
 Detailed information about the self-service action.
 

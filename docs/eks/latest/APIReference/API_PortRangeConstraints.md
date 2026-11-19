@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_PortRangeCon
 ---
 
 # PortRangeConstraints
-<a name="API_PortRangeConstraints"></a>
 
 Constraints for a port range parameter.
 

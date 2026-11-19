@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API
 ---
 
 # UpdateAIAgent
-<a name="API_amazon-q-connect_UpdateAIAgent"></a>
 
 Updates an AI Agent.
 

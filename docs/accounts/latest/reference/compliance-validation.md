@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/accounts/latest/reference/compliance-val
 ---
 
 # Compliance validation for AWS Account Management
-<a name="compliance-validation"></a>
 
 Our new AWS experience cannot be used for any regulated workloads. The following information is only relevant to accounts created when you use Sign up for AWS (advanced).
 

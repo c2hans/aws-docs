@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_MatterCap
 ---
 
 # MatterCapabilityReportCluster
-<a name="API_MatterCapabilityReportCluster"></a>
 
 Capability used in Matter capability report.
 

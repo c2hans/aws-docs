@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # FilterDimension
-<a name="API_connect-customer-profiles_FilterDimension"></a>
 
 Contains the map of attribute names to attribute dimensions.
 

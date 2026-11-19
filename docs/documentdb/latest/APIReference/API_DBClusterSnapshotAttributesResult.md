@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_DBClu
 ---
 
 # DBClusterSnapshotAttributesResult
-<a name="API_DBClusterSnapshotAttributesResult"></a>
 
 Detailed information about the attributes that are associated with a cluster snapshot.
 

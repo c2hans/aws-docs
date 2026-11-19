@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-refer
 ---
 
 # Group Rank
-<a name="sql-reference-group-rank-udx"></a>
 
 This function applies a `RANK()` function to logical groups of rows and optionally delivers the group in sorted order.
 

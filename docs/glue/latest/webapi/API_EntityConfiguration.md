@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_EntityConfigurati
 ---
 
 # EntityConfiguration
-<a name="API_EntityConfiguration"></a>
 
 Configuration that defines how to interact with a specific data entity through the REST API, including its access patterns and schema definition.
 

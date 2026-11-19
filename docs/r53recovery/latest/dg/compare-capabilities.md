@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/compare-capabiliti
 ---
 
 # Compare multi-AZ and multi-Region recovery capabilities in ARC
-<a name="compare-capabilities"></a>
 
 Zonal shift, zonal autoshift, routing control, and Region switch in Amazon Application Recovery Controller (ARC) can all achieve rapid recovery and help you to ensure resilience for your AWS applications. These features are highly available, and help support recovery in scenarios when your application is experiencing increased latency or reduced availability. These features also help recover applications quickly by shifting traffic away from isolated impairments, which limits the impact and time lost from impairments.
 

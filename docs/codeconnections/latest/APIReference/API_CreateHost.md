@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # CreateHost
-<a name="API_CreateHost"></a>
 
 Creates a resource that represents the infrastructure where a third-party provider is installed. The host is used when you create connections to an installed third-party provider type, such as GitHub Enterprise Server. You create one host for all connections to that provider.
 

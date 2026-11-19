@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lights
 ---
 
 # Migrate data from CentOS to AlmaLinux on Lightsail
-<a name="amazon-lightsail-migrate-centos-to-almalinux"></a>
 
 Migrating from CentOS to AlmaLinux is a straightforward process by which you move data from one instance in Lightsail to another. This topic outlines two options that you can use to migrate your data.
 

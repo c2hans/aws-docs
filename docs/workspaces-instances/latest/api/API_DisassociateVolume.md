@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/workspaces-instances/latest/api/API_Disa
 ---
 
 # DisassociateVolume
-<a name="API_DisassociateVolume"></a>
 
 Detaches a volume from a WorkSpace Instance.
 

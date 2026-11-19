@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-logging-wit
 ---
 
 # Cross-account ingestion
-<a name="cross-account-ingestion"></a>
 
 Centralized Logging with OpenSearch supports ingesting AWS Service logs and Application logs in different AWS accounts within the same Region. After deploying Centralized Logging with OpenSearch in one account (main account), you can launch the CloudFormation stack in a different account (member account), and associate the two accounts (main account and member account) to implement cross-account ingestion.
 

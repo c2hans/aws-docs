@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_
 ---
 
 # LifeCycleForView
-<a name="API_LifeCycleForView"></a>
 
  Provides the lifecycle view of an opportunity resource shared through a snapshot.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_StopT
 ---
 
 # StopTestRun
-<a name="API_StopTestRun"></a>
 
 Stops an in-progress test run.
 

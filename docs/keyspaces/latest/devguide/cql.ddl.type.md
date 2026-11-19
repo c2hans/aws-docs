@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/cql.ddl.type.h
 ---
 
 # User-defined types (UDTs)
-<a name="cql.ddl.type"></a>
 
 *UDT* – A grouping of fields and data types that you can use to define a single column in Amazon Keyspaces. Valid data types for UDTs are all supported Cassandra data types, including collections and other UDTs that you've already created in the same keyspace. For more information about supported Cassandra data types, see [Cassandra data type support](cassandra-apis.md#cassandra-data-type).
 

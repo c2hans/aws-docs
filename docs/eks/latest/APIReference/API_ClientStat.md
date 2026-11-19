@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/APIReference/API_ClientStat.h
 ---
 
 # ClientStat
-<a name="API_ClientStat"></a>
 
 Details about clients using the deprecated resources.
 

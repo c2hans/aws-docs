@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Search documents in Amazon OpenSearch Service
-<a name="gsgsearch"></a>
 
 To search documents in an Amazon OpenSearch Service domain, use the OpenSearch search API. Alternatively, you can use [OpenSearch Dashboards](dashboards.md) to search documents in the domain.
 

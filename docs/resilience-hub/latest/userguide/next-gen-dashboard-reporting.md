@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 ---
 
 # Dashboard and reporting
-<a name="next-gen-dashboard-reporting"></a>
 
 The Next generation Resilience Hub dashboard provides a centralized view of your organization's resilience posture, enabling SREs to monitor compliance, track trends, and generate reports across all services.
 

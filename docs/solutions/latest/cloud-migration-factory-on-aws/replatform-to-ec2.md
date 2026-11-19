@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 ---
 
 # Replatform to EC2
-<a name="replatform-to-ec2"></a>
 
 The Cloud Migration Factory on AWS solution allows groups of EC2 instances to be launched automatically from configurations defined in its datastore; deploying EC2 instances with EBS volumes attached. This provides the ability to provision new EC2 instances, allowing Replatform through AWS CloudFormation, and Rehost of on-premise servers with AWS MGN within a single CMF user interface. Before you can use this functionality the datastore must contain the definition of the servers. Once this has been addressed the servers should be linked to a wave. When the decision is taken to launch the EC2 instances, the user can initiate the following actions against the wave:
 + EC2 Input Validation

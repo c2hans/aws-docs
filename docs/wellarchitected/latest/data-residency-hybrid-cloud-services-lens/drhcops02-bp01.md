@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 ---
 
 # DRHCOPS02-BP01 Consider AWS Outposts for data residency requirements when you need to evaluate data residency requirements, including control over data and its physical location
-<a name="drhcops02-bp01"></a>
 
  Consider AWS Outposts to run AWS services on-premises and meet data residency requirements for regulatory compliance or data sovereignty reasons.
 

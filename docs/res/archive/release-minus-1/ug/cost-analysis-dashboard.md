@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/res/archive/release-minus-1/ug/cost-anal
 ---
 
 # Cost analysis dashboard
-<a name="cost-analysis-dashboard"></a>
 
 The cost analysis dashboard allows RES administrators to monitor project budgets and project costs over time from the RES portal. Costs can be filtered at the project level.
 

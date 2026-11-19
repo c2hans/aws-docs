@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/ko
 ---
 
 # SDK for Kotlin code examples
-<a name="kotlin_code_examples"></a>
 
 The code examples in this topic show you how to use the AWS SDK for Kotlin with AWS.
 

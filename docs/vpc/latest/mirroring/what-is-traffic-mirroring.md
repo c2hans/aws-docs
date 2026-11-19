@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mir
 ---
 
 # What is Traffic Mirroring?
-<a name="what-is-traffic-mirroring"></a>
 
 Traffic Mirroring is an Amazon VPC feature that you can use to copy network traffic from an elastic network interface of type `interface`. You can then send the traffic to out-of-band security and monitoring appliances for:
 + Content inspection

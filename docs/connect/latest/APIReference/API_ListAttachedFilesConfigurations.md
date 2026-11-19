@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ListAtta
 ---
 
 # ListAttachedFilesConfigurations
-<a name="API_ListAttachedFilesConfigurations"></a>
 
 Provides summary information about the attached files configurations for the specified Connect Customer instance.
 

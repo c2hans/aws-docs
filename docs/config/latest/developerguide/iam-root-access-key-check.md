@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/iam-root-ac
 ---
 
 # iam-root-access-key-check
-<a name="iam-root-access-key-check"></a>
 
 Checks if the root user access key is available. The rule is COMPLIANT if the user access key does not exist. Otherwise, NON\_COMPLIANT.
 

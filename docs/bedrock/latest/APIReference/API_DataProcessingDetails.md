@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_DataProc
 ---
 
 # DataProcessingDetails
-<a name="API_DataProcessingDetails"></a>
 
 For a Distillation job, the status details for the data processing sub-task of the job.
 

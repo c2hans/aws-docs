@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_Operatio
 ---
 
 # Actions
-<a name="API_Operations"></a>
 
 The following actions are supported:
 +  [AssociateAdminAccount](API_AssociateAdminAccount.md)

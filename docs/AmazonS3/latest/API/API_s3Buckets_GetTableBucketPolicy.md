@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/API/API_s3Buckets_GetTab
 ---
 
 # GetTableBucketPolicy
-<a name="API_s3Buckets_GetTableBucketPolicy"></a>
 
 Gets details about a table bucket policy. For more information, see [Viewing a table bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-bucket-policy.html#table-bucket-policy-get) in the *Amazon Simple Storage Service User Guide*.
 

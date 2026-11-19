@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/sub
 ---
 
 # How to submit a job to Deadline Cloud
-<a name="submit-jobs-how"></a>
 
 There are many different ways to submit jobs to AWS Deadline Cloud. This section describes some of the ways that you can submit jobs using the tools provided by Deadline Cloud or by creating your own custom tools for your workloads.
 + From a terminal – for when you're first developing a job bundle, or when users submitting a job are comfortable using the command line

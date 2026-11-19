@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aw
 ---
 
 # Nitro System security in context
-<a name="nitro-system-security-in-context"></a>
 
  The Nitro System design features discussed in this paper operate in the context of the full set of robust controls in place at AWS to maintain security and data protection in the AWS Cloud. In this section we will provide a high-level overview of relevant AWS security and compliance practices. As an AWS customer you inherit all the best practices of AWS policies, architecture, and operational processes built to satisfy the requirements of our most security-sensitive customers.
 

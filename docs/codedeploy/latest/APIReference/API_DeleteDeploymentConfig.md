@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_Delet
 ---
 
 # DeleteDeploymentConfig
-<a name="API_DeleteDeploymentConfig"></a>
 
 Deletes a deployment configuration.
 

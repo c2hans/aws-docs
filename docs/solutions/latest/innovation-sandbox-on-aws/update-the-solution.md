@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Update the solution
-<a name="update-the-solution"></a>
 
 **Important**
 Always review the solution release notes before updating to understand any changes, new features, or configuration requirements that may affect your deployment.

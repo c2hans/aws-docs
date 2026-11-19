@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/account-access/latest/APIReference/API_E
 ---
 
 # Entitlement
-<a name="API_Entitlement"></a>
 
 Specifies the entitlement configuration for an account access manager application, defining which principal can assume which IAM role.
 

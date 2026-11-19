@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/
 ---
 
 # What is monitoring and incident management for Amazon EKS in AMS Accelerate?
-<a name="acc-what-is-mon-inc-eks"></a>
 
 Monitoring and incident management for Amazon EKS provides the following:
 + A default configuration that creates, manages, and deploys monitors and policies across your managed account for Amazon EKS clusters that you select.

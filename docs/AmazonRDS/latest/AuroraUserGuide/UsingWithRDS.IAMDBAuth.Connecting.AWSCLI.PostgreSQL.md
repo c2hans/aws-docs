@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/UsingWi
 ---
 
 # Connecting to your DB cluster using IAM authentication from the command line: AWS CLI and psql client
-<a name="UsingWithRDS.IAMDBAuth.Connecting.AWSCLI.PostgreSQL"></a>
 
 You can connect from the command line to an Aurora PostgreSQL DB cluster with the AWS CLI and psql command line tool as described following.
 

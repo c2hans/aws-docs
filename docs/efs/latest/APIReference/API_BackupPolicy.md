@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/efs/latest/APIReference/API_BackupPolicy
 ---
 
 # BackupPolicy
-<a name="API_BackupPolicy"></a>
 
 The backup policy for the file system used to create automatic daily backups. If status has a value of `ENABLED`, the file system is being automatically backed up. For more information, see [Automatic backups](https://docs.aws.amazon.com/efs/latest/ug/awsbackup.html#automatic-backups).
 

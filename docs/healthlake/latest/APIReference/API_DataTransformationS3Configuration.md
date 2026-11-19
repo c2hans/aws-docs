@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/APIReference/API_DataT
 ---
 
 # DataTransformationS3Configuration
-<a name="API_DataTransformationS3Configuration"></a>
 
 The Amazon S3 output configuration for a data transformation job, including the output location and encryption settings.
 

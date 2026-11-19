@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutConfig
 ---
 
 # PutConfigurationRecorder
-<a name="API_PutConfigurationRecorder"></a>
 
 Creates or updates the customer managed configuration recorder.
 

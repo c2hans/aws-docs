@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-supply-chain/latest/APIReference/API
 ---
 
 # DataIntegrationFlowDatasetOptions
-<a name="API_DataIntegrationFlowDatasetOptions"></a>
 
 The dataset options used in dataset source and target configurations.
 

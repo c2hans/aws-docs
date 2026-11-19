@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_AuthInfo.htm
 ---
 
 # AuthInfo
-<a name="API_AuthInfo"></a>
 
 A collection of authorization information.
 

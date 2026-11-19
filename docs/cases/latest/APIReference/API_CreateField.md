@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_CreateFiel
 ---
 
 # CreateField
-<a name="API_connect-cases_CreateField"></a>
 
 Creates a field in the Cases domain. This field is used to define the case object model (that is, defines what data can be captured on cases) in a Cases domain.
 

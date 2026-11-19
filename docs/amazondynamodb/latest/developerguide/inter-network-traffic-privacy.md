@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/int
 ---
 
 # Securing DynamoDB connections using VPC endpoints and IAM policies"
-<a name="inter-network-traffic-privacy"></a>
 
 Connections are protected both between Amazon DynamoDB and on-premises applications and between DynamoDB and other AWS resources within the same AWS Region.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appfabric/latest/api/API_IngestionSummar
 ---
 
 # IngestionSummary
-<a name="API_IngestionSummary"></a>
 
 Contains a summary of an ingestion.
 

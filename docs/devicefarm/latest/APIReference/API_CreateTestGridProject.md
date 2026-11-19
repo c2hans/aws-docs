@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_Creat
 ---
 
 # CreateTestGridProject
-<a name="API_CreateTestGridProject"></a>
 
 Creates a Selenium testing project. Projects are used to track [TestGridSession](API_TestGridSession.md) instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/install
 ---
 
 # Install or uninstall license included applications
-<a name="install-uninstall-apps"></a>
 
 **Install or uninstall license included applications**
 

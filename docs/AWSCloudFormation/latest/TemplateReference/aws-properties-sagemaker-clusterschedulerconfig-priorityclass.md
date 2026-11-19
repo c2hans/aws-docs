@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SageMaker::ClusterSchedulerConfig PriorityClass
-<a name="aws-properties-sagemaker-clusterschedulerconfig-priorityclass"></a>
 
 Priority class configuration. When included in `PriorityClasses`, these class configurations define how tasks are queued.
 

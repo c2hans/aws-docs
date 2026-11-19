@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Contr
 ---
 
 # ContributionAnalysisFactor
-<a name="API_ContributionAnalysisFactor"></a>
 
 The definition for the `ContributionAnalysisFactor`.
 

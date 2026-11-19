@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtim
 ---
 
 # Direct code deployment for Python
-<a name="runtime-get-started-code-deploy-python"></a>
 
 With direct code deployment, you package your Python agent code and its dependencies in a .zip file archive and deploy it to AgentCore Runtime. Your agent still needs to follow [AgentCore Runtime requirements](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-service-contract.html) : have an entrypoint .py file that either uses the `@app.entrypoint` annotation from [Amazon Bedrock AgentCore Python SDK](https://github.com/aws/bedrock-agentcore-sdk-python) or implements `/invocations` POST and `/ping` GET server endpoints.
 

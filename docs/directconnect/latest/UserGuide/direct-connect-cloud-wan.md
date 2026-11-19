@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-co
 ---
 
 # Direct Connect gateway and AWS Cloud WAN core network associations
-<a name="direct-connect-cloud-wan"></a>
 
 Associate a Direct Connect gateway to an AWS Cloud WAN core network using a Direct Connect attachment type in Cloud WAN. This direct association routes traffic between your core network’s selected edge locations and your Direct Connect connections using the shortest available path
 

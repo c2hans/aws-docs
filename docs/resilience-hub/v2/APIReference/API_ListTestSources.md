@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListT
 ---
 
 # ListTestSources
-<a name="API_ListTestSources"></a>
 
 Lists the monitoring sources attached to a test, optionally filtered by type.
 

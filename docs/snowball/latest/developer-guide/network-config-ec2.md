@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/snowball/latest/developer-guide/network-
 AWS Snowball Edge is no longer available to new customers. New customers should explore [AWS DataSync](https://aws.amazon.com/datasync/) for online transfers, [AWS Data Transfer Terminal](https://aws.amazon.com/data-transfer-terminal/) for secure physical transfers, or AWS Partner solutions. For edge computing, explore [AWS Outposts](https://aws.amazon.com/outposts/).
 
 # Network configurations for compute instances on Snowball Edge
-<a name="network-config-ec2"></a>
 
 After you launch your compute instance on a Snowball Edge, you must provide it with an IP address by creating a network interface. Snowball Edges support two kinds of network interfaces, a virtual network interface and a direct network interface.
 

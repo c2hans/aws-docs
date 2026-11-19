@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/fms/2018-01-01/APIReference/API_AccountS
 ---
 
 # AccountScope
-<a name="API_AccountScope"></a>
 
 Configures the accounts within the administrator's AWS Organizations organization that the specified Firewall Manager administrator can apply policies to.
 

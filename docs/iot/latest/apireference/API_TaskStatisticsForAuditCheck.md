@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_TaskStatisti
 ---
 
 # TaskStatisticsForAuditCheck
-<a name="API_TaskStatisticsForAuditCheck"></a>
 
 Provides summary counts of how many tasks for findings are in a particular state. This information is included in the response from DescribeAuditMitigationActionsTask.
 

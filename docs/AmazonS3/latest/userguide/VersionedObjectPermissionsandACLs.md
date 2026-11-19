@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/VersionedObjec
 ---
 
 # Configuring versioned object permissions
-<a name="VersionedObjectPermissionsandACLs"></a>
 
 Permissions for objects in Amazon S3 are set at the version level. Each version has its own object owner. The AWS account that creates the object version is the owner. So, you can set different permissions for different versions of the same object. To do so, you must specify the version ID of the object whose permissions you want to set in a `PUT Object versionId acl` request. For a detailed description and instructions on using ACLs, see [Identity and Access Management for Amazon S3](security-iam.md).
 

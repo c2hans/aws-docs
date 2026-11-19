@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_Execut
 ---
 
 # ExecuteCommandLogConfiguration
-<a name="API_ExecuteCommandLogConfiguration"></a>
 
 The log configuration for the results of the execute command actions. The logs can be sent to CloudWatch Logs or an Amazon S3 bucket.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_apigatew
 ---
 
 # aws-apigatewayv2websocket-sqs
-<a name="aws_apigatewayv2websocket_sqs"></a>
 
 ![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
 

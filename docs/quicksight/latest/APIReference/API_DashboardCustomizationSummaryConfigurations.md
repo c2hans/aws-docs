@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Dashb
 ---
 
 # DashboardCustomizationSummaryConfigurations
-<a name="API_DashboardCustomizationSummaryConfigurations"></a>
 
 The dashboard customization summary configuration for an embedded Quick Sight dashboard.
 

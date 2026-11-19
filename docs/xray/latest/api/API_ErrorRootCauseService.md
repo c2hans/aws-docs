@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/API_ErrorRootCauseServic
 ---
 
 # ErrorRootCauseService
-<a name="API_ErrorRootCauseService"></a>
 
 A collection of fields identifying the services in a trace summary error.
 

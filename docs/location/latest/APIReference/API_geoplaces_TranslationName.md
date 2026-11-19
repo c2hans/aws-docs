@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 ---
 
 # TranslationName
-<a name="API_geoplaces_TranslationName"></a>
 
 A translation or alternative name for an address component.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/textract/latest/dg/queryresponse.html
 ---
 
 # Queries
-<a name="queryresponse"></a>
 
 When provided a query, Amazon Textract provides a specialized response object. This object repeats the question back to the user along with the alias for the question. It then provides the confidence Amazon Textract has with the answer, a location of the answer on the page, and the text answer to the question. If no answer is found, this response element is kept blank.
 

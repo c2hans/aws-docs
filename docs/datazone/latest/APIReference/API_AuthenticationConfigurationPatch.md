@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Authent
 ---
 
 # AuthenticationConfigurationPatch
-<a name="API_AuthenticationConfigurationPatch"></a>
 
 The authentication configuration patch of a connection.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codeconnections/latest/APIReference/API_
 ---
 
 # DeleteSyncConfiguration
-<a name="API_DeleteSyncConfiguration"></a>
 
 Deletes the sync configuration for a specified repository and connection.
 

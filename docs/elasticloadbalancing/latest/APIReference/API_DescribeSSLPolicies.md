@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/APIReference
 ---
 
 # DescribeSSLPolicies
-<a name="API_DescribeSSLPolicies"></a>
 
 Describes the specified policies or all policies used for SSL negotiation.
 

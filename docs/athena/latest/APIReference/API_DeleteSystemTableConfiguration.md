@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_DeleteSys
 ---
 
 # DeleteSystemTableConfiguration
-<a name="API_DeleteSystemTableConfiguration"></a>
 
 Disables system tables for the current account by deleting the account-level configuration. If the configuration doesn't exist, the operation succeeds without making any changes. The system table and previously published data are left intact.
 

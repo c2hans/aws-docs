@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_G
 ---
 
 # GetDistributionLatestCacheReset
-<a name="API_GetDistributionLatestCacheReset"></a>
 
 Returns the timestamp and status of the last cache reset of a specific Amazon Lightsail content delivery network (CDN) distribution.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 ---
 
 # Console-equivalent and improved-caching conda queue environments
-<a name="examples-queue-env-conda-console"></a>
 
 The samples repository on the GitHub website includes the following conda queue environments that match the Deadline Cloud console onboarding flow:
 

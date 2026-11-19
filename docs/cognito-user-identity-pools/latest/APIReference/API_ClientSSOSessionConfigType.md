@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIRe
 ---
 
 # ClientSSOSessionConfigType
-<a name="API_ClientSSOSessionConfigType"></a>
 
 The SSO session settings for a user pool app client.
 

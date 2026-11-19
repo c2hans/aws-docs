@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_PurchaseR
 ---
 
 # PurchaseReservedInstancesOffering
-<a name="API_PurchaseReservedInstancesOffering"></a>
 
 Purchases a Reserved Instance for use with your account. With Reserved Instances, you pay a lower hourly rate compared to On-Demand instance pricing.
 

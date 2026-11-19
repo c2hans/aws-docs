@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/governance.html
 ---
 
 # Model governance to manage permissions and track model performance
-<a name="governance"></a>
 
 Model governance is a framework that gives systematic visibility into machine learning (ML) model development, validation, and usage. Amazon SageMaker AI provides purpose-built ML governance tools for managing control access, activity tracking, and reporting across the ML lifecycle.
 

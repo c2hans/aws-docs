@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connecthealth/latest/userguide/al-subscr
 ---
 
 # Subscription management
-<a name="al-subscription-management"></a>
 
 A subscription associates a provider with the ambient documentation agent. You need an active subscription before you can start a streaming session.
 

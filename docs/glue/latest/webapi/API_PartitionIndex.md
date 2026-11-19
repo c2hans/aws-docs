@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PartitionIndex.ht
 ---
 
 # PartitionIndex
-<a name="API_PartitionIndex"></a>
 
 A structure for a partition index.
 

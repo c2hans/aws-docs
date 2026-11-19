@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Post
 ---
 
 # Controlling user access to the PostgreSQL database
-<a name="Appendix.PostgreSQL.CommonDBATasks.Access"></a>
 
 In PostgreSQL version 14 and earlier, new databases are created with a default set of privileges in the database's `public` schema that allow all database users and roles to create objects. These privileges allow database users to connect to the database, for example, and create temporary tables while connected.
 

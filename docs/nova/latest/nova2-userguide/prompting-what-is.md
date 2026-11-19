@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/prompting-wh
 ---
 
 # What is prompt engineering
-<a name="prompting-what-is"></a>
 
 Prompt engineering refers to the practice of optimizing textual input to a large language model (LLM) to improve output and receive the responses you want. Prompting helps an LLM perform a wide variety of tasks, including classification, question answering, code generation, creative writing, and more. The quality of prompts that you provide to a LLM can impact the quality of the model's responses. This section provides you the necessary information to get started with prompt engineering. It also covers tools to help you find the best possible prompt format for your use case when using a LLM on Amazon Bedrock
 

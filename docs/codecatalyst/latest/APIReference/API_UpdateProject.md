@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codecatalyst/latest/APIReference/API_Upd
 ---
 
 # UpdateProject
-<a name="API_UpdateProject"></a>
 
 Changes one or more values for a project.
 

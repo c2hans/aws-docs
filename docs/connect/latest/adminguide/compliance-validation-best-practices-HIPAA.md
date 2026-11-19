@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/compliance-val
 ---
 
 # Best practices for HIPAA compliance in Connect Customer
-<a name="compliance-validation-best-practices-HIPAA"></a>
 
 Following this list of best practices can help you ensure your Connect Customer contact center is HIPAA compliant.
 + Conduct compliance eligibility audits for all services used in your contact center, as well as any third party integration points.

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Insights Catalog
-<a name="insights-catalog"></a>
 
 Cluster Insights delivers the following actionable insights on impacted Clusters
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f
 ---
 
 # Interconnecting your VPCs
-<a name="interconnecting-vpcs"></a>
 
 The following tables show the key considerations when you are interconnecting your VPCs.
 

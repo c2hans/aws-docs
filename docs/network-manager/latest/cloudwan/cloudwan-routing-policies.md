@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan
 ---
 
 # AWS Cloud WAN Routing policies
-<a name="cloudwan-routing-policies"></a>
 
 Cloud WAN Routing Policies provide customers fine-grained routing controls to optimize route management and customize network routing behavior per their individual needs. A routing policy is a set of rules that gives you precise control over route propagations in your core network allowing you flexible routes management, optimized performance and greater security by controlling your routing and reachability in your global network. Using this feature, customers can perform advanced routing techniques such as route filtering and summarization to have better control on routes exchanged across Cloud WAN and your external networks connected to Cloud WAN.
 

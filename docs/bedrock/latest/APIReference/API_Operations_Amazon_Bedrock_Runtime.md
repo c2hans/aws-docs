@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Operatio
 ---
 
 # Amazon Bedrock Runtime
-<a name="API_Operations_Amazon_Bedrock_Runtime"></a>
 
 The following actions are supported by Amazon Bedrock Runtime:
 +  [ApplyGuardrail](API_runtime_ApplyGuardrail.md)

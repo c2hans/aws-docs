@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/tagging.html
 ---
 
 # Tagging resources in HealthOmics
-<a name="tagging"></a>
 
 **Topics**
 + [Important notice](#important-notice-tagging)

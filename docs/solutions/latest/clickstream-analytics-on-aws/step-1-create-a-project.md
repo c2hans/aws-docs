@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 ---
 
 # Step 1: Create a project
-<a name="step-1-create-a-project"></a>
 
  To get started with the Clickstream Analytics on AWS guidance, you need to firstly create a project in the guidance console. A project is like a container for all the AWS resources provisioned for collecting and analyzing the clickstream data from your apps.
 

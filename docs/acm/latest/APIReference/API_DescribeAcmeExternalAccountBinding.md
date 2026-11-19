@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/acm/latest/APIReference/API_DescribeAcme
 ---
 
 # DescribeAcmeExternalAccountBinding
-<a name="API_DescribeAcmeExternalAccountBinding"></a>
 
 Returns detailed metadata about the specified external account binding, including the associated IAM role, expiration time, and usage history.
 

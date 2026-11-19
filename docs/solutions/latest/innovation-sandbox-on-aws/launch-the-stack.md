@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 ---
 
 # Launch the stacks
-<a name="launch-the-stack"></a>
 
 You must gather deployment parameter details before deploying the stacks. For details, refer to [Prerequisites](prerequisites.md).
 

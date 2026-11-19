@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/a2a-setup-1p.h
 ---
 
 # Set up collaboration with another Connect Customer AI agent
-<a name="a2a-setup-1p"></a>
 
 This page describes how to add a collaborating AI agent that runs in your Connect Customer instance. You configure collaborators through the Connect Customer API. Connect Customer manages the A2A protocol between your AI agents for you.
 

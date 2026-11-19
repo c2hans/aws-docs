@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ---
 
 # ADVPERF02-BP01 Evaluate compute benchmarks and compute options certified by the ISVs if applicable
-<a name="advperf02-bp01"></a>
 
  Evaluate ISV compatibility on AWS, and choose resources based on published benchmarks. For advertising software such as Aerospike and Databricks, suboptimal instances affect bid latency and analytics freshness.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/kendra/latest/dg/create-ds-s3.html
 Amazon Kendra is no longer open to new customers. For capabilities similar to Amazon Kendra, explore Amazon Bedrock Knowledge Bases. [Learn more](https://docs.aws.amazon.com/kendra/latest/dg/kendra-availability-change.html).
 
 # Creating an Amazon S3 data source
-<a name="create-ds-s3"></a>
 
 The following examples demonstrate creating an Amazon S3 data source. The examples assume that you have already created an index and an IAM role with permission to read the data from the index. For more information about the IAM role, see [IAM access roles](https://docs.aws.amazon.com/kendra/latest/dg/iam-roles.html#iam-roles-ds). For more information about creating an index, see [Creating an index](https://docs.aws.amazon.com/kendra/latest/dg/create-index.html).
 

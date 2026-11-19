@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 ---
 
 # FSISEC07: How are you inspecting your financial services infrastructure and network for unauthorized traffic?
-<a name="fsisec07"></a>
 
  Monitor network traffic for expected and unexpected traffic to identify irregularities and gain key insights into the security of the system. For example, a poorly-performing network can indicate that the network is under threat, and irregular attempts to contact unexpected external systems can indicate that an internal host has been compromised. With generative AI services, inspection includes monitoring AI endpoint access and authentication attempts, model invocations, and data flow patterns.
 

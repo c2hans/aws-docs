@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_ColumnStatisticsE
 ---
 
 # ColumnStatisticsError
-<a name="API_ColumnStatisticsError"></a>
 
 Encapsulates a `ColumnStatistics` object that failed and the reason for failure.
 

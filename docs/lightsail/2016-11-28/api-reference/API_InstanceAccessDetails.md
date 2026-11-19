@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_I
 ---
 
 # InstanceAccessDetails
-<a name="API_InstanceAccessDetails"></a>
 
 The parameters for gaining temporary access to one of your Amazon Lightsail instances.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_
 ---
 
 # ContextContent
-<a name="API_ContextContent"></a>
 
 Typed content structure for a context. Contains application-specific fields that describe the environment used during recommendation generation.
 

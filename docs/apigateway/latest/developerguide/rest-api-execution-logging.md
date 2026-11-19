@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-ap
 ---
 
 # Execution logging for REST APIs
-<a name="rest-api-execution-logging"></a>
 
 Execution logging records the actions that API Gateway takes to process an API request. Logged data includes errors, execution traces, request and response parameter values or payloads, data used by Lambda authorizers, whether API keys are required, and whether usage plans are enabled. API Gateway redacts authorization headers, API key values, and similar sensitive request parameters from the logged data.
 

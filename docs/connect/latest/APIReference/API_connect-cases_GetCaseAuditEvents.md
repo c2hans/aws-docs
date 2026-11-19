@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # GetCaseAuditEvents
-<a name="API_connect-cases_GetCaseAuditEvents"></a>
 
 Returns the audit history about a specific case if it exists.
 

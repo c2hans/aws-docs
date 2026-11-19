@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pysp
 ---
 
 # RenameField class
-<a name="aws-glue-api-crawler-pyspark-transforms-RenameField"></a>
 
 Renames a node within a `DynamicFrame`.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/maxio-support.html
 ---
 
 # AWS Glue support for Maxio
-<a name="maxio-support"></a>
 
 AWS Glue supports Maxio as follows:
 

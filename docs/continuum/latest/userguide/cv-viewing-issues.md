@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/continuum/latest/userguide/cv-viewing-is
 ---
 
 # Viewing discovered issues
-<a name="cv-viewing-issues"></a>
 
 You can review issues for an environment on the **Issues** tab in the AWS Continuum console. Use search and the severity filter to find an issue, then choose its title to review the available details.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_DeleteIPSet.
 ---
 
 # DeleteIPSet
-<a name="API_DeleteIPSet"></a>
 
 Deletes the specified [IPSet](API_IPSet.md).
 

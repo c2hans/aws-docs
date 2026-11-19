@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/testrail-connection-optio
 ---
 
 # TestRail connection options
-<a name="testrail-connection-options"></a>
 
 The following are connection options for TestRail:
 + `ENTITY_NAME` – (Required) Used for Read. The name of the TestRail object to read.

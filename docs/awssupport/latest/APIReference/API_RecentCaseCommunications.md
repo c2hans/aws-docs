@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/awssupport/latest/APIReference/API_Recen
 ---
 
 # RecentCaseCommunications
-<a name="API_RecentCaseCommunications"></a>
 
 The five most recent communications associated with the case.
 

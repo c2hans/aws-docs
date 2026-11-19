@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_Expressi
 ---
 
 # Expression
-<a name="API_Expression"></a>
 
 A tagged union to specify expression for a routing step.
 
@@ -12,7 +11,7 @@ A tagged union to specify expression for a routing step.
 
  ** AndExpression **   <a name="connect-Type-Expression-AndExpression"></a>
 List of routing expressions which will be AND-ed together.
-Type: Array of [Expression](#API_Expression) objects
+Type: Array of [Expression](API_Expression.md) objects
 Required: No
 
  ** AttributeCondition **   <a name="connect-Type-Expression-AttributeCondition"></a>
@@ -27,7 +26,7 @@ Required: No
 
  ** OrExpression **   <a name="connect-Type-Expression-OrExpression"></a>
 List of routing expressions which will be OR-ed together.
-Type: Array of [Expression](#API_Expression) objects
+Type: Array of [Expression](API_Expression.md) objects
 Required: No
 
 ## See Also

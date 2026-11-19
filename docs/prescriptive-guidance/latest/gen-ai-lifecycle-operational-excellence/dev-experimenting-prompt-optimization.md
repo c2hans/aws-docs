@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-life
 ---
 
 # Optimizing generative AI prompts
-<a name="dev-experimenting-prompt-optimization"></a>
 
 The evaluation results are not an endpoint; they are the fuel for optimization. By systematically analyzing the evaluation metrics and failure cases, teams can refine the prompts and context engineering strategies to enhance the quality, accuracy, and reliability of the LLM's outputs. This iterative refinement is the key to moving from a functional PoC to a high-performing application that meets the business requirements.
 

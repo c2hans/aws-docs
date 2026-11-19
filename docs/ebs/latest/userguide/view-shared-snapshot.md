@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ebs/latest/userguide/view-shared-snapsho
 ---
 
 # Use Amazon EBS snapshots that are shared with you
-<a name="view-shared-snapshot"></a>
 
 **To use a shared unencrypted snapshot**
 Locate the shared snapshot by ID or description. You can use this snapshot as you would any other snapshot that you own in your account. For example, you can create a volume from the snapshot or copy it to a different Region.

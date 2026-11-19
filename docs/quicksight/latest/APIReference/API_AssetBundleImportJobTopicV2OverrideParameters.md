@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Asset
 ---
 
 # AssetBundleImportJobTopicV2OverrideParameters
-<a name="API_AssetBundleImportJobTopicV2OverrideParameters"></a>
 
 The override parameters for a single topic that is being imported.
 

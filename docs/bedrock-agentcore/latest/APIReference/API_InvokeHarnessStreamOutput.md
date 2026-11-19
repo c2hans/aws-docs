@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/AP
 ---
 
 # InvokeHarnessStreamOutput
-<a name="API_InvokeHarnessStreamOutput"></a>
 
 The streaming events returned by a harness invocation.
 

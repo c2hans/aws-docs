@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/API_List
 ---
 
 # ListCompositions
-<a name="API_ListCompositions"></a>
 
 Gets summary information about all Compositions in your account, in the AWS region where the API request is processed.
 

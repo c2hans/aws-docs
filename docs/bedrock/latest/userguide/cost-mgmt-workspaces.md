@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/cost-mgmt-works
 ---
 
 # Workspaces
-<a name="cost-mgmt-workspaces"></a>
 
 [Workspaces](workspaces.md) provide cost attribution for the Anthropic-compatible [Messages API](model-parameters-anthropic-claude-messages.md) on the [`bedrock-mantle`](endpoints.md) endpoint. Workspaces are the same underlying resource as [projects](cost-mgmt-projects.md) and are managed using the Amazon Bedrock Projects API. When you tag a workspace, the tags flow to AWS Cost Explorer and AWS Cost and Usage Reports (CUR 2.0), so you can filter and group Amazon Bedrock spend by application, team, environment, cost center, or any other dimension.
 

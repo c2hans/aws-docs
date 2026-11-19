@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ram/latest/APIReference/API_CreatePermis
 ---
 
 # CreatePermissionVersion
-<a name="API_CreatePermissionVersion"></a>
 
 Creates a new version of the specified customer managed permission. The new version is automatically set as the default version of the customer managed permission. New resource shares automatically use the default permission. Existing resource shares continue to use their original permission versions, but you can use [ReplacePermissionAssociations](API_ReplacePermissionAssociations.md) to update them.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/security_iam_trou
 ---
 
 # Troubleshooting Quick identity and access
-<a name="security_iam_troubleshoot"></a>
 
 |  |
 | --- |

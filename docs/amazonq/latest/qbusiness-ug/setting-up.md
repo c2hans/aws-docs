@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/setting-up.h
 Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
 
 # Setting up for Amazon Q Business
-<a name="setting-up"></a>
 
 Before you begin using Amazon Q Business for the first time, complete the following tasks.
 

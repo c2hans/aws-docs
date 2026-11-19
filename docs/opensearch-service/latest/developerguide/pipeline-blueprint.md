@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide
 ---
 
 # Working with blueprints
-<a name="pipeline-blueprint"></a>
 
 Rather than creating a pipeline definition from scratch, you can use *configuration blueprints*, which are preconfigured templates for common ingestion scenarios such as Trace Analytics or Apache logs. Configuration blueprints help you easily provision pipelines without having to author a configuration from scratch.
 

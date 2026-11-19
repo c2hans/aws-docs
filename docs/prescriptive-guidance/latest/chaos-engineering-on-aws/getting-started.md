@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engin
 ---
 
 # Getting started with chaos engineering
-<a name="getting-started"></a>
 
 Before you conduct an experiment, we recommend that you put a few essentials in place to make the most of your chaos engineering practices. These essentials include:
 + Observability (metrics, logging, request tracing)

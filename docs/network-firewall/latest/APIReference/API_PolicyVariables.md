@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/network-firewall/latest/APIReference/API
 ---
 
 # PolicyVariables
-<a name="API_PolicyVariables"></a>
 
 Contains variables that you can use to override default Suricata settings in your firewall policy.
 

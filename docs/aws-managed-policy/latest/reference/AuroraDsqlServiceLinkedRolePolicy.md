@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Auro
 ---
 
 # AuroraDsqlServiceLinkedRolePolicy
-<a name="AuroraDsqlServiceLinkedRolePolicy"></a>
 
 **Description**: Policy for Amazon Aurora DSQL Service Linked Role
 

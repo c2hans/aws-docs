@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TableStatus.html
 ---
 
 # TableStatus
-<a name="API_TableStatus"></a>
 
 A structure containing information about the state of an asynchronous change to a table.
 

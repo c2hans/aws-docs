@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/OAM/latest/APIReference/Welcome.html
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 Use Amazon CloudWatch Observability Access Manager to create and manage links between source accounts and monitoring accounts by using *CloudWatch cross-account observability*. With CloudWatch cross-account observability, you can monitor and troubleshoot applications that span multiple accounts within a Region. Seamlessly search, visualize, and analyze your metrics, logs, traces, Application Signals services and service level objectives (SLOs), Application Insights applications, and internet monitors in any of the linked accounts without account boundaries.
 
@@ -11,4 +10,4 @@ Set up one or more AWS accounts as *monitoring accounts* and link them with mult
 
 When you set up a link, you can choose to share the metrics from all namespaces with the monitoring account, or filter to a subset of namespaces. And for CloudWatch Logs, you can choose to share all log groups with the monitoring account, or filter to a subset of log groups.
 
-This document was last published on November 17, 2026.
+This document was last published on November 18, 2026.

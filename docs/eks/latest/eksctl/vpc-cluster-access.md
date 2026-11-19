@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/eks/latest/eksctl/vpc-cluster-access.htm
 ---
 
 # Cluster Access
-<a name="vpc-cluster-access"></a>
 
 ## Managing Access to the Kubernetes API Server Endpoints
 <a name="_managing_access_to_the_kubernetes_api_server_endpoints"></a>

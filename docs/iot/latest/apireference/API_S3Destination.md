@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_S3Destinatio
 ---
 
 # S3Destination
-<a name="API_S3Destination"></a>
 
 Describes the location of updated firmware in S3.
 

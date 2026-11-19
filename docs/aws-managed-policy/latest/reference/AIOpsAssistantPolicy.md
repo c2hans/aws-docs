@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AIOp
 ---
 
 # AIOpsAssistantPolicy
-<a name="AIOpsAssistantPolicy"></a>
 
 **Description**: Provides ReadOnly permissions required by the Amazon AI Operations Assistant to do analysis on customer AWS resources during investigations.
 

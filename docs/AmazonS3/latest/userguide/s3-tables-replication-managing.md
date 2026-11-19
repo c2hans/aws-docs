@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-repl
 ---
 
 # Managing S3 Tables replication
-<a name="s3-tables-replication-managing"></a>
 
 After you configure S3 Tables replication, you can monitor replica status to verify what's replicated. You can check replication status in the Amazon S3 console on the source table's **Management** tab, or by using the AWS CLI. For more information, see [Setting up S3 Tables replication](s3-tables-replication-setting-up.md).This topic explains how to monitor replication and understand the different status values that indicate whether replication is completed, in progress, or has failed.
 

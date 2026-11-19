@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 ---
 
 # PendingModifiedValues
-<a name="API_PendingModifiedValues"></a>
 
 A group of settings that are applied to the cluster in the future, or that are currently being applied.
 

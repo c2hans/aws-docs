@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/APIReference/API_Validity
 ---
 
 # ValidityTerm
-<a name="API_ValidityTerm"></a>
 
  Describes the validity terms.
 

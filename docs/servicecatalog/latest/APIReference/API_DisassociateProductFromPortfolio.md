@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/APIReference/API_D
 ---
 
 # DisassociateProductFromPortfolio
-<a name="API_DisassociateProductFromPortfolio"></a>
 
 Disassociates the specified product from the specified portfolio.
 

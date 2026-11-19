@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/transfer/latest/userguide/sftp-connector
 ---
 
 # Setting up and using SFTP connectors
-<a name="sftp-connectors-tutorial"></a>
 
 The purpose of a connector is to establish a relationship between your AWS storage and a partner's SFTP server. You can send files from Amazon S3 to an external, partner-owned destination. You can also use an SFTP connector to retrieve files from a partner's SFTP server.
 

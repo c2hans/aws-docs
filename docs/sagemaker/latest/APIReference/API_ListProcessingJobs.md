@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListPr
 ---
 
 # ListProcessingJobs
-<a name="API_ListProcessingJobs"></a>
 
 Lists processing jobs that satisfy various filters.
 

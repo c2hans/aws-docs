@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_Sy
 ---
 
 # SyncResourceFilter
-<a name="API_SyncResourceFilter"></a>
 
 The sync resource filter.
 

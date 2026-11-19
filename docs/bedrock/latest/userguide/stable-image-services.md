@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/stable-image-se
 ---
 
 # Stability AI Image Services
-<a name="stable-image-services"></a>
 
 You can use Stability AI Image Services with Amazon Bedrock to access thirteen specialized image editing tools. These tools are designed to accelerate professional creative workflows. With Stability AI Image Services you can generate images from a sketch, restructure and restyle an existing image. You can also remove and replace objects within an image.
 

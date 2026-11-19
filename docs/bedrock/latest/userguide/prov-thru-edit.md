@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/prov-thru-edit.
 ---
 
 # Modify a Provisioned Throughput
-<a name="prov-thru-edit"></a>
 
 The aspects of a Provisioned Throughput you can edit after purchase depend on the provisioning mode. For Provisioned Throughputs by Model Units, you can edit only the name and tags of your Provisioned Throughput, and the model if it's a custom model.
 

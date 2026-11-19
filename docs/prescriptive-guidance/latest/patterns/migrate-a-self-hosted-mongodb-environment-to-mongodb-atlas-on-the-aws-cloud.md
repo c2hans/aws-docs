@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 ---
 
 # Migrate a self-hosted MongoDB environment to MongoDB Atlas on AWS
-<a name="migrate-a-self-hosted-mongodb-environment-to-mongodb-atlas-on-the-aws-cloud"></a>
 
 *Battulga Purevragchaa and Igor Alekseev, Amazon Web Services*
 

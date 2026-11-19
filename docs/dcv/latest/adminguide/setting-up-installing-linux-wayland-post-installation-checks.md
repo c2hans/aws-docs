@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-install
 ---
 
 # Performing post-installation checks for the Amazon DCV server on Linux with Wayland
-<a name="setting-up-installing-linux-wayland-post-installation-checks"></a>
 
 This topic provides some post-installation checks that you should perform after installing Amazon DCV to ensure that your Amazon DCV server is properly configured.
 

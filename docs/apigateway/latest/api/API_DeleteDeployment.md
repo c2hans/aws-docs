@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/api/API_DeleteDeployme
 ---
 
 # DeleteDeployment
-<a name="API_DeleteDeployment"></a>
 
 Deletes a Deployment resource. Deleting a deployment will only succeed if there are no Stage resources associated with it.
 

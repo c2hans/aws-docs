@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/pipeline-r
 ---
 
 # Pipeline declaration
-<a name="pipeline-requirements"></a>
 
 The pipeline and metadata level of a pipeline has a basic structure that includes the following parameters and syntax. The pipeline parameter represents the structure of actions and stages to be performed in the pipeline.
 

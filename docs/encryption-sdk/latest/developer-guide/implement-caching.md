@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/im
 ---
 
 # How to use data key caching
-<a name="implement-caching"></a>
 
 This topic shows you how to use data key caching in your application. It takes you through the process step by step. Then, it combines the steps in a simple example that uses data key caching in an operation to encrypt a string.
 

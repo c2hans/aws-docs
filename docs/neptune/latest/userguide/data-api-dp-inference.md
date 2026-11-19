@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/data-api-dp-inf
 ---
 
 # Neptune ML inference endpoint API
-<a name="data-api-dp-inference"></a>
 
 **Inference endpoint actions:**
 + [CreateMLEndpoint (action)](#CreateMLEndpoint)

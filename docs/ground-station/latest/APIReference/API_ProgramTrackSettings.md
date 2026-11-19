@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/APIReference/API_P
 ---
 
 # ProgramTrackSettings
-<a name="API_ProgramTrackSettings"></a>
 
 Program track settings for an antenna during a contact.
 

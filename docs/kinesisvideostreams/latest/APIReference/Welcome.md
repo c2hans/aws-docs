@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/kinesisvideostreams/latest/APIReference/
 ---
 
 # Welcome
-<a name="Welcome"></a>
 
 ## Amazon Kinesis Video Streams
 <a name="Welcome_Amazon_Kinesis_Video_Streams"></a>

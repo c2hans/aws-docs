@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sa
 ---
 
 # Cost optimization services
-<a name="cost-optimization-services"></a>
 
 This section reviews some of the following AWS services and tools, which can provide insights and assist in the cost optimization process:
 + [AWS Cost Explorer](#aws-cost-explorer)

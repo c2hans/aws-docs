@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/create-stat
 ---
 
 # `CREATE STATISTICS`
-<a name="create-statistics-syntax-support"></a>
 
 ## Supported syntax
 <a name="create-statistics-supported-syntax"></a>

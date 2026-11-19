@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/lambda/latest/api/API_RetryDetails.html
 ---
 
 # RetryDetails
-<a name="API_RetryDetails"></a>
 
 Information about retry attempts for an operation.
 

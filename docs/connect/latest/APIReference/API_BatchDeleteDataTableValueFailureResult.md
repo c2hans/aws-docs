@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_BatchDel
 ---
 
 # BatchDeleteDataTableValueFailureResult
-<a name="API_BatchDeleteDataTableValueFailureResult"></a>
 
 A batch delete data table value failure result.
 

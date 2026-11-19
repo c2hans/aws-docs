@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/lenses.
 AWS Well-Architected Agent is in preview release and is subject to change.
 
 # Using lenses in AWS WA Tool
-<a name="lenses"></a>
 
 In AWS Well-Architected Tool, you can use lenses to consistently measure your architectures against best practices and identify areas for improvement. The **AWS Well-Architected Framework Lens** is automatically applied when a workload is defined.
 

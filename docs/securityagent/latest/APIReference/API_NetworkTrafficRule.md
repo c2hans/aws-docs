@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_Ne
 ---
 
 # NetworkTrafficRule
-<a name="API_NetworkTrafficRule"></a>
 
 A rule that controls network traffic during penetration testing by allowing or denying traffic to specific URL patterns.
 

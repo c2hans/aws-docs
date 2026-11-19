@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/controltower/latest/controlreference/waf
 ---
 
 # AWS WAF controls
-<a name="waf-rules"></a>
 
 **Topics**
 + [[CT.WAF.PR.1] Require any AWS WAF global rule to have a condition](#ct-waf-pr-1-description)

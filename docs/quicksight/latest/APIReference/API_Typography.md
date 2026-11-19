@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Typog
 ---
 
 # Typography
-<a name="API_Typography"></a>
 
 Determines the typography options.
 

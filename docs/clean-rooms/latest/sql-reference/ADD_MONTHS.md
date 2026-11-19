@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/ADD_MON
 ---
 
 # ADD\_MONTHS function
-<a name="ADD_MONTHS"></a>
 
 ADD\_MONTHS adds the specified number of months to a date or timestamp value or expression. The [DATE\_ADD](DATE_ADD_function.md) function provides similar functionality.
 

@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReferen
 This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
 
 # AWS::SES::MailManagerTrafficPolicy IngressAnalysis
-<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressanalysis"></a>
 
 The Add On ARN and its returned value that is evaluated in a policy statement's conditional expression to either deny or block the incoming email.
 

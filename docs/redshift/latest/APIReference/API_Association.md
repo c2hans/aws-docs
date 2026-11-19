@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/redshift/latest/APIReference/API_Associa
 ---
 
 # Association
-<a name="API_Association"></a>
 
 Contains information about the custom domain name association.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/snapshots-copyi
 ---
 
 # Copying a snapshot
-<a name="snapshots-copying"></a>
 
 You can make a copy of any snapshot, whether it was created automatically or manually. When copying a snapshot, the same KMS encryption key as the source is used for the target unless specifically overridden. You can also export your snapshot so you can access it from outside MemoryDB. For guidance on exporting your snapshot, see [Exporting a snapshot](snapshots-exporting.md).
 

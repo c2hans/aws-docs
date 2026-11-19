@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetIpamRo
 ---
 
 # GetIpamRouteOriginAuthorizations
-<a name="API_GetIpamRouteOriginAuthorizations"></a>
 
 Retrieves the current Route Origin Authorizations (ROAs) published to the RPKI for an IPAM internet registry association. We recommend using pagination to ensure that the operation returns quickly and successfully.
 

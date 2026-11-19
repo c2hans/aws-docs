@@ -5,7 +5,6 @@ source_url: https://docs.aws.amazon.com/code-library/latest/ug/sts_example_opens
 There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
 
 # Getting started with search and analytics engines
-<a name="sts_example_opensearch_GettingStarted_016_section"></a>
 
 The following code example shows how to:
 + Create an OpenSearch Service domain

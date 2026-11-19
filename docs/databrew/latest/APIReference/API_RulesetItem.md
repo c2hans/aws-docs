@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/API_Ruleset
 ---
 
 # RulesetItem
-<a name="API_RulesetItem"></a>
 
 Contains metadata about the ruleset.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/opt-out-list-
 ---
 
 # Remove a destination phone number from an opt-out list in AWS End User Messaging SMS
-<a name="opt-out-list-remove-phone-number"></a>
 
 Use the AWS End User Messaging SMS console or AWS CLI to remove destination phone numbers from an opt-out list. When you remove a phone number that phone number will receive messages sent from an origination identity that is linked to the opt-out list.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_ChangingDi
 ---
 
 # Change instance termination protection
-<a name="Using_ChangingDisableAPITermination"></a>
 
 To prevent your instance from being accidentally terminated using the Amazon EC2 API, whether you call `TerminateInstances` directly or using another interface such as the Amazon EC2 console, enable *termination protection* for the instance. The `DisableApiTermination` attribute controls whether the instance can be terminated. By default, termination protection is disabled for your instance. You can set the value of this attribute when you launch an instance, or while the instance is running or stopped.
 

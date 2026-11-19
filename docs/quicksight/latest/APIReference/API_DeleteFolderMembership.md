@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Delet
 ---
 
 # DeleteFolderMembership
-<a name="API_DeleteFolderMembership"></a>
 
 Removes an asset, such as a dashboard, analysis, or dataset, from a folder.
 

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/APIReference/API_De
 ---
 
 # DeleteSubscriber
-<a name="API_DeleteSubscriber"></a>
 
 Deletes the subscription permission and all notification settings for accounts that are already enabled in Amazon Security Lake. When you run `DeleteSubscriber`, the subscriber will no longer consume data from Security Lake and the subscriber is removed. This operation deletes the subscriber and removes access to data in the current AWS Region.
 

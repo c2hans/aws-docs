@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/m
 ---
 
 # Using the AWS SDK for SAP ABAP Knowledge MCP Server
-<a name="mcp-server"></a>
 
 The AWS SDK for SAP ABAP Knowledge MCP Server is a specialized knowledge resource that enables AI coding assistants to generate accurate ABAP code for AWS integrations. By connecting your AI-enabled IDE to this server, you can describe what you want to build in natural language and receive syntactically correct ABAP code that properly invokes the AWS SDK for SAP ABAP.
 

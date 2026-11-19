@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_LoR
 ---
 
 # LoRaWANConnectionStatusResourceTypeEventConfiguration
-<a name="API_LoRaWANConnectionStatusResourceTypeEventConfiguration"></a>
 
 Object for LoRaWAN connection status resource type event configuration.
 

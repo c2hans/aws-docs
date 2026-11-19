@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/apireference/channel
 ---
 
 # Channels id
-<a name="channels-id"></a>
 
 ## URI
 <a name="channels-id-url"></a>

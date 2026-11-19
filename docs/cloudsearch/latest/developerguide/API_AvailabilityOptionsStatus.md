@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_Av
 ---
 
 # AvailabilityOptionsStatus
-<a name="API_AvailabilityOptionsStatus"></a>
 
 ## Description
 <a name="API_AvailabilityOptionsStatus_Description"></a>

@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/plan-redundancy-mode
 ---
 
 # Implementing pipeline redundancy
-<a name="plan-redundancy-mode"></a>
 
 You can set up a MediaLive channel with two encoding pipelines, to provide resiliency within the channel processing pipeline.
 

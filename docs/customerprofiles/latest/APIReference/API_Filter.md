@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API
 ---
 
 # Filter
-<a name="API_connect-customer-profiles_Filter"></a>
 
 Defines how to filter the objects coming in for calculated attributes.
 

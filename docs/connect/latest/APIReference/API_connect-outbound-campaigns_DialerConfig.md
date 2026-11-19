@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-
 ---
 
 # DialerConfig
-<a name="API_connect-outbound-campaigns_DialerConfig"></a>
 
 Contains dialer configuration for an outbound campaign.
 

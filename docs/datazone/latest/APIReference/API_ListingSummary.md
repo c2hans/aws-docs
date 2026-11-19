@@ -3,7 +3,6 @@ source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_Listing
 ---
 
 # ListingSummary
-<a name="API_ListingSummary"></a>
 
 The summary of the listing of the data product.
 
